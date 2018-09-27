@@ -2,12 +2,12 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Introduction To Python"
+title                    : "COGS18: Introduction To Python"
 title_separator          : "-"
 name                     : "Tom Donoghue"
 description              : ""
 url                      : https://cogs18.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog". Defaults to "/"
+baseurl                  : "" # the subpath of your site, e.g. "/blog". Defaults to "/"
 repository               : #COGS108/Tutorials # GitHub username/repo-name for this site
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 footer                   : false # Whether to include a footer with the built site
@@ -15,13 +15,13 @@ masthead                 : true  # Whether to include a masthead (header/navbar)
 masthead_logo            : images/logo/logo.png
 
 # Textbook settings
-hub_url                  : "https://mybinder.org" # The URL for your JupyterHub/BinderHub.
+hub_url                  : https://mybinder.org # The URL for your JupyterHub/BinderHub.
 hub_name                 : "" # The name of your JupyterHub (used for the button in the NavBar. If an empty string, no button is shown)
-hub_type                 : "binder" # ['binder', 'jupyterhub']  Whether to build interact links for a BinderHub or a JupyterHub
-textbook_repo_base       : "https://github.com/"  # The site on which the textbook repository is hosted
-textbook_repo_org        : "COGS18"  # The username or organization that owns this repository
-textbook_repo_name       : "Materials"  # The name of the repository on the web
-textbook_repo_branch     : "master"  # The branch on which your textbook is hosted.
+hub_type                 : binder # ['binder', 'jupyterhub']  Whether to build interact links for a BinderHub or a JupyterHub
+textbook_repo_base       : https://github.com/  # The site on which the textbook repository is hosted
+textbook_repo_org        : COGS18  # The username or organization that owns this repository
+textbook_repo_name       : Materials  # The name of the repository on the web
+textbook_repo_branch     : master  # The branch on which your textbook is hosted.
 number_chapters          : false  # Whether to number the chapers in the sidebar for the textbook
 chapter_titles           : true  # Whether to include the title of the chapter at the top of each chapter
 textbook_only            : false  # If 'true', the home page will be the first chapter of the textbook, and *only* the sidebar is shown
