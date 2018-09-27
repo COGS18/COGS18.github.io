@@ -1,0 +1,42 @@
+### PROGRAMATICALLY GENERATED, DO NOT MODIFY
+chapters:
+- class: level_0
+  title: Home
+  url: /
+- class: level_0
+  title: 01-introduction
+  url: /chapters/01-Introduction
+- class: level_0
+  title: Demos
+  url: /chapters/Demos
+- class: level_0
+  title: Programmingisforhumans
+  url: /chapters/ProgrammingIsForHumans
+- class: level_0
+  title: Whatarewegoingtodo
+  url: /chapters/WhatAreWeGoingToDo
+- class: level_0
+  title: Xx-complexdatatypes
+  url: /chapters/XX-ComplexDataTypes
+- class: level_0
+  title: Xx-conditionals
+  url: /chapters/XX-Conditionals
+- class: level_0
+  title: Xx-datatypes
+  url: /chapters/XX-DataTypes
+- class: level_0
+  title: Xx-functions
+  url: /chapters/XX-Functions
+- class: level_0
+  title: Xx-loops
+  url: /chapters/XX-Loops
+- class: level_0
+  title: Xx-objects
+  url: /chapters/XX-Objects
+- class: level_0
+  title: Xx-python
+  url: /chapters/XX-Python
+- class: level_0
+  title: Xx-variables
+  url: /chapters/XX-Variables
+first_chapter_url: /chapters/01-Introduction
