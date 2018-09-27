@@ -7,7 +7,7 @@ title_separator          : "-"
 name                     : "Tom Donoghue"
 description              : ""
 url                      : https://cogs18.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog". Defaults to "/"
+baseurl                  : # the subpath of your site, e.g. "/blog". Defaults to "/"
 repository               : #COGS108/Tutorials # GitHub username/repo-name for this site
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 footer                   : false # Whether to include a footer with the built site
