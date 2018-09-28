@@ -5,8 +5,8 @@ previouschapter:
   url: 
   title: ''
 nextchapter:
-  url: /chapters/Demos
-  title: 'Demos'
+  url: 
+  title: ''
 redirect_from:
   - '/chapters/01-introduction'
 ---
@@ -15,45 +15,83 @@ redirect_from:
 
 ## Thomas Donoghue
 
+# Logistics
+
+- Who:
+    - Instructor: Tom Donoghue
+    - TAs: Daril Brown, Paolo Gabriel, Rob Loughnan
+    - IAs: Peiling, Luiz, Brandon & Luke
+
+- Where:
+    - Lectures MWF @ 9 am & Coding Lab Sections
+    - Course Website: https://cogs18.github.io
+    - Piazza Page: https://piazza.com/ucsd/fall2018/cogs18
+
+# Expectations & Approach
+
+- Goal: to learn practical programming in Python
+- How: hands-on, skills based course, assignment & project driven
+- Lectures & Lab Sections will be used for interactive activities
+- Approach: community driven
+
+# Course Requirements
+
+- Course participation in peer instruction (clicker) questions (8%) and coding labs (12%)
+- Assignments (40%) 
+- Midterm (15%)
+- Final project (25%)
+
+## Why Learn Computation?
+
+- Computation is how things are done
+
+- Computation is the foundation of much of the modern world
+
 ## What is Python
 
-## Why Python
 
-- Python is human focused
-- Python is fun. 
+- Python is a programming language
+    - It is a way to do computation
 
-## This is not a Computer Science Course
+- Python is an ecosystem
+    - It is a culture of practice for computation
+
+## What does Python look like
 
 
 
 {:.input_area}
 ```python
-import this
+variable_name = "Variable value."
+print(variable_name)
 ```
 
 
-{:.output_stream}
-```
-The Zen of Python, by Tim Peters
 
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
 
+{:.input_area}
+```python
+a = 1
+b = 2
+
+c = a + b
+
+print(c)
 ```
+
+
+## Why Choose Python?
+
+- Python is a powerful, well developed and well supported tool
+
+- Python is general purpose, with an immense, multi-purpose ecosystem
+
+- Python is human focused, with a strong user & developer community 
+
+- Python is open-source and accessible
+
+- Python is fun
+
+# Okay... But What Can You Actually Do With It?
+
+Let's have a look!
