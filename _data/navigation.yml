@@ -1,6 +1,4 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
   - title: "Syllabus"
     url: /assets/documents/syllabus.pdf
