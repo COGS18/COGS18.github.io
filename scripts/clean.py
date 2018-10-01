@@ -4,6 +4,7 @@ import os.path as op
 path_root = op.join(op.dirname(op.abspath(__file__)), '..')
 
 paths = [op.join(path_root, 'images', 'chapters'),
+         op.join(path_root, 'assets', 'downloads'),
          op.join(path_root, '_site'),
          op.join(path_root, '_chapters'),
          op.join(path_root, '_data', 'textbook.yml')]

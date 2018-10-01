@@ -12,6 +12,9 @@ path_root = op.join(op.dirname(op.abspath(__file__)), '..')
 nb_path = op.join(path_root, 'notebooks')
 dl_path = op.join(path_root, 'assets', 'downloads')
 
+if not op.exists(dl_path):
+    os.mkdir(dl_path)
+
 notebooks = [ff for ff in os.listdir(nb_path) if '.ipynb' in ff]
 
 for notebook in notebooks:
