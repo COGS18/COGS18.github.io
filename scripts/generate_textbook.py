@@ -260,8 +260,23 @@ if __name__ == '__main__':
         yaml_fm = []
         yaml_fm += ['---']
 
-        #if link.endswith('.ipynb'):
-        #    yaml_fm += ['interact_link: {}'.format(link.lstrip('./'))]
+        # Add a button with an interact link
+        if site_yaml.get('add_interact_button', True):
+            if link.endswith('.ipynb'):
+                yaml_fm += ['interact_link: {}'.format(link.lstrip('./'))]
+
+        # Add a button to download the notebook
+        if site_yaml.get('add_download_button', True):
+            if link.endswith('.ipynb'):
+                dl_link = 'assets/downloads/' + link.split('/')[2] + '.zip'
+                yaml_fm += ['download_link: {}'.format(dl_link)]
+
+        # Add a button to get a pdf of the page
+        if site_yaml.get('add_pdf_button', True):
+            if link.endswith('.ipynb'):
+                dl_link = 'assets/pdf/' + link.split('/')[2][:-6] + '.pdf'
+                yaml_fm += ['pdf_link: {}'.format(dl_link)]
+
         yaml_fm += ["title: '{}'".format(title)]
         yaml_fm += ["permalink: '{}'".format(_prepare_link(link))]
         yaml_fm += ['previouschapter:']

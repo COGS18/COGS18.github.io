@@ -11,4 +11,4 @@ for path in paths:
     print('Removing {}...'.format(path))
     sh.rmtree(path, ignore_errors=True)
 
-print('Done!')
+print('Clean Done!')
