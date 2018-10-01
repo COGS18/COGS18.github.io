@@ -17,6 +17,8 @@ textbook:
 	python scripts/generate_summary_from_folders.py --overwrite
 	python scripts/generate_textbook.py
 
+	python scripts/copy_for_download.py
+
 	rm -rf notebooks
 
 runall:
