@@ -1,17 +1,18 @@
 ---
-title: '01-introduction'
-permalink: '/chapters/01-Introduction'
+download_link: assets/downloads/00-Introduction.ipynb.zip
+title: '00-introduction'
+permalink: '/chapters/00-Introduction'
 previouschapter:
   url: 
   title: ''
 nextchapter:
-  url: 
-  title: ''
+  url: /chapters/01-Tools
+  title: '01-tools'
 redirect_from:
-  - '/chapters/01-introduction'
+  - '/chapters/00-introduction'
 ---
 
-# COGS 18: Introduction to Python
+# COGS18: Introduction to Python
 
 ## Thomas Donoghue
 
@@ -20,7 +21,7 @@ redirect_from:
 - Who:
     - Instructor: Tom Donoghue
     - TAs: Daril Brown, Paolo Gabriel, Rob Loughnan
-    - IAs: Peiling, Luiz, Brandon & Luke
+    - IAs: Peilin, Luis, Brandon & Luke
 
 - Where:
     - Lectures MWF @ 9 am & Coding Lab Sections
@@ -30,13 +31,14 @@ redirect_from:
 # Expectations & Approach
 
 - Goal: to learn practical programming in Python
-- How: hands-on, skills based course, assignment & project driven
+- How: hands-on, community driven, skills based course, assignment & project driven
 - Lectures & Lab Sections will be used for interactive activities
-- Approach: community driven
+- Assignments, coding labs & a final project will be designed to get you coding
 
 # Course Requirements
 
-- Course participation in peer instruction (clicker) questions (8%) and coding labs (12%)
+- Participation in peer instruction (clicker) questions, in lecture (8%) 
+- Pass/Fail coding labs, in section (12%)
 - Assignments (40%) 
 - Midterm (15%)
 - Final project (25%)
@@ -67,6 +69,12 @@ print(variable_name)
 ```
 
 
+{:.output_stream}
+```
+Variable value.
+
+```
+
 
 
 {:.input_area}
@@ -79,6 +87,12 @@ c = a + b
 print(c)
 ```
 
+
+{:.output_stream}
+```
+3
+
+```
 
 ## Why Choose Python?
 

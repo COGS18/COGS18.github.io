@@ -4,6 +4,12 @@ chapters:
   title: Home
   url: /
 - class: level_0
-  title: 01-introduction
-  url: /chapters/01-Introduction
-first_chapter_url: /chapters/01-Introduction
+  title: 00-introduction
+  url: /chapters/00-Introduction
+- class: level_0
+  title: 01-tools
+  url: /chapters/01-Tools
+- class: level_0
+  title: 02-jupyternotebooks
+  url: /chapters/02-JupyterNotebooks
+first_chapter_url: /chapters/00-Introduction
