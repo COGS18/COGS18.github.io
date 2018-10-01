@@ -14,6 +14,11 @@ footer                   : false # Whether to include a footer with the built si
 masthead                 : true  # Whether to include a masthead (header/navbar) with the site.
 masthead_logo            : images/logo/logo.png
 
+# Button settings
+add_interact_button      : false  # Whether to add a button link to an interactive version of the notebook
+add_download_button      : true  # Whether to add a button link to download a copy of the notebook
+add_pdf_button           : false  # Whether to add a button link to pdf copies of the notebooks
+
 # Textbook settings
 hub_url                  : https://mybinder.org # The URL for your JupyterHub/BinderHub.
 hub_name                 : "" # The name of your JupyterHub (used for the button in the NavBar. If an empty string, no button is shown)
