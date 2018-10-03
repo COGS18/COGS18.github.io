@@ -40,13 +40,21 @@ There are also a large number of useful keyboard shortcuts. Click on the 'Help' 
 The main organizational structure of the notebook are 'cells'.
 </div>
 
+Cells are an independent 'unit'. When you click into a cell, you can 'run' it by clicking Shift + Enter, or by pressing the play button above. 
+
+Cells come in differen types for writing different things - mainly, text or code. 
+
+### Markdown Cells
+
 Cells, can be markdown (text), like this one.
+
+### Code Cells
 
 
 
 {:.input_area}
 ```python
-# Cell can also be code. Here, we are using a Python notebook.
+# Cell can also be code.
 a = 1
 b = 2
 ```
@@ -57,15 +65,25 @@ b = 2
 {:.input_area}
 ```python
 # Cells can also have output, that gets printed out below the cell.
-print(a + b)
+c = a + b
+print(c)
 ```
 
 
-{:.output_stream}
-```
-3
 
+
+{:.input_area}
+```python
+# If you execute a cell with just a variable name in it, it will also get printed
+c
 ```
+
+
+### Running Cells
+
+- The numbers in the square brackets to the left of a cell show which cells have been run, and in what order.
+    - An asterisk (*) means that the cell is currently running
+    - You do not need to run cells in order! This is useful for flexibly testing and developing code. 
 
 ## Accessing Documentation
 
@@ -77,26 +95,8 @@ Jupyter has useful shortcuts. Add a single '?' after a function or class get a w
 
 {:.input_area}
 ```python
-# Import numpy for examples
-import numpy as np
-```
-
-
-
-
-{:.input_area}
-```python
-# Check the docs for a numpy array
-np.array?
-```
-
-
-
-
-{:.input_area}
-```python
-# Check the full source code for numpy append function
-np.append??
+# For example, execute this cell to see the documentation for the 'abs'
+abs?
 ```
 
 
@@ -112,16 +112,7 @@ capacities, which can autocomplete what you are typing, and/or be used to explor
 
 {:.input_area}
 ```python
-# Move your cursor just after the period, press tab, and a drop menu will appear showing all possible completions
-np.
-```
-
-
-
-
-{:.input_area}
-```python
-# Autocomplete does not have to be at a period. Move to the end of 'ra' and hit tab to see completion options. 
+# Move your cursor to the end of the line, press tab, and a drop menu will appear showing all possible completions
 ra
 ```
 
@@ -135,91 +126,25 @@ ran
 ```
 
 
-## Kernel & Namespace
-
-You do not need to run cells in order! This is useful for flexibly testing and developing code. 
-
-The numbers in the square brackets to the left of a cell show which cells have been run, and in what order.
-
-However, it can also be easy to lose track of what has already been declared / imported, leading to unexpected behaviour from running cells.
-
-The kernel is what connects the notebook to your computer behind-the-scenes to execute the code. 
-
-It can be useful to clear and re-launch the kernel. You can do this from the 'kernel' drop down menu, at the top, optionally also clearing all ouputs.
-
-## Magic Commands
+## Web Browser
 
 <div class="alert alert-success">
-'Magic Commands' are a special (command-line like) syntax in IPython/Jupyter to run special functionality. They can run on lines and/or entire cells. 
+Jupyter notebooks display in a web browser. They are not hosted on the web, everything is happening locally. 
 </div>
 
-<div class="alert alert-info">
-The iPython <a href="http://ipython.readthedocs.io/en/stable/interactive/magics.html" class="alert-link">documentation</a> has more information on magic commands.
+If you click on the url in the browser, you will notice it says 'localhost'. This means it is connected to something locally, on your computer. 
+
+That local connection is to the 'kernel'. 
+
+## Kernels
+
+<div class="alert alert-success">
+The 'kernel' is the thing that executes your code. It is what connects the notebook (as you see it) with the part of your computer that runs code. 
 </div>
 
+Your kernel also stores your namespace - all the variables and code that you have declared (executed). 
 
-
-{:.input_area}
-```python
-# You can check a list of available magic commands
-%lsmagic
-```
-
-
-### Line Magics
-
-
-Line magics use a single '%', and apply to a single line. 
-
-
-
-{:.input_area}
-```python
-# For example, we can time how long it takes to create a large list
-%timeit list(range(100000))
-```
-
-
-### Cell Magics
-
-Cell magics use a double '%%', and apply to the whole cell. 
-
-
-
-{:.input_area}
-```python
-%%timeit
-# For example, we could time a whole cell
-a = list(range(100000))
-b = [n + 1 for n in a]
-```
-
-
-### Running terminal commands
-
-Another nice thing about notebooks is being able to run terminals commands
-
-
-
-{:.input_area}
-```python
-# You can run a terminal command by adding '!' to the start of the line
-!pwd
-
-# Note that in this case, '!pwd' is equivalent to line magic '%pwd'. 
-# The '!' syntax is more general though, allowing you to run anything you want through command-line 
-```
-
-
-
-
-{:.input_area}
-```bash
-%%bash
-# Equivalently, (for bash) use the %%bash cell magic to run a cell as bash (command-line)
-pwd
-```
-
+It can be useful to clear and re-launch the kernel. You can do this from the 'kernel' drop down menu, at the top, optionally also clearing all ouputs. Note that this will erase any variables that are stored in memory. 
 
 <div class="alert alert-info">
 For more useful information, check out Jupyter Notebooks 

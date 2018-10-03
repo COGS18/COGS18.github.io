@@ -2,3 +2,5 @@
 main:
   - title: "Syllabus"
     url: /assets/documents/syllabus.pdf
+  - title: "Schedule"
+    url: /assets/documents/schedule.pdf
