@@ -1,5 +1,6 @@
 ---
 download_link: assets/downloads/02-JupyterNotebooks.ipynb.zip
+pdf_link: assets/pdf/02-JupyterNotebooks.pdf
 title: '02-jupyternotebooks'
 permalink: '/chapters/02-JupyterNotebooks'
 previouschapter:
@@ -69,6 +70,12 @@ c = a + b
 print(c)
 ```
 
+
+{:.output_stream}
+```
+3
+
+```
 
 
 

@@ -1,5 +1,6 @@
 ---
 download_link: assets/downloads/00-Introduction.ipynb.zip
+pdf_link: assets/pdf/00-Introduction.pdf
 title: '00-introduction'
 permalink: '/chapters/00-Introduction'
 previouschapter:
@@ -12,9 +13,9 @@ redirect_from:
   - '/chapters/00-introduction'
 ---
 
-# COGS18: Introduction to Python
+# Introduction to Python
 
-## Thomas Donoghue
+Thomas Donoghue
 
 # Logistics
 

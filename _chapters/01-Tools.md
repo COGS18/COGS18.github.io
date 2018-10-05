@@ -1,5 +1,6 @@
 ---
 download_link: assets/downloads/01-Tools.ipynb.zip
+pdf_link: assets/pdf/01-Tools.pdf
 title: '01-tools'
 permalink: '/chapters/01-Tools'
 previouschapter:
@@ -12,7 +13,7 @@ redirect_from:
   - '/chapters/01-tools'
 ---
 
-# COGS18: Tools
+# Tools
 
 This notebook will guide through the tools you will need for class materials and assignments, and how to get them. 
 
