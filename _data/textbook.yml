@@ -12,4 +12,7 @@ chapters:
 - class: level_0
   title: 02-jupyternotebooks
   url: /chapters/02-JupyterNotebooks
+- class: level_0
+  title: 03-variables
+  url: /chapters/03-Variables
 first_chapter_url: /chapters/00-Introduction
