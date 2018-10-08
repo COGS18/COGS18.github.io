@@ -2,7 +2,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "COGS18: Introduction To Python"
+title                    : "Introduction To Python"
 title_separator          : "-"
 name                     : "Tom Donoghue"
 description              : ""
