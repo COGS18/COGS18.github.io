@@ -2,3 +2,4 @@
 * [01-tools](./notebooks/01-Tools.ipynb)
 * [02-jupyternotebooks](./notebooks/02-JupyterNotebooks.ipynb)
 * [03-variables](./notebooks/03-Variables.ipynb)
+* [04-operators](./notebooks/04-Operators.ipynb)

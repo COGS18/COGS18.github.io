@@ -4,11 +4,11 @@ article.page .interact-button,article.page .previous_page,article.page .next_pag
 {
   background-color:#477DCA;
   border-radius:3px;
-  color:#FFF;
+  color:white;
   display:inline-block;
-  font-size:1.2em;
+  font-size:1.0em;
   font-weight:700;
-  padding:.4em 1em;
+  padding:.3em 0.8em;
   margin-bottom: .5em;
 }
 

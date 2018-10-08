@@ -15,4 +15,7 @@ chapters:
 - class: level_0
   title: 03-variables
   url: /chapters/03-Variables
+- class: level_0
+  title: 04-operators
+  url: /chapters/04-Operators
 first_chapter_url: /chapters/00-Introduction

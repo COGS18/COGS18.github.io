@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/02-JupyterNotebooks
   title: '02-jupyternotebooks'
 nextchapter:
-  url: 
-  title: ''
+  url: /chapters/04-Operators
+  title: '04-operators'
 redirect_from:
   - '/chapters/03-variables'
 ---

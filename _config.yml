@@ -20,6 +20,7 @@ add_download_button      : true  # Whether to add a button link to download a co
 add_pdf_button           : true  # Whether to add a button link to pdf copies of the notebooks
 
 # Textbook settings
+textbook_masthead        : Materials # The name of the link to the textbook in the masthead. Used if `textbook_only` is false.
 hub_url                  : https://mybinder.org # The URL for your JupyterHub/BinderHub.
 hub_name                 : "" # The name of your JupyterHub (used for the button in the NavBar. If an empty string, no button is shown)
 hub_type                 : binder # ['binder', 'jupyterhub']  Whether to build interact links for a BinderHub or a JupyterHub

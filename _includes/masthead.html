@@ -19,7 +19,7 @@
           {% endfor %}
           {% if site.data.textbook %}
             <li class="masthead__menu-item">
-              <a href="{{ site.url }}/{{ site.data.textbook.first_chapter_url }}">Materials</a>
+              <a href="{{ site.url }}/{{ site.data.textbook.first_chapter_url }}">{{ site.textbook_masthead }}</a>
             </li>
           {% endif %}
           {% if site.hub_name and site.hub_type == "jupyterhub" %}
