@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Assignments"
+    url: /Assignments/
   - title: "Syllabus"
     url: /assets/documents/syllabus.pdf
   - title: "Schedule"
