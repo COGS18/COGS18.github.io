@@ -18,4 +18,7 @@ chapters:
 - class: level_0
   title: 04-operators
   url: /chapters/04-Operators
+- class: level_0
+  title: 05-conditionals
+  url: /chapters/05-Conditionals
 first_chapter_url: /chapters/00-Introduction

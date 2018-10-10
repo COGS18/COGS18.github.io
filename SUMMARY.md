@@ -3,3 +3,4 @@
 * [02-jupyternotebooks](./notebooks/02-JupyterNotebooks.ipynb)
 * [03-variables](./notebooks/03-Variables.ipynb)
 * [04-operators](./notebooks/04-Operators.ipynb)
+* [05-conditionals](./notebooks/05-Conditionals.ipynb)

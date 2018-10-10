@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/03-Variables
   title: '03-variables'
 nextchapter:
-  url: 
-  title: ''
+  url: /chapters/05-Conditionals
+  title: '05-conditionals'
 redirect_from:
   - '/chapters/04-operators'
 ---
