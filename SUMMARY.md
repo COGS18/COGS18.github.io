@@ -4,3 +4,4 @@
 * [03-variables](./notebooks/03-Variables.ipynb)
 * [04-operators](./notebooks/04-Operators.ipynb)
 * [05-conditionals](./notebooks/05-Conditionals.ipynb)
+* [06-datatypes](./notebooks/06-DataTypes.ipynb)

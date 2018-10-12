@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/04-Operators
   title: '04-operators'
 nextchapter:
-  url: 
-  title: ''
+  url: /chapters/06-DataTypes
+  title: '06-datatypes'
 redirect_from:
   - '/chapters/05-conditionals'
 ---

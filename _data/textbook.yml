@@ -21,4 +21,7 @@ chapters:
 - class: level_0
   title: 05-conditionals
   url: /chapters/05-Conditionals
+- class: level_0
+  title: 06-datatypes
+  url: /chapters/06-DataTypes
 first_chapter_url: /chapters/00-Introduction
