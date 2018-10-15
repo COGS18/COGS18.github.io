@@ -24,4 +24,7 @@ chapters:
 - class: level_0
   title: 06-datatypes
   url: /chapters/06-DataTypes
+- class: level_0
+  title: 07-loops
+  url: /chapters/07-Loops
 first_chapter_url: /chapters/00-Introduction

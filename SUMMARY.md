@@ -5,3 +5,4 @@
 * [04-operators](./notebooks/04-Operators.ipynb)
 * [05-conditionals](./notebooks/05-Conditionals.ipynb)
 * [06-datatypes](./notebooks/06-DataTypes.ipynb)
+* [07-loops](./notebooks/07-Loops.ipynb)

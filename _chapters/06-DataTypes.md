@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/05-Conditionals
   title: '05-conditionals'
 nextchapter:
-  url: 
-  title: ''
+  url: /chapters/07-Loops
+  title: '07-loops'
 redirect_from:
   - '/chapters/06-datatypes'
 ---
