@@ -6,3 +6,4 @@
 * [05-conditionals](./notebooks/05-Conditionals.ipynb)
 * [06-datatypes](./notebooks/06-DataTypes.ipynb)
 * [07-loops](./notebooks/07-Loops.ipynb)
+* [08-encodings](./notebooks/08-Encodings.ipynb)

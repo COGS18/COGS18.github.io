@@ -27,4 +27,7 @@ chapters:
 - class: level_0
   title: 07-loops
   url: /chapters/07-Loops
+- class: level_0
+  title: 08-encodings
+  url: /chapters/08-Encodings
 first_chapter_url: /chapters/00-Introduction
