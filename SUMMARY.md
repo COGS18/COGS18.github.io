@@ -7,3 +7,4 @@
 * [06-datatypes](./notebooks/06-DataTypes.ipynb)
 * [07-loops](./notebooks/07-Loops.ipynb)
 * [08-encodings](./notebooks/08-Encodings.ipynb)
+* [09-functionsi](./notebooks/09-FunctionsI.ipynb)

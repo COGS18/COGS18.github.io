@@ -30,4 +30,7 @@ chapters:
 - class: level_0
   title: 08-encodings
   url: /chapters/08-Encodings
+- class: level_0
+  title: 09-functionsi
+  url: /chapters/09-FunctionsI
 first_chapter_url: /chapters/00-Introduction
