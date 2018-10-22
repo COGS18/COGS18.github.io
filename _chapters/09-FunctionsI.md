@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/08-Encodings
   title: '08-encodings'
 nextchapter:
-  url: 
-  title: ''
+  url: /chapters/10-Algorithms
+  title: '10-algorithms'
 redirect_from:
   - '/chapters/09-functionsi'
 ---

@@ -13,7 +13,7 @@ redirect_from:
   - '/chapters/06-datatypes'
 ---
 
-# Data Types
+# Collections
 
 ## Collections: Lists
 
@@ -41,6 +41,12 @@ print(lst)
 ```
 
 
+{:.output_stream}
+```
+[1, 'a', True]
+
+```
+
 
 
 {:.input_area}
@@ -48,6 +54,16 @@ print(lst)
 # Check the type of a list
 type(lst)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+list
+```
+
 
 
 ### Indexing
@@ -60,7 +76,7 @@ Indexing refers to selecting an item from within a collection, and is done with 
 
 {:.input_area}
 ```python
-# Define a list
+# Define a list 
 my_lst = ['Julian', 'Anne', 'Richard', 'George', 'Timmy']
 ```
 
@@ -76,12 +92,28 @@ print(my_lst[2])
 
 
 
+
+{:.output_data_text}
+```
+'Richard'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Indexing: Count backward, starting at -1, with negative numbers
 print(my_lst[-1])
 ```
 
+
+{:.output_stream}
+```
+Timmy
+
+```
 
 
 
@@ -91,6 +123,12 @@ print(my_lst[-1])
 print(my_lst[2:4])
 ```
 
+
+{:.output_stream}
+```
+['Richard', 'George']
+
+```
 
 ### Index Practices
 
@@ -113,10 +151,30 @@ example_lst[2]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[-3]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 
@@ -127,6 +185,16 @@ example_lst[1:3]
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+[2, 3]
+```
+
+
+
 ### Clicker Question #1
 
 What will be the output of the following piece of code:
@@ -135,7 +203,7 @@ What will be the output of the following piece of code:
 
 {:.input_area}
 ```python
-q1_lst = ['a', 'b', 'c', 'd']
+q1_lst = ['a', 'b', 'c','d']
 q1_lst[-3:-1]
 ```
 
@@ -155,6 +223,16 @@ q1_lst[-3:-1]
 q1_lst = ['a', 'b', 'c', 'd']
 q1_lst[-3:-1]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['b', 'c']
+```
+
 
 
 - Negative indices index backwards through a collection
@@ -178,8 +256,18 @@ Starting at zero is a convention (some) languages use that comes from how variab
 another_lst = ['Peter', 'Janet', 'Jack', 'Pam', 'Barbara', 'Colin', 'George']
 
 # Get the length of the list, and print it out
-print(len(another_lst))
+len(another_lst)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+7
+```
+
 
 
 ## The `in` Operator
@@ -208,11 +296,31 @@ True in lst_again
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Practice with `in`
@@ -236,10 +344,30 @@ practice_lst = [1, True, 'alpha', 13, 'cogs18']
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 False in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -252,10 +380,30 @@ False in practice_lst
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'cogs18' not in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ### Clicker #2
@@ -292,8 +440,16 @@ bool_1 = False in ex2_lst
 bool_2 = 10 not in ex2_lst
 
 output = bool_1 and bool_2
+
+print(output)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 - The `in` operator checks whether an element is present in a collection, and can be negated with `not`
 
@@ -321,6 +477,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
+
 
 
 {:.input_area}
@@ -338,6 +500,12 @@ updates[1] = 0
 print(updates)
 ```
 
+
+{:.output_stream}
+```
+[1, 0, 3]
+
+```
 
 ## Collections: Tuples
 
@@ -365,6 +533,12 @@ print(tup)
 ```
 
 
+{:.output_stream}
+```
+(2, 'b', False)
+
+```
+
 
 
 {:.input_area}
@@ -372,6 +546,16 @@ print(tup)
 # Check the type of a tuple
 type(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+tuple
+```
+
 
 
 
@@ -385,6 +569,16 @@ tup[0]
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the length of a tuple
@@ -392,7 +586,17 @@ len(tup)
 ```
 
 
-### Tuples are Immuatable
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+### Tuples are Immutable
 
 
 
@@ -400,6 +604,31 @@ len(tup)
 ```python
 # Tuples are immutable - meaning after they defined, you can't change them
 tup[2] = 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-46-e8de1b16583c> in <module>()
+      1 # Tuples are immutable - meaning after they defined, you can't change them
+----> 2 tup[2] = 1
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -429,6 +658,16 @@ my_str[2]
 
 
 
+
+{:.output_data_text}
+```
+'e'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Ask if an item is in a string
@@ -438,11 +677,31 @@ my_str[2]
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Check the length of a string
 len(my_str)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+13
+```
+
 
 
 ### SideNote: using counters
@@ -465,6 +724,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 
 
 {:.input_area}
@@ -473,6 +738,12 @@ counter = counter + 1
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 ## Pulling it Together: Collections, Membership & Conditionals
 
@@ -488,16 +759,24 @@ things_that_are_good = ['python', 'data', 'science', 'tacos']
 
 counter = 0
 
-if 'python' in thing_that_are_good:
+if 'python' in things_that_are_good:
     counter = counter + 1
 
-if len(thing_that_are_good) == 4:
+if len(things_that_are_good) == 4:
     counter = counter + 1
     
 if things_that_are_good[2] == 'data':
-    counter = counter + 1
+    counter = counter + 1 
+    
+print(counter)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 <pre> a) 0   b) 1   c) 2   d) 3   e) 4 </pre>
 

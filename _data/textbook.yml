@@ -33,4 +33,13 @@ chapters:
 - class: level_0
   title: 09-functionsi
   url: /chapters/09-FunctionsI
+- class: level_0
+  title: 10-algorithms
+  url: /chapters/10-Algorithms
+- class: level_0
+  title: A1-syntax
+  url: /chapters/A1-Syntax
+- class: level_0
+  title: A2-examples
+  url: /chapters/A2-Examples
 first_chapter_url: /chapters/00-Introduction
