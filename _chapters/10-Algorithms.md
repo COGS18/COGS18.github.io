@@ -59,7 +59,7 @@ def sort_array(array_to_sort):
 
     is_sorted = False    # Keeps track of when we are done sorting
     sorted_array = []    # A new list that we will use to 
-    
+     
     while not is_sorted:
 
         lowest = None
@@ -123,9 +123,19 @@ Using our sort_array function from above, what will the following code snippet p
 
 {:.input_area}
 ```python
-data = ['a', 'c', 'b']
+data = ['a', 'c', 'b'] 
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['a', 'b', 'c']
+```
+
 
 
 A) ['a', 'c', 'b'] | B) ['a', 'b', 'c'] | C) [97, 98, 99]| D) None | E) This code will fail
@@ -143,7 +153,17 @@ sort_array(data)
 ```
 
 
-A) [True, True, False] | B) [True, False, True] | C) [0, 1, 1]]| D) None | E) This code will fail
+
+
+
+{:.output_data_text}
+```
+[False, True, True]
+```
+
+
+
+A) [False, True, True] | B) [True, False, True] | C) [0, 1, 1]]| D) [True, True, False] | E) This code will fail
 
 ### Clicker Question #5
 
@@ -158,7 +178,17 @@ sort_array(data)
 ```
 
 
-A) [True, True, False] | B) [True, False, True] | C) [0, 1, 1]]| D) None | E) This code will fail
+
+
+
+{:.output_data_text}
+```
+[[1, 2], [3, 4]]
+```
+
+
+
+A) [[3, 4], [1, 2]]  | B) [1, 2, 3, 4] | C) [[1, 2], [3, 4]]| D) None | E) This code will fail
 
 ## SideNote: `sorted`
 

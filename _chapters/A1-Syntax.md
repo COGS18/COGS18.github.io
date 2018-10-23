@@ -121,6 +121,71 @@ Python is a whitespace language, which means that it matters where there is 'bla
 
 This whitespace is used to interpret the organization of the code - an indentation in Python is used to indicate a code block. 
 
+
+
+{:.input_area}
+```python
+# Example of marking code blocks with indentation
+
+condition = True
+if condition:
+    #       ^ this colon opens a code block
+    #       Everything below this colon, part of the same code block, should be one indentation to the right
+    print('Inside code block')
+
+# When we want to end the code block, we step back one indentation to the right
+other_thing = "This is now outside the indented code block from above"
+```
+
+
+{:.output_stream}
+```
+Inside code block
+
+```
+
+If you open a new code block inside a code block, indent one more level. 
+
+
+
+{:.input_area}
+```python
+# Example with multiple indentations
+my_list = [False, True, False]
+
+print('Before the loop')
+for element in my_list:
+    
+    # Indent one level to be inside the for loop code
+    print('\tInside the loop - at the top.')
+    
+    if element == True:
+        
+        # Indent again to be inside the conditional (also still inside the loop)
+        print('\t\tInside the conditional, inside the loop.')
+    
+    # Step back one indent, now outside the conditional, but still inside the loop
+    print('\tInside the loop - at the bottom.')
+
+# Step back one more, to be outside both the loop and the conditional
+print('After the loop.')
+```
+
+
+{:.output_stream}
+```
+Before the loop
+	Inside the loop - at the top.
+	Inside the loop - at the bottom.
+	Inside the loop - at the top.
+		Inside the conditional, inside the loop.
+	Inside the loop - at the bottom.
+	Inside the loop - at the top.
+	Inside the loop - at the bottom.
+After the loop.
+
+```
+
 Note that whitespace within lines does not actually matter. 
 
 However, it does make code harder to read - so the stylistic convention is to always use one space between things. 
@@ -206,7 +271,13 @@ False
 For the full list of order of operations in Python, check [here](http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/op_precedence.html).
 </div>
 
-## Literals
+## String Literals
+
+'Literals' mean to interpret what's written as a string containing the literal characters that are written, and not as a variable name or similar. 
+
+String literals are denoted with single quote (') or double quote ("). 
+
+Single quotes and double quotes are effectively equivalent - it doesn't matter which one you use. 
 
 
 
@@ -268,7 +339,11 @@ Multi-line strings use triple quotes (can be triple single or double quotes).
 
 ### Escapes
 
+Inside a string, you can use the escape character, which is backslash (\), to 'escape' the next character. 
 
+This means that the next character should be interpreted as something other than it's literal character value. 
+
+For example, we can use this to indicate spacings, such as tabs and new lines.
 
 
 
@@ -289,13 +364,11 @@ print("\n Escape 'n' is a newline.")
 
 ## Keywords
 
-Python has a list of special 
+Python has a list of special 'keywords', that do special things. 
 
-In Jupyter notebook, keywords
+In Jupyter notebooks, keywords are highlighted in bolded green, to indicate their special status. 
 
 Keywords are single words, and, other than `True`, `False` and `None`, all  that are written as all lower-case.
-
-Keywords are protected in Python, meaning if you try
 
 
 
@@ -320,6 +393,8 @@ print(keyword.kwlist)
 
 ```
 
+Keywords are protected in Python, meaning if you try to assign them a new value, this will fail. 
+
 
 
 {:.input_area}
@@ -332,7 +407,7 @@ None = '12'
 
 {:.output_traceback_line}
 ```
-  File "<ipython-input-19-97af3c21e190>", line 2
+  File "<ipython-input-21-97af3c21e190>", line 2
     None = '12'
                ^
 SyntaxError: can't assign to keyword
