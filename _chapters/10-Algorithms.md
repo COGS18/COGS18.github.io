@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/09-FunctionsI
   title: '09-functionsi'
 nextchapter:
-  url: /chapters/A1-Syntax
-  title: 'A1-syntax'
+  url: /chapters/11-FunctionsII
+  title: '11-functionsii'
 redirect_from:
   - '/chapters/10-algorithms'
 ---

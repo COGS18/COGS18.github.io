@@ -37,6 +37,9 @@ chapters:
   title: 10-algorithms
   url: /chapters/10-Algorithms
 - class: level_0
+  title: 11-functionsii
+  url: /chapters/11-FunctionsII
+- class: level_0
   title: A1-syntax
   url: /chapters/A1-Syntax
 - class: level_0
