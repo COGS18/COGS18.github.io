@@ -40,7 +40,7 @@ All course materials are openly available and downloadable from this website. Ma
 ### Coding Labs
 
 {:.text-content}
-An overview of the Coding Labs is available [here](/intro/codingLabs/overview.pdf).
+An overview of the Coding Labs is available [here](/intro/labs/overview.pdf).
 
 
 {:.sub-title}

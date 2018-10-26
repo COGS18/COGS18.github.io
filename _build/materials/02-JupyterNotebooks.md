@@ -12,7 +12,6 @@ next_page:
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
-
 # Jupyter Notebooks
 
 This is a quick introduction to Jupyter notebooks.

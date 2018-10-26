@@ -1,7 +1,7 @@
 ---
 title: 'Assignments'
 prev_page:
-  url: /codingLabs/CL3-AlgorithmicThinking
+  url: /labs/CL3-AlgorithmicThinking
   title: 'CL3-AlgorithmicThinking'
 next_page:
   url: /assignments/A1-GettingStarted

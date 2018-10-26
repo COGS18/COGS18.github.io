@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>A1-GettingStarted</title>
+  <meta name="description" content="Assignment 1: Getting Started">
+
+  <link rel="canonical" href="http://localhost:4000/assignments/A1-GettingStarted/">
+  <link rel="alternate" type="application/rss+xml" title="COGS 18 - Introduction To Python" href="http://localhost:4000/feed.xml">
+
+  <meta property="og:url"         content="http://localhost:4000/assignments/A1-GettingStarted/" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="A1-GettingStarted" />
+<meta property="og:description" content="Assignment 1: Getting Started" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://localhost:4000/assignments/A1-GettingStarted/",
+  "headline":
+    "A1-GettingStarted",
+  "datePublished":
+    "2018-10-26T12:33:06-07:00",
+  "dateModified":
+    "2018-10-26T12:33:06-07:00",
+  "description":
+    "Assignment 1: Getting Started",
+  "author": {
+    "@type": "Person",
+    "name": "Tom Donoghue and Zehua Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Google analytics -->
+  <script src="/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load custom website scripts -->
+  <script src="/assets/js/scripts.js" async></script>
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  <script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  console.log(url)
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return jQuery.param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = $("a").each(function() {
+    var href = this.href;
+    // If the link is an internal link...
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['hub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'hub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + jQuery.param(params);
+      this.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    hubUrl = rest['hub'];
+    if (hubUrl !== undefined) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      link = $("a.interact-button")[0];
+      if (link !== undefined) {
+          // Update the interact link URL
+          var href = link.getAttribute('href');
+          var hub_type = 'binder';
+          if (hub_type === 'binder') {
+            // If binder links exist, we need to re-work them for jupyterhub
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+              first = [hubUrl, 'git-sync'].join('/')
+            } else {
+              first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+            }
+            href = first + '?' + binder2Jupyterhub(href);
+          } else {
+            // If JupyterHub links, we only need to replace the hub url
+            href = href.replace("https://mybinder.org", hubUrl);
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // Assume we're working from a local Jupyter server and remove `/hub`
+              href = href.replace("/hub/user-redirect", "");
+            }
+          }
+          link.setAttribute('href', decodeURIComponent(href));
+
+          // Add text after interact link saying where we're launching
+          hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+          $("a.interact-button").after($('<div class="interact-context">on ' + hubUrlNoHttp + '</div>'));
+
+      }
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+</head>
+
+
+<body>
+    <!-- Show sidebar by default -->
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+    <img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+        data-turbolinks-permanent />
+    <h2 class="c-sidebar__title">
+        <a href="/" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+    </h2>
+    <ul class="c-sidebar__chapters">
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/intro">
+                
+                Home
+            </a>
+
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                
+                Materials
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/01-Tools">
+                        
+                        01-Tools
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/02-JupyterNotebooks">
+                        
+                        02-JupyterNotebooks
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/03-Variables">
+                        
+                        03-Variables
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/04-Operators">
+                        
+                        04-Operators
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/05-Conditionals">
+                        
+                        05-Conditionals
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/06-DataTypes">
+                        
+                        06-DataTypes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/07-Loops">
+                        
+                        07-Loops
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/08-Encodings">
+                        
+                        08-Encodings
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/09-FunctionsI">
+                        
+                        09-FunctionsI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/10-Algorithms">
+                        
+                        10-Algorithms
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/labs">
+                
+                Coding Labs
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                        
+                        CL1-ProgrammingI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1b-Answers">
+                        
+                        CL1b-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2-ProgrammingII">
+                        
+                        CL2-ProgrammingII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2b-Answers">
+                        
+                        CL2b-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3-AlgorithmicThinking">
+                        
+                        CL3-AlgorithmicThinking
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry c-sidebar__entry--active" href="/assignments">
+                
+                Assignments
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections ">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry c-sidebar__entry--active" href="/assignments/A1-GettingStarted">
+                        
+                        A1-GettingStarted
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2-Ciphers">
+                        
+                        A2-Ciphers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A3-Chatbots">
+                        
+                        A3-Chatbots
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+    </ul>
+</nav>
+
+        <main class="c-textbook__page" tabindex="-1">
+            <div class="o-wrapper c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            <div class="o-wrapper">
+                <!-- DOWNLOAD BUTTONS -->
+
+<div class="buttons buttons-custom">
+    <a class="interact-button" href="http://localhost:4000/assets/downloads/assignments/A1-GettingStarted.ipynb.zip">Download Notebook</a>
+</div>
+
+                <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#how-to-complete-assignments">How to complete assignments</a></li>
+  <li><a href="#tips--tricks">Tips &amp; Tricks</a>
+    <ul>
+      <li><a href="#printing-variables">Printing Variables</a></li>
+      <li><a href="#restarting-the-kernel">Restarting the Kernel</a></li>
+    </ul>
+  </li>
+  <li><a href="#example-question">Example Question</a></li>
+  <li><a href="#setup">SETUP</a></li>
+  <li><a href="#part-i---defining-variables">Part I - Defining Variables</a>
+    <ul>
+      <li><a href="#q1---create-variables-05-points">Q1 - Create Variables (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-ii---operations">Part II - Operations</a>
+    <ul>
+      <li><a href="#q2---python-as-a-calculator-05-points">Q2 - Python as a Calculator (0.5 points)</a></li>
+      <li><a href="#q3---string-manipulations-05-points">Q3 - String Manipulations (0.5 points)</a></li>
+      <li><a href="#q4---boolean-comparisons-05-points">Q4 - Boolean Comparisons (0.5 points)</a></li>
+      <li><a href="#q5---value-comparisons-05-points">Q5 - Value Comparisons (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-iii---conditionals">Part III - Conditionals</a>
+    <ul>
+      <li><a href="#q6---conditionals-with-booleans-05-points">Q6 - Conditionals With Booleans (0.5 points)</a></li>
+      <li><a href="#q7---conditionals-with-comparisons-05-points">Q7 - Conditionals With Comparisons (0.5 points)</a></li>
+      <li><a href="#q8---conditionals-with-multiple-options-05-points">Q8 - Conditionals With Multiple Options (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-iv---putting-it-all-together">Part IV - Putting it all together</a>
+    <ul>
+      <li><a href="#q9---multiple-cases-experiment-example-1-point">Q9 - Multiple Cases: Experiment Example (1 point)</a></li>
+      <li><a href="#q10---creating-a-calculator-1-point">Q10 - Creating a Calculator (1 point)</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-end">The End!</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
+                <h1 id="assignment-1-getting-started">Assignment 1: Getting Started</h1>
+
+<p>This assignment covers Variables, Operators &amp; Conditionals.</p>
+
+<p>This assignment is out of 6 points, worth 6% of your grade.</p>
+
+<h2 id="how-to-complete-assignments">How to complete assignments</h2>
+
+<p>Whenever you see:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># YOUR CODE HERE
+raise NotImplementedError()
+</code></pre></div></div>
+
+<p>You need to replace this section with some code that answers the questions and meets the specified criteria. Make sure you remove the ‘raise’ line when you do this (or your notebook will raise an error, regardless of any other code, and thus fail the grading tests).</p>
+
+<p>You should write the answer to the questions in those cells (the ones with <code class="highlighter-rouge"># YOUR CODE HERE</code>), but you can also add extra cells to explore / investigate things if you need / want to.</p>
+
+<p>Any cell with ‘assert’ statements in it is a test cell. You should not try to change or delete these cells. Note that there might be more than one assert that tests a particular question.</p>
+
+<p>If a test does fail, reading the error that is printed out should let you know which test failed, which may be useful for fixing it.</p>
+
+<p>Note that some cells, including the test cells, may be read only, which means they won’t let you edit them. If you cannot edit a cell - that is normal, and you shouldn’t need to edit that cell.</p>
+
+<h2 id="tips--tricks">Tips &amp; Tricks</h2>
+
+<p>The following are a couple tips &amp; tricks that may help you if you get stuck on anything.</p>
+
+<h3 id="printing-variables">Printing Variables</h3>
+
+<p>A reminder that you can (and should) print and check variables as you go.</p>
+
+<p>This allows you to check what values they hold, and fix things if anything unexpected happens.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Define a variable</span>
+<span class="n">math_result</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">4</span>
+
+<span class="c"># Print out the value(s) of a variable.</span>
+<span class="k">print</span><span class="p">(</span><span class="n">math_result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="restarting-the-kernel">Restarting the Kernel</h3>
+
+<p>A reminder that sometimes if you run cells out of order, you can end up over-writing things in your namespace.</p>
+
+<p>If things seem to go weird, a good first step is to restart the kernel, which you can do from the kernel menu above.</p>
+
+<p>Even if everything seems to be working, it’s a nice check to ‘Restart &amp; Run All’, to make sure everything runs properly in order.</p>
+
+<h2 id="example-question">Example Question</h2>
+
+<p>Define a variable called <code class="highlighter-rouge">my_int</code> that stores the value 17.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="n">my_int</span> <span class="o">=</span> <span class="mi">17</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This is a test cell. It checks that the code you wrote does what it's supposed to</span>
+<span class="k">assert</span>  <span class="n">my_int</span>                     <span class="c"># This tests that a variable exists</span>
+<span class="k">assert</span>  <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_int</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>    <span class="c"># This tests that a variable is of a particular type</span>
+<span class="k">assert</span>  <span class="n">my_int</span> <span class="o">==</span> <span class="mi">17</span>               <span class="c"># This tests that a variable has a specified value</span>
+</code></pre></div></div>
+
+<h2 id="setup">SETUP</h2>
+
+<p>Run the following cell before you start working on the assignment.</p>
+
+<p>This is going to make a helper folder on your computer, for some of the grading and checking things in this assignment.</p>
+
+<p>You do not need to interact with this folder maunally at all - everything is automatic.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s">'A1Code'</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s">'A1Code'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="part-i---defining-variables">Part I - Defining Variables</h2>
+
+<p>First, we will start by defining some Python variables.</p>
+
+<h3 id="q1---create-variables-05-points">Q1 - Create Variables (0.5 points)</h3>
+
+<p>Create the following variables:</p>
+<ul>
+  <li>a variable called <code class="highlighter-rouge">number</code> that stores the value 23</li>
+  <li>a variable called <code class="highlighter-rouge">decimal</code> that stores the value 12.5</li>
+  <li>a variable called <code class="highlighter-rouge">word</code> that stores the value ‘cogs18’</li>
+  <li>a variable called <code class="highlighter-rouge">truth</code> that stores the value True</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create the variables</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q1</span>
+
+<span class="c"># Check that variable `number` is an int, and has the correct value</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">23</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q1</span>
+
+<span class="c"># Check that variable `decimal` is a float, and has the correct value</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">decimal</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">decimal</span> <span class="o">==</span> <span class="mf">12.5</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q1</span>
+
+<span class="c"># Check that variable `words` is a string, and has the correct value</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">word</span> <span class="o">==</span> <span class="s">"cogs18"</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q1</span>
+
+<span class="c"># Check that variable `truth` is a boolean, and has the correct value</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">truth</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">truth</span> <span class="o">==</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<h2 id="part-ii---operations">Part II - Operations</h2>
+
+<h3 id="q2---python-as-a-calculator-05-points">Q2 - Python as a Calculator (0.5 points)</h3>
+
+<p>Do the following calculations:</p>
+<ul>
+  <li>Set <code class="highlighter-rouge">ans_1</code> as the result of int_1 multiplied by int_2</li>
+  <li>Set <code class="highlighter-rouge">ans_2</code> as the result of float_1 divided by float_2, with int_2 then added</li>
+  <li>Set <code class="highlighter-rouge">ans_3</code> as the result of the remainder of int_1 divided by int_2</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># These variables provided for you</span>
+<span class="n">int_1</span> <span class="o">=</span> <span class="mi">47</span>
+<span class="n">int_2</span> <span class="o">=</span> <span class="mi">12</span>
+
+<span class="n">float_1</span> <span class="o">=</span> <span class="mf">47.5</span>
+<span class="n">float_2</span> <span class="o">=</span> <span class="mf">19.0</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q2  [Note: Includes Hidden Tests]</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ans_1</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q2  [Note: Includes Hidden Tests]</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ans_2</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q2  [Note: Includes Hidden Tests]</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ans_3</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q3---string-manipulations-05-points">Q3 - String Manipulations (0.5 points)</h3>
+
+<p>Using the strings provided, concatenate them together into the string <code class="highlighter-rouge">Python is fun!</code>.</p>
+
+<p>Save this result to a variable called <code class="highlighter-rouge">str_output</code>.</p>
+
+<p>Note: make sure to add spaces between words when concatenating together.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># These variables provided for you</span>
+<span class="n">str_1</span> <span class="o">=</span> <span class="s">"Python"</span>
+<span class="n">str_2</span> <span class="o">=</span> <span class="s">"is"</span>
+<span class="n">str_3</span> <span class="o">=</span> <span class="s">"fun!"</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q3</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">str_output</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">str_output</span> <span class="o">==</span> <span class="s">"Python is fun!"</span>
+</code></pre></div></div>
+
+<h3 id="q4---boolean-comparisons-05-points">Q4 - Boolean Comparisons (0.5 points)</h3>
+
+<p>Using the variables provided, do the following boolean logical comparisons:</p>
+<ul>
+  <li>Define <code class="highlighter-rouge">bool_comp_1</code> to be the logical <code class="highlighter-rouge">and</code> of <code class="highlighter-rouge">bool_1</code> and <code class="highlighter-rouge">bool_2</code></li>
+  <li>Define <code class="highlighter-rouge">bool_comp_2</code> to be the logical <code class="highlighter-rouge">or</code> of  <code class="highlighter-rouge">bool_1</code> and <code class="highlighter-rouge">bool_2</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># These variables provided for you</span>
+<span class="n">bool_1</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">bool_2</span> <span class="o">=</span> <span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q4 [Note: Includes Hidden Tests]</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">bool_comp_1</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q4 [Note: Includes Hidden Tests]</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">bool_comp_2</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q5---value-comparisons-05-points">Q5 - Value Comparisons (0.5 points)</h3>
+
+<p>Do the following value comparisons:</p>
+<ul>
+  <li>Check if the value stored in <code class="highlighter-rouge">comp_val_1</code> is less than or equal to the value stored in <code class="highlighter-rouge">comp_val_2</code>
+    <ul>
+      <li>Store the result of this comparison to variable called <code class="highlighter-rouge">comp_1</code></li>
+    </ul>
+  </li>
+  <li>Check if the value stored in <code class="highlighter-rouge">comp_val_3</code> is not equal to (is different from) the value stored in <code class="highlighter-rouge">comp_val_4</code>
+    <ul>
+      <li>Store the result of this comparison to variable called <code class="highlighter-rouge">comp_2</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># These variables provided for you</span>
+<span class="n">comp_val_1</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="n">comp_val_2</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">comp_val_3</span> <span class="o">=</span> <span class="mi">23</span>
+<span class="n">comp_val_4</span> <span class="o">=</span> <span class="mi">22</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q5 [Note: Includes Hidden Tests]</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">comp_1</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q5 [Note: Includes Hidden Tests]</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">comp_2</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="part-iii---conditionals">Part III - Conditionals</h2>
+
+<h3 id="q6---conditionals-with-booleans-05-points">Q6 - Conditionals With Booleans (0.5 points)</h3>
+
+<p>Write a conditional that tests a boolean variable <code class="highlighter-rouge">status</code>, specifically:</p>
+<ul>
+  <li>if <code class="highlighter-rouge">status</code> evaluates as <code class="highlighter-rouge">True</code>, set the variable <code class="highlighter-rouge">output</code> as the string “GOOD”</li>
+  <li>else (meaning <code class="highlighter-rouge">status</code> must evaluate as <code class="highlighter-rouge">False</code>), set the variable <code class="highlighter-rouge">output</code> as the string “BAD”</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A1Code</span><span class="o">/</span><span class="n">q6_code</span><span class="o">.</span><span class="n">py</span>
+<span class="c"># ^ You can ignore this line - it is used to help check your code</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q6</span>
+
+<span class="c"># Set stats - check for True case</span>
+<span class="n">status</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q6_code</span><span class="o">.</span><span class="n">py</span>  
+<span class="k">assert</span> <span class="n">output</span> <span class="o">==</span> <span class="s">"GOOD"</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q6</span>
+
+<span class="c"># Set stats - check for False case</span>
+<span class="n">status</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q6_code</span><span class="o">.</span><span class="n">py</span>  
+<span class="k">assert</span> <span class="n">output</span> <span class="o">==</span> <span class="s">"BAD"</span>
+</code></pre></div></div>
+
+<h3 id="q7---conditionals-with-comparisons-05-points">Q7 - Conditionals With Comparisons (0.5 points)</h3>
+
+<p>Consider a case in which you are running an experiment, with multiple groups of subjects, including young subjects and old subjects.</p>
+
+<p>Based on the subjects age group, you want to do a different analysis - specifically if they are in the old group.</p>
+
+<p>Write a conditional with an <code class="highlighter-rouge">if</code> and an <code class="highlighter-rouge">else</code>:</p>
+<ul>
+  <li>The <code class="highlighter-rouge">if</code> should check if the variable <code class="highlighter-rouge">subj_age</code> has the value <code class="highlighter-rouge">'old'</code> (a string).
+    <ul>
+      <li>If so, it should set the variable <code class="highlighter-rouge">change_analysis</code> to the value <code class="highlighter-rouge">True</code> (a boolean)</li>
+    </ul>
+  </li>
+  <li>Else, the variable <code class="highlighter-rouge">change_analysis</code> should be set to False (a boolean)</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A1Code</span><span class="o">/</span><span class="n">q7_code</span><span class="o">.</span><span class="n">py</span>
+<span class="c"># ^ You can ignore this line - it is used to help check your code</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q7</span>
+
+<span class="c"># Set subj_age to old</span>
+<span class="n">subj_age</span> <span class="o">=</span> <span class="s">'old'</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q7_code</span><span class="o">.</span><span class="n">py</span>  
+
+<span class="c"># Check that code </span>
+<span class="k">assert</span> <span class="n">change_analysis</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">change_analysis</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q7</span>
+
+<span class="c"># Change subj_age</span>
+<span class="n">subj_age</span> <span class="o">=</span> <span class="s">'young'</span>
+
+<span class="c"># Re-run code and make sure the conditional still works</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q7_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">change_analysis</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">change_analysis</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="q8---conditionals-with-multiple-options-05-points">Q8 - Conditionals With Multiple Options (0.5 points)</h3>
+
+<p>Sometimes we may need to check multiple conditions, with many (more than two) possibilities.</p>
+
+<p>Create a conditional with the following outline:</p>
+<ul>
+  <li>If <code class="highlighter-rouge">check_1</code> and <code class="highlighter-rouge">check_2</code> variables are both True, it should set the value of a variable <code class="highlighter-rouge">outcome</code> to the string ‘BOTH’</li>
+  <li>Elif <code class="highlighter-rouge">check_1</code> is True and <code class="highlighter-rouge">check_2</code> is False, it should set the value of a variable <code class="highlighter-rouge">outcome</code> to the string ‘ONE’</li>
+  <li>Elif <code class="highlighter-rouge">check_1</code> is False and <code class="highlighter-rouge">check_2</code> is True, it should set the value of a variable <code class="highlighter-rouge">outcome</code> to the string ‘TWO’</li>
+  <li>Else (meaning both must be False), it should set the value of a variable <code class="highlighter-rouge">outcome</code> to the string ‘NEITHER’</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A1Code</span><span class="o">/</span><span class="n">q8_code</span><span class="o">.</span><span class="n">py</span>
+<span class="c"># ^ You can ignore this line - it is used to help check your code</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q8</span>
+
+<span class="c"># Check 'BOTH' case</span>
+<span class="n">check_1</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">check_2</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q8_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">outcome</span> <span class="o">==</span> <span class="s">'BOTH'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q8</span>
+
+<span class="c"># Check 'ONE' case</span>
+<span class="n">check_1</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">check_2</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q8_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">outcome</span> <span class="o">==</span> <span class="s">'ONE'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q8</span>
+
+<span class="c"># Check 'TWO' case</span>
+<span class="n">check_1</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">check_2</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q8_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">outcome</span> <span class="o">==</span> <span class="s">'TWO'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q8</span>
+
+<span class="c"># Check 'NEITHER' case</span>
+<span class="n">check_1</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">check_2</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q8_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">outcome</span> <span class="o">==</span> <span class="s">'NEITHER'</span>
+</code></pre></div></div>
+
+<h2 id="part-iv---putting-it-all-together">Part IV - Putting it all together</h2>
+
+<h3 id="q9---multiple-cases-experiment-example-1-point">Q9 - Multiple Cases: Experiment Example (1 point)</h3>
+
+<p>Lets revisit the setup of Q7 - in which we wanted to set a variable to indicate if a subject in an experiment was in a particular group, and thus required different processing. In this question we will extend that premise, by writing a set of conditionals to mark an interaction between subject’s age and score.</p>
+
+<p>For example, it is common for behavioural performance to decrease with age. However, some subjects do not seem to show this behavioural deficit with age. Investigating such ‘super-ages’ could be useful for learning about the cognitive decline of aging.</p>
+
+<p>Write a conditional that does the following:</p>
+<ul>
+  <li>If the variable <code class="highlighter-rouge">subj_age</code> has the value <code class="highlighter-rouge">old</code> and the variable <code class="highlighter-rouge">score</code> is greater than 25:
+    <ul>
+      <li>set the variable <code class="highlighter-rouge">subj_status</code> to the string ‘Super Ager’</li>
+    </ul>
+  </li>
+  <li>Elif the variable <code class="highlighter-rouge">subj_age</code> has the value <code class="highlighter-rouge">old</code> and the variable <code class="highlighter-rouge">score</code> is less than or equal to 25:
+    <ul>
+      <li>set the variable <code class="highlighter-rouge">subj_status</code> to the string ‘Normal Ager’</li>
+    </ul>
+  </li>
+  <li>Elif the variable <code class="highlighter-rouge">subj_age</code> has the value <code class="highlighter-rouge">young</code> and the variable <code class="highlighter-rouge">score</code> is greater than 25:
+    <ul>
+      <li>set the variable <code class="highlighter-rouge">subj_status</code> to the string ‘Normal Youth’</li>
+    </ul>
+  </li>
+  <li>Elif the variable <code class="highlighter-rouge">subj_age</code> has the value <code class="highlighter-rouge">young</code> and the variable <code class="highlighter-rouge">score</code> is less than or equal to 25:
+    <ul>
+      <li>set the variable <code class="highlighter-rouge">subj_status</code> to the string ‘Bad Youth’</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A1Code</span><span class="o">/</span><span class="n">q9_code</span><span class="o">.</span><span class="n">py</span>
+<span class="c"># ^ You can ignore this line - it is used to help check your code</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q9</span>
+
+<span class="n">subj_age</span> <span class="o">=</span> <span class="s">'old'</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">28</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q9_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">subj_status</span> <span class="o">==</span> <span class="s">'Super Ager'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q9</span>
+
+<span class="n">subj_age</span> <span class="o">=</span> <span class="s">'old'</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">22</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q9_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">subj_status</span> <span class="o">==</span> <span class="s">'Normal Ager'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q9</span>
+
+<span class="n">subj_age</span> <span class="o">=</span> <span class="s">'young'</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">29</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q9_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">subj_status</span> <span class="o">==</span> <span class="s">'Normal Youth'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q9</span>
+
+<span class="n">subj_age</span> <span class="o">=</span> <span class="s">'young'</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">21</span>
+
+<span class="c"># This line is a way to run &amp; re-run the code you wrote</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q9_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">subj_status</span> <span class="o">==</span> <span class="s">'Bad Youth'</span>
+</code></pre></div></div>
+
+<h3 id="q10---creating-a-calculator-1-point">Q10 - Creating a Calculator (1 point)</h3>
+
+<p>Finally we will write a flexible calculater program, that performs multiple operations (addition, subtraction, multiplication and division) on pairs of numbers. To do so, the code will use a string variable <code class="highlighter-rouge">operation</code> that indicates with operation to perform, and two numerical values, <code class="highlighter-rouge">num1</code> and <code class="highlighter-rouge">num2</code>, upon which the operation is performed. The calculator will assign the output of it’s calculation to a variable called <code class="highlighter-rouge">answer</code>.</p>
+
+<p>To create this calculater, we will be using conditionals.</p>
+
+<p>In particular, create a calculator such that:</p>
+<ul>
+  <li>if <code class="highlighter-rouge">operation</code> has the value ‘add’, then <code class="highlighter-rouge">answer</code> gets set as the sum of <code class="highlighter-rouge">num1</code> and <code class="highlighter-rouge">num2</code></li>
+  <li>elif <code class="highlighter-rouge">operation</code> has the value ‘subtract’, then <code class="highlighter-rouge">answer</code> gets set as the substraction of <code class="highlighter-rouge">num2</code> from <code class="highlighter-rouge">num2</code></li>
+  <li>elif <code class="highlighter-rouge">operation</code> has the value ‘multiply’, then <code class="highlighter-rouge">answer</code> gets set as the multiplication of <code class="highlighter-rouge">num1</code> and <code class="highlighter-rouge">num2</code></li>
+  <li>elif <code class="highlighter-rouge">operation</code> has the value ‘divide’, then <code class="highlighter-rouge">answer</code> gets set as the division of <code class="highlighter-rouge">num1</code> by <code class="highlighter-rouge">num2</code></li>
+</ul>
+
+<p>For an example, with the following variables to start with:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>operation = 'multiply'
+num1 = 2
+num2 = 3
+</code></pre></div></div>
+<p>We should expect our program to execute and set the variable <code class="highlighter-rouge">answer</code> to be <code class="highlighter-rouge">6</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A1Code</span><span class="o">/</span><span class="n">q10_code</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Set numbers for tests</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="mi">21</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">3</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q10</span>
+
+<span class="c"># Test for sum</span>
+<span class="n">operation</span> <span class="o">=</span> <span class="s">'add'</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q10_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">answer</span> <span class="o">==</span> <span class="mi">24</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q10</span>
+
+<span class="c"># Test for subtract</span>
+<span class="n">operation</span> <span class="o">=</span> <span class="s">'subtract'</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q10_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">answer</span> <span class="o">==</span> <span class="mi">18</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q10</span>
+
+<span class="c"># Test for multiply</span>
+<span class="n">operation</span> <span class="o">=</span> <span class="s">'multiply'</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q10_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">answer</span> <span class="o">==</span> <span class="mi">63</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q10</span>
+
+<span class="c"># Test for divide</span>
+<span class="n">operation</span> <span class="o">=</span> <span class="s">'divide'</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q10_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">answer</span> <span class="o">==</span> <span class="mi">7</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## TESTS FOR Q10</span>
+
+<span class="c"># Test unrecognized operation</span>
+<span class="n">operation</span> <span class="o">=</span> <span class="s">'not a thing'</span>
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A1Code</span><span class="o">/</span><span class="n">q10_code</span><span class="o">.</span><span class="n">py</span>
+<span class="k">assert</span> <span class="n">answer</span> <span class="o">==</span> <span class="bp">None</span>
+</code></pre></div></div>
+
+<h2 id="the-end">The End!</h2>
+
+<p>This is the end of the assignment!</p>
+
+<p>Have a look back over your answers, and also make sure to <code class="highlighter-rouge">Restart &amp; Run All</code> from the kernel menu to double check that everything is working properly. When you are ready to submit your assignment, upload it to TritonED under Assignment-1.</p>
+
+
+                <nav class="c-page__nav">
+  
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/assignments">
+      〈 <span class="u-margin-right-tiny"></span> Assignments
+    </a>
+  
+
+  
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/assignments/A2-Ciphers">
+      A2-Ciphers <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

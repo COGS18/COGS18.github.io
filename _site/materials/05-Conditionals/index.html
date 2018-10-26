@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>05-Conditionals</title>
+  <meta name="description" content="Conditionals">
+
+  <link rel="canonical" href="http://localhost:4000/materials/05-Conditionals/">
+  <link rel="alternate" type="application/rss+xml" title="COGS 18 - Introduction To Python" href="http://localhost:4000/feed.xml">
+
+  <meta property="og:url"         content="http://localhost:4000/materials/05-Conditionals/" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="05-Conditionals" />
+<meta property="og:description" content="Conditionals" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://localhost:4000/materials/05-Conditionals/",
+  "headline":
+    "05-Conditionals",
+  "datePublished":
+    "2018-10-26T12:33:06-07:00",
+  "dateModified":
+    "2018-10-26T12:33:06-07:00",
+  "description":
+    "Conditionals",
+  "author": {
+    "@type": "Person",
+    "name": "Tom Donoghue and Zehua Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Google analytics -->
+  <script src="/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load custom website scripts -->
+  <script src="/assets/js/scripts.js" async></script>
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  <script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  console.log(url)
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return jQuery.param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = $("a").each(function() {
+    var href = this.href;
+    // If the link is an internal link...
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['hub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'hub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + jQuery.param(params);
+      this.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    hubUrl = rest['hub'];
+    if (hubUrl !== undefined) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      link = $("a.interact-button")[0];
+      if (link !== undefined) {
+          // Update the interact link URL
+          var href = link.getAttribute('href');
+          var hub_type = 'binder';
+          if (hub_type === 'binder') {
+            // If binder links exist, we need to re-work them for jupyterhub
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+              first = [hubUrl, 'git-sync'].join('/')
+            } else {
+              first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+            }
+            href = first + '?' + binder2Jupyterhub(href);
+          } else {
+            // If JupyterHub links, we only need to replace the hub url
+            href = href.replace("https://mybinder.org", hubUrl);
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // Assume we're working from a local Jupyter server and remove `/hub`
+              href = href.replace("/hub/user-redirect", "");
+            }
+          }
+          link.setAttribute('href', decodeURIComponent(href));
+
+          // Add text after interact link saying where we're launching
+          hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+          $("a.interact-button").after($('<div class="interact-context">on ' + hubUrlNoHttp + '</div>'));
+
+      }
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+</head>
+
+
+<body>
+    <!-- Show sidebar by default -->
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+    <img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+        data-turbolinks-permanent />
+    <h2 class="c-sidebar__title">
+        <a href="/" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+    </h2>
+    <ul class="c-sidebar__chapters">
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/intro">
+                
+                Home
+            </a>
+
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                
+                Materials
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections ">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/01-Tools">
+                        
+                        01-Tools
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/02-JupyterNotebooks">
+                        
+                        02-JupyterNotebooks
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/03-Variables">
+                        
+                        03-Variables
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/04-Operators">
+                        
+                        04-Operators
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry c-sidebar__entry--active" href="/materials/05-Conditionals">
+                        
+                        05-Conditionals
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/06-DataTypes">
+                        
+                        06-DataTypes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/07-Loops">
+                        
+                        07-Loops
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/08-Encodings">
+                        
+                        08-Encodings
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/09-FunctionsI">
+                        
+                        09-FunctionsI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/10-Algorithms">
+                        
+                        10-Algorithms
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/labs">
+                
+                Coding Labs
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                        
+                        CL1-ProgrammingI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1b-Answers">
+                        
+                        CL1b-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2-ProgrammingII">
+                        
+                        CL2-ProgrammingII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2b-Answers">
+                        
+                        CL2b-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3-AlgorithmicThinking">
+                        
+                        CL3-AlgorithmicThinking
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/assignments">
+                
+                Assignments
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                        
+                        A1-GettingStarted
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2-Ciphers">
+                        
+                        A2-Ciphers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A3-Chatbots">
+                        
+                        A3-Chatbots
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+    </ul>
+</nav>
+
+        <main class="c-textbook__page" tabindex="-1">
+            <div class="o-wrapper c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            <div class="o-wrapper">
+                <div style="display:flex">
+                    <!-- DOWNLOAD BUTTONS -->
+
+<div class="buttons buttons-custom">
+    <a class="interact-button" href="http://localhost:4000/assets/downloads/materials/05-Conditionals.ipynb.zip">Download Notebook</a>
+</div>
+
+                    <!-- PDF BUTTONS -->
+
+<div class="buttons buttons-custom">
+    <a class="interact-button" href="http://localhost:4000/assets/pdf/05-Conditionals.pdf">PDF Version</a>
+</div>
+
+                </div>
+                <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#recap-booleans">Recap: Booleans</a></li>
+  <li><a href="#clicker-question-1">Clicker Question #1</a></li>
+  <li><a href="#clicker-question-answer">Clicker Question Answer</a></li>
+  <li><a href="#clicker-question-2">Clicker Question 2</a></li>
+  <li><a href="#clicker-questions-answer">Clicker Questions Answer</a></li>
+  <li><a href="#clicker-question-3">Clicker Question #3</a></li>
+  <li><a href="#clicker-question-answer-1">Clicker Question Answer</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
+                <h1 id="conditionals">Conditionals</h1>
+
+<h3 id="recap-booleans">Recap: Booleans</h3>
+
+<p>Booleans are a data type that can take values of <code class="highlighter-rouge">True</code> or <code class="highlighter-rouge">False</code>.</p>
+
+<h2 id="conditionals-if">Conditionals: if</h2>
+
+<div class="alert alert-success">
+Conditionals are statements that check for a condition, using the `if` statement, and then only execute a set of code if the condition evaluates as `True`.
+</div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">condition</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'This code executes if the condition evaluates as True.'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This code executes if the condition evaluates as True.
+
+</code></pre></div></div>
+
+<h2 id="conditional-else">Conditional: else</h2>
+
+<div class="alert alert-success">
+After an `if`, you can use an `else` that will run if the conditional(s) above have not run.
+</div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">condition</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'This code executes if the condition evaluates as True.'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">'This code executes if the condition evaluates as False'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This code executes if the condition evaluates as True.
+
+</code></pre></div></div>
+
+<h2 id="conditional-elif">Conditional: elif</h2>
+
+<div class="alert alert-success">
+After an if statement, you can have any number of `elif`'s (meaning 'else if') to check other conditions.
+</div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">condition_1</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">condition_2</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">if</span> <span class="n">condition_1</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'This code executes if condition_1 evaluates as True.'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'This code executes if condition_1 did not evaluate as True, but condition_2 does.'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">'This code executes if both condition_1 and condition_2 evaluate as False'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This code executes if condition_1 did not evaluate as True, but condition_2 does.
+
+</code></pre></div></div>
+
+<h2 id="conditionals-with-value-comparisons">Conditionals With Value Comparisons</h2>
+
+<div class="alert alert-success">
+Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
+</div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">language</span> <span class="o">=</span> <span class="s">"Python"</span>
+
+<span class="k">if</span> <span class="n">language</span> <span class="o">==</span> <span class="s">"Python"</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Yay!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">language</span> <span class="o">==</span> <span class="s">"Matlab"</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Oh no."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Get yourself a programming language!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Yay!
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Exploring conditionals</span>
+
+<span class="n">number</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'Before Conditional'</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'    If statement execution'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'    Elif statement execution'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'After Conditional'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Before Conditional
+    If statement execution
+After Conditional
+
+</code></pre></div></div>
+
+<h3 id="clicker-question-1">Clicker Question #1</h3>
+
+<p>What will the following code snippet print out:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if False:
+    print("John")
+elif True:
+    print("Paul")
+elif True:
+    print("George")
+else:
+    print("Ringo")
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A) John</td>
+      <td>B) Paul, George, Ringo</td>
+      <td>C) Paul</td>
+      <td>D) Paul, George</td>
+      <td>E) Ringo</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clicker-question-answer">Clicker Question Answer</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="bp">False</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"John"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Paul"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"George"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Ringo"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="clicker-question-2">Clicker Question 2</h3>
+
+<p>What will the following code snippet print out:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if 1 + 1 == 2:
+    print("I did Math")
+elif 1/0:
+    print("I broke Math")
+else:
+    print("I didn't do math")
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A) I did Math</td>
+      <td>B) I broke Math</td>
+      <td>C) I didn’t do math</td>
+      <td>D) This code won’t execute</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clicker-questions-answer">Clicker Questions Answer</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"I did Math"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"I broke Math"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"I didn't do math"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="clicker-question-3">Clicker Question #3</h3>
+
+<p>What will the following code snippet print out:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python = "great"
+
+if True:
+    if python == "great":
+        print("Yay Python!")
+    else:
+        print("Oh no.")
+else:
+    print("I'm here")
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A) Yay Python</td>
+      <td>B) Oh no.</td>
+      <td>C) I’m here</td>
+      <td>D) This code won’t execute</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clicker-question-answer-1">Clicker Question Answer</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="o">=</span> <span class="s">"great"</span>
+
+<span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">python</span> <span class="o">==</span> <span class="s">"great"</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Yay Python!"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Oh no."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"I'm here"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="properties-of-conditionals">Properties of conditionals</h2>
+
+<ul>
+  <li>All conditionals start with an <code class="highlighter-rouge">if</code>, can have an optional and variable number of <code class="highlighter-rouge">elif</code>’s and an optional <code class="highlighter-rouge">else</code> statement</li>
+  <li>Conditionals can take any expression that can be evaluated as <code class="highlighter-rouge">True</code> or <code class="highlighter-rouge">False</code>.</li>
+  <li>At most one component (<code class="highlighter-rouge">if</code> / <code class="highlighter-rouge">elif</code> / <code class="highlighter-rouge">else</code>) of a conditional will run</li>
+  <li>The order of conditional blocks is always <code class="highlighter-rouge">if</code> then <code class="highlighter-rouge">elif</code>(s) then <code class="highlighter-rouge">else</code></li>
+  <li>Code is only ever executed if the condition is met</li>
+</ul>
+
+
+                <nav class="c-page__nav">
+  
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/materials/04-Operators">
+      〈 <span class="u-margin-right-tiny"></span> 04-Operators
+    </a>
+  
+
+  
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/materials/06-DataTypes">
+      06-DataTypes <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

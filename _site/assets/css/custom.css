@@ -1,0 +1,53 @@
+/* Put your custom CSS in here! */
+
+ <style>
+ .fade.in {
+    opacity: 1;
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-link {
+  font-weight: 700;
+}
+.alert-success .alert-link {
+  color: #0b2e13;
+}
+.alert-info .alert-link {
+  color: #062c33;
+}
+.alert-warning .alert-link {
+  color: #533f03;
+}
+
+
+.home-content {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+
+.title-center {
+    text-align: center;
+    color: green;
+}
+</style>
