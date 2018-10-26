@@ -17,4 +17,25 @@ clean:
 	python scripts/clean.py
 
 serve:
-	bundle exec guard
+	#bundle exec guard
+	bundle exec jekyll serve
+
+textbook:
+	python scripts/clean.py
+
+	# Copy & build materials
+	rm -rf content/materials
+	git clone --depth 1 https://github.com/COGS18/materials content/materials
+	rm content/materials/README.md
+
+	# Copy & build assignments
+	rm -rf content/assignments
+	git clone --depth 1 https://github.com/COGS18/assignments content/assignments
+	rm content/assignments/README.md
+
+	# Copy & build coding labs
+	rm -rf content/labs
+	git clone --depth 1 https://github.com/COGS18/codinglabs content/labs
+	rm content/labs/README.md
+
+	python scripts/generate_book.py
