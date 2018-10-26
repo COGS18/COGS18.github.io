@@ -303,9 +303,9 @@ if __name__ == '__main__':
             yaml_fm += ['download_link: {}'.format(
                 'assets/downloads/assignments/' + title + '.ipynb.zip')]
             yaml_fm += ["layout: notebooks"]
-        if op.dirname(path_url_page).endswith('codingLabs'):
+        if op.dirname(path_url_page).endswith('labs'):
             yaml_fm += ['download_link: {}'.format(
-                'assets/downloads/codingLabs/' + title + '.ipynb.zip')]
+                'assets/downloads/labs/' + title + '.ipynb.zip')]
             yaml_fm += ["layout: notebooks"]
         if title == "Home":
             yaml_fm += ["layout: home"]
