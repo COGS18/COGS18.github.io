@@ -51,25 +51,25 @@
   - title: 10-Algorithms
     url: /materials/10-Algorithms
     not_numbered: true
-    
+
 - title: Coding Labs
-  url: /codingLabs
+  url: /labs
   not_numbered: true
   sections:
   - title: CL1-ProgrammingI
-    url: /codingLabs/CL1-ProgrammingI
+    url: /labs/CL1-ProgrammingI
     not_numbered: true
   - title: CL1b-Answers
-    url: /codingLabs/CL1b-Answers
+    url: /labs/CL1b-Answers
     not_numbered: true
   - title: CL2-ProgrammingII
-    url: /codingLabs/CL2-ProgrammingII
+    url: /labs/CL2-ProgrammingII
     not_numbered: true
   - title: CL2b-Answers
-    url: /codingLabs/CL2b-Answers
+    url: /labs/CL2b-Answers
     not_numbered: true
   - title: CL3-AlgorithmicThinking
-    url: /codingLabs/CL3-AlgorithmicThinking
+    url: /labs/CL3-AlgorithmicThinking
     not_numbered: true
 
 - title: Assignments
@@ -85,4 +85,3 @@
   - title: A3-Chatbots
     url: /assignments/A3-Chatbots
     not_numbered: true
-  
