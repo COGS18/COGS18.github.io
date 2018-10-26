@@ -39,3 +39,9 @@ textbook:
 	rm content/labs/README.md
 
 	python scripts/generate_book.py
+
+	rm -rf content/materials
+	rm -rf content/assignments
+	rm -rf content/labs
+
+	
