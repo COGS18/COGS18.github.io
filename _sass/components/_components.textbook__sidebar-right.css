@@ -1,9 +1,10 @@
 .sidebar__right {
+  overflow: auto;
   position: fixed;
-  right: 5em;
-  top: 5em;
-  width: 250px;
-  padding-left: 1em;
+  right: 3.5vw;
+  top: 5vh;
+  width: 15vw;
+  max-height: 80vh;
   z-index: 10;
 }
 
