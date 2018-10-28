@@ -4,6 +4,7 @@
 
 <body>
     <!-- Show sidebar by default -->
+    {% include onthispage.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
     <div id="js-textbook" class="c-textbook js-show-sidebar">
         {% include sidebar.html %}
 
@@ -11,7 +12,6 @@
             {% include sidebar-toggle.html %}
             <div class="o-wrapper">
                 {% include download_button.html %}
-                {% include onthispage.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
                 {{ content }}
 
                 {% include page-nav.html %}

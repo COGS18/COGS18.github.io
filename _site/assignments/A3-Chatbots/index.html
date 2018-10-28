@@ -27,9 +27,9 @@
   "headline":
     "A3-Chatbots",
   "datePublished":
-    "2018-10-27T17:59:02-07:00",
+    "2018-10-27T18:03:15-07:00",
   "dateModified":
-    "2018-10-27T17:59:02-07:00",
+    "2018-10-27T18:03:15-07:00",
   "description":
     "Assignment 3: Chatbots",
   "author": {
@@ -253,6 +253,78 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 <body>
     <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#overview">Overview</a>
+    <ul>
+      <li><a href="#quick-tips">Quick Tips</a></li>
+    </ul>
+  </li>
+  <li><a href="#setup">Setup</a>
+    <ul>
+      <li><a href="#zen-chatbot">Zen Chatbot</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-1-functions">Part 1: Functions</a>
+    <ul>
+      <li><a href="#function-examples">Function Examples</a></li>
+      <li><a href="#q1---find-max-value--05-points">Q1 - Find Max Value  (0.5 points)</a></li>
+      <li><a href="#q2---square-everything--05-points">Q2 - Square Everything  (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-refactoring-code-to-use-functions">Part 2: Refactoring Code to Use Functions</a>
+    <ul>
+      <li><a href="#q3---calculator-05-points">Q3 - Calculator (0.5 points)</a></li>
+      <li><a href="#q4---extending-our-calculator--05-points">Q4 - Extending our Calculator  (0.5 points)</a></li>
+      <li><a href="#example-chaining-functions-together">Example: Chaining Functions Together</a></li>
+      <li><a href="#q5---using-our-calculator--05-points">Q5 - Using Our Calculator  (0.5 points)</a></li>
+      <li><a href="#calling-functions-from-functions">Calling Functions from Functions</a></li>
+      <li><a href="#q6---functions-for-even--positive-numbers-05-points">Q6 - Functions for Even &amp; Positive Numbers (0.5 points)</a></li>
+      <li><a href="#q7---functions-using-functions-05-points">Q7 - Functions Using Functions (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-3-algorithms">Part 3: Algorithms</a>
+    <ul>
+      <li><a href="#q8---algorithms-05-points">Q8 - Algorithms (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-4--chatbots">Part 4:  Chatbots</a>
+    <ul>
+      <li><a href="#example-chatbot---eliza">Example Chatbot - Eliza</a></li>
+      <li><a href="#example-chatbot---iesha">Example Chatbot - Iesha</a></li>
+      <li><a href="#chatbots-words--rules">Chatbots: Words &amp; Rules</a></li>
+      <li><a href="#q9---is-it-a-question-05-points">Q9 - Is It a Question (0.5 points)</a></li>
+      <li><a href="#example-stringpunctuation">Example: string.punctuation</a></li>
+      <li><a href="#q10---removing-punctuation-05-points">Q10 - Removing punctuation (0.5 points)</a></li>
+      <li><a href="#q11---preparing-text-05-points">Q11 - Preparing Text (0.5 points)</a></li>
+      <li><a href="#q12---echo-a-response-05-points">Q12 - Echo a Response (0.5 points)</a></li>
+      <li><a href="#example-randomchoice">Example: random.choice</a></li>
+      <li><a href="#q13---selector-05-points">Q13 - Selector (0.5 points)</a></li>
+      <li><a href="#q14---string-concatenator-function-05-points">Q14 - String Concatenator Function (0.5 points)</a></li>
+      <li><a href="#q15---list-to-string-05-points">Q15 - List to String (0.5 points)</a></li>
+      <li><a href="#q16---end-chat-05-points">Q16 - End Chat (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#pulling-it-all-together">Pulling it all Together</a></li>
+  <li><a href="#talking-to-our-chatbot">Talking to our Chatbot</a>
+    <ul>
+      <li><a href="#extending-our-chatbot">Extending Our Chatbot</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-end">The End!</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
     <div id="js-textbook" class="c-textbook js-show-sidebar">
         
 
@@ -663,78 +735,6 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 <div class="buttons buttons-custom">
     <a class="interact-button" href="http://localhost:4000/assets/downloads/assignments/A3-Chatbots.ipynb.zip">Download Notebook</a>
 </div>
-
-                <!-- Shamelessly copied from minimal mistakes -->
-
-
-<!-- TOC will only show up if it has at least one item -->
-
-
-  <aside class="sidebar__right">
-    <nav class="onthispage">
-      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
-      <ul class="toc__menu">
-  <li><a href="#overview">Overview</a>
-    <ul>
-      <li><a href="#quick-tips">Quick Tips</a></li>
-    </ul>
-  </li>
-  <li><a href="#setup">Setup</a>
-    <ul>
-      <li><a href="#zen-chatbot">Zen Chatbot</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-1-functions">Part 1: Functions</a>
-    <ul>
-      <li><a href="#function-examples">Function Examples</a></li>
-      <li><a href="#q1---find-max-value--05-points">Q1 - Find Max Value  (0.5 points)</a></li>
-      <li><a href="#q2---square-everything--05-points">Q2 - Square Everything  (0.5 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-2-refactoring-code-to-use-functions">Part 2: Refactoring Code to Use Functions</a>
-    <ul>
-      <li><a href="#q3---calculator-05-points">Q3 - Calculator (0.5 points)</a></li>
-      <li><a href="#q4---extending-our-calculator--05-points">Q4 - Extending our Calculator  (0.5 points)</a></li>
-      <li><a href="#example-chaining-functions-together">Example: Chaining Functions Together</a></li>
-      <li><a href="#q5---using-our-calculator--05-points">Q5 - Using Our Calculator  (0.5 points)</a></li>
-      <li><a href="#calling-functions-from-functions">Calling Functions from Functions</a></li>
-      <li><a href="#q6---functions-for-even--positive-numbers-05-points">Q6 - Functions for Even &amp; Positive Numbers (0.5 points)</a></li>
-      <li><a href="#q7---functions-using-functions-05-points">Q7 - Functions Using Functions (0.5 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-3-algorithms">Part 3: Algorithms</a>
-    <ul>
-      <li><a href="#q8---algorithms-05-points">Q8 - Algorithms (0.5 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-4--chatbots">Part 4:  Chatbots</a>
-    <ul>
-      <li><a href="#example-chatbot---eliza">Example Chatbot - Eliza</a></li>
-      <li><a href="#example-chatbot---iesha">Example Chatbot - Iesha</a></li>
-      <li><a href="#chatbots-words--rules">Chatbots: Words &amp; Rules</a></li>
-      <li><a href="#q9---is-it-a-question-05-points">Q9 - Is It a Question (0.5 points)</a></li>
-      <li><a href="#example-stringpunctuation">Example: string.punctuation</a></li>
-      <li><a href="#q10---removing-punctuation-05-points">Q10 - Removing punctuation (0.5 points)</a></li>
-      <li><a href="#q11---preparing-text-05-points">Q11 - Preparing Text (0.5 points)</a></li>
-      <li><a href="#q12---echo-a-response-05-points">Q12 - Echo a Response (0.5 points)</a></li>
-      <li><a href="#example-randomchoice">Example: random.choice</a></li>
-      <li><a href="#q13---selector-05-points">Q13 - Selector (0.5 points)</a></li>
-      <li><a href="#q14---string-concatenator-function-05-points">Q14 - String Concatenator Function (0.5 points)</a></li>
-      <li><a href="#q15---list-to-string-05-points">Q15 - List to String (0.5 points)</a></li>
-      <li><a href="#q16---end-chat-05-points">Q16 - End Chat (0.5 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#pulling-it-all-together">Pulling it all Together</a></li>
-  <li><a href="#talking-to-our-chatbot">Talking to our Chatbot</a>
-    <ul>
-      <li><a href="#extending-our-chatbot">Extending Our Chatbot</a></li>
-    </ul>
-  </li>
-  <li><a href="#the-end">The End!</a></li>
-</ul>
-    </nav>
-  </aside>
-
 
                 <h1 id="assignment-3-chatbots">Assignment 3: Chatbots</h1>
 
