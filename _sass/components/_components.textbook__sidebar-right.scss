@@ -1,9 +1,11 @@
 .sidebar__right {
-    position: absolute;
-    top: 0;
-    right: 0;
+    //position: absolute;
+    //top: 0;
+    //right: 0;
+    position: fixed;
+    right: 5em;
+    top: 5em;
     width: 250px;
-    margin-right: -250px;
     padding-left: 1em;
     z-index: 10;
 }

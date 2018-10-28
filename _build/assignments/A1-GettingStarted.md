@@ -1,13 +1,13 @@
 ---
-download_link: assets/downloads/assignments/A1-GettingStarted.ipynb.zip
+download_link: assets/downloads/assignments/Assignments.ipynb.zip
 layout: notebooks
-title: 'A1-GettingStarted'
+title: 'Assignments'
 prev_page:
-  url: /assignments
-  title: 'Assignments'
+  url: /labs/CL3-AlgorithmicThinking
+  title: 'CL3-AlgorithmicThinking'
 next_page:
-  url: /assignments/A2-Ciphers
-  title: 'A2-Ciphers'
+  url: /assignments/A1-GettingStarted
+  title: 'A1-GettingStarted'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

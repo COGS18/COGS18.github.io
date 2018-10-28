@@ -1,10 +1,5 @@
 var store = [{
         "title": "Assignments",
-        "excerpt":"","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/assignments/",
-        "teaser":null},{
-        "title": "A1-GettingStarted",
         "excerpt":"Assignment 1: Getting Started This assignment covers Variables, Operators &amp; Conditionals. This assignment is out of 6 points, worth 6% of your grade. How to complete assignments Whenever you see: # YOUR CODE HEREraise NotImplementedError()You need to replace this section with some code that answers the questions and meets the...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/assignments/A1-GettingStarted/",
@@ -25,11 +20,6 @@ var store = [{
         "url": "http://localhost:4000/intro/",
         "teaser":null},{
         "title": "Coding Labs",
-        "excerpt":"","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/labs/",
-        "teaser":null},{
-        "title": "CL1-ProgrammingI",
         "excerpt":"Coding Lab 1: Programming I Welcome to the first coding lab! CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each fill out...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/labs/CL1-ProgrammingI/",

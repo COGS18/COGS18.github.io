@@ -1,13 +1,13 @@
 ---
-download_link: assets/downloads/labs/CL1-ProgrammingI.ipynb.zip
+download_link: assets/downloads/labs/Coding Labs.ipynb.zip
 layout: notebooks
-title: 'CL1-ProgrammingI'
+title: 'Coding Labs'
 prev_page:
-  url: /labs
-  title: 'Coding Labs'
+  url: /materials/10-Algorithms
+  title: '10-Algorithms'
 next_page:
-  url: /labs/CL1b-Answers
-  title: 'CL1b-Answers'
+  url: /labs/CL1-ProgrammingI
+  title: 'CL1-ProgrammingI'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
