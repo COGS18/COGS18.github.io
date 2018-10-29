@@ -15,6 +15,7 @@ runall:
 
 clean:
 	python scripts/clean.py
+	rm -rf content
 
 serve:
 	#bundle exec guard
@@ -42,9 +43,20 @@ textbook:
 
 	rm -rf content
 
+textbook_dev:
+	python scripts/clean.py
+	cp -r landing content
+	git clone --depth 1 https://github.com/COGS18/materials content/materials
+	rm content/materials/README.md
+	git clone --depth 1 https://github.com/COGS18/assignments content/assignments
+	rm content/assignments/README.md
+	git clone --depth 1 https://github.com/COGS18/codinglabs content/labs
+	rm content/labs/README.md
+	python scripts/generate_book.py
+	#rm -rf content
+
 home:
 	rm _build/intro.md
 	rm -rf _build/intro
 	cp -r landing content
 	python scripts/generate_book.py
-	rm -rf content

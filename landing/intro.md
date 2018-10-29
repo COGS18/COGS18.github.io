@@ -14,7 +14,7 @@ Introduction to Python (COGS18) is a course offered by the Department of Cogniti
 ### Current Iteration
 
 {:.text-content}
-Introduction to Python is currently running for Fall Quarter 2018, for which you can check out the current [syllabus](/intro/syllabus.pdf) and [schedule](/intro/schedule.pdf). Course lectures are recorded and are publicly available as screencasts from [here](https://podcast.ucsd.edu/?q=COGS18).
+Introduction to Python is currently running for Fall Quarter 2018, for which you can check out the current [syllabus](../assets/intro/syllabus.pdf) and [schedule](../assets/intro/schedule.pdf). Course lectures are recorded and are publicly available as screencasts from [here](https://podcast.ucsd.edu/?q=COGS18).
 
 {:.sub-title}
 ### Materials
@@ -27,11 +27,11 @@ All course materials are openly available and downloadable from this website. Ma
 ### Coding Labs
 
 {:.text-content}
-An overview of the Coding Labs is available [here](/intro/labs/overview.pdf).
+An overview of the Coding Labs is available [here](../assets/intro/labs/overview.pdf).
 
 
 {:.sub-title}
 ### Assignments
 
 {:.text-content}
-An overview of the Assignments is available [here](/intro/assignments/overview.pdf).
+An overview of the Assignments is available [here](../assets/intro/assignments/overview.pdf).
