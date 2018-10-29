@@ -2,7 +2,7 @@
 
 help:
 	@echo "Please use 'make <target>' where <target> is one of:"
-	@echo "  book    to convert the `notebooks/` folder into Jekyll markdown in `chapters/`"
+	@echo "  notebook    to convert the `content/` folder into Jekyll markdown in `_build/`"
 	@echo "  clean       to clean out site build files"
 	@echo "  runall      to run all notebooks in-place, capturing outputs with the notebook"
 	@echo "  serve       to serve the repository locally with Jekyll"
@@ -40,4 +40,11 @@ textbook:
 
 	python scripts/generate_book.py
 
+	rm -rf content
+
+home:
+	rm _build/intro.md
+	rm -rf _build/intro
+	cp -r landing content
+	python scripts/generate_book.py
 	rm -rf content
