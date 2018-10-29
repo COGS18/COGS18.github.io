@@ -27,9 +27,9 @@
   "headline":
     "Materials",
   "datePublished":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "dateModified":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "description":
     "Introduction to Python",
   "author": {
@@ -250,19 +250,40 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </script>
 </head>
 
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 
 <body>
     <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#why-learn-computation">Why Learn Computation?</a></li>
+  <li><a href="#what-is-python">What is Python</a></li>
+  <li><a href="#what-does-python-look-like">What does Python look like</a></li>
+  <li><a href="#why-choose-python">Why Choose Python?</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
     <div id="js-textbook" class="c-textbook js-show-sidebar">
         
 
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-    <img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
-        data-turbolinks-permanent />
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
     <h2 class="c-sidebar__title">
-        <a href="/" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
     </h2>
     <ul class="c-sidebar__chapters">
         
@@ -469,7 +490,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/labs">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
                 
                 Coding Labs
             </a>
@@ -573,7 +594,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/assignments">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
                 
                 Assignments
             </a>
@@ -658,7 +679,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </div>
 
             <div class="o-wrapper">
-                <div style="display:flex">
+                <div style="display:flex"> 
                     <!-- DOWNLOAD BUTTONS -->
 
 <div class="buttons buttons-custom">
@@ -672,25 +693,6 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </div>
 
                 </div>
-                <!-- Shamelessly copied from minimal mistakes -->
-
-
-<!-- TOC will only show up if it has at least one item -->
-
-
-  <aside class="sidebar__right">
-    <nav class="onthispage">
-      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
-      <ul class="toc__menu">
-  <li><a href="#why-learn-computation">Why Learn Computation?</a></li>
-  <li><a href="#what-is-python">What is Python</a></li>
-  <li><a href="#what-does-python-look-like">What does Python look like</a></li>
-  <li><a href="#why-choose-python">Why Choose Python?</a></li>
-</ul>
-    </nav>
-  </aside>
-
-
                 <h1 id="introduction-to-python">Introduction to Python</h1>
 
 <p>Thomas Donoghue</p>

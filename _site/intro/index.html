@@ -27,9 +27,9 @@
   "headline":
     "Home",
   "datePublished":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "dateModified":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "description":
     "Welcome to COGS18: Introduction to Python!",
   "author": {
@@ -251,6 +251,9 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </head>
 
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
 <body>
     <!-- Show sidebar by default -->
     <div id="js-textbook" class="c-textbook js-show-sidebar">
@@ -259,10 +262,10 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-    <img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
-        data-turbolinks-permanent />
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
     <h2 class="c-sidebar__title">
-        <a href="/" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
     </h2>
     <ul class="c-sidebar__chapters">
         
@@ -469,7 +472,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/labs">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
                 
                 Coding Labs
             </a>
@@ -573,7 +576,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/assignments">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
                 
                 Assignments
             </a>
@@ -656,7 +659,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 <h3 class="sub-title" id="current-iteration">Current Iteration</h3>
 
-<p class="text-content">Introduction to Python is currently running for Fall Quarter 2018, for which you can check out the current <a href="/intro/syllabus.pdf">syllabus</a> and <a href="/intro/schedule.pdf">schedule</a>. Course lectures are recorded and are publicly available as screencasts from <a href="https://podcast.ucsd.edu/?q=COGS18">here</a>.</p>
+<p class="text-content">Introduction to Python is currently running for Fall Quarter 2018, for which you can check out the current <a href="../assets/intro/syllabus.pdf">syllabus</a> and <a href="../assets/intro/schedule.pdf">schedule</a>. Course lectures are recorded and are publicly available as screencasts from <a href="https://podcast.ucsd.edu/?q=COGS18">here</a>.</p>
 
 <h3 class="sub-title" id="materials">Materials</h3>
 
@@ -664,11 +667,11 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 <h3 class="sub-title" id="coding-labs">Coding Labs</h3>
 
-<p class="text-content">An overview of the Coding Labs is available <a href="/intro/labs/overview.pdf">here</a>.</p>
+<p class="text-content">An overview of the Coding Labs is available <a href="../assets/intro/labs/overview.pdf">here</a>.</p>
 
 <h3 class="sub-title" id="assignments">Assignments</h3>
 
-<p class="text-content">An overview of the Assignments is available <a href="/intro/assignments/overview.pdf">here</a>.</p>
+<p class="text-content">An overview of the Assignments is available <a href="../assets/intro/assignments/overview.pdf">here</a>.</p>
 
             </div>
 

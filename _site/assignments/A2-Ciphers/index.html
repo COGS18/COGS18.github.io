@@ -27,9 +27,9 @@
   "headline":
     "A2-Ciphers",
   "datePublished":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "dateModified":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "description":
     "A2-Ciphers",
   "author": {
@@ -250,19 +250,84 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </script>
 </head>
 
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 
 <body>
     <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#part-1-collection-types">Part 1: Collection Types</a>
+    <ul>
+      <li><a href="#q1---lists-025-points">Q1 - Lists (0.25 points)</a></li>
+      <li><a href="#q2---tuples-025-points">Q2 - Tuples (0.25 points)</a></li>
+      <li><a href="#q3---dictionaries-025-points">Q3 - Dictionaries (0.25 points)</a></li>
+      <li><a href="#q4---lists-of-lists-025-points">Q4 - Lists of Lists (0.25 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-working-with-collections">Part 2: Working With Collections</a>
+    <ul>
+      <li><a href="#q5---indexing-05-points">Q5 - Indexing (0.5 points)</a></li>
+      <li><a href="#q6---comparisons-using-indexing-05-points">Q6 - Comparisons using Indexing (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-3-loops">Part 3: Loops</a>
+    <ul>
+      <li><a href="#q7---loop-questions-05-points">Q7 - Loop Questions (0.5 points)</a></li>
+      <li><a href="#q8---for-loop-05-points">Q8 - For Loop (0.5 points)</a></li>
+      <li><a href="#q9---while-loop-05-points">Q9 - While Loop (0.5 points)</a></li>
+      <li><a href="#example-append">Example: Append</a></li>
+      <li><a href="#q10---loops-multiplication-05-points">Q10 - Loops: Multiplication (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-4-combining-loops--conditionals">Part 4: Combining Loops &amp; Conditionals</a>
+    <ul>
+      <li><a href="#q11---loops-division-05-points">Q11 - Loops: Division (0.5 points)</a></li>
+      <li><a href="#q12---loops-odd-or-even-05-points">Q12 - Loops: Odd or Even (0.5 points)</a></li>
+      <li><a href="#q13---loops-multiple-conditions-05-points">Q13 - Loops: Multiple Conditions (0.5 points)</a></li>
+      <li><a href="#example-looping-through-dictionaries">Example: Looping through Dictionaries</a></li>
+      <li><a href="#q14---loops-dictionaries-05-points">Q14 - Loops: Dictionaries (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-5--ciphers">Part 5:  Ciphers</a>
+    <ul>
+      <li><a href="#q15---creating-an-encoder-05-points">Q15 - Creating an Encoder (0.5 points)</a></li>
+      <li><a href="#q16---decoder-05-points">Q16 - Decoder (0.5 points)</a></li>
+      <li><a href="#using-the-encoder-and-decoder-together">Using the encoder and decoder together</a></li>
+      <li><a href="#using-a-custom-encoder">Using a Custom Encoder</a></li>
+      <li><a href="#q17---custom-encoder-05-points">Q17 - Custom Encoder (0.5 points)</a></li>
+      <li><a href="#using-variable-keys">Using Variable Keys</a></li>
+      <li><a href="#q18---encodings-with-variable-keys-05-points">Q18 - Encodings with variable keys (0.5 points)</a></li>
+      <li><a href="#breaking-a-variable-encoder">Breaking a Variable Encoder</a></li>
+      <li><a href="#variable-decoder">Variable Decoder</a></li>
+      <li><a href="#decoding-a-provided-message">Decoding a provided message</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-end">The End!</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
     <div id="js-textbook" class="c-textbook js-show-sidebar">
         
 
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-    <img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
-        data-turbolinks-permanent />
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
     <h2 class="c-sidebar__title">
-        <a href="/" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
     </h2>
     <ul class="c-sidebar__chapters">
         
@@ -469,7 +534,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/labs">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
                 
                 Coding Labs
             </a>
@@ -573,7 +638,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry c-sidebar__entry--active" href="/assignments">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
                 
                 Assignments
             </a>
@@ -663,69 +728,6 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 <div class="buttons buttons-custom">
     <a class="interact-button" href="http://localhost:4000/assets/downloads/assignments/A2-Ciphers.ipynb.zip">Download Notebook</a>
 </div>
-
-                <!-- Shamelessly copied from minimal mistakes -->
-
-
-<!-- TOC will only show up if it has at least one item -->
-
-
-  <aside class="sidebar__right">
-    <nav class="onthispage">
-      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
-      <ul class="toc__menu">
-  <li><a href="#overview">Overview</a></li>
-  <li><a href="#part-1-collection-types">Part 1: Collection Types</a>
-    <ul>
-      <li><a href="#q1---lists-025-points">Q1 - Lists (0.25 points)</a></li>
-      <li><a href="#q2---tuples-025-points">Q2 - Tuples (0.25 points)</a></li>
-      <li><a href="#q3---dictionaries-025-points">Q3 - Dictionaries (0.25 points)</a></li>
-      <li><a href="#q4---lists-of-lists-025-points">Q4 - Lists of Lists (0.25 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-2-working-with-collections">Part 2: Working With Collections</a>
-    <ul>
-      <li><a href="#q5---indexing-05-points">Q5 - Indexing (0.5 points)</a></li>
-      <li><a href="#q6---comparisons-using-indexing-05-points">Q6 - Comparisons using Indexing (0.5 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-3-loops">Part 3: Loops</a>
-    <ul>
-      <li><a href="#q7---loop-questions-05-points">Q7 - Loop Questions (0.5 points)</a></li>
-      <li><a href="#q8---for-loop-05-points">Q8 - For Loop (0.5 points)</a></li>
-      <li><a href="#q9---while-loop-05-points">Q9 - While Loop (0.5 points)</a></li>
-      <li><a href="#example-append">Example: Append</a></li>
-      <li><a href="#q10---loops-multiplication-05-points">Q10 - Loops: Multiplication (0.5 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-4-combining-loops--conditionals">Part 4: Combining Loops &amp; Conditionals</a>
-    <ul>
-      <li><a href="#q11---loops-division-05-points">Q11 - Loops: Division (0.5 points)</a></li>
-      <li><a href="#q12---loops-odd-or-even-05-points">Q12 - Loops: Odd or Even (0.5 points)</a></li>
-      <li><a href="#q13---loops-multiple-conditions-05-points">Q13 - Loops: Multiple Conditions (0.5 points)</a></li>
-      <li><a href="#example-looping-through-dictionaries">Example: Looping through Dictionaries</a></li>
-      <li><a href="#q14---loops-dictionaries-05-points">Q14 - Loops: Dictionaries (0.5 points)</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-5--ciphers">Part 5:  Ciphers</a>
-    <ul>
-      <li><a href="#q15---creating-an-encoder-05-points">Q15 - Creating an Encoder (0.5 points)</a></li>
-      <li><a href="#q16---decoder-05-points">Q16 - Decoder (0.5 points)</a></li>
-      <li><a href="#using-the-encoder-and-decoder-together">Using the encoder and decoder together</a></li>
-      <li><a href="#using-a-custom-encoder">Using a Custom Encoder</a></li>
-      <li><a href="#q17---custom-encoder-05-points">Q17 - Custom Encoder (0.5 points)</a></li>
-      <li><a href="#using-variable-keys">Using Variable Keys</a></li>
-      <li><a href="#q18---encodings-with-variable-keys-05-points">Q18 - Encodings with variable keys (0.5 points)</a></li>
-      <li><a href="#breaking-a-variable-encoder">Breaking a Variable Encoder</a></li>
-      <li><a href="#variable-decoder">Variable Decoder</a></li>
-      <li><a href="#decoding-a-provided-message">Decoding a provided message</a></li>
-    </ul>
-  </li>
-  <li><a href="#the-end">The End!</a></li>
-</ul>
-    </nav>
-  </aside>
-
 
                 <h1 id="a2-ciphers">A2-Ciphers</h1>
 

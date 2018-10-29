@@ -6,7 +6,7 @@ prev_page:
   url: /labs/CL2b-Answers
   title: 'CL2b-Answers'
 next_page:
-  url: /assignments
+  url: /assignments/A1-GettingStarted
   title: 'Assignments'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---

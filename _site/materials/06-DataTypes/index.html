@@ -27,9 +27,9 @@
   "headline":
     "06-DataTypes",
   "datePublished":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "dateModified":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "description":
     "Collections",
   "author": {
@@ -250,19 +250,76 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </script>
 </head>
 
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 
 <body>
     <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#collections-lists">Collections: Lists</a>
+    <ul>
+      <li><a href="#list-examples">List examples</a></li>
+      <li><a href="#indexing">Indexing</a></li>
+      <li><a href="#index-practices">Index Practices</a></li>
+      <li><a href="#clicker-question-1">Clicker Question #1</a></li>
+      <li><a href="#clicker-question-answer">Clicker Question Answer</a></li>
+      <li><a href="#sidenote-but-why-is-it-like-this">SideNote: But why is it like this…</a></li>
+      <li><a href="#length-of-a-collection">Length of a collection</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-in-operator">The in Operator</a>
+    <ul>
+      <li><a href="#practice-with-in">Practice with in</a></li>
+      <li><a href="#clicker-2">Clicker #2</a></li>
+      <li><a href="#clicker-question-answer-1">Clicker Question Answer</a></li>
+    </ul>
+  </li>
+  <li><a href="#mutating-a-list">Mutating a List</a></li>
+  <li><a href="#collections-tuples">Collections: Tuples</a>
+    <ul>
+      <li><a href="#tuple-examples">Tuple Examples</a></li>
+      <li><a href="#tuples-are-immutable">Tuples are Immutable</a></li>
+    </ul>
+  </li>
+  <li><a href="#strings-as-collections">Strings as Collections</a>
+    <ul>
+      <li><a href="#sidenote-using-counters">SideNote: using counters</a></li>
+    </ul>
+  </li>
+  <li><a href="#pulling-it-together-collections-membership--conditionals">Pulling it Together: Collections, Membership &amp; Conditionals</a>
+    <ul>
+      <li><a href="#clicker-question-3">Clicker Question #3</a></li>
+    </ul>
+  </li>
+  <li><a href="#clicker-question-4">Clicker Question #4</a>
+    <ul>
+      <li><a href="#clicker-question-answer-2">Clicker Question Answer</a></li>
+    </ul>
+  </li>
+</ul>
+    </nav>
+  </aside>
+
+
     <div id="js-textbook" class="c-textbook js-show-sidebar">
         
 
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-    <img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
-        data-turbolinks-permanent />
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
     <h2 class="c-sidebar__title">
-        <a href="/" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
     </h2>
     <ul class="c-sidebar__chapters">
         
@@ -469,7 +526,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/labs">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
                 
                 Coding Labs
             </a>
@@ -573,7 +630,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/assignments">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
                 
                 Assignments
             </a>
@@ -658,7 +715,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </div>
 
             <div class="o-wrapper">
-                <div style="display:flex">
+                <div style="display:flex"> 
                     <!-- DOWNLOAD BUTTONS -->
 
 <div class="buttons buttons-custom">
@@ -672,61 +729,6 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </div>
 
                 </div>
-                <!-- Shamelessly copied from minimal mistakes -->
-
-
-<!-- TOC will only show up if it has at least one item -->
-
-
-  <aside class="sidebar__right">
-    <nav class="onthispage">
-      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
-      <ul class="toc__menu">
-  <li><a href="#collections-lists">Collections: Lists</a>
-    <ul>
-      <li><a href="#list-examples">List examples</a></li>
-      <li><a href="#indexing">Indexing</a></li>
-      <li><a href="#index-practices">Index Practices</a></li>
-      <li><a href="#clicker-question-1">Clicker Question #1</a></li>
-      <li><a href="#clicker-question-answer">Clicker Question Answer</a></li>
-      <li><a href="#sidenote-but-why-is-it-like-this">SideNote: But why is it like this…</a></li>
-      <li><a href="#length-of-a-collection">Length of a collection</a></li>
-    </ul>
-  </li>
-  <li><a href="#the-in-operator">The in Operator</a>
-    <ul>
-      <li><a href="#practice-with-in">Practice with in</a></li>
-      <li><a href="#clicker-2">Clicker #2</a></li>
-      <li><a href="#clicker-question-answer-1">Clicker Question Answer</a></li>
-    </ul>
-  </li>
-  <li><a href="#mutating-a-list">Mutating a List</a></li>
-  <li><a href="#collections-tuples">Collections: Tuples</a>
-    <ul>
-      <li><a href="#tuple-examples">Tuple Examples</a></li>
-      <li><a href="#tuples-are-immutable">Tuples are Immutable</a></li>
-    </ul>
-  </li>
-  <li><a href="#strings-as-collections">Strings as Collections</a>
-    <ul>
-      <li><a href="#sidenote-using-counters">SideNote: using counters</a></li>
-    </ul>
-  </li>
-  <li><a href="#pulling-it-together-collections-membership--conditionals">Pulling it Together: Collections, Membership &amp; Conditionals</a>
-    <ul>
-      <li><a href="#clicker-question-3">Clicker Question #3</a></li>
-    </ul>
-  </li>
-  <li><a href="#clicker-question-4">Clicker Question #4</a>
-    <ul>
-      <li><a href="#clicker-question-answer-2">Clicker Question Answer</a></li>
-    </ul>
-  </li>
-</ul>
-    </nav>
-  </aside>
-
-
                 <h1 id="collections">Collections</h1>
 
 <h2 id="collections-lists">Collections: Lists</h2>

@@ -27,9 +27,9 @@
   "headline":
     "CL2-ProgrammingII",
   "datePublished":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "dateModified":
-    "2018-10-26T12:33:06-07:00",
+    "2018-10-29T09:40:06-07:00",
   "description":
     "Coding Lab 2: Programming II",
   "author": {
@@ -250,19 +250,55 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 </script>
 </head>
 
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 
 <body>
     <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#part-1-collection-types">Part 1: Collection types</a>
+    <ul>
+      <li><a href="#collection-questions">Collection Questions</a></li>
+      <li><a href="#indexing">Indexing</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-conditionals">Part 2: Conditionals</a>
+    <ul>
+      <li><a href="#conditional-questions">Conditional Questions</a></li>
+      <li><a href="#conditional-challenges">Conditional Challenges</a></li>
+      <li><a href="#operator-explorations">Operator Explorations</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-3-loops">Part 3: Loops</a>
+    <ul>
+      <li><a href="#loop-explorations">Loop Explorations</a></li>
+      <li><a href="#nested-loop-challenge">Nested Loop Challenge</a></li>
+    </ul>
+  </li>
+</ul>
+    </nav>
+  </aside>
+
+
     <div id="js-textbook" class="c-textbook js-show-sidebar">
         
 
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-    <img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
-        data-turbolinks-permanent />
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
     <h2 class="c-sidebar__title">
-        <a href="/" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
     </h2>
     <ul class="c-sidebar__chapters">
         
@@ -469,7 +505,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry c-sidebar__entry--active" href="/labs">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
                 
                 Coding Labs
             </a>
@@ -573,7 +609,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
         
 
         <li class="c-sidebar__chapter">
-            <a class="c-sidebar__entry " href="/assignments">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
                 
                 Assignments
             </a>
@@ -663,40 +699,6 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 <div class="buttons buttons-custom">
     <a class="interact-button" href="http://localhost:4000/assets/downloads/labs/CL2-ProgrammingII.ipynb.zip">Download Notebook</a>
 </div>
-
-                <!-- Shamelessly copied from minimal mistakes -->
-
-
-<!-- TOC will only show up if it has at least one item -->
-
-
-  <aside class="sidebar__right">
-    <nav class="onthispage">
-      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
-      <ul class="toc__menu">
-  <li><a href="#part-1-collection-types">Part 1: Collection types</a>
-    <ul>
-      <li><a href="#collection-questions">Collection Questions</a></li>
-      <li><a href="#indexing">Indexing</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-2-conditionals">Part 2: Conditionals</a>
-    <ul>
-      <li><a href="#conditional-questions">Conditional Questions</a></li>
-      <li><a href="#conditional-challenges">Conditional Challenges</a></li>
-      <li><a href="#operator-explorations">Operator Explorations</a></li>
-    </ul>
-  </li>
-  <li><a href="#part-3-loops">Part 3: Loops</a>
-    <ul>
-      <li><a href="#loop-explorations">Loop Explorations</a></li>
-      <li><a href="#nested-loop-challenge">Nested Loop Challenge</a></li>
-    </ul>
-  </li>
-</ul>
-    </nav>
-  </aside>
-
 
                 <h1 id="coding-lab-2-programming-ii">Coding Lab 2: Programming II</h1>
 
