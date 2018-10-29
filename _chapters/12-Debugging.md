@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/11-FunctionsII
   title: '11-functionsii'
 nextchapter:
-  url: /chapters/A1-Syntax
-  title: 'A1-syntax'
+  url: /chapters/13-Objects
+  title: '13-objects'
 redirect_from:
   - '/chapters/12-debugging'
 ---
@@ -30,7 +30,7 @@ Will I be able to define and execute this function?
 def example_function(input_list):
     
     running_sum = 0
-    for item in input_list
+    for item in input_list:
         running_sum = running_sum + item
     
     special_value = input_list[3]
@@ -65,12 +65,34 @@ if True
 
 
 
+{:.output_traceback_line}
+```
+  File "<ipython-input-2-84adba9b209c>", line 1
+    if True
+           ^
+SyntaxError: invalid syntax
+
+```
+
+
+
 
 {:.input_area}
 ```python
 my_list = [1, 2]
 for value in my_list:
 print(value)
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-3-6b38a7bbe4d8>", line 3
+    print(value)
+        ^
+IndentationError: expected an indented block
+
 ```
 
 
@@ -89,6 +111,30 @@ ZeroDivisionError occurs when you try to divide by zero.
 {:.input_area}
 ```python
 1 / 0
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-4-bc757c3fda29> in <module>()
+----> 1 1 / 0
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
 ```
 
 
@@ -115,11 +161,61 @@ varaible
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-6-4acade15292f> in <module>()
+      1 # If you typo a name, you will get a NameError
+----> 2 varaible
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'varaible' is not defined
+```
+
+
+
 
 {:.input_area}
 ```python
 # You also get a name error if you try to use the wrong operator for assignment
 new_variable == 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-7-4f05423dede6> in <module>()
+      1 # You also get a name error if you try to use the wrong operator for assignment
+----> 2 new_variable == 1
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'new_variable' is not defined
 ```
 
 
@@ -137,12 +233,63 @@ my_list[5]
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+IndexError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-8-2c2a83518cf2> in <module>()
+      1 my_list = [1, 2, 3]
+----> 2 my_list[5]
+
+```
+
+{:.output_traceback_line}
+```
+IndexError: list index out of range
+```
+
+
+
 
 {:.input_area}
 ```python
 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
 my_dictionary = {'name1' : 1, 'name2' : 2}
 my_dictionary['name3']
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+KeyError                                  Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-9-84a1c00e4833> in <module>()
+      1 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
+      2 my_dictionary = {'name1' : 1, 'name2' : 2}
+----> 3 my_dictionary['name3']
+
+```
+
+{:.output_traceback_line}
+```
+KeyError: 'name3'
 ```
 
 
@@ -159,11 +306,60 @@ int('cat')
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-10-1c6b28888bbe> in <module>()
+----> 1 int('cat')
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: invalid literal for int() with base 10: 'cat'
+```
+
+
+
 
 {:.input_area}
 ```python
 my_list = [1, 2, 3]
 my_list.remove(0)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-11-f00634ed638b> in <module>()
+      1 my_list = [1, 2, 3]
+----> 2 my_list.remove(0)
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: list.remove(x): x not in list
 ```
 
 
@@ -177,11 +373,35 @@ my_list.remove(0)
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-12-57c293ee5895> in <module>()
+----> 1 'a_string' + 12
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: must be str, not int
+```
+
+
 ### Clicker Question #2
 
 How are we feeling about Python. 
 
-- a) Make total.
+- a) Makes total sense.
 - b) Getting there.
 - c) A little fuzzy.
 - d) Nope, no idea. 
@@ -200,6 +420,33 @@ for val in my_list:
     if val % 2 == 0:
         temp = val / (val - 4)
         running_sum += temp
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-13-08385b303fa2> in <module>()
+      5 
+      6     if val % 2 == 0:
+----> 7         temp = val / (val - 4)
+      8         running_sum += temp
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
 ```
 
 
@@ -225,7 +472,7 @@ except:
 ```
 
 
-### Try / Except Examplem
+### Try / Except Example
 
 
 
@@ -239,22 +486,61 @@ print('\nmy_num is: ', my_num)
 ```
 
 
+{:.output_stream}
+```
+Please type a number: 12
+
+my_num is:  12
+
+```
+
 ### Example with Try / Except
 
 
 
 {:.input_area}
 ```python
-while True:
+try:
+    int(input('Number'))
+except:
+    print("nahhh")
+```
+
+
+{:.output_stream}
+```
+Numberdskg
+nahhh
+
+```
+
+#### Try / Except within a While Loop
+
+
+
+{:.input_area}
+```python
+ask_for_num = True
+while ask_for_num:
     try:
         my_num = int(input("Please enter a number: "))
-        break
+        ask_for_num = False
     except ValueError:
         print("Oops!  That was no valid number. Try again!")
         
 print('\nmy_num is: ', my_num)
 ```
 
+
+{:.output_stream}
+```
+Please enter a number: sg
+Oops!  That was no valid number. Try again!
+Please enter a number: 12
+
+my_num is:  12
+
+```
 
 ### More Try / Except
 
@@ -273,7 +559,6 @@ def safe_divide(num1, num2):
         output = None
     
     return output
-        
 ```
 
 
@@ -286,12 +571,53 @@ print(divide(2, 0))
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-20-0cdf54a076ec> in <module>()
+----> 1 print(divide(2, 0))
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-19-2fcc9cd30b98> in divide(num1, num2)
+      1 def divide(num1, num2):
+----> 2     return num1 / num2
+      3 
+      4 def safe_divide(num1, num2):
+      5 
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
+```
+
+
+
 
 {:.input_area}
 ```python
 print(safe_divide(2, 0))
 ```
 
+
+{:.output_stream}
+```
+None
+
+```
 
 ## Raising Errors
 
@@ -313,69 +639,36 @@ print('My integer is: ', my_int)
 ```
 
 
+{:.output_stream}
+```
+An integer please: as
 
-
-{:.input_area}
-```python
-my_int = input('An integer please: ')
-if not my_int.isnumeric():
-    raise ValueError('I wanted a number! :(')
-    
-print('My integer is: ', my_int)
 ```
 
 
-## Debugging Practice
-
-
-
-{:.input_area}
-```python
-def my_function(input_1, input_2):
-    """A long function that might error."""
-    
-    if len(input_1) > 1
-    if input_1[0] = 0:
-        answer = 0
-    
-    elif len(input_2) == 2:
-        answer = input_2[1] / input_1[0]
-        
-    elif len(input_1) == len(input_2):
-        answer = input_1[0] + input_2[0]
-        
-    print(answer)
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
 ```
 
-
-
-
-{:.input_area}
-```python
-my_function([0, 1], [0])
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
 ```
 
+{:.output_traceback_line}
+```
+<ipython-input-22-bc64f24647db> in <module>()
+      1 my_int = input('An integer please: ')
+      2 if not my_int.isnumeric():
+----> 3     raise ValueError('I wanted a number! :(')
+      4 
+      5 print('My integer is: ', my_int)
 
-
-
-{:.input_area}
-```python
-my_function([0], [0, 1])
 ```
 
-
-
-
-{:.input_area}
-```python
-my_function([1], [1])
+{:.output_traceback_line}
 ```
-
-
-
-
-{:.input_area}
-```python
-my_function([1], ['1'])
+ValueError: I wanted a number! :(
 ```
 

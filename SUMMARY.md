@@ -11,5 +11,6 @@
 * [10-algorithms](./notebooks/10-Algorithms.ipynb)
 * [11-functionsii](./notebooks/11-FunctionsII.ipynb)
 * [12-debugging](./notebooks/12-Debugging.ipynb)
+* [13-objects](./notebooks/13-Objects.ipynb)
 * [A1-syntax](./notebooks/A1-Syntax.ipynb)
 * [A2-examples](./notebooks/A2-Examples.ipynb)

@@ -43,6 +43,9 @@ chapters:
   title: 12-debugging
   url: /chapters/12-Debugging
 - class: level_0
+  title: 13-objects
+  url: /chapters/13-Objects
+- class: level_0
   title: A1-syntax
   url: /chapters/A1-Syntax
 - class: level_0
