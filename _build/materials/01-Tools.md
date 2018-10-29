@@ -5,7 +5,7 @@ layout: materials
 title: '01-Tools'
 prev_page:
   url: /materials/00-Introduction
-  title: 'Materials'
+  title: '00-Introduction'
 next_page:
   url: /materials/02-JupyterNotebooks
   title: '02-JupyterNotebooks'
