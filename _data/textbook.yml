@@ -46,6 +46,9 @@ chapters:
   title: 13-objects
   url: /chapters/13-Objects
 - class: level_0
+  title: 14-classes
+  url: /chapters/14-Classes
+- class: level_0
   title: A1-syntax
   url: /chapters/A1-Syntax
 - class: level_0
