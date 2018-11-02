@@ -49,6 +49,9 @@ chapters:
   title: 14-classes
   url: /chapters/14-Classes
 - class: level_0
+  title: 15-namespaces
+  url: /chapters/15-Namespaces
+- class: level_0
   title: A1-syntax
   url: /chapters/A1-Syntax
 - class: level_0

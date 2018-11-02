@@ -4,8 +4,8 @@ pdf_link: assets/pdf/A1-Syntax.pdf
 title: 'A1-syntax'
 permalink: '/chapters/A1-Syntax'
 previouschapter:
-  url: /chapters/14-Classes
-  title: '14-classes'
+  url: /chapters/15-Namespaces
+  title: '15-namespaces'
 nextchapter:
   url: /chapters/A2-Examples
   title: 'A2-examples'

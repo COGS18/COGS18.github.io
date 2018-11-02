@@ -7,8 +7,8 @@ previouschapter:
   url: /chapters/13-Objects
   title: '13-objects'
 nextchapter:
-  url: /chapters/A1-Syntax
-  title: 'A1-syntax'
+  url: /chapters/15-Namespaces
+  title: '15-namespaces'
 redirect_from:
   - '/chapters/14-classes'
 ---

@@ -13,5 +13,6 @@
 * [12-debugging](./notebooks/12-Debugging.ipynb)
 * [13-objects](./notebooks/13-Objects.ipynb)
 * [14-classes](./notebooks/14-Classes.ipynb)
+* [15-namespaces](./notebooks/15-Namespaces.ipynb)
 * [A1-syntax](./notebooks/A1-Syntax.ipynb)
 * [A2-examples](./notebooks/A2-Examples.ipynb)
