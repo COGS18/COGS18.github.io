@@ -1,7 +1,7 @@
 ---
-download_link: assets/downloads/labs/CL1b-Answers.ipynb.zip
+download_link: assets/downloads/labs/CL1B-Answers.ipynb.zip
 layout: notebooks
-title: 'CL1b-Answers'
+title: 'CL1B-Answers'
 prev_page:
   url: /labs/CL1-ProgrammingI
   title: 'CL1-ProgrammingI'

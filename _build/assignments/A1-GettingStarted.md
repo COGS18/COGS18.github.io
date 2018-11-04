@@ -3,8 +3,8 @@ download_link: assets/downloads/assignments/Assignments.ipynb.zip
 layout: notebooks
 title: 'Assignments'
 prev_page:
-  url: /labs/CL3-AlgorithmicThinking
-  title: 'CL3-AlgorithmicThinking'
+  url: /labs/CL4B-Answers
+  title: 'CL4B-Answers'
 next_page:
   url: /assignments/A1-GettingStarted
   title: 'A1-GettingStarted'

@@ -3,8 +3,8 @@ download_link: assets/downloads/assignments/A3-Chatbots.ipynb.zip
 layout: notebooks
 title: 'A3-Chatbots'
 prev_page:
-  url: /assignments/A2-Ciphers
-  title: 'A2-Ciphers'
+  url: /assignments/A2B-Answers
+  title: 'A2B-Answers'
 next_page:
   url: /
   title: ''

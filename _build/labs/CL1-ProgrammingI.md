@@ -3,8 +3,8 @@ download_link: assets/downloads/labs/Coding Labs.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/10-Algorithms
-  title: '10-Algorithms'
+  url: /materials/A2-Examples
+  title: 'A2-Examples'
 next_page:
   url: /labs/CL1-ProgrammingI
   title: 'CL1-ProgrammingI'

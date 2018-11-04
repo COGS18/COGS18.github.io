@@ -7,8 +7,8 @@ prev_page:
   url: /materials/09-FunctionsI
   title: '09-FunctionsI'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/11-FunctionsII
+  title: '11-FunctionsII'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

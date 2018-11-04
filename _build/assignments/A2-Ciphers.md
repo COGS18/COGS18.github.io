@@ -3,11 +3,11 @@ download_link: assets/downloads/assignments/A2-Ciphers.ipynb.zip
 layout: notebooks
 title: 'A2-Ciphers'
 prev_page:
-  url: /assignments/A1-GettingStarted
-  title: 'A1-GettingStarted'
+  url: /assignments/A1B-Answers
+  title: 'A1B-GettingStarted'
 next_page:
-  url: /assignments/A3-Chatbots
-  title: 'A3-Chatbots'
+  url: /assignments/A2B-Answers
+  title: 'A2B-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

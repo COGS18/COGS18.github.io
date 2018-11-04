@@ -3,11 +3,11 @@ download_link: assets/downloads/labs/CL2-ProgrammingII.ipynb.zip
 layout: notebooks
 title: 'CL2-ProgrammingII'
 prev_page:
-  url: /labs/CL1b-Answers
-  title: 'CL1b-Answers'
+  url: /labs/CL1B-Answers
+  title: 'CL1B-Answers'
 next_page:
-  url: /labs/CL2b-Answers
-  title: 'CL2b-Answers'
+  url: /labs/CL2B-Answers
+  title: 'CL2B-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

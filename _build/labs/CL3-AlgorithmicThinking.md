@@ -3,11 +3,11 @@ download_link: assets/downloads/labs/CL3-AlgorithmicThinking.ipynb.zip
 layout: notebooks
 title: 'CL3-AlgorithmicThinking'
 prev_page:
-  url: /labs/CL2b-Answers
-  title: 'CL2b-Answers'
+  url: /labs/CL2B-Answers
+  title: 'CL2B-Answers'
 next_page:
-  url: /assignments/A1-GettingStarted
-  title: 'Assignments'
+  url: /labs/CL3B-Answers
+  title: 'CL3B-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
