@@ -2,6 +2,10 @@
 ---
 @import 'main';
 
+* {
+    color: #202020;
+}
+
 .home {
     font-size: 22px;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -23,8 +27,29 @@
     text-align: left;
 }
 
+$button-width: 200px;
 .buttons-custom {
     margin-right: 20px;
+    box-shadow: #2b2a2a7e 1.5px 1.5px 4px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    width: $button-width;
+
+    a {
+        width: $button-width;
+        text-align: center;
+    }
+
+    
+    :hover {
+        box-shadow: #3535357e 0px 0px 5px;    
+    }
+}
+
+.c-page__nav-custom {
+    a {
+        margin: 5px;
+    }
 }
 
 .text-content {
