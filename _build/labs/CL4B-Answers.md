@@ -7,8 +7,8 @@ prev_page:
   url: /labs/CL4-Exploring
   title: 'CL4-Exploring'
 next_page:
-  url: /assignments/A1-GettingStarted
-  title: 'Assignments'
+  url: /labs/CL5-ProjectPlans
+  title: 'CL5-ProjectPlans'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

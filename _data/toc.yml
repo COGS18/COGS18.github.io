@@ -107,6 +107,9 @@
   - title: CL4B-Answers
     url: /labs/CL4B-Answers
     not_numbered: true
+  - title: CL5-ProjectPlans
+    url: /labs/CL5-ProjectPlans
+    not_numbered: true
 
 - title: Assignments
   url: /assignments/A1-GettingStarted

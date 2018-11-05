@@ -2,7 +2,7 @@
 interact_link: content/assignments/A1B-Answers.ipynb
 download_link: assets/downloads/A1B-Answers.ipynb.zip
 layout: notebooks
-title: 'A1B-GettingStarted'
+title: 'A1B-Answers'
 prev_page:
   url: /assignments/A1-GettingStarted
   title: 'A1-GettingStarted'

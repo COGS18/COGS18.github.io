@@ -5,7 +5,7 @@ layout: notebooks
 title: 'A2-Ciphers'
 prev_page:
   url: /assignments/A1B-Answers
-  title: 'A1B-GettingStarted'
+  title: 'A1B-Answers'
 next_page:
   url: /assignments/A2B-Answers
   title: 'A2B-Answers'
