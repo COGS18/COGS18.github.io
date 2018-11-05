@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/Materials.ipynb.zip
+interact_link: content/materials/00-Introduction.ipynb
+download_link: assets/downloads/00-Introduction.ipynb.zip
 pdf_link: assets/pdf/Materials.pdf
 layout: materials
 title: 'Materials'

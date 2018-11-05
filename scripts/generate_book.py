@@ -8,6 +8,7 @@ import nbformat as nbf
 from tqdm import tqdm
 import numpy as np
 from glob import glob
+from zipfile import ZipFile
 import argparse
 DESCRIPTION = ("Convert a collection of Jupyter Notebooks into Jekyll "
                "markdown suitable for a course textbook.")
@@ -145,6 +146,11 @@ if __name__ == '__main__':
                             'templates', 'jekyllmd.tpl')
     PATH_IMAGES_FOLDER = op.join(PATH_SITE_ROOT, 'images')
     BUILD_FOLDER = op.join(PATH_SITE_ROOT, BUILD_FOLDER_NAME)
+    DOWNLOADS_FOLDER = op.join(PATH_SITE_ROOT, 'assets', 'downloads')
+
+    # Path checking
+    if not op.exists(DOWNLOADS_FOLDER):
+        os.mkdir(DOWNLOADS_FOLDER)
 
     ###############################################################################
     # Read in textbook configuration
@@ -269,6 +275,13 @@ if __name__ == '__main__':
 
             check_call(call)
             os.remove(tmp_notebook)
+
+            ###############################################################################
+            # Copy download version of notebook, if requested
+            if site_yaml.get('add_download_button', True):
+                nb_name = op.basename(path_url_page)
+                ZipFile(op.join(DOWNLOADS_FOLDER, nb_name + '.zip'), mode='w').write(path_url_page, nb_name)
+
         elif path_url_page.endswith('.md'):
             # If a non-notebook file, just copy it over.
             # If markdown we'll add frontmatter later
@@ -291,21 +304,22 @@ if __name__ == '__main__':
         if ix_file == 0:
             yaml_fm += ['redirect_from:']
             yaml_fm += ['  - "/"']
-        # if path_url_page.endswith('.ipynb'):
-        #    yaml_fm += ['interact_link: {}'.format(path_url_page.lstrip('./').replace(BUILD_FOLDER_NAME+'/', CONTENT_FOLDER_NAME))]
+        if path_url_page.endswith('.ipynb'):
+            if site_yaml.get('add_interact_button', True):
+                interact_path = 'content/' + path_url_page.split('content/')[-1]
+                yaml_fm += ['interact_link: {}'.format(interact_path)]
+            if site_yaml.get('add_download_button', True):
+                baseurl = site_yaml.get('baseurl') if site_yaml.get('baseurl') else ''
+                dl_link = op.join(baseurl, 'assets/downloads/' + op.basename(url_page) + '.ipynb.zip')
+                yaml_fm += ['download_link: {}'.format(dl_link)]
 
+        # Custom - Styling
         if op.dirname(path_url_page).endswith('materials'):
-            yaml_fm += ['download_link: {}'.format(
-                'assets/downloads/materials/' + title + '.ipynb.zip')]
             yaml_fm += ['pdf_link: {}'.format('assets/pdf/' + title + '.pdf')]
             yaml_fm += ["layout: materials"]
         if op.dirname(path_url_page).endswith('assignments'):
-            yaml_fm += ['download_link: {}'.format(
-                'assets/downloads/assignments/' + title + '.ipynb.zip')]
             yaml_fm += ["layout: notebooks"]
         if op.dirname(path_url_page).endswith('labs'):
-            yaml_fm += ['download_link: {}'.format(
-                'assets/downloads/labs/' + title + '.ipynb.zip')]
             yaml_fm += ["layout: notebooks"]
         if title == "Home":
             yaml_fm += ["layout: home"]

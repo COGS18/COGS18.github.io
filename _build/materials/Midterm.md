@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/Midterm.ipynb.zip
+interact_link: content/materials/Midterm.ipynb
+download_link: assets/downloads/Midterm.ipynb.zip
 pdf_link: assets/pdf/Midterm.pdf
 layout: materials
 title: 'Midterm'

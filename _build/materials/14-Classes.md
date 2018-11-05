@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/14-Classes.ipynb.zip
+interact_link: content/materials/14-Classes.ipynb
+download_link: assets/downloads/14-Classes.ipynb.zip
 pdf_link: assets/pdf/14-Classes.pdf
 layout: materials
 title: '14-Classes'

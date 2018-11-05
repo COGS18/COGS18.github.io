@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/assignments/Assignments.ipynb.zip
+interact_link: content/assignments/A1-GettingStarted.ipynb
+download_link: assets/downloads/A1-GettingStarted.ipynb.zip
 layout: notebooks
 title: 'Assignments'
 prev_page:

@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/A2-Examples.ipynb.zip
+interact_link: content/materials/A2-Examples.ipynb
+download_link: assets/downloads/A2-Examples.ipynb.zip
 pdf_link: assets/pdf/A2-Examples.pdf
 layout: materials
 title: 'A2-Examples'

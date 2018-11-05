@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/labs/CL3-AlgorithmicThinking.ipynb.zip
+interact_link: content/labs/CL3-AlgorithmicThinking.ipynb
+download_link: assets/downloads/CL3-AlgorithmicThinking.ipynb.zip
 layout: notebooks
 title: 'CL3-AlgorithmicThinking'
 prev_page:

@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/02-JupyterNotebooks.ipynb.zip
+interact_link: content/materials/02-JupyterNotebooks.ipynb
+download_link: assets/downloads/02-JupyterNotebooks.ipynb.zip
 pdf_link: assets/pdf/02-JupyterNotebooks.pdf
 layout: materials
 title: '02-JupyterNotebooks'

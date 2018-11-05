@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/05-Conditionals.ipynb.zip
+interact_link: content/materials/05-Conditionals.ipynb
+download_link: assets/downloads/05-Conditionals.ipynb.zip
 pdf_link: assets/pdf/05-Conditionals.pdf
 layout: materials
 title: '05-Conditionals'

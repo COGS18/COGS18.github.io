@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/labs/CL4B-Answers.ipynb.zip
+interact_link: content/labs/CL4B-Answers.ipynb
+download_link: assets/downloads/CL4B-Answers.ipynb.zip
 layout: notebooks
 title: 'CL4B-Answers'
 prev_page:

@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/assignments/A3-Chatbots.ipynb.zip
+interact_link: content/assignments/A3-Chatbots.ipynb
+download_link: assets/downloads/A3-Chatbots.ipynb.zip
 layout: notebooks
 title: 'A3-Chatbots'
 prev_page:

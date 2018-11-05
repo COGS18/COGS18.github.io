@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/07-Loops.ipynb.zip
+interact_link: content/materials/07-Loops.ipynb
+download_link: assets/downloads/07-Loops.ipynb.zip
 pdf_link: assets/pdf/07-Loops.pdf
 layout: materials
 title: '07-Loops'

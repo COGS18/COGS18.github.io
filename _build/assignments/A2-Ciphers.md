@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/assignments/A2-Ciphers.ipynb.zip
+interact_link: content/assignments/A2-Ciphers.ipynb
+download_link: assets/downloads/A2-Ciphers.ipynb.zip
 layout: notebooks
 title: 'A2-Ciphers'
 prev_page:

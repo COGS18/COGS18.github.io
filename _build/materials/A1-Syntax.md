@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/A1-Syntax.ipynb.zip
+interact_link: content/materials/A1-Syntax.ipynb
+download_link: assets/downloads/A1-Syntax.ipynb.zip
 pdf_link: assets/pdf/A1-Syntax.pdf
 layout: materials
 title: 'A1-Syntax'

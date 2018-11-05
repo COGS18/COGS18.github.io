@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/06-DataTypes.ipynb.zip
+interact_link: content/materials/06-DataTypes.ipynb
+download_link: assets/downloads/06-DataTypes.ipynb.zip
 pdf_link: assets/pdf/06-DataTypes.pdf
 layout: materials
 title: '06-DataTypes'

@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/assignments/A2B-Answers.ipynb.zip
+interact_link: content/assignments/A2B-Answers.ipynb
+download_link: assets/downloads/A2B-Answers.ipynb.zip
 layout: notebooks
 title: 'A2B-Answers'
 prev_page:

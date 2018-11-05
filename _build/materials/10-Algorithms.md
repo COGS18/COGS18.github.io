@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/10-Algorithms.ipynb.zip
+interact_link: content/materials/10-Algorithms.ipynb
+download_link: assets/downloads/10-Algorithms.ipynb.zip
 pdf_link: assets/pdf/10-Algorithms.pdf
 layout: materials
 title: '10-Algorithms'

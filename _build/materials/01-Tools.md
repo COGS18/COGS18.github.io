@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/01-Tools.ipynb.zip
+interact_link: content/materials/01-Tools.ipynb
+download_link: assets/downloads/01-Tools.ipynb.zip
 pdf_link: assets/pdf/01-Tools.pdf
 layout: materials
 title: '01-Tools'

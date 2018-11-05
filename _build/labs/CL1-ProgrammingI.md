@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/labs/Coding Labs.ipynb.zip
+interact_link: content/labs/CL1-ProgrammingI.ipynb
+download_link: assets/downloads/CL1-ProgrammingI.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:

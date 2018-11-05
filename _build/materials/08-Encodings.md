@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/08-Encodings.ipynb.zip
+interact_link: content/materials/08-Encodings.ipynb
+download_link: assets/downloads/08-Encodings.ipynb.zip
 pdf_link: assets/pdf/08-Encodings.pdf
 layout: materials
 title: '08-Encodings'

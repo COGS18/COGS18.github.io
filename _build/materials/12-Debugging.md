@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/12-Debugging.ipynb.zip
+interact_link: content/materials/12-Debugging.ipynb
+download_link: assets/downloads/12-Debugging.ipynb.zip
 pdf_link: assets/pdf/12-Debugging.pdf
 layout: materials
 title: '12-Debugging'

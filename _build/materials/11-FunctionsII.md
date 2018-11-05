@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/11-FunctionsII.ipynb.zip
+interact_link: content/materials/11-FunctionsII.ipynb
+download_link: assets/downloads/11-FunctionsII.ipynb.zip
 pdf_link: assets/pdf/11-FunctionsII.pdf
 layout: materials
 title: '11-FunctionsII'

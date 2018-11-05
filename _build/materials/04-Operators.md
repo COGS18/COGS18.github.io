@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/04-Operators.ipynb.zip
+interact_link: content/materials/04-Operators.ipynb
+download_link: assets/downloads/04-Operators.ipynb.zip
 pdf_link: assets/pdf/04-Operators.pdf
 layout: materials
 title: '04-Operators'

@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/labs/CL4-Exploring.ipynb.zip
+interact_link: content/labs/CL4-Exploring.ipynb
+download_link: assets/downloads/CL4-Exploring.ipynb.zip
 layout: notebooks
 title: 'CL4-Exploring'
 prev_page:

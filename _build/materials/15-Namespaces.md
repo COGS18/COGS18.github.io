@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/15-Namespaces.ipynb.zip
+interact_link: content/materials/15-Namespaces.ipynb
+download_link: assets/downloads/15-Namespaces.ipynb.zip
 pdf_link: assets/pdf/15-Namespaces.pdf
 layout: materials
 title: '15-Namespaces'

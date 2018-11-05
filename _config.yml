@@ -18,7 +18,7 @@
 # Jekyll site settings
 title: COGS 18 - Introduction To Python
 author: Tom Donoghue and Zehua Chen
-email: 
+email:
 description: >- # this means to ignore newlines until "baseurl:"
   This is the class website for COGS 18 - Introduction To Python Fall @ UCSD
 
@@ -36,6 +36,10 @@ hide_code_text            : "# NO CODE"  # When building the textbook, any cells
 css_url                   : "/assets/css" # Path to static CSS files
 js_url                    : "/assets/js" # Path to JS files
 collapse_inactive_chapters: true  # Whether to collapse the inactive chapters in the sidebar
+
+# Button settings
+add_interact_button      : true  # Whether to add a button link to an interactive version of the notebook
+add_download_button      : true  # Whether to add a button link to download a copy of the notebook
 
 # Interact link settings
 hub_url                  : "https://mybinder.org"  # The URL for your JupyterHub/BinderHub.

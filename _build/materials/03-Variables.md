@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/03-Variables.ipynb.zip
+interact_link: content/materials/03-Variables.ipynb
+download_link: assets/downloads/03-Variables.ipynb.zip
 pdf_link: assets/pdf/03-Variables.pdf
 layout: materials
 title: '03-Variables'

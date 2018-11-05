@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/materials/13-Objects.ipynb.zip
+interact_link: content/materials/13-Objects.ipynb
+download_link: assets/downloads/13-Objects.ipynb.zip
 pdf_link: assets/pdf/13-Objects.pdf
 layout: materials
 title: '13-Objects'

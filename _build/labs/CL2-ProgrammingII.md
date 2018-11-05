@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/labs/CL2-ProgrammingII.ipynb.zip
+interact_link: content/labs/CL2-ProgrammingII.ipynb
+download_link: assets/downloads/CL2-ProgrammingII.ipynb.zip
 layout: notebooks
 title: 'CL2-ProgrammingII'
 prev_page:

@@ -1,5 +1,6 @@
 ---
-download_link: assets/downloads/assignments/A1B-GettingStarted.ipynb.zip
+interact_link: content/assignments/A1B-Answers.ipynb
+download_link: assets/downloads/A1B-Answers.ipynb.zip
 layout: notebooks
 title: 'A1B-GettingStarted'
 prev_page:
