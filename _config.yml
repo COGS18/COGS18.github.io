@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is the class website for COGS 18 - Introduction To Python Fall @ UCSD
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "cogs18.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cogs18.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #######################################################################################
 # Jupyter Book settings
