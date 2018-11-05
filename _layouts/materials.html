@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
+<body>
+    <!-- Show sidebar by default -->
+    {% include onthispage.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        {% include sidebar.html %}
+
+        <main class="c-textbook__page" tabindex="-1">
+            {% include sidebar-toggle.html %}
+            <div class="o-wrapper">
+                <div style="display:flex"> 
+                    {% include download_button.html %}
+                    {% include pdf_button.html %}
+                </div>
+                {{ content }}
+
+                {% include page-nav.html %}
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
