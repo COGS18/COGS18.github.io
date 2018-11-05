@@ -35,3 +35,9 @@ An overview of the Coding Labs is available [here](../assets/intro/labs/overview
 
 {:.text-content}
 An overview of the Assignments is available [here](../assets/intro/assignments/overview.pdf).
+
+{:.sub-title}
+### Project
+
+{:.text-content}
+An overview of the Project is available [here](../assets/intro/projects/overview.pdf).
