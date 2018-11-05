@@ -7,8 +7,8 @@ prev_page:
   url: /materials/A1-Syntax
   title: 'A1-Syntax'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/Midterm
+  title: 'Midterm'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

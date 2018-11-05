@@ -75,6 +75,9 @@
   - title: A2-Examples
     url: /materials/A2-Examples
     not_numbered: true
+  - title: Midterm
+    url: /materials/Midterm
+    not_numbered: true
 
 - title: Coding Labs
   url: /labs/CL1-ProgrammingI
