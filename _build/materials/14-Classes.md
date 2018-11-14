@@ -23,11 +23,9 @@ What will the following code snippet print out:
 
 {:.input_area}
 ```python
-my_number = 13.3; my_string = "word"
-
 def check_data(word, number):
 
-    if not my_string.islower():
+    if not word.islower():
         answer = 'A1'
     elif number.is_integer() or word.isalpha():
         answer = 'A2'
@@ -36,6 +34,7 @@ def check_data(word, number):
         
     return answer
 
+my_number = 13.3; my_string = "word"
 check_data(my_string, my_number)
 ```
 
@@ -177,7 +176,7 @@ class Dog():
 {:.input_area}
 ```python
 # Initialize a dog, that
-gary = Dog('Gary')
+gary = Dog('Gary') 
 ```
 
 
@@ -186,8 +185,8 @@ gary = Dog('Gary')
 {:.input_area}
 ```python
 # Check gary's attributes
-print(gary.sound)    # This is an instance attribute
-print(gary.name)     # This is a class attribute
+print(gary.sound)    # This is an class attribute
+print(gary.name)     # This is a instace attribute
 ```
 
 
@@ -309,6 +308,56 @@ Which is the best description:
 - C) classes are described by objects, with particular instantiations of them called instances. 
 - D) objects are described by classes, with particular instantiations of them called instances. 
 - E) None of this makes any sense. 
+
+## Class Inheritance
+
+<div class="alert alert-success">
+Objects can also be built from other objects, inheriting their properties and building of them.
+</div>
+
+
+
+{:.input_area}
+```python
+class Tool():
+    
+    def __init__(self):
+        
+        self.is_tool = True
+        self.tool_type = None
+    
+    def use_tool(self):
+        print('Using tool.')
+
+class Hammer(Tool):
+    
+    def __init__(self):
+        
+        super().__init__()
+        self.tool_type = 'Hammer'
+        self.why = 'To hammer things.'
+```
+
+
+
+
+{:.input_area}
+```python
+my_tool = Tool()
+my_hammer = Hammer()
+print(my_hammer.is_tool)
+print(my_hammer.why)
+my_hammer.use_tool()
+```
+
+
+{:.output_stream}
+```
+True
+To hammer things.
+Using tool.
+
+```
 
 ## Everything in Python is an Object!
 

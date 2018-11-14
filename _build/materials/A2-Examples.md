@@ -319,6 +319,33 @@ Answer:	 3
 
 ```
 
+
+
+{:.input_area}
+```python
+# Define a function with default values
+def multiply(num1, num2=2):
+    return num1 * num2
+```
+
+
+
+
+{:.input_area}
+```python
+# Calling a function that has default values
+print(multiply(2))
+print(multiply(2, 3))
+```
+
+
+{:.output_stream}
+```
+4
+6
+
+```
+
 ## Combining Things
 
 
@@ -428,3 +455,76 @@ busy_function([True, 7.2, 'and', 13, False, '', None, 'word', True])
 ```
 
 
+
+# Classes
+
+
+
+{:.input_area}
+```python
+class Animal():
+    
+    # Create a class attribute
+    domain = 'eukaryota'
+
+    # Use init to define instance attributes
+    def __init__(self, sound):
+        self.sound = sound
+
+    # Define a class method
+    def speak(self):
+        print(self.sound)
+```
+
+
+
+
+{:.input_area}
+```python
+# Create an instance of our class
+gary = Animal('woof')
+gary.speak()
+```
+
+
+{:.output_stream}
+```
+woof
+
+```
+
+### Class Inheritance
+
+
+
+{:.input_area}
+```python
+class Monkey(Animal):
+    
+    def __init__(self, sound):
+        super().__init__(sound)
+        self.has_hands = True
+       
+    def check_hands(self):
+        if self.has_hands:
+            print('This animal has hands!')    
+```
+
+
+
+
+{:.input_area}
+```python
+# Create an instance of our derived
+jeff = Monkey('Monkey noise.')
+jeff.speak()
+jeff.check_hands()
+```
+
+
+{:.output_stream}
+```
+Monkey noise.
+This animal has hands!
+
+```

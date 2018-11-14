@@ -178,8 +178,7 @@ inputs = ['fIx', 'tYpiNg', 'lIkE', 'tHiS']
 output = ''
 
 for element in inputs:
-    element.lower()
-    output = output + element + ' '
+    output = output + element.lower() + ' '
 
 output.capitalize()
 ```
@@ -246,19 +245,18 @@ my_dict = {'n1' : True, 'n2' : False}
 {:.input_area}
 ```python
 # Return the keys in the dictionary
-my_dict.keys()
+out = my_dict.keys()
+print(out)
+print(my_dict)
 ```
 
 
-
-
-
-{:.output_data_text}
+{:.output_stream}
 ```
 dict_keys(['n1', 'n2'])
+{'n1': True, 'n2': False}
+
 ```
-
-
 
 
 
@@ -383,6 +381,64 @@ is_integer(my_float)
 {:.output_data_text}
 ```
 True
+```
+
+
+
+## Default Values
+
+<div class="alert alert-success">
+Function parameters can also take default values. This makes some parameters optional, as they take a default value if not otherwise specified.
+</div>
+
+#### Default Value Functions
+
+Specify a default value in a function by doing an assignment within the function definition.
+
+
+
+{:.input_area}
+```python
+# Create a function, that has a default values for a parameter
+def exponentiate(number, exponent=2):
+    return number**exponent
+```
+
+
+
+
+{:.input_area}
+```python
+# Use the function, using default value
+exponentiate(2)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+4
+```
+
+
+
+
+
+{:.input_area}
+```python
+# Call the function, over-riding default value with something else
+exponentiate(2, 3)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+8
 ```
 
 
