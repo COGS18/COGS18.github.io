@@ -39,12 +39,6 @@ A 'command line interface' is a way to interact with a computer through written 
 ```
 
 
-{:.output_stream}
-```
-/Users/tom/Documents/EdCode/18Org/Materials
-
-```
-
 #### Change directory
 
 
@@ -65,31 +59,6 @@ A 'command line interface' is a way to interact with a computer through written 
 ```
 
 
-{:.output_stream}
-```
-00-Introduction.ipynb           13-Objects.ipynb
-00-Introduction.slides.html     14-Classes.ipynb
-01-Tools.ipynb                  15-Namespaces.ipynb
-01-Tools.slides.html            16-CommandLine.ipynb
-02-JupyterNotebooks.ipynb       A1-Syntax.ipynb
-02-JupyterNotebooks.slides.html A2-Examples.ipynb
-03-Variables.ipynb              A3-Dictionary.ipynb
-03-Variables.slides.html        Midterm.ipynb
-04-Operators.ipynb              MidtermPractice.ipynb
-04-Operators.slides.html        README.md
-05-Conditionals.ipynb           TEMPLATES.ipynb
-05-conditionals.slides.html     Untitled.ipynb
-06-DataTypes.ipynb              XX-Assert.ipynb
-06-DataTypes.slides.html        ZZ-CheckInQuestions.ipynb
-07-Loops.ipynb                  [34m__pycache__[m[m
-08-Encodings.ipynb              assignment_notes.ipynb
-09-FunctionsI.ipynb             [34mdir_name[m[m
-10-Algorithms.ipynb             [34mimg[m[m
-11-FunctionsII.ipynb            remote.py
-12-Debugging.ipynb              zz-Misc.ipynb
-
-```
-
 ### More Shell Commands
 
 #### Make a new directory
@@ -101,12 +70,6 @@ A 'command line interface' is a way to interact with a computer through written 
 !mkdir dir_name
 ```
 
-
-{:.output_stream}
-```
-mkdir: dir_name: File exists
-
-```
 
 #### Create a file
 
@@ -140,12 +103,6 @@ mkdir: dir_name: File exists
 ```
 
 
-{:.output_stream}
-```
-Hello World!
-
-```
-
 #### Print the contents of a file
 
 
@@ -155,48 +112,6 @@ Hello World!
 !cat remote.py
 ```
 
-
-{:.output_stream}
-```
-
-def my_remote_function(input_1, input_2):
-    """A function from far away. 
-    
-    This function returns the sum of the two inputs. 
-    """
-    
-    return input_1 + input_2
-
-
-def choice(list_to_choose_from):
-    """Choose and return an item from a list. 
-       
-    Notes: I am a custom choice function! I am not from `random`. 
-    
-    Hint: my favourite is the last item. 
-    """
-    
-    return list_to_choose_from[-1]
-    
-    
-class MyNumbers():
-    
-    kind_of_thing = 'numbers'
-    
-    def __init__(self, num1, num2):
-        
-        self.num1 = num1
-        self.num2 = num2
-        
-    def add(self):
-        
-        return self.num1 + self.num2
-        
-    def subtract(self):
-        
-        return self.num2 - self.num1
-
-```
 
 ## Windows Command Prompt
 
@@ -261,8 +176,25 @@ Text-editors are programs made for editing text. Many text-editors are designed 
 
 ### Terminal Based Text Editors
 
-There are text editors designed to be used within a terminal, such as `vim` and `emacs`. 
+There are text editors designed to be used within a terminal, such as `vim`, `emacs`, or `nano`. 
+
+#### vim
+
+`vim` is a terminal based text-editor. Type `vim filename` in command line to open a file in vim. 
+
+`vim` has different modes:
+
+- click `escape` + `i` to enter edit mode (insert mode). 
+    - This will let you write text / code into the file
+- To escape vim, press `escape` then type `:wq` and enter to save and quit vim
+    - If you want to exit without saving, you can do `:!q` to force quit without saving
 
 ### Non-Terminal Text Editors
 
-For writing code (outside of notebooks and the terminal), you probably want a code focused stand-alone text editor, like Sublime.
+For writing code (outside of notebooks and the terminal), you probably want a code focused stand-alone text editor, like `Sublime`.
+
+## Executing Python Files
+
+From the command line, you can execute a Python script using the `python` command:
+
+`python my_python_file.py`
