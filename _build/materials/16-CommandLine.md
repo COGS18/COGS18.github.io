@@ -67,27 +67,26 @@ A 'command line interface' is a way to interact with a computer through written 
 
 {:.output_stream}
 ```
-00-Introduction.ipynb           14-Classes.ipynb
-00-Introduction.slides.html     15-Namespaces.ipynb
-01-Tools.ipynb                  16-CommandLine.ipynb
-01-Tools.slides.html            A1-Syntax.ipynb
-02-JupyterNotebooks.ipynb       A2-Examples.ipynb
-02-JupyterNotebooks.slides.html A3-Dictionary.ipynb
-03-Variables.ipynb              Midterm.ipynb
-03-Variables.slides.html        MidtermPractice.ipynb
-04-Operators.ipynb              README.md
-04-Operators.slides.html        TEMPLATES.ipynb
-05-Conditionals.ipynb           Untitled.ipynb
-05-conditionals.slides.html     XX-Assert.ipynb
-06-DataTypes.ipynb              ZZ-CheckInQuestions.ipynb
-06-DataTypes.slides.html        [34m__pycache__[m[m
-07-Loops.ipynb                  assignment_notes.ipynb
-08-Encodings.ipynb              [34mdir_name[m[m
-09-FunctionsI.ipynb             [34mimg[m[m
-10-Algorithms.ipynb             new_file.py
+00-Introduction.ipynb           13-Objects.ipynb
+00-Introduction.slides.html     14-Classes.ipynb
+01-Tools.ipynb                  15-Namespaces.ipynb
+01-Tools.slides.html            16-CommandLine.ipynb
+02-JupyterNotebooks.ipynb       A1-Syntax.ipynb
+02-JupyterNotebooks.slides.html A2-Examples.ipynb
+03-Variables.ipynb              A3-Dictionary.ipynb
+03-Variables.slides.html        Midterm.ipynb
+04-Operators.ipynb              MidtermPractice.ipynb
+04-Operators.slides.html        README.md
+05-Conditionals.ipynb           TEMPLATES.ipynb
+05-conditionals.slides.html     Untitled.ipynb
+06-DataTypes.ipynb              XX-Assert.ipynb
+06-DataTypes.slides.html        ZZ-CheckInQuestions.ipynb
+07-Loops.ipynb                  [34m__pycache__[m[m
+08-Encodings.ipynb              assignment_notes.ipynb
+09-FunctionsI.ipynb             [34mdir_name[m[m
+10-Algorithms.ipynb             [34mimg[m[m
 11-FunctionsII.ipynb            remote.py
 12-Debugging.ipynb              zz-Misc.ipynb
-13-Objects.ipynb
 
 ```
 
@@ -115,7 +114,7 @@ mkdir: dir_name: File exists
 
 {:.input_area}
 ```python
-!touch new_file.py
+!touch new_file.py 
 ```
 
 
@@ -198,6 +197,29 @@ class MyNumbers():
         return self.num2 - self.num1
 
 ```
+
+## Windows Command Prompt
+
+Some commands are slightly different if you are using windows command prompt:
+
+- `dir`
+    - lists files in current directory
+- `move`	
+    - moves a file
+- `copy`	
+    - copies a file
+- `rename`	
+    - renames a file
+- `type`
+    - can be used to print out a file
+    
+Note that `pwd`, `cd`, `mkdir`, `echo` are all the same in Windows command prompt.
+
+If you want to make a new empty file, you can do:
+
+`'' > file.txt`
+
+^This construction puts an empty string into a file. If the filename is not found, it will create a new (empty) file.
 
 ### Clicker Question #1
 
