@@ -69,6 +69,9 @@
   - title: 15-Namespaces
     url: /materials/15-Namespaces
     not_numbered: true
+  - title: 16-CommandLine
+    url: /materials/15-CommandLine
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
@@ -113,6 +116,9 @@
     not_numbered: true
   - title: CL5-ProjectPlans
     url: /labs/CL5-ProjectPlans
+    not_numbered: true
+  - title: CL6-CommandLine
+    url: /labs/CL6-CommandLine
     not_numbered: true
 
 - title: Assignments
