@@ -5,8 +5,8 @@ pdf_link: assets/pdf/A1-Syntax.pdf
 layout: materials
 title: 'A1-Syntax'
 prev_page:
-  url: /materials/16-CommandLine
-  title: '16-CommandLine'
+  url: /materials/17-APIs
+  title: '17-APIs'
 next_page:
   url: /materials/A2-Examples
   title: 'A2-Examples'
