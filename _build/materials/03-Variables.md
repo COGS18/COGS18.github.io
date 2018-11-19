@@ -98,12 +98,6 @@ print(my_var)
 ```
 
 
-{:.output_stream}
-```
-3
-
-```
-
 - In programming `=` means assignment
 - Anything to the right of the `=` is evaluated before assignment
 
@@ -121,17 +115,6 @@ The namespace is the 'place' where all your currently defined code is declared -
 %whos
 ```
 
-
-{:.output_stream}
-```
-Variable            Type    Data/Info
--------------------------------------
-my_other_variable   int     13
-my_var              int     3
-my_variable         int     12
-other_var           str     variables are cool
-
-```
 
 ## Declaring Variables Cheat Sheet
 
@@ -164,12 +147,6 @@ var_2 = var_1 = 1
 print(var_2)
 ```
 
-
-{:.output_stream}
-```
-1
-
-```
 
 - There can be more than one assignment in a single line
 - Anything to the right of the `=` is evaluated before assignment
@@ -206,7 +183,7 @@ int
 ### Int
 
 <div class="alert alert-success">
-`Integers` store unsigned, whole numbers.
+`Integers` store whole numbers.
 </div>
 
 

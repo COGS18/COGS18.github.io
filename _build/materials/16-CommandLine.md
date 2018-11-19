@@ -132,7 +132,7 @@ Note that `pwd`, `cd`, `mkdir`, `echo` are all the same in Windows command promp
 
 If you want to make a new empty file, you can do:
 
-`'' > file.txt`
+`'' > my_file.py`
 
 ^This construction puts an empty string into a file. If the filename is not found, it will create a new (empty) file.
 
