@@ -75,6 +75,9 @@
   - title: 17-APIs
     url: /materials/17-APIs
     not_numbered: true
+  - title: 18-ScientificComputing
+    url: /materials/18-ScientificComputing
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true

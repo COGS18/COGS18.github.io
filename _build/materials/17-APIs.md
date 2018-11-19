@@ -8,8 +8,8 @@ prev_page:
   url: /materials/16-CommandLine
   title: '16-CommandLine'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/18-ScientificComputing
+  title: '18-ScientificComputing'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
