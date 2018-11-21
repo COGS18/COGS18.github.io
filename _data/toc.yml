@@ -78,6 +78,9 @@
   - title: 18-ScientificComputing
     url: /materials/18-ScientificComputing
     not_numbered: true
+  - title: 19-OpenSource
+    url: /materials/19-OpenSource
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true

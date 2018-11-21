@@ -8,8 +8,8 @@ prev_page:
   url: /materials/17-APIs
   title: '17-APIs'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/19-OpenSource
+  title: '19-OpenSource'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -44,9 +44,29 @@ import numpy as np
 {:.input_area}
 ```python
 # Create some arrays of data
+arr0 = np.array([1, 2, 3])
 arr1 = np.array([[1, 2], [3, 4]])
 arr2 = np.array([[5, 6], [7, 8]])
 ```
+
+
+
+
+{:.input_area}
+```python
+arr1
+```
+
+
+
+
+
+{:.output_data_text}
+```
+array([[1, 2],
+       [3, 4]])
+```
+
 
 
 #### Indexing Arrays
@@ -75,8 +95,8 @@ array([[1, 2],
 
 {:.input_area}
 ```python
-# Index into a numpy array
-arr1[0, 0]
+# Check the shape of the array
+arr1.shape
 ```
 
 
@@ -85,7 +105,26 @@ arr1[0, 0]
 
 {:.output_data_text}
 ```
-1
+(2, 2)
+```
+
+
+
+
+
+{:.input_area}
+```python
+# Index into a numpy array
+arr1[1, 1]
+```
+
+
+
+
+
+{:.output_data_text}
+```
+4
 ```
 
 
@@ -142,7 +181,7 @@ Given the following code, what will it print out?
 ```python
 data = np.array([[1, 2, 3, 4],
                  [5, 6, 7, 8]])
-
+ 
 output = []
 for d1, d2 in zip(data[0, :], data[1, :]):
     output.append(d1 + d2)
@@ -150,6 +189,12 @@ for d1, d2 in zip(data[0, :], data[1, :]):
 print(output)
 ```
 
+
+{:.output_stream}
+```
+[6, 8, 10, 12]
+
+```
 
 A) [1, 2, 3, 4] | B) [1, 2, 3, 4, 5, 6, 7, 8]
 
@@ -172,8 +217,8 @@ import pandas as pd
 {:.input_area}
 ```python
 # Create some example heterogenous data
-d1 = {'Subj_ID': '001', 'score': 16, 'group' : 2, 'conditon': 'cognition'}
-d2 = {'Subj_ID': '002', 'score': 22, 'group' : 1, 'conditon': 'perception'}
+d1 = {'Subj_ID': '001', 'score': 16, 'group' : 2, 'condition': 'cognition'}
+d2 = {'Subj_ID': '002', 'score': 22, 'group' : 1, 'condition': 'perception'}
 ```
 
 
@@ -218,7 +263,7 @@ df
     <tr style="text-align: right;">
       <th></th>
       <th>Subj_ID</th>
-      <th>conditon</th>
+      <th>condition</th>
       <th>group</th>
       <th>score</th>
     </tr>
@@ -334,7 +379,7 @@ df.describe()
 {:.input_area}
 ```python
 # Take the average of all numeric columns
-df.mean()
+df.m ean()
 ```
 
 
@@ -396,13 +441,13 @@ plt.plot(dat)
 
 {:.output_data_text}
 ```
-[<matplotlib.lines.Line2D at 0x114c35a58>]
+[<matplotlib.lines.Line2D at 0x10fe68c18>]
 ```
 
 
 
 
-![png](../images/build/materials/18-ScientificComputing_31_1.png)
+![png](../images/build/materials/18-ScientificComputing_33_1.png)
 
 
 ## Analysis
@@ -439,7 +484,7 @@ plt.hist(d2, 25, alpha=0.6);
 
 
 
-![png](../images/build/materials/18-ScientificComputing_36_0.png)
+![png](../images/build/materials/18-ScientificComputing_38_0.png)
 
 
 ### Analysis - Statistical Comparisons
@@ -458,77 +503,9 @@ stats.ttest_ind(d1, d2)
 
 {:.output_data_text}
 ```
-Ttest_indResult(statistic=-10.16388336975198, pvalue=1.0716463975742716e-23)
+Ttest_indResult(statistic=-9.8514621184205282, pvalue=2.1664258801374293e-22)
 ```
 
-
-
-## Example: Neural Time Series
-
-
-
-{:.input_area}
-```python
-from neurodsp import sim, spectral
-from fooof import FOOOF
-```
-
-
-
-
-{:.input_area}
-```python
-# Simulate a signal
-signal = sim.sim_noisy_bursty_oscillator(50, 1000, 10, exponent=-2)
-```
-
-
-
-
-{:.input_area}
-```python
-# Plot the signal
-plt.figure(figsize=[16, 6])
-plt.plot(signal[0:2000])
-```
-
-
-
-
-
-{:.output_data_text}
-```
-[<matplotlib.lines.Line2D at 0x11ee204e0>]
-```
-
-
-
-
-![png](../images/build/materials/18-ScientificComputing_42_1.png)
-
-
-
-
-{:.input_area}
-```python
-# Calculate the power spectrum
-freqs, powers = spectral.compute_spectrum(signal, 2500)
-```
-
-
-
-
-{:.input_area}
-```python
-# Model the frequency space representation of the data
-fm = FOOOF(verbose=False)
-fm.fit(freqs, powers, [5, 100])
-fm.plot()
-```
-
-
-
-![png](../images/build/materials/18-ScientificComputing_44_0.png)
 
 
 ## COGS108: Data Science in Practice
