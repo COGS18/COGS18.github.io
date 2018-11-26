@@ -94,7 +94,6 @@
     url: /materials/MidtermPractice
     not_numbered: true
 
-
 - title: Coding Labs
   url: /labs/CL1-ProgrammingI
   not_numbered: true
@@ -151,4 +150,12 @@
     not_numbered: true
   - title: A4-ArtificialAgents
     url: /assignments/A4-ArtificialAgents
+    not_numbered: true
+
+- title: Projects
+  url: /projects/ProjectIdeas
+  not_numbered: true
+  sections:
+  - title: ProjectIdeas
+    url: /projects/ProjectIdeas
     not_numbered: true
