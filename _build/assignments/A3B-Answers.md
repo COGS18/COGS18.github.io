@@ -1,14 +1,14 @@
 ---
-interact_link: content/assignments/A3-Chatbots.ipynb
-download_link: assets/downloads/A3-Chatbots.ipynb.zip
+interact_link: content/assignments/A3B-Answers.ipynb
+download_link: assets/downloads/A3B-Answers.ipynb.zip
 layout: notebooks
-title: 'A3-Chatbots'
+title: 'A3B-Answers'
 prev_page:
-  url: /assignments/A2B-Answers
-  title: 'A2B-Answers'
+  url: /assignments/A3-Chatbots
+  title: 'A3-Chatbots'
 next_page:
-  url: /assignments/A3B-Answers
-  title: 'A3B-Answers'
+  url: /assignments/A4-ArtificialAgents
+  title: 'A4-ArtificialAgents'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -101,6 +101,13 @@ print(basic_function(5))
 ```
 
 
+{:.output_stream}
+```
+4
+10
+
+```
+
 
 
 {:.input_area}
@@ -131,6 +138,12 @@ print(more_complicated_function('ab45b'))
 ```
 
 
+{:.output_stream}
+```
+3
+
+```
+
 ### Q1 - Find Max Value  (0.5 points)
 
 Write a function called `find_max`, that takes in a single parameter called `random_list`, which should be a list. 
@@ -151,8 +164,18 @@ After the loop, return `list_max`, which should now store the maximum value from
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def find_max(random_list):
+    
+    list_max = 0
+
+    for number in random_list:
+        
+        if number > list_max:
+            list_max = number
+            
+    return list_max
+### END SOLUTION
 ```
 
 
@@ -172,6 +195,10 @@ assert find_max([1,7,5]) == 7
 ```python
 assert callable(find_max)
 
+### BEGIN HIDDEN TESTS
+assert find_max([8,13,3]) == 13
+assert find_max([0,4.2,7.6]) == 7.6
+### END HIDDEN TESTS
 ```
 
 
@@ -187,8 +214,15 @@ To do so, inside the function, you will define a new list, use a loop to loop th
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def square_all(collection):
+    
+    square_list = []
+    for val in collection:
+        square_list.append(val**2)
+    
+    return square_list
+### END SOLUTION
 ```
 
 
@@ -208,6 +242,11 @@ assert square_all((2, 4)) == [4, 16]
 ```python
 assert callable(square_all)
 
+### BEGIN HIDDEN TESTS
+test_collection = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+test_collection_answer = [1, 4, 9, 16, 25, 36, 49, 64, 81]
+assert  square_all(test_collection) == test_collection_answer
+### END HIDDEN TESTS
 ```
 
 
@@ -237,8 +276,19 @@ Each of them will take two inputs `num1` and `num2` (that could be `int` or `flo
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def summation(num1, num2):
+    return num1 + num2
+
+def subtraction(num1, num2):
+    return num1 - num2
+
+def multiplication(num1, num2):
+    return num1 * num2
+
+def division(num1, num2):
+    return num1 / num2
+### END SOLUTION
 ```
 
 
@@ -251,6 +301,9 @@ assert isinstance(summation(2, 2), int)
 assert isinstance(summation(2.5, 1), float)
 assert summation(1, 1) == 2
 
+### BEGIN HIDDEN TESTS
+assert summation(10,5) == 15
+### END HIDDEN TESTS
 ```
 
 
@@ -263,6 +316,9 @@ assert isinstance(subtraction(2, 2), int)
 assert isinstance(summation(2.5, 0.5), float)
 assert subtraction(1, 1) == 0
 
+### BEGIN HIDDEN TESTS
+assert subtraction(16,7) == 9
+### END HIDDEN TESTS
 ```
 
 
@@ -275,6 +331,9 @@ assert isinstance(multiplication(2, 2), int)
 assert isinstance(multiplication(2.5, 2), float)
 assert multiplication(1, 1) == 1
 
+### BEGIN HIDDEN TESTS
+assert multiplication(18, 2) == 36
+### END HIDDEN TESTS
 ```
 
 
@@ -287,6 +346,9 @@ assert isinstance(division(2, 2), float)
 assert isinstance(division(2.5, 0.5), float)
 assert division(1, 1) == 1
 
+### BEGIN HIDDEN TESTS
+assert division(24, 3) == 8
+### END HIDDEN TESTS
 ```
 
 
@@ -301,8 +363,13 @@ Let's now add some more functions to our calculator:
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def square(num):
+    return num**2
+
+def square_root(num):
+    return num**(1/2)
+### END SOLUTION
 ```
 
 
@@ -314,6 +381,9 @@ assert callable(square)
 assert isinstance(square(2), int)
 assert square(5) == 25
 
+### BEGIN HIDDEN TESTS
+assert square(7) == 49
+### END HIDDEN TESTS
 ```
 
 
@@ -325,6 +395,9 @@ assert callable(square_root)
 assert isinstance(square_root(4), float)
 assert square_root(144) == 12
 
+### BEGIN HIDDEN TESTS
+assert square_root(49) == 7
+### END HIDDEN TESTS
 ```
 
 
@@ -359,6 +432,14 @@ print('Output2: \t', output2)
 ```
 
 
+{:.output_stream}
+```
+Output1: 	 18
+
+Output2: 	 18
+
+```
+
 ### Q5 - Using Our Calculator  (0.5 points)
 
 Let's now use our new calculator functions to do some calculations!
@@ -376,8 +457,12 @@ Let's now use our new calculator functions to do some calculations!
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+calc_a = summation(square(3), square_root(9))
+calc_b = subtraction(multiplication(2, 4), division(12, 3))
+calc_c = multiplication(square_root(16), summation(7, 9))
+calc_d = division(square(7), square_root(49))
+### END SOLUTION
 ```
 
 
@@ -388,6 +473,9 @@ raise NotImplementedError()
 assert calc_a
 assert isinstance(calc_a, float)
 
+### BEGIN HIDDEN TESTS
+assert calc_a == 12
+### END HIDDEN TESTS
 ```
 
 
@@ -398,6 +486,9 @@ assert isinstance(calc_a, float)
 assert calc_b
 assert isinstance(calc_b, float)
 
+### BEGIN HIDDEN TESTS
+assert calc_b == 4
+### END HIDDEN TESTS
 ```
 
 
@@ -408,6 +499,9 @@ assert isinstance(calc_b, float)
 assert calc_c
 assert isinstance(calc_c, float)
 
+### BEGIN HIDDEN TESTS
+assert calc_c == 64
+### END HIDDEN TESTS
 ```
 
 
@@ -418,6 +512,9 @@ assert isinstance(calc_c, float)
 assert calc_d
 assert isinstance(calc_d, float)
 
+### BEGIN HIDDEN TESTS
+assert calc_d == 7
+### END HIDDEN TESTS
 ```
 
 
@@ -453,8 +550,25 @@ Each function should take in a single parameter, a number called `value`:
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def is_even(value):
+    
+    if value % 2 == 0:
+        answer = True
+    else:
+        answer = False
+    
+    return answer
+
+def is_positive(value):
+    
+    if value > 0:
+        answer = True
+    else:
+        answer = False
+    
+    return answer
+### END SOLUTION
 ```
 
 
@@ -466,6 +580,10 @@ assert callable(is_even)
 assert isinstance(is_even(3), bool)
 assert is_even(3) == False
 
+### BEGIN HIDDEN TESTS
+assert is_even(4) == True
+assert is_even(-7) == False
+### END HIDDEN TESTS
 ```
 
 
@@ -477,6 +595,10 @@ assert callable(is_positive)
 assert isinstance(is_positive(3), bool)
 assert is_positive(-2) == False
 
+### BEGIN HIDDEN TESTS
+assert is_positive(4) == True
+assert is_positive(-7) == False
+### END HIDDEN TESTS
 ```
 
 
@@ -497,8 +619,22 @@ That is, this function will  check each value in `data_list` to see if they are 
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def make_new_list(data_list):
+    
+    output = []
+    
+    for value in data_list:
+        
+        if is_positive(value) and is_even(value):
+            output.append(1)
+        elif not is_positive(value) and not is_even(value):
+            output.append(-1)
+        else:
+            output.append(0)
+            
+    return output
+### END SOLUTION
 ```
 
 
@@ -520,6 +656,11 @@ assert(len(make_new_list(data_list)) == len(data_list))
 ```python
 assert callable(make_new_list)
 
+### BEGIN HIDDEN TESTS
+assert sum([1 for it in make_new_list(data_list) if it == 1 ]) == 2
+assert sum([1 for it in make_new_list(data_list) if it == -1 ]) == 3
+assert sum([1 for it in make_new_list(data_list) if it == 0 ]) == 5
+### END HIDDEN TESTS
 ```
 
 
@@ -552,8 +693,12 @@ We can use these questions to start to think through what might be easy and hard
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+algo_q_a = 'human'
+algo_q_b = 'computer'
+algo_q_c = 'computer'
+algo_q_d = 'human'
+### END SOLUTION
 ```
 
 
@@ -563,6 +708,9 @@ raise NotImplementedError()
 ```python
 assert algo_q_a in ['human', 'computer']
 
+### BEGIN HIDDEN TESTS
+assert algo_q_a == 'human'
+### END HIDDEN TESTS
 ```
 
 
@@ -572,6 +720,9 @@ assert algo_q_a in ['human', 'computer']
 ```python
 assert algo_q_b in ['human', 'computer']
 
+### BEGIN HIDDEN TESTS
+assert algo_q_b == 'computer'
+### END HIDDEN TESTS
 ```
 
 
@@ -581,6 +732,9 @@ assert algo_q_b in ['human', 'computer']
 ```python
 assert algo_q_c in ['human', 'computer']
 
+### BEGIN HIDDEN TESTS
+assert algo_q_c == 'computer'
+### END HIDDEN TESTS
 ```
 
 
@@ -590,6 +744,9 @@ assert algo_q_c in ['human', 'computer']
 ```python
 assert algo_q_d in ['human', 'computer']
 
+### BEGIN HIDDEN TESTS
+assert algo_q_d == 'human'
+### END HIDDEN TESTS
 ```
 
 
@@ -694,8 +851,16 @@ Procedure(s):
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGING SOLUTION
+def is_question(input_string):
+    
+    if '?' in input_string:
+        output = True
+    else:
+        output = False
+    
+    return output
+### END SOLUTION
 ```
 
 
@@ -715,6 +880,10 @@ assert is_question('what?') == True
 ```python
 assert callable(is_question)
 
+### BEGIN HIDDEN TESTS
+assert is_question('nope.') == False
+assert is_question('how are you?') == True
+### END HIDDEN TESTS
 ```
 
 
@@ -741,6 +910,14 @@ print('@' in string.punctuation)
 ```
 
 
+{:.output_stream}
+```
+!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+True
+
+```
+
 ### Q10 - Removing punctuation (0.5 points)
 
 Once we know if an input is a question, we are going to get rid of all punctuation. 
@@ -766,8 +943,16 @@ Procedure(s):
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def remove_punctuation(input_string):
+    
+    out_string = ''
+    for char in input_string:
+        if char not in string.punctuation:
+            out_string += char
+            
+    return out_string
+### END SOLUTION
 ```
 
 
@@ -787,6 +972,10 @@ assert remove_punctuation("Hey! It's Tom!") == "Hey Its Tom"
 ```python
 assert callable(remove_punctuation)
 
+### BEGIN HIDDEN TESTS
+assert remove_punctuation('a@b..i') == 'abi'
+assert remove_punctuation('He^pp0!!!') == 'Hepp0'
+### END HIDDEN TESTS
 ```
 
 
@@ -819,8 +1008,15 @@ Procedure(s):
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def prepare_text(input_string):
+    
+    temp_string = input_string.lower()
+    temp_string = remove_punctuation(temp_string)
+    out_list = temp_string.split()
+    
+    return out_list
+### END SOLUTION
 ```
 
 
@@ -840,6 +1036,10 @@ assert prepare_text('Hi! Also, howdy.') == ['hi', 'also', 'howdy']
 ```python
 assert callable(prepare_text)
 
+### BEGIN HIDDEN TESTS
+assert prepare_text("I'm a sentence.") == ['im', 'a', 'sentence']
+assert prepare_text("j0kes, haha, oh boy.") == ['j0kes', 'haha', 'oh', 'boy']
+### END HIDDEN TESTS
 ```
 
 
@@ -877,8 +1077,16 @@ So, for example, `respond_echo('bark', 2, '-')` should return: 'bark-bark-'
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def respond_echo(input_string, number_of_echoes, spacer):
+    
+    if input_string is not None:
+        echo_output = (input_string+spacer)*(number_of_echoes)
+    else:
+        echo_output = None
+    
+    return echo_output    
+### END SOLUTION
 ```
 
 
@@ -899,6 +1107,10 @@ assert respond_echo(None, 2, '') == None
 ```python
 assert callable(respond_echo)
 
+### BEGIN HIDDEN TESTS
+assert respond_echo('ha', 3, ' ') == 'ha ha ha '
+assert respond_echo('lol', 2, '') == 'lollol'
+### END HIDDEN TESTS
 ```
 
 
@@ -919,6 +1131,16 @@ An example of using `random.choice` is offered below.
 # Given a list of inputs, randomly choose and return one of them (re-run this to see different outputs)
 random.choice(['first option', 'second option', 'third option'])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'third option'
+```
+
 
 
 ### Q13 - Selector (0.5 points)
@@ -953,8 +1175,17 @@ Note that if we don't find any words from `input_list` that are in `check_list`,
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def selector(input_list, check_list, return_list):
+
+    output = None
+    for word in input_list:
+        if word in check_list:
+            output = random.choice(return_list)
+            break
+
+    return output
+### END SOLUTION
 ```
 
 
@@ -975,6 +1206,12 @@ assert selector(['in', 'words'], ['out'], ['yes']) == None
 ```python
 assert callable(selector)
 
+### BEGIN HIDDEN TESTS
+test_out = selector(['this', 'is', 'a', 'test'], ['test'], ['out1', 'out2'])
+assert test_out in ['out1', 'out2']
+test_out = selector(['this', 'is', 'a', 'test'], ['vanish'], ['out1', 'out2'])
+assert test_out is None
+### END HIDDEN TESTS
 ```
 
 
@@ -1002,8 +1239,13 @@ Procedure(s):
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def string_concatenator(string1, string2, separator):
+    
+    result = string1 + separator + string2
+    
+    return result
+### END SOLUTION
 ```
 
 
@@ -1023,6 +1265,10 @@ assert string_concatenator('hello', 'world', ' ') == 'hello world'
 ```python
 assert callable(string_concatenator)
 
+### BEGIN HIDDEN TESTS
+assert string_concatenator('yay', 'python', ' ') == 'yay python'
+assert string_concatenator('other', 'test', '-') == 'other-test'
+### END HIDDEN TESTS
 ```
 
 
@@ -1062,8 +1308,15 @@ Procedure(s):
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def list_to_string(input_list, separator):
+    
+    output = input_list[0]
+    for item in input_list[1:]:
+        output = string_concatenator(output, item, separator)
+        
+    return output
+### END SOLUTION
 ```
 
 
@@ -1083,6 +1336,10 @@ assert list_to_string(['a', 'b'], '|') == 'a|b'
 ```python
 assert callable(list_to_string)
 
+### BEGIN HIDDEN TESTS
+assert list_to_string(['More', 'words'], ' ') == 'More words'
+assert list_to_string(['and', 'again', 'aswell'], '!') == 'and!again!aswell'
+### END HIDDEN TESTS
 ```
 
 
@@ -1109,8 +1366,16 @@ Procedure(s):
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
-raise NotImplementedError()
+### BEGIN SOLUTION
+def end_chat(input_list):
+    
+    if 'quit' in input_list:
+        output = True
+    else:
+        output = False
+        
+    return output
+### END SOLUTION
 ```
 
 
@@ -1130,6 +1395,10 @@ assert end_chat(['quit']) == True
 ```python
 assert callable(end_chat)
 
+### BEGIN HIDDEN TESTS
+assert end_chat(['keep', 'going']) == False
+assert end_chat(['yo', 'i', 'quit']) == True
+### END HIDDEN TESTS
 ```
 
 
@@ -1294,6 +1563,13 @@ If this happens, it probably means there is some issue with one of the functions
 have_a_chat()
 ```
 
+
+{:.output_stream}
+```
+INPUT :	quit
+OUTPUT: Bye!
+
+```
 
 ### Extending Our Chatbot
 

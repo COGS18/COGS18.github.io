@@ -4,8 +4,8 @@ download_link: assets/downloads/A4-ArtificialAgents.ipynb.zip
 layout: notebooks
 title: 'A4-ArtificialAgents'
 prev_page:
-  url: /assignments/A3-Chatbots
-  title: 'A3-Chatbots'
+  url: /assignments/A3B-Answers
+  title: 'A3B-Answers'
 next_page:
   url: /projects/ProjectIdeas
   title: 'Projects'
