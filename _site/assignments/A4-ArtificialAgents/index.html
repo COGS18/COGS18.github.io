@@ -1,0 +1,2182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>A4-ArtificialAgents</title>
+  <meta name="description" content="Assignment 4: Artificial Agents">
+
+  <link rel="canonical" href="http://localhost:4000/assignments/A4-ArtificialAgents/">
+  <link rel="alternate" type="application/rss+xml" title="COGS 18 - Introduction To Python" href="http://localhost:4000/feed.xml">
+
+  <meta property="og:url"         content="http://localhost:4000/assignments/A4-ArtificialAgents/" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="A4-ArtificialAgents" />
+<meta property="og:description" content="Assignment 4: Artificial Agents" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://localhost:4000/assignments/A4-ArtificialAgents/",
+  "headline":
+    "A4-ArtificialAgents",
+  "datePublished":
+    "2018-11-25T22:47:35-08:00",
+  "dateModified":
+    "2018-11-25T22:47:35-08:00",
+  "description":
+    "Assignment 4: Artificial Agents",
+  "author": {
+    "@type": "Person",
+    "name": "Tom Donoghue and Zehua Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Google analytics -->
+  <script src="/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load custom website scripts -->
+  <script src="/assets/js/scripts.js" async></script>
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  <script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  console.log(url)
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return jQuery.param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = $("a").each(function() {
+    var href = this.href;
+    // If the link is an internal link...
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['hub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'hub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + jQuery.param(params);
+      this.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    hubUrl = rest['hub'];
+    if (hubUrl !== undefined) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      link = $("a.interact")[0];
+      if (link !== undefined) {
+          // Update the interact link URL
+          var href = link.getAttribute('href');
+          var hub_type = 'binder';
+          if (hub_type === 'binder') {
+            // If binder links exist, we need to re-work them for jupyterhub
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+              first = [hubUrl, 'git-sync'].join('/')
+            } else {
+              first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+            }
+            href = first + '?' + binder2Jupyterhub(href);
+          } else {
+            // If JupyterHub links, we only need to replace the hub url
+            href = href.replace("https://mybinder.org", hubUrl);
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // Assume we're working from a local Jupyter server and remove `/hub`
+              href = href.replace("/hub/user-redirect", "");
+            }
+          }
+          link.setAttribute('href', decodeURIComponent(href));
+
+          // Add text after interact link saying where we're launching
+          hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+          $("a.interact").after($('<div class="interact-context">on ' + hubUrlNoHttp + '</div>'));
+
+      }
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+</head>
+
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
+<body>
+    <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#setup">Setup</a></li>
+  <li><a href="#part-1-functions--methods-re-visited">Part 1: Functions &amp; Methods (re-visited)</a>
+    <ul>
+      <li><a href="#q1---string-methods--1-point">Q1 - String Methods  (1 point)</a></li>
+      <li><a href="#example-functions-with-default-values">Example: Functions with Default Values</a></li>
+      <li><a href="#q2---default-value-functions-05-points">Q2 - Default Value Functions (0.5 points)</a></li>
+      <li><a href="#example-zip">Example: Zip</a></li>
+      <li><a href="#q3---functions-for-later-1-point">Q3 - Functions for Later (1 point)</a></li>
+      <li><a href="#a-add-lists">a) Add Lists</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-classes">Part 2: Classes</a>
+    <ul>
+      <li><a href="#q4---creating-a-class">Q4 - Creating a Class</a></li>
+      <li><a href="#q5---car-inventory">Q5 - Car Inventory</a></li>
+      <li><a href="#example-class-inheritance">Example: Class Inheritance</a></li>
+      <li><a href="#q6---extending-our-class-through-inheritance-05-points">Q6 - Extending our Class through Inheritance (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-3-artificial-agents">Part 3: Artificial Agents</a>
+    <ul>
+      <li><a href="#q7---bot-base-class">Q7 - Bot Base Class</a></li>
+      <li><a href="#q8---wanderbot">Q8 - WanderBot</a></li>
+      <li><a href="#example-random-probabilistic-choices">Example: Random Probabilistic Choices</a></li>
+      <li><a href="#q9---explorebot">Q9 - ExploreBot</a></li>
+      <li><a href="#q10---teleportbot">Q10 - TeleportBot</a></li>
+      <li><a href="#running-it-all-together">Running it all together</a></li>
+    </ul>
+  </li>
+  <li><a href="#extending-our-agents">Extending Our Agents</a></li>
+  <li><a href="#the-end">The End!</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
+    <h2 class="c-sidebar__title">
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+    </h2>
+    <ul class="c-sidebar__chapters">
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/intro">
+                
+                Home
+            </a>
+
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                
+                Materials
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                        
+                        00-Introduction
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/01-Tools">
+                        
+                        01-Tools
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/02-JupyterNotebooks">
+                        
+                        02-JupyterNotebooks
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/03-Variables">
+                        
+                        03-Variables
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/04-Operators">
+                        
+                        04-Operators
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/05-Conditionals">
+                        
+                        05-Conditionals
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/06-DataTypes">
+                        
+                        06-DataTypes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/07-Loops">
+                        
+                        07-Loops
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/08-Encodings">
+                        
+                        08-Encodings
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/09-FunctionsI">
+                        
+                        09-FunctionsI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/10-Algorithms">
+                        
+                        10-Algorithms
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/11-FunctionsII">
+                        
+                        11-FunctionsII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/12-Debugging">
+                        
+                        12-Debugging
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/13-Objects">
+                        
+                        13-Objects
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/14-Classes">
+                        
+                        14-Classes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/15-Namespaces">
+                        
+                        15-Namespaces
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/16-CommandLine">
+                        
+                        16-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/17-APIs">
+                        
+                        17-APIs
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/18-ScientificComputing">
+                        
+                        18-ScientificComputing
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/19-OpenSource">
+                        
+                        19-OpenSource
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A1-Syntax">
+                        
+                        A1-Syntax
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A2-Examples">
+                        
+                        A2-Examples
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/Midterm">
+                        
+                        Midterm
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/MidtermPractice">
+                        
+                        MidtermPractice
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                
+                Coding Labs
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                        
+                        CL1-ProgrammingI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1B-Answers">
+                        
+                        CL1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2-ProgrammingII">
+                        
+                        CL2-ProgrammingII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2B-Answers">
+                        
+                        CL2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3-AlgorithmicThinking">
+                        
+                        CL3-AlgorithmicThinking
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3B-Answers">
+                        
+                        CL3B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4-Exploring">
+                        
+                        CL4-Exploring
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4B-Answers">
+                        
+                        CL4B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL5-ProjectPlans">
+                        
+                        CL5-ProjectPlans
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL6-CommandLine">
+                        
+                        CL6-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                
+                Assignments
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections ">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                        
+                        A1-GettingStarted
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1B-Answers">
+                        
+                        A1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2-Ciphers">
+                        
+                        A2-Ciphers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2B-Answers">
+                        
+                        A2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A3-Chatbots">
+                        
+                        A3-Chatbots
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry c-sidebar__entry--active" href="/assignments/A4-ArtificialAgents">
+                        
+                        A4-ArtificialAgents
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                
+                Projects
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                        
+                        ProjectIdeas
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+    </ul>
+</nav>
+
+        <main class="c-textbook__page" tabindex="-1">
+            <div class="o-wrapper c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            <div class="o-wrapper">
+                <!-- DOWNLOAD BUTTONS -->
+
+    <div class="buttons">
+        <a class="button" href="http://localhost:4000/assets/downloads/A4-ArtificialAgents.ipynb.zip">Download Notebook</a>
+    </div>
+
+                <h1 id="assignment-4-artificial-agents">Assignment 4: Artificial Agents</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This assignment covers Classes &amp; Objects, and builds up to the application of Artificial Agents.</p>
+
+<p>This assignment is out of 8 points, worth 8% of your grade.</p>
+
+<p>Make sure your completed assignment passes all the asserts. This assignment also has some hidden tests - which means that passing all the asserts you see does not guarantee that you have the correct answer! Make sure to double check and re-run your code to make sure it does what you expect.</p>
+
+<h2 id="setup">Setup</h2>
+
+<h4 id="code-imports">Code Imports</h4>
+
+<p>You must run the following cell before proceeding with the assignment.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Setup - run this cell before doing the next part of the assignment</span>
+<span class="c">#   This cell imports some extra code, making it available for us to use later</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">string</span>
+
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+</code></pre></div></div>
+
+<h2 id="part-1-functions--methods-re-visited">Part 1: Functions &amp; Methods (re-visited)</h2>
+
+<p>In this part, we will revisit and extend some work on using functions and methods.</p>
+
+<p>We will also write some functions that we will use later in the assignment for the ‘bots’ application.</p>
+
+<h3 id="q1---string-methods--1-point">Q1 - String Methods  (1 point)</h3>
+
+<p>First, we will explore some of methods from the <code class="highlighter-rouge">str</code> class.</p>
+
+<h4 id="a-join">a) <code class="highlighter-rouge">join</code></h4>
+
+<p>During the last assignment you made a function that echoed a string several times with a seperator between each repetition.</p>
+
+<p>Here we will achieve a similar goal through the use of the <code class="highlighter-rouge">join()</code> method of the <code class="highlighter-rouge">str</code> class.</p>
+
+<p>When <code class="highlighter-rouge">join()</code> is called on a <code class="highlighter-rouge">str</code> object (let’s call it <code class="highlighter-rouge">seperator</code>) with a <code class="highlighter-rouge">list</code> as its argument, it joins the elements of the <code class="highlighter-rouge">list</code>, seperating each one by <code class="highlighter-rouge">seperator</code>.</p>
+
+<p>Below we define a a list <code class="highlighter-rouge">my_list</code>. Use the <code class="highlighter-rouge">join()</code> method on the string you define as <code class="highlighter-rouge">seperator = '~'</code> to join the elements in <code class="highlighter-rouge">my_list</code> seperated by the <code class="highlighter-rouge">'~'</code> character.</p>
+
+<p>Save the output to a new variable called <code class="highlighter-rouge">joined_string</code>. The output should look as follows:</p>
+
+<p><code class="highlighter-rouge">'Python~is~so~much~fun'</code></p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This variable provided for you</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Python'</span><span class="p">,</span> <span class="s">'is'</span><span class="p">,</span> <span class="s">'so'</span><span class="p">,</span> <span class="s">'much'</span><span class="p">,</span> <span class="s">'fun'</span><span class="p">]</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">joined_string</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">joined_string</span> <span class="o">==</span> <span class="s">'Python~is~so~much~fun'</span>
+</code></pre></div></div>
+
+<h4 id="b-replace">b) <code class="highlighter-rouge">replace</code></h4>
+
+<p>Now try to use the <code class="highlighter-rouge">replace</code> method to update the string <code class="highlighter-rouge">statement</code> such that it replaces <code class="highlighter-rouge">UCLA</code> to <code class="highlighter-rouge">UCSD</code>.</p>
+
+<p>If you are unsure how use <code class="highlighter-rouge">replace</code> you can run <code class="highlighter-rouge">str.replace?</code> to look at documentation.</p>
+
+<p>Note that using <code class="highlighter-rouge">replace</code> returns a new string that you need to assign to a variable if you want to keep a reference to it (<code class="highlighter-rouge">replace</code> is not ‘inplace’).</p>
+
+<p>For this question, overwrite <code class="highlighter-rouge">statement</code> as the assignment to the output of the <code class="highlighter-rouge">replace</code> call.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This code provided for you</span>
+<span class="n">statement</span> <span class="o">=</span> <span class="s">'UCLA is the best UC in Southern California.'</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">statement</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">statement</span> <span class="o">==</span> <span class="s">'UCSD is the best UC in Southern California.'</span>
+</code></pre></div></div>
+
+<h4 id="c-replace-for-dropping-characters">c) <code class="highlighter-rouge">replace</code> for dropping characters</h4>
+
+<p>Use the <code class="highlighter-rouge">replace</code> method to remove all the exclamation points in the string <code class="highlighter-rouge">excessive</code>.</p>
+
+<p>Assign the output of doing this to a variable called <code class="highlighter-rouge">fixed</code>.</p>
+
+<p>Hint: you can drop characters with <code class="highlighter-rouge">replace</code> by ‘replacing’ them with an empty string.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This variable provided for you</span>
+<span class="n">excessive</span> <span class="o">=</span> <span class="s">'using!!! excessive!!! exclamation points!! is the best!!!!!!'</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fixed</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">fixed</span> <span class="o">==</span> <span class="s">'using excessive exclamation points is the best'</span>
+</code></pre></div></div>
+
+<h4 id="d-clearing-all-punctuation-with-replace">d) Clearing all punctuation with <code class="highlighter-rouge">replace</code></h4>
+
+<p>Now we want to generalize what we did in ‘c)’ to remove all punctuation using the <code class="highlighter-rouge">replace()</code> method.</p>
+
+<p>Write a <code class="highlighter-rouge">for</code> loop to loop over every character in <code class="highlighter-rouge">string.punctuation</code>. Inside the loop, call <code class="highlighter-rouge">replace</code> on <code class="highlighter-rouge">too_much</code> with the current punctuation character to remove it, like we did in ‘c)’.</p>
+
+<p>To do this, inside the loop, re-assign <code class="highlighter-rouge">too_much</code> to be the ouput of calling <code class="highlighter-rouge">replace</code> on <code class="highlighter-rouge">too_much</code>, so that you are replacing <code class="highlighter-rouge">too_much</code> with it’s updated version every time.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This variable provided for you</span>
+<span class="n">too_much</span> <span class="o">=</span> <span class="s">'I, think th@at!! punctuation... may?&gt;&gt; be the bes$$$t th!ing thats: ever! been! invented!!!!!!'</span>
+
+<span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">too_much</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">too_much</span> <span class="o">==</span> <span class="s">'I think that punctuation may be the best thing thats ever been invented'</span>
+</code></pre></div></div>
+
+<h3 id="example-functions-with-default-values">Example: Functions with Default Values</h3>
+
+<p>Note that functions can also have inputs with default values.</p>
+
+<p>This means you don’t necessarily need to provide an input with a specific value, since if you don’t provide it explicitly, it will take on the default value.</p>
+
+<p>The following is an example of a function with a default value, provided to you, so you can see what it looks like.</p>
+
+<p>You don’t need to do anything with this function.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">default_function</span><span class="p">(</span><span class="n">input_number</span><span class="p">,</span> <span class="n">n_value</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="s">"""Multiplies an input number n times. Default value for n=2
+    
+    Parameters
+    ----------
+    input_number : float
+        Number to be multiplied.
+    n_value : int, optional
+        Number of times to multiply input.
+        
+    Returns
+    -------
+    output : float
+        Result of the multiplication. 
+    """</span>
+    
+    <span class="c"># Multiple the input n times</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">input_number</span> <span class="o">*</span> <span class="n">n_value</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test using `default_function`</span>
+<span class="k">print</span><span class="p">(</span><span class="n">default_function</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">default_function</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Function values can be also be defined by name</span>
+<span class="k">print</span><span class="p">(</span><span class="n">default_function</span><span class="p">(</span><span class="n">n_value</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">input_number</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">default_function</span><span class="p">(</span><span class="n">input_number</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">n_value</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="q2---default-value-functions-05-points">Q2 - Default Value Functions (0.5 points)</h3>
+
+<h4 id="a-sort-keys">a) Sort Keys</h4>
+
+<p>Write a function called <code class="highlighter-rouge">sort_keys</code>, which will return a sorted version of the keys from an input dictionary.</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">dictionary</code> : dictionary</li>
+  <li><code class="highlighter-rouge">reverse</code> : boolean, default: False</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">sorted_keys</code> : list</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>Get the keys from the input <code class="highlighter-rouge">dictionary</code> using the <code class="highlighter-rouge">keys()</code> method (this will return a list of keys)</li>
+  <li>Use the <code class="highlighter-rouge">sorted</code> function to sort the list of keys. Pass in <code class="highlighter-rouge">reverse</code> to <code class="highlighter-rouge">sorted</code> to set whether to reverse the sort order</li>
+  <li>Return the sorted list of dictionary keys</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">sort_keys</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">sort_keys</span><span class="p">({</span><span class="s">'B'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'A'</span><span class="p">:</span> <span class="mi">1</span><span class="p">}),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">sort_keys</span><span class="p">({</span><span class="s">'B'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'A'</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span> <span class="o">==</span> <span class="p">[</span><span class="s">'A'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">sort_keys</span><span class="p">({</span><span class="mi">2</span><span class="p">:</span> <span class="s">'B'</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s">'A'</span><span class="p">},</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">sort_keys</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h4 id="b-list-powers">b) List Powers</h4>
+
+<p>Write a function called <code class="highlighter-rouge">list_powers</code>.</p>
+
+<p>This function will take a list, and return a new list where each element is exponentiated to a specified power.</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">collection</code> - collection of numbers</li>
+  <li><code class="highlighter-rouge">power</code> - int, default value: 2</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">power_list</code> - list of numbers</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>Initialize an empty list to be filled and returned</li>
+  <li>Loop through each element in the input <code class="highlighter-rouge">collection</code>
+    <ul>
+      <li>Take the value to the power specified in <code class="highlighter-rouge">power</code></li>
+      <li>Append the result to the output list</li>
+    </ul>
+  </li>
+  <li>Return the list of powers</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">list_powers</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">list_powers</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">list_powers</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span> <span class="o">==</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">list_powers</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">64</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">list_powers</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="example-zip">Example: Zip</h3>
+
+<p>A reasonably common task in Python is to want to iterate across multiple collections items together.</p>
+
+<p>To do so, we have the function <code class="highlighter-rouge">zip</code>, which takes in collection types, and let’s you step across them together.</p>
+
+<p>This allows you to get, for example, the 0th item of each collection, and then the 1st item of each collection, etc.</p>
+
+<p>Below is an example of using <code class="highlighter-rouge">zip</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Define some collection objects</span>
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
+
+<span class="c"># Use zip, in a loop, to loop across both collections at the same time</span>
+<span class="k">for</span> <span class="n">it1</span><span class="p">,</span> <span class="n">it2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">it1</span><span class="p">,</span> <span class="n">it2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="q3---functions-for-later-1-point">Q3 - Functions for Later (1 point)</h3>
+
+<p>In this section we will write a set of functions that will be useful for us to use later, with our artificial agents.</p>
+
+<h3 id="a-add-lists">a) Add Lists</h3>
+
+<p>Write a function called <code class="highlighter-rouge">add_lists</code>.</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">list1</code> - list of numbers</li>
+  <li><code class="highlighter-rouge">list2</code> - list of numbers</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">ouput</code> - list of numbers</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>Initialize a new list <code class="highlighter-rouge">output</code></li>
+  <li>Using <code class="highlighter-rouge">zip</code>, loop through elements of both <code class="highlighter-rouge">list1</code> and <code class="highlighter-rouge">list2</code>
+    <ul>
+      <li>In each iteration, append the sum of the elements to <code class="highlighter-rouge">output</code></li>
+    </ul>
+  </li>
+  <li>Return <code class="highlighter-rouge">output</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">add_lists</span><span class="p">)</span>
+<span class="k">assert</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">add_lists</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">add_lists</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h4 id="b--check-bounds">b)  Check Bounds</h4>
+
+<p>Write a function called <code class="highlighter-rouge">check_bounds</code>.</p>
+
+<p>We will be using this function later in our bots. It checks whether a position, given as, for example [2, 3] is within the bounds of a grid of a particular size (say, a 4 x 4 square grid).</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">position</code> - list of int</li>
+  <li><code class="highlighter-rouge">size</code> - int</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">boolean</code></li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>Loop across each element in <code class="highlighter-rouge">position</code>.
+    <ul>
+      <li>Check if the element is less than 0, or greater than or equal to <code class="highlighter-rouge">size</code>
+        <ul>
+          <li>If so, return <code class="highlighter-rouge">False</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Outside and after the loop, return <code class="highlighter-rouge">True</code></li>
+</ul>
+
+<p>Note that this means the function will return <code class="highlighter-rouge">False</code> if any element is outside the specified bounds.</p>
+
+<p>After checking all elements, if it hasn’t returned yet, it returns <code class="highlighter-rouge">True</code> to indicate all elements are indeed within the bounds.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">check_bounds</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">check_bounds</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">5</span><span class="p">)</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">check_bounds</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">5</span><span class="p">)</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">check_bounds</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="mi">5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">check_bounds</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="part-2-classes">Part 2: Classes</h2>
+
+<p>In this section we will be working with classes - building several classes to solve a variety of problems.</p>
+
+<h3 id="q4---creating-a-class">Q4 - Creating a Class</h3>
+
+<p>We can start with a class object to make a ‘schedule book’ for our course Office Hours.</p>
+
+<p>Create a class called <code class="highlighter-rouge">OfficeHours</code></p>
+
+<ul>
+  <li>Class Attributes:
+    <ul>
+      <li><code class="highlighter-rouge">course</code>, which has the value “COGS18”</li>
+    </ul>
+  </li>
+  <li>Instance Attibutes:
+    <ul>
+      <li><code class="highlighter-rouge">name</code> : string</li>
+      <li><code class="highlighter-rouge">day</code> : string</li>
+      <li><code class="highlighter-rouge">time</code> : string</li>
+      <li><code class="highlighter-rouge">place</code> : string</li>
+      <li>Note: all these attributes should be passed into the <code class="highlighter-rouge">__init__</code>, and attached to the object in there.</li>
+    </ul>
+  </li>
+  <li>Method
+    <ul>
+      <li><code class="highlighter-rouge">check()</code>
+        <ul>
+          <li>This method should print out information, to look something like:
+            <ul>
+              <li><code class="highlighter-rouge">Tom's office hours are on Tuesday at 12:30 in CSB115.</code></li>
+              <li>Note that this should use the instance attributes to print out <code class="highlighter-rouge">name</code>, <code class="highlighter-rouge">day</code>, <code class="highlighter-rouge">time</code> &amp; <code class="highlighter-rouge">place</code> of the particular instance.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">OfficeHours</span>
+<span class="k">assert</span> <span class="n">OfficeHours</span><span class="p">(</span><span class="s">'name'</span><span class="p">,</span> <span class="s">'day'</span><span class="p">,</span> <span class="s">'time'</span><span class="p">,</span> <span class="s">'room'</span><span class="p">)</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="s">"Instructor"</span>
+<span class="n">day</span> <span class="o">=</span> <span class="s">"Tuesday"</span>
+<span class="n">time</span> <span class="o">=</span> <span class="s">"12:30"</span>
+<span class="n">place</span> <span class="o">=</span> <span class="s">"CSB115"</span>
+
+<span class="n">test_oh</span> <span class="o">=</span> <span class="n">OfficeHours</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">place</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">test_oh</span><span class="p">,</span> <span class="n">OfficeHours</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">test_oh</span><span class="o">.</span><span class="n">course</span> <span class="o">==</span> <span class="s">"COGS18"</span>
+<span class="k">assert</span> <span class="n">test_oh</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name</span>
+<span class="k">assert</span> <span class="n">test_oh</span><span class="o">.</span><span class="n">day</span> <span class="o">==</span> <span class="n">day</span>
+<span class="k">assert</span> <span class="n">test_oh</span><span class="o">.</span><span class="n">time</span> <span class="o">==</span> <span class="n">time</span>
+<span class="k">assert</span> <span class="n">test_oh</span><span class="o">.</span><span class="n">place</span> <span class="o">==</span> <span class="n">place</span>
+</code></pre></div></div>
+
+<p>Here is a list of some office hours:</p>
+<ul>
+  <li>Tom - Monday @ 12:30 in SDSC 212e</li>
+  <li>Rob - Wednesday @ 2:00 in CSB 114</li>
+  <li>Daril - Tuesday @ 10:00 in CSB 115</li>
+  <li>Paolo - Friday @ 1:00 in CSB 106</li>
+</ul>
+
+<p>Create a new instance of the OfficeHours class for each of the office hours listed above.</p>
+
+<p>Then store each of these instances together in a list called <code class="highlighter-rouge">all_office_hours</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">all_office_hours</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_office_hours</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">all_office_hours</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">OfficeHours</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'Tom'</span><span class="p">,</span> <span class="s">'Rob'</span><span class="p">,</span> <span class="s">'Daril'</span><span class="p">,</span> <span class="s">'Paolo'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Now write a function called <code class="highlighter-rouge">check_all</code> that will take in a list of OfficeHour objects, and will call the <code class="highlighter-rouge">check</code> method on each one, using a loop to loop across each element in the input list.</p>
+
+<p>Call this function on your <code class="highlighter-rouge">all_office_hours</code> list to make sure that it works as expected.</p>
+
+<p>You should see that running this function prints out a string of information for each object, that looks like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tom's office hours are on Monday at 12:30 in SDSC 212e.
+Rob's office hours are on Wednesday at 2:00 in CSB 114.
+Daril's office hours are on Tuesday at 10:00 in CSB 115.
+Paolo's office hours are on Friday at 1:00 in CSB 106.
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">check_all</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="q5---car-inventory">Q5 - Car Inventory</h3>
+
+<p>For this question you will create an object to store information on an inventory of cars.</p>
+
+<p>Create a class called <code class="highlighter-rouge">CarInventory</code></p>
+
+<ul>
+  <li>Instance Attibutes:
+    <ul>
+      <li><code class="highlighter-rouge">n_cars</code> : int</li>
+      <li><code class="highlighter-rouge">cars</code> : list</li>
+    </ul>
+  </li>
+  <li>Methods
+    <ul>
+      <li><code class="highlighter-rouge">add_car()</code></li>
+      <li><code class="highlighter-rouge">compare()</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Details:</p>
+<ul>
+  <li>The constructor (<code class="highlighter-rouge">__init__</code>) should take no inputs, but set <code class="highlighter-rouge">n_cars</code> to 0, and <code class="highlighter-rouge">cars</code> to be <code class="highlighter-rouge">[]</code> (an empty list).</li>
+</ul>
+
+<h4 id="method-add_car">Method: <code class="highlighter-rouge">add_car</code></h4>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">manufacturer</code> : string</li>
+  <li><code class="highlighter-rouge">model</code> : string</li>
+  <li><code class="highlighter-rouge">year</code> : int</li>
+  <li><code class="highlighter-rouge">mpg</code> : float</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>Create a dictionary from the values passed with the corresponding keys ‘manufacturer’, ‘model’, ‘year’ and ‘mpg’</li>
+  <li>Append this dictionary to the <code class="highlighter-rouge">cars</code> attribute</li>
+  <li>Increment the <code class="highlighter-rouge">n_cars</code> attribute by 1</li>
+</ul>
+
+<h4 id="method-compare">Method: <code class="highlighter-rouge">compare</code></h4>
+
+<p>This method will compare all the cars on a specified <code class="highlighter-rouge">attribute</code> (‘year’, or ‘mpg’), and find the highest and lowest values. It will return either the highest of lowest value, depending on the setting in a parameter <code class="highlighter-rouge">direction</code>.</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">attribute</code> : string</li>
+  <li><code class="highlighter-rouge">direction</code> : string, default: ‘highest’</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>Initialize a variable called <code class="highlighter-rouge">lowest</code> to be the 0th element of <code class="highlighter-rouge">cars</code>, and another variable <code class="highlighter-rouge">highest</code> to be the same</li>
+  <li>Loop through each car in cars
+    <ul>
+      <li>If the value of the attribute for the car is less than the car stored as <code class="highlighter-rouge">lowest</code>, replace <code class="highlighter-rouge">lowest</code> to be the current car</li>
+      <li>Similarly, if the value of the attribute for the car is greater than the car stored as <code class="highlighter-rouge">highest</code>, replace <code class="highlighter-rouge">highest</code> to be the current car</li>
+    </ul>
+  </li>
+  <li>After the loop, if the value of <code class="highlighter-rouge">direction</code> is ‘highest’, set a new variable <code class="highlighter-rouge">output</code> to be the variable <code class="highlighter-rouge">highest</code>
+    <ul>
+      <li>Else if the value of <code class="highlighter-rouge">direction</code> is ‘lowest’, set <code class="highlighter-rouge">output</code> to be <code class="highlighter-rouge">lowest</code></li>
+    </ul>
+  </li>
+  <li>Return <code class="highlighter-rouge">output</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Tests for the object</span>
+<span class="k">assert</span> <span class="n">CarInventory</span>
+<span class="n">test_car_inv</span> <span class="o">=</span> <span class="n">CarInventory</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">test_car_inv</span><span class="p">,</span> <span class="n">CarInventory</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">test_car_inv</span><span class="o">.</span><span class="n">n_cars</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">test_car_inv</span><span class="o">.</span><span class="n">cars</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Tests for add_car method</span>
+<span class="n">test_inv</span> <span class="o">=</span> <span class="n">CarInventory</span><span class="p">()</span>
+<span class="n">test_inv</span><span class="o">.</span><span class="n">add_car</span><span class="p">(</span><span class="s">'Toyota'</span><span class="p">,</span> <span class="s">'Prius'</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">36</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">test_inv</span><span class="o">.</span><span class="n">n_cars</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="k">assert</span> <span class="n">test_inv</span><span class="o">.</span><span class="n">cars</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="p">{</span><span class="s">'manufacturer'</span><span class="p">:</span> <span class="s">'Toyota'</span><span class="p">,</span> <span class="s">'model'</span><span class="p">:</span> <span class="s">'Prius'</span><span class="p">,</span> <span class="s">'year'</span><span class="p">:</span> <span class="mi">2012</span><span class="p">,</span> <span class="s">'mpg'</span><span class="p">:</span><span class="mi">36</span><span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Tests for compare method</span>
+<span class="n">test_inv</span> <span class="o">=</span> <span class="n">CarInventory</span><span class="p">()</span>
+<span class="n">test_inv</span><span class="o">.</span><span class="n">add_car</span><span class="p">(</span><span class="s">'Toyota'</span><span class="p">,</span> <span class="s">'Prius'</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">36</span><span class="p">)</span>
+<span class="n">test_inv</span><span class="o">.</span><span class="n">add_car</span><span class="p">(</span><span class="s">'BMW'</span><span class="p">,</span> <span class="s">'M3'</span><span class="p">,</span> <span class="mi">2017</span><span class="p">,</span> <span class="mi">27</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">test_inv</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s">'mpg'</span><span class="p">)</span> <span class="o">==</span> <span class="p">{</span><span class="s">'manufacturer'</span><span class="p">:</span> <span class="s">'Toyota'</span><span class="p">,</span> <span class="s">'model'</span><span class="p">:</span> <span class="s">'Prius'</span><span class="p">,</span> <span class="s">'year'</span><span class="p">:</span> <span class="mi">2012</span><span class="p">,</span> <span class="s">'mpg'</span><span class="p">:</span> <span class="mi">36</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">test_inv</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s">'year'</span><span class="p">,</span> <span class="s">'lowest'</span><span class="p">)</span> <span class="o">==</span> <span class="p">{</span><span class="s">'manufacturer'</span><span class="p">:</span> <span class="s">'Toyota'</span><span class="p">,</span> <span class="s">'model'</span><span class="p">:</span> <span class="s">'Prius'</span><span class="p">,</span> <span class="s">'year'</span><span class="p">:</span> <span class="mi">2012</span><span class="p">,</span> <span class="s">'mpg'</span><span class="p">:</span> <span class="mi">36</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="b-using-our-class">b) Using our class</h4>
+
+<p>Using the <code class="highlighter-rouge">inventory</code> instance created for you in the cell below, do the following:</p>
+
+<ul>
+  <li>Use <code class="highlighter-rouge">compare</code> to get the car with the highest mpg, and get the manufacturer of that car from the returned car
+    <ul>
+      <li>Store the answer in a variable called <code class="highlighter-rouge">highest_mpg</code></li>
+    </ul>
+  </li>
+  <li>Use <code class="highlighter-rouge">compare</code> to get the car with the lowest year, and get the model of that car from the returned car
+    <ul>
+      <li>Store the answer in a variable called <code class="highlighter-rouge">oldest_car</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The following code provided for you</span>
+<span class="n">inventory</span> <span class="o">=</span> <span class="n">CarInventory</span><span class="p">()</span>
+<span class="n">inventory</span><span class="o">.</span><span class="n">add_car</span><span class="p">(</span><span class="s">'Ford'</span><span class="p">,</span> <span class="s">'Mustang'</span><span class="p">,</span> <span class="mi">2004</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">inventory</span><span class="o">.</span><span class="n">add_car</span><span class="p">(</span><span class="s">'Honda'</span><span class="p">,</span> <span class="s">'Civic'</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+<span class="n">inventory</span><span class="o">.</span><span class="n">add_car</span><span class="p">(</span><span class="s">'Toyota'</span><span class="p">,</span> <span class="s">'Corrolla'</span><span class="p">,</span> <span class="mi">2010</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">inventory</span><span class="o">.</span><span class="n">add_car</span><span class="p">(</span><span class="s">'Tesla'</span><span class="p">,</span> <span class="s">'S'</span><span class="p">,</span> <span class="mi">2017</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example: Get the least efficient car (lowest mpg)</span>
+<span class="n">inventory</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s">'mpg'</span><span class="p">,</span> <span class="s">'lowest'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example: Get the newest car (highest year), and extract it's mpg</span>
+<span class="n">inventory</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s">'year'</span><span class="p">,</span> <span class="s">'highest'</span><span class="p">)[</span><span class="s">'mpg'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">highest_mpg</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">highest_mpg</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'Ford'</span><span class="p">,</span> <span class="s">'Honda'</span><span class="p">,</span> <span class="s">'Toyota'</span><span class="p">,</span> <span class="s">'Tesla'</span><span class="p">]</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">oldest_car</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">oldest_car</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'Mustang'</span><span class="p">,</span> <span class="s">'Civic'</span><span class="p">,</span> <span class="s">'Corrola'</span><span class="p">,</span> <span class="s">'S'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">highest_mpg</span>
+<span class="k">assert</span> <span class="n">oldest_car</span>
+
+</code></pre></div></div>
+
+<h3 id="example-class-inheritance">Example: Class Inheritance</h3>
+
+<p>The following is an extra example of class inheritance.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">TritonCourse</span><span class="p">:</span>
+    
+    <span class="n">university</span> <span class="o">=</span> <span class="s">"UC San Diego"</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+        <span class="s">"""
+        department: string
+        code: int
+        title: string
+        """</span>
+    
+        <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">=</span> <span class="n">department</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+    
+    <span class="k">def</span> <span class="nf">print_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">)</span> <span class="o">+</span> <span class="s">': '</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># By passing in `TritonCourse` to our new class, we create a derived class that inherits from `TritonCourse`</span>
+<span class="k">class</span> <span class="nc">TritonProgCourse</span><span class="p">(</span><span class="n">TritonCourse</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">language</span><span class="p">):</span>
+        
+        <span class="c"># Call the initializer from the class we inherited from</span>
+        <span class="c">#  `super` refers to the class that this class inherits from</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">department</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span>
+        
+        <span class="c"># Add a new instance attribute to our derived class</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">language</span> <span class="o">=</span> <span class="n">language</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example: create an instance from our derived class</span>
+<span class="n">cogs18</span> <span class="o">=</span> <span class="n">TritonProgCourse</span><span class="p">(</span><span class="s">'COGS'</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="s">'Introduction to Python'</span><span class="p">,</span> <span class="s">'Python'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Note that our derived class inherits any class attributes &amp; methods from the inherited class</span>
+<span class="k">print</span><span class="p">(</span><span class="n">cogs18</span><span class="o">.</span><span class="n">university</span><span class="p">)</span>
+<span class="n">cogs18</span><span class="o">.</span><span class="n">print_info</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Our derived class also has any extra and unique attributes and/or methods that we add to it</span>
+<span class="n">cogs18</span><span class="o">.</span><span class="n">language</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># We can check that our course is both an instance of 'TritonCourse', and of 'TritonProgCourse'</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cogs18</span><span class="p">,</span> <span class="n">TritonCourse</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cogs18</span><span class="p">,</span> <span class="n">TritonProgCourse</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="q6---extending-our-class-through-inheritance-05-points">Q6 - Extending our Class through Inheritance (0.5 points)</h3>
+
+<p>Create a <code class="highlighter-rouge">TritonCogsCourse</code> class that inherits from <code class="highlighter-rouge">TritonCourse</code>.</p>
+
+<p>You can model your answer to this based on how we made <code class="highlighter-rouge">TritonProgCourse</code> above.</p>
+
+<p><code class="highlighter-rouge">TritonCogsCourse</code> should inherit from <code class="highlighter-rouge">TritonCourse</code> and calls it’s super’s <code class="highlighter-rouge">__init__</code>.</p>
+
+<p>In addition, in it’s own <code class="highlighter-rouge">__init__</code>, it should take an extra parameter called <code class="highlighter-rouge">area</code>, which will store which area of Cognitive Science the class is related to.</p>
+
+<p><code class="highlighter-rouge">area</code> should have a default value of <code class="highlighter-rouge">None</code>.</p>
+
+<p>Finally, add a method called <code class="highlighter-rouge">has_area</code> that returns <code class="highlighter-rouge">True</code> if the instance has an area defined (is not None), and returns <code class="highlighter-rouge">False</code> if area is equal to <code class="highlighter-rouge">None</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">TritonCogsCourse</span>
+<span class="n">test_class</span> <span class="o">=</span> <span class="n">TritonCogsCourse</span><span class="p">(</span><span class="s">'COGS'</span><span class="p">,</span> <span class="s">'108'</span><span class="p">,</span> <span class="s">'Data Science in Practice'</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">test_class</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cogs108</span> <span class="o">=</span> <span class="n">TritonCogsCourse</span><span class="p">(</span><span class="s">'COGS'</span><span class="p">,</span> <span class="s">'108'</span><span class="p">,</span> <span class="s">'Data Science in Practice'</span><span class="p">,</span> <span class="s">'Data Science'</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">cogs108</span>
+<span class="k">assert</span> <span class="n">cogs108</span><span class="o">.</span><span class="n">area</span> <span class="o">==</span> <span class="s">'Data Science'</span>
+<span class="k">assert</span> <span class="n">cogs108</span><span class="o">.</span><span class="n">has_area</span><span class="p">()</span> <span class="o">==</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<h2 id="part-3-artificial-agents">Part 3: Artificial Agents</h2>
+
+<p>In this last part of the assignment, we will create some ‘Bots’ - little artificial agents that can move around a predefined space.</p>
+
+<p>They will be in the style of PacMan, or little exploration bots.</p>
+
+<p>Each of these bots will be able to explore a predefined world, which is a grid of ‘dots’ (locations).</p>
+
+<p>This grid has labelled locations that can be referenced by a list of integers, with [0, 0] being the top left most corner, and so on.</p>
+
+<p>Each bot will have a <code class="highlighter-rouge">move</code> method, which updates the bot’s position, thus moving it around the world.</p>
+
+<p>As you start building some bots, there will be a series of test cells that test out your bots on a ‘board’.</p>
+
+<p>Make sure these cells run to completion without errors - if the cells with <code class="highlighter-rouge">play_board</code> in them raise an error, there is something wrong with your bot.</p>
+
+<p>Note that some errors could come from the functions your wrote above that get used here.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This function provided to you to run your bots on a grid world</span>
+<span class="c">#   You don't have to do anything with this function</span>
+<span class="k">def</span> <span class="nf">play_board</span><span class="p">(</span><span class="n">bots</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">sleep_time</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+    <span class="s">"""Run a bot across a board.
+    
+    Parameters
+    ----------
+    bots : Bot() type or list of Bot() type
+        One or more bots to be be played on the board
+    n_iter : int, optional
+        Number of turns to play on the board. default = 25
+    grid_size : int, optional
+        Board size. default = 5
+    sleep_time : float, optional
+        Amount of time to pause between turns. default = 0.3.
+    """</span>
+    
+    <span class="c"># If input is a single bot, put it in a list so that procedures work</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">bots</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="n">bots</span> <span class="o">=</span> <span class="p">[</span><span class="n">bots</span><span class="p">]</span>
+    
+    <span class="c"># Update each bot to know about the grid_size they are on</span>
+    <span class="k">for</span> <span class="n">bot</span> <span class="ow">in</span> <span class="n">bots</span><span class="p">:</span>
+        <span class="n">bot</span><span class="o">.</span><span class="n">grid_size</span> <span class="o">=</span> <span class="n">grid_size</span>
+
+    <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_iter</span><span class="p">):</span>
+
+        <span class="c"># Create the grid</span>
+        <span class="n">grid_list</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'.'</span><span class="p">]</span> <span class="o">*</span> <span class="n">grid_size</span> <span class="k">for</span> <span class="n">ncols</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">grid_size</span><span class="p">)]</span>
+        
+        <span class="c"># Add bot(s) to the grid</span>
+        <span class="k">for</span> <span class="n">bot</span> <span class="ow">in</span> <span class="n">bots</span><span class="p">:</span>
+            <span class="n">grid_list</span><span class="p">[</span><span class="n">bot</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">bot</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">bot</span><span class="o">.</span><span class="n">character</span>    
+
+        <span class="c"># Clear the previous iteration, print the new grid (as a string), and wait</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="k">for</span> <span class="n">lst</span> <span class="ow">in</span> <span class="n">grid_list</span><span class="p">]))</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
+
+        <span class="c"># Update bot position(s) for next turn</span>
+        <span class="k">for</span> <span class="n">bot</span> <span class="ow">in</span> <span class="n">bots</span><span class="p">:</span>
+            <span class="n">bot</span><span class="o">.</span><span class="n">move</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="q7---bot-base-class">Q7 - Bot Base Class</h3>
+
+<p>Create a class called <code class="highlighter-rouge">Bot</code>. This will be our base class for all the bots that we make in this section.</p>
+
+<ul>
+  <li>Instance Attibutes:
+    <ul>
+      <li><code class="highlighter-rouge">character</code> - string</li>
+      <li><code class="highlighter-rouge">position</code> - list of [int, int]</li>
+      <li><code class="highlighter-rouge">moves</code> - list of list of [int, int]</li>
+      <li><code class="highlighter-rouge">grid_size</code> - <code class="highlighter-rouge">None</code> or int</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Of these instance attributes, only <code class="highlighter-rouge">character</code> should be taken in as an input to <code class="highlighter-rouge">__init__</code>, with a default value of 8982.</p>
+
+<p>Inside the init:</p>
+<ul>
+  <li><code class="highlighter-rouge">self.character</code> should be set as the <code class="highlighter-rouge">chr</code> of input <code class="highlighter-rouge">character</code></li>
+  <li><code class="highlighter-rouge">self.position</code> should be set to starting position <code class="highlighter-rouge">[0, 0]</code></li>
+  <li><code class="highlighter-rouge">self.moves</code> should be set as the list of possible moves, which are <code class="highlighter-rouge">[[-1, 0], [1, 0], [0, 1], [0, -1]]</code></li>
+  <li><code class="highlighter-rouge">self.grid_size</code> should be initialized as None</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">Bot</span><span class="p">()</span>
+
+<span class="n">bot</span> <span class="o">=</span> <span class="n">Bot</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">bot</span><span class="o">.</span><span class="n">position</span> <span class="o">==</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">bot</span><span class="o">.</span><span class="n">character</span> <span class="o">==</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">8982</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">bot</span><span class="o">.</span><span class="n">moves</span> <span class="o">==</span> <span class="p">[[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="k">assert</span> <span class="n">bot</span><span class="o">.</span><span class="n">grid_size</span> <span class="o">==</span> <span class="bp">None</span>
+</code></pre></div></div>
+
+<h3 id="q8---wanderbot">Q8 - WanderBot</h3>
+
+<p>Create a class called <code class="highlighter-rouge">WanderBot</code>, that inherits from <code class="highlighter-rouge">Bot</code>. <code class="highlighter-rouge">WanderBot</code> is a bot that will wander around randomly.</p>
+
+<ul>
+  <li>In the <code class="highlighter-rouge">__init__</code>, it should simply call the init from <code class="highlighter-rouge">super</code> (and adds no extra instance attributes)</li>
+  <li>Note that to do this, the <code class="highlighter-rouge">__init__</code> should take a <code class="highlighter-rouge">character</code> input, with the same default (8982)
+    <ul>
+      <li>This value will need to be passed into the super’s <code class="highlighter-rouge">__init__</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Add two methods to WanderBot:</p>
+
+<h4 id="method--wander">Method:  <code class="highlighter-rouge">wander</code></h4>
+
+<p>This method will choose a random move from the possibilities, making sure that move is valid on the current grid.</p>
+
+<p>Procedure:</p>
+<ul>
+  <li>Initialize a boolean variable <code class="highlighter-rouge">has_new_pos</code> as <code class="highlighter-rouge">False</code></li>
+  <li>Use a while loop, with the condition <code class="highlighter-rouge">not has_new_pos</code>
+    <ul>
+      <li>Set a variable <code class="highlighter-rouge">move</code> as the ouput of calling <code class="highlighter-rouge">random.choice</code> on <code class="highlighter-rouge">self.moves</code></li>
+      <li>Add <code class="highlighter-rouge">move</code> to <code class="highlighter-rouge">self.position</code>, using <code class="highlighter-rouge">add_lists</code> (a function we created earlier), and assign the output to a new variable <code class="highlighter-rouge">new_pos</code></li>
+      <li>Call <code class="highlighter-rouge">check_bounds</code> on <code class="highlighter-rouge">new_pos</code>, also passing <code class="highlighter-rouge">self.grid_size</code> into <code class="highlighter-rouge">check_bounds</code>
+        <ul>
+          <li>Assign the output of <code class="highlighter-rouge">check_bounds</code> to <code class="highlighter-rouge">has_new_pos</code></li>
+          <li>This will lead to exiting the loop when a valid new position has been assigned</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Return <code class="highlighter-rouge">new_pos</code></li>
+</ul>
+
+<h4 id="method-move">Method: <code class="highlighter-rouge">move</code></h4>
+<ul>
+  <li>No inputs (other than <code class="highlighter-rouge">self</code>) or outputs, just sets <code class="highlighter-rouge">self.position</code> to be the output of calling <code class="highlighter-rouge">self.wander()</code>.</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">WanderBot</span>
+<span class="n">wbot</span> <span class="o">=</span> <span class="n">WanderBot</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">wbot</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">wbot</span> <span class="o">=</span> <span class="n">WanderBot</span><span class="p">()</span>
+<span class="n">wbot</span><span class="o">.</span><span class="n">grid_size</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="n">wbot</span><span class="o">.</span><span class="n">wander</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wbot</span><span class="o">.</span><span class="n">wander</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="n">wbot</span><span class="o">.</span><span class="n">move</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">wbot</span><span class="o">.</span><span class="n">position</span> <span class="o">!=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test out our WanderBot</span>
+<span class="c">#   You should see a 'bot' that steps around different positions randomly</span>
+<span class="n">bot</span> <span class="o">=</span> <span class="n">WanderBot</span><span class="p">()</span>
+<span class="n">play_board</span><span class="p">(</span><span class="n">bot</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test out running a group of WanderBots</span>
+<span class="n">bots</span> <span class="o">=</span> <span class="p">[</span><span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1175</span><span class="p">),</span> <span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1175</span><span class="p">),</span> <span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1175</span><span class="p">)]</span>
+<span class="n">play_board</span><span class="p">(</span><span class="n">bots</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="example-random-probabilistic-choices">Example: Random Probabilistic Choices</h3>
+
+<p>For our next bot, we want to be able to make random choice, but with a specified probability.</p>
+
+<p>We will use a quick trick to do so:</p>
+<ul>
+  <li>from the <code class="highlighter-rouge">random</code> module, we can use the <code class="highlighter-rouge">random()</code> function to uniformly sample a decimal between 0 and 1</li>
+  <li>by checking if that random sample is below some value <code class="highlighter-rouge">prob</code>, we will (on average) make that choice <code class="highlighter-rouge">prob</code> % of the time</li>
+</ul>
+
+<p>An example of this idea is shown below.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Print out a random decimal value between 0 - 1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example of a random probabilistic choice with a specified probability</span>
+<span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.75</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'This will print out 75</span><span class="si">% </span><span class="s">of the time'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="q9---explorebot">Q9 - ExploreBot</h3>
+
+<p>Create a class called <code class="highlighter-rouge">ExploreBot</code>, that inherits from <code class="highlighter-rouge">Bot</code>.</p>
+
+<p><code class="highlighter-rouge">ExploreBot</code> is a bot that will explore more systematically, generally continuing in the same direction on consecutive steps.</p>
+
+<ul>
+  <li>In the <code class="highlighter-rouge">__init__</code>, it should call the <code class="highlighter-rouge">__init__</code> from <code class="highlighter-rouge">super</code></li>
+  <li>Note that to do this, the <code class="highlighter-rouge">__init__</code> should take a <code class="highlighter-rouge">character</code> input, with the same default (8982)
+    <ul>
+      <li>This value will need to be passed into the super’s <code class="highlighter-rouge">__init__</code></li>
+    </ul>
+  </li>
+  <li>The <code class="highlighter-rouge">__init__</code> should take an extra input, <code class="highlighter-rouge">move_prob</code> with default value of 0.75</li>
+  <li>Add <code class="highlighter-rouge">move_prob</code> as an instance attribute, and also add a new instance attribute <code class="highlighter-rouge">last_move</code>, that’s initialized as <code class="highlighter-rouge">None</code></li>
+</ul>
+
+<p>Add three methods to ExploreBot:</p>
+
+<h4 id="method--biased_choice">Method:  <code class="highlighter-rouge">biased_choice</code></h4>
+
+<p>This method will chose a new move, but be biased to chose the same move as was taken on the previous step.</p>
+
+<p>Procedure:</p>
+<ul>
+  <li>Initialize a variable called <code class="highlighter-rouge">move</code> as <code class="highlighter-rouge">None</code></li>
+  <li>if <code class="highlighter-rouge">self.last_move</code> is not equal to <code class="highlighter-rouge">None</code>
+    <ul>
+      <li>Using the random probability procedure described above, if <code class="highlighter-rouge">random.random()</code> is less that <code class="highlighter-rouge">self.move_prob</code>
+        <ul>
+          <li>Set <code class="highlighter-rouge">move</code> to be <code class="highlighter-rouge">self.last_move</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>if <code class="highlighter-rouge">move</code> is still None, set <code class="highlighter-rouge">move</code> to be a random choice of <code class="highlighter-rouge">self.moves</code></li>
+  <li>return <code class="highlighter-rouge">move</code></li>
+</ul>
+
+<h4 id="method--explore">Method:  <code class="highlighter-rouge">explore</code></h4>
+
+<p>Explore should be the same as the <code class="highlighter-rouge">wander()</code> method in <code class="highlighter-rouge">WanderBot</code>, with two differences:</p>
+<ul>
+  <li>Inside the <code class="highlighter-rouge">while</code> loop, <code class="highlighter-rouge">move</code> should be the return of <code class="highlighter-rouge">self.biased_choice()</code> (instead of <code class="highlighter-rouge">wander()</code>)</li>
+  <li>At the end of the <code class="highlighter-rouge">while</code> loop (inside the loop), set <code class="highlighter-rouge">self.last_move</code> to <code class="highlighter-rouge">move</code></li>
+</ul>
+
+<h4 id="method-move-1">Method: <code class="highlighter-rouge">move</code></h4>
+<ul>
+  <li>No inputs (other than <code class="highlighter-rouge">self</code>) or outputs, just sets <code class="highlighter-rouge">self.position</code> to be the output of calling <code class="highlighter-rouge">explore()</code>.</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">ExploreBot</span>
+<span class="n">ebot</span> <span class="o">=</span> <span class="n">ExploreBot</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">ebot</span>
+<span class="k">assert</span> <span class="n">ebot</span><span class="o">.</span><span class="n">last_move</span> <span class="o">==</span> <span class="bp">None</span>
+<span class="k">assert</span> <span class="n">ebot</span><span class="o">.</span><span class="n">move_prob</span> <span class="o">==</span> <span class="mf">0.75</span>
+<span class="k">assert</span> <span class="n">ExploreBot</span><span class="p">(</span><span class="n">move_prob</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">ExploreBot</span>
+
+<span class="n">ebot</span> <span class="o">=</span> <span class="n">ExploreBot</span><span class="p">()</span>
+<span class="n">ebot</span><span class="o">.</span><span class="n">grid_size</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="n">ebot</span><span class="o">.</span><span class="n">explore</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ebot</span><span class="o">.</span><span class="n">explore</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="n">ebot</span><span class="o">.</span><span class="n">move</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">ebot</span><span class="o">.</span><span class="n">position</span> <span class="o">!=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test out our ExploreBot</span>
+<span class="c">#   You should see a 'bot' that steps around different positions, often moving in the same direction</span>
+<span class="n">bot</span> <span class="o">=</span> <span class="n">ExploreBot</span><span class="p">()</span>
+<span class="n">play_board</span><span class="p">(</span><span class="n">bot</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test out running a group of WanderBots &amp; ExploreBots</span>
+<span class="n">bots</span> <span class="o">=</span> <span class="p">[</span><span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1175</span><span class="p">),</span> <span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1175</span><span class="p">),</span> 
+        <span class="n">ExploreBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1127</span><span class="p">),</span> <span class="n">ExploreBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1127</span><span class="p">)]</span>
+<span class="n">play_board</span><span class="p">(</span><span class="n">bots</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="q10---teleportbot">Q10 - TeleportBot</h3>
+
+<p>Create a class called <code class="highlighter-rouge">TeleportBot</code>, that inherits from <code class="highlighter-rouge">WanderBot</code>.</p>
+
+<p><code class="highlighter-rouge">TeleportBot</code> is a modified version of <code class="highlighter-rouge">WanderBot</code>, that will generally wander around randomly, but sometimes teleport to a brand new location.</p>
+
+<ul>
+  <li>In the <code class="highlighter-rouge">__init__</code>, it should call the <code class="highlighter-rouge">__init__</code> from <code class="highlighter-rouge">super</code></li>
+  <li>Note that to do this, the <code class="highlighter-rouge">__init__</code> should take a <code class="highlighter-rouge">character</code> input, with the same default (8982)
+    <ul>
+      <li>This value will need to be passed into the super’s <code class="highlighter-rouge">__init__</code></li>
+    </ul>
+  </li>
+  <li>The <code class="highlighter-rouge">__init__</code> should take an extra input, <code class="highlighter-rouge">tele_prob</code> with default value of 0.2
+    <ul>
+      <li>Add <code class="highlighter-rouge">tele_prob</code> as an instance attribute</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Add two methods to <code class="highlighter-rouge">TeleportBot</code>:</p>
+
+<h4 id="method-teleport">Method: <code class="highlighter-rouge">teleport</code></h4>
+
+<p>This method will chose a totally random location anywhere on the map, ‘teleporting’ there.</p>
+
+<p>To do so, it needs to return a list of two random numbers that define a location of the map (for the current grid size).</p>
+
+<p>Use <code class="highlighter-rouge">random.choice</code> with <code class="highlighter-rouge">range</code> and <code class="highlighter-rouge">self.grid_size</code> to create a list of two randomly chosen numbers within the grid size.</p>
+
+<p>Note - this will entail using each of these three things twice - one for each number.</p>
+
+<p>Return this list.</p>
+
+<h4 id="method-move-2">Method: <code class="highlighter-rouge">move</code></h4>
+<ul>
+  <li>No inputs (other than <code class="highlighter-rouge">self</code>) or outputs</li>
+  <li>Using the random probability procedure from before, use an <code class="highlighter-rouge">if</code> with <code class="highlighter-rouge">random.random() &lt; self.tele_prob</code>.
+    <ul>
+      <li>Inside the <code class="highlighter-rouge">if</code>, set <code class="highlighter-rouge">self.position</code> to the ouput of <code class="highlighter-rouge">self.teleport()</code></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">else</code>, set <code class="highlighter-rouge">self.position</code> as the ouput of <code class="highlighter-rouge">self.wander()</code>
+    <ul>
+      <li>Note that this bot inherits <code class="highlighter-rouge">wander()</code> from it’s super (<code class="highlighter-rouge">WanderBot</code>)</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">TeleportBot</span>
+<span class="n">tbot</span> <span class="o">=</span> <span class="n">TeleportBot</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">tbot</span>
+<span class="k">assert</span> <span class="n">tbot</span><span class="o">.</span><span class="n">tele_prob</span> <span class="o">==</span> <span class="mf">0.2</span>
+<span class="k">assert</span> <span class="n">TeleportBot</span><span class="p">(</span><span class="n">tele_prob</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">TeleportBot</span>
+
+<span class="n">tbot</span> <span class="o">=</span> <span class="n">TeleportBot</span><span class="p">()</span>
+<span class="n">tbot</span><span class="o">.</span><span class="n">grid_size</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="n">tbot</span><span class="o">.</span><span class="n">teleport</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tbot</span><span class="o">.</span><span class="n">teleport</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="n">tbot</span><span class="o">.</span><span class="n">move</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">tbot</span><span class="o">.</span><span class="n">position</span> <span class="o">!=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test out our TeleportBot</span>
+<span class="c">#   You should see a 'bot' that steps around randomly, sometimes teleporting to a new location</span>
+<span class="n">bot</span> <span class="o">=</span> <span class="n">TeleportBot</span><span class="p">()</span>
+<span class="n">play_board</span><span class="p">(</span><span class="n">bot</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="running-it-all-together">Running it all together</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Define a group of bots</span>
+<span class="n">bots</span> <span class="o">=</span> <span class="p">[</span><span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1078</span><span class="p">),</span> <span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1078</span><span class="p">),</span> <span class="n">WanderBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1078</span><span class="p">),</span>
+        <span class="n">ExploreBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1127</span><span class="p">),</span> <span class="n">ExploreBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1127</span><span class="p">),</span> <span class="n">ExploreBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1127</span><span class="p">),</span>
+        <span class="n">TeleportBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1279</span><span class="p">),</span> <span class="n">TeleportBot</span><span class="p">(</span><span class="n">character</span><span class="o">=</span><span class="mi">1279</span><span class="p">)]</span>
+
+<span class="c"># Play the board with our bot list</span>
+<span class="n">play_board</span><span class="p">(</span><span class="n">bots</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="extending-our-agents">Extending Our Agents</h2>
+
+<p>So far, we have some ‘artificial agents’ that can explore a world, with different strategies to do so.</p>
+
+<p>Note that if you want to explore using these bots some more, you can add a new cell, defining a list of bots (changing some inputs to them, if you want to), and use the <code class="highlighter-rouge">play_board</code> function to run a ‘board’ (also changing some inputs to <code class="highlighter-rouge">play_board</code>, if you want to).</p>
+
+<p>From here, we could think about ways we could make these agents interact with each other, and/or respond more directly the environment.</p>
+
+<p>More broadly - there is any number of ways we could build in more ‘cognitive’ behaviour, given this starting point.</p>
+
+<p>If you are interested in this topic, extending these kinds of ‘artificial agents’ (or ones like them) is one of your project options.</p>
+
+<h2 id="the-end">The End!</h2>
+
+<p>After you’ve explored running the bots, you are done!</p>
+
+<p>Have a look back over your answers, and also make sure to Restart &amp; Run All from the kernel menu to double check that everything is working properly.</p>
+
+<p>When you are ready to submit your assignment, upload it to TritonED under Assignment-4.</p>
+
+
+                <nav class="c-page__nav">
+  
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/assignments/A3-Chatbots">
+      〈 <span class="u-margin-right-tiny"></span> A3-Chatbots
+    </a>
+  
+
+  
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/projects/ProjectIdeas">
+      Projects <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

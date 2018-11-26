@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>A3-Chatbots</title>
+  <meta name="description" content="Assignment 3: Chatbots">
+
+  <link rel="canonical" href="http://localhost:4000/assignments/A3-Chatbots/">
+  <link rel="alternate" type="application/rss+xml" title="COGS 18 - Introduction To Python" href="http://localhost:4000/feed.xml">
+
+  <meta property="og:url"         content="http://localhost:4000/assignments/A3-Chatbots/" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="A3-Chatbots" />
+<meta property="og:description" content="Assignment 3: Chatbots" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://localhost:4000/assignments/A3-Chatbots/",
+  "headline":
+    "A3-Chatbots",
+  "datePublished":
+    "2018-11-25T22:47:35-08:00",
+  "dateModified":
+    "2018-11-25T22:47:35-08:00",
+  "description":
+    "Assignment 3: Chatbots",
+  "author": {
+    "@type": "Person",
+    "name": "Tom Donoghue and Zehua Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Google analytics -->
+  <script src="/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load custom website scripts -->
+  <script src="/assets/js/scripts.js" async></script>
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  <script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  console.log(url)
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return jQuery.param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = $("a").each(function() {
+    var href = this.href;
+    // If the link is an internal link...
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['hub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'hub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + jQuery.param(params);
+      this.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    hubUrl = rest['hub'];
+    if (hubUrl !== undefined) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      link = $("a.interact")[0];
+      if (link !== undefined) {
+          // Update the interact link URL
+          var href = link.getAttribute('href');
+          var hub_type = 'binder';
+          if (hub_type === 'binder') {
+            // If binder links exist, we need to re-work them for jupyterhub
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+              first = [hubUrl, 'git-sync'].join('/')
+            } else {
+              first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+            }
+            href = first + '?' + binder2Jupyterhub(href);
+          } else {
+            // If JupyterHub links, we only need to replace the hub url
+            href = href.replace("https://mybinder.org", hubUrl);
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // Assume we're working from a local Jupyter server and remove `/hub`
+              href = href.replace("/hub/user-redirect", "");
+            }
+          }
+          link.setAttribute('href', decodeURIComponent(href));
+
+          // Add text after interact link saying where we're launching
+          hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+          $("a.interact").after($('<div class="interact-context">on ' + hubUrlNoHttp + '</div>'));
+
+      }
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+</head>
+
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
+<body>
+    <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#overview">Overview</a>
+    <ul>
+      <li><a href="#quick-tips">Quick Tips</a></li>
+    </ul>
+  </li>
+  <li><a href="#setup">Setup</a>
+    <ul>
+      <li><a href="#zen-chatbot">Zen Chatbot</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-1-functions">Part 1: Functions</a>
+    <ul>
+      <li><a href="#function-examples">Function Examples</a></li>
+      <li><a href="#q1---find-max-value--05-points">Q1 - Find Max Value  (0.5 points)</a></li>
+      <li><a href="#q2---square-everything--05-points">Q2 - Square Everything  (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-refactoring-code-to-use-functions">Part 2: Refactoring Code to Use Functions</a>
+    <ul>
+      <li><a href="#q3---calculator-05-points">Q3 - Calculator (0.5 points)</a></li>
+      <li><a href="#q4---extending-our-calculator--05-points">Q4 - Extending our Calculator  (0.5 points)</a></li>
+      <li><a href="#example-chaining-functions-together">Example: Chaining Functions Together</a></li>
+      <li><a href="#q5---using-our-calculator--05-points">Q5 - Using Our Calculator  (0.5 points)</a></li>
+      <li><a href="#calling-functions-from-functions">Calling Functions from Functions</a></li>
+      <li><a href="#q6---functions-for-even--positive-numbers-05-points">Q6 - Functions for Even &amp; Positive Numbers (0.5 points)</a></li>
+      <li><a href="#q7---functions-using-functions-05-points">Q7 - Functions Using Functions (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-3-algorithms">Part 3: Algorithms</a>
+    <ul>
+      <li><a href="#q8---algorithms-05-points">Q8 - Algorithms (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-4--chatbots">Part 4:  Chatbots</a>
+    <ul>
+      <li><a href="#example-chatbot---eliza">Example Chatbot - Eliza</a></li>
+      <li><a href="#example-chatbot---iesha">Example Chatbot - Iesha</a></li>
+      <li><a href="#chatbots-words--rules">Chatbots: Words &amp; Rules</a></li>
+      <li><a href="#q9---is-it-a-question-05-points">Q9 - Is It a Question (0.5 points)</a></li>
+      <li><a href="#example-stringpunctuation">Example: string.punctuation</a></li>
+      <li><a href="#q10---removing-punctuation-05-points">Q10 - Removing punctuation (0.5 points)</a></li>
+      <li><a href="#q11---preparing-text-05-points">Q11 - Preparing Text (0.5 points)</a></li>
+      <li><a href="#q12---echo-a-response-05-points">Q12 - Echo a Response (0.5 points)</a></li>
+      <li><a href="#example-randomchoice">Example: random.choice</a></li>
+      <li><a href="#q13---selector-05-points">Q13 - Selector (0.5 points)</a></li>
+      <li><a href="#q14---string-concatenator-function-05-points">Q14 - String Concatenator Function (0.5 points)</a></li>
+      <li><a href="#q15---list-to-string-05-points">Q15 - List to String (0.5 points)</a></li>
+      <li><a href="#q16---end-chat-05-points">Q16 - End Chat (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#pulling-it-all-together">Pulling it all Together</a></li>
+  <li><a href="#talking-to-our-chatbot">Talking to our Chatbot</a>
+    <ul>
+      <li><a href="#extending-our-chatbot">Extending Our Chatbot</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-end">The End!</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
+    <h2 class="c-sidebar__title">
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+    </h2>
+    <ul class="c-sidebar__chapters">
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/intro">
+                
+                Home
+            </a>
+
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                
+                Materials
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                        
+                        00-Introduction
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/01-Tools">
+                        
+                        01-Tools
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/02-JupyterNotebooks">
+                        
+                        02-JupyterNotebooks
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/03-Variables">
+                        
+                        03-Variables
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/04-Operators">
+                        
+                        04-Operators
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/05-Conditionals">
+                        
+                        05-Conditionals
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/06-DataTypes">
+                        
+                        06-DataTypes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/07-Loops">
+                        
+                        07-Loops
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/08-Encodings">
+                        
+                        08-Encodings
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/09-FunctionsI">
+                        
+                        09-FunctionsI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/10-Algorithms">
+                        
+                        10-Algorithms
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/11-FunctionsII">
+                        
+                        11-FunctionsII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/12-Debugging">
+                        
+                        12-Debugging
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/13-Objects">
+                        
+                        13-Objects
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/14-Classes">
+                        
+                        14-Classes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/15-Namespaces">
+                        
+                        15-Namespaces
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/16-CommandLine">
+                        
+                        16-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/17-APIs">
+                        
+                        17-APIs
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/18-ScientificComputing">
+                        
+                        18-ScientificComputing
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/19-OpenSource">
+                        
+                        19-OpenSource
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A1-Syntax">
+                        
+                        A1-Syntax
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A2-Examples">
+                        
+                        A2-Examples
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/Midterm">
+                        
+                        Midterm
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/MidtermPractice">
+                        
+                        MidtermPractice
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                
+                Coding Labs
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                        
+                        CL1-ProgrammingI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1B-Answers">
+                        
+                        CL1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2-ProgrammingII">
+                        
+                        CL2-ProgrammingII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2B-Answers">
+                        
+                        CL2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3-AlgorithmicThinking">
+                        
+                        CL3-AlgorithmicThinking
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3B-Answers">
+                        
+                        CL3B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4-Exploring">
+                        
+                        CL4-Exploring
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4B-Answers">
+                        
+                        CL4B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL5-ProjectPlans">
+                        
+                        CL5-ProjectPlans
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL6-CommandLine">
+                        
+                        CL6-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                
+                Assignments
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections ">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                        
+                        A1-GettingStarted
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1B-Answers">
+                        
+                        A1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2-Ciphers">
+                        
+                        A2-Ciphers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2B-Answers">
+                        
+                        A2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry c-sidebar__entry--active" href="/assignments/A3-Chatbots">
+                        
+                        A3-Chatbots
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A4-ArtificialAgents">
+                        
+                        A4-ArtificialAgents
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                
+                Projects
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                        
+                        ProjectIdeas
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+    </ul>
+</nav>
+
+        <main class="c-textbook__page" tabindex="-1">
+            <div class="o-wrapper c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            <div class="o-wrapper">
+                <!-- DOWNLOAD BUTTONS -->
+
+    <div class="buttons">
+        <a class="button" href="http://localhost:4000/assets/downloads/A3-Chatbots.ipynb.zip">Download Notebook</a>
+    </div>
+
+                <h1 id="assignment-3-chatbots">Assignment 3: Chatbots</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This assignment covers Functions &amp; Algorithms, and builds up to the application of Chatbots.</p>
+
+<p>This assignment is out of 8 points, worth 8% of your grade.</p>
+
+<p>Make sure your completed assignment passes all the asserts. This assignment also has hidden tests - which means that passing all the asserts you see does not guarantee that you have the correct answer! Make sure to double check and re-run your code to make sure it does what you expect.</p>
+
+<h3 id="quick-tips">Quick Tips</h3>
+
+<p>Make sure you execute your code to define the functions you write, and then add a new cell to apply your function to different inputs, and check that you get the outputs you expect.</p>
+
+<p>If you’re not sure where to start, look at the code in the test cases (in the asserts) for examples for what kind of inputs and outputs the function you are writing should take, and what kind of behaviour it should have.</p>
+
+<p>Keep in mind that each question is mostly independent from every other - so if you get stuck on something, you can always move on to the next one, and come back to any that you have trouble with later.</p>
+
+<h2 id="setup">Setup</h2>
+
+<h4 id="code-imports">Code Imports</h4>
+
+<p>You must run the following cell before proceeding with the assignment.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Setup - run this cell before doing the next part of the assignment</span>
+<span class="c">#   This imports some extra code, making it available for us to use later</span>
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+</code></pre></div></div>
+
+<h3 id="zen-chatbot">Zen Chatbot</h3>
+
+<p>In this assignment, we will be working our way up to building a chatbot.</p>
+
+<p>To start with, we can have a quick chat with a zen chatbot, to see what these kinds of chatbots look like.</p>
+
+<p>Also, if you get stuck on anything, come back here, and talk to the Zen chatbot, to relax :)</p>
+
+<p>Note: in this, and other, chatbot lines, running this code will start an open-ended while loop, that will interupt your code flow, until you explicity quit out of the conversation. If you want to be able to run all your code (from kernel <code class="highlighter-rouge">restart &amp; run all</code>), then comment these lines back out when you are finished exploring them.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Uncomment and run this cell to talk to a Zan Chatbot</span>
+<span class="c">#nltk.chat.zen.demo()</span>
+</code></pre></div></div>
+
+<h2 id="part-1-functions">Part 1: Functions</h2>
+
+<p>This part covers the basics of writing and using functions.</p>
+
+<h3 id="function-examples">Function Examples</h3>
+
+<p>The following are a couple examples of functions provided to you, so you can see their structure.</p>
+
+<p>You don’t need to do anything with these functions.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">basic_function</span><span class="p">(</span><span class="n">input_number</span><span class="p">):</span>
+    <span class="s">"""Multiplies an input number by 2."""</span>
+    
+    <span class="c"># Multiple the input by 2</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">input_number</span> <span class="o">*</span> <span class="mi">2</span> 
+    
+    <span class="k">return</span> <span class="n">output</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test using `basic_function`</span>
+<span class="k">print</span><span class="p">(</span><span class="n">basic_function</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">basic_function</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">more_complicated_function</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="s">"""Counts how many letters are in a string."""</span>
+
+    <span class="n">letter_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+        
+        <span class="c"># Uses the `isalpha` method to check if a character is from the alphabet</span>
+        <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+            
+            <span class="c"># `+= 1` is a shortcut for `val = val + 1`</span>
+            <span class="n">letter_count</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="k">return</span> <span class="n">letter_count</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test using `more_complicated_function`</span>
+<span class="k">print</span><span class="p">(</span><span class="n">more_complicated_function</span><span class="p">(</span><span class="s">'ab45b'</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="q1---find-max-value--05-points">Q1 - Find Max Value  (0.5 points)</h3>
+
+<p>Write a function called <code class="highlighter-rouge">find_max</code>, that takes in a single parameter called <code class="highlighter-rouge">random_list</code>, which should be a list.</p>
+
+<p>This function will find the maximum (max) value of the input list, and return it.</p>
+
+<p>This function will assume the list is composed of only positive numbers.</p>
+
+<p>To find the max, within the function, use a variable called <code class="highlighter-rouge">list_max</code>, that you initialize to value 0.</p>
+
+<p>Then use a <code class="highlighter-rouge">for</code> loop, to loop through <code class="highlighter-rouge">random_list</code>.</p>
+
+<p>Inside the list, use a conditional to check if the current value is larger than <code class="highlighter-rouge">list_max</code>, and if so, re-assign <code class="highlighter-rouge">list_max</code> to store this new value.</p>
+
+<p>After the loop, return <code class="highlighter-rouge">list_max</code>, which should now store the maximum value from within the input list.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">find_max</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">find_max</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">]),</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">find_max</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="mi">7</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">find_max</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q2---square-everything--05-points">Q2 - Square Everything  (0.5 points)</h3>
+
+<p>Write a function called <code class="highlighter-rouge">square_all</code> that takes an input called <code class="highlighter-rouge">collection</code> that you assume to be a list or tuple of numbers.</p>
+
+<p>This function should return a new <code class="highlighter-rouge">list</code>, which contains the square of each value in <code class="highlighter-rouge">collection</code>.</p>
+
+<p>To do so, inside the function, you will define a new list, use a loop to loop through the input list, use an operator to square the current value, and use the <code class="highlighter-rouge">append</code> method to add this to your output list. After the loop, return the output list.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">square_all</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">square_all</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">square_all</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span> <span class="o">==</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">square_all</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="part-2-refactoring-code-to-use-functions">Part 2: Refactoring Code to Use Functions</h2>
+
+<p>‘Refactoring’ is the process of updating existing computer code, to keep the same outputs, but to have better internal organization and/or properties.</p>
+
+<p>We’ve written a lot of code in previous assignments. However, since we did not yet have functions at our disposal, a lot of that code is not very easy to re-use.</p>
+
+<p>In this section we will refactor some code - rewriting (and extending) some code from previous assignments as functions, to make it easier to re-use.</p>
+
+<h3 id="q3---calculator-05-points">Q3 - Calculator (0.5 points)</h3>
+
+<p>Let’s start with the calculator code that we worked on in A1.</p>
+
+<p>Instead of using a conditional, like we did before, we will make a series of functions to do all the mathematical operations that we want to do.</p>
+
+<p>Define four functions, called <code class="highlighter-rouge">summation</code>, <code class="highlighter-rouge">subtraction</code>, <code class="highlighter-rouge">multiplication</code>, and <code class="highlighter-rouge">division</code>.</p>
+
+<p>Each of them will take two inputs <code class="highlighter-rouge">num1</code> and <code class="highlighter-rouge">num2</code> (that could be <code class="highlighter-rouge">int</code> or <code class="highlighter-rouge">float</code>), and use them as follows:</p>
+<ul>
+  <li><code class="highlighter-rouge">summation</code> will add <code class="highlighter-rouge">num1</code> to <code class="highlighter-rouge">num2</code> and return the result</li>
+  <li><code class="highlighter-rouge">subtraction</code> will subtract <code class="highlighter-rouge">num2</code> from <code class="highlighter-rouge">num1</code> and return the result</li>
+  <li><code class="highlighter-rouge">multiplication</code> will multiply <code class="highlighter-rouge">num1</code> by <code class="highlighter-rouge">num2</code> and return the result</li>
+  <li><code class="highlighter-rouge">division</code> will divide <code class="highlighter-rouge">num1</code> by <code class="highlighter-rouge">num2</code> and return the result</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">summation</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">summation</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">summation</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="nb">float</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">summation</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">subtraction</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">subtraction</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">summation</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="nb">float</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">subtraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">multiplication</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">multiplication</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">multiplication</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">float</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">multiplication</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">division</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">division</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">float</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">division</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="nb">float</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">division</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+</code></pre></div></div>
+
+<h3 id="q4---extending-our-calculator--05-points">Q4 - Extending our Calculator  (0.5 points)</h3>
+
+<p>Let’s now add some more functions to our calculator:</p>
+
+<ul>
+  <li>Write a function called <code class="highlighter-rouge">squared</code> that takes one parameter, called <code class="highlighter-rouge">num</code>, and returns the square of it.</li>
+  <li>Write a function called <code class="highlighter-rouge">square_root</code> that takes one parameter, called <code class="highlighter-rouge">num</code>, and returns the square root of it.</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">square</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">square</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">25</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">square_root</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">square_root</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="nb">float</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">square_root</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span> <span class="o">==</span> <span class="mi">12</span>
+
+</code></pre></div></div>
+
+<h3 id="example-chaining-functions-together">Example: Chaining Functions Together</h3>
+
+<p>The goal of using functions is partly to be able to re-use code segments.</p>
+
+<p>It’s also a way to able to flexibly apply and combine different functions together, to build up to more complex and interesting programs.</p>
+
+<p>The cell below shows a couple examples of using our calculator functions that we have now defined, in combination with each other.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Add the multiplication of 2 and 3 to the multiplication of 3 and 4</span>
+<span class="n">number1</span> <span class="o">=</span> <span class="n">multiplication</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">number2</span> <span class="o">=</span> <span class="n">multiplication</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">output1</span> <span class="o">=</span> <span class="n">summation</span><span class="p">(</span><span class="n">number1</span><span class="p">,</span> <span class="n">number2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Output1: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">output1</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">''</span><span class="p">)</span>
+
+<span class="c"># Note that we can use the outputs of functions directly as inputs to other functions</span>
+<span class="c">#   Therefore, the above construction is equivalent to the following:</span>
+<span class="n">output2</span> <span class="o">=</span> <span class="n">summation</span><span class="p">(</span><span class="n">multiplication</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">multiplication</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Output2: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">output2</span><span class="p">)</span>
+
+<span class="c"># When we have something like above the functions that are inputs get evaluated first:</span>
+<span class="c">#   So, first, `multiplication(2, 3)` evaluates as 6, and `multiplication(3, 4)` evaluales as 12</span>
+<span class="c">#   This then reduces to calling `summation(6, 12)`, which returns our answer of 18</span>
+</code></pre></div></div>
+
+<h3 id="q5---using-our-calculator--05-points">Q5 - Using Our Calculator  (0.5 points)</h3>
+
+<p>Let’s now use our new calculator functions to do some calculations!</p>
+
+<ul>
+  <li>Add the square of 3 to the square root of 9
+    <ul>
+      <li>Save the result to a variable called <code class="highlighter-rouge">calc_a</code></li>
+    </ul>
+  </li>
+  <li>Subtract the division of 12 by 3 from the the multiplication of 2 and 4
+    <ul>
+      <li>Save the result to a variable called <code class="highlighter-rouge">calc_b</code></li>
+    </ul>
+  </li>
+  <li>Multiply the square root of 16 to the sum of 7 and 9
+    <ul>
+      <li>Save the result to a variable called <code class="highlighter-rouge">calc_c</code></li>
+    </ul>
+  </li>
+  <li>Divide the square of 7 by the square root of 49
+    <ul>
+      <li>Save the result to a variable called <code class="highlighter-rouge">calc_d</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">calc_a</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">calc_a</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">calc_b</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">calc_b</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">calc_c</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">calc_c</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">calc_d</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">calc_d</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="calling-functions-from-functions">Calling Functions from Functions</h3>
+
+<p>In the example above, we were able to refactor our code into re-useable functions.</p>
+
+<p>We were then able to use these functions and chain them together to flexibly and extensibly do computation.</p>
+
+<p>Next we’ll dive into another aspect of writing good modular code: dividing complex tasks into independent functions and then using them together.</p>
+
+<p>In practice, this will look like writing lots of and small and specific functions to do simple tasks.</p>
+
+<p>We can then use these functions from within other functions build up to being able to do more complex tasks.</p>
+
+<h3 id="q6---functions-for-even--positive-numbers-05-points">Q6 - Functions for Even &amp; Positive Numbers (0.5 points)</h3>
+
+<p>Recall Q13 from A2, when we wanted to check a series of conditions across items in a list.</p>
+
+<p>We can consider that checking each of these conditions is really a separate task.</p>
+
+<p>When writing modular code, these separate tasks should therefore be organized as separate functions.</p>
+
+<p>For this question, write two functions, one called <code class="highlighter-rouge">is_even</code>, and the other called <code class="highlighter-rouge">is_positive</code>.</p>
+
+<p>Each function should take in a single parameter, a number called <code class="highlighter-rouge">value</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">is_even</code> will check if <code class="highlighter-rouge">value</code> is even, and return <code class="highlighter-rouge">True</code> if so, and <code class="highlighter-rouge">False</code> otherwise.</li>
+  <li><code class="highlighter-rouge">is_positive</code> will check if <code class="highlighter-rouge">value</code> is positive, and return <code class="highlighter-rouge">True</code> if so, and <code class="highlighter-rouge">False</code> otherwise.
+    <ul>
+      <li>Note: for our purposes here, ‘positive’ numbers are all numbers greater than 0 (so 0 is not considered positive).</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">is_even</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">is_even</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="nb">bool</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">is_even</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="bp">False</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">is_positive</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">is_positive</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="nb">bool</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">is_positive</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="bp">False</span>
+
+</code></pre></div></div>
+
+<h3 id="q7---functions-using-functions-05-points">Q7 - Functions Using Functions (0.5 points)</h3>
+
+<p>In this section, your are going to recreate a function called <code class="highlighter-rouge">make_new_list</code> which takes a list called <code class="highlighter-rouge">data_list</code> as its input.</p>
+
+<p>This function will use <code class="highlighter-rouge">is_positive</code> and <code class="highlighter-rouge">is_even</code> to mimic the task from A2-Q13.</p>
+
+<p>That is, this function will  check each value in <code class="highlighter-rouge">data_list</code> to see if they are even or odd and whether they are positive or negative.</p>
+<ul>
+  <li>If they are both positive and even, encode this as the number 1</li>
+  <li>If they are both negative and odd, encode this as the the number -1</li>
+  <li>
+    <p>Otherwise, encode this as the number 0</p>
+  </li>
+  <li>Store the result for each value into a list called <code class="highlighter-rouge">output</code> and return it.</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">make_new_list</span><span class="p">)</span>
+
+<span class="n">data_list</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">40</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">97</span><span class="p">,</span> <span class="o">-</span><span class="mi">101</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="o">-</span><span class="mi">79</span><span class="p">,</span> <span class="mi">96</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">make_new_list</span><span class="p">(</span><span class="n">data_list</span><span class="p">),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">make_new_list</span><span class="p">(</span><span class="n">data_list</span><span class="p">))</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_list</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">make_new_list</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="part-3-algorithms">Part 3: Algorithms</h2>
+
+<p>This part covers working with algorithms.</p>
+
+<h3 id="q8---algorithms-05-points">Q8 - Algorithms (0.5 points)</h3>
+
+<p>For each of the tasks below, indicate whether you think it is something that a human or a computer would be better at doing.</p>
+
+<p>Answer each question by setting each requested variable to the string either ‘human’ or ‘computer’.</p>
+
+<p>Set the variable to reflect the answer of which of them you think would be better at the task.</p>
+
+<ul>
+  <li>a) Recognize whether a sentence is sarcastic and/or ironic.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">algo_q_a</code></li>
+    </ul>
+  </li>
+  <li>b) Reply to a question with information about a topic, replying with the exact wording from a wikipedia article.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">algo_q_b</code></li>
+    </ul>
+  </li>
+  <li>c) Keep answering messages for an arbitrarily long period of time, without demonstrating fatigue.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">algo_q_c</code></li>
+    </ul>
+  </li>
+  <li>d) Interpret the tone of what was said, to infer if someone is angry.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">algo_q_d</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>For each, try to think through if and how you could write an algorithm to do this task - and if you could not, what about it is hard to formalize.</p>
+
+<p>We can use these questions to start to think through what might be easy and hard to program our chatbot to do.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">algo_q_a</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'human'</span><span class="p">,</span> <span class="s">'computer'</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">algo_q_b</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'human'</span><span class="p">,</span> <span class="s">'computer'</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">algo_q_c</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'human'</span><span class="p">,</span> <span class="s">'computer'</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">algo_q_d</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'human'</span><span class="p">,</span> <span class="s">'computer'</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<h2 id="part-4--chatbots">Part 4:  Chatbots</h2>
+
+<p>This part is an application of all the tools we have covered so far, to the problem of creating a chatbot.</p>
+
+<p>A chatbot is a piece of software that tries to have a conversation with a human.</p>
+
+<p>While today’s chatbots are powerful learners, traditional chatbots are much simpler.</p>
+
+<p>Traditional chatbots follow a “rule-based” approach that is defined for them (by you, the programmer), usually without any learning.</p>
+
+<p>These rules can be very simple or sometimes quite complex - but everything is pre-defined.</p>
+
+<p>These types of chatbots can handle simple conversations but do tend to fail at more complex ones.</p>
+
+<h4 id="chatbot-functions">Chatbot functions</h4>
+
+<p>In order to make our chatbot, we will create a series of functions that our eventual chatbot will use together to try and chat with a user.</p>
+
+<p>At the end, we will test that these functions do indeed allow us to have simple conversations with our chatbot.</p>
+
+<p>Below are some more example chatbots to talk to. Remember to comment these lines back out if you want to be able to <code class="highlighter-rouge">Restart and Run All</code>.</p>
+
+<h3 id="example-chatbot---eliza">Example Chatbot - Eliza</h3>
+
+<p>The following demo is from the Natural Language ToolKit (nltk), a Python package available through Anaconda.</p>
+
+<p>Uncomment the line below, and run the code to be able to have a chat with Eliza.</p>
+
+<p>More information on Eliza: https://en.wikipedia.org/wiki/ELIZA</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Run a demo of a chatbot, with Eliza</span>
+<span class="c">#nltk.chat.eliza.demo()</span>
+</code></pre></div></div>
+
+<h3 id="example-chatbot---iesha">Example Chatbot - Iesha</h3>
+
+<p>The following is another demo chatbot from nltk, this one called Iesha.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Run a demo of a chatbot, with Iesha</span>
+<span class="c">#nltk.chat.iesha.demo()</span>
+</code></pre></div></div>
+
+<p>As you try the chatbot demos with Eliza and Iesha, see if you can notice any patterns that might help you figure out how they work.</p>
+
+<p>That is, can you guess at what kind of programming structures these programs might use?</p>
+
+<h3 id="chatbots-words--rules">Chatbots: Words &amp; Rules</h3>
+
+<p>So, how do these kinds of chatbots work? Most broadly, they combine two simple but powerful approaches:</p>
+<ul>
+  <li>Rule Based Artificial Intelligence (GOFAI)</li>
+  <li>Bag-Of-Word Language Models</li>
+</ul>
+
+<p><strong>Rule based AI</strong>, sometimes called ‘Good Old Fashion Artificial Intelligence’, or ‘GOFAI’, is an approach to making artificial agents that tries to write down a set of rules to follow to perform some task. In practice, this often looks like using a lot of conditionals: if <code class="highlighter-rouge">X</code> happens, do <code class="highlighter-rouge">Y</code>. If we can write down enough logical procedures (call them algorithms) to follow to complete some task, then we can create an artificially intelligent agent (for that task).</p>
+
+<p><strong>Bag-Of-Word language models</strong> are an approach to language that takes the simple approach of saying ‘lets try and figure out what someone is saying simply by checking and counting which words they use’. If someone says the word ‘dog’ three times in conversation, they are probably talking about dogs. This ignores many many things about language, and how it works, but is a good ‘first guess’ for what is being said.</p>
+
+<p>From our perspective, this means two things:</p>
+<ul>
+  <li>We can broadly try to figure out the topic simply by checking which words are used</li>
+  <li>We can choose a response based on a rule that defines what to do if and when we identify particular topics</li>
+</ul>
+
+<p>In code then, this looks like:</p>
+<ul>
+  <li>taking input as strings of continuous text, and splitting this up into lists that contain all the words we see</li>
+  <li>use conditionals (if/elif/else) that choose an output based on what words appear in those lists</li>
+</ul>
+
+<p>As we work through and create all the function in the next section to create our chatbot, try to think through how these functions relate to this approach.</p>
+
+<h3 id="q9---is-it-a-question-05-points">Q9 - Is It a Question (0.5 points)</h3>
+
+<p>One thing we might want to know, given an input to a chatbot, is if the input is a question.</p>
+
+<p>We are going to use a very simple heuristic to check this: we will consider any input that has a question mark (‘?’) in it to be a question.</p>
+
+<p>To do so, write a function called <code class="highlighter-rouge">is_question</code>.</p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">input_string</code> - string</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">output</code> - boolean</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>if there is a ‘?’ in <code class="highlighter-rouge">input_string</code>, set <code class="highlighter-rouge">output</code> to True</li>
+  <li>otherwise, set output to False.</li>
+  <li>return output</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">is_question</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">is_question</span><span class="p">(</span><span class="s">'abc'</span><span class="p">),</span> <span class="nb">bool</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">is_question</span><span class="p">(</span><span class="s">'what?'</span><span class="p">)</span> <span class="o">==</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">is_question</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="example-stringpunctuation">Example: string.punctuation</h3>
+
+<p>When working with strings, it can be useful to check what kind of things particular characters are.</p>
+
+<p>To do things like this, Python offers some collections of items, that we can check against.</p>
+
+<p>For example, we can ask if a particular character is a punctuation mark, by asking if it is in the collection of punctuation characters.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Print out list of punctuation</span>
+<span class="k">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">()</span> <span class="c"># Print blank line</span>
+
+<span class="c"># Check if a particular symol is a punctuation mark</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'@'</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="q10---removing-punctuation-05-points">Q10 - Removing punctuation (0.5 points)</h3>
+
+<p>Once we know if an input is a question, we are going to get rid of all punctuation.</p>
+
+<p>To do so, write a function called <code class="highlighter-rouge">remove_punctuation</code>.</p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">input_string</code> - string</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">out_string</code> - string</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>define a new variable <code class="highlighter-rouge">out_string</code> as an empty string</li>
+  <li>loop through each character in <code class="highlighter-rouge">input_string</code>
+    <ul>
+      <li>if this character is not in <code class="highlighter-rouge">string.punctuation</code>
+        <ul>
+          <li>then append the current character to <code class="highlighter-rouge">out_string</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>return <code class="highlighter-rouge">out_string</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="s">'a'</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="s">"Hey! It's Tom!"</span><span class="p">)</span> <span class="o">==</span> <span class="s">"Hey Its Tom"</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q11---preparing-text-05-points">Q11 - Preparing Text (0.5 points)</h3>
+
+<p>Now we want a more general function to prepare the text inputs for processing.</p>
+
+<p>Inside this function, we will use some string methods as well as our new <code class="highlighter-rouge">remove_punctuation</code> function.</p>
+
+<p>Write a function called <code class="highlighter-rouge">prepare_text</code>.</p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">input_string</code> - string</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">out_list</code> - list of string</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>make the string all lower case (use a string method called <code class="highlighter-rouge">lower</code>)
+    <ul>
+      <li>note that you will have to assign the output to a variable. You can use a variable name like <code class="highlighter-rouge">temp_string</code></li>
+    </ul>
+  </li>
+  <li>remove all punctuation from the string (use your new function <code class="highlighter-rouge">remove_punctuation</code>)
+    <ul>
+      <li>this can also assign out to <code class="highlighter-rouge">temp_string</code></li>
+    </ul>
+  </li>
+  <li>split the string into words (look for and use a string method called <code class="highlighter-rouge">split</code>)
+    <ul>
+      <li>note that split will return a list of strings. Assign this as <code class="highlighter-rouge">out_list</code></li>
+    </ul>
+  </li>
+  <li>return <code class="highlighter-rouge">out_list</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">prepare_text</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prepare_text</span><span class="p">(</span><span class="s">'One two three.'</span><span class="p">),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">prepare_text</span><span class="p">(</span><span class="s">'Hi! Also, howdy.'</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s">'hi'</span><span class="p">,</span> <span class="s">'also'</span><span class="p">,</span> <span class="s">'howdy'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">prepare_text</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q12---echo-a-response-05-points">Q12 - Echo a Response (0.5 points)</h3>
+
+<p>We will define a function that will return a string that has been repeated a specified number of times, with a given separator.</p>
+
+<p>We will also want to deal with the case where the input to this function may be <code class="highlighter-rouge">None</code>.</p>
+
+<p>Write a function called <code class="highlighter-rouge">respond_echo</code>.</p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">input_string</code> - string, or None</li>
+  <li><code class="highlighter-rouge">number_of_echoes</code> - integer</li>
+  <li><code class="highlighter-rouge">spacer</code> - string</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">echo_output</code> - string, or None</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>if <code class="highlighter-rouge">input_string</code> is not <code class="highlighter-rouge">None</code>:
+    <ul>
+      <li>set a variable <code class="highlighter-rouge">echo_output</code> to be  <code class="highlighter-rouge">input_string</code>, repeated the number of times specified by <code class="highlighter-rouge">number_of_echoes</code>, joined by the  <code class="highlighter-rouge">spacer</code>.
+        <ul>
+          <li>Hint: to do so, recall what “*” does to strings</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>otherwise (if <code class="highlighter-rouge">input_string</code> is None)
+    <ul>
+      <li>set <code class="highlighter-rouge">echo_output</code> to <code class="highlighter-rouge">None</code></li>
+    </ul>
+  </li>
+  <li>return <code class="highlighter-rouge">echo_output</code></li>
+</ul>
+
+<p>Note that a simple version of this version will end up appending the spacer to the end of the list as well. For our purposes here, implement that simple version.</p>
+
+<p>So, for example, <code class="highlighter-rouge">respond_echo('bark', 2, '-')</code> should return: ‘bark-bark-‘</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">respond_echo</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">respond_echo</span><span class="p">(</span><span class="s">'ha'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">' '</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">respond_echo</span><span class="p">(</span><span class="s">'meow'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">'~'</span><span class="p">)</span> <span class="o">==</span> <span class="s">'meow~meow~meow~'</span>
+<span class="k">assert</span> <span class="n">respond_echo</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">''</span><span class="p">)</span> <span class="o">==</span> <span class="bp">None</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">respond_echo</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="example-randomchoice">Example: random.choice</h3>
+
+<p>We want our chatbot to have some variation in it’s responses - not only anwering the same thing.</p>
+
+<p>So, we want to be able to choose an output from a list of options.</p>
+
+<p>We can use the <code class="highlighter-rouge">random.choice</code> function to so.</p>
+
+<p>An example of using <code class="highlighter-rouge">random.choice</code> is offered below.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Given a list of inputs, randomly choose and return one of them (re-run this to see different outputs)</span>
+<span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s">'first option'</span><span class="p">,</span> <span class="s">'second option'</span><span class="p">,</span> <span class="s">'third option'</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="q13---selector-05-points">Q13 - Selector (0.5 points)</h3>
+
+<p>Next we will write a function that will help us select an output for the chatbot, based on the input it got.</p>
+
+<p>The overall goal of this function is to take a list of words that we got as input, a list of words to check for if they appear in the input, and a list of possible outputs to return if something from the list to check is in the input list.</p>
+
+<p>Define a function, called <code class="highlighter-rouge">selector</code>.</p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">input_list</code> - list of string</li>
+  <li><code class="highlighter-rouge">check_list</code> - list of string</li>
+  <li><code class="highlighter-rouge">return_list</code> - list of string</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">output</code> - string, or None</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>Initialize <code class="highlighter-rouge">output</code> to <code class="highlighter-rouge">None</code></li>
+  <li>Loop through each element in <code class="highlighter-rouge">input_list</code></li>
+  <li>Use a conditional to check if the current element is in <code class="highlighter-rouge">check_list</code>
+    <ul>
+      <li>If it is, assign <code class="highlighter-rouge">output</code> as the returned value of calling the <code class="highlighter-rouge">random.choice</code> function on <code class="highlighter-rouge">return_list</code></li>
+      <li>Also, break out of the loop</li>
+    </ul>
+  </li>
+  <li>At the end of the function, return <code class="highlighter-rouge">output</code></li>
+</ul>
+
+<p>Note that if we don’t find any words from <code class="highlighter-rouge">input_list</code> that are in <code class="highlighter-rouge">check_list</code>, <code class="highlighter-rouge">output</code> will be returned as <code class="highlighter-rouge">None</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">selector</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">selector</span><span class="p">([</span><span class="s">'in'</span><span class="p">,</span> <span class="s">'words'</span><span class="p">],</span> <span class="p">[</span><span class="s">'words'</span><span class="p">],</span> <span class="p">[</span><span class="s">'yes'</span><span class="p">])</span> <span class="o">==</span> <span class="s">'yes'</span>
+<span class="k">assert</span> <span class="n">selector</span><span class="p">([</span><span class="s">'in'</span><span class="p">,</span> <span class="s">'words'</span><span class="p">],</span> <span class="p">[</span><span class="s">'out'</span><span class="p">],</span> <span class="p">[</span><span class="s">'yes'</span><span class="p">])</span> <span class="o">==</span> <span class="bp">None</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">selector</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q14---string-concatenator-function-05-points">Q14 - String Concatenator Function (0.5 points)</h3>
+
+<p>Create a function that will concatenate two strings, combining them with a specified separator.</p>
+
+<p>To do so, write a function called <code class="highlighter-rouge">string_concatenator</code>.</p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s)</p>
+<ul>
+  <li><code class="highlighter-rouge">string1</code> - string</li>
+  <li><code class="highlighter-rouge">string2</code> - string</li>
+  <li><code class="highlighter-rouge">separator</code> - string</li>
+</ul>
+
+<p>Output(s)</p>
+<ul>
+  <li><code class="highlighter-rouge">output</code> - string, or None</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>concatenate <code class="highlighter-rouge">string1</code> to <code class="highlighter-rouge">string2</code> with <code class="highlighter-rouge">separator</code> in between them.</li>
+  <li>return the result</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">string_concatenator</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">string_concatenator</span><span class="p">(</span><span class="s">'hello'</span><span class="p">,</span> <span class="s">'world'</span><span class="p">,</span> <span class="s">' '</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">string_concatenator</span><span class="p">(</span><span class="s">'hello'</span><span class="p">,</span> <span class="s">'world'</span><span class="p">,</span> <span class="s">' '</span><span class="p">)</span> <span class="o">==</span> <span class="s">'hello world'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">string_concatenator</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q15---list-to-string-05-points">Q15 - List to String (0.5 points)</h3>
+
+<p>Since we are often dealing with a list of strings, it would be useful to have a function to turn a list of strings back into one single concatenated string.</p>
+
+<p>This function will return a string that is each element of <code class="highlighter-rouge">input_list</code> concatenated together with each separated by the string <code class="highlighter-rouge">seperator</code>.</p>
+
+<p>For example, the following function call:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`list_to_string(['This', 'is', 'fun'], ' ')`
+</code></pre></div></div>
+
+<p>shoud return:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'This is fun'
+</code></pre></div></div>
+
+<p>To do this, write a function called <code class="highlighter-rouge">list_to_string</code>.</p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">input_list</code> - list of string</li>
+  <li><code class="highlighter-rouge">separator</code> - string</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">output</code> - string</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>assign a variable called <code class="highlighter-rouge">output</code> to be the first (index 0) element from <code class="highlighter-rouge">input_list</code></li>
+  <li>loop through the rest of <code class="highlighter-rouge">input_list</code>, looping from the 2nd element (index 1) through to the end of the list
+    <ul>
+      <li>Within the loop, use <code class="highlighter-rouge">string_concatenator</code> to combine <code class="highlighter-rouge">output</code> with the current element, separated by <code class="highlighter-rouge">separator</code>
+        <ul>
+          <li>Assign the output of this to be the new value of <code class="highlighter-rouge">output</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>return <code class="highlighter-rouge">output</code>, which should now be a list of the elements of <code class="highlighter-rouge">input_list</code>, joined together into a a single string</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">list_to_string</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">list_to_string</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">],</span> <span class="s">'|'</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">list_to_string</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">],</span> <span class="s">'|'</span><span class="p">)</span> <span class="o">==</span> <span class="s">'a|b'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">list_to_string</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="q16---end-chat-05-points">Q16 - End Chat (0.5 points)</h3>
+
+<p>The last thing we need is a way to end the chat with our chatbot.</p>
+
+<p>We will use the same convention that <code class="highlighter-rouge">nltk</code> uses - namely, that we will end the conversation if the word <code class="highlighter-rouge">quit</code> appears.</p>
+
+<p>To be able to do so, write a function called <code class="highlighter-rouge">end_chat</code></p>
+
+<p>This function should have the following inputs, outputs and internal procedures:</p>
+
+<p>Input(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">input_list</code> - list</li>
+</ul>
+
+<p>Output(s):</p>
+<ul>
+  <li><code class="highlighter-rouge">output</code> - boolean</li>
+</ul>
+
+<p>Procedure(s):</p>
+<ul>
+  <li>This function should return <code class="highlighter-rouge">True</code> if the string ‘quit’ is in <code class="highlighter-rouge">input_list</code>, and return <code class="highlighter-rouge">False</code> otherwise.</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">end_chat</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">end_chat</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">]),</span> <span class="nb">bool</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">end_chat</span><span class="p">([</span><span class="s">'quit'</span><span class="p">])</span> <span class="o">==</span> <span class="bp">True</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">callable</span><span class="p">(</span><span class="n">end_chat</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="pulling-it-all-together">Pulling it all Together</h2>
+
+<p>If everything has gone well with writing everything above, then we are ready to pull all these functions together to create our chatbot.</p>
+
+<p>The next few cells define a bunch of code, all provided for you. This code adds a couple more functions we can use and then defines some lists of inputs and outputs that our chatbot will know about. After that, there is a big function that pulls everything together and creates the procedure to use all of this code together as a chatbot.</p>
+
+<p>You don’t have to write anything in the cells below (or in the rest of the assignment).</p>
+
+<p>Do have a quick read through the code though, to see how our chatbot works, and to see how all the functions you just wrote are used to create the chatbot.</p>
+
+<p>If you need, revisit the information at the beginning of this section about the logic our chatbot uses.</p>
+
+<p>You don’t have to understand everything about what happens here, but try to have a first-pass look through it.</p>
+
+<p>We will build up to understanding and writing this kind of code that brings a lot of things together as we continue through the course.</p>
+
+<p>If the code seems intimidating, just scroll down to the bottom, and test out talking to our chatbot.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># These are a couple more function, provided to you, to be used by our chatbot.</span>
+
+<span class="k">def</span> <span class="nf">is_in_list</span><span class="p">(</span><span class="n">list_one</span><span class="p">,</span> <span class="n">list_two</span><span class="p">):</span>
+    <span class="s">"""Check if any element of list_one is in list_two."""</span>
+    
+    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list_one</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list_two</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">return</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">find_in_list</span><span class="p">(</span><span class="n">list_one</span><span class="p">,</span> <span class="n">list_two</span><span class="p">):</span>
+    <span class="s">"""Find and return an element from list_one that is in list_two, or None otherwise."""</span>
+    
+    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list_one</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list_two</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">element</span>
+    <span class="k">return</span> <span class="bp">None</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This cell defines a collection of input and output things our chatbot can say and respond to</span>
+
+<span class="n">GREETINGS_IN</span> <span class="o">=</span> <span class="p">[</span><span class="s">'hello'</span><span class="p">,</span> <span class="s">'hi'</span><span class="p">,</span> <span class="s">'hey'</span><span class="p">,</span> <span class="s">'hola'</span><span class="p">,</span> <span class="s">'welcome'</span><span class="p">,</span> <span class="s">'bonjour'</span><span class="p">,</span> <span class="s">'greetings'</span><span class="p">]</span>
+<span class="n">GREETINGS_OUT</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Hello, it's nice to talk to you!"</span><span class="p">,</span> <span class="s">'Nice to meet you!'</span><span class="p">,</span>  <span class="s">"Hey - Let's chat!"</span><span class="p">]</span>
+
+<span class="n">COMP_IN</span> <span class="o">=</span> <span class="p">[</span><span class="s">'python'</span><span class="p">,</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'computer'</span><span class="p">,</span> <span class="s">'algorithm'</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">COMP_OUT</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Python is what I'm made of."</span><span class="p">,</span> \
+            <span class="s">"Did you know I'm made of code!?"</span><span class="p">,</span> \
+            <span class="s">"Computers are so magical"</span><span class="p">,</span> \
+            <span class="s">"Do you think I'll pass the Turing test?"</span><span class="p">]</span>
+
+<span class="n">PEOPLE_IN</span> <span class="o">=</span> <span class="p">[</span><span class="s">'turing'</span><span class="p">,</span> <span class="s">'hopper'</span><span class="p">,</span> <span class="s">'neumann'</span><span class="p">,</span> <span class="s">'lovelace'</span><span class="p">]</span>
+<span class="n">PEOPLE_OUT</span> <span class="o">=</span> <span class="p">[</span><span class="s">'was awesome!'</span><span class="p">,</span> <span class="s">'did so many important things!'</span><span class="p">,</span> <span class="s">'is someone you should look up :).'</span><span class="p">]</span>
+<span class="n">PEOPLE_NAMES</span> <span class="o">=</span> <span class="p">{</span><span class="s">'turing'</span><span class="p">:</span> <span class="s">'Alan'</span><span class="p">,</span> <span class="s">'hopper'</span><span class="p">:</span> <span class="s">'Grace'</span><span class="p">,</span> <span class="s">'neumann'</span><span class="p">:</span> <span class="s">'John von'</span><span class="p">,</span> <span class="s">'lovelace'</span><span class="p">:</span> <span class="s">'Ada'</span><span class="p">}</span>
+
+<span class="n">JOKES_IN</span> <span class="o">=</span> <span class="p">[</span><span class="s">'funny'</span><span class="p">,</span> <span class="s">'hilarious'</span><span class="p">,</span> <span class="s">'ha'</span><span class="p">,</span> <span class="s">'haha'</span><span class="p">,</span> <span class="s">'hahaha'</span><span class="p">,</span> <span class="s">'lol'</span><span class="p">]</span>
+<span class="n">JOKES_OUT</span> <span class="o">=</span> <span class="p">[</span><span class="s">'ha'</span><span class="p">,</span> <span class="s">'haha'</span><span class="p">,</span> <span class="s">'lol'</span><span class="p">]</span> 
+
+<span class="n">NONO_IN</span> <span class="o">=</span> <span class="p">[</span><span class="s">'matlab'</span><span class="p">,</span> <span class="s">'java'</span><span class="p">,</span> <span class="s">'C++'</span><span class="p">]</span>
+<span class="n">NONO_OUT</span> <span class="o">=</span> <span class="p">[</span><span class="s">"I'm sorry, I don't want to talk about"</span><span class="p">]</span>
+
+<span class="n">UNKNOWN</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Good.'</span><span class="p">,</span> <span class="s">'Okay'</span><span class="p">,</span> <span class="s">'Huh?'</span><span class="p">,</span> <span class="s">'Yeah!'</span><span class="p">,</span> <span class="s">'Thanks!'</span><span class="p">]</span>
+
+<span class="n">QUESTION</span> <span class="o">=</span> <span class="s">"I'm too shy to answer questions. What do you want to talk about?"</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">have_a_chat</span><span class="p">():</span>
+    <span class="s">"""Main function to run our chatbot."""</span>
+    
+    <span class="n">chat</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="k">while</span> <span class="n">chat</span><span class="p">:</span>
+
+        <span class="c"># Get a message from the user</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'INPUT :</span><span class="se">\t</span><span class="s">'</span><span class="p">)</span>
+        <span class="n">out_msg</span> <span class="o">=</span> <span class="bp">None</span>
+
+        <span class="c"># Check if the input is a question</span>
+        <span class="n">question</span> <span class="o">=</span> <span class="n">is_question</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+        <span class="c"># Prepare the input message</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">prepare_text</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+        <span class="c"># Check for an end msg </span>
+        <span class="k">if</span> <span class="n">end_chat</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+            <span class="n">out_msg</span> <span class="o">=</span> <span class="s">'Bye!'</span>
+            <span class="n">chat</span> <span class="o">=</span> <span class="bp">False</span>
+
+        <span class="c"># Check for a selection of topics that we have defined to respond to</span>
+        <span class="c">#   Here, we will check for a series of topics that we have designed to answer to</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">out_msg</span><span class="p">:</span>
+
+            <span class="c"># Initialize to collect a list of possible outputs</span>
+            <span class="n">outs</span> <span class="o">=</span> <span class="p">[]</span>
+
+            <span class="c"># Check if the input looks like a greeting, add a greeting output if so</span>
+            <span class="n">outs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">selector</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">GREETINGS_IN</span><span class="p">,</span> <span class="n">GREETINGS_OUT</span><span class="p">))</span>
+
+            <span class="c"># Check if the input looks like a computer thing, add a computer output if so</span>
+            <span class="n">outs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">selector</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">COMP_IN</span><span class="p">,</span> <span class="n">COMP_OUT</span><span class="p">))</span>
+
+            <span class="c"># Check if the input mentions a person that is specified, add a person output if so</span>
+            <span class="k">if</span> <span class="n">is_in_list</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">PEOPLE_IN</span><span class="p">):</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="n">find_in_list</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">PEOPLE_IN</span><span class="p">)</span>
+                <span class="n">outs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">list_to_string</span><span class="p">([</span><span class="n">PEOPLE_NAMES</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">(),</span>
+                                            <span class="n">selector</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">PEOPLE_IN</span><span class="p">,</span> <span class="n">PEOPLE_OUT</span><span class="p">)],</span> <span class="s">' '</span><span class="p">))</span>
+
+            <span class="c"># Check if the input looks like a joke, add a repeat joke output if so</span>
+            <span class="n">outs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">respond_echo</span><span class="p">(</span><span class="n">selector</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">JOKES_IN</span><span class="p">,</span> <span class="n">JOKES_OUT</span><span class="p">),</span> <span class="mi">3</span><span class="p">,</span> <span class="s">''</span><span class="p">))</span>
+
+            <span class="c"># Check if the input has some words we don't want to talk about, say that, if so</span>
+            <span class="k">if</span> <span class="n">is_in_list</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">NONO_IN</span><span class="p">):</span>
+                <span class="n">outs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">list_to_string</span><span class="p">([</span><span class="n">selector</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">NONO_IN</span><span class="p">,</span> <span class="n">NONO_OUT</span><span class="p">),</span> <span class="n">find_in_list</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">NONO_IN</span><span class="p">)],</span> <span class="s">' '</span><span class="p">))</span>
+
+            <span class="c"># IF YOU WANTED TO ADD MORE TOPICS TO RESPOND TO, YOU COULD ADD THEM IN HERE</span>
+
+            <span class="c"># We could have selected multiple outputs from the topic search above (if multiple return possible outputs)</span>
+            <span class="c">#   We also might have appended None in some cases, meaning we don't have a reply</span>
+            <span class="c">#   To deal with this, we are going to randomly select an output from the set of outputs that are not None</span>
+            <span class="n">options</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">outs</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">options</span><span class="p">:</span>
+                <span class="n">out_msg</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+        <span class="c"># If we don't have an output yet, but the input was a question, return msg related to it being a question</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">out_msg</span> <span class="ow">and</span> <span class="n">question</span><span class="p">:</span>
+            <span class="n">out_msg</span> <span class="o">=</span> <span class="n">QUESTION</span>
+
+        <span class="c"># Catch-all to say something if msg not caught &amp; processed so far</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">out_msg</span><span class="p">:</span>
+            <span class="n">out_msg</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">UNKNOWN</span><span class="p">)</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="s">'OUTPUT:'</span><span class="p">,</span> <span class="n">out_msg</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="talking-to-our-chatbot">Talking to our Chatbot</h2>
+
+<p>To talk to our chatbot, uncomment and run the cell below.</p>
+
+<p>If anything seems to go weird, note that you can always interrupt the code from running with chat with kernel - interrupt from the menu.</p>
+
+<p>If this happens, it probably means there is some issue with one of the functions you wrote for the chatbot.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Talk to our chatbot</span>
+<span class="n">have_a_chat</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="extending-our-chatbot">Extending Our Chatbot</h3>
+
+<p>You might notice that our chatbot, right now, is pretty limited in how many things it can respond to.</p>
+
+<p>To respond to more topics, we could re-use these same functions, adding more input &amp; output options for our chatbot to respond to, using the basic approaches and functionality we have defined here.</p>
+
+<p>If you are interested in this topic, extending this chatbot (or ones like it) will be one of your project options.</p>
+
+<h2 id="the-end">The End!</h2>
+
+<p>After you’ve explored chatting to the chatbot, you are done!</p>
+
+<p>Have a look back over your answers, and also make sure to Restart &amp; Run All from the kernel menu to double check that everything is working properly.</p>
+
+<p>When you are ready to submit your assignment, upload it to TritonED under Assignment-3.</p>
+
+
+                <nav class="c-page__nav">
+  
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/assignments/A2B-Answers">
+      〈 <span class="u-margin-right-tiny"></span> A2B-Answers
+    </a>
+  
+
+  
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/assignments/A4-ArtificialAgents">
+      A4-ArtificialAgents <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>CL2-ProgrammingII</title>
+  <meta name="description" content="Coding Lab 2: Programming II">
+
+  <link rel="canonical" href="http://localhost:4000/labs/CL2-ProgrammingII/">
+  <link rel="alternate" type="application/rss+xml" title="COGS 18 - Introduction To Python" href="http://localhost:4000/feed.xml">
+
+  <meta property="og:url"         content="http://localhost:4000/labs/CL2-ProgrammingII/" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="CL2-ProgrammingII" />
+<meta property="og:description" content="Coding Lab 2: Programming II" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://localhost:4000/labs/CL2-ProgrammingII/",
+  "headline":
+    "CL2-ProgrammingII",
+  "datePublished":
+    "2018-11-25T22:47:35-08:00",
+  "dateModified":
+    "2018-11-25T22:47:35-08:00",
+  "description":
+    "Coding Lab 2: Programming II",
+  "author": {
+    "@type": "Person",
+    "name": "Tom Donoghue and Zehua Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Google analytics -->
+  <script src="/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load custom website scripts -->
+  <script src="/assets/js/scripts.js" async></script>
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  <script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  console.log(url)
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return jQuery.param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = $("a").each(function() {
+    var href = this.href;
+    // If the link is an internal link...
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['hub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'hub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + jQuery.param(params);
+      this.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    hubUrl = rest['hub'];
+    if (hubUrl !== undefined) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      link = $("a.interact")[0];
+      if (link !== undefined) {
+          // Update the interact link URL
+          var href = link.getAttribute('href');
+          var hub_type = 'binder';
+          if (hub_type === 'binder') {
+            // If binder links exist, we need to re-work them for jupyterhub
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+              first = [hubUrl, 'git-sync'].join('/')
+            } else {
+              first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+            }
+            href = first + '?' + binder2Jupyterhub(href);
+          } else {
+            // If JupyterHub links, we only need to replace the hub url
+            href = href.replace("https://mybinder.org", hubUrl);
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // Assume we're working from a local Jupyter server and remove `/hub`
+              href = href.replace("/hub/user-redirect", "");
+            }
+          }
+          link.setAttribute('href', decodeURIComponent(href));
+
+          // Add text after interact link saying where we're launching
+          hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+          $("a.interact").after($('<div class="interact-context">on ' + hubUrlNoHttp + '</div>'));
+
+      }
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+</head>
+
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
+<body>
+    <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#part-1-collection-types">Part 1: Collection types</a>
+    <ul>
+      <li><a href="#collection-questions">Collection Questions</a></li>
+      <li><a href="#indexing">Indexing</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-conditionals">Part 2: Conditionals</a>
+    <ul>
+      <li><a href="#conditional-questions">Conditional Questions</a></li>
+      <li><a href="#conditional-challenges">Conditional Challenges</a></li>
+      <li><a href="#operator-explorations">Operator Explorations</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-3-loops">Part 3: Loops</a>
+    <ul>
+      <li><a href="#loop-explorations">Loop Explorations</a></li>
+      <li><a href="#nested-loop-challenge">Nested Loop Challenge</a></li>
+    </ul>
+  </li>
+</ul>
+    </nav>
+  </aside>
+
+
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
+    <h2 class="c-sidebar__title">
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+    </h2>
+    <ul class="c-sidebar__chapters">
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/intro">
+                
+                Home
+            </a>
+
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                
+                Materials
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                        
+                        00-Introduction
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/01-Tools">
+                        
+                        01-Tools
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/02-JupyterNotebooks">
+                        
+                        02-JupyterNotebooks
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/03-Variables">
+                        
+                        03-Variables
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/04-Operators">
+                        
+                        04-Operators
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/05-Conditionals">
+                        
+                        05-Conditionals
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/06-DataTypes">
+                        
+                        06-DataTypes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/07-Loops">
+                        
+                        07-Loops
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/08-Encodings">
+                        
+                        08-Encodings
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/09-FunctionsI">
+                        
+                        09-FunctionsI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/10-Algorithms">
+                        
+                        10-Algorithms
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/11-FunctionsII">
+                        
+                        11-FunctionsII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/12-Debugging">
+                        
+                        12-Debugging
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/13-Objects">
+                        
+                        13-Objects
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/14-Classes">
+                        
+                        14-Classes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/15-Namespaces">
+                        
+                        15-Namespaces
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/16-CommandLine">
+                        
+                        16-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/17-APIs">
+                        
+                        17-APIs
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/18-ScientificComputing">
+                        
+                        18-ScientificComputing
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/19-OpenSource">
+                        
+                        19-OpenSource
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A1-Syntax">
+                        
+                        A1-Syntax
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A2-Examples">
+                        
+                        A2-Examples
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/Midterm">
+                        
+                        Midterm
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/MidtermPractice">
+                        
+                        MidtermPractice
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                
+                Coding Labs
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections ">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                        
+                        CL1-ProgrammingI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1B-Answers">
+                        
+                        CL1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry c-sidebar__entry--active" href="/labs/CL2-ProgrammingII">
+                        
+                        CL2-ProgrammingII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2B-Answers">
+                        
+                        CL2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3-AlgorithmicThinking">
+                        
+                        CL3-AlgorithmicThinking
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3B-Answers">
+                        
+                        CL3B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4-Exploring">
+                        
+                        CL4-Exploring
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4B-Answers">
+                        
+                        CL4B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL5-ProjectPlans">
+                        
+                        CL5-ProjectPlans
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL6-CommandLine">
+                        
+                        CL6-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                
+                Assignments
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                        
+                        A1-GettingStarted
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1B-Answers">
+                        
+                        A1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2-Ciphers">
+                        
+                        A2-Ciphers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2B-Answers">
+                        
+                        A2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A3-Chatbots">
+                        
+                        A3-Chatbots
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A4-ArtificialAgents">
+                        
+                        A4-ArtificialAgents
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                
+                Projects
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                        
+                        ProjectIdeas
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+    </ul>
+</nav>
+
+        <main class="c-textbook__page" tabindex="-1">
+            <div class="o-wrapper c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            <div class="o-wrapper">
+                <!-- DOWNLOAD BUTTONS -->
+
+    <div class="buttons">
+        <a class="button" href="http://localhost:4000/assets/downloads/CL2-ProgrammingII.ipynb.zip">Download Notebook</a>
+    </div>
+
+                <h1 id="coding-lab-2-programming-ii">Coding Lab 2: Programming II</h1>
+
+<p>Welcome to the second coding lab!</p>
+
+<p>CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each fill out your own notebook, if you prefer.</p>
+
+<p>CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go!</p>
+
+<p>If you have a question about how something works / what something does - try it out, and see what happens!</p>
+
+<h2 id="part-1-collection-types">Part 1: Collection types</h2>
+
+<p>Collections are Python variable types than can store a ‘collection’ of items.</p>
+
+<h3 id="collection-questions">Collection Questions</h3>
+
+<p>Create a list and a tuple. Fill them with with any values you want.</p>
+
+<p>Call them <code class="highlighter-rouge">my_list</code> and <code class="highlighter-rouge">my_tuple</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## YOUR CODE HERE</span>
+
+</code></pre></div></div>
+
+<p>Use the following cells to check the types of the variables you write are as expected</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="declaring-collections">Declaring Collections</h4>
+
+<p>Note that there can be more than one way to declare collections.</p>
+
+<p>As well as declaring them with ‘[]’ and ‘()’, we can use the list &amp; tuple constructors, as shown below.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Run me! - This creates another list &amp; tuple, using the list &amp; tuple constructors</span>
+<span class="n">some_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="n">some_tuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="s">"peanut"</span><span class="p">,</span> <span class="s">"butter"</span><span class="p">,</span> <span class="s">"and"</span><span class="p">,</span> <span class="s">"jelly"</span><span class="p">])</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"'some_list' contains: </span><span class="se">\t</span><span class="s">"</span><span class="p">,</span> <span class="n">some_list</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"'some_tuple' contains: </span><span class="se">\t</span><span class="s">"</span><span class="p">,</span> <span class="n">some_tuple</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Compare the types of these variables to your equivalent variables to confirm.</p>
+
+<p>In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_list</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_tuple</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="indexing">Indexing</h3>
+
+<p>Given the following list, do the following operations:</p>
+<ul>
+  <li>Get the length of the list (assign this to a variable <code class="highlighter-rouge">lst_len</code>)</li>
+  <li>Get the 1st element of the list (call the selection <code class="highlighter-rouge">ind1</code>)</li>
+  <li>Get the last element of the list (call the selection <code class="highlighter-rouge">ind2</code>)</li>
+  <li>Get the second to the fourth element of the list (call the selection <code class="highlighter-rouge">ind3</code>)</li>
+  <li>Get from the fifth element, to the end of the list (call the selection <code class="highlighter-rouge">ind4</code>)</li>
+  <li>Get every second element of the list, starting at the first element (call the selection <code class="highlighter-rouge">ind5</code>)</li>
+  <li>Get every second element of the list, starting at the second element (call the selection <code class="highlighter-rouge">ind6</code>)</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_lst</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s">'tomato'</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="s">'python'</span><span class="p">,</span> <span class="p">[],</span> <span class="mf">5.5</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+
+</code></pre></div></div>
+
+<h2 id="part-2-conditionals">Part 2: Conditionals</h2>
+
+<p>Conditionals a form of control flow for executing certain code if a specific condition is met.</p>
+
+<h3 id="conditional-questions">Conditional Questions</h3>
+
+<p>In this part, we will re-visit some questions about conditionals, and start combining them together with collections.</p>
+
+<p>Make sure you can use if/elif/else statements to control which code blocks are run.</p>
+
+<h4 id="controlling-output-with-conditionals-i">Controlling Output With Conditionals I</h4>
+
+<p>Using the code below, keep updating the variable value to make sure you can make the conditional return each of the possibilities.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ToDo: Update value to control what gets executed</span>
+<span class="n">value</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c"># This code provided</span>
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="s">'small value'</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="s">'big value'</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s">'false value'</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="controlling-output-with-conditionals-ii">Controlling Output With Conditionals II</h4>
+
+<p>In the cell below, first write something into each result assignment related to  for example, it could be “B1 is False &amp; B2 is True”).</p>
+
+<p>Then make sure you can change values of b1 &amp; b2 to make the program execute each option.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ToDo: Update b1 &amp; b2 to control what gets executed</span>
+<span class="n">b1</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">b2</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c"># Next, try this out</span>
+<span class="k">if</span> <span class="n">b1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">b2</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">elif</span> <span class="ow">not</span> <span class="n">b1</span> <span class="ow">and</span> <span class="n">b2</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">elif</span> <span class="n">b1</span> <span class="ow">and</span> <span class="n">b2</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s">''</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="conditional-challenges">Conditional Challenges</h3>
+
+<p>The following are more challenging questions relating to conditional statements. If they seem too tricky for now, just skip ahead to the next section.</p>
+
+<h4 id="conditional-challenge-1">Conditional Challenge #1</h4>
+
+<p>Write a conditional that prints “Found it” if a given <code class="highlighter-rouge">val_2</code> is a multiple of 10, otherwise prints “Nope.”</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## YOUR CODE HERE</span>
+
+
+</code></pre></div></div>
+
+<h4 id="conditional-challenge-2">Conditional Challenge #2</h4>
+
+<p>Input: assumes a variable <code class="highlighter-rouge">val_1</code>, that can be either a string or an integer</p>
+
+<p>Output: based on the conditions, this code block will assign a variable called <code class="highlighter-rouge">output</code> to be a boolean</p>
+
+<p>Use conditions to check whether <code class="highlighter-rouge">val_1</code> is a string or an integer object:</p>
+<ul>
+  <li>If it is a string, check whether it’s length is greater then 8
+    <ul>
+      <li>If so, set the value <code class="highlighter-rouge">output</code> to True</li>
+    </ul>
+  </li>
+  <li>If it is an integer, compare whether it is less than 100
+    <ul>
+      <li>If so, set the value <code class="highlighter-rouge">output</code> to True</li>
+    </ul>
+  </li>
+  <li>Else, set output to False</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## YOUR CODE HERE</span>
+
+</code></pre></div></div>
+
+<h3 id="operator-explorations">Operator Explorations</h3>
+
+<p>For each of the following questions, start by writing out a guess of what you think it might do.</p>
+
+<p>Then, test out each one by writing out some code.</p>
+
+<p>Finally, once you have answered the question, using some code, add a comment in the markdown here with the answer.</p>
+
+<p>Questions:</p>
+<ul>
+  <li>Can you include multiple conditions in an if statement?
+    <ul>
+      <li>If think so, write an if statement that tests multiple conditions.</li>
+    </ul>
+  </li>
+  <li>What happens if you put an if statement inside an if statement? When would such a statement run?
+    <ul>
+      <li>To explore this, write an if statement that has an embedded if statement in it.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## YOUR EXPLORATIONS HERE</span>
+
+
+
+</code></pre></div></div>
+
+<h2 id="part-3-loops">Part 3: Loops</h2>
+
+<p>We will now explore two ways to iterate over data in Python - <code class="highlighter-rouge">for</code> and <code class="highlighter-rouge">while</code> loops.</p>
+
+<p>Each type of loop performs its respective code block until certain conditions are met. Here, we will explore what those conditions are.</p>
+
+<p>Note: “iterate” means to perform an action repeatedly</p>
+
+<p>Note: Sometimes, we accidentally make loops that never end.</p>
+<ul>
+  <li>If that happens, “break” the cell by selecting it and then pressing “ctrl+c”. Alternatively, press the “stop” button (square icon) in the Jupyter toolbar.</li>
+</ul>
+
+<h4 id="loops-q1">Loops Q1</h4>
+
+<p>First, declare a variable called <code class="highlighter-rouge">counter</code> that has type int and value zero.</p>
+
+<p>Then write a while loop that runs 10 times and use ‘counter’ to track how many times the loop runs.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## YOUR CODE HERE</span>
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Check that (after the loop runs) that there is a variable called `counter` that has value 10</span>
+<span class="k">assert</span> <span class="n">counter</span> <span class="o">==</span> <span class="mi">10</span>
+</code></pre></div></div>
+
+<h4 id="infinite-loops">Infinite Loops</h4>
+
+<p>The while loop below will run indefinitely unless someone puts a stop to it!</p>
+
+<p>Add your own code that causes the loop to exit when the <code class="highlighter-rouge">counter</code> variable reaches 10. You can use <code class="highlighter-rouge">break</code> to do this.</p>
+
+<p>Note: Sometimes, we accidentally make loops that never end - try that by running the cell below before adding</p>
+
+<p>If that happens, interrupt the cell by selecting it and then pressing “ctrl+c”. Alternatively, press the “stop” button (square icon) in the Jupyter toolbar.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="s">"the value of 'counter' = {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
+    <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
+    
+    <span class="c">## YOUR CODE HERE</span>
+
+</code></pre></div></div>
+
+<h3 id="loop-explorations">Loop Explorations</h3>
+
+<p>Now, explore using for and while loops and breaks.</p>
+
+<p>Here are some things to try, and questions to ask - each of which you should explore in code.</p>
+<ul>
+  <li>What happens if you use ‘break’ all by itself?</li>
+  <li>What are some different ways to loop through a list? tuple?</li>
+  <li>Write these combinations:
+    <ul>
+      <li>a <code class="highlighter-rouge">for</code> loop with a <code class="highlighter-rouge">break</code>, a <code class="highlighter-rouge">for</code> loop with a <code class="highlighter-rouge">continue</code></li>
+      <li>a <code class="highlighter-rouge">while</code> loop with a <code class="highlighter-rouge">break</code>, a <code class="highlighter-rouge">for</code> loop with a <code class="highlighter-rouge">continue</code></li>
+    </ul>
+  </li>
+  <li>Write some loops that loop across lists:
+    <ul>
+      <li>Write a loop that loops across, and prints out, all the elements of a list</li>
+      <li>Write a loop that loops across, and prints out, every second element of a list</li>
+      <li>Write a loop that loops across, and prints out, every element of a list in reverse order</li>
+      <li>Write a loop that loops across, and prints out, the first half of a list</li>
+    </ul>
+  </li>
+  <li>Write a loop with a conditional inside it.</li>
+  <li>Can you have loops inside loops? If you think so, try and write a nested loop.</li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE EXPLORATIONS HERE</span>
+
+
+
+</code></pre></div></div>
+
+<h3 id="nested-loop-challenge">Nested Loop Challenge</h3>
+
+<p>Using nested loops, you will print out a pattern that looks like this:</p>
+
+<p>1 <br />
+1 2 <br />
+1 2 3 <br />
+1 2 3 4 <br />
+1 2 3 4 5 <br />
+1 2 3 4 5 6 <br />
+1 2 3 4 5 6 7</p>
+
+<p>Hints:</p>
+<ul>
+  <li>You can do this with two while loops, one inside the other.</li>
+  <li>You will have two indices counters, one for each loop.</li>
+  <li>For the print statement, it will look something like <code class="highlighter-rouge">print(index_inner, end=" ")</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># YOUR CODE HERE</span>
+
+</code></pre></div></div>
+
+<p>If you get the above pattern working, try manipulating the code to print out different patterns, and with different symbols.</p>
+
+
+                <nav class="c-page__nav">
+  
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/labs/CL1B-Answers">
+      〈 <span class="u-margin-right-tiny"></span> CL1B-Answers
+    </a>
+  
+
+  
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/labs/CL2B-Answers">
+      CL2B-Answers <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

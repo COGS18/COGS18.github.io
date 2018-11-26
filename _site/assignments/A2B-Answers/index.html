@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>A2B-Answers</title>
+  <meta name="description" content="A2-Ciphers">
+
+  <link rel="canonical" href="http://localhost:4000/assignments/A2B-Answers/">
+  <link rel="alternate" type="application/rss+xml" title="COGS 18 - Introduction To Python" href="http://localhost:4000/feed.xml">
+
+  <meta property="og:url"         content="http://localhost:4000/assignments/A2B-Answers/" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="A2B-Answers" />
+<meta property="og:description" content="A2-Ciphers" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://localhost:4000/assignments/A2B-Answers/",
+  "headline":
+    "A2B-Answers",
+  "datePublished":
+    "2018-11-25T22:47:35-08:00",
+  "dateModified":
+    "2018-11-25T22:47:35-08:00",
+  "description":
+    "A2-Ciphers",
+  "author": {
+    "@type": "Person",
+    "name": "Tom Donoghue and Zehua Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Google analytics -->
+  <script src="/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load custom website scripts -->
+  <script src="/assets/js/scripts.js" async></script>
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  <script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  console.log(url)
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return jQuery.param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = $("a").each(function() {
+    var href = this.href;
+    // If the link is an internal link...
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['hub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'hub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + jQuery.param(params);
+      this.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    hubUrl = rest['hub'];
+    if (hubUrl !== undefined) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      link = $("a.interact")[0];
+      if (link !== undefined) {
+          // Update the interact link URL
+          var href = link.getAttribute('href');
+          var hub_type = 'binder';
+          if (hub_type === 'binder') {
+            // If binder links exist, we need to re-work them for jupyterhub
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+              first = [hubUrl, 'git-sync'].join('/')
+            } else {
+              first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+            }
+            href = first + '?' + binder2Jupyterhub(href);
+          } else {
+            // If JupyterHub links, we only need to replace the hub url
+            href = href.replace("https://mybinder.org", hubUrl);
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // Assume we're working from a local Jupyter server and remove `/hub`
+              href = href.replace("/hub/user-redirect", "");
+            }
+          }
+          link.setAttribute('href', decodeURIComponent(href));
+
+          // Add text after interact link saying where we're launching
+          hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+          $("a.interact").after($('<div class="interact-context">on ' + hubUrlNoHttp + '</div>'));
+
+      }
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+</head>
+
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
+<body>
+    <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#part-1-collection-types">Part 1: Collection Types</a>
+    <ul>
+      <li><a href="#q1---lists-025-points">Q1 - Lists (0.25 points)</a></li>
+      <li><a href="#q2---tuples-025-points">Q2 - Tuples (0.25 points)</a></li>
+      <li><a href="#q3---dictionaries-025-points">Q3 - Dictionaries (0.25 points)</a></li>
+      <li><a href="#q4---lists-of-lists-025-points">Q4 - Lists of Lists (0.25 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-2-working-with-collections">Part 2: Working With Collections</a>
+    <ul>
+      <li><a href="#q5---indexing-05-points">Q5 - Indexing (0.5 points)</a></li>
+      <li><a href="#q6---comparisons-using-indexing-05-points">Q6 - Comparisons using Indexing (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-3-loops">Part 3: Loops</a>
+    <ul>
+      <li><a href="#q7---loop-questions-05-points">Q7 - Loop Questions (0.5 points)</a></li>
+      <li><a href="#q8---for-loop-05-points">Q8 - For Loop (0.5 points)</a></li>
+      <li><a href="#q9---while-loop-05-points">Q9 - While Loop (0.5 points)</a></li>
+      <li><a href="#example-append">Example: Append</a></li>
+      <li><a href="#q10---loops-multiplication-05-points">Q10 - Loops: Multiplication (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-4-combining-loops--conditionals">Part 4: Combining Loops &amp; Conditionals</a>
+    <ul>
+      <li><a href="#q11---loops-division-05-points">Q11 - Loops: Division (0.5 points)</a></li>
+      <li><a href="#q12---loops-odd-or-even-05-points">Q12 - Loops: Odd or Even (0.5 points)</a></li>
+      <li><a href="#q13---loops-multiple-conditions-05-points">Q13 - Loops: Multiple Conditions (0.5 points)</a></li>
+      <li><a href="#example-looping-through-dictionaries">Example: Looping through Dictionaries</a></li>
+      <li><a href="#q14---loops-dictionaries-05-points">Q14 - Loops: Dictionaries (0.5 points)</a></li>
+    </ul>
+  </li>
+  <li><a href="#part-5--ciphers">Part 5:  Ciphers</a>
+    <ul>
+      <li><a href="#q15---creating-an-encoder-05-points">Q15 - Creating an Encoder (0.5 points)</a></li>
+      <li><a href="#q16---decoder-05-points">Q16 - Decoder (0.5 points)</a></li>
+      <li><a href="#using-the-encoder-and-decoder-together">Using the encoder and decoder together</a></li>
+      <li><a href="#using-a-custom-encoder">Using a Custom Encoder</a></li>
+      <li><a href="#q17---custom-encoder-05-points">Q17 - Custom Encoder (0.5 points)</a></li>
+      <li><a href="#using-variable-keys">Using Variable Keys</a></li>
+      <li><a href="#q18---encodings-with-variable-keys-05-points">Q18 - Encodings with variable keys (0.5 points)</a></li>
+      <li><a href="#breaking-a-variable-encoder">Breaking a Variable Encoder</a></li>
+      <li><a href="#variable-decoder">Variable Decoder</a></li>
+      <li><a href="#decoding-a-provided-message">Decoding a provided message</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-end">The End!</a></li>
+</ul>
+    </nav>
+  </aside>
+
+
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
+    <h2 class="c-sidebar__title">
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+    </h2>
+    <ul class="c-sidebar__chapters">
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/intro">
+                
+                Home
+            </a>
+
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                
+                Materials
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                        
+                        00-Introduction
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/01-Tools">
+                        
+                        01-Tools
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/02-JupyterNotebooks">
+                        
+                        02-JupyterNotebooks
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/03-Variables">
+                        
+                        03-Variables
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/04-Operators">
+                        
+                        04-Operators
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/05-Conditionals">
+                        
+                        05-Conditionals
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/06-DataTypes">
+                        
+                        06-DataTypes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/07-Loops">
+                        
+                        07-Loops
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/08-Encodings">
+                        
+                        08-Encodings
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/09-FunctionsI">
+                        
+                        09-FunctionsI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/10-Algorithms">
+                        
+                        10-Algorithms
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/11-FunctionsII">
+                        
+                        11-FunctionsII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/12-Debugging">
+                        
+                        12-Debugging
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/13-Objects">
+                        
+                        13-Objects
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/14-Classes">
+                        
+                        14-Classes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/15-Namespaces">
+                        
+                        15-Namespaces
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/16-CommandLine">
+                        
+                        16-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/17-APIs">
+                        
+                        17-APIs
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/18-ScientificComputing">
+                        
+                        18-ScientificComputing
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/19-OpenSource">
+                        
+                        19-OpenSource
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A1-Syntax">
+                        
+                        A1-Syntax
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A2-Examples">
+                        
+                        A2-Examples
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/Midterm">
+                        
+                        Midterm
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/MidtermPractice">
+                        
+                        MidtermPractice
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                
+                Coding Labs
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                        
+                        CL1-ProgrammingI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1B-Answers">
+                        
+                        CL1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2-ProgrammingII">
+                        
+                        CL2-ProgrammingII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2B-Answers">
+                        
+                        CL2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3-AlgorithmicThinking">
+                        
+                        CL3-AlgorithmicThinking
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3B-Answers">
+                        
+                        CL3B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4-Exploring">
+                        
+                        CL4-Exploring
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4B-Answers">
+                        
+                        CL4B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL5-ProjectPlans">
+                        
+                        CL5-ProjectPlans
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL6-CommandLine">
+                        
+                        CL6-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                
+                Assignments
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections ">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                        
+                        A1-GettingStarted
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1B-Answers">
+                        
+                        A1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2-Ciphers">
+                        
+                        A2-Ciphers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry c-sidebar__entry--active" href="/assignments/A2B-Answers">
+                        
+                        A2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A3-Chatbots">
+                        
+                        A3-Chatbots
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A4-ArtificialAgents">
+                        
+                        A4-ArtificialAgents
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                
+                Projects
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                        
+                        ProjectIdeas
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+    </ul>
+</nav>
+
+        <main class="c-textbook__page" tabindex="-1">
+            <div class="o-wrapper c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            <div class="o-wrapper">
+                <!-- DOWNLOAD BUTTONS -->
+
+    <div class="buttons">
+        <a class="button" href="http://localhost:4000/assets/downloads/A2B-Answers.ipynb.zip">Download Notebook</a>
+    </div>
+
+                <h1 id="a2-ciphers">A2-Ciphers</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This assignment covers Collections, Loops &amp; Encodings, and builds up to the application of Ciphers.</p>
+
+<p>This assignment is out of 8 points, worth 8% of your grade.</p>
+
+<p>Make sure your completed assignment passes all the asserts. This assignment also has hidden tests - which means that passing all the asserts you see does not guarantee that you have the correct answer! Make sure to double check and re-run your code to make sure it does what you expect, and that the variables you define end up with values you’d expect.</p>
+
+<p>Also note that some questions use a <code class="highlighter-rouge">%%writefile</code> line to help grade them. You don’t have to do anything with these lines (you can basically ignore them), but just make sure you do not delete them! You must leave them in for your assignment to grade properly.</p>
+
+<h2 id="part-1-collection-types">Part 1: Collection Types</h2>
+
+<p>This part covers collection types: lists, tuples and dictionaries.</p>
+
+<h3 id="q1---lists-025-points">Q1 - Lists (0.25 points)</h3>
+
+<p>Below are the results of a hypothetical experiment of measuring the height of a class in a land far away:</p>
+
+<ul>
+  <li>Mario is 5.6 feet tall</li>
+  <li>Sarai is 5.4 feet tall</li>
+  <li>Demi is 6.2 feet tall</li>
+  <li>Ian is 5.8 feet tall</li>
+  <li>Dawn is 5.7 feet tall</li>
+</ul>
+
+<p>Create a list, called <code class="highlighter-rouge">class_names</code> and fill it with the names of each person in the class.</p>
+
+<p>Create another list, called <code class="highlighter-rouge">class_heights</code> and fill it with the heights of each person in the class.</p>
+
+<p>Remember that the order of lists matters, and so make sure to keep the order of items the same as listed above!</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">class_names</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Mario'</span><span class="p">,</span> <span class="s">'Sarai'</span><span class="p">,</span> <span class="s">'Demi'</span><span class="p">,</span> <span class="s">'Ian'</span><span class="p">,</span> <span class="s">'Dawn'</span> <span class="p">]</span>
+<span class="n">class_heights</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.6</span><span class="p">,</span> <span class="mf">5.4</span><span class="p">,</span> <span class="mf">6.2</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">]</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Tests for Q1</span>
+
+<span class="c"># Check both lists are defined</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">class_names</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">class_heights</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="c"># Check both lists have the same length, and are of length 5</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">class_names</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">class_heights</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">class_names</span> <span class="o">==</span> <span class="p">[</span><span class="s">'Mario'</span><span class="p">,</span> <span class="s">'Sarai'</span><span class="p">,</span> <span class="s">'Demi'</span><span class="p">,</span> <span class="s">'Ian'</span><span class="p">,</span> <span class="s">'Dawn'</span> <span class="p">]</span>
+<span class="k">assert</span> <span class="n">class_heights</span> <span class="o">==</span> <span class="p">[</span><span class="mf">5.6</span><span class="p">,</span> <span class="mf">5.4</span><span class="p">,</span> <span class="mf">6.2</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">]</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<p>Now that we have the data stored in lists, we will explore other collection types.</p>
+
+<h3 id="q2---tuples-025-points">Q2 - Tuples (0.25 points)</h3>
+
+<p>Create a tuple, that contains just the names of the people in the experiment. Call this tuple ‘names_tuple’.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">names_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">'Mario'</span><span class="p">,</span> <span class="s">'Sarai'</span><span class="p">,</span> <span class="s">'Demi'</span><span class="p">,</span> <span class="s">'Ian'</span><span class="p">,</span> <span class="s">'Dawn'</span> <span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">names_tuple</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">names_tuple</span> <span class="o">==</span> <span class="p">(</span><span class="s">'Mario'</span><span class="p">,</span> <span class="s">'Sarai'</span><span class="p">,</span> <span class="s">'Demi'</span><span class="p">,</span> <span class="s">'Ian'</span><span class="p">,</span> <span class="s">'Dawn'</span><span class="p">)</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="q3---dictionaries-025-points">Q3 - Dictionaries (0.25 points)</h3>
+
+<p>Next, store the data into a dictionary, where each student’s name is the key and their height is the value.</p>
+
+<p>Call this dictionary <code class="highlighter-rouge">results_dictionary</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">results_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Mario'</span><span class="p">:</span> <span class="mf">5.6</span><span class="p">,</span> <span class="s">'Sarai'</span><span class="p">:</span> <span class="mf">5.4</span><span class="p">,</span> <span class="s">'Demi'</span><span class="p">:</span> <span class="mf">6.2</span><span class="p">,</span> <span class="s">'Ian'</span><span class="p">:</span> <span class="mf">5.8</span><span class="p">,</span> <span class="s">'Dawn'</span><span class="p">:</span> <span class="mf">5.7</span> <span class="p">}</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">results_dictionary</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">results_dictionary</span> <span class="o">==</span> <span class="p">{</span><span class="s">'Mario'</span><span class="p">:</span> <span class="mf">5.6</span><span class="p">,</span> <span class="s">'Sarai'</span><span class="p">:</span> <span class="mf">5.4</span><span class="p">,</span> <span class="s">'Demi'</span><span class="p">:</span> <span class="mf">6.2</span><span class="p">,</span> <span class="s">'Ian'</span><span class="p">:</span> <span class="mf">5.8</span><span class="p">,</span> <span class="s">'Dawn'</span><span class="p">:</span> <span class="mf">5.7</span> <span class="p">}</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="q4---lists-of-lists-025-points">Q4 - Lists of Lists (0.25 points)</h3>
+
+<p>You can also make lists, that are filled with lists! List-ception.</p>
+
+<p>First, create three different lists:</p>
+<ul>
+  <li>A list called <code class="highlighter-rouge">string_list</code> that contains three strings (can be any strings)</li>
+  <li>A list called <code class="highlighter-rouge">number_list</code> that contains three numbers (can be any numbers - int or float)</li>
+  <li>A list called <code class="highlighter-rouge">boolean_list</code> that contains three boolean (can be any booleans)</li>
+</ul>
+
+<p>Then, create a new list, called <code class="highlighter-rouge">nested_list</code> which contains the three lists you created above.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">string_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
+<span class="n">number_list</span> <span class="o">=</span> <span class="p">[</span><span class="mf">12.4</span><span class="p">,</span> <span class="mf">16.4</span><span class="p">,</span> <span class="mf">11.2</span><span class="p">]</span>
+<span class="n">boolean_list</span> <span class="o">=</span> <span class="p">[</span><span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span>
+<span class="n">nested_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">string_list</span><span class="p">,</span> <span class="n">number_list</span><span class="p">,</span> <span class="n">boolean_list</span><span class="p">]</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">string_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">string_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">string_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">str</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">number_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">float</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boolean_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">boolean_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">boolean_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">bool</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">nested_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">nested_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">nested_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="part-2-working-with-collections">Part 2: Working With Collections</h2>
+
+<p>This part covers working with collections and indexing.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># For Q5 &amp; Q6, the following lists are provided for you</span>
+<span class="n">list_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="n">list_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<span class="n">list_3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="n">list_4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">289</span><span class="p">,</span> <span class="mi">938</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="q5---indexing-05-points">Q5 - Indexing (0.5 points)</h3>
+
+<p>Do the following using indexing:</p>
+<ul>
+  <li>Store the first value in <code class="highlighter-rouge">list_1</code> to <code class="highlighter-rouge">index_1</code></li>
+  <li>Store the last value in <code class="highlighter-rouge">list_2</code> to <code class="highlighter-rouge">index_2</code></li>
+  <li>Store the first four values of <code class="highlighter-rouge">list_2</code> to <code class="highlighter-rouge">index_3</code></li>
+  <li>Store the last four values of <code class="highlighter-rouge">list_3</code> to <code class="highlighter-rouge">index_4</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">index_1</span> <span class="o">=</span> <span class="n">list_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">index_2</span> <span class="o">=</span> <span class="n">list_2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">index_3</span> <span class="o">=</span> <span class="n">list_2</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">index_4</span> <span class="o">=</span> <span class="n">list_3</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">index_1</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">index_1</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">index_2</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">index_2</span> <span class="o">==</span> <span class="mi">25</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">index_3</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">index_3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">index_3</span> <span class="o">==</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">index_4</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">index_4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">index_4</span> <span class="o">==</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="q6---comparisons-using-indexing-05-points">Q6 - Comparisons using Indexing (0.5 points)</h3>
+
+<p>Do the following comparisons using indexing:</p>
+<ul>
+  <li>Check if the first value of <code class="highlighter-rouge">list_1</code> is one of the last three values in <code class="highlighter-rouge">list_3</code> (Hint: remember operator ‘in’)
+    <ul>
+      <li>Store the result in <code class="highlighter-rouge">comp_result_1</code></li>
+    </ul>
+  </li>
+  <li>Check if the third value of <code class="highlighter-rouge">list_4</code> is greater than the fourth value in <code class="highlighter-rouge">list_4</code>
+    <ul>
+      <li>Store the result in <code class="highlighter-rouge">comp_result_2</code></li>
+    </ul>
+  </li>
+  <li>Check if the last value of <code class="highlighter-rouge">list_4</code> is less than the second value in <code class="highlighter-rouge">list_4</code>
+    <ul>
+      <li>Store the result in <code class="highlighter-rouge">comp_result_3</code></li>
+    </ul>
+  </li>
+  <li>Check if the second value of <code class="highlighter-rouge">list_2</code> multiplied by the seventh value of <code class="highlighter-rouge">list_3</code> is greater than the second to last value in <code class="highlighter-rouge">list_4</code>
+    <ul>
+      <li>Store the result in <code class="highlighter-rouge">comp_result_4</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Keep in mind that you are storing the result of a comparison to a variable, so resulting variables should all be booleans.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">comp_result_1</span> <span class="o">=</span> <span class="n">list_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">list_3</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+<span class="n">comp_result_2</span> <span class="o">=</span> <span class="n">list_4</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">list_4</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">comp_result_3</span> <span class="o">=</span> <span class="n">list_4</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">list_4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">comp_result_4</span> <span class="o">=</span> <span class="p">(</span><span class="n">list_2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">list_3</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span> <span class="o">&gt;</span> <span class="n">list_4</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">comp_result_1</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">comp_result_1</span> <span class="o">==</span> <span class="bp">True</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">comp_result_2</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">comp_result_2</span> <span class="o">==</span> <span class="bp">False</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">comp_result_3</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">comp_result_3</span> <span class="o">==</span> <span class="bp">False</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">comp_result_4</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">comp_result_4</span> <span class="o">==</span> <span class="bp">False</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h2 id="part-3-loops">Part 3: Loops</h2>
+
+<p>This part covers using loops.</p>
+
+<h3 id="q7---loop-questions-05-points">Q7 - Loop Questions (0.5 points)</h3>
+
+<p>For each of the scenarios below, indicate whether it is a procedure best done with a for loop, a while loop, or if the task is not something best done with a loop.</p>
+
+<p>For each question, answer by setting a string to requested variable name, that stores one of ‘for’, ‘while’ or ‘not_a_loop’ to indicate your answer.</p>
+
+<ul>
+  <li>a) You want to apply a transform to every piece of data in a list.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">loop_q_a</code></li>
+    </ul>
+  </li>
+  <li>b) You want to continuously update the position of a character displayed on a screen, as long as the status of the character is ‘alive’.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">loop_q_b</code></li>
+    </ul>
+  </li>
+  <li>c) You want to check three different value comparisons are all true together, each checking a different variable.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">loop_q_c</code></li>
+    </ul>
+  </li>
+  <li>d) You want your computer to connect to an external network. As long as your connection status is False, you want to try and re-connect.
+    <ul>
+      <li>Answer in a variable called <code class="highlighter-rouge">loop_q_d</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">loop_q_a</span> <span class="o">=</span> <span class="s">'for'</span>
+<span class="n">loop_q_b</span> <span class="o">=</span> <span class="s">'while'</span>
+<span class="n">loop_q_c</span> <span class="o">=</span> <span class="s">'not_a_loop'</span>
+<span class="n">loop_q_d</span> <span class="o">=</span> <span class="s">'while'</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">loop_q_a</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'for'</span><span class="p">,</span> <span class="s">'while'</span><span class="p">,</span> <span class="s">'not_a_loop'</span><span class="p">]</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">loop_q_a</span> <span class="o">==</span> <span class="s">'for'</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">loop_q_b</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'for'</span><span class="p">,</span> <span class="s">'while'</span><span class="p">,</span> <span class="s">'not_a_loop'</span><span class="p">]</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">loop_q_b</span> <span class="o">==</span> <span class="s">'while'</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">loop_q_c</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'for'</span><span class="p">,</span> <span class="s">'while'</span><span class="p">,</span> <span class="s">'not_a_loop'</span><span class="p">]</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">loop_q_c</span> <span class="o">==</span> <span class="s">'not_a_loop'</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="n">loop_q_d</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'for'</span><span class="p">,</span> <span class="s">'while'</span><span class="p">,</span> <span class="s">'not_a_loop'</span><span class="p">]</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">loop_q_d</span> <span class="o">==</span> <span class="s">'while'</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="q8---for-loop-05-points">Q8 - For Loop (0.5 points)</h3>
+
+<p>What is the sum of all even numbers between 19 and 35?</p>
+
+<p>Answer this question using a for loop, and using <code class="highlighter-rouge">range</code>.</p>
+
+<p>Save the result out to a variable called <code class="highlighter-rouge">sum_result</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">sum_result</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">sum_result</span> <span class="o">=</span> <span class="n">sum_result</span> <span class="o">+</span> <span class="n">number</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">sum_result</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">sum_result</span> <span class="o">==</span> <span class="mi">216</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="q9---while-loop-05-points">Q9 - While Loop (0.5 points)</h3>
+
+<p>Write a while loop that adds the first 100 numbers (from 1 to 100) together.</p>
+
+<p>To do so, use a while loop that continues while the condition of <code class="highlighter-rouge">cur_num</code> being less than or equal to <code class="highlighter-rouge">stop_num</code> is <code class="highlighter-rouge">True</code>.</p>
+
+<p>Inside the loop, it should add <code class="highlighter-rouge">cur_num</code> to the running <code class="highlighter-rouge">total</code> variable, and also add 1 to <code class="highlighter-rouge">cur_num</code>.</p>
+
+<p>Make sure to check at the end that the value of <code class="highlighter-rouge">total</code> reflects the total summation.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># These variables provided for you - use them in your solution</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">cur_num</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">stop_num</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c">### BEGIN SOLUTION</span>
+<span class="k">while</span> <span class="n">cur_num</span> <span class="o">&lt;=</span> <span class="n">stop_num</span><span class="p">:</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">cur_num</span>
+    <span class="n">cur_num</span> <span class="o">=</span> <span class="n">cur_num</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">cur_num</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">total</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+
+<span class="c"># This will check that the `cur_num` increment variable ended at the right value</span>
+<span class="k">assert</span> <span class="n">cur_num</span> <span class="o">==</span> <span class="mi">101</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">total</span> <span class="o">==</span> <span class="mi">5050</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="example-append">Example: Append</h3>
+
+<p>In the following examples we will need to use an operation to add something to a list. Some examples for doing so are provided.</p>
+
+<p>Given a list, <code class="highlighter-rouge">my_list</code> to add an item <code class="highlighter-rouge">my_item</code> to the end of the list, you can do <code class="highlighter-rouge">my_list.append(my_item)</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example of appending to a list</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'Before Append: '</span><span class="p">,</span> <span class="n">my_list</span><span class="p">)</span>
+
+<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'After  Append: '</span><span class="p">,</span> <span class="n">my_list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Before Append:  ['a', 12, None]
+After  Append:  ['a', 12, None, True]
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example of using append with loops</span>
+<span class="n">list_of_values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="c"># Initialize an empty list that will be used to store outputs</span>
+<span class="n">outputs</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c"># Loop through all items in `list_of_items`</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">list_of_values</span><span class="p">:</span>
+    
+    <span class="c"># Add incremented item to the list of outputs</span>
+    <span class="n">outputs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c"># Check what outputs ends up as</span>
+<span class="k">print</span><span class="p">(</span><span class="n">outputs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1, 2, 3, 4]
+
+</code></pre></div></div>
+
+<h3 id="q10---loops-multiplication-05-points">Q10 - Loops: Multiplication (0.5 points)</h3>
+
+<p>Using the provided variable <code class="highlighter-rouge">num_list</code>, write a for loop to loop across each value, multiplying it by -1.</p>
+
+<p>Store the result for each value, in a list called <code class="highlighter-rouge">eval_1</code>, by defining <code class="highlighter-rouge">eval_1</code> before the loop, and using <code class="highlighter-rouge">append</code> inside the loop.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This creates a list of all numbers from 1-12, inclusive</span>
+<span class="n">num_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">eval_1</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">num_list</span><span class="p">:</span>
+    <span class="n">eval_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">eval_1</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">eval_1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">eval_1</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span> <span class="o">-</span><span class="mi">0</span><span class="p">)))</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h2 id="part-4-combining-loops--conditionals">Part 4: Combining Loops &amp; Conditionals</h2>
+
+<p>This part covers integrating collections and loops with conditional and operators.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This list provided to use for the following questions</span>
+<span class="n">data_list</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">40</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">97</span><span class="p">,</span> <span class="o">-</span><span class="mi">101</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="o">-</span><span class="mi">79</span><span class="p">,</span> <span class="mi">96</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="q11---loops-division-05-points">Q11 - Loops: Division (0.5 points)</h3>
+
+<p>Write some code that uses a loop to find all the values from <code class="highlighter-rouge">data_list</code> that are perfectly divisible by 3.</p>
+
+<p>Use a for loop with a conditional to do this, and save any values from <code class="highlighter-rouge">data_list</code> that meet this condition into a new list called <code class="highlighter-rouge">div_3</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">div_3</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">div_3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">div_3</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">div_3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">div_3</span> <span class="o">==</span> <span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">96</span><span class="p">]</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="q12---loops-odd-or-even-05-points">Q12 - Loops: Odd or Even (0.5 points)</h3>
+
+<p>Write a for loop that is going to check whether the values in <code class="highlighter-rouge">data_list</code> are even or odd.</p>
+
+<p>Use a for loop with a conditional to do this.</p>
+
+<p>For each value, it should add <code class="highlighter-rouge">True</code> to a new list <code class="highlighter-rouge">is_even</code> if the value is even, and <code class="highlighter-rouge">False</code> to <code class="highlighter-rouge">is_even</code> if the value is odd.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">is_even</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">item</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">is_even</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">is_even</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">is_even</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">is_even</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_list</span><span class="p">))</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">(</span><span class="n">is_even</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="q13---loops-multiple-conditions-05-points">Q13 - Loops: Multiple Conditions (0.5 points)</h3>
+
+<p>Write a for loop that will check each value in <code class="highlighter-rouge">data_list</code> to see if they are even or odd and whether they are positive or negative.</p>
+<ul>
+  <li>If they are both positive and even, encode this as the number 1</li>
+  <li>If they are both negative and odd, encode this as the number -1</li>
+  <li>
+    <p>Otherwise, encode this as the number 0</p>
+  </li>
+  <li>Store the result for each value into a list called <code class="highlighter-rouge">num_type</code></li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">num_type</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">item</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num_type</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">item</span><span class="o">%</span><span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num_type</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">num_type</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">num_type</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">num_type</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_list</span><span class="p">))</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">([</span><span class="mi">1</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">num_type</span> <span class="k">if</span> <span class="n">it</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">])</span> <span class="o">==</span> <span class="mi">2</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">([</span><span class="mi">1</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">num_type</span> <span class="k">if</span> <span class="n">it</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="p">])</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">([</span><span class="mi">1</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">num_type</span> <span class="k">if</span> <span class="n">it</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">])</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h3 id="example-looping-through-dictionaries">Example: Looping through Dictionaries</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This example of looping through dictionaries provided</span>
+<span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'key1'</span> <span class="p">:</span> <span class="s">'value1'</span><span class="p">,</span> 
+    <span class="s">'key2'</span> <span class="p">:</span> <span class="s">'value2'</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+    
+    <span class="c"># When you loop through a dictionary like this, `item` is the key </span>
+    <span class="n">key</span> <span class="o">=</span> <span class="n">item</span>
+    
+    <span class="c"># Using the key, you can access the associated value of the dictionary from within the loop</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+    
+    <span class="c"># Print out data for each loop iteration</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'New Loop Iteration'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">Key is:</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">Val is:</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>New Loop Iteration
+	Key is:	 key1
+	Val is:	 value1
+New Loop Iteration
+	Key is:	 key2
+	Val is:	 value2
+
+</code></pre></div></div>
+
+<h3 id="q14---loops-dictionaries-05-points">Q14 - Loops: Dictionaries (0.5 points)</h3>
+
+<p>Using the <code class="highlighter-rouge">subjects</code> dictionary, write a for loop that loops across the dictionary and collects all subject numbers (ex. ‘S2’) where the dictionary value is False.</p>
+
+<p>Imagine, for example, the dictionary indicates whether processing is complete, and we wanted to get a list of the subjects that need more analyses.</p>
+
+<p>To answer this question, use a for loop across the <code class="highlighter-rouge">subjects</code> dictionary. You then need to get the associated value in each iteration, and check if it is <code class="highlighter-rouge">True</code>. If it is <code class="highlighter-rouge">True</code>, you can use <code class="highlighter-rouge">continue</code> to skip ahead to the next iteration. Otherwise, append the subject number (ex ‘S2’) to a list called <code class="highlighter-rouge">not_finished</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This dictionary provided for you</span>
+<span class="n">subjects</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'S1'</span> <span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="s">'S2'</span> <span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+    <span class="s">'S3'</span> <span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="s">'S4'</span> <span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">### BEGIN SOLUTION</span>
+<span class="n">not_finished</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="n">subjects</span><span class="p">:</span>
+    
+    <span class="k">if</span> <span class="n">subjects</span><span class="p">[</span><span class="n">subject</span><span class="p">]</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">not_finished</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subject</span><span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">not_finished</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">not_finished</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+
+<span class="c">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">not_finished</span> <span class="o">==</span> <span class="p">[</span><span class="s">'S2'</span><span class="p">,</span> <span class="s">'S4'</span><span class="p">]</span> <span class="ow">or</span> <span class="n">not_finished</span> <span class="o">==</span> <span class="p">[</span><span class="s">'S4'</span><span class="p">,</span> <span class="s">'S2'</span><span class="p">]</span>
+<span class="c">### END HIDDEN TESTS</span>
+</code></pre></div></div>
+
+<h2 id="part-5--ciphers">Part 5:  Ciphers</h2>
+
+<p>This part is an application of all the tools we have covered so far, to the problem of creating and using ciphers.</p>
+
+<p>A cipher is procedure for encoding and decoding secret messages (or encrypted data).</p>
+
+<p>To work on this application, we are going to need to use loops and collections.</p>
+
+<p>It also uses concepts and ideas from encoding and decoding - and in particular the operators <code class="highlighter-rouge">ord</code> and <code class="highlighter-rouge">chr</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Setup - run this cell before doing the next part of the assignment</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s">'A2Code'</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s">'A2Code'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example / outline of writing a cipher</span>
+<span class="c">#   The following shows a layout of writing a cipher.</span>
+<span class="c">#   You will be writing code to actually do the encoding / decoding.</span>
+
+<span class="c"># Create a message</span>
+<span class="n">original_message</span> <span class="o">=</span> <span class="s">'Hello from Tom.'</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Original Message:</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">original_message</span><span class="p">)</span>
+
+<span class="c"># First, Apply Encoding Code, to convert to an encoded message</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="s">'ĐĭĴĴķèĮĺķĵèĜķĵö'</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Encoded Message:</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">encoded</span><span class="p">)</span>
+
+<span class="c"># Then, Apply Decoding Code, to decode into an interpretable message</span>
+<span class="n">decoded</span> <span class="o">=</span> <span class="s">'Hello from Tom.'</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Decoded Message:</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">decoded</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Original Message:	 Hello from Tom.
+Encoded Message:	 ĐĭĴĴķèĮĺķĵèĜķĵö
+Decoded Message:	 Hello from Tom.
+
+</code></pre></div></div>
+
+<h3 id="q15---creating-an-encoder-05-points">Q15 - Creating an Encoder (0.5 points)</h3>
+
+<p>Write a code block to encode strings into a secret message.</p>
+
+<p>Your code will presume a number, stored in <code class="highlighter-rouge">key</code>, and a message to encode, as a string variable called <code class="highlighter-rouge">message</code>. Don’t define these variables in your code - they will be defined when you run the tests.</p>
+
+<p>To do so:</p>
+<ul>
+  <li>Initialize a variable called <code class="highlighter-rouge">encoded</code> as an empty string</li>
+  <li>Use a for loop to loop across all characters of a string variable <code class="highlighter-rouge">message</code>
+    <ul>
+      <li>Inside the loop, convert the character to another character:
+        <ul>
+          <li>Get the unicode code point for the character (using <code class="highlighter-rouge">ord</code>)</li>
+          <li>Add the value of <code class="highlighter-rouge">key</code> to that code point (which should be an int)</li>
+          <li>Convert this new int back to a character (using <code class="highlighter-rouge">chr</code>).</li>
+        </ul>
+      </li>
+      <li>Also inside the loop, add this converted char to the string <code class="highlighter-rouge">encoded</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A2Code</span><span class="o">/</span><span class="n">encoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c">### BEGIN SOLUTION</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
+    <span class="n">encoded</span> <span class="o">=</span> <span class="n">encoded</span> <span class="o">+</span>  <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">+</span> <span class="n">key</span><span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Overwriting A2Code/encoder.py
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">key</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s">'hello'</span>
+
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">encoder</span><span class="o">.</span><span class="n">py</span>  
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">encoded</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">encoded</span> <span class="o">==</span> <span class="s">'İĭĴĴķ'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'Original Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Encoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">encoded</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Original Message: 	 hello
+Encoded Message: 	 İĭĴĴķ
+
+</code></pre></div></div>
+
+<h3 id="q16---decoder-05-points">Q16 - Decoder (0.5 points)</h3>
+
+<p>Write a code block to decode strings from secret encodings back to readable messages.</p>
+
+<p>To do so:</p>
+<ul>
+  <li>Initialize a variable called <code class="highlighter-rouge">decoded</code> as an empty string</li>
+  <li>Use a for loop to loop across all characters of a presumed string variable called <code class="highlighter-rouge">encoded</code>
+    <ul>
+      <li>Inside the loop, convert the character to another character:
+        <ul>
+          <li>Get the unicode code point for the character (using <code class="highlighter-rouge">ord</code>)</li>
+          <li>Subtract the value of <code class="highlighter-rouge">key</code> to that code point (which should be an int)
+            <ul>
+              <li>This undoes the secret encoding of the character, getting back to the original value</li>
+            </ul>
+          </li>
+          <li>Convert this new int back to a character (using <code class="highlighter-rouge">chr</code>).</li>
+        </ul>
+      </li>
+      <li>Also inside the loop, add this converted char to the string <code class="highlighter-rouge">decoded</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Note that the code to answer this question should look very similar to how you answered the encoding question.</p>
+
+<p>In fact, you can even copy over the encoding code, and make some small changes to make it function as a decoder.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A2Code</span><span class="o">/</span><span class="n">decoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c">### BEGIN SOLUTION</span>
+<span class="n">decoded</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">encoded</span><span class="p">:</span>
+    <span class="n">decoded</span> <span class="o">=</span> <span class="n">decoded</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">key</span><span class="p">)</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Overwriting A2Code/decoder.py
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">key</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="s">'İĭĴĴķ'</span>
+
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">decoder</span><span class="o">.</span><span class="n">py</span>  
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">decoded</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">decoded</span> <span class="o">==</span> <span class="s">'hello'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'Encoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">encoded</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Decoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">decoded</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Encoded Message: 	 İĭĴĴķ
+Decoded Message: 	 hello
+
+</code></pre></div></div>
+
+<h3 id="using-the-encoder-and-decoder-together">Using the encoder and decoder together</h3>
+
+<p>The following are a couple examples of using the encoder and decoder together.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Using the encoder</span>
+<span class="n">key</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s">'This is a secret message'</span>
+
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">encoder</span><span class="o">.</span><span class="n">py</span>  
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">decoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Original Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Encoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">encoded</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Decoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">decoded</span><span class="p">,</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">message</span> <span class="o">==</span> <span class="n">decoded</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Original Message: 	 This is a secret message
+
+Encoded Message: 	 ɈɜɝɧȔɝɧȔɕȔɧəɗɦəɨȔɡəɧɧɕɛə
+
+Decoded Message: 	 This is a secret message 
+
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Using the encoder</span>
+<span class="n">key</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s">'Python is pretty cool, eh?'</span>
+
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">encoder</span><span class="o">.</span><span class="n">py</span>  
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">decoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Original Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Encoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">encoded</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Decoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">decoded</span><span class="p">,</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">message</span> <span class="o">==</span> <span class="n">decoded</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Original Message: 	 Python is pretty cool, eh?
+
+Encoded Message: 	 иѡќѐїіЈёћЈјњэќќѡЈыїїєДЈэѐЧ
+
+Decoded Message: 	 Python is pretty cool, eh? 
+
+
+</code></pre></div></div>
+
+<h3 id="using-a-custom-encoder">Using a Custom Encoder</h3>
+
+<p>The encoder &amp; decoding we created above is built on conversions based on manipulating unicode code points.</p>
+
+<p>If a potential attacker wanted to decode our messages, and happened to know we were using this approach, there are some relatively simple ways that they could try to figure out our encoding key, and then, if successful decode our messages.</p>
+
+<p>Thought experiment: can you think of ways to decode messages that use this encoding?</p>
+
+<p>To thwart this potential attacker, let’s now explore using a custom encoding. Instead of manipulating code points, we are going to use a custom mapping to switch out characters to encode our messages.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Custom encoding dictionary provided - make sure you run this cell</span>
+<span class="c">#   In this encoding, each key will get switched out for the associated value</span>
+<span class="c">#     So, for example, whenever we see an 'a', we want to switch it out for an 'r'. </span>
+<span class="n">custom_encodings</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'a'</span> <span class="p">:</span> <span class="s">'r'</span><span class="p">,</span> 
+    <span class="s">'e'</span> <span class="p">:</span> <span class="s">'p'</span><span class="p">,</span> 
+    <span class="s">'i'</span> <span class="p">:</span> <span class="s">'m'</span><span class="p">,</span>
+    <span class="s">'o'</span> <span class="p">:</span> <span class="s">'n'</span><span class="p">,</span>
+    <span class="s">'u'</span> <span class="p">:</span> <span class="s">'s'</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="q17---custom-encoder-05-points">Q17 - Custom Encoder (0.5 points)</h3>
+
+<p>Write a code block to encode strings from original messages, using our custom encoding.</p>
+
+<p>To do so:</p>
+<ul>
+  <li>Initialize a variable called <code class="highlighter-rouge">custom_encoded</code> as an empty string</li>
+  <li>Use a for loop to loop across all characters of a presumed string variable called <code class="highlighter-rouge">custom_message</code>
+    <ul>
+      <li>Inside the loop, check if the current character is in the <code class="highlighter-rouge">custom_encodings</code> dictionary
+        <ul>
+          <li>If it is, use the current char to get the value from <code class="highlighter-rouge">custom_encodings</code>, and concatenate it to <code class="highlighter-rouge">custom_encoded</code>
+            <ul>
+              <li>The line inside the if should look something like <code class="highlighter-rouge">out = out + dictionary[char]</code></li>
+            </ul>
+          </li>
+          <li>Otherwise, concatenate the current character to <code class="highlighter-rouge">custom_encoded</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A2Code</span><span class="o">/</span><span class="n">custom_encoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c">### BEGIN SOLUTION</span>
+<span class="n">custom_encoded</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">custom_message</span><span class="p">:</span>
+    
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">custom_encodings</span><span class="p">:</span>
+        <span class="n">custom_encoded</span> <span class="o">=</span> <span class="n">custom_encoded</span> <span class="o">+</span> <span class="n">custom_encodings</span><span class="p">[</span><span class="n">char</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">custom_encoded</span> <span class="o">=</span> <span class="n">custom_encoded</span> <span class="o">+</span> <span class="n">char</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Overwriting A2Code/custom_encoder.py
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">custom_message</span> <span class="o">=</span> <span class="s">'vowels aint great'</span>
+
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">custom_encoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">custom_encoded</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">custom_encoded</span> <span class="o">==</span> <span class="s">'vnwpls rmnt grprt'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Original Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">custom_message</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Encoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">custom_encoded</span><span class="p">,</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Original Message: 	 vowels aint great
+
+Encoded Message: 	 vnwpls rmnt grprt 
+
+
+</code></pre></div></div>
+
+<h3 id="using-variable-keys">Using Variable Keys</h3>
+
+<p>Part of the reason the unicode code point conversation can be easy to decode is that character always get encoded to the same output. So, if you know a pattern of the language, for example that ‘e’ is usually the most common letter, you can use this to make an educated guess that the most common character in the encoded message is probable ‘e’, and from there figure out the encoding key.</p>
+
+<p>One way around this is to use a procedure to use different transforms for each character, or, basically, use a different key for each time you encode a character. This breaks the 1-to-1 mapping between original and encoded characters, and makes the encoding harder to crack. As long as the decoder knows a pattern of how update keys, then it is still decodable, by knowing the first key, and the pattern to get to the next keys.</p>
+
+<h3 id="q18---encodings-with-variable-keys-05-points">Q18 - Encodings with variable keys (0.5 points)</h3>
+
+<p>Here we will write an encoder that using a variable keys, whereby each time a key is applied, the key itself is also updated, by adding a number.</p>
+
+<p>This code will presume two numbers, <code class="highlighter-rouge">start_key</code> and <code class="highlighter-rouge">key_increment</code>.</p>
+
+<p>This code will look very similar to the code for the encoder in Q15. Copy that code in and you are going to <code class="highlighter-rouge">key = start_key</code> before the loop. The loop will contain the same code to encode each character, and you need to add a line within the loop, after the encoding, that update the <code class="highlighter-rouge">key</code> variable to increment it by the value stored in <code class="highlighter-rouge">key_increment</code>.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A2Code</span><span class="o">/</span><span class="n">variable_encoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c">### BEGIN SOLUTION</span>
+<span class="n">key</span> <span class="o">=</span> <span class="n">start_key</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="s">''</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
+    <span class="n">encoded</span> <span class="o">=</span> <span class="n">encoded</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">+</span> <span class="n">key</span><span class="p">)</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="n">key</span> <span class="o">+</span> <span class="n">key_increment</span>
+<span class="c">### END SOLUTION</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Overwriting A2Code/variable_encoder.py
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">message</span> <span class="o">=</span> <span class="s">"By the way, what we're doing here basically the same as encryption"</span>
+
+<span class="n">start_key</span> <span class="o">=</span> <span class="mi">150</span>
+<span class="n">key_increment</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">variable_encoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">encoded</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">encoded</span> <span class="o">==</span> <span class="s">"ØĒ¼ēĊĊÈĢďĪà×ıĥġķæŀıöńĺøĿōŊŒŎĊŕŕťśęŞŠŵŮūŬźŽƍķƎƅƅŃƙƊƙƔŒƖƫśƣƯƧƹǃƽǄƼǅǇ"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Original Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">Encoded Message: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">encoded</span><span class="p">,</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Original Message: 	 By the way, what we're doing here basically the same as encryption
+
+Encoded Message: 	 ØĒ¼ēĊĊÈĢďĪà×ıĥġķæŀıöńĺøĿōŊŒŎĊŕŕťśęŞŠŵŮūŬźŽƍķƎƅƅŃƙƊƙƔŒƖƫśƣƯƧƹǃƽǄƼǅǇ 
+
+
+</code></pre></div></div>
+
+<h3 id="breaking-a-variable-encoder">Breaking a Variable Encoder</h3>
+
+<h4 id="extra-optional-information-for-the-curious---on-cryptography--alan-turing">Extra (optional) Information for the Curious - on Cryptography &amp; Alan Turing</h4>
+
+<p>This kind of ‘variable encoder’ in which the encoding transform updates every time it is applied is much harder for an outside attacker to break (if they do not know the initial key, and the way it changes every application).</p>
+
+<p>This is, broadly, the kind of encryption which was used by German forces in World War II to encode messages - the ENIGMA code.</p>
+
+<p>This approach is, however, still breakable - it just takes a lot of clever analysis and number crunching. During World War II, Alan Turing, having already at that point done fundamental work developing the very concept of a digital computer, developed machines and algorithms to try to break the German Enigma code, eventually managing to decode it with his team at Bletchley Park.</p>
+
+<p>Cracking this code was a huge development in the war - it is estimated this code breaking work, which allowed the Allies to decode messages and anticipate German actions, may have shortened the war by up 2 to 3 years, saving millions of lives in the process.</p>
+
+<p>By the early 1950s, though his codebreaking work was still strictly confidential and he was largely unknown by the general public, Alan Turing had gone on to make other huge contributions to the fields of computation and artificial intelligence, amongst others, that would go on to have massive impact on the modern world.</p>
+
+<p>The British government, who years before had employed him as a codebreaker, then prosecuted Alan Turing for homosexual activity, and forced him to undergo chemical castration. Alan Turing died of suicide in 1954, at the age of 41.</p>
+
+<p>For more information on Alan Turing, check out the article linked below, and/or look into the movie <code class="highlighter-rouge">The Imitation Game</code>, a dramatization of his work on code breaking during the war.</p>
+
+<p>Short Article on Alan Turing: https://www.bbc.com/news/technology-18419691</p>
+
+<h3 id="variable-decoder">Variable Decoder</h3>
+
+<p>The code below is provided for you, that performs decoding of a variable decoder.</p>
+
+<p>To do so, it needs to know the <code class="highlighter-rouge">start_key</code> and <code class="highlighter-rouge">key_increment</code> that were used.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">writefile</span> <span class="n">A2Code</span><span class="o">/</span><span class="n">variable_decoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c"># Knowing the start key, and the length of the message, we can reconstruct the current key</span>
+<span class="n">key</span> <span class="o">=</span> <span class="n">start_key</span> <span class="o">+</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">encoded</span><span class="p">)</span> <span class="o">*</span> <span class="n">key_increment</span><span class="p">)</span>
+
+<span class="n">decoded</span> <span class="o">=</span> <span class="s">''</span>
+
+<span class="c"># Note that this decodes the message backwards, stepping back along key values</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">encoded</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+    
+    <span class="c"># Step the key back one step, and apply to current character</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="n">key</span> <span class="o">-</span> <span class="n">key_increment</span>
+    <span class="n">decoded</span> <span class="o">=</span> <span class="n">decoded</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">key</span><span class="p">)</span>
+    
+<span class="c"># Having decoded backwards, flip the message back around</span>
+<span class="n">decoded</span> <span class="o">=</span> <span class="n">decoded</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Overwriting A2Code/variable_decoder.py
+
+</code></pre></div></div>
+
+<h3 id="decoding-a-provided-message">Decoding a provided message</h3>
+
+<p>The cell below has an encoded message, using variable encoding, and the <code class="highlighter-rouge">start_key</code> and <code class="highlighter-rouge">key_increment</code> needed to decode.</p>
+
+<p>Run the following cell to execute the decoding code from above, and decode the message.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Do decoding on message above</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="s">"""Ãâø¡ü¬èõ÷­¼±ÜµÿĈċĂ¿ĚĒĚÇĊĝĒÏĖġğĦĲĤīĦáķĭĬéĬŀłĺĺŃńľŉőĀëíĪŐŝœŒšđŪŖŰęŴŬŴġŤŷŬĩůżŽŶĳƃƆƐŇĽƒƐŃƈƖ</span><span class="se">\
+</span><span class="s">ƗƒƟƐƥƦŕƦƧśƱƧƢƷŦőœƍǆůǅƻƺŷǐƼǖƋƁǌǋƇǢǚǢƏǙǔǥǧǞǩƝǳǰƣǷǬǪǷǹȈƱǿǾȂǾƻȑȇȊȖǅȊȒțȕȔȣǓȨȫȮȡȣǟǮǣȫȶȵȷȼɆȺɁȼǷɎɋǽɎɏȃəɏɒ</span><span class="se">\
+</span><span class="s">ɞȍɢɥɨɛɝșɲɦɫɭȣɧɬȩɬȭɿʃʂɿɼɼʏȽʎʑʗʎʖʗəȷȹɷʥʤʤɥɛʑʮʮ"""</span>
+
+<span class="n">start_key</span> <span class="o">=</span> <span class="mi">123</span>
+<span class="n">key_increment</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="o">%</span><span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="n">A2Code</span><span class="o">/</span><span class="n">variable_decoder</span><span class="o">.</span><span class="n">py</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">decoded</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hey y'all - I hope you are enjoying the assignment!
+
+Either way you are done now, so congrats on that!
+
+By the way, if you happen to really like this cipher stuff - following up on this stuff will be a project option.
+
+From, Tom
+
+</code></pre></div></div>
+
+<h2 id="the-end">The End!</h2>
+
+<p>This is the end of the assignment!
+Have a look back over your answers, and also make sure to Restart &amp; Run All from the kernel menu to double check that everything is working properly.</p>
+
+<p>When you are ready to submit your assignment, upload it to TritonED under Assignment-2.</p>
+
+
+                <nav class="c-page__nav">
+  
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/assignments/A2-Ciphers">
+      〈 <span class="u-margin-right-tiny"></span> A2-Ciphers
+    </a>
+  
+
+  
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/assignments/A3-Chatbots">
+      A3-Chatbots <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

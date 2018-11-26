@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>08-Encodings</title>
+  <meta name="description" content="Encodings">
+
+  <link rel="canonical" href="http://localhost:4000/materials/08-Encodings/">
+  <link rel="alternate" type="application/rss+xml" title="COGS 18 - Introduction To Python" href="http://localhost:4000/feed.xml">
+
+  <meta property="og:url"         content="http://localhost:4000/materials/08-Encodings/" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="08-Encodings" />
+<meta property="og:description" content="Encodings" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://localhost:4000/materials/08-Encodings/",
+  "headline":
+    "08-Encodings",
+  "datePublished":
+    "2018-11-25T22:47:35-08:00",
+  "dateModified":
+    "2018-11-25T22:47:35-08:00",
+  "description":
+    "Encodings",
+  "author": {
+    "@type": "Person",
+    "name": "Tom Donoghue and Zehua Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Google analytics -->
+  <script src="/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load custom website scripts -->
+  <script src="/assets/js/scripts.js" async></script>
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  <script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  console.log(url)
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return jQuery.param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = $("a").each(function() {
+    var href = this.href;
+    // If the link is an internal link...
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['hub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'hub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + jQuery.param(params);
+      this.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    hubUrl = rest['hub'];
+    if (hubUrl !== undefined) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      link = $("a.interact")[0];
+      if (link !== undefined) {
+          // Update the interact link URL
+          var href = link.getAttribute('href');
+          var hub_type = 'binder';
+          if (hub_type === 'binder') {
+            // If binder links exist, we need to re-work them for jupyterhub
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+              first = [hubUrl, 'git-sync'].join('/')
+            } else {
+              first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+            }
+            href = first + '?' + binder2Jupyterhub(href);
+          } else {
+            // If JupyterHub links, we only need to replace the hub url
+            href = href.replace("https://mybinder.org", hubUrl);
+            if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+              // Assume we're working from a local Jupyter server and remove `/hub`
+              href = href.replace("/hub/user-redirect", "");
+            }
+          }
+          link.setAttribute('href', decodeURIComponent(href));
+
+          // Add text after interact link saying where we're launching
+          hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+          $("a.interact").after($('<div class="interact-context">on ' + hubUrlNoHttp + '</div>'));
+
+      }
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+</head>
+
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
+<body>
+    <!-- Show sidebar by default -->
+    <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#clicker-question-1">Clicker Question #1</a></li>
+  <li><a href="#symbols">Symbols</a></li>
+  <li><a href="#representation">Representation</a>
+    <ul>
+      <li><a href="#symbol-examples---1">Symbol Examples - 1</a></li>
+      <li><a href="#symbol-examples---2">Symbol Examples - 2</a></li>
+    </ul>
+  </li>
+  <li><a href="#digital-computers">Digital Computers</a></li>
+  <li><a href="#encoding--decoding">Encoding &amp; Decoding</a></li>
+  <li><a href="#aside-binary">Aside: Binary</a>
+    <ul>
+      <li><a href="#binary-in-code">Binary in Code</a></li>
+    </ul>
+  </li>
+  <li><a href="#character-encodings">Character Encodings</a></li>
+  <li><a href="#example-character-encoding">Example: Character Encoding</a>
+    <ul>
+      <li><a href="#character-encoding-in-code">Character Encoding in Code</a></li>
+    </ul>
+  </li>
+  <li><a href="#aside-dictionaries">Aside: Dictionaries</a>
+    <ul>
+      <li><a href="#dictionaries-as-key-value-collections">Dictionaries as Key-Value Collections</a></li>
+      <li><a href="#dictionaries-indexing--looping">Dictionaries: Indexing &amp; Looping</a></li>
+      <li><a href="#example-dictionaries">Example Dictionaries</a></li>
+    </ul>
+  </li>
+  <li><a href="#clicker-question-2">Clicker Question #2</a>
+    <ul>
+      <li><a href="#clicker-question-answer">Clicker Question Answer</a></li>
+    </ul>
+  </li>
+  <li><a href="#character-encodings-with-dictionaries">Character Encodings with Dictionaries</a></li>
+  <li><a href="#unicode">Unicode</a>
+    <ul>
+      <li><a href="#ord--chr">ORD &amp; CHR</a></li>
+      <li><a href="#ord--chr-examples">ord &amp; chr examples</a></li>
+      <li><a href="#inverses">Inverses</a></li>
+    </ul>
+  </li>
+</ul>
+    </nav>
+  </aside>
+
+
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+        
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+    <a href="/intro"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo"
+            data-turbolinks-permanent /></a>
+    <h2 class="c-sidebar__title">
+        <a href="/intro" style="text-decoration: none; color: inherit;">COGS 18 - Introduction To Python</a>
+    </h2>
+    <ul class="c-sidebar__chapters">
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/intro">
+                
+                Home
+            </a>
+
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                
+                Materials
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections ">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/00-Introduction">
+                        
+                        00-Introduction
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/01-Tools">
+                        
+                        01-Tools
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/02-JupyterNotebooks">
+                        
+                        02-JupyterNotebooks
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/03-Variables">
+                        
+                        03-Variables
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/04-Operators">
+                        
+                        04-Operators
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/05-Conditionals">
+                        
+                        05-Conditionals
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/06-DataTypes">
+                        
+                        06-DataTypes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/07-Loops">
+                        
+                        07-Loops
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry c-sidebar__entry--active" href="/materials/08-Encodings">
+                        
+                        08-Encodings
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/09-FunctionsI">
+                        
+                        09-FunctionsI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/10-Algorithms">
+                        
+                        10-Algorithms
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/11-FunctionsII">
+                        
+                        11-FunctionsII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/12-Debugging">
+                        
+                        12-Debugging
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/13-Objects">
+                        
+                        13-Objects
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/14-Classes">
+                        
+                        14-Classes
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/15-Namespaces">
+                        
+                        15-Namespaces
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/16-CommandLine">
+                        
+                        16-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/17-APIs">
+                        
+                        17-APIs
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/18-ScientificComputing">
+                        
+                        18-ScientificComputing
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/19-OpenSource">
+                        
+                        19-OpenSource
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A1-Syntax">
+                        
+                        A1-Syntax
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/A2-Examples">
+                        
+                        A2-Examples
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/Midterm">
+                        
+                        Midterm
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/materials/MidtermPractice">
+                        
+                        MidtermPractice
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                
+                Coding Labs
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1-ProgrammingI">
+                        
+                        CL1-ProgrammingI
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL1B-Answers">
+                        
+                        CL1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2-ProgrammingII">
+                        
+                        CL2-ProgrammingII
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL2B-Answers">
+                        
+                        CL2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3-AlgorithmicThinking">
+                        
+                        CL3-AlgorithmicThinking
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL3B-Answers">
+                        
+                        CL3B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4-Exploring">
+                        
+                        CL4-Exploring
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL4B-Answers">
+                        
+                        CL4B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL5-ProjectPlans">
+                        
+                        CL5-ProjectPlans
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/labs/CL6-CommandLine">
+                        
+                        CL6-CommandLine
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                
+                Assignments
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1-GettingStarted">
+                        
+                        A1-GettingStarted
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A1B-Answers">
+                        
+                        A1B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2-Ciphers">
+                        
+                        A2-Ciphers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A2B-Answers">
+                        
+                        A2B-Answers
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A3-Chatbots">
+                        
+                        A3-Chatbots
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/assignments/A4-ArtificialAgents">
+                        
+                        A4-ArtificialAgents
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+        
+        
+
+        
+        
+
+        <li class="c-sidebar__chapter">
+            <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                
+                Projects
+            </a>
+
+            
+
+            
+            
+            
+            
+
+            
+
+            <ul class="c-sidebar__sections u-hidden-visually">
+                
+                
+                
+
+                <li class="c-sidebar__section">
+                    <a class="c-sidebar__entry " href="/projects/ProjectIdeas">
+                        
+                        ProjectIdeas
+                    </a>
+
+                    
+                    
+
+                </li>
+                
+                
+            </ul>
+            
+        </li>
+
+        
+        
+    </ul>
+</nav>
+
+        <main class="c-textbook__page" tabindex="-1">
+            <div class="o-wrapper c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            <div class="o-wrapper">
+                <div style="display:flex">
+                    <!-- DOWNLOAD BUTTONS -->
+
+    <div class="buttons">
+        <a class="button" href="http://localhost:4000/assets/downloads/08-Encodings.ipynb.zip">Download Notebook</a>
+    </div>
+
+                </div>
+                <h1 id="encodings">Encodings</h1>
+
+<h2 id="clicker-question-1">Clicker Question #1</h2>
+
+<p>What is a symbol?</p>
+
+<ul>
+  <li>A) A character that can be typed on a computer</li>
+  <li>B) Something that can stand in the place of something else</li>
+  <li>C) Something that looks like something else</li>
+  <li>D) A character or sign used to represent something arbitrary</li>
+  <li>E) I have no idea</li>
+</ul>
+
+<h2 id="symbols">Symbols</h2>
+
+<div class="alert alert-success">
+Symbols are characters (or 'signs') of arbitrary shape, that can refer to (or represent) something. 
+</div>
+
+<h2 id="representation">Representation</h2>
+
+<div class="alert alert-success">
+To represent means to stand in for something.
+</div>
+
+<h3 id="symbol-examples---1">Symbol Examples - 1</h3>
+
+<ul>
+  <li>The symbol <code class="highlighter-rouge">2</code> represents the concept of <code class="highlighter-rouge">two-ness</code>.
+    <ul>
+      <li>This is arbitrary: there is nothing ‘two-like’ about <code class="highlighter-rouge">2</code></li>
+      <li>We need not use this symbol. The symbol <code class="highlighter-rouge">II</code> also represent <code class="highlighter-rouge">two-ness</code>.</li>
+      <li><code class="highlighter-rouge">2</code> and <code class="highlighter-rouge">II</code> are two different representations for the concept of two.</li>
+    </ul>
+  </li>
+  <li>The symbol <code class="highlighter-rouge">b</code>, in english represents the sound <code class="highlighter-rouge">buh</code> (sort of).
+    <ul>
+      <li>There is nothing ‘buh’ like about the symbol <code class="highlighter-rouge">b</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="symbol-examples---2">Symbol Examples - 2</h3>
+
+<p>Given the symbol <code class="highlighter-rouge">2</code>, or <code class="highlighter-rouge">b</code> we have systematic rules of things we can do with them.</p>
+<ul>
+  <li>We can take <code class="highlighter-rouge">2</code> and add <code class="highlighter-rouge">1</code> and get a new symbol which represents the concept of <code class="highlighter-rouge">the value one bigger than two</code></li>
+  <li>We can concatenate some, but not all, other letters (symbols) to <code class="highlighter-rouge">b</code> to start making rules</li>
+  <li>These rules are agnostic to what <code class="highlighter-rouge">2</code> or <code class="highlighter-rouge">b</code> represent, they are simply manipulations we can do with these symbols</li>
+</ul>
+
+<h2 id="digital-computers">Digital Computers</h2>
+
+<div class="alert alert-success">
+Computation is symbol manipulation - using formal rules to manipulate symbols. 
+</div>
+
+<p>Whenever we have symbols, and rules to manipulate them, we can do computation.</p>
+
+<p>When we use these symbols that represent meaningful things, we can use computers to make meaningful inferenes.</p>
+
+<h2 id="encoding--decoding">Encoding &amp; Decoding</h2>
+
+<div class="alert alert-success">
+Encoding can be throught of as the process of 'changing representation', and decoding as the process of changing it back. 
+</div>
+
+<h2 id="aside-binary">Aside: Binary</h2>
+
+<p>Fundamentally, digital computers can represent two states. Because of this, we say computers are / use binary.</p>
+
+<p>From binary, we can build up to store other things, that reduce down to binary representations.</p>
+
+<p>We can then encode any value we would like to represent on our computer.</p>
+
+<h3 id="binary-in-code">Binary in Code</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The `bin` operator returns the binary representation of an integer</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">11</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0b1
+0b1011
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># We can also convert binary back to integers with </span>
+<span class="nb">int</span><span class="p">(</span><span class="mi">0</span><span class="n">b1011</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11
+</code></pre></div></div>
+
+<h2 id="character-encodings">Character Encodings</h2>
+
+<p>Character encodings are a set of rules of how to represent a broad range of characters (symbols) in computers.</p>
+
+<p>We already have a way to represent numbers in binary.</p>
+
+<p>Using numbers, we can build a general procedure to encode characters as numbers.</p>
+
+<p>We then have a way to represent characters, that we can reduce all the way to binary, that we can use that on computers.</p>
+
+<h2 id="example-character-encoding">Example: Character Encoding</h2>
+
+<p>As a simple example, let’s assign a number to a series of characters we want to be able to represent.</p>
+
+<p>Every time we see that number, we can evaluate it to replace it with the character it represents.</p>
+
+<h3 id="character-encoding-in-code">Character Encoding in Code</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Set the value we</span>
+<span class="n">character_encoding</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c"># Use conditional to interpret the character as a particular symbol</span>
+<span class="k">if</span> <span class="n">character_encoding</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'ñ'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">character_encoding</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'é'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">character_encoding</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'¿'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ñ
+
+</code></pre></div></div>
+
+<h2 id="aside-dictionaries">Aside: Dictionaries</h2>
+
+<div class="alert alert-success">
+A dictionary is mutable collection of items, that can be of mixed-type, that are stored as key-value pairs. 
+</div>
+
+<h3 id="dictionaries-as-key-value-collections">Dictionaries as Key-Value Collections</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a dictionary</span>
+<span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s">'name_1'</span> <span class="p">:</span> <span class="s">'value_1'</span><span class="p">,</span> <span class="s">'name_2'</span> <span class="p">:</span> <span class="s">'value_2'</span><span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Check the contents of the dictionary</span>
+<span class="k">print</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{'name_1': 'value_1', 'name_2': 'value_2'}
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Check the type of the dictionary</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dict
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Dictionaries also have a length</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div></div>
+
+<h3 id="dictionaries-indexing--looping">Dictionaries: Indexing &amp; Looping</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Dictionaries are indexed using their keys</span>
+<span class="n">dictionary</span><span class="p">[</span><span class="s">'name_1'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'value_1'
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Loop over a dictionary loops across the keys</span>
+<span class="c">#   Inside the loop, you can use the key to access the associated value</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Loop Iteration'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">Key:</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">Value:</span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">item</span><span class="p">])</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Loop Iteration
+	Key:	 name_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 name_2
+	Value:	 value_2
+
+</code></pre></div></div>
+
+<h3 id="example-dictionaries">Example Dictionaries</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">student_emails</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'Betty Jennings'</span> <span class="p">:</span> <span class="s">'bjennings@eniac.org'</span><span class="p">,</span>
+    <span class="s">'Ada Lovelace'</span><span class="p">:</span> <span class="s">'ada@analyticengine.com'</span><span class="p">,</span>
+    <span class="s">'Alan Turing'</span> <span class="p">:</span> <span class="s">'aturing@thebomb.gov'</span><span class="p">,</span>
+    <span class="s">'Grace Hopper'</span> <span class="p">:</span> <span class="s">'ghopper@navy.usa'</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">completed_coding_lab</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'A1234'</span> <span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="s">'A5678'</span> <span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+    <span class="s">'A9123'</span> <span class="p">:</span> <span class="bp">True</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mixed_types</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="bp">True</span>  <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> 
+    <span class="bp">False</span> <span class="p">:</span> <span class="bp">None</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="clicker-question-2">Clicker Question #2</h2>
+
+<p>What will the value of result be after this code has run?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dictionary = {'alpha' : [8, 12], 'beta'  : [13, 30], 'theta' : [4, 8]}
+
+check = 10
+for item in dictionary:
+    temp = dictionary[item]
+    if temp[0] &gt;= check &lt;= temp[1]:
+        result = item
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A) alpha</td>
+      <td>B) [8, 12]</td>
+      <td>C) beta</td>
+      <td>D) theta</td>
+      <td>E) None</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clicker-question-answer">Clicker Question Answer</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s">'alpha'</span> <span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="s">'beta'</span>  <span class="p">:</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="s">'theta'</span> <span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]}</span>
+
+<span class="n">check</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">temp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">check</span> <span class="o">&lt;=</span> <span class="n">temp</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">item</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alpha
+
+</code></pre></div></div>
+
+<h2 id="character-encodings-with-dictionaries">Character Encodings with Dictionaries</h2>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Define some character encodings</span>
+<span class="n">character_encodings</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">0</span> <span class="p">:</span> <span class="s">'ñ'</span><span class="p">,</span>
+    <span class="mi">1</span> <span class="p">:</span> <span class="s">'é'</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Use character encodings to use symbols we want - example 1</span>
+<span class="n">my_sentence</span> <span class="o">=</span> <span class="s">'no hablo espa'</span> <span class="o">+</span> <span class="n">character_encodings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">'ol'</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_sentence</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>no hablo español
+
+</code></pre></div></div>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Use character encodings to use symbols we want - example 1</span>
+<span class="n">my_sentence</span> <span class="o">=</span> <span class="s">'yo hablo ingl'</span> <span class="o">+</span> <span class="n">character_encodings</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">'s'</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_sentence</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yo hablo inglés
+
+</code></pre></div></div>
+
+<h2 id="unicode">Unicode</h2>
+
+<div class="alert alert-success">
+Unicode is a system of systematically and consistently representing characters. 
+</div>
+
+<p>Every character has a unicode <code class="highlighter-rouge">code point</code> - an integer that can be used to represent that number.</p>
+
+<p>If a computer is using unicode, it display a requested character by following the unicode encodings of which <code class="highlighter-rouge">code point</code> refers to which character.</p>
+
+<h3 id="ord--chr">ORD &amp; CHR</h3>
+
+<div class="alert alert-success">
+`ord` returns the unicode code point for a one-character string. `chr` represent the character encoding of a code point. 
+</div>
+
+<h3 id="ord--chr-examples">ord &amp; chr examples</h3>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s">'a'</span><span class="p">))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">97</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>97
+a
+
+</code></pre></div></div>
+
+<h3 id="inverses">Inverses</h3>
+
+<p><code class="highlighter-rouge">ord</code> and <code class="highlighter-rouge">chr</code> are inverses of one another.</p>
+
+<div class="language-python input_area highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">inp</span> <span class="o">=</span> <span class="s">'b'</span>
+<span class="n">out</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">inp</span><span class="p">))</span>
+
+<span class="k">assert</span> <span class="n">inp</span> <span class="o">==</span> <span class="n">out</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Input: </span><span class="se">\t</span><span class="s">'</span><span class="p">,</span> <span class="n">inp</span><span class="p">,</span> <span class="s">'</span><span class="se">\n</span><span class="s">Output: '</span><span class="p">,</span> <span class="n">out</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: 	 b 
+Output:  b
+
+</code></pre></div></div>
+
+
+                <nav class="c-page__nav">
+  
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/materials/07-Loops">
+      〈 <span class="u-margin-right-tiny"></span> 07-Loops
+    </a>
+  
+
+  
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/materials/09-FunctionsI">
+      09-FunctionsI <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

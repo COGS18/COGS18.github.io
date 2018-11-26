@@ -7,8 +7,8 @@ prev_page:
   url: /assignments/A3-Chatbots
   title: 'A3-Chatbots'
 next_page:
-  url: /
-  title: ''
+  url: /projects/ProjectIdeas
+  title: 'Projects'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
