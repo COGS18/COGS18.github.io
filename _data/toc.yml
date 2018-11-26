@@ -81,6 +81,9 @@
   - title: 19-OpenSource
     url: /materials/19-OpenSource
     not_numbered: true
+  - title: 20-Documentation
+    url: /materials/20-Documentation
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
@@ -127,6 +130,9 @@
     not_numbered: true
   - title: CL6-CommandLine
     url: /labs/CL6-CommandLine
+    not_numbered: true
+  - title: CL7-ProjectOverview
+    url: /labs/CL7-ProjectOverview
     not_numbered: true
 
 - title: Assignments
