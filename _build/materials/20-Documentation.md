@@ -8,8 +8,8 @@ prev_page:
   url: /materials/19-OpenSource
   title: '19-OpenSource'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/21-CodeStyle
+  title: '21-CodeStyle'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

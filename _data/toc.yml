@@ -84,6 +84,12 @@
   - title: 20-Documentation
     url: /materials/20-Documentation
     not_numbered: true
+  - title: 21-CodeStyle
+    url: /materials/21-CodeStyle
+    not_numbered: true
+  - title: 22-CodeTesting
+    url: /materials/22-CodeTesting
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
