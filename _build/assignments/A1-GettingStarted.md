@@ -4,8 +4,8 @@ download_link: assets/downloads/A1-GettingStarted.ipynb.zip
 layout: notebooks
 title: 'Assignments'
 prev_page:
-  url: /labs/CL7-ProjectOverview
-  title: 'CL7-ProjectOverview'
+  url: /labs/CL8-CodeReview
+  title: 'CL8-CodeReview'
 next_page:
   url: /assignments/A1-GettingStarted
   title: 'A1-GettingStarted'
