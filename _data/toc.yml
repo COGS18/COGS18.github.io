@@ -90,6 +90,9 @@
   - title: 22-CodeTesting
     url: /materials/22-CodeTesting
     not_numbered: true
+  - title: 23-CodeProjects
+    url: /materials/23-CodeProjects
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
