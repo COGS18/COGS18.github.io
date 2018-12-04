@@ -53,4 +53,4 @@ An overview of the Assignments is available [here](../assets/intro/assignments/o
 ### Project
 
 {:.text-content}
-An overview of the Project is available [here](../assets/intro/projects/overview.pdf).
+An overview of the Project is available [here](../assets/intro/projects/overview.pdf). You can download a template of the project structure [here](../assets/intro/projects/ProjectTemplate.zip).

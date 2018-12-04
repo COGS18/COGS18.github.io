@@ -14,7 +14,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Coding Lab 8: Code Review
 
-Welcome to the eight coding lab!
+Welcome to the eighth coding lab!
 
 In this coding lab we will be doing a code review of your project code. 
 
@@ -24,10 +24,13 @@ How to do this code review:
 - Get together in groups of 2 or 3
 - Make sure everyone is clear and up to date on the project description posted on the website
 - Each person should briefly explain the idea of the project, and describe where they are in the project
-- Review each others code, focusing on the elements below. Take notes on any comments you have, and write them down for the other person
+- Review each other's code, focusing on the elements below. Take notes on any comments you have, and write them down for the other person
 - Debrief each other on the comments you made
 
+### What to Focus On
+
 When reviewing each other's code, focus on and try to provide feedback on each of the following elements:
+
 - Project idea
     - Can you understand what the other person is trying to do, and how they will do it?
     - Does it sound like an idea that meets the requirements of the class?
@@ -49,20 +52,21 @@ When reviewing each other's code, focus on and try to provide feedback on each o
         - Is there anything you think they could do a bit different?
         - Anything you think they could add?
 
-#### Giving Good Feedback
+### Giving Good Feedback
 
 - There are always things that can be improved.
     - 'Looks good' is not particularly useful feedback. What can they improve?
     - Focus on actionable comments. What can they do to make this code better?
 - Keep in mind that the other person has thought about this idea more than you
-    - There is probably a reason why they did things the way they did. If they aren't doing something that you think is obvious, ask why before jumping into assuming they've missed something. 
+    - There is probably a reason why they did things the way they did.
+    - If they aren't doing something that you think is obvious, ask why before jumping into assuming they've missed something. 
 - Acknowledge where the person is in the process
     - You don't have to list out things they already know they still have to do
 - Make sure, as you do your code reviews, that you are kind and respectful
     - The goal here is to help each work through the project, and to get feedback from another person, highlighting anything that the person might have missed
     - Productive code reviews should be done with the with a sincere intention of helping the other person
 
-#### Receiving Feedback
+### Receiving Feedback
 
 - Remember that the other person should be working in good faith to help you out
     - Don't get defensive - hear them out. Listen to what they are saying. 
