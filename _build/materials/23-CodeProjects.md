@@ -8,8 +8,8 @@ prev_page:
   url: /materials/22-CodeTesting
   title: '22-CodeTesting'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/24-AdvancedPython
+  title: '24-AdvancedPython'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
