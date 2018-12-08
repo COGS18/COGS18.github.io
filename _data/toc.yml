@@ -96,6 +96,9 @@
   - title: 24-AdvancedPython
     url: /materials/24-AdvancedPython
     not_numbered: true
+  - title: 25-WrapUp
+    url: /materials/25-WrapUp
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
