@@ -43,6 +43,12 @@ print(2 + 3)
 ```
 
 
+{:.output_stream}
+```
+5
+
+```
+
 
 
 {:.input_area}
@@ -51,6 +57,12 @@ div_result = 4 / 2
 print(div_result)
 ```
 
+
+{:.output_stream}
+```
+2.0
+
+```
 
 ### More Math
 
@@ -68,10 +80,30 @@ Python also has `**` for exponentiation and `%` for remainder (called modulus). 
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 17 % 7
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ## Boolean Logic
@@ -90,24 +122,53 @@ True and True
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+True or True
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 True and not False
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
 ### Clicker #1
 
 What will the following boolean expression evaluate as:
-
-True and not True or False
-
-- a) True
-- b) False
-- c) None
-- d) This code will fail
-
-### Clicker Question Answer
 
 
 
@@ -116,6 +177,11 @@ True and not True or False
 True and not True or False
 ```
 
+
+- a) True
+- b) False
+- c) None
+- d) This code will fail
 
 ## Comparison Operators
 
@@ -133,10 +199,48 @@ True == True
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+'aa' == 'aa'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 12 >= 13
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ## Comparing Identity Operators
@@ -164,12 +268,29 @@ print(c is a)
 ```
 
 
+{:.output_stream}
+```
+True
+False
+
+```
+
 
 
 {:.input_area}
 ```python
 a == b == c
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ## String Concatenation
@@ -184,6 +305,16 @@ Operators sometimes do different things on different data. For example, `+` on s
 ```python
 'a' + 'b' + 'c'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'abc'
+```
+
 
 
 ## Chaining Operators
@@ -201,18 +332,19 @@ Operators and variables can also be chained together into arbitrarily complex ex
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
 ### Clicker #2
 
 What will the following expression evaluate as:
-
-`2**2 >= 4 and 13%3 > 1`
-
-- a) True
-- b) False
-- c) None
-- d) This code will fail
-
-### Clicker Question Answer
 
 
 
@@ -221,3 +353,8 @@ What will the following expression evaluate as:
 2**2 >= 4 and 13%3 > 1
 ```
 
+
+- a) True
+- b) False
+- c) None
+- d) This code will fail

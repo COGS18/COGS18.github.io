@@ -30,8 +30,6 @@ Programming: a way to ask computer to store values (variables), and do things wi
 
 
 
-
-
 {:.input_area}
 ```python
 # This is a comment. You can write a comment by using a `#`
@@ -77,26 +75,24 @@ Code: What is x?
 
 After executing the following code, what will be the value of `my_var`?
 
-`my_var = 2`
 
-`my_var = my_var + 1`
+
+{:.input_area}
+```python
+my_var = 2
+
+my_var = my_var + 1
+
+print(my_var)
+```
+
 
 - a) 2
 - b) 3
 - c) "my_var + 1"
 - d) This code will fail
 
-### Clicker Question Answer
-
-
-
-{:.input_area}
-```python
-my_var = 2
-my_var = my_var + 1
-print(my_var)
-```
-
+### Reminder
 
 - In programming `=` means assignment
 - Anything to the right of the `=` is evaluated before assignment
@@ -130,23 +126,22 @@ The namespace is the 'place' where all your currently defined code is declared -
 
 After executing the following code, what will be the value of `var_2`?
 
-`var_2 = var_1 = 1`
+
+
+{:.input_area}
+```python
+var_2 = var_1 = 1
+
+print(var_2)
+```
+
 
 - a) 'var_1'
 - b) 1
 - c) 2
 - d) This code will fail
 
-### Clicker Question Answer
-
-
-
-{:.input_area}
-```python
-var_2 = var_1 = 1
-print(var_2)
-```
-
+### Reminders
 
 - There can be more than one assignment in a single line
 - Anything to the right of the `=` is evaluated before assignment
@@ -221,7 +216,10 @@ another_float = -231.45
 {:.input_area}
 ```python
 my_string = 'words, words, words'
-another_string = 'more words.'
+another_string = 'more words'
+
+# Note that strings can be defined with either '' or ""
+and_another = "and some more"
 ```
 
 
@@ -258,33 +256,24 @@ the_concept_of_nothing = None
 
 After executing the following code, what will the value of `var_b` be?
 
-`var_a = 1`
-
-`var_b = var_a`
-
-- a) var_a
-- b) 'b'
-- c) 1
-- d) This code will fail
-
-### Clicker Question Answer
-
 
 
 {:.input_area}
 ```python
 var_a = 1
+
 var_b = var_a
 
 print(var_b)
 ```
 
 
-{:.output_stream}
-```
-1
+- a) var_a
+- b) 'b'
+- c) 1
+- d) This code will fail
 
-```
+### Reminders
 
 - Multiple variables can relate to the same value(s)
 

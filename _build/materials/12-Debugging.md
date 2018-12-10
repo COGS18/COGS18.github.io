@@ -67,7 +67,7 @@ if True
 
 {:.output_traceback_line}
 ```
-  File "<ipython-input-2-84adba9b209c>", line 1
+  File "<ipython-input-3-c4d5a1f1d2a0>", line 1
     if True
            ^
 SyntaxError: invalid syntax
@@ -88,7 +88,7 @@ print(value)
 
 {:.output_traceback_line}
 ```
-  File "<ipython-input-3-6b38a7bbe4d8>", line 3
+  File "<ipython-input-4-4728a34f58de>", line 3
     print(value)
         ^
 IndentationError: expected an indented block
@@ -127,7 +127,7 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-4-bc757c3fda29> in <module>()
+<ipython-input-5-b710d87c980c> in <module>()
 ----> 1 1 / 0
 
 ```
@@ -173,7 +173,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-6-4acade15292f> in <module>()
+<ipython-input-7-9e1f45185d35> in <module>()
       1 # If you typo a name, you will get a NameError
 ----> 2 varaible
 
@@ -207,7 +207,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-7-4f05423dede6> in <module>()
+<ipython-input-8-8a0f2db9c0e0> in <module>()
       1 # You also get a name error if you try to use the wrong operator for assignment
 ----> 2 new_variable == 1
 
@@ -245,7 +245,7 @@ IndexError                                Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-8-2c2a83518cf2> in <module>()
+<ipython-input-9-874325faca31> in <module>()
       1 my_list = [1, 2, 3]
 ----> 2 my_list[5]
 
@@ -280,7 +280,7 @@ KeyError                                  Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-9-84a1c00e4833> in <module>()
+<ipython-input-10-7c15810f6612> in <module>()
       1 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
       2 my_dictionary = {'name1' : 1, 'name2' : 2}
 ----> 3 my_dictionary['name3']
@@ -318,7 +318,7 @@ ValueError                                Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-10-1c6b28888bbe> in <module>()
+<ipython-input-11-75b32af45c8e> in <module>()
 ----> 1 int('cat')
 
 ```
@@ -351,7 +351,7 @@ ValueError                                Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-11-f00634ed638b> in <module>()
+<ipython-input-12-688c501bfa19> in <module>()
       1 my_list = [1, 2, 3]
 ----> 2 my_list.remove(0)
 
@@ -386,7 +386,7 @@ TypeError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-12-57c293ee5895> in <module>()
+<ipython-input-13-f6f2e53883a8> in <module>()
 ----> 1 'a_string' + 12
 
 ```
@@ -436,7 +436,7 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-13-08385b303fa2> in <module>()
+<ipython-input-14-1ed988a28fa0> in <module>()
       5 
       6     if val % 2 == 0:
 ----> 7         temp = val / (val - 4)
@@ -488,9 +488,9 @@ print('\nmy_num is: ', my_num)
 
 {:.output_stream}
 ```
-Please type a number: 12
+Please type a number: not a number
 
-my_num is:  12
+my_num is:  not a number
 
 ```
 
@@ -509,7 +509,7 @@ except:
 
 {:.output_stream}
 ```
-Numberdskg
+Numbernot a number
 nahhh
 
 ```
@@ -534,7 +534,7 @@ print('\nmy_num is: ', my_num)
 
 {:.output_stream}
 ```
-Please enter a number: sg
+Please enter a number: not a number
 Oops!  That was no valid number. Try again!
 Please enter a number: 12
 
@@ -583,14 +583,14 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-20-0cdf54a076ec> in <module>()
+<ipython-input-23-e444ace5c196> in <module>()
 ----> 1 print(divide(2, 0))
 
 ```
 
 {:.output_traceback_line}
 ```
-<ipython-input-19-2fcc9cd30b98> in divide(num1, num2)
+<ipython-input-22-ef96091e23e2> in divide(num1, num2)
       1 def divide(num1, num2):
 ----> 2     return num1 / num2
       3 
@@ -641,34 +641,7 @@ print('My integer is: ', my_int)
 
 {:.output_stream}
 ```
-An integer please: as
+An integer please: 12
+My integer is:  12
 
 ```
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-ValueError                                Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-22-bc64f24647db> in <module>()
-      1 my_int = input('An integer please: ')
-      2 if not my_int.isnumeric():
-----> 3     raise ValueError('I wanted a number! :(')
-      4 
-      5 print('My integer is: ', my_int)
-
-```
-
-{:.output_traceback_line}
-```
-ValueError: I wanted a number! :(
-```
-

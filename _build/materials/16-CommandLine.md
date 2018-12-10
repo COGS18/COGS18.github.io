@@ -18,7 +18,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ## File Systems
 
 <div class="alert alert-success">
-Computers use a hierierarchical file systems that organize files & folders.
+Computers use a hierarchical file systems that organizes files & folders.
 </div>
 
 ## Command Line

@@ -134,10 +134,19 @@ def test_add():
     assert add(-2, -2) == -4
     
     # Test adding floats
-    assert add(2.7, 1.2) == 3.9
+    #assert add(2.7, 1.2) == 3.9
     
     # Test adding with 0
     assert add(2, 0) == 2
+```
+
+
+
+
+{:.input_area}
+```python
+# Run our test function
+test_add()
 ```
 
 
@@ -204,9 +213,9 @@ Test coverage is the proportion of a software project that is run by the test su
 
 # Writing Good Code
 
-If you write code that is:
+All in all, write code that is:
 - Documented
 - Well organized (follows a style guide)
 - Tested
 
-You are an above average coder for academic & research. 
+And you will have understandable, maintainable, and trustable code. 

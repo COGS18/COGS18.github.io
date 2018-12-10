@@ -15,8 +15,6 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Jupyter Notebooks
 
-This is a quick introduction to Jupyter notebooks.
-
 <div class="alert alert-success">
 Jupyter notebooks are a way to combine executable code, code outputs, and text into one connected file.
 </div>

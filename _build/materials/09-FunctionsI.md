@@ -42,31 +42,15 @@ Modular programming is an approach to programming that focuses on building progr
 ```python
 def add_two_numbers(num1, num2):
     
+    aa = '1'
+    print('aa:', aa)
+    
     # Do some operations on the input variables
     answer = num1 + num2
     
     # Return the answer
-    return answer
+    return answer, aa
 ```
-
-
-
-
-{:.input_area}
-```python
-# Execute our function on some inputs
-add_two_numbers(2, 3)
-```
-
-
-
-
-
-{:.output_data_text}
-```
-5
-```
-
 
 
 
@@ -78,15 +62,11 @@ add_two_numbers(-1, 4)
 ```
 
 
-
-
-
-{:.output_data_text}
+{:.output_stream}
 ```
 3
+
 ```
-
-
 
 ## Function Properties
 
@@ -127,6 +107,12 @@ print(ans_1 + ans_2)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 A) 0 | B) 1 | C) 2 | D) 3 | E) None
 
 ## Function Namespace I
@@ -144,10 +130,11 @@ A) 0 | B) 1 | C) 2 | D) 3 | E) None
 ```
 Variable          Type        Data/Info
 ---------------------------------------
-add_two_numbers   function    <function add_two_numbers at 0x103e10ae8>
+add_two_numbers   function    <function add_two_numbers at 0x111bc57b8>
 ans_1             int         2
 ans_2             int         0
-remainder         function    <function remainder at 0x10557a7b8>
+my_answer         NoneType    None
+remainder         function    <function remainder at 0x111bc5730>
 
 ```
 
@@ -168,13 +155,13 @@ def check_function_namespace(function_input):
 {:.input_area}
 ```python
 # Functions don't `see` everything
-check_function_namespace(1)
+check_function_namespace(True)
 ```
 
 
 {:.output_stream}
 ```
-{'function_input': 1}
+{'function_input': True}
 
 ```
 
@@ -220,8 +207,6 @@ my_var = 'I am a variable'
 
 print('Outside, before function: \t', my_var)
 
-change_var(my_var)
-
 print('Outside, after function: \t', my_var)
 ```
 
@@ -229,7 +214,6 @@ print('Outside, after function: \t', my_var)
 {:.output_stream}
 ```
 Outside, before function: 	 I am a variable
-Inside function: 		 I am something else
 Outside, after function: 	 I am a variable
 
 ```
@@ -258,7 +242,13 @@ print_numbers(5, 12.2)
 ```
 
 
-A) 5 , 11.5 | B) 2, 12.2 | C) 2 , 11.5 | D) 5 , 12.0 | E) None
+{:.output_stream}
+```
+5 , 12.2
+
+```
+
+A) 5 , 11.5 | B) 2, 12.2 | C) 2 , 11.5 | D) 5 , 12.2 | E) None
 
 ## Clicker Question #3
 
@@ -270,8 +260,8 @@ def string_manipulator(string):
     
     output = ''
     for char in string:
-        if char is 'a' or char is 'e':
-            char = 'z'
+        if char == 'a' or char == 'e':
+            char = 'z' 
         output = output + char
     
     return output
@@ -289,5 +279,11 @@ manipulated_string = string_manipulator(variable)
 print(manipulated_string)
 ```
 
+
+{:.output_stream}
+```
+zbcdz
+
+```
 
 A) 'abcde' | B) 'zbcdz' | C) 'zzzzz' | D) 'azbcdez' | E) ''

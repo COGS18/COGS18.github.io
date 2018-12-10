@@ -186,14 +186,6 @@ my_date.year
 
 {:.input_area}
 ```python
-my_date.weekday?
-```
-
-
-
-
-{:.input_area}
-```python
 # Method to return what day of the week the date is
 my_date.weekday()
 ```
@@ -289,7 +281,7 @@ print(now)
 
 {:.output_stream}
 ```
-2018-10-29 10:31:18.212411
+2018-12-09 00:07:51.583035
 
 ```
 
@@ -297,7 +289,7 @@ print(now)
 
 {:.input_area}
 ```python
-# Attributes
+# Check some attributes of the object
 print(now.year)
 print(now.day)
 ```
@@ -306,7 +298,7 @@ print(now.day)
 {:.output_stream}
 ```
 2018
-29
+9
 
 ```
 
@@ -314,13 +306,13 @@ print(now.day)
 
 {:.input_area}
 ```python
-# Methods
+# Check a method of the object
 print(now.weekday())
 ```
 
 
 {:.output_stream}
 ```
-0
+6
 
 ```

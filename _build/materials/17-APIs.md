@@ -18,7 +18,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ## Application Programming Interface
 
 <div class="alert alert-success">
-An API is a programmatic interface to an interace - a software to software interface, or way for programs to talk to other programs. 
+An API is a programmatic interface to an application - a software to software interface, or way for programs to talk to other programs. 
 </div>
 
 ## Module APIs
@@ -42,6 +42,12 @@ def foo(a, b, c=0):
 print(foo(b=2, a=[10, 10, 10, 10]))
 ```
 
+
+{:.output_stream}
+```
+20
+
+```
 
 A) 10 | B) 20 | C) 30 | D) 40 | E) None
 
@@ -117,6 +123,12 @@ print(search_url)
 ```
 
 
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?term=brain
+
+```
+
 
 
 {:.input_area}
@@ -138,6 +150,12 @@ fetch_url = base_url + fetch + db + retmode + pubmed_id
 print(fetch_url)
 ```
 
+
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=30439964
+
+```
 
 ## Requesting Web Pages from Python
 
@@ -208,11 +226,31 @@ type(fetch_content)
 
 
 
+
+{:.output_data_text}
+```
+bs4.BeautifulSoup
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # We can use some methods to access particular information
-fetch_content.find('year')
+fetch_content.find('year').text
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'2018'
+```
+
 
 
 ## Literature Scanner
@@ -257,6 +295,16 @@ for art in words['brain']:
 ```
 
 
+{:.output_stream}
+```
+[Study of de novo point mutations in known genes among patients with unexplained intellectual disability or developmental delay].
+Progressively Disrupted Somatodendritic Morphology in Dopamine Neurons in a Mouse Parkinson's Model.
+BDNF provides many routes toward STN DBS-mediated disease modification.
+The value of magnetic resonance spectroscopy as a supplement to MRI of the brain in a clinical setting.
+Solid peripheral tumor leads to systemic inflammation, astrocyte activation and signs of behavioral despair in mice.
+
+```
+
 
 
 {:.input_area}
@@ -275,6 +323,10 @@ from lisc.data_all import DataAll
 brain_dat = DataAll(words.results[0])
 make_wc(brain_dat.word_freqs, 20, 'Brain')
 ```
+
+
+
+![png](../images/build/materials/17-APIs_41_0.png)
 
 
 ## Twitter API

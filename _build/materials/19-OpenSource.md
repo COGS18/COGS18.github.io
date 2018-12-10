@@ -28,7 +28,7 @@ Open source software is software that the user can:
 ## Licenses
 
 <div class="alert alert-success">
-The details of how an open-source project can be used are detailed in it's `license` which explicitly states it's terms of use. 
+The details of how an open-source project can be used are detailed in it's `license`, which explicitly states it's terms of use. 
 </div>
 
 ## Open Source Developers
@@ -42,13 +42,13 @@ Open source software is often developed in an collaborative, public manner, thro
 ### Github
 
 <div class="alert alert-success">
-Github is a software development platform, which is often used to host and develop open source projects.
+Github is a software development platform, which is used to host and develop open source projects.
 </div>
 
 ### PYPI: Python Package Index
 
 <div class="alert alert-success">
-The Python Package Index is a repository of software for the Python programming language.
+The Python Package Index is a software repository for the Python programming language.
 </div>
 
 ### PIP: Python Installer

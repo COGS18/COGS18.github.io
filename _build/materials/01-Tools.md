@@ -44,7 +44,7 @@ The official Python organization website is available <a href="https://www.pytho
 ## Python
 
 - Versions: there are different versions of Python.
-    - We will be using 3.6.
+    - We will be using 3.6 and/or 3.7
 - Packages: Python includes a "base set" of code (the standard library), and an extensive ecosystem of third party packages
     - In this course, we will largely focus on the standard library
     - For access to other packages when we need them, we will use Anaconda
@@ -73,10 +73,8 @@ Conda documentation is available
 
 ## The Anaconda Ecosystem
 
-- Anaconda itself is a distribution, that is, a copy of the Python standard library, included a curated collection of external packages.
+- Anaconda itself is a distribution - that is, a copy of the Python standard library, included a curated collection of external packages.
 - Conda is a package manager, allowing you to download, install, and manage other packages. 
-
-
 
 <center><img src="img/jupyter.png" width="300px"></center>
 
@@ -90,8 +88,6 @@ The official Jupyter website is available
 <a href="http://jupyter.org" class="alert-link">here</a>.
 </div>
 
-<hr>
-
 ## Installation
 
 You only need to download one thing: anaconda, which comes complete with conda, and Jupyter notebooks.
@@ -103,7 +99,7 @@ Download anaconda from
 
 Notes
 -----
-- If you are on Mac, you have a native installation of python. This native installation of Python may be older, will not include the extra packages that you will need for this class, and is best left untouched. 
+- If you are on Mac, you have a native installation of Python. This native installation of Python may be older, will not include the extra packages that you will need for this class, and is best left untouched. 
     - Downloading anaconda will install a separate, independent install of Python, leaving your native install untouched. 
 - Windows does not require Python natively and so it is not typically pre-installed. 
 

@@ -241,13 +241,12 @@ print(instance.var_b)
 
 ## List Comprehensions
 
-List comprehensions allow you to run loops and conditionals, inside loops
+List comprehensions allow you to run loops and conditionals, inside lists
 
 
 
 {:.input_area}
 ```python
-# 
 input_list = [0, 1, 2]
 output_list = []
 for ind in input_list:
@@ -403,7 +402,7 @@ increment(1)
 {:.input_area}
 ```python
 my_list = [1, 5, 4, 6, 8, 11, 3, 12]
-new_list = list(filter(lambda x: (x%2 == 0) , my_list))
+new_list = list(filter(lambda x: (x%2 == 0), my_list))
 new_list
 ```
 
@@ -477,7 +476,7 @@ You can use a conditional within an assignment, to manipulate what gets assigned
 
 {:.input_area}
 ```python
-condition = False
+condition = True
 my_var = 1 if condition else 2
 ```
 
@@ -492,7 +491,7 @@ print(my_var)
 
 {:.output_stream}
 ```
-2
+1
 
 ```
 
@@ -566,7 +565,7 @@ class Language():
     def __init__(self, name):
         self.name = name.lower()
     
-    # Overload what the printed representation of the object is
+    # Overload what the printed representation of the object as a string
     def __repr__(self):
         return "The programming language " + self.name
     

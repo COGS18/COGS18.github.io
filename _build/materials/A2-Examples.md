@@ -346,7 +346,7 @@ print(multiply(2, 3))
 
 ```
 
-## Combining Things
+## Combining Functions with Control Flow
 
 
 
@@ -385,13 +385,6 @@ Yay!
 {:.input_area}
 ```python
 # Defining a Function with a Loop inside it
-```
-
-
-
-
-{:.input_area}
-```python
 def loop_function(my_list):
     
     new_list = []
@@ -455,6 +448,60 @@ busy_function([True, 7.2, 'and', 13, False, '', None, 'word', True])
 ```
 
 
+
+# Errors
+
+
+
+{:.input_area}
+```python
+# Raise an error
+raise ValueError('The value you gave is no good.')
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-25-3fd7c3ac350e> in <module>()
+      1 # Raise an error
+----> 2 raise ValueError('The value you gave is no good.')
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: The value you gave is no good.
+```
+
+
+
+
+{:.input_area}
+```python
+# Try / Except
+try:
+    sum()
+except TypeError:
+    print('Hmm. It seems that did not work.')
+```
+
+
+{:.output_stream}
+```
+Hmm. It seems that did not work.
+
+```
 
 # Classes
 

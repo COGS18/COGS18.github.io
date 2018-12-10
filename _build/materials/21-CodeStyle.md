@@ -33,6 +33,32 @@ import this
 ```
 
 
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
+
 ### Program Errors vs. Stylistic Issues
 
 - Programmatic Error: something that breaks the code
@@ -57,11 +83,11 @@ Python `PEP`'s are proposals for how something should be / work in the Python pr
 
 ## General Concepts
 
-- Be Explicit & Clear.
+- Be Explicit & Clear
     - Prioritize Readability over 'Cleverness'
-- There should be specific, standard ways to do things.
+- There should be specific, standard ways to do things
     - Use them
-- Coding Style are guidelines, designed to help the code.
+- Coding Style are guidelines, designed to help the code
     - They are not laws
 
 ## Specific Guidelines - Structure
@@ -95,7 +121,7 @@ def my_func():
     my_nums = '123'
     output = ''
     
-    for num in my_nums:
+    for num in my_nums: 
         output += str(int(num) + 1)
     
     return output
@@ -116,6 +142,12 @@ if True:
 ```
 
 
+{:.output_stream}
+```
+Words.
+
+```
+
 
 
 {:.input_area}
@@ -125,6 +157,12 @@ if True:
     print('Words.')
 ```
 
+
+{:.output_stream}
+```
+Words.
+
+```
 
 ### Spacing
 
@@ -170,6 +208,14 @@ for i in [1, 2, 3]: print(i**2 + i%2)
 ```
 
 
+{:.output_stream}
+```
+2
+4
+10
+
+```
+
 
 
 {:.input_area}
@@ -179,6 +225,14 @@ for i in [1, 2, 3]:
     print(i**2 + i%2)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+10
+
+```
 
 ### Multi-Line
 
@@ -342,15 +396,21 @@ A) None | B) 1 or 2 | C) 3 or 4 | D) 5 or 6 | E) 7 or more
 {:.input_area}
 ```python
 # Let's fix this code
-def MyFunction(input_num):
+def my_function(input_num):
+    """A descriptive docstring of the function."""
     
-    my_list = [0,1,2,3]
-    if 1 in my_list: ind = 1
+    my_list = [0, 1, 2, 3]
+
+    if 1 in my_list:
+        ind = 1
     else:
-      ind = 0
-    qq = []
-    for i in my_list [ind:]:
-        qq.append(input_num/i)
-    return qq
+        ind = 0
+        
+    output_list = []
+
+    for ind in my_list[ind:]:
+        output_list.append(input_num / ind)
+    
+    return output_list
 ```
 

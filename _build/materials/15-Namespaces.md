@@ -141,10 +141,11 @@ module
 {:.input_area}
 ```python
 # Explore what is available in random
-random.
-#dir(random)
+dir(random)
 ```
 
+
+### Random Example
 
 
 
@@ -162,7 +163,7 @@ print(chosen)
 
 {:.output_stream}
 ```
-['1', '5']
+['3', '4']
 
 ```
 
@@ -216,11 +217,11 @@ Which of the following is not a valid Python import statement?
 {:.input_area}
 ```python
 # Check our imports
-#import collections as col
-#from statistics import mean as average
-#from os import path
-#from random import choice, choices
-#import ascii_letters from string
+import collections as col
+from statistics import mean as average
+from os import path
+from random import choice, choices
+import ascii_letters from string
 ```
 
 
@@ -269,7 +270,7 @@ my_remote_function(2, 1)
 
 {:.input_area}
 ```python
-# Import a 
+# Import a class class from an external module
 from remote import MyNumbers
 ```
 
@@ -288,16 +289,7 @@ nums = MyNumbers(2, 3)
 {:.input_area}
 ```python
 # Check 
-nums.
-```
-
-
-
-
-{:.input_area}
-```python
-## Name
-nums.add()
+nums.subtract()
 ```
 
 
@@ -306,9 +298,18 @@ nums.add()
 
 {:.output_data_text}
 ```
-5
+1
 ```
 
+
+
+
+
+{:.input_area}
+```python
+# Check the definition of the code we imported
+nums.add??
+```
 
 
 ## Name Conflicts

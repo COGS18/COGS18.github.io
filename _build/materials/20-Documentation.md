@@ -62,11 +62,33 @@ ff('Hello World.')
 {:.input_area}
 ```python
 # Let's fix this code!
-def ff(jj):
-    oo = list(); jj = list(jj)
-    for ii in jj: oo.append(ord(ii))
-    return oo
-ff('Hello World.')
+def convert_to_unicode(input_string):
+    """Converts an input string into a string containing the unicode code points.
+    
+    Parameters
+    ----------
+    input_string : string
+        String to convert to code points
+        
+    Returns
+    -------
+    output_string : string
+        String containing the code points for the input string.
+    """
+    
+    output = list()
+
+    # Converting a string to a list, to split up the characters of the string
+    input_list = list(input_string)
+    
+    for character in input_list:
+        
+        temp = ord(character)
+        output.append(temp)
+
+    output_string = '+'.join(output)
+        
+    return output_string
 ```
 
 
@@ -125,7 +147,7 @@ for element in list_of_elements:
 ## Docstrings
 
 <div class="alert alert-success">
-Docstrings are in code text that describe modules, classes and functions. They describe the operation of the code.
+Docstrings are in-code text that describe modules, classes and functions. They describe the operation of the code.
 </div>
 
 <div class="alert alert-info">
@@ -143,9 +165,9 @@ def add(num1, num2):
     
     Parameters
     ----------
-    num1 : float
+    num1 : int or float
         The first number, to be added. 
-    num2 : float
+    num2 : int or float
         The second number, to be added.
     
     Returns
@@ -180,9 +202,9 @@ add(num1, num2)
     
     Parameters
     ----------
-    num1 : float
+    num1 : int or float
         The first number, to be added. 
-    num2 : float
+    num2 : int or float
         The second number, to be added.
     
     Returns
@@ -210,9 +232,9 @@ Add two numbers together.
     
     Parameters
     ----------
-    num1 : float
+    num1 : int or float
         The first number, to be added. 
-    num2 : float
+    num2 : int or float
         The second number, to be added.
     
     Returns
@@ -235,9 +257,9 @@ What should be included in a docstring?
 
 A) 1, 4 | B) 2, 3, 5 | C) 3, 5 | D) 1, 2, 4 | E) 1, 2, 3, 4, 5
 
-## Project Documentation
+## Documentation for a Software Project
 
-Project Documentation Files:
+Documentation Files:
 - A `README` is a file that provides an overview of the project to potential users and developers
 - A `LICENSE` file specifies the license under which the code is available (the terms of use)
 - An `API Reference` is a collection of the docstrings, listing public interfaces, parameters and return values

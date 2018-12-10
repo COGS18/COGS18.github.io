@@ -42,6 +42,34 @@ This code executes if the condition evaluates as True.
 
 ```
 
+## Conditional: elif
+
+<div class="alert alert-success">
+After an if statement, you can have any number of `elif`'s (meaning 'else if') to check other conditions.
+</div>
+
+
+
+{:.input_area}
+```python
+condition_1 = False
+condition_2 = False
+
+if condition_1:
+    print('This code executes if condition_1 evaluates as True.')
+elif condition_2:
+    print('This code executes if condition_1 did not evaluate as True, but condition_2 does.')
+else: 
+    print('This code executes if both condition_1 and condition_2 evaluate as False')
+```
+
+
+{:.output_stream}
+```
+This code executes if both condition_1 and condition_2 evaluate as False
+
+```
+
 ## Conditional: else
 
 <div class="alert alert-success">
@@ -64,34 +92,6 @@ else:
 {:.output_stream}
 ```
 This code executes if the condition evaluates as True.
-
-```
-
-## Conditional: elif
-
-<div class="alert alert-success">
-After an if statement, you can have any number of `elif`'s (meaning 'else if') to check other conditions.
-</div>
-
-
-
-{:.input_area}
-```python
-condition_1 = False
-condition_2 = True
-
-if condition_1:
-    print('This code executes if condition_1 evaluates as True.')
-elif condition_2:
-    print('This code executes if condition_1 did not evaluate as True, but condition_2 does.')
-else: 
-    print('This code executes if both condition_1 and condition_2 evaluate as False')
-```
-
-
-{:.output_stream}
-```
-This code executes if condition_1 did not evaluate as True, but condition_2 does.
 
 ```
 
@@ -118,7 +118,7 @@ else:
 
 {:.output_stream}
 ```
-Yay!
+Get yourself a programming language!
 
 ```
 
@@ -128,10 +128,10 @@ Yay!
 ```python
 # Exploring conditionals
 
-number = 3
+number = 5
 
 print('Before Conditional')
-
+ 
 if number < 5:
     print('    If statement execution')
 elif number > 5:
@@ -144,7 +144,6 @@ print('After Conditional')
 {:.output_stream}
 ```
 Before Conditional
-    If statement execution
 After Conditional
 
 ```
@@ -153,21 +152,6 @@ After Conditional
 
 What will the following code snippet print out:
 
-```
-if False:
-    print("John")
-elif True:
-    print("Paul")
-elif True:
-    print("George")
-else:
-    print("Ringo")
-```
-
-A) John | B) Paul, George, Ringo | C) Paul | D) Paul, George | E) Ringo
-
-### Clicker Question Answer
-
 
 
 {:.input_area}
@@ -182,24 +166,13 @@ else:
     print("Ringo")
 ```
 
+
+A) John | B) Paul, George, Ringo | C) Paul | D) Paul, George | E) Ringo
 
 ### Clicker Question 2
 
 What will the following code snippet print out:
 
-```
-if 1 + 1 == 2:
-    print("I did Math")
-elif 1/0:
-    print("I broke Math")
-else:
-    print("I didn't do math")
-```
-
-A) I did Math | B) I broke Math | C) I didn't do math | D) This code won't execute
-
-### Clicker Questions Answer
-
 
 
 {:.input_area}
@@ -212,27 +185,13 @@ else:
     print("I didn't do math")
 ```
 
+
+A) I did Math | B) I broke Math | C) I didn't do math | D) This code won't execute
 
 ### Clicker Question #3
 
 What will the following code snippet print out:
 
-```
-python = "great"
-
-if True:
-    if python == "great":
-        print("Yay Python!")
-    else:
-        print("Oh no.")
-else:
-    print("I'm here")
-```
-
-A) Yay Python  | B) Oh no. | C) I'm here | D) This code won't execute
-
-### Clicker Question Answer
-
 
 
 {:.input_area}
@@ -248,6 +207,14 @@ else:
     print("I'm here")
 ```
 
+
+{:.output_stream}
+```
+Yay Python!
+
+```
+
+A) Yay Python  | B) Oh no. | C) I'm here | D) This code won't execute
 
 ## Properties of conditionals
 

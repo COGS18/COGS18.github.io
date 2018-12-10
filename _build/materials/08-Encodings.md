@@ -83,8 +83,8 @@ We can then encode any value we would like to represent on our computer.
 
 {:.input_area}
 ```python
-# The `bin` operator returns the binary representation of an integer
-print(bin(1))
+## The `bin` operator returns the binary representation of an integer
+print(bin(2))
 
 print(bin(11))
 ```
@@ -92,7 +92,7 @@ print(bin(11))
 
 {:.output_stream}
 ```
-0b1
+0b10
 0b1011
 
 ```
@@ -139,7 +139,7 @@ Every time we see that number, we can evaluate it to replace it with the charact
 {:.input_area}
 ```python
 # Set the value we
-character_encoding = 0
+character_encoding = 2
 
 # Use conditional to interpret the character as a particular symbol
 if character_encoding == 0:
@@ -153,7 +153,7 @@ elif character_encoding == 2:
 
 {:.output_stream}
 ```
-ñ
+¿
 
 ```
 
@@ -305,7 +305,7 @@ completed_coding_lab = {
 {:.input_area}
 ```python
 mixed_types = {
-    True  : [1, 2, 3], 
+    True  : [1, 2, 3],  
     False : None
 }
 ```
@@ -315,20 +315,6 @@ mixed_types = {
 
 What will the value of result be after this code has run?
 
-```
-dictionary = {'alpha' : [8, 12], 'beta'  : [13, 30], 'theta' : [4, 8]}
-
-check = 10
-for item in dictionary:
-    temp = dictionary[item]
-    if temp[0] >= check <= temp[1]:
-        result = item
-```
-
-A) alpha | B) [8, 12] | C) beta | D) theta | E) None
-
-### Clicker Question Answer
-
 
 
 {:.input_area}
@@ -337,12 +323,10 @@ dictionary = {'alpha' : [8, 12], 'beta'  : [13, 30], 'theta' : [4, 8]}
 
 check = 10
 for item in dictionary:
-
     temp = dictionary[item]
-
     if temp[0] <= check <= temp[1]:
         result = item
-
+        
 print(result)
 ```
 
@@ -352,6 +336,8 @@ print(result)
 alpha
 
 ```
+
+A) alpha | B) [8, 12] | C) beta | D) theta | E) None
 
 ## Character Encodings with Dictionaries
 
@@ -405,7 +391,7 @@ yo hablo inglés
 Unicode is a system of systematically and consistently representing characters. 
 </div>
 
-Every character has a unicode `code point` - an integer that can be used to represent that number. 
+Every character has a unicode `code point` - an integer that can be used to represent that character. 
 
 If a computer is using unicode, it display a requested character by following the unicode encodings of which `code point` refers to which character. 
 

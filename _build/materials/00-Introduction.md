@@ -97,7 +97,7 @@ print(c)
 
 ## Why Choose Python?
 
-- Python is a powerful, well developed and well supported tool
+- Python is a powerful, well developed, and well supported tool
 
 - Python is general purpose, with an immense, multi-purpose ecosystem
 

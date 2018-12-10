@@ -18,7 +18,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ## Collections: Lists
 
 <div class="alert alert-success">
-A list a **mutable** collection of ordered items, that can be of mixed type - created using square brackets.
+A list is a mutable collection of ordered items, that can be of mixed type. Lists are created using square brackets.
 </div>
 
 ### List examples
@@ -69,7 +69,7 @@ list
 ### Indexing
 
 <div class="alert alert-success">
-Indexing refers to selecting an item from within a collection, and is done with square brackets.
+Indexing refers to selecting an item from within a collection. Indexing is done with square brackets.
 </div>
 
 
@@ -214,26 +214,7 @@ q1_lst[-3:-1]
 - d) 'b', 'c', 'd'
 - e) 'b', 'c'
 
-### Clicker Question Answer
-
-
-
-{:.input_area}
-```python
-q1_lst = ['a', 'b', 'c', 'd']
-q1_lst[-3:-1]
-```
-
-
-
-
-
-{:.output_data_text}
-```
-['b', 'c']
-```
-
-
+### Reminders
 
 - Negative indices index backwards through a collection
 - A sequence of indices (called a slice) can be accessed using start:stop
@@ -420,6 +401,8 @@ bool_1 = False in ex2_lst
 bool_2 = 10 not in ex2_lst
 
 output = bool_1 and bool_2
+
+print(output)
 ```
 
 
@@ -428,28 +411,7 @@ output = bool_1 and bool_2
 - c) This code will fail
 - d) I don't know
 
-### Clicker Question Answer
-
-
-
-{:.input_area}
-```python
-ex2_lst = [0, False, 'ten', None]
-
-bool_1 = False in ex2_lst
-bool_2 = 10 not in ex2_lst
-
-output = bool_1 and bool_2
-
-print(output)
-```
-
-
-{:.output_stream}
-```
-True
-
-```
+### Reminder
 
 - The `in` operator checks whether an element is present in a collection, and can be negated with `not`
 
@@ -510,7 +472,7 @@ print(updates)
 ## Collections: Tuples
 
 <div class="alert alert-success">
-A tuple is an **immutable** collection of ordered items, that can be of mixed type - created using parentheses.
+A tuple is an immutable collection of ordered items, that can be of mixed type. Tuples are created using parentheses.
 </div>
 
 ### Tuple Examples
@@ -803,25 +765,3 @@ else:
 
 
 <pre> a) EndMatch   b) Overlap   c) Length   d) Overlap & Match   e) None </pre>
-
-### Clicker Question Answer
-
-What will be printed out from running this code?
-
-
-
-{:.input_area}
-```python
-lst = ['a', 'b', 'c']
-tup = ('b', 'c', 'd')
-
-if lst[-1] == tup[-1]:
-    print('EndMatch')
-elif tup[1] in lst:
-    print('Overlap')
-elif len(lst) == tup:
-    print('Length')
-else:
-    print('None')
-```
-

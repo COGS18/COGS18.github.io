@@ -18,13 +18,13 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ## Loops
 
 <div class="alert alert-success">
-A **loop** is a procedure to repeat a piece of code.
+A loop is a procedure to repeat a piece of code.
 </div>
 
 ## While Loops
 
 <div class="alert alert-success">
-A ** while loop** is a procedure to repeat a piece of code while some condition is still met. 
+A while loop is a procedure to repeat a piece of code while some condition is still met. 
 </div>
 
 ## While Loops
@@ -46,22 +46,12 @@ Repeat until condition is no longer True.
 
 {:.input_area}
 ```python
-number = 0
-while number < 5:
+number = 5
+while number < 0:
     print(number)
     number = number + 1
 ```
 
-
-{:.output_stream}
-```
-0
-1
-2
-3
-4
-
-```
 
 ### While Loop Example I
 
@@ -113,22 +103,6 @@ Asking for user input...
 
 What will be the value of `counter` after this loop is run:
 
-```
-keep_looping = True
-counter = 0
-
-while keep_looping:
-
-    counter = counter + 1
-    
-    if counter > 3:
-        keep_looping = False
-```
-
-A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite
-
-### Clicker Question Answer
-
 
 
 {:.input_area}
@@ -142,10 +116,61 @@ while keep_looping:
     
     if counter > 3:
         keep_looping = False
-        
+
 print(counter)
 ```
 
+
+A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite
+
+### Stepping Through the Loop
+
+
+
+{:.input_area}
+```python
+keep_looping = True
+counter = 0
+
+while keep_looping:
+    print('START LOOP')
+    print('\tStart counter: ', counter)
+
+    counter = counter + 1
+    
+    print('\tMid counter: ', counter)
+    
+    if counter > 3:
+        keep_looping = False
+        
+    print('\tEnd counter: ', counter)
+
+print('\nFinal counter: ', counter)
+```
+
+
+{:.output_stream}
+```
+START LOOP
+	Start counter:  0
+	Mid counter:  1
+	End counter:  1
+START LOOP
+	Start counter:  1
+	Mid counter:  2
+	End counter:  2
+START LOOP
+	Start counter:  2
+	Mid counter:  3
+	End counter:  3
+START LOOP
+	Start counter:  3
+	Mid counter:  4
+	End counter:  4
+
+Final counter:  4
+
+```
 
 ## For Loops
 
@@ -165,6 +190,8 @@ list_of_items = ['A', True, 12]
 # Loop across each element
 for item in list_of_items:
     print(item)
+    
+print('\tLast value: ', item)
 ```
 
 
@@ -173,6 +200,7 @@ for item in list_of_items:
 A
 True
 12
+	Last value:  12
 
 ```
 
@@ -183,7 +211,7 @@ True
 {:.input_area}
 ```python
 # Loop across items in a string
-for char in "python":
+for char in "python": 
     print(char)
 ```
 
@@ -203,17 +231,6 @@ n
 
 What will the following loop print out:
 
-```
-my_lst = [0, 1, 2]
-
-for item in my_lst[0:-1]:
-    print(item + 1)
-```
-
-A) 0, 1, 2 | B) 0, 1 | C) 1, 2 | D) 2, 3 | E) 1, 2, 3
-
-### Clicker Question Answer
-
 
 
 {:.input_area}
@@ -224,6 +241,15 @@ for item in my_lst[0:-1]:
     print(item + 1)
 ```
 
+
+{:.output_stream}
+```
+1
+2
+
+```
+
+A) 0, 1, 2 | B) 0, 1 | C) 1, 2 | D) 2, 3 | E) 1, 2, 3
 
 ## `range`
 
@@ -335,20 +361,6 @@ for item in lst:
 
 What will the following code print out:
 
-```
-number = 1
-while True:
-    if number % 3 == 0:
-        break
-    print(number)
-    
-    number = number + 1
-```
-
-A) 1 | B) 1 2 | C) 1 2 3 | D) Something else | E) This code prints forever
-
-### Clicker Question Answer
-
 
 
 {:.input_area}
@@ -363,26 +375,11 @@ while True:
 ```
 
 
+A) 1 | B) 1 2 | C) 1 2 3 | D) Something else | E) This code prints forever
+
 ## Clicker Question #4
 
 What will be the value of counter after this code has run:
-
-```
-counter = 0
-my_lst = [False, True, False, True]
-
-
-for item in my_lst:
-    if item:
-        continue
-    else:
-        counter = counter + 1
-```
-
-ANSWERS
-A) 0 | B) 1 | C) 2 | D) 3 | E) 4
-
-### Clicker Question Answer
 
 
 
@@ -401,3 +398,5 @@ for item in my_lst:
 print(counter)
 ```
 
+
+A) 0 | B) 1 | C) 2 | D) 3 | E) 4

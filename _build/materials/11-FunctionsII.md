@@ -46,7 +46,7 @@ A) ['first', 'second', 'third'] | B) {1, 2, 3} | C) ['first', 1, 'second', 2, 't
 ## Methods
 
 <div class="alert alert-success">
-Methods are functions that are called directly on an object. 
+Methods are functions that are defined and called directly on an object. 
 </div>
 
 ### Method Examples
