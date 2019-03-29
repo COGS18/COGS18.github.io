@@ -1,8 +1,8 @@
 ---
 output:
   pdf_document: default
-  html_document: default
 ---
+
 # COGS 18: Introduction to Python
 **Spring 2019, MWF 9-9:50**  
 **Warren Lecture Hall 2001**
@@ -19,9 +19,9 @@ Note that this is the second time this course is being offered and the first tim
 
 # COURSE STAFF & INFORMATION
 
-Instructor: Shannon Ellis [sellis@ucsd.edu](sellis@ucsd.edu)
-Instructor Office Hours: Fridays, 3-5p (CSB 243)
-TA Office Hours: will be announced first week of class and this document will be updated 
+**Instructor**: Shannon Ellis [sellis@ucsd.edu](sellis@ucsd.edu)  
+**Instructor Office Hours**: Fridays, 3-5p (CSB 243)  
+**TA Office Hours**: will be announced first week of class and this document will be updated 
 
 | Role        | Name          					   | Section  |
 | -------------: |:-----------------------------------------------:|:-----------:|
@@ -35,10 +35,10 @@ TA Office Hours: will be announced first week of class and this document will be
 | IA	           | Miranda Go                                      |    Fri 10AM |
 | IA	           | Edward Chen                                   |     Fri 12PM |
 
-Course Website: https://cogs18.github.io 
-Course Piazza*: http://piazza.com/ucsd/spring2019/cogs18
-Course podcast/screencast: https://podcast.ucsd.edu/ 
-Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)  
+Course Website: https://cogs18.github.io   
+Course Piazza*: http://piazza.com/ucsd/spring2019/cogs18  
+Course podcast/screencast: https://podcast.ucsd.edu/  
+Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
 *You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. Your Instructor and TAs will be able to see who you are.
 
