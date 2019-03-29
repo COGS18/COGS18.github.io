@@ -27,13 +27,13 @@ Introduction to Python (COGS18) is a course offered by the Department of Cogniti
 ### Current Iteration
 
 {:.text-content}
-Introduction to Python is currently running for Spring Quarter 2019, for which you can check out the current [syllabus](../assets/intro/syllabus.md) and [schedule](../assets/intro/schedule_Sp19.pdf). Course lectures are recorded and are publicly available as screencasts from [here](https://podcast.ucsd.edu/?q=COGS18).
+Introduction to Python is currently running for Spring Quarter 2019, for which you can check out the current [syllabus](../assets/intro/syllabus.pdf) and [schedule](../assets/intro/schedule.pdf). Course lectures are recorded and are publicly available as screencasts from [here](https://podcast.ucsd.edu/?q=COGS18).
 
 {:.sub-title}
 ### Materials
 
 {:.text-content}
-All course materials are openly available and downloadable from this website. Materials presented during the course lectures are available [here](/materials/00-Introduction). The source material for everything hosted on this site is also available on [Github](https://github.com/COGS18).
+All course materials are openly available and downloadable from this website. Materials presented during the course lectures are available [here](/materials/00-Introduction). The source material for everything hosted on this site is also available on [GitHub](https://github.com/COGS18).
 
 
 {:.sub-title}
