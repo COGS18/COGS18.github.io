@@ -167,3 +167,27 @@ Documentation will be evaluated in terms of:
 *Code Tests (10%)*
 
 You must include at least one code test in your project, organized into a test file, in a test folder, and that uses pytest. This test should be a unit test of one of your custom functions and/or classes in your project, and should test that it executes, and test (at least some) expected outputs of the function, given some specified inputs.
+
+### External Code
+
+Your project may include external code - that can be code from the course (assignments, materials, and/or coding labs), code from fellow students, that you perhaps worked on together, and/or code from other sources. Note that this code is not considered original code for the project, and will not be graded. Please follow the following guidelines when doing so.
+
+##### Course Code
+
+You are welcome and even expected to take code from the course, in particular code from the assignments.
+
+##### Code co-developed with other student(s)
+
+You may work with other students on aspects of the project, if you are working on similar topics. For any code that was developed together, you can include this code in your project, and indicate that it was written together with another student. Note that each student will be graded primarily on the unique code that is submitted as part of their project.
+
+##### Third Party Code
+
+You may include third party code, external from the course, including demo code and available snippets of code you find available.
+
+##### Provide Attribution
+
+Clear attribution of code is important. Including external code, that you did not write, but failing to indicate that is code you did not write and passing it off as your own is (and will be considered) plagiarism. To cite code indicate in the docstring for the module / function / class or code segment that this code is external code, and include the source of the code.
+
+##### Modified Code
+
+It may also be the case that you originally start with code from an external source, but through your project you modify that code - perhaps refactoring it, reorganizing the code, and/ or editing and updating the code organization and functionality. If this is the case, also provide attribution and a link to source, but if you significantly update the code organization and/or functionality (refactoring the code, and/or updating functionality more than just updating naming, style and documentation), then you can and should indicate that this adapted code is to be considered part of your graded project code. 
