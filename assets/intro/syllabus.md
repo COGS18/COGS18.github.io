@@ -106,17 +106,17 @@ Discussion section will be used as a coding lab. As such, you will be provided w
 
 You should be signed up for a section for which you can attend. However, if you are unable to attend the section for which you are signed up, you are free to attend a different section any given week than the one in which you're assigned. You will receive attendance credit regardless of which section you attend. Note that this policy could change if too many people are attending one section each week. We intentionally have section capped at 35 people so that students can get help from their TAs and IAs.
 
-### Assignments (30\%)
+### Assignments (40\%)
 
-There will be four assignments, each worth ~8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays by 11:59PM. Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, answers will be released and assignments will no longer be able to be submitted for credit.
+There will be four assignments, each worth ~10\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays by 11:59PM. Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, answers will be released and assignments will no longer be able to be submitted for credit.
 
 ### Midterm (20\%)
 
 There will be an in-class midterm on Friday May 10th, during the sixth week of class. The midterm will be include multiple choice and short answer questions.
 
-### Final Project (35\%)
+### Final Project (25\%)
 
-Successful completion of this class will require you to complete an independent coding project worth 35\% of your final grade. We will discuss the details elsewhere; however, briefly, you will either (1) expand upon one of the class assignments adding original elements or (2) write original code for a project topic of your choosing.
+Successful completion of this class will require you to complete an independent coding project worth 25\% of your final grade. We will discuss the details elsewhere; however, briefly, you will either (1) expand upon one of the class assignments adding original elements or (2) write original code for a project topic of your choosing.
 
 
 ---
