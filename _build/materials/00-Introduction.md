@@ -15,19 +15,21 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Introduction to Python
 
-Thomas Donoghue
+Shannon Ellis
+
+**Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the oringal run of the course, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
 
 # Logistics
 
 - Who:
-    - Instructor: Tom Donoghue
-    - TAs: Daril Brown, Paolo Gabriel, Rob Loughnan
-    - IAs: Peilin, Luis, Brandon & Luke
+    - Instructor: Shannon Ellis 
+    - TAs: Charles Chen & Shreenivas Venkatama
+    - IAs: Weilun, Severine, Stephen, Myles, Miranda, Edward, & Ahrial
 
 - Where:
-    - Lectures MWF @ 9 am & Coding Lab Sections
+    - Lectures MWF @ 9 AM & Coding Lab Sections
     - Course Website: https://cogs18.github.io
-    - Piazza Page: https://piazza.com/ucsd/fall2018/cogs18
+    - Piazza Page: https://piazza.com/ucsd/spring2019/cogs18
 
 # Expectations & Approach
 
@@ -38,10 +40,9 @@ Thomas Donoghue
 
 # Course Requirements
 
-- Participation in peer instruction (clicker) questions, in lecture (8%) 
-- Pass/Fail coding labs, in section (12%)
+- Pass/Fail coding labs, in section (15%)
 - Assignments (40%) 
-- Midterm (15%)
+- Midterm (20%)
 - Final project (25%)
 
 ## Why Learn Computation?
@@ -105,8 +106,12 @@ print(c)
 
 - Python is open-source and accessible
 
-- Python is fun
+- Python is (er...can be?) fun
 
-# Okay... But What Can You Actually Do With It?
+## This is a Jupyter Notebook
 
-Let's have a look!
+Uses in COGS18:
+
+- lecture notes
+- assignments
+- coding labs
