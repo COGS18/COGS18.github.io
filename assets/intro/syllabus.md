@@ -1,5 +1,10 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # COGS 18: Introduction to Python
-**Spring 2019, MWF 9-9:50**
+**Spring 2019, MWF 9-9:50**  
 **Warren Lecture Hall 2001**
 
 ---
@@ -30,10 +35,10 @@ TA Office Hours: will be announced first week of class and this document will be
 | IA	           | Miranda Go                                      |    Fri 10AM |
 | IA	           | Edward Chen                                   |     Fri 12PM |
 
-Course Website: [https://cogs18.github.io ]
-Course Piazza*: [piazza.com/ucsd/spring2019/cogs18] 
-Course podcast/screencast: [https://podcast.ucsd.edu/]
-Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)
+Course Website: https://cogs18.github.io 
+Course Piazza*: http://piazza.com/ucsd/spring2019/cogs18
+Course podcast/screencast: https://podcast.ucsd.edu/ 
+Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)  
 
 *You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. Your Instructor and TAs will be able to see who you are.
 
@@ -72,7 +77,7 @@ Detailed instructors for these installations will be listed on the course websit
 **Grading**: 
 
 |         | \% of Grade          					   | Requirement  |
-| -------------: |:-----------------------------------------------:|:-----------:|
+| -------------: |:-----------------------------------------------:|:-----------|
 | Coding Lab           | 15\%				   | Attend & Participate in 6/8 Coding Labs |
 | Assignments 	           | 40\%           | Complete 4 Assignments |
 | Midterm           | 20\%                                      | Written in-class midterm |
@@ -86,8 +91,8 @@ All grades will be released on TritonED. We will try to send out automated alert
  
 ### Assignment Regrades
 
-We will work hard to grade everyone fairly and return assignments quickly. But, we know you also work hard and want you to receive the grade you?ve earned. Occasionally, grading mistakes do happen, and it's important to us to correct them.
-If you think there is a mistake in your grade, post to Piazza within 72 hours of your receipt of the grade. This post should include evidence of why you think your answer was correct (i.e. a specific reference to something said in lecture) and should point to the specific part of the assignment, reading quiz, or exam in question. Submit this post as a Question on Piazza, address it to ?Instructors,? and select the tag ?regrades.?
+We will work hard to grade everyone fairly and return assignments quickly. But, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them.
+If you think there is a mistake in your grade, post to Piazza within 72 hours of your receipt of the grade. This post should include evidence of why you think your answer was correct (i.e. a specific reference to something said in lecture) and should point to the specific part of the assignment, reading quiz, or exam in question. Submit this post as a Question on Piazza, address it to 'Instructors', and select the tag 'regrades'.
 
 ### Lecture Attendance
 
@@ -97,9 +102,9 @@ There is an opportunity; however, for extra credit when it comes to lecture atte
 
 ### Coding labs (15\%)
 
-Discussion section will be used as a coding lab. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and projects. Across the quarter there will be 8 coding labs. If you attend at least 6 of these, you will receive full credit for coding labs. For each lab under 6 that you attend, 5\% credit will be deducted. (For example, if you attend 5 of 8 coding labs, you?ll earn 10\% of the possible credit. If you attend 4, 5\%. If you attend 3 or fewer, you will not receive coding lab credit.) Note that to receive credit for a coding lab, you have to actually attend a section. These cannot be completed outside of section time. 
+Discussion section will be used as a coding lab. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and projects. Across the quarter there will be 8 coding labs. If you attend at least 6 of these, you will receive full credit for coding labs. For each lab under 6 that you attend, 5\% credit will be deducted. (For example, if you attend 5 of 8 coding labs, you'll earn 10\% of the possible credit. If you attend 4, 5\%. If you attend 3 or fewer, you will not receive coding lab credit.) Note that to receive credit for a coding lab, you have to actually attend a section. These cannot be completed outside of section time. 
 
-You should be signed up for a section for which you can attend. However, if you are unable to attend the section for which you are signed up, you are free to attend a different section any given week than the one in which you?re assigned. You will receive attendance credit regardless of which section you attend. Note that this policy could change if too many people are attending one section each week. We intentionally have section capped at 35 people so that students can get help from their TAs and IAs.
+You should be signed up for a section for which you can attend. However, if you are unable to attend the section for which you are signed up, you are free to attend a different section any given week than the one in which you're assigned. You will receive attendance credit regardless of which section you attend. Note that this policy could change if too many people are attending one section each week. We intentionally have section capped at 35 people so that students can get help from their TAs and IAs.
 
 ### Assignments (30\%)
 
@@ -125,43 +130,43 @@ This class will be a welcoming, inclusive, and harassment-free experience for ev
 
 At all times, you should be considerate and respectful. Always refrain from demeaning, discriminatory, or harassing behavior and speech. Last of all, take care of each other.
 
-If you have a concern, please speak with Dr. Ellis, your TAs, or IAs. If you are uncomfortable doing so, that?s ok! The [OPHD](https://blink.ucsd.edu/HR/policies/sexual/OPHD.html) (Office for the Prevention of Sexual Harassment and Discrimination) and [CARE](https://care.ucsd.edu/) (confidential advocacy and education office for sexual violence and gender-based violence) are wonderful resources on campus.  
+If you have a concern, please speak with Dr. Ellis, your TAs, or IAs. If you are uncomfortable doing so, that's ok! The [OPHD](https://blink.ucsd.edu/HR/policies/sexual/OPHD.html) (Office for the Prevention of Sexual Harassment and Discrimination) and [CARE](https://care.ucsd.edu/) (confidential advocacy and education office for sexual violence and gender-based violence) are wonderful resources on campus.  
 
 ### Academic Integrity
 
 Don't cheat.
 
-You are encouraged to (and at times will have to) work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is also your responsibility to ensure you understand everything your group has submitted and to make sure the correct file has been uploaded, that the upload is uncorrupted, and that it renders correctly. Projects may include ideas and code from other sources?but these other sources must be documented with clear attribution. Please review academic integrity policies [here](http://academicintegrity.ucsd.edu).
+You are encouraged to (and at times will have to) work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is also your responsibility to ensure you understand everything your group has submitted and to make sure the correct file has been uploaded, that the upload is uncorrupted, and that it renders correctly. Projects may include ideas and code from other sources, but these other sources must be documented with clear attribution. Please review academic integrity policies [here](http://academicintegrity.ucsd.edu).
 
-We anticipate you all doing well in this course; however, if you are feeling lost or overwhelmed, that?s ok! Should that occur, we recommend: (1) asking questions in class, (2) attending office hours and/or (3) asking for help on Piazza.
+We anticipate you all doing well in this course; however, if you are feeling lost or overwhelmed, that's ok! Should that occur, we recommend: (1) asking questions in class, (2) attending office hours and/or (3) asking for help on Piazza.
 
 
 Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, TritonED is down or something else prohibits you from being able to turn in an assignment on time, immediately contact me by emailing your assignment by email (sellis@ucsd.edu), or else it will be graded as late.
 
-### Disability? ?Access
+### Disability Access
 Students requesting accommodations due to a disability must provide a current Authorization for Accommodation (AFA) letter. These letters are issued by the Office for Students with Disabilities (OSD), which is located in University Center 202 behind Center Hall. Please make arrangements to contact Dr. Ellis privately to arrange accommodations.
 
-Contacting the OSD can help you further:
-858.534.4382 (phone) 
-[osd@ucsd.edu] (email) 
-[http://disabilities.ucsd.edu]
+Contacting the OSD can help you further:  
+858.534.4382 (phone)  
+osd@ucsd.edu (email)  
+http://disabilities.ucsd.edu  
 
 ### How to Get Your Question(s) Answered and/or Provide Feedback 
 
-It?s great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we?re able to get to everyone?s questions. 
+It's great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we're able to get to everyone's questions. 
 
-That said, to ensure that we?re respecting their time, TAs and IAs have been instructed they?re only obligated to answer questions between normal working hours (M-F 9am-5pm). However, I know that?s not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next day. As such, do your best not to wait until the last minute to ask a question.
+That said, to ensure that we're respecting their time, TAs and IAs have been instructed they're only obligated to answer questions between normal working hours (M-F 9am-5pm). However, I know that's not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next day. As such, do your best not to wait until the last minute to ask a question.
 
-If you have?
+If you have:
 
-- **questions about course content** - these are awesome! We want everyone to see them and have their questions answered too?so post these to Piazza! 
+- **questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so post these to Piazza! 
 - **a technical assignment question** - come to office hours (or post to Piazza). Answering technical questions is often best accomplished in person where we can discuss the question and talk through ideas. However, if that is not possible, post your question to Piazza. Be as specific as you can in the question you ask. And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
-- **been stuck on something for a while (>30min) and aren?t even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn?t working. That?s ok - we?ve all been there! IF you are stuck, you can and should reach out for help, even if you aren?t exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on Piazza). If you don?t have a specific question, include the information you have (what you?re stuck on, the code you?ve been trying that hasn?t been happening, and/or the error messages you?ve been getting).
+- **been stuck on something for a while (>30min) and aren't even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn't working. That's ok - we've all been there! IF you are stuck, you can and should reach out for help, even if you aren't exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on Piazza). If you don't have a specific question, include the information you have (what you're stuck on, the code you've been trying that hasn't been happening, and/or the error messages you've been getting).
 - **questions about course logistics** - first, check the syllabus. If the answer is not there, check or post on Piazza or ask a classmate.
-- **questions about a grade** - post as a question on Piazza, address it to ?Instructors,? and select the folder ?regrades?
+- **questions about a grade** - post as a question on Piazza, address it to 'Instructors,' and select the folder 'regrades'
 - **a specific section-related question** - send a direct message on Piazza to your TA/IA
 - **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Dr. Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS108 in the email subject line and your full name in your message.
-- **some feedback about the course you want to share anonymously** - If you?ve been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn?t but would rather not share this publicly, etc., please fill out the anonymous Google Form*
+- **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the anonymous Google Form*
 
-*This form can be taken down at any time if it?s not being used for its intended purpose; however, you all will be notified should that happen. 
+*This form can be taken down at any time if it's not being used for its intended purpose; however, you all will be notified should that happen. 
 

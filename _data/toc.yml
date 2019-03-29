@@ -16,10 +16,6 @@
   url: /intro
   not_numbered: true
   layout: home
-  sections: 
-  - title: Syllabus
-    url: /intro/syllabus
-    not_numbered: true
 
 - title: Materials
   url: /materials/00-Introduction
