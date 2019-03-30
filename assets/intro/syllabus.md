@@ -165,7 +165,7 @@ If you have:
 - **questions about course logistics** - first, check the syllabus. If the answer is not there, check or post on Piazza or ask a classmate.
 - **questions about a grade** - post as a question on Piazza, address it to 'Instructors,' and select the folder 'regrades'
 - **a specific section-related question** - send a direct message on Piazza to your TA/IA
-- **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Dr. Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS108 in the email subject line and your full name in your message.
+- **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Dr. Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS18 in the email subject line and your full name in your message.
 - **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the anonymous Google Form*
 
 *This form can be taken down at any time if it's not being used for its intended purpose; however, you all will be notified should that happen. 
