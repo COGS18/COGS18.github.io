@@ -179,10 +179,10 @@
   #   url: /assignments/A4-ArtificialAgents
   #   not_numbered: true
 
-- title: Projects
-  url: /projects/ProjectIdeas
-  not_numbered: true
-  sections:
-  - title: ProjectIdeas
-    url: /projects/ProjectIdeas
-    not_numbered: true
+#- title: Projects
+#  url: /projects/ProjectIdeas
+ # not_numbered: true
+  #sections:
+  #- title: ProjectIdeas
+   # url: /projects/ProjectIdeas
+    #not_numbered: true

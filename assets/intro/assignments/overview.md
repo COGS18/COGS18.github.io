@@ -11,11 +11,11 @@ Assignments will be done in Jupyter Notebooks. They will be released and submitt
 The schedule for assignments is as follows:
 
 |   | Name  | Topics  |  % of Grade  | Released  | Due Date |
-|-----: |:----------:|:---------------------|:----|:-------|:----------|
+|-----: |:----------|:---------------------|:----|:-------|:----------|
 | A1 | Getting Started | Variables, Operators & Conditionals | 10% | Mon 4/8 | Mon 4/15 (11:59 PM) |
 | A2 | Ciphers | Collections, Loops & Encodings | 10% | Mon 4/15 | Mon 4/22 (11:59 PM) |
 | A3 | Chatbots | Functions & Algorithms | 10% | Mon 4/22 | Mon 4/29 (11:59 PM) |
-| A4 | Artificial Agents | Objects: Classes & Methods | 10% | Mon 4/29 | Mon 5/6 (11:59 PM) |
+| A4 | Artificial Agents | Objects, Classes & Methods | 10% | Mon 4/29 | Mon 5/6 (11:59 PM) |
 
 
 Assignments are cumulative - previously covered topics may also appear in a future assignment.

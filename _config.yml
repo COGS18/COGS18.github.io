@@ -20,7 +20,7 @@ title: COGS 18 - Introduction To Python
 author: Tom Donoghue and Zehua Chen
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the class website for COGS 18 - Introduction To Python Fall @ UCSD
+  This is the class website for COGS 18 - Introduction To Python Spring 2019 @ UCSD
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cogs18.github.io" # the base hostname & protocol for your site, e.g. http://example.com
