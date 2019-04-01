@@ -17,7 +17,9 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 Shannon Ellis
 
-**Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the oringal run of the course, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
+**Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fal 2018, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
+
+The PDF slides from the start of the first class are available here: https://cogs18.github.io/assets/intro/01_welcome.pdf
 
 # Logistics
 
@@ -27,7 +29,7 @@ Shannon Ellis
     - IAs: Weilun, Severine, Stephen, Myles, Miranda, Edward, & Ahrial
 
 - Where:
-    - Lectures MWF @ 9 AM & Coding Lab Sections
+    - Lectures MWF @ 9 AM (WLH 2001) & Coding Lab Sections
     - Course Website: https://cogs18.github.io
     - Piazza Page: https://piazza.com/ucsd/spring2019/cogs18
 
