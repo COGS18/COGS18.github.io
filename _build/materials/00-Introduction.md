@@ -17,7 +17,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 Shannon Ellis
 
-**Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fal 2018, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
+**Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fall 2018, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
+
 
 The PDF slides from the start of the first class are available here: https://cogs18.github.io/assets/intro/01_welcome.pdf
 
@@ -33,19 +34,31 @@ The PDF slides from the start of the first class are available here: https://cog
     - Course Website: https://cogs18.github.io
     - Piazza Page: https://piazza.com/ucsd/spring2019/cogs18
 
+### Clicker Question #1
+
+**What is your current state with regards to datahub?**
+
+A. Have not yet tried to access datahub  
+B. Have tried to access datahub unsuccessfully  
+C. Have accessed datahub successfully  
+D. What is this datahub you speak of?  
+
+### Clicker Question #2
+
+**Do you have the Anaconda distribution of Python downloaded on your computer?**
+
+A. I do!  
+B. I attempted but was unsuccessful. 
+C. I have not yet tried.  
+D. I'm going to use my own Python distribution.  
+E. Huh?  
+
 # Expectations & Approach
 
 - Goal: to learn practical programming in Python
 - How: hands-on, community driven, skills based course, assignment & project driven
 - Lectures & Lab Sections will be used for interactive activities
 - Assignments, coding labs & a final project will be designed to get you coding
-
-# Course Requirements
-
-- Pass/Fail coding labs, in section (15%)
-- Assignments (40%) 
-- Midterm (20%)
-- Final project (25%)
 
 ## Why Learn Computation?
 
@@ -58,6 +71,7 @@ The PDF slides from the start of the first class are available here: https://cog
 
 - Python is a programming language
     - It is a way to do computation
+    - It gets the computer to do the work for you
 
 - Python is an ecosystem
     - It is a culture of practice for computation
@@ -107,8 +121,6 @@ print(c)
 - Python is human focused, with a strong user & developer community 
 
 - Python is open-source and accessible
-
-- Python is (er...can be?) fun
 
 ## This is a Jupyter Notebook
 
