@@ -21,19 +21,18 @@ Note that this is the second time this course is being offered and the first tim
 
 **Instructor**: Shannon Ellis [sellis@ucsd.edu](sellis@ucsd.edu)  
 **Instructor Office Hours**: Fridays, 3-5p (CSB 243)  
-**TA Office Hours**: will be announced first week of class and this document will be updated 
 
-| Role        | Name          					   | Section  |
-| -------------: |:--------------------------------------------:|:-----------|
-| TA 	           | Charles Chen				   | Wed 11AM, Fri 10AM |
-| TA 	           | Shreenivas Venkataramanan           | Mon 3PM, 4PM |
-| IA	           | Weilun Yao                                       | Wed 1PM, Fri 12PM |
-| IA	           | Severine Soltani                               |    Wed 11AM & 12PM |
-| IA	           | Stephen Jarrell                                 |    Wed 1PM, Fri 11AM |
-| IA	           | Ahrial Young                                     |    Fri 11AM |
-| IA	           | Myles Wright                                    |    Mon 3PM, 4PM |
-| IA	           | Miranda Go                                      |    Fri 10AM |
-| IA	           | Edward Chen                                   |     Wed 12PM, Fri 12PM |
+| Role        | Name          					   | Section  | Office Hours |
+| -------------: |:--------------------------------------------:|:-----------|:-----------|
+| TA 	           | Charles Chen				   | Wed 11AM, Fri 10AM | Wed 1-2PM (CSE 250A) |
+| TA 	           | Shreenivas Venkataramanan           | Mon 3PM, 4PM | TBD |
+| IA	           | Weilun Yao                                       | Wed 1PM, Fri 12PM | -- |
+| IA	           | Severine Soltani                               |    Wed 11AM & 12PM | -- |
+| IA	           | Stephen Jarrell                                 |    Wed 1PM, Fri 11AM | -- |
+| IA	           | Ahrial Young                                     |    Fri 11AM | -- |
+| IA	           | Myles Wright                                    |    Mon 3PM, 4PM | Tu 10-11AM |
+| IA	           | Miranda Go                                      |    Fri 10AM | -- |
+| IA	           | Edward Chen                                   |     Wed 12PM, Fri 12PM | -- |
 
 Course Website: https://cogs18.github.io   
 Course Piazza*: http://piazza.com/ucsd/spring2019/cogs18  
