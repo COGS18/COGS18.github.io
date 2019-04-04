@@ -8,8 +8,8 @@ prev_page:
   url: /materials/00-Introduction
   title: '00-Introduction'
 next_page:
-  url: /
-  title: ''
+  url: /assignments/A1-GettingStarted
+  title: 'Assignments'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
