@@ -4,8 +4,8 @@ download_link: assets/downloads/A1-GettingStarted.ipynb.zip
 layout: notebooks
 title: 'Assignments'
 prev_page:
-  url: /materials/01-Tools
-  title: '01-Tools'
+  url: /materials/02-JupyterNotebooks
+  title: '02-JupyterNotebooks'
 next_page:
   url: /assignments/A1-GettingStarted
   title: 'A1-GettingStarted'
