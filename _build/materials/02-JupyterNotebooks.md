@@ -8,8 +8,8 @@ prev_page:
   url: /materials/01-Tools
   title: '01-Tools'
 next_page:
-  url: /assignments/A1-GettingStarted
-  title: 'Assignments'
+  url: /labs/CL1-ProgrammingI
+  title: 'Coding Labs'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -22,12 +22,14 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - I've asked about the waitlist
     - I have not heard back. 
     - I'll talk to our staff later today, but I have no updates as of now.
+- Survey completed by Sunday (11:59 PM) for EC
 
 # Jupyter Notebooks
 
 - Markdown
 - code cells
 - kernel
+- variables
 
 <div class="alert alert-success">
 Jupyter notebooks are a way to combine executable code, code outputs, and text into one connected file.
@@ -79,6 +81,10 @@ Bold text requires __two underccores__ or **two asterisks**.
 
 you can write your markdown text here to determine the answer to the question
 
+___text___
+
+
+
 
 # Headers are specified with a pound sign
 
@@ -112,6 +118,10 @@ Lists are also possible:
 
 test it out down here to see...
 
+1. list item
+1. list item 
+1. list item
+
 ### Code Cells
 
 Whenever you're writing code, you'll want to be sure the cell is set to be a code cell
@@ -136,6 +146,12 @@ print(c)
 ```
 
 
+{:.output_stream}
+```
+-1
+
+```
+
 
 
 {:.input_area}
@@ -143,6 +159,16 @@ print(c)
 # If you execute a cell with just a variable name in it, it will also get printed
 c
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+-1
+```
+
 
 
 ### Running Cells
@@ -155,14 +181,12 @@ c
 
 Write code that outputs the value '6'
 
-
-
-{:.input_area}
-```python
 ## YOUR CODE HERE
-
-```
-
+a = 1
+b = 2
+c = 3
+print(a + b + c)
+c
 
 ### Clicker Question #3
 
@@ -264,7 +288,7 @@ a = 'string'
 
 {:.input_area}
 ```python
-a = 6
+a = 6 
 ```
 
 
@@ -322,6 +346,16 @@ my_variable
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+12
+```
+
+
+
 ## Code Variables != Math Variables
 
 In mathematics: `=` refers to equality (as a statement of truth).
@@ -344,13 +378,19 @@ After executing the following code, what will be the value of `my_var`?
 
 {:.input_area}
 ```python
-my_var = 2
+my_var = 2 
 
 my_var = my_var + 1
 
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+3
+
+```
 
 - A) 2
 - B) 3
@@ -359,7 +399,7 @@ print(my_var)
 
 ### Clicker Question #7
 
-After executing the following code, what will be the value of `my_var`?
+After executing the following code, what will be the value of `diff_var`?
 
 
 
@@ -371,10 +411,18 @@ print(diff_var)
 ```
 
 
+{:.output_stream}
+```
+9
+
+```
+
 - A) 4
-- B) 11
+- B) 9
 - C) "my_variable - my_var"
 - D) This code will fail
+
+Note: This was the example edited by Professor Ellis in class.
 
 ### Clicker Question #8
 
@@ -390,6 +438,32 @@ pring(diff_var)
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-14-27c0eca9ec40> in <module>()
+      1 diff_var = my_variable - my_var
+      2 
+----> 3 pring(diff_var)
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'pring' is not defined
+```
+
+
 - A) 4
 - B) 11
 - C) "my_variable - my_var"
@@ -399,56 +473,6 @@ pring(diff_var)
 
 - In programming `=` means assignment
 - Anything to the right of the `=` is evaluated before assignment
-
-## Namespace
-
-<div class="alert alert-success">
-The namespace is the 'place' where all your currently defined code is declared - all the things you have stored in active memory. 
-</div>
-
-
-
-{:.input_area}
-```python
-# You can list everything declated in the namespace with '%whos'
-%whos
-```
-
-
-## Declaring Variables Cheat Sheet
-
-- Names are always on the left of the `=`, values are always on the right
-- Names are case sensitive
-- Variables must start with letters
-    - After that, they can include numbers, and underscores
-    - They cannot include special characters (like &, *, #, etc)
-- Python doesn't care what you name you variables
-    - Humans do care. Pick names that describe the data / value that they store
-
-### Clicker Question #9
-
-After executing the following code, what will be the value of `var_2`?
-
-
-
-{:.input_area}
-```python
-var_2 = var_1 = 1
-
-print(var_2)
-```
-
-
-- A) 'var_1'
-- B) 1
-- C) 2
-- D) This code will fail
-
-### Reminders
-
-- There can be more than one assignment in a single line
-- Anything to the right of the `=` is evaluated before assignment
-    - This process proceeds from right to left
 
 <div class="alert alert-info">
 For more useful information, check out Jupyter Notebooks 
