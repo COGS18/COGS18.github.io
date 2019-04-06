@@ -25,7 +25,7 @@ Note that this is the second time this course is being offered and the first tim
 | Role        | Name          					   | Section  | Office Hours |
 | -------------: |:--------------------------------------------:|:-----------|:-----------|
 | TA 	           | Charles Chen				   | Wed 11AM, Fri 10AM | Wed 1-2PM (CSE Basement Benches) |
-| TA 	           | Shreenivas Venkataramanan           | Mon 3PM, 4PM | TBD |
+| TA 	           | Shreenivas Venkataramanan           | Mon 3PM, 4PM | Fri 6-7PM (CSE 114) |
 | IA	           | Weilun Yao                                       | Wed 1PM, Fri 12PM | -- |
 | IA	           | Severine Soltani                               |    Wed 11AM & 12PM | -- |
 | IA	           | Stephen Jarrell                                 |    Wed 1PM, Fri 11AM | -- |
