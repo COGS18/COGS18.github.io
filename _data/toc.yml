@@ -112,13 +112,13 @@
   #   url: /materials/MidtermPractice
   #   not_numbered: true
 
-# - title: Coding Labs
-#   url: /labs/CL1-ProgrammingI
-#   not_numbered: true
-#   sections:
-#   - title: CL1-ProgrammingI
-#     url: /labs/CL1-ProgrammingI
-#     not_numbered: true
+- title: Coding Labs
+  url: /labs/CL1-ProgrammingI
+  not_numbered: true
+  sections:
+  - title: CL1-ProgrammingI
+    url: /labs/CL1-ProgrammingI
+    not_numbered: true
   # - title: CL1B-Answers
   #   url: /labs/CL1B-Answers
   #   not_numbered: true
