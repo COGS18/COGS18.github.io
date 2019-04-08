@@ -78,7 +78,7 @@ print(var_2)
 - Python doesn't care what you name your variables
     - Humans do care. Pick names that describe the data / value that they store
 
-# Reserved Words
+## Reserved Words
 
 There are 33 words that are not allowed to be used for variable assignment in Python 3.6.
 
@@ -128,7 +128,7 @@ whos?
 ```
 
 
-# Variable Types
+## Variable Types
 
 <div class="alert alert-success">
 Every variable has a 'type', which refers to the kind of variable that it is, and how the computer stores that data.
@@ -418,7 +418,7 @@ Well, it's more efficient to point to an alias than to make an entirely new copy
 
 Python allows for the confusion, in favor of being more efficient.
 
-# Indentation
+## Indentation
 
 Just a word on indentation after a student question last class.
 
@@ -520,16 +520,6 @@ my_value
 ```
 
 
-
-
-
-{:.output_data_text}
-```
-5.25
-```
-
-
-
 - A) 0.218
 - B) 5.25
 - C) 20
@@ -553,31 +543,11 @@ Python also has `**` for exponentiation and `%` for remainder (called modulus). 
 
 
 
-
-{:.output_data_text}
-```
-8
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # remainder of 17 divided by 7
 17 % 7
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-3
-```
-
 
 
 ### Clicker #8
@@ -591,16 +561,6 @@ What would be the value stored in `modulo_time`?
 modulo_time = 4 ** 2 % 5
 modulo_time
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-1
-```
-
 
 
 - A) 0.2
