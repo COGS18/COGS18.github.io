@@ -29,10 +29,10 @@
     not_numbered: true
   - title: 02-JupyterNotebooks
     url: /materials/02-JupyterNotebooks
-  #   not_numbered: true
-  # - title: 03-Variables
-  #   url: /materials/03-Variables
-  #   not_numbered: true
+    not_numbered: true
+  - title: 03-Variables
+    url: /materials/03-Variables
+    not_numbered: true
   # - title: 04-Operators
   #   url: /materials/04-Operators
   #   not_numbered: true

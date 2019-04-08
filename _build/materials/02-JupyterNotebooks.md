@@ -8,8 +8,8 @@ prev_page:
   url: /materials/01-Tools
   title: '01-Tools'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/03-Variables
+  title: '03-Variables'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -181,12 +181,23 @@ c
 
 Write code that outputs the value '6'
 
+
+
+{:.input_area}
+```python
 ## YOUR CODE HERE
 a = 1
 b = 2
 c = 3
 print(a + b + c)
-c
+```
+
+
+{:.output_stream}
+```
+6
+
+```
 
 ### Clicker Question #3
 
@@ -435,32 +446,6 @@ After executing the following code, what will be the value of `my_var`?
 diff_var = my_variable - my_var
 
 pring(diff_var)
-```
-
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-14-27c0eca9ec40> in <module>()
-      1 diff_var = my_variable - my_var
-      2 
-----> 3 pring(diff_var)
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'pring' is not defined
 ```
 
 
