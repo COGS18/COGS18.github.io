@@ -8,8 +8,8 @@ prev_page:
   url: /materials/02-JupyterNotebooks
   title: '02-JupyterNotebooks'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/04-Operators
+  title: '04-Operators'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -41,8 +41,15 @@ c = a + 16
 b = 72
 my_variable = b + a
 my_variable
+print(b)
 ```
 
+
+{:.output_stream}
+```
+72
+
+```
 
 - A) 'string'
 - B) 88
@@ -62,6 +69,12 @@ var_2 = var_1 = 1
 print(var_2)
 ```
 
+
+{:.output_stream}
+```
+1
+
+```
 
 - a) 'var_1'
 - b) 1
@@ -92,6 +105,17 @@ Reserved words: False, None, True, and, as, assert, break, class, continue, def,
 ```python
 # you will get an error if you try to assign a variable to one of these words
 try = 6
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-4-1c44ba76d8f9>", line 2
+    try = 6
+        ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -128,6 +152,19 @@ whos?
 ```
 
 
+{:.output_stream}
+```
+Variable      Type    Data/Info
+-------------------------------
+a             int     16
+b             int     72
+c             int     32
+my_variable   int     88
+var_1         int     1
+var_2         int     1
+
+```
+
 ## Variable Types
 
 <div class="alert alert-success">
@@ -144,6 +181,16 @@ variable_name = 1
 # You can always ask Python 'what type is this variable' using:
 type(variable_name)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+int
+```
+
 
 
 ### Int
@@ -171,6 +218,16 @@ type(yet_another_integer)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+int
+```
+
+
+
 ### Float
 
 <div class="alert alert-success">
@@ -192,6 +249,16 @@ another_float = -231.45
 ```python
 type(another_float)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 ### String
@@ -216,8 +283,25 @@ and_another = "and some more"
 
 {:.input_area}
 ```python
+print(and_another)
 type(and_another)
 ```
+
+
+{:.output_stream}
+```
+and some more
+
+```
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
 
 
 #### Quotation Marks
@@ -235,11 +319,31 @@ my_string
 
 
 
+
+{:.output_data_text}
+```
+'This is a single-quoted string.'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 my_string = "This is a double-quoted string."
 my_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'This is a double-quoted string.'
+```
+
 
 
 Note that Python will put single quotes around it, even if you specify double quotes. 
@@ -269,6 +373,16 @@ type(another_bool)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+bool
+```
+
+
+
 ## None
 
 <div class="alert alert-success">
@@ -289,6 +403,16 @@ the_concept_of_nothing = None
 ```python
 type(the_concept_of_nothing)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+NoneType
+```
+
 
 
 ### Clicker #3
@@ -338,7 +462,18 @@ After executing the following code, what will the type of the variable `m` be?
 n = 1
 a = 'm'
 m = n
+type(m)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+int
+```
+
 
 
 - A) String
@@ -364,6 +499,12 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 Here, the value 1 is assigned to the variable `a`. We then make an alias of `a` and store that in the variable `b`. Now, the same value (1) is stored in both `a` (the original) and `b` (the alias).
 
 What if we change the value of the original variable (`a`) - what happens to `b`?
@@ -381,8 +522,18 @@ After executing the following code, what will the values stored in `a` and `b` b
 a = 1
 b = a
 a = 2
+
+print(a)
+print(b)
 ```
 
+
+{:.output_stream}
+```
+2
+1
+
+```
 
 - A) `a` and `b` both store 1
 - B) `a` and `b` both store 2
@@ -405,6 +556,32 @@ The variable types we've talked about today are all **immutable**. This means th
 # cannot change part of the string after creation
 immutable_string = 'COGS18 is the best'
 immutable_string[4] = '0'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-26-d41b86c24d16> in <module>()
+      1 # cannot change part of the string after creation
+      2 immutable_string = 'COGS18 is the best'
+----> 3 immutable_string[4] = '0'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -433,7 +610,18 @@ You will get an error if it Python runs into unanticipated whitespace.
 a = 1
     b = a
     
-    print(b)
+    print(b) 
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-27-b7d7efbb406d>", line 2
+    b = a
+    ^
+IndentationError: unexpected indent
+
 ```
 
 
@@ -474,13 +662,36 @@ print(2 + 3)
 ```
 
 
+{:.output_stream}
+```
+5
+
+```
+
 
 
 {:.input_area}
 ```python
 div_result = 4 / 2
 print(div_result)
+type(div_result)
 ```
+
+
+{:.output_stream}
+```
+2.0
+
+```
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 ### Order of Operations
@@ -496,6 +707,12 @@ print(order_operations)
 ```
 
 
+{:.output_stream}
+```
+11.0
+
+```
+
 To specify that you want the addition to occur first, you would use parentheses.
 
 
@@ -507,9 +724,15 @@ print(specify_operations)
 ```
 
 
+{:.output_stream}
+```
+9.5
+
+```
+
 ### Clicker #7
 
-What would be the value stored in `math_value`?
+What would be the value stored in `my_value`?
 
 
 
@@ -518,6 +741,16 @@ What would be the value stored in `math_value`?
 my_value = (3+2)+2/(16/2)
 my_value
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5.25
+```
+
 
 
 - A) 0.218
@@ -543,11 +776,31 @@ Python also has `**` for exponentiation and `%` for remainder (called modulus). 
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # remainder of 17 divided by 7
 17 % 7
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ### Clicker #8
@@ -561,6 +814,16 @@ What would be the value stored in `modulo_time`?
 modulo_time = 4 ** 2 % 5
 modulo_time
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1
+```
+
 
 
 - A) 0.2

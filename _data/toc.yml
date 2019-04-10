@@ -33,9 +33,9 @@
   - title: 03-Variables
     url: /materials/03-Variables
     not_numbered: true
-  # - title: 04-Operators
-  #   url: /materials/04-Operators
-  #   not_numbered: true
+  - title: 04-Operators
+    url: /materials/04-Operators
+    not_numbered: true
   # - title: 05-Conditionals
   #   url: /materials/05-Conditionals
   #   not_numbered: true
