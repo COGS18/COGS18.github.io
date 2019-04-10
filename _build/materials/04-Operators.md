@@ -59,12 +59,6 @@ print(a, 'remainder', b)
 ```
 
 
-{:.output_stream}
-```
-2 remainder 3
-
-```
-
 `//` is an operator for floor division (integer division)
 
 ### Clicker #1
@@ -108,30 +102,10 @@ True and True
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 True or True
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 
@@ -144,30 +118,10 @@ True and not False
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 not False
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 
@@ -177,16 +131,6 @@ True
 # two nots cancel one another out
 not (not True)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 ### Capitalization matters
@@ -199,32 +143,6 @@ True
 # 'TRUE' is not a boolean
 # 'True' is
 TRUE and TRUE
-```
-
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-21-9b3f2ee967bc> in <module>()
-      2 # 'TRUE' is not a boolean
-      3 # 'True' is
-----> 4 TRUE and TRUE
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'TRUE' is not defined
 ```
 
 
@@ -262,28 +180,12 @@ False and print("Hi")
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Continues to evaluate the expression
 True and print("Hi")
 ```
 
-
-{:.output_stream}
-```
-Hi
-
-```
 
 ### Clicker #3
 
@@ -295,16 +197,6 @@ What will the following boolean expression evaluate as?
 ```python
 True and not True or False
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-False
-```
-
 
 
 - A) True
@@ -322,16 +214,6 @@ What will the following boolean expression evaluate as:
 ```python
 True and not False
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 - A) True
@@ -362,30 +244,10 @@ True == True
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 True != False
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 
@@ -398,30 +260,10 @@ True
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 13 >= 12
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 ### Clicker #5
@@ -477,13 +319,6 @@ print(c is a)
 ```
 
 
-{:.output_stream}
-```
-True
-False
-
-```
-
  Two variables that are equal does **not** imply that they are identical.
 
 If we wanted that second statement to evaluate as `True` we could use `is not`...
@@ -496,28 +331,12 @@ print(c is not a)
 ```
 
 
-{:.output_stream}
-```
-True
-
-```
-
 
 
 {:.input_area}
 ```python
 a == b == c
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 ### Clicker #6
@@ -571,12 +390,6 @@ print('l' in x)
 ```
 
 
-{:.output_stream}
-```
-True
-
-```
-
 
 
 {:.input_area}
@@ -584,12 +397,6 @@ True
 print('L' in x)
 ```
 
-
-{:.output_stream}
-```
-False
-
-```
 
 
 
@@ -599,12 +406,6 @@ print('COGS' in x)
 ```
 
 
-{:.output_stream}
-```
-True
-
-```
-
 
 
 {:.input_area}
@@ -612,12 +413,6 @@ True
 print('CSOG' in x)
 ```
 
-
-{:.output_stream}
-```
-False
-
-```
 
 ## String Concatenation
 
@@ -631,16 +426,6 @@ Operators sometimes do different things on different types of variables. For exa
 ```python
 'a' + 'b' + 'c'
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-'abc'
-```
-
 
 
 ## Chaining Operators
@@ -660,16 +445,6 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 (13 % 7 >= 7)
@@ -678,30 +453,10 @@ False
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 ('COGS' + '18' == 'COGS18')
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 ### Clicker #7
@@ -738,30 +493,10 @@ Let's look at an example that could trip you up now.
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 'b' == ('a' or 'b')
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-False
-```
-
 
 
 ### Clicker #8
@@ -777,16 +512,6 @@ What would the code below return?
 ```
 
 
-
-
-
-{:.output_data_text}
-```
-False
-```
-
-
-
 - A) True
 - B) False
 - C) None 
@@ -799,16 +524,6 @@ False
 ```python
 'a' == ('b' and 'a')
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 
@@ -854,12 +569,6 @@ if condition:
 ```
 
 
-{:.output_stream}
-```
-This code executes if the condition evaluates as True.
-
-```
-
 ## Conditional: else
 
 <div class="alert alert-success">
@@ -878,12 +587,6 @@ else:
     print('This code executes if the condition evaluates as False')
 ```
 
-
-{:.output_stream}
-```
-This code executes if the condition evaluates as True.
-
-```
 
 ## Conditional: elif
 
@@ -907,12 +610,6 @@ else:
 ```
 
 
-{:.output_stream}
-```
-This code executes if both condition_1 and condition_2 evaluate as False
-
-```
-
 ## Conditionals With Value Comparisons
 
 <div class="alert alert-success">
@@ -933,9 +630,3 @@ else:
     print("Get yourself a programming language!")
 ```
 
-
-{:.output_stream}
-```
-Yay!
-
-```
