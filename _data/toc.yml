@@ -119,12 +119,12 @@
   - title: CL1-ProgrammingI
     url: /labs/CL1-ProgrammingI
     not_numbered: true
-  # - title: CL1B-Answers
-  #   url: /labs/CL1B-Answers
-  #   not_numbered: true
-  # - title: CL2-ProgrammingII
-  #   url: /labs/CL2-ProgrammingII
-  #   not_numbered: true
+  - title: CL1B-Answers
+    url: /labs/CL1B-Answers
+    not_numbered: true
+  - title: CL2-ProgrammingII
+    url: /labs/CL2-ProgrammingII
+    not_numbered: true
   # - title: CL2B-Answers
   #   url: /labs/CL2B-Answers
   #   not_numbered: true
