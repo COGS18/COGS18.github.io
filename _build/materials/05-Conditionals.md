@@ -42,31 +42,11 @@ bool(empty_string)
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 nonempty_string = 'string has something in it'
 bool(nonempty_string)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 2.  For `and` operator if left value is `True`, then right value is checked and returned. If left value is `False`, then that left value is returned.
@@ -82,30 +62,10 @@ True and False
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 bool('a')
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 
@@ -118,30 +78,10 @@ True
 
 
 
-
-{:.output_data_text}
-```
-'b'
-```
-
-
-
-
-
 {:.input_area}
 ```python
 'b' and 'a'
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-'a'
-```
-
 
 
 ### Clicker Question #1
@@ -154,16 +94,6 @@ What would the following code cell return?
 ```python
 '' and 'a'
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-''
-```
-
 
 
 - A) ''
@@ -182,31 +112,11 @@ What would the following code cell return?
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # the left value in parentheses is True
 'a' == ('a' and 'b')
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-False
-```
-
 
 
 
@@ -220,32 +130,12 @@ False
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # what we actually wanted python to do
 # to look at a in a and b
 'a' == 'a' and 'a' == 'b' 
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-False
-```
-
 
 
 3. For `or` operator if left value is `True`, then it is returned, otherwise if left value is `False`, then right value is returned.
@@ -260,30 +150,10 @@ False
 
 
 
-
-{:.output_data_text}
-```
-'a'
-```
-
-
-
-
-
 {:.input_area}
 ```python
 '' or 'b'
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-'b'
-```
-
 
 
 
@@ -296,30 +166,10 @@ False
 
 
 
-
-{:.output_data_text}
-```
-''
-```
-
-
-
-
-
 {:.input_area}
 ```python
 'b' or ''
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-'b'
-```
-
 
 
 
@@ -332,30 +182,10 @@ False
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 'b' == ('a' or 'b')
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-False
-```
-
 
 
 ### Clicker Question #2
@@ -368,16 +198,6 @@ What would the following code cell return?
 ```python
 'a' == ('' or 'a')
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 - A) ''
@@ -408,13 +228,6 @@ print(c is a)
 ```
 
 
-{:.output_stream}
-```
-True
-False
-
-```
-
 
 
 {:.input_area}
@@ -422,12 +235,6 @@ False
 print(id(a), id(b), id(c))
 ```
 
-
-{:.output_stream}
-```
-4578650352 4578650352 4578650320
-
-```
 
 A **new object** is created each time we have a variable that makes reference to it, but there are *few notable exceptions*:
 
@@ -460,27 +267,11 @@ simple_string is simple_string2
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 print(id(simple_string), id(simple_string2))
 ```
 
-
-{:.output_stream}
-```
-4537041168 4537041168
-
-```
 
 
 
@@ -501,27 +292,11 @@ longer_string is longer_string2
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 print(id(longer_string), id(longer_string2))
 ```
 
-
-{:.output_stream}
-```
-4579331792 4579331696
-
-```
 
 Python implementation front loads an array of integers between -5 to 256, so these objects *already exist*.
 
@@ -542,12 +317,6 @@ print(id(d), id(e))
 ```
 
 
-{:.output_stream}
-```
-4534097456 4534097456
-
-```
-
 
 
 {:.input_area}
@@ -555,12 +324,6 @@ print(id(d), id(e))
 print(d is e)
 ```
 
-
-{:.output_stream}
-```
-True
-
-```
 
 
 
@@ -578,13 +341,6 @@ true_variable_string = l is m
 print(true_variable_integer, true_variable_string)
 ```
 
-
-{:.output_stream}
-```
-True True
-False False
-
-```
 
 
 
@@ -632,12 +388,6 @@ print(true_variable, false_variable)
 ```
 
 
-{:.output_stream}
-```
-True False
-
-```
-
 # Conditionals
 
 - `if`
@@ -660,12 +410,6 @@ if condition:
     print('This code executes if the condition evaluates as True.')
 ```
 
-
-{:.output_stream}
-```
-This code executes if the condition evaluates as True.
-
-```
 
 ### Clicker Question #4
 
@@ -704,12 +448,6 @@ else:
     print('This code executes if the condition evaluates as False')
 ```
 
-
-{:.output_stream}
-```
-This code executes if the condition evaluates as True.
-
-```
 
 ### Clicker Question #5
 
@@ -754,12 +492,6 @@ else:
 ```
 
 
-{:.output_stream}
-```
-This code executes if both condition_1 and condition_2 evaluate as False
-
-```
-
 ### `elif` without an `else`
 
 An else statement is not required, but if both the `if` and the `elif` condtions are not met (both evaluate as `False`), then nothing is returned.
@@ -799,17 +531,6 @@ elif condition_2:
 ```
 
 
-
-{:.output_traceback_line}
-```
-  File "<ipython-input-55-c94763108fe2>", line 8
-    elif condition_2:
-       ^
-SyntaxError: invalid syntax
-
-```
-
-
 ## Conditionals With Value Comparisons
 
 <div class="alert alert-success">
@@ -831,12 +552,6 @@ else:
 ```
 
 
-{:.output_stream}
-```
-Get yourself a programming language!
-
-```
-
 
 
 {:.input_area}
@@ -854,13 +569,6 @@ elif number > 5:
 print('After Conditional')
 ```
 
-
-{:.output_stream}
-```
-Before Conditional
-After Conditional
-
-```
 
 ### Clicker Question #6
 
@@ -880,12 +588,6 @@ else:
     print("Ringo")
 ```
 
-
-{:.output_stream}
-```
-Paul
-
-```
 
 - A) John 
 - B) Paul, George, Ringo 
@@ -909,12 +611,6 @@ else:
     print("I didn't do math")
 ```
 
-
-{:.output_stream}
-```
-I did Math
-
-```
 
 - A) I did Math 
 - B) I broke Math
@@ -941,12 +637,6 @@ else:
     print("I'm here.")
 ```
 
-
-{:.output_stream}
-```
-Yay Python!
-
-```
 
 - A) Yay Python!
 - B) Oh no.
@@ -989,12 +679,6 @@ print(lst)
 ```
 
 
-{:.output_stream}
-```
-[1, 'a', True]
-
-```
-
 
 
 {:.input_area}
@@ -1002,16 +686,6 @@ print(lst)
 # Check the type of a list
 type(lst)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-list
-```
-
 
 
 ### Indexing
@@ -1041,28 +715,12 @@ print(my_lst[2])
 
 
 
-
-{:.output_data_text}
-```
-'Richard'
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Indexing: Count backward, starting at -1, with negative numbers
 print(my_lst[-1])
 ```
 
-
-{:.output_stream}
-```
-Timmy
-
-```
 
 
 
@@ -1072,12 +730,6 @@ Timmy
 print(my_lst[2:4])
 ```
 
-
-{:.output_stream}
-```
-['Richard', 'George']
-
-```
 
 ### Index Practices
 
@@ -1100,16 +752,6 @@ example_lst[-3]
 
 
 
-
-{:.output_data_text}
-```
-3
-```
-
-
-
-
-
 {:.input_area}
 ```python
 example_lst[2]
@@ -1118,30 +760,10 @@ example_lst[2]
 
 
 
-
-{:.output_data_text}
-```
-3
-```
-
-
-
-
-
 {:.input_area}
 ```python
 example_lst[1:3]
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-[2, 3]
-```
-
 
 
 ### Clicker Question #9
@@ -1155,16 +777,6 @@ What will be the output of the following piece of code:
 q1_lst = ['a', 'b', 'c','d']
 q1_lst[-3:-1]
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-['b', 'c']
-```
-
 
 
 - a) 'a', 'b', 'c'
