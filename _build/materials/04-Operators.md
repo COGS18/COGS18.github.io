@@ -8,8 +8,8 @@ prev_page:
   url: /materials/03-Variables
   title: '03-Variables'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/05-Conditionals
+  title: '05-Conditionals'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -59,6 +59,12 @@ print(a, 'remainder', b)
 ```
 
 
+{:.output_stream}
+```
+2 remainder 3
+
+```
+
 `//` is an operator for floor division (integer division)
 
 ### Clicker #1
@@ -70,13 +76,27 @@ What value is stored in `math_out` from the code below?
 {:.input_area}
 ```python
 math_out = 32 / (1 + 3) ** 2 
+math_out
+(1 + 3) ** 2
 ```
 
 
-- A) 8
+
+
+
+{:.output_data_text}
+```
+16
+```
+
+
+
+- A) 2
 - B) 16
 - C) 64
 - D) This code will fail
+
+Note: I edited this clicker question b/c the first one I added had a typo...again. I promised that I wouldn't make any more clicker question mistakes the rest of the quarter.
 
 ## Logical (Boolean) operators
 - use Boolean logic
@@ -102,10 +122,30 @@ True and True
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 True or True
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -118,10 +158,30 @@ True and not False
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 not False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -131,6 +191,16 @@ not False
 # two nots cancel one another out
 not (not True)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Capitalization matters
@@ -146,6 +216,32 @@ TRUE and TRUE
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-16-9b3f2ee967bc> in <module>()
+      2 # 'TRUE' is not a boolean
+      3 # 'True' is
+----> 4 TRUE and TRUE
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'TRUE' is not defined
+```
+
+
 ### Clicker #2
 
 What will the following boolean expression evaluate as:
@@ -156,6 +252,16 @@ What will the following boolean expression evaluate as:
 ```python
 True and False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -180,12 +286,42 @@ False and print("Hi")
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Continues to evaluate the expression
 True and print("Hi")
 ```
 
+
+{:.output_stream}
+```
+Hi
+
+```
+
+
+
+{:.input_area}
+```python
+print("Hi") and False
+```
+
+
+{:.output_stream}
+```
+Hi
+
+```
 
 ### Clicker #3
 
@@ -197,6 +333,16 @@ What will the following boolean expression evaluate as?
 ```python
 True and not True or False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -214,6 +360,16 @@ What will the following boolean expression evaluate as:
 ```python
 True and not False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 - A) True
@@ -244,10 +400,30 @@ True == True
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 True != False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -260,10 +436,30 @@ True != False
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
-13 >= 12
+12 <= 13
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Clicker #5
@@ -282,11 +478,21 @@ Start with the code in the following cell. Replace `---` with values that will e
 {:.input_area}
 ```python
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 95
+shield_energy = 105
 
-(sword_charge --- ---) and (shield_energy --- ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ## Identity Operators
@@ -319,6 +525,13 @@ print(c is a)
 ```
 
 
+{:.output_stream}
+```
+True
+False
+
+```
+
  Two variables that are equal does **not** imply that they are identical.
 
 If we wanted that second statement to evaluate as `True` we could use `is not`...
@@ -331,12 +544,28 @@ print(c is not a)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
 ```python
 a == b == c
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Clicker #6
@@ -353,20 +582,26 @@ Using the variables provded below and identity operators replace `---` with code
 
 {:.input_area}
 ```python
-a = 5
-b = 5
+z = 5
+x = '5'
 c = 'Hello'
 d = c
 e = [1,2,3]
 f = [1,2,3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = d is c
+false_variable = z is x
 
 print(true_variable, false_variable)
 ```
 
+
+{:.output_stream}
+```
+True False
+
+```
 
 ## Membership Operators
 
@@ -390,6 +625,12 @@ print('l' in x)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -397,6 +638,12 @@ print('l' in x)
 print('L' in x)
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 
 
@@ -406,6 +653,12 @@ print('COGS' in x)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -413,6 +666,12 @@ print('COGS' in x)
 print('CSOG' in x)
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 ## String Concatenation
 
@@ -426,6 +685,16 @@ Operators sometimes do different things on different types of variables. For exa
 ```python
 'a' + 'b' + 'c'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'abc'
+```
+
 
 
 ## Chaining Operators
@@ -445,6 +714,16 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 (13 % 7 >= 7)
@@ -453,10 +732,30 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ('COGS' + '18' == 'COGS18')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Clicker #7
@@ -469,6 +768,16 @@ What will the following expression evaluate as:
 ```python
 2**2 >= 4 and 13%3 > 1
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - a) True
@@ -493,10 +802,30 @@ Let's look at an example that could trip you up now.
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' == ('a' or 'b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ### Clicker #8
@@ -509,7 +838,18 @@ What would the code below return?
 {:.input_area}
 ```python
 'a' == ('a' and 'b')
+
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -523,8 +863,15 @@ What would the code below return?
 {:.input_area}
 ```python
 'a' == ('b' and 'a')
+print('b' and 'a')
 ```
 
+
+{:.output_stream}
+```
+a
+
+```
 
 
 
@@ -538,6 +885,16 @@ What would the code below return?
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # how we'd specify to python to see 
@@ -546,87 +903,12 @@ What would the code below return?
 ```
 
 
-# Conditionals
-
-- `if`
-- `elif`
-- `else`
-
-## Conditionals: if
-
-<div class="alert alert-success">
-Conditionals are statements that check for a condition, using the `if` statement, and then only execute a set of code if the condition evaluates as `True`.
-</div>
 
 
 
-{:.input_area}
-```python
-condition = True
-
-if condition:
-    print('This code executes if the condition evaluates as True.')
+{:.output_data_text}
+```
+False
 ```
 
-
-## Conditional: else
-
-<div class="alert alert-success">
-After an `if`, you can use an `else` that will run if the conditional(s) above have not run.
-</div>
-
-
-
-{:.input_area}
-```python
-condition = True
-
-if condition:
-    print('This code executes if the condition evaluates as True.')
-else: 
-    print('This code executes if the condition evaluates as False')
-```
-
-
-## Conditional: elif
-
-<div class="alert alert-success">
-After an `if` statement, you can have any number of `elif`'s (meaning 'else if') to check other conditions.
-</div>
-
-
-
-{:.input_area}
-```python
-condition_1 = False
-condition_2 = False
-
-if condition_1:
-    print('This code executes if condition_1 evaluates as True.')
-elif condition_2:
-    print('This code executes if condition_1 did not evaluate as True, but condition_2 does.')
-else: 
-    print('This code executes if both condition_1 and condition_2 evaluate as False')
-```
-
-
-## Conditionals With Value Comparisons
-
-<div class="alert alert-success">
-Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
-</div>
-
-
-
-{:.input_area}
-```python
-language = "Python"
-
-if language == "Python":
-    print("Yay!")
-elif language == "Perl":
-    print("Oh no.")
-else:
-    print("Get yourself a programming language!")
-```
 
