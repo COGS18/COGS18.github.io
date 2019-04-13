@@ -42,11 +42,31 @@ bool(empty_string)
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 nonempty_string = 'string has something in it'
 bool(nonempty_string)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 2.  For `and` operator if left value is `True`, then right value is checked and returned. If left value is `False`, then that left value is returned.
@@ -62,10 +82,30 @@ True and False
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bool('a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -78,10 +118,30 @@ bool('a')
 
 
 
+
+{:.output_data_text}
+```
+'b'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' and 'a'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'a'
+```
+
 
 
 ### Clicker Question #1
@@ -94,6 +154,16 @@ What would the following code cell return?
 ```python
 '' and 'a'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+''
+```
+
 
 
 - A) ''
@@ -112,11 +182,85 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+'b' and 'a'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'a'
+```
+
+
+
+
+
+{:.input_area}
+```python
+'a' and 'b'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
+
+
+
+
+{:.input_area}
+```python
+bool('a')
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # the left value in parentheses is True
 'a' == ('a' and 'b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -130,12 +274,32 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # what we actually wanted python to do
 # to look at a in a and b
 'a' == 'a' and 'a' == 'b' 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 3. For `or` operator if left value is `True`, then it is returned, otherwise if left value is `False`, then right value is returned.
@@ -150,10 +314,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+'a'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 '' or 'b'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
 
 
 
@@ -166,10 +350,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+''
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' or ''
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
 
 
 
@@ -182,10 +386,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' == ('a' or 'b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ### Clicker Question #2
@@ -198,6 +422,16 @@ What would the following code cell return?
 ```python
 'a' == ('' or 'a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 - A) ''
@@ -228,6 +462,13 @@ print(c is a)
 ```
 
 
+{:.output_stream}
+```
+True
+False
+
+```
+
 
 
 {:.input_area}
@@ -235,6 +476,12 @@ print(c is a)
 print(id(a), id(b), id(c))
 ```
 
+
+{:.output_stream}
+```
+4589246640 4589246640 4589246544
+
+```
 
 A **new object** is created each time we have a variable that makes reference to it, but there are *few notable exceptions*:
 
@@ -267,11 +514,27 @@ simple_string is simple_string2
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(id(simple_string), id(simple_string2))
 ```
 
+
+{:.output_stream}
+```
+4548239632 4548239632
+
+```
 
 
 
@@ -292,11 +555,27 @@ longer_string is longer_string2
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(id(longer_string), id(longer_string2))
 ```
 
+
+{:.output_stream}
+```
+4589200656 4589200464
+
+```
 
 Python implementation front loads an array of integers between -5 to 256, so these objects *already exist*.
 
@@ -317,6 +596,12 @@ print(id(d), id(e))
 ```
 
 
+{:.output_stream}
+```
+4545295920 4545295920
+
+```
+
 
 
 {:.input_area}
@@ -324,6 +609,12 @@ print(id(d), id(e))
 print(d is e)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 
 
@@ -342,6 +633,12 @@ print(true_variable_integer, true_variable_string)
 ```
 
 
+{:.output_stream}
+```
+True True
+
+```
+
 
 
 {:.input_area}
@@ -358,6 +655,12 @@ false_variable_string = p is q
 print(false_variable_integer, false_variable_string)
 ```
 
+
+{:.output_stream}
+```
+False False
+
+```
 
 ### Clicker #3
 
@@ -381,12 +684,18 @@ f = 567
 g = 567
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = a is c
+false_variable = f is g
 
 print(true_variable, false_variable)
 ```
 
+
+{:.output_stream}
+```
+True False
+
+```
 
 # Conditionals
 
@@ -423,12 +732,18 @@ Replace `---` below with something that will print 'True'
 
 {:.input_area}
 ```python
-math = ---
+math = True
 
 if math:
     print('True')
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 ## Conditional: else
 
@@ -440,7 +755,7 @@ After an `if`, you can use an `else` that will run if the conditional(s) above h
 
 {:.input_area}
 ```python
-condition = True
+condition = False
 
 if condition:
     print('This code executes if the condition evaluates as True.')
@@ -448,6 +763,12 @@ else:
     print('This code executes if the condition evaluates as False')
 ```
 
+
+{:.output_stream}
+```
+This code executes if the condition evaluates as False
+
+```
 
 ### Clicker Question #5
 
@@ -461,7 +782,7 @@ Replace `---` below with something that will print 'False'.
 
 {:.input_area}
 ```python
-my_value = ---
+my_value = False
 
 if my_value:
     print('True')
@@ -469,6 +790,12 @@ else:
     print('False')
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 ## Conditional: elif
 
@@ -481,7 +808,7 @@ After an if statement, you can have any number of `elif`'s (meaning 'else if') t
 {:.input_area}
 ```python
 condition_1 = False
-condition_2 = False
+condition_2 = True
 
 if condition_1:
     print('This code executes if condition_1 evaluates as True.')
@@ -491,6 +818,12 @@ else:
     print('This code executes if both condition_1 and condition_2 evaluate as False')
 ```
 
+
+{:.output_stream}
+```
+This code executes if condition_1 did not evaluate as True, but condition_2 does.
+
+```
 
 ### `elif` without an `else`
 
@@ -531,6 +864,17 @@ elif condition_2:
 ```
 
 
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-53-aedfc0cec5db>", line 9
+    elif condition_2:
+       ^
+SyntaxError: invalid syntax
+
+```
+
+
 ## Conditionals With Value Comparisons
 
 <div class="alert alert-success">
@@ -552,12 +896,18 @@ else:
 ```
 
 
+{:.output_stream}
+```
+Yay!
+
+```
+
 
 
 {:.input_area}
 ```python
 # Exploring conditionals
-number = 5
+number = 6
 
 print('Before Conditional')
  
@@ -569,6 +919,14 @@ elif number > 5:
 print('After Conditional')
 ```
 
+
+{:.output_stream}
+```
+Before Conditional
+    elif statement execution
+After Conditional
+
+```
 
 ### Clicker Question #6
 
@@ -588,6 +946,12 @@ else:
     print("Ringo")
 ```
 
+
+{:.output_stream}
+```
+Paul
+
+```
 
 - A) John 
 - B) Paul, George, Ringo 
@@ -612,6 +976,12 @@ else:
 ```
 
 
+{:.output_stream}
+```
+I did Math
+
+```
+
 - A) I did Math 
 - B) I broke Math
 - C) I didn't do math
@@ -625,7 +995,7 @@ What will the following code snippet print out:
 
 {:.input_area}
 ```python
-conditional = True
+conditional = False
 python = "great"
 
 if conditional:
@@ -637,6 +1007,12 @@ else:
     print("I'm here.")
 ```
 
+
+{:.output_stream}
+```
+I'm here.
+
+```
 
 - A) Yay Python!
 - B) Oh no.
@@ -650,143 +1026,3 @@ else:
 - At most one component (`if` / `elif` / `else`) of a conditional will run
 - The order of conditional blocks is always `if` then `elif`(s) then `else`
 - Code is only ever executed if the condition is met
-
-# Collections
-
-## Collections: Lists
-
-<div class="alert alert-success">
-A list is a mutable collection of ordered items, that can be of mixed type. Lists are created using square brackets.
-</div>
-
-### List examples
-
-
-
-{:.input_area}
-```python
-# Define a list
-lst = [1, 'a', True]
-```
-
-
-
-
-{:.input_area}
-```python
-# Print out the contents of a list
-print(lst)
-```
-
-
-
-
-{:.input_area}
-```python
-# Check the type of a list
-type(lst)
-```
-
-
-### Indexing
-
-<div class="alert alert-success">
-Indexing refers to selecting an item from within a collection. Indexing is done with square brackets.
-</div>
-
-
-
-{:.input_area}
-```python
-# Indexing: Count forward, starting at 0, with positive numbers
-print(my_lst[2])# Define a list 
-my_lst = ['Julian', 'Anne', 'Richard', 'George', 'Timmy']
-```
-
-
-
-
-{:.input_area}
-```python
-# Indexing: Count forward, starting at 0, with positive numbers
-print(my_lst[2])
-```
-
-
-
-
-{:.input_area}
-```python
-# Indexing: Count backward, starting at -1, with negative numbers
-print(my_lst[-1])
-```
-
-
-
-
-{:.input_area}
-```python
-# Indexing: Grab a group of adjacent items using `start:stop`, called a slice
-print(my_lst[2:4])
-```
-
-
-### Index Practices
-
-
-
-{:.input_area}
-```python
-# Define a list for the examples
-example_lst = [1, 2, 3, 4, 5]
-```
-
-
-
-
-{:.input_area}
-```python
-example_lst[-3]
-```
-
-
-
-
-{:.input_area}
-```python
-example_lst[2]
-```
-
-
-
-
-{:.input_area}
-```python
-example_lst[1:3]
-```
-
-
-### Clicker Question #9
-
-What will be the output of the following piece of code:
-
-
-
-{:.input_area}
-```python
-q1_lst = ['a', 'b', 'c','d']
-q1_lst[-3:-1]
-```
-
-
-- a) 'a', 'b', 'c'
-- b) 'c', 'b', 'a'
-- c) 'c', 'b'
-- d) 'b', 'c', 'd'
-- e) 'b', 'c'
-
-### Reminders
-
-- Negative indices index backwards through a collection
-- A sequence of indices (called a slice) can be accessed using start:stop
-    - In this contstruction, `start` is included then every element until `stop`, not including `stop` itself
