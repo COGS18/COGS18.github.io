@@ -44,12 +44,6 @@ print(my_var)
 ```
 
 
-{:.output_stream}
-```
-20
-
-```
-
 - A) This code will not run
 - B) 18
 - C) 20
@@ -90,12 +84,6 @@ else:
 ```
 
 
-{:.output_stream}
-```
-SO GOOD!
-
-```
-
 - A) SO GOOD!
 - B) NOT SO GOOD.
 - C) True
@@ -135,12 +123,6 @@ print(lst)
 ```
 
 
-{:.output_stream}
-```
-[1, 'a', True]
-
-```
-
 
 
 {:.input_area}
@@ -148,16 +130,6 @@ print(lst)
 # Check the type of a list
 type(lst)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-list
-```
-
 
 
 ### Clicker Question #1
@@ -206,12 +178,6 @@ print(my_lst[1])
 ```
 
 
-{:.output_stream}
-```
-Amal
-
-```
-
 
 
 {:.input_area}
@@ -220,12 +186,6 @@ Amal
 print(my_lst[-1])
 ```
 
-
-{:.output_stream}
-```
-Xuan
-
-```
 
 
 
@@ -236,12 +196,6 @@ print(my_lst[2:4])
 ```
 
 
-{:.output_stream}
-```
-['Richard', 'Juan']
-
-```
-
 
 
 {:.input_area}
@@ -250,12 +204,6 @@ print(my_lst[2:4])
 print(my_lst[2:])
 ```
 
-
-{:.output_stream}
-```
-['Richard', 'Juan', 'Xuan']
-
-```
 
 
 
@@ -266,12 +214,6 @@ print(my_lst[:4])
 ```
 
 
-{:.output_stream}
-```
-['Julian', 'Amal', 'Richard', 'Juan']
-
-```
-
 
 
 {:.input_area}
@@ -280,12 +222,6 @@ print(my_lst[:4])
 print(my_lst[0:4:2])
 ```
 
-
-{:.output_stream}
-```
-['Julian', 'Richard']
-
-```
 
 ### Index Practices
 
@@ -308,16 +244,6 @@ example_lst[2]
 
 
 
-
-{:.output_data_text}
-```
-3
-```
-
-
-
-
-
 {:.input_area}
 ```python
 example_lst[-3]
@@ -326,30 +252,10 @@ example_lst[-3]
 
 
 
-
-{:.output_data_text}
-```
-3
-```
-
-
-
-
-
 {:.input_area}
 ```python
 example_lst[1:3]
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-[2, 3]
-```
-
 
 
 ### Clicker Question #2
@@ -363,16 +269,6 @@ What will be the output of the following piece of code:
 q2_lst = ['a', 'b', 'c','d']
 q2_lst[-3:-1]
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-['b', 'c']
-```
-
 
 
 - A) ['a', 'b', 'c']
@@ -427,16 +323,6 @@ len(another_lst)
 ```
 
 
-
-
-
-{:.output_data_text}
-```
-7
-```
-
-
-
 ## The `in` Operator
 
 <div class="alert alert-success">
@@ -463,31 +349,11 @@ True in lst_again
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 ### Practice with `in`
@@ -511,30 +377,10 @@ practice_lst = [1, True, 'alpha', 13, 'cogs18']
 
 
 
-
-{:.output_data_text}
-```
-True
-```
-
-
-
-
-
 {:.input_area}
 ```python
 False in practice_lst
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-False
-```
-
 
 
 
@@ -547,30 +393,10 @@ False
 
 
 
-
-{:.output_data_text}
-```
-False
-```
-
-
-
-
-
 {:.input_area}
 ```python
 'cogs18' not in practice_lst
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-False
-```
-
 
 
 ### Clicker #4
@@ -591,12 +417,6 @@ output = bool_1 and bool_2
 print(output)
 ```
 
-
-{:.output_stream}
-```
-True
-
-```
 
 - a) True
 - b) False
@@ -631,12 +451,6 @@ print(updates)
 ```
 
 
-{:.output_stream}
-```
-[1, 2, 3]
-
-```
-
 
 
 {:.input_area}
@@ -654,12 +468,6 @@ updates[1] = 0
 print(updates)
 ```
 
-
-{:.output_stream}
-```
-[1, 0, 3]
-
-```
 
 ### Clicker Question #5
 
@@ -706,12 +514,6 @@ print(tup)
 ```
 
 
-{:.output_stream}
-```
-(2, 'b', False)
-
-```
-
 
 
 {:.input_area}
@@ -719,16 +521,6 @@ print(tup)
 # Check the type of a tuple
 type(tup)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-tuple
-```
-
 
 
 
@@ -742,31 +534,11 @@ tup[0]
 
 
 
-
-{:.output_data_text}
-```
-2
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Get the length of a tuple
 len(tup)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-3
-```
-
 
 
 ### Tuples are Immutable
@@ -778,31 +550,6 @@ len(tup)
 # Tuples are immutable - meaning after they defined, you can't change them
 # This code will produce an error.
 tup[2] = 1
-```
-
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-TypeError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-44-f3cf3fcad4b2> in <module>()
-      1 # Tuples are immutable - meaning after they defined, you can't change them
-----> 2 tup[2] = 1
-
-```
-
-{:.output_traceback_line}
-```
-TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -854,31 +601,11 @@ my_str[2]
 
 
 
-
-{:.output_data_text}
-```
-'e'
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Ask if an item is in a string
 'Fam' in my_str
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 
@@ -892,47 +619,11 @@ len(my_str)
 
 
 
-
-{:.output_data_text}
-```
-13
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Index into a string
 # This code will produce an error
 my_str[1:3] = 'HE'
-```
-
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-TypeError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-79-9139cc40aa38> in <module>()
-      1 # Index into a string
-      2 # This code will produce an error
-----> 3 my_str[1:3] = 'HE'
-
-```
-
-{:.output_traceback_line}
-```
-TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -948,12 +639,6 @@ print(counter)
 ```
 
 
-{:.output_stream}
-```
-0
-
-```
-
 
 
 {:.input_area}
@@ -963,12 +648,6 @@ print(counter)
 ```
 
 
-{:.output_stream}
-```
-1
-
-```
-
 
 
 {:.input_area}
@@ -977,12 +656,6 @@ counter = counter + 1
 print(counter)
 ```
 
-
-{:.output_stream}
-```
-2
-
-```
 
 ## Pulling it Together: Collections, Membership & Conditionals
 
@@ -1011,12 +684,6 @@ print(counter)
 ```
 
 
-{:.output_stream}
-```
-2
-
-```
-
 <pre> A) 0   B) 1   D) 2   D) 3   E) 4 </pre>
 
 ### Clicker Question #8
@@ -1040,12 +707,6 @@ else:
     print('None')
 ```
 
-
-{:.output_stream}
-```
-Overlap
-
-```
 
 <pre> A) EndMatch   B) Overlap   C) Length   D) Overlap & Match   E) None </pre>
 
@@ -1109,12 +770,6 @@ while not connected:
 ```
 
 
-{:.output_stream}
-```
-Establishing Connection...
-
-```
-
 ### While Loop Example II
 
 
@@ -1131,12 +786,6 @@ while not has_user_input:
     break
 ```
 
-
-{:.output_stream}
-```
-Asking for user input...
-
-```
 
 ## Clicker Question #9
 
@@ -1159,12 +808,6 @@ while keep_looping:
 print(counter)
 ```
 
-
-{:.output_stream}
-```
-4
-
-```
 
 <pre> A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite </pre> 
 
@@ -1193,26 +836,3 @@ while keep_looping:
 print('\nFinal counter: ', counter)
 ```
 
-
-{:.output_stream}
-```
-START LOOP
-	Start counter:  0
-	Mid counter:  1
-	End counter:  1
-START LOOP
-	Start counter:  1
-	Mid counter:  2
-	End counter:  2
-START LOOP
-	Start counter:  2
-	Mid counter:  3
-	End counter:  3
-START LOOP
-	Start counter:  3
-	Mid counter:  4
-	End counter:  4
-
-Final counter:  4
-
-```
