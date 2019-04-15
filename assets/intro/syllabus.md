@@ -24,13 +24,13 @@ Note that this is the second time this course is being offered and the first tim
 
 | Role        | Name          					   | Section  | Office Hours |
 | -------------: |:--------------------------------------------:|:-----------|:-----------|
-| TA 	           | Charles Chen				   | Wed 11AM, Fri 10AM | Wed 1-2PM (CSE Basement Benches) |
-| TA 	           | Shreenivas Venkataramanan           | Mon 3PM, 4PM | Fri 6-7PM (CSE 114) |
+| TA 	           | Charles Chen				   | Wed 11AM, Fri 10AM | Wed 1-2 PM (CSE Basement Benches) |
+| TA 	           | Shreenivas Venkataramanan           | Mon 3PM, 4PM | Fri 6-7 PM (CSE 114) |
 | IA	           | Weilun Yao                                       | Wed 1PM, Fri 12PM | -- |
 | IA	           | Severine Soltani                               |    Wed 11AM & 12PM | -- |
 | IA	           | Stephen Jarrell                                 |    Wed 1PM, Fri 11AM | -- |
 | IA	           | Ahrial Young                                     |    Fri 11AM | -- |
-| IA	           | Myles Wright                                    |    Mon 3PM, 4PM | Tu 10-11AM (CSB 114) |
+| IA	           | Myles Wright                                    |    Mon 3PM, 4PM | Mon 4-5 PM (Sun God Lounge) |
 | IA	           | Miranda Go                                      |    Fri 10AM | -- |
 | IA	           | Edward Chen                                   |     Wed 12PM, Fri 12PM | -- |
 
