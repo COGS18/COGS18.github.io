@@ -8,8 +8,8 @@ prev_page:
   url: /materials/04-Operators
   title: '04-Operators'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/06-DataTypes
+  title: '06-DataTypes'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

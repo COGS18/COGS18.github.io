@@ -4,8 +4,8 @@ download_link: assets/downloads/CL1-ProgrammingI.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/05-Conditionals
-  title: '05-Conditionals'
+  url: /materials/06-DataTypes
+  title: '06-DataTypes'
 next_page:
   url: /labs/CL1-ProgrammingI
   title: 'CL1-ProgrammingI'
