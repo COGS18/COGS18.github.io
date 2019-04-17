@@ -48,7 +48,7 @@ D. What is this datahub you speak of?
 **Do you have the Anaconda distribution of Python downloaded on your computer?**
 
 A. I do!  
-B. I attempted but was unsuccessful. 
+B. I attempted but was unsuccessful.   
 C. I have not yet tried.  
 D. I'm going to use my own Python distribution.  
 E. Huh?  
@@ -82,14 +82,14 @@ E. Huh?
 
 {:.input_area}
 ```python
-variable_name = "Variable value."
+variable_name = "variable name."
 print(variable_name)
 ```
 
 
 {:.output_stream}
 ```
-Variable value.
+variable name.
 
 ```
 

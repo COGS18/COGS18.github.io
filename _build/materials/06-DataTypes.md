@@ -8,8 +8,8 @@ prev_page:
   url: /materials/05-Conditionals
   title: '05-Conditionals'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/07-Loops
+  title: '07-Loops'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -43,6 +43,12 @@ my_var = my_var + 2
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+20
+
+```
 
 - A) This code will not run
 - B) 18
@@ -123,6 +129,12 @@ print(lst)
 ```
 
 
+{:.output_stream}
+```
+[1, 'a', True]
+
+```
+
 
 
 {:.input_area}
@@ -130,6 +142,16 @@ print(lst)
 # Check the type of a list
 type(lst)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+list
+```
+
 
 
 ### Clicker Question #1
@@ -187,6 +209,12 @@ print(my_lst[-1])
 ```
 
 
+{:.output_stream}
+```
+Xuan
+
+```
+
 
 
 {:.input_area}
@@ -195,6 +223,12 @@ print(my_lst[-1])
 print(my_lst[2:4])
 ```
 
+
+{:.output_stream}
+```
+['Richard', 'Juan']
+
+```
 
 
 
@@ -205,6 +239,12 @@ print(my_lst[2:])
 ```
 
 
+{:.output_stream}
+```
+['Richard', 'Juan', 'Xuan']
+
+```
+
 
 
 {:.input_area}
@@ -214,6 +254,12 @@ print(my_lst[:4])
 ```
 
 
+{:.output_stream}
+```
+['Julian', 'Amal', 'Richard', 'Juan']
+
+```
+
 
 
 {:.input_area}
@@ -222,6 +268,12 @@ print(my_lst[:4])
 print(my_lst[0:4:2])
 ```
 
+
+{:.output_stream}
+```
+['Julian', 'Richard']
+
+```
 
 ### Index Practices
 
@@ -244,6 +296,16 @@ example_lst[2]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[-3]
@@ -252,10 +314,30 @@ example_lst[-3]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[1:3]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 3]
+```
+
 
 
 ### Clicker Question #2
@@ -323,6 +405,16 @@ len(another_lst)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+7
+```
+
+
+
 ## The `in` Operator
 
 <div class="alert alert-success">
@@ -349,11 +441,31 @@ True in lst_again
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Practice with `in`
@@ -377,10 +489,30 @@ practice_lst = [1, True, 'alpha', 13, 'cogs18']
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 False in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -393,10 +525,30 @@ False in practice_lst
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'cogs18' not in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ### Clicker #4
@@ -417,6 +569,12 @@ output = bool_1 and bool_2
 print(output)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 - a) True
 - b) False
@@ -451,6 +609,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
+
 
 
 {:.input_area}
@@ -469,6 +633,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 0, 3]
+
+```
+
 ### Clicker Question #5
 
 What would the following code accommplish?
@@ -482,8 +652,8 @@ lst_update[3] = 4
 ```
 
 
-- A) replace 5 with 4 in `lst_update`
-- B) replace 4 with 5 in `lst_update`
+- A) replace 0 with 4 in `lst_update`
+- B) replace 4 with 0 in `lst_update`
 - C) no change to `lst_update`
 - D) produce an error
 - E) I'm not sure
@@ -514,6 +684,12 @@ print(tup)
 ```
 
 
+{:.output_stream}
+```
+(2, 'b', False)
+
+```
+
 
 
 {:.input_area}
@@ -521,6 +697,16 @@ print(tup)
 # Check the type of a tuple
 type(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+tuple
+```
+
 
 
 
@@ -534,11 +720,31 @@ tup[0]
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the length of a tuple
 len(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ### Tuples are Immutable
@@ -550,6 +756,32 @@ len(tup)
 # Tuples are immutable - meaning after they defined, you can't change them
 # This code will produce an error.
 tup[2] = 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-39-6b0fd3f24bc7> in <module>()
+      1 # Tuples are immutable - meaning after they defined, you can't change them
+      2 # This code will produce an error.
+----> 3 tup[2] = 1
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -601,11 +833,31 @@ my_str[2]
 
 
 
+
+{:.output_data_text}
+```
+'e'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Ask if an item is in a string
 'Fam' in my_str
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -619,11 +871,47 @@ len(my_str)
 
 
 
+
+{:.output_data_text}
+```
+13
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Index into a string
 # This code will produce an error
 my_str[1:3] = 'HE'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-44-9139cc40aa38> in <module>()
+      1 # Index into a string
+      2 # This code will produce an error
+----> 3 my_str[1:3] = 'HE'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -639,6 +927,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+0
+
+```
+
 
 
 {:.input_area}
@@ -648,6 +942,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 
 
 {:.input_area}
@@ -656,6 +956,12 @@ counter = counter + 1
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 ## Pulling it Together: Collections, Membership & Conditionals
 
@@ -684,7 +990,13 @@ print(counter)
 ```
 
 
-<pre> A) 0   B) 1   D) 2   D) 3   E) 4 </pre>
+{:.output_stream}
+```
+2
+
+```
+
+<pre> A) 0   B) 1   C) 2   D) 3   E) 4 </pre>
 
 ### Clicker Question #8
 
@@ -746,12 +1058,22 @@ Repeat until condition is no longer True.
 
 {:.input_area}
 ```python
-number = 5
+number = -5
 while number < 0:
     print(number)
     number = number + 1
 ```
 
+
+{:.output_stream}
+```
+-5
+-4
+-3
+-2
+-1
+
+```
 
 ### While Loop Example I
 
@@ -770,6 +1092,12 @@ while not connected:
 ```
 
 
+{:.output_stream}
+```
+Establishing Connection...
+
+```
+
 ### While Loop Example II
 
 
@@ -786,6 +1114,12 @@ while not has_user_input:
     break
 ```
 
+
+{:.output_stream}
+```
+Asking for user input...
+
+```
 
 ## Clicker Question #9
 
@@ -808,6 +1142,12 @@ while keep_looping:
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+4
+
+```
 
 <pre> A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite </pre> 
 
@@ -836,3 +1176,26 @@ while keep_looping:
 print('\nFinal counter: ', counter)
 ```
 
+
+{:.output_stream}
+```
+START LOOP
+	Start counter:  0
+	Mid counter:  1
+	End counter:  1
+START LOOP
+	Start counter:  1
+	Mid counter:  2
+	End counter:  2
+START LOOP
+	Start counter:  2
+	Mid counter:  3
+	End counter:  3
+START LOOP
+	Start counter:  3
+	Mid counter:  4
+	End counter:  4
+
+Final counter:  4
+
+```
