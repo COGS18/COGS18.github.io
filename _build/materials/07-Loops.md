@@ -8,8 +8,8 @@ prev_page:
   url: /materials/06-DataTypes
   title: '06-DataTypes'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/08-Encodings
+  title: '08-Encodings'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -85,6 +85,16 @@ while number < 0:
 ```
 
 
+{:.output_stream}
+```
+-5
+-4
+-3
+-2
+-1
+
+```
+
 
 
 {:.input_area}
@@ -103,6 +113,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+4
+
+```
+
 ## Clicker Question #1
 
 How many values will be output from this while loop before "The tea is cool enough." is printed?
@@ -112,7 +128,7 @@ How many values will be output from this while loop before "The tea is cool enou
 {:.input_area}
 ```python
 temperature = 115
-
+ 
 while temperature > 112: 
     print(temperature)
     temperature = temperature - 1
@@ -120,6 +136,15 @@ while temperature > 112:
 print('The tea is cool enough.')
 ```
 
+
+{:.output_stream}
+```
+115
+114
+113
+The tea is cool enough.
+
+```
 
 - A) 1
 - B) 2
@@ -146,12 +171,21 @@ Looping through a list
 list_of_items = ['A', True, 12]
 
 # Loop across each element
-for item in list_of_items:
-    print(item)
+for my_item in list_of_items:
+    print(my_item)
     
-print('\tLast value: ', item)
+print('\tLast value: ', my_item)
 ```
 
+
+{:.output_stream}
+```
+A
+True
+12
+	Last value:  12
+
+```
 
 ### For Loop Example II
 
@@ -167,6 +201,17 @@ for char in 'python':
 ```
 
 
+{:.output_stream}
+```
+p
+y
+t
+h
+o
+n
+
+```
+
 ## Clicker Question #2
 
 What will the following loop print out:
@@ -181,6 +226,13 @@ for item in my_lst[0:-1]:
     print(item + 1)
 ```
 
+
+{:.output_stream}
+```
+1
+2
+
+```
 
 - A) 0, 1, 2
 - B) 0, 1
@@ -206,6 +258,19 @@ for temp in temperatures:
 ```
 
 
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
+
 - A) 1
 - B) 2
 - C) 3
@@ -230,6 +295,16 @@ for ind in [0,1,2,3,4]:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
+
 
 
 {:.input_area}
@@ -239,6 +314,12 @@ for ind in [0,1,2,3,4]:
 print(*range(0,5))
 ```
 
+
+{:.output_stream}
+```
+0 1 2 3 4
+
+```
 
 
 
@@ -250,6 +331,16 @@ for ind in range(0, 5):
 ```
 
 
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
+
 
 
 {:.input_area}
@@ -259,6 +350,13 @@ for ind in range(2, 6, 2):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+
+```
 
 
 
@@ -273,6 +371,19 @@ for temp in range(114, 119):
 ```
 
 
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
+
 ## Clicker Question #4
 
 How many values would this loop print and what would be the last value printed? 
@@ -285,6 +396,14 @@ for ind in range(1, 10, 3):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+1
+4
+7
+
+```
 
 - A) values printed: 3; last value: 7
 - B) values printed: 3; last value: 9
@@ -316,6 +435,14 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+3
+
+```
+
 
 
 {:.input_area}
@@ -324,13 +451,22 @@ courses = ['cogs9', 'cogs18', 'cogs108']
 
 for course in courses:
 
-    if course == 'cogs9':
+    if course == 'cogs18':
         continue
   
     print(course)
     print(course + '!')
 ```
 
+
+{:.output_stream}
+```
+cogs9
+cogs9!
+cogs108
+cogs108!
+
+```
 
 
 
@@ -346,6 +482,15 @@ for char in string:
     print(char)
 ```
 
+
+{:.output_stream}
+```
+t
+h
+o
+n
+
+```
 
 ## Clicker Question #5
 
@@ -368,6 +513,12 @@ for item in my_lst:
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+0
+
+```
 
 - A) 0 
 - B) 1
@@ -397,6 +548,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 - A) 0 
 - B) 1
 - C) 2 
@@ -424,6 +581,12 @@ while not connected:
 ```
 
 
+{:.output_stream}
+```
+Establishing Connection...
+
+```
+
 ### `break` examples
 
 
@@ -441,6 +604,13 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+
+```
+
 
 
 {:.input_area}
@@ -449,18 +619,24 @@ courses = ["cogs9", "cogs18", "cogs108"]
 
 for course in courses:
 
-    if course == "cogs9":
+    if course == "cogs18":
         break
   
     print(course)
 ```
 
 
+{:.output_stream}
+```
+cogs9
+
+```
+
 
 
 {:.input_area}
 ```python
-string = "python"
+string = "love python"
 
 for char in string: 
     if char == "p" or char == "y":
@@ -469,6 +645,16 @@ for char in string:
     print(char)
 ```
 
+
+{:.output_stream}
+```
+l
+o
+v
+e
+ 
+
+```
 
 
 
@@ -483,6 +669,15 @@ for temp in range(114, 119):
         break
 ```
 
+
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+
+```
 
 ## Clicker Question #7
 
@@ -502,6 +697,13 @@ while True:
     number = number + 1
 ```
 
+
+{:.output_stream}
+```
+1
+2
+
+```
 
 - A) 1 
 - B) 1 2 
@@ -530,6 +732,12 @@ for temp in range(114, 119):
         break
 ```
 
+
+{:.output_stream}
+```
+The tea is too hot!
+
+```
 
 - A) 0 
 - B) 1

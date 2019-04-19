@@ -45,9 +45,9 @@
   - title: 07-Loops
     url: /materials/07-Loops
     not_numbered: true
-  # - title: 08-Encodings
-  #   url: /materials/08-Encodings
-  #   not_numbered: true
+  - title: 08-Encodings
+    url: /materials/08-Encodings
+    not_numbered: true
   # - title: 09-FunctionsI
   #   url: /materials/09-FunctionsI
   #   not_numbered: true
