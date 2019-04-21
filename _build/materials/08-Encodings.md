@@ -19,6 +19,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - Datahub issues?
     - Home > Stop Server
     - Log out
+    - Contact ITS Services
 
 # Review Time
 
@@ -32,6 +33,16 @@ What is the output of the code below?
 ```python
 (2 * 6 < 12) or ('Happy' + ' ' + 'Friday' + '!' == 'Happy Friday!')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 - A) `True`
@@ -57,6 +68,15 @@ while val < 4:
 ```
 
 
+{:.output_stream}
+```
+p
+y
+t
+h
+
+```
+
 - A) True
 - B) False
 - C) h
@@ -74,6 +94,16 @@ What would the following code return?
 lst = ['seven', 17, 19.5, True, False]
 type(lst[3]) is float
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -175,17 +205,29 @@ We can then encode any value we would like to represent on our computer.
 ```python
 ## The `bin` operator returns the binary representation of an integer
 # encoding an integer
-print(bin(0))
+print(bin(1))
 ```
 
+
+{:.output_stream}
+```
+0b1
+
+```
 
 
 
 {:.input_area}
 ```python
-print(bin(11))
+print(bin(78))
 ```
 
+
+{:.output_stream}
+```
+0b1001110
+
+```
 
 
 
@@ -199,12 +241,49 @@ bin(False)
 
 
 
+
+{:.output_data_text}
+```
+'0b0'
+```
+
+
+
+
+
+{:.input_area}
+```python
+print(bool(0b0))
+
+my_bool = True
+my_int = 0
+```
+
+
+{:.output_stream}
+```
+False
+
+```
+
+
+
 {:.input_area}
 ```python
 # We can also convert binary back to integers with 
 # decoding from binary
 int(0b1011)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+11
+```
+
 
 
 ## Character Encodings
@@ -230,7 +309,7 @@ Every time we see that number, we can evaluate it to replace it with the charact
 {:.input_area}
 ```python
 # Set the value we
-character_encoding = 0
+character_encoding = 1
 
 # Use conditional to interpret the character as a particular symbol
 if character_encoding == 0:
@@ -241,6 +320,12 @@ elif character_encoding == 2:
     print('¿')
 ```
 
+
+{:.output_stream}
+```
+é
+
+```
 
 ## Aside: Dictionaries
 
@@ -269,6 +354,12 @@ print(dictionary)
 ```
 
 
+{:.output_stream}
+```
+{'key_1': 'value_1', 'key_2': 'value_2'}
+
+```
+
 
 
 {:.input_area}
@@ -280,12 +371,32 @@ type(dictionary)
 
 
 
+
+{:.output_data_text}
+```
+dict
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Dictionaries also have a length
 # length refers to how many pairs there are
 len(dictionary)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 
 
 ### Dictionaries: Indexing & Looping
@@ -301,6 +412,16 @@ dictionary['key_1']
 
 
 
+
+{:.output_data_text}
+```
+'value_1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Loop over a dictionary loops across the keys
@@ -311,6 +432,17 @@ for item in dictionary:
     print('\tValue:\t', dictionary[item])
 ```
 
+
+{:.output_stream}
+```
+Loop Iteration
+	Key:	 key_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 key_2
+	Value:	 value_2
+
+```
 
 ### Clicker Question #2
 
@@ -332,8 +464,18 @@ Fill in the '---' in the code below to return the value stored in the second key
 {:.input_area}
 ```python
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
----[---]
+height_dict['height_2']
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+68
+```
+
 
 
 - A) I did it
@@ -360,6 +502,19 @@ student_emails
 
 
 
+
+{:.output_data_text}
+```
+{'Ada Lovelace': 'ada@analyticengine.com',
+ 'Alan Turing': 'aturing@thebomb.gov',
+ 'Betty Jennings': 'bjennings@eniac.org',
+ 'Grace Hopper': 'ghopper@navy.usa'}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 completed_coding_lab = {
@@ -370,6 +525,16 @@ completed_coding_lab = {
 
 completed_coding_lab
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': False, 'A9123': True}
+```
+
 
 
 
@@ -385,9 +550,19 @@ mixed_types
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+{False: None, True: [1, 2, 3]}
+```
+
+
+
 ### Clicker Question #4
 
-Write the code that would create a dictionary `car` that stores values about your dream car's `brand`, `model`, and `year`.
+Write the code that would create a dictionary `car` that stores values about your dream car's `make`, `model`, and `year`.
 
 - A) I did it
 - B) I think I did it...
@@ -398,8 +573,24 @@ Write the code that would create a dictionary `car` that stores values about you
 
 {:.input_area}
 ```python
-## YOUR CODE HERE
+car = {
+    'make' : 'Hyundai',
+    'model': 'Santa Fe',
+    'year' : '2014'
+}
+
+car
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'make': 'Hyundai', 'model': 'Santa Fe', 'year': '2014'}
+```
+
 
 
 ### Dictionaries are mutable
@@ -423,12 +614,32 @@ completed_coding_lab
 
 
 
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': False, 'A9123': True}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # change value of specified key
 completed_coding_lab['A5678'] = True
 completed_coding_lab
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': True, 'A9123': True}
+```
+
 
 
 Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using `del`.
@@ -440,6 +651,22 @@ Because dictionaries are mutable, key-value pairs can also be removed from the d
 print(completed_coding_lab)
 len(completed_coding_lab)
 ```
+
+
+{:.output_stream}
+```
+{'A1234': True, 'A5678': True, 'A9123': True}
+
+```
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 
@@ -454,6 +681,22 @@ len(completed_coding_lab)
 ```
 
 
+{:.output_stream}
+```
+{'A1234': True, 'A9123': True}
+
+```
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
 ### Dictionaries and operators
 
 The operators we've discussed previously can be used when working with dictionaries.
@@ -464,10 +707,16 @@ To determine if a specified key is present in a dictionary we can use the `in` o
 
 {:.input_area}
 ```python
-if 'A5678' in completed_coding_lab:
+if 'A1234' in completed_coding_lab:
   print('Yes, that student is in this class')
 ```
 
+
+{:.output_stream}
+```
+Yes, that student is in this class
+
+```
 
 ### Clicker Question #5
 
@@ -492,6 +741,12 @@ print(result)
 ```
 
 
+{:.output_stream}
+```
+alpha
+
+```
+
 - A) alpha
 - B) [8, 12] 
 - C) beta 
@@ -512,6 +767,16 @@ print(result)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+{'Student': 91}
+```
+
+
+
 - **keys** must be of an immutable type (string, tuple, integer, float, etc)
 - Note: **values** can be of any type
 
@@ -525,6 +790,32 @@ print(result)
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-39-27b11708f095> in <module>()
+      1 # lists are not allowed as key types
+      2 # this code will produce an error
+----> 3 {['Student'] : 97}
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: unhashable type: 'list'
+```
+
+
 - Dictionary keys are case sensitive.
 
 
@@ -534,6 +825,16 @@ print(result)
 ```python
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'STUDENT': 91, 'Student': 97, 'student': 88}
+```
+
 
 
 ### Clicker Question #6
@@ -583,6 +884,12 @@ print(my_sentence)
 ```
 
 
+{:.output_stream}
+```
+no hablo español
+
+```
+
 
 
 {:.input_area}
@@ -592,6 +899,12 @@ my_sentence = 'yo hablo ingl' + character_encodings[1] + 's'
 print(my_sentence)
 ```
 
+
+{:.output_stream}
+```
+yo hablo inglés
+
+```
 
 ## Unicode
 
@@ -623,6 +936,12 @@ print(ord('a'))
 ```
 
 
+{:.output_stream}
+```
+97
+
+```
+
 
 
 {:.input_area}
@@ -630,6 +949,12 @@ print(ord('a'))
 print(chr(97))
 ```
 
+
+{:.output_stream}
+```
+a
+
+```
 
 ### Inverses
 
@@ -646,3 +971,10 @@ assert inp == out
 print('Input: \t', inp, '\nOutput: ', out)
 ```
 
+
+{:.output_stream}
+```
+Input: 	 b 
+Output:  b
+
+```

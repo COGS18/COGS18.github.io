@@ -125,12 +125,12 @@
   - title: CL2-ProgrammingII
     url: /labs/CL2-ProgrammingII
     not_numbered: true
-  # - title: CL2B-Answers
-  #   url: /labs/CL2B-Answers
-  #   not_numbered: true
-  # - title: CL3-AlgorithmicThinking
-  #   url: /labs/CL3-AlgorithmicThinking
-  #   not_numbered: true
+  - title: CL2B-Answers
+    url: /labs/CL2B-Answers
+    not_numbered: true
+  - title: CL3-AlgorithmicThinking
+    url: /labs/CL3-AlgorithmicThinking
+    not_numbered: true
   # - title: CL3B-Answers
   #   url: /labs/CL3B-Answers
   #   not_numbered: true
