@@ -4,8 +4,8 @@ download_link: assets/downloads/CL1-ProgrammingI.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/08-Encodings
-  title: '08-Encodings'
+  url: /materials/09-FunctionsI
+  title: '09-FunctionsI'
 next_page:
   url: /labs/CL1-ProgrammingI
   title: 'CL1-ProgrammingI'
