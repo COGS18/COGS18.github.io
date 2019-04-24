@@ -8,8 +8,8 @@ prev_page:
   url: /materials/08-Encodings
   title: '08-Encodings'
 next_page:
-  url: /labs/CL1-ProgrammingI
-  title: 'Coding Labs'
+  url: /materials/10-Algorithms
+  title: '10-Algorithms'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -43,13 +43,30 @@ print(3)
 ```
 
 
+{:.output_stream}
+```
+3
+
+```
+
 
 
 {:.input_area}
 ```python
 # variable assignment
 my_var = 3
+my_var
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ### Indexing
@@ -77,6 +94,12 @@ print(list_a[1])
 ```
 
 
+{:.output_stream}
+```
+4
+
+```
+
 
 
 {:.input_area}
@@ -93,8 +116,17 @@ stored_val = list_a[1]
 # output from comparison operators can then be stored
 # in a variable
 stored_comparison = list_a[1] < list_b[2]
+print(stored_comparison)
+print(list_a[1])
 ```
 
+
+{:.output_stream}
+```
+True
+4
+
+```
 
 ### Loops & `print()` statements
 
@@ -107,6 +139,20 @@ for number in range(2, 20, 2):
     print(number)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+6
+8
+10
+12
+14
+16
+18
+
+```
 
 
 
@@ -130,10 +176,16 @@ result = 0
 
 for number in range(2, 20, 2):
     result = result + number
-    
+
 print(result)
 ```
 
+
+{:.output_stream}
+```
+90
+
+```
 
 ### Working with Dictionaries
 
@@ -182,6 +234,12 @@ print(output_list)
 ```
 
 
+{:.output_stream}
+```
+['Jaime', 'Mi Linh']
+
+```
+
 # Functions I
 
 - defining a function
@@ -205,6 +263,16 @@ A function is a re-usable piece of code that performs operations on a specified 
 my_var = [3, 4, 5]
 type(my_var)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+list
+```
+
 
 
 Copy + Pasting the same/similar bit of code is to be avoided.
@@ -239,12 +307,32 @@ type(my_var)
 
 
 
+
+{:.output_data_text}
+```
+list
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # the function len() doesn't depend on type()
 # but they can both be used on the same variable
 len(my_var)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ## Function Example I
@@ -274,6 +362,12 @@ print_value(num = 6)
 ```
 
 
+{:.output_stream}
+```
+6
+
+```
+
 
 
 {:.input_area}
@@ -283,6 +377,12 @@ print_value(num = 6)
 print_value(6)
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 
 
@@ -294,6 +394,13 @@ new_var = print_value(6)
 print(new_var)
 ```
 
+
+{:.output_stream}
+```
+6
+None
+
+```
 
 All this function is doing is printing the input. It's not actually *storing* any new information. To do that, we need to use `return`.
 
@@ -323,6 +430,16 @@ return_value(6)
 
 
 
+
+{:.output_data_text}
+```
+'string'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # execute function but assign output 
@@ -331,6 +448,12 @@ new_val = return_value(6)
 print(new_val)
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 ## Function Example II
 
@@ -355,9 +478,16 @@ def add_two_numbers(num1, num2):
 {:.input_area}
 ```python
 # Execute our function again, on some other inputs
-add_two_numbers(-1, 4)
+output = add_two_numbers(-1, 4)
+print(output)
 ```
 
+
+{:.output_stream}
+```
+3
+
+```
 
 ## Function Example III
 
@@ -373,6 +503,8 @@ def evenOdd(value):
         print("even")
     else: 
         print("odd")
+    
+
 ```
 
 
@@ -385,6 +517,12 @@ def evenOdd(value):
 evenOdd(-1)
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 
 
@@ -412,6 +550,12 @@ my_val = evenOdd(-1)
 print(my_val)
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 With functions, the logic behind our code no longer requires it to be executed from top to bottom.
 
@@ -461,6 +605,12 @@ print(ans_1 + ans_2)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 - A) 0
 - B) 2
 - C) 4
@@ -481,7 +631,22 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+def greet(name):
+    output = 'Hello, '  + name + '. Good morning!'
+    return output
+
+greet('student')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Hello, student. Good morning!'
+```
+
 
 
 ## Function Namespace I
@@ -494,6 +659,35 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 %whos
 ```
 
+
+{:.output_stream}
+```
+Variable            Type        Data/Info
+-----------------------------------------
+add_two_numbers     function    <function add_two_numbers at 0x11035fc80>
+ans_1               int         2
+ans_2               int         0
+dictionary          dict        n=4
+evenOdd             function    <function evenOdd at 0x1102ad510>
+greet               function    <function greet at 0x110369378>
+list_a              list        n=3
+list_b              list        n=3
+my_val              str         odd
+my_var              list        n=3
+new_val             int         6
+new_var             NoneType    None
+number              int         18
+output              int         3
+output_list         list        n=2
+person              str         Mi Linh
+print_value         function    <function print_value at 0x110354ae8>
+remainder           function    <function remainder at 0x110354f28>
+result              int         90
+return_value        function    <function return_value at 0x11035f378>
+stored_comparison   bool        True
+stored_val          int         4
+
+```
 
 ## Function Namespaces II
 
@@ -516,6 +710,12 @@ check_function_namespace(1)
 ```
 
 
+{:.output_stream}
+```
+{'function_input': 1}
+
+```
+
 
 
 {:.input_area}
@@ -524,6 +724,12 @@ check_function_namespace(1)
 check_function_namespace(True)
 ```
 
+
+{:.output_stream}
+```
+{'function_input': True}
+
+```
 
 
 
@@ -545,6 +751,12 @@ check_function_namespace2(1, True)
 ```
 
 
+{:.output_stream}
+```
+{'other_name': True, 'function_input': 1}
+
+```
+
 ## Function Namespaces III
 
 Names defined inside a function only exist within the function.
@@ -563,6 +775,13 @@ check_function_namespace(my_var)
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+{'function_input': 'I am a variable'}
+I am a variable
+
+```
 
 ## Function - Execution Order
 
@@ -587,12 +806,28 @@ my_var
 
 
 
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # my_var within the function
 change_var(my_var)
 ```
 
+
+{:.output_stream}
+```
+Inside function: 		 I am something else
+
+```
 
 
 
@@ -605,6 +840,16 @@ my_var
 
 
 
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print('Outside, before function: \t', my_var)
@@ -612,6 +857,14 @@ change_var(my_var)
 print('Outside, after function: \t', my_var)
 ```
 
+
+{:.output_stream}
+```
+Outside, before function: 	 I am a variable
+Inside function: 		 I am something else
+Outside, after function: 	 I am a variable
+
+```
 
 ## Clicker Question #3
 

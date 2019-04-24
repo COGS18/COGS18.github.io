@@ -51,9 +51,9 @@
   - title: 09-FunctionsI
     url: /materials/09-FunctionsI
     not_numbered: true
-  # - title: 10-Algorithms
-  #   url: /materials/10-Algorithms
-  #   not_numbered: true
+  - title: 10-Algorithms
+    url: /materials/10-Algorithms
+    not_numbered: true
   # - title: 11-FunctionsII
   #   url: /materials/11-FunctionsII
   #   not_numbered: true
@@ -99,12 +99,12 @@
   # - title: 25-WrapUp
   #   url: /materials/25-WrapUp
   #   not_numbered: true
-  # - title: A1-Syntax
-  #   url: /materials/A1-Syntax
-  #   not_numbered: true
-  # - title: A2-Examples
-  #   url: /materials/A2-Examples
-  #   not_numbered: true
+  - title: A1-Syntax
+    url: /materials/A1-Syntax
+    not_numbered: true
+  - title: A2-Examples
+    url: /materials/A2-Examples
+    not_numbered: true
   # - title: Midterm
   #   url: /materials/Midterm
   #   not_numbered: true
