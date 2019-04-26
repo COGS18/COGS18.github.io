@@ -8,8 +8,8 @@ prev_page:
   url: /materials/09-FunctionsI
   title: '09-FunctionsI'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/11-FunctionsII
+  title: '11-FunctionsII'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -72,6 +72,12 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 - A) 0, 1, 2
 - B) 0, 1, 2, 3
 - C) 2
@@ -87,7 +93,18 @@ What is the length of `my_dict`?
 {:.input_area}
 ```python
 my_dict = {'member_1' : 'Jane', 'member_2' : 'Allie', 'member_3' : 'Antonio'}
+len(my_dict)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 - A) 1
@@ -106,6 +123,32 @@ When executed, what would be the output of the following code?
 lots_of_items =(1,2,4,5,6,7,9,11)
 lots_of_items[5] = 'string'
 print(lots_of_items[5])
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-5-2712cf662cb8> in <module>()
+      1 lots_of_items =(1,2,4,5,6,7,9,11)
+----> 2 lots_of_items[5] = 'string'
+      3 print(lots_of_items[5])
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -153,9 +196,17 @@ Assuming the cell above has been executed, what will the code below print out?
 
 {:.input_area}
 ```python
+print(an_int)
 print_numbers(5, 12.2)
 ```
 
+
+{:.output_stream}
+```
+2
+5 , 12.2
+
+```
 
 - A) 5 , 11.5
 - B) 2, 12.2 
@@ -227,8 +278,10 @@ Can you write an algorithm to make a ham and cheese sandwich.
 
 ## Algorithm for making a ham & cheese sandwich
 
-- Step 1
-- Step 2 
+- Step 0: Get bread, ham, and cheese
+- Step 1: Place slice of bread on table
+- Step 2: Place a slice of ham on top of the bread 
+- Step 3: Place a slice of cheese on top of the ham
 - ...
 
 
@@ -315,6 +368,12 @@ print(sorted_array)
 ```
 
 
+{:.output_stream}
+```
+[7, 12, 12, 19, 25]
+
+```
+
 
 
 {:.input_area}
@@ -325,6 +384,12 @@ sorted_array = sort_array(unsorted_array)
 print(sorted_array)
 ```
 
+
+{:.output_stream}
+```
+[2.3, 2.9, 21.3, 56.7, 99.9]
+
+```
 
 ### Clicker Question #3
 
@@ -337,6 +402,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = ['a', 'c', 'b'] 
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['a', 'b', 'c']
+```
+
 
 
 - A) ['a', 'c', 'b']
@@ -357,6 +432,16 @@ sort_array(data)
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ord('a')
@@ -365,10 +450,30 @@ ord('a')
 
 
 
+
+{:.output_data_text}
+```
+97
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ord('b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+98
+```
+
 
 
 ### Clicker Question #4
@@ -382,6 +487,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = [True, False, True]
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[False, True, True]
+```
+
 
 
 - A) [False, True, True] 
@@ -402,6 +517,16 @@ True < False
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bin(True)
@@ -410,10 +535,30 @@ bin(True)
 
 
 
+
+{:.output_data_text}
+```
+'0b1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bin(False)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'0b0'
+```
+
 
 
 ### Clicker Question #5
@@ -449,6 +594,16 @@ sorted(data)
 
 
 
+
+{:.output_data_text}
+```
+[4, 6, 7]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Sort different data types
@@ -457,6 +612,14 @@ print(sorted([True, False, True]))
 print(sorted([[3, 4], [1, 2]]))
 ```
 
+
+{:.output_stream}
+```
+['a', 'b', 'c']
+[False, True, True]
+[[1, 2], [3, 4]]
+
+```
 
 ## Algorithmic Complexity
 
