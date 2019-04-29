@@ -1,14 +1,14 @@
 ---
-interact_link: content/labs/CL3-AlgorithmicThinking.ipynb
-download_link: assets/downloads/CL3-AlgorithmicThinking.ipynb.zip
+interact_link: content/labs/CL3B-Answers.ipynb
+download_link: assets/downloads/CL3B-Answers.ipynb.zip
 layout: notebooks
-title: 'CL3-AlgorithmicThinking'
+title: 'CL3B-Answers'
 prev_page:
-  url: /labs/CL2B-Answers
-  title: 'CL2B-Answers'
+  url: /labs/CL3-AlgorithmicThinking
+  title: 'CL3-AlgorithmicThinking'
 next_page:
-  url: /labs/CL3B-Answers
-  title: 'CL3B-Answers'
+  url: /labs/CL4-Exploring
+  title: 'CL4-Exploring'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -164,10 +164,11 @@ def array_statistics():
 ## Make some notes & write some pseudocode for you chosen tasks here
 
 
+
 ```
 
 
-## Part III: Functions
+## Part III Functions
 
 Functions are a way to organize code into a procedure that we can repeat and use whenever we want. 
 
@@ -186,6 +187,8 @@ Add some more code to finish this function.
 def mult_two(input_number):
     
     # YOUR CODE HERE
+    answer = input_number * 2
+    return answer
 ```
 
 
@@ -193,9 +196,19 @@ def mult_two(input_number):
 
 {:.input_area}
 ```python
-# Check that you can use the function
+# Check that we can use the function
 mult_two(2)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+4
+```
+
 
 
 
@@ -208,7 +221,7 @@ assert mult_two(3) == 6
 ```
 
 
-### Write a function that takes two inputs, adds them together, and returns the result
+#### Write a function that takes two inputs, adds them together, and returns the result
 
 Call this function `add_two`.
 
@@ -216,8 +229,10 @@ Call this function `add_two`.
 
 {:.input_area}
 ```python
-def add_two(_FILL_IN_INPUTS_):
-    # YOUR CODE HERE
+def add_two(num1, num2):
+
+    answer = num1 + num2
+    return answer
 ```
 
 
@@ -232,6 +247,16 @@ add_two(2, 2)
 
 
 
+
+{:.output_data_text}
+```
+4
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Check this function returns the correct number
@@ -239,6 +264,8 @@ assert add_two(2, 2) == 4
 assert add_two(3, 2) == 5
 ```
 
+
+## Functions Explorations
 
 ### Write a function with a conditional inside it
 
@@ -251,9 +278,29 @@ It could, for example, take a boolean, and print out a status if the input is Tr
 {:.input_area}
 ```python
 # YOUR CODE HERE
-
+def check_bool(input_bool):
+    
+    if input_bool == True:
+        print('Status is True')
+    else:
+        print('Status is not True')
 ```
 
+
+
+
+{:.input_area}
+```python
+# Check the function
+check_bool(True)
+```
+
+
+{:.output_stream}
+```
+Status is True
+
+```
 
 ### Write a function with a loop inside it
 
@@ -266,8 +313,34 @@ It could, for example, take a list of numbers, and add 1 to each element, and re
 {:.input_area}
 ```python
 # YOUR CODE HERE
+def adder(in_list):
 
+    out_list = []
+
+    for it in in_list:
+        out_list.append(it + 1)
+        
+    return out_list
 ```
+
+
+
+
+{:.input_area}
+```python
+# Check the function
+adder([1, 2, 3])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 3, 4]
+```
+
 
 
 ### Write a function with a loop and a conditional inside it
@@ -281,6 +354,34 @@ It could, for example, take a list of booleans, and count how many elements are 
 {:.input_area}
 ```python
 # YOUR CODE HERE
-
+def count_bool(list_of_bools):
+    
+    counter = 0
+    
+    for it in list_of_bools:
+    
+        if isinstance(it, bool):
+            counter = counter + 1
+    
+    return counter
 ```
+
+
+
+
+{:.input_area}
+```python
+# Check the function
+count_bool([True, None, False, 12])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 

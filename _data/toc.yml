@@ -131,12 +131,12 @@
   - title: CL3-AlgorithmicThinking
     url: /labs/CL3-AlgorithmicThinking
     not_numbered: true
-  # - title: CL3B-Answers
-  #   url: /labs/CL3B-Answers
-  #   not_numbered: true
-  # - title: CL4-Exploring
-  #   url: /labs/CL4-Exploring
-  #   not_numbered: true
+  - title: CL3B-Answers
+    url: /labs/CL3B-Answers
+    not_numbered: true
+  - title: CL4-Exploring
+    url: /labs/CL4-Exploring
+    not_numbered: true
   # - title: CL4B-Answers
   #   url: /labs/CL4B-Answers
   #   not_numbered: true
