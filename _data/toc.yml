@@ -57,9 +57,9 @@
   - title: 11-FunctionsII
     url: /materials/11-FunctionsII
     not_numbered: true
-  # - title: 12-Debugging
-  #   url: /materials/12-Debugging
-  #   not_numbered: true
+  - title: 12-Debugging
+    url: /materials/12-Debugging
+    not_numbered: true
   # - title: 13-Objects
   #   url: /materials/13-Objects
   #   not_numbered: true
@@ -160,7 +160,7 @@
   # - title: A1-GettingStarted
   #   url: /assignments/A1-GettingStarted
   #   not_numbered: true
-  - title: A1B-Answers
+  - title: A1-Answers
     url: /assignments/A1-GettingStarted-answers
     not_numbered: true
   # - title: A2-Ciphers

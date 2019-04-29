@@ -8,18 +8,19 @@ prev_page:
   url: /materials/10-Algorithms
   title: '10-Algorithms'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/12-Debugging
+  title: '12-Debugging'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
 ## Course Announcements
 
 - A3 due Monday (11:59 PM)
+- A1 grades posted to TritonEd
 - Exam : Friday, May 10th
     - in class
     - closed-book
-    - varied question type
+    - varied question types
     - no need to bring anything other than a writing utensil
  
 
@@ -59,6 +60,12 @@ print(out)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
+
 - A) ['first', 'second', 'third'] 
 - B) {1, 2, 3}
 - C) ['first', 1, 'second', 2, 'third', 3] 
@@ -77,7 +84,7 @@ These are specified by text within triple quotes in the first line after your fu
 ```python
 def my_func(my_dictionary):
     """return list of dictionary values"""
-    
+    ## comment that is not very helpful
     output = []
 
     for item in my_dictionary:
@@ -85,6 +92,14 @@ def my_func(my_dictionary):
         output.append(value)
     
     return output
+```
+
+
+
+
+{:.input_area}
+```python
+my_func?
 ```
 
 
@@ -119,6 +134,16 @@ exponentiate(2)
 
 
 
+
+{:.output_data_text}
+```
+4
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Call the function, over-riding default value with something else
@@ -129,11 +154,31 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # you can always state this explicitly
 exponentiate(number = 2, exponent = 3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 ## Positional vs. Keyword Arguments
@@ -153,6 +198,16 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Keyword arguments are explicitly named as to which argument each value relates to
@@ -162,11 +217,50 @@ exponentiate(number = 2, exponent = 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
+{:.input_area}
+```python
+exponentiate(exponent = 3, number = 2)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
 # this cell will produce an error
 exponentiate(number = 2, 3)
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-11-82d192fd1eb1>", line 3
+    exponentiate(number = 2, 3)
+                            ^
+SyntaxError: positional argument follows keyword argument
+
 ```
 
 
@@ -196,6 +290,16 @@ def exponentiate(number, exponent = 2):
 
 exponentiate(exponent = 3, number = 2)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 - A) 8
@@ -239,6 +343,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3, 4]
+
+```
+
 The method `append()` is called directly on the list `my_list`
 
 
@@ -249,6 +359,32 @@ The method `append()` is called directly on the list `my_list`
 # this will error with a string
 my_string = 'cogs18'
 my_string.append('!')
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-15-b99e95dcd8d7> in <module>()
+      2 # this will error with a string
+      3 my_string = 'cogs18'
+----> 4 my_string.append('!')
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'str' object has no attribute 'append'
 ```
 
 
@@ -264,12 +400,48 @@ my_float.is_integer()
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `is_integer()` method, attempted on an integer
 # this code will produce an error
 my_int = 12
 my_int.is_integer()
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-17-ba89eed6f102> in <module>()
+      2 # this code will produce an error
+      3 my_int = 12
+----> 4 my_int.is_integer()
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'int' object has no attribute 'is_integer'
 ```
 
 
@@ -288,11 +460,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'abc'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Make a string all upper case
 'aBc'.upper()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'ABC'
+```
+
 
 
 
@@ -306,11 +498,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'Python is great'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Find the index of where a string starts 
 'Hello, my name is'.find('name')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+10
+```
+
 
 
 ### Clicker Question #3
@@ -329,6 +541,16 @@ for element in inputs:
 
 output.capitalize()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Fix typing like this '
+```
+
 
 
 - A) 'fix typing like this ' 
@@ -354,12 +576,32 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[16, 33, 40, 88]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # append adds to the end of a list
 ints.append(2)
 ints
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[16, 33, 40, 88, 2]
+```
+
 
 
 
@@ -374,12 +616,32 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[16, 33, 88, 2]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # reverse order of list
 ints.reverse()
 ints
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 88, 33, 16]
+```
+
 
 
 ### Clicker Question #3
@@ -395,6 +657,16 @@ list_string.sort()
 list_string.reverse()
 list_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['d', 'c', 'b', 'a']
+```
+
 
 
 - A) ['a', 'c', 'd', 'b']
@@ -425,6 +697,16 @@ car.keys()
 
 
 
+
+{:.output_data_text}
+```
+dict_keys(['brand', 'model', 'year'])
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # get returns the value of a specified key
@@ -433,6 +715,12 @@ mod = car.get('model')
 print(mod)
 ```
 
+
+{:.output_stream}
+```
+M5
+
+```
 
 
 
@@ -453,6 +741,12 @@ car.update({"color": "Black"})
 print(car)
 ```
 
+
+{:.output_stream}
+```
+{'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+
+```
 
 ### Clicker Question #4
 
@@ -500,6 +794,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+['c', 'b', 'a']
+
+```
+
 
 
 {:.input_area}
@@ -511,6 +811,12 @@ my_numbers.sort()
 print(my_numbers)
 ```
 
+
+{:.output_stream}
+```
+[-1, 3, 13]
+
+```
 
 #### Dictionary methods that are not in place
 
@@ -524,10 +830,20 @@ car
 
 
 
+
+{:.output_data_text}
+```
+{'brand': 'BMW', 'color': 'Black', 'model': 'M5', 'year': 2019}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Return the keys in the dictionary
-out = car.keys()
+out = car.keys() 
 ```
 
 
@@ -541,6 +857,13 @@ print(out)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict_keys'>
+dict_keys(['brand', 'model', 'year', 'color'])
+
+```
+
 
 
 {:.input_area}
@@ -551,6 +874,13 @@ print(car)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict'>
+{'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+
+```
+
 
 
 {:.input_area}
@@ -558,6 +888,16 @@ print(car)
 # Return the values in the dicionary
 car.values()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+dict_values(['BMW', 'M5', 2019, 'Black'])
+```
+
 
 
 ## Finding Methods
@@ -577,8 +917,8 @@ my_string = 'Python'
 
 {:.input_area}
 ```python
-# See all the avaible methods on an object with tab complete
-my_string.
+# See all the available methods on an object with tab complete
+my_string. 
 ```
 
 
@@ -591,6 +931,92 @@ Using the function `dir()` returns all methods available
 # For our purposes now, you can ignore any leading underscores (these are special methods)
 dir(my_string)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__getnewargs__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rmod__',
+ '__rmul__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'capitalize',
+ 'casefold',
+ 'center',
+ 'count',
+ 'encode',
+ 'endswith',
+ 'expandtabs',
+ 'find',
+ 'format',
+ 'format_map',
+ 'index',
+ 'isalnum',
+ 'isalpha',
+ 'isdecimal',
+ 'isdigit',
+ 'isidentifier',
+ 'islower',
+ 'isnumeric',
+ 'isprintable',
+ 'isspace',
+ 'istitle',
+ 'isupper',
+ 'join',
+ 'ljust',
+ 'lower',
+ 'lstrip',
+ 'maketrans',
+ 'partition',
+ 'replace',
+ 'rfind',
+ 'rindex',
+ 'rjust',
+ 'rpartition',
+ 'rsplit',
+ 'rstrip',
+ 'split',
+ 'splitlines',
+ 'startswith',
+ 'strip',
+ 'swapcase',
+ 'title',
+ 'translate',
+ 'upper',
+ 'zfill']
+```
+
 
 
 ## Correspondance Between Functions & Methods
@@ -625,6 +1051,13 @@ print(my_float.is_integer())
 print(float.is_integer(my_float))
 ```
 
+
+{:.output_stream}
+```
+True
+True
+
+```
 
 
 
@@ -667,6 +1100,23 @@ def is_integer(my_float):
 
 {:.input_area}
 ```python
+print(my_float)
 is_integer(my_float)
 ```
+
+
+{:.output_stream}
+```
+11.0
+
+```
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 

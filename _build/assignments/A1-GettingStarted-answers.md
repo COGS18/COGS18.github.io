@@ -8,7 +8,7 @@ prev_page:
   title: 'CL3-AlgorithmicThinking'
 next_page:
   url: /assignments/A1-GettingStarted-answers
-  title: 'A1B-Answers'
+  title: 'A1-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
