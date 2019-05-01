@@ -60,9 +60,9 @@
   - title: 12-Debugging
     url: /materials/12-Debugging
     not_numbered: true
-  # - title: 13-Objects
-  #   url: /materials/13-Objects
-  #   not_numbered: true
+  - title: 13-Objects
+    url: /materials/13-Objects
+    not_numbered: true
   # - title: 14-Classes
   #   url: /materials/14-Classes
   #   not_numbered: true
