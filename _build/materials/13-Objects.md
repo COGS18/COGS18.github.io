@@ -8,8 +8,8 @@ prev_page:
   url: /materials/12-Debugging
   title: '12-Debugging'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/14-Classes
+  title: '14-Classes'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -31,6 +31,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
     - Professor Ellis - Fri 3-5 PM (CSB 243)
     - Shreenivas - Fri 6-7 PM (CSB 114)
 
+
+Check-In
 
 ### Review Question #1
 
@@ -55,6 +57,16 @@ my_number = 13.3; my_string = "word"
 
 check_data(my_string, my_number)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'A2'
+```
+
 
 
 - A) 'A1'
@@ -87,6 +99,12 @@ print(planets)
 ```
 
 
+{:.output_stream}
+```
+['Mercury', 'Venus', 'Earth', 'Mars', 'Jupyter', 'Saturn', 'Uranus', 'Neptune']
+
+```
+
 - A) the original list - we didn't store the output of `planets.remove()`
 - B) the original list, but without 'Pluto'
 - C) both the original list and the list without 'Pluto'
@@ -101,10 +119,16 @@ What would the following code return?
 {:.input_area}
 ```python
 home = 'Third Rock From The Sun'
-home.lower()
+home.lower() 
 print(home)
 ```
 
+
+{:.output_stream}
+```
+Third Rock From The Sun
+
+```
 
 - A) Third Rock From The Sun
 - B) third rock from the sun
@@ -135,8 +159,15 @@ What would be the best way to store a date?
 ```python
 # A date, stored as a string
 date_string = '29/09/1988'
+print(date_string)
 ```
 
+
+{:.output_stream}
+```
+29/09/1988
+
+```
 
 
 
@@ -144,7 +175,18 @@ date_string = '29/09/1988'
 ```python
 # A date, stored as a list of number
 date_list = ['29', '09', '1988']
+date_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['29', '09', '1988']
+```
+
 
 
 
@@ -155,16 +197,35 @@ date_list = ['29', '09', '1988']
 day = 29
 month = 9
 year = 1988
+
+print(day)
 ```
 
+
+{:.output_stream}
+```
+29
+
+```
 
 
 
 {:.input_area}
 ```python
 # A date, stored as a dictionary
-date_dictionary = {'day': 21, 'month': 7, 'year': 1997}
+date_dictionary = {'day': 29, 'month': 9, 'year': 1988}
+date_dictionary
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'day': 29, 'month': 9, 'year': 1988}
+```
+
 
 
 ## Objects
@@ -209,6 +270,12 @@ print(my_date)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29
+
+```
+
 
 
 {:.input_area}
@@ -216,6 +283,16 @@ print(my_date)
 # Check what type of thing `my_date` is
 type(my_date)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+datetime.date
+```
+
 
 
 ## Accessing Attributes & Methods
@@ -241,6 +318,16 @@ my_date.day
 
 
 
+
+{:.output_data_text}
+```
+29
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the month attribute
@@ -250,11 +337,31 @@ my_date.month
 
 
 
+
+{:.output_data_text}
+```
+9
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the year attribute
 my_date.year
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1988
+```
+
 
 
 ### Date - Methods
@@ -270,6 +377,16 @@ These are _functions_ that *belong* to and operate on the object directly.
 # Method to return what day of the week the date is
 my_date.weekday()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 
@@ -292,12 +409,32 @@ my_date.isoformat()
 
 
 
+
+{:.output_data_text}
+```
+'1988-09-29'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # operates on date object
 # returns a string
 type(my_date.isoformat())
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
 
 
 It's also possible to carry out operations on multiple date objects.
@@ -312,6 +449,12 @@ print(my_date, my_date2)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29 1980-07-29
+
+```
+
 
 
 {:.input_area}
@@ -322,6 +465,13 @@ print(time_diff.days,  "days") #in days
 print(time_diff.days/365,"years") #in years
 ```
 
+
+{:.output_stream}
+```
+2984 days
+8.175342465753424 years
+
+```
 
 ### Listing Attributes & Methods : `dir`
 
@@ -343,6 +493,60 @@ my_date.
 ## we'll talk about the double underscores next lecture
 dir(my_date)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__ne__',
+ '__new__',
+ '__radd__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rsub__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__sub__',
+ '__subclasshook__',
+ 'ctime',
+ 'day',
+ 'fromordinal',
+ 'fromtimestamp',
+ 'isocalendar',
+ 'isoformat',
+ 'isoweekday',
+ 'max',
+ 'min',
+ 'month',
+ 'replace',
+ 'resolution',
+ 'strftime',
+ 'timetuple',
+ 'today',
+ 'toordinal',
+ 'weekday',
+ 'year']
+```
+
 
 
 ### Clicker Question #2
@@ -376,7 +580,7 @@ For an object `lets` with a method `do_something`, how would you execute that me
 
 ### Clicker Question #4
 
-For an object `lets` with an attribute `name`, how would you return the information stored in `name` for hte object `lets`?
+For an object `lets` with an attribute `name`, how would you return the information stored in `name` for the object `lets`?
 
 - A) `name(lets)`
 - B) `lets.name`
@@ -414,6 +618,12 @@ print(now)
 ```
 
 
+{:.output_stream}
+```
+2019-05-01 09:34:41.436294
+
+```
+
 
 
 {:.input_area}
@@ -424,6 +634,13 @@ print(now.day)
 ```
 
 
+{:.output_stream}
+```
+2019
+1
+
+```
+
 
 
 {:.input_area}
@@ -432,6 +649,12 @@ print(now.day)
 print(now.weekday())
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 ### Objects Summary
 
@@ -489,6 +712,12 @@ print(george.sound)
 ```
 
 
+{:.output_stream}
+```
+Woof
+
+```
+
 
 
 {:.input_area}
@@ -498,6 +727,12 @@ print(george.sound)
 george.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 
 
