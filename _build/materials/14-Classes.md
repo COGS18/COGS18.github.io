@@ -8,8 +8,8 @@ prev_page:
   url: /materials/13-Objects
   title: '13-Objects'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/15-Namespaces
+  title: '15-Namespaces'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -41,7 +41,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 'Classes' define objects. The `class` keyword opens a code block for instructions on how to create objects of a particular type.
 </div>
 
-Think of classes as the _blueprint_ for creating and defining objects and their properties (methods, attributes, etc.)
+Think of classes as the _blueprint_ for creating and defining objects and their properties (methods, attributes, etc.). They keep related things together and organized.
 
 ## Example Class: Dog
 
@@ -96,6 +96,12 @@ print(george.sound)
 ```
 
 
+{:.output_stream}
+```
+Woof
+
+```
+
 
 
 {:.input_area}
@@ -105,6 +111,12 @@ print(george.sound)
 george.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 ### Clicker Question #1
 
@@ -150,11 +162,34 @@ pack_of_dogs
 
 
 
+
+{:.output_data_text}
+```
+[<__main__.Dog at 0x111c3a4e0>,
+ <__main__.Dog at 0x111c3a518>,
+ <__main__.Dog at 0x111c3a550>,
+ <__main__.Dog at 0x111c3a588>]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # take a look at this
 type(pack_of_dogs[0])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+__main__.Dog
+```
+
 
 
 
@@ -165,6 +200,15 @@ for dog in pack_of_dogs:
     dog.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+Woof
+Woof
+
+```
 
 ## Instances & self
 
@@ -199,14 +243,21 @@ pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 
 counter = 1
 
-for dog in pack_of_dogs:
+for doggie in pack_of_dogs:
     if(counter <= 2):
-        dog.speak()
+        doggie.speak()
         counter += 1
     else:
         break
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+
+```
 
 - A) 2 instances, 2 method executions
 - B) 2 instances, 4 method executions
@@ -235,6 +286,15 @@ for dog in pack_of_dogs:
     dog.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+Woof
+Woof
+
+```
 
 ### Clicker Question #3
 
@@ -294,6 +354,13 @@ print(gary.name)     # This is a instance attribute
 ```
 
 
+{:.output_stream}
+```
+Woof
+Gary
+
+```
+
 
 
 {:.input_area}
@@ -303,9 +370,15 @@ gary.speak()
 ```
 
 
+{:.output_stream}
+```
+Woof
+
+```
+
 ### Clicker Question #4
 
-Edit the code we've been using for the Class Dog to include inforrmation about the breed of the Class Dog?
+Edit the code we've been using for the Class `Dog` to include information about the breed of the Class Dog?
 
 
 
@@ -317,8 +390,9 @@ class Dog():
     sound = 'Woof'
     
     # Initializer, allows us to specificy instance specific attributes
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self):
         print(self.sound)
@@ -330,7 +404,19 @@ class Dog():
 {:.input_area}
 ```python
 ## We'll execute here
+lexi = Dog('Lexi','Italian Greyhound')
+lexi.breed
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Italian Greyhound'
+```
+
 
 
 - A) I did it!
@@ -377,6 +463,19 @@ for pet in pets:
 ```
 
 
+{:.output_stream}
+```
+Jaspurr  says:
+Meow
+Barkley  says:
+Woof
+Picatso  says:
+Meow
+Ruffius  says:
+Woof
+
+```
+
 ### Clicker Question #4
 
 What will the following code snippet print out?
@@ -408,6 +507,16 @@ class MyClass():
 student = MyClass('Rob', 'rob@python.com' , 62)
 student.check_score()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'rob@python.com'
+```
+
 
 
 - A) True
@@ -482,6 +591,14 @@ my_hammer.use_tool()
 ```
 
 
+{:.output_stream}
+```
+True
+To hammer things.
+Using tool.
+
+```
+
 ### Clicker Question #6
 
 Given the following set of classes:
@@ -519,6 +636,12 @@ sheep = SheepBrain()
 sheep.print_info()
 ```
 
+
+{:.output_stream}
+```
+This brain is medium and is not folded.
+
+```
 
 - A) This brain is medium and folded.
 - B) This brain is large and folded.
@@ -593,6 +716,16 @@ print(isinstance(a, object))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+True
+True
+True
+
+```
+
 ### Functions are objects
 
 
@@ -604,6 +737,13 @@ print(isinstance(max, object))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+
+```
+
 
 
 {:.input_area}
@@ -614,6 +754,16 @@ def my_function():
     
 isinstance(my_function, object)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Class definitions & instances are objects
@@ -631,6 +781,16 @@ my_instance = MyClass()
 print(isinstance(MyClass, object))
 print(isinstance(my_instance, object))
 ```
+
+
+{:.output_stream}
+```
+True
+True
+
+```
+
+<img src="img/object.jpg" width="600" align="middle">
 
 
 ## Object Oriented Programming
