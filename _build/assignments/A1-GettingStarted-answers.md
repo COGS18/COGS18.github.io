@@ -4,8 +4,8 @@ download_link: assets/downloads/A1-GettingStarted-answers.ipynb.zip
 layout: notebooks
 title: 'Assignments'
 prev_page:
-  url: /labs/CL4-Exploring
-  title: 'CL4-Exploring'
+  url: /labs/CL5-Classes
+  title: 'CL5-Classes'
 next_page:
   url: /assignments/A1-GettingStarted-answers
   title: 'A1-Answers'

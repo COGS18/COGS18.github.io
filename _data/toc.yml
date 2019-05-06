@@ -137,12 +137,12 @@
   - title: CL4-Exploring
     url: /labs/CL4-Exploring
     not_numbered: true
-  # - title: CL4B-Answers
-  #   url: /labs/CL4B-Answers
-  #   not_numbered: true
-  # - title: CL5-ProjectPlans
-  #   url: /labs/CL5-ProjectPlans
-  #   not_numbered: true
+  - title: CL4B-Answers
+    url: /labs/CL4B-Answers
+    not_numbered: true
+  - title: CL5-Classes
+    url: /labs/CL5-Classes
+    not_numbered: true
   # - title: CL6-CommandLine
   #   url: /labs/CL6-CommandLine
   #   not_numbered: true
@@ -163,9 +163,9 @@
   - title: A1-Answers
     url: /assignments/A1-GettingStarted-answers
     not_numbered: true
-  # - title: A2-Ciphers
-  #   url: /assignments/A2-Ciphers
-  #   not_numbered: true
+  - title: A2-Answers
+    url: /assignments/A2-Answers
+    not_numbered: true
   # - title: A2B-Answers
   #   url: /assignments/A2B-Answers
   #   not_numbered: true
