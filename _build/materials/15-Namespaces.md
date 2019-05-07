@@ -94,6 +94,12 @@ print(sorted(my_list))
 ```
 
 
+{:.output_stream}
+```
+[1, 15, 16]
+
+```
+
 
 
 {:.input_area}
@@ -102,6 +108,12 @@ print(sorted(my_list, reverse=True))
 ```
 
 
+{:.output_stream}
+```
+[16, 15, 1]
+
+```
+
 
 
 {:.input_area}
@@ -109,6 +121,12 @@ print(sorted(my_list, reverse=True))
 print(sorted(my_list, reverse=False))
 ```
 
+
+{:.output_stream}
+```
+[1, 15, 16]
+
+```
 
 #### Putting it all together
 
@@ -134,10 +152,30 @@ my_function(my_list)
 
 
 
+
+{:.output_data_text}
+```
+[1, 15, 16]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 my_function(my_list, reverse=True)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[16, 15, 1]
+```
+
 
 
 ### Review Question #1
@@ -176,8 +214,16 @@ def exponentiate(number, exponent = 2):
 
 a = exponentiate(exponent = 3, number = 2)
 b = exponentiate(3)
+
+print(a,b)
 ```
 
+
+{:.output_stream}
+```
+8 9
+
+```
 
 - A) `a == b`
 - B) `a < b`
@@ -194,6 +240,14 @@ print( a < b )
 print(a > b)
 ```
 
+
+{:.output_stream}
+```
+False
+True
+False
+
+```
 
 ### Classes Review
 
@@ -249,6 +303,16 @@ human.folded and sheep.folded
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
 - A) True
 - B) False
 - C) None
@@ -263,6 +327,12 @@ human.folded and sheep.folded
 sheep.print_info()
 ```
 
+
+{:.output_stream}
+```
+This brain is medium and is not folded.
+
+```
 
 # Namespaces
 
@@ -296,6 +366,23 @@ That is, the 'scope' of an object is where it is available to / from.
 %whos
 ```
 
+
+{:.output_stream}
+```
+Variable       Type          Data/Info
+--------------------------------------
+Brain          type          <class '__main__.Brain'>
+HumanBrain     type          <class '__main__.HumanBrain'>
+SheepBrain     type          <class '__main__.SheepBrain'>
+a              int           8
+b              int           9
+exponentiate   function      <function exponentiate at 0x10c145158>
+human          HumanBrain    <__main__.HumanBrain object at 0x10c09da90>
+my_function    function      <function my_function at 0x10c0836a8>
+my_list        list          n=3
+sheep          SheepBrain    <__main__.SheepBrain object at 0x10c09d390>
+
+```
 
 ## Modules & Packages
 
@@ -337,6 +424,32 @@ type(math)
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-23-0a474bb83797> in <module>()
+      1 # we haven't imported the module yet
+      2 # this code fails if you haven't yet imported math
+----> 3 type(math)
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'math' is not defined
+```
+
+
+
 
 {:.input_area}
 ```python
@@ -356,6 +469,16 @@ type(math)
 
 
 
+
+{:.output_data_text}
+```
+module
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # By the way - modules are objects
@@ -365,12 +488,32 @@ isinstance(math, object)
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Using code from our math module
 # remember to tab complete or use dir(math)
-math.
+math.sqrt(9)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3.0
+```
+
 
 
 ### `import` example: random module
@@ -394,11 +537,91 @@ type(random)
 
 
 
+
+{:.output_data_text}
+```
+module
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Explore what is available in random
 dir(random)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['BPF',
+ 'LOG4',
+ 'NV_MAGICCONST',
+ 'RECIP_BPF',
+ 'Random',
+ 'SG_MAGICCONST',
+ 'SystemRandom',
+ 'TWOPI',
+ '_BuiltinMethodType',
+ '_MethodType',
+ '_Sequence',
+ '_Set',
+ '__all__',
+ '__builtins__',
+ '__cached__',
+ '__doc__',
+ '__file__',
+ '__loader__',
+ '__name__',
+ '__package__',
+ '__spec__',
+ '_acos',
+ '_bisect',
+ '_ceil',
+ '_cos',
+ '_e',
+ '_exp',
+ '_inst',
+ '_itertools',
+ '_log',
+ '_pi',
+ '_random',
+ '_sha512',
+ '_sin',
+ '_sqrt',
+ '_test',
+ '_test_generator',
+ '_urandom',
+ '_warn',
+ 'betavariate',
+ 'choice',
+ 'choices',
+ 'expovariate',
+ 'gammavariate',
+ 'gauss',
+ 'getrandbits',
+ 'getstate',
+ 'lognormvariate',
+ 'normalvariate',
+ 'paretovariate',
+ 'randint',
+ 'random',
+ 'randrange',
+ 'sample',
+ 'seed',
+ 'setstate',
+ 'shuffle',
+ 'triangular',
+ 'uniform',
+ 'vonmisesvariate',
+ 'weibullvariate']
+```
+
 
 
 
@@ -453,6 +676,12 @@ print(chosen)
 ```
 
 
+{:.output_stream}
+```
+['5', '3']
+
+```
+
 ## Imports: `from` & `as`
 
 <div class="alert alert-success">
@@ -477,6 +706,16 @@ from random import choice
 ## to call this
 choice(to_choose_from)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'5'
+```
+
 
 
 
@@ -539,7 +778,18 @@ Which of the following is NOT a valid Python import statement?
 #from statistics import mean as average
 #from os import path
 #from random import choice, choices
-#import ascii_letters from string
+import ascii_letters from string
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-41-2c3968304f0d>", line 6
+    import ascii_letters from string
+                            ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -580,6 +830,16 @@ my_remote_function(2, 1)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
 ## Importing Custom Code II
 
 
@@ -603,11 +863,31 @@ type(nums)
 
 
 
+
+{:.output_data_text}
+```
+remote.MyNumbers
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Check 
-nums.subtract()
+nums.add()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 
@@ -615,7 +895,7 @@ nums.subtract()
 {:.input_area}
 ```python
 # Check the definition of the code we imported
-nums.subtract??
+nums.add??
 ```
 
 
@@ -636,6 +916,16 @@ choice?
 ```python
 choice([1, 2, 3])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1
+```
+
 
 
 
@@ -661,6 +951,16 @@ choice?
 ```python
 choice([1, 2, 3])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 While you _can_ have functions with the same name in two different places...do your best to avoid this.

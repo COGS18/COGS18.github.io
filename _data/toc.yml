@@ -108,9 +108,9 @@
   # - title: Midterm
   #   url: /materials/Midterm
   #   not_numbered: true
-  # - title: MidtermPractice
-  #   url: /materials/MidtermPractice
-  #   not_numbered: true
+  - title: MidtermPractice
+    url: /materials/MidtermPractice
+    not_numbered: true
 
 - title: Coding Labs
   url: /labs/CL1-ProgrammingI
