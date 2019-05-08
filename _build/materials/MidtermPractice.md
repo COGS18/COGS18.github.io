@@ -5,8 +5,8 @@ pdf_link: assets/pdf/MidtermPractice.pdf
 layout: materials
 title: 'MidtermPractice'
 prev_page:
-  url: /materials/A2-Examples
-  title: 'A2-Examples'
+  url: /materials/Midterm-Review
+  title: 'Midterm-Review'
 next_page:
   url: /labs/CL1-ProgrammingI
   title: 'Coding Labs'

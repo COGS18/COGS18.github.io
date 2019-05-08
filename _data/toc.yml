@@ -105,9 +105,9 @@
   - title: A2-Examples
     url: /materials/A2-Examples
     not_numbered: true
-  # - title: Midterm
-  #   url: /materials/Midterm
-  #   not_numbered: true
+  - title: Midterm-Review
+    url: /materials/Midterm-Review
+    not_numbered: true
   - title: MidtermPractice
     url: /materials/MidtermPractice
     not_numbered: true

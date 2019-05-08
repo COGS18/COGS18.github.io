@@ -26,7 +26,7 @@ The PDF slides from the start of the first class are available here: https://cog
 
 - Who:
     - Instructor: Shannon Ellis 
-    - TAs: Charles Chen & Shreenivas Venkatama
+    - TAs: Charles Chen & Shreenivas Venkataramanan
     - IAs: Weilun, Severine, Stephen, Myles, Miranda, Edward, & Ahrial
 
 - Where:

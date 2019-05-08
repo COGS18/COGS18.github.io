@@ -8,8 +8,8 @@ prev_page:
   url: /materials/A1-Syntax
   title: 'A1-Syntax'
 next_page:
-  url: /materials/MidtermPractice
-  title: 'MidtermPractice'
+  url: /materials/Midterm-Review
+  title: 'Midterm-Review'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
