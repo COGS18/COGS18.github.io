@@ -614,7 +614,7 @@ Membership operators are used to check whether a value or variable is found in a
 Here, we'll just be checking for value membership in strings. But, we'll discuss lists, tuples, sets, and dictionaries soon.
 
 - `in` : True if value is found in the sequence
-- `is not` : True if value is not found in the sequence
+- `not in` : True if value is not found in the sequence
 
 
 

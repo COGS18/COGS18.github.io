@@ -143,14 +143,20 @@
   - title: CL5-Classes
     url: /labs/CL5-Classes
     not_numbered: true
-  # - title: CL6-CommandLine
-  #   url: /labs/CL6-CommandLine
+  - title: CL5B-Answers
+    url: /labs/CL5B-Answers
+    not_numbered: true   
+  - title: CL6-ProjectBrainstorm
+    url: /labs/CL6-ProjectBrainstorm
+    not_numbered: true
+  #- title: CL7-CommandLine
+  #  url: /labs/CL7-CommandLine
+  #  not_numbered: true
+  # - title: CL8-ProjectOverview
+  #   url: /labs/CL8-ProjectOverview
   #   not_numbered: true
-  # - title: CL7-ProjectOverview
-  #   url: /labs/CL7-ProjectOverview
-  #   not_numbered: true
-  # - title: CL8-CodeReview
-  #   url: /labs/CL8-CodeReview
+  # - title: CL9-CodeReview
+  #   url: /labs/CL9-CodeReview
   #   not_numbered: true
 
 - title: Assignments
@@ -161,7 +167,7 @@
   #   url: /assignments/A1-GettingStarted
   #   not_numbered: true
   - title: A1-Answers
-    url: /assignments/A1-GettingStarted-answers
+    url: /assignments/A1-Answers
     not_numbered: true
   - title: A2-Answers
     url: /assignments/A2-Answers
@@ -172,17 +178,17 @@
   # - title: A3-Chatbots
   #   url: /assignments/A3-Chatbots
   #   not_numbered: true
-  # - title: A3B-Answers
-  #   url: /assignments/A3B-Answers
-  #   not_numbered: true
+  - title: A3-Answers
+    url: /assignments/A3-Answers
+    not_numbered: true
   # - title: A4-ArtificialAgents
   #   url: /assignments/A4-ArtificialAgents
   #   not_numbered: true
 
-#- title: Projects
-#  url: /projects/ProjectIdeas
- # not_numbered: true
-  #sections:
-  #- title: ProjectIdeas
-   # url: /projects/ProjectIdeas
-    #not_numbered: true
+- title: Projects
+  url: /projects/ProjectIdeas
+  not_numbered: true
+  sections:
+  - title: ProjectIdeas
+    url: /projects/ProjectIdeas
+    not_numbered: true

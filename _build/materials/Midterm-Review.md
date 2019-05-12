@@ -15,6 +15,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Midterm Review
 
+- A4 due Monday (11:59 PM)
+
 <h1 align="center">Midterm is Friday 5/10</h1>
 
 ## Midterm Expectations
@@ -96,24 +98,67 @@ Edit the code at right with how would you return the specified values on left:
 ['vanilla', 'chocolate', 'strawberry'] : ice_cream[      ]
 ```
 
-
-
-{:.input_area}
-```python
-## CODE HERE
-```
-
-
 #### Data Types Question #3
 
 Write a line of code that would change the third element of a list `my_list` to store the value `12`.
 
+#### Data Types Answers
+
+Data Types Question #1
+
+Tuples are created with () and are immutable.  
+Lists are created with [] and are mutable.
+
 
 
 {:.input_area}
 ```python
-## CODE HERE
+# Data Types Question #2
+ice_cream = ['vanilla', 'chocolate', 'strawberry', 'cherry', 'salted caramel']
+ice_cream[-5:-2]
+ice_cream[:3]
+ice_cream[0:3]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['vanilla', 'chocolate', 'strawberry']
+```
+
+
+
+
+
+{:.input_area}
+```python
+# Data Types Question #3
+my_list[2] = 12
+```
+
+
+
+
+{:.input_area}
+```python
+# Data Types Question #3
+my_list = [1,2,3,4,5,6]
+my_list[2] = 12
+my_list
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 12, 4, 5, 6]
+```
+
 
 
 ### Operators
@@ -137,14 +182,6 @@ Write out what the following expression will evaluate as:
 not False or not True
 ```
 
-
-
-{:.input_area}
-```python
-## CODE HERE
-```
-
-
 #### Operators Question #3
 
 Write out what the following expression will evaluate as:
@@ -152,14 +189,6 @@ Write out what the following expression will evaluate as:
 ```python
 2**2 + 2
 ```
-
-
-
-{:.input_area}
-```python
-## CODE HERE
-```
-
 
 #### Operators Question #4
 
@@ -169,12 +198,68 @@ Write out what the following expression will evaluate as:
 'cogs' + '18'
 ```
 
+#### Operators Answers
+
+Operators Question #1
+
+= is an assignment operator  
+== checks for equality
+
 
 
 {:.input_area}
 ```python
-## CODE HERE
+# Operators Question #2
+not False or not True
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+# Operators Question #3
+2**2 + 2
+```
+
+
+
+
+
+{:.output_data_text}
+```
+6
+```
+
+
+
+
+
+{:.input_area}
+```python
+# Operators Question #4
+'cogs' + '18'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'cogs18'
+```
+
 
 
 ### Conditionals
@@ -191,7 +276,7 @@ Given the following outline of a conditional:
 
 ```python
     if COND_A:
-      	# Code Block A
+        # Code Block A
 	elif COND_B:
 		# Code Block B
 	else:
@@ -200,6 +285,40 @@ Given the following outline of a conditional:
 
 1. If `COND_A` and `COND_B` are both `True`, which code block(s) evaluate?
 2. If `COND_A` is False and `COND_B` is `True`, which code block(s) evaluate?
+
+#### Conditionals Answers
+
+Conditionals Question #1
+
+necessary, optional, optional
+
+Conditionals Question #2
+
+1. Code Block A
+2. Code Block B
+
+
+
+{:.input_area}
+```python
+# how to check your thinking when you're studying
+COND_A = True
+COND_B = True
+
+if COND_A:
+    print('a')
+elif COND_B:
+    print('b')
+else:
+    print('c')
+```
+
+
+{:.output_stream}
+```
+a
+
+```
 
 ### Loops
 
@@ -211,15 +330,36 @@ What are the two kinds of loops? ____________ and ____________
 
 #### Loops Question #2
 Use the following:
-```python ind = 1``` to write a loop (using real Python code) that would loop and print the value `ind` of ind each time through the loop _and_ update the value of ind by 1. Have this loop stop after 4 iterations. 
+`ind = 1` to write a loop (using real Python code) that would loop and print the value `ind` of ind each time through the loop _and_ update the value of ind by 1. Have this loop stop after 4 iterations. 
+
+#### Loops Answers
+
+Loops Question #1
+
+for and while
 
 
 
 {:.input_area}
 ```python
-## YOUR ANSWER HERE
+# Loops Question #2
+ind = 1
+
+while ind <= 4:
+    print(ind)
+    ind += 1
+    #or ind = ind + 1
 ```
 
+
+{:.output_stream}
+```
+1
+2
+3
+4
+
+```
 
 ## Clicker Question
 
@@ -265,6 +405,44 @@ Using the function `add` you wrote above, write the python code you would use to
 ```
 
 
+#### Functions Answers
+
+
+
+{:.input_area}
+```python
+## Functions Quesiton #1
+
+def add(num1, num2):  # set default vlues within parenthesis
+    out = num1 + num2
+    return out
+```
+
+
+
+
+{:.input_area}
+```python
+## Functions Question #2
+
+my_sum = add(16,18)
+# OR
+my_sum = add(18,16)
+
+my_sum
+```
+
+
+
+
+
+{:.output_data_text}
+```
+34
+```
+
+
+
 ### Objects & Classes
 
 - objects & `class`
@@ -286,10 +464,20 @@ Given an instance object 'koala' of the class 'Animals', write a line to:
 
 Fill in the blanks:
 
-	What is the name of a function defined with a class: ______________
+	What is the name of a function defined within a class: ______________
 
 	In Python, everything is a(n) ______________. 
 
+
+#### Objects & Classes Answers
+
+Question #1: 
+- `koala.speak()`
+- `koala.sound`
+
+Question #2: 
+- method
+- object
 
 ### Python & Jupyter Extras
 - encodings (`chr` & `ord`)
@@ -302,7 +490,7 @@ Fill in the blanks:
 #### Extras Question #1
 What will the following piece of code print out?
 
-```python print(chr(ord('A')))``` 
+```print(chr(ord('A')))``` 
     
      _____________
 
@@ -319,6 +507,36 @@ For each of the following, indicate if the statement is True or False about Pyth
 - True/False You have to specify a data type when you define a variable
 - True/False Every Python variable is available from every namespace		
 
+
+#### Extras Answers
+
+
+
+{:.input_area}
+```python
+# Extras Question #1
+print(chr(ord('A')))
+```
+
+
+Extras Question #2
+
+returning information about what objects are stored in your namespace (i.e. variables, functions, classes, etc.)
+
+
+
+{:.input_area}
+```python
+%whos
+```
+
+
+Extras Question #3
+
+- True - Whitespace matters in Python
+- False - Comments in Python start with '%' 					
+- False - You have to specify a data type when you define a variable
+- False - Every Python variable is available from every namespace	
 
 <h2><center>After the midterm:</center></h2>
 

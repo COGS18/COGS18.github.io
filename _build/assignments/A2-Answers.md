@@ -4,11 +4,11 @@ download_link: assets/downloads/A2-Answers.ipynb.zip
 layout: notebooks
 title: 'A2-Answers'
 prev_page:
-  url: /assignments/A1-GettingStarted-answers
+  url: /assignments/A1-Answers
   title: 'A1-Answers'
 next_page:
-  url: /
-  title: ''
+  url: /assignments/A3-Answers
+  title: 'A3-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

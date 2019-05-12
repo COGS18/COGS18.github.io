@@ -1,6 +1,7 @@
 ---
 output:
   pdf_document: default
+  html_document: default
 ---
 # Final Project
 
@@ -17,9 +18,9 @@ The broad objectives of this project are for you to:
 
 ### Project Schedule
 
-- W6: Project Description released.
+- W7: Project Description released.
   - Starting this week Coding Labs will be explicitly oriented towards project related work.
-- W7: By the end of this week, you must have a project topic / outline
+- W8: By the end of this week, you must have a project topic / outline
 - W8-10: Work on the project
 - **Finals Week: projects due (11:59 PM, Wednesday, June 12th)**
 
@@ -58,11 +59,11 @@ The main goal of the project is to demonstrate that you can design and implement
 
 There is not a specific amount of code that you have to write for the project. In terms of project scope, your project must implement some new thing, that you design and write the code for. To do so, you are expected to write new code that creates or adds some functionality, and that does so using good code practices. As a rule of thumb, note a project that appropriately responds to this call will have at least a set of new functions, will use code constructs such as loops and conditionals, will import code from available modules when needed, and will do all of this organized into a well constructed organization, in which the code follows proper coding style, is documented, and includes at least one code test.
 
-As the focus of the project is working with Python code, there is no prioritization for trying to perform complex tasks. On the contrary, in the face of a complex task in which the work ends up being trying to understand the complex topic you are working on, instead of focusing on working directly with Python code, a simpler project topic is preferred.
+As the focus of the project is working with Python code, there is **no** prioritization for trying to perform complex tasks. On the contrary, in the face of a complex task in which the work ends up being trying to understand the complex topic you are working on, instead of focusing on working directly with Python code, a simpler project topic is preferred.
 
 ### Project Approach
 
-As you work through your project, we recommend taking an approach in which you use a modular design, and prioritize creating a minimal viable product, using a rapid prototyping approach. These terms will be more fully described in class - but to a first approximation this approach suggests that you organize your design as separate components (modular design), that are independent of each other. Focus first on the core component of the project (minimal viable product) - what piece of it is required such that you have a working implementation of the basic idea that you are targeting. As you work through this, try things out quickly (rapid prototyping) - write some code, check if it works, figure out why or why not, and iterate onto a next version. Once you get the core of the project working, you can add any extra pieces that would be nice and useful to extend the scope of the project, knowing that you have the core idea working.
+As you work through your project, we recommend taking an approach in which you use a modular design and **prioritize creating a minimal viable product**, using a rapid prototyping approach. These terms will be more fully described in class - but to a first approximation this approach suggests that you organize your design as separate components (modular design), that are independent of each other. Focus first on the core component of the project (minimal viable product) - what piece of it is required such that you have a working implementation of the basic idea that you are targeting. As you work through this, try things out quickly (rapid prototyping) - write some code, check if it works, figure out why or why not, and iterate onto a next version. Once you get the core of the project working, you can add any extra pieces that would be nice and useful to extend the scope of the project, knowing that you have the core idea working.
 
 ### Project Requirements
 
@@ -86,7 +87,7 @@ MyProjectFolder/
     - my_script.py 
   - requirements.txt
 
-Note that not all of these files / sections are mandatory, and they do not have to use the names specified here - file names can be whatever you want, as long as the organization is clear and what kind of thing each file is is clear. You must include, at minimum, a Jupyter notebook, and some part of your code should be organized into a module, with a test file. The scripts section is optional, and should be included if it makes sense to organize your function into an executable script. The requirements text file (optional) should list any modules you use in your project that are not included in the anaconda distribution.
+Note that not all of these files / sections are mandatory, and they do not have to use the names specified here - file names can be whatever you want, as long as the organization is clear and what kind of thing each file is is clear. **You must include, at minimum, a Jupyter notebook, and some part of your code should be organized into a module, with a test file**. The scripts section is optional, and should be included if it makes sense to organize your function into an executable script. The requirements text file (optional) should list any modules you use in your project that are not included in the anaconda distribution.
 
 ##### *How to create a zip file*
 

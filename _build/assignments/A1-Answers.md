@@ -1,14 +1,14 @@
 ---
-interact_link: content/assignments/A1-GettingStarted-answers.ipynb
-download_link: assets/downloads/A1-GettingStarted-answers.ipynb.zip
+interact_link: content/assignments/A1-Answers.ipynb
+download_link: assets/downloads/A1-Answers.ipynb.zip
 layout: notebooks
-title: 'Assignments'
+title: 'A1-Answers'
 prev_page:
-  url: /labs/CL6-ProjectBrainstorm
-  title: 'CL6-ProjectBrainstorm'
+  url: /assignments/A1-GettingStarted-answers
+  title: 'Assignments'
 next_page:
-  url: /assignments/A1-Answers
-  title: 'A1-Answers'
+  url: /assignments/A2-Answers
+  title: 'A2-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
