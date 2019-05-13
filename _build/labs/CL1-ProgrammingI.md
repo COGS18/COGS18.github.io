@@ -4,8 +4,8 @@ download_link: assets/downloads/CL1-ProgrammingI.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/MidtermPractice
-  title: 'MidtermPractice'
+  url: /materials/PythonParty
+  title: 'PythonParty'
 next_page:
   url: /labs/CL1-ProgrammingI
   title: 'CL1-ProgrammingI'

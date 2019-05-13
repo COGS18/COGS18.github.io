@@ -111,6 +111,9 @@
   - title: MidtermPractice
     url: /materials/MidtermPractice
     not_numbered: true
+  - title: PythonParty
+    url: /materials/PythonParty
+    not_numbered: true
 
 - title: Coding Labs
   url: /labs/CL1-ProgrammingI
