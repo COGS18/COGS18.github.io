@@ -57,6 +57,16 @@ Will largely be project-focused going forward
 - Week 9 : Project Overview
 - Week 10 : Code Review (_optional_) 
 
+## Clicker Question
+
+How excited are you to get started on your COGS18 final project? 
+
+- A) The MOST Excited!
+- B) Really Excited!
+- C) _Incredibly_ Excited!
+- D) Super Duper Excited!
+- E) Really Flipping Excited!
+
 ## Python Party!
 
 
