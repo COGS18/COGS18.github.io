@@ -8,8 +8,8 @@ prev_page:
   url: /materials/15-Namespaces
   title: '15-Namespaces'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/17-APIs
+  title: '17-APIs'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -90,6 +90,12 @@ Do this by starting with `!`
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/Materials
+
+```
+
 ## An important aside: File Paths
 
 <div class="alert alert-success">
@@ -125,6 +131,30 @@ An absolute file path starts with a slash `/` specifying the root directory.
 ```
 
 
+{:.output_stream}
+```
+00-Introduction.ipynb        19-OpenSource.ipynb
+01-Tools.ipynb               20-Documentation.ipynb
+02-JupyterNotebooks.ipynb    21-CodeStyle.ipynb
+03-Variables.ipynb           22-CodeTesting.ipynb
+04-Operators.ipynb           23-CodeProjects.ipynb
+05-Conditionals.ipynb        24-AdvancedPython.ipynb
+06-DataTypes.ipynb           25-WrapUp.ipynb
+07-Loops.ipynb               A1-Syntax.ipynb
+08-Encodings.ipynb           A2-Examples.ipynb
+09-FunctionsI.ipynb          Check-In.ipynb
+10-Algorithms.ipynb          Midterm-Review.ipynb
+11-FunctionsII.ipynb         Midterm.ipynb
+12-Debugging.ipynb           MidtermPractice.ipynb
+13-Objects.ipynb             PythonParty.ipynb
+14-Classes.ipynb             [34m__pycache__[m[m
+15-Namespaces.ipynb          [34mimg[m[m
+16-CommandLine.ipynb         remote.py
+17-APIs.ipynb                stw.py
+18-ScientificComputing.ipynb
+
+```
+
 #### Relative Paths
 
 <div class="alert alert-success">
@@ -140,6 +170,12 @@ An absolute file path starts with a slash `/` specifying the root directory.
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/Materials
+
+```
+
 
 
 {:.input_area}
@@ -149,6 +185,24 @@ An absolute file path starts with a slash `/` specifying the root directory.
 !ls ../COGS108/Lectures-Sp19
 ```
 
+
+{:.output_stream}
+```
+01_intro_ethics.pdf          12_correlation.ipynb
+02_version_control.pdf       13_binary.ipynb
+03_data.pdf                  13_text.pdf
+[34m04_data_wrangling[m[m            14_text.ipynb
+04_data_wrangling.pdf        15_machine_learning.pdf
+04_data_wrangling.zip        17_machine_learning.ipynb
+05_dataviz.pdf               EDA_CaseStudy_12PM.pdf
+[34m06_datavizII[m[m                 EDA_CaseStudy_2PM.pdf
+07_analysis.pdf              Inference_CaseStudy_12PM.pdf
+[34m08_descriptive[m[m               Inference_CaseStudy_2PM.pdf
+09_EDA.ipynb                 README.md
+10_inference.pdf             [34mimg[m[m
+11_regression.ipynb
+
+```
 
 
 - `..` specify you want to move one directory up in your hierarchy
@@ -177,7 +231,7 @@ What is the absolute path to `cool_thing.py`?
 
 - A) `/scripts/cool_thing.py`
 - B) `scripts/cool_thing.py`
-- C) `/scripts/cool_thing.py`
+- C) `/root/scripts/cool_thing.py`
 - D) `../scripts/cool_thing.py`
 - E) ¯\\\_(ツ)\_/¯
 
@@ -220,6 +274,12 @@ If your current working directory is `notebooks`, what is the relative path to `
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/Materials
+
+```
+
 #### Change directory
 
 
@@ -247,6 +307,30 @@ Here, we saw `~/Desktop/`.
 !ls
 ```
 
+
+{:.output_stream}
+```
+00-Introduction.ipynb        19-OpenSource.ipynb
+01-Tools.ipynb               20-Documentation.ipynb
+02-JupyterNotebooks.ipynb    21-CodeStyle.ipynb
+03-Variables.ipynb           22-CodeTesting.ipynb
+04-Operators.ipynb           23-CodeProjects.ipynb
+05-Conditionals.ipynb        24-AdvancedPython.ipynb
+06-DataTypes.ipynb           25-WrapUp.ipynb
+07-Loops.ipynb               A1-Syntax.ipynb
+08-Encodings.ipynb           A2-Examples.ipynb
+09-FunctionsI.ipynb          Check-In.ipynb
+10-Algorithms.ipynb          Midterm-Review.ipynb
+11-FunctionsII.ipynb         Midterm.ipynb
+12-Debugging.ipynb           MidtermPractice.ipynb
+13-Objects.ipynb             PythonParty.ipynb
+14-Classes.ipynb             [34m__pycache__[m[m
+15-Namespaces.ipynb          [34mimg[m[m
+16-CommandLine.ipynb         remote.py
+17-APIs.ipynb                stw.py
+18-ScientificComputing.ipynb
+
+```
 
 ### More Shell Commands
 
