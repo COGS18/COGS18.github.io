@@ -30,7 +30,7 @@ Note that this is the second time this course is being offered and the first tim
 | IA	           | Severine Soltani                               |    Wed 11AM & 12PM | -- |
 | IA	           | Stephen Jarrell                                 |    Wed 1PM, Fri 11AM | -- |
 | IA	           | Ahrial Young                                     |    Fri 11AM | -- |
-| IA	           | Myles Wright                                    |    Mon 3PM, 4PM | Mon 4-5 PM (Sun God Lounge) |
+| IA	           | Myles Wright                                    |    Mon 3PM, 4PM | Mon 5-6 PM (Sun God Lounge) |
 | IA	           | Miranda Go                                      |    Fri 10AM | -- |
 | IA	           | Edward Chen                                   |     Wed 12PM, Fri 12PM | -- |
 

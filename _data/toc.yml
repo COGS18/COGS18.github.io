@@ -75,9 +75,9 @@
   - title: 17-APIs
     url: /materials/17-APIs
     not_numbered: true
-  # - title: 18-ScientificComputing
-  #   url: /materials/18-ScientificComputing
-  #   not_numbered: true
+  - title: 18-ScientificComputing
+    url: /materials/18-ScientificComputing
+    not_numbered: true
   # - title: 19-OpenSource
   #   url: /materials/19-OpenSource
   #   not_numbered: true
@@ -110,6 +110,9 @@
     not_numbered: true
   - title: MidtermPractice
     url: /materials/MidtermPractice
+    not_numbered: true
+  - title: Midterm-Answers
+    url: /materials/Midterm-Answers
     not_numbered: true
   - title: PythonParty
     url: /materials/PythonParty
@@ -152,9 +155,9 @@
   - title: CL6-ProjectBrainstorm
     url: /labs/CL6-ProjectBrainstorm
     not_numbered: true
-  #- title: CL7-CommandLine
-  #  url: /labs/CL7-CommandLine
-  #  not_numbered: true
+  - title: CL7-CommandLine
+    url: /labs/CL7-CommandLine
+    not_numbered: true
   # - title: CL8-ProjectOverview
   #   url: /labs/CL8-ProjectOverview
   #   not_numbered: true
