@@ -5,8 +5,8 @@ pdf_link: assets/pdf/PythonParty.pdf
 layout: materials
 title: 'PythonParty'
 prev_page:
-  url: /materials/MidtermPractice
-  title: 'MidtermPractice'
+  url: /materials/Midterm-Answers
+  title: 'Midterm-Answers'
 next_page:
   url: /labs/CL1-ProgrammingI
   title: 'Coding Labs'

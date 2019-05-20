@@ -8,8 +8,8 @@ prev_page:
   url: /materials/Midterm-Review
   title: 'Midterm-Review'
 next_page:
-  url: /materials/PythonParty
-  title: 'PythonParty'
+  url: /materials/Midterm-Answers
+  title: 'Midterm-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
