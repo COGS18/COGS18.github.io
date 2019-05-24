@@ -8,8 +8,8 @@ prev_page:
   url: /materials/18-ScientificComputing
   title: '18-ScientificComputing'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/20-Documentation
+  title: '20-Documentation'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -31,6 +31,42 @@ iclicker Frequency Code: CA
 ```python
 ## YOUR CODE HERE
 ```
+
+
+
+
+{:.input_area}
+```python
+class Basketball():
+    
+    def __init__(self, team = None, city = None):
+        self.team = team
+        self.city = city
+    
+    def make_prof_feel_better(self):
+        if self.team == '76ers' or self.city == 'Philly':
+            return 'The Sixers got robbed!'
+        else:
+            return 'Kawhi Leonard\'s buzzer beater was sick.'
+```
+
+
+
+
+{:.input_area}
+```python
+Basketball(team='philadelphia').make_prof_feel_better()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+"Kawhi Leonard's buzzer beater was sick."
+```
+
 
 
 # Open Source
@@ -100,6 +136,32 @@ First conceptualized by **Guido van Rossum** in the late 1980s:
 import this
 ```
 
+
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
 
 Tim Peters -- the author of the Zen of Python -- is a software developer and was a major contributor to the Python Programming language.
 
@@ -300,65 +362,3 @@ Conda is a package management and environment management system.
 </div>
 
 `pip` manages single installs. `Conda` manages the whole system / environment and interactions between packages.
-
-# Documentation
-
-## Code Readability
-
-"Code is more often read than written" - Guido van Rossum
-
-So: code should be written to be readable by humans.
-
-Note: one of those humans is future you.
-
-### Writing Readable Code
-
-So how do we write good code for humans?
-
-- Use good structure
-- Use good naming
-- Use code comments and include documentation
-
-Good code has good documentation - but code documentation should not be used to try and fix unclear names, or bad structure. 
-
-Rather, comments should add any additional context and information that helps explain what the code is, how it works, and why it works that way. 
-
-
-
-{:.input_area}
-```python
-def convert_to_unicode(input_string):
-    """Converts an input string into a string containing the unicode code points.
-    
-    Parameters
-    ----------
-    input_string : string
-        String to convert to code points
-        
-    Returns
-    -------
-    output_string : string
-        String containing the code points for the input string.
-    """
-    
-    output = list()
-
-    # Converting a string to a list, to split up the characters of the string
-    input_list = list(input_string)
-    
-    for character in input_list:
-        
-        temp = ord(character)
-        output.append(temp)
-
-    output_string = '+'.join(output)
-        
-    return output_string
-```
-
-
-We'll continue to discuss good documentation practices on Friday.
-
-We'll also discuss project ideas.
-
-## Be ready to discuss project ideas on Friday

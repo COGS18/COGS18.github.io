@@ -577,8 +577,8 @@ count_false([0, 0, 1])
 
 {:.input_area}
 ```python
-# true, true, true
-count_false([True, 1, 'False'])
+# true, false, true
+count_false([True, 0, 'False'])
 ```
 
 
@@ -587,7 +587,7 @@ count_false([True, 1, 'False'])
 
 {:.output_data_text}
 ```
-0
+1
 ```
 
 
