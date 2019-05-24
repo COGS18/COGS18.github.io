@@ -82,7 +82,7 @@ Detailed instructors for these installations will be listed on the course websit
 | Midterm           | 20\%                                      | Written in-class midterm |
 | Final Project	           | 25\%                              |    Submit final project |
  
-**Final exam date**: No final exam, only final project deadline.
+**Final exam date**: No final exam, only final project deadline (Wednesday, 6/12 at 11:59 PM).
 
 ### Grades
 
