@@ -84,9 +84,9 @@
   - title: 20-Documentation
     url: /materials/20-Documentation
     not_numbered: true
-  # - title: 21-CodeStyle
-  #   url: /materials/21-CodeStyle
-  #   not_numbered: true
+  - title: 21-CodeStyle
+    url: /materials/21-CodeStyle
+    not_numbered: true
   # - title: 22-CodeTesting
   #   url: /materials/22-CodeTesting
   #   not_numbered: true
@@ -158,15 +158,15 @@
   - title: CL7-CommandLine
     url: /labs/CL7-CommandLine
     not_numbered: true
-  # - title: CL8-ProjectOverview
-  #   url: /labs/CL8-ProjectOverview
-  #   not_numbered: true
+  - title: CL8-ProjectOverview
+    url: /labs/CL8-ProjectOverview
+    not_numbered: true
   # - title: CL9-CodeReview
   #   url: /labs/CL9-CodeReview
   #   not_numbered: true
 
 - title: Assignments
-  url: /assignments/A1-GettingStarted-answers
+  url: /assignments/A1-Answers
   not_numbered: true
   sections:
   # - title: A1-GettingStarted
@@ -190,6 +190,9 @@
   # - title: A4-ArtificialAgents
   #   url: /assignments/A4-ArtificialAgents
   #   not_numbered: true
+  - title: A4-Answers
+    url: /assignments/A4-Answers
+    not_numbered: true
 
 - title: Projects
   url: /projects/ProjectIdeas

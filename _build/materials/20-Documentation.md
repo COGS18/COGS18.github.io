@@ -8,8 +8,8 @@ prev_page:
   url: /materials/19-OpenSource
   title: '19-OpenSource'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/21-CodeStyle
+  title: '21-CodeStyle'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -29,6 +29,13 @@ iclicker frequency: CA
 - Ahrial's DnD: https://github.com/chasethewind/dndDMG
 - Myles' Password Checker: https://github.com/MylesWright/cogs18_final
 - Stephen's Game: https://github.com/COGS18/Projects/tree/master/Stephen_Fa18
+
+## Course Announcements
+
+- No Class, Office Hours, or Sections Monday (Holiday)
+- Final Project due Wed 6/12 (11:59 PM)
+- My week 9 Office Hours: Tuesday 3-5 PM
+    - Today and week 10's OH are as normal: Fri 3-5 PM
 
 # Documentation
 
@@ -79,11 +86,21 @@ What does the following code do?
 {:.input_area}
 ```python
 def ff(jj):
-    oo = list(); jj = list(jj)
+    oo = list(); jj = list(jj) 
     for ii in jj: oo.append(str(ord(ii)))
     return '+'.join(oo)
 ff('Hello World.')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'72+101+108+108+111+32+87+111+114+108+100+46'
+```
+
 
 
 - A) Returns unicode code points, as a list
@@ -102,11 +119,17 @@ Improvement Considerations:
 {:.input_area}
 ```python
 # let's improve...
-def ff(jj):
-    oo = list(); jj = list(jj)
-    for ii in jj: oo.append(str(ord(ii)))
-    return '+'.join(oo)
-ff('Hello World.')
+def return_unicode(input_list):
+    string = list()
+    input_list = list(input_list)
+      
+    for character in input_list: 
+        string.append(str(ord(character)))
+        
+    output_string = '+'.join(string)
+    return output_string
+
+return_unicode('Hello World.')
 ```
 
 
@@ -201,6 +224,7 @@ for element in list_of_elements:
 ```python
 # Because of X, we will use approach Y to do Z
 for element in list_of_elements:
+    # comment for code block
     pass
 ```
 
@@ -242,7 +266,7 @@ def add(num1, num2):
 ```
 
 
-Docstrigs
+Docstrings
 
 - multi-line string that describes what's going on
 - starts and ends with triple quotes `"""`
@@ -272,6 +296,28 @@ help(add)
 ```
 
 
+{:.output_stream}
+```
+Help on function add in module __main__:
+
+add(num1, num2)
+    Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition.
+
+
+```
+
 ### `__doc__`
 
 
@@ -283,6 +329,25 @@ help(add)
 print(add.__doc__)
 ```
 
+
+{:.output_stream}
+```
+Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition. 
+    
+
+```
 
 ### Clicker Question #2
 

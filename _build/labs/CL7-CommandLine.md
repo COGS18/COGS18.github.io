@@ -7,8 +7,8 @@ prev_page:
   url: /labs/CL6-ProjectBrainstorm
   title: 'CL6-ProjectBrainstorm'
 next_page:
-  url: /assignments/A1-GettingStarted-answers
-  title: 'Assignments'
+  url: /labs/CL8-ProjectOverview
+  title: 'CL8-ProjectOverview'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

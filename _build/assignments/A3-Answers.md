@@ -7,8 +7,8 @@ prev_page:
   url: /assignments/A2-Answers
   title: 'A2-Answers'
 next_page:
-  url: /projects/ProjectIdeas
-  title: 'Projects'
+  url: /assignments/A4-Answers
+  title: 'A4-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

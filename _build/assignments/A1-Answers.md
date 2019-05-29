@@ -2,13 +2,13 @@
 interact_link: content/assignments/A1-Answers.ipynb
 download_link: assets/downloads/A1-Answers.ipynb.zip
 layout: notebooks
-title: 'A1-Answers'
+title: 'Assignments'
 prev_page:
-  url: /assignments/A1-GettingStarted-answers
-  title: 'Assignments'
+  url: /labs/CL8-ProjectOverview
+  title: 'CL8-ProjectOverview'
 next_page:
-  url: /assignments/A2-Answers
-  title: 'A2-Answers'
+  url: /assignments/A1-Answers
+  title: 'A1-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
