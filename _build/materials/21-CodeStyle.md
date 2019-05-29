@@ -8,18 +8,21 @@ prev_page:
   url: /materials/20-Documentation
   title: '20-Documentation'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/22-CodeTesting
+  title: '22-CodeTesting'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
 ## Course Announcements
 
 - Final Projects Due Wed of finals week (6/12) 11:59 PM
+- No Office Hours this Friday (normal office hours next week)
+- Tom Donoghue will lecture about Code Testing Friday
+
 
 #### COGS18 Extra Credit Opportunities
 - Final project to public GitHub repo (1pt)
-- CAPEs reponse rate > 85% (1pt to everyone)
+- CAPEs response rate > 85% (1pt to everyone)
 - End-of-Course Survey (1pt)
 
 ## clicker Warm Up
@@ -36,6 +39,45 @@ Write a function called `week_9()` that chooses among a list of 5 phrases of enc
 ```python
 ### YOUR CODE HERE
 ```
+
+
+
+
+{:.input_area}
+```python
+import random 
+
+def week_9():
+    """
+    Offer a phrase of encouragement to students during week 9.
+  
+    Returns
+    -------
+    output : string
+        String containing the words of encouragement.
+    """
+        
+    phrases = ["You're doing great!", "You've totally got this.",
+              "You've got time to get everything done!", "Sleep is important.", 
+               "Remember to eat good food and drink lots of water!"]
+    
+    output = random.choice(phrases)
+    
+    return output
+
+# execute function
+week_9()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'Sleep is important.'
+```
+
 
 
 # Code Style
@@ -73,6 +115,32 @@ Some of these Code Style notes will be more specific to Python, however.
 import this
 ```
 
+
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
 
 ### Program Errors vs. Stylistic Issues
 
@@ -201,7 +269,7 @@ def squared(input_number, power=2):
 def squared(input_number):
     
     val = input_number
-    power =2
+    power = 2
     
     output = val ** power
     
@@ -223,6 +291,12 @@ if True:
 ```
 
 
+{:.output_stream}
+```
+Words.
+
+```
+
 
 
 {:.input_area}
@@ -232,6 +306,12 @@ if True:
     print('Words.')
 ```
 
+
+{:.output_stream}
+```
+Words.
+
+```
 
 ### Spacing
 
@@ -244,7 +324,7 @@ if True:
 ```python
 # Badnesses
 my_var=1+2==3
-my_list  =  [1,2,3,4]
+my_list  =  [ 1,2,3,4 ]
 el = my_list [1]
 ```
 
@@ -291,6 +371,14 @@ for i in [1, 2, 3]: print(i**2 + i%2)
 ```
 
 
+{:.output_stream}
+```
+2
+4
+10
+
+```
+
 
 
 {:.input_area}
@@ -300,6 +388,14 @@ for i in [1, 2, 3]:
     print(i**2 + i%2)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+10
+
+```
 
 ### Multi-Line
 
@@ -486,7 +582,7 @@ my_string = "Prof's Project"
 
 ### Clicker Question #5
 
-Which of the following would not cause an error in Python and would store the string *You're so close!*?
+Which of the following would not cause an error in Python and would store the string *You're so close!*  ?
 
 - A) `my_string = "You're so close!"`
 - B) `my_string = "You"re so close!"`
@@ -524,8 +620,6 @@ Keep your comments up-to-date.
 ```python
 # Badness
 
-import random
-
 def week_9():
 # help try to destress students by picking one thing from the following list using random
     statements = ["You've totally got this!","You're so close!","You're going to do great!","Remember to take breaks!","Sleep, water, and food are really important!"]
@@ -538,11 +632,22 @@ week_9()
 
 
 
+
+{:.output_data_text}
+```
+'Remember to take breaks!'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Goodness
 
 def week_9():
+    
     # Randomly pick from list of destressing statements
     # to help students as they finish the quarter.
     statements = ["You've totally got this!", 
@@ -550,11 +655,23 @@ def week_9():
                   "You're going to do great!",
                   "Remember to take breaks!",
                   "Sleep, water, and food are really important!"]
+    
     out = random.choice(statements)
+    
     return out
 
 week_9()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+"You've totally got this!"
+```
+
 
 
 #### Inline comments
@@ -569,6 +686,16 @@ week_9()
 # Badness
 week_9()#words of encouragement
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Remember to take breaks!'
+```
+
 
 
 
@@ -593,7 +720,7 @@ If you've modified/edited the code from the assignment, state that you modified.
 ## Linters
 
 <div class="alert alert-success">
-A linter is a tool that analyzes code for both programmatic erros and stylistic issues. 
+A linter is a tool that analyzes code for both programmatic errors and stylistic issues. 
 </div>
 
 `pylint` is available from Anaconda to check this for you.
@@ -624,3 +751,62 @@ def MyFunction(input_num):
 - C) 3 or 4 
 - D) 5 or 6
 - E) 7 or more
+
+
+
+{:.input_area}
+```python
+def my_function(input_num):
+    
+    my_list = [0, 1, 2, 3]
+    
+    if 1 in my_list: 
+        ind = 1
+    else:
+        ind = 0
+    
+    qq = []
+    
+    for i in my_list[ind:]:
+        qq.append(input_num/i)
+        
+    return qq
+```
+
+
+
+
+{:.input_area}
+```python
+# Let's fix this code
+def my_function(input_num):
+    """A descriptive docstring of the function."""
+    
+    my_list = [0, 1, 2, 3]
+
+    if 1 in my_list:
+        ind = 1
+    else:
+        ind = 0
+        
+    output_list = []
+
+    for ind in my_list[ind:]:
+        output_list.append(input_num / ind)
+    
+    return output_list
+
+# execute your function
+my_function(6)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[6.0, 3.0, 2.0]
+```
+
+
