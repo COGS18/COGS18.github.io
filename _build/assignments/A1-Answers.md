@@ -4,8 +4,8 @@ download_link: assets/downloads/A1-Answers.ipynb.zip
 layout: notebooks
 title: 'Assignments'
 prev_page:
-  url: /labs/CL8-ProjectOverview
-  title: 'CL8-ProjectOverview'
+  url: /labs/CL9-CodeReview
+  title: 'CL9-CodeReview'
 next_page:
   url: /assignments/A1-Answers
   title: 'A1-Answers'
