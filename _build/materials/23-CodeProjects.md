@@ -8,8 +8,8 @@ prev_page:
   url: /materials/22-CodeTesting
   title: '22-CodeTesting'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/24-AdvancedPython
+  title: '24-AdvancedPython'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -41,7 +41,19 @@ def sum_list(input_list):
         output += val
         
     return output
+
+sum_list([1, 2, 3, 4])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+10
+```
+
 
 
 
@@ -49,6 +61,13 @@ def sum_list(input_list):
 {:.input_area}
 ```python
 ### YOUR TEST
+def test_sum_list():
+    """test function for sum_list"""
+    
+    # write multiple asserts
+    assert sum_list([1, 2, 3, 4]) == 10
+    
+test_sum_list()
 ```
 
 
@@ -71,7 +90,7 @@ How much code do you have written for your project?
 - D) A lot 
 - E) Most (I'm mostly or completely done)
 
-How confident do you feel about wht you need to do to finish the project? 
+How confident do you feel about what you need to do to finish the project? 
 
 - A) I have no idea what to do from here 
 - B) I have some idea of how to finish the project
@@ -264,6 +283,17 @@ have_a_chat()
 ```
 
 
+{:.output_stream}
+```
+INPUT :	hello
+OUTPUT: Yeah!
+INPUT :	want to chat?
+OUTPUT: I'm too shy to answer questions. What do you want to talk about?
+INPUT :	quit
+OUTPUT: Bye!
+
+```
+
 ### Refactored Example: Chatbot
 
 What this function does:
@@ -328,6 +358,8 @@ def end_chat(input_list):
 {:.input_area}
 ```python
 def return_message(out_msg, question):
+    """generic responses for the chatbot to return"""
+        
     # If we don't have an output yet, but the input was a question, 
     # return msg related to it being a question
     if not out_msg and question:
@@ -357,7 +389,7 @@ def have_a_chat():
         
         # Check if the input is a question
         question = is_question(msg)
-        
+         
         # Check for an end msg 
         out_msg, chat = end_chat(msg)
       
@@ -372,6 +404,17 @@ def have_a_chat():
 
 {:.input_area}
 ```python
-have_a_chat()
+have_a_chat()  
 ```
 
+
+{:.output_stream}
+```
+INPUT :	hello
+OUTPUT: Thanks!
+INPUT :	how are you?
+OUTPUT: I'm too shy to answer questions. What do you want to talk about?
+INPUT :	quit
+OUTPUT: True
+
+```
