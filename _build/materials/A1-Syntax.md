@@ -5,8 +5,8 @@ pdf_link: assets/pdf/A1-Syntax.pdf
 layout: materials
 title: 'A1-Syntax'
 prev_page:
-  url: /materials/24-AdvancedPython
-  title: '24-AdvancedPython'
+  url: /materials/25-WrapUp
+  title: '25-WrapUp'
 next_page:
   url: /materials/A2-Examples
   title: 'A2-Examples'

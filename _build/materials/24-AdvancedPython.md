@@ -8,16 +8,20 @@ prev_page:
   url: /materials/23-CodeProjects
   title: '23-CodeProjects'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/25-WrapUp
+  title: '25-WrapUp'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
 ## Course Announcements
 
-- Please fill out CAPEs! (Current %: )
+- Feedback!
+    - Please fill out CAPEs! (Current %: 49.2)
+    - Please fill out TA/IA feedback!
+- Final Course Survey: http://bit.ly/COGS18_post_survey
+    - By Wed 6/12 for Extra Credit (11:59 PM)
+- Attendance added to TritonEd
 - Final Project due a week from today!
-- Please fill out TA/IA feedback!
 - Normal office hours this week Friday 3-5 PM
 
 ## Clicker Warm Up
@@ -52,18 +56,49 @@ Calc([2,4,5,6,7])
 
 
 
+
+{:.output_data_text}
+```
+(12, 12)
+```
+
+
+
+
+
+{:.input_area}
+```python
+# see documentation
+# Calc?
+```
+
+
+
+
 {:.input_area}
 ```python
 # edited code
-def Calc(s):
-    tot = 0
-    not_tot = 0
-    for val in s:
+def sum_even_odd(input_list):
+    """
+    from input, adds even numbers and adds odd numbers - returns sum of each
+    
+    Parameters
+    ----------
+    input_list : list
+        The list of numbers we'll use to add even and odd numbers.
+    """
+    
+    total_even = 0
+    total_odd = 0
+    
+    # summing even and odd values separately
+    for val in input_list:
         if val % 2 == 0:
-            tot += val 
+            total_even += val 
         else:
-            not_tot += val
-    return tot
+            total_odd += val
+            
+    return total_even, total_odd
 ```
 
 
@@ -112,6 +147,16 @@ topic = "Python"
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+'Hello! My name is Shannon. My job is Assistant Teaching Professor, and I work on Python'
+```
+
+
+
 ## Sets
 
 Sets are a variable type that store **only unique entries**.
@@ -125,6 +170,16 @@ my_set
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+{1, 2, 3, 4}
+```
+
+
+
 Like lists, they are iterable & mutable.
 
 
@@ -134,6 +189,16 @@ Like lists, they are iterable & mutable.
 my_set.add(6)
 my_set
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{1, 2, 3, 4, 6}
+```
+
 
 
 ### Clicker Question #1
@@ -147,7 +212,18 @@ How many values would be in the following set?
 clicker_set = set([1, 1, 2, 2, 3, 4])
 clicker_set.add(6)
 clicker_set.add(1)
+clicker_set
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{1, 2, 3, 4, 6}
+```
+
 
 
 - A) 0
@@ -177,9 +253,19 @@ from collections import Counter
 {:.input_area}
 ```python
 # count how many elements there are in collection
-# return values in a dictioanry
+# return values in a dictionary
 Counter([1, 0, 1, 2, 1])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+Counter({0: 1, 1: 3, 2: 1})
+```
+
 
 
 
@@ -189,6 +275,33 @@ Counter([1, 0, 1, 2, 1])
 # can count how many of each letter are in there
 Counter("I wonder how many times I use the letter 'e'")
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+Counter({' ': 9,
+         "'": 2,
+         'I': 2,
+         'a': 1,
+         'd': 1,
+         'e': 7,
+         'h': 2,
+         'i': 1,
+         'l': 1,
+         'm': 2,
+         'n': 2,
+         'o': 2,
+         'r': 2,
+         's': 2,
+         't': 4,
+         'u': 1,
+         'w': 2,
+         'y': 1})
+```
+
 
 
 Think back to our encryption scheme! 
@@ -221,10 +334,30 @@ any(my_bool_list)
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 all(my_bool_list)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ### Clicker Question #2
@@ -238,6 +371,16 @@ What would the following return?
 my_list = [True, True, False, True]
 any(my_list)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 - A) `True`
@@ -278,12 +421,32 @@ instance.var_a
 
 
 
+
+{:.output_data_text}
+```
+'string'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get a specified attribute
 # define var_a as an input
 getattr(instance, 'var_a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'string'
+```
+
 
 
 
@@ -295,6 +458,12 @@ setattr(instance, 'var_b', 13)
 print(instance.var_b)
 ```
 
+
+{:.output_stream}
+```
+13
+
+```
 
 ## List Comprehensions
 
@@ -324,12 +493,32 @@ output_list
 
 
 
+
+{:.output_data_text}
+```
+[1, 2, 3]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # This list comprehension is equivalent to the cell above
 # note the square brackets on the outside
 [ind + 1 for ind in [0, 1, 2]]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 3]
+```
+
 
 
 
@@ -342,6 +531,16 @@ my_list = [1, 2, 3, 4, 5]
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+[2, 4]
+```
+
+
+
 ### Clicker Question #3
 
 What would the following return?
@@ -351,9 +550,19 @@ What would the following return?
 {:.input_area}
 ```python
 list1 = [3, 4, 5]
- multiplied = [item * 3 for item in list1] 
-
+multiplied = [item * 3 for item in list1] 
+multiplied
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[9, 12, 15]
+```
+
 
 
 - A) `True`
@@ -395,11 +604,31 @@ re.findall('o', my_string)
 
 
 
+
+{:.output_data_text}
+```
+['o', 'o', 'o', 'o']
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # but the patterns are where these shine
 re.findall('\d\d', my_string)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['12', '14', '16']
+```
+
 
 
 ## filter
@@ -422,10 +651,28 @@ def is_bool(val):
 
 {:.input_area}
 ```python
+#filter?
+```
+
+
+
+
+{:.input_area}
+```python
 # apply function to every element of list
 # function to apply is first input to filter
 list(filter(is_bool, [1, False, 's', True]))
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[False, True]
+```
+
 
 
 ## Lambda Functions
@@ -452,6 +699,16 @@ increment(1)
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # not a lambda function
@@ -471,6 +728,16 @@ lambda_equivalent(1)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
 ### Clicker Question #4
 
 What would the following return?
@@ -483,6 +750,16 @@ my_list = [1, 5, 4, 6, 8, 11, 3, 12]
 new_list = list(filter(lambda x: (x%2 == 0), my_list))
 new_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[4, 6, 8, 12]
+```
+
 
 
 - A) `[1, 5, 11, 3]`
@@ -517,11 +794,31 @@ list(map(double, my_list))
 
 
 
+
+{:.output_data_text}
+```
+[2, 4, 6, 8]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Note - we can use lambda functions with map
 list(map(lambda x: x *2, my_list))
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 4, 6, 8]
+```
+
 
 
 ## Conditional Assignment
@@ -545,6 +842,12 @@ my_var = 1 if condition else 2
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+1
+
+```
 
 ## Unpacking
 
@@ -578,6 +881,31 @@ my_func(my_list)
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-55-e14a904b0af2> in <module>()
+      1 # this will error
+----> 2 my_func(my_list)
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: my_func() missing 2 required positional arguments: 'yy' and 'zz'
+```
+
+
+
 
 {:.input_area}
 ```python
@@ -585,6 +913,12 @@ my_func(my_list)
 my_func(*my_list)
 ```
 
+
+{:.output_stream}
+```
+1 2 3
+
+```
 
 
 
@@ -603,6 +937,12 @@ my_dict = {'xx' : 1, 'yy' : 2, 'zz' : 3}
 my_func(**my_dict)
 ```
 
+
+{:.output_stream}
+```
+1 2 3
+
+```
 
 ## Overloading Operators
 
@@ -648,10 +988,26 @@ print(python)
 ```
 
 
+{:.output_stream}
+```
+The programming language python
+
+```
+
 
 
 {:.input_area}
 ```python
 python > perl
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
