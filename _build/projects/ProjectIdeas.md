@@ -3,8 +3,8 @@ interact_link: content/projects/ProjectIdeas.ipynb
 download_link: assets/downloads/ProjectIdeas.ipynb.zip
 title: 'Projects'
 prev_page:
-  url: /assignments/A4-Answers
-  title: 'A4-Answers'
+  url: /labs/CL1-ProgrammingI
+  title: 'CL1-ProgrammingI'
 next_page:
   url: /projects/ProjectIdeas
   title: 'ProjectIdeas'

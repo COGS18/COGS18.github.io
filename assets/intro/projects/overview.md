@@ -150,7 +150,7 @@ Structurally, we will be evaluating the following criteria:
 
 - Uses blank lines to separate code elements and logical structure 
 - Uses good indentation & spacing
-- Has 1 statement per line, and max line length of 100 characters
+- Has 1 statement per line, and max line length of 79 characters
 
 In terms of naming, we will be evaluating the following criteria: 
 
