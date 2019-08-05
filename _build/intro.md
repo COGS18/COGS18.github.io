@@ -7,8 +7,8 @@ prev_page:
   url: /
   title: ''
 next_page:
-  url: /materials/00-Introduction
-  title: 'Materials'
+  url: /
+  title: ''
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 {:.title-main}
