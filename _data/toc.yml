@@ -17,13 +17,13 @@
   not_numbered: true
   layout: home
 
-# - title: Materials
-#   url: /materials/00-Introduction
-#   not_numbered: true
-#   sections:
-#   - title: 00-Introduction
-#     url: /materials/00-Introduction
-#     not_numbered: true
+- title: Materials
+  url: /materials/00-Introduction
+  not_numbered: true
+  sections:
+  - title: 00-Introduction
+    url: /materials/00-Introduction
+    not_numbered: true
   # - title: 01-Tools
   #   url: /materials/01-Tools
   #   not_numbered: true
@@ -118,13 +118,13 @@
   #   url: /materials/PythonParty
   #   not_numbered: true
 
-# - title: Coding Labs
-#   url: /labs/CL1-ProgrammingI
-#   not_numbered: true
-#   sections:
-#   - title: CL1-ProgrammingI
-#     url: /labs/CL1-ProgrammingI
-#     not_numbered: true
+- title: Coding Labs
+  url: /labs/CL1-ProgrammingI
+  not_numbered: true
+  sections:
+  - title: CL1-ProgrammingI
+    url: /labs/CL1-ProgrammingI
+    not_numbered: true
   # - title: CL1B-Answers
   #   url: /labs/CL1B-Answers
   #   not_numbered: true
@@ -194,10 +194,10 @@
 #     url: /assignments/A4-Answers
 #     not_numbered: true
 
-# - title: Projects
-#   url: /projects/ProjectIdeas
-#   not_numbered: true
-#   sections:
-#   - title: ProjectIdeas
-#     url: /projects/ProjectIdeas
-#     not_numbered: true
+- title: Projects
+  url: /projects/ProjectIdeas
+  not_numbered: true
+  sections:
+  - title: ProjectIdeas
+    url: /projects/ProjectIdeas
+    not_numbered: true
