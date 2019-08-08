@@ -18,11 +18,11 @@ The broad objectives of this project are for you to:
 
 ### Project Schedule
 
-- W7: Project Description released.
-  - Starting this week Coding Labs will be explicitly oriented towards project related work.
+- W7: Project Description released
 - W8: By the end of this week, you must have a project topic / outline
 - W8-10: Work on the project
-- **Finals Week: projects due (11:59 PM, Wednesday, June 12th)**
+  - Coding Lab during Weeks 9 and 10 will provide you with time to work on and get help with your Final Project.
+- **Finals Week: projects due (11:59 PM, Wednesday, December 11th)**
 
 ### Getting Started
 We strongly encourage you to discuss potential project ideas on Piazza, and with your TAs and IAs, and with the instructor through office hours and coding labs. This will give us a chance to give you feedback and help guide your project plans.
@@ -52,6 +52,17 @@ Possible topics:
 - Choose your own adventure (propose and develop your own project idea)
 
 There are more detailed project ideas in the `ProjectIdeas` notebook.
+
+#### Taboo Topics
+
+While you're allowed to work on a topic of your choosing there are two "taboo topics" - or topics that are not permitted for the COGS18 final project. These two topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you're allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren't limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.
+
+This quarter, the Taboo Topics for the COGS18 final project are:
+
+- Hangman
+- Drawings from Turtle
+
+Now, if you have a great or interesting idea that puts a new spin on Hangman or are super interested in doing something with Turtle, reach out to Professor Ellis and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
 
 ### Project Scope
 

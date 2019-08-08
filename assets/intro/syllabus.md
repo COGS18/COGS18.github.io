@@ -66,7 +66,7 @@ Software
 
 Detailed instructors for these installations will be listed on the course website and hands-on help will be offered across week 1 coding labs. All of the software is freely-available for download. If you do not have a computer available, you will be able to complete the course requirements on UCSD computers.
 
-*You will need a clicker, of this brand, as no other brand will work with the system we are using. You must [register your clicker on TritonEd](https://blink.ucsd.edu/faculty/instruction/tritoned/students.html#Register-your-iclicker-Remote-I) & bring it to lecture. If you previously registered one on TritonEd & are using the same clicker in this class, you do not have to register it again. If you would rather use the REEF app, you are free to do so; however, note that if the Wi-Fi is down, the app will not work and you will not get credit for those responses.
+*You will need a clicker, of this brand, as no other brand will work with the system we are using. You must register your clicker on Canvas& bring it to lecture. If you previously registered one on Canvas & are using the same clicker in this class, you do not have to register it again. If you would rather use the REEF app, you are free to do so; however, note that if the Wi-Fi is down, the app will not work and you will not get credit for those responses.
 
 ---
 
@@ -86,7 +86,7 @@ Detailed instructors for these installations will be listed on the course websit
 
 ### Grades
 
-All grades will be released on TritonED. We will try to send out automated alerts if we do not receive a submission and/or if it fails to be processed, but ultimately it is your responsibility to check your grades and get in touch if any are missing or you think there is a problem.
+All grades will be released on Canvas. We will try to send out automated alerts if we do not receive a submission and/or if it fails to be processed, but ultimately it is your responsibility to check your grades and get in touch if any are missing or you think there is a problem.
  
 ### Assignment Regrades
 
@@ -96,7 +96,7 @@ If you think there is a mistake in your grade, post to Piazza within 72 hours of
 
 ### Lecture Attendance (10\%)
 
-Our goal is to make lecture worth your while to attend; however, lecture attendance is not technically required. If you attend 75\% of lectures (excluding the first day and exam days), you will receive 15% of credit to your grade. 
+Our goal is to make lecture worth your while to attend; however, lecture attendance is not technically required. If you attend 75\% of lectures (excluding the first day and exam days), you will receive 10% of credit to your grade. 
 
 However, if you prefer not to attend lecture or do not attend 75\% of lectures, that proportion of your grade will be dedicated to your exam score, so each exam will be worth 20\% of your grade, rather than 15\%.
 
@@ -108,7 +108,7 @@ You should be signed up for a section for which you can attend. However, if you 
 
 ### Assignments (30\%)
 
-There will be four assignments, each worth ~8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Fridays by 11:59PM. Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, feedback will be sent via e-mail and assignments will no longer be able to be submitted for credit.
+There will be four assignments, each worth ~8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on Datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Fridays by 11:59PM. Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, feedback will be sent via e-mail and assignments will no longer be able to be submitted for credit.
 
 ### Exams (30\%)
 
@@ -155,7 +155,7 @@ Successful completion of this class will require you to complete an independent 
 | 12/2   | 10	   | 27   | M     | Code Projects     |                        |            | 
 | 12/4   | 10	   | 28   | W     | Advanced Python   |                        | Optional: Code Review | 
 | 12/6   | 10	   | 29   | F     | Wrap Up           |                        |            | 
-Note: Sept 30th onward, all lectures (except the exam days) will use iclickers.
+Note: Sept 30th onward, all lectures (except exam days) will use iclickers.
 
 ---
 
@@ -180,7 +180,7 @@ You are encouraged to (and at times will have to) work together and help one ano
 We anticipate you all doing well in this course; however, if you are feeling lost or overwhelmed, that's ok! Should that occur, we recommend: (1) asking questions in class, (2) attending office hours and/or (3) asking for help on Piazza.
 
 
-Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, TritonED is down or something else prohibits you from being able to turn in an assignment on time, immediately contact me by emailing your assignment by email (sellis@ucsd.edu), or else it will be graded as late.
+Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, Canvas or DataHub is down or something else prohibits you from being able to turn in an assignment on time, immediately contact me by emailing your assignment (sellis@ucsd.edu), or else it will be graded as late.
 
 ### Disability Access
 Students requesting accommodations due to a disability must provide a current Authorization for Accommodation (AFA) letter. These letters are issued by the Office for Students with Disabilities (OSD), which is located in University Center 202 behind Center Hall. Please make arrangements to contact Dr. Ellis privately to arrange accommodations.
