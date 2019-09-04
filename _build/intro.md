@@ -15,7 +15,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 # Welcome to COGS18: Introduction to Python!
 
 {:.title-second}
-COGS 18 · Shannon Ellis · Spring 2019 · UCSD
+COGS 18 · Shannon Ellis · Fall 2019 · UCSD
 
 {:.sub-title}
 ### Overview
@@ -27,7 +27,7 @@ Introduction to Python (COGS18) is a course offered by the Department of Cogniti
 ### Current Iteration
 
 {:.text-content}
-Introduction to Python is currently running for Spring Quarter 2019, for which you can check out the current [syllabus](../assets/intro/syllabus.pdf). Course lectures are recorded and are publicly available as screencasts from [here](https://podcast.ucsd.edu/?q=COGS18).
+Introduction to Python is currently running for Fall Quarter 2019, for which you can check out the current [syllabus](../assets/intro/syllabus.pdf). Course lectures are recorded and are publicly available as screencasts from [here](https://podcast.ucsd.edu/?q=COGS18).
 
 {:.sub-title}
 ### Materials
