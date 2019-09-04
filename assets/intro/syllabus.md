@@ -69,7 +69,7 @@ Software
 
 Detailed instructors for these installations will be listed on the course website and hands-on help will be offered across week 1 coding labs. All of the software is freely-available for download. If you do not have a computer available, you *will* be able to complete the course requirements on UCSD computers.
 
-*You will need a clicker, of this brand, as no other brand will work with the system we are using. You must register your clicker on Canvas& bring it to lecture. If you previously registered one on Canvas & are using the same clicker in this class, you do not have to register it again. If you would rather use the REEF app, you are free to do so; however, note that if the Wi-Fi is down, the app will not work and you will not get credit for those responses.
+*You will need a clicker, of this brand, as no other brand will work with the system we are using. You must register your clicker on Canvas & bring it to lecture. If you previously registered one on Canvas & are using the same clicker in this class, you do not have to register it again. If you would rather use the REEF app, you are free to do so; however, note that if the Wi-Fi is down, the app will not work and you will not get credit for those responses.
 
 ---
 

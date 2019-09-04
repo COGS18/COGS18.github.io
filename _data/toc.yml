@@ -119,42 +119,42 @@
   #   not_numbered: true
 
 - title: Coding Labs
-  url: /labs/CL1-ProgrammingI
+  url: /labs/CL1-Tooling
   not_numbered: true
   sections:
-  - title: CL1-ProgrammingI
-    url: /labs/CL1-ProgrammingI
+  - title: CL1-Tooling
+    url: /labs/CL1-Tooling
     not_numbered: true
-  # - title: CL1B-Answers
-  #   url: /labs/CL1B-Answers
-  #   not_numbered: true
-  # - title: CL2-ProgrammingII
-  #   url: /labs/CL2-ProgrammingII
-  #   not_numbered: true
+  # - title: CL2-ProgrammingI
+  #  url: /labs/CL2-ProgrammingI
+  #  not_numbered: true
   # - title: CL2B-Answers
   #   url: /labs/CL2B-Answers
   #   not_numbered: true
-  # - title: CL3-AlgorithmicThinking
-  #   url: /labs/CL3-AlgorithmicThinking
+  # - title: CL3-ProgrammingII
+  #   url: /labs/CL3-ProgrammingII
   #   not_numbered: true
   # - title: CL3B-Answers
   #   url: /labs/CL3B-Answers
   #   not_numbered: true
-  # - title: CL4-Exploring
-  #   url: /labs/CL4-Exploring
+  # - title: CL4-AlgorithmicThinking
+  #   url: /labs/CL4-AlgorithmicThinking
   #   not_numbered: true
   # - title: CL4B-Answers
   #   url: /labs/CL4B-Answers
   #   not_numbered: true
-  # - title: CL5-Classes
-  #   url: /labs/CL5-Classes
+  # - title: CL5-Debugging
+  #   url: /labs/CL5-Debugging
   #   not_numbered: true
   # - title: CL5B-Answers
   #   url: /labs/CL5B-Answers
-  #   not_numbered: true   
-  # - title: CL6-ProjectBrainstorm
-  #   url: /labs/CL6-ProjectBrainstorm
   #   not_numbered: true
+  # - title: CL6-Classes
+  #   url: /labs/CL6-Classes
+  #   not_numbered: true
+  # - title: CL6B-Answers
+  #   url: /labs/CL6B-Answers
+  #   not_numbered: true   
   # - title: CL7-CommandLine
   #   url: /labs/CL7-CommandLine
   #   not_numbered: true
