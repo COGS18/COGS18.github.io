@@ -25,6 +25,7 @@ The broad objectives of this project are for you to:
 - **Finals Week: projects due (11:59 PM, Wednesday, December 11th)**
 
 ### Getting Started
+
 We strongly encourage you to discuss potential project ideas on Piazza, and with your TAs and IAs, and with the instructor through office hours and coding labs. This will give us a chance to give you feedback and help guide your project plans.
 
 Suggestions for working on projects:

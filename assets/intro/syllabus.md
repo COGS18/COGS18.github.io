@@ -20,7 +20,7 @@ Welcome to COGS18! The core goal of this class is to teach you introductory, han
 # COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis [sellis@ucsd.edu](sellis@ucsd.edu)  
-**Instructor Office Hours**: Wednesdays, 1-3p (CSB 243)  
+**Instructor Office Hours**: Wednesdays, 3-5p (CSB 243)  
 
 | Role        | Name          					   | Section  | Office Hours |
 | -------------: |:--------------------------------------------:|:-----------|:-----------|
