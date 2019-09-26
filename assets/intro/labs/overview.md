@@ -10,19 +10,19 @@ Coding Labs are a hands-on section of the course in which you must attend a lab 
 
 | Lab            | Week(s)        | Name  |
 | -------------: |:--------------:|:-----------|
-| CL1 	         | W2			        | Tech Setup + Tools |
-| CL2 	         | W3             | Programming I |
-| CL3	           | W4             | Programming II |
-| CL4	           | W5             | Algorithms & Functions |
-| CL5	           | W6             | Debugging |
-| CL6	           | W7             | Classes |
-| CL7	           | W8             | Command Line |
-| CL8	           | W9             | Project |
+| CL1 	         | W1			        | Tech Setup + Tools |
+| CL2 	         | W2             | Programming I |
+| CL3	           | W3             | Programming II |
+| CL4	           | W4             | Algorithms & Functions |
+| CL5	           | W5             | Debugging |
+| CL6	           | W6             | Classes |
+| CL7	           | W7             | Command Line |
+| CL8	           | W8;W9          | Project |
 | optional       | W10            | Code Review |
 
 #### Lab Attendance
 
-To get credit for the Coding Labs, you must complete at least 6 out of 8 of the Coding Labs during lab section time. (Note: The coding lab during week 10 is completely optional and attendance will not be taken.) 
+To get credit for the Coding Labs, you must complete at least 6 out of 9 weeks of the Coding Labs during lab section time. (Note: The coding lab during week 10 is completely optional and attendance will not be taken.) 
 
 You must be able to attend a lab section. In general, while you have the option to attend any discussion section, please do your best to attend the lab section you are enrolled for. If too many people end up regularly attending one discussion section each week, we'll revise this policy. If you have a specific conflict with your lab time on a particular week, you may attend another lab section time to make up the Coding Lab.
 

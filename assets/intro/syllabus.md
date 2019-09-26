@@ -91,11 +91,11 @@ All grades will be released on Canvas. It is your responsibility to check that y
  
 ### Assignment Regrades
 
-We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, reply to the email sent with your assignment's feedback within 72 hours. This email should include evidence of why you think your answer was correct (i.e. a specific reference to something said in lecture) and should point to the specific part of the assignment in question.
+We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, reply to the email sent with your assignment's feedback within 72 hours. This email should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
 
 ### Lecture Attendance (10\%)
 
-Our goal is to make lecture worth your while to attend; however, lecture attendance is not technically required. If you attend 75\% of lectures (excluding the first day and exam days), you will receive 10% of credit to your grade. 
+Our goal is to make lecture worth your while to attend; however, lecture attendance is not technically required. If you attend 75\% of lectures (excluding the first day and exam days), you will receive 10% of credit to your grade. To receive credit for attendance, you must respond to at least 75\% of the clicker questions from that day.
 
 However, if you prefer *not* to attend lecture or do not attend 75\% of lectures, that proportion of your grade will automatically be dedicated to your exam score, so each exam will be worth 20\% of your grade, rather than 15\%.
 
