@@ -26,32 +26,13 @@ The PDF slides from the start of the first class are available here: https://cog
 
 - Who:
     - Instructor: Shannon Ellis 
-    - TAs: Charles Chen & Shreenivas Venkataramanan
-    - IAs: Weilun, Severine, Stephen, Myles, Miranda, Edward, & Ahrial
-
+    - TAs: Devendra & Shreenivas 
+    - IAs: Chau, Byungkwon, Duolan, Andrew, Titan, Zijan, Sarah, Severine, Stephen
+    
 - Where:
-    - Lectures MWF @ 9 AM (WLH 2001) & Coding Lab Sections
+    - Lectures MWF @ 9 AM (Center Hall 101) & Coding Lab Sections
     - Course Website: https://cogs18.github.io
     - Piazza Page: https://piazza.com/ucsd/spring2019/cogs18
-
-### Clicker Question #1
-
-**What is your current state with regards to datahub?**
-
-A. Have not yet tried to access datahub  
-B. Have tried to access datahub unsuccessfully  
-C. Have accessed datahub successfully  
-D. What is this datahub you speak of?  
-
-### Clicker Question #2
-
-**Do you have the Anaconda distribution of Python downloaded on your computer?**
-
-A. I do!  
-B. I attempted but was unsuccessful.   
-C. I have not yet tried.  
-D. I'm going to use my own Python distribution.  
-E. Huh?  
 
 # Expectations & Approach
 
