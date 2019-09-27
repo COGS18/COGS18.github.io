@@ -9,7 +9,7 @@ Assignments will be done in Jupyter Notebooks. They will be released and submitt
 
 ### Assignment Schedule
 
-The schedule for assignments is as follows:
+The outline for assignments is as follows:
 
 |   | Name  | Topics  | 
 |-----: |:------------|:------------------|
@@ -18,7 +18,7 @@ The schedule for assignments is as follows:
 | A3 | Chatbots | Functions & Algorithms | 
 | A4 | Artificial Agents | Methods, Classes & Objects | 
 
-Assignments are cumulative - previously covered topics may also appear in a future assignment.
+Assignments are cumulative - previously covered topics may also appear in a future assignment. Due dates are listed on the syllabus.
 
 ### Late Submissions
 
@@ -58,14 +58,13 @@ If you need to ask for an extension, please email the instructor directly.
 
 ##### To ask questions about grades
 
-If you have a question about a grade, post to Piazza and address to 'Instructors'
+If you have a question about a grade, respond to the email with your feedback directly.
 
-Questions about grades include asking where you lost points, clarifying why you lost points, and asking about potential regrades (overall, or for particular questions). Please first check the information and guidelines below first. Note that because assignments are programmatically graded on a particular computer, course staff in office hours will not have immediate access to your particular submission, and where you lost points. These questions do therefore need to be directed to Piazza.
+Questions about grades include asking where you lost points, clarifying why you lost points, and asking about potential regrades (overall, or for particular questions). Please first check the information and guidelines below first. Note that because assignments are programmatically graded on a particular computer, course staff in office hours will not have immediate access to your particular submission, and where you lost points.
 
 ##### Grades
 
-Grades will be released on Canvas about a week after the submission date. It is your responsibility to check your posted grades - please do so.
-
+Grades will be released on Canvas about a week after the submission date and feedback will be sent to you via email. It is your responsibility to check your posted grades - please do so.
 
 ##### Assignment Solutions
 
