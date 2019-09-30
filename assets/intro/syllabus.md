@@ -28,12 +28,12 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 | IA	           | Andrew      | TBD         | --  |
 | IA	           | Chau        | TBD         | --  |
 | IA	           | Duolan      | TBD         | --  |
-| IA	           | Han         | TBD         | --  |
-| IA	           | Sarah       | TBD         | --  |
+| IA	           | Byungkwon         | TBD         | --  |
+| IA	           | Sarah       | TBD         | Mon 11AM-1PM (CSB 114)  |
 | IA	           | Titan       | TBD         | --  |
 | IA	           | Zijian      | TBD         | --  |
-| IA	           | Severine    | --          | Th 12:30-2PM (Location TBD) |
-| IA             | Stephen     | --          | Th 12:30-2PM (Location TBD) |
+| IA	           | Severine    | --          | Th 1:15-2:55 PM (Middle of Muir Coffee Shop) |
+| IA             | Stephen     | --          | Th 1:15-2:55 PM (Middle of Muir Coffee Shop) |
 
 Course Website: https://cogs18.github.io   
 Course Piazza*: http://piazza.com/ucsd/fall2019/cogs18  
