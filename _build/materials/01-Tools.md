@@ -8,8 +8,8 @@ prev_page:
   url: /materials/00-Introduction
   title: '00-Introduction'
 next_page:
-  url: /labs/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/02-JupyterNotebooks
+  title: '02-JupyterNotebooks'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
