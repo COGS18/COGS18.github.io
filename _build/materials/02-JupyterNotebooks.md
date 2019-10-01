@@ -22,6 +22,15 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 Note: We started this notebook on 9/30. Will review and finish on Wed 10/2.
 
+### Clicker Question #1
+
+**How excited are you for COGS 18?**
+
+A. Super excited!  
+B. The most excited!  
+C. Couldn't be more excited!  
+D. I love 9AM classes!  
+
 <div class="alert alert-success">
 Jupyter notebooks are a way to combine executable code, code outputs, and text into one connected file.
 </div>
@@ -60,7 +69,7 @@ For example, italicized text can be specified with an _underscore_ or *single as
 
 Bold text requires __two underccores__ or **two asterisks**.
 
-### Clicker Question #1
+### Clicker Question #2
 
 **Which does three underscores around text accomplish?**
 
@@ -97,7 +106,7 @@ Lists are also possible:
 2. item 2
 3. item 3
 
-### Clicker Question #2
+### Clicker Question #3
 
 **What would happen if I specified a numbered list but put the same number before each list item?**
 
@@ -177,20 +186,10 @@ Write code that outputs the value '6'
 {:.input_area}
 ```python
 ## YOUR CODE HERE
-a = 1
-b = 2
-c = 3
-print(a + b + c)
 ```
 
 
-{:.output_stream}
-```
-6
-
-```
-
-### Clicker Question #3
+### Clicker Question #4
 
 **Which of the following best describes you?**
 
@@ -312,11 +311,9 @@ Programming: a way to ask computer to store values (variables), and do things wi
 {:.input_area}
 ```python
 # This is a comment. You can write a comment by using a `#`
-
 my_variable = 12 
 
 my_other_variable = 13 # Comments can be 'inline', like this one
-
 ```
 
 
