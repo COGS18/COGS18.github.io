@@ -13,6 +13,15 @@ next_page:
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
+# COGS 18 Announcements
+
+- Open up Datahub to get started with today
+    - if you want to add to today's notes, download from the course website
+    - upload file into Datahub
+- Coding Labs start today!
+- Survey completed by Friday (11:59 PM) for EC
+    - http://bit.ly/cogs18_survey_fa19
+
 # Jupyter Notebooks
 
 - Markdown
@@ -146,12 +155,6 @@ print(c)
 ```
 
 
-{:.output_stream}
-```
--1
-
-```
-
 
 
 {:.input_area}
@@ -159,16 +162,6 @@ print(c)
 # If you execute a cell with just a variable name in it, it will also get printed
 c
 ```
-
-
-
-
-
-{:.output_data_text}
-```
--1
-```
-
 
 
 ### Running Cells
@@ -189,7 +182,7 @@ Write code that outputs the value '6'
 ```
 
 
-### Clicker Question #4
+### Clicker Question #5
 
 **Which of the following best describes you?**
 
@@ -276,7 +269,7 @@ a = 'string'
 ```
 
 
-### Clicker Question #4
+### Clicker Question #6
 
 **What is the value of `a`?**
 
@@ -293,7 +286,7 @@ a = 6
 ```
 
 
-### Clicker Question #5
+### Clicker Question #7
 
 **What is the value of `a`?**
 
@@ -345,16 +338,6 @@ my_variable
 ```
 
 
-
-
-
-{:.output_data_text}
-```
-12
-```
-
-
-
 ## Code Variables != Math Variables
 
 In mathematics: `=` refers to equality (as a statement of truth).
@@ -369,7 +352,7 @@ Code: What is x?
 
 `x = x + 1`
 
-### Clicker Question #6
+### Clicker Question #8
 
 After executing the following code, what will be the value of `my_var`?
 
@@ -385,18 +368,12 @@ print(my_var)
 ```
 
 
-{:.output_stream}
-```
-3
-
-```
-
 - A) 2
 - B) 3
 - C) "my_var + 1"
 - D) This code will fail
 
-### Clicker Question #7
+### Clicker Question #9
 
 After executing the following code, what will be the value of `diff_var`?
 
@@ -410,12 +387,6 @@ print(diff_var)
 ```
 
 
-{:.output_stream}
-```
-9
-
-```
-
 - A) 4
 - B) 9
 - C) "my_variable - my_var"
@@ -423,7 +394,7 @@ print(diff_var)
 
 Note: This was the example edited by Professor Ellis in class.
 
-### Clicker Question #8
+### Clicker Question #10
 
 After executing the following code, what will be the value of `my_var`?
 
