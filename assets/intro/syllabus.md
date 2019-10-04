@@ -23,15 +23,15 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 | Role        | Name          					   | Section  | Office Hours |
 | -------------: |:--------------------------------------------|:-----------|:-----------|
-| TA             | Devendra		 | 1PM; 2PM    | F 12-1 PM (CSB 114) |
-| TA 	           | Shreenivas  | 10AM; 4PM   | F 3-4 PM (Sun God Lounge) |
+| TA             | Devendra		 | 1PM; 2PM    | Fri 12-1 PM (CSB 114) |
+| TA 	           | Shreenivas  | 10AM; 4PM   | Fri 3-4 PM (Sun God Lounge) |
 | IA	           | Andrew      | 1PM; 2PM    | --  |
 | IA	           | Chau        | 3PM; 5PM    | --  |
 | IA	           | Duolan      | 10AM; 11AM  | --  |
 | IA	           | Byungkwon   | 5PM; 6PM    | --  |
 | IA	           | Sarah       | 12PM; 6PM   | Mon 11AM-1PM (CSB 114)  |
 | IA	           | Titan       | 3PM; 4PM    | --  |
-| IA	           | Zijian      | 11AM; 12PM  | --  |
+| IA	           | Zijian      | 11AM; 12PM  | Wed & Fri 8-9AM (Location TBD) |
 | IA	           | Severine    | --          | Th 1:15-2:55 PM (Middle of Muir Coffee Shop) |
 | IA             | Stephen     | --          | Th 1:15-2:55 PM (Middle of Muir Coffee Shop) |
 
