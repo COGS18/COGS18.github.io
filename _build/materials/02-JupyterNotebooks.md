@@ -8,8 +8,8 @@ prev_page:
   url: /materials/01-Tools
   title: '01-Tools'
 next_page:
-  url: /labs/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/03-Variables
+  title: '03-Variables'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -90,9 +90,7 @@ Bold text requires __two underccores__ or **two asterisks**.
 
 you can write your markdown text here to determine the answer to the question
 
-___text___
-
-
+___my text___
 
 
 # Headers are specified with a pound sign
@@ -155,6 +153,12 @@ print(c)
 ```
 
 
+{:.output_stream}
+```
+-1
+
+```
+
 
 
 {:.input_area}
@@ -162,6 +166,16 @@ print(c)
 # If you execute a cell with just a variable name in it, it will also get printed
 c
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+-1
+```
+
 
 
 ### Running Cells
@@ -179,7 +193,29 @@ Write code that outputs the value '6'
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+a = 12
+b = 1/2
+print(b)
+c = a * b
+
+c
 ```
+
+
+{:.output_stream}
+```
+0.5
+
+```
+
+
+
+
+{:.output_data_text}
+```
+6.0
+```
+
 
 
 ### Clicker Question #5
@@ -269,6 +305,20 @@ a = 'string'
 ```
 
 
+
+
+{:.input_area}
+```python
+print(a)
+```
+
+
+{:.output_stream}
+```
+string
+
+```
+
 ### Clicker Question #6
 
 **What is the value of `a`?**
@@ -285,6 +335,20 @@ a = 'string'
 a = 6 
 ```
 
+
+
+
+{:.input_area}
+```python
+print(a)
+```
+
+
+{:.output_stream}
+```
+string
+
+```
 
 ### Clicker Question #7
 
@@ -338,6 +402,31 @@ my_variable
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-20-aa4484528f38> in <module>()
+      1 # once you create a variable it's stored in your namespace
+----> 2 my_variable
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'my_variable' is not defined
+```
+
+
 ## Code Variables != Math Variables
 
 In mathematics: `=` refers to equality (as a statement of truth).
@@ -368,6 +457,12 @@ print(my_var)
 ```
 
 
+{:.output_stream}
+```
+3
+
+```
+
 - A) 2
 - B) 3
 - C) "my_var + 1"
@@ -387,12 +482,36 @@ print(diff_var)
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-25-e735f6cf7bfd> in <module>()
+----> 1 diff_var = my_variable - my_var
+      2 
+      3 print(diff_var)
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'my_variable' is not defined
+```
+
+
 - A) 4
 - B) 9
 - C) "my_variable - my_var"
 - D) This code will fail
-
-Note: This was the example edited by Professor Ellis in class.
 
 ### Clicker Question #10
 
