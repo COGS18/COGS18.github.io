@@ -13,6 +13,12 @@ next_page:
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
+# Course Announcements
+
+- A1 is due next Friday (10/11)
+    - We have not yet covered all content on assignment
+- Course survey "due" tonight at 11:59 PM
+
 # Variables
 
 - namespace
@@ -45,6 +51,12 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+72
+
+```
+
 - A) 'string'
 - B) 88
 - C) 72
@@ -63,6 +75,12 @@ var_2 = var_1 = 1
 print(var_2)
 ```
 
+
+{:.output_stream}
+```
+1
+
+```
 
 - a) 'var_1'
 - b) 1
@@ -93,6 +111,17 @@ Reserved words: False, None, True, and, as, assert, break, class, continue, def,
 ```python
 # you will get an error if you try to assign a variable to one of these words
 try = 6
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-3-1c44ba76d8f9>", line 2
+    try = 6
+        ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -129,6 +158,19 @@ whos?
 ```
 
 
+{:.output_stream}
+```
+Variable      Type    Data/Info
+-------------------------------
+a             int     16
+b             int     72
+c             int     32
+my_variable   int     88
+var_1         int     1
+var_2         int     1
+
+```
+
 ## Variable Types
 
 <div class="alert alert-success">
@@ -145,6 +187,16 @@ variable_name = 1
 # You can always ask Python 'what type is this variable' using:
 type(variable_name)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+int
+```
+
 
 
 ### Int
@@ -172,6 +224,16 @@ type(yet_another_integer)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+int
+```
+
+
+
 ### Float
 
 <div class="alert alert-success">
@@ -193,6 +255,16 @@ another_float = -231.45
 ```python
 type(another_float)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 ### String
@@ -222,6 +294,66 @@ type(and_another)
 ```
 
 
+{:.output_stream}
+```
+and some more
+
+```
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
+
+
+#### Aside: What if you want to print a quotation mark?
+- use double quotes outside with apostraphe inside quotes
+- use an escape `\` (backslash) before charater
+
+
+
+{:.input_area}
+```python
+# double quotes on outside; single quote inside
+my_string = "i wan't to see a quote."
+my_string
+```
+
+
+
+
+
+{:.output_data_text}
+```
+"i wan't to see a quote."
+```
+
+
+
+
+
+{:.input_area}
+```python
+# backslash to "escape" quotation mark
+string_quote = "here is my quotat\"ion mark"
+string_quote
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'here is my quotat"ion mark'
+```
+
+
+
 #### Quotation Marks
 
 About those quotation marks...
@@ -237,11 +369,31 @@ my_string
 
 
 
+
+{:.output_data_text}
+```
+'This is a single-quoted string.'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 my_string = "This is a double-quoted string."
 my_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'This is a double-quoted string.'
+```
+
 
 
 Note that Python will put single quotes around it, even if you specify double quotes. 
@@ -271,6 +423,16 @@ type(another_bool)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+bool
+```
+
+
+
 ## None
 
 <div class="alert alert-success">
@@ -291,6 +453,16 @@ the_concept_of_nothing = None
 ```python
 type(the_concept_of_nothing)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+NoneType
+```
+
 
 
 ### Clicker #3
@@ -344,6 +516,16 @@ type(m)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+int
+```
+
+
+
 - A) String
 - B) Int
 - C) Float
@@ -366,6 +548,12 @@ b = a
 print(b)
 ```
 
+
+{:.output_stream}
+```
+1
+
+```
 
 Here, the value 1 is assigned to the variable `a`.  
 
@@ -392,10 +580,45 @@ immutable_string[4]
 
 
 
+
+{:.output_data_text}
+```
+'1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # cannot change part of the string after creation
 immutable_string[4] = '0'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-28-42af1508f9b7> in <module>()
+      1 # cannot change part of the string after creation
+----> 2 immutable_string[4] = '0'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -417,6 +640,17 @@ a = 1
     b = a
     
     print(b) 
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-40-0ed674dfb7fe>", line 2
+    b = a
+    ^
+IndentationError: unexpected indent
+
 ```
 
 
@@ -457,14 +691,36 @@ print(2 + 3)
 ```
 
 
+{:.output_stream}
+```
+5
+
+```
+
 
 
 {:.input_area}
 ```python
-div_result = 4 / 2
+div_result = 4 / 2 
 print(div_result)
 type(div_result)
 ```
+
+
+{:.output_stream}
+```
+2.0
+
+```
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 ### Order of Operations
@@ -480,6 +736,12 @@ print(order_operations)
 ```
 
 
+{:.output_stream}
+```
+11.0
+
+```
+
 To specify that you want the addition to occur first, you would use parentheses.
 
 
@@ -491,83 +753,8 @@ print(specify_operations)
 ```
 
 
-### Clicker #6
-
-What would be the value stored in `my_value`?
-
-
-
-{:.input_area}
-```python
-my_value = (3+2)+2/(16/2)
-my_value
+{:.output_stream}
 ```
+9.5
 
-
-- A) 0.218
-- B) 0.875
-- C) 5.25
-- D) 40
-- E) Produces an error
-
-### More Math
-
-<div class="alert alert-success">
-Python also has `**` for exponentiation and `%` for remainder (called modulus). These also return numbers.
-</div>
-
-
-
-{:.input_area}
-```python
-# 2 to the power 3
-2 ** 3
 ```
-
-
-
-
-{:.input_area}
-```python
-# remainder of 17 divided by 7
-17 % 7
-```
-
-
-### Clicker #7
-
-What would be the value stored in `remainder`?
-
-
-
-{:.input_area}
-```python
-remainder = 16 % 5
-remainder
-```
-
-
-- A) 0
-- B) 1
-- C) 3
-- D) 3.2
-- E) Produces an error
-
-### Clicker #8
-
-What would be the value stored in `modulo_time`?
-
-
-
-{:.input_area}
-```python
-modulo_time = 4 * 2 % 5
-modulo_time
-```
-
-
-- A) 0
-- B) 1
-- C) 3
-- D) 3.2
-- E) Produces an error
