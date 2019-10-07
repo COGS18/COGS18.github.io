@@ -21,7 +21,7 @@ CodingLab labs are meant to be interactive - so you should find another person t
 
 CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go! 
 
-If you have a question about how something works / what something does - try it out, and see what happens!
+If you have a question about how something works / what something does - try it out, and see what happens! If you can't figure it out, reach out to your instructional staff - we're here to help!
 
 ## Part 1: Variables
 
@@ -129,7 +129,7 @@ The following are more challenging operator related questions. If they seem too 
 
 Some more comparisons, with variable assignment:
 - Set the variable `comp_1` to the result of whether 17 squared is not the same as 867 divided by 3
-- Set the variable `comp_2` to the result of whether 4^3 is less than 3^4 and also greater than the remainder of dividing 1234 by 99
+- Set the variable `comp_2` to the result of whether 4^3 is less than 3^4 **and** also greater than the remainder of dividing 1234 by 99
 
 Bonus: both of the above questions can be written in (at least) two ways. 
 
@@ -159,8 +159,8 @@ Finally, once you have answered the question, using some code, add a comment in 
 Questions:
 - If you divide a float by an int, what is the type of the outcome? What about dividing an int by a float?
 - What happens if you multiply a string with a number?
-- The '+' sign works if you for adding numbers, and for concatenating strings. Can you use '+' with a number and string?
-- Since you can use '+' and '*' with strings, can you use '-'?
+- The `+` sign works if you for adding numbers and for concatenating strings. Can you use `+` with a number and string in the same operation?
+- Since you can use `+` and `*` with strings, what happens if you try to substract two strings using `-`?
 
 
 
