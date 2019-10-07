@@ -187,7 +187,6 @@ What value is stored in `math_out` from the code below?
 ```python
 math_out = 32 / (1 + 3) ** 2 
 math_out
-(1 + 3) ** 2
 ```
 
 
@@ -195,8 +194,6 @@ math_out
 - B) 16
 - C) 64
 - D) This code will fail
-
-Note: I edited this clicker question b/c the first one I added had a typo...again. I promised that I wouldn't make any more clicker question mistakes the rest of the quarter.
 
 ## Logical (Boolean) operators
 - use Boolean logic
@@ -311,6 +308,7 @@ True and print("Hi")
 
 {:.input_area}
 ```python
+# evaluates print statement before and
 print("Hi") and False
 ```
 
@@ -493,7 +491,7 @@ What would the following code cell return?
 
 
 - A) ''
-- B) 'b'
+- B) 'a'
 - C) `True`
 - D) `False`
 
@@ -519,14 +517,6 @@ What would the following code cell return?
 {:.input_area}
 ```python
 'a' and 'b'
-```
-
-
-
-
-{:.input_area}
-```python
-bool('a')
 ```
 
 
@@ -572,6 +562,7 @@ bool('a')
 
 {:.input_area}
 ```python
+# empty string evaluates as False
 '' or 'b'
 ```
 
