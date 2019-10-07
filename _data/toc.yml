@@ -33,9 +33,9 @@
   - title: 03-Variables
     url: /materials/03-Variables
     not_numbered: true
-  # - title: 04-Operators
-  #   url: /materials/04-Operators
-  #   not_numbered: true
+  - title: 04-Operators
+    url: /materials/04-Operators
+    not_numbered: true
   # - title: 05-Conditionals
   #   url: /materials/05-Conditionals
   #   not_numbered: true
@@ -125,9 +125,9 @@
   - title: CL1-Tooling
     url: /labs/CL1-Tooling
     not_numbered: true
-  # - title: CL2-ProgrammingI
-  #  url: /labs/CL2-ProgrammingI
-  #  not_numbered: true
+  - title: CL2-ProgrammingI
+    url: /labs/CL2-ProgrammingI
+    not_numbered: true
   # - title: CL2B-Answers
   #   url: /labs/CL2B-Answers
   #   not_numbered: true
