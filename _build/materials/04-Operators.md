@@ -8,8 +8,8 @@ prev_page:
   url: /materials/03-Variables
   title: '03-Variables'
 next_page:
-  url: /labs/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/05-Conditionals
+  title: '05-Conditionals'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -23,6 +23,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
     - "answers" posted the following week to website
     - check your work
 - I'll post updated iclicker and coding lab attendance weekly
+- survey follow-up
 
 # Operators
 
@@ -65,6 +66,12 @@ order_operations = 3 + 16 / 2
 print(order_operations)
 ```
 
+
+{:.output_stream}
+```
+11.0
+
+```
 
 To specify that you want the addition to occur first, you would use parentheses.
 
@@ -175,6 +182,12 @@ print(a, 'remainder', b)
 ```
 
 
+{:.output_stream}
+```
+2 remainder 3
+
+```
+
 `//` is an operator for floor division (integer division)
 
 ### Clicker #4
@@ -188,6 +201,16 @@ What value is stored in `math_out` from the code below?
 math_out = 32 / (1 + 3) ** 2 
 math_out
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+2.0
+```
+
 
 
 - A) 2
@@ -219,10 +242,30 @@ True and True
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 True or True
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -235,10 +278,30 @@ True and not False
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 not False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -248,6 +311,16 @@ not False
 # two nots cancel one another out
 not (not True)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Capitalization matters
@@ -263,6 +336,32 @@ TRUE and TRUE
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-9-9b3f2ee967bc> in <module>()
+      2 # 'TRUE' is not a boolean
+      3 # 'True' is
+----> 4 TRUE and TRUE
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'TRUE' is not defined
+```
+
+
 ### Clicker #5
 
 What will the following boolean expression evaluate as:
@@ -273,6 +372,16 @@ What will the following boolean expression evaluate as:
 ```python
 True and False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -297,12 +406,28 @@ False and print("Hi")
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Continues to evaluate the expression
 True and print("Hi")
 ```
 
+
+{:.output_stream}
+```
+Hi
+
+```
 
 
 
@@ -312,6 +437,12 @@ True and print("Hi")
 print("Hi") and False
 ```
 
+
+{:.output_stream}
+```
+Hi
+
+```
 
 ### Clicker #6
 
@@ -323,6 +454,16 @@ What will the following boolean expression evaluate as?
 ```python
 True and not True or False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -370,10 +511,30 @@ True == True
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 True != False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -386,10 +547,30 @@ True != False
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 12 <= 13
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Clicker #8
@@ -408,11 +589,21 @@ Start with the code in the following cell. Replace `---` with values that will e
 {:.input_area}
 ```python
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 95
+shield_energy = 100
 
-(sword_charge ---) and (shield_energy ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ## Understanding Boolean logic
@@ -436,10 +627,38 @@ bool(empty_string)
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 nonempty_string = 'string has something in it'
 bool(nonempty_string)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+bool(None)
 ```
 
 
@@ -456,10 +675,30 @@ True and False
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bool('a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -472,10 +711,30 @@ bool('a')
 
 
 
+
+{:.output_data_text}
+```
+'b'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' and 'a'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'a'
+```
+
 
 
 ### Clicker Question #9
@@ -488,6 +747,16 @@ What would the following code cell return?
 ```python
 '' and 'a'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+''
+```
+
 
 
 - A) ''
@@ -506,6 +775,16 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' and 'a'
@@ -514,10 +793,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+'a'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'a' and 'b'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
 
 
 
@@ -531,11 +830,31 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # the left value in parentheses is False
 'a' == ('' and 'a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -546,6 +865,16 @@ What would the following code cell return?
 # to look at a in a and b
 'a' == 'a' and 'a' == 'b' 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 3. For `or` operator if left value is `True`, then it is returned, otherwise if left value is `False`, then right value is returned.
@@ -560,11 +889,49 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+'a'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # empty string evaluates as False
 '' or 'b'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
+
+
+
+
+{:.input_area}
+```python
+'' or 'b'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
 
 
 
@@ -577,10 +944,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+''
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' or ''
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
 
 
 
@@ -593,10 +980,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' == ('a' or 'b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ### Clicker Question #10

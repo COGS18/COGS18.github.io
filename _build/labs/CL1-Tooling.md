@@ -4,8 +4,8 @@ download_link: assets/downloads/CL1-Tooling.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/04-Operators
-  title: '04-Operators'
+  url: /materials/05-Conditionals
+  title: '05-Conditionals'
 next_page:
   url: /labs/CL1-Tooling
   title: 'CL1-Tooling'
