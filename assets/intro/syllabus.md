@@ -24,7 +24,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 | Role        | Name          					   | Section  | Office Hours |
 | -------------: |:--------------------------------------------|:-----------|:-----------|
 | TA             | Devendra		 | 1PM; 2PM    | Fri 12-1 PM (CSB 114) |
-| TA 	           | Shreenivas  | 10AM; 4PM   | Fri 3-4 PM (Sun God Lounge) |
+| TA 	           | Shreenivas  | 10AM; 4PM   | Fri 4-5 PM (Sun God Lounge) |
 | IA	           | Andrew      | 1PM; 2PM    | Fri 11-11:50 (CSB 114)  |
 | IA	           | Chau        | 3PM; 5PM    | --  |
 | IA	           | Duolan      | 10AM; 11AM  | --  |
