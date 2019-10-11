@@ -16,19 +16,28 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ### Course Announcements
 - A1 due tonight by 11:59 PM
 - A2 due next Friday (11:59 PM)
+- Double check office hours on syllabus
 
 ## Assignment Reminders
 
 - To make life easier on your wonderful TAs:
     - Please don't change the assignment file name 
     - Please don't delete/modify cells in assignment (other than cells where you add code)
-- There are hidden assert cells
+    - You can add cells and include `print()` statements to check your work.
+
+- There are **hidden assert cells**
     - If you follow instructions and pass all the asserts provided, you will receive credit
     - We cannot give points back for typos
-- You *must* submit your assignment for it to be graded.
+
+- You *must* **submit your assignment** for it to be graded.
+    - best to "Kernel > Restart & Run All" before you submit
+        - this executes code in your notebook from top to bottom
+        - You can also use "Validate" button at top. Note that for A4 you *may* get an error b/c that notebook takes a while to run    
     - submit as many times as you like
-    - most recent submission is graded
-    - *but*, if you submit before deadline and again after, it will be late
+        - most recent submission is graded
+        - *but*, if you submit before deadline and again after, it will be late
+
+- variables defined in `%%writefile` cells will overwrite variables in test (`assert`) cells
 
 # Collections
 
@@ -158,7 +167,7 @@ print(my_lst[:4])
 
 {:.input_area}
 ```python
-# slicing by skipping a value
+# slicing by skipping a value [start:stop:step]
 print(my_lst[0:4:2])
 ```
 
@@ -239,8 +248,9 @@ q3_lst = ['peanut', 'butter', '&','jelly']
 
 - Python is zero-based (The first index is '0')
 - Negative indices index backwards through a collection
-- A sequence of indices (called a slice) can be accessed using start:stop
+- A sequence of indices (called a slice) can be accessed using `start:stop`
     - In this contstruction, `start` is included then every element until `stop`, not including `stop` itself
+    - To skip values in a sequence use `start:stop:step`
 
 ### SideNote: But why is it like this...
 
@@ -266,7 +276,7 @@ len(another_lst)
 ## The `in` Operator
 
 <div class="alert alert-success">
-The `in` operator asks whether an element is present inside a collection, and returns a boolean answer. 
+The <code>in</code> operator asks whether an element is present inside a collection, and returns a boolean answer. 
 </div>
 
 
@@ -779,7 +789,7 @@ A loop is a procedure to repeat a piece of code.
 ## While Loops
 
 <div class="alert alert-success">
-A while loop is a procedure to repeat a piece of code while some condition is still met. 
+A <code>while</code> loop is a procedure to repeat a piece of code while some condition is still met. 
 </div>
 
 ## While Loops
