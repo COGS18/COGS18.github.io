@@ -106,7 +106,7 @@ my_value
 ### More Math
 
 <div class="alert alert-success">
-Python also has `**` for exponentiation and `%` for remainder (called modulus). These also return numbers.
+Python also has <code>**</code> for exponentiation and <code>%</code> for remainder (called modulus). These also return numbers.
 </div>
 
 
@@ -225,7 +225,7 @@ math_out
 Booleans are named after the British mathematician - George Boole. He first formulated Boolean algebra, which are a set of rules for how to reason with and combine these values. This is the basis of all modern computer logic.
 
 <div class="alert alert-success">
-Python has `and`, `or` and `not` for boolean logic. These operators return booleans.
+Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean logic. These operators return booleans.
 </div>
 
 - `and` : True if both are true
@@ -491,7 +491,7 @@ True and not False
 ## Comparison Operators
 
 <div class="alert alert-success">
-Python has comparison operators `==`, `!=`, `<`, `>`, `<=`, and `>=` for value comparisons. These operators return booleans.
+Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>, <code>></code>, <code><=</code>, and <code>>=</code> for value comparisons. These operators return booleans.
 </div>
 
 - `==` : values are equal
@@ -1018,6 +1018,16 @@ What would the following code cell return?
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
 - A) ''
 - B) 'a'
 - C) `True`
@@ -1028,10 +1038,8 @@ What would the following code cell return?
  Identity operators are used to check if two values (or variables) are located on the same part of the memory.
 
 <div class="alert alert-success">
-Python uses `is` and `is not` to compare identity. These operators return booleans.
+Python uses <code>is</code> and <code>is not</code> to compare identity. These operators return booleans.
 </div>
-
- Identity operators are used to check if two values (or variables) are located on the same part of the memory.
 
 - `is` : True if both refer to the same object
 - `is not` : True if they do not refer to the same object
@@ -1055,6 +1063,13 @@ print(c is a)
 ```
 
 
+{:.output_stream}
+```
+True
+False
+
+```
+
  Two variables that are equal does **not** imply that they are identical.
 
 If we wanted that second statement to evaluate as `True` we could use `is not`...
@@ -1068,6 +1083,12 @@ print(c is not a)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -1075,6 +1096,16 @@ print(c is not a)
 # testing for value equality
 a == b == c
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Clicker #11
@@ -1099,18 +1130,24 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = c is d 
+false_variable = c is not d
 
 print(true_variable, false_variable)
 ```
 
 
+{:.output_stream}
+```
+True False
+
+```
+
 ### Delving Deeper: Identity Operators
 
 A **new object** is created each time we have a variable that makes reference to it, but there are *few notable exceptions*:
 
-- some strings
+- some simple strings
 - Integers between -5 and 256 (inclusive)
 - empty immutable containers (e.g. tuples) - we'll get to these later
 
@@ -1139,11 +1176,27 @@ simple_string is simple_string2
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(id(simple_string), id(simple_string2))
 ```
 
+
+{:.output_stream}
+```
+4535947872 4535947872
+
+```
 
 
 
@@ -1164,11 +1217,27 @@ longer_string is longer_string2
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(id(longer_string), id(longer_string2))
 ```
 
+
+{:.output_stream}
+```
+4572797424 4572798480
+
+```
 
 
 
@@ -1187,6 +1256,12 @@ print(id(d), id(e))
 ```
 
 
+{:.output_stream}
+```
+4533003824 4533003824
+
+```
+
 
 
 {:.input_area}
@@ -1194,6 +1269,12 @@ print(id(d), id(e))
 print(d is e)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 Python implementation front loads an array of integers between -5 to 256, so these objects *already exist*.
 
@@ -1214,6 +1295,12 @@ print(true_variable_integer, true_variable_string)
 ```
 
 
+{:.output_stream}
+```
+True True
+
+```
+
 
 
 {:.input_area}
@@ -1230,6 +1317,12 @@ false_variable_string = p is q
 print(false_variable_integer, false_variable_string)
 ```
 
+
+{:.output_stream}
+```
+False False
+
+```
 
 ### Clicker #12
 
@@ -1253,17 +1346,23 @@ f = 567
 g = 567
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = a is c
+false_variable = d is e
 
 print(true_variable, false_variable)
 ```
 
 
+{:.output_stream}
+```
+True False
+
+```
+
 ## Membership Operators
 
 <div class="alert alert-success">
-Python uses `in` and `not in` to compare membership. These operators return booleans.
+Python uses <code>in</code> and <code>not in</code> to compare membership. These operators return booleans.
 </div>
 
 Membership operators are used to check whether a value or variable is found in a sequence.
@@ -1282,6 +1381,12 @@ print('l' in x)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -1289,6 +1394,12 @@ print('l' in x)
 print('L' in x)
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 
 
@@ -1298,6 +1409,12 @@ print('COGS' in x)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -1306,10 +1423,30 @@ print('CSOG' in x)
 ```
 
 
+{:.output_stream}
+```
+False
+
+```
+
+
+
+{:.input_area}
+```python
+print(' ' in x)
+```
+
+
+{:.output_stream}
+```
+True
+
+```
+
 ## String Concatenation
 
 <div class="alert alert-success">
-Operators sometimes do different things on different types of variables. For example, `+` on strings does concatenation.
+Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 </div>
 
 
@@ -1318,6 +1455,16 @@ Operators sometimes do different things on different types of variables. For exa
 ```python
 'a' + 'b' + 'c'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'abc'
+```
+
 
 
 ## Chaining Operators
@@ -1337,6 +1484,16 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 (13 % 7 >= 7)
@@ -1345,10 +1502,30 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ('COGS' + '18' == 'COGS18')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Clicker #13
@@ -1361,6 +1538,16 @@ What will the following expression evaluate as:
 ```python
 2**2 >= 4 and 13%3 > 1
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - a) True

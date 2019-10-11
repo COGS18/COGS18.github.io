@@ -8,14 +8,14 @@ prev_page:
   url: /materials/04-Operators
   title: '04-Operators'
 next_page:
-  url: /labs/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/06-DataTypes
+  title: '06-DataTypes'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
 # Course Announcements
 
-- A1 is due Friday (10/11)
+- A1 is due Friday (10/11; 11:59 PM)
 - Week 1 CodingLab and Lecture participation posted on Piazza
 - A2 now available; due next Friday (10/18)
 
@@ -25,10 +25,10 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - `elif`
 - `else`
 
-## Conditionals: if
+## Conditionals: `if`
 
 <div class="alert alert-success">
-Conditionals are statements that check for a condition, using the `if` statement, and then only execute a set of code if the condition evaluates as `True`.
+Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
 </div>
 
 
@@ -38,33 +38,65 @@ Conditionals are statements that check for a condition, using the `if` statement
 condition = True
 
 if condition:
-    print('This code executes if the csondition evaluates as True.')
+    print('This code executes if the condition evaluates as True.')
 ```
 
+
+{:.output_stream}
+```
+This code executes if the condition evaluates as True.
+
+```
 
 ### Clicker Question #1
 
 Replace `---` below with something that will print 'True'
 
 - A) I did it!
-- B) I tried but am stuck.
-- C) I'm unsure where to start
+- B) I think I did it!
+- C) I tried but am stuck.
+- D) I'm unsure where to start
 
 
 
 {:.input_area}
 ```python
-math = ---
+# can evaluate boolean expression with bool
+bool(2 + 2)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+math = True
 
 if math:
     print('True')
 ```
 
 
-## Conditional: else
+{:.output_stream}
+```
+True
+
+```
+
+## Conditional: `else`
 
 <div class="alert alert-success">
-After an `if`, you can use an `else` that will run if the conditional(s) above have not run.
+After an <code>if</code>, you can use an <code>else</code> that will run if the conditional(s) above have not run.
 </div>
 
 
@@ -80,19 +112,80 @@ else:
 ```
 
 
+{:.output_stream}
+```
+This code executes if the condition evaluates as False
+
+```
+
 ### Clicker Question #2
 
 Replace `---` below with something that will print 'False'.
 
 - A) I did it!
-- B) I tried but am stuck.
-- C) I'm unsure where to start
+- B) I think I did it!
+- C) I tried but am stuck.
+- D) I'm unsure where to start
 
 
 
 {:.input_area}
 ```python
-my_value = ---
+bool(0)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
+bool(None)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
+bool('')
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
+my_value = 0
 
 if my_value:
     print('True')
@@ -101,11 +194,43 @@ else:
 ```
 
 
-## Conditional: elif
+{:.output_stream}
+```
+False
+
+```
+
+## Conditional: `elif`
 
 <div class="alert alert-success">
-After an if statement, you can have any number of `elif`'s (meaning 'else if') to check other conditions.
+After an <code>if</code> statement, you can have any number of <code>elif</code>`s (meaning 'else if') to check other conditions.
 </div>
+
+
+
+{:.input_area}
+```python
+# what if you use all if statements
+# will/can evaluate all print statements
+condition_1 = True
+condition_2 = True
+
+if condition_1:
+    print('This code executes if condition_1 evaluates as True.')
+if condition_2:
+    print('This code executes if condition_1 did not evaluate as True, but condition_2 does.')
+if condition_1 and condition_2: 
+    print('This code executes if both condition_1 and condition_2 evaluate as False')
+```
+
+
+{:.output_stream}
+```
+This code executes if condition_1 evaluates as True.
+This code executes if condition_1 did not evaluate as True, but condition_2 does.
+This code executes if both condition_1 and condition_2 evaluate as False
+
+```
 
 
 
@@ -122,6 +247,12 @@ else:
     print('This code executes if both condition_1 and condition_2 evaluate as False')
 ```
 
+
+{:.output_stream}
+```
+This code executes if condition_1 did not evaluate as True, but condition_2 does.
+
+```
 
 ### `elif` without an `else`
 
@@ -162,6 +293,17 @@ elif condition_2:
 ```
 
 
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-28-aedfc0cec5db>", line 9
+    elif condition_2:
+       ^
+SyntaxError: invalid syntax
+
+```
+
+
 ## Conditionals With Value Comparisons
 
 <div class="alert alert-success">
@@ -172,23 +314,29 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 
 {:.input_area}
 ```python
-language = "Python"
+language = "R"
 
 if language == "Python":
     print("Yay!")
-elif language == "Perl":
+elif language == "Perl" or language == "R":
     print("Oh no.")
 else:
     print("Get yourself a programming language!")
 ```
 
 
+{:.output_stream}
+```
+Oh no.
+
+```
+
 
 
 {:.input_area}
 ```python
 # Exploring conditionals
-number = 6
+number = 4
 
 print('Before Conditional')
  
@@ -200,6 +348,14 @@ elif number > 5:
 print('After Conditional')
 ```
 
+
+{:.output_stream}
+```
+Before Conditional
+    if statement execution
+After Conditional
+
+```
 
 ### Clicker Question #3
 
@@ -219,6 +375,12 @@ else:
     print("Ringo")
 ```
 
+
+{:.output_stream}
+```
+Paul
+
+```
 
 - A) John 
 - B) Paul, George, Ringo 

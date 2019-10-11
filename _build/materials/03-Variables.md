@@ -101,9 +101,51 @@ print(var_2)
 
 There are 33 words that are not allowed to be used for variable assignment in Python 3.6.
 
-Reserved words: False, None, True, and, as, assert, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
-
-<center><img src="img/reserved_words.png" width="650px"></center>
+<table type="text/css">
+  <tr>
+      <td><code>False</code></td>
+      <td><code>None</code></td>
+      <td><code>True</code></td>
+      <td><code>and</code></td>
+      <td><code>as</code></td>
+      <td><code>assert</code></td>
+      <td><code>break</code></td>
+  </tr>
+  <tr>
+      <td><code>class</code></td>
+      <td><code>continue</code></td>
+      <td><code>def</code></td>
+      <td><code>del</code></td>
+      <td><code>elif</code></td>
+      <td><code>else</code></td>
+      <td><code>except</code></td>
+  </tr>
+  <tr>
+      <td><code>finally</code></td>
+      <td><code>for</code></td>
+      <td><code>from</code></td>
+      <td><code>global</code></td>
+      <td><code>if</code></td>
+      <td><code>import</code></td>
+      <td><code>in</code></td>
+  </tr>
+  <tr>
+      <td><code>is</code></td>
+      <td><code>lambda</code></td>
+      <td><code>nonlocal</code></td>
+      <td><code>not</code></td>
+      <td><code>or</code></td>
+      <td><code>pass</code></td>
+      <td><code>raise</code></td>
+  </tr>    
+  <tr>
+      <td><code>return</code></td>
+      <td><code>try</code></td>
+      <td><code>while</code></td>
+      <td><code>with</code></td>
+      <td><code>yield</code></td>
+  </tr>    
+</table>
 
 
 
@@ -310,50 +352,6 @@ str
 
 
 
-#### Aside: What if you want to print a quotation mark?
-- use double quotes outside with apostraphe inside quotes
-- use an escape `\` (backslash) before charater
-
-
-
-{:.input_area}
-```python
-# double quotes on outside; single quote inside
-my_string = "i wan't to see a quote."
-my_string
-```
-
-
-
-
-
-{:.output_data_text}
-```
-"i wan't to see a quote."
-```
-
-
-
-
-
-{:.input_area}
-```python
-# backslash to "escape" quotation mark
-string_quote = "here is my quotat\"ion mark"
-string_quote
-```
-
-
-
-
-
-{:.output_data_text}
-```
-'here is my quotat"ion mark'
-```
-
-
-
 #### Quotation Marks
 
 About those quotation marks...
@@ -399,6 +397,50 @@ my_string
 Note that Python will put single quotes around it, even if you specify double quotes. 
 
 A general principle is to pick something and be consistent. In this course, I'll do my best to only use single quotes.
+
+#### Aside: What if you want to print a quotation mark?
+- use double quotes outside with apostraphe inside quotes
+- use an escape `\` (backslash) before charater
+
+
+
+{:.input_area}
+```python
+# double quotes on outside; single quote inside
+my_string = "i wan't to see a quote."
+my_string
+```
+
+
+
+
+
+{:.output_data_text}
+```
+"i wan't to see a quote."
+```
+
+
+
+
+
+{:.input_area}
+```python
+# backslash to "escape" quotation mark
+string_quote = "And she said, \"Please teach me Python!\""
+string_quote
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'And she said, "Please teach me Python!"'
+```
+
+
 
 ## Boolean
 
@@ -680,7 +722,7 @@ my_var = 1
 ## Math Operators
 
 <div class="alert alert-success">
-Python uses mathematical operators +, -, *, / for 'sum', 'substract', 'multiply', and 'divide'. These operators return numbers.
+Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> for 'sum', 'substract', 'multiply', and 'divide', repsectively.
 </div>
 
 
