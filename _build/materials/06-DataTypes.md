@@ -8,8 +8,8 @@ prev_page:
   url: /materials/05-Conditionals
   title: '05-Conditionals'
 next_page:
-  url: /labs/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/07-Loops
+  title: '07-Loops'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -72,6 +72,12 @@ print(lst)
 ```
 
 
+{:.output_stream}
+```
+[1, 'a', True]
+
+```
+
 
 
 {:.input_area}
@@ -79,6 +85,16 @@ print(lst)
 # Check the type of a list
 type(lst)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+list
+```
+
 
 
 ### Clicker Question #1
@@ -127,6 +143,12 @@ print(my_lst[1])
 ```
 
 
+{:.output_stream}
+```
+Amal
+
+```
+
 
 
 {:.input_area}
@@ -136,6 +158,12 @@ print(my_lst[-1])
 ```
 
 
+{:.output_stream}
+```
+Xuan
+
+```
+
 
 
 {:.input_area}
@@ -143,6 +171,49 @@ print(my_lst[-1])
 # Indexing: Grab a group of adjacent items using `start:stop`, called a slice
 print(my_lst[2:4])
 ```
+
+
+{:.output_stream}
+```
+['Richard', 'Juan']
+
+```
+
+
+
+{:.input_area}
+```python
+# can determine type in list
+type(my_lst[2])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
+
+
+
+
+{:.input_area}
+```python
+my_lst[2:-1]
+```
+
+
+
+
+
+{:.output_data_text}
+```
+['Richard', 'Juan']
+```
+
 
 
 
@@ -154,6 +225,12 @@ print(my_lst[2:])
 ```
 
 
+{:.output_stream}
+```
+['Richard', 'Juan', 'Xuan']
+
+```
+
 
 
 {:.input_area}
@@ -163,6 +240,12 @@ print(my_lst[:4])
 ```
 
 
+{:.output_stream}
+```
+['Julian', 'Amal', 'Richard', 'Juan']
+
+```
+
 
 
 {:.input_area}
@@ -171,6 +254,12 @@ print(my_lst[:4])
 print(my_lst[0:4:2])
 ```
 
+
+{:.output_stream}
+```
+['Julian', 'Richard']
+
+```
 
 ### Index Practices
 
@@ -193,6 +282,16 @@ example_lst[2]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[-3]
@@ -201,10 +300,30 @@ example_lst[-3]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[1:3]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 3]
+```
+
 
 
 ### Clicker Question #2
@@ -225,6 +344,55 @@ q2_lst[-3:-1]
 - C) ['c', 'b']
 - D) ['b', 'c', 'd']
 - E) ['b', 'c']
+
+Note: The following was added after class due to a student question. You are not expected to know this. Including as an FYI.
+
+You *can* return ['c','b'] but it combines two different concepts.
+
+1. the `start:stop` now refers to indices in the reverse.
+2. `-1` is used as the step to reverse the output.
+
+More details about `step`:  
+`step`: the amount by which the index increases, defaults to 1. If it's negative, you're slicing over the iterable in reverse.
+
+
+
+{:.input_area}
+```python
+# slice in reverse
+q2_lst[-2:-4:-1]
+```
+
+
+
+
+
+{:.output_data_text}
+```
+['c', 'b']
+```
+
+
+
+
+
+{:.input_area}
+```python
+# you can use forward indexing
+# makes this a little clearer
+q2_lst[2:0:-1]
+```
+
+
+
+
+
+{:.output_data_text}
+```
+['c', 'b']
+```
+
+
 
 ### Clicker Question #3
 
@@ -273,6 +441,16 @@ len(another_lst)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+7
+```
+
+
+
 ## The `in` Operator
 
 <div class="alert alert-success">
@@ -299,11 +477,31 @@ True in lst_again
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Practice with `in`
@@ -327,10 +525,30 @@ practice_lst = [1, True, 'alpha', 13, 'cogs18']
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 False in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -343,10 +561,49 @@ False in practice_lst
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
+#searching partial strings
+'cogs' in practice_lst
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'cogs18' not in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 ### Clicker #4
@@ -367,6 +624,12 @@ output = bool_1 and bool_2
 print(output)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 - a) True
 - b) False
@@ -401,6 +664,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
+
 
 
 {:.input_area}
@@ -419,6 +688,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 0, 3]
+
+```
+
 ### Clicker Question #5
 
 What would the following code accommplish?
@@ -427,7 +702,7 @@ What would the following code accommplish?
 
 {:.input_area}
 ```python
-lst_update = [1,2,3,0,5]
+lst_update = [1, 2, 3, 0, 5]
 lst_update[3] = 4 
 ```
 
@@ -464,6 +739,12 @@ print(tup)
 ```
 
 
+{:.output_stream}
+```
+(2, 'b', False)
+
+```
+
 
 
 {:.input_area}
@@ -471,6 +752,16 @@ print(tup)
 # Check the type of a tuple
 type(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+tuple
+```
+
 
 
 
@@ -484,11 +775,31 @@ tup[0]
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the length of a tuple
 len(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ### Tuples are Immutable
@@ -500,6 +811,32 @@ len(tup)
 # Tuples are immutable - meaning after they defined, you can't change them
 # This code will produce an error.
 tup[2] = 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-47-6b0fd3f24bc7> in <module>()
+      1 # Tuples are immutable - meaning after they defined, you can't change them
+      2 # This code will produce an error.
+----> 3 tup[2] = 1
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -540,6 +877,12 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 Here, the value 1 is assigned to the variable `a`.  
 
 We then make an **alias** of `a` and store that in the variable `b`. 
@@ -567,6 +910,13 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+2
+1
+
+```
+
 - A) `a` and `b` both store 1
 - B) `a` and `b` both store 2
 - C) `a` stores 2 `b` stores 1
@@ -583,10 +933,20 @@ What happens if we make an alias of a **mutable** variable, like a list?
 
 {:.input_area}
 ```python
-first_list = [1,2,3,4]
+first_list = [1, 2, 3, 4]
 alias_list = first_list
 alias_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 3, 4]
+```
+
 
 
 
@@ -601,11 +961,31 @@ first_list
 
 
 
+
+{:.output_data_text}
+```
+[1, 29, 3, 4]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # check alias_list
 alias_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 29, 3, 4]
+```
+
 
 
 For *mutable* type variables, when you change one, both change.
@@ -620,9 +1000,35 @@ After executing the following code, what will the second value stored in `second
 ```python
 # Make a variable & an alias
 # change value of original variable
-my_tuple = (1,2,3,4)
+my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
 my_tuple[1] = 29 
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-55-7a44f310718f> in <module>()
+      3 my_tuple = (1, 2, 3, 4)
+      4 second_tuple = my_tuple
+----> 5 my_tuple[1] = 29
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -666,11 +1072,31 @@ my_str[2]
 
 
 
+
+{:.output_data_text}
+```
+'e'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Ask if an item is in a string
 'Fam' in my_str
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -684,11 +1110,47 @@ len(my_str)
 
 
 
+
+{:.output_data_text}
+```
+13
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Index into a string
 # This code will produce an error
 my_str[1:3] = 'HE'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-74-9139cc40aa38> in <module>()
+      1 # Index into a string
+      2 # This code will produce an error
+----> 3 my_str[1:3] = 'HE'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -774,130 +1236,3 @@ else:
 
 
 <pre> A) EndMatch   B) Overlap   C) Length   D) Overlap & Match   E) None </pre>
-
-# Control Flow - Loops
-
-- `while`
-- `for`
-
-## Loops
-
-<div class="alert alert-success">
-A loop is a procedure to repeat a piece of code.
-</div>
-
-## While Loops
-
-<div class="alert alert-success">
-A <code>while</code> loop is a procedure to repeat a piece of code while some condition is still met. 
-</div>
-
-## While Loops
-
-While loops always have the structure
-
-```
-while condition:
-    # Loop contents
-```
-
-While condition is true, execute the code contents. 
-
-Repeat until condition is no longer True. 
-
-### While Loops
-
-
-
-{:.input_area}
-```python
-number = -5
-while number < 0:
-    print(number)
-    number = number + 1
-```
-
-
-### While Loop Example I
-
-
-
-{:.input_area}
-```python
-connected = False
-
-while not connected:
-    
-    # Try and establish connection (placeholder code)
-    print('Establishing Connection...')
-    
-    break
-```
-
-
-### While Loop Example II
-
-
-
-{:.input_area}
-```python
-has_user_input = False
-
-while not has_user_input:
-    
-    # Ask for user input (placeholder code)
-    print('Asking for user input...')
-    
-    break
-```
-
-
-## Clicker Question #9
-
-What will be the value of `counter` after this loop is run:
-
-
-
-{:.input_area}
-```python
-keep_looping = True
-counter = 0
-
-while keep_looping:
-
-    counter = counter + 1
-    
-    if counter > 3:
-        keep_looping = False
-
-print(counter)
-```
-
-
-<pre> A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite </pre> 
-
-### Stepping Through the Loop
-
-
-
-{:.input_area}
-```python
-keep_looping = True
-counter = 0
-
-while keep_looping:
-    print('START LOOP')
-    print('\tStart counter: ', counter)
-
-    counter = counter + 1
-    
-    print('\tMid counter: ', counter)
-    
-    if counter > 3:
-        keep_looping = False
-        
-    print('\tEnd counter: ', counter)
-
-print('\nFinal counter: ', counter)
-```
-

@@ -1,18 +1,18 @@
 ---
-interact_link: content/labs/CL2-ProgrammingI.ipynb
-download_link: assets/downloads/CL2-ProgrammingI.ipynb.zip
+interact_link: content/labs/CL2B-Answers.ipynb
+download_link: assets/downloads/CL2B-Answers.ipynb.zip
 layout: notebooks
-title: 'CL2-ProgrammingI'
+title: 'CL2B-Answers'
 prev_page:
-  url: /labs/CL1-Tooling
-  title: 'CL1-Tooling'
+  url: /labs/CL2-ProgrammingI
+  title: 'CL2-ProgrammingI'
 next_page:
-  url: /labs/CL2B-Answers
-  title: 'CL2B-Answers'
+  url: /labs/CL3-ProgrammingII
+  title: 'CL3-ProgrammingII'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
-# Coding Lab 2: Programming I
+# Coding Lab 2: Programming I - Answers
 
 
 Welcome to the second coding lab!
@@ -38,7 +38,10 @@ Call them `my_int`, `my_float`, `my_string` and `my_boolean`.
 {:.input_area}
 ```python
 ## YOUR CODE HERE
-
+my_int = 12
+my_float = 56.3
+my_string = 'hello'
+my_boolean = True
 ```
 
 
@@ -54,10 +57,30 @@ type(my_int)
 
 
 
+
+{:.output_data_text}
+```
+int
+```
+
+
+
+
+
 {:.input_area}
 ```python
 type(my_float)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 
@@ -70,10 +93,30 @@ type(my_string)
 
 
 
+
+{:.output_data_text}
+```
+str
+```
+
+
+
+
+
 {:.input_area}
 ```python
 type(my_boolean)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+bool
+```
+
 
 
 ## Part 2: Operators & Comparisons
@@ -90,9 +133,28 @@ First - explore using Python operators. Make sure you can add and subtract numbe
 ```python
 ## Do some exploring!
 
+# Add & subtract numbers
+print(1 + 2)
+print(2 - 2)
 
+# Concatenate string
+print('ab' + 'cd')
+
+# Boolean comparisons
+print(True and True)
+print(False or True)
 ```
 
+
+{:.output_stream}
+```
+3
+0
+abcd
+True
+True
+
+```
 
 Once you have explored using operators, try to answer some quesions using them. 
 
@@ -106,6 +168,16 @@ Let's start with an example: is the multiplication of 13 and 15 greater than 200
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
 Similar to that example, try to answer the following questions using Python variables & comparisons:
 - Is the remainder of dividing 323 by 13 greater than 6?
 - Is 7 to the power of 3 greater than or equal to 300?
@@ -117,10 +189,79 @@ Similar to that example, try to answer the following questions using Python vari
 {:.input_area}
 ```python
 ## YOUR CODE HERE
-
-
-
 ```
+
+
+
+
+{:.input_area}
+```python
+323 % 13 > 6
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+7 **3 >= 300
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+49**2 > 2500 or 14**3 > 2500
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+49%9 == 67%9 and (49 + 67) % 9 > 7
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Operator Challenges
@@ -142,9 +283,11 @@ Note: x^y indicates 'x to the power of y'
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+comp_1 = not 17**2 == 289/3
+comp_1 = 17**2 != 289/3
 
-
-
+comp_2 = (3**4) > (4**3) > (1234 % 99)
+comp_2 = ((3**4) > (4**3)) and ((4**3)) > (1234 % 99)
 ```
 
 
@@ -167,9 +310,116 @@ Questions:
 {:.input_area}
 ```python
 ## EXPLORATION CODE HERE
+```
 
 
 
+
+{:.input_area}
+```python
+print(type(12.0/2))
+print(type(12/2.0))
+
+# Dividing with a float and an int, in either order, returns a float
+```
+
+
+{:.output_stream}
+```
+<class 'float'>
+<class 'float'>
+
+```
+
+
+
+{:.input_area}
+```python
+'hodor ' * 8
+
+# Multiplying a string by a number repeats that string number times
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'hodor hodor hodor hodor hodor hodor hodor hodor '
+```
+
+
+
+
+
+{:.input_area}
+```python
+12 + 'str'
+
+# No, this code fails. You cannot use '+' with a number and a string
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-17-0810b46a83be> in <module>()
+----> 1 12 + 'str'
+      2 
+      3 # No, this code fails. You cannot use '+' with a number and a string
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+
+
+
+
+{:.input_area}
+```python
+'abc' - 'a' 
+
+# No, this code fails. You cannot use '-' with strings
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-18-9a45216ae503> in <module>()
+----> 1 'abc' - 'a'
+      2 
+      3 # No, this code fails. You cannot use '-' with strings
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
 ```
 
 
@@ -194,7 +444,7 @@ Because the use of `assert` will be common in course materials, let's take a mom
 # Declare a variable called `boolean` that  has type boolean, and passes the assert in the next cell
 
 ## YOUR CODE HERE
-
+boolean = True
 ```
 
 
@@ -224,6 +474,16 @@ boolean
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
 ###  Assert Explorations
 
 Now, explore using assert. What happens if you assert an integer, or a string? 
@@ -236,9 +496,90 @@ Find at least one integer that raises an assertion error.
 
 {:.input_area}
 ```python
-## EXPLORATION CODE HERE
+assert 12
+
+# Asserting an integer asserts as True
+```
 
 
 
+
+{:.input_area}
+```python
+assert 'hello'
+
+# Asserting a string asserts as True
+```
+
+
+
+
+{:.input_area}
+```python
+assert None
+
+# Asserting None asserts as False
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AssertionError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-25-98092c377a2c> in <module>()
+----> 1 assert None
+      2 
+      3 # Asserting None asserts as False
+
+```
+
+{:.output_traceback_line}
+```
+AssertionError: 
+```
+
+
+
+
+{:.input_area}
+```python
+assert 0
+
+# The integer 0 asserts as False (it gets interpreted as False)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AssertionError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-26-86e0797498a7> in <module>()
+----> 1 assert 0
+      2 
+      3 # The integer 0 asserts as False (it gets interpreted as False)
+
+```
+
+{:.output_traceback_line}
+```
+AssertionError: 
 ```
 

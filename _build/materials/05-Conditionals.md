@@ -405,6 +405,12 @@ else:
 ```
 
 
+{:.output_stream}
+```
+I did Math
+
+```
+
 - A) I did Math 
 - B) I broke Math
 - C) I didn't do math
@@ -430,6 +436,12 @@ else:
     print("I'm here.")
 ```
 
+
+{:.output_stream}
+```
+I'm here.
+
+```
 
 - A) Yay Python!
 - B) Oh no.

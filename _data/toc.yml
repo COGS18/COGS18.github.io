@@ -42,9 +42,9 @@
   - title: 06-DataTypes
     url: /materials/06-DataTypes
     not_numbered: true
-  # - title: 07-Loops
-  #   url: /materials/07-Loops
-  #   not_numbered: true
+  - title: 07-Loops
+    url: /materials/07-Loops
+    not_numbered: true
   # - title: 08-Encodings
   #   url: /materials/08-Encodings
   #   not_numbered: true
@@ -128,12 +128,12 @@
   - title: CL2-ProgrammingI
     url: /labs/CL2-ProgrammingI
     not_numbered: true
-  # - title: CL2B-Answers
-  #   url: /labs/CL2B-Answers
-  #   not_numbered: true
-  # - title: CL3-ProgrammingII
-  #   url: /labs/CL3-ProgrammingII
-  #   not_numbered: true
+  - title: CL2B-Answers
+    url: /labs/CL2B-Answers
+    not_numbered: true
+  - title: CL3-ProgrammingII
+    url: /labs/CL3-ProgrammingII
+    not_numbered: true
   # - title: CL3B-Answers
   #   url: /labs/CL3B-Answers
   #   not_numbered: true
