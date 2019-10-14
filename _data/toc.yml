@@ -99,18 +99,18 @@
   # - title: 25-WrapUp
   #   url: /materials/25-WrapUp
   #   not_numbered: true
-  # - title: A1-Syntax
-  #   url: /materials/A1-Syntax
-  #   not_numbered: true
-  # - title: A2-Examples
-  #   url: /materials/A2-Examples
-  #   not_numbered: true
-  # - title: Midterm-Review
-  #   url: /materials/Midterm-Review
-  #   not_numbered: true
-  # - title: MidtermPractice
-  #   url: /materials/MidtermPractice
-  #   not_numbered: true
+  - title: A1-Syntax
+    url: /materials/A1-Syntax
+    not_numbered: true
+  - title: A2-Examples
+    url: /materials/A2-Examples
+    not_numbered: true
+  - title: Exam1-Review
+    url: /materials/Exam1-Review
+    not_numbered: true
+  - title: Exam1-Practice
+    url: /materials/Exam1-Practice
+    not_numbered: true
   # - title: Midterm-Answers
   #   url: /materials/Midterm-Answers
   #   not_numbered: true

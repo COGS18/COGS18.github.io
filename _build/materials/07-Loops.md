@@ -8,8 +8,8 @@ prev_page:
   url: /materials/06-DataTypes
   title: '06-DataTypes'
 next_page:
-  url: /labs/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/A1-Syntax
+  title: 'A1-Syntax'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -21,9 +21,11 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - **Exam I on Monday (10/21)** in class
     - just need a writing utensil
     - closed-notes; taken on paper
+- Participation updates on Piazza
+- CodingLab answers posted on website
 - Piazza Reminders:
     - If posting answer/code to assignment on Piazza, make it a **private** post to "Instructors"
-    - Please include Assingment and Question in subject line (i.e. "A2 Q3 text about issue")
+    - Please include Assignment and Question in subject line (i.e. "A2 Q3 text about issue")
 
 # Review Time
 
@@ -90,6 +92,12 @@ else:
     print('NOT SO GOOD.')
 ```
 
+
+{:.output_stream}
+```
+SO GOOD!
+
+```
 
 - A) SO GOOD!
 - B) NOT SO GOOD.
@@ -160,6 +168,16 @@ while number < 0:
 ```
 
 
+{:.output_stream}
+```
+-5
+-4
+-3
+-2
+-1
+
+```
+
 
 
 {:.input_area}
@@ -178,6 +196,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+4
+
+```
+
 ### While Loop Example I
 
 
@@ -194,6 +218,12 @@ while not connected:
     break
 ```
 
+
+{:.output_stream}
+```
+Establishing Connection...
+
+```
 
 ### While Loop Example II
 
@@ -212,6 +242,12 @@ while not has_user_input:
 ```
 
 
+{:.output_stream}
+```
+Asking for user input...
+
+```
+
 ## Clicker Question #1
 
 How many values will be output from this while loop before "The tea is cool enough." is printed?
@@ -229,6 +265,15 @@ while temperature > 112:
 print('The tea is cool enough.')
 ```
 
+
+{:.output_stream}
+```
+115
+114
+113
+The tea is cool enough.
+
+```
 
 - A) 1
 - B) 2
@@ -259,6 +304,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+4
+
+```
+
 <pre> A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite </pre> 
 
 ### Stepping Through the Loop
@@ -287,6 +338,29 @@ print('\nFinal counter: ', counter)
 ```
 
 
+{:.output_stream}
+```
+START LOOP
+	Start counter:  0
+	Mid counter:  1
+	End counter:  1
+START LOOP
+	Start counter:  1
+	Mid counter:  2
+	End counter:  2
+START LOOP
+	Start counter:  2
+	Mid counter:  3
+	End counter:  3
+START LOOP
+	Start counter:  3
+	Mid counter:  4
+	End counter:  4
+
+Final counter:  4
+
+```
+
 ## For Loops
 
 <div class="alert alert-success">
@@ -306,11 +380,20 @@ list_of_items = ['A', True, 12]
 
 # Loop across each element
 for my_item in list_of_items:
-    print(my_item)
+     print(my_item)
     
 print('\tLast value: ', my_item)
 ```
 
+
+{:.output_stream}
+```
+A
+True
+12
+	Last value:  12
+
+```
 
 ### For Loop Example II
 
@@ -326,7 +409,18 @@ for char in 'python':
 ```
 
 
-## Clicker Question #2
+{:.output_stream}
+```
+p
+y
+t
+h
+o
+n
+
+```
+
+## Clicker Question #10
 
 What will the following loop print out:
 
@@ -334,12 +428,21 @@ What will the following loop print out:
 
 {:.input_area}
 ```python
-my_lst = [0, 1, 2]
+my_lst = [0, 1, 2, 3, 4]
 
 for item in my_lst[0:-1]:
     print(item + 1)
 ```
 
+
+{:.output_stream}
+```
+1
+2
+3
+4
+
+```
 
 - A) 0, 1, 2
 - B) 0, 1
@@ -347,7 +450,7 @@ for item in my_lst[0:-1]:
 - D) 2, 3
 - E) 1, 2, 3
 
-## Clicker Question #3
+## Clicker Question #11
 
 How many values will be output from this for loop before it first prints "The tea is too hot!"?
 
@@ -362,8 +465,22 @@ for temp in temperatures:
     
     if(temp > 115):
         print('The tea is too hot!')
+
 ```
 
+
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
 
 - A) 1
 - B) 2
@@ -375,7 +492,7 @@ for temp in temperatures:
 ## `range`
 
 <div class="alert alert-success">
-`range` is an operator to create a range of numbers, that is often used with loops.
+<code>range</code> is an operator to create a range of numbers, that is often used with loops.
 </div>
 
 ### `range` Examples
@@ -432,7 +549,7 @@ for temp in range(114, 119):
 ```
 
 
-## Clicker Question #4
+## Clicker Question #12
 
 How many values would this loop print and what would be the last value printed? 
 
@@ -455,7 +572,7 @@ for ind in range(1, 10, 3):
 ## `continue`
 
 <div class="alert alert-success">
-`continue` is a special operator to jump ahead to the next iteration of a loop.
+<code>continue</code> is a special operator to jump ahead to the next iteration of a loop.
 </div>
 
 ### `continue` examples
@@ -506,7 +623,7 @@ for char in string:
 ```
 
 
-## Clicker Question #5
+## Clicker Question #13
 
 What will be the value of `counter` after this code has run:
 
@@ -534,7 +651,7 @@ print(counter)
 - D) 3
 - E) 4
 
-## Clicker Question #6
+## Clicker Question #14
 
 What will be the value of `counter` after this code has run:
 
@@ -565,7 +682,7 @@ print(counter)
 ## `break`
 
 <div class="alert alert-success">
-`break` is a special operator to break out of a loop.
+<code>break</code> is a special operator to break out of a loop.
 </div>
 
 
@@ -643,7 +760,7 @@ for temp in range(114, 119):
 ```
 
 
-## Clicker Question #7
+## Clicker Question #15
 
 What will the following code print out:
 
@@ -668,7 +785,7 @@ while True:
 - D) Something else 
 - E) This code prints forever
 
-## Clicker Question #8
+## Clicker Question #16
 
 For how many `temp` will output be printed from this for loop? 
 

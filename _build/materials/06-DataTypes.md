@@ -1166,6 +1166,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+0
+
+```
+
 
 
 {:.input_area}
@@ -1175,6 +1181,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 
 
 {:.input_area}
@@ -1183,6 +1195,12 @@ counter = counter + 1
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 ## Pulling it Together: Collections, Membership & Conditionals
 
@@ -1211,6 +1229,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 <pre> A) 0   B) 1   C) 2   D) 3   E) 4 </pre>
 
 ### Clicker Question #8
@@ -1234,5 +1258,11 @@ else:
     print('None')
 ```
 
+
+{:.output_stream}
+```
+Overlap
+
+```
 
 <pre> A) EndMatch   B) Overlap   C) Length   D) Overlap & Match   E) None </pre>
