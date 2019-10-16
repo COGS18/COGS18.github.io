@@ -91,8 +91,8 @@ print(var_2)
 
 - Names are always on the left of the `=`, values are always on the right
 - Names are case sensitive
-- Variables must start with letters
-    - After that, they can include numbers, and underscores
+- Variables must start with letters (or underscores)
+    - After that, they can include numbers
     - They cannot include special characters (like &, *, #, etc)
 - Python doesn't care what you name your variables
     - Humans do care. Pick names that describe the data / value that they store

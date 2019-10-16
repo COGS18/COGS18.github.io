@@ -8,8 +8,8 @@ prev_page:
   url: /materials/06-DataTypes
   title: '06-DataTypes'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/08-Encodings
+  title: '08-Encodings'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -250,7 +250,7 @@ Asking for user input...
 
 ## Clicker Question #1
 
-How many values will be output from this while loop before "The tea is cool enough." is printed?
+How many values will be output from this `while` loop before "The tea is cool enough." is printed?
 
 
 
@@ -452,7 +452,7 @@ for item in my_lst[0:-1]:
 
 ## Clicker Question #11
 
-How many values will be output from this for loop before it first prints "The tea is too hot!"?
+How many values will be output from this `for` loop before it *first* prints "The tea is too hot!"?
 
 
 
@@ -651,34 +651,6 @@ print(counter)
 - D) 3
 - E) 4
 
-## Clicker Question #14
-
-What will be the value of `counter` after this code has run:
-
-
-
-{:.input_area}
-```python
-counter = 0
-my_lst = [False, True, False, True]
-
-
-for item in my_lst:
-    if item:
-        continue
-    else:
-        counter = counter + 1
-        
-print(counter)
-```
-
-
-- A) 0 
-- B) 1
-- C) 2 
-- D) 3
-- E) 4
-
 ## `break`
 
 <div class="alert alert-success">
@@ -760,7 +732,7 @@ for temp in range(114, 119):
 ```
 
 
-## Clicker Question #15
+## Clicker Question #14
 
 What will the following code print out:
 
@@ -785,7 +757,7 @@ while True:
 - D) Something else 
 - E) This code prints forever
 
-## Clicker Question #16
+## Clicker Question #15
 
 For how many `temp` will output be printed from this for loop? 
 
@@ -812,3 +784,31 @@ for temp in range(114, 119):
 - C) 3
 - D) 5
 - E) 6
+
+## Clicker Question #16
+
+What will be the value of `counter` after this code has run:
+
+
+
+{:.input_area}
+```python
+counter = 0
+my_lst = [False, True, False, True]
+
+
+for item in my_lst:
+    if item:
+        continue
+    else:
+        counter = counter + 1
+        
+print(counter)
+```
+
+
+- A) 0 
+- B) 1
+- C) 2 
+- D) 3
+- E) 4

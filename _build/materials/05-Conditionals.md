@@ -274,7 +274,7 @@ elif condition_2:
 
 ### `elif` *after* an `else` does not make sense
 
-The order will alwas be `if`-`elif`-`else`...with only the `if` being required. If the `elif` is at the end...it will never be tested, as the `else` will have already returned a value once reached (and thus Python will throw an erro).
+The order will always be `if`-`elif`-`else`...with only the `if` being required. If the `elif` is at the end...it will never be tested, as the `else` will have already returned a value once reached (and thus Python will throw an error).
 
 
 
