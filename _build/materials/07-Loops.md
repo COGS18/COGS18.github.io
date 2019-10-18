@@ -506,25 +506,51 @@ for ind in [0, 1, 2, 3, 4]:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
+
 
 
 {:.input_area}
 ```python
 # the asterisk here unpacks the range
 # don't worry about this syntax now
-print(*range(0,5))
+print(*range(0, 5))
 ```
 
+
+{:.output_stream}
+```
+0 1 2 3 4
+
+```
 
 
 
 {:.input_area}
 ```python
 # Loop across a sequence of numbers, using range
-for ind in range(0,5):
+for ind in range(0, 5):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
 
 
 
@@ -535,6 +561,13 @@ for ind in range(2, 6, 2):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+
+```
 
 
 
@@ -549,6 +582,19 @@ for temp in range(114, 119):
 ```
 
 
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
+
 ## Clicker Question #12
 
 How many values would this loop print and what would be the last value printed? 
@@ -561,6 +607,14 @@ for ind in range(1, 10, 3):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+1
+4
+7
+
+```
 
 - A) values printed: 3; last value: 7
 - B) values printed: 3; last value: 9
@@ -591,6 +645,14 @@ for item in lst:
     print(item)
 ```
 
+
+{:.output_stream}
+```
+0
+1
+3
+
+```
 
 
 
@@ -623,6 +685,15 @@ for char in string:
 ```
 
 
+{:.output_stream}
+```
+t
+h
+o
+n
+
+```
+
 ## Clicker Question #13
 
 What will be the value of `counter` after this code has run:
@@ -634,7 +705,6 @@ What will be the value of `counter` after this code has run:
 counter = 0
 my_lst = [False, True, False, True]
 
-
 for item in my_lst:
     if item in my_lst:
         continue
@@ -644,6 +714,12 @@ for item in my_lst:
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+0
+
+```
 
 - A) 0 
 - B) 1
@@ -672,6 +748,12 @@ while not connected:
 ```
 
 
+{:.output_stream}
+```
+Establishing Connection...
+
+```
+
 ### `break` examples
 
 
@@ -689,6 +771,13 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+
+```
+
 
 
 {:.input_area}
@@ -704,6 +793,12 @@ for course in courses:
 ```
 
 
+{:.output_stream}
+```
+cogs9
+
+```
+
 
 
 {:.input_area}
@@ -717,6 +812,16 @@ for char in string:
     print(char)
 ```
 
+
+{:.output_stream}
+```
+l
+o
+v
+e
+ 
+
+```
 
 
 
@@ -750,6 +855,13 @@ while True:
     number = number + 1
 ```
 
+
+{:.output_stream}
+```
+1
+2
+
+```
 
 - A) 1 
 - B) 1 2 

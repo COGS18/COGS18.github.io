@@ -8,8 +8,8 @@ prev_page:
   url: /materials/07-Loops
   title: '07-Loops'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/09-FunctionsI
+  title: '09-FunctionsI'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -17,6 +17,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 - **A2 due Friday** (11:59 PM)
 - **Exam I on Monday (10/21)** in class
+    - Apendix Info & Exam Review Added to Website
 
 
 # Encodings
@@ -53,7 +54,7 @@ To represent means to stand in for something.
 </div>
 
 - **iconic representation** : the object looks like the thing it represents (i.e. a picture)
-- **symbolic representation** : the symbol does *not* look like the thing it reperesents (i.e. letters, numbers) 
+- **symbolic representation** : the symbol does *not* look like the thing it represents (i.e. letters, numbers) 
 
 
 ### Symbol Examples : concepts
@@ -116,6 +117,12 @@ print(bin(1))
 ```
 
 
+{:.output_stream}
+```
+0b1
+
+```
+
 
 
 {:.input_area}
@@ -123,6 +130,12 @@ print(bin(1))
 print(bin(78))
 ```
 
+
+{:.output_stream}
+```
+0b1001110
+
+```
 
 
 
@@ -136,11 +149,27 @@ bin(False)
 
 
 
+
+{:.output_data_text}
+```
+'0b0'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(bool(0b0))
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 
 
@@ -150,6 +179,16 @@ print(bool(0b0))
 # decoding from binary
 int(0b1011)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+11
+```
+
 
 
 ## Character Encodings
@@ -174,7 +213,7 @@ Every time we see that number, we can evaluate it to replace it with the charact
 
 {:.input_area}
 ```python
-# Set the value we
+# Set the value we want to encode
 character_encoding = 1
 
 # Use conditional to interpret the character as a particular symbol
@@ -186,6 +225,12 @@ elif character_encoding == 2:
     print('¿')
 ```
 
+
+{:.output_stream}
+```
+é
+
+```
 
 ## Aside: Dictionaries
 
@@ -214,6 +259,12 @@ print(dictionary)
 ```
 
 
+{:.output_stream}
+```
+{'key_1': 'value_1', 'key_2': 'value_2'}
+
+```
+
 
 
 {:.input_area}
@@ -225,12 +276,32 @@ type(dictionary)
 
 
 
+
+{:.output_data_text}
+```
+dict
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Dictionaries also have a length
 # length refers to how many pairs there are
 len(dictionary)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 
 
 ### Dictionaries: Indexing & Looping
@@ -246,6 +317,16 @@ dictionary['key_1']
 
 
 
+
+{:.output_data_text}
+```
+'value_1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Loop over a dictionary loops across the keys
@@ -256,6 +337,17 @@ for item in dictionary:
     print('\tValue:\t', dictionary[item])
 ```
 
+
+{:.output_stream}
+```
+Loop Iteration
+	Key:	 key_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 key_2
+	Value:	 value_2
+
+```
 
 ### Clicker Question #2
 
@@ -277,8 +369,18 @@ Fill in the '---' in the code below to return the value stored in the second key
 {:.input_area}
 ```python
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
-height_dict[---]
+height_dict['height_2']
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+68
+```
+
 
 
 - A) I did it
@@ -305,6 +407,19 @@ student_emails
 
 
 
+
+{:.output_data_text}
+```
+{'Ada Lovelace': 'ada@analyticengine.com',
+ 'Alan Turing': 'aturing@thebomb.gov',
+ 'Betty Jennings': 'bjennings@eniac.org',
+ 'Grace Hopper': 'ghopper@navy.usa'}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 completed_coding_lab = {
@@ -319,6 +434,16 @@ completed_coding_lab
 
 
 
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': False, 'A9123': True}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 mixed_types = {
@@ -328,6 +453,16 @@ mixed_types = {
 
 mixed_types
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{False: None, True: [1, 2, 3]}
+```
+
 
 
 ### Clicker Question #4
@@ -344,7 +479,22 @@ Write the code that would create a dictionary `car` that stores values about you
 {:.input_area}
 ```python
 # YOUR CODE HERE
+car = {'make' : 'Hyundai',
+      'model': 'Santa Fe',
+      'year' : 2007}
+
+car
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'make': 'Hyundai', 'model': 'Santa Fe', 'year': '2007'}
+```
+
 
 
 ### Dictionaries are mutable
@@ -368,12 +518,32 @@ completed_coding_lab
 
 
 
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': False, 'A9123': True}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # change value of specified key
 completed_coding_lab['A5678'] = True
 completed_coding_lab
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': True, 'A9123': True}
+```
+
 
 
 Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using `del`.
@@ -399,6 +569,22 @@ len(completed_coding_lab)
 ```
 
 
+{:.output_stream}
+```
+{'A1234': True, 'A9123': True}
+
+```
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
 ### Dictionaries and operators
 
 The operators we've discussed previously can be used when working with dictionaries.
@@ -413,6 +599,12 @@ if 'A1234' in completed_coding_lab:
   print('Yes, that student is in this class')
 ```
 
+
+{:.output_stream}
+```
+Yes, that student is in this class
+
+```
 
 ### Clicker Question #5
 
@@ -436,6 +628,12 @@ for item in dictionary:
 print(result)
 ```
 
+
+{:.output_stream}
+```
+alpha
+
+```
 
 - A) alpha
 - B) [8, 12] 
