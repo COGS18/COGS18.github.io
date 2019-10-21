@@ -655,6 +655,16 @@ alpha
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+{'Student': 91}
+```
+
+
+
 - **keys** must be of an immutable type (string, tuple, integer, float, etc)
 - Note: **values** can be of any type
 
@@ -668,6 +678,32 @@ alpha
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-26-27b11708f095> in <module>()
+      1 # lists are not allowed as key types
+      2 # this code will produce an error
+----> 3 {['Student'] : 97}
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: unhashable type: 'list'
+```
+
+
 - Dictionary keys are case sensitive.
 
 
@@ -677,6 +713,16 @@ alpha
 ```python
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'STUDENT': 91, 'Student': 97, 'student': 88}
+```
+
 
 
 ### Clicker Question #6
@@ -693,6 +739,33 @@ student_emails = {
     'Ada Lovelace' : 'aturing@thebomb.gov',
     ['Grace Hopper'] : 'ghopper@navy.usa'
 }
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-32-d0c1eab64f25> in <module>()
+      3     'Ada Lovelace' : ['ada@analyticengine.com'],
+      4     'Ada Lovelace' : 'aturing@thebomb.gov',
+----> 5     ['Grace Hopper'] : 'ghopper@navy.usa'
+      6 }
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: unhashable type: 'list'
 ```
 
 
@@ -726,6 +799,12 @@ print(my_sentence)
 ```
 
 
+{:.output_stream}
+```
+no hablo español
+
+```
+
 
 
 {:.input_area}
@@ -735,6 +814,12 @@ my_sentence = 'yo hablo ingl' + character_encodings[1] + 's'
 print(my_sentence)
 ```
 
+
+{:.output_stream}
+```
+yo hablo inglés
+
+```
 
 ## Unicode
 
@@ -749,11 +834,11 @@ If a computer is using unicode, it displays a requested character by following t
 ### ORD & CHR
 
 <div class="alert alert-success">
-`ord` returns the unicode code point for a one-character string.
+<code>ord</code> returns the unicode code point for a one-character string.
 </div>
 
 <div class="alert alert-success"> 
-`chr` returns the character encoding of a code point. 
+<code>chr</code> returns the character encoding of a code point. 
 </div>
 
 ### ord & chr examples
@@ -766,6 +851,12 @@ print(ord('a'))
 ```
 
 
+{:.output_stream}
+```
+97
+
+```
+
 
 
 {:.input_area}
@@ -773,6 +864,12 @@ print(ord('a'))
 print(chr(97))
 ```
 
+
+{:.output_stream}
+```
+a
+
+```
 
 ### Inverses
 
@@ -789,6 +886,13 @@ assert inp == out
 print('Input: \t', inp, '\nOutput: ', out)
 ```
 
+
+{:.output_stream}
+```
+Input: 	 b 
+Output:  b
+
+```
 
 ## Clicker Question
 

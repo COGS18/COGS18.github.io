@@ -33,8 +33,18 @@ What is the output of the code below?
 
 {:.input_area}
 ```python
-(2 * 6 < 12) or ('Happy' + ' ' + 'Friday' + '!' == 'Happy Friday!')
+(4 * 2 > 18) or ('Happy' + ' ' + 'Friday' + '!' == 'Happy Friday!') 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) `True`
@@ -60,6 +70,15 @@ while val < 4:
 ```
 
 
+{:.output_stream}
+```
+p
+y
+t
+h
+
+```
+
 - A) True
 - B) False
 - C) h
@@ -79,11 +98,39 @@ type(lst[3]) is float
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
 - A) True
 - B) False
 - C) None
 - D) SyntaxError
 - E) I have no idea
+
+
+
+{:.input_area}
+```python
+False and 1/0
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
 
 # Functions I
 
@@ -110,11 +157,21 @@ type(my_var)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+list
+```
+
+
+
 Copy + Pasting the same/similar bit of code is to be avoided.
 
 **Loops** were one way to avoid this.
 
-**Functions** are a another!
+**Functions** are another!
 
 ## Modular Programming
 
@@ -142,12 +199,32 @@ type(my_var)
 
 
 
+
+{:.output_data_text}
+```
+list
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # the function len() doesn't depend on type()
 # but they can both be used on the same variable
 len(my_var)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ## Function Example I
@@ -177,6 +254,12 @@ print_value(num = 6)
 ```
 
 
+{:.output_stream}
+```
+6
+
+```
+
 
 
 {:.input_area}
@@ -186,6 +269,12 @@ print_value(num = 6)
 print_value(6)
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 
 
@@ -197,6 +286,13 @@ new_var = print_value(6)
 print(new_var)
 ```
 
+
+{:.output_stream}
+```
+6
+None
+
+```
 
 All this function is doing is printing the input. It's not actually *storing* any new information. To do that, we need to use `return`.
 
@@ -210,7 +306,7 @@ def return_value(num):
     # do some operation
     output = num
     
-    # return an asnwer
+    # return an answer
     return output
 ```
 
@@ -226,6 +322,16 @@ return_value(6)
 
 
 
+
+{:.output_data_text}
+```
+6
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # execute function but assign output 
@@ -234,6 +340,12 @@ new_val = return_value(6)
 print(new_val)
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 ## Function Example II
 
@@ -257,11 +369,37 @@ def add_two_numbers(num1, num2):
 
 {:.input_area}
 ```python
+add_two_numbers(-1, 4)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
+{:.input_area}
+```python
 # Execute our function again, on some other inputs
 output = add_two_numbers(-1, 4)
 print(output)
 ```
 
+
+{:.output_stream}
+```
+3
+
+```
+
+START HERE
 
 ## Function Example III
 
@@ -272,13 +410,11 @@ We aren't limited to a single operation within a function. We can use multiple o
 {:.input_area}
 ```python
 # determine if a value is even or odd
-def evenOdd(value): 
+def even_odd(value): 
     if (value % 2 == 0): 
         print("even")
     else: 
         print("odd")
-    
-
 ```
 
 
@@ -288,9 +424,15 @@ def evenOdd(value):
 ```python
 # Execute our function
 # note that it's only printing the output
-evenOdd(-1)
+even_odd(-1)
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 
 
@@ -298,7 +440,7 @@ evenOdd(-1)
 ```python
 # determine if a value is even or odd
 # and return that value
-def evenOdd(value): 
+def even_odd(value): 
     if (value % 2 == 0): 
         out = "even"
     else: 
@@ -314,12 +456,12 @@ def evenOdd(value):
 ```python
 # Execute our function
 # note that it's only printing the output
-my_val = evenOdd(-1)
+my_val = even_odd(-1)
 print(my_val)
 ```
 
 
-With functions, the logic behind our code no longer requires it to be executed from top to bottom.
+With functions, the logic behind our code no longer requires it to be executed from top to bottom of the notebook.
 
 The cost of potential confusion is *definitely* offset by the benefits of writing functions and using modular code.
 
@@ -328,7 +470,7 @@ The cost of potential confusion is *definitely* offset by the benefits of writin
 - Functions are defined using `def` followed by `:`, which opens a code-block that comprises the function
     - Running code with a `def` block *defines* the function (but does not *execute* it)
 
-- Functions are *executed* using parentheses - '()'
+- Functions are *executed* using parentheses - `()`
     - This is when the code inside a function is actually run
 
 - Functions have their own namespace
