@@ -8,8 +8,8 @@ prev_page:
   url: /materials/08-Encodings
   title: '08-Encodings'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/10-Algorithms
+  title: '10-Algorithms'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -42,7 +42,7 @@ What is the output of the code below?
 
 {:.output_data_text}
 ```
-False
+True
 ```
 
 
@@ -399,8 +399,6 @@ print(output)
 
 ```
 
-START HERE
-
 ## Function Example III
 
 We aren't limited to a single operation within a function. We can use multiple operations and all of the concepts we've used previously (`if`, `elif`, `else` and conditionals).
@@ -427,12 +425,6 @@ def even_odd(value):
 even_odd(-1)
 ```
 
-
-{:.output_stream}
-```
-odd
-
-```
 
 
 
@@ -660,69 +652,3 @@ change_var(my_var)
 print('Outside, after function: \t', my_var)
 ```
 
-
-## Clicker Question #3
-
-
-
-{:.input_area}
-```python
-an_int = 2
-a_float = 11.5
-
-def print_numbers(an_int, a_float):
-    print(an_int, ',', a_float)
-```
-
-
-Assuming the cell above has been executed, what will the code below print out?
-
-
-
-{:.input_area}
-```python
-print_numbers(5, 12.2)
-```
-
-
-- A) 5 , 11.5
-- B) 2, 12.2 
-- C) 2 , 11.5 
-- D) 5 , 12.2
-- E) None
-
-## Clicker Question #4
-
-
-
-{:.input_area}
-```python
-def string_manipulator(string):
-    
-    output = ''
-    for char in string:
-        if char == 'a' or char == 'e':
-            char = 'z' 
-        output = output + char
-    
-    return output
-```
-
-
-Given the function above, what will the following code print?
-
-
-
-{:.input_area}
-```python
-variable = 'abcde'
-manipulated_string = string_manipulator(variable)
-print(manipulated_string)
-```
-
-
-- A) 'abcde' 
-- B) 'zbcdz'
-- C) 'zzzzz'
-- D) 'azbcdez'
-- E) ''
