@@ -401,7 +401,7 @@ print(output)
 
 ## Function Example III
 
-We aren't limited to a single operation within a function. We can use multiple operations and all of the concepts we've used previously (`if`, `elif`, `else` and conditionals).
+We aren't limited to a single operation within a function. We can use multiple operations and all of the concepts we've used previously (including loops and conditionals).
 
 
 
@@ -425,6 +425,12 @@ def even_odd(value):
 even_odd(-1)
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 
 
@@ -452,6 +458,12 @@ my_val = even_odd(-1)
 print(my_val)
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 With functions, the logic behind our code no longer requires it to be executed from top to bottom of the notebook.
 
@@ -501,6 +513,12 @@ print(ans_1 + ans_2)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 - A) 0
 - B) 2
 - C) 4
@@ -521,7 +539,24 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+def greet(name):
+    output = 'Hello ' + name + '! Good morning!'
+        
+    return output 
+
+my_message = greet(name = 'Shannon')
+my_message
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Hello Shannon! Good morning!'
+```
+
 
 
 ## Function Namespace I
@@ -534,6 +569,20 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 %whos
 ```
 
+
+{:.output_stream}
+```
+Variable     Type        Data/Info
+----------------------------------
+ans_1        int         2
+ans_2        int         0
+even_odd     function    <function even_odd at 0x10f39ec80>
+greet        function    <function greet at 0x10f42ca60>
+my_message   str         Hello Shannon! Good morning!
+my_val       str         odd
+remainder    function    <function remainder at 0x10f39e7b8>
+
+```
 
 ## Function Namespaces II
 
@@ -556,6 +605,12 @@ check_function_namespace(1)
 ```
 
 
+{:.output_stream}
+```
+{'function_input': 1}
+
+```
+
 
 
 {:.input_area}
@@ -564,6 +619,12 @@ check_function_namespace(1)
 check_function_namespace(True)
 ```
 
+
+{:.output_stream}
+```
+{'function_input': True}
+
+```
 
 
 
@@ -585,6 +646,12 @@ check_function_namespace2(1, True)
 ```
 
 
+{:.output_stream}
+```
+{'other_name': True, 'function_input': 1}
+
+```
+
 ## Function Namespaces III
 
 Names defined inside a function only exist within the function.
@@ -603,6 +670,13 @@ check_function_namespace(my_var)
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+{'function_input': 'I am a variable'}
+I am a variable
+
+```
 
 ## Function - Execution Order
 
@@ -627,6 +701,16 @@ my_var
 
 
 
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # my_var within the function
@@ -634,13 +718,29 @@ change_var(my_var)
 ```
 
 
+{:.output_stream}
+```
+Inside function: 		 I am something else
+
+```
+
 
 
 {:.input_area}
 ```python
 # my_var in the global namespace remains unchanged
-my_var
+my_var 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
 
 
 
@@ -652,3 +752,11 @@ change_var(my_var)
 print('Outside, after function: \t', my_var)
 ```
 
+
+{:.output_stream}
+```
+Outside, before function: 	 I am a variable
+Inside function: 		 I am something else
+Outside, after function: 	 I am a variable
+
+```

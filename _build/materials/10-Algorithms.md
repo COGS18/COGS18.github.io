@@ -8,14 +8,14 @@ prev_page:
   url: /materials/09-FunctionsI
   title: '09-FunctionsI'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/11-FunctionsII
+  title: '11-FunctionsII'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
 ### Course Announcements
 
-- A3 now available - due Friday 11/1 (11:59 PM)
+- A3 now available - due *next* Friday 11/1 (11:59 PM)
 - We're grading exams Friday
 - Mid-course survey now available
     - http://bit.ly/cogs18_midcourse
@@ -63,6 +63,12 @@ print_numbers(5, 12.2)
 ```
 
 
+{:.output_stream}
+```
+5 , 12.2
+
+```
+
 - A) 5 , 11.5
 - B) 2, 12.2 
 - C) 2 , 11.5 
@@ -99,6 +105,12 @@ print(manipulated_string)
 ```
 
 
+{:.output_stream}
+```
+zbcdz
+
+```
+
 - A) 'abcde' 
 - B) 'zbcdz'
 - C) 'zzzzz'
@@ -119,7 +131,7 @@ If you can write the steps down, you can write an algorithm.
 
 Algorithms are computable.
 
-Computers cannot read between the lines. They are very literate.
+Computers cannot read between the lines. They are very literal.
 
 ## Algorithm Example: Making a Sandwich
 
@@ -133,7 +145,12 @@ Can you write an algorithm to make a ham and cheese sandwich.
 
 ## Algorithm for making a ham & cheese sandwich
 
-- We'll update here
+- Step0: Specify ingredients (as strings or as images)
+- Step 1: Define function - `make_sandwich(ingredients)`
+    - Step 2: Put ham and cheese on top of the bread
+    - Step 3: Add mayo to the other bread
+    - Step 4: Put mayo bread on ham and cheese bread, making sure mayo side down onto ham and cheese
+
 
 
 Humans are pretty good at making sandwiches. Computers may struggle a bit.
@@ -219,6 +236,12 @@ print(sorted_array)
 ```
 
 
+{:.output_stream}
+```
+[7, 12, 12, 19, 25]
+
+```
+
 
 
 {:.input_area}
@@ -229,6 +252,12 @@ sorted_array = sort_array(unsorted_array)
 print(sorted_array)
 ```
 
+
+{:.output_stream}
+```
+[2.3, 2.9, 21.3, 56.7, 99.9]
+
+```
 
 ### Clicker Question #3
 
@@ -290,7 +319,7 @@ sort_array(data)
 
 - A) [False, True, True] 
 - B) [True, False, True] 
-- C) [0, 1, 1]]
+- C) [0, 1, 1]
 - D) [True, True, False] 
 - E) This code will fail
 
@@ -385,3 +414,146 @@ Things we might care about:
 Things that computers can do are things that we can write down an algorithm to do.
 
 Things that we can write an algorithm to do are things that we can define a specific set of steps to complete.
+
+## Variable Type Checking
+
+**Note**: The rest of the noteook includes notes to answer a student's in class question. You are not expected to know this, but you are free to learn and use the information!
+
+
+To check on an input variable's type, you can use the following approach:
+
+```python
+isinstance(object, classinfo) 
+```
+
+`isinstance()` takes two parameters:
+- `object` : variable/object to be checked
+- `classinfo` : class, type, or tuple of classes and types
+
+For example, using the `string_manipulator` function from earlier, note that I've added the following two lines: 
+
+```python
+if not isinstance(string, str):
+    print("Warning: please provide a string as input")
+```
+
+This checks to see if the input is anything other than a string. If it is, the function prints a warning.
+
+
+
+{:.input_area}
+```python
+def string_manipulator(string):
+    
+    if not isinstance(string, str):
+        print("Warning: please provide a string as input")
+    else:
+        output = ''
+        for char in string:
+            if char == 'a' or char == 'e':
+                char = 'z' 
+            output = output + char
+    
+        return output
+```
+
+
+
+
+{:.input_area}
+```python
+# use function with a string
+string_manipulator('hello!')
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'hzllo!'
+```
+
+
+
+
+
+{:.input_area}
+```python
+# print warning if not a string
+string_manipulator(5)
+```
+
+
+{:.output_stream}
+```
+Warning: please provide a string as input
+
+```
+
+However, sometimes, you want it to raise an error rather than just print something. Here we use `raise` instead of print. In this case, an error will be returned (with our specified message) to the user if the wrong variable type is provided:
+
+
+
+{:.input_area}
+```python
+def string_manipulator(string):
+    
+    if not isinstance(string, str):
+        raise ValueError("Please provide a string as input")
+    else:
+        output = ''
+        for char in string:
+            if char == 'a' or char == 'e':
+                char = 'z' 
+            output = output + char
+    
+        return output
+
+```
+
+
+
+
+{:.input_area}
+```python
+# raise error instead of print message
+string_manipulator(5)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-28-f79d7883600e> in <module>()
+----> 1 string_manipulator(5)
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-27-f85e5d0c7021> in string_manipulator(string)
+      2 
+      3     if not isinstance(string, str):
+----> 4         raise ValueError("Please provide a string as input")
+      5     else:
+      6         output = ''
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: Please provide a string as input
+```
+
