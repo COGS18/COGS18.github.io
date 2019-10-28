@@ -272,6 +272,16 @@ sort_array(data)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+['a', 'b', 'c']
+```
+
+
+
 - A) ['a', 'c', 'b']
 - B) ['a', 'b', 'c']
 - C) [97, 98, 99]
@@ -290,6 +300,16 @@ sort_array(data)
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ord('a')
@@ -298,10 +318,30 @@ ord('a')
 
 
 
+
+{:.output_data_text}
+```
+97
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ord('b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+98
+```
+
 
 
 ### Clicker Question #4
@@ -315,6 +355,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = [True, False, True]
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[False, True, True]
+```
+
 
 
 - A) [False, True, True] 
@@ -335,6 +385,16 @@ True < False
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bin(True)
@@ -343,10 +403,30 @@ bin(True)
 
 
 
+
+{:.output_data_text}
+```
+'0b1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bin(False)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'0b0'
+```
+
 
 
 ### Clicker Question #5
@@ -360,6 +440,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = [[3, 4], [1, 2]]
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[[1, 2], [3, 4]]
+```
+
 
 
 - A) [[3, 4], [1, 2]]  
@@ -382,6 +472,16 @@ sorted(data)
 
 
 
+
+{:.output_data_text}
+```
+[4, 6, 7]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Sort different data types
@@ -390,6 +490,14 @@ print(sorted([True, False, True]))
 print(sorted([[3, 4], [1, 2]]))
 ```
 
+
+{:.output_stream}
+```
+['a', 'b', 'c']
+[False, True, True]
+[[1, 2], [3, 4]]
+
+```
 
 ## Algorithmic Complexity
 

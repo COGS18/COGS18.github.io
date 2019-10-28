@@ -57,9 +57,9 @@
   - title: 11-FunctionsII
     url: /materials/11-FunctionsII
     not_numbered: true
-  # - title: 12-Debugging
-  #   url: /materials/12-Debugging
-  #   not_numbered: true
+  - title: 12-Debugging
+    url: /materials/12-Debugging
+    not_numbered: true
   # - title: 13-Objects
   #   url: /materials/13-Objects
   #   not_numbered: true
@@ -140,12 +140,12 @@
   - title: CL4-AlgorithmicThinking
     url: /labs/CL4-AlgorithmicThinking
     not_numbered: true
-  # - title: CL4B-Answers
-  #   url: /labs/CL4B-Answers
-  #   not_numbered: true
-  # - title: CL5-Debugging
-  #   url: /labs/CL5-Debugging
-  #   not_numbered: true
+  - title: CL4B-Answers
+    url: /labs/CL4B-Answers
+    not_numbered: true
+  - title: CL5-Debugging
+    url: /labs/CL5-Debugging
+    not_numbered: true
   # - title: CL5B-Answers
   #   url: /labs/CL5B-Answers
   #   not_numbered: true

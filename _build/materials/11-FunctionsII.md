@@ -8,8 +8,8 @@ prev_page:
   url: /materials/10-Algorithms
   title: '10-Algorithms'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/12-Debugging
+  title: '12-Debugging'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -37,6 +37,7 @@ my_very_long_variable_name = 6
 {:.input_area}
 ```python
 ## demonstrate tab completion here
+my_very_long_variable_name
 ```
 
 
@@ -75,6 +76,12 @@ out = my_func(dictionary)
 print(out)
 ```
 
+
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
 
 - A) ['first', 'second', 'third'] 
 - B) {1, 2, 3}
@@ -145,6 +152,16 @@ exponentiate(2)
 
 
 
+
+{:.output_data_text}
+```
+4
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Call the function, over-riding default value with something else
@@ -155,11 +172,31 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # you can always state this explicitly
 exponentiate(number = 2, exponent = 3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 ## Positional vs. Keyword Arguments
@@ -179,11 +216,31 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Keyword arguments are explicitly named as to which argument each value relates to
 exponentiate(number = 2, exponent = 3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 
@@ -196,6 +253,16 @@ exponentiate(exponent = 3, number = 2)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
@@ -204,7 +271,18 @@ exponentiate(number = 2, 3)
 ```
 
 
-Reminder, setting a default value for one parameter is allowed during function *definition*.
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-24-82d192fd1eb1>", line 3
+    exponentiate(number = 2, 3)
+                            ^
+SyntaxError: positional argument follows keyword argument
+
+```
+
+
+Reminder, setting a default value for parameters is allowed during function *definition*.
 
 (This may look like what we did above, but here we are including a default value for one parameter during function definition. During function *execution*, you can't mix and match using positional vs. keywords)
 
@@ -273,6 +351,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3, 4]
+
+```
+
 The method `append()` is called directly on the list `my_list`
 
 
@@ -283,6 +367,32 @@ The method `append()` is called directly on the list `my_list`
 # this will error with a string
 my_string = 'cogs18'
 my_string.append('!')
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-26-b99e95dcd8d7> in <module>()
+      2 # this will error with a string
+      3 my_string = 'cogs18'
+----> 4 my_string.append('!')
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'str' object has no attribute 'append'
 ```
 
 
@@ -298,12 +408,48 @@ my_float.is_integer()
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `is_integer()` method, attempted on an integer
 # this code will produce an error
 my_int = 12
 my_int.is_integer()
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-30-ba89eed6f102> in <module>()
+      2 # this code will produce an error
+      3 my_int = 12
+----> 4 my_int.is_integer()
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'int' object has no attribute 'is_integer'
 ```
 
 
@@ -322,11 +468,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'abc'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Make a string all upper case
 'aBc'.upper()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'ABC'
+```
+
 
 
 
@@ -340,11 +506,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'Python is great'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Find the index of where a string starts 
 'Hello, my name is'.find('name')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+10
+```
+
 
 
 ### Clicker Question #3
@@ -363,6 +549,16 @@ for element in inputs:
 
 output.capitalize()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Fix typing like this '
+```
+
 
 
 - A) 'fix typing like this ' 
@@ -388,12 +584,32 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[16, 33, 40, 88]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # append adds to the end of a list
 ints.append(2)
 ints
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[16, 33, 40, 88, 2]
+```
+
 
 
 
@@ -408,12 +624,40 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[16, 33, 88, 2]
+```
+
+
+
+
+
+{:.input_area}
+```python
+list.remove?
+```
+
+
+
+
 {:.input_area}
 ```python
 # reverse order of list
 ints.reverse()
 ints
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 88, 33, 16]
+```
+
 
 
 ### Clicker Question #4
@@ -429,6 +673,16 @@ list_string.sort()
 list_string.reverse()
 list_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['d', 'c', 'b', 'a']
+```
+
 
 
 - A) ['a', 'c', 'd', 'b']
@@ -459,6 +713,16 @@ car.keys()
 
 
 
+
+{:.output_data_text}
+```
+dict_keys(['brand', 'model', 'year'])
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # get returns the value of a specified key
@@ -467,6 +731,12 @@ mod = car.get('model')
 print(mod)
 ```
 
+
+{:.output_stream}
+```
+M5
+
+```
 
 
 
@@ -487,6 +757,12 @@ car.update({"color": "Black"})
 print(car)
 ```
 
+
+{:.output_stream}
+```
+{'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+
+```
 
 ### Clicker Question #5
 
@@ -704,4 +980,94 @@ def is_integer(my_float):
 print(my_float)
 is_integer(my_float)
 ```
+
+
+**A3 Q10**: The instructions use the word append. They don't tell you to use the method `append()`. Remember:
+
+- `append()` is a list method (_not_ a string method)
+- append (the word) just means add to the end 
+- concatenation is how to add to the end of a string
+
+### Functions: Points of Clarification
+
+Additional notes included here to clarify points we've already discussed. Not presented in class, but feel free to review and gain additional clarificaiton.
+
+1. `def` defines a function
+2. `function_name()` - parentheses are required to execute a function
+3. `function_name(input1)` - input parameters are specified within the function parentheses 
+4. `function_name(input1, input2)` - functions can take multiple parameters as inputs
+    - `input1` and `input2` can then be used within your function when it executes
+5. To store the output from a function, you'll need a `return` statement
+
+#### For example....
+
+If you write a function called `is_odd()` which takes an input `value`, 
+
+
+
+{:.input_area}
+```python
+def is_odd(value):
+    if value % 2 != 0:
+        answer = True
+    else:
+        answer = False
+    
+    return answer
+```
+
+
+to use that function, you would execute `is_odd(value)` ....something like `is_odd(value = 6)`
+
+
+
+{:.input_area}
+```python
+out = is_odd(6)
+out
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+Later on, if you wanted to use that function _within another function_ you still have to pass an input to the function.
+
+
+
+{:.input_area}
+```python
+def new_function(my_list):
+    output = []
+    for val in my_list:
+        if is_odd(val):
+            output.append('yay!')
+    return output
+            
+```
+
+
+
+
+{:.input_area}
+```python
+new_function([1,2,3,4])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+['yay!', 'yay!']
+```
+
 
