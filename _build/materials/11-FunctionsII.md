@@ -810,6 +810,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+['c', 'b', 'a']
+
+```
+
 
 
 {:.input_area}
@@ -822,6 +828,12 @@ print(my_numbers)
 ```
 
 
+{:.output_stream}
+```
+[-1, 3, 13]
+
+```
+
 #### Dictionary methods that are not in place
 
 
@@ -830,6 +842,16 @@ print(my_numbers)
 ```python
 car
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'brand': 'BMW', 'model': 'M5', 'year': 2019}
+```
+
 
 
 
@@ -851,6 +873,13 @@ print(out)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict_keys'>
+dict_keys(['brand', 'model', 'year'])
+
+```
+
 
 
 {:.input_area}
@@ -861,6 +890,13 @@ print(car)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict'>
+{'brand': 'BMW', 'model': 'M5', 'year': 2019}
+
+```
+
 
 
 {:.input_area}
@@ -868,6 +904,16 @@ print(car)
 # Return the values in the dicionary
 car.values()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+dict_values(['BMW', 'M5', 2019])
+```
+
 
 
 ## Finding Methods
@@ -888,7 +934,7 @@ my_string = 'Python'
 {:.input_area}
 ```python
 # See all the available methods on an object with tab complete
-my_string. 
+my_string.
 ```
 
 
@@ -901,6 +947,92 @@ Using the function `dir()` returns all methods available
 # For our purposes now, you can ignore any leading underscores (these are special methods)
 dir(my_string)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__getnewargs__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rmod__',
+ '__rmul__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'capitalize',
+ 'casefold',
+ 'center',
+ 'count',
+ 'encode',
+ 'endswith',
+ 'expandtabs',
+ 'find',
+ 'format',
+ 'format_map',
+ 'index',
+ 'isalnum',
+ 'isalpha',
+ 'isdecimal',
+ 'isdigit',
+ 'isidentifier',
+ 'islower',
+ 'isnumeric',
+ 'isprintable',
+ 'isspace',
+ 'istitle',
+ 'isupper',
+ 'join',
+ 'ljust',
+ 'lower',
+ 'lstrip',
+ 'maketrans',
+ 'partition',
+ 'replace',
+ 'rfind',
+ 'rindex',
+ 'rjust',
+ 'rpartition',
+ 'rsplit',
+ 'rstrip',
+ 'split',
+ 'splitlines',
+ 'startswith',
+ 'strip',
+ 'swapcase',
+ 'title',
+ 'translate',
+ 'upper',
+ 'zfill']
+```
+
 
 
 ## Correspondance Between Functions & Methods
@@ -936,12 +1068,19 @@ print(float.is_integer(my_float))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+
+```
+
 
 
 {:.input_area}
 ```python
 # method documentation
-float.is_integer?
+float.is_integer? 
 ```
 
 
@@ -980,6 +1119,22 @@ def is_integer(my_float):
 print(my_float)
 is_integer(my_float)
 ```
+
+
+{:.output_stream}
+```
+11.0
+
+```
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 **A3 Q10**: The instructions use the word append. They don't tell you to use the method `append()`. Remember:

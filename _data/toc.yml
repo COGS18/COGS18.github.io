@@ -60,9 +60,9 @@
   - title: 12-Debugging
     url: /materials/12-Debugging
     not_numbered: true
-  # - title: 13-Objects
-  #   url: /materials/13-Objects
-  #   not_numbered: true
+  - title: 13-Objects
+    url: /materials/13-Objects
+    not_numbered: true
   # - title: 14-Classes
   #   url: /materials/14-Classes
   #   not_numbered: true
@@ -111,9 +111,9 @@
   - title: Exam1-Practice
     url: /materials/Exam1-Practice
     not_numbered: true
-  # - title: Midterm-Answers
-  #   url: /materials/Midterm-Answers
-  #   not_numbered: true
+  - title: E1-Answers
+    url: /materials/E1-Answers
+    not_numbered: true
   # - title: PythonParty
   #   url: /materials/PythonParty
   #   not_numbered: true
