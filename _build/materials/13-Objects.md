@@ -8,8 +8,8 @@ prev_page:
   url: /materials/12-Debugging
   title: '12-Debugging'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/14-Classes
+  title: '14-Classes'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -46,6 +46,16 @@ check_data(my_string, my_number)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+'A2'
+```
+
+
+
 - A) 'A1'
 - B) 'A2' 
 - C) 'A3' 
@@ -76,6 +86,12 @@ print(planets)
 ```
 
 
+{:.output_stream}
+```
+['Mercury', 'Venus', 'Earth', 'Mars', 'Jupyter', 'Saturn', 'Uranus', 'Neptune']
+
+```
+
 - A) the original list - we didn't store the output of `planets.remove()`
 - B) the original list, but without 'Pluto'
 - C) both the original list and the list without 'Pluto'
@@ -95,6 +111,12 @@ print(home)
 ```
 
 
+{:.output_stream}
+```
+Third Rock From The Sun
+
+```
+
 - A) Third Rock From The Sun
 - B) third rock from the sun
 - C) Third rock from the sun
@@ -103,9 +125,9 @@ print(home)
 
 ## Exam Review
 
-- [Blank Exam #1](https://cogs18.github.io/assets/intro/exams/E1_Fa19.pdf)
-- [Exam #1 Answers](https://cogs18.github.io/assets/intro/exams/E1_Fa19_answer.pdf)
-- [Exam #1 Code](https://cogs18.github.io/materials/E1-Answers)
+- [Exam #1 (Blank)](https://cogs18.github.io/assets/intro/exams/E1_Fa19.pdf)
+- [Exam #1 (Answers)](https://cogs18.github.io/assets/intro/exams/E1_Fa19_answer.pdf)
+- [Exam #1 (Code)](https://cogs18.github.io/materials/E1-Answers)
 
 # Objects
 
@@ -134,6 +156,12 @@ print(date_string)
 ```
 
 
+{:.output_stream}
+```
+29/09/1988
+
+```
+
 
 
 {:.input_area}
@@ -142,6 +170,16 @@ print(date_string)
 date_list = ['29', '09', '1988']
 date_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['29', '09', '1988']
+```
+
 
 
 
@@ -157,6 +195,12 @@ print(day)
 ```
 
 
+{:.output_stream}
+```
+29
+
+```
+
 
 
 {:.input_area}
@@ -167,10 +211,20 @@ date_dictionary
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+{'day': 29, 'month': 9, 'year': 1988}
+```
+
+
+
 ## Objects
 
 <div class="alert alert-success">
-Objects are an organization of data (called attributes), with associated code to operate on that data (functions defined on the objects, called methods).
+Objects are an organization of data (called <b>attributes</b>), with associated code to operate on that data (functions defined on the objects, called <b>methods</b>).
 </div>
 
 Ways to organize data (variables) and functions together. 
@@ -209,6 +263,12 @@ print(my_date)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29
+
+```
+
 
 
 {:.input_area}
@@ -218,10 +278,20 @@ type(my_date)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+datetime.date
+```
+
+
+
 ## Accessing Attributes & Methods
 
 <div class="alert alert-success">
-Attributes and methods are accessed with a '.', followed by the attribute/method name on the object. 
+Attributes and methods are accessed with a <code>.</code>, followed by the attribute/method name on the object. 
 </div>
 
 ### Date - Attributes
@@ -241,6 +311,16 @@ my_date.day
 
 
 
+
+{:.output_data_text}
+```
+29
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the month attribute
@@ -250,11 +330,31 @@ my_date.month
 
 
 
+
+{:.output_data_text}
+```
+9
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the year attribute
 my_date.year
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1988
+```
+
 
 
 ### Date - Methods
@@ -270,6 +370,16 @@ These are _functions_ that *belong* to and operate on the object directly.
 # Method to return what day of the week the date is
 my_date.weekday()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 
@@ -292,12 +402,32 @@ my_date.isoformat()
 
 
 
+
+{:.output_data_text}
+```
+'1988-09-29'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # operates on date object
 # returns a string
 type(my_date.isoformat())
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
 
 
 It's also possible to carry out operations on multiple date objects.
@@ -312,6 +442,12 @@ print(my_date, my_date2)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29 1980-07-29
+
+```
+
 
 
 {:.input_area}
@@ -323,6 +459,13 @@ print(time_diff.days/365,"years") #in years
 ```
 
 
+{:.output_stream}
+```
+2984 days
+8.175342465753424 years
+
+```
+
 ### Listing Attributes & Methods : `dir`
 
 
@@ -332,6 +475,10 @@ print(time_diff.days/365,"years") #in years
 # tab complete to access
 # methods and attributes
 my_date.
+
+# works to find attributes and methods
+# for date type objects generally
+date.
 ```
 
 
@@ -343,6 +490,60 @@ my_date.
 ## we'll talk about the double underscores next lecture
 dir(my_date)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__ne__',
+ '__new__',
+ '__radd__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rsub__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__sub__',
+ '__subclasshook__',
+ 'ctime',
+ 'day',
+ 'fromordinal',
+ 'fromtimestamp',
+ 'isocalendar',
+ 'isoformat',
+ 'isoweekday',
+ 'max',
+ 'min',
+ 'month',
+ 'replace',
+ 'resolution',
+ 'strftime',
+ 'timetuple',
+ 'today',
+ 'toordinal',
+ 'weekday',
+ 'year']
+```
+
 
 
 ### Clicker Question #2
@@ -371,7 +572,7 @@ For an object `lets` with a method `do_something`, how would you execute that me
 - A) `do_something(lets)`
 - B) `lets.do_something`
 - C) `lets.do_something()`
-- D) lets.do.something()
+- D) `lets.do.something()`
 - E) ¯\\\_(ツ)\_/¯
 
 ### Clicker Question #4
@@ -414,6 +615,12 @@ print(now)
 ```
 
 
+{:.output_stream}
+```
+2019-10-30 09:42:41.272161
+
+```
+
 
 
 {:.input_area}
@@ -424,6 +631,13 @@ print(now.day)
 ```
 
 
+{:.output_stream}
+```
+2019
+30
+
+```
+
 
 
 {:.input_area}
@@ -432,6 +646,12 @@ print(now.day)
 print(now.weekday())
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 ### Objects Summary
 
