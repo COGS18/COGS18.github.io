@@ -7,8 +7,8 @@ prev_page:
   url: /labs/CL4B-Answers
   title: 'CL4B-Answers'
 next_page:
-  url: /
-  title: ''
+  url: /labs/CL5B-Answers
+  title: 'CL5B-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -175,7 +175,7 @@ from datetime import date, time, datetime, timedelta
 ```
 
 
-** Now see if you can turn your answer to part d into a function.**
+**Now see if you can turn your answer to part d into a function.**
 
 This function should be general such that it can calculate the number of times any day of the week occurs in a given month and year. 
 

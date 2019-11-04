@@ -8,18 +8,19 @@ prev_page:
   url: /materials/13-Objects
   title: '13-Objects'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/15-Namespaces
+  title: '15-Namespaces'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
 ## Course Announcements
 
 - A3 due tonight! (11:59 PM)
-- Apologies! Tab completion for datetime does not work in datahub
-- Prof Ellis will hold Shreenivas' office hours
+- Apologies! Tab completion for `datetime` does not work in datahub
+- Prof Ellis & Zijian will hold Shreenivas' office hours
     - 4-5 PM Fri (today!)
     - CSB 243
+- will look at regrades for exams today 
 
 # Classes
 
@@ -69,9 +70,9 @@ A reminder:
 - **attributes** maintain the object's state; they lookup information about an object
 - **methods** alter the object's state; they run a function on an object
 
-**Class** notes:
+**`class`** notes:
 
-- classes tend to use **CamelCase**
+- classes tend to use **CapWords** convention (Pascal Case)
     - instead of snake_case (functions and variable names)
 - `()` after `Dog` indicate that this is callable
     - like functions, Classes must be executed before they take effect
@@ -99,6 +100,12 @@ print(george.sound)
 ```
 
 
+{:.output_stream}
+```
+Woof
+
+```
+
 
 
 {:.input_area}
@@ -108,6 +115,12 @@ print(george.sound)
 george.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 ### Clicker Question #1
 
@@ -153,11 +166,34 @@ pack_of_dogs
 
 
 
+
+{:.output_data_text}
+```
+[<__main__.Dog at 0x102c65d68>,
+ <__main__.Dog at 0x102c65da0>,
+ <__main__.Dog at 0x102c65dd8>,
+ <__main__.Dog at 0x102c65e10>]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # take a look at this
 type(pack_of_dogs[0])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+__main__.Dog
+```
+
 
 
 
@@ -168,6 +204,15 @@ for dog in pack_of_dogs:
     dog.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+Woof
+Woof
+
+```
 
 ## Instances & self
 
@@ -239,6 +284,15 @@ for dog in pack_of_dogs:
 ```
 
 
+{:.output_stream}
+```
+Woof
+Woof
+Woof
+Woof
+
+```
+
 ### Clicker Question #3
 
 Considering the output above, how many instances of dog are there?
@@ -297,6 +351,13 @@ print(gary.name)     # This is a instance attribute
 ```
 
 
+{:.output_stream}
+```
+Woof
+Gary
+
+```
+
 
 
 {:.input_area}
@@ -305,6 +366,12 @@ print(gary.name)     # This is a instance attribute
 gary.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 ### Clicker Question #4
 
@@ -323,6 +390,7 @@ class Dog():
     # Initializer, allows us to specificy instance specific attributes
     def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self):
         print(self.sound)
@@ -334,8 +402,16 @@ class Dog():
 {:.input_area}
 ```python
 ## We'll execute here
+gary = Dog("Gary", "Corgi")
+print(gary.breed)
 ```
 
+
+{:.output_stream}
+```
+Corgi
+
+```
 
 - A) I did it!
 - B) I think I did it!
@@ -367,8 +443,8 @@ class Cat():
 {:.input_area}
 ```python
 # Define some instances of our objects
-pets = [Cat('Jaspurr'), Dog('Barkley'), 
-        Cat('Picatso'), Dog('Ruffius')]
+pets = [Cat('Jaspurr'), Dog('Barkley', 'Corgi'), 
+        Cat('Picatso'), Dog('Ruffius', 'Italian Greyhound')]
 ```
 
 
@@ -381,6 +457,19 @@ for pet in pets:
     pet.speak()
 ```
 
+
+{:.output_stream}
+```
+Jaspurr  says:
+Meow
+Barkley  says:
+Woof
+Picatso  says:
+Meow
+Ruffius  says:
+Woof
+
+```
 
 ### Clicker Question #4
 
@@ -397,8 +486,7 @@ class MyClass():
         self.email = email
         self.score = score
     
-    def check_score(self):
-        
+    def check_score(self):        
         if self.score <= 65:
             return self.email
         else:
@@ -410,9 +498,19 @@ class MyClass():
 
 {:.input_area}
 ```python
-student = MyClass('Rob', 'rob@python.com' , 62)
+student = MyClass('Rob', 'rob@python.com', 62)
 student.check_score()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'rob@python.com'
+```
+
 
 
 - A) True
@@ -424,11 +522,11 @@ student.check_score()
 ### Clicker Question #5
 
 Which is the best description:
-- A) objects are described by instances, with particular instantiations of them called classes. 
-- B) instances are described by classes, with particular instantiations of them called objects. 
+- A) ~objects are described by instances, with particular instantiations of them called classes.~ 
+- B) ~instances are described by classes, with particular instantiations of them called objects.~
 - C) classes are described by objects, with particular instantiations of them called instances. 
 - D) objects are described by classes, with particular instantiations of them called instances. 
-- E) None of this makes any sense. 
+- E) ~None of this makes any sense.~
 
 
 
@@ -444,7 +542,7 @@ date??
 ## Class Inheritance
 
 <div class="alert alert-success">
-Objects can also be built from other objects, inheriting their properties and building of them.
+Objects can also be built from other objects, inheriting their properties and building off them.
 </div>
 
 If you have a hierarchical structure, this can be very helpful.
@@ -553,11 +651,11 @@ class Brain():
         
 class SheepBrain(Brain):
     
-    def __init__(self, size='medium', folded=False):
+    def __init__(self, size = 'medium', folded = False):
         super().__init__(size, folded)
         
 class HumanBrain(Brain):
-    def __init__(self, size='large', folded=True):
+    def __init__(self, size = 'large', folded = True):
         super().__init__(size, folded)
 ```
 
@@ -579,6 +677,15 @@ human.folded and sheep.folded
 - C) None
 - D) AssertionError
 - E) ¯\\\_(ツ)\_/¯
+
+
+
+{:.input_area}
+```python
+# has access to Brain() methods
+sheep.print_info()
+```
+
 
 ## Everything in Python is an Object!
 
