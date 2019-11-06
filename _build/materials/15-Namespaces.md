@@ -8,13 +8,14 @@ prev_page:
   url: /materials/14-Classes
   title: '14-Classes'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/16-CommandLine
+  title: '16-CommandLine'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
 ### Course Announcements
 
+- Exam 1 regrades handled; updates on Canvas
 - Exam 2 *next* Wednesday (11/13)
     - Review this Friday
     - No class Mon (11/11)
@@ -26,7 +27,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 - In *spoken language*:
     - CamelCase uses uppercase letter for first word
- - In *programming*:
+- In *programming*:
     - camelCase uses a lowercase letter for first word
     - PascalCase (or upper Camel Case) uses an uppercase letter for first word 
 - In *Python world*: 
@@ -84,13 +85,25 @@ That is, the *scope* of an object is where it is available to / from.
 ```
 
 
+{:.output_stream}
+```
+Variable     Type          Data/Info
+------------------------------------
+Brain        type          <class '__main__.Brain'>
+HumanBrain   type          <class '__main__.HumanBrain'>
+SheepBrain   type          <class '__main__.SheepBrain'>
+human        HumanBrain    <__main__.HumanBrain object at 0x10b63e128>
+sheep        SheepBrain    <__main__.SheepBrain object at 0x10b63e160>
+
+```
+
 ## Modules & Packages
 
 <div class="alert alert-success">
 A <b>module</b> is a set of Python code with functions, classes, etc. available in it. A Python <b>package</b> is a directory of modules.
 </div>
 
-Modules are stored in Python files. We can import these files into our namespace, to gain access to the module within Python.
+Modules are stored in Python files (.py). We can import these files into our namespace, to gain access to the module within Python.
 
 In A3 you had to import the package: `nltk`: 
 
@@ -124,6 +137,32 @@ type(math)
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-6-0a474bb83797> in <module>()
+      1 # we haven't imported the module yet
+      2 # this code fails if you haven't yet imported math
+----> 3 type(math)
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'math' is not defined
+```
+
+
+
 
 {:.input_area}
 ```python
@@ -143,11 +182,31 @@ type(math)
 
 
 
+
+{:.output_data_text}
+```
+module
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # By the way - modules are objects
 isinstance(math, object)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -158,6 +217,16 @@ isinstance(math, object)
 # remember to tab complete or use dir(math)
 math.sqrt(9)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3.0
+```
+
 
 
 ### `import` example: random module
@@ -181,6 +250,16 @@ type(random)
 
 
 
+
+{:.output_data_text}
+```
+module
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Explore what is available in random
@@ -190,10 +269,80 @@ dir(random)
 
 
 
+
+{:.output_data_text}
+```
+['BPF',
+ 'LOG4',
+ 'NV_MAGICCONST',
+ 'RECIP_BPF',
+ 'Random',
+ 'SG_MAGICCONST',
+ 'SystemRandom',
+ 'TWOPI',
+ '_BuiltinMethodType',
+ '_MethodType',
+ '_Sequence',
+ '_Set',
+ '__all__',
+ '__builtins__',
+ '__cached__',
+ '__doc__',
+ '__file__',
+ '__loader__',
+ '__name__',
+ '__package__',
+ '__spec__',
+ '_acos',
+ '_bisect',
+ '_ceil',
+ '_cos',
+ '_e',
+ '_exp',
+ '_inst',
+ '_itertools',
+ '_log',
+ '_pi',
+ '_random',
+ '_sha512',
+ '_sin',
+ '_sqrt',
+ '_test',
+ '_test_generator',
+ '_urandom',
+ '_warn',
+ 'betavariate',
+ 'choice',
+ 'choices',
+ 'expovariate',
+ 'gammavariate',
+ 'gauss',
+ 'getrandbits',
+ 'getstate',
+ 'lognormvariate',
+ 'normalvariate',
+ 'paretovariate',
+ 'randint',
+ 'random',
+ 'randrange',
+ 'sample',
+ 'seed',
+ 'setstate',
+ 'shuffle',
+ 'triangular',
+ 'uniform',
+ 'vonmisesvariate',
+ 'weibullvariate']
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # working with random
-random.
+random. 
 ```
 
 
@@ -240,6 +389,12 @@ print(chosen)
 ```
 
 
+{:.output_stream}
+```
+['1', '5']
+
+```
+
 ## Imports: `from` & `as`
 
 <div class="alert alert-success">
@@ -268,6 +423,16 @@ choice(to_choose_from)
 
 
 
+
+{:.output_data_text}
+```
+'3'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Import a module with a specific name in our namespace
@@ -291,7 +456,7 @@ collections.
 {:.input_area}
 ```python
 # this is how you would do it
-cols.
+cols. 
 ```
 
 
@@ -327,6 +492,17 @@ Which of the following is NOT a valid Python import statement?
 # from os import path
 # from random import choice, choices
 # import ascii_letters from string
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-23-037fa158f972>", line 6
+    import ascii_letters from string
+                            ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -465,3 +641,48 @@ This is generally considered not to be the best.
 
 
 <h3 align="right">well, kind of.</h3>
+
+## Using `remote.py`
+
+If you want to practice using import with the `remote` example in lecture, store the code in the next cell in a text file saved as `remote.py`. Be sure this is saved in the same directory (folder) as the notebook from which you're trying to call it.
+
+
+
+{:.input_area}
+```python
+def my_remote_function(input_1, input_2):
+    """A function from far away.
+    
+    This function returns the sum of the two inputs.
+    """
+    
+    return input_1 + input_2
+
+def choice(list_to_choose_from):
+    """Choose and return an item from a list. 
+    
+    Notes: I am a custom choice function: I am NOT from `random`.
+    
+    Hint: my favorite is the last list item.
+    """
+    
+    return list_to_choose_from[-1]
+
+class MyNumbers():
+    
+    kind_of_thing = 'numbers'
+    
+    def __init__(self, num1, num2):
+        
+        self.num1 = num1
+        self.num2 = num2
+        
+    def add(self):
+        
+        return self.num1 + self.num2
+    
+    def subtract(self):
+        
+        return self.num2 - self.num1
+```
+

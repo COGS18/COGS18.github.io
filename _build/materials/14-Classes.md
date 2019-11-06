@@ -585,6 +585,14 @@ my_hammer.use_tool()
 ```
 
 
+{:.output_stream}
+```
+True
+To hammer things.
+Using tool.
+
+```
+
 ### Clicker Question #6
 
 Given the following set of classes:
@@ -595,7 +603,7 @@ Given the following set of classes:
 ```python
 class Brain(): 
     
-    def __init__(self, size=None, folded=None):
+    def __init__(self, size = None, folded = None):
         self.size = size
         self.folded = folded
         
@@ -604,10 +612,10 @@ class Brain():
         if not self.folded:
             folded_string = 'not'
         print('This brain is ' + self.size + ' and is ' + folded_string + ' folded.')
-        
+         
 class SheepBrain(Brain):
     
-    def __init__(self, size='medium', folded=False):
+    def __init__(self, size = 'medium', folded = False):
         super().__init__(size, folded)
 ```
 
@@ -622,6 +630,12 @@ sheep = SheepBrain()
 sheep.print_info()
 ```
 
+
+{:.output_stream}
+```
+This brain is medium and is not folded.
+
+```
 
 - A) This brain is medium and folded.
 - B) This brain is large and folded.
@@ -672,6 +686,16 @@ human.folded and sheep.folded
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
 - A) True
 - B) False
 - C) None
@@ -687,6 +711,12 @@ sheep.print_info()
 ```
 
 
+{:.output_stream}
+```
+This brain is medium and is not folded.
+
+```
+
 ## Everything in Python is an Object!
 
 ### Data variables are objects
@@ -700,10 +730,20 @@ print(isinstance(1, object))
 print(isinstance('word', object))
 print(isinstance(None, object))
 
-a=3
+a = 3
 print(isinstance(a, object))
 ```
 
+
+{:.output_stream}
+```
+True
+True
+True
+True
+True
+
+```
 
 ### Functions are objects
 
@@ -716,6 +756,13 @@ print(isinstance(max, object))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+
+```
+
 
 
 {:.input_area}
@@ -726,6 +773,16 @@ def my_function():
     
 isinstance(my_function, object)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Class definitions & instances are objects
@@ -744,6 +801,13 @@ print(isinstance(MyClass, object))
 print(isinstance(my_instance, object))
 ```
 
+
+{:.output_stream}
+```
+True
+True
+
+```
 
 <img src="img/object.jpg" width="600" align="middle">
 
