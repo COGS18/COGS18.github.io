@@ -543,6 +543,16 @@ my_remote_function(2, 1)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
 ## Importing Custom Code II
 
 
@@ -566,11 +576,31 @@ type(nums)
 
 
 
+
+{:.output_data_text}
+```
+remote.MyNumbers
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Check 
 nums.add()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 
@@ -603,6 +633,16 @@ choice([1, 2, 3])
 
 
 
+
+{:.output_data_text}
+```
+1
+```
+
+
+
+
+
 {:.input_area}
 ```python
 from remote import choice
@@ -626,6 +666,16 @@ choice([1, 2, 3])
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
 While you _can_ have functions with the same name in two different places...do your best to avoid this.
 
 It's Python legal but bad for your nerves.
@@ -635,6 +685,44 @@ It's Python legal but bad for your nerves.
 If you see `from module import *` this means to import everything (read as 'from module import everything). 
 
 This is generally considered not to be the best.
+
+
+
+{:.input_area}
+```python
+from random import choice
+choice([2,3,4])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
+{:.input_area}
+```python
+import random
+random.choice([2,3,4,])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
 
 <h1 align="center">We have finished Python!</h1>
 

@@ -105,6 +105,14 @@
   - title: A2-Examples
     url: /materials/A2-Examples
     not_numbered: true
+  # - title: PythonParty
+  #   url: /materials/PythonParty
+  #   not_numbered: true
+
+- title: Exam Prep
+  url: /materials/Exam1-Review
+  not_numbered: true
+  sections:
   - title: Exam1-Review
     url: /materials/Exam1-Review
     not_numbered: true
@@ -114,9 +122,17 @@
   - title: E1-Answers
     url: /materials/E1-Answers
     not_numbered: true
-  # - title: PythonParty
-  #   url: /materials/PythonParty
-  #   not_numbered: true
+  - title: Exam2-Review
+    url: /materials/Exam2-Review
+    not_numbered: true
+  - title: Exam2-Review-Answers
+    url: /materials/Exam2-Review-Answers
+    not_numbered: true
+  - title: Exam2-Practice
+    url: /materials/Exam2-Practice
+    not_numbered: true
+
+
 
 - title: Coding Labs
   url: /labs/CL1-Tooling

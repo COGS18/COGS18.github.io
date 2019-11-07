@@ -9,7 +9,7 @@ prev_page:
   title: 'A1-Syntax'
 next_page:
   url: /materials/Exam1-Review
-  title: 'Exam1-Review'
+  title: 'Exam Prep'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -286,10 +286,6 @@ for iteration in range(5):
 4
 
 ```
-
-**NOTE: THIS IS THE END OF MATERIAL COVERED ON EXAM #1** 
-
-Evertyhing below this will be helpful for reviewing for Exam #2.
 
 ## Functions
 

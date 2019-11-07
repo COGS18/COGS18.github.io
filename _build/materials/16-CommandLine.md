@@ -280,6 +280,12 @@ If your current working directory is `notebooks`, what is the **relative path** 
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/Materials
+
+```
+
 #### Change directory
 
 
@@ -307,6 +313,34 @@ Here, we saw `~/Desktop/`.
 !ls
 ```
 
+
+{:.output_stream}
+```
+00-Introduction.ipynb        23-CodeProjects.ipynb
+01-Tools.ipynb               24-AdvancedPython.ipynb
+02-JupyterNotebooks.ipynb    25-WrapUp.ipynb
+03-Variables.ipynb           A1-Syntax.ipynb
+04-Operators.ipynb           A2-Examples.ipynb
+05-Conditionals.ipynb        Check-In.ipynb
+06-DataTypes.ipynb           E1-Answers.ipynb
+07-Loops.ipynb               E2-Answers.ipynb
+08-Encodings.ipynb           Exam1-Practice.ipynb
+09-FunctionsI.ipynb          Exam1-Review.ipynb
+10-Algorithms.ipynb          Exam2-Review.ipynb
+11-FunctionsII.ipynb         Exam2_Practice.ipynb
+12-Debugging.ipynb           LICENSE.txt
+13-Objects.ipynb             Midterm.ipynb
+14-Classes.ipynb             PythonParty.ipynb
+15-Namespaces.ipynb          README.md
+16-CommandLine.ipynb         Untitled.ipynb
+17-APIs.ipynb                XX-Extra-Clicker-Qs.ipynb
+18-ScientificComputing.ipynb [34m__pycache__[m[m
+19-OpenSource.ipynb          [34mimg[m[m
+20-Documentation.ipynb       [34mmy_module[m[m
+21-CodeStyle.ipynb           remote.py
+22-CodeTesting.ipynb         stw.py
+
+```
 
 ### More Shell Commands
 
@@ -355,6 +389,12 @@ Here, we saw `~/Desktop/`.
 !echo Hello World!
 ```
 
+
+{:.output_stream}
+```
+Hello World!
+
+```
 
 #### Print the contents of a file
 

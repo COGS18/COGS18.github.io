@@ -8,8 +8,8 @@ prev_page:
   url: /materials/Exam1-Practice
   title: 'Exam1-Practice'
 next_page:
-  url: /labs/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/Exam2-Review
+  title: 'Exam2-Review'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

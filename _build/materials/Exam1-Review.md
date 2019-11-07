@@ -1,15 +1,15 @@
 ---
 interact_link: content/materials/Exam1-Review.ipynb
 download_link: assets/downloads/Exam1-Review.ipynb.zip
-pdf_link: assets/pdf/Exam1-Review.pdf
+pdf_link: assets/pdf/Exam Prep.pdf
 layout: materials
-title: 'Exam1-Review'
+title: 'Exam Prep'
 prev_page:
   url: /materials/A2-Examples
   title: 'A2-Examples'
 next_page:
-  url: /materials/Exam1-Practice
-  title: 'Exam1-Practice'
+  url: /materials/Exam1-Review
+  title: 'Exam1-Review'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
