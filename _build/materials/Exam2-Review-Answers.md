@@ -1,15 +1,15 @@
 ---
-interact_link: content/materials/Exam2-Review.ipynb
-download_link: assets/downloads/Exam2-Review.ipynb.zip
-pdf_link: assets/pdf/Exam2-Review.pdf
+interact_link: content/materials/Exam2-Review-Answers.ipynb
+download_link: assets/downloads/Exam2-Review-Answers.ipynb.zip
+pdf_link: assets/pdf/Exam2-Review-Answers.pdf
 layout: materials
-title: 'Exam2-Review'
+title: 'Exam2-Review-Answers'
 prev_page:
-  url: /materials/E1-Answers
-  title: 'E1-Answers'
+  url: /materials/Exam2-Review
+  title: 'Exam2-Review'
 next_page:
-  url: /materials/Exam2-Review-Answers
-  title: 'Exam2-Review-Answers'
+  url: /materials/Exam2-Practice
+  title: 'Exam2-Practice'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -136,6 +136,60 @@ def sum_list(my_list):
 ```
 
 
+#### Functions Answers
+
+
+
+{:.input_area}
+```python
+## Functions Quesiton #1
+
+def remainder(num1, num2):  # set default vlues within parenthesis
+    out = num1 % num2
+    return out
+```
+
+
+
+
+{:.input_area}
+```python
+## Functions Question #2
+
+my_remainder = remainder(10, 4)
+my_remainder
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
+{:.input_area}
+```python
+## Functions Question #3
+sum_list([1, 2, 3])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+6
+```
+
+
+
 ### Objects & Classes
 
 - objects & `class`
@@ -199,6 +253,61 @@ Fill in the blanks:
 	In Python, everything is a(n) ______________. 
 
 
+#### Objects & Classes Answers
+
+Question #1A: 
+
+
+
+{:.input_area}
+```python
+class Rocket():
+    
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+        
+    def move_up(self):
+        self.y += 1
+```
+
+
+Question #1B:
+
+
+
+{:.input_area}
+```python
+my_rocket = Rocket()
+```
+
+
+Question #1C:
+
+
+
+{:.input_area}
+```python
+my_rocket.move_up()
+my_rocket.move_up()
+my_rocket.y
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+Question #2: 
+- method
+- object
+
 ### Python & Jupyter Extras
 - encodings (`chr` & `ord`)
 - whitespace
@@ -230,6 +339,58 @@ For each of the following, indicate if the statement is True or False about Pyth
 - True/False `cd` returns your current working directory		
 - True/False Everything in Python is an object
 - True/False `print_name()` folles best practices for function naming
+
+#### Extras Answers
+
+
+
+{:.input_area}
+```python
+# Extras Question #1
+print(chr(ord('A')))
+```
+
+
+{:.output_stream}
+```
+A
+
+```
+
+Extras Question #2
+
+returning information about what objects are stored in your namespace (i.e. variables, functions, classes, etc.)
+
+
+
+{:.input_area}
+```python
+%whos
+```
+
+
+{:.output_stream}
+```
+Variable       Type        Data/Info
+------------------------------------
+Rocket         type        <class '__main__.Rocket'>
+my_remainder   int         2
+my_rocket      Rocket      <__main__.Rocket object at 0x10ff9def0>
+remainder      function    <function remainder at 0x10ff5ee18>
+sum_list       function    <function sum_list at 0x10ff6da60>
+
+```
+
+Extras Question #3
+
+- True - Whitespace matters in Python
+- False - Comments in Python start with '%' 					
+- False - You have to specify a data type when you define a variable
+- False - Every Python variable is available from every namespace
+- False - `cd` changes your directory; `pwd` returns your current working direcotry 
+- False - ls lists files in your directory; `touch` creates a new file
+- True - everything in Python is an object
+- True - functions and variables tend to use snake_case
 
 <h2><center>After the second exam:</center></h2>
 
