@@ -168,9 +168,9 @@
   - title: CL6-Classes
     url: /labs/CL6-Classes
     not_numbered: true
-  # - title: CL6B-Answers
-  #   url: /labs/CL6B-Answers
-  #   not_numbered: true   
+  - title: CL6B-Answers
+    url: /labs/CL6B-Answers
+    not_numbered: true   
   # - title: CL7-CommandLine
   #   url: /labs/CL7-CommandLine
   #   not_numbered: true

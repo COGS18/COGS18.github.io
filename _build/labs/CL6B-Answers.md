@@ -1,14 +1,14 @@
 ---
-interact_link: content/labs/CL6-Classes.ipynb
-download_link: assets/downloads/CL6-Classes.ipynb.zip
+interact_link: content/labs/CL6B-Answers.ipynb
+download_link: assets/downloads/CL6B-Answers.ipynb.zip
 layout: notebooks
-title: 'CL6-Classes'
+title: 'CL6B-Answers'
 prev_page:
-  url: /labs/CL5B-Answers
-  title: 'CL5B-Answers'
+  url: /labs/CL6-Classes
+  title: 'CL6-Classes'
 next_page:
-  url: /labs/CL6B-Answers
-  title: 'CL6B-Answers'
+  url: /
+  title: ''
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -55,6 +55,12 @@ python.print_goodness_level()
 ```
 
 
+{:.output_stream}
+```
+The language python has lots of goodness.
+
+```
+
 
 
 {:.input_area}
@@ -64,6 +70,12 @@ english = Language('english', 'human', 'some')
 english.print_goodness_level()
 ```
 
+
+{:.output_stream}
+```
+The language english has some goodness.
+
+```
 
 ### TritonCourse class
 
@@ -81,8 +93,20 @@ That is, write a class called `TritonCourse` that has instance attributes `depar
 
 {:.input_area}
 ```python
-## YOUR CODE HERE
-
+class TritonCourse:
+    
+    university = "UC San Diego"
+    
+    def __init__(self, department, code, title):
+        """
+        department: string
+        code: int
+        title: string
+        """
+    
+        self.department = department
+        self.code = code
+        self.title = title
 ```
 
 
@@ -112,6 +136,14 @@ print(cogs18.title)
 ```
 
 
+{:.output_stream}
+```
+COGS
+18
+Introduction to Python
+
+```
+
 Now, create some more instances of our class:
 
 - ECE 15, "Engineering Programming" 
@@ -123,8 +155,8 @@ Now, create some more instances of our class:
 
 {:.input_area}
 ```python
-## YOUR CODE HERE
-
+class1  = TritonCourse("ECE",15,"Engineering Programming")
+class2 = TritonCourse("MUS", 8, "American Music: Jazz Culture")
 ```
 
 
@@ -138,14 +170,29 @@ Specifically, this method, called `print_info` should print out the information 
     
 So, for example, once you add this method, using the method on our `cogs18` instance should print out:
 
-    `COGS 18 : Introduction to Python`
+    COGS 18 : Introduction to Python
 
 
 
 {:.input_area}
 ```python
-## YOUR CODE HERE
-
+class TritonCourse:
+    
+    university = "UC San Diego"
+    
+    def __init__(self, department, code, title):
+        """
+        department: string
+        code: int
+        title: string
+        """
+    
+        self.department = department
+        self.code = code
+        self.title = title
+    
+    def print_info(self):
+        print(self.department + str(self.code) + ': ' + self.title)
 ```
 
 
@@ -158,6 +205,12 @@ cogs18 = TritonCourse("COGS", 18, "Introduction to Python")
 cogs18.print_info()
 ```
 
+
+{:.output_stream}
+```
+COGS18: Introduction to Python
+
+```
 
 ## Part II: Objects Explorations
 
