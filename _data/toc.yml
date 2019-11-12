@@ -171,9 +171,9 @@
   - title: CL6B-Answers
     url: /labs/CL6B-Answers
     not_numbered: true   
-  # - title: CL7-CommandLine
-  #   url: /labs/CL7-CommandLine
-  #   not_numbered: true
+  - title: CL7-CommandLine
+    url: /labs/CL7-CommandLine
+    not_numbered: true
   # - title: CL8-ProjectOverview
   #   url: /labs/CL8-ProjectOverview
   #   not_numbered: true
