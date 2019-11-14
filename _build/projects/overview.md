@@ -8,11 +8,6 @@ next_page:
   title: 'Project Ideas'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
----
-output:
-  pdf_document: default
-  html_document: default
----
 # Final Project
 
 As part of completing COGS 18, you must complete an independent project. This final project is worth 15% of your grade for the course.
