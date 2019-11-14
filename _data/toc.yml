@@ -105,9 +105,7 @@
   - title: A2-Examples
     url: /materials/A2-Examples
     not_numbered: true
-  # - title: PythonParty
-  #   url: /materials/PythonParty
-  #   not_numbered: true
+
 
 - title: Exam Prep
   url: /materials/Exam1-Review
@@ -177,8 +175,11 @@
   # - title: CL8-ProjectOverview
   #   url: /labs/CL8-ProjectOverview
   #   not_numbered: true
-  # - title: CL9-CodeReview
-  #   url: /labs/CL9-CodeReview
+  # - title: CL9-Project
+  #   url: /labs/CL9-Project
+  #   not_numbered: true
+  # - title: CL10-CodeReview
+  #   url: /labs/CL10-CodeReview
   #   not_numbered: true
 
 # - title: Assignments
@@ -214,6 +215,9 @@
   url: /projects/ProjectIdeas
   not_numbered: true
   sections:
+  - title: PythonParty
+    url: /projects/PythonParty
+    not_numbered: true
   - title: Project Overview
     url: /projects/overview
     not_numbered: true

@@ -15,12 +15,16 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Exam 2 Review
 
+- No class Monday (11/11) - Veteran's Day
 - **Exam #2 is Wed 11/13** (in class)
     - similar format to Exam #1
     - more places where you'll be asked to write code
 - **A4 is due Fri 11/15** (11:59 PM)
     - Have a solid understanding of the `OfficeHours` example by Exam time
     - Car Inventory & Bots w/ Inheritance beyond what will be tested on Exam #2
+- more Thursday office hours (Thanks, Duolan)
+    - 4:30 - 6:00 PM every Thursday (CSB 114)
+    - extra office hours will be posted on Piazza
 
 ### Exam #2 Mechanics
 
@@ -75,6 +79,16 @@ There are two extra notebooks that you can use for review:
 
 There are also a few Exam #2 Practice Problems [here](https://cogs18.github.io/materials/Exam2-Practice).
 
+## Clicker Question
+
+How are you feeling about Exam #2?
+
+- A) Super nervous
+- B) Kind of nervous
+- C) In the middle
+- D) Kind of prepared
+- E) Super prepared
+
 ## Questions?
 
 ### Functions
@@ -89,6 +103,12 @@ There are also a few Exam #2 Practice Problems [here](https://cogs18.github.io/m
 - methods 
     - in place vs. not in place
 
+## All other clicker questions
+
+A) Confident  
+B) Unsure  
+C) No idea  
+
 #### Functions Question #1
 Write, in real code, a function called `remainder` that takes two inputs, divides the first input by the second and returns the remainder.
 
@@ -97,6 +117,8 @@ Write, in real code, a function called `remainder` that takes two inputs, divide
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+def remainder(int1, int2):
+    return int1 % int2
 ```
 
 
@@ -108,6 +130,7 @@ Using the function `remainder` you wrote above, write the python code you would 
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+my_remainder = remainder(10, 4)
 ```
 
 
@@ -133,7 +156,18 @@ def sum_list(my_list):
 {:.input_area}
 ```python
 ## CODE TO TEST HERE
+sum_list([1, 2, 3])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+6
+```
+
 
 
 ### Objects & Classes
@@ -152,7 +186,7 @@ We want to simulate a rocket ship for a game.
 
 Write code that will create a class `Rocket`. 
 
-This class should have two instance attributes: `x` and `y`. These will specify the x,y position of the rocket. Each attribute should be initialized with hte value 0. 
+This class should have two instance attributes: `x` and `y`. These will specify the x,y position of the rocket. Each attribute should be initialized with the value 0. 
 
 Your `Rocket` should also have the method `move_up()`. This method should increment the y-position of the rocket by 1. 
 
@@ -161,6 +195,14 @@ Your `Rocket` should also have the method `move_up()`. This method should increm
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+class Rocket():
+    
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+    
+    def move_up(self):
+        self.y += 1
 ```
 
 
@@ -175,6 +217,7 @@ Create an instance `my_rocket` of your Rocket object.
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+my_rocket = Rocket()
 ```
 
 
@@ -187,7 +230,21 @@ Update `my_rocket` so that `my_rocket` has the `y` position 3.
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+my_rocket.move_up()
+my_rocket.move_up()
+my_rocket.move_up()
+my_rocket.y
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 #### Objects & Classes Question #2
@@ -212,24 +269,26 @@ What will the following piece of code print out?
 
 ```print(chr(ord('A')))``` 
     
-     _____________
+     _____'A'________
 
 #### Extras Question #2
 
 What is the magic function `%whos` used for?
 
+- shows information/variables stored in namespace
+
 #### Extras Question #3
 
 For each of the following, indicate if the statement is True or False about Python and programming:
 
-- True/False Whitespace matters in Python
-- True/False Comments in Python start with '%' 					
-- True/False You have to specify a data type when you define a variable
-- True/False Every Python variable is available from every namespace		
-- True/False `ls` is a shell command that creates a new file 		
-- True/False `cd` returns your current working directory		
-- True/False Everything in Python is an object
-- True/False `print_name()` folles best practices for function naming
+- **True**/False Whitespace matters in Python
+- True/**False** Comments in Python start with '%' 					
+- True/**False** You have to specify a data type when you define a variable
+- True/**False** Every Python variable is available from every namespace		
+- True/**False** `ls` is a shell command that creates a new file 		
+- True/**False** `cd` returns your current working directory		
+- **True**/False Everything in Python is an object
+- **True**/False `print_name()` follows best practices for function naming
 
 <h2><center>After the second exam:</center></h2>
 

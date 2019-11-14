@@ -233,7 +233,7 @@ my_dict['there']
 
 Given the following object:
 
-- Identify which parts are a class attribute, an instance attribute, and class method. 
+- Identify which parts are a class attribute, an instance attribute, and a method. 
 
 
 

@@ -99,7 +99,7 @@ These are specified by text within triple quotes in the first line after your fu
 
 {:.input_area}
 ```python
-def my_func(my_dictionary):
+def list_dictionary(my_dictionary):
     """return list of dictionary values"""
     
     ## comment that is not very helpful
@@ -117,7 +117,7 @@ def my_func(my_dictionary):
 
 {:.input_area}
 ```python
-my_func?
+list_dictionary?
 ```
 
 

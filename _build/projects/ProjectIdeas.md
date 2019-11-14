@@ -6,8 +6,8 @@ prev_page:
   url: /labs/CL7-CommandLine
   title: 'CL7-CommandLine'
 next_page:
-  url: /projects/overview
-  title: 'Project Overview'
+  url: /projects/PythonParty
+  title: 'PythonParty'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
