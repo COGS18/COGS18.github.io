@@ -1,11 +1,21 @@
 ---
+title: 'Project Overview'
+prev_page:
+  url: /projects/ProjectIdeas
+  title: 'Projects'
+next_page:
+  url: /projects/ProjectIdeas
+  title: 'Project Ideas'
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+---
 output:
   pdf_document: default
   html_document: default
 ---
 # Final Project
 
-As part of completing COGS18, you must complete an independent project. This final project is worth 25% of your grade for the course.
+As part of completing COGS 18, you must complete an independent project. This final project is worth 15% of your grade for the course.
 
 ### Objectives
 
@@ -26,7 +36,7 @@ The broad objectives of this project are for you to:
 
 ### Getting Started
 
-We strongly encourage you to discuss potential project ideas on Piazza, and with your TAs and IAs, and with the instructor through office hours and coding labs. This will give us a chance to give you feedback and help guide your project plans.
+We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.
 
 Suggestions for working on projects:
 
@@ -56,7 +66,7 @@ There are more detailed project ideas in the `ProjectIdeas` notebook.
 
 #### Taboo Topics
 
-While you're allowed to work on a topic of your choosing there are two "taboo topics" - or topics that are not permitted for the COGS18 final project. These two topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you're allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren't limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.
+While you're allowed to work on a topic of your choosing there are two "taboo topics" - or topics that are not permitted for the COGS 18 final project. These two topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you're allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren't limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.
 
 This quarter, the Taboo Topics for the COGS18 final project are:
 
@@ -79,15 +89,15 @@ As you work through your project, we recommend taking an approach in which you u
 
 ### Project Requirements
 
-To complete the project you must submit a zip file containing your project, which will include Python code (3.6 or 3.7) that implements your project. Your project must include (at least) one Jupyter notebook and one python file (a module file and/or a python script). The Jupyter notebook file will include a description of the project, organized in markdown cells.
+To complete the project you must submit a zip file containing your project, which will include Python code (>=3.6) that implements your project. Your project must include (at least) one Jupyter notebook and one python file (a module file and/or a python script). The Jupyter notebook file will minimially include a description of the project and code that demonstrates your project, organized in cells.
 
-The actual code for the project can be organized into either the notebook, and/or into python files, as either module files and/or scripts. Exactly where and how you organize the code can and should be decided by the project topic itself. For example, projects that are more focused on functions and classes may be more organized into a module organization. For some projects, the code may be well organized into a script that executes your project. For other projects, with more interactive components, much of the code may be presented within the Jupyter notebook.
+The actual code for the project can be organized into either the notebook, and/or into python files, as either module files and/or scripts. Exactly where and how you organize the code can and should be decided by the project topic itself. For example, projects that are more focused on functions and classes may be more organized into a module organization. For some projects, the code may be well organized into a script that executes your project. For other projects, with more interactive components, much of the code may be presented within the Jupyter notebook. Regardless of the project, the design should be modular and include original code.
 
 Projects are individual, and each person needs to submit a project including (at least some) unique and original code. Projects can also include code that comes directly from the assignments, and/or from working with other students on project ideas, but this should be clearly marked and attributed in your submissions. More details on external code are included below.
 
 ### Submitting Your Project
 
-You will be submitting a zip file containing your project to TritonEd. This zip file must contain a directory structure of the form:
+You will be submitting a zip file containing your project to Canvas. This zip file must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
 
 MyProjectFolder/  
 
@@ -110,13 +120,13 @@ First, make sure everything is organized into a folder, as you want it. Then:
 
 In both cases, this will create a zip file, with the name 'FolderName.zip'. 
 
-You can upload this file to TritonEd as your project submission.
+You can upload this file to Canvas as your project submission.
 
 ### Grading Rubric
 
 | Component        | Grade Value |
 |:-------------: |:-----------:|
-|Concept | 5% | 
+| Concept | 5% | 
 | File Structure | 5% | 
 | Project Description | 10% | 
 | Approach | 20% | 
@@ -151,8 +161,12 @@ The code you wrote to implement your design will be graded on the following requ
 
 - Uses appropriate variable types (int, floats, strings, lists, tuples, dictionaries, etc)
 - Uses appropriate code constructs (operators, conditionals, loops, error handling, etc)
-- Code is organized into functions (necessary), and classes (optional)
+- Code is organized into functions (necessary) and/or classes (optional)
   - You do not necessarily need to use classes (only if they make sense for the project) 
+  - Must include at least:
+    - 3 original functions
+    - OR 2 orginal classes, each with at least 1 method
+    - OR 2 original functions + 1 original class
 - The code executes, without raising any errors, on expected inputs
 - There is a clear modular organization to the code
 
@@ -168,18 +182,22 @@ In terms of naming, we will be evaluating the following criteria:
 
 - Uses descriptive names
 - Follows naming conventions
-- CamelCase for class definitions & snake_case for variables, functions and methods
+- CapWords for class definitions & snake_case for variables, functions and methods
 
 *Code Documentation (10%)*
 
 Documentation will be evaluated in terms of:
 
-- Includes docstrings (numpy format) on all custom classes, functions, and methods 
-- Includes in line comments that explain the code
+- Includes docstrings (numpy format) for custom classes, functions, and methods 
+- Includes appropriate comments within the code
 
 *Code Tests (10%)*
 
-You must include at least one code test in your project, organized into a test file, in a test folder, and that uses pytest. This test should be a unit test of one of your custom functions and/or classes in your project, and should test that it executes, and test (at least some) expected outputs of the function, given some specified inputs.
+You must include *at least two* code tests in your project that test your original functions/methods. These should be organized into a test file, in a test folder, and use `pytest`. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.
+
+*Extra Credit (up to 4%)*
+
+For extra credit, if you go above and beyond on the minimal project requirements and challenge yourself to approach a project that is more complex than the basic requirements, requires you to learn something beyond what was taught in the course, or uses code concepts not taught in class, explain this at the end of your Jupyter notebook. Here, you should explain _why_ your approach was particularly difficult/challenging _for you_ and how your work goes beyond the minimal project requirements.  
 
 ### External Code
 

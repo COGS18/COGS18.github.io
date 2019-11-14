@@ -1,4 +1,14 @@
 ---
+title: 'Project FAQ'
+prev_page:
+  url: /projects/ProjectIdeas
+  title: 'Project Ideas'
+next_page:
+  url: /
+  title: ''
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+---
 output:
   pdf_document: default
 ---
@@ -24,10 +34,10 @@ On Datahub or Anaconda, in the new tab at the top right, select text file. When 
 You should mention if you installed any new packages via pip for your project that aren’t included by default in the anaconda distribution/datahub so we'll be able to run your code properly. If you didn't install anything to run your code, you don't need to include this file.
 
 #### How do I install a library?
-Use pip in the terminal. The command will look something like: `pip install --user package`
+Use pip in the terminal. The command will look something like: `pip install --user package`.
 
-#### Is there a set number of functions we need to include?
-You need at least 2 original functions.
+#### Is there a set number of functions or classes we need to include?
+You need at least 3 original functions, 2 original classes, or 2 original functions + 1 original class.
 
 #### Can I write my entire project code into one class?
 Yes, as long as the class includes a modular design where there are multiple independent methods.
@@ -36,7 +46,7 @@ Yes, as long as the class includes a modular design where there are multiple ind
 You could change the names if you'd like or keep them as they are. Just make sure to import using the correct file names.
 
 #### Can I submit the project using a different file structure than the template provided?
-Yes, the file structure is not important. We care that you have a folder that contains a notebook and a script/module file (or both). Other files can also be included if applicable.
+Yes, the specific file structure is not important. We care that you have a folder that contains a notebook and a script/module file (or both). Other files can also be included if applicable. Use an oganization structure that makes sense for your project.
 
 #### How/in what format should the files be submitted?
 For submitting your final projects, you will zip up all the files for your project (i.e. Notebook + module directory with tests and functions) and submit the zipped file on Canvas.
@@ -49,7 +59,7 @@ For submitting your final projects, you will zip up all the files for your proje
 Check to make sure you imported your function before trying to call it. You will need to import any functions you write if you want to use them.
 
 #### I am trying to import specific functions from my module, but it says that my module does not exist?
-Check the location of the file that contains your functions. If your my_functions.py file is within a folder (let's say called modules), you would need to call from modules.my_functions import func1, func2 instead of just my_functions.
+Check the location of the file that contains your functions. If your my_functions.py file is within a folder (let's say called `modules;/`), you would need to call `from modules.my_functions import func1, func2` instead of just   `import mmy_functions`.
 
 More resources for importing modules:
 https://docs.python.org/3/tutorial/modules.html
@@ -88,16 +98,16 @@ https://numpydoc.readthedocs.io/en/latest/format.html#documenting-class-instance
 ## Testing
 
 #### How many tests are needed? Do we need tests for only one function or for all of them in the project?
-You need to test at least one function or class once using a test function.
+You need to test at least two functions or classses, using at least two test functions. These tests should be for your original code.
 
 #### I used a function from Assignment X, and I was wondering if I could make a test for that one rather than a function I wrote.
-Yes, you can test the functions already in an Assignment.
+You may also (and are encouraged to) write test these functions as well; however, your two required tests must test your original code.
 
 #### Do we need to import our test functions into our script/Notebook?
-You can leave them in the test file; however, it's recommended that you use pytest to ensure all your tests pass.
+You can leave them in the test file; however, it's recommended that you use `pytest` to ensure all your tests pass.
 
 #### How do I run pytest?
-If you open up a terminal and navigate to the directory where your test functions are, you can run the following: pytest name_of_file_with_test_functions.py
+If you open up a terminal and navigate to the directory where your test functions are, you can run the following: `pytest name_of_file_with_test_functions.py`
 
 #### How would I test a function that needs user input?
 The simplest way is to move the user input outside of the function and give it as a parameter to the function. Otherwise, we recommend checking out this link: 

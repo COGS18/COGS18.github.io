@@ -210,10 +210,16 @@
 #     url: /assignments/A4-Answers
 #     not_numbered: true
 
-# - title: Projects
-#  url: /projects/ProjectIdeas
-#  not_numbered: true
-#  sections:
-#  - title: ProjectIdeas
-#    url: /projects/ProjectIdeas
-#    not_numbered: true
+- title: Projects
+  url: /projects/ProjectIdeas
+  not_numbered: true
+  sections:
+  - title: Project Overview
+    url: /projects/overview
+    not_numbered: true
+  - title: Project Ideas
+    url: /projects/ProjectIdeas
+    not_numbered: true
+  - title: Project FAQ
+    url: /projects/faq
+    not_numbered: true
