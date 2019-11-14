@@ -2,7 +2,7 @@
 title: 'Project Overview'
 prev_page:
   url: /projects/PythonParty
-  title: 'PythonParty'
+  title: 'Python Party'
 next_page:
   url: /projects/ProjectIdeas
   title: 'Project Ideas'

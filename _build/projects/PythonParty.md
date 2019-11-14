@@ -1,7 +1,7 @@
 ---
 interact_link: content/projects/PythonParty.ipynb
 download_link: assets/downloads/PythonParty.ipynb.zip
-title: 'PythonParty'
+title: 'Python Party'
 prev_page:
   url: /projects/ProjectIdeas
   title: 'Projects'
@@ -83,7 +83,7 @@ Will largely be project-focused going forward
 - Week 9 : Project Completion
 - Week 10 : Code Review (_optional_) 
 
-## Grading
+### Grading
 | Component        | Grade Value |
 |:-------------: |:-----------:|
 | Concept | 5% | 
@@ -96,6 +96,12 @@ Will largely be project-focused going forward
 | Code Tests | 10% | 
 | Extra Credit | 4% | 
 | GitHub Extra Credit | 1% | 
+
+### Example Projects:
+
+* Stephen (Fa18): https://github.com/COGS18/Projects/tree/master/Stephen_Fa18
+* Ahrial (Fa18): https://github.com/chasethewind/dndDMG
+* Myles (Fa18): https://github.com/MylesWright/cogs18_final
 
 ## Clicker Question
 

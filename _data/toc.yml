@@ -215,7 +215,7 @@
   url: /projects/ProjectIdeas
   not_numbered: true
   sections:
-  - title: PythonParty
+  - title: Python Party
     url: /projects/PythonParty
     not_numbered: true
   - title: Project Overview

@@ -7,7 +7,7 @@ prev_page:
   title: 'CL7-CommandLine'
 next_page:
   url: /projects/PythonParty
-  title: 'PythonParty'
+  title: 'Python Party'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
