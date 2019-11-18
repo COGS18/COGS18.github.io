@@ -72,9 +72,9 @@
   - title: 16-CommandLine
     url: /materials/16-CommandLine
     not_numbered: true
-  # - title: 17-APIs
-  #   url: /materials/17-APIs
-  #   not_numbered: true
+  - title: 17-APIs
+    url: /materials/17-APIs
+    not_numbered: true
   # - title: 18-ScientificComputing
   #   url: /materials/18-ScientificComputing
   #   not_numbered: true

@@ -13,18 +13,30 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Python Party!
 
+Parties have snacks!
+
+**Come on up and grab a snack (if you like)!**
+
 ## Course Announcements
 
 - A4 due tonight (11:59 PM)
 - We're grading exams this afternoon
 
-How did the difficulty of **the midterm exam** relate to what you expected/thought it would be?
+How did the difficulty of **the second exam** relate to what you expected/thought it would be?
 
 - A) A lot easier than expected
 - B) A bit easier than expected
 - C) About the level of difficulty expected
 - D) A little bit harder than expected
 - E) A lot harder than epxected
+
+Where are you currently with **A4**?
+
+- A) Finished
+- B) Close to finished
+- C) About halfway done
+- D) Barely started
+- E) Haven't started
 
 Do you have an idea of what you want to do for your **project**?
 
