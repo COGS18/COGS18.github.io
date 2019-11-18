@@ -7,8 +7,8 @@ prev_page:
   url: /labs/CL6B-Answers
   title: 'CL6B-Answers'
 next_page:
-  url: /projects/ProjectIdeas
-  title: 'Projects'
+  url: /labs/CL8-ProjectOverview
+  title: 'CL8-ProjectOverview'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

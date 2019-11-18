@@ -3,8 +3,8 @@ interact_link: content/projects/ProjectIdeas.ipynb
 download_link: assets/downloads/ProjectIdeas.ipynb.zip
 title: 'Projects'
 prev_page:
-  url: /labs/CL7-CommandLine
-  title: 'CL7-CommandLine'
+  url: /labs/CL8-ProjectOverview
+  title: 'CL8-ProjectOverview'
 next_page:
   url: /projects/PythonParty
   title: 'Python Party'
