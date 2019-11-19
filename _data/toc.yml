@@ -75,9 +75,9 @@
   - title: 17-APIs
     url: /materials/17-APIs
     not_numbered: true
-  # - title: 18-ScientificComputing
-  #   url: /materials/18-ScientificComputing
-  #   not_numbered: true
+  - title: 18-ScientificComputing
+    url: /materials/18-ScientificComputing
+    not_numbered: true
   # - title: 19-OpenSource
   #   url: /materials/19-OpenSource
   #   not_numbered: true
@@ -129,7 +129,9 @@
   - title: Exam2-Practice
     url: /materials/Exam2-Practice
     not_numbered: true
-
+  - title: E2-Answers
+    url: /materials/E2-Answers
+    not_numbered: true
 
 
 - title: Coding Labs

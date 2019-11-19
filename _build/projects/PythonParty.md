@@ -114,6 +114,7 @@ Will largely be project-focused going forward
 * Stephen (Fa18): https://github.com/COGS18/Projects/tree/master/Stephen_Fa18
 * Ahrial (Fa18): https://github.com/chasethewind/dndDMG
 * Myles (Fa18): https://github.com/MylesWright/cogs18_final
+* Saray (Sp 19): https://github.com/SarahAmiraslani/Draw-to-Learn
 
 ## Clicker Question
 

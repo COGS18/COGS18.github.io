@@ -8,12 +8,12 @@ prev_page:
   url: /materials/16-CommandLine
   title: '16-CommandLine'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/18-ScientificComputing
+  title: '18-ScientificComputing'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
-## Final Projects
+## Course Announcements
 
 - **Exam #2** Grades on Canvas
     - can review exams in CodingLab Wednesday (or office hours any other Wed)
@@ -21,7 +21,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - **Final Project** due Wed 12/11 of finals week - 11:59 PM
     - For help debugging projects:
         - come to us with help for a specific function or single issue
-        - "Spagetti Code" will be hard for us to help you with
+        - "Spaghetti Code" will be hard for us to help you with
     - Planning Purposes: Prof Ellis will be out of the country Dec 5th - 12th
 
 ## The Plan
@@ -71,6 +71,16 @@ math.sqrt(9)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+3.0
+```
+
+
+
 ### Imports: `from` & `as`
 
 
@@ -91,14 +101,34 @@ choice(magic_8_ball)
 
 
 
+
+{:.output_data_text}
+```
+'Ask again later.'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Import a specific object from a module using an alias
 from random import choice as ch
 
-# use aliased name 
+# use shorter name 
 ch(magic_8_ball)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Most likely.'
+```
+
 
 
 ### Importing Custom Code
@@ -121,6 +151,16 @@ from remote import MyNumbers
 out = MyNumbers(2, 3).add()
 out
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 
@@ -153,6 +193,12 @@ def foo(a, b, c=0):
 print(foo(b=2, a=[10, 10, 10, 10]))
 ```
 
+
+{:.output_stream}
+```
+20
+
+```
 
 - A) 10
 - B) 20
@@ -194,6 +240,12 @@ def sum_across_list(list_to_count, end_index, start_val = 0):
 print(sum_across_list(end_index = 2, list_to_count = [10, 10, 10, 10]))
 ```
 
+
+{:.output_stream}
+```
+20
+
+```
 
 - A) 10
 - B) 20
@@ -263,6 +315,16 @@ G('Ramsay').ib()
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+'Ew! Despised and reviled.'
+```
+
+
+
 - A) I made it all better!
 - B) I made it slightly better!
 - C) I think it's fine as it is.
@@ -272,8 +334,116 @@ G('Ramsay').ib()
 
 {:.input_area}
 ```python
-# our improved answer
+G('Ramsay').ib()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Ew! Despised and reviled.'
+```
+
+
+
+
+
+{:.input_area}
+```python
+# our improved answer
+class GameOfThrones():
+    
+    def __init__(self, name):
+        self.name = name
+    
+    def describe(self):
+        list_badass = ['Tyrion', 'Cersei', 'Jon', 'Arya']
+        list_tier2 = ['Bran', 'The Mountain', 'The Hound', 'Lord Varys',
+              'Melisandre', 'Brienne of Tarth']
+        list_noway = ['King Joffrey', 'Ramsay', 'Little Finger'] 
+        
+        if self.name is 'Arya':
+            output = 'Super BAMF!'
+        elif self.name in list_badass:
+            output = 'Definitely a badass'
+        elif self.name in list_tier2:
+            output = 'We\'ve got ourselves a tier 2 badass!'
+        elif self.name in list_noway:
+            output = 'Ew! Despised and reviled.'
+        else:
+            output = 'meh. could be a badass?'
+      
+        return output
+```
+
+
+
+
+{:.input_area}
+```python
+GameOfThrones('The Mountain').describe()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+"We've got ourselves a tier 2 badass!"
+```
+
+
+
+
+
+{:.input_area}
+```python
+## example answer
+class GameOfThrones():
+    
+    def __init__(self, first, last = None):
+        self.first = first
+        self.last = last
+
+    def is_badass(self):
+        badass = ['Tyrion', 'Cersei', 'Jon', 'Arya']
+        tier2_badass = ['Bran', 'The Mountain', 'The Hound', 'Lord Varys', 
+                 'Melisandre', 'Brienne of Tarth']
+        not_badass = ['King Joffrey', 'Ramsay', 'Little Finger'] 
+
+        if self.first is 'Arya':
+            out = 'Super BAMF!'
+        elif self.first in badass:
+            out = 'Definitely a badass'
+        elif self.first in tier2_badass:
+            out = 'We\'ve got ourselves a tier 2 badass!'
+        elif self.first in not_badass:
+            out = 'Ew! Despised and reviled.'
+        else:
+            out = 'meh. could be a badass?'
+        return out
+```
+
+
+
+
+{:.input_area}
+```python
+GameOfThrones('Daenerys').is_badass()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'meh. could be a badass?'
+```
+
 
 
 ![](img/GOT.png)
@@ -338,6 +508,12 @@ print(search_url)
 ```
 
 
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?term=brain
+
+```
+
 
 
 {:.input_area}
@@ -359,6 +535,12 @@ fetch_url = base_url + fetch + db + retmode + pubmed_id
 print(fetch_url)
 ```
 
+
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=30439964
+
+```
 
 But, our goal isn't to see this information in a web browser. Web browsers are for humans. We want to use this information computationally...
 
@@ -388,6 +570,12 @@ print(search_url)
 ```
 
 
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?term=brain
+
+```
+
 
 
 {:.input_area}
@@ -407,6 +595,39 @@ search_content
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">
+<eSearchResult><Count>1918610</Count><RetMax>20</RetMax><RetStart>0</RetStart><IdList>
+<Id>31739380</Id>
+<Id>31739316</Id>
+<Id>31739314</Id>
+<Id>31739299</Id>
+<Id>31739290</Id>
+<Id>31739282</Id>
+<Id>31739269</Id>
+<Id>31739238</Id>
+<Id>31739234</Id>
+<Id>31739187</Id>
+<Id>31739167</Id>
+<Id>31739162</Id>
+<Id>31739156</Id>
+<Id>31739114</Id>
+<Id>31739112</Id>
+<Id>31739106</Id>
+<Id>31739099</Id>
+<Id>31739096</Id>
+<Id>31739095</Id>
+<Id>31739086</Id>
+</IdList><TranslationSet><Translation> <From>brain</From> <To>"brain"[MeSH Terms] OR "brain"[All Fields]</To> </Translation></TranslationSet><TranslationStack> <TermSet> <Term>"brain"[MeSH Terms]</Term> <Field>MeSH Terms</Field> <Count>1178507</Count> <Explode>Y</Explode> </TermSet> <TermSet> <Term>"brain"[All Fields]</Term> <Field>All Fields</Field> <Count>1531532</Count> <Explode>N</Explode> </TermSet> <OP>OR</OP> <OP>GROUP</OP> </TranslationStack><QueryTranslation>"brain"[MeSH Terms] OR "brain"[All Fields]</QueryTranslation></eSearchResult>
+```
+
+
+
 ### EUtils Fetch, through Python
 
 
@@ -416,6 +637,12 @@ search_content
 print(fetch_url)
 ```
 
+
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=30439964
+
+```
 
 
 
@@ -449,11 +676,31 @@ type(fetch_content)
 
 
 
+
+{:.output_data_text}
+```
+bs4.BeautifulSoup
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # We can use some methods to access particular information
 fetch_content.find('year').text
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'2019'
+```
+
 
 
 ## Literature Scanner
@@ -480,7 +727,7 @@ So, often in Python we'll interact with an API indirectly. There are packages th
 {:.input_area}
 ```python
 # Import LISC - Words
-from lisc.words import Words
+from lisc import Words
 ```
 
 
@@ -490,7 +737,7 @@ from lisc.words import Words
 ```python
 # Initialize Words object & set some search terms
 words = Words()
-words.set_terms(['brain']) 
+words.add_terms(['brain']) 
 ```
 
 
@@ -499,7 +746,7 @@ words.set_terms(['brain'])
 {:.input_area}
 ```python
 # Run words scrape
-words.run_scrape(retmax='5')
+words.run_collection(retmax='5')
 ```
 
 
@@ -515,34 +762,15 @@ for art in words['brain']:
 ```
 
 
-
-
-{:.input_area}
-```python
-%matplotlib inline
-from lisc.plts.wc import make_wc
-from lisc.data_all import DataAll
+{:.output_stream}
 ```
+Catalpol and Mannitol, Two Components of Rehmannia glutinosa, Exhibit Anticonvulsant Effects Probably via GABAA Receptor Regulation.
+Bedside Optic Nerve Ultrasonography for Diagnosing Increased Intracranial Pressure: A Systematic Review and Meta-analysis.
+Metal-containing Particulate Matter and Associated Reduced Olfactory Identification Ability in Children from an Area of High Atmospheric Exposure in Mexico City.
+Disturbed flow disrupts the blood-brain barrier in a 3D bifurcation model.
+Machine learning validation of EEG+tACS artefact removal.
 
-
-
-
-{:.input_area}
-```python
-## take a look at this function
-make_wc?
 ```
-
-
-
-
-{:.input_area}
-```python
-# Get the data from the 'brain' word search, and make a wordcloud
-brain_dat = DataAll(words.results[0])
-make_wc(brain_dat.word_freqs, 20, 'Brain')
-```
-
 
 ## Twitter API
 
@@ -586,3 +814,17 @@ for status in tweepy.Cursor(api.home_timeline).items(3):
     print(status.text, '\n')
 ```
 
+
+{:.output_stream}
+```
+Alexis Norris
+RT @GaetanBurgio: Wow, this is absolutely remarkable. The first clinical trials using #CRISPR for sickle cell anemia or thalassemia on 2 pa… 
+
+Greg Wilson
+RT @shahmiruk: The Conservative Party HQ @CCHQPress twitter account has changed their name to “factcheckUK”. This is a disgusting act that… 
+
+Nicholas Hunt-Walker
+https://t.co/3FMqwvptXh 
+
+
+```
