@@ -59,21 +59,6 @@ In Python package development... when `<MAJOR>` == 0, suggests a package in deve
 ```
 
 
-{:.output_stream}
-```
-Name: lisc
-Version: 0.1.1
-Summary: Literature Scanner
-Home-page: https://github.com/lisc-tools/lisc
-Author: Thomas Donoghue
-Author-email: tdonoghue.research@gmail.com
-License: Apache License, 2.0
-Location: /Users/shannonellis/.local/lib/python3.6/site-packages
-Requires: beautifulsoup4, requests, lxml, nltk, numpy
-Required-by: 
-
-```
-
 
 
 {:.input_area}
@@ -82,16 +67,6 @@ Required-by:
 import lisc
 lisc.__version__
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-'0.1.1'
-```
-
 
 
 ## Exam Review
@@ -167,32 +142,11 @@ arr1
 
 
 
-
-{:.output_data_text}
-```
-array([[1, 2],
-       [3, 4]])
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # lists of lists don't store dimensionality well
 [[1, 2], [3, 4]] 
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-[[1, 2], [3, 4]]
-```
-
 
 
 #### Indexing Arrays
@@ -208,17 +162,6 @@ arr1
 
 
 
-
-{:.output_data_text}
-```
-array([[1, 2],
-       [3, 4]])
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Check the shape of the array
@@ -228,31 +171,11 @@ arr1.shape
 
 
 
-
-{:.output_data_text}
-```
-(2, 2)
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Index into a numpy array
 arr1[0, 0]
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-1
-```
-
 
 
 Working with N-dimensional (multidimensional) arrays is easy within `numpy`.
@@ -271,32 +194,11 @@ np.array([[1, 2, 3, 4], [2, 3, 4]])
 
 
 
-
-{:.output_data_text}
-```
-array([list([1, 2, 3, 4]), list([2, 3, 4])], dtype=object)
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # arrays are meant to store homogeneous data
 np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-array([['1', '2', 'cogs18'],
-       ['2', '3', '4']], dtype='<U21')
-```
-
 
 
 #### Working with Arrays
@@ -314,33 +216,11 @@ arr1 + arr2
 
 
 
-
-{:.output_data_text}
-```
-array([[ 6,  8],
-       [10, 12]])
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Matrix mutliplication
 arr1 * arr2
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-array([[ 5, 12],
-       [21, 32]])
-```
-
 
 
 #### A brief aside: `zip()`
@@ -355,13 +235,6 @@ for a, b in zip([1,2], ['a','b']):
     print(a, b)
 ```
 
-
-{:.output_stream}
-```
-1 a
-2 b
-
-```
 
 ### Clicker Question #1
 
@@ -382,12 +255,6 @@ print(output)
 ```
 
 
-{:.output_stream}
-```
-[6, 8, 10, 12]
-
-```
-
 - A) [1, 2, 3, 4]
 - B) [1, 2, 3, 4, 5, 6, 7, 8]
 - C) [6, 8, 10, 12]
@@ -406,30 +273,10 @@ data.sum()
 
 
 
-
-{:.output_data_text}
-```
-36
-```
-
-
-
-
-
 {:.input_area}
 ```python
 data.sum(axis=0)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-array([ 6,  8, 10, 12])
-```
-
 
 
 ## Heterogenous Data
@@ -479,56 +326,6 @@ df
 
 
 
-
-<div markdown="0">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Subj_ID</th>
-      <th>condition</th>
-      <th>group</th>
-      <th>score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>001</td>
-      <td>cognition</td>
-      <td>2</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>002</td>
-      <td>perception</td>
-      <td>1</td>
-      <td>22</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-
-
-
-
 {:.input_area}
 ```python
 # You can index in pandas
@@ -538,37 +335,11 @@ df['condition']
 
 
 
-
-{:.output_data_text}
-```
-0     cognition
-1    perception
-Name: condition, dtype: object
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # You can index in pandas
 df.loc[0,:]
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-Subj_ID            001
-condition    cognition
-group                2
-score               16
-Name: 0, dtype: object
-```
-
 
 
 #### Working with DataFrames
@@ -583,98 +354,11 @@ df.describe()
 
 
 
-
-<div markdown="0">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>group</th>
-      <th>score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>2.000000</td>
-      <td>2.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>1.500000</td>
-      <td>19.000000</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>0.707107</td>
-      <td>4.242641</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>1.000000</td>
-      <td>16.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>1.250000</td>
-      <td>17.500000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>1.500000</td>
-      <td>19.000000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>1.750000</td>
-      <td>20.500000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>2.000000</td>
-      <td>22.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-
-
-
-
 {:.input_area}
 ```python
 # Take the average of all numeric columns
 df.mean()
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-Subj_ID    501.0
-group        1.5
-score       19.0
-dtype: float64
-```
-
 
 
 ### Clicker Question #2
@@ -717,10 +401,6 @@ plt.plot(dat);
 ```
 
 
-
-![png](../images/build/materials/18-ScientificComputing_58_0.png)
-
-
 - can change plot type
 - _lots_ of customizations possible
 
@@ -760,10 +440,6 @@ plt.hist(d2, 25, alpha=0.6);
 ```
 
 
-
-![png](../images/build/materials/18-ScientificComputing_64_0.png)
-
-
 ### Analysis - Statistical Comparisons
 
 
@@ -773,16 +449,6 @@ plt.hist(d2, 25, alpha=0.6);
 # Statistically compare the two distributions
 stats.ttest_ind(d1, d2)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-Ttest_indResult(statistic=-10.737128649848168, pvalue=3.475990096646864e-26)
-```
-
 
 
 ## COGS108: Data Science in Practice

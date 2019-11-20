@@ -746,7 +746,7 @@ words.add_terms(['brain'])
 {:.input_area}
 ```python
 # Run words scrape
-words.run_collection(retmax='5')
+words.run_collection(retmax = '5')
 ```
 
 
