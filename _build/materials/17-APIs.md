@@ -718,7 +718,6 @@ So, often in Python we'll interact with an API indirectly. There are packages th
 # uncomment and run to have the following 
 # example work in your notebook
 # !pip install --user git+https://github.com/lisc-tools/lisc.git
-# !pip install --user wordcloud
 ```
 
 
@@ -817,14 +816,14 @@ for status in tweepy.Cursor(api.home_timeline).items(3):
 
 {:.output_stream}
 ```
-Alexis Norris
-RT @GaetanBurgio: Wow, this is absolutely remarkable. The first clinical trials using #CRISPR for sickle cell anemia or thalassemia on 2 pa… 
-
-Greg Wilson
-RT @shahmiruk: The Conservative Party HQ @CCHQPress twitter account has changed their name to “factcheckUK”. This is a disgusting act that… 
+Ben Marwick
+@kearneymw @harlyjaned Yes, well put! @cboettig Matthew Lincoln &amp; I similarly wrote about why #rstats pkgs make sen… https://t.co/dh45iqwz2j 
 
 Nicholas Hunt-Walker
-https://t.co/3FMqwvptXh 
+RT @reydelhumo: ¿Tanta bronca le tienen a las mujeres que si hay un evento de programación exclusivo para ellas la gente te quiere *denunci… 
+
+Corey J. Miles
+Am I the only one who will see a page full of reviewer comments and start second guessing if I even want to publish this paper anymore? 
 
 
 ```
