@@ -8,8 +8,8 @@ prev_page:
   url: /materials/18-ScientificComputing
   title: '18-ScientificComputing'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/20-CodeStyle
+  title: '20-CodeStyle'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -21,17 +21,41 @@ You want to write a function that returns the keys from a dictionary in a list. 
 
 Think through the logic of this code or run the code for the following function in your notebook. Think about how you would go about editing/testing this code so that it will (1) execute and (2) do what you want.
 
+1. Test it - define the function; try to call the function
+2. Look at the error - try to fix code (`get.keys` -> `keys()`)
+3. Iterate through - re-run
+4. Test out all scenarios
+5. Edit until it does what you want.
+
 
 
 {:.input_area}
 ```python
 def sort_keys(dictionary, reverse_it = False):
     
-    keys = dictionary.get.keys()
-    sorted_keys = sorted(keys, reverse = False)
+    keys = dictionary.keys()
+    sorted_keys = sorted(keys, reverse = reverse_it)
 
     return sorted_keys
 ```
+
+
+
+
+{:.input_area}
+```python
+sort_keys({'A': 3, 'C': 2, 'B': 3})
+```
+
+
+
+
+
+{:.output_data_text}
+```
+['A', 'B', 'C']
+```
+
 
 
 - A) I have a plan!
@@ -72,6 +96,44 @@ iclicker Frequency Code: CA
 import this
 ```
 
+
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
+
+## Clicker Question #1
+
+Read through and think about the statements in the Zen of Python Which do you think is the most important? 
+
+The one I think is most important is in...
+
+- A) 1-5
+- B) 6-10
+- C) 11-15
+- D) 16-19
+- E) ¯\\_(ツ)_\/¯
 
 Tim Peters -- the author of the Zen of Python -- is a software developer and was a major contributor to the Python Programming language.
 
@@ -123,7 +185,7 @@ Rather, comments should add any additional context and information that helps ex
 
 These will all be components of your final project grade.
 
-### Clicker Question #1
+### Clicker Question #2
 
 What does the following code do?
 
@@ -137,6 +199,16 @@ def ff(jj):
     return '+'.join(oo)
 ff('Hello World.')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'72+101+108+108+111+32+87+111+114+108+100+46'
+```
+
 
 
 - A) Returns unicode code points, as a list
@@ -332,6 +404,28 @@ help(add)
 ```
 
 
+{:.output_stream}
+```
+Help on function add in module __main__:
+
+add(num1, num2)
+    Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition.
+
+
+```
+
 ### `__doc__`
 
 
@@ -344,7 +438,26 @@ print(add.__doc__)
 ```
 
 
-### Clicker Question #2
+{:.output_stream}
+```
+Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition. 
+    
+
+```
+
+### Clicker Question #3
 
 What should be included in a docstring?
 

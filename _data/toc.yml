@@ -84,9 +84,9 @@
   - title: 19-Documentation
     url: /materials/19-Documentation
     not_numbered: true
-  # - title: 21-CodeStyle
-  #   url: /materials/21-CodeStyle
-  #   not_numbered: true
+  - title: 20-CodeStyle
+    url: /materials/20-CodeStyle
+    not_numbered: true
   # - title: 22-CodeTesting
   #   url: /materials/22-CodeTesting
   #   not_numbered: true
