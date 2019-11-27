@@ -8,8 +8,8 @@ prev_page:
   url: /materials/19-Documentation
   title: '19-Documentation'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/21-CodeTesting
+  title: '21-CodeTesting'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -21,12 +21,103 @@ Write a function called `week_9()` that chooses among a list of 5 phrases of enc
 - B) I think I did it!
 - C) I'm stuck.
 
+Frequency code: CA
+
 
 
 {:.input_area}
 ```python
 ### YOUR CODE HERE
+# import from random
+from random import choice
+
+#define the function
+def week_9():
+    
+    # specify list of encouraging words
+    words = ['a','b']
+    
+    # return random choice from input words
+    return choice(words)
+    
 ```
+
+
+
+
+{:.input_area}
+```python
+week_9()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'a'
+```
+
+
+
+
+
+{:.input_area}
+```python
+import random 
+
+def week_9():
+    """
+    Offer a phrase of encouragement to students during week 9.
+  
+    Returns
+    -------
+    output : string
+        String containing the words of encouragement.
+    """
+        
+    phrases = ["You're doing great!", "You've totally got this.",
+              "You've got time to get everything done!", "Sleep is important.", 
+               "Remember to eat good food and drink lots of water!"]
+    
+    output = random.choice(phrases)
+    
+    return output
+
+# execute function
+week_9()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'Sleep is important.'
+```
+
+
+
+
+
+{:.input_area}
+```python
+from week9 import week_9
+
+week_9()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'Remember to eat good food and drink lots of water!'
+```
+
 
 
 ## Course Announcements
@@ -34,7 +125,9 @@ Write a function called `week_9()` that chooses among a list of 5 phrases of enc
 - No Class Friday (Thanksgiving!)
 - Exam #2 Regrades - grades have been updated on Canvas
 - Final Project due Wed 12/11 (11:59 PM)
+
 - Optional A5:
+    - Will be posted by the end of the day on datahub
     - due Friday 12/6 (11:59 PM)
     - Cannot submit after that deadline (no 25% deduction)
     - A5 score will replace lowest assignment score
@@ -47,8 +140,6 @@ Do you have an idea of what you want to do for your **project**?
 - C) sort of
 - D) fairly good idea
 - E) I know exactly what I want to do.
-
-iclicker frequency: CA
 
 Example Final Projects: https://github.com/COGS18/Projects
 
@@ -66,8 +157,8 @@ Your final project is a chatbot that will discuss sports with you. How would you
 
 - Final project to public GitHub repo (0.15 pts; 1% on project)
 - Final project Extra Credit (0.6 pts; 4% on project)
-- CAPEs response rate > 85% (0.25 pt to everyone)
-- End-of-Course Survey (0.25 pt)
+- CAPEs response rate >= 85% (0.25 pt to everyone)
+- End-of-Course Survey (0.25 pt) - not yet available
 
 # Code Style
 
@@ -105,6 +196,32 @@ import this
 ```
 
 
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
+
 ### Program Errors vs. Stylistic Issues
 
 - Programmatic Error: something that breaks the code
@@ -115,7 +232,7 @@ import this
 - Code style is (at least partly) subjective
 - Consistency is key. It's easier to recognize & read consistent style
 
-## Python Enhancement Proposals
+## Python Enhancement Proposals (PEPs)
 
 <div class="alert alert-success">
 Python PEPs are proposals for how something should be / work in the Python programming language. 
@@ -216,7 +333,7 @@ def squared(input_number):
 {:.input_area}
 ```python
 # Option B
-def squared(input_number, power=2):
+def squared(input_number, power = 2):
     
     output = input_number ** power
     
@@ -253,6 +370,12 @@ if True:
   print('Words.')
 ```
 
+
+{:.output_stream}
+```
+Words.
+
+```
 
 
 
@@ -338,7 +461,7 @@ for i in [1, 2, 3]:
 
 {:.input_area}
 ```python
-my_long_list = [1, 2, 3, 4, 5,
+my_long_list = [1, 2, 3, 4, 5, 
                 6, 7, 8, 9, 10]
 ```
 
@@ -414,7 +537,7 @@ Find + Replace also works better when you have specific variable names
 
 ### Naming Style
 
-- CamelCase (leading capitals, no separation) for Classes
+- CapWords (leading capitals, no separation) for Classes
 - snake_case (all lowercase, underscore separator) for variables, functions, and modules
 
 
@@ -554,6 +677,7 @@ Keep your comments up-to-date.
 {:.input_area}
 ```python
 # Badness
+import random
 
 def week_9():
 # help try to destress students by picking one thing from the following list using random
@@ -563,6 +687,16 @@ def week_9():
 
 week_9()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+"You're so close!"
+```
+
 
 
 
@@ -587,6 +721,16 @@ def week_9():
 
 week_9()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+"You've totally got this!"
+```
+
 
 
 #### Inline comments
@@ -616,7 +760,7 @@ week_9()  # words of encouragement
 
 - Write a descriptive docstring for all functions & classes
 
-Note: If you're borrowing functions from an assignment, you're going to have to add documentation to these functions.
+Note: If you're borrowing functions from an assignment, you're should add documentation to these functions.
 
 Comments within the functions you've borrowed noting that you've borrowed it as well as a general note in your project description will suffice for attribution.
 
@@ -628,7 +772,7 @@ If you've modified/edited the code from the assignment, state that you modified.
 A linter is a tool that analyzes code for both programmatic errors and stylistic issues. 
 </div>
 
-`pylint` is available from Anaconda to check this for you.
+`pylint` is available from Anaconda to check this for you. (Not available on datahub.)
 
 ### Clicker Question #6
 
@@ -651,6 +795,20 @@ def MyFunction(input_num):
 ```
 
 
+
+
+{:.input_area}
+```python
+# function needs snake_case
+# spaces in list items - need to be spaced
+# spacing for the conditional - should be on a new line
+# naming for variables (qq; i)
+# ind in the else statement not 4 spaces
+# spacing for `my_list [ind:]` has extra space
+# line spacing could be improved
+```
+
+
 - A) None
 - B) 1 or 2 
 - C) 3 or 4 
@@ -663,4 +821,40 @@ def MyFunction(input_num):
 ```python
 # Let's fix this code
 ```
+
+
+
+
+{:.input_area}
+```python
+# Let's fix this code
+def input_division(input_num):
+    """A descriptive docstring of the function."""
+    
+    my_list = [0, 1, 2, 3]
+    
+    if 1 in my_list:
+        ind = 1
+    else:
+        ind = 0
+        
+    output_list = []
+    for ind in my_list[ind:]:
+        output_list.append(input_num / ind)
+    
+    return output_list
+
+# execute your function
+input_division(6)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[6.0, 3.0, 2.0]
+```
+
 

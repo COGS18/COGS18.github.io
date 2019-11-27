@@ -87,9 +87,9 @@
   - title: 20-CodeStyle
     url: /materials/20-CodeStyle
     not_numbered: true
-  # - title: 22-CodeTesting
-  #   url: /materials/22-CodeTesting
-  #   not_numbered: true
+  - title: 21-CodeTesting
+    url: /materials/21-CodeTesting
+    not_numbered: true
   # - title: 23-CodeProjects
   #   url: /materials/23-CodeProjects
   #   not_numbered: true
