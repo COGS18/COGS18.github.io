@@ -87,7 +87,7 @@ Detailed instruction for software installations will be listed on the course web
 
 ### Grades
 
-All grades will be released on Canvas. It is your responsibility to check that your assignment was submitted, that your grade is accurage, and to get in touch if any are missing and/or you think there is a problem.
+All grades will be released on Canvas. It is your responsibility to check that your assignment was submitted, that your grade is accurate, and to get in touch if any are missing and/or you think there is a problem.
  
 ### Assignment Regrades
 
