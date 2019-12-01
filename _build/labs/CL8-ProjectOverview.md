@@ -14,9 +14,9 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Coding Lab 8: Project Overview
 
-Welcome to the eigth coding lab!
+Welcome to the eighth coding lab!
 
-This coding lab is all about the projects. 
+This coding lab is all about your project. 
 
 Find a partner, and talk about your ideas for the project. Talk through any outlines and code you have. 
 
