@@ -8,8 +8,8 @@ prev_page:
   url: /materials/20-CodeStyle
   title: '20-CodeStyle'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/22-CodeProjects
+  title: '22-CodeProjects'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -17,17 +17,55 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 Create a class called `Football` with two instance attributes: `team` and `location`. 
 
-Within `Football`, include a method (`speak_truths`) that returns "The Patriots lost to the Ravens!" if `team` is 'Patriots' or `location` is 'New England' and "Nobody likes the Patriots." otherwise.
+Within `Football`, include a method (`speak_truths`) that returns 'The Patriots lost to the Ravens!' if `team` is 'Patriots' or `location` is 'New England' and 'Nobody likes the Patriots.' otherwise.
 
 - A) I did it!
 - B) I think I did it!
 - C) I'm stuck.
 
+Frequency Code: CA
+
+
+
+{:.input_area}
+```python
+class Football():
+    
+    def __init__(self, team = None, location = None):
+        self.team = team
+        self.location = location
+    
+    def speak_truths(self):
+        if self.team == 'Patriots' or self.location == 'New England':
+            return 'The Patriots lost to the Ravens!'
+        else:
+            return 'Nobody likes the Patriots.'
+```
+
+
+
+
+{:.input_area}
+```python
+Football(team='patriots').speak_truths()
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'Nobody likes the Patriots.'
+```
+
+
+
 # Code Testing
 
 - smoke tests
 - unit tests
-- PyTest
+- `pytest`
 
 ### Clicker Question #1
 
@@ -43,6 +81,30 @@ def extend(input_arg):
         output.append(element)
     return output
 ```
+
+
+
+
+{:.input_area}
+```python
+extend([1,2,3])
+```
+
+
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 3, 1, 2, 3]
+```
+
 
 
 - A) `assert isinstance(extend([1, 2]), list)`
@@ -77,6 +139,42 @@ assert extend([1, 2]) == [1, 2, 1, 2]
 ```python
 # Check if the function works on tuples
 assert extend((1, 2)) == (1, 2, 1, 2)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-21-c510c0c20682> in <module>()
+      1 # Check if the function works on tuples
+----> 2 assert extend((1, 2)) == (1, 2, 1, 2)
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-18-a3ca5f93bd43> in extend(input_arg)
+      1 def extend(input_arg):
+----> 2     output = input_arg.copy()
+      3     for element in input_arg:
+      4         output.append(element)
+      5     return output
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'tuple' object has no attribute 'copy'
 ```
 
 
@@ -138,7 +236,25 @@ def add(num1, num2):
 
 {:.input_area}
 ```python
-# import math
+add(2.7, 1.2)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+3.9000000000000004
+```
+
+
+
+
+
+{:.input_area}
+```python
+import math
 
 def test_add():
     """Tests for the `add` function."""
@@ -151,7 +267,7 @@ def test_add():
     
     # Test adding floats
     # assert add(2.7, 1.2) == 3.9
-    # assert math.isclose(add(2.7, 1.2), 3.9)
+    assert math.isclose(add(2.7, 1.2), 3.9)
     
     # Test adding with 0
     assert add(2, 0) == 2
@@ -195,6 +311,14 @@ def test_divide_list():
 ```
 
 
+
+
+{:.input_area}
+```python
+test_divide_list()
+```
+
+
 - A) These tests will pass, and this function is well tested
 - B) These tests will pass, but this function needs more tests
 - C) These tests will fail, but they cover the needed cases
@@ -203,7 +327,7 @@ def test_divide_list():
 ## PyTest
 
 <div class="alert alert-info">
-<b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module that for writing and running test code. It is available from Anaconda.
+<b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module that for writing and running test code. It is available from Anaconda and datahub.
 </div>
 
 ## Levels of Code Testing:
@@ -216,7 +340,7 @@ def test_divide_list():
 ## Test Driven Development
 
 <div class="alert alert-success">
-In software development, <b>test-driven development</b> is anapproach in which you write tests first -  and then write code to pass the tests. 
+In software development, <b>test-driven development</b> is an approach in which you write tests first -  and then write code to pass the tests. 
 </div>
 
 ### Test Driven Development
@@ -290,6 +414,13 @@ Write a test function that checks the following piece of code:
 - B) I think I did it!
 - C) I'm lost.
 
+Thought process:
+1. Define test function `def test_...`
+2. make `assert`ion within the test function
+    - check that function sums the list (which was our expectation)
+    - check that the input was a list (either in function or test function)
+    - check the output is expected output / expected type
+
 
 
 {:.input_area}
@@ -310,8 +441,45 @@ sum_list([1, 2, 3, 4])
 
 
 
+
+{:.output_data_text}
+```
+10
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ### YOUR TEST
+def test_sum_list():
+    assert sum_list([1, 2, 3, 4]) == 10
+
+```
+
+
+
+
+{:.input_area}
+```python
+test_sum_list()
+```
+
+
+
+
+{:.input_area}
+```python
+### POSSIBLE TEST
+def test_sum_list():
+    
+    # write multiple asserts
+    assert callable(sum_list)
+    assert isinstance(sum_list([1, 2, 3, 4]), int)
+    assert sum_list([1, 2, 3, 4]) == 10
+    
+test_sum_list()
 ```
 
