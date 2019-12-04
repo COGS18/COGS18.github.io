@@ -22,7 +22,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
     - Please fill out CAPEs! (Current: ~48%)
     - Please fill out TA/IA feedback!
 - Final Course Survey: http://bit.ly/cogs18post
-    - By Wed 6/12 for Extra Credit (11:59 PM)
+    - By this Friday for Extra Credit (11:59 PM)
 
 ## Project Check-In
 
@@ -51,12 +51,18 @@ How confident do you feel about what you need to do to finish the project?
 - D) I have a very good idea of what to do
 - E) I completely know / am basically finished
 
+## Vincent's Project
+
+- meant to demonstrate what's possible
+- scope beyond what's expected of you in COGS 18
+- but, cool projects can help spark cool ideas for yourself!
+
 # Code Projects
 
 - modular design
 - minimal viable product
 - rapid prototyping
-- Project Organization
+- project organization
 - refactoring
 
 ### Modular Design
@@ -127,6 +133,17 @@ Think of this as restructuring and final edits on your essay.
 Clean functions accomplish a **single task**!
 
 **DRY**: Don't Repeat Yourself
+
+## Course Announcements
+
+- Final Projects due Wed of finals week (12/11) by 11:59 PM
+- Normal office hours this week (W 4-6 PM)
+- No class this Friday
+- Feedback!
+    - Please fill out CAPEs! (Current: ~48%)
+    - Please fill out TA/IA feedback!
+- Final Course Survey: http://bit.ly/cogs18post
+    - By this Friday for Extra Credit (11:59 PM)
 
 ### Refactoring Example: Chatbot
 
@@ -298,3 +315,14 @@ def have_a_chat():
 have_a_chat()  
 ```
 
+
+## Project Notes
+
+1. Write some code
+2. Test to make sure it works
+3. Check code style (naming, spacing, etc.)
+4. Add documentation
+5. Move to module (if necessary)
+6. Add unit tests
+
+Note on `imports`: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top.
