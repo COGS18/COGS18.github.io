@@ -4,8 +4,12 @@ output:
 ---
 
 # COGS 18: Introduction to Python
-**Fall 2019, MWF 9-9:50**  
-**Center Hall 101**
+
+**This is a DRAFT and is subject to change. Syllabus will be finalized during the first week of the quarter.**
+
+
+**Spring 2020, MWF 8-8:50**  
+**Price Theater**
 
 
 ---
@@ -19,26 +23,24 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 # COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](sellis@ucsd.edu))  
-**Instructor Office Hours**: Wednesdays, 4-6 PM (CSB 243)  
+**Instructor Office Hours**: Friday, 11AM-1PM PM (CSB 243)  
 
 | Role        | Name          					   | Section  | Office Hours |
 | -------------: |:--------------------------------------------|:-----------|:-----------|
-| TA             | Devendra		 | 1PM; 2PM    | Fri 12-1 PM (CSB 114) |
-| TA 	           | Shreenivas  | 10AM; 4PM   | Fri 4-5 PM (Sun God Lounge) |
-| IA	           | Andrew      | 1PM; 2PM    | Fri 11-11:50 AM (CSB 114)  |
-| IA	           | Chau        | 3PM; 5PM    | --  |
-| IA	           | Duolan      | 10AM; 11AM  | Th 4:30-6 PM (CSB 114)  |
-| IA	           | Byungkwon   | 5PM; 6PM    | --  |
-| IA	           | Sarah       | 12PM; 6PM   | Mon 11 AM-1 PM (CSB 114)  |
-| IA	           | Titan       | 3PM; 4PM    | --  |
-| IA	           | Zijian      | 11AM; 12PM  | Fri 8-9 AM (CSB 114) |
-| IA	           | Severine    | --          | Th 1:15-2:55 PM (Middle of Muir Coffee Shop) |
-| IA             | Stephen     | --          | Th 1:15-2:55 PM (Middle of Muir Coffee Shop) |
+| TA             | TBD	 | TBD    | TBD |
+| TA 	           | TBD  | TBD   | TBD |
+| IA	           | TBD      | TBD   | --  |
+| IA	           | TBD        | TBD    | --  |
+| IA	           | TBD      | TBD  |   |
+| IA	           | TBD   | TBD    | --  |
+| IA	           | TBD       | TBD   | --  |
+| IA	           | TBD       | TBD   | --  |
+| IA	           | TBD      | TBD  | -- |
 
 Course Website: https://cogs18.github.io   
-Course Piazza*: http://piazza.com/ucsd/fall2019/cogs18  
+Course Piazza*: http://piazza.com/ucsd/spring2020/cogs18  
 Assignment Submission: https://datahub.ucsd.edu  
-Course podcast/screencast: https://podcast.ucsd.edu/  
+Course podcast/screencast: https://podcast.ucsd.edu/?q=COGS18 
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
 *You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. Your Instructor and TAs will be able to see who you are.
@@ -63,11 +65,11 @@ To achieve these objectives, information will be presented during lecture. You w
 - All students will need access to an iClicker*
 - There is no textbook
 - All materials will be provided via the course website
-- Software: Python 3.6 (Anaconda distribution); Jupyter Notebooks
+- Software: Python >3.6 (Anaconda distribution); Jupyter Notebooks
 
 Detailed instruction for software installations will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. If you do not have a computer available, you *will* be able to complete the course requirements on UCSD computers.
 
-*You will need a clicker, of this brand, as no other brand will work with the system we are using. You must register your clicker on Canvas & bring it to lecture. If you previously registered one on Canvas & are using the same clicker in this class, you do not have to register it again. If you would rather use the REEF app, you are free to do so; however, note that if the Wi-Fi is down, the app will not work and you will not get credit for those responses.
+*You will need an iclicker, of this brand, as no other brand will work with the system we are using. You must register your clicker on Canvas & bring it to lecture. If you previously registered one on Canvas & are using the same clicker in this class, you do not have to register it again. If you would rather use the REEF app, you are free to do so; however, note that if the wifi is down, the app will not work and you will not get credit for those responses.
 
 ---
 
@@ -77,13 +79,13 @@ Detailed instruction for software installations will be listed on the course web
 
 |                | \% of Grade          	 | Requirement  |
 | -------------: |:-----------------------:|:-----------|
-| Assignments 	       | 30\%           | Complete 4 Assignments |
+| Assignments 	       | 35\%           | Complete 4 Assignments |
 | Exams                | 30\%           | Written in-class exams |
 | Final Project	       | 15\%           | Submit final project |
-| Coding Lab           | 15\%				    | Attend & Participate in 6 Coding Labs |
+| Coding Lab           | 10\%				    | Attend & Participate in 6 Coding Labs |
 | Lecture Attendance   | 10\%		        | Attend 75% of all lectures |
 
-**Final exam date**: No final exam, only final project deadline (Wednesday, 12/11 at 11:59 PM). You do not have to show up anywhere on the date of the final exam.
+**Final exam date**: No final exam, only final project deadline (Friday, 6/12 at 11:59 PM). You do not have to show up anywhere on the date of the final exam.
 
 ### Grades
 
@@ -99,15 +101,15 @@ Our goal is to make lecture worth your while to attend; however, lecture attenda
 
 However, if you prefer *not* to attend lecture or do not attend 75\% of lectures, that proportion of your grade will automatically be dedicated to your exam score, so each exam will be worth 20\% of your grade, rather than 15\%.
 
-### Coding Labs (15\%)
+### Coding Labs (10\%)
 
 Discussion section will be used as a coding lab. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 8 different coding labs (week 1 through week 9). If you attend at least 6 of these, you will receive full credit for coding labs. For each lab under 6 that you attend, 5\% credit will be deducted. (For example, if you attend 5 of 8 coding labs, you'll earn 10\% of the possible credit. If you attend 4, 5\%. If you attend 3 or fewer, you will not receive coding lab credit.) Note that to receive credit for a coding lab, you have to actually attend a section. These cannot be completed outside of section time. Week 10 is completely *optional*; attendance will *not* be taken that week.
 
 You should be signed up for a section for which you can attend. However, if you are unable to attend the section for which you are signed up, you are free to attend a different section any given week than the one in which you're assigned. You will receive attendance credit regardless of which section you attend. Note that this policy could change if too many people are attending one section each week. We intentionally have section capped at 35 people so that students can get help from their TAs and IAs.
 
-### Assignments (30\%)
+### Assignments (35\%)
 
-There will be four assignments, each worth ~8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on Datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Fridays by 11:59PM. Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, feedback will be sent via e-mail and assignments will no longer be able to be submitted for credit.
+There will be five assignments, each worth ~7\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on Datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Wednesy by 11:59PM. Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, feedback will be sent via e-mail and assignments will no longer be able to be submitted for credit.
 
 ### Exams (30\%)
 
@@ -121,43 +123,42 @@ Successful completion of this class will require you to complete an independent 
 
 # COURSE SCHEDULE
 
-| Date   | Week | Lecture| Day | Topic     | Assignment             | Section
-| -----: |:----:|:-----|:-----:|:-------------------|:-----------------------|:-----------|
-| 9/26   | 0	   | 0    | F     | Why Program?      |                        |            | 
-| 9/30   | 1	   | 1    | M     | Demo + Tools      |                        |            | 
-| 10/2   | 1	   | 2    | W     | Notebook          |                        | CL1: Tech Setup + Tools |
-| 10/4   | 1     | 3    | F     | Variables         |                        |            | 
-| 10/7   | 2	   | 4    | M     | Operators         |                        |            | 
-| 10/9   | 2	   | 5    | W     | Conditionals      |                        | CL2: Programming I| 
-| 10/11  | 2	   | 6    | F     | Collections       | A1: Getting Started    |            | 
-| 10/14  | 3	   | 7    | M     | Loops             |                        |            | 
-| 10/16  | 3	   | 8    | W     | Encodings [*]    |                        | CL3: Programming II  | 
-| 10/18  | 3	   | 9   | F     | Functions I       | A2: Ciphers            |            | 
-| 10/21  | 4	   | 10   | M     | **Exam I**        |                        |            | 
-| 10/23  | 4	   | 11   | W     | Algorithms        |                        | CL4: Algorithms & Functions  |
-| 10/25  | 4	   | 12   | F     | Functions II      |                        |            | 
-| 10/28  | 5	   | 13   | M     | Errors + Debugging|                        |            | 
-| 10/30  | 5	   | 14   | W     | Objects           |                        | CL5: Debugging |
-| 11/1   | 5	   | 15   | F     | Classes           | A3: Chatbots           |            | 
-| 11/4   | 6	   | 16   | M     | Namespaces        |                        |            | 
-| 11/6   | 6	   | 17   | W     | Command Line [**] |                        | CL6: Classes | 
-| 11/8   | 6	   | 18   | F     | Review            |                        |            | 
-| 11/11  | 7	   | --   | M     | **No Class**      |                        |            | 
-| 11/13  | 7	   | 19   | W     | **Exam II**       |                        | CL7: Command Line | 
-| 11/15  | 7	   | 20   | F     | Python Party      | A4: Artificial Agents  |            | 
-| 11/18  | 8	   | 21   | M     | Open Source       |                        |            | 
-| 11/20  | 8	   | 22   | W     | Documentation     |                        | CL8: Project | 
-| 11/22  | 8	   | 23   | F     | Code Style        |                        |            | 
-| 11/25  | 9	   | 24   | M     | Code Testing      |                        |            | 
-| 11/27  | 9	   | 25   | W     | Code Projects     |                        | CL8: Project | 
-| 11/29  | 9	   | --   | F     | **No Class**      |                        |            | 
-| 12/2   | 10	   | 26   | M     | Advanced Python   |                        |            | 
-| 12/4   | 10	   | 27   | W     | Wrap Up           |                        | Optional: Code Review | 
-| 12/6   | 10	   | --   | F     | **No Class**      |                        |            | 
+| Date   | Week  | Lecture| Day   |       Topic        | Assignment             | Section
+| -----: |:-----:|:-------|:-----:|:-------------------|:-----------------------|:------------------------|
+| 3/30   | 1	   | 0      | M     | Why Program?       |                        |                         | 
+| 4/1    | 1	   | 1      | W     | Demo + Tools       |                        | CL1: Tech Setup + Tools | 
+| 4/3    | 1	   | 2      | F     | Notebook           |                        |                         |
+| 4/6    | 2     | 3      | M     | Variables          |                        |                         | 
+| 4/8    | 2	   | 4      | W     | Operators          |                        | CL2: Programming I      | 
+| 4/10   | 2	   | 5      | F     | Conditionals       |                        |                         | 
+| 4/13   | 3	   | 6      | M     | Collections        |                        |                         | 
+| 4/15   | 3	   | 7      | W     | Loops              | A1: Getting Started    | CL3: Programming II     | 
+| 4/17   | 3	   | 8      | F     | Encodings [*]      |                        |                         |
+| 4/20   | 4	   | 9      | M     | Functions I        |                        |                         | 
+| 4/22   | 4	   | 10     | W     | Review             | A2: Ciphers            | CL4: Algorithms & Functions | 
+| 4/24   | 4	   | --     | F     | **Exam I**         |                        |                         |
+| 4/27   | 5	   | 11     | M     | Algorithms         |                        |                         | 
+| 4/29   | 5	   | 12     | W     | Functions II       |                        | CL5: Debugging          | 
+| 5/1    | 5	   | 13     | F     | Errors + Debugging |                        |                         |
+| 5/4    | 6	   | 14     | M     | Objects            |                        |                         | 
+| 5/6    | 6	   | 15     | W     | Classes            | A3: Chatbots           | CL6: Classes            | 
+| 5/8    | 6	   | 16     | F     | Namespaces         |                        |                         | 
+| 5/11   | 7	   | 17     | M     | Command Line [**]  |                        |                         | 
+| 5/13   | 7	   | 18     | W     | Review             |                        | CL7: Command Line       | 
+| 5/15   | 7	   | --     | F     | **Exam II**        |                        |                         | 
+| 5/18   | 8	   | 19     | M     | Python Party       |                        |                         | 
+| 5/20   | 8	   | 20     | W     | Open Source        | A4: Artificial Agents  | CL8: Project I          | 
+| 5/22   | 8	   | 21     | F     | Documentation      |                        |                         | 
+| 5/25   | 9	   | --     | M     | **No Class**       |                        |                         | 
+| 5/27   | 9	   | 22     | W     | Code Style         |                        | CL9: Project II         | 
+| 5/29   | 9	   | 23     | F     | Code Testing       |                        |                         | 
+| 6/1    | 10	   | 24     | M     | Code Projects      |                        |                         | 
+| 6/3    | 10	   | 25     | W     | Advanced Python    | A5: Experimentation    | Optional: Code Review   | 
+| 6/5    | 10	   | 26     | F     | Wrap Up            |                        |                         | 
 
 Notes: 
 
-* Sept 30th onward, all lectures (except exam days) will use iclickers.
+* April 1st onward, all lectures (except exam days) will use iclickers.
 * [\*] denotes the last day of material covered on Exam 1. [\*\*] the last day for material on Exam 2.
 
 ---

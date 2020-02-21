@@ -4,14 +4,13 @@ download_link: assets/downloads/CL1-Tooling.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/E2-Answers
-  title: 'E2-Answers'
+  url: /materials/00-Introduction
+  title: '00-Introduction'
 next_page:
   url: /labs/CL1-Tooling
   title: 'CL1-Tooling'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-
 # Coding Lab 1: Tech Setup & Tooling
 
 Welcome to the first coding lab!

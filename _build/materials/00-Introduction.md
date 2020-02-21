@@ -12,7 +12,6 @@ next_page:
   title: '00-Introduction'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-
 # Introduction to Python
 
 Shannon Ellis
@@ -26,13 +25,14 @@ The PDF slides from the start of the first class are available here: https://cog
 
 - Who:
     - Instructor: Shannon Ellis 
-    - TAs: Devendra & Shreenivas 
-    - IAs: Chau, Byungkwon, Duolan, Andrew, Titan, Zijan, Sarah, Severine, Stephen
+    - TAs: TBD
+    - IAs: TBD
     
 - Where:
-    - Lectures MWF @ 9 AM (Center Hall 101) & Coding Lab Sections
+    - Lectures MWF @ 8 AM (Price Center Theater)
+    - Coding Lab Sections (Wed CSB 115)
     - Course Website: https://cogs18.github.io
-    - Piazza Page: https://piazza.com/ucsd/spring2019/cogs18
+    - Piazza Page: https://piazza.com/ucsd/winter2019/cogs18
 
 # Expectations & Approach
 

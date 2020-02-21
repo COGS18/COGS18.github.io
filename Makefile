@@ -37,8 +37,8 @@ textbook:
 	rm content/materials/README.md
 
 	# Copy & build assignments
-	git clone --depth 1 https://github.com/COGS18/assignments content/assignments
-	rm content/assignments/README.md
+	# git clone --depth 1 https://github.com/COGS18/assignments content/assignments
+	# rm content/assignments/README.md
 
 	# Copy & build coding labs
 	git clone --depth 1 https://github.com/COGS18/codinglabs content/labs
