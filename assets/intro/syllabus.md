@@ -8,8 +8,8 @@ output:
 **This is a DRAFT and is subject to change. Syllabus will be finalized during the first week of the quarter.**
 
 
-**Spring 2020, MWF 8-8:50**  
-**Price Theater**
+**Spring 2020**
+**MWF 8-8:50 (remote)**  
 
 
 ---
@@ -22,25 +22,25 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 # COURSE STAFF & INFORMATION
 
-**Instructor**: Shannon Ellis ([sellis@ucsd.edu](sellis@ucsd.edu))  
-**Instructor Office Hours**: Friday, 11AM-1PM PM (CSB 243)  
+**Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
+**Instructor Office Hours**: Friday, 11AM -1PM (zoom: TBD)  
 
 | Role        | Name          					   | Section  | Office Hours |
 | -------------: |:--------------------------------------------|:-----------|:-----------|
-| TA             | TBD	 | TBD    | TBD |
-| TA 	           | TBD  | TBD   | TBD |
-| IA	           | TBD      | TBD   | --  |
-| IA	           | TBD        | TBD    | --  |
-| IA	           | TBD      | TBD  |   |
-| IA	           | TBD   | TBD    | --  |
-| IA	           | TBD       | TBD   | --  |
-| IA	           | TBD       | TBD   | --  |
-| IA	           | TBD      | TBD  | -- |
+| TA             | Annie	Bhattacharya  	 | TBD   | TBD |
+| TA 	           | Mudit	Jain             | TBD   | TBD |
+| TA 	           | Ashlesha Vaidya         | TBD   | TBD |
+| TA 	           | TBD                     | TBD   | TBD |
+| IA	           | Melody	Wong             | TBD   | --  |
+| IA	           | Jitarth	Sheth          | TBD   | --  |
+| IA	           | Fidella	Wu             | TBD   | --  |
+| IA	           | AP	Nguyen               | TBD   | --  |
+| IA	           | Griffin	Goldberg       | TBD   | --  |
+| IA	           | Geoff	Lizar            | TBD   | Fri 9-11 AM () |
 
 Course Website: https://cogs18.github.io   
 Course Piazza*: http://piazza.com/ucsd/spring2020/cogs18  
 Assignment Submission: https://datahub.ucsd.edu  
-Course podcast/screencast: https://podcast.ucsd.edu/?q=COGS18 
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
 *You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. Your Instructor and TAs will be able to see who you are.
@@ -56,20 +56,21 @@ Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF
 - Execute Python programs on your local computer, using notebooks and the command line
 - Describe and implement best practices in Python, keeping in mind that programming is done by and for humans
 
-To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during section, and throughout all assignments and your final project. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
+To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during codgin lab, and throughout all assignments and your final project. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
 
 ---
 
 # COURSE MATERIALS
 
-- All students will need access to an iClicker*
-- There is no textbook
-- All materials will be provided via the course website
-- Software: Python >3.6 (Anaconda distribution); Jupyter Notebooks
+- All materials will be provided via the [course website](https://cogs18.github.io 
+- Software: Python >=3.6 (Anaconda distribution); Jupyter Notebooks
+- iclickers will *NOT* be used this quarter
+- There is no required textbook, but Prof Ellis is developing one [here](https://shanellis.github.io/pythonbook) and is making it available to students this quarter in case it is helpful. It is still under development and for sure has errors/typos. Feedback welcome.
 
-Detailed instruction for software installations will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. If you do not have a computer available, you *will* be able to complete the course requirements on UCSD computers.
+Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. 
 
-*You will need an iclicker, of this brand, as no other brand will work with the system we are using. You must register your clicker on Canvas & bring it to lecture. If you previously registered one on Canvas & are using the same clicker in this class, you do not have to register it again. If you would rather use the REEF app, you are free to do so; however, note that if the wifi is down, the app will not work and you will not get credit for those responses.
+Note: If you do not have consistent access to the technology needed to fully access remote instruction options, please use the form below to request a loaner laptop for the period during which you will be learning remotely due to the COVID-19 pandemic: https://eforms.ucsd.edu/view.php?id=490887. (For any issues that you may have, please email vcsa@ucsd.edu and they will work to assist you.)
+
 
 ---
 
@@ -79,11 +80,10 @@ Detailed instruction for software installations will be listed on the course web
 
 |                | \% of Grade          	 | Requirement  |
 | -------------: |:-----------------------:|:-----------|
-| Assignments 	       | 35\%           | Complete 4 Assignments |
-| Exams                | 30\%           | Written in-class exams |
+| Assignments 	       | 35\%           | Complete 5 Assignments |
+| Exams                | 40\%           | Complete 2 online exams |
 | Final Project	       | 15\%           | Submit final project |
-| Coding Lab           | 10\%				    | Attend & Participate in 6 Coding Labs |
-| Lecture Attendance   | 10\%		        | Attend 75% of all lectures |
+| Coding Lab           | 10\%				    | Participate in 6 Coding Labs |
 
 **Final exam date**: No final exam, only final project deadline (Friday, 6/12 at 11:59 PM). You do not have to show up anywhere on the date of the final exam.
 
@@ -93,27 +93,49 @@ All grades will be released on Canvas. It is your responsibility to check that y
  
 ### Assignment Regrades
 
-We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, reply to the email sent with your assignment's feedback within 72 hours. This email should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
+We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post *privately* on Piazza to "Instructors" within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
 
-### Lecture Attendance (10\%)
+### Attendance
 
-Our goal is to make lecture worth your while to attend; however, lecture attendance is not technically required. If you attend 75\% of lectures (excluding the first day and exam days), you will receive 10% of credit to your grade. To receive credit for attendance, you must respond to at least 75\% of the clicker questions from that day.
+Attendance will be neither required nor incentivized for any part of the course this quarter. This policy is in place because we do not want to disadvantage students working in different time zones.
 
-However, if you prefer *not* to attend lecture or do not attend 75\% of lectures, that proportion of your grade will automatically be dedicated to your exam score, so each exam will be worth 20\% of your grade, rather than 15\%.
+While lectures and coding labs will take place during their scheduled PST times, there will be options for students to complete all work asynchronously.
+
+### Lecture
+
+Lectures will take place at their scheduled time for those who are able to attend. As typically occurs in COGS 18, students will be encouraged to follow along with the notes, will be given time to complete small coding challenges during lecture on their own, and will have the opportunity to see their classmates thoughts (via zoom polls, rather than with iclickers) during lecture.
+
+However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials.
+
 
 ### Coding Labs (10\%)
 
-Discussion section will be used as a coding lab. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 8 different coding labs (week 1 through week 9). If you attend at least 6 of these, you will receive full credit for coding labs. For each lab under 6 that you attend, 5\% credit will be deducted. (For example, if you attend 5 of 8 coding labs, you'll earn 10\% of the possible credit. If you attend 4, 5\%. If you attend 3 or fewer, you will not receive coding lab credit.) Note that to receive credit for a coding lab, you have to actually attend a section. These cannot be completed outside of section time. Week 10 is completely *optional*; attendance will *not* be taken that week.
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 6 different coding labs (week 2 through week 7). 
 
-You should be signed up for a section for which you can attend. However, if you are unable to attend the section for which you are signed up, you are free to attend a different section any given week than the one in which you're assigned. You will receive attendance credit regardless of which section you attend. Note that this policy could change if too many people are attending one section each week. We intentionally have section capped at 35 people so that students can get help from their TAs and IAs.
+Coding labs will be submitted in the same place as assignments using the same process; however, they will not be autograded for correctness. They will instead be spot-checked by instructional staff for concerted student effort. This means that if you make a concerted effort to complete at least 5 of these coding labs, you will receive full credit for coding labs. If you atempt 4 of these, you'll receive 5\% of the possible credit. If you attempt 3 or fewer, you will not receive coding lab credit.
+
+While you're encouraged to work on these during your assigned lab time in the zoom session with instructional staff present (particularly if you're struggling with the material!), you are not required to do so. To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 PM each week. 
+
+Weeks 8-10 of Coding Lab are completely *optional*. That said, these are really great times to work on your final project and to discuss your final project with instructional staff. Nothing will be submitted the final three weeks of coding lab, but you are *strongly* encouraged to login to zoom during your discussion time to brainstorm, work on, and get project-related questions answered.
+
+Note: You should be signed up for a section for which you can attend. However, if you are unable to attend the section for which you are signed up, you are free to attend a different section any given week than the one in which you're assigned. Note that this policy could change if too many people are attending one section each week. We intentionally have section capped at 35 people so that students can get help from their TAs and IAs during this time, especially now that we'll be remote this quarter.
 
 ### Assignments (35\%)
 
-There will be five assignments, each worth ~7\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on Datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Wednesy by 11:59PM. Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, feedback will be sent via e-mail and assignments will no longer be able to be submitted for credit.
+There will be five assignments, each worth ~7\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on Datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays by 11:59 PM. 
 
-### Exams (30\%)
+Late assignments will be accepted at 75\% credit for the first week after the due date. One week after the due date, feedback will be sent via e-mail and assignments will no longer be able to be submitted for credit.
 
-There will be two in-class and closed notes exams. Each is worth 15\% of your grade. You may *not* use any outside resources. The exams will be include varied question types and taken on paper.  All you need to bring on exam days is a writing utensil. The first exam will cover topics covered through the Encodings lecture. The second exam is cumulative -- in programming, you can't forget the basics when learning the more advanced topics -- but will focus heavily on the material taught from Functions I through Command Line lectures. 
+### Exams (40\%)
+
+There will be two "in-class" (read: online) exams. Each is worth 20\% of your grade. There will be a flexible time window during which students will be able to start the exam. Once started, however, the exam will be timed and you must finish the exam within the alloted time.
+
+The exams will be include varied question types and takenvirtually. The first exam will cover topics covered through the Encodings lecture. The second exam is cumulative -- in programming, you can't forget the basics when learning the more advanced topics -- but will focus heavily on the material taught from Functions I through Command Line lectures. 
+
+During exams this quarter, you *will* be allowed to consult outside resources (your  notes, Google, etc.); however, you ***must complete the exam on your own without any type of communication with other humans***. For example, while you're allowed to look something up on Google or look over your class notes, you may not ask anyone about a question or their thoughts regarding your answer. You may not text/communicate on any messaging apps about the exam with anyone. You may not take the exam while looking at someone else's exam/computer.
+
+As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's *always* a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. ::steps off soapbox::
+
 
 ### Final Project (15\%)
 
@@ -131,35 +153,34 @@ Successful completion of this class will require you to complete an independent 
 | 4/6    | 2     | 3      | M     | Variables          |                        |                         | 
 | 4/8    | 2	   | 4      | W     | Operators          |                        | CL2: Programming I      | 
 | 4/10   | 2	   | 5      | F     | Conditionals       |                        |                         | 
-| 4/13   | 3	   | 6      | M     | Collections        |                        |                         | 
-| 4/15   | 3	   | 7      | W     | Loops              | A1: Getting Started    | CL3: Programming II     | 
+| 4/13   | 3	   | 6      | M     | Collections        | A1: Getting Started    |                         | 
+| 4/15   | 3	   | 7      | W     | Loops              |                        | CL3: Programming II     | 
 | 4/17   | 3	   | 8      | F     | Encodings [*]      |                        |                         |
-| 4/20   | 4	   | 9      | M     | Functions I        |                        |                         | 
-| 4/22   | 4	   | 10     | W     | Review             | A2: Ciphers            | CL4: Algorithms & Functions | 
+| 4/20   | 4	   | 9      | M     | Functions I        | A2: Ciphers            |                         | 
+| 4/22   | 4	   | 10     | W     | Review             |                        | CL4: Algorithms & Functions | 
 | 4/24   | 4	   | --     | F     | **Exam I**         |                        |                         |
 | 4/27   | 5	   | 11     | M     | Algorithms         |                        |                         | 
 | 4/29   | 5	   | 12     | W     | Functions II       |                        | CL5: Debugging          | 
 | 5/1    | 5	   | 13     | F     | Errors + Debugging |                        |                         |
-| 5/4    | 6	   | 14     | M     | Objects            |                        |                         | 
-| 5/6    | 6	   | 15     | W     | Classes            | A3: Chatbots           | CL6: Classes            | 
+| 5/4    | 6	   | 14     | M     | Objects            | A3: Chatbots           |                         | 
+| 5/6    | 6	   | 15     | W     | Classes            |                        | CL6: Classes            | 
 | 5/8    | 6	   | 16     | F     | Namespaces         |                        |                         | 
 | 5/11   | 7	   | 17     | M     | Command Line [**]  |                        |                         | 
 | 5/13   | 7	   | 18     | W     | Review             |                        | CL7: Command Line       | 
 | 5/15   | 7	   | --     | F     | **Exam II**        |                        |                         | 
-| 5/18   | 8	   | 19     | M     | Python Party       |                        |                         | 
-| 5/20   | 8	   | 20     | W     | Open Source        | A4: Artificial Agents  | CL8: Project I          | 
+| 5/18   | 8	   | 19     | M     | Python Party       | A4: Artificial Agents  |                         | 
+| 5/20   | 8	   | 20     | W     | Open Source        |                        | CL8: Project I          | 
 | 5/22   | 8	   | 21     | F     | Documentation      |                        |                         | 
 | 5/25   | 9	   | --     | M     | **No Class**       |                        |                         | 
 | 5/27   | 9	   | 22     | W     | Code Style         |                        | CL9: Project II         | 
 | 5/29   | 9	   | 23     | F     | Code Testing       |                        |                         | 
-| 6/1    | 10	   | 24     | M     | Code Projects      |                        |                         | 
-| 6/3    | 10	   | 25     | W     | Advanced Python    | A5: Experimentation    | Optional: Code Review   | 
+| 6/1    | 10	   | 24     | M     | Code Projects      | A5: Experimentation    |                         | 
+| 6/3    | 10	   | 25     | W     | Advanced Python    |                        | CL10: Code Review   | 
 | 6/5    | 10	   | 26     | F     | Wrap Up            |                        |                         | 
 
-Notes: 
-
-* April 1st onward, all lectures (except exam days) will use iclickers.
-* [\*] denotes the last day of material covered on Exam 1. [\*\*] the last day for material on Exam 2.
+Notes:   
+[\*] denotes the last day of material covered on Exam 1.   
+[\*\*] the last day for material on Exam 2.
 
 ---
 
