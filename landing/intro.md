@@ -16,7 +16,7 @@ Introduction to Python (COGS18) is a course offered by the Department of Cogniti
 {:.text-content}
 Introduction to Python is currently running for Spring Quarter 2020, for which you can check out the current [syllabus](../assets/intro/syllabus.pdf). 
 
-Given all that is going on in the world, this course will run a bit differently than it has in the past. All material will still be available online. All lectures will be recorded and available to view when it is most convenient for students. And, flexibility will be built in throughout the course to ensure we're supporting students in their learninng while also taking into account the many issues students will be facing this quarter.
+Given all that is going on in the world, this course will run a bit differently than it has in the past. All material will still be available online. All lectures will be recorded and available to view when it is most convenient for students. And, flexibility will be built in throughout the course to ensure we're supporting students in their learning while also taking into account the additional issues students may be facing this quarter.
 
 
 {:.sub-title}
