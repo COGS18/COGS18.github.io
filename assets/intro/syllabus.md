@@ -14,6 +14,16 @@ output:
 
 ---
 
+# A NOTE ABOUT SPRING 2020
+
+This Spring 2020 quarter will be unique in many ways. While students have *always* been under a fair amount of pressure and stress, the struggles students may encounter this quarter go beyond what is typical. I want you all to know that I fully understand this. 
+
+My goal in teaching COGS 18 this quarter with remote learning is for you to all be able to focus on the course content materials and learn the material in a flexible learning environment. Attendance will be neither required nor incentivized; however, there will be regular deadlines to help keep you all on track. 
+
+While flexibility has been built in at every turn this quarter, that does not ensure this will work for all students. If you find yourself falling behind, please do reach out to Prof. Ellis. She will work as hard as necessary to ensure success for all her students this quarter in COGS 18.
+
+---
+
 # COURSE OVERVIEW
 
 Welcome to COGS 18! The core goal of this class is to teach you introductory, hands-on skills for computer programming, specifically using the Python programming language. We aim to do so in a way that fits well within the cognitive science department, using particularly-relevant use cases. Our approach is to focus on programming as a tool and to get you started with the necessary background and basic skills required to get you reading and writing code. We aim to provide you with a strong foundation so that you can continue programming after you leave this class, applying the skills you learn here to your domain or topic of interest.
@@ -25,18 +35,18 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
 **Instructor Office Hours**: Friday, 11AM -1PM (zoom: TBD)  
 
-| Role        | Name          					   | Section  | Office Hours |
-| -------------: |:--------------------------------------------|:-----------|:-----------|
-| TA             | Annie	Bhattacharya  	 | TBD   | TBD |
-| TA 	           | Mudit	Jain             | TBD   | TBD |
-| TA 	           | Ashlesha Vaidya         | TBD   | TBD |
-| TA 	           | TBD                     | TBD   | TBD |
-| IA	           | Melody	Wong             | TBD   | --  |
-| IA	           | Jitarth	Sheth          | TBD   | --  |
-| IA	           | Fidella	Wu             | TBD   | --  |
-| IA	           | AP	Nguyen               | TBD   | --  |
-| IA	           | Griffin	Goldberg       | TBD   | --  |
-| IA	           | Geoff	Lizar            | TBD   | Fri 9-11 AM () |
+| Role           | Name          					 | Section           | Office Hours |
+| -------------: |:------------------------|:------------------|:-------------|
+| TA             | Annie	Bhattacharya  	 | 1 PM; 2 PM        | Mon 12-1 PM  |
+| TA 	           | Mudit	Jain             | 9 AM; 10 AM       | TBD          |
+| TA 	           | Ashlesha Vaidya         | 4 PM; 5 PM        | TBD          |
+| TA 	           | Paul Ian Cabasag        | 4 PM; 5 PM        | Mon 3-4 PM   |
+| IA	           | Melody	Wong             | 11 AM; 12 PM      | Mon 1-3 PM   |
+| IA	           | Jitarth	Sheth          | 12 PM; 3 PM       | Fri 3-5 PM   |
+| IA	           | Fidella	Wu             | 3 PM              | Fri 1-2 PM   |
+| IA	           | AP	Nguyen               | 11 AM             | --           |
+| IA	           | Griffin	Goldberg       | 1PM; 2 PM         | Mon 12-1 PM  |
+| IA	           | Geoff	Lizar            | 9 AM; 10 AM       | Fri 9-11 AM  |
 
 Course Website: https://cogs18.github.io   
 Course Piazza*: http://piazza.com/ucsd/spring2020/cogs18  
@@ -93,7 +103,7 @@ All grades will be released on Canvas. It is your responsibility to check that y
  
 ### Assignment Regrades
 
-We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post *privately* on Piazza to "Instructors" within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
+We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post *privately* on Piazza to "Instructors" using the "regrades" tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
 
 ### Attendance
 
@@ -105,12 +115,11 @@ While lectures and coding labs will take place during their scheduled PST times,
 
 Lectures will take place at their scheduled time for those who are able to attend. As typically occurs in COGS 18, students will be encouraged to follow along with the notes, will be given time to complete small coding challenges during lecture on their own, and will have the opportunity to see their classmates thoughts (via zoom polls, rather than with iclickers) during lecture.
 
-However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials.
-
+However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials. If a lecture recording ever fails during class, Prof Ellis will re-record a lecture, ensuring all students have access to the material.
 
 ### Coding Labs (10\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 6 different coding labs (week 2 through week 7). 
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 7 different coding labs (week 1 through week 7). 
 
 Coding labs will be submitted in the same place as assignments using the same process; however, they will not be autograded for correctness. They will instead be spot-checked by instructional staff for concerted student effort. This means that if you make a concerted effort to complete at least 5 of these coding labs, you will receive full credit for coding labs. If you atempt 4 of these, you'll receive 5\% of the possible credit. If you attempt 3 or fewer, you will not receive coding lab credit.
 
@@ -169,13 +178,13 @@ Successful completion of this class will require you to complete an independent 
 | 5/13   | 7	   | 18     | W     | Review             |                        | CL7: Command Line       | 
 | 5/15   | 7	   | --     | F     | **Exam II**        |                        |                         | 
 | 5/18   | 8	   | 19     | M     | Python Party       | A4: Artificial Agents  |                         | 
-| 5/20   | 8	   | 20     | W     | Open Source        |                        | CL8: Project I          | 
+| 5/20   | 8	   | 20     | W     | Open Source        |                        | CL8: Project I (opt.)          | 
 | 5/22   | 8	   | 21     | F     | Documentation      |                        |                         | 
 | 5/25   | 9	   | --     | M     | **No Class**       |                        |                         | 
-| 5/27   | 9	   | 22     | W     | Code Style         |                        | CL9: Project II         | 
+| 5/27   | 9	   | 22     | W     | Code Style         |                        | CL9: Project II (opt.)        | 
 | 5/29   | 9	   | 23     | F     | Code Testing       |                        |                         | 
 | 6/1    | 10	   | 24     | M     | Code Projects      | A5: Experimentation    |                         | 
-| 6/3    | 10	   | 25     | W     | Advanced Python    |                        | CL10: Code Review   | 
+| 6/3    | 10	   | 25     | W     | Advanced Python    |                        | CL10: Code Review (opt.)   | 
 | 6/5    | 10	   | 26     | F     | Wrap Up            |                        |                         | 
 
 Notes:   
