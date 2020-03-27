@@ -19,20 +19,20 @@ Shannon Ellis
 **Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fall 2018, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
 
 
-The PDF slides from the start of the first class are available here: https://cogs18.github.io/assets/intro/01_welcome.pdf
+The PDF slides from the start of the first class are available here: https://cogs18.github.io/assets/intro/01_welcome_Sp20.pdf
 
 # Logistics
 
 - Who:
     - Instructor: Shannon Ellis 
-    - TAs: TBD
-    - IAs: TBD
+    - TAs: Annie, Ashlesha, Mudit, Paul
+    - IAs: AP, Fidella, Geoff, Griffin, Jitarth, Melody
     
 - Where:
-    - Lectures MWF @ 8 AM (Price Center Theater)
-    - Coding Lab Sections (Wed CSB 115)
+    - Lectures MWF @ 8 AM (remote)
+    - Coding Lab Sections (Wed)
     - Course Website: https://cogs18.github.io
-    - Piazza Page: https://piazza.com/ucsd/winter2019/cogs18
+    - Piazza Page: https://piazza.com/ucsd/spring2020/cogs18
 
 # Expectations & Approach
 
