@@ -134,13 +134,13 @@
 #     not_numbered: true
 
 
-- title: Coding Labs
-  url: /labs/CL1-Tooling
-  not_numbered: true
-  sections:
-  - title: CL1-Tooling
-    url: /labs/CL1-Tooling
-    not_numbered: true
+# - title: Coding Labs
+#   url: /labs/CL1-Tooling
+#   not_numbered: true
+#   sections:
+#   - title: CL1-Tooling
+#     url: /labs/CL1-Tooling
+#     not_numbered: true
   # - title: CL2-ProgrammingI
   #   url: /labs/CL2-ProgrammingI
   #   not_numbered: true
