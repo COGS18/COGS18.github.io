@@ -39,10 +39,10 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 | -------------: |:------------------------|:------------------|:-------------|
 | TA             | Annie	Bhattacharya  	 | 1 PM; 2 PM        | Mon 12-1 PM  |
 | TA 	           | Mudit	Jain             | 9 AM; 10 AM       | TBD          |
-| TA 	           | Ashlesha Vaidya         | 4 PM; 5 PM        | TBD          |
+| TA 	           | Ashlesha Vaidya         | 4 PM; 5 PM        | Fri 3-4 PM   |
 | TA 	           | Paul Ian Cabasag        | 4 PM; 5 PM        | Mon 3-4 PM   |
-| IA	           | Melody	Wong             | 11 AM; 12 PM      | Mon 1-3 PM   |
-| IA	           | Jitarth	Sheth          | 12 PM; 3 PM       | Fri 3-5 PM   |
+| IA	           | Melody	Wong             | 11 AM; 12 PM      | Mon 1-2 PM   |
+| IA	           | Jitarth	Sheth          | 12 PM; 3 PM       | Fri 3-4 PM   |
 | IA	           | Fidella	Wu             | 3 PM              | Fri 1-2 PM   |
 | IA	           | AP	Nguyen               | 11 AM             | --           |
 | IA	           | Griffin	Goldberg       | 1PM; 2 PM         | Mon 12-1 PM  |
