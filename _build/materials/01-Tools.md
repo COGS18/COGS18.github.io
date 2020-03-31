@@ -27,8 +27,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - Videos availabe via Media Gallery on Canvas
     - will be posted by noon every MWF
 
-Clicker Question #1
----
+#### Clicker Question #1
 
 **How excited are you for COGS 18?**
 
@@ -37,8 +36,7 @@ B. The most excited!
 C. Couldn't be more excited!  
 D. I love 8AM classes!  
 
-Clicker Question #2
----
+#### Clicker Question #2
 
 **What is your current state with regards to datahub?**
 
@@ -47,8 +45,7 @@ B. Have tried to access datahub unsuccessfully
 C. Have accessed datahub successfully  
 D. What is this datahub you speak of?  
 
-Clicker Question #3
----
+#### Clicker Question #3
 
 **Do you have the Anaconda distribution of Python downloaded on your computer?**
 
@@ -62,7 +59,7 @@ E. I'm going to work to download it in CodingLab.
 
 This notebook will guide through the tools you will need for class materials and assignments, and how to get them. 
 
-## Prerequisites
+### Prerequisites
 
 This course and associated materials do not presume any prior knowledge of Python, or programming in general. 
 
@@ -120,7 +117,7 @@ Conda documentation is available
 <a href="https://conda.io/docs/" class="alert-link">here</a>.
 </div>
 
-### The Anaconda Ecosystem
+## The Anaconda Ecosystem
 
 - Anaconda itself is a distribution - that is, a copy of the Python standard library, included a curated collection of external packages.
 - Conda is a package manager, allowing you to download, install, and manage other packages. 
@@ -146,8 +143,8 @@ Download anaconda from
 <a href="https://www.anaconda.com/download/" class="alert-link">here</a>.
 </div>
 
-Notes
------
+### Notes
+s
 - If you are on Mac, you have a native installation of Python. This native installation of Python may be older, will not include the extra packages that you will need for this class, and is best left untouched. 
     - Downloading anaconda will install a separate, independent install of Python, leaving your native install untouched. 
 - Windows does not require Python natively and so it is not typically pre-installed. 

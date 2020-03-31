@@ -42,7 +42,7 @@ To get a quick tour of the Jupyter user-interface, click on the 'Help' menu, the
 
 There are also a large number of useful keyboard shortcuts. Click on the 'Help' menu, and then 'Keyboard Shortcuts' to see a list. 
 
-### Cells
+## Cells
 
 <div class="alert alert-success">
 The main organizational structure of the notebook are 'cells'.
@@ -75,7 +75,7 @@ Bold text requires __two underccores__ or **two asterisks**.
 you can write your markdown text here to determine the answer to the question
 
 
----
+### Markdown Headers
 
 # Headers are specified with a pound sign
 
@@ -152,8 +152,8 @@ c
     - An asterisk (*) means that the cell is currently running
     - You do not need to run cells in order! This is useful for flexibly testing and developing code. 
 
-Coding time
----
+## Coding time
+
 
 Write code that outputs the value '6'
 
