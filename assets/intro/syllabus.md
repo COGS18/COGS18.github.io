@@ -5,12 +5,8 @@ output:
 
 # COGS 18: Introduction to Python
 
-**This is a DRAFT and is subject to change. Syllabus will be finalized during the first week of the quarter.**
-
-
-**Spring 2020**
+**Spring 2020**  
 **MWF 8-8:50 (remote)**  
-
 
 ---
 
@@ -38,7 +34,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 | Role           | Name          					 | Section           | Office Hours |
 | -------------: |:------------------------|:------------------|:-------------|
 | TA             | Annie	Bhattacharya  	 | 1 PM; 2 PM        | Mon 12-1 PM  |
-| TA 	           | Mudit	Jain             | 9 AM; 10 AM       | TBD          |
+| TA 	           | Mudit	Jain             | 9 AM; 10 AM       | --           |
 | TA 	           | Ashlesha Vaidya         | 4 PM; 5 PM        | Fri 3-4 PM   |
 | TA 	           | Paul Ian Cabasag        | 4 PM; 5 PM        | Mon 3-4 PM   |
 | IA	           | Melody	Wong             | 11 AM; 12 PM      | Mon 1-2 PM   |
@@ -75,7 +71,7 @@ To achieve these objectives, information will be presented during lecture. You w
 - All materials will be provided via the [course website](https://cogs18.github.io 
 - Software: Python >=3.6 (Anaconda distribution); Jupyter Notebooks
 - iclickers will *NOT* be used this quarter
-- There is no required textbook, but Prof Ellis is developing one [here](https://shanellis.github.io/pythonbook) and is making it available to students this quarter in case it is helpful. It is still under development and for sure has errors/typos. Feedback welcome.
+- No required testbook; optional textbook: https://shanellis.github.io/pythonbook (currently under development; feedback welcome)
 
 Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. 
 
