@@ -41,12 +41,12 @@ textbook:
 	# rm content/assignments/README.md
 
 	# Copy & build coding labs
-	git clone --depth 1 https://github.com/COGS18/codinglabs content/labs
-	rm content/labs/README.md
+	# git clone --depth 1 https://github.com/COGS18/codinglabs content/labs
+	# rm content/labs/README.md
 
 	# Copy & build project info
-	git clone --depth 1 https://github.com/COGS18/projects content/projects
-	rm content/projects/README.md
+	# git clone --depth 1 https://github.com/COGS18/projects content/projects
+	# rm content/projects/README.md
 
 	python scripts/generate_book.py
 

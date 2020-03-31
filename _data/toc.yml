@@ -24,12 +24,12 @@
   - title: 00-Introduction
     url: /materials/00-Introduction
     not_numbered: true
-  # - title: 01-Tools
-  #   url: /materials/01-Tools
-  #   not_numbered: true
-  # - title: 02-JupyterNotebooks
-  #   url: /materials/02-JupyterNotebooks
-  #   not_numbered: true
+  - title: 01-Tools
+    url: /materials/01-Tools
+    not_numbered: true
+  - title: 02-JupyterNotebooks
+    url: /materials/02-JupyterNotebooks
+    not_numbered: true
   # - title: 03-Variables
   #   url: /materials/03-Variables
   #   not_numbered: true
