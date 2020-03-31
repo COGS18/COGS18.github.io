@@ -27,7 +27,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - Videos availabe via Media Gallery on Canvas
     - will be posted by noon every MWF
 
-#### Clicker Question #1
+Clicker Question #1
+---
 
 **How excited are you for COGS 18?**
 
@@ -36,7 +37,8 @@ B. The most excited!
 C. Couldn't be more excited!  
 D. I love 8AM classes!  
 
-#### Clicker Question #2
+Clicker Question #2
+---
 
 **What is your current state with regards to datahub?**
 
@@ -45,7 +47,8 @@ B. Have tried to access datahub unsuccessfully
 C. Have accessed datahub successfully  
 D. What is this datahub you speak of?  
 
-#### Clicker Question #3
+Clicker Question #3
+---
 
 **Do you have the Anaconda distribution of Python downloaded on your computer?**
 
@@ -55,7 +58,7 @@ C. I have not yet tried.
 D. I'm going to use my own Python distribution.  
 E. I'm going to work to download it in CodingLab.
 
-# Tools
+## Tools
 
 This notebook will guide through the tools you will need for class materials and assignments, and how to get them. 
 
@@ -87,7 +90,7 @@ Python is a programming language, whose development is led by the Python Softwar
 The official Python organization website is available <a href="https://www.python.org" class="alert-link">here</a>.
 </div>
 
-### Python
+## Python
 
 - Versions: there are different versions of Python.
     - We will be using 3.6 and/or 3.7
@@ -117,7 +120,7 @@ Conda documentation is available
 <a href="https://conda.io/docs/" class="alert-link">here</a>.
 </div>
 
-## The Anaconda Ecosystem
+### The Anaconda Ecosystem
 
 - Anaconda itself is a distribution - that is, a copy of the Python standard library, included a curated collection of external packages.
 - Conda is a package manager, allowing you to download, install, and manage other packages. 
@@ -134,7 +137,7 @@ The official Jupyter website is available
 <a href="http://jupyter.org" class="alert-link">here</a>.
 </div>
 
-## Installation
+### Installation
 
 You only need access to datahub for this course, but for working on your projects and for downloading and opening the notebooks used in class, you may want to download anaconda onto your computer, which comes complete with conda, and Jupyter notebooks.
 
@@ -162,7 +165,7 @@ Notes
 ```
 
 
-### JupyterHub
+## JupyterHub
 
 <div class="alert alert-success">
 JupyterHub allows Jupyter notebooks to be shared across multiple users.

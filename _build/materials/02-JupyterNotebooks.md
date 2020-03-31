@@ -35,7 +35,8 @@ and they also have some example notebooks
 .
 </div>
 
-## Menu Options & Shortcuts
+Menu Options & Shortcuts
+---
 
 To get a quick tour of the Jupyter user-interface, click on the 'Help' menu, then click 'User Interface Tour'.
 
@@ -73,6 +74,8 @@ Bold text requires __two underccores__ or **two asterisks**.
 
 you can write your markdown text here to determine the answer to the question
 
+
+---
 
 # Headers are specified with a pound sign
 
@@ -149,7 +152,8 @@ c
     - An asterisk (*) means that the cell is currently running
     - You do not need to run cells in order! This is useful for flexibly testing and developing code. 
 
-# Coding time
+Coding time
+---
 
 Write code that outputs the value '6'
 
@@ -229,174 +233,12 @@ That local connection is to the 'kernel'.
 ## Kernels
 
 <div class="alert alert-success">
-The 'kernel' is the thing that executes your code. It is what connects the notebook (as you see it) with the part of your computer that runs code. 
+The <b>kernel</b> is the thing that executes your code. It is what connects the notebook (as you see it) with the part of your computer that runs code. 
 </div>
 
 Your kernel also stores your **namespace** - all the variables and code that you have declared (executed). 
 
 It can be useful to clear and re-launch the kernel. You can do this from the 'kernel' drop down menu, at the top, optionally also clearing all ouputs. Note that this will erase any variables that are stored in memory. 
-
-# Working with Variables
-
-
-
-{:.input_area}
-```python
-a = 6
-```
-
-
-
-
-{:.input_area}
-```python
-a = 'string'
-```
-
-
-
-
-{:.input_area}
-```python
-print(a)
-```
-
-
-#### Clicker Question #6
-
-**What is the value of `a`?**
-
-- A) 6
-- B) 'string'
-- C) '6'
-- D) 6 + 'string' 
-
-
-
-{:.input_area}
-```python
-a = 6 
-```
-
-
-
-
-{:.input_area}
-```python
-print(a)
-```
-
-
-#### Clicker Question #7
-
-**What is the value of `a`?**
-
-- A) 6
-- B) 'string'
-- C) '6'
-- D) 6 + 'string' 
-
-## Programming With Python
-
-Programming: a way to ask computer to store values (variables), and do things with them (operations).`
-
-
-
-{:.input_area}
-```python
-# This is a comment. You can write a comment by using a `#`
-my_variable = 12 
-
-my_other_variable = 13 # Comments can be 'inline', like this one
-```
-
-
-## Defining Variables
-
-<div class="alert alert-success">
-In programming, variables are things that store values. Variables are defined with `name = value`.
-</div>
-
-
-
-{:.input_area}
-```python
-my_var = 1  # `my_var` is a variable
-
-# This defines another variable
-other_var = 'variables are cool'
-
-```
-
-
-
-
-{:.input_area}
-```python
-# once you create a variable it's stored in your namespace
-my_variable
-
-```
-
-
-## Code Variables != Math Variables
-
-In mathematics: `=` refers to equality (as a statement of truth).
-
-In coding: `=` refers to assignment. 
-
-Math: What is x?
-
-y = 10x + 2
-
-Code: What is x?
-
-`x = x + 1`
-
-#### Clicker Question #8
-
-After executing the following code, what will be the value of `my_var`?
-
-
-
-{:.input_area}
-```python
-my_var = 2 
-
-my_var = my_var + 1
-
-print(my_var)
-```
-
-
-- A) 2
-- B) 3
-- C) "my_var + 1"
-- D) This code will fail
-
-#### Clicker Question #9
-
-After executing the following code, what will be the value of `diff_var`?
-
-
-
-{:.input_area}
-```python
-diff_var = my_variable - my_var
-
-print(diff_var)
-```
-
-
-- A) 4
-- B) 9
-- C) "my_variable - my_var"
-- D) This code will fail
-
-### Reminder
-
-- In programming `=` means assignment
-- Anything to the right of the `=` is evaluated before assignment
 
 <div class="alert alert-info">
 For more useful information, check out Jupyter Notebooks 
