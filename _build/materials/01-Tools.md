@@ -12,26 +12,31 @@ next_page:
   title: '02-JupyterNotebooks'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+<div class="alert alert-danger">
+  <strong>Reminder:</strong> All lectures for COGS 18 are being recorded.
+</div>
+
 # COGS 18 Announcements
 
-- Coding Labs start Wednesday
-    - must attend 6 of the next 9 weeks
-    - Attendance will be taken toward the end of section
-    - A few minutes late is understandable
+- Coding Labs start/due today!
+    - must submit 5 of the first 7 weeks (Weeks 8-10 are project-focused)
 - I have no control over the waitlist
 - Survey completed by Friday (11:59 PM) for EC
-    - http://bit.ly/cogs18_survey_fa19
+    - http://bit.ly/cogs18_survey_sp20
+    - thanks to all who have already completed
+- Videos availabe via Media Gallery on Canvas
+    - will be posted by noon every MWF
 
-### Clicker Question #1
+#### Clicker Question #1
 
 **How excited are you for COGS 18?**
 
 A. Super excited!  
 B. The most excited!  
 C. Couldn't be more excited!  
-D. I love 9AM classes!  
+D. I love 8AM classes!  
 
-### Clicker Question #2
+#### Clicker Question #2
 
 **What is your current state with regards to datahub?**
 
@@ -40,7 +45,7 @@ B. Have tried to access datahub unsuccessfully
 C. Have accessed datahub successfully  
 D. What is this datahub you speak of?  
 
-### Clicker Question #3
+#### Clicker Question #3
 
 **Do you have the Anaconda distribution of Python downloaded on your computer?**
 
@@ -64,12 +69,13 @@ It will be helpful for the final project if they are also installed on the compu
 
 None of the materials are computationally heavy. 
 
-## What do you need?
+### What do you need?
 
-- [datahub](http://datahub.ucsd.edu) 
+- Access to datahub
 - Python: Working install of python 3.6 or 3.7 (suggested)
-    - We will be using the anaconda distribution
+    - We will be using the Anaconda distribution
 - Jupyter Notebooks (suggested)
+
 
 <center><img src="img/python.png" width="450px"></center>
 
@@ -81,7 +87,7 @@ Python is a programming language, whose development is led by the Python Softwar
 The official Python organization website is available <a href="https://www.python.org" class="alert-link">here</a>.
 </div>
 
-## Python
+### Python
 
 - Versions: there are different versions of Python.
     - We will be using 3.6 and/or 3.7
@@ -156,12 +162,62 @@ Notes
 ```
 
 
-{:.output_stream}
-```
-/anaconda3/bin/python
-Python 3.6.8 :: Anaconda, Inc.
+### JupyterHub
 
-```
+<div class="alert alert-success">
+JupyterHub allows Jupyter notebooks to be shared across multiple users.
+</div>
+
+<div class="alert alert-info">
+The official JupyterHub website is available 
+<a href="https://jupyterhub.readthedocs.io/en/stable/" class="alert-link">here</a>.
+</div>
+
+
+### Datahub
+
+UCSD hosts its version of JupyterHub and calls it datahub. This is what you'll be using in class.
+
+It is available here: http://datahub.ucsd.edu
+
+<center><img src="img/datahub.png" width="800px"></center>
+
+### When to use Datahub?
+
+- CodingLabs
+- Assignments
+- Course Lecture Slides
+
+#### Lecture Slides:
+
+Once you've logged into datahub, paste the following in your browser:
+
+https://datahub.ucsd.edu/hub/user-redirect/git-sync?repo=https://github.com/COGS18/LectureNotes-Sp20
+
+#### CodingLabs & Assignments:
+- Fetch & complete on datahub
+- do not change file names
+- do not copy cells provided
+- adding cells *is* allowed!
+- `print()` statements encouraged
+
+- For Submission:
+    - Before you click submit, make sure it's the thing you want to submit
+    - You ***must click submit***.
+
+    - Always check that the CodingLab/Assignment shows up under "submitted assingments"
+    - You can submit as many times as you want
+    - We only have access to your most recent submission
+    - If you submit past the deadline, we will only have access to your late submission
+
+### A note about: Timezones
+
+- Due Dates are in UTC
+- All deadlines are 11:59 PM PST
+
+![Timezones](img/Timezones.png)
+
+TimeZones: https://www.timeanddate.com/time/map/
 
 
 <center><img src="img/doing_it_right.png" width="900px"></center>

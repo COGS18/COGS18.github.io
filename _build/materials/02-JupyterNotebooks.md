@@ -12,14 +12,9 @@ next_page:
   title: ''
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-# COGS 18 Announcements
-
-- Open up Datahub to get started with today
-    - if you want to add to today's notes, download from the course website
-    - upload file into Datahub
-- Coding Labs start today!
-- Survey completed by Friday (11:59 PM) for EC
-    - http://bit.ly/cogs18_survey_fa19
+<div class="alert alert-danger">
+  <strong>Reminder:</strong> All lectures for COGS 18 are being recorded.
+</div>
 
 # Jupyter Notebooks
 
@@ -27,17 +22,6 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - code cells
 - kernel
 - variables
-
-Note: We started this notebook on 9/30. Will review and finish on Wed 10/2.
-
-### Clicker Question #1
-
-**How excited are you for COGS 18?**
-
-A. Super excited!  
-B. The most excited!  
-C. Couldn't be more excited!  
-D. I love 9AM classes!  
 
 <div class="alert alert-success">
 Jupyter notebooks are a way to combine executable code, code outputs, and text into one connected file.
@@ -57,7 +41,7 @@ To get a quick tour of the Jupyter user-interface, click on the 'Help' menu, the
 
 There are also a large number of useful keyboard shortcuts. Click on the 'Help' menu, and then 'Keyboard Shortcuts' to see a list. 
 
-## Cells
+### Cells
 
 <div class="alert alert-success">
 The main organizational structure of the notebook are 'cells'.
@@ -77,9 +61,9 @@ For example, italicized text can be specified with an _underscore_ or *single as
 
 Bold text requires __two underccores__ or **two asterisks**.
 
-### Clicker Question #2
+#### Clicker Question #2
 
-**Which does three underscores around text accomplish?**
+**What does three underscores around text accomplish?**
 
 - A) bold
 - B) italicize
@@ -88,8 +72,6 @@ Bold text requires __two underccores__ or **two asterisks**.
 - E) I'm lost
 
 you can write your markdown text here to determine the answer to the question
-
-___my text___
 
 
 # Headers are specified with a pound sign
@@ -112,7 +94,7 @@ Lists are also possible:
 2. item 2
 3. item 3
 
-### Clicker Question #3
+#### Clicker Question #3
 
 **What would happen if I specified a numbered list but put the same number before each list item?**
 
@@ -124,9 +106,9 @@ Lists are also possible:
 
 test it out down here to see...
 
-1. list item
-1. list item 
-1. list item
+list item
+list item 
+list item
 
 ### Code Cells
 
@@ -152,12 +134,6 @@ print(c)
 ```
 
 
-{:.output_stream}
-```
--1
-
-```
-
 
 
 {:.input_area}
@@ -165,16 +141,6 @@ print(c)
 # If you execute a cell with just a variable name in it, it will also get printed
 c
 ```
-
-
-
-
-
-{:.output_data_text}
-```
--1
-```
-
 
 
 ### Running Cells
@@ -201,23 +167,7 @@ c
 ```
 
 
-{:.output_stream}
-```
-0.5
-
-```
-
-
-
-
-{:.output_data_text}
-```
-6.0
-```
-
-
-
-### Clicker Question #5
+#### Clicker Question #5
 
 **Which of the following best describes you?**
 
@@ -245,7 +195,7 @@ abs?
 <div class="alert alert-success">
 Jupyter also has 
 <a href="https://en.wikipedia.org/wiki/Command-line_completion" class="alert-link">tab complete</a>
-capacities, which can autocomplete what you are typing, and/or be used to explore what code is available.  
+capacities, which can autocomplete what you are typing, and/or be used to explore what code is available. (<i>Note</i>: Some of this functionality is limited on datahub.)
 </div>
 
 
@@ -312,13 +262,7 @@ print(a)
 ```
 
 
-{:.output_stream}
-```
-string
-
-```
-
-### Clicker Question #6
+#### Clicker Question #6
 
 **What is the value of `a`?**
 
@@ -343,13 +287,7 @@ print(a)
 ```
 
 
-{:.output_stream}
-```
-string
-
-```
-
-### Clicker Question #7
+#### Clicker Question #7
 
 **What is the value of `a`?**
 
@@ -401,31 +339,6 @@ my_variable
 ```
 
 
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-20-aa4484528f38> in <module>()
-      1 # once you create a variable it's stored in your namespace
-----> 2 my_variable
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'my_variable' is not defined
-```
-
-
 ## Code Variables != Math Variables
 
 In mathematics: `=` refers to equality (as a statement of truth).
@@ -440,7 +353,7 @@ Code: What is x?
 
 `x = x + 1`
 
-### Clicker Question #8
+#### Clicker Question #8
 
 After executing the following code, what will be the value of `my_var`?
 
@@ -456,18 +369,12 @@ print(my_var)
 ```
 
 
-{:.output_stream}
-```
-3
-
-```
-
 - A) 2
 - B) 3
 - C) "my_var + 1"
 - D) This code will fail
 
-### Clicker Question #9
+#### Clicker Question #9
 
 After executing the following code, what will be the value of `diff_var`?
 
@@ -481,53 +388,8 @@ print(diff_var)
 ```
 
 
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-NameError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-25-e735f6cf7bfd> in <module>()
-----> 1 diff_var = my_variable - my_var
-      2 
-      3 print(diff_var)
-
-```
-
-{:.output_traceback_line}
-```
-NameError: name 'my_variable' is not defined
-```
-
-
 - A) 4
 - B) 9
-- C) "my_variable - my_var"
-- D) This code will fail
-
-### Clicker Question #10
-
-After executing the following code, what will be the value of `my_var`?
-
-
-
-{:.input_area}
-```python
-diff_var = my_variable - my_var
-
-pring(diff_var)
-```
-
-
-- A) 4
-- B) 11
 - C) "my_variable - my_var"
 - D) This code will fail
 
