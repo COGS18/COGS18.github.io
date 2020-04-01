@@ -62,7 +62,7 @@ Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF
 - Execute Python programs on your local computer, using notebooks and the command line
 - Describe and implement best practices in Python, keeping in mind that programming is done by and for humans
 
-To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during codgin lab, and throughout all assignments and your final project. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
+To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during coding lab, and throughout all assignments and your final project. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
 
 ---
 
@@ -71,7 +71,7 @@ To achieve these objectives, information will be presented during lecture. You w
 - All materials will be provided via the [course website](https://cogs18.github.io 
 - Software: Python >=3.6 (Anaconda distribution); Jupyter Notebooks
 - iclickers will *NOT* be used this quarter
-- No required testbook; optional textbook: https://shanellis.github.io/pythonbook (currently under development; feedback welcome)
+- No required textbook; optional textbook: https://shanellis.github.io/pythonbook (currently under development; feedback welcome)
 
 Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. 
 
@@ -89,7 +89,7 @@ Note: If you do not have consistent access to the technology needed to fully acc
 | Assignments 	       | 35\%           | Complete 5 Assignments |
 | Exams                | 40\%           | Complete 2 online exams |
 | Final Project	       | 15\%           | Submit final project |
-| Coding Lab           | 10\%				    | Participate in 6 Coding Labs |
+| Coding Lab           | 10\%				    | Participate in 5 Coding Labs |
 
 **Final exam date**: No final exam, only final project deadline (Friday, 6/12 at 11:59 PM). You do not have to show up anywhere on the date of the final exam.
 
@@ -117,7 +117,7 @@ However, every lecture will also be recorded and shared so that students who are
 
 Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 7 different coding labs (week 1 through week 7). 
 
-Coding labs will be submitted in the same place as assignments using the same process; however, they will not be autograded for correctness. They will instead be spot-checked by instructional staff for concerted student effort. This means that if you make a concerted effort to complete at least 5 of these coding labs, you will receive full credit for coding labs. If you atempt 4 of these, you'll receive 5\% of the possible credit. If you attempt 3 or fewer, you will not receive coding lab credit.
+Coding labs will be submitted in the same place as assignments using the same process; however, they will not be autograded for correctness. They will instead be spot-checked by instructional staff for concerted student effort. This means that if you make a concerted effort to complete at least 5 of these coding labs, you will receive full credit for coding labs. If you attempt 4 of these, you'll receive 5\% of the possible credit. If you attempt 3 or fewer, you will not receive coding lab credit.
 
 While you're encouraged to work on these during your assigned lab time in the zoom session with instructional staff present (particularly if you're struggling with the material!), you are not required to do so. To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 PM each week. 
 
@@ -133,9 +133,9 @@ Late assignments will be accepted at 75\% credit for the first week after the du
 
 ### Exams (40\%)
 
-There will be two "in-class" (read: online) exams. Each is worth 20\% of your grade. There will be a flexible time window during which students will be able to start the exam. Once started, however, the exam will be timed and you must finish the exam within the alloted time.
+There will be two "in-class" (read: online) exams. Each is worth 20\% of your grade. There will be a flexible time window during which students will be able to start the exam. Once started, however, the exam will be timed and you must finish the exam within the allotted time.
 
-The exams will be include varied question types and takenvirtually. The first exam will cover topics covered through the Encodings lecture. The second exam is cumulative -- in programming, you can't forget the basics when learning the more advanced topics -- but will focus heavily on the material taught from Functions I through Command Line lectures. 
+The exams will be include varied question types and taken virtually. The first exam will cover topics covered through the Encodings lecture. The second exam is cumulative -- in programming, you can't forget the basics when learning the more advanced topics -- but will focus heavily on the material taught from Functions I through Command Line lectures. 
 
 During exams this quarter, you *will* be allowed to consult outside resources (your  notes, Google, etc.); however, you ***must complete the exam on your own without any type of communication with other humans***. For example, while you're allowed to look something up on Google or look over your class notes, you may not ask anyone about a question or their thoughts regarding your answer. You may not text/communicate on any messaging apps about the exam with anyone. You may not take the exam while looking at someone else's exam/computer.
 
@@ -213,7 +213,7 @@ If you have a concern, please speak with Dr. Ellis, your TAs, or IAs. If you are
 
 Don't cheat.
 
-You are encouraged to work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is your responsibility to ensure you understand everything you've submitted and to make sure the correct file has been sumitted and that the submission is uncorrupted. Projects may include ideas and code from other sources, but these other sources must be documented with clear attribution. Please review academic integrity policies [here](http://academicintegrity.ucsd.edu).
+You are encouraged to work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is your responsibility to ensure you understand everything you've submitted and to make sure the correct file has been submitted and that the submission is uncorrupted. Projects may include ideas and code from other sources, but these other sources must be documented with clear attribution. Please review academic integrity policies [here](http://academicintegrity.ucsd.edu).
 
 Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, Canvas or DataHub is down or something else prohibits you from being able to turn in an assignment on time, immediately contact Professor Ellis by emailing your assignment (sellis@ucsd.edu), or else it will be graded as late.
 
