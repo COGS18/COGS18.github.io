@@ -31,7 +31,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
 **Instructor Office Hours**: Friday, 11AM -1PM (zoom: TBD)  
 
-| Role           | Name          					 | Section           | Office Hours |
+| Role           | Name          					 | CodingLab         | Office Hours |
 | -------------: |:------------------------|:------------------|:-------------|
 | TA             | Annie	Bhattacharya  	 | 1 PM; 2 PM        | Mon 12-1 PM  |
 | TA 	           | Mudit	Jain             | 9 AM; 10 AM       | --           |
@@ -45,6 +45,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 | IA	           | Geoff	Lizar            | 9 AM; 10 AM       | Fri 9-11 AM  |
 
 Course Website: https://cogs18.github.io   
+Canvas Course: https://canvas.ucsd.edu/courses/12653
 Course Piazza*: http://piazza.com/ucsd/spring2020/cogs18  
 Assignment Submission: https://datahub.ucsd.edu  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
@@ -111,7 +112,7 @@ While lectures and coding labs will take place during their scheduled PST times,
 
 Lectures will take place at their scheduled time for those who are able to attend. As typically occurs in COGS 18, students will be encouraged to follow along with the notes, will be given time to complete small coding challenges during lecture on their own, and will have the opportunity to see their classmates thoughts (via zoom polls, rather than with iclickers) during lecture.
 
-However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials. If a lecture recording ever fails during class, Prof Ellis will re-record a lecture, ensuring all students have access to the material.
+However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials. If a lecture recording ever fails during class, Prof Ellis will re-record a lecture, ensuring all students have access to the material. Lecture recordings will be available on Canvas in the Media Gallery by noon the day each MWF after the live lecture is delivered.
 
 ### Coding Labs (10\%)
 
@@ -123,7 +124,7 @@ While you're encouraged to work on these during your assigned lab time in the zo
 
 Weeks 8-10 of Coding Lab are completely *optional*. That said, these are really great times to work on your final project and to discuss your final project with instructional staff. Nothing will be submitted the final three weeks of coding lab, but you are *strongly* encouraged to login to zoom during your discussion time to brainstorm, work on, and get project-related questions answered.
 
-Note: You should be signed up for a section for which you can attend. However, if you are unable to attend the section for which you are signed up, you are free to attend a different section any given week than the one in which you're assigned. Note that this policy could change if too many people are attending one section each week. We intentionally have section capped at 35 people so that students can get help from their TAs and IAs during this time, especially now that we'll be remote this quarter.
+Note: You should be signed up for a CodingLab for which you can attend. However, if you are unable to attend the CodingLab for which you are signed up, you are free to attend a different CodingLab any given week than the one in which you're assigned. Note that this policy could change if too many people are attending one CodingLab each week. We intentionally have CodingLab capped at 35 people so that students can get help from their TAs and IAs during this time, especially now that we'll be remote this quarter.
 
 ### Assignments (35\%)
 
@@ -150,7 +151,7 @@ Successful completion of this class will require you to complete an independent 
 
 # COURSE SCHEDULE
 
-| Date   | Week  | Lecture| Day   |       Topic        | Assignment             | Section
+| Date   | Week  | Lecture| Day   |       Topic        | Assignment             | CodingLab
 | -----: |:-----:|:-------|:-----:|:-------------------|:-----------------------|:------------------------|
 | 3/30   | 1	   | 0      | M     | Why Program?       |                        |                         | 
 | 4/1    | 1	   | 1      | W     | Demo + Tools       |                        | CL1: Tech Setup + Tools | 
