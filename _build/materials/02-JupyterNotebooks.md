@@ -8,8 +8,8 @@ prev_page:
   url: /materials/01-Tools
   title: '01-Tools'
 next_page:
-  url: /
-  title: ''
+  url: /materials/03-Variables
+  title: '03-Variables'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 <div class="alert alert-danger">
@@ -72,7 +72,7 @@ Bold text requires __two underccores__ or **two asterisks**.
 - D) normal text
 - E) I'm lost
 
-you can write your markdown text here to determine the answer to the question
+___you can write your markdown text here to determine the answer to the question___
 
 
 ### Markdown Headers
@@ -109,9 +109,11 @@ Lists are also possible:
 
 test it out down here to see...
 
-list item
-list item 
-list item
+1. list item
+1. list item 
+1. list item
+
+\* <- escape character
 
 ### Code Cells
 
@@ -137,6 +139,12 @@ print(c)
 ```
 
 
+{:.output_stream}
+```
+-1
+
+```
+
 
 
 {:.input_area}
@@ -144,6 +152,16 @@ print(c)
 # If you execute a cell with just a variable name in it, it will also get printed
 c
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+-1
+```
+
 
 
 ### Running Cells
