@@ -189,6 +189,22 @@ c
 ```
 
 
+{:.output_stream}
+```
+0.5
+
+```
+
+
+
+
+{:.output_data_text}
+```
+6.0
+```
+
+
+
 #### Clicker Question #5
 
 **Which of the following best describes you?**
@@ -226,6 +242,31 @@ capacities, which can autocomplete what you are typing, and/or be used to explor
 ```python
 # Move your cursor to the end of the line, press tab, and a drop menu will appear showing all possible completions
 ra
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-6-c2c498cb5d74> in <module>()
+      1 # Move your cursor to the end of the line, press tab, and a drop menu will appear showing all possible completions
+----> 2 ra
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'ra' is not defined
 ```
 
 

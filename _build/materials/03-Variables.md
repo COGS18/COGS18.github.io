@@ -8,8 +8,8 @@ prev_page:
   url: /materials/02-JupyterNotebooks
   title: '02-JupyterNotebooks'
 next_page:
-  url: /
-  title: ''
+  url: /materials/04-Operators
+  title: '04-Operators'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 <div class="alert alert-danger">
@@ -43,6 +43,24 @@ a = 6
 
 {:.input_area}
 ```python
+a
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'string'
+```
+
+
+
+
+
+{:.input_area}
+```python
 a = 'string'
 ```
 
@@ -54,6 +72,12 @@ a = 'string'
 print(a)
 ```
 
+
+{:.output_stream}
+```
+string
+
+```
 
 #### Clicker Question #1
 
@@ -79,6 +103,12 @@ a = 6
 print(a)
 ```
 
+
+{:.output_stream}
+```
+string
+
+```
 
 #### Clicker Question #2
 
@@ -107,7 +137,7 @@ my_other_variable = 13 # Comments can be 'inline', like this one
 ### Defining Variables
 
 <div class="alert alert-success">
-In programming, variables are things that store values. Variables are defined with `name = value`.
+In programming, variables are things that store values. Variables are defined with <code>name = value</code>.
 </div>
 
 
@@ -127,9 +157,19 @@ other_var = 'variables are cool'
 {:.input_area}
 ```python
 # once you create a variable it's stored in your namespace
-my_variable
+other_var
 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'variables are cool'
+```
+
 
 
 ## Code Variables != Math Variables
@@ -140,7 +180,7 @@ In coding: `=` refers to assignment.
 
 Math: What is x?
 
-y = 10x + 2
+$y = 10x + 2$
 
 Code: What is x?
 
@@ -162,6 +202,12 @@ print(my_var)
 ```
 
 
+{:.output_stream}
+```
+3
+
+```
+
 - A) 2
 - B) 3
 - C) "my_var + 1"
@@ -175,9 +221,35 @@ After executing the following code, what will be the value of `diff_var`?
 
 {:.input_area}
 ```python
-diff_var = my_variable - my_var
+diff_var = my_variabel - my_var
 
 print(diff_var)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-16-bb09d72de1d8> in <module>()
+----> 1 diff_var = my_variabel - my_var
+      2 
+      3 print(diff_var)
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'my_variabel' is not defined
 ```
 
 
@@ -262,6 +334,17 @@ try = 6
 ```
 
 
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-17-1c44ba76d8f9>", line 2
+    try = 6
+        ^
+SyntaxError: invalid syntax
+
+```
+
+
 ## Kernels
 
 <div class="alert alert-success">
@@ -295,6 +378,19 @@ whos?
 ```
 
 
+{:.output_stream}
+```
+Variable            Type    Data/Info
+-------------------------------------
+a                   str     string
+diff_var            int     9
+my_other_variable   int     13
+my_var              int     3
+my_variable         int     12
+other_var           str     variables are cool
+
+```
+
 ## Variable Types
 
 <div class="alert alert-success">
@@ -311,6 +407,16 @@ variable_name = 1
 # You can always ask Python 'what type is this variable' using:
 type(variable_name)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+int
+```
+
 
 
 ### Int
@@ -338,6 +444,16 @@ type(yet_another_integer)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+int
+```
+
+
+
 ### Float
 
 <div class="alert alert-success">
@@ -359,6 +475,16 @@ another_float = -231.45
 ```python
 type(another_float)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 ### String
@@ -388,6 +514,22 @@ type(and_another)
 ```
 
 
+{:.output_stream}
+```
+and some more
+
+```
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
+
+
 #### Quotation Marks
 
 About those quotation marks...
@@ -403,11 +545,31 @@ my_string
 
 
 
+
+{:.output_data_text}
+```
+'This is a single-quoted string.'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 my_string = "This is a double-quoted string."
 my_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'This is a double-quoted string.'
+```
+
 
 
 Note that Python will put single quotes around it, even if you specify double quotes. 
@@ -430,12 +592,32 @@ my_string
 
 
 
+
+{:.output_data_text}
+```
+"i wan't to see a quote."
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # backslash to "escape" quotation mark
 string_quote = "And she said, \"Please teach me Python!\""
 string_quote
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'And she said, "Please teach me Python!"'
+```
+
 
 
 ## Boolean
@@ -461,6 +643,16 @@ type(another_bool)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+bool
+```
+
+
+
 ## None
 
 <div class="alert alert-success">
@@ -481,6 +673,16 @@ the_concept_of_nothing = None
 ```python
 type(the_concept_of_nothing)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+NoneType
+```
+
 
 
 #### Clicker Question #5
@@ -534,6 +736,16 @@ type(m)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+int
+```
+
+
+
 - A) String
 - B) Int
 - C) Float
@@ -556,6 +768,12 @@ b = a
 print(b)
 ```
 
+
+{:.output_stream}
+```
+1
+
+```
 
 Here, the value 1 is assigned to the variable `a`.  
 
@@ -582,10 +800,45 @@ immutable_string[4]
 
 
 
+
+{:.output_data_text}
+```
+'1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # cannot change part of the string after creation
 immutable_string[4] = '0'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-41-42af1508f9b7> in <module>()
+      1 # cannot change part of the string after creation
+----> 2 immutable_string[4] = '0'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -597,7 +850,7 @@ Just a *brief* word on indentation.
 
 Python *does* care about whitespace. 
 
-You will get an error if it Python runs into unanticipated whitespace.
+You will get an error if Python runs into unanticipated whitespace.
 
 
 
@@ -607,6 +860,17 @@ a = 1
     b = a
     
     print(b) 
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-43-cf6c464af4da>", line 4
+    print(b)
+    ^
+IndentationError: unexpected indent
+
 ```
 
 
