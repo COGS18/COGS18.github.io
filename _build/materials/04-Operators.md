@@ -8,8 +8,8 @@ prev_page:
   url: /materials/03-Variables
   title: '03-Variables'
 next_page:
-  url: /
-  title: ''
+  url: /materials/05-Conditionals
+  title: '05-Conditionals'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 <div class="alert alert-danger">
