@@ -8,8 +8,8 @@ prev_page:
   url: /materials/04-Operators
   title: '04-Operators'
 next_page:
-  url: /
-  title: ''
+  url: /labs/CL2B-Answers
+  title: 'Coding Labs'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Course Announcements

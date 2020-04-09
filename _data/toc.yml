@@ -134,19 +134,22 @@
 #     not_numbered: true
 
 
-# - title: Coding Labs
-#   url: /labs/CL1-Tooling
-#   not_numbered: true
-#   sections:
-#   - title: CL1-Tooling
-#     url: /labs/CL1-Tooling
-#     not_numbered: true
+- title: Coding Labs
+  url: /labs/CL2B-Answers
+  not_numbered: true
+  sections:
+  # - title: CL1-Tooling
+  #   url: /labs/CL1-Tooling
+  #   not_numbered: true
   # - title: CL2-ProgrammingI
   #   url: /labs/CL2-ProgrammingI
   #   not_numbered: true
-  # - title: CL2B-Answers
-  #   url: /labs/CL2B-Answers
-  #   not_numbered: true
+  - title: CL2B-Answers
+    url: /labs/CL2B-Answers
+    not_numbered: true
+  - title: CL2-QA
+    url: /labs/CL2B-Answers
+    not_numbered: true
   # - title: CL3-ProgrammingII
   #   url: /labs/CL3-ProgrammingII
   #   not_numbered: true
