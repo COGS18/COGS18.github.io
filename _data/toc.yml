@@ -39,9 +39,9 @@
   - title: 05-Conditionals
     url: /materials/05-Conditionals
     not_numbered: true
-  # - title: 06-DataTypes
-  #   url: /materials/06-DataTypes
-  #   not_numbered: true
+  - title: 06-DataTypes
+    url: /materials/06-DataTypes
+    not_numbered: true
   # - title: 07-Loops
   #   url: /materials/07-Loops
   #   not_numbered: true
