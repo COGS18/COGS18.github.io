@@ -19,7 +19,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 # Course Announcements
 
 - Coding Labs
-    - must atempt & submit by **Wed at 11:59 PM**
+    - must attempt & submit by **Wed at 11:59 PM**
     - "answers" posted the following week to website
     - check your work
 - A1 is due **Mon (4/14)**
@@ -43,7 +43,7 @@ How would you prefer the zoom chat to work?
     - 16% Python
     - 23% Java
     - 15% C/C++
-- Common hobbies: self-isolation/quarantine w/ YouTube, TV, exercise, reading, Animal Farm
+- Common hobbies: self-isolation/quarantine w/ YouTube, TV, exercise, reading, Animal Crossing
 - Comon future goals: Software engineer, happy, UX/UI Design, researcher
 - Will be replying to everyone who submitted and updating extra credit shortly!
 
@@ -93,6 +93,12 @@ print(2 + 3)
 ```
 
 
+{:.output_stream}
+```
+5
+
+```
+
 
 
 {:.input_area}
@@ -101,6 +107,22 @@ div_result = 4 / 2
 print(div_result)
 type(div_result)
 ```
+
+
+{:.output_stream}
+```
+2.0
+
+```
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 ### Order of Operations
@@ -119,6 +141,12 @@ print(order_operations)
 ```
 
 
+{:.output_stream}
+```
+11.0
+
+```
+
 To specify that you want the addition to occur first, you would use parentheses.
 
 
@@ -129,6 +157,12 @@ specify_operations = (3 + 16) / 2
 print(specify_operations)
 ```
 
+
+{:.output_stream}
+```
+9.5
+
+```
 
 ### Clicker #1
 
@@ -143,6 +177,16 @@ Note: Best to think about it before running the code to ensure you understand.
 my_value = (3 + 2) + 16 / (4 / 2) 
 my_value
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+13.0
+```
+
 
 
 - A) 7.0
@@ -168,11 +212,31 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # remainder of 17 divided by 7
 17 % 7
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 #### Clicker #2
@@ -186,6 +250,16 @@ What would be the value stored in `remainder`?
 remainder = 16 % 5
 remainder
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1
+```
+
 
 
 - A) 0
@@ -205,6 +279,16 @@ What would be the value stored in `modulo_time`?
 modulo_time = 4 * 2 % 5
 modulo_time
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 - A) 0
@@ -230,6 +314,12 @@ print(a, 'remainder', b)
 ```
 
 
+{:.output_stream}
+```
+2 remainder 3
+
+```
+
 `//` is an operator for floor division (integer division)
 
 #### Clicker #4
@@ -243,6 +333,16 @@ What value is stored in `math_out` from the code below?
 math_out = 32 / (1 + 3) ** 2 
 math_out
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+2.0
+```
+
 
 
 - A) 2
@@ -274,10 +374,30 @@ True and True
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 True or True
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -290,10 +410,30 @@ True and not False
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 not False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -303,6 +443,16 @@ not False
 # two nots cancel one another out
 not (not True)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Capitalization matters
@@ -318,6 +468,32 @@ TRUE and TRUE
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-65-9b3f2ee967bc> in <module>()
+      2 # 'TRUE' is not a boolean
+      3 # 'True' is
+----> 4 TRUE and TRUE
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'TRUE' is not defined
+```
+
+
 #### Clicker #5
 
 How will the following boolean expression evaluate:
@@ -328,6 +504,16 @@ How will the following boolean expression evaluate:
 ```python
 True and False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -352,12 +538,28 @@ False and print("Hi")
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Continues to evaluate the expression
 True and print("Hi")
 ```
 
+
+{:.output_stream}
+```
+Hi
+
+```
 
 
 
@@ -367,6 +569,12 @@ True and print("Hi")
 print("Hi") and False
 ```
 
+
+{:.output_stream}
+```
+Hi
+
+```
 
 #### Clicker #6
 
@@ -378,6 +586,16 @@ How will the following boolean expression evaluate?
 ```python
 True and not True or False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) True
@@ -395,6 +613,16 @@ How will the following boolean expression evaluate:
 ```python
 True and not False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 - A) True
@@ -419,8 +647,38 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 
 {:.input_area}
 ```python
+a = 12
+b = 13
+a > b
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
 True == True
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -433,6 +691,16 @@ True != False
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'aa' == 'aa'
@@ -441,10 +709,30 @@ True != False
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 12 <= 13
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 #### Clicker #8
@@ -463,11 +751,23 @@ Start with the code in the following cell. Replace `---` with values that will e
 {:.input_area}
 ```python
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 90
+shield_energy = 100
 
-(sword_charge >= ---) and (shield_energy >= ---)
+alias_a = sword_charge
+
+(sword_charge >= 90) and (shield_energy >= 100)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ## Understanding Boolean logic
@@ -491,6 +791,16 @@ bool(empty_string)
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 nonempty_string = 'string has something in it'
@@ -500,10 +810,12 @@ bool(nonempty_string)
 
 
 
-{:.input_area}
-```python
-bool(None)
+
+{:.output_data_text}
 ```
+True
+```
+
 
 
 2.  For `and` operator if left value is `True`, then right value is checked and returned. If left value is `False`, then that left value is returned.
@@ -519,10 +831,30 @@ True and False
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bool('a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -535,10 +867,30 @@ bool('a')
 
 
 
+
+{:.output_data_text}
+```
+'b'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' and 'a'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'a'
+```
+
 
 
 #### Clicker Question #9
@@ -551,6 +903,52 @@ What would the following code cell return?
 ```python
 '' and 'a'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+''
+```
+
+
+
+
+
+{:.input_area}
+```python
+False and 'a'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
+not True and 'a'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 - A) ''
@@ -569,6 +967,16 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' and 'a'
@@ -577,10 +985,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+'a'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'a' and 'b'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
 
 
 
@@ -594,11 +1022,31 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # the left value in parentheses is False
 'a' == ('' and 'a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -609,6 +1057,16 @@ What would the following code cell return?
 # to look at a in a and b
 'a' == 'a' and 'a' == 'b' 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 3. For `or` operator if left value is `True`, then it is returned, otherwise if left value is `False`, then right value is returned.
@@ -623,6 +1081,16 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+'a'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # empty string evaluates as False
@@ -632,10 +1100,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+'b'
+```
+
+
+
+
+
 {:.input_area}
 ```python
-'' or 'b'
+False or False
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -648,10 +1136,30 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+''
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' or ''
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'b'
+```
+
 
 
 
@@ -664,10 +1172,48 @@ What would the following code cell return?
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'b' == ('a' or 'b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
+'b' == 'a' or 'b' == 'b'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 #### Clicker Question #10
@@ -680,6 +1226,16 @@ What would the following code cell return?
 ```python
 'a' == ('' or 'a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 - A) ''
@@ -717,6 +1273,13 @@ print(c is a)
 ```
 
 
+{:.output_stream}
+```
+True
+False
+
+```
+
  Two variables that are equal does **not** imply that they are identical.
 
 If we wanted that second statement to evaluate as `True` we could use `is not`...
@@ -730,6 +1293,12 @@ print(c is not a)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -737,6 +1306,16 @@ print(c is not a)
 # testing for value equality
 a == b == c
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 #### Clicker #11
@@ -761,12 +1340,18 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = --- 
-false_variable = ---
+true_variable = c is d 
+false_variable = z is x
 
 print(true_variable, false_variable)
 ```
 
+
+{:.output_stream}
+```
+True False
+
+```
 
 ### Delving Deeper: Identity Operators
 
@@ -801,11 +1386,27 @@ simple_string is simple_string2
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(id(simple_string), id(simple_string2))
 ```
 
+
+{:.output_stream}
+```
+4429063032 4429063032
+
+```
 
 
 
@@ -826,11 +1427,27 @@ longer_string is longer_string2
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(id(longer_string), id(longer_string2))
 ```
 
+
+{:.output_stream}
+```
+4461758576 4461758192
+
+```
 
 
 
@@ -849,6 +1466,12 @@ print(id(d), id(e))
 ```
 
 
+{:.output_stream}
+```
+4426314944 4426314944
+
+```
+
 
 
 {:.input_area}
@@ -856,6 +1479,12 @@ print(id(d), id(e))
 print(d is e)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 Python implementation front loads an array of integers between -5 to 256, so these objects *already exist*.
 
@@ -876,6 +1505,12 @@ print(true_variable_integer, true_variable_string)
 ```
 
 
+{:.output_stream}
+```
+True True
+
+```
+
 
 
 {:.input_area}
@@ -892,6 +1527,12 @@ false_variable_string = p is q
 print(false_variable_integer, false_variable_string)
 ```
 
+
+{:.output_stream}
+```
+False False
+
+```
 
 #### Clicker #12
 
@@ -914,12 +1555,18 @@ f = 567
 g = 567
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = a is b
+false_variable = f is g
 
 print(true_variable, false_variable)
 ```
 
+
+{:.output_stream}
+```
+True False
+
+```
 
 ## Membership Operators
 
@@ -943,6 +1590,12 @@ print('l' in x)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -950,6 +1603,12 @@ print('l' in x)
 print('L' in x)
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 
 
@@ -959,6 +1618,12 @@ print('COGS' in x)
 ```
 
 
+{:.output_stream}
+```
+True
+
+```
+
 
 
 {:.input_area}
@@ -967,6 +1632,12 @@ print('CSOG' in x)
 ```
 
 
+{:.output_stream}
+```
+False
+
+```
+
 
 
 {:.input_area}
@@ -974,6 +1645,12 @@ print('CSOG' in x)
 print(' ' in x)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 ## String Concatenation
 
@@ -985,8 +1662,36 @@ Operators sometimes do different things on different types of variables. For exa
 
 {:.input_area}
 ```python
+'COGS' + ' 18'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'COGS 18'
+```
+
+
+
+
+
+{:.input_area}
+```python
 'a' + 'b' + 'c'
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'abc'
+```
+
 
 
 ## Chaining Operators
@@ -1006,6 +1711,16 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 (13 % 7 >= 7)
@@ -1014,10 +1729,30 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ('COGS' + '18' == 'COGS18')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 #### Clicker #13

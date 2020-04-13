@@ -12,12 +12,13 @@ next_page:
   title: '06-DataTypes'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-# Course Announcements
+### Course Announcements
 
 - A1 is due Mon (4/13; 11:59 PM)
 - Coding Lab today!
     - Submit CL2 by 11:59 PM tonight
     - The 9 AM coding lab a _tad_ too crowded last week 
+- CALPIRG Announcement in notes
 
 ### CALPIRG
 
@@ -64,7 +65,13 @@ if condition:
 ```
 
 
-### Clicker Question #1
+{:.output_stream}
+```
+This code executes if the condition evaluates as True.
+
+```
+
+#### Clicker Question #1
 
 Replace `---` below with something that will print 'True'
 
@@ -78,20 +85,36 @@ Replace `---` below with something that will print 'True'
 {:.input_area}
 ```python
 # can evaluate boolean expression with bool
-bool(2 + 2)
+bool(2 + 2 >= 4)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
 
 {:.input_area}
 ```python
-math = ---
+math = (2 + 2)
 
 if math:
     print('True')
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 ## Conditional: `else`
 
@@ -112,7 +135,13 @@ else:
 ```
 
 
-### Clicker Question #2
+{:.output_stream}
+```
+This code executes if the condition evaluates as False
+
+```
+
+#### Clicker Question #2
 
 Replace `---` below with something that will print 'False'.
 
@@ -131,6 +160,16 @@ bool(0)
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bool(None)
@@ -139,10 +178,30 @@ bool(None)
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bool('')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -179,6 +238,12 @@ else:
     print('This code executes if both condition_1 and condition_2 evaluate as False')
 ```
 
+
+{:.output_stream}
+```
+This code executes if condition_1 did not evaluate as True, but condition_2 does.
+
+```
 
 ### `elif` without an `else`
 
@@ -219,6 +284,17 @@ elif condition_2:
 ```
 
 
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-19-aedfc0cec5db>", line 9
+    elif condition_2:
+       ^
+SyntaxError: invalid syntax
+
+```
+
+
 ## Conditionals With Value Comparisons
 
 <div class="alert alert-success">
@@ -229,7 +305,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 
 {:.input_area}
 ```python
-language = "R"
+language = "Perl"
 
 if language == "Python" or language == "R":
     print("Yay!")
@@ -239,6 +315,12 @@ else:
     print("Get yourself a programming language!")
 ```
 
+
+{:.output_stream}
+```
+Hmmmmmmm
+
+```
 
 
 
@@ -258,7 +340,15 @@ print('After Conditional')
 ```
 
 
-### Clicker Question #3
+{:.output_stream}
+```
+Before Conditional
+    if statement execution
+After Conditional
+
+```
+
+#### Clicker Question #3
 
 What will the following code snippet print out:
 
@@ -277,13 +367,19 @@ else:
 ```
 
 
+{:.output_stream}
+```
+Paul
+
+```
+
 - A) John 
 - B) Paul, George, Ringo 
 - C) Paul 
 - D) Paul, George 
 - E) Ringo
 
-### Clicker Question #4
+#### Clicker Question #4
 
 What will the following code snippet print out:
 
@@ -300,12 +396,18 @@ else:
 ```
 
 
+{:.output_stream}
+```
+I did Math
+
+```
+
 - A) I did Math 
 - B) I broke Math
 - C) I didn't do math
 - D) This code won't execute
 
-### Clicker Question #5
+#### Clicker Question #5
 
 What will the following code snippet print out:
 
@@ -325,6 +427,12 @@ else:
     print("I'm here.")
 ```
 
+
+{:.output_stream}
+```
+Oh no.
+
+```
 
 - A) Yay Python!
 - B) Oh no.

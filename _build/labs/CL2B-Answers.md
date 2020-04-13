@@ -4,8 +4,8 @@ download_link: assets/downloads/CL2B-Answers.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/06-DataTypes
-  title: '06-DataTypes'
+  url: /materials/07-Loops
+  title: '07-Loops'
 next_page:
   url: /labs/CL2B-Answers
   title: 'CL2B-Answers'

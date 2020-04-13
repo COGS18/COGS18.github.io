@@ -8,8 +8,8 @@ prev_page:
   url: /materials/05-Conditionals
   title: '05-Conditionals'
 next_page:
-  url: /labs/CL2B-Answers
-  title: 'Coding Labs'
+  url: /materials/07-Loops
+  title: '07-Loops'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ### Course Announcements
@@ -92,6 +92,12 @@ print(lst)
 ```
 
 
+{:.output_stream}
+```
+[1, 'a', True]
+
+```
+
 
 
 {:.input_area}
@@ -99,6 +105,16 @@ print(lst)
 # Check the type of a list
 type(lst)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+list
+```
+
 
 
 ### Clicker Question #1
@@ -147,6 +163,12 @@ print(my_lst[1])
 ```
 
 
+{:.output_stream}
+```
+Amal
+
+```
+
 
 
 {:.input_area}
@@ -156,6 +178,12 @@ print(my_lst[-1])
 ```
 
 
+{:.output_stream}
+```
+Xuan
+
+```
+
 
 
 {:.input_area}
@@ -164,6 +192,12 @@ print(my_lst[-1])
 print(my_lst[2:4])
 ```
 
+
+{:.output_stream}
+```
+['Richard', 'Juan']
+
+```
 
 
 
@@ -176,10 +210,30 @@ type(my_lst[2])
 
 
 
+
+{:.output_data_text}
+```
+str
+```
+
+
+
+
+
 {:.input_area}
 ```python
 my_lst[2:-1]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['Richard', 'Juan']
+```
+
 
 
 
@@ -191,6 +245,12 @@ print(my_lst[2:])
 ```
 
 
+{:.output_stream}
+```
+['Richard', 'Juan', 'Xuan']
+
+```
+
 
 
 {:.input_area}
@@ -200,6 +260,12 @@ print(my_lst[:4])
 ```
 
 
+{:.output_stream}
+```
+['Julian', 'Amal', 'Richard', 'Juan']
+
+```
+
 
 
 {:.input_area}
@@ -208,6 +274,12 @@ print(my_lst[:4])
 print(my_lst[0:4:2])
 ```
 
+
+{:.output_stream}
+```
+['Julian', 'Richard']
+
+```
 
 ### Index Practices
 
@@ -230,6 +302,16 @@ example_lst[2]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[-3]
@@ -238,10 +320,30 @@ example_lst[-3]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[1:3]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 3]
+```
+
 
 
 ### Clicker Question #2
@@ -255,6 +357,16 @@ What will be the output of the following piece of code:
 q2_lst = ['a', 'b', 'c','d']
 q2_lst[-3:-1]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['b', 'c']
+```
+
 
 
 - A) ['a', 'b', 'c']
@@ -339,6 +451,16 @@ len(another_lst)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+7
+```
+
+
+
 ## The `in` Operator
 
 <div class="alert alert-success">
@@ -365,11 +487,31 @@ True in lst_again
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Practice with `in`
@@ -393,6 +535,16 @@ practice_lst = [1, True, 'alpha', 13, 'cogs18']
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 False in practice_lst
@@ -401,10 +553,30 @@ False in practice_lst
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'True' in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -418,10 +590,30 @@ False in practice_lst
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'cogs18' not in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Clicker #4
@@ -442,6 +634,12 @@ output = bool_1 and bool_2
 print(output)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 - a) True
 - b) False
@@ -476,6 +674,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
+
 
 
 {:.input_area}
@@ -493,6 +697,12 @@ updates[1] = 0
 print(updates)
 ```
 
+
+{:.output_stream}
+```
+[1, 0, 3]
+
+```
 
 ### Clicker Question #5
 
@@ -539,6 +749,12 @@ print(tup)
 ```
 
 
+{:.output_stream}
+```
+(2, 'b', False)
+
+```
+
 
 
 {:.input_area}
@@ -546,6 +762,16 @@ print(tup)
 # Check the type of a tuple
 type(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+tuple
+```
+
 
 
 
@@ -559,11 +785,31 @@ tup[0]
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the length of a tuple
 len(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ### Tuples are Immutable
@@ -575,6 +821,32 @@ len(tup)
 # Tuples are immutable - meaning after they defined, you can't change them
 # This code will produce an error.
 tup[2] = 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-43-6b0fd3f24bc7> in <module>()
+      1 # Tuples are immutable - meaning after they defined, you can't change them
+      2 # This code will produce an error.
+----> 3 tup[2] = 1
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -599,6 +871,58 @@ item_E = [1234]
 - C) item_C
 - D) item_D
 - E) item_E
+
+## Student Question:
+- slice of a bigger slice
+- multiple slices
+
+
+
+{:.input_area}
+```python
+# slice of a bigger slice
+my_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+# create first slice
+first_slice = my_list[4:]
+print('first slice: ', first_slice)
+
+# second slice with new indices
+second_slice = first_slice[1:]
+print('second slice: ', second_slice)
+```
+
+
+{:.output_stream}
+```
+first slice:  ['e', 'f', 'g']
+second slice:  ['f', 'g']
+
+```
+
+
+
+{:.input_area}
+```python
+# multiple slices 
+slice_one = my_list[4:]
+slice_two = my_list[:2]
+
+# put them together
+new_list = slice_one + slice_two
+new_list
+```
+
+
+
+
+
+{:.output_data_text}
+```
+['e', 'f', 'g', 'a', 'b']
+```
+
+
 
 ## Aside: Aliases
 
@@ -641,13 +965,6 @@ print(a)
 print(b)
 ```
 
-
-{:.output_stream}
-```
-2
-1
-
-```
 
 - A) `a` and `b` both store 1
 - B) `a` and `b` both store 2
@@ -705,32 +1022,6 @@ After executing the following code, what will the second value stored in `second
 my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
 my_tuple[1] = 29 
-```
-
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-TypeError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-3-7a44f310718f> in <module>()
-      3 my_tuple = (1, 2, 3, 4)
-      4 second_tuple = my_tuple
-----> 5 my_tuple[1] = 29
-
-```
-
-{:.output_traceback_line}
-```
-TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -880,11 +1171,5 @@ else:
     print('None')
 ```
 
-
-{:.output_stream}
-```
-Overlap
-
-```
 
 <pre> A) EndMatch   B) Overlap   C) Length   D) Overlap & Match   E) None </pre>
