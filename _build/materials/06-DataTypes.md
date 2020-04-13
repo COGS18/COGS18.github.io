@@ -396,12 +396,32 @@ q2_lst[-2:-4:-1]
 
 
 
+
+{:.output_data_text}
+```
+['c', 'b']
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # you can use forward indexing
 # makes this a little clearer
 q2_lst[2:0:-1]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['c', 'b']
+```
+
 
 
 ### Clicker Question #3
@@ -611,7 +631,7 @@ False
 
 {:.output_data_text}
 ```
-True
+False
 ```
 
 
@@ -872,6 +892,48 @@ item_E = [1234]
 - D) item_D
 - E) item_E
 
+## A1: Clarification/Demo
+
+- variables created in `%%writefile` will be stored in file
+- these variables will overwrite variables created in test cells
+
+
+
+{:.input_area}
+```python
+%%writefile new_file.py
+# You can ignore the line above - it is used to help check your code
+
+a= 3
+adfasf = 'asdf'
+b = 'new'
+print(status)
+```
+
+
+{:.output_stream}
+```
+Overwriting new_file.py
+
+```
+
+
+
+{:.input_area}
+```python
+status = False
+
+%run -i new_file.py  
+assert status == False
+```
+
+
+{:.output_stream}
+```
+False
+
+```
+
 ## Student Question:
 - slice of a bigger slice
 - multiple slices
@@ -939,6 +1001,12 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 Here, the value 1 is assigned to the variable `a`.  
 
 We then make an **alias** of `a` and store that in the variable `b`. 
@@ -966,6 +1034,13 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+2
+1
+
+```
+
 - A) `a` and `b` both store 1
 - B) `a` and `b` both store 2
 - C) `a` stores 2 `b` stores 1
@@ -990,6 +1065,16 @@ alias_list
 
 
 
+
+{:.output_data_text}
+```
+[1, 2, 3, 4]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 #change second value of first_list
@@ -1000,11 +1085,31 @@ first_list
 
 
 
+
+{:.output_data_text}
+```
+[1, 29, 3, 4]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # check alias_list
 alias_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 29, 3, 4]
+```
+
 
 
 For *mutable* type variables, when you change one, both change.
@@ -1022,6 +1127,32 @@ After executing the following code, what will the second value stored in `second
 my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
 my_tuple[1] = 29 
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+~/Desktop/Teaching/COGS18/Materials/new_file.py in <module>()
+      3 my_tuple = (1, 2, 3, 4)
+      4 second_tuple = my_tuple
+----> 5 my_tuple[1] = 29
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -1065,11 +1196,31 @@ my_str[2]
 
 
 
+
+{:.output_data_text}
+```
+'e'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Ask if an item is in a string
 'Fam' in my_str
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -1083,11 +1234,47 @@ len(my_str)
 
 
 
+
+{:.output_data_text}
+```
+13
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Index into a string
 # This code will produce an error
 my_str[1:3] = 'HE'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+~/Desktop/Teaching/COGS18/Materials/new_file.py in <module>()
+      1 # Index into a string
+      2 # This code will produce an error
+----> 3 my_str[1:3] = 'HE'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -1103,6 +1290,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+0
+
+```
+
 
 
 {:.input_area}
@@ -1112,6 +1305,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 
 
 {:.input_area}
@@ -1120,6 +1319,12 @@ counter = counter + 1
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+4
+
+```
 
 ## Pulling it Together: Collections, Membership & Conditionals
 
@@ -1148,6 +1353,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 <pre> A) 0   B) 1   C) 2   D) 3   E) 4 </pre>
 
 ### Clicker Question #10
@@ -1171,5 +1382,11 @@ else:
     print('None')
 ```
 
+
+{:.output_stream}
+```
+Overlap
+
+```
 
 <pre> A) EndMatch   B) Overlap   C) Length   D) Overlap & Match   E) None </pre>

@@ -83,6 +83,16 @@ while number < 0:
 ```
 
 
+{:.output_stream}
+```
+-5
+-4
+-3
+-2
+-1
+
+```
+
 
 
 {:.input_area}
@@ -91,7 +101,7 @@ keep_looping = True
 counter = 0
 
 while keep_looping:
-
+   # print(counter)
     counter = counter + 1
     
     if counter > 3:
@@ -100,6 +110,12 @@ while keep_looping:
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+4
+
+```
 
 ### While Loop Example I
 
@@ -117,6 +133,12 @@ while not connected:
     break
 ```
 
+
+{:.output_stream}
+```
+Establishing Connection...
+
+```
 
 ### While Loop Example II
 
@@ -148,7 +170,7 @@ temperature = 115
 while temperature > 112: 
     print(temperature)
     temperature = temperature - 1
-
+    
 print('The tea is cool enough.')
 ```
 
