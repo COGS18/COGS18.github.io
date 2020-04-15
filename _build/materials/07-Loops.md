@@ -8,8 +8,8 @@ prev_page:
   url: /materials/06-DataTypes
   title: '06-DataTypes'
 next_page:
-  url: /labs/CL2B-Answers
-  title: 'Coding Labs'
+  url: /materials/08-Encodings
+  title: '08-Encodings'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
