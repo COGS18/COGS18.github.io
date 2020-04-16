@@ -8,7 +8,7 @@ prev_page:
   url: /materials/07-Loops
   title: '07-Loops'
 next_page:
-  url: /labs/CL2B-Answers
+  url: /labs/CL2-Answers
   title: 'Coding Labs'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
