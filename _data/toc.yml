@@ -144,7 +144,7 @@
   # - title: CL2-ProgrammingI
   #   url: /labs/CL2-ProgrammingI
   #   not_numbered: true
-  - title: CL2B-Answers
+  - title: CL2-Answers
     url: /labs/CL2B-Answers
     not_numbered: true
   - title: CL2-QA
@@ -153,9 +153,9 @@
   # - title: CL3-ProgrammingII
   #   url: /labs/CL3-ProgrammingII
   #   not_numbered: true
-  # - title: CL3B-Answers
-  #   url: /labs/CL3B-Answers
-  #   not_numbered: true
+  - title: CL3-Answers
+    url: /labs/CL3B-Answers
+    not_numbered: true
   # - title: CL4-AlgorithmicThinking
   #   url: /labs/CL4-AlgorithmicThinking
   #   not_numbered: true
