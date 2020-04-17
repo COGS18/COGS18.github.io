@@ -51,6 +51,7 @@ textbook:
 	python scripts/generate_book.py
 
 	rm -rf content
+		
 
 home:
 	rm _build/intro.md
