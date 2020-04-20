@@ -6,7 +6,7 @@ layout: materials
 title: 'A2-Examples'
 prev_page:
   url: /materials/A1-Syntax
-  title: '09-FunctionsI'
+  title: 'A1-Syntax'
 next_page:
   url: /labs/CL2-Answers
   title: 'Coding Labs'

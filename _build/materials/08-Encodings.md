@@ -8,7 +8,7 @@ prev_page:
   url: /materials/07-Loops
   title: '07-Loops'
 next_page:
-  url: /materials/A1-Syntax
+  url: /materials/09-FunctionsI
   title: '09-FunctionsI'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---

@@ -99,7 +99,7 @@
   # # - title: 25-WrapUp
   # #   url: /materials/25-WrapUp
   # #   not_numbered: true
-  # - title: A1-Syntax
+  - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
   - title: A2-Examples
