@@ -117,7 +117,7 @@ list
 
 
 
-### Clicker Question #1
+#### Clicker Question #1
 
 Which of the following specifies a list of 4 items?
 
@@ -346,7 +346,7 @@ example_lst[1:3]
 
 
 
-### Clicker Question #2
+#### Clicker Question #2
 
 What will be the output of the following piece of code:
 
@@ -424,7 +424,7 @@ q2_lst[2:0:-1]
 
 
 
-### Clicker Question #3
+#### Clicker Question #3
 
 What would be the appropriate line of code to return `['butter', '&', 'jelly']`?
 
@@ -636,7 +636,7 @@ False
 
 
 
-### Clicker #4
+#### Clicker #4
 
 After executing the following code, what will be the value of `output`?
 
@@ -724,7 +724,7 @@ print(updates)
 
 ```
 
-### Clicker Question #5
+#### Clicker Question #5
 
 What would the following code accommplish?
 
@@ -870,7 +870,7 @@ TypeError: 'tuple' object does not support item assignment
 ```
 
 
-### Clicker Question #6
+#### Clicker Question #6
 
 Which of the following specifies a tuple of 4 items?
 
@@ -1015,7 +1015,7 @@ Now, the same value (1) is stored in both `a` (the original) and `b` (the alias)
 
 What if we change the value of the original variable (`a`) - what happens to `b`?
 
-### Clicker #7
+#### Clicker Question #7
 
 After executing the following code, what will the values stored in `a` and `b` be?
 
@@ -1114,7 +1114,7 @@ alias_list
 
 For *mutable* type variables, when you change one, both change.
 
-### Clicker #8
+#### Clicker Question #8
 
 After executing the following code, what will the second value stored in `second_tuple`?
 
@@ -1328,7 +1328,7 @@ print(counter)
 
 ## Pulling it Together: Collections, Membership & Conditionals
 
-### Clicker Question #9
+#### Clicker Question #9
 
 What will be the value of `counter` after this code is run?
 
@@ -1361,7 +1361,7 @@ print(counter)
 
 <pre> A) 0   B) 1   C) 2   D) 3   E) 4 </pre>
 
-### Clicker Question #10
+#### Clicker Question #10
 
 What will be printed out from running this code?
 

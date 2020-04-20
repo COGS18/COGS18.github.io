@@ -48,9 +48,9 @@
   - title: 08-Encodings
     url: /materials/08-Encodings
     not_numbered: true
-  # - title: 09-FunctionsI
-  #   url: /materials/09-FunctionsI
-  #   not_numbered: true
+  - title: 09-FunctionsI
+    url: /materials/09-FunctionsI
+    not_numbered: true
   # - title: 10-Algorithms
   #   url: /materials/10-Algorithms
   #   not_numbered: true
@@ -100,11 +100,11 @@
   # #   url: /materials/25-WrapUp
   # #   not_numbered: true
   # - title: A1-Syntax
-  #   url: /materials/A1-Syntax
-  #   not_numbered: true
-  # - title: A2-Examples
-  #   url: /materials/A2-Examples
-  #   not_numbered: true
+    url: /materials/A1-Syntax
+    not_numbered: true
+  - title: A2-Examples
+    url: /materials/A2-Examples
+    not_numbered: true
 
 
 # - title: Exam Prep

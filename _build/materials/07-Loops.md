@@ -83,16 +83,6 @@ while number < 0:
 ```
 
 
-{:.output_stream}
-```
--5
--4
--3
--2
--1
-
-```
-
 
 
 {:.input_area}
@@ -111,12 +101,6 @@ print(counter)
 ```
 
 
-{:.output_stream}
-```
-4
-
-```
-
 ### While Loop Example I
 
 
@@ -133,12 +117,6 @@ while not connected:
     break
 ```
 
-
-{:.output_stream}
-```
-Establishing Connection...
-
-```
 
 ### While Loop Example II
 
@@ -213,6 +191,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+4
+
+```
+
 <pre> A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite </pre> 
 
 ### Stepping Through the Loop
@@ -241,6 +225,29 @@ print('\nFinal counter: ', counter)
 ```
 
 
+{:.output_stream}
+```
+START LOOP
+	Start counter:  0
+	Mid counter:  1
+	End counter:  1
+START LOOP
+	Start counter:  1
+	Mid counter:  2
+	End counter:  2
+START LOOP
+	Start counter:  2
+	Mid counter:  3
+	End counter:  3
+START LOOP
+	Start counter:  3
+	Mid counter:  4
+	End counter:  4
+
+Final counter:  4
+
+```
+
 ## For Loops
 
 <div class="alert alert-success">
@@ -266,6 +273,15 @@ print('\tLast value: ', my_item)
 ```
 
 
+{:.output_stream}
+```
+A
+True
+12
+	Last value:  12
+
+```
+
 ### For Loop Example II
 
 Looping through a string
@@ -279,6 +295,17 @@ for char in 'python':
     print(char)
 ```
 
+
+{:.output_stream}
+```
+p
+y
+t
+h
+o
+n
+
+```
 
 #### Clicker Question #3
 
@@ -294,6 +321,14 @@ for item in my_lst[0:-2]:
     print(item + 1)
 ```
 
+
+{:.output_stream}
+```
+1
+2
+3
+
+```
 
 - A) 0, 1, 2
 - B) 0, 1
@@ -320,6 +355,19 @@ for temp in temperatures:
 ```
 
 
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
+
 - A) 1
 - B) 2
 - C) 3
@@ -344,6 +392,16 @@ for ind in [0, 1, 2, 3, 4]:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
+
 
 
 {:.input_area}
@@ -353,6 +411,12 @@ for ind in [0, 1, 2, 3, 4]:
 print(*range(0, 5))
 ```
 
+
+{:.output_stream}
+```
+0 1 2 3 4
+
+```
 
 
 
@@ -364,6 +428,16 @@ for ind in range(0, 5):
 ```
 
 
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
+
 
 
 {:.input_area}
@@ -373,6 +447,13 @@ for ind in range(2, 6, 2):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+
+```
 
 
 
@@ -387,6 +468,19 @@ for temp in range(114, 119):
 ```
 
 
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
+
 #### Clicker Question #5
 
 How many values would this loop print and what would be the last value printed? 
@@ -399,6 +493,14 @@ for ind in range(1, 10, 3):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+1
+4
+7
+
+```
 
 - A) values printed: 3; last value: 7
 - B) values printed: 3; last value: 9
@@ -430,6 +532,14 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+3
+
+```
+
 
 
 {:.input_area}
@@ -446,6 +556,15 @@ for course in courses:
 ```
 
 
+{:.output_stream}
+```
+cogs9
+cogs9!
+cogs108
+cogs108!
+
+```
+
 
 
 {:.input_area}
@@ -460,6 +579,15 @@ for char in string:
     print(char)
 ```
 
+
+{:.output_stream}
+```
+t
+h
+o
+n
+
+```
 
 #### Clicker Question #6
 
@@ -509,6 +637,12 @@ while not connected:
 ```
 
 
+{:.output_stream}
+```
+Establishing Connection...
+
+```
+
 ### `break` examples
 
 
@@ -526,6 +660,13 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+
+```
+
 
 
 {:.input_area}
@@ -540,6 +681,12 @@ for course in courses:
     print(course)
 ```
 
+
+{:.output_stream}
+```
+cogs9
+
+```
 
 
 
@@ -582,11 +729,19 @@ number = 1
 while True:
     if number % 3 == 0:
         break
+   
     print(number)
     
     number = number + 1
 ```
 
+
+{:.output_stream}
+```
+1
+2
+
+```
 
 - A) 1 
 - B) 1 2 
@@ -616,6 +771,12 @@ for temp in range(114, 119):
 ```
 
 
+{:.output_stream}
+```
+The tea is too hot!
+
+```
+
 - A) 0 
 - B) 1
 - C) 3
@@ -643,6 +804,12 @@ for item in my_lst:
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 - A) 0 
 - B) 1
