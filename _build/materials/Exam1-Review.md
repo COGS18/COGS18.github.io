@@ -22,9 +22,9 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Exam 1 Topics
 
-- Variables & Operators (5.5 points)
+- Variables & Operators (6 points)
 - Indexing (3 points)
-- Control Flow - Conditionals & Loops (11.5 points)
+- Control Flow - Conditionals & Loops (11 points)
 
 ## Midterm Expectations
 
