@@ -8,8 +8,8 @@ prev_page:
   url: /materials/A1-Syntax
   title: 'A1-Syntax'
 next_page:
-  url: /labs/CL2-Answers
-  title: 'Coding Labs'
+  url: /materials/Exam1-Review
+  title: 'Exam Prep'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Examples

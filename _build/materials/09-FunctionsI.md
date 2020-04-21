@@ -105,12 +105,32 @@ type(my_var)
 
 
 
+
+{:.output_data_text}
+```
+list
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # the function len() doesn't depend on type()
 # but they can both be used on the same variable
 len(my_var)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ## Function Example I
@@ -136,9 +156,15 @@ def print_value(num):
 ```python
 # excecute a function by calling function by name
 # adding input within parentheses
-print_value(num = 6)
+print_value(num = 6) 
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 
 
@@ -150,6 +176,12 @@ print_value(6)
 ```
 
 
+{:.output_stream}
+```
+6
+
+```
+
 
 
 {:.input_area}
@@ -160,6 +192,13 @@ new_var = print_value(6)
 print(new_var)
 ```
 
+
+{:.output_stream}
+```
+6
+None
+
+```
 
 All this function is doing is printing the input. It's not actually *storing* any new information. To do that, we need to use `return`.
 
@@ -189,6 +228,16 @@ return_value(6)
 
 
 
+
+{:.output_data_text}
+```
+6
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # execute function but assign output 
@@ -197,6 +246,12 @@ new_val = return_value(6)
 print(new_val)
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 ## Function Example II
 
@@ -226,6 +281,16 @@ add_two_numbers(-1, 4)
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Execute our function again, on some other inputs
@@ -233,6 +298,12 @@ output = add_two_numbers(-1, 4)
 print(output)
 ```
 
+
+{:.output_stream}
+```
+3
+
+```
 
 ## Function Example III
 
@@ -258,8 +329,15 @@ def even_odd(value):
 # Execute our function
 # note that it's only printing the output
 even_odd(-1)
+
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 
 
@@ -287,6 +365,12 @@ my_val = even_odd(-1)
 print(my_val)
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 With functions, the logic behind our code no longer requires it to be executed from top to bottom of the notebook.
 
@@ -318,10 +402,29 @@ The cost of potential confusion is *definitely* offset by the benefits of writin
 def remainder(number, divider):
     
     r = number % divider
+    w = number * divider
     
-    return r
+    return r, w
 ```
 
+
+
+
+{:.input_area}
+```python
+
+a, b = remainder(12,6)
+print(a)
+print(b)
+```
+
+
+{:.output_stream}
+```
+0
+72
+
+```
 
 Given the function above, what will the code below print out?
 
@@ -335,6 +438,12 @@ ans_2 = remainder(2, 2)
 print(ans_1 + ans_2)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 - A) 0
 - B) 2

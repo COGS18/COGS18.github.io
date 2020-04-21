@@ -107,16 +107,19 @@
     not_numbered: true
 
 
-# - title: Exam Prep
-#   url: /materials/Exam1-Review
-#   not_numbered: true
-#   sections:
-#   - title: Exam1-Review
-#     url: /materials/Exam1-Review
-#     not_numbered: true
-#   - title: Exam1-Practice
-#     url: /materials/Exam1-Practice
-#     not_numbered: true
+- title: Exam Prep
+  url: /materials/Exam1-Review
+  not_numbered: true
+  sections:
+  - title: Exam1-Review
+    url: /materials/Exam1-Review
+    not_numbered: true
+  - title: Exam1-Review-Answers
+    url: /materials/Exam1-Answers
+    not_numbered: true
+  - title: Exam1-Practice
+    url: /materials/Exam1-Practice
+    not_numbered: true
 #   - title: E1-Answers
 #     url: /materials/E1-Answers
 #     not_numbered: true
