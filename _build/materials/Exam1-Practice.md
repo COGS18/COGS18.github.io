@@ -5,8 +5,8 @@ pdf_link: assets/pdf/Exam1-Practice.pdf
 layout: materials
 title: 'Exam1-Practice'
 prev_page:
-  url: /materials/Exam1-Review
-  title: 'Exam1-Review'
+  url: /materials/Exam1-Review-Answers
+  title: 'Exam1-Review-Answers'
 next_page:
   url: /labs/CL2-Answers
   title: 'Coding Labs'
