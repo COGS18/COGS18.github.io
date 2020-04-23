@@ -7,8 +7,8 @@ prev_page:
   url: /labs/CL2-QA
   title: 'CL2-QA'
 next_page:
-  url: /
-  title: ''
+  url: /labs/CL4-Answers
+  title: 'CL4-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Coding Lab 3: Programming II - Answers

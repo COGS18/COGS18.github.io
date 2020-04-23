@@ -51,14 +51,14 @@
   - title: 09-FunctionsI
     url: /materials/09-FunctionsI
     not_numbered: true
-  # - title: 10-Algorithms
-  #   url: /materials/10-Algorithms
-  #   not_numbered: true
-  # - title: 11-FunctionsII
+  # - title: 10-FunctionsII
   #   url: /materials/11-FunctionsII
   #   not_numbered: true
-  # - title: 12-Debugging
+  # - title: 11-Debugging
   #   url: /materials/12-Debugging
+  #   not_numbered: true
+  # - title: 12-Algorithms
+  #   url: /materials/10-Algorithms
   #   not_numbered: true
   # - title: 13-Objects
   #   url: /materials/13-Objects
@@ -165,20 +165,20 @@
   # - title: CL4-AlgorithmicThinking
   #   url: /labs/CL4-AlgorithmicThinking
   #   not_numbered: true
-  # - title: CL4B-Answers
-  #   url: /labs/CL4B-Answers
-  #   not_numbered: true
+  - title: CL4-Answers
+    url: /labs/CL4-Answers
+    not_numbered: true
   # - title: CL5-Debugging
   #   url: /labs/CL5-Debugging
   #   not_numbered: true
-  # - title: CL5B-Answers
-  #   url: /labs/CL5B-Answers
+  # - title: CL5-Answers
+  #   url: /labs/CL5-Answers
   #   not_numbered: true
   # - title: CL6-Classes
   #   url: /labs/CL6-Classes
   #   not_numbered: true
-  # - title: CL6B-Answers
-  #   url: /labs/CL6B-Answers
+  # - title: CL6-Answers
+  #   url: /labs/CL6-Answers
   #   not_numbered: true   
   # - title: CL7-CommandLine
   #   url: /labs/CL7-CommandLine
