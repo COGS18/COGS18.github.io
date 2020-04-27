@@ -51,9 +51,9 @@
   - title: 09-FunctionsI
     url: /materials/09-FunctionsI
     not_numbered: true
-  # - title: 10-FunctionsII
-  #   url: /materials/11-FunctionsII
-  #   not_numbered: true
+  - title: 10-FunctionsII
+    url: /materials/11-FunctionsII
+    not_numbered: true
   # - title: 11-Debugging
   #   url: /materials/12-Debugging
   #   not_numbered: true
