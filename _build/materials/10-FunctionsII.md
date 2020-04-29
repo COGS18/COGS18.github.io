@@ -8,16 +8,18 @@ prev_page:
   url: /materials/09-FunctionsI
   title: '09-FunctionsI'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/11-Debugging
+  title: '11-Debugging'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
 
-- A3 due Mon 5/4 (11:59 PM)
-    - A3 tends to take slightly longer than A2
-    - A4 is the most difficult assignment
-- Mid-course survey available
+- **A3** due Mon 5/4 (11:59 PM)
+    - error in first cell: 
+        - add cell above: `!pip install --user nltk`
+    - A3 tends to take slightly longer than A2 (*but* students tend to find it easier than A2)
+    - A4 is the most difficult assignment (and takes the longest)
+- **Mid-course survey** available
     - https://bit.ly/cogs18_mid_sp20
     - opportunity for extra credit (if completed by tonight 4/27 at 11:59 PM) 
 
@@ -67,6 +69,12 @@ out = my_func(dictionary)
 print(out)
 ```
 
+
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
 
 - A) ['first', 'second', 'third'] 
 - B) {1, 2, 3}
@@ -121,7 +129,7 @@ Specify a default value in a function by doing an assignment within the function
 {:.input_area}
 ```python
 # Create a function, that has a default values for a parameter
-def exponentiate(number, exponent = 2):    
+def exponentiate(number, exponent = 2):  
     return number ** exponent
 ```
 
@@ -131,8 +139,18 @@ def exponentiate(number, exponent = 2):
 {:.input_area}
 ```python
 # Use the function, using default value
-exponentiate(2)
+exponentiate(3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+9
+```
+
 
 
 
@@ -147,11 +165,31 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # you can always state this explicitly
 exponentiate(number = 2, exponent = 3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 ## Positional vs. Keyword Arguments
@@ -171,11 +209,31 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Keyword arguments are explicitly named as to which argument each value relates to
 exponentiate(number = 2, exponent = 3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 
@@ -188,11 +246,32 @@ exponentiate(exponent = 3, number = 2)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
 # this cell will produce an error
 exponentiate(number = 2, 3)
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-17-82d192fd1eb1>", line 3
+    exponentiate(number = 2, 3)
+                            ^
+SyntaxError: positional argument follows keyword argument
+
 ```
 
 

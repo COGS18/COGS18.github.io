@@ -464,7 +464,28 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 
 {:.input_area}
 ```python
+greet(name = 'Shannon', day = 'Mon')
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'Hello Shannon Good morning! It is Mon.'
+```
+
+
+
+
+
+{:.input_area}
+```python
 ## YOUR CODE HERE
+def greet(name, day):
+    output = 'Hello ' + name + ' Good morning! It is ' + day + '.'
+    return output
 ```
 
 
@@ -478,6 +499,16 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 %whos
 ```
 
+
+{:.output_stream}
+```
+Variable   Type        Data/Info
+--------------------------------
+even_odd   function    <function even_odd at 0x10336dd90>
+greet      function    <function greet at 0x10336dea0>
+my_val     str         odd
+
+```
 
 ## Function Namespaces II
 
@@ -500,6 +531,12 @@ check_function_namespace(1)
 ```
 
 
+{:.output_stream}
+```
+{'function_input': 1}
+
+```
+
 
 
 {:.input_area}
@@ -508,6 +545,12 @@ check_function_namespace(1)
 check_function_namespace(True)
 ```
 
+
+{:.output_stream}
+```
+{'function_input': True}
+
+```
 
 
 
@@ -529,6 +572,12 @@ check_function_namespace2(1, True)
 ```
 
 
+{:.output_stream}
+```
+{'function_input': 1, 'other_name': True}
+
+```
+
 ## Function Namespaces III
 
 Names defined inside a function only exist within the function.
@@ -547,6 +596,13 @@ check_function_namespace(my_var)
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+{'function_input': 'I am a variable'}
+I am a variable
+
+```
 
 ## Function - Execution Order
 
@@ -571,12 +627,28 @@ my_var
 
 
 
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # my_var within the function
 change_var(my_var)
 ```
 
+
+{:.output_stream}
+```
+Inside function: 		 I am something else
+
+```
 
 
 
@@ -589,6 +661,16 @@ my_var
 
 
 
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print('Outside, before function: \t', my_var)
@@ -596,3 +678,11 @@ change_var(my_var)
 print('Outside, after function: \t', my_var)
 ```
 
+
+{:.output_stream}
+```
+Outside, before function: 	 I am a variable
+Inside function: 		 I am something else
+Outside, after function: 	 I am a variable
+
+```
