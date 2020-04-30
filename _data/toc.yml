@@ -172,9 +172,9 @@
   # - title: CL5-Debugging
   #   url: /labs/CL5-Debugging
   #   not_numbered: true
-  # - title: CL5-Answers
-  #   url: /labs/CL5-Answers
-  #   not_numbered: true
+  - title: CL5-Answers
+    url: /labs/CL5-Answers
+    not_numbered: true
   # - title: CL6-Classes
   #   url: /labs/CL6-Classes
   #   not_numbered: true
@@ -224,7 +224,7 @@
 #     not_numbered: true
 
 # - title: Projects
-#   url: /projects/ProjectIdeas
+#   url: /projects/overview
 #   not_numbered: true
 #   sections:
 #   - title: Python Party
