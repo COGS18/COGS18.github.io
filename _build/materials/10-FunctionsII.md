@@ -344,6 +344,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3, 4]
+
+```
+
 The method `append()` is called directly on the list `my_list`
 
 
@@ -354,6 +360,32 @@ The method `append()` is called directly on the list `my_list`
 # this will error with a string
 my_string = 'cogs18'
 my_string.append('!')
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-25-b99e95dcd8d7> in <module>()
+      2 # this will error with a string
+      3 my_string = 'cogs18'
+----> 4 my_string.append('!')
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'str' object has no attribute 'append'
 ```
 
 
@@ -369,12 +401,48 @@ my_float.is_integer()
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `is_integer()` method, attempted on an integer
 # this code will produce an error
 my_int = 12
 my_int.is_integer()
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-27-ba89eed6f102> in <module>()
+      2 # this code will produce an error
+      3 my_int = 12
+----> 4 my_int.is_integer()
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'int' object has no attribute 'is_integer'
 ```
 
 
@@ -393,11 +461,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'abc'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Make a string all upper case
 'aBc'.upper()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'ABC'
+```
+
 
 
 
@@ -411,11 +499,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'Python is great'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Find the index of where a string starts 
 'Hello, my name is'.find('name')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+10
+```
+
 
 
 #### Clicker Question #3
@@ -434,6 +542,16 @@ for element in inputs:
 
 output.capitalize()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Fix Typing Like This '
+```
+
 
 
 - A) 'fix typing like this ' 
@@ -459,6 +577,35 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[16, 33, 40, 88]
+```
+
+
+
+
+
+{:.input_area}
+```python
+ints.sort(reverse=True)
+ints
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[88, 33, 16, 2]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # append adds to the end of a list
@@ -469,12 +616,32 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[16, 33, 40, 88, 2]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # remove value from list
 ints.remove(40)
 ints
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[16, 33, 88, 2]
+```
+
 
 
 
@@ -495,6 +662,16 @@ ints
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+[2, 88, 33, 16]
+```
+
+
+
 #### Clicker Question #4
 
 What will the following code snippet print out?
@@ -508,6 +685,16 @@ list_string.sort()
 list_string.reverse()
 list_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['d', 'c', 'b', 'a']
+```
+
 
 
 - A) ['a', 'c', 'd', 'b']
@@ -538,14 +725,35 @@ car.keys()
 
 
 
+
+{:.output_data_text}
+```
+dict_keys(['brand', 'model', 'year'])
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # get returns the value of a specified key
 mod = car.get('model')
 
+# equivalent
+mod2 = car['model']
+
 print(mod)
+print(mod2)
 ```
 
+
+{:.output_stream}
+```
+M5
+M5
+
+```
 
 
 
@@ -563,9 +771,15 @@ print(car['model'])
 # update adds a key-value pair
 car.update({"color": "Black"})
 
-print(car)
+print(car) 
 ```
 
+
+{:.output_stream}
+```
+{'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+
+```
 
 #### Clicker Question #5
 
@@ -613,6 +827,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+['c', 'b', 'a']
+
+```
+
 
 
 {:.input_area}
@@ -625,6 +845,12 @@ print(my_numbers)
 ```
 
 
+{:.output_stream}
+```
+[-1, 3, 13]
+
+```
+
 #### Dictionary methods that are not in place
 
 
@@ -633,6 +859,16 @@ print(my_numbers)
 ```python
 car
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+```
+
 
 
 
@@ -654,6 +890,13 @@ print(out)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict_keys'>
+dict_keys(['brand', 'model', 'year', 'color'])
+
+```
+
 
 
 {:.input_area}
@@ -664,6 +907,13 @@ print(car)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict'>
+{'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+
+```
+
 
 
 {:.input_area}
@@ -671,6 +921,16 @@ print(car)
 # Return the values in the dicionary
 car.values()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+dict_values(['BMW', 'M5', 2019, 'Black'])
+```
+
 
 
 ## Finding Methods
@@ -706,6 +966,93 @@ dir(my_string)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__getnewargs__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rmod__',
+ '__rmul__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'capitalize',
+ 'casefold',
+ 'center',
+ 'count',
+ 'encode',
+ 'endswith',
+ 'expandtabs',
+ 'find',
+ 'format',
+ 'format_map',
+ 'index',
+ 'isalnum',
+ 'isalpha',
+ 'isascii',
+ 'isdecimal',
+ 'isdigit',
+ 'isidentifier',
+ 'islower',
+ 'isnumeric',
+ 'isprintable',
+ 'isspace',
+ 'istitle',
+ 'isupper',
+ 'join',
+ 'ljust',
+ 'lower',
+ 'lstrip',
+ 'maketrans',
+ 'partition',
+ 'replace',
+ 'rfind',
+ 'rindex',
+ 'rjust',
+ 'rpartition',
+ 'rsplit',
+ 'rstrip',
+ 'split',
+ 'splitlines',
+ 'startswith',
+ 'strip',
+ 'swapcase',
+ 'title',
+ 'translate',
+ 'upper',
+ 'zfill']
+```
+
+
+
 ## Correspondance Between Functions & Methods
 
 Note that:
@@ -739,12 +1086,19 @@ print(float.is_integer(my_float))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+
+```
+
 
 
 {:.input_area}
 ```python
 # method documentation
-float.is_integer? 
+float.is_integer?
 ```
 
 
@@ -783,6 +1137,22 @@ def is_integer(my_float):
 print(my_float)
 is_integer(my_float)
 ```
+
+
+{:.output_stream}
+```
+11.0
+
+```
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 **A3 Q10**: The instructions use the word append. They don't tell you to use the method `append()`. Remember:

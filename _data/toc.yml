@@ -58,9 +58,9 @@
   - title: 11-Debugging
     url: /materials/11-Debugging
     not_numbered: true
-  # - title: 12-Algorithms
-  #   url: /materials/12-Algorithms
-  #   not_numbered: true
+  - title: 12-Algorithms
+    url: /materials/12-Algorithms
+    not_numbered: true
   # - title: 13-Objects
   #   url: /materials/13-Objects
   #   not_numbered: true

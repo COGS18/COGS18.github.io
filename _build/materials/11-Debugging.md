@@ -8,8 +8,8 @@ prev_page:
   url: /materials/10-FunctionsII
   title: '10-FunctionsII'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/12-Algorithms
+  title: '12-Algorithms'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
@@ -69,6 +69,43 @@ def example_function(input_list):
 {:.input_area}
 ```python
 ### executing the function
+example_function(['a','b','c','d'])
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-4-86157b94336b> in <module>()
+      1 ### executing the function
+----> 2 example_function(['a','b','c','d'])
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-1-a4fb5262d9d1> in example_function(input_list)
+      3     running_sum = 0
+      4     for item in input_list:
+----> 5         running_sum = running_sum + item
+      6 
+      7     special_value = input_list[3]
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
 
@@ -94,8 +131,19 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 {:.input_area}
 ```python
 # will produce a syntax error
-if True 
+if True
     print('Yep.')
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-5-a91490a26c37>", line 2
+    if True
+            ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -112,6 +160,17 @@ Python does its best to tell you:
 my_list = [1, 2]
 for value in my_list:
 print(value)
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-6-45596487aa45>", line 5
+    print(value)
+        ^
+IndentationError: expected an indented block
+
 ```
 
 

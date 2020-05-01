@@ -56,4 +56,4 @@ An overview of the Assignments is available [here](../assets/intro/assignments/o
 ### Project
 
 {:.text-content}
-An overview of the Project is available [here](https://cogs18.github.io/projects/overview) and we've compiled a number of Frequently Asked questions (FAQs) [here](https://cogs18.github.io/projects/faq). You can download a template of the project structure [here](../assets/intro/projects/ProjectTemplate.zip).
+An overview of the Project is available [here](../assets/intro/projects/overview.pdf) and we've compiled a number of Frequently Asked questions (FAQs) [here](../assets/intro/projects/faq.pdf). You can download a template of the project structure [here](../assets/intro/projects/ProjectTemplate.zip).
