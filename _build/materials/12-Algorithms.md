@@ -8,8 +8,8 @@ prev_page:
   url: /materials/11-Debugging
   title: '11-Debugging'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/13-Objects
+  title: '13-Objects'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ### Course Announcements
@@ -35,7 +35,7 @@ Computers cannot read between the lines. They are very literal.
 
 ## Algorithm Example: Making a Sandwich
 
-### Clicker Question #1
+#### Clicker Question #1
 
 Can you write an algorithm to make a ham and cheese sandwich. 
 
@@ -65,11 +65,11 @@ Y'all Google is *really* good at sorting.
 {:.input_area}
 ```python
 # Define a list of numbers
-list_of_numbers = [2, 1, 3]
+list_of_numbers = [2, 1, 3]  
 ```
 
 
-### Clicker Question #2
+#### Clicker Question #2
 
 **array**: a collection of items, where each item can be accessed by its index.
 
@@ -131,6 +131,12 @@ print(sorted_array)
 ```
 
 
+{:.output_stream}
+```
+[7, 12, 12, 19, 25]
+
+```
+
 
 
 {:.input_area}
@@ -142,7 +148,13 @@ print(sorted_array)
 ```
 
 
-### Clicker Question #3
+{:.output_stream}
+```
+[2.3, 2.9, 21.3, 56.7, 99.9]
+
+```
+
+#### Clicker Question #3
 
 Using our `sort_array` function from above, what will the following code snippet print out:
 
@@ -153,6 +165,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = ['a', 'c', 'b'] 
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['a', 'b', 'c']
+```
+
 
 
 - A) ['a', 'c', 'b']
@@ -173,10 +195,30 @@ sort_array(data)
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ord('a')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+97
+```
+
 
 
 
@@ -187,7 +229,17 @@ ord('b')
 ```
 
 
-### Clicker Question #4
+
+
+
+{:.output_data_text}
+```
+98
+```
+
+
+
+#### Clicker Question #4
 
 Using our `sort_array` function from above, what will the following code snippet print out:
 
@@ -198,6 +250,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = [True, False, True]
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[False, True, True]
+```
+
 
 
 - A) [False, True, True] 
@@ -218,10 +280,30 @@ True < False
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bin(True)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'0b1'
+```
+
 
 
 
@@ -232,7 +314,17 @@ bin(False)
 ```
 
 
-### Clicker Question #5
+
+
+
+{:.output_data_text}
+```
+'0b0'
+```
+
+
+
+#### Clicker Question #5
 
 Using our `sort_array` function from above, what will the following code snippet print out:
 
@@ -245,9 +337,19 @@ sort_array(data)
 ```
 
 
-- A) [[3, 4], [1, 2]]  
-- B) [1, 2, 3, 4] 
-- C) [[1, 2], [3, 4]]
+
+
+
+{:.output_data_text}
+```
+[[1, 2], [1, 4]]
+```
+
+
+
+- A) [[1, 4], [1, 2]]  
+- B) [1, 1, 2, 4] 
+- C) [[1, 2], [1, 4]]
 - D) None 
 - E) This code will fail
 
@@ -265,14 +367,51 @@ sorted(data)
 
 
 
+
+{:.output_data_text}
+```
+[4, 6, 7]
+```
+
+
+
+
+
+{:.input_area}
+```python
+# what about a list of strings?
+sorted(['asdf','abcd'])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+['abcd', 'asdf']
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Sort different data types
 print(sorted(['a', 'c', 'b']))
 print(sorted([True, False, True]))
-print(sorted([[3, 4], [1, 2]]))
+print(sorted([[1, 4], [1, 2]]))
 ```
 
+
+{:.output_stream}
+```
+['a', 'b', 'c']
+[False, True, True]
+[[1, 2], [1, 4]]
+
+```
 
 ## Algorithmic Complexity
 

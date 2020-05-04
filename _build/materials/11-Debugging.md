@@ -197,6 +197,31 @@ ZeroDivisionError occurs when you try to divide by zero.
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-7-79e900a17bd3> in <module>()
+      1 # produces ZeroDivisionError
+----> 2 1 / 0
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
+```
+
+
 Python specifies:
 - the Exception and specific type / error
 - points you to where the error occurred
@@ -223,6 +248,31 @@ varaible
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-9-4acade15292f> in <module>()
+      1 # If you typo a name, you will get a NameError
+----> 2 varaible
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'varaible' is not defined
+```
+
+
 While it's annoying, it's helpful that Python doesn't just _guess_ that you _meant_ 'variable'....because sometimes Python would guess wrong. It's better for Python to just give us the error.
 
 
@@ -231,6 +281,31 @@ While it's annoying, it's helpful that Python doesn't just _guess_ that you _mea
 ```python
 # You also get a name error if you try to use the wrong operator for assignment
 new_variable == 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-10-4f05423dede6> in <module>()
+      1 # You also get a name error if you try to use the wrong operator for assignment
+----> 2 new_variable == 1
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'new_variable' is not defined
 ```
 
 
@@ -248,12 +323,63 @@ my_list[5]
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+IndexError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-11-2c2a83518cf2> in <module>()
+      1 my_list = [1, 2, 3]
+----> 2 my_list[5]
+
+```
+
+{:.output_traceback_line}
+```
+IndexError: list index out of range
+```
+
+
+
 
 {:.input_area}
 ```python
 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
 my_dictionary = {'name1' : 1, 'name2' : 2}
 my_dictionary['name3']
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+KeyError                                  Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-12-84a1c00e4833> in <module>()
+      1 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
+      2 my_dictionary = {'name1' : 1, 'name2' : 2}
+----> 3 my_dictionary['name3']
+
+```
+
+{:.output_traceback_line}
+```
+KeyError: 'name3'
 ```
 
 
@@ -270,11 +396,60 @@ int('cat')
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-13-1c6b28888bbe> in <module>()
+----> 1 int('cat')
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: invalid literal for int() with base 10: 'cat'
+```
+
+
+
 
 {:.input_area}
 ```python
 my_list = [1, 2, 3]
 my_list.remove(0)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-14-f00634ed638b> in <module>()
+      1 my_list = [1, 2, 3]
+----> 2 my_list.remove(0)
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: list.remove(x): x not in list
 ```
 
 
@@ -285,6 +460,30 @@ my_list.remove(0)
 {:.input_area}
 ```python
 'a_string' + 12
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-15-57c293ee5895> in <module>()
+----> 1 'a_string' + 12
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: can only concatenate str (not "int") to str
 ```
 
 
@@ -315,6 +514,30 @@ int('six')
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-16-196d25768c28> in <module>()
+----> 1 int('six')
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: invalid literal for int() with base 10: 'six'
+```
+
+
 - A) Syntax 
 - B) Name
 - C) Type
@@ -331,6 +554,17 @@ What type of error will the following code produce?
 ```python
 if num > 0
     print("Greater than 0")
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-19-ad228ac1793f>", line 1
+    if num > 0
+              ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -382,6 +616,34 @@ for val in my_list:
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-20-215726ba149c> in <module>()
+      5 
+      6     if val % 2 == 0:
+----> 7         temp = val / (val - 4)
+      8         #+= allows you to add the value on the right to the variable on the left
+      9         # and assign it to the variable on the left
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
+```
+
+
 Sometimes these get really complex. We're here to get better at interpreting these traces.
 
 Note that if external functions are being used, these will get longer.
@@ -422,6 +684,14 @@ print('\nmy_num is: ', my_num)
 ```
 
 
+{:.output_stream}
+```
+Please type a number: asdlfjk
+
+my_num is:  asdlfjk
+
+```
+
 ### Example with Try / Except
 
 
@@ -435,7 +705,37 @@ except:
 ```
 
 
+{:.output_stream}
+```
+Number7
+
+```
+
 #### Try / Except within a While Loop
+
+
+
+{:.input_area}
+```python
+input("text")
+```
+
+
+{:.output_stream}
+```
+textasdlfkj
+
+```
+
+
+
+
+{:.output_data_text}
+```
+'asdlfkj'
+```
+
+
 
 
 
@@ -454,6 +754,16 @@ print('\nmy_num is: ', my_num)
 ```
 
 
+{:.output_stream}
+```
+Please enter a number: asdfasdf;lkj
+Oops!  That was no valid number. Try again!
+Please enter a number: 5
+
+my_num is:  5
+
+```
+
 ### More Try / Except
 
 
@@ -471,6 +781,39 @@ def divide(num1, num2):
 {:.input_area}
 ```python
 print(divide(2, 0))
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-27-0cdf54a076ec> in <module>()
+----> 1 print(divide(2, 0))
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-26-62d4f4a69b89> in divide(num1, num2)
+      1 # define a function divide
+      2 def divide(num1, num2):
+----> 3     return num1 / num2
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
 ```
 
 
@@ -498,6 +841,12 @@ print(safe_divide(2, 0))
 ```
 
 
+{:.output_stream}
+```
+None
+
+```
+
 ## Raising Errors
 
 <div class="alert alert-success">
@@ -520,6 +869,40 @@ print('My integer is: ', my_int)
 ```
 
 
+{:.output_stream}
+```
+An integer please: asdf;ajsdf
+
+```
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-30-df6803c14de3> in <module>()
+      1 my_int = input('An integer please: ')
+      2 if not my_int.isnumeric():
+----> 3     raise ValueError('I wanted a number! :(')
+      4 
+      5 print('My integer is: ', my_int)
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: I wanted a number! :(
+```
+
+
 ### Clicker Question #5
 
 Edit the code below (replacing `---` with either values or variable names) so that when executed, this cell returns `None`.
@@ -528,8 +911,8 @@ Edit the code below (replacing `---` with either values or variable names) so th
 
 {:.input_area}
 ```python
-num1  = ---
-num2 = ---
+num1 = 7
+num2 = 0
 
 try:
     output = num1 / num2
@@ -539,6 +922,12 @@ except ZeroDivisionError:
 print(output)
 ```
 
+
+{:.output_stream}
+```
+None
+
+```
 
 - A) I did it!
 - B) I _think_ I did it...
