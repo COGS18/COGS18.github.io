@@ -14,7 +14,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ---
 ## Course Announcements
 
-- Coding Lab due tonight (11:59 PM)
+- Coding Lab (CL6) due tonight (11:59 PM)
 - E1 Scores on Canvas & Feedback on datahub
 
 Upcoming:
@@ -247,13 +247,20 @@ pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 counter = 1
 
 for doggie in pack_of_dogs:
-    if(counter <= 2):
+    if counter <= 2:
         doggie.speak()
         counter += 1
     else:
         break
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+
+```
 
 - A) 2 instances, 2 method executions
 - B) 2 instances, 4 method executions
@@ -283,6 +290,15 @@ for dog in pack_of_dogs:
 ```
 
 
+{:.output_stream}
+```
+Woof
+Woof
+Woof
+Woof
+
+```
+
 #### Clicker Question #3
 
 Considering the output above, how many instances of dog are there?
@@ -311,7 +327,7 @@ class Dog():
     # Class attributes for Dogs
     sound = 'Woof'
     
-    # Initializer, allows us to specificy instance-specific attributes
+    # Initializer, allows us to specify instance-specific attributes
     # leading and trailing double underscores indicates that this is special to Python
     def __init__(self, name):
         self.name = name
@@ -327,7 +343,7 @@ class Dog():
 ```python
 # Initialize a dog
 # what goes in the parentheses is defined in the __init__
-gary = Dog('Gary') 
+gary = Dog(name = 'Gary') 
 ```
 
 
@@ -341,6 +357,13 @@ print(gary.name)     # This is a instance attribute
 ```
 
 
+{:.output_stream}
+```
+Woof
+Gary
+
+```
+
 
 
 {:.input_area}
@@ -349,6 +372,12 @@ print(gary.name)     # This is a instance attribute
 gary.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 #### Clicker Question #4
 
@@ -365,8 +394,9 @@ class Dog():
     sound = 'Woof'
     
     # Initializer, allows us to specificy instance specific attributes
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self):
         print(self.sound)
@@ -378,7 +408,19 @@ class Dog():
 {:.input_area}
 ```python
 ## We'll execute here
+lexi = Dog(name='Lexi', breed='Italian Greyhound')
+lexi.breed
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Italian Greyhound'
+```
+
 
 
 - A) I did it!
@@ -426,6 +468,19 @@ for pet in pets:
 ```
 
 
+{:.output_stream}
+```
+Jaspurr  says:
+Meow
+Barkley  says:
+Woof
+Picatso  says:
+Meow
+Ruffius  says:
+Woof
+
+```
+
 #### Clicker Question #5
 
 What will the following code snippet print out?
@@ -458,20 +513,31 @@ student.check_score()
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+'rob@python.com'
+```
+
+
+
 - A) True
 - B) 'Rob'
 - C) False 
 - D) 'rob@python.com'
 - E) None
 
+UPDATE WORDING TO MAKE MORE CLEAR 
 #### Clicker Question #6
 
 Which is the best description:
-- A) ~objects are described by instances, with particular instantiations of them called classes.~ 
-- B) ~instances are described by classes, with particular instantiations of them called objects.~
+- A) objects are described by instances, with particular instantiations of them called classes.
+- B) instances are described by classes, with particular instantiations of them called objects.
 - C) classes are described by objects, with particular instantiations of them called instances. 
 - D) objects are described by classes, with particular instantiations of them called instances. 
-- E) ~None of this makes any sense.~
+- E) None of this makes any sense.
 
 
 
@@ -574,7 +640,7 @@ sheep.print_info()
 - D) This brain is medium and False.
 - E) ¯\\\_(ツ)\_/¯
 
-#### Clicker Question #7
+#### Clicker Question #8
 
 Given the following set of classes:
 

@@ -25,11 +25,15 @@ Regrades are *NOT* for:
 - Places where you forgot to answer a question
 - Places where you don't like how points were distributed
 
+Regrades:
+- Piazza - *private* to "Shannon Ellis" (or to Instructors if you can't figure out how to make it just to Prof)
+- regrades tag & e1
+
 ### E2
 
 - will be cumulative, but will be focused on new material (Functions & Classes)
 - The average between your score on the "E1" material on E2 and your first exam can be used to replace your E1 score
-- I care that you know the stuff. You care about knowing the stuff and your grades. So, this is win-
+- I care that you know the stuff. You care about knowing the stuff and your grades. So, this is win-win
 - This will happen automatically. This will only be used to help students. No students will lose points as a result.
 
 # COGS 18 - Exam 1 (Answers)
