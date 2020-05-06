@@ -5,7 +5,7 @@ layout: notebooks
 title: 'Coding Labs'
 prev_page:
   url: /materials/E1_Sp20_Answers
-  title: 'E1-Answers'
+  title: 'E1_Sp20_Answers'
 next_page:
   url: /labs/CL2-Answers
   title: 'CL2-Answers'

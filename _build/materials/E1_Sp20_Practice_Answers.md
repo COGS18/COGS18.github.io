@@ -9,7 +9,7 @@ prev_page:
   title: 'Exam1-Practice'
 next_page:
   url: /materials/E1_Sp20_Answers
-  title: 'E1-Answers'
+  title: 'E1_Sp20_Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # COGS 108 - Practice Exam

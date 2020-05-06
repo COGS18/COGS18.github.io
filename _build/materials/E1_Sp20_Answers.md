@@ -1,9 +1,9 @@
 ---
 interact_link: content/materials/E1_Sp20_Answers.ipynb
 download_link: assets/downloads/E1_Sp20_Answers.ipynb.zip
-pdf_link: assets/pdf/E1-Answers.pdf
+pdf_link: assets/pdf/E1_Sp20_Answers.pdf
 layout: materials
-title: 'E1-Answers'
+title: 'E1_Sp20_Answers'
 prev_page:
   url: /materials/E1_Sp20_Practice_Answers
   title: 'E1_Sp20_Practice_Answers'

@@ -365,9 +365,8 @@ class Dog():
     sound = 'Woof'
     
     # Initializer, allows us to specificy instance specific attributes
-    def __init__(self, name, breed):
+    def __init__(self, name):
         self.name = name
-        self.breed = breed
     
     def speak(self):
         print(self.sound)
@@ -379,8 +378,6 @@ class Dog():
 {:.input_area}
 ```python
 ## We'll execute here
-gary = Dog("Gary", "Corgi")
-print(gary.breed)
 ```
 
 
@@ -429,7 +426,7 @@ for pet in pets:
 ```
 
 
-#### Clicker Question #4
+#### Clicker Question #5
 
 What will the following code snippet print out?
 
@@ -467,7 +464,7 @@ student.check_score()
 - D) 'rob@python.com'
 - E) None
 
-#### Clicker Question #5
+#### Clicker Question #6
 
 Which is the best description:
 - A) ~objects are described by instances, with particular instantiations of them called classes.~ 
@@ -533,7 +530,7 @@ my_hammer.use_tool()
 ```
 
 
-#### Clicker Question #6
+#### Clicker Question #7
 
 Given the following set of classes:
 
