@@ -16,7 +16,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 - A3 due tonight (11:59 PM)
 - Coding Lab 6 due Wednesday
-- Exams & A4 will be released later today
+- Exams (& A4) will be released later today
 
 # Objects
 
@@ -45,6 +45,12 @@ print(date_string)
 ```
 
 
+{:.output_stream}
+```
+29/09/1988
+
+```
+
 
 
 {:.input_area}
@@ -53,6 +59,16 @@ print(date_string)
 date_list = ['29', '09', '1988']
 date_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['29', '09', '1988']
+```
+
 
 
 
@@ -68,6 +84,12 @@ print(day)
 ```
 
 
+{:.output_stream}
+```
+29
+
+```
+
 
 
 {:.input_area}
@@ -76,6 +98,16 @@ print(day)
 date_dictionary = {'day': 29, 'month': 9, 'year': 1988}
 date_dictionary
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'day': 29, 'month': 9, 'year': 1988}
+```
+
 
 
 ## Objects
@@ -120,13 +152,29 @@ print(my_date)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29
+
+```
+
 
 
 {:.input_area}
 ```python
 # Check what type of thing `my_date` is
-type(my_date)
+type(my_date) 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+datetime.date
+```
+
 
 
 ## Accessing Attributes & Methods
@@ -152,6 +200,16 @@ my_date.day
 
 
 
+
+{:.output_data_text}
+```
+29
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the month attribute
@@ -161,11 +219,31 @@ my_date.month
 
 
 
+
+{:.output_data_text}
+```
+9
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the year attribute
 my_date.year
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1988
+```
+
 
 
 ### Date - Methods
@@ -181,6 +259,16 @@ These are _functions_ that *belong* to and operate on the object directly.
 # Method to return what day of the week the date is
 my_date.weekday()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 
@@ -203,12 +291,32 @@ my_date.isoformat()
 
 
 
+
+{:.output_data_text}
+```
+'1988-09-29'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # operates on date object
 # returns a string
 type(my_date.isoformat())
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
 
 
 It's also possible to carry out operations on multiple date objects.
@@ -223,6 +331,12 @@ print(my_date, my_date2)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29 1980-07-29
+
+```
+
 
 
 {:.input_area}
@@ -233,6 +347,13 @@ print(time_diff.days,  "days") #in days
 print(time_diff.days/365,"years") #in years
 ```
 
+
+{:.output_stream}
+```
+2984 days
+8.175342465753424 years
+
+```
 
 ### Listing Attributes & Methods : `dir`
 
@@ -258,6 +379,61 @@ date.
 ## we'll talk about the double underscores next lecture
 dir(my_date)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__ne__',
+ '__new__',
+ '__radd__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rsub__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__sub__',
+ '__subclasshook__',
+ 'ctime',
+ 'day',
+ 'fromisoformat',
+ 'fromordinal',
+ 'fromtimestamp',
+ 'isocalendar',
+ 'isoformat',
+ 'isoweekday',
+ 'max',
+ 'min',
+ 'month',
+ 'replace',
+ 'resolution',
+ 'strftime',
+ 'timetuple',
+ 'today',
+ 'toordinal',
+ 'weekday',
+ 'year']
+```
+
 
 
 #### Clicker Question #2
@@ -329,6 +505,12 @@ print(now)
 ```
 
 
+{:.output_stream}
+```
+2020-05-04 08:28:31.305005
+
+```
+
 
 
 {:.input_area}
@@ -339,6 +521,13 @@ print(now.day)
 ```
 
 
+{:.output_stream}
+```
+2020
+4
+
+```
+
 
 
 {:.input_area}
@@ -348,12 +537,18 @@ print(now.weekday())
 ```
 
 
+{:.output_stream}
+```
+0
+
+```
+
 ### Objects Summary
 
 - Objects allow for data (attributes) and functions (methods) to be organized together
     - methods operate on the object type (modify state)
     - attributes store and return information (data) about the object (maintain state)
-- `dir()` returns methods & attrbutes for an object
+- `dir()` returns methods & attributes for an object
 - Syntax:
     - `obj.method()`
     - `obj.attribute`

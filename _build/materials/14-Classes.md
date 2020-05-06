@@ -14,7 +14,12 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ---
 ## Course Announcements
 
-- Coming Soon
+- Coding Lab due tonight (11:59 PM)
+- E1 Scores on Canvas & Feedback on datahub
+
+Upcoming:
+- E2 next Fri (5/15)
+- A4 due Mon (5/18)
 
 # Classes
 
@@ -48,7 +53,7 @@ Think of classes as the _blueprint_ for creating and defining objects and their 
 {:.input_area}
 ```python
 # Define a class with `class`. 
-# By convention, class definitions use CamelCase
+# By convention, class definitions use CapWords (Pascal)
 class Dog():
     
     # Class attributes for objects of type Dog
@@ -89,10 +94,16 @@ george = Dog()
 
 {:.input_area}
 ```python
-# george, has 'Dog' attribute(s)
+# george, has 'sound' attribute(s) from Dog()
 print(george.sound)
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 
 
@@ -103,6 +114,12 @@ print(george.sound)
 george.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 #### Clicker Question #1
 
@@ -148,11 +165,34 @@ pack_of_dogs
 
 
 
+
+{:.output_data_text}
+```
+[<__main__.Dog at 0x10d9b2b38>,
+ <__main__.Dog at 0x10d9b2b70>,
+ <__main__.Dog at 0x10d9b2ba8>,
+ <__main__.Dog at 0x10d9b2be0>]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # take a look at this
 type(pack_of_dogs[0])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+__main__.Dog
+```
+
 
 
 
@@ -163,6 +203,15 @@ for dog in pack_of_dogs:
     dog.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+Woof
+Woof
+
+```
 
 ## Instances & self
 

@@ -4,8 +4,8 @@ download_link: assets/downloads/CL2-Answers.ipynb.zip
 layout: notebooks
 title: 'Coding Labs'
 prev_page:
-  url: /materials/E1_Sp20_Practice_Answers
-  title: 'E1_Sp20_Practice_Answers'
+  url: /materials/E1_Sp20_Answers
+  title: 'E1-Answers'
 next_page:
   url: /labs/CL2-Answers
   title: 'CL2-Answers'

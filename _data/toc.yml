@@ -124,9 +124,9 @@
   - title: E1_Sp20_Practice_Answers
     url: /materials/E1_Sp20_Practice_Answers
     not_numbered: true    
-#   - title: E1-Answers
-#     url: /materials/E1-Answers
-#     not_numbered: true
+  - title: E1-Answers
+    url: /materials/E1_Sp20_Answers
+    not_numbered: true
 #   - title: Exam2-Review
 #     url: /materials/Exam2-Review
 #     not_numbered: true

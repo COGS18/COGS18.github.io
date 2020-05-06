@@ -8,8 +8,8 @@ prev_page:
   url: /materials/Exam1-Practice
   title: 'Exam1-Practice'
 next_page:
-  url: /labs/CL2-Answers
-  title: 'Coding Labs'
+  url: /materials/E1_Sp20_Answers
+  title: 'E1-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # COGS 108 - Practice Exam
