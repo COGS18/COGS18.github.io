@@ -8,8 +8,8 @@ prev_page:
   url: /materials/13-Objects
   title: '13-Objects'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/15-Namespaces
+  title: '15-Namespaces'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
@@ -697,6 +697,24 @@ human.folded and sheep.folded
 sheep.print_info()
 ```
 
+
+### Classes Review
+
+- `class` creates a new class type
+    - names tend to use CapWords case
+    - can have attributes (including instance attributes) and methods
+        - `obj.attribute` accesses data stored in attribute
+        - `obj.method()` carries out code defined within method 
+
+
+- instance attributes defined with `__init__`
+    - `__init__` is a reserved method in Python
+    - This "binds the attributes with the given arguments"
+    - `self` refers to current instance
+
+- to create an object (instance) of a specified class type (`ClassType`):
+    - `object_name = ClassType(input1, input2)`
+    - `self` is not given an input when creating an object of a specified class
 
 ## Everything in Python is an Object!
 
