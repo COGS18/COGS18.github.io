@@ -20,7 +20,9 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
     - fetched, completed, and submitted on datahub
     - details to be discussed during review Wed
 - **A4** due Mon (5/18)
-
+    - through Q4 == fair game on E2
+    - Q5 to end of assignment == more involved than Qs on E2
+- Handling E1 regrades today (I promise.)
 
 # Command Line & Scripts
 
@@ -146,7 +148,7 @@ An absolute file path starts with a slash `/` specifying the root directory.
 
 This **relative** path does _not_ start with a leading slash (b/c it's not an absolute path).
 
-### Clicker Question #1
+#### Clicker Question #1
 
 Given the following file structure: 
 
@@ -162,7 +164,7 @@ Given the following file structure:
         - 01_variables.ipynb
     
 
-If your current working directory is `notebooks`, shat is the **absolute path** to `cool_thing.py`?
+If your current working directory is `notebooks`, what is the **absolute path** to `cool_thing.py`?
 
 - A) `/scripts/cool_thing.py`
 - B) `scripts/cool_thing.py`
@@ -170,7 +172,7 @@ If your current working directory is `notebooks`, shat is the **absolute path** 
 - D) `../scripts/cool_thing.py`
 - E) ¯\\\_(ツ)\_/¯
 
-### Clicker Question #2
+#### Clicker Question #2
 
 Given the same file structure: 
 
@@ -305,7 +307,7 @@ Here, we saw `~/Desktop/`.
 ```
 
 
-### Clicker Question #3
+#### Clicker Question #3
 
 Which is the best description of the following command:
     
@@ -325,7 +327,7 @@ Which is the best description of the following command:
 ```
 
 
-### Clicker Question #4
+#### Clicker Question #4
 
 Which creates a file?     
    
