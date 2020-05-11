@@ -532,11 +532,12 @@ student.check_score()
 UPDATE WORDING TO MAKE MORE CLEAR 
 #### Clicker Question #6
 
-Which is the best description:
-- A) objects are described by instances, with particular instantiations of them called classes.
-- B) instances are described by classes, with particular instantiations of them called objects.
-- C) classes are described by objects, with particular instantiations of them called instances. 
-- D) objects are described by classes, with particular instantiations of them called instances. 
+Which is the best description of objects, classes and instances?
+
+- A) objects are defined by `instance`, with particular instantiations of them called classes.
+- B) instances are defined by `class`, with particular instantiations of them called objects.
+- C) classes are defined by `object`, with particular instantiations of them called instances. 
+- D) objects are defined by `class`, with particular instantiations of them called instances. 
 - E) None of this makes any sense.
 
 
@@ -596,6 +597,14 @@ my_hammer.use_tool()
 ```
 
 
+{:.output_stream}
+```
+True
+To hammer things.
+Using tool.
+
+```
+
 #### Clicker Question #7
 
 Given the following set of classes:
@@ -634,6 +643,12 @@ sheep.print_info()
 ```
 
 
+{:.output_stream}
+```
+This brain is medium and is not folded.
+
+```
+
 - A) This brain is medium and folded.
 - B) This brain is large and folded.
 - C) This brain is medium and not folded.
@@ -649,7 +664,7 @@ Given the following set of classes:
 {:.input_area}
 ```python
 class Brain(): 
-    
+        
     def __init__(self, size=None, folded=None):
         self.size = size
         self.folded = folded
@@ -683,6 +698,16 @@ human.folded and sheep.folded
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
 - A) True
 - B) False
 - C) None
@@ -697,6 +722,12 @@ human.folded and sheep.folded
 sheep.print_info()
 ```
 
+
+{:.output_stream}
+```
+This brain is medium and is not folded.
+
+```
 
 ### Classes Review
 
@@ -734,6 +765,16 @@ print(isinstance(a, object))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+True
+True
+True
+
+```
+
 ### Functions are objects
 
 
@@ -745,6 +786,13 @@ print(isinstance(max, object))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+
+```
+
 
 
 {:.input_area}
@@ -755,6 +803,16 @@ def my_function():
     
 isinstance(my_function, object)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Class definitions & instances are objects
@@ -774,7 +832,14 @@ print(isinstance(my_instance, object))
 ```
 
 
-## Object Oriented Programming
+{:.output_stream}
+```
+True
+True
+
+```
+
+## Object-Oriented Programming
 
 <div class="alert alert-success">
 <b>Object-oriented programming (OOP)</b> is a programming paradigm in which code is organized around objects. Python is an OOP programming langauge. 

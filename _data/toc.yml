@@ -70,9 +70,9 @@
   - title: 15-Namespaces
     url: /materials/15-Namespaces
     not_numbered: true
-  # - title: 16-CommandLine
-  #   url: /materials/16-CommandLine
-  #   not_numbered: true
+  - title: 16-CommandLine
+    url: /materials/16-CommandLine
+    not_numbered: true
   # - title: 17-APIs
   #   url: /materials/17-APIs
   #   not_numbered: true

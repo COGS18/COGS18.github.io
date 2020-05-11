@@ -8,8 +8,8 @@ prev_page:
   url: /materials/14-Classes
   title: '14-Classes'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/16-CommandLine
+  title: '16-CommandLine'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ### Course Announcements
@@ -17,6 +17,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - Exam 2 *next* Friday (5/15)
 - A4 due Mon 5/18 (11:59 PM)
 - E1 regrades to be handled by Monday afternoon
+- CL6 answers posted to website
 
 # Namespaces
 
@@ -45,17 +46,18 @@ That is, the *scope* of an object is where it is available to / from.
 {:.input_area}
 ```python
 # see what's stored in global namespace
+a = 3
+b = 15
 %whos
 ```
 
 
 {:.output_stream}
 ```
-Variable             Type        Data/Info
-------------------------------------------
-MyNumbers            type        <class '__main__.MyNumbers'>
-choice               function    <function choice at 0x10f3adb70>
-my_remote_function   function    <function my_remote_function at 0x10f3add08>
+Variable   Type    Data/Info
+----------------------------
+a          int     3
+b          int     15
 
 ```
 
@@ -111,7 +113,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-4-0a474bb83797> in <module>()
+<ipython-input-3-0a474bb83797> in <module>()
       1 # we haven't imported the module yet
       2 # this code fails if you haven't yet imported math
 ----> 3 type(math)
@@ -305,18 +307,7 @@ dir(random)
 {:.input_area}
 ```python
 # working with random
-random. 
-```
-
-
-
-{:.output_traceback_line}
-```
-  File "<ipython-input-12-8a8e65ff8e46>", line 2
-    random.
-            ^
-SyntaxError: invalid syntax
-
+random.
 ```
 
 
@@ -365,7 +356,7 @@ print(chosen)
 
 {:.output_stream}
 ```
-['2', '4']
+['2', '5']
 
 ```
 
@@ -400,7 +391,7 @@ choice(to_choose_from)
 
 {:.output_data_text}
 ```
-'5'
+'2'
 ```
 
 
@@ -426,33 +417,11 @@ collections.
 
 
 
-{:.output_traceback_line}
-```
-  File "<ipython-input-20-81ad473034f2>", line 3
-    collections.
-                ^
-SyntaxError: invalid syntax
-
-```
-
-
-
 
 {:.input_area}
 ```python
 # this is how you would do it
-cols. 
-```
-
-
-
-{:.output_traceback_line}
-```
-  File "<ipython-input-21-864f30d7f9ec>", line 2
-    cols.
-          ^
-SyntaxError: invalid syntax
-
+cols.
 ```
 
 
@@ -466,7 +435,7 @@ from string import punctuation as punc
 ```
 
 
-### Clicker Question #1
+#### Clicker Question #1
 
 Which of the following is NOT a valid Python import statement?
 
@@ -487,7 +456,18 @@ Which of the following is NOT a valid Python import statement?
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-28-037fa158f972>", line 6
+    import ascii_letters from string
+                            ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -573,16 +553,6 @@ my_remote_function(2, 1)
 ```
 
 
-
-
-
-{:.output_data_text}
-```
-3
-```
-
-
-
 ## Importing Custom Code II
 
 
@@ -606,31 +576,11 @@ type(nums)
 
 
 
-
-{:.output_data_text}
-```
-remote.MyNumbers
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Check 
 nums.add()
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-5
-```
-
 
 
 
@@ -663,16 +613,6 @@ choice([1, 2, 3])
 
 
 
-
-{:.output_data_text}
-```
-1
-```
-
-
-
-
-
 {:.input_area}
 ```python
 from remote import choice
@@ -694,16 +634,6 @@ choice?
 ```python
 choice([1, 2, 3])
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-3
-```
-
 
 
 While you _can_ have functions with the same name in two different places...do your best to avoid this.
