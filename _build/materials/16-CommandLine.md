@@ -81,6 +81,12 @@ Do this by starting with `!`
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/Materials
+
+```
+
 ## An important aside: File Paths
 
 <div class="alert alert-success">
@@ -116,6 +122,36 @@ An absolute file path starts with a slash `/` specifying the root directory.
 ```
 
 
+{:.output_stream}
+```
+00-Introduction.ipynb          24-WrapUp.ipynb
+01-Tools.ipynb                 A1-Syntax.ipynb
+02-JupyterNotebooks.ipynb      A2-Examples.ipynb
+03-Variables.ipynb             Check-In.ipynb
+04-Operators.ipynb             E1-Answers.ipynb
+05-Conditionals.ipynb          E1_Sp20_Answers.ipynb
+06-DataTypes.ipynb             E1_Sp20_Practice_Answers.ipynb
+07-Loops.ipynb                 E2-Answers.ipynb
+08-Encodings.ipynb             Exam1-Practice.ipynb
+09-FunctionsI.ipynb            Exam1-Review-Answers.ipynb
+10-FunctionsII.ipynb           Exam1-Review-old.ipynb
+11-Debugging.ipynb             Exam1-Review.ipynb
+12-Algorithms.ipynb            Exam2-Practice.ipynb
+13-Objects.ipynb               Exam2-Review-Answers.ipynb
+14-Classes.ipynb               Exam2-Review.ipynb
+15-Namespaces.ipynb            LICENSE.txt
+16-CommandLine.ipynb           Midterm.ipynb
+17-APIs.ipynb                  README.md
+18-ScientificComputing.ipynb   Untitled.ipynb
+19-Documentation.ipynb         XX-Extra-Clicker-Qs.ipynb
+19-OpenSource.ipynb            [34m__pycache__[m[m
+20-CodeStyle.ipynb             [34mimg[m[m
+21-CodeTesting.ipynb           [34mmy_module[m[m
+22-CodeProjects.ipynb          remote.py
+23-AdvancedPython.ipynb        stw.py
+
+```
+
 #### Relative Paths
 
 <div class="alert alert-success">
@@ -131,6 +167,12 @@ An absolute file path starts with a slash `/` specifying the root directory.
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/Materials
+
+```
+
 
 
 {:.input_area}
@@ -140,6 +182,28 @@ An absolute file path starts with a slash `/` specifying the root directory.
 !ls ../COGS108/Lectures-Sp19
 ```
 
+
+{:.output_stream}
+```
+01_intro_ethics.pdf               15_machine_learning.pdf
+02_version_control.pdf            16_ml_examples.pdf
+03_data.pdf                       17_machine_learning.ipynb
+[34m04_data_wrangling[m[m                 18_geospatial.pdf
+04_data_wrangling.pdf             19_geospatial.ipynb
+04_data_wrangling.zip             20_Nonparametric.pdf
+05_dataviz.pdf                    21_dimensionality_reduction.pdf
+[34m06_datavizII[m[m                      22_dimensionality_reduction.ipynb
+07_analysis.pdf                   23_future.pdf
+[34m08_descriptive[m[m                    EDA_CaseStudy_12PM.pdf
+09_EDA.ipynb                      EDA_CaseStudy_2PM.pdf
+10_inference.pdf                  Inference_CaseStudy_12PM.pdf
+11_regression.ipynb               Inference_CaseStudy_2PM.pdf
+12_correlation.ipynb              README.md
+13_binary.ipynb                   XX_Guest_Merchant.pdf
+13_text.pdf                       [34mimg[m[m
+14_text.ipynb
+
+```
 
 
 - `..` specify you want to move one directory up in your hierarchy
@@ -211,13 +275,19 @@ If your current working directory is `notebooks`, what is the **relative path** 
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/Materials
+
+```
+
 #### Change directory
 
 
 
 {:.input_area}
 ```python
-# change directory
+# change directory 
 !cd ~/Desktop 
 ```
 
@@ -238,6 +308,36 @@ Here, we saw `~/Desktop/`.
 !ls
 ```
 
+
+{:.output_stream}
+```
+00-Introduction.ipynb          24-WrapUp.ipynb
+01-Tools.ipynb                 A1-Syntax.ipynb
+02-JupyterNotebooks.ipynb      A2-Examples.ipynb
+03-Variables.ipynb             Check-In.ipynb
+04-Operators.ipynb             E1-Answers.ipynb
+05-Conditionals.ipynb          E1_Sp20_Answers.ipynb
+06-DataTypes.ipynb             E1_Sp20_Practice_Answers.ipynb
+07-Loops.ipynb                 E2-Answers.ipynb
+08-Encodings.ipynb             Exam1-Practice.ipynb
+09-FunctionsI.ipynb            Exam1-Review-Answers.ipynb
+10-FunctionsII.ipynb           Exam1-Review-old.ipynb
+11-Debugging.ipynb             Exam1-Review.ipynb
+12-Algorithms.ipynb            Exam2-Practice.ipynb
+13-Objects.ipynb               Exam2-Review-Answers.ipynb
+14-Classes.ipynb               Exam2-Review.ipynb
+15-Namespaces.ipynb            LICENSE.txt
+16-CommandLine.ipynb           Midterm.ipynb
+17-APIs.ipynb                  README.md
+18-ScientificComputing.ipynb   Untitled.ipynb
+19-Documentation.ipynb         XX-Extra-Clicker-Qs.ipynb
+19-OpenSource.ipynb            [34m__pycache__[m[m
+20-CodeStyle.ipynb             [34mimg[m[m
+21-CodeTesting.ipynb           [34mmy_module[m[m
+22-CodeProjects.ipynb          remote.py
+23-AdvancedPython.ipynb        stw.py
+
+```
 
 ### More Shell Commands
 
@@ -287,6 +387,12 @@ Here, we saw `~/Desktop/`.
 ```
 
 
+{:.output_stream}
+```
+Hello World!
+
+```
+
 #### Print the contents of a file
 
 
@@ -296,6 +402,13 @@ Here, we saw `~/Desktop/`.
 !cat dir_name/new_file.py
 ```
 
+
+{:.output_stream}
+```
+# +
+# add some comment 
+
+```
 
 #### Open to see and edit contents of a file
 
@@ -410,7 +523,7 @@ From the command line, you can execute a Python script using the `python` comman
 
 `python dir_name/new_file.py`
 
-### Clicker Question #5
+#### Clicker Question #5
 
 To create a file and see its contents, which command line commands would you use (and in which order)?    
    
@@ -420,7 +533,7 @@ To create a file and see its contents, which command line commands would you use
 - D) `touch` > `cat`
 - E) `cat` > `touch`
 
-### Clicker Question #6
+#### Clicker Question #6
 
 Given the file structure from earlier: 
 

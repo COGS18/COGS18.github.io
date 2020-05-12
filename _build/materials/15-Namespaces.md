@@ -113,7 +113,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-3-0a474bb83797> in <module>()
+<ipython-input-2-0a474bb83797> in <module>()
       1 # we haven't imported the module yet
       2 # this code fails if you haven't yet imported math
 ----> 3 type(math)
@@ -146,31 +146,11 @@ type(math)
 
 
 
-
-{:.output_data_text}
-```
-module
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # By the way - modules are objects
 isinstance(math, object)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-True
-```
-
 
 
 
@@ -181,16 +161,6 @@ True
 # remember to tab complete or use dir(math)
 math.sqrt(9)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-3.0
-```
-
 
 
 ### `import` example: random module
@@ -214,92 +184,11 @@ type(random)
 
 
 
-
-{:.output_data_text}
-```
-module
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Explore what is available in random
 dir(random)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-['BPF',
- 'LOG4',
- 'NV_MAGICCONST',
- 'RECIP_BPF',
- 'Random',
- 'SG_MAGICCONST',
- 'SystemRandom',
- 'TWOPI',
- '_BuiltinMethodType',
- '_MethodType',
- '_Sequence',
- '_Set',
- '__all__',
- '__builtins__',
- '__cached__',
- '__doc__',
- '__file__',
- '__loader__',
- '__name__',
- '__package__',
- '__spec__',
- '_acos',
- '_bisect',
- '_ceil',
- '_cos',
- '_e',
- '_exp',
- '_inst',
- '_itertools',
- '_log',
- '_os',
- '_pi',
- '_random',
- '_sha512',
- '_sin',
- '_sqrt',
- '_test',
- '_test_generator',
- '_urandom',
- '_warn',
- 'betavariate',
- 'choice',
- 'choices',
- 'expovariate',
- 'gammavariate',
- 'gauss',
- 'getrandbits',
- 'getstate',
- 'lognormvariate',
- 'normalvariate',
- 'paretovariate',
- 'randint',
- 'random',
- 'randrange',
- 'sample',
- 'seed',
- 'setstate',
- 'shuffle',
- 'triangular',
- 'uniform',
- 'vonmisesvariate',
- 'weibullvariate']
-```
-
 
 
 
@@ -354,12 +243,6 @@ print(chosen)
 ```
 
 
-{:.output_stream}
-```
-['2', '5']
-
-```
-
 ## Imports: `from` & `as`
 
 <div class="alert alert-success">
@@ -384,16 +267,6 @@ from random import choice
 ## to call this
 choice(to_choose_from)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-'2'
-```
-
 
 
 
@@ -457,17 +330,6 @@ Which of the following is NOT a valid Python import statement?
 # from os import path
 # from random import choice, choices
 import ascii_letters from string
-```
-
-
-
-{:.output_traceback_line}
-```
-  File "<ipython-input-28-037fa158f972>", line 6
-    import ascii_letters from string
-                            ^
-SyntaxError: invalid syntax
-
 ```
 
 
@@ -553,6 +415,16 @@ my_remote_function(2, 1)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
 ## Importing Custom Code II
 
 
@@ -576,11 +448,31 @@ type(nums)
 
 
 
+
+{:.output_data_text}
+```
+remote.MyNumbers
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Check 
 nums.add()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 
@@ -598,6 +490,14 @@ nums.add??
 
 {:.input_area}
 ```python
+from random import choice
+```
+
+
+
+
+{:.input_area}
+```python
 # choice is currently from random module
 choice?
 ```
@@ -607,8 +507,18 @@ choice?
 
 {:.input_area}
 ```python
-choice([1, 2, 3])
+choice([1, 2, 3, 4, 5])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1
+```
+
 
 
 
@@ -632,8 +542,18 @@ choice?
 
 {:.input_area}
 ```python
-choice([1, 2, 3])
+choice([1, 2, 3, 4, 5])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 While you _can_ have functions with the same name in two different places...do your best to avoid this.
@@ -642,7 +562,7 @@ It's Python legal but bad for your nerves.
 
 ## A note on `*`
 
-If you see `from module import *` this means to import everything (read as 'from module import everything). 
+If you see `from module import *` this means to import everything (read as 'from module import everything'). 
 
 This is generally considered not to be the best.
 

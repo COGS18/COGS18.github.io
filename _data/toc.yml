@@ -127,15 +127,15 @@
   - title: E1_Sp20_Answers
     url: /materials/E1_Sp20_Answers
     not_numbered: true
-#   - title: Exam2-Review
-#     url: /materials/Exam2-Review
-#     not_numbered: true
+  - title: Exam2-Review
+    url: /materials/Exam2-Review
+    not_numbered: true
 #   - title: Exam2-Review-Answers
 #     url: /materials/Exam2-Review-Answers
 #     not_numbered: true
-#   - title: Exam2-Practice
-#     url: /materials/Exam2-Practice
-#     not_numbered: true
+  - title: Exam2-Practice
+    url: /materials/Exam2-Practice
+    not_numbered: true
 #   - title: E2-Answers
 #     url: /materials/E2-Answers
 #     not_numbered: true
