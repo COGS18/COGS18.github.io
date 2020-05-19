@@ -79,9 +79,9 @@
   # - title: 18-ScientificComputing
   #   url: /materials/18-ScientificComputing
   #   not_numbered: true
-  # # - title: 19-OpenSource
-  # #   url: /materials/19-OpenSource
-  # #   not_numbered: true
+  - title: 17-OpenSource
+    url: /materials/17-OpenSource
+    not_numbered: true
   # - title: 19-Documentation
   #   url: /materials/19-Documentation
   #   not_numbered: true
@@ -187,6 +187,9 @@
   # - title: CL7-CommandLine
   #   url: /labs/CL7-CommandLine
   #   not_numbered: true
+  - title: CL7-Answers
+    url: /labs/CL7-Answers
+    not_numbered: true  
   # - title: CL8-ProjectOverview
   #   url: /labs/CL8-ProjectOverview
   #   not_numbered: true

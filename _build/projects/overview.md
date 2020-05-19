@@ -1,8 +1,8 @@
 ---
 title: 'Projects'
 prev_page:
-  url: /labs/CL6-Answers
-  title: 'CL6-Answers'
+  url: /labs/CL7-Answers
+  title: 'CL7-Answers'
 next_page:
   url: /projects/PythonParty
   title: 'Python Party'
