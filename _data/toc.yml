@@ -190,9 +190,9 @@
   - title: CL7-Answers
     url: /labs/CL7-Answers
     not_numbered: true  
-  # - title: CL8-ProjectOverview
-  #   url: /labs/CL8-ProjectOverview
-  #   not_numbered: true
+  - title: CL8-ProjectOverview
+    url: /labs/CL8-ProjectOverview
+    not_numbered: true
   # - title: CL9-Project
   #   url: /labs/CL9-Project
   #   not_numbered: true
