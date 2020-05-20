@@ -46,7 +46,7 @@ First, in notebook below, do the following:
 - Write two new functions, that do something with instances of your new classes
     - For example, take a list of custom objects, and call a method on each one
 
-### Student Example: Emma Garcia
+### Student Example: Emma Sargsian
 
 
 
@@ -96,15 +96,6 @@ def change_major(student, major):
 ```
 
 
-{:.output_stream}
-```
-you shall not pass.
-denied
-I studied psychology and my grade is atrocious.
-I studied Gender Studies and my grade is reset.
-
-```
-
 Emma then stored two files in the same folder as their notebook:
 - `derrrp.py` : stored `Academics`, `change_major`, and `report_card`
 - `Academics` & `change_major` are imported and used below
@@ -132,6 +123,27 @@ print('\nJess Example')
 Jess = Academics(study = 'math', grades = 'good')
 change_major(Jess, 'Gender Studies')
 Jess.print_info()
+```
+
+
+{:.output_stream}
+```
+Jim Example
+denied
+I studied psychology and my grade is atrocious.
+
+Jess Example
+No change
+I studied Gender Studies and my grade is reset.
+
+```
+
+
+
+{:.input_area}
+```python
+# execute script
+!python student_example.py
 ```
 
 

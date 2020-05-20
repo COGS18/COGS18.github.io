@@ -17,7 +17,7 @@ Welcome to the eighth coding lab!
 
 This coding lab is all about your project. 
 
-Find a partner, and talk about your ideas for the project. Talk through any outlines and code you have. 
+Find a partner (if you want), and talk about your ideas for the project. Talk through any outlines and code you have. 
 
 Use this time with your classmates to work through any bugs you have or parts of your project you're unsure about.
 
