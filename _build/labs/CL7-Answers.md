@@ -46,7 +46,7 @@ First, in notebook below, do the following:
 - Write two new functions, that do something with instances of your new classes
     - For example, take a list of custom objects, and call a method on each one
 
-### Student Example: Emma Sargsian
+### Student Example 1: Emma Sargsian
 
 
 
@@ -126,18 +126,6 @@ Jess.print_info()
 ```
 
 
-{:.output_stream}
-```
-Jim Example
-denied
-I studied psychology and my grade is atrocious.
-
-Jess Example
-No change
-I studied Gender Studies and my grade is reset.
-
-```
-
 
 
 {:.input_area}
@@ -147,17 +135,67 @@ I studied Gender Studies and my grade is reset.
 ```
 
 
-{:.output_stream}
-```
-Jim Example
-denied
-I studied psychology and my grade is atrocious.
+### Student Example 2: Dustin Doan
 
-Jess Example
-No change
-I studied Gender Studies and my grade is reset.
 
+
+{:.input_area}
+```python
+# Classes here
+class Noodles():
+    def __init__(self, size = None, available = None):
+        self.size = size
+        self.available = available
+        
+    def order_to_go(self):
+        if self.available == None:
+            print("I'm sorry, but we aren't taking to-go orders right now.")
+        if self.available == 'Yes':
+            print("I'll have your order ready in 20 minutes")
+        
+class Ramen(Noodles):
+    def __init__(self, size = 'large', available = 'Yes'):
+        super().__init__(size, available)
 ```
+
+
+
+
+{:.input_area}
+```python
+# new functions here
+def eating(Ramen):
+    if Ramen.available == 'Yes':
+        print('Itadakimasu') # means "I will receive"; something you say before eating
+        print('Slurp slurp slurp, delicious!')
+    else:
+        print('Quarantine can be rough. It be like that sometimes.')
+        
+def soup(Ramen):
+    if Ramen.size == 'large':
+        print("\n" + 'Should I drink the soup?' + "\n\t" + "I really shouldn't... There's too much sodium.")
+    if Ramen.size != 'large':
+        print("\n" + 'Should I drink the soup?' + "\n\t" + "You only live once! Slurp slurp slurp!")
+```
+
+
+Dusting then stored two files in the same folder as their notebook:
+- `Quarantine_Cravings.py` : stored `Noodles`, `Ramen`, `eating`, and `soup`
+- This whole module is imported and used below
+- The following cell will not run if you don't create the module with the same name
+
+
+
+
+{:.input_area}
+```python
+import Quarantine_Cravings as food_pls
+
+tonkotsu = food_pls.Ramen()
+food_pls.eating(tonkotsu)
+food_pls.soup(tonkotsu)
+```
+
 
 Next, we are going to move this code to an external file - a Python module file. 
 

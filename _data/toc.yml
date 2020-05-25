@@ -82,9 +82,9 @@
   - title: 17-OpenSource
     url: /materials/17-OpenSource
     not_numbered: true
-  # - title: 19-Documentation
-  #   url: /materials/19-Documentation
-  #   not_numbered: true
+  - title: 18-Documentation
+    url: /materials/18-Documentation
+    not_numbered: true
   # - title: 20-CodeStyle
   #   url: /materials/20-CodeStyle
   #   not_numbered: true

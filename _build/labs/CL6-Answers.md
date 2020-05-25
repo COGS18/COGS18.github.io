@@ -56,6 +56,16 @@ jan2nd.isoweekday()
 
 
 
+
+{:.output_data_text}
+```
+7
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Answer for b
@@ -64,12 +74,44 @@ print(date.min)
 ```
 
 
+{:.output_stream}
+```
+9999-12-31
+0001-01-01
+
+```
+
 
 
 {:.input_area}
 ```python
 # Answer for c
 date(2001, 4, 32)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-20-d5119f14f5ae> in <module>()
+      1 # Answer for c
+----> 2 date(2001, 4, 32)
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: day is out of range for month
 ```
 
 
@@ -99,6 +141,13 @@ while counting:
 print('The number of Mondays is', n_mondays)
 ```
 
+
+{:.output_stream}
+```
+Finished counting.
+The number of Mondays is 4
+
+```
 
 **Now see if you can turn your answer to part d into a function.**
 
@@ -196,7 +245,7 @@ later.isoformat()
 
 {:.output_data_text}
 ```
-'2018-10-30T09:38:00.355841'
+'2020-05-09T12:18:32.265010'
 ```
 
 
@@ -404,7 +453,7 @@ That is, write a class called `TritonCourse` that has instance attributes `depar
 
 {:.input_area}
 ```python
-class TritonCourse:
+class TritonCourse():
     
     university = "UC San Diego"
     
@@ -487,7 +536,7 @@ So, for example, once you add this method, using the method on our `cogs18` inst
 
 {:.input_area}
 ```python
-class TritonCourse:
+class TritonCourse():
     
     university = "UC San Diego"
     

@@ -8,10 +8,13 @@ prev_page:
   url: /materials/16-CommandLine
   title: '16-CommandLine'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/18-Documentation
+  title: '18-Documentation'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+<center><img src="img/Explore the world!.png" width="550px"></center>
+
+
 ## Course Announcements
 
 - CL7 score posted (Drop lowest two - that's your final CL score)
@@ -94,6 +97,32 @@ First conceptualized by **Guido van Rossum** in the late 1980s:
 import this
 ```
 
+
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
 
 Tim Peters -- the author of the Zen of Python -- is a software developer and was a major contributor to the Python Programming language.
 
