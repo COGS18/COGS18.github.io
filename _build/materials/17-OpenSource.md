@@ -237,7 +237,7 @@ But...what if you just want to _use_ what's available to you in Python...
 The Python Package Index is a software repository for the Python programming language.
 </div>
 
-Where packages are hosted. You can search and use packages from Python.
+[PyPI](https://pypi.org/): Where packages are hosted. You can search and use packages from Python.
 
 ### PIP: Python Installer
 
@@ -305,6 +305,12 @@ In Python (package) development... when `<MAJOR>` == 0, suggests a package in de
 ```
 
 
+{:.output_stream}
+```
+Python 3.7.0
+
+```
+
 
 
 {:.input_area}
@@ -314,6 +320,21 @@ In Python (package) development... when `<MAJOR>` == 0, suggests a package in de
 ```
 
 
+{:.output_stream}
+```
+Name: nltk
+Version: 3.3
+Summary: Natural Language Toolkit
+Home-page: http://nltk.org/
+Author: Steven Bird
+Author-email: stevenbird1@gmail.com
+License: Apache License, Version 2.0
+Location: /anaconda3/lib/python3.7/site-packages
+Requires: six
+Required-by: 
+
+```
+
 
 
 {:.input_area}
@@ -322,6 +343,16 @@ In Python (package) development... when `<MAJOR>` == 0, suggests a package in de
 import nltk
 nltk.__version__
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'3.3'
+```
+
 
 
 ### Dependencies
@@ -406,6 +437,17 @@ arr2 = np.array([[5, 6], [7, 8]])
 ```python
 arr1
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+array([[1, 2],
+       [3, 4]])
+```
+
 
 
 
@@ -594,6 +636,56 @@ df
 
 
 
+
+<div markdown="0">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Subj_ID</th>
+      <th>condition</th>
+      <th>group</th>
+      <th>score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>001</td>
+      <td>cognition</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>002</td>
+      <td>perception</td>
+      <td>1</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
 {:.input_area}
 ```python
 # You can index in pandas
@@ -669,6 +761,10 @@ plt.plot(dat);
 ```
 
 
+
+![png](../images/build/materials/17-OpenSource_110_0.png)
+
+
 - can change plot type
 - _lots_ of customizations possible
 
@@ -708,6 +804,10 @@ plt.hist(d2, 25, alpha=0.6);
 ```
 
 
+
+![png](../images/build/materials/17-OpenSource_116_0.png)
+
+
 ### Analysis - Statistical Comparisons
 
 
@@ -717,6 +817,16 @@ plt.hist(d2, 25, alpha=0.6);
 # Statistically compare the two distributions
 stats.ttest_ind(d1, d2)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+Ttest_indResult(statistic=-9.33809588164776, pvalue=2.5256641524949454e-20)
+```
+
 
 
 ## COGS108: Data Science in Practice

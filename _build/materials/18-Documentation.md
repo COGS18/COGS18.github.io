@@ -8,8 +8,8 @@ prev_page:
   url: /materials/17-OpenSource
   title: '17-OpenSource'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/19-CodeStyle
+  title: '19-CodeStyle'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
@@ -47,7 +47,7 @@ If you design your program using separate functions for each task, avoid copying
 
 ### Good Naming
 
-We discussed this in the API lecture. Clear names are for humans. The computer doesn't care, but you and others reading your code do.
+Clear names are for humans. The computer doesn't care, but you and others reading your code do.
 
 ### Code comments & Documentation
 
@@ -105,6 +105,22 @@ return_unicode('Hello World.')
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+'72+101+108+108+111+32+87+111+114+108+100+46'
+```
+
+
+
+- A) Returns unicode code points, as a list
+- B) Encodes a string as a cypher, returning a string of alphabetical characters
+- C) Returns unicode code points, as a string
+- D) Encodes inputs alphabetical characters, returned as a list
+- E) This code will fail
+
 Improvement Considerations:
 - Structural considerations: indentations & spacing
 - Improved naming: functions & variables
@@ -128,15 +144,13 @@ def convert_to_unicode(input_string):
     -------
     output_string : string
         String containing the code points for the input string.
-    """
+    """ 
     
     output = list()
-
     # Converting a string to a list, to split up the characters of the string
     input_list = list(input_string)
     
-    for character in input_list:
-        
+    for character in input_list:   
         temp = ord(character)
         output.append(temp)
 

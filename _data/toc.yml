@@ -85,9 +85,9 @@
   - title: 18-Documentation
     url: /materials/18-Documentation
     not_numbered: true
-  # - title: 20-CodeStyle
-  #   url: /materials/20-CodeStyle
-  #   not_numbered: true
+  - title: 19-CodeStyle
+    url: /materials/19-CodeStyle
+    not_numbered: true
   # - title: 21-CodeTesting
   #   url: /materials/21-CodeTesting
   #   not_numbered: true
@@ -138,7 +138,13 @@
     not_numbered: true
   - title: E2_Practice_Sp20-PartII-Answers
     url: /materials/E2_Practice_Sp20-PartII-Answers
-    not_numbered: true    
+    not_numbered: true 
+  - title: E2_Sp20_PartI_Answers
+    url: /materials/E2_Sp20-PartI_Answers
+    not_numbered: true
+  - title: E1_Sp20_PartII_Answers
+    url: /materials/E2_Sp20-PartII_Answers
+    not_numbered: true       
 #   - title: E2-Answers
 #     url: /materials/E2-Answers
 #     not_numbered: true

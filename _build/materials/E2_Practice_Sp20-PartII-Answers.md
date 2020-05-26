@@ -8,8 +8,8 @@ prev_page:
   url: /materials/Exam2-Practice
   title: 'Exam2-Practice'
 next_page:
-  url: /labs/CL2-Answers
-  title: 'Coding Labs'
+  url: /materials/E2_Sp20-PartI_Answers
+  title: 'E2_Sp20_PartI_Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # COGS 18 - Exam 2 (Part II)
