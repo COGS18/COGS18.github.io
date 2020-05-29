@@ -88,9 +88,9 @@
   - title: 19-CodeStyle
     url: /materials/19-CodeStyle
     not_numbered: true
-  # - title: 21-CodeTesting
-  #   url: /materials/21-CodeTesting
-  #   not_numbered: true
+  - title: 20-CodeTesting
+    url: /materials/20-CodeTesting
+    not_numbered: true
   # - title: 22-CodeProjects
   #   url: /materials/22-CodeProjects
   #   not_numbered: true
@@ -199,12 +199,12 @@
   - title: CL8-ProjectOverview
     url: /labs/CL8-ProjectOverview
     not_numbered: true
-  # - title: CL9-Project
-  #   url: /labs/CL9-Project
-  #   not_numbered: true
-  # - title: CL10-CodeReview
-  #   url: /labs/CL10-CodeReview
-  #   not_numbered: true
+  - title: CL9-Project
+    url: /labs/CL9-Project
+    not_numbered: true
+  - title: CL10-CodeReview
+    url: /labs/CL10-CodeReview
+    not_numbered: true
 
 # - title: Assignments
 #   url: /assignments/A1-GettingStarted

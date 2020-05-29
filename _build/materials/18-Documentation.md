@@ -282,6 +282,28 @@ help(add)
 ```
 
 
+{:.output_stream}
+```
+Help on function add in module __main__:
+
+add(num1, num2)
+    Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition.
+
+
+```
+
 ### `__doc__`
 
 
@@ -293,6 +315,25 @@ help(add)
 print(add.__doc__)
 ```
 
+
+{:.output_stream}
+```
+Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition. 
+    
+
+```
 
 #### Clicker Question #2
 

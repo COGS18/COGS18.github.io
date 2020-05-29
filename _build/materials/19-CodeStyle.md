@@ -8,13 +8,18 @@ prev_page:
   url: /materials/18-Documentation
   title: '18-Documentation'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/20-CodeTesting
+  title: '20-CodeTesting'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
 
 - Final Project Due 6/12 (11:59 PM)
+- E2 & A4 grades posted
+- Calculating your final grade
+    - Drop 2 (lowest) coding labs
+    - Drop 1 of the "E1" scores
+    - Add up your points
 
 #### COGS 18 Extra Credit Opportunities
 
@@ -80,6 +85,32 @@ import this
 ```
 
 
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
+
 ### Program Errors vs. Stylistic Issues
 
 - Programmatic Error: something that breaks the code
@@ -143,6 +174,14 @@ def my_func():
     for num in my_nums:
         output += str(int(num) + 1)
     return output
+```
+
+
+
+
+{:.input_area}
+```python
+my_func()
 ```
 
 
@@ -229,6 +268,12 @@ if True:
 ```
 
 
+{:.output_stream}
+```
+Words.
+
+```
+
 
 
 {:.input_area}
@@ -238,6 +283,12 @@ if True:
     print('Words.')
 ```
 
+
+{:.output_stream}
+```
+Words.
+
+```
 
 ### Spacing
 
@@ -296,6 +347,14 @@ But, super long lines are hard to read at a glance.
 for i in [1, 2, 3]: print(i**2 + i%2)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+10
+
+```
 
 
 
@@ -606,7 +665,7 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 
 `pylint` is available from Anaconda to check this for you. (Not available on datahub.)
 
-#### Clicker Question #6
+#### Clicker Question #8
 
 How many PEP8 violations can you find in this code?
 
@@ -646,5 +705,14 @@ def MyFunction(input_num):
 {:.input_area}
 ```python
 # Let's fix this code
+```
+
+
+
+
+{:.input_area}
+```python
+# check using pylint
+!pylint linter_example.py
 ```
 
