@@ -91,9 +91,9 @@
   - title: 20-CodeTesting
     url: /materials/20-CodeTesting
     not_numbered: true
-  # - title: 22-CodeProjects
-  #   url: /materials/22-CodeProjects
-  #   not_numbered: true
+  - title: 21-CodeProjects
+    url: /materials/21-CodeProjects
+    not_numbered: true
   # - title: 23-AdvancedPython
   #   url: /materials/23-AdvancedPython
   #   not_numbered: true

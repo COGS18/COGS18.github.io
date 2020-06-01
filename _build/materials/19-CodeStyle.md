@@ -602,13 +602,22 @@ week_9()
 
 
 
+
+{:.output_data_text}
+```
+"You're so close!"
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Goodness
-
 def week_9():
     
-    # Randomly pick from list of destressing statements
+    # Randomly pick from list of de-stressing statements
     # to help students as they finish the quarter.
     statements = ["You've totally got this!", 
                   "You're so close!", 
@@ -622,6 +631,16 @@ def week_9():
 
 week_9()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+"You're going to do great!"
+```
+
 
 
 #### Inline comments
@@ -640,6 +659,16 @@ week_9()#words of encouragement
 
 
 
+
+{:.output_data_text}
+```
+"You've totally got this!"
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Goodness
@@ -647,11 +676,21 @@ week_9()  # words of encouragement
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+'Remember to take breaks!'
+```
+
+
+
 ## Specific Guidelines - Documentation
 
 - Write a descriptive docstring for all functions & classes
 
-Note: If you're borrowing functions from an assignment, you're should add documentation to these functions.
+Note: If you're borrowing functions from an assignment, you should add documentation to these functions.
 
 Comments within the functions you've borrowed noting that you've borrowed it as well as a general note in your project description will suffice for attribution.
 
@@ -692,19 +731,33 @@ def MyFunction(input_num):
 - D) 5 or 6
 - E) 7 or more
 
-
-
-{:.input_area}
-```python
 # list here
-```
-
+- not readable for humans; not sure what it's supposed to do
+- variable naming - improve
+- function name - snake case
+- spacing within list
+- indentation - (red ind)
+- line spacing
+- general spacing overall
 
 
 
 {:.input_area}
 ```python
 # Let's fix this code
+def my_function(input_num):
+    
+    my_list = [0, 1, 2, 3]
+    if 1 in my_list: 
+        ind = 1
+    else:
+        ind = 0
+        
+    qq = []
+    for i in my_list[ind:]:
+        qq.append(input_num/i)
+    
+    return qq
 ```
 
 
@@ -716,3 +769,33 @@ def MyFunction(input_num):
 !pylint linter_example.py
 ```
 
+
+{:.output_stream}
+```
+************* Module linter_example
+linter_example.py:2:0: C0303: Trailing whitespace (trailing-whitespace)
+linter_example.py:3:16: C0326: Exactly one space required after comma
+    my_list = [0,1,2,3]
+                ^ (bad-whitespace)
+linter_example.py:3:18: C0326: Exactly one space required after comma
+    my_list = [0,1,2,3]
+                  ^ (bad-whitespace)
+linter_example.py:3:20: C0326: Exactly one space required after comma
+    my_list = [0,1,2,3]
+                    ^ (bad-whitespace)
+linter_example.py:6:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
+linter_example.py:8:21: C0326: No space allowed before bracket
+    for i in my_list [ind:]:
+                     ^ (bad-whitespace)
+linter_example.py:10:0: C0304: Final newline missing (missing-final-newline)
+linter_example.py:1:0: C0111: Missing module docstring (missing-docstring)
+linter_example.py:1:0: C0103: Function name "MyFunction" doesn't conform to snake_case naming style (invalid-name)
+linter_example.py:1:0: C0111: Missing function docstring (missing-docstring)
+linter_example.py:4:21: C0321: More than one statement on a single line (multiple-statements)
+linter_example.py:7:4: C0103: Variable name "qq" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------
+Your code has been rated at -3.33/10
+
+
+```

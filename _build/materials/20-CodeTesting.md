@@ -8,13 +8,14 @@ prev_page:
   url: /materials/19-CodeStyle
   title: '19-CodeStyle'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/21-CodeProjects
+  title: '21-CodeProjects'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
 
 - Final Project Due 6/12 (11:59 PM)
+- Please fill out your CAPEs
 
 # Code Testing
 
@@ -43,7 +44,18 @@ def extend(input_arg):
 {:.input_area}
 ```python
 # test here
+extend([1,2,3,4])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 3, 4, 1, 2, 3, 4]
+```
+
 
 
 - A) `assert isinstance(extend([1, 2]), list)`
@@ -78,6 +90,42 @@ assert extend([1, 2]) == [1, 2, 1, 2]
 ```python
 # Check if the function works on tuples
 assert extend((1, 2)) == (1, 2, 1, 2)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-6-c510c0c20682> in <module>()
+      1 # Check if the function works on tuples
+----> 2 assert extend((1, 2)) == (1, 2, 1, 2)
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-1-a3ca5f93bd43> in extend(input_arg)
+      1 def extend(input_arg):
+----> 2     output = input_arg.copy()
+      3     for element in input_arg:
+      4         output.append(element)
+      5     return output
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'tuple' object has no attribute 'copy'
 ```
 
 
@@ -139,8 +187,18 @@ def add(num1, num2):
 
 {:.input_area}
 ```python
-add(2.7, 1.2)
+add(2.7, 1.2) == 3.9
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -190,6 +248,49 @@ def divide_list(in_list):
         output.append(el1 / el2)
     
     return output
+```
+
+
+
+
+{:.input_area}
+```python
+divide_list((0,2,3))
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-27-c91f35be7f5f> in <module>()
+----> 1 divide_list((0,2,3))
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-18-1f783ab343a3> in divide_list(in_list)
+      4 
+      5     for el1, el2 in zip(in_list[1:], in_list[0:-1]):
+----> 6         output.append(el1 / el2)
+      7 
+      8     return output
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
 ```
 
 
