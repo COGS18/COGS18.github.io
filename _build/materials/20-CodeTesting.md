@@ -363,7 +363,7 @@ Why We Write Tests:
 - ensure does does what it's supposed to
 - system for checking things when you change / make updates in the future
 
-Tests, when run, help identify code that will give if something has gone wrong. 
+Tests, when run, help identify code that will give an error if something has gone wrong. 
 
 ### Four general types
 
@@ -436,7 +436,17 @@ def sum_list(input_list):
 {:.input_area}
 ```python
 ### YOUR TEST
+def test_sum_list():
+    assert sum_list([1, 2, 3]) == 6
 
+```
+
+
+
+
+{:.input_area}
+```python
+test_sum_list()
 ```
 
 

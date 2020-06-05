@@ -8,19 +8,19 @@ prev_page:
   url: /materials/20-CodeTesting
   title: '20-CodeTesting'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/22-AdvancedPython
+  title: '22-AdvancedPython'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
 
-- Final Projects due Fri of finals week by 11:59 PM
+- Final Projects due Fri (6/12) of finals week by 11:59 PM
 - Normal office hours this week
 - Feedback!
     - Please fill out CAPEs! (Current: ~38%)
     - Please fill out TA/IA feedback!
 - Final Course Survey: https://bit.ly/cogs18_sp20_post
-    - By next Wednesday for Extra Credit (11:59 PM)
+    - By next Friday for Extra Credit (11:59 PM)
 
 ## Project Check-In
 
@@ -128,11 +128,11 @@ Clean functions accomplish a **single task**!
 
 ### Refactoring Example: Chatbot
 
-## Clicker Question #1
+#### Clicker Question #1
 
 How many "things" does this function accomplish?
 
-A) 0  |  B) 1 | C) 2 | D) 3 | E) 4
+A) 0  |  B) 1 | C) 2 | D) 3 | E) 4+
 
 
 
@@ -183,6 +183,21 @@ def have_a_chat():
 have_a_chat()
 ```
 
+
+{:.output_stream}
+```
+INPUT :	hi
+OUTPUT: Huh?
+INPUT :	who are you?
+OUTPUT: I'm too shy to answer questions. What do you want to talk about?
+INPUT :	ok
+OUTPUT: Okay
+INPUT :	huh?
+OUTPUT: I'm too shy to answer questions. What do you want to talk about?
+INPUT :	quit
+OUTPUT: Bye!
+
+```
 
 ### Refactored Example: Chatbot
 
@@ -297,6 +312,19 @@ def have_a_chat():
 have_a_chat()  
 ```
 
+
+{:.output_stream}
+```
+INPUT :	hi
+OUTPUT: Thanks!
+INPUT :	how are you?
+OUTPUT: I'm too shy to answer questions. What do you want to talk about?
+INPUT :	python
+OUTPUT: Thanks!
+INPUT :	quit
+OUTPUT: Bye
+
+```
 
 ## Project Notes
 

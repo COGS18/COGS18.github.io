@@ -94,12 +94,12 @@
   - title: 21-CodeProjects
     url: /materials/21-CodeProjects
     not_numbered: true
-  # - title: 23-AdvancedPython
-  #   url: /materials/23-AdvancedPython
-  #   not_numbered: true
-  # # - title: 25-WrapUp
-  # #   url: /materials/25-WrapUp
-  # #   not_numbered: true
+  - title: 22-AdvancedPython
+    url: /materials/22-AdvancedPython
+    not_numbered: true
+  - title: 23-WrapUp
+    url: /materials/23-WrapUp
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
