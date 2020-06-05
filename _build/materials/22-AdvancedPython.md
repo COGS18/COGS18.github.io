@@ -502,6 +502,16 @@ output_list
 
 
 
+
+{:.output_data_text}
+```
+[1, 2, 3]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # This list comprehension is equivalent to the cell above
@@ -512,12 +522,12 @@ output_list
 
 
 
-{:.input_area}
-```python
-print(my_list)
-print(my_list2)
 
+{:.output_data_text}
 ```
+[1, 2, 3]
+```
+
 
 
 
@@ -529,6 +539,22 @@ my_list = [1, 2, 3, 4, 5]
 my_list2 = [val for val in my_list if val % 2 == 0]
 ```
 
+
+
+
+{:.input_area}
+```python
+print(my_list)
+print(my_list2)
+```
+
+
+{:.output_stream}
+```
+[1, 2, 3, 4, 5]
+[2, 4]
+
+```
 
 #### Clicker Question #3
 
@@ -542,6 +568,16 @@ list1 = [3, 4, 5]
 multiplied = [item * 3 for item in list1] 
 multiplied
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[9, 12, 15]
+```
+
 
 
 - A) `True`
@@ -583,11 +619,31 @@ re.findall('o', my_string)
 
 
 
+
+{:.output_data_text}
+```
+['o', 'o', 'o', 'o']
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # but the patterns are where these shine
 re.findall('\d\d', my_string)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['12', '14', '16']
+```
+
 
 
 ## filter
@@ -618,10 +674,43 @@ def is_bool(val):
 
 {:.input_area}
 ```python
+out = []
+
+for val in [1, False, 's', True]:
+    out.append(is_bool(val))
+
+out
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[False, True, False, True]
+```
+
+
+
+
+
+{:.input_area}
+```python
 # apply function to every element of list
 # function to apply is first input to filter
 list(filter(is_bool, [1, False, 's', True]))
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[False, True]
+```
+
 
 
 ## Lambda Functions
@@ -648,6 +737,16 @@ increment(1)
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # not a lambda function
@@ -667,6 +766,16 @@ lambda_equivalent(1)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
 #### Clicker Question #4
 
 What would the following return?
@@ -679,6 +788,16 @@ my_list = [1, 5, 4, 6, 8, 11, 3, 12]
 new_list = list(filter(lambda x: (x%2 == 0), my_list))
 new_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[4, 6, 8, 12]
+```
+
 
 
 - A) `[1, 5, 11, 3]`
@@ -713,11 +832,31 @@ list(map(double, my_list))
 
 
 
+
+{:.output_data_text}
+```
+[2, 4, 6, 8]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Note - we can use lambda functions with map
 list(map(lambda x: x *2, my_list))
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 4, 6, 8]
+```
+
 
 
 ## Conditional Assignment
@@ -729,7 +868,7 @@ You can use a conditional within an assignment, to manipulate what gets assigned
 {:.input_area}
 ```python
 # variable assignment
-condition = True
+condition = False
 my_var = 1 if condition else 2
 ```
 
@@ -741,6 +880,12 @@ my_var = 1 if condition else 2
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 ## Unpacking
 
@@ -774,6 +919,31 @@ my_func(my_list)
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-34-e14a904b0af2> in <module>()
+      1 # this will error
+----> 2 my_func(my_list)
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: my_func() missing 2 required positional arguments: 'yy' and 'zz'
+```
+
+
+
 
 {:.input_area}
 ```python
@@ -781,6 +951,12 @@ my_func(my_list)
 my_func(*my_list)
 ```
 
+
+{:.output_stream}
+```
+1 2 3
+
+```
 
 
 
@@ -799,6 +975,12 @@ my_dict = {'xx' : 1, 'yy' : 2, 'zz' : 3}
 my_func(**my_dict)
 ```
 
+
+{:.output_stream}
+```
+1 2 3
+
+```
 
 ## Overloading Operators
 
@@ -844,10 +1026,26 @@ print(python)
 ```
 
 
+{:.output_stream}
+```
+The programming language python
+
+```
+
 
 
 {:.input_area}
 ```python
 python > perl
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 

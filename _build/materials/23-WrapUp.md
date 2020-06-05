@@ -20,7 +20,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
     - Fri: 8-11 AM (Geoff)
     - Use Zoom link for their normal office hours
 - Feedback:
-    - Please Fill out CAPEs
+    - Please fill out CAPEs (current: ~53%)
     - Final Course Survey: https://bit.ly/cogs18_sp20_post
 
 # Wrap Up
@@ -43,7 +43,7 @@ You've been more formally trained than *many* people out in the world programmin
 - Objects & Classes
 - Namespaces
 - Command Line
-- APIs, Scientific Computing, & Open Source
+- Scientific Computing, & Open Source
 - Documentation, Code Style, Code Testing
 
 #### Clicker Question #1
