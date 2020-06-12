@@ -101,8 +101,8 @@ Note that not all of these files / sections are mandatory, and they do not have 
 
 First, make sure everything is organized into a folder, as you want it. Then: 
 
-- On Mac: left click on the folder, and click 'Compress'.
-- On Windows: left click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
+- On Mac: right-click on the folder, and click 'Compress'.
+- On Windows: right-click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
 
 In both cases, this will create a zip file, with the name 'FolderName.zip'. 
 
