@@ -160,9 +160,9 @@ The final exam is cumulative and is worth 20\% of your grade. There will be more
 | 7/16   | 3	   | 10     | Th    | Testing, Errors + Debugging |                        |                         |
 | 7/20   | 4	   | 11     | M     | Objects & Classes           | A3: Chatbots           |                         | 
 | 7/21   | 4	   | 12     | Tu    | Namespaces [**]             |                        |                         | 
-| 7/22   | 4	   | 13     | W     | Review                      |                        | CL4: Debugging & Classes|
+| 7/22   | 4	   | --     | W     | Review                      |                        | CL4: Debugging & Classes|
 | 7/23   | 4	   | --     | Th    | **Exam II**                 |                        |                         | 
-| 7/27   | 5	   | --     | M     | Command Line                | A4: Artificial Agents  |                         | 
+| 7/27   | 5	   | 13     | M     | Command Line                | A4: Artificial Agents  |                         | 
 | 7/28   | 5	   | 14     | Tu    | Code Style & Documentation  |                        |                         | 
 | 7/29   | 5	   | 15     | W     | Open Source & APIs          |                        | CL5: Good Code          | 
 | 7/30   | 5	   | 16     | Th    | Advanced Python & Wrap up   | A5: Experimentation    |                         | 
