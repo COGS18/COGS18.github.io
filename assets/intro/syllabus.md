@@ -26,9 +26,9 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 | Role           | Name          					 | CodingLab         | Office Hours |
 | -------------: |:------------------------|:------------------|:-------------|
-| TA             | Shan (Sylvia) Zhang  	 | TBD               | TBD          |
-| TA 	           | Paul Ian Cabasag        | TBD               | TBD          |
-| IA (Volunteer) | Jose Figueroa           | --                | --           |
+| TA             | Sylvia Zhang         	 | Mon 1PM, 2PM      | TBD          |
+| TA 	           | Paul Cabasag            | Wed 1PM, 2PM      | TBD          |
+| IA (Volunteer) | Jose Figueroa           | --                | Tues 2-3     |
 | IA (Volunteer) | Taylor Han              | --                | --           |
 
 Course Website: https://cogs18.github.io   
@@ -153,8 +153,8 @@ The final exam is cumulative and is worth 20\% of your grade. There will be more
 | 7/6    | 2	   | 5      | M     | Collections                 | A1: Getting Started    |                         | 
 | 7/7    | 2	   | 6      | Tu    | Loops                       |                        |                         | 
 | 7/8    | 2	   | 7      | W     | Dictionaries  [*]           |                        | CL2: Programming        | 
-| 7/9    | 2	   | --     | Th    | Review                      | A2: Ciphers            |                         | 
-| 7/13   | 3	   | --     | M     | **Exam I**                  |                        |                         |
+| 7/9    | 2	   | --     | Th    | Review                      |                        |                         | 
+| 7/13   | 3	   | --     | M     | **Exam I**                  | A2: Ciphers            |                         |
 | 7/14   | 3	   | 8      | Tu    | Functions I                 |                        |                         | 
 | 7/15   | 3	   | 9      | W     | Functions II                |                        | CL3: Algorithms & Functions| 
 | 7/16   | 3	   | 10     | Th    | Testing, Errors + Debugging |                        |                         |

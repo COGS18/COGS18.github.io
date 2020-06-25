@@ -19,86 +19,59 @@
   layout: home
 
 - title: Materials
-  url: /materials/00-Introduction
+  url: /materials/01-Introduction
   not_numbered: true
   sections:
-  - title: 00-Introduction
-    url: /materials/00-Introduction
+  - title: 01-Introduction
+    url: /materials/01-Introduction
     not_numbered: true
   # - title: 01-Tools
   #   url: /materials/01-Tools
   #   not_numbered: true
-  # - title: 02-JupyterNotebooks
-  #   url: /materials/02-JupyterNotebooks
+  # - title: 02-Notebooks-Variables
+  #   url: /materials/02-Notebooks-Variables
   #   not_numbered: true
-  # - title: 03-Variables
-  #   url: /materials/03-Variables
+  # - title: 03-Operators
+  #   url: /materials/03-Operators
   #   not_numbered: true
-  # - title: 04-Operators
-  #   url: /materials/04-Operators
+  # - title: 04-Conditionals
+  #   url: /materials/04-Conditionals
   #   not_numbered: true
-  # - title: 05-Conditionals
-  #   url: /materials/05-Conditionals
+  # - title: 05-DataTypes
+  #   url: /materials/05-DataTypes
   #   not_numbered: true
-  # - title: 06-DataTypes
-  #   url: /materials/06-DataTypes
+  # - title: 06-Loops
+  #   url: /materials/06-Loops
   #   not_numbered: true
-  # - title: 07-Loops
-  #   url: /materials/07-Loops
+  # - title: 07-Dictionaries
+  #   url: /materials/07-Dictionaries
   #   not_numbered: true
-  # - title: 08-Encodings
-  #   url: /materials/08-Encodings
+  # - title: 08-FunctionsI
+  #   url: /materials/08-FunctionsI
   #   not_numbered: true
-  # - title: 09-FunctionsI
-  #   url: /materials/09-FunctionsI
+  # - title: 09-FunctionsII
+  #   url: /materials/09-FunctionsII
   #   not_numbered: true
-  # - title: 10-FunctionsII
-  #   url: /materials/10-FunctionsII
+  # - title: 10-Testing-Debugging
+  #   url: /materials/10-Testing-Debugging
   #   not_numbered: true
-  # - title: 11-Debugging
-  #   url: /materials/11-Debugging
+  # - title: 11-Classes
+  #   url: /materials/11-Classes
   #   not_numbered: true
-  # - title: 12-Algorithms
-  #   url: /materials/12-Algorithms
+  # - title: 12-Namespaces
+  #   url: /materials/12-Namespaces
   #   not_numbered: true
-  # - title: 13-Objects
-  #   url: /materials/13-Objects
+  # - title: 13-CommandLine
+  #   url: /materials/13-CommandLine
   #   not_numbered: true
-  # - title: 14-Classes
-  #   url: /materials/14-Classes
+  # - title: 14-OpenSource-API
+  #   url: /materials/14-OpenSource-API
   #   not_numbered: true
-  # - title: 15-Namespaces
-  #   url: /materials/15-Namespaces
+  # - title: 15-Documentation-Style
+  #   url: /materials/15-Documentation-Style
   #   not_numbered: true
-  # - title: 16-CommandLine
-  #   url: /materials/16-CommandLine
-  #   not_numbered: true
-  # # - title: 17-APIs
-  # #   url: /materials/17-APIs
-  # #   not_numbered: true
-  # # - title: 18-ScientificComputing
-  # #   url: /materials/18-ScientificComputing
-  # #   not_numbered: true
-  # - title: 17-OpenSource
-  #   url: /materials/17-OpenSource
-  #   not_numbered: true
-  # - title: 18-Documentation
-  #   url: /materials/18-Documentation
-  #   not_numbered: true
-  # - title: 19-CodeStyle
-  #   url: /materials/19-CodeStyle
-  #   not_numbered: true
-  # - title: 20-CodeTesting
-  #   url: /materials/20-CodeTesting
-  #   not_numbered: true
-  # - title: 21-CodeProjects
-  #   url: /materials/21-CodeProjects
-  #   not_numbered: true
-  # - title: 22-AdvancedPython
-  #   url: /materials/22-AdvancedPython
-  #   not_numbered: true
-  # - title: 23-WrapUp
-  #   url: /materials/23-WrapUp
+  # - title: 16-AdvancedPython
+  #   url: /materials/16-AdvancedPython
   #   not_numbered: true
   # - title: A1-Syntax
   #   url: /materials/A1-Syntax
@@ -150,61 +123,37 @@
 # #     not_numbered: true
 
 
-# - title: Coding Labs
-#   url: /labs/CL2-Answers
-#   not_numbered: true
-#   sections:
-#   # - title: CL1-Tooling
-#   #   url: /labs/CL1-Tooling
-#   #   not_numbered: true
-#   # - title: CL2-ProgrammingI
-#   #   url: /labs/CL2-ProgrammingI
+- title: Coding Labs
+  url: /labs/CL1-Tooling
+  not_numbered: true
+  sections:
+  - title: CL1-Tooling
+    url: /labs/CL1-Tooling
+    not_numbered: true
+#   # - title: CL2-Programming
+#   #   url: /labs/CL2-Programming
 #   #   not_numbered: true
 #   - title: CL2-Answers
 #     url: /labs/CL2-Answers
 #     not_numbered: true
-#   - title: CL2-QA
-#     url: /labs/CL2-QA
-#     not_numbered: true
-#   # - title: CL3-ProgrammingII
-#   #   url: /labs/CL3-ProgrammingII
+#   # - title: CL3-Functions
+#   #   url: /labs/CL3-Functions
 #   #   not_numbered: true
 #   - title: CL3-Answers
 #     url: /labs/CL3-Answers
 #     not_numbered: true
-#   # - title: CL4-AlgorithmicThinking
-#   #   url: /labs/CL4-AlgorithmicThinking
+#   # - title: CL4-Classes
+#   #   url: /labs/CL4-Classes
 #   #   not_numbered: true
 #   - title: CL4-Answers
 #     url: /labs/CL4-Answers
-#     not_numbered: true
-#   # - title: CL5-Debugging
-#   #   url: /labs/CL5-Debugging
+#     not_numbered: true    
+#   # - title: CL5-CommandLine
+#   #   url: /labs/CL5-CommandLine
 #   #   not_numbered: true
 #   - title: CL5-Answers
 #     url: /labs/CL5-Answers
-#     not_numbered: true
-#   # - title: CL6-Classes
-#   #   url: /labs/CL6-Classes
-#   #   not_numbered: true
-#   - title: CL6-Answers
-#     url: /labs/CL6-Answers
-#     not_numbered: true   
-#   # - title: CL7-CommandLine
-#   #   url: /labs/CL7-CommandLine
-#   #   not_numbered: true
-#   - title: CL7-Answers
-#     url: /labs/CL7-Answers
-#     not_numbered: true  
-#   - title: CL8-ProjectOverview
-#     url: /labs/CL8-ProjectOverview
-#     not_numbered: true
-#   - title: CL9-Project
-#     url: /labs/CL9-Project
-#     not_numbered: true
-#   - title: CL10-CodeReview
-#     url: /labs/CL10-CodeReview
-#     not_numbered: true
+#     not_numbered: true 
 
 # - title: Assignments
 #   url: /assignments/A1-GettingStarted
