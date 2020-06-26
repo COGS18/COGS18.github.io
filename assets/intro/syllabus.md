@@ -3,9 +3,6 @@ output:
   pdf_document: default
 ---
 
-**NOTE**: This is a draft of the syllabus and is subject to change. It will be finalized during week 1.
-
-
 # COGS 18: Introduction to Python
 
 **Summer 2020**  
@@ -22,14 +19,14 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 # COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
-**Instructor Office Hours**: Th 1-3 PM
+**Instructor Office Hours**: Thurs 1-3 PM
 
 | Role           | Name          					 | CodingLab         | Office Hours |
 | -------------: |:------------------------|:------------------|:-------------|
 | TA             | Sylvia Zhang         	 | Mon 1PM, 2PM      | TBD          |
-| TA 	           | Paul Cabasag            | Wed 1PM, 2PM      | TBD          |
-| IA (Volunteer) | Jose Figueroa           | --                | Tues 2-3     |
-| IA (Volunteer) | Taylor Han              | --                | --           |
+| TA 	           | Paul Cabasag            | Wed 1PM, 2PM      | Wed 6-7 PM   |
+| IA (Volunteer) | Jose Figueroa           | --                | Tues 2-3 PM  |
+| IA (Volunteer) | Taylor Han              | --                | Mon 10-11 AM |
 
 Course Website: https://cogs18.github.io   
 Canvas Course: https://canvas.ucsd.edu/courses/16056  
@@ -74,10 +71,10 @@ Note: If you do not have consistent access to the technology needed to fully acc
 
 |                | \% of Grade          	 | Requirement  |
 | -------------: |:-----------------------:|:-----------|
-| Assignments 	       | 35\%           | Complete 5 Assignments |
-| Midterms             | 30\%           | Complete 2 online exams |
-| Final Exam	         | 20\%           | Complete final exam |
-| Coding Lab           | 15\%				    | Participate in 5 Coding Labs |
+| Assignments 	       | 40\%           | Complete 5 Assignments |
+| Midterms             | 25\%           | Complete 2 online exams |
+| Final Exam	         | 15\%           | Complete final exam |
+| Coding Lab           | 20\%				    | Participate in 5 Coding Labs |
 
 **Exam timing**: For the midterms *and* final exam, there will be a flexible window during which you can complete the exams.
 
@@ -103,9 +100,9 @@ Lectures will take place at their scheduled time for those who are able to atten
 
 However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials. If a lecture recording ever fails during class, Prof Ellis will re-record a lecture, ensuring all students have access to the material. Lecture recordings will be available on Canvas in the Media Gallery by 5 PM after the live lecture is delivered.
 
-### Coding Labs (15\%)
+### Coding Labs (20\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 5 different coding labs (3\% each). 
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 5 different coding labs (4\% each). 
 
 Coding labs will be submitted in the same place as assignments using the same process; however, they will not be autograded for *correctness*. They will instead be spot-checked by instructional staff for concerted student *effort*.
 
@@ -113,9 +110,9 @@ While you're encouraged to work on these during your assigned lab times in the z
 
 Note: You should be signed up for the CodingLab for which you can attend. However, if you are unable to attend the CodingLab for which you are signed up, you are free to attend the other CodingLab in a given week. Note that this policy could change if too many people are attending one CodingLab each week. We intentionally have CodingLab capped at 45 people so that students can get help from their TAs and IAs during this time.
 
-### Assignments (35\%)
+### Assignments (40\%)
 
-There will be five assignments, each worth 5-7.5\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays by 11:59 PM. 
+There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays or Thursdays by 11:59 PM. 
 
 Late assignments will be accepted at 75\% credit for the first three days after the due date (This includes weekends, so if an assignment is due on Thursday at 11:59 PM, late assignments will be accepted until Sunday at 11:59 PM). Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
@@ -130,15 +127,15 @@ During exams (midterms and final exam) this quarter, you *will* be allowed to co
 
 As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's *always* a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. ::steps off soapbox::
 
-#### Midterms (30\%)
+#### Midterms (25\%)
 
-There will be two midterms. Each midterm is worth 15\% of your grade. 
+There will be two midterms. Each midterm is worth 12.5\% of your grade. 
 
 The exams will include varied question types and will be taken online. The first exam will cover topics covered through the Dictionaries lecture. The second exam is cumulative -- in programming, you can't forget the basics when learning the more advanced topics -- but will focus heavily on the material taught from Functions I through Namespaces lectures. 
 
-#### Final Exam (20\%)
+#### Final Exam (15\%)
 
-The final exam is cumulative and is worth 20\% of your grade. There will be more material from the entirety of the course on the final exam. 
+The final exam is cumulative and is worth 15\% of your grade. There will be more material from the entirety of the course on the final exam. 
 
 ---
 
