@@ -23,7 +23,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 | Role           | Name          					 | CodingLab         | Office Hours |
 | -------------: |:------------------------|:------------------|:-------------|
-| TA             | Sylvia Zhang         	 | Mon 1PM, 2PM      | TBD          |
+| TA             | Sylvia Zhang         	 | Mon 1PM, 2PM      | Thurs 4-5 PM |
 | TA 	           | Paul Cabasag            | Wed 1PM, 2PM      | Wed 6-7 PM   |
 | IA (Volunteer) | Jose Figueroa           | --                | Tues 2-3 PM  |
 | IA (Volunteer) | Taylor Han              | --                | Mon 10-11 AM |
@@ -116,7 +116,7 @@ There will be five assignments, each worth 8\% of your final grade. Assignments 
 
 Late assignments will be accepted at 75\% credit for the first three days after the due date (This includes weekends, so if an assignment is due on Thursday at 11:59 PM, late assignments will be accepted until Sunday at 11:59 PM). Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
-You *are* permitted to work with classmates on assignments; however, you are personally responsible for understanding everything you turn in. While you may ask one another about assignments, you may not copy directly from a classmate. And, you may not post full assignments nor any part of any assignment on the Internet (i.e. Chegg or related site). 
+You *are* permitted to work with classmates on assignments; however, you are personally responsible for understanding everything you turn in. While you may ask one another about assignments, you may not copy directly from a classmate. And, you may not post full assignments nor any part of any assignment on the Internet (i.e. Chegg or related site). Evidence of cheating on an assignment will result (at minimum) in loss of a full letter grade in the course.
 
 
 ### Exams
@@ -125,7 +125,7 @@ There will be a flexible time window during which students will be able to compl
 
 During exams (midterms and final exam) this quarter, you *will* be allowed to consult outside resources (your notes, Google, etc.); however, you ***must complete the exam on your own without any type of communication with other humans***. For example, while you're allowed to look something up on Google or look over your class notes, you may not ask anyone about a question or their thoughts regarding your answer. You may not text/communicate on any messaging apps about the exam with anyone. You may not take the exam while looking at someone else's exam/computer.
 
-As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's *always* a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. ::steps off soapbox::
+As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's *always* a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::
 
 #### Midterms (25\%)
 
@@ -135,7 +135,7 @@ The exams will include varied question types and will be taken online. The first
 
 #### Final Exam (15\%)
 
-The final exam is cumulative and is worth 15\% of your grade. There will be more material from the entirety of the course on the final exam. 
+The final exam is cumulative and is worth 15\% of your grade. 
 
 ---
 
