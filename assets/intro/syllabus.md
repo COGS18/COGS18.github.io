@@ -23,8 +23,8 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 | Role           | Name          					 | CodingLab         | Office Hours |
 | -------------: |:------------------------|:------------------|:-------------|
-| TA             | Sylvia Zhang         	 | Mon 1PM, 2PM      | Thurs 4-5 PM |
-| TA 	           | Paul Cabasag            | Wed 1PM, 2PM      | Wed 6-7 PM   |
+| TA             | Sylvia Zhang         	 | Mon 1-3 PM        | Thurs 4-5 PM |
+| TA 	           | Paul Cabasag            | Wed 1-3 PM        | Wed 6-7 PM   |
 | IA (Volunteer) | Jose Figueroa           | --                | Tues 2-3 PM  |
 | IA (Volunteer) | Taylor Han              | --                | Mon 10-11 AM |
 
@@ -102,7 +102,7 @@ However, every lecture will also be recorded and shared so that students who are
 
 ### Coding Labs (20\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments and final project. Across the quarter there will be 5 different coding labs (4\% each). 
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 5 different coding labs (4\% each). 
 
 Coding labs will be submitted in the same place as assignments using the same process; however, they will not be autograded for *correctness*. They will instead be spot-checked by instructional staff for concerted student *effort*.
 
@@ -196,7 +196,7 @@ If you have a concern, please speak with Dr. Ellis, your TAs, or IAs. If you are
 
 Don't cheat.
 
-You are encouraged to work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is your responsibility to ensure you understand everything you've submitted and to make sure the correct file has been submitted and that the submission is uncorrupted. Projects may include ideas and code from other sources, but these other sources must be documented with clear attribution. Please review academic integrity policies [here](http://academicintegrity.ucsd.edu).
+You are encouraged to work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is your responsibility to ensure you understand everything you've submitted and to make sure the correct file has been submitted and that the submission is uncorrupted. Please review academic integrity policies [here](http://academicintegrity.ucsd.edu).
 
 Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, Canvas or DataHub is down or something else prohibits you from being able to turn in an assignment on time, immediately contact Professor Ellis by emailing your assignment (sellis@ucsd.edu), or else it will be graded as late.
 
