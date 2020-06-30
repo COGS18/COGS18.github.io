@@ -28,9 +28,9 @@
   # - title: 01-Tools
   #   url: /materials/01-Tools
   #   not_numbered: true
-  # - title: 02-Notebooks-Variables
-  #   url: /materials/02-Notebooks-Variables
-  #   not_numbered: true
+  - title: 02-Notebooks-Variables
+    url: /materials/02-Notebooks-Variables
+    not_numbered: true
   # - title: 03-Operators
   #   url: /materials/03-Operators
   #   not_numbered: true
