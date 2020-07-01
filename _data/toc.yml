@@ -31,9 +31,9 @@
   - title: 02-Notebooks-Variables
     url: /materials/02-Notebooks-Variables
     not_numbered: true
-  # - title: 03-Operators
-  #   url: /materials/03-Operators
-  #   not_numbered: true
+  - title: 03-Operators
+    url: /materials/03-Operators
+    not_numbered: true
   # - title: 04-Conditionals
   #   url: /materials/04-Conditionals
   #   not_numbered: true
@@ -131,28 +131,28 @@
     url: /labs/source_Su20/CL1-Tooling
     not_numbered: true
 #   # - title: CL2-Programming
-#   #   url: /labs/CL2-Programming
+#   #   url: /labs/source_Su20/CL2-Programming
 #   #   not_numbered: true
 #   - title: CL2-Answers
-#     url: /labs/CL2-Answers
+#     url: /labs/source_Su20/CL2-Answers
 #     not_numbered: true
 #   # - title: CL3-Functions
-#   #   url: /labs/CL3-Functions
+#   #   url: /labs/source_Su20/CL3-Functions
 #   #   not_numbered: true
 #   - title: CL3-Answers
-#     url: /labs/CL3-Answers
+#     url: /labs/source_Su20/CL3-Answers
 #     not_numbered: true
 #   # - title: CL4-Classes
-#   #   url: /labs/CL4-Classes
+#   #   url: /labs/source_Su20/CL4-Classes
 #   #   not_numbered: true
 #   - title: CL4-Answers
-#     url: /labs/CL4-Answers
+#     url: /labs/source_Su20/CL4-Answers
 #     not_numbered: true    
 #   # - title: CL5-CommandLine
-#   #   url: /labs/CL5-CommandLine
+#   #   url: /labs/source_Su20/CL5-CommandLine
 #   #   not_numbered: true
 #   - title: CL5-Answers
-#     url: /labs/CL5-Answers
+#     url: /labs/source_Su20/CL5-Answers
 #     not_numbered: true 
 
 # - title: Assignments

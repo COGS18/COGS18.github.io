@@ -3,8 +3,8 @@ interact_link: content/labs/source_Su20/CL1-Tooling.ipynb
 download_link: assets/downloads/CL1-Tooling.ipynb.zip
 title: 'Coding Labs'
 prev_page:
-  url: /materials/02-Notebooks-Variables
-  title: '02-Notebooks-Variables'
+  url: /materials/03-Operators
+  title: '03-Operators'
 next_page:
   url: /labs/source_Su20/CL1-Tooling
   title: 'CL1-Tooling'
