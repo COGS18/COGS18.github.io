@@ -41,7 +41,7 @@ textbook:
 	# rm content/assignments/README.md
 
 	# Copy & build coding labs
-	git clone --depth 1 https://github.com/COGS18/codinglabs-su content/labs
+	git clone --depth 1 https://github.com/COGS18/CodingLabs content/labs
 	rm content/labs/README.md
 
 	# Copy & build project info
@@ -51,6 +51,7 @@ textbook:
 	python scripts/generate_book.py
 
 	rm -rf content
+
 		
 
 home:

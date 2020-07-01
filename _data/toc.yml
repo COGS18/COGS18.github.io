@@ -124,11 +124,11 @@
 
 
 - title: Coding Labs
-  url: /labs/CL1-Tooling
+  url: /labs/source_Su20/CL1-Tooling
   not_numbered: true
   sections:
   - title: CL1-Tooling
-    url: /labs/CL1-Tooling
+    url: /labs/source_Su20/CL1-Tooling
     not_numbered: true
 #   # - title: CL2-Programming
 #   #   url: /labs/CL2-Programming
