@@ -34,12 +34,12 @@
   - title: 03-Operators
     url: /materials/03-Operators
     not_numbered: true
-  # - title: 04-Conditionals
-  #   url: /materials/04-Conditionals
-  #   not_numbered: true
-  # - title: 05-DataTypes
-  #   url: /materials/05-DataTypes
-  #   not_numbered: true
+  - title: 04-Conditionals
+    url: /materials/04-Conditionals
+    not_numbered: true
+  - title: 05-Collections
+    url: /materials/05-Collections
+    not_numbered: true
   # - title: 06-Loops
   #   url: /materials/06-Loops
   #   not_numbered: true

@@ -8,8 +8,8 @@ prev_page:
   url: /materials/02-Notebooks-Variables
   title: '02-Notebooks-Variables'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/04-Conditionals
+  title: '04-Conditionals'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 <div class="alert alert-danger">
