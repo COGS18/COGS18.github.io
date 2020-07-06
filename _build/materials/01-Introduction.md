@@ -41,9 +41,13 @@ The PDF slides from the start of the first class are available here: https://cog
 # Expectations & Approach
 
 - Goal: to learn practical programming in Python
-- How: hands-on, community driven, skills based course, assignment & project driven
+- How: hands-on, community driven, skills based course, and assignments
 - Lectures & Lab Sections will be used for interactive activities
 - Assignments, coding labs & a final project will be designed to get you coding
+
+## How To Get Lecture Notes:
+1. Download from website
+2. Directly on Datahub
 
 ## Why Learn Computation?
 
@@ -114,6 +118,7 @@ Uses in COGS18:
 - lecture notes
 - assignments
 - coding labs
+- exams
 
 #### Clicker Question #1
 
@@ -122,7 +127,7 @@ Uses in COGS18:
 A. Super excited!  
 B. The most excited!  
 C. Couldn't be more excited!  
-D. I love 8AM classes!  
+D. I love Summer classes!  
 
 ## Tools
 
@@ -134,14 +139,12 @@ This course and associated materials do not presume any prior knowledge of Pytho
 
 To work with the course materials, you will need make sure you have access to the tools tools described here on datahub. 
 
-It will be helpful for the final project if they are also installed on the computer you will be using. 
-
 None of the materials are computationally heavy. 
 
 ### What do you need?
 
 - Access to datahub
-- Python: Working install of python 3.6 or 3.7 (suggested)
+- Python: Working install of python >= 3.6
     - We will be using the Anaconda distribution
 - Jupyter Notebooks (suggested)
 
@@ -159,7 +162,7 @@ The official Python organization website is available <a href="https://www.pytho
 ## Python
 
 - Versions: there are different versions of Python.
-    - We will be using 3.6 and/or 3.7
+    - We will be using 3.6+
 - Packages: Python includes a "base set" of code (the standard library), and an extensive ecosystem of third party packages
     - In this course, we will largely focus on the standard library
     - For access to other packages when we need them, we will use Anaconda
@@ -205,7 +208,7 @@ The official Jupyter website is available
 
 ### Installation
 
-You only need access to datahub for this course, but for working on your projects and for downloading and opening the notebooks used in class, you may want to download anaconda onto your computer, which comes complete with conda, and Jupyter notebooks.
+You only need access to datahub for this course, but for having access in the future and for downloading and opening the notebooks used in class, you may want to download anaconda onto your computer, which comes complete with conda, and Jupyter notebooks.
 
 <div class="alert alert-info">
 Download anaconda from
@@ -256,6 +259,7 @@ It is available here: http://datahub.ucsd.edu
 - Course Lecture Slides (opt.)
 - CodingLabs
 - Assignments
+- Exams
 
 
 #### Lecture Slides:
@@ -263,6 +267,8 @@ It is available here: http://datahub.ucsd.edu
 Once you've logged into datahub, paste the following in your browser:
 
 https://datahub.ucsd.edu/hub/user-redirect/git-sync?repo=https://github.com/COGS18/LectureNotes-Su20
+
+...then click on this each day before lecture
 
 #### CodingLabs & Assignments:
 - Fetch & complete on datahub

@@ -8,8 +8,8 @@ prev_page:
   url: /materials/04-Conditionals
   title: '04-Conditionals'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/06-Loops
+  title: '06-Loops'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Collections
@@ -45,6 +45,12 @@ print(lst)
 ```
 
 
+{:.output_stream}
+```
+[1, 'a', True]
+
+```
+
 
 
 {:.input_area}
@@ -52,6 +58,16 @@ print(lst)
 # Check the type of a list
 type(lst)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+list
+```
+
 
 
 #### Clicker Question #1
@@ -100,6 +116,12 @@ print(my_lst[1])
 ```
 
 
+{:.output_stream}
+```
+Amal
+
+```
+
 
 
 {:.input_area}
@@ -109,6 +131,12 @@ print(my_lst[-1])
 ```
 
 
+{:.output_stream}
+```
+Xuan
+
+```
+
 
 
 {:.input_area}
@@ -117,6 +145,12 @@ print(my_lst[-1])
 print(my_lst[2:4])
 ```
 
+
+{:.output_stream}
+```
+['Richard', 'Juan']
+
+```
 
 
 
@@ -129,10 +163,30 @@ type(my_lst[2])
 
 
 
+
+{:.output_data_text}
+```
+str
+```
+
+
+
+
+
 {:.input_area}
 ```python
 my_lst[2:-1]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['Richard', 'Juan']
+```
+
 
 
 
@@ -144,6 +198,12 @@ print(my_lst[2:])
 ```
 
 
+{:.output_stream}
+```
+['Richard', 'Juan', 'Xuan']
+
+```
+
 
 
 {:.input_area}
@@ -153,6 +213,12 @@ print(my_lst[:4])
 ```
 
 
+{:.output_stream}
+```
+['Julian', 'Amal', 'Richard', 'Juan']
+
+```
+
 
 
 {:.input_area}
@@ -161,6 +227,12 @@ print(my_lst[:4])
 print(my_lst[0:4:2])
 ```
 
+
+{:.output_stream}
+```
+['Julian', 'Richard']
+
+```
 
 ### Index Practices
 
@@ -183,6 +255,16 @@ example_lst[2]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[-3]
@@ -191,10 +273,30 @@ example_lst[-3]
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 example_lst[1:3]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[2, 3]
+```
+
 
 
 #### Clicker Question #2
@@ -208,6 +310,16 @@ What will be the output of the following piece of code:
 q2_lst = ['a', 'b', 'c','d']
 q2_lst[-3:-1]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['b', 'c']
+```
+
 
 
 - A) ['a', 'b', 'c']
@@ -292,6 +404,16 @@ len(another_lst)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+7
+```
+
+
+
 ## The `in` Operator
 
 <div class="alert alert-success">
@@ -318,11 +440,31 @@ True in lst_again
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Practice with `in`
@@ -346,6 +488,16 @@ practice_lst = [1, True, 'alpha', 13, 'cogs18']
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 False in practice_lst
@@ -354,10 +506,30 @@ False in practice_lst
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'True' in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -371,10 +543,30 @@ False in practice_lst
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 'cogs18' not in practice_lst
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 #### Clicker Question #4
@@ -395,6 +587,12 @@ output = bool_1 and bool_2
 print(output)
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 - a) True
 - b) False

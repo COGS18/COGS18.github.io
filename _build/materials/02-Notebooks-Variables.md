@@ -24,6 +24,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 **Reminders:**
 - To get each day's most recent notes on datahub, login to datahub and click:  https://datahub.ucsd.edu/hub/user-redirect/git-sync?repo=https://github.com/COGS18/LectureNotes-Su20
+- Fill out Course Survey: https://bit.ly/cogs18_survey_su20
 - Coding Labs and office hours start tomorrow (Wed)
 
 # Jupyter Notebooks
@@ -70,7 +71,7 @@ For example, italicized text can be specified with an _underscore_ or *single as
 
 Bold text requires __two underccores__ or **two asterisks**.
 
-#### Clicker Question #2
+#### Clicker Question #1
 
 **What does three underscores around text accomplish?**
 
@@ -80,7 +81,7 @@ Bold text requires __two underccores__ or **two asterisks**.
 - D) normal text
 - E) I'm lost
 
-you can write your markdown text here to determine the answer to the question
+___you can write your markdown text here to determine the answer to the question___
 
 
 ### Markdown Headers
@@ -105,7 +106,7 @@ Lists are also possible:
 2. item 2
 3. item 3
 
-#### Clicker Question #3
+#### Clicker Question #2
 
 **What would happen if I specified a numbered list but put the same number before each list item?**
 
@@ -116,6 +117,10 @@ Lists are also possible:
 - E) I'm lost
 
 test it out down here to see...
+
+1. list item
+1. list item
+1. list item
 
 \* <- escape character
 
@@ -158,7 +163,7 @@ c
     - An asterisk (*) means that the cell is currently running
     - You do not need to run cells in order! This is useful for flexibly testing and developing code. 
 
-#### Clicker Question #5
+#### Clicker Question #3
 
 Write code that outputs the value '6'
 
@@ -167,6 +172,8 @@ Write code that outputs the value '6'
 {:.input_area}
 ```python
 ## YOUR CODE HERE
+a = 3 + 3
+a
 ```
 
 
@@ -205,7 +212,7 @@ capacities, which can autocomplete what you are typing, and/or be used to explor
 {:.input_area}
 ```python
 # Move your cursor to the end of the line, press tab, and a drop menu will appear showing all possible completions
-ra
+ra 
 ```
 
 
@@ -258,7 +265,7 @@ TimeZones: https://www.timeanddate.com/time/map/
 # Variables
 - kernel
 - Namespace
-- varaible types
+- variable types
 
 ## Programming With Python
 
@@ -299,8 +306,17 @@ other_var = 'variables are cool'
 ```python
 # once you create a variable it's stored in your namespace
 other_var
-
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'variables are cool'
+```
+
 
 
 ## Code Variables != Math Variables
@@ -317,7 +333,7 @@ Code: What is x?
 
 `x = x + 1`
 
-#### Clicker Question #3
+#### Clicker Question #4
 
 After executing the following code, what will be the value of `my_var`?
 
@@ -338,7 +354,8 @@ print(my_var)
 - C) "my_var + 1"
 - D) This code will fail
 
-#### Clicker Question #4
+#### Clicker Question #5
+
 
 After executing the following code, what will be the value of `diff_var`?
 
@@ -430,6 +447,10 @@ There are 33 words that are not allowed to be used for variable assignment in Py
 ```python
 # you will get an error if you try to assign a variable to one of these words
 try = 6
+
+# this is ok
+# can include reserved word within variable name
+try_this = 6
 ```
 
 
@@ -473,6 +494,15 @@ whos?
 ```
 
 
+{:.output_stream}
+```
+Variable    Type    Data/Info
+-----------------------------
+my_var      int     1
+other_var   str     variables are cool
+
+```
+
 ## Variable Types
 
 <div class="alert alert-success">
@@ -489,6 +519,16 @@ variable_name = 1
 # You can always ask Python 'what type is this variable' using:
 type(variable_name)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+int
+```
+
 
 
 ### Int
@@ -516,6 +556,16 @@ type(yet_another_integer)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+int
+```
+
+
+
 ### Float
 
 <div class="alert alert-success">
@@ -537,6 +587,16 @@ another_float = -231.45
 ```python
 type(another_float)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+float
+```
+
 
 
 ### String
@@ -566,6 +626,22 @@ type(and_another)
 ```
 
 
+{:.output_stream}
+```
+and some more
+
+```
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
+
+
 #### Quotation Marks
 
 About those quotation marks...
@@ -581,11 +657,31 @@ my_string
 
 
 
+
+{:.output_data_text}
+```
+'This is a single-quoted string.'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 my_string = "This is a double-quoted string."
 my_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'This is a double-quoted string.'
+```
+
 
 
 Note that Python will put single quotes around it, even if you specify double quotes. 
@@ -609,6 +705,16 @@ my_string
 
 
 
+
+{:.output_data_text}
+```
+"I wan't to see an apostrophe."
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # backslash to "escape" quotation mark
@@ -616,6 +722,16 @@ my_string
 string_quote = "And she said, \"Please teach me Python!\""
 string_quote
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'And she said, "Please teach me Python!"'
+```
+
 
 
 ## Boolean
@@ -637,8 +753,18 @@ another_bool = False
 
 {:.input_area}
 ```python
-type(another_bool)
+type(my_bool)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+bool
+```
+
 
 
 ## None
@@ -663,7 +789,17 @@ type(the_concept_of_nothing)
 ```
 
 
-#### Clicker Question #5
+
+
+
+{:.output_data_text}
+```
+NoneType
+```
+
+
+
+#### Clicker Question #6
 
 After executing the following code, what will the type of `var_a` be?
 
@@ -681,7 +817,7 @@ var_a = -17.5
 - D) Boolean
 - E) None
 
-#### Clicker Question #6
+#### Clicker Question #7
 
 After executing the following code, what will the type of `var_b` be?
 
@@ -699,7 +835,7 @@ var_b = '-17.5'
 - D) Boolean
 - E) None
 
-#### Clicker Question #7
+#### Clicker Question #8
 
 After executing the following code, what will the type of the variable `m` be?
 
@@ -712,6 +848,16 @@ a = 'm'
 m = n
 type(m)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+int
+```
+
 
 
 - A) String
@@ -736,6 +882,12 @@ b = a
 print(b)
 ```
 
+
+{:.output_stream}
+```
+1
+
+```
 
 Here, the value 1 is assigned to the variable `a`.  
 
@@ -762,10 +914,45 @@ immutable_string[4]
 
 
 
+
+{:.output_data_text}
+```
+'1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # cannot change part of the string after creation
 immutable_string[4] = '0'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-36-42af1508f9b7> in <module>()
+      1 # cannot change part of the string after creation
+----> 2 immutable_string[4] = '0'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -785,16 +972,41 @@ You will get an error if Python runs into unanticipated whitespace.
 ```python
 a = 1
     b = a
-    
+
     print(b) 
 ```
 
+
+{:.output_stream}
+```
+1
+
+```
 
 There *are* times when indentation will be required and expected. We'll discuss these in future lectures.
 
 #### A quick word of caution...
 
 Avoid variable names that are special words for other things in Python...
+
+
+
+{:.input_area}
+```python
+True = 6
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-42-a4d6f1772eea>", line 1
+    True = 6
+            ^
+SyntaxError: can't assign to keyword
+
+```
+
 
 
 

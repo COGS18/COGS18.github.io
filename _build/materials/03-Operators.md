@@ -464,7 +464,7 @@ NameError                                 Traceback (most recent call last)
 
 {:.output_traceback_line}
 ```
-<ipython-input-14-9b3f2ee967bc> in <module>()
+<ipython-input-20-9b3f2ee967bc> in <module>()
       2 # 'TRUE' is not a boolean
       3 # 'True' is
 ----> 4 TRUE and TRUE
@@ -733,22 +733,21 @@ Start with the code in the following cell. Replace `---` with values that will e
 {:.input_area}
 ```python
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 94
+shield_energy = 100
 
-(sword_charge ---) and (shield_energy ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 ```
 
 
 
-{:.output_traceback_line}
-```
-  File "<ipython-input-26-233b61291dd9>", line 2
-    sword_charge = ---
-                      ^
-SyntaxError: invalid syntax
 
+
+{:.output_data_text}
 ```
+True
+```
+
 
 
 ## Understanding Boolean logic
@@ -824,7 +823,7 @@ False
 
 {:.input_area}
 ```python
-bool('a')
+bool('a') 
 ```
 
 
@@ -1213,6 +1212,26 @@ c = 927
 
 {:.input_area}
 ```python
+# test values are equal
+a == c
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+# identity checks if in same place in memory
 print(a is b)
 print(c is a)
 ```
@@ -1285,23 +1304,18 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = c is d
+false_variable = z is x
 
 print(true_variable, false_variable)
 ```
 
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
-  File "<ipython-input-53-4043a1c2f08d>", line 9
-    true_variable = ---
-                       ^
-SyntaxError: invalid syntax
+True False
 
 ```
-
 
 ### Delving Deeper: Identity Operators
 
@@ -1354,7 +1368,7 @@ print(id(simple_string), id(simple_string2))
 
 {:.output_stream}
 ```
-4477727664 4477727664
+4566660016 4566660016
 
 ```
 
@@ -1395,7 +1409,7 @@ print(id(longer_string), id(longer_string2))
 
 {:.output_stream}
 ```
-4510512016 4510511632
+4599444464 4599444272
 
 ```
 
@@ -1418,7 +1432,7 @@ print(id(d), id(e))
 
 {:.output_stream}
 ```
-4474975424 4474975424
+4563907776 4563907776
 
 ```
 
@@ -1505,23 +1519,18 @@ f = 567
 g = 567
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = a is b is c
+false_variable = f is g
 
 print(true_variable, false_variable)
 ```
 
 
-
-{:.output_traceback_line}
+{:.output_stream}
 ```
-  File "<ipython-input-65-3b6bb310be00>", line 10
-    true_variable = ---
-                       ^
-SyntaxError: invalid syntax
+True False
 
 ```
-
 
 ## Membership Operators
 

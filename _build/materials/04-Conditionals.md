@@ -15,11 +15,12 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ### Course Announcements
 
 - **A1** is due Mon (7/6; 11:59 PM)
+- **CL1** & **Pre-course survey** "grades" posted on Canvas
 
 **Now Available**
 - **CL2** (due next Wed 7/8)
 - **A2** (due Mon 7/13)
-    - `append` - 1 or 2 places where you are asked to do something on an assignment not explicitly taught in class
+    - `append` - 1 of 2 places where you are asked to do something on an assignment not explicitly taught in class
     
 
 ### Survey Summary:
@@ -55,6 +56,12 @@ if condition:
 ```
 
 
+{:.output_stream}
+```
+This code executes if the condition evaluates as True.
+
+```
+
 #### Clicker Question #1
 
 Replace `---` below with something that will print 'True'
@@ -70,19 +77,36 @@ Replace `---` below with something that will print 'True'
 ```python
 # can evaluate boolean expression with bool
 bool(2 + 2 >= 4)
+bool('abcd')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
 
 {:.input_area}
 ```python
-math = ---
+math = True
 
 if math:
     print('True')
 ```
 
+
+{:.output_stream}
+```
+True
+
+```
 
 ## Conditional: `else`
 
@@ -103,6 +127,12 @@ else:
 ```
 
 
+{:.output_stream}
+```
+This code executes if the condition evaluates as False
+
+```
+
 #### Clicker Question #2
 
 Replace `---` below with something that will print 'False'.
@@ -122,10 +152,30 @@ bool(0)
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bool(None)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 
@@ -138,9 +188,19 @@ bool('')
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
-my_value = ---
+my_value = 2 < 1
 
 if my_value:
     print('True')
@@ -148,6 +208,12 @@ else:
     print('False')
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 ## Conditional: `elif`
 
@@ -170,6 +236,12 @@ else:
     print('This code executes if both condition_1 and condition_2 evaluate as False')
 ```
 
+
+{:.output_stream}
+```
+This code executes if condition_1 did not evaluate as True, but condition_2 does.
+
+```
 
 ### `elif` without an `else`
 
@@ -210,6 +282,17 @@ elif condition_2:
 ```
 
 
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-26-aedfc0cec5db>", line 9
+    elif condition_2:
+       ^
+SyntaxError: invalid syntax
+
+```
+
+
 ## Conditionals With Value Comparisons
 
 <div class="alert alert-success">
@@ -220,9 +303,9 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 
 {:.input_area}
 ```python
-language = "Perl"
+language = "Python"
 
-if language == "Python" or language == "R":
+if language == "Python" or language == "R" or language == "python":
     print("Yay!")
 elif language == "Perl":
     print("Hmmmmmmm")
@@ -230,6 +313,12 @@ else:
     print("Get yourself a programming language!")
 ```
 
+
+{:.output_stream}
+```
+Yay!
+
+```
 
 
 
@@ -248,6 +337,14 @@ elif number > 5:
 print('After Conditional')
 ```
 
+
+{:.output_stream}
+```
+Before Conditional
+    elif statement execution
+After Conditional
+
+```
 
 #### Clicker Question #3
 
@@ -299,6 +396,12 @@ else:
 ```
 
 
+{:.output_stream}
+```
+I did Math
+
+```
+
 - A) I did Math 
 - B) I broke Math
 - C) I didn't do math
@@ -324,6 +427,12 @@ else:
     print("I'm here.")
 ```
 
+
+{:.output_stream}
+```
+I'm here.
+
+```
 
 - A) Yay Python!
 - B) Oh no.
@@ -357,6 +466,12 @@ print(status)
 ```
 
 
+{:.output_stream}
+```
+Overwriting new_file.py
+
+```
+
 
 
 {:.input_area}
@@ -367,6 +482,12 @@ status = True
 assert status == False
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 ### Assignment Reminders
 
