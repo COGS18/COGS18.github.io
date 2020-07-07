@@ -89,6 +89,12 @@ while not connected:
 ```
 
 
+{:.output_stream}
+```
+Establishing Connection...
+
+```
+
 ### While Loop Example II
 
 
@@ -106,6 +112,12 @@ while not has_user_input:
 ```
 
 
+{:.output_stream}
+```
+Asking for user input...
+
+```
+
 ## While Loops
 
 
@@ -120,6 +132,16 @@ while number < 0:
 ```
 
 
+{:.output_stream}
+```
+-5
+-4
+-3
+-2
+-1
+
+```
+
 
 
 {:.input_area}
@@ -128,7 +150,7 @@ keep_looping = True
 counter = 0
 
 while keep_looping:
-   # print(counter)
+#     print(counter)
     counter = counter + 1
     
     if counter > 3:
@@ -137,6 +159,12 @@ while keep_looping:
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+4
+
+```
 
 #### Clicker Question #1
 
@@ -155,6 +183,15 @@ while temperature > 112:
 print('The tea is cool enough.')
 ```
 
+
+{:.output_stream}
+```
+115
+114
+113
+The tea is cool enough.
+
+```
 
 - A) 1
 - B) 2
@@ -185,6 +222,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+4
+
+```
+
 <pre> A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite </pre> 
 
 ### Stepping Through the Loop
@@ -213,6 +256,29 @@ print('\nFinal counter: ', counter)
 ```
 
 
+{:.output_stream}
+```
+START LOOP
+	Start counter:  0
+	Mid counter:  1
+	End counter:  1
+START LOOP
+	Start counter:  1
+	Mid counter:  2
+	End counter:  2
+START LOOP
+	Start counter:  2
+	Mid counter:  3
+	End counter:  3
+START LOOP
+	Start counter:  3
+	Mid counter:  4
+	End counter:  4
+
+Final counter:  4
+
+```
+
 ## For Loops
 
 <div class="alert alert-success">
@@ -238,6 +304,15 @@ print('\tLast value: ', my_item)
 ```
 
 
+{:.output_stream}
+```
+A
+True
+12
+	Last value:  12
+
+```
+
 ### For Loop Example II
 
 Looping through a string
@@ -251,6 +326,17 @@ for char in 'python':
     print(char)
 ```
 
+
+{:.output_stream}
+```
+p
+y
+t
+h
+o
+n
+
+```
 
 #### Clicker Question #3
 
@@ -266,6 +352,14 @@ for item in my_lst[0:-2]:
     print(item + 1)
 ```
 
+
+{:.output_stream}
+```
+1
+2
+3
+
+```
 
 - A) 0, 1, 2
 - B) 0, 1
@@ -292,12 +386,33 @@ for temp in temperatures:
 ```
 
 
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
+
 - A) 1
 - B) 2
 - C) 3
 - D) 4
 - E) Infinite
 
+
+![](img/study_abroad.png)
+
+## Course Announcements
+
+- **CL2** due Wednesday (7/9; 11:59 PM)
+- **A2** due Mon 7/13
+- **Exam I** Monday (7/13)
 
 ## `range`
 
@@ -316,6 +431,34 @@ for ind in [0, 1, 2, 3, 4]:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
+
+
+
+{:.input_area}
+```python
+range(0,5)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+range(0, 5)
+```
+
+
+
 
 
 {:.input_area}
@@ -325,6 +468,12 @@ for ind in [0, 1, 2, 3, 4]:
 print(*range(0, 5))
 ```
 
+
+{:.output_stream}
+```
+0 1 2 3 4
+
+```
 
 
 
@@ -336,6 +485,16 @@ for ind in range(0, 5):
 ```
 
 
+{:.output_stream}
+```
+0
+1
+2
+3
+4
+
+```
+
 
 
 {:.input_area}
@@ -345,6 +504,13 @@ for ind in range(2, 6, 2):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+2
+4
+
+```
 
 
 
@@ -359,6 +525,19 @@ for temp in range(114, 119):
 ```
 
 
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+
+```
+
 #### Clicker Question #5
 
 How many values would this loop print and what would be the last value printed? 
@@ -371,6 +550,14 @@ for ind in range(1, 10, 3):
     print(ind)
 ```
 
+
+{:.output_stream}
+```
+1
+4
+7
+
+```
 
 - A) values printed: 3; last value: 7
 - B) values printed: 3; last value: 9
@@ -402,6 +589,14 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+3
+
+```
+
 
 
 {:.input_area}
@@ -418,6 +613,15 @@ for course in courses:
 ```
 
 
+{:.output_stream}
+```
+cogs9
+cogs9!
+cogs108
+cogs108!
+
+```
+
 
 
 {:.input_area}
@@ -428,10 +632,19 @@ for char in string:
     
     if char == "p" or char == "y":
         continue
-        
+    
     print(char)
 ```
 
+
+{:.output_stream}
+```
+t
+h
+o
+n
+
+```
 
 #### Clicker Question #6
 
@@ -453,6 +666,12 @@ for item in my_lst:
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+0
+
+```
 
 - A) 0 
 - B) 1
@@ -481,6 +700,12 @@ while not connected:
 ```
 
 
+{:.output_stream}
+```
+Establishing Connection...
+
+```
+
 ### `break` examples
 
 
@@ -498,6 +723,13 @@ for item in lst:
 ```
 
 
+{:.output_stream}
+```
+0
+1
+
+```
+
 
 
 {:.input_area}
@@ -513,6 +745,12 @@ for course in courses:
 ```
 
 
+{:.output_stream}
+```
+cogs9
+
+```
+
 
 
 {:.input_area}
@@ -527,6 +765,16 @@ for char in string:
 ```
 
 
+{:.output_stream}
+```
+l
+o
+v
+e
+ 
+
+```
+
 
 
 {:.input_area}
@@ -540,6 +788,15 @@ for temp in range(114, 119):
         break
 ```
 
+
+{:.output_stream}
+```
+114
+115
+116
+The tea is too hot!
+
+```
 
 #### Clicker Question #7
 
@@ -560,6 +817,13 @@ while True:
     number = number + 1
 ```
 
+
+{:.output_stream}
+```
+1
+2
+
+```
 
 - A) 1 
 - B) 1 2 
@@ -589,6 +853,12 @@ for temp in range(114, 119):
 ```
 
 
+{:.output_stream}
+```
+The tea is too hot!
+
+```
+
 - A) 0 
 - B) 1
 - C) 3
@@ -617,8 +887,213 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 - A) 0 
 - B) 1
 - C) 2 
 - D) 3
 - E) 4
+
+### Loops Practice #1
+
+Write a loop that adds all the *odd* numbers between 1 and 1000 together.
+
+
+
+{:.input_area}
+```python
+# Answer here
+# counter; initial variable
+total = 0
+
+# for loop
+# check over range of numbers (range(1,1000,2))
+for value in range(1,1000,2):
+    
+    # conditional if this is true
+    # modulus - check for odd (number % 2 != 0)
+    if value % 2 != 0:
+        total = total + value
+
+total
+```
+
+
+
+
+
+{:.output_data_text}
+```
+250000
+```
+
+
+
+- A) I did it!
+- B) I think I did it.
+- C) I started but am now stuck.
+- D) I have no idea where to start.
+
+
+
+{:.input_area}
+```python
+# create some variables to get yourself started
+total = 0
+current = 1
+stop = 1000
+
+# logic to tell while when to stop
+while current <= stop:
+    
+    # check if odd
+    if current % 2 != 0:
+        total = total + current
+    
+    # increment counter by 1
+    current = current + 1
+
+total
+```
+
+
+
+
+
+{:.output_data_text}
+```
+250000
+```
+
+
+
+
+
+{:.input_area}
+```python
+# less ideal solution
+
+# create some variables to get yourself started
+total = 0
+current = 1
+stop = 1000
+
+while current <= stop:
+    
+    # increase total
+    total = total + current
+    
+    # if we increment counter by 2
+    # will work, but only if current starts as odd number
+    current = current + 2
+
+total
+```
+
+
+
+
+
+{:.output_data_text}
+```
+250000
+```
+
+
+
+
+
+{:.input_area}
+```python
+# A for loop approach
+total = 0
+
+for val in range(1, 1000, 2):
+    total = total + val
+    
+total
+```
+
+
+
+
+
+{:.output_data_text}
+```
+250000
+```
+
+
+
+### Loops Practice #2
+
+Store your name as a string in a variable called `my_name`.
+
+Write a loop that will loop through all the letters in `my_name` and count all the vowels in your name.
+
+
+
+{:.input_area}
+```python
+# Answer here
+my_name = 'ShannonAEI'
+vowels = ('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u')
+counter = 0
+
+# for loop - loop through my_name
+for char in my_name:
+    # need some conditional
+    if char in vowels:
+        # adjust counter (conditional on if it's a vowel)
+        counter = counter + 1
+
+# print at the end to check our work
+counter
+```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
+
+
+- A) I did it!
+- B) I think I did it.
+- C) I started but am now stuck.
+- D) I have no idea where to start.
+
+
+
+{:.input_area}
+```python
+my_name = 'Shannon'
+vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+counter = 0
+
+for char in my_name:
+    if char in vowels:
+        counter = counter + 1
+
+counter
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
