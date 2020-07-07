@@ -43,9 +43,9 @@
   - title: 06-Loops
     url: /materials/06-Loops
     not_numbered: true
-  # - title: 07-Dictionaries
-  #   url: /materials/07-Dictionaries
-  #   not_numbered: true
+  - title: 07-Dictionaries
+    url: /materials/07-Dictionaries
+    not_numbered: true
   # - title: 08-FunctionsI
   #   url: /materials/08-FunctionsI
   #   not_numbered: true

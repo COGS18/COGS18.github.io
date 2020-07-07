@@ -627,6 +627,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
+
 
 
 {:.input_area}
@@ -645,6 +651,12 @@ print(updates)
 ```
 
 
+{:.output_stream}
+```
+[1, 0, 3]
+
+```
+
 #### Clicker Question #5
 
 What would the following code accommplish?
@@ -656,6 +668,16 @@ What would the following code accommplish?
 lst_update = [1, 2, 3, 0, 5]
 lst_update[3] = 4 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 3, 4, 5]
+```
+
 
 
 - A) replace 0 with 4 in `lst_update`
@@ -690,6 +712,12 @@ print(tup)
 ```
 
 
+{:.output_stream}
+```
+(2, 'b', False)
+
+```
+
 
 
 {:.input_area}
@@ -697,6 +725,16 @@ print(tup)
 # Check the type of a tuple
 type(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+tuple
+```
+
 
 
 
@@ -710,11 +748,31 @@ tup[0]
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the length of a tuple
 len(tup)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ### Tuples are Immutable
@@ -726,6 +784,32 @@ len(tup)
 # Tuples are immutable - meaning after they defined, you can't change them
 # This code will produce an error.
 tup[2] = 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-14-6b0fd3f24bc7> in <module>()
+      1 # Tuples are immutable - meaning after they defined, you can't change them
+      2 # This code will produce an error.
+----> 3 tup[2] = 1
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
 ```
 
 
@@ -766,6 +850,12 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 Here, the value 1 is assigned to the variable `a`.  
 
 We then make an **alias** of `a` and store that in the variable `b`. 
@@ -793,6 +883,13 @@ print(b)
 ```
 
 
+{:.output_stream}
+```
+2
+1
+
+```
+
 - A) `a` and `b` both store 1
 - B) `a` and `b` both store 2
 - C) `a` stores 2 `b` stores 1
@@ -817,6 +914,16 @@ alias_list
 
 
 
+
+{:.output_data_text}
+```
+[1, 2, 3, 4]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 #change second value of first_list
@@ -827,11 +934,163 @@ first_list
 
 
 
+
+{:.output_data_text}
+```
+[1, 29, 3, 4]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # check alias_list
 alias_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 29, 3, 4]
+```
+
+
+
+
+
+{:.input_area}
+```python
+# make alias
+a = 5
+b = a
+
+a is b
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
+type(a)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+int
+```
+
+
+
+
+
+{:.input_area}
+```python
+# identical
+print(id(a), id(b))
+```
+
+
+{:.output_stream}
+```
+4547937472 4547937472
+
+```
+
+
+
+{:.input_area}
+```python
+# overwrite a variable
+a = 'string'
+```
+
+
+
+
+{:.input_area}
+```python
+a
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'string'
+```
+
+
+
+
+
+{:.input_area}
+```python
+b
+```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
+
+
+
+
+{:.input_area}
+```python
+print(id(a), id(b))
+```
+
+
+{:.output_stream}
+```
+4550689656 4547937472
+
+```
+
+
+
+{:.input_area}
+```python
+a is b
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
 
 
 For *mutable* type variables, when you change one, both change.
@@ -850,6 +1109,50 @@ my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
 my_tuple[1] = 29 
 ```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-36-7a44f310718f> in <module>()
+      3 my_tuple = (1, 2, 3, 4)
+      4 second_tuple = my_tuple
+----> 5 my_tuple[1] = 29
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'tuple' object does not support item assignment
+```
+
+
+
+
+{:.input_area}
+```python
+second_tuple[1]
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 
 
 - A) 1
@@ -892,11 +1195,31 @@ my_str[2]
 
 
 
+
+{:.output_data_text}
+```
+'e'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Ask if an item is in a string
 'Fam' in my_str
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -910,11 +1233,47 @@ len(my_str)
 
 
 
+
+{:.output_data_text}
+```
+13
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Index into a string
 # This code will produce an error
 my_str[1:3] = 'HE'
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-42-9139cc40aa38> in <module>()
+      1 # Index into a string
+      2 # This code will produce an error
+----> 3 my_str[1:3] = 'HE'
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: 'str' object does not support item assignment
 ```
 
 
@@ -930,6 +1289,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+0
+
+```
+
 
 
 {:.input_area}
@@ -939,6 +1304,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+1
+
+```
+
 
 
 {:.input_area}
@@ -947,6 +1318,12 @@ counter = counter + 1
 print(counter)
 ```
 
+
+{:.output_stream}
+```
+2
+
+```
 
 ## Pulling it Together: Collections, Membership & Conditionals
 
@@ -975,6 +1352,12 @@ print(counter)
 ```
 
 
+{:.output_stream}
+```
+2
+
+```
+
 <pre> A) 0   B) 1   C) 2   D) 3   E) 4 </pre>
 
 #### Clicker Question #10
@@ -998,5 +1381,11 @@ else:
     print('None')
 ```
 
+
+{:.output_stream}
+```
+Length
+
+```
 
 <pre> A) EndMatch   B) Overlap   C) Length   D) Overlap & Match   E) None </pre>

@@ -8,8 +8,8 @@ prev_page:
   url: /materials/05-Collections
   title: '05-Collections'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/07-Dictionaries
+  title: '07-Dictionaries'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
