@@ -109,12 +109,6 @@ print(bin(1))
 ```
 
 
-{:.output_stream}
-```
-0b1
-
-```
-
 
 
 {:.input_area}
@@ -122,12 +116,6 @@ print(bin(1))
 print(bin(78))
 ```
 
-
-{:.output_stream}
-```
-0b1001110
-
-```
 
 
 
@@ -141,27 +129,11 @@ bin(False)
 
 
 
-
-{:.output_data_text}
-```
-'0b0'
-```
-
-
-
-
-
 {:.input_area}
 ```python
 print(bool(0b0))
 ```
 
-
-{:.output_stream}
-```
-False
-
-```
 
 
 
@@ -171,16 +143,6 @@ False
 # decoding from binary
 int(0b1011)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-11
-```
-
 
 
 ## Character Encodings
@@ -218,13 +180,7 @@ elif character_encoding == 2:
 ```
 
 
-{:.output_stream}
-```
-ñ
-
-```
-
-## Aside: Dictionaries
+## Dictionaries
 
 
 <div class="alert alert-success">
@@ -251,12 +207,6 @@ print(dictionary)
 ```
 
 
-{:.output_stream}
-```
-{'key_1': 'value_1', 'key_2': 'value_2'}
-
-```
-
 
 
 {:.input_area}
@@ -268,32 +218,12 @@ type(dictionary)
 
 
 
-
-{:.output_data_text}
-```
-dict
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Dictionaries also have a length
 # length refers to how many pairs there are
 len(dictionary)
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-2
-```
-
 
 
 ### Dictionaries: Indexing & Looping
@@ -309,16 +239,6 @@ dictionary['key_1']
 
 
 
-
-{:.output_data_text}
-```
-'value_1'
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # Loop over a dictionary loops across the keys
@@ -329,17 +249,6 @@ for item in dictionary:
     print('\tValue:\t', dictionary[item])
 ```
 
-
-{:.output_stream}
-```
-Loop Iteration
-	Key:	 key_1
-	Value:	 value_1
-Loop Iteration
-	Key:	 key_2
-	Value:	 value_2
-
-```
 
 
 
@@ -352,17 +261,6 @@ for key, val in dictionary.items():
     print('\tValue:\t', val)
 ```
 
-
-{:.output_stream}
-```
-Loop Iteration
-	Key:	 key_1
-	Value:	 value_1
-Loop Iteration
-	Key:	 key_2
-	Value:	 value_2
-
-```
 
 #### Clicker Question #2
 
@@ -412,19 +310,6 @@ student_emails
 
 
 
-
-{:.output_data_text}
-```
-{'Betty Jennings': 'bjennings@eniac.org',
- 'Ada Lovelace': 'ada@analyticengine.com',
- 'Alan Turing': 'aturing@thebomb.gov',
- 'Grace Hopper': 'ghopper@navy.usa'}
-```
-
-
-
-
-
 {:.input_area}
 ```python
 completed_coding_lab = {
@@ -439,16 +324,6 @@ completed_coding_lab
 
 
 
-
-{:.output_data_text}
-```
-{'A1234': True, 'A5678': False, 'A9123': True}
-```
-
-
-
-
-
 {:.input_area}
 ```python
 mixed_types = {
@@ -458,16 +333,6 @@ mixed_types = {
 
 mixed_types
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-{True: [1, 2, 3], False: None}
-```
-
 
 
 #### Clicker Question #4
@@ -502,32 +367,12 @@ completed_coding_lab
 
 
 
-
-{:.output_data_text}
-```
-{'A1234': True, 'A5678': False, 'A9123': True}
-```
-
-
-
-
-
 {:.input_area}
 ```python
 # change value of specified key
 completed_coding_lab['A5678'] = True
 completed_coding_lab
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-{'A1234': True, 'A5678': True, 'A9123': True}
-```
-
 
 
 Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using `del`.
@@ -541,22 +386,6 @@ len(completed_coding_lab)
 ```
 
 
-{:.output_stream}
-```
-{'A1234': True, 'A5678': True, 'A9123': True}
-
-```
-
-
-
-
-{:.output_data_text}
-```
-3
-```
-
-
-
 
 
 {:.input_area}
@@ -567,22 +396,6 @@ del completed_coding_lab['A5678']
 print(completed_coding_lab)
 len(completed_coding_lab)
 ```
-
-
-{:.output_stream}
-```
-{'A1234': True, 'A9123': True}
-
-```
-
-
-
-
-{:.output_data_text}
-```
-2
-```
-
 
 
 ### Dictionaries and operators
@@ -599,12 +412,6 @@ if 'A1234' in completed_coding_lab:
     print('Yes, that student is in this class')
 ```
 
-
-{:.output_stream}
-```
-Yes, that student is in this class
-
-```
 
 #### Clicker Question #5
 
@@ -629,12 +436,6 @@ print(result)
 ```
 
 
-{:.output_stream}
-```
-alpha
-
-```
-
 - A) alpha
 - B) [8, 12] 
 - C) beta 
@@ -655,16 +456,6 @@ alpha
 ```
 
 
-
-
-
-{:.output_data_text}
-```
-{'Student': 91}
-```
-
-
-
 - **keys** must be of an immutable type (string, tuple, integer, float, etc)
 - Note: **values** can be of any type
 
@@ -678,32 +469,6 @@ alpha
 ```
 
 
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-TypeError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-26-27b11708f095> in <module>()
-      1 # lists are not allowed as key types
-      2 # this code will produce an error
-----> 3 {['Student'] : 97}
-
-```
-
-{:.output_traceback_line}
-```
-TypeError: unhashable type: 'list'
-```
-
-
 - Dictionary keys are case sensitive.
 
 
@@ -713,16 +478,6 @@ TypeError: unhashable type: 'list'
 ```python
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
 ```
-
-
-
-
-
-{:.output_data_text}
-```
-{'Student': 97, 'student': 88, 'STUDENT': 91}
-```
-
 
 
 #### Clicker Question #6
@@ -739,33 +494,6 @@ student_emails = {
     'Ada Lovelace' : 'aturing@thebomb.gov',
     ['Grace Hopper'] : 'ghopper@navy.usa'
 }
-```
-
-
-
-{:.output_traceback_line}
-```
----------------------------------------------------------------------------
-```
-
-{:.output_traceback_line}
-```
-TypeError                                 Traceback (most recent call last)
-```
-
-{:.output_traceback_line}
-```
-<ipython-input-28-d0c1eab64f25> in <module>()
-      3     'Ada Lovelace' : ['ada@analyticengine.com'],
-      4     'Ada Lovelace' : 'aturing@thebomb.gov',
-----> 5     ['Grace Hopper'] : 'ghopper@navy.usa'
-      6 }
-
-```
-
-{:.output_traceback_line}
-```
-TypeError: unhashable type: 'list'
 ```
 
 
@@ -799,12 +527,6 @@ print(my_sentence)
 ```
 
 
-{:.output_stream}
-```
-no hablo español
-
-```
-
 
 
 {:.input_area}
@@ -814,12 +536,6 @@ my_sentence = 'yo hablo ingl' + character_encodings[1] + 's'
 print(my_sentence)
 ```
 
-
-{:.output_stream}
-```
-yo hablo inglés
-
-```
 
 ## Unicode
 
@@ -851,12 +567,6 @@ print(ord('a'))
 ```
 
 
-{:.output_stream}
-```
-97
-
-```
-
 
 
 {:.input_area}
@@ -864,12 +574,6 @@ print(ord('a'))
 print(chr(97))
 ```
 
-
-{:.output_stream}
-```
-a
-
-```
 
 ### Inverses
 
@@ -886,13 +590,6 @@ assert inp == out
 print('Input: \t', inp, '\nOutput: ', out)
 ```
 
-
-{:.output_stream}
-```
-Input: 	 b 
-Output:  b
-
-```
 
 #### Clicker Question #7
 
@@ -915,3 +612,22 @@ character_encodings = {
 - B) I think I did it...
 - C) I tried and am stuck
 - D) No clue where to start...
+
+#### Clicker Question #8
+
+Write a `for` loop that will loop over the keys in `character_encodings` and store the unicode code point of each key's value in a list `code_points`.
+
+
+
+{:.input_area}
+```python
+# YOUR CODE HERE
+```
+
+
+- A) I did it
+- B) I think I did it...
+- C) I tried and am stuck
+- D) No clue where to start...
+
+This is the end of the material you need to know to finish A2 and that could show up on the first exam!
