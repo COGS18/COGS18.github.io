@@ -8,10 +8,16 @@ prev_page:
   url: /materials/06-Loops
   title: '06-Loops'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/A1-Syntax
+  title: 'A1-Syntax'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+## Course Announcements
+
+- **CL2** due tonight (11:59 PM)
+- **A2** due Monday (11:59 PM)
+- **E1** on Monday (due Tues at 11AM)
+
 # Encodings & Dictionaries
 
 - symbols & representations
@@ -109,6 +115,12 @@ print(bin(1))
 ```
 
 
+{:.output_stream}
+```
+0b1
+
+```
+
 
 
 {:.input_area}
@@ -116,6 +128,12 @@ print(bin(1))
 print(bin(78))
 ```
 
+
+{:.output_stream}
+```
+0b1001110
+
+```
 
 
 
@@ -129,11 +147,27 @@ bin(False)
 
 
 
+
+{:.output_data_text}
+```
+'0b0'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print(bool(0b0))
 ```
 
+
+{:.output_stream}
+```
+False
+
+```
 
 
 
@@ -143,6 +177,16 @@ print(bool(0b0))
 # decoding from binary
 int(0b1011)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+11
+```
+
 
 
 ## Character Encodings
@@ -180,6 +224,12 @@ elif character_encoding == 2:
 ```
 
 
+{:.output_stream}
+```
+ñ
+
+```
+
 ## Dictionaries
 
 
@@ -207,6 +257,12 @@ print(dictionary)
 ```
 
 
+{:.output_stream}
+```
+{'key_1': 'value_1', 'key_2': 'value_2'}
+
+```
+
 
 
 {:.input_area}
@@ -218,12 +274,32 @@ type(dictionary)
 
 
 
+
+{:.output_data_text}
+```
+dict
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Dictionaries also have a length
 # length refers to how many pairs there are
 len(dictionary)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 
 
 ### Dictionaries: Indexing & Looping
@@ -239,6 +315,16 @@ dictionary['key_1']
 
 
 
+
+{:.output_data_text}
+```
+'value_1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Loop over a dictionary loops across the keys
@@ -249,6 +335,17 @@ for item in dictionary:
     print('\tValue:\t', dictionary[item])
 ```
 
+
+{:.output_stream}
+```
+Loop Iteration
+	Key:	 key_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 key_2
+	Value:	 value_2
+
+```
 
 
 
@@ -261,6 +358,17 @@ for key, val in dictionary.items():
     print('\tValue:\t', val)
 ```
 
+
+{:.output_stream}
+```
+Loop Iteration
+	Key:	 key_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 key_2
+	Value:	 value_2
+
+```
 
 #### Clicker Question #2
 
@@ -282,8 +390,18 @@ Replace the commented line of code below to return the value stored in the secon
 {:.input_area}
 ```python
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
-# YOUR CODE HERE
+height_dict['height_2']
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+68
+```
+
 
 
 - A) I did it
@@ -310,6 +428,19 @@ student_emails
 
 
 
+
+{:.output_data_text}
+```
+{'Betty Jennings': 'bjennings@eniac.org',
+ 'Ada Lovelace': 'ada@analyticengine.com',
+ 'Alan Turing': 'aturing@thebomb.gov',
+ 'Grace Hopper': 'ghopper@navy.usa'}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 completed_coding_lab = {
@@ -320,6 +451,16 @@ completed_coding_lab = {
 
 completed_coding_lab
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': False, 'A9123': True}
+```
+
 
 
 
@@ -335,6 +476,16 @@ mixed_types
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+{True: [1, 2, 3], False: None}
+```
+
+
+
 #### Clicker Question #4
 
 Write the code that would create a dictionary `car` that stores values about your dream car's `make`, `model`, and `year`.
@@ -348,8 +499,23 @@ Write the code that would create a dictionary `car` that stores values about you
 
 {:.input_area}
 ```python
-# YOUR CODE HEREs
+# YOUR CODE HERE
+car = {'make' : 'Hyundai',
+      'model' : 'Santa Fe',
+      'year' : 2014}
+
+car
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'make': 'Hyundai', 'model': 'Santa Fe', 'year': 2014}
+```
+
 
 
 ### Dictionaries are mutable
@@ -367,12 +533,32 @@ completed_coding_lab
 
 
 
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': False, 'A9123': True}
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # change value of specified key
 completed_coding_lab['A5678'] = True
 completed_coding_lab
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'A1234': True, 'A5678': True, 'A9123': True}
+```
+
 
 
 Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using `del`.
@@ -386,6 +572,22 @@ len(completed_coding_lab)
 ```
 
 
+{:.output_stream}
+```
+{'A1234': True, 'A5678': True, 'A9123': True}
+
+```
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
 
 
 {:.input_area}
@@ -396,6 +598,22 @@ del completed_coding_lab['A5678']
 print(completed_coding_lab)
 len(completed_coding_lab)
 ```
+
+
+{:.output_stream}
+```
+{'A1234': True, 'A9123': True}
+
+```
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 
 
 ### Dictionaries and operators
@@ -412,6 +630,12 @@ if 'A1234' in completed_coding_lab:
     print('Yes, that student is in this class')
 ```
 
+
+{:.output_stream}
+```
+Yes, that student is in this class
+
+```
 
 #### Clicker Question #5
 
@@ -436,6 +660,12 @@ print(result)
 ```
 
 
+{:.output_stream}
+```
+alpha
+
+```
+
 - A) alpha
 - B) [8, 12] 
 - C) beta 
@@ -456,6 +686,16 @@ print(result)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+{'Student': 91}
+```
+
+
+
 - **keys** must be of an immutable type (string, tuple, integer, float, etc)
 - Note: **values** can be of any type
 
@@ -469,6 +709,32 @@ print(result)
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-39-27b11708f095> in <module>()
+      1 # lists are not allowed as key types
+      2 # this code will produce an error
+----> 3 {['Student'] : 97}
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: unhashable type: 'list'
+```
+
+
 - Dictionary keys are case sensitive.
 
 
@@ -478,6 +744,16 @@ print(result)
 ```python
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'Student': 97, 'student': 88, 'STUDENT': 91}
+```
+
 
 
 #### Clicker Question #6
@@ -527,6 +803,12 @@ print(my_sentence)
 ```
 
 
+{:.output_stream}
+```
+no hablo español
+
+```
+
 
 
 {:.input_area}
@@ -536,6 +818,12 @@ my_sentence = 'yo hablo ingl' + character_encodings[1] + 's'
 print(my_sentence)
 ```
 
+
+{:.output_stream}
+```
+yo hablo inglés
+
+```
 
 ## Unicode
 
@@ -567,6 +855,12 @@ print(ord('a'))
 ```
 
 
+{:.output_stream}
+```
+97
+
+```
+
 
 
 {:.input_area}
@@ -574,6 +868,27 @@ print(ord('a'))
 print(chr(97))
 ```
 
+
+{:.output_stream}
+```
+a
+
+```
+
+
+
+{:.input_area}
+```python
+# not in your notes b/c I forgot
+print(ord('👏'))
+```
+
+
+{:.output_stream}
+```
+128079
+
+```
 
 ### Inverses
 
@@ -591,6 +906,13 @@ print('Input: \t', inp, '\nOutput: ', out)
 ```
 
 
+{:.output_stream}
+```
+Input: 	 b 
+Output:  b
+
+```
+
 #### Clicker Question #7
 
 Using `character_encodings`, write code that would determine the unicode code point for the *value* corresponding to the `1` key.
@@ -604,8 +926,18 @@ character_encodings = {
     1 : 'é',
 }
 
-# YOUR CODE HERE
+ord(character_encodings[1])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+233
+```
+
 
 
 - A) I did it
@@ -621,13 +953,62 @@ Write a `for` loop that will loop over the keys in `character_encodings` and sto
 
 {:.input_area}
 ```python
-# YOUR CODE HERE
+# initialize list
+code_points = []
+
+# loop across the keys in dictionary
+for item in character_encodings:
+    # get unicode code point for value/item
+    val = ord(character_encodings[item])
+    
+    # append val to list
+    code_points.append(val)
+
+code_points
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[241, 233]
+```
+
 
 
 - A) I did it
 - B) I think I did it...
 - C) I tried and am stuck
 - D) No clue where to start...
+
+
+
+{:.input_area}
+```python
+# option not using append
+code_points = []
+
+# loop across the keys in dictionary
+for item in character_encodings:
+    val =  [ord(character_encodings[item])]
+    
+    # append val to list
+    code_points = code_points + val
+
+code_points
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[241, 233]
+```
+
+
 
 This is the end of the material you need to know to finish A2 and that could show up on the first exam!

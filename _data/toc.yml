@@ -73,28 +73,28 @@
   # - title: 16-AdvancedPython
   #   url: /materials/16-AdvancedPython
   #   not_numbered: true
-  # - title: A1-Syntax
-  #   url: /materials/A1-Syntax
-  #   not_numbered: true
-  # - title: A2-Examples
-  #   url: /materials/A2-Examples
-  #   not_numbered: true
+  - title: A1-Syntax
+    url: /materials/A1-Syntax
+    not_numbered: true
+  - title: A2-Examples
+    url: /materials/A2-Examples
+    not_numbered: true
 
 
-# - title: Exam Prep
-#   url: /materials/Exam1-Review
-#   not_numbered: true
-#   sections:
-#   - title: Exam1-Review
-#     url: /materials/Exam1-Review
-#     not_numbered: true
+- title: Exam Prep
+  url: /materials/Exam-Prep/Exam1-Review
+  not_numbered: true
+  sections:
+  - title: Exam1-Review
+    url: /materials/Exam-Prep/Exam1-Review
+    not_numbered: true
 #   - title: Exam1-Review-Answers
 #     url: /materials/Exam1-Review-Answers
 #     not_numbered: true
-#   - title: Exam1-Practice
-#     url: /materials/Exam1-Practice
-#     not_numbered: true
-#   - title: E1_Sp20_Practice_Answers
+  - title: Exam1-Practice
+    url: /materials/Exam-Prep/Exam1-Practice
+    not_numbered: true
+#   - title: COGS18_E1_Practice_Answers
 #     url: /materials/E1_Sp20_Practice_Answers
 #     not_numbered: true    
 #   - title: E1_Sp20_Answers
