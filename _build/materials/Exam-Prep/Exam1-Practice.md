@@ -3,11 +3,11 @@ interact_link: content/materials/Exam-Prep/Exam1-Practice.ipynb
 download_link: assets/downloads/Exam1-Practice.ipynb.zip
 title: 'Exam1-Practice'
 prev_page:
-  url: /materials/Exam-Prep/Exam1-Review
-  title: 'Exam1-Review'
+  url: /materials/Exam-Prep/Exam1-Review-Answers
+  title: 'Exam1-Review-Answers'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/Exam-Prep/E1_Su20_Practice_Answers
+  title: 'E1_Su20_Practice_Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Exam #1 Practice Questions

@@ -1,13 +1,13 @@
 ---
-interact_link: content/materials/Exam-Prep/Exam1-Review.ipynb
-download_link: assets/downloads/Exam1-Review.ipynb.zip
-title: 'Exam Prep'
+interact_link: content/materials/Exam-Prep/Exam1-Review-Answers.ipynb
+download_link: assets/downloads/Exam1-Review-Answers.ipynb.zip
+title: 'Exam1-Review-Answers'
 prev_page:
-  url: /materials/A2-Examples
-  title: 'A2-Examples'
-next_page:
   url: /materials/Exam-Prep/Exam1-Review
   title: 'Exam1-Review'
+next_page:
+  url: /materials/Exam-Prep/Exam1-Practice
+  title: 'Exam1-Practice'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
@@ -94,6 +94,73 @@ Edit the code at right with how would you return the specified values on left:
 
 Write a line of code that would change the third element of a list `my_list` to store the value `12`.
 
+#### Data Types Answers
+
+Data Types Question #1
+
+Tuples are created with () and are immutable.  
+Lists are created with [] and are mutable.
+
+
+
+{:.input_area}
+```python
+# Data Types Question #2
+ice_cream = ['vanilla', 'chocolate', 'strawberry', 'cherry', 'salted caramel']
+print(ice_cream[-5:-2])
+print(ice_cream[:3])
+print(ice_cream[0:3])
+```
+
+
+{:.output_stream}
+```
+['vanilla', 'chocolate', 'strawberry']
+['vanilla', 'chocolate', 'strawberry']
+['vanilla', 'chocolate', 'strawberry']
+
+```
+
+
+
+{:.input_area}
+```python
+# Data Types Question #3
+my_list[2] = 12 
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 12, 4]
+```
+
+
+
+
+
+{:.input_area}
+```python
+# Data Types Question #3
+my_list = [1, 2 , 3, 4, 5, 6]
+my_list[2] = 12
+my_list
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 12, 4, 5, 6]
+```
+
+
+
 ### Operators
 
 - assignment : `=`
@@ -118,6 +185,85 @@ Using at least 4 different math operators, create a variable `math_var` that sto
 #### Operators Question #4
 
 Create a variable `string_concat` that demonstrates how you can concatenate two different strings together with a space between the two different strings. 
+
+#### Operators Answers
+
+Operators Question #1
+
+= is an assignment operator  
+== checks for equality
+
+
+
+{:.input_area}
+```python
+# Operators Question #2
+
+# one possible answer
+a = not False
+b = not True
+open_var = a or b
+
+# OR
+# open_var = not False or not True
+print(open_var)
+```
+
+
+{:.output_stream}
+```
+True
+
+```
+
+
+
+{:.input_area}
+```python
+# Operators Question #3
+# one possible answer to get to 18
+math_var =   36 // ((((2 + 3) * 2) / 2) - 3)
+math_var 
+```
+
+
+
+
+
+{:.output_data_text}
+```
+18.0
+```
+
+
+
+
+
+{:.input_area}
+```python
+# Operators Question #4
+# possible answer
+
+string_concat = 'COGS' + ' ' + '18'
+print(string_concat)
+# OR
+a = 'COGS'
+b = '18'
+string_concat = a + ' ' + b
+print(string_concat)
+
+string_concat = 'COGS ' + '18'
+print(string_concat)
+```
+
+
+{:.output_stream}
+```
+COGS 18
+COGS 18
+COGS 18
+
+```
 
 ### Conditionals
 
@@ -147,6 +293,68 @@ Given the following outline of a conditional:
 
 You use have a list that stores 20 different integers. You use a comparison operator to compare the relationship between two of the elements in the list and store that output in a variable. What would the type of that output variable be?
 
+#### Conditionals Answers
+
+Conditionals Question #1
+
+necessary, optional, optional
+
+Conditionals Question #2
+
+1. Code Block A
+2. Code Block B
+
+
+
+{:.input_area}
+```python
+###### how to check your thinking when you're studying
+COND_A = True
+COND_B = True
+
+if COND_A:
+    print('a')
+elif COND_B:
+    print('b')
+else:
+    print('c')
+```
+
+
+{:.output_stream}
+```
+a
+
+```
+
+Conditionals Question #3
+
+A Boolean
+
+
+
+{:.input_area}
+```python
+# Example code to demonstrate:
+test_list = range(0,21)
+
+# test 1
+out = test_list[1] != test_list[2]
+print(type(out))
+
+# test 2
+out = test_list[17] <= test_list[15]
+print(type(out))
+```
+
+
+{:.output_stream}
+```
+<class 'bool'>
+<class 'bool'>
+
+```
+
 ### Loops
 
 - loops: `for` and `while`
@@ -168,4 +376,51 @@ Initialize an additional variable called `reverse_pet` that will store an empty 
 Then, using indexing, loop through each letter in that list such that `reverse_pet` stores a list with your favorite pet spelled backward.
 
 For example, if your favorite pet were "cat", the output stored in `reverse_pet` should be: `['t', 'a', 'c']`
+
+
+#### Loops Answers
+
+Loops Question #1
+
+for and while
+
+
+
+{:.input_area}
+```python
+# Loops Question #2
+ind = 1
+
+while ind <= 4:
+    print(ind)
+    ind += 1
+    #or ind = ind + 1
+```
+
+
+
+
+{:.input_area}
+```python
+# Loops Question #3
+
+fav_pet = ['p', 'u', 'p', 'p', 'y']
+
+reverse_pet = []
+for letter in fav_pet[::-1]:
+    reverse_pet.append(letter)
+
+#OR
+reverse_pet = []
+for letter in [fav_pet[4], fav_pet[3], fav_pet[2], fav_pet[1], fav_pet[0]]:
+    reverse_pet.append(letter)
+
+#OR
+
+reverse_pet = []
+for letter in [fav_pet[-1], fav_pet[-2], fav_pet[-3], fav_pet[-4], fav_pet[-5]]:
+    reverse_pet.append(letter)
+    
+print(reverse_pet)
+```
 
