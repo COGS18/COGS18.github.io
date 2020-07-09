@@ -1024,7 +1024,7 @@ Here are some things to try, and questions to ask - each of which you should exp
 - What are some different ways to loop through a list? tuple?
 - Write these combinations: 
     - a `for` loop with a `break`, a `for` loop with a `continue`
-    - a `while` loop with a `break`, a `for` loop with a `continue`
+    - a `while` loop with a `break`, a `while` loop with a `continue`
 - Write some loops that loop across lists:
     - Write a loop that loops across, and prints out, all the elements of a list
     - Write a loop that loops across, and prints out, every second element of a list
