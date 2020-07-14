@@ -47,7 +47,7 @@ Copy + Pasting the same/similar bit of code is to be avoided.
 Modular programming is an approach to programming that focuses on building programs from indendent modules ('pieces'). 
 </div>
 
-## Functions for Modular Programming
+### Functions for Modular Programming
 
 - Functions allow us to flexibly re-use pieces of code
 - Each function is independent of every other function, and other pieces of code
@@ -75,7 +75,7 @@ len(my_var)
 ```
 
 
-## Function Example I
+### Function Example I
 
 When you use `def` you are creating a **user-defined function**.
 
@@ -160,7 +160,7 @@ print(new_val)
 ```
 
 
-## Function Example II
+### Function Example II
 
 Something more interesting than just printing or storing a single value
 
@@ -196,7 +196,7 @@ print(output)
 ```
 
 
-## Function Example III
+### Function Example III
 
 We aren't limited to a single operation within a function. We can use multiple operations and all of the concepts we've used previously (including loops and conditionals).
 
@@ -324,7 +324,7 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 ```
 
 
-## Function Namespace I
+## Namespace
 
 
 
@@ -335,7 +335,13 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 ```
 
 
-## Function Namespaces II
+{:.output_stream}
+```
+Interactive namespace is empty.
+
+```
+
+### Function Namespaces I
 
 
 
@@ -385,7 +391,7 @@ check_function_namespace2(1, True)
 ```
 
 
-## Function Namespaces III
+## Function Namespaces II
 
 Names defined inside a function only exist within the function.
 
@@ -465,7 +471,7 @@ Algorithms are computable.
 
 Computers cannot read between the lines. They are very literal.
 
-## Algorithm Example: Making a Sandwich
+### Algorithm Example: Making a Sandwich
 
 #### Clicker Question #3
 
@@ -475,7 +481,7 @@ Can you write an algorithm to make a ham and cheese sandwich.
 - B) No
 - C) I don't know
 
-## Algorithm for making a ham & cheese sandwich
+#### Algorithm for making a ham & cheese sandwich
 
 
 
@@ -511,7 +517,7 @@ Can you write an algorithm to sort an array?
 - B) No
 - C) I don't know
 
-## `sort_array`
+### `sort_array`
 
 A version of a **selection sort**:
 - loop through current list
@@ -550,7 +556,7 @@ def sort_array(array_to_sort):
 ```
 
 
-## Using `sort_array`
+### Using `sort_array`
 
 
 
@@ -721,14 +727,14 @@ print(sorted([[1, 4], [1, 2]]))
 The complexity of an algorithm characterizes the relationship between the input size and the number of steps of an algorithm.
 </div>
 
-## Algorithmic Complexity
+### Algorithmic Complexity
 
 Things we might care about:
 - The number of steps it takes to complete our algorithm
     - Usually defined in relation of the size of the input
 - The amount of memory it will take to run our algorithm
 
-## Properties of our sorting algorithm
+### Properties of our sorting algorithm
 
 - It will require $n^2$ steps, where $n$ is the length of the list
 - It will require ~double the memory of the original list
