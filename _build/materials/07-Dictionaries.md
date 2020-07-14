@@ -8,8 +8,8 @@ prev_page:
   url: /materials/06-Loops
   title: '06-Loops'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/08-FunctionsI
+  title: '08-FunctionsI'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements

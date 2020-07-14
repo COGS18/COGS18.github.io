@@ -60,7 +60,7 @@ These variables must satisfy the following requirements:
 
 
 {:.input_area}
-```python
+```
 # actual variable creation will differ
 var_a = 7.3
 var_b = 6 == 6 and 3 <= 4
@@ -71,7 +71,7 @@ var_c = (6 + 3) * 4
 
 
 {:.input_area}
-```python
+```
 # check variable exists
 assert var_a is not None
 
@@ -84,7 +84,7 @@ assert isinstance(var_a, float)
 
 
 {:.input_area}
-```python
+```
 assert var_b is not None
 
 ### BEGIN HIDDEN TESTS
@@ -96,7 +96,7 @@ assert var_b
 
 
 {:.input_area}
-```python
+```
 # check variable exists
 assert var_c is not None
 
@@ -122,7 +122,7 @@ Given a the list `my_list` provided below, include code below *using indexing* t
 
 
 {:.input_area}
-```python
+```
 # my_list is provided for you
 my_list = ['a', 'b', 'c', 'd', 'e']
 
@@ -135,7 +135,7 @@ list_b = my_list[0::2]
 
 
 {:.input_area}
-```python
+```
 assert isinstance(list_a, list)
 
 ### BEGIN HIDDEN TESTS
@@ -147,7 +147,7 @@ assert list_a == ['c', 'd']
 
 
 {:.input_area}
-```python
+```
 assert isinstance(list_b, list)
 
 ### BEGIN HIDDEN TESTS
@@ -167,7 +167,7 @@ Include code in your answer below that uses a `while` loop to loop through all t
 
 
 {:.input_area}
-```python
+```
 out = []
 counter = 0 
 
@@ -183,7 +183,161 @@ while counter <= 20:
 
 
 {:.input_area}
-```python
+```
+my_list = [1,2,3]
+my_list.append(15)
+my_list
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 3, 15]
+```
+
+
+
+
+
+{:.input_area}
+```
+out = ' '
+bool(out)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```
+2 / 2
+```
+
+
+
+
+
+{:.output_data_text}
+```
+1.0
+```
+
+
+
+
+
+{:.input_area}
+```
+8 % 2
+```
+
+
+
+
+
+{:.output_data_text}
+```
+0
+```
+
+
+
+
+
+{:.input_area}
+```
+my_name = 'Shannon'
+'S' in my_name is 'a'
+```
+
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```
+value = 0
+output = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+out = []
+# have to defined some output
+
+while value < 20:
+    # print(value)
+    value = value + 1
+    
+    # if we get even, don't include it (if it is odd, do include it)
+    if value % 2 != 0:
+        out.append(value)
+    
+print(out == output)
+out
+    
+```
+
+
+
+
+{:.input_area}
+```
+value = 0
+output = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+out = []
+keep_looping = True
+# have to defined some output
+
+while keep_looping == True:
+    
+    # print(value)
+    value = value + 1
+    
+    # if we get even, don't include it (if it is odd, do include it)
+    if value % 2 != 0:
+        out.append(value)
+    
+    if value >= 20:
+        keep_looping = False
+    
+    
+out
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+```
+
+
+
+
+
+{:.input_area}
+```
 assert isinstance(out, list)
 
 ### BEGIN HIDDEN TESTS

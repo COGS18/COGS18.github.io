@@ -46,9 +46,9 @@
   - title: 07-Dictionaries
     url: /materials/07-Dictionaries
     not_numbered: true
-  # - title: 08-FunctionsI
-  #   url: /materials/08-FunctionsI
-  #   not_numbered: true
+  - title: 08-FunctionsI
+    url: /materials/08-FunctionsI
+    not_numbered: true
   # - title: 09-FunctionsII
   #   url: /materials/09-FunctionsII
   #   not_numbered: true
