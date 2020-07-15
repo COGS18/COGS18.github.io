@@ -49,12 +49,12 @@
   - title: 08-FunctionsI
     url: /materials/08-FunctionsI
     not_numbered: true
-  # - title: 09-FunctionsII
-  #   url: /materials/09-FunctionsII
-  #   not_numbered: true
-  # - title: 10-Testing-Debugging
-  #   url: /materials/10-Testing-Debugging
-  #   not_numbered: true
+  - title: 09-FunctionsII
+    url: /materials/09-FunctionsII
+    not_numbered: true
+  - title: 10-Testing-Debugging
+    url: /materials/10-Testing-Debugging
+    not_numbered: true
   # - title: 11-Classes
   #   url: /materials/11-Classes
   #   not_numbered: true

@@ -8,8 +8,8 @@ prev_page:
   url: /materials/07-Dictionaries
   title: '07-Dictionaries'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/09-FunctionsII
+  title: '09-FunctionsII'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
@@ -67,12 +67,32 @@ type(my_var)
 
 
 
+
+{:.output_data_text}
+```
+list
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # the function len() doesn't depend on type()
 # but they can both be used on the same variable
 len(my_var)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 ### Function Example I
@@ -102,6 +122,12 @@ print_value(num = 6)
 ```
 
 
+{:.output_stream}
+```
+6
+
+```
+
 
 
 {:.input_area}
@@ -111,6 +137,12 @@ print_value(num = 6)
 print_value(6)
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 
 
@@ -122,6 +154,13 @@ new_var = print_value(6)
 print(new_var)
 ```
 
+
+{:.output_stream}
+```
+6
+None
+
+```
 
 All this function is doing is printing the input. It's not actually *storing* any new information. To do that, we need to use `return`.
 
@@ -151,6 +190,16 @@ return_value(6)
 
 
 
+
+{:.output_data_text}
+```
+6
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # execute function but assign output 
@@ -159,6 +208,12 @@ new_val = return_value(6)
 print(new_val)
 ```
 
+
+{:.output_stream}
+```
+6
+
+```
 
 ### Function Example II
 
@@ -188,6 +243,16 @@ add_two_numbers(-1, 4)
 
 
 
+
+{:.output_data_text}
+```
+3
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Execute our function again, on some other inputs
@@ -195,6 +260,12 @@ output = add_two_numbers(-1, 4)
 print(output)
 ```
 
+
+{:.output_stream}
+```
+3
+
+```
 
 ### Function Example III
 
@@ -221,9 +292,14 @@ def even_odd(value):
 # Execute our function
 # note that it's only printing the output
 even_odd(-1)
-
 ```
 
+
+{:.output_stream}
+```
+odd
+
+```
 
 
 
@@ -247,10 +323,16 @@ def even_odd(value):
 ```python
 # Execute our function
 # note that it's only printing the output
-my_val = even_odd(-1)
+my_val = even_odd(8)
 print(my_val)
 ```
 
+
+{:.output_stream}
+```
+even
+
+```
 
 With functions, the logic behind our code no longer requires it to be executed from top to bottom of the notebook.
 
@@ -282,9 +364,8 @@ The cost of potential confusion is *definitely* offset by the benefits of writin
 def remainder(number, divider):
     
     r = number % divider
-    w = number * divider
     
-    return r, w
+    return r
 ```
 
 
@@ -299,6 +380,16 @@ ans_2 = remainder(2, 2)
 
 ans_1 + ans_2
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 
 
 - A) 0
@@ -320,8 +411,28 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 
 {:.input_area}
 ```python
-## YOUR CODE HERE
+def greet(name):
+    output = 'Hello ' + name  + ' Good morning!' 
+    return output
 ```
+
+
+
+
+{:.input_area}
+```python
+greet('Shannon')
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'Hello Shannon Good morning!'
+```
+
 
 
 ## Namespace
@@ -337,7 +448,23 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 
 {:.output_stream}
 ```
-Interactive namespace is empty.
+Variable          Type        Data/Info
+---------------------------------------
+a                 int         2
+add_two_numbers   function    <function add_two_numbers at 0x10afe6730>
+ans_1             int         2
+ans_2             int         0
+b                 int         5
+even_odd          function    <function even_odd at 0x10afe6840>
+greet             function    <function greet at 0x10afe66a8>
+my_val            str         even
+my_var            list        n=3
+new_val           int         6
+new_var           NoneType    None
+output            int         3
+print_value       function    <function print_value at 0x10afe6400>
+remainder         function    <function remainder at 0x10afe6048>
+return_value      function    <function return_value at 0x10afe67b8>
 
 ```
 
@@ -349,7 +476,16 @@ Interactive namespace is empty.
 ```python
 def check_function_namespace(function_input):
     # Check what is defined and available inside the function
-    print(locals())
+    print(locals()) 
+```
+
+
+
+
+{:.input_area}
+```python
+# check documentation for locals
+# locals?
 ```
 
 
@@ -362,6 +498,12 @@ check_function_namespace(1)
 ```
 
 
+{:.output_stream}
+```
+{'function_input': 1}
+
+```
+
 
 
 {:.input_area}
@@ -371,12 +513,19 @@ check_function_namespace(True)
 ```
 
 
+{:.output_stream}
+```
+{'function_input': True}
+
+```
+
 
 
 {:.input_area}
 ```python
 # using two different inputs to a function
 def check_function_namespace2(function_input, other_name):
+    a = 3
     # Check what is defined and available inside the function
     print(locals())
 ```
@@ -391,7 +540,13 @@ check_function_namespace2(1, True)
 ```
 
 
-## Function Namespaces II
+{:.output_stream}
+```
+{'function_input': 1, 'other_name': True, 'a': 3}
+
+```
+
+### Function Namespaces II
 
 Names defined inside a function only exist within the function.
 
@@ -409,6 +564,13 @@ check_function_namespace(my_var)
 print(my_var)
 ```
 
+
+{:.output_stream}
+```
+{'function_input': 'I am a variable'}
+I am a variable
+
+```
 
 ## Function - Execution Order
 
@@ -433,12 +595,28 @@ my_var
 
 
 
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # my_var within the function
 change_var(my_var)
 ```
 
+
+{:.output_stream}
+```
+Inside function: 		 I am something else
+
+```
 
 
 
@@ -451,6 +629,16 @@ my_var
 
 
 
+
+{:.output_data_text}
+```
+'I am a variable'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 print('Outside, before function: \t', my_var)
@@ -458,6 +646,14 @@ change_var(my_var)
 print('Outside, after function: \t', my_var)
 ```
 
+
+{:.output_stream}
+```
+Outside, before function: 	 4479461360
+4479566232
+Outside, after function: 	 4479461360
+
+```
 
 ## Algorithms
 
@@ -483,6 +679,11 @@ Can you write an algorithm to make a ham and cheese sandwich.
 
 #### Algorithm for making a ham & cheese sandwich
 
+- get bread
+- put ham on bread
+- put cheese on ham
+- put ham on bread
+- put on plate
 
 
 Humans are pretty good at making sandwiches. Computers may struggle a bit.
@@ -503,7 +704,7 @@ Y'all Google is *really* good at sorting.
 {:.input_area}
 ```python
 # Define a list of numbers
-list_of_numbers = [2, 1, 3]  
+list_of_numbers = [2, 1, 3]   
 ```
 
 
@@ -569,6 +770,12 @@ print(sorted_array)
 ```
 
 
+{:.output_stream}
+```
+[7, 12, 12, 19, 25]
+
+```
+
 
 
 {:.input_area}
@@ -579,6 +786,12 @@ sorted_array = sort_array(unsorted_array)
 print(sorted_array)
 ```
 
+
+{:.output_stream}
+```
+[2.3, 2.9, 21.3, 56.7, 99.9]
+
+```
 
 #### Clicker Question #5
 
@@ -591,6 +804,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = ['a', 'c', 'b'] 
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['a', 'b', 'c']
+```
+
 
 
 - A) ['a', 'c', 'b']
@@ -611,6 +834,16 @@ sort_array(data)
 
 
 
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ord('a')
@@ -619,10 +852,30 @@ ord('a')
 
 
 
+
+{:.output_data_text}
+```
+97
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ord('b')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+98
+```
+
 
 
 #### Clicker Question #6
@@ -636,6 +889,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = [True, False, True]
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[False, True, True]
+```
+
 
 
 - A) [False, True, True] 
@@ -656,6 +919,16 @@ True < False
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bin(True)
@@ -664,10 +937,30 @@ bin(True)
 
 
 
+
+{:.output_data_text}
+```
+'0b1'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 bin(False)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'0b0'
+```
+
 
 
 #### Clicker Question #7
@@ -681,6 +974,16 @@ Using our `sort_array` function from above, what will the following code snippet
 data = [[1, 4], [1, 2]]
 sort_array(data)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[[1, 2], [1, 4]]
+```
+
 
 
 - A) [[1, 4], [1, 2]]  
@@ -703,11 +1006,39 @@ sorted(data)
 
 
 
+
+{:.output_data_text}
+```
+[4, 6, 7]
+```
+
+
+
+
+
+{:.input_area}
+```python
+#sorted?
+```
+
+
+
+
 {:.input_area}
 ```python
 # what about a list of strings?
 sorted(['asdf','abcd'])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['abcd', 'asdf']
+```
+
 
 
 
@@ -720,6 +1051,14 @@ print(sorted([True, False, True]))
 print(sorted([[1, 4], [1, 2]]))
 ```
 
+
+{:.output_stream}
+```
+['a', 'b', 'c']
+[False, True, True]
+[[1, 2], [1, 4]]
+
+```
 
 ## Algorithmic Complexity
 
@@ -799,12 +1138,28 @@ string_manipulator('hello!')
 
 
 
+
+{:.output_data_text}
+```
+'hzllo!'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # print warning if not a string
 string_manipulator(5)
 ```
 
+
+{:.output_stream}
+```
+Warning: please provide a string as input
+
+```
 
 However, sometimes, you want it to raise an error rather than just print something. Here we use `raise` instead of print. In this case, an error will be returned (with our specified message) to the user if the wrong variable type is provided:
 
@@ -834,5 +1189,41 @@ def string_manipulator(string):
 ```python
 # raise error instead of print message
 string_manipulator(5)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-87-3a9e147048ec> in <module>()
+      1 # raise error instead of print message
+----> 2 string_manipulator(5)
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-86-f85e5d0c7021> in string_manipulator(string)
+      2 
+      3     if not isinstance(string, str):
+----> 4         raise ValueError("Please provide a string as input")
+      5     else:
+      6         output = ''
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: Please provide a string as input
 ```
 
