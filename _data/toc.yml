@@ -139,9 +139,9 @@
 #   # - title: CL3-Functions
 #   #   url: /labs/source_Su20/CL3-Functions
 #   #   not_numbered: true
-#   - title: CL3-Answers
-#     url: /labs/source_Su20/CL3-Answers
-#     not_numbered: true
+  - title: CL3-Answers
+    url: /labs/source_Su20/CL3-Answers
+    not_numbered: true
 #   # - title: CL4-Classes
 #   #   url: /labs/source_Su20/CL4-Classes
 #   #   not_numbered: true

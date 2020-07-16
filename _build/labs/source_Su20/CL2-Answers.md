@@ -6,8 +6,8 @@ prev_page:
   url: /labs/source_Su20/CL1-Tooling
   title: 'CL1-Tooling'
 next_page:
-  url: /
-  title: ''
+  url: /labs/source_Su20/CL3-Answers
+  title: 'CL3-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Coding Lab 2: Programming I - Answers
