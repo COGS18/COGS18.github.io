@@ -409,6 +409,23 @@ Note that there are multiple ways in which to approach this. One possible approa
 
 {:.input_area}
 ```python
+def reverse_string(input_string):
+    
+    rev = ''
+    counter = len(input_string) 
+    
+    while counter > 0: 
+        rev = rev + input_string[counter - 1]
+        counter = counter - 1
+    
+    return rev
+```
+
+
+
+
+{:.input_area}
+```python
 assert reverse_string('apple') == 'elppa'
 ```
 
@@ -422,6 +439,22 @@ If it is a palindrome, `return` 'Hey! That's a palindrome!'
 If it is not a palindrome, `return` 'Bummer. Not a palindrome.'
 
 Remember that you created a function that can reverse a string above.
+
+
+
+{:.input_area}
+```python
+def check_palindrome(input_string):
+    rev = reverse_string(input_string)
+
+    if rev == input_string:
+        out = "Hey! That's a palindrome!"
+    else:
+        out = "Bummer. Not a palindrome."
+    
+    return out
+```
+
 
 
 
