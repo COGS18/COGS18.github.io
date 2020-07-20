@@ -55,9 +55,9 @@
   - title: 10-Testing-Debugging
     url: /materials/10-Testing-Debugging
     not_numbered: true
-  # - title: 11-Classes
-  #   url: /materials/11-Classes
-  #   not_numbered: true
+  - title: 11-Classes
+    url: /materials/11-Classes
+    not_numbered: true
   # - title: 12-Namespaces
   #   url: /materials/12-Namespaces
   #   not_numbered: true
@@ -97,9 +97,9 @@
   - title: E1_Su20_Practice_Answers
     url: /materials/Exam-Prep/E1_Su20_Practice_Answers
     not_numbered: true    
-#   - title: E1_Sp20_Answers
-#     url: /materials/E1_Sp20_Answers
-#     not_numbered: true
+  - title: E1_Su20_Answers
+    url: /materials/Exam-Prep/COGS18_E1_Su20
+    not_numbered: true
 #   - title: Exam2-Review
 #     url: /materials/Exam2-Review
 #     not_numbered: true

@@ -8,10 +8,24 @@ prev_page:
   url: /materials/09-FunctionsII
   title: '09-FunctionsII'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/11-Classes
+  title: '11-Classes'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+## Course Announcements
+
+**Upcoming Dates**
+- **A3** due Monday (7/20)
+- **CL4** due Wednesday (7/22)
+- **E2** Thursday (7/23)
+
+**General Notes**
+- I'll release CL4 and A4 later today
+- Prof Ellis will not have office hours _next_ week on Thurs (b/c of the exam)
+    - Wed 4-6 PM instead
+    - I'll send out a Piazza note
+- My family is in town next week, so I'm going to be lecturing from our backyard. If the recording stinks or you have trouble hearing me at all, please let me know and I'll come up with a different plan!
+
 # Debugging & Testing
 
 - Errors
@@ -46,6 +60,49 @@ def example_function(input_list):
     special_value = input_list[3]
     
     return running_sum + special_value
+```
+
+
+
+
+{:.input_area}
+```python
+example_function([1,2,3])
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+IndexError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-9-3d9cb7c5d23f> in <module>()
+----> 1 example_function([1,2,3])
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-7-a4fb5262d9d1> in example_function(input_list)
+      5         running_sum = running_sum + item
+      6 
+----> 7     special_value = input_list[3]
+      8 
+      9     return running_sum + special_value
+
+```
+
+{:.output_traceback_line}
+```
+IndexError: list index out of range
 ```
 
 
@@ -90,6 +147,17 @@ if True
 ```
 
 
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-3-dfda8e0f217c>", line 2
+    if True
+           ^
+SyntaxError: invalid syntax
+
+```
+
+
 Python does its best to tell you:
 - what type of error it is
 - and where it _thinks_ it occurred (`^`)
@@ -103,6 +171,17 @@ Python does its best to tell you:
 my_list = [1, 2]
 for value in my_list:
 print(value)
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-6-45596487aa45>", line 5
+    print(value)
+        ^
+IndentationError: expected an indented block
+
 ```
 
 
@@ -126,6 +205,31 @@ ZeroDivisionError occurs when you try to divide by zero.
 ```python
 # produces ZeroDivisionError
 1 / 0
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-10-79e900a17bd3> in <module>()
+      1 # produces ZeroDivisionError
+----> 2 1 / 0
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
 ```
 
 
@@ -155,6 +259,31 @@ varaible
 ```
 
 
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-12-4acade15292f> in <module>()
+      1 # If you typo a name, you will get a NameError
+----> 2 varaible
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'varaible' is not defined
+```
+
+
 While it's annoying, it's helpful that Python doesn't just _guess_ that you _meant_ 'variable'....because sometimes Python would guess wrong. It's better for Python to just give us the error.
 
 
@@ -163,6 +292,31 @@ While it's annoying, it's helpful that Python doesn't just _guess_ that you _mea
 ```python
 # You also get a name error if you try to use the wrong operator for assignment
 new_variable == 1
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-15-4f05423dede6> in <module>()
+      1 # You also get a name error if you try to use the wrong operator for assignment
+----> 2 new_variable == 1
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'new_variable' is not defined
 ```
 
 
@@ -180,12 +334,63 @@ my_list[5]
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+IndexError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-16-2c2a83518cf2> in <module>()
+      1 my_list = [1, 2, 3]
+----> 2 my_list[5]
+
+```
+
+{:.output_traceback_line}
+```
+IndexError: list index out of range
+```
+
+
+
 
 {:.input_area}
 ```python
 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
 my_dictionary = {'name1' : 1, 'name2' : 2}
 my_dictionary['name3']
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+KeyError                                  Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-17-84a1c00e4833> in <module>()
+      1 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
+      2 my_dictionary = {'name1' : 1, 'name2' : 2}
+----> 3 my_dictionary['name3']
+
+```
+
+{:.output_traceback_line}
+```
+KeyError: 'name3'
 ```
 
 
@@ -202,11 +407,60 @@ int('cat')
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-18-1c6b28888bbe> in <module>()
+----> 1 int('cat')
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: invalid literal for int() with base 10: 'cat'
+```
+
+
+
 
 {:.input_area}
 ```python
 my_list = [1, 2, 3]
 my_list.remove(0)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-19-f00634ed638b> in <module>()
+      1 my_list = [1, 2, 3]
+----> 2 my_list.remove(0)
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: list.remove(x): x not in list
 ```
 
 
@@ -217,6 +471,30 @@ my_list.remove(0)
 {:.input_area}
 ```python
 'a_string' + 12
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+TypeError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-20-57c293ee5895> in <module>()
+----> 1 'a_string' + 12
+
+```
+
+{:.output_traceback_line}
+```
+TypeError: can only concatenate str (not "int") to str
 ```
 
 
@@ -248,11 +526,46 @@ int('six')
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-21-196d25768c28> in <module>()
+----> 1 int('six')
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: invalid literal for int() with base 10: 'six'
+```
+
+
+
 
 {:.input_area}
 ```python
 if num > 0
     print("Greater than 0")
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-25-ad228ac1793f>", line 1
+    if num > 0
+              ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -264,6 +577,12 @@ if num > 0:
     print("Greater than 0")
 ```
 
+
+{:.output_stream}
+```
+Greater than 0
+
+```
 
 ## Stack Trace
 
@@ -285,6 +604,34 @@ for val in my_list:
         running_sum += temp 
         # equivalent to:
         # running_sum = running_sum + temp
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-27-215726ba149c> in <module>()
+      5 
+      6     if val % 2 == 0:
+----> 7         temp = val / (val - 4)
+      8         #+= allows you to add the value on the right to the variable on the left
+      9         # and assign it to the variable on the left
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
 ```
 
 
@@ -328,7 +675,71 @@ print('\nmy_num is: ', my_num)
 ```
 
 
+{:.output_stream}
+```
+Please type a number: shannon
+
+my_num is:  shannon
+
+```
+
 ### Example with Try / Except
+
+
+
+{:.input_area}
+```python
+int('shannon')
+```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
+
+
+
+
+{:.input_area}
+```python
+int(input('Number'))
+```
+
+
+{:.output_stream}
+```
+Numbershannon
+
+```
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-33-5c327d8444a1> in <module>()
+----> 1 int(input('Number'))
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: invalid literal for int() with base 10: 'shannon'
+```
+
 
 
 
@@ -341,6 +752,13 @@ except:
 ```
 
 
+{:.output_stream}
+```
+Numbershannon
+nahhh
+
+```
+
 #### Try / Except within a While Loop
 
 
@@ -349,6 +767,22 @@ except:
 ```python
 input("text")
 ```
+
+
+{:.output_stream}
+```
+textadl;kjasldfkja;sldkjf
+
+```
+
+
+
+
+{:.output_data_text}
+```
+'adl;kjasldfkja;sldkjf'
+```
+
 
 
 
@@ -368,6 +802,16 @@ print('\nmy_num is: ', my_num)
 ```
 
 
+{:.output_stream}
+```
+Please enter a number: as;kdfasdflkja
+Oops!  That was no valid number. Try again!
+Please enter a number: 29
+
+my_num is:  29
+
+```
+
 ### More Try / Except
 
 
@@ -385,6 +829,39 @@ def divide(num1, num2):
 {:.input_area}
 ```python
 print(divide(2, 0))
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-40-0cdf54a076ec> in <module>()
+----> 1 print(divide(2, 0))
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-39-62d4f4a69b89> in divide(num1, num2)
+      1 # define a function divide
+      2 def divide(num1, num2):
+----> 3     return num1 / num2
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
 ```
 
 
@@ -412,6 +889,12 @@ print(safe_divide(2, 0))
 ```
 
 
+{:.output_stream}
+```
+None
+
+```
+
 ## Raising Errors
 
 <div class="alert alert-success">
@@ -428,9 +911,43 @@ You can also write code to raise an Exception if something unexpected happens.
 ```python
 my_int = input('An integer please: ')
 if not my_int.isnumeric():
-    raise ValueError('I wanted a number! :(')
+    raise ValueError('I wanted an integer! :(')
     
 print('My integer is: ', my_int) 
+```
+
+
+{:.output_stream}
+```
+An integer please: 9.4
+
+```
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ValueError                                Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-46-9e83f00ba183> in <module>()
+      1 my_int = input('An integer please: ')
+      2 if not my_int.isnumeric():
+----> 3     raise ValueError('I wanted an integer! :(')
+      4 
+      5 print('My integer is: ', my_int)
+
+```
+
+{:.output_traceback_line}
+```
+ValueError: I wanted an integer! :(
 ```
 
 
@@ -442,17 +959,23 @@ Edit the code below (replacing `---` with either values or variable names) so th
 
 {:.input_area}
 ```python
-num1 = ---
-num2 = ---
+num1 = 6
+num2 = 0
 
 try:
-    output = ---
+    output = num1 / num2
 except ZeroDivisionError:
     output = None
     
 print(output)
 ```
 
+
+{:.output_stream}
+```
+None
+
+```
 
 - A) I did it!
 - B) I _think_ I did it...
@@ -470,8 +993,10 @@ Given the following code, which assert will fail?
 ```python
 def extend(input_arg):
     output = input_arg.copy()
+    
     for element in input_arg:
         output.append(element)
+    
     return output
 ```
 
@@ -483,6 +1008,16 @@ def extend(input_arg):
 # test here
 extend([1,2,3,4])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[1, 2, 3, 4, 1, 2, 3, 4]
+```
+
 
 
 - A) `assert isinstance(extend([1, 2]), list)`
@@ -517,6 +1052,42 @@ assert extend([1, 2]) == [1, 2, 1, 2]
 ```python
 # Check if the function works on tuples
 assert extend((1, 2)) == (1, 2, 1, 2)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-61-c510c0c20682> in <module>()
+      1 # Check if the function works on tuples
+----> 2 assert extend((1, 2)) == (1, 2, 1, 2)
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-51-e590b6fb4ff9> in extend(input_arg)
+      1 def extend(input_arg):
+----> 2     output = input_arg.copy()
+      3 
+      4     for element in input_arg:
+      5         output.append(element)
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'tuple' object has no attribute 'copy'
 ```
 
 
@@ -578,8 +1149,78 @@ def add(num1, num2):
 
 {:.input_area}
 ```python
-add(2.7, 1.2) == 3.9
+assert add(2, 4) == 6
 ```
+
+
+
+
+{:.input_area}
+```python
+add(2.7, 1.2)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+3.9000000000000004
+```
+
+
+
+
+
+{:.input_area}
+```python
+assert add(2.7, 1.2) == 3.9
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AssertionError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-69-ce54740178c5> in <module>()
+----> 1 assert add(2.7, 1.2) == 3.9
+
+```
+
+{:.output_traceback_line}
+```
+AssertionError: 
+```
+
+
+
+
+{:.input_area}
+```python
+import math
+
+math.isclose(add(2.7, 1.2), 3.9)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -623,6 +1264,27 @@ Given the function and test below, which of the following is true?
 
 {:.input_area}
 ```python
+for el1, el2 in zip([1, 2, 3], ['a', 'b', 'c']):
+    print(el1)
+    print(el2)
+```
+
+
+{:.output_stream}
+```
+1
+a
+2
+b
+3
+c
+
+```
+
+
+
+{:.input_area}
+```python
 def divide_list(in_list):    
     output = []
     
@@ -637,9 +1299,60 @@ def divide_list(in_list):
 
 {:.input_area}
 ```python
+divide_list([1,2,0,4])
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError                         Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-96-4382c68cea57> in <module>()
+----> 1 divide_list([1,2,0,4])
+
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-90-f3742fc060b2> in divide_list(in_list)
+      3 
+      4     for el1, el2 in zip(in_list[1:], in_list[0:-1]):
+----> 5         output.append(el1 / el2)
+      6 
+      7     return output
+
+```
+
+{:.output_traceback_line}
+```
+ZeroDivisionError: division by zero
+```
+
+
+
+
+{:.input_area}
+```python
 def test_divide_list():
     assert isinstance(divide_list([1, 2]), list)
     assert divide_list([1, 2, 4]) == [2, 2]
+```
+
+
+
+
+{:.input_area}
+```python
+test_divide_list()
 ```
 
 

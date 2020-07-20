@@ -5,8 +5,8 @@ pdf_link: assets/pdf/A1-Syntax.pdf
 layout: materials
 title: 'A1-Syntax'
 prev_page:
-  url: /materials/10-Testing-Debugging
-  title: '10-Testing-Debugging'
+  url: /materials/11-Classes
+  title: '11-Classes'
 next_page:
   url: /materials/A2-Examples
   title: 'A2-Examples'

@@ -15,7 +15,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ## Course Announcements
 
 - **CL3** due tonight (11:59 PM)
-- **A3** due Mon 5/4 (11:59 PM)
+- **A3** due Mon 7/20 (11:59 PM)
 
 # Functions II
 
@@ -52,6 +52,12 @@ out = my_func(dictionary)
 print(out)
 ```
 
+
+{:.output_stream}
+```
+[1, 2, 3]
+
+```
 
 - A) ['first', 'second', 'third'] 
 - B) {1, 2, 3}
@@ -127,6 +133,16 @@ exponentiate(3)
 
 
 
+
+{:.output_data_text}
+```
+9
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Call the function, over-riding default value with something else
@@ -137,11 +153,31 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # you can always state this explicitly
 exponentiate(number = 2, exponent = 3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 ## Positional vs. Keyword Arguments
@@ -161,11 +197,31 @@ exponentiate(2, 3)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Keyword arguments are explicitly named as to which argument each value relates to
 exponentiate(number = 2, exponent = 3)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+8
+```
+
 
 
 
@@ -178,11 +234,32 @@ exponentiate(exponent = 3, number = 2)
 
 
 
+
+{:.output_data_text}
+```
+8
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
 # this cell will produce an error
 exponentiate(number = 2, 3)
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-11-82d192fd1eb1>", line 3
+    exponentiate(number = 2, 3)
+                            ^
+SyntaxError: positional argument follows keyword argument
+
 ```
 
 
@@ -207,15 +284,26 @@ What will the following code snippet print?
 
 {:.input_area}
 ```python
-def exponentiate(number, exponent = 2):    
-    return number ** exponent
+# note: I changed this one from the original class example
+def double(number, multiplier = 2):    
+    return number * multiplier
 
-exponentiate(exponent = 3, number = 2)
+double(multiplier = 3, number = 2) 
 ```
 
 
-- A) 8
-- B) 9
+
+
+
+{:.output_data_text}
+```
+6
+```
+
+
+
+- A) 6
+- B) 8
 - C) SyntaxError
 - D) None
 
@@ -255,6 +343,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+[1, 2, 3, 4]
+
+```
+
 The method `append()` is called directly on the list `my_list`
 
 
@@ -265,6 +359,32 @@ The method `append()` is called directly on the list `my_list`
 # this will error with a string
 my_string = 'cogs18'
 my_string.append('!')
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-16-b99e95dcd8d7> in <module>()
+      2 # this will error with a string
+      3 my_string = 'cogs18'
+----> 4 my_string.append('!')
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'str' object has no attribute 'append'
 ```
 
 
@@ -280,12 +400,48 @@ my_float.is_integer()
 
 
 
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # The `is_integer()` method, attempted on an integer
 # this code will produce an error
 my_int = 12
 my_int.is_integer()
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-27-ba89eed6f102> in <module>()
+      2 # this code will produce an error
+      3 my_int = 12
+----> 4 my_int.is_integer()
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'int' object has no attribute 'is_integer'
 ```
 
 
@@ -304,11 +460,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'abc'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Make a string all upper case
 'aBc'.upper()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'ABC'
+```
+
 
 
 
@@ -322,11 +498,31 @@ There are a whole bunch of string methods, all described [here](https://www.w3sc
 
 
 
+
+{:.output_data_text}
+```
+'Python is great'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Find the index of where a string starts 
 'Hello, my name is'.find('name')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+10
+```
+
 
 
 #### Clicker Question #3
@@ -345,6 +541,16 @@ for element in inputs:
 
 output.capitalize()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Fix typing like this '
+```
+
 
 
 - A) 'fix typing like this ' 
@@ -370,11 +576,31 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[16, 33, 40, 88]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 ints.sort(reverse=True)
 ints
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[88, 40, 33, 16]
+```
+
 
 
 
@@ -389,12 +615,32 @@ ints
 
 
 
+
+{:.output_data_text}
+```
+[88, 40, 33, 16, 2]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # remove value from list
 ints.remove(40)
 ints
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[88, 33, 16, 2]
+```
+
 
 
 
@@ -415,6 +661,16 @@ ints
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+[2, 16, 33, 88]
+```
+
+
+
 #### Clicker Question #4
 
 What will the following code snippet print out?
@@ -428,6 +684,16 @@ list_string.sort()
 list_string.reverse()
 list_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['d', 'c', 'b', 'a']
+```
+
 
 
 - A) ['a', 'c', 'd', 'b']
@@ -446,7 +712,7 @@ As with string and list methods, there are many described [here](https://www.w3s
 {:.input_area}
 ```python
 car = {
-  "brand": "BMW",
+  "make": "BMW",
   "model": "M5",
   "year": 2019
 }
@@ -454,6 +720,16 @@ car = {
 # keys() returns the keys of a dictionary
 car.keys()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+dict_keys(['make', 'model', 'year'])
+```
+
 
 
 
@@ -470,6 +746,13 @@ print(mod)
 print(mod2)
 ```
 
+
+{:.output_stream}
+```
+M5
+M5
+
+```
 
 
 
@@ -490,6 +773,12 @@ car.update({"color": "Black"})
 print(car) 
 ```
 
+
+{:.output_stream}
+```
+{'make': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+
+```
 
 #### Clicker Question #5
 
@@ -537,6 +826,12 @@ print(my_list)
 ```
 
 
+{:.output_stream}
+```
+['c', 'b', 'a']
+
+```
+
 
 
 {:.input_area}
@@ -549,6 +844,12 @@ print(my_numbers)
 ```
 
 
+{:.output_stream}
+```
+[-1, 3, 13]
+
+```
+
 #### Dictionary methods that are not in place
 
 
@@ -557,6 +858,16 @@ print(my_numbers)
 ```python
 car
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'make': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+```
+
 
 
 
@@ -578,6 +889,13 @@ print(out)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict_keys'>
+dict_keys(['make', 'model', 'year', 'color'])
+
+```
+
 
 
 {:.input_area}
@@ -588,6 +906,13 @@ print(car)
 ```
 
 
+{:.output_stream}
+```
+<class 'dict'>
+{'make': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
+
+```
+
 
 
 {:.input_area}
@@ -595,6 +920,16 @@ print(car)
 # Return the values in the dicionary
 car.values()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+dict_values(['BMW', 'M5', 2019, 'Black'])
+```
+
 
 
 ## Finding Methods
@@ -619,6 +954,14 @@ my_string.
 ```
 
 
+
+
+{:.input_area}
+```python
+tuple.
+```
+
+
 Using the function `dir()` returns all methods available
 
 
@@ -628,6 +971,93 @@ Using the function `dir()` returns all methods available
 # For our purposes now, you can ignore any leading underscores (these are special methods)
 dir(my_string)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__getnewargs__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rmod__',
+ '__rmul__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'capitalize',
+ 'casefold',
+ 'center',
+ 'count',
+ 'encode',
+ 'endswith',
+ 'expandtabs',
+ 'find',
+ 'format',
+ 'format_map',
+ 'index',
+ 'isalnum',
+ 'isalpha',
+ 'isascii',
+ 'isdecimal',
+ 'isdigit',
+ 'isidentifier',
+ 'islower',
+ 'isnumeric',
+ 'isprintable',
+ 'isspace',
+ 'istitle',
+ 'isupper',
+ 'join',
+ 'ljust',
+ 'lower',
+ 'lstrip',
+ 'maketrans',
+ 'partition',
+ 'replace',
+ 'rfind',
+ 'rindex',
+ 'rjust',
+ 'rpartition',
+ 'rsplit',
+ 'rstrip',
+ 'split',
+ 'splitlines',
+ 'startswith',
+ 'strip',
+ 'swapcase',
+ 'title',
+ 'translate',
+ 'upper',
+ 'zfill']
+```
+
 
 
 ## Relationship Between Functions & Methods
@@ -662,6 +1092,13 @@ print(my_float.is_integer())
 print(float.is_integer(my_float))
 ```
 
+
+{:.output_stream}
+```
+True
+True
+
+```
 
 
 
@@ -709,6 +1146,22 @@ is_integer(my_float)
 ```
 
 
+{:.output_stream}
+```
+11.0
+
+```
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
 #### Clicker Question #7
 
 Write a function that checks whether a string contains punctuation, returning `True` if it contains punctuation and `False` otherwise.
@@ -720,7 +1173,30 @@ Write a function that checks whether a string contains punctuation, returning `T
 #punctuation exists within string
 import string
 print(string.punctuation)
+```
 
+
+{:.output_stream}
+```
+!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+```
+
+
+
+{:.input_area}
+```python
+# YOUR ANSWER HERE
+def has_punctuation(my_string):
+    for char in my_string:  
+        if char in string.punctuation:
+            print(char)
+            return True
+        else:
+            print(char)
+            return False
+
+has_punctuation('asdfasdf!')
 ```
 
 
@@ -728,8 +1204,57 @@ print(string.punctuation)
 
 {:.input_area}
 ```python
-# YOUR ANSWER HERE
+has_punctuation('asdfasdf!')
 ```
+
+
+{:.output_stream}
+```
+a
+
+```
+
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
+
+
+{:.input_area}
+```python
+# YOUR ANSWER HERE
+def has_punctuation(my_string):
+    for char in my_string:  
+        if char in string.punctuation:
+            return True
+            break
+
+    return False
+```
+
+
+
+
+{:.input_area}
+```python
+has_punctuation('asdfasdf!')
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 - A) I did it
