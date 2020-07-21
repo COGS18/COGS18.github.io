@@ -8,8 +8,8 @@ prev_page:
   url: /materials/10-Testing-Debugging
   title: '10-Testing-Debugging'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/12-Namespaces
+  title: '12-Namespaces'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
@@ -20,8 +20,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 - E2 on Thursday
 
 **Updates**:
-- E1 & A2 Scores on Canvas & Feedback on datahub (Answers on course website)
-- CL3 scores are on Canvas (Answers on course website)
+- E1 Scores on Canvas & Feedback on datahub
+- A2 & CL3 scores will be on Canvas later today (E1 & CL3 Answers on course website)
 - Prof Ellis OH: Wed 4-6 PM (this week only)
 
 # Objects & Classes
@@ -57,6 +57,12 @@ print(date_string)
 ```
 
 
+{:.output_stream}
+```
+29/09/1988
+
+```
+
 
 
 {:.input_area}
@@ -65,6 +71,16 @@ print(date_string)
 date_list = ['29', '09', '1988']
 date_list
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['29', '09', '1988']
+```
+
 
 
 
@@ -80,6 +96,12 @@ print(day)
 ```
 
 
+{:.output_stream}
+```
+29
+
+```
+
 
 
 {:.input_area}
@@ -88,6 +110,16 @@ print(day)
 date_dictionary = {'day': 29, 'month': 9, 'year': 1988}
 date_dictionary
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+{'day': 29, 'month': 9, 'year': 1988}
+```
+
 
 
 ## Objects
@@ -132,6 +164,12 @@ print(my_date)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29
+
+```
+
 
 
 {:.input_area}
@@ -139,6 +177,16 @@ print(my_date)
 # Check what type of thing `my_date` is
 type(my_date) 
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+datetime.date
+```
+
 
 
 ## Accessing Attributes & Methods
@@ -164,6 +212,16 @@ my_date.day
 
 
 
+
+{:.output_data_text}
+```
+29
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the month attribute
@@ -173,11 +231,31 @@ my_date.month
 
 
 
+
+{:.output_data_text}
+```
+9
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Get the year attribute
 my_date.year
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+1988
+```
+
 
 
 ### Date - Methods
@@ -193,6 +271,16 @@ These are _functions_ that *belong* to and operate on the object directly.
 # Method to return what day of the week the date is
 my_date.weekday()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 
@@ -215,12 +303,32 @@ my_date.isoformat()
 
 
 
+
+{:.output_data_text}
+```
+'1988-09-29'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # operates on date object
 # returns a string
 type(my_date.isoformat())
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+str
+```
+
 
 
 It's also possible to carry out operations on multiple date objects.
@@ -235,6 +343,12 @@ print(my_date, my_date2)
 ```
 
 
+{:.output_stream}
+```
+1988-09-29 1980-07-29
+
+```
+
 
 
 {:.input_area}
@@ -245,6 +359,13 @@ print(time_diff.days,  "days") #in days
 print(time_diff.days/365,"years") #in years
 ```
 
+
+{:.output_stream}
+```
+2984 days
+8.175342465753424 years
+
+```
 
 ### Listing Attributes & Methods : `dir`
 
@@ -270,6 +391,61 @@ date.
 ## we'll talk about the double underscores next lecture
 dir(my_date)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['__add__',
+ '__class__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__ne__',
+ '__new__',
+ '__radd__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rsub__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__sub__',
+ '__subclasshook__',
+ 'ctime',
+ 'day',
+ 'fromisoformat',
+ 'fromordinal',
+ 'fromtimestamp',
+ 'isocalendar',
+ 'isoformat',
+ 'isoweekday',
+ 'max',
+ 'min',
+ 'month',
+ 'replace',
+ 'resolution',
+ 'strftime',
+ 'timetuple',
+ 'today',
+ 'toordinal',
+ 'weekday',
+ 'year']
+```
+
 
 
 #### Clicker Question #2
@@ -341,6 +517,12 @@ print(now)
 ```
 
 
+{:.output_stream}
+```
+2020-07-20 11:37:58.461295
+
+```
+
 
 
 {:.input_area}
@@ -351,6 +533,13 @@ print(now.day)
 ```
 
 
+{:.output_stream}
+```
+2020
+20
+
+```
+
 
 
 {:.input_area}
@@ -359,6 +548,12 @@ print(now.day)
 print(now.weekday())
 ```
 
+
+{:.output_stream}
+```
+0
+
+```
 
 ### Objects Summary
 
@@ -432,6 +627,12 @@ print(george.sound)
 ```
 
 
+{:.output_stream}
+```
+Woof
+
+```
+
 
 
 {:.input_area}
@@ -441,6 +642,12 @@ print(george.sound)
 george.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+
+```
 
 #### Clicker Question #1
 
@@ -486,11 +693,34 @@ pack_of_dogs
 
 
 
+
+{:.output_data_text}
+```
+[<__main__.Dog at 0x107c4b9e8>,
+ <__main__.Dog at 0x107c4bdd8>,
+ <__main__.Dog at 0x107c4bd30>,
+ <__main__.Dog at 0x107c4b358>]
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # take a look at this
 type(pack_of_dogs[0])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+__main__.Dog
+```
+
 
 
 
@@ -501,6 +731,15 @@ for dog in pack_of_dogs:
     dog.speak()
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+Woof
+Woof
+
+```
 
 ## Instances & self
 
@@ -523,7 +762,7 @@ From our example above:
 - `george` was an _instance_ of that class
 - self just refers to whatever the _current_ instance is
 
-#### Clicker Question #2
+#### Clicker Question #6
 
 How many instances of `Dog()` are created below and how many times does the `speak()` method execute?
 
@@ -543,6 +782,13 @@ for doggie in pack_of_dogs:
         break
 ```
 
+
+{:.output_stream}
+```
+Woof
+Woof
+
+```
 
 - A) 2 instances, 2 method executions
 - B) 2 instances, 4 method executions
@@ -602,6 +848,13 @@ print(gary.name)     # This is a instance attribute
 ```
 
 
+{:.output_stream}
+```
+Woof
+Gary
+
+```
+
 
 
 {:.input_area}
@@ -611,7 +864,13 @@ gary.speak()
 ```
 
 
-#### Clicker Question #4
+{:.output_stream}
+```
+Woof
+
+```
+
+#### Clicker Question #7
 
 Edit the code we've been using for the Class `Dog` to include information about the breed of the Class Dog?
 
@@ -626,8 +885,9 @@ class Dog():
     sound = 'Woof'
     
     # Initializer, allows us to specify instance specific attributes
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self):
         print(self.sound)
@@ -639,7 +899,19 @@ class Dog():
 {:.input_area}
 ```python
 ## Test it out here
+lexi = Dog(name='Lexi', breed='Italian Greyhound')
+lexi.breed
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'Italian Greyhound'
+```
+
 
 
 - A) I did it!
@@ -688,7 +960,18 @@ for pet in pets:
 ```
 
 
-#### Clicker Question #5
+{:.output_stream}
+```
+Jaspurr ( Balinese ) says:
+Barkley ( Corgi ) says:
+Woof
+Picatso ( Birman ) says:
+Ruffius ( Italian Greyhound ) says:
+Woof
+
+```
+
+#### Clicker Question #8
 
 What will the following code snippet print out?
 
@@ -772,7 +1055,7 @@ my_hammer.use_tool()
 ```
 
 
-#### Clicker Question #6
+#### Clicker Question #9
 
 Given the following set of classes:
 
@@ -816,7 +1099,7 @@ sheep.print_info()
 - D) This brain is medium and False.
 - E) ¯\\\_(ツ)\_/¯
 
-#### Clicker Question #7
+#### Clicker Question #10
 
 Given the following set of classes:
 

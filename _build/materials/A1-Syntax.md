@@ -5,8 +5,8 @@ pdf_link: assets/pdf/A1-Syntax.pdf
 layout: materials
 title: 'A1-Syntax'
 prev_page:
-  url: /materials/11-Classes
-  title: '11-Classes'
+  url: /materials/12-Namespaces
+  title: '12-Namespaces'
 next_page:
   url: /materials/A2-Examples
   title: 'A2-Examples'

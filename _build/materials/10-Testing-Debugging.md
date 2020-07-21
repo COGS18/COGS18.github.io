@@ -1451,7 +1451,28 @@ def sum_list(input_list):
 
 {:.input_area}
 ```python
+sum_list([2,3]) == 5
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
 # TEST FUNCTION HERE
+def test_sum_list():
+    assert sum_list([2,3]) == 5
+    assert isinstance(sum_list[2,3], int)
 ```
 
 
@@ -1466,6 +1487,25 @@ Thought process:
 
 {:.input_area}
 ```python
+# callable checks to see if the input is something that can be called/executed
+callable(sum_list)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
+
+
+
+
+{:.input_area}
+```python
 ### POSSIBLE TEST
 def test_sum_list():
     
@@ -1473,7 +1513,13 @@ def test_sum_list():
     assert callable(sum_list)
     assert isinstance(sum_list([1, 2, 3, 4]), int)
     assert sum_list([1, 2, 3, 4]) == 10
-    
+```
+
+
+
+
+{:.input_area}
+```python
 test_sum_list()
 ```
 
