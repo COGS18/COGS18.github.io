@@ -3,8 +3,8 @@ interact_link: content/labs/source_Su20/CL1-Tooling.ipynb
 download_link: assets/downloads/CL1-Tooling.ipynb.zip
 title: 'Coding Labs'
 prev_page:
-  url: /materials/Exam-Prep/Exam2-Practice
-  title: 'Exam2-Practice'
+  url: /materials/Exam-Prep/E2_Practice_Su20_Answers
+  title: 'E2_Practice_Su20_Answers'
 next_page:
   url: /labs/source_Su20/CL1-Tooling
   title: 'CL1-Tooling'

@@ -103,15 +103,15 @@
   - title: Exam2-Review
     url: /materials/Exam-Prep/Exam2-Review
     not_numbered: true
-#   - title: Exam2-Review-Answers
-#     url: /materials/Exam-Prep/Exam2-Review-Answers
-#     not_numbered: true
+  - title: Exam2-Review-Answers
+    url: /materials/Exam-Prep/Exam2-Review-Answers
+    not_numbered: true
   - title: Exam2-Practice
     url: /materials/Exam-Prep/Exam2-Practice
     not_numbered: true
-#   - title: E2_Practice_Su20_Answers
-#     url: /materials/Exam-PrepE2_Practice_Su20_Answers
-#     not_numbered: true      
+  - title: E2_Practice_Su20_Answers
+    url: /materials/Exam-Prep/E2_Practice_Su20_Answers
+    not_numbered: true      
 #   - title: E2-Answers
 #     url: /materials/E2-Answers
 #     not_numbered: true

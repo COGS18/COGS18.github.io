@@ -3,11 +3,11 @@ interact_link: content/materials/Exam-Prep/Exam2-Practice.ipynb
 download_link: assets/downloads/Exam2-Practice.ipynb.zip
 title: 'Exam2-Practice'
 prev_page:
-  url: /materials/Exam-Prep/Exam2-Review
-  title: 'Exam2-Review'
+  url: /materials/Exam-Prep/Exam2-Review-Answers
+  title: 'Exam2-Review-Answers'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/Exam-Prep/E2_Practice_Su20_Answers
+  title: 'E2_Practice_Su20_Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Exam #2 Practice Questions

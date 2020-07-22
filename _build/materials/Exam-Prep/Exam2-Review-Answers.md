@@ -1,21 +1,22 @@
 ---
-interact_link: content/materials/Exam-Prep/Exam2-Review.ipynb
-download_link: assets/downloads/Exam2-Review.ipynb.zip
-title: 'Exam2-Review'
+interact_link: content/materials/Exam-Prep/Exam2-Review-Answers.ipynb
+download_link: assets/downloads/Exam2-Review-Answers.ipynb.zip
+title: 'Exam2-Review-Answers'
 prev_page:
-  url: /materials/Exam-Prep/COGS18_E1_Su20
-  title: 'E1_Su20_Answers'
+  url: /materials/Exam-Prep/Exam2-Review
+  title: 'Exam2-Review'
 next_page:
-  url: /materials/Exam-Prep/Exam2-Review-Answers
-  title: 'Exam2-Review-Answers'
+  url: /materials/Exam-Prep/Exam2-Practice
+  title: 'Exam2-Practice'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Exam 2 Review
 
+- **CL4** due tonight
 - **Exam #2 is tomorrow (Thurs)** 
     - released at 11AM ; 24h to complete and submit
     - must be submitted on datahub
-    - E1 was a _tad_ too easy; E2 a bit more difficult
+    - E1 was a _tad_ too easy; E2 a *bit* more difficult
 - **A4 is due Mon** (11:59 PM)
     - Have a solid understanding of the assigmnment through Q4 by Exam time
     - Bots (Part 3) beyond what will be tested on Exam #2
@@ -51,6 +52,35 @@ There are two extra notebooks that you can use for review:
 There are also a few Exam #2 Practice Problems [here](https://cogs18.github.io/materials/Exam-Prep/Exam2-Practice) and a practice exam on datahub.
 
 ## Questions?
+
+A reminder, as it will come up on the exam:
+
+
+
+{:.input_area}
+```python
+# can have a dictionary as a key for an outside dictionary
+my_dict = {'Shannon' : {'key': ['last_name', 'activity']}}
+```
+
+
+
+
+{:.input_area}
+```python
+my_dict['Shannon']
+```
+
+
+
+
+
+{:.output_data_text}
+```
+{'key': ['last_name', 'activity']}
+```
+
+
 
 ### Functions
 
@@ -111,6 +141,60 @@ def sum_list(my_list):
 ```
 
 
+#### Functions Answers
+
+
+
+{:.input_area}
+```python
+## Functions Quesiton #1
+
+def remainder(num1, num2):  # set default values within parenthesis
+    out = num1 % num2
+    return out
+```
+
+
+
+
+{:.input_area}
+```python
+## Functions Question #2
+
+my_remainder = remainder(10, 4)
+my_remainder
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
+{:.input_area}
+```python
+## Functions Question #3
+sum_list([1, 2, 3])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+6
+```
+
+
+
 ### Objects & Classes
 
 - objects & `class`
@@ -139,7 +223,7 @@ Your `Rocket` should also have the method `move_up()`. This method should increm
 ```
 
 
-The exam questions will be more involved than this example. It's meant to combine all the pieces we've learned this quarter (classes w/ methods, conditionals, etc).
+The exam question will be more involved than this example. It's meant to combine all the pieces we've learned this quarter (classes w/ methods, conditionals, etc).
 
 **Part B**
 
@@ -174,6 +258,61 @@ Fill in the blanks:
 	In Python, everything is a(n) ______________. 
 
 
+#### Objects & Classes Answers
+
+Question #1A: 
+
+
+
+{:.input_area}
+```python
+class Rocket():
+    
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+        
+    def move_up(self):
+        self.y += 1
+```
+
+
+Question #1B:
+
+
+
+{:.input_area}
+```python
+my_rocket = Rocket()
+```
+
+
+Question #1C:
+
+
+
+{:.input_area}
+```python
+my_rocket.move_up()
+my_rocket.move_up()
+my_rocket.y
+```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+Question #2: 
+- method
+- object
+
 ### Python & Jupyter Extras
 - encodings (`chr` & `ord`)
 - whitespace
@@ -203,7 +342,62 @@ For each of the following, indicate if the statement is True or False about Pyth
 - True/False Every Python variable is available from every namespace		
 - True/False `ls` is a shell command that creates a new file 		
 - True/False `cd` returns your current working directory		
+- True/False Everything in Python is an object
 - True/False `print_name()` folles best practices for function naming
+
+#### Extras Answers
+
+
+
+{:.input_area}
+```python
+# Extras Question #1
+print(chr(ord('A')))
+```
+
+
+{:.output_stream}
+```
+A
+
+```
+
+Extras Question #2
+
+returning information about what objects are stored in your namespace (i.e. variables, functions, classes, etc.)
+
+
+
+{:.input_area}
+```python
+%whos
+```
+
+
+{:.output_stream}
+```
+Variable       Type        Data/Info
+------------------------------------
+Rocket         type        <class '__main__.Rocket'>
+my_remainder   int         2
+my_rocket      Rocket      <__main__.Rocket object at 0x10ff9def0>
+remainder      function    <function remainder at 0x10ff5ee18>
+sum_list       function    <function sum_list at 0x10ff6da60>
+
+```
+
+Extras Question #3
+
+For each of the following, indicate if the statement is True or False about Python and programming:
+
+- **True**/False Whitespace matters in Python
+- True/**False** Comments in Python start with '%' 					
+- True/**False** You have to specify a data type when you define a variable
+- True/**False** Every Python variable is available from every namespace		
+- True/**False** `ls` is a shell command that creates a new file 		
+- True/**False** `cd` returns your current working directory		
+- **True**/False Everything in Python is an object
+- **True**/False `print_name()` follows best practices for function naming
 
 <h2><center>After the second exam:</center></h2>
 
