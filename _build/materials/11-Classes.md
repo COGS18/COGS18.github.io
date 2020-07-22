@@ -1003,6 +1003,16 @@ student.check_score()
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+'rob@python.com'
+```
+
+
+
 - A) True
 - B) 'Rob'
 - C) False 
@@ -1019,7 +1029,7 @@ If you have a hierarchical structure, this can be very helpful.
 
 For our `Dog()` and `Cat()` example, you may on some more general `Animal()` class. 
 
-You would want `Animal()` to inherit all the 'stuff' from the other classes.
+You would want `Dog()` and `Cat()` to inherit all the 'stuff' from the `Animal()` class.
 
 
 
@@ -1049,11 +1059,58 @@ class Hammer(Tool): #inherit Tool class
 ```python
 my_tool = Tool()
 my_hammer = Hammer()
+```
+
+
+
+
+{:.input_area}
+```python
+my_tool.why
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+AttributeError                            Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-77-8a0a6521a742> in <module>()
+----> 1 my_tool.why
+
+```
+
+{:.output_traceback_line}
+```
+AttributeError: 'Tool' object has no attribute 'why'
+```
+
+
+
+
+{:.input_area}
+```python
 print(my_hammer.is_tool)
 print(my_hammer.why)
 my_hammer.use_tool()
 ```
 
+
+{:.output_stream}
+```
+True
+To hammer things.
+Using tool.
+
+```
 
 #### Clicker Question #9
 
@@ -1064,8 +1121,8 @@ Given the following set of classes:
 {:.input_area}
 ```python
 class Brain(): 
-    
-    def __init__(self, size = None, folded = None):
+        
+    def __init__(self, size=None, folded=None):
         self.size = size
         self.folded = folded
         
@@ -1077,7 +1134,7 @@ class Brain():
          
 class SheepBrain(Brain):
     
-    def __init__(self, size = 'medium', folded = False):
+    def __init__(self, size='medium', folded=False):
         super().__init__(size, folded)
 ```
 
@@ -1092,6 +1149,12 @@ sheep = SheepBrain()
 sheep.print_info()
 ```
 
+
+{:.output_stream}
+```
+This brain is medium and is not folded.
+
+```
 
 - A) This brain is medium and folded.
 - B) This brain is large and folded.
@@ -1119,13 +1182,12 @@ class Brain():
             folded_string = 'not'
         print('This brain is ' + self.size + ' and is ' + folded_string + ' folded.')
         
-class SheepBrain(Brain):
-    
-    def __init__(self, size = 'medium', folded = False):
+class SheepBrain(Brain):  
+    def __init__(self, size='medium', folded=False):
         super().__init__(size, folded)
         
 class HumanBrain(Brain):
-    def __init__(self, size = 'large', folded = True):
+    def __init__(self, size='large', folded=True):
         super().__init__(size, folded)
 ```
 
@@ -1142,6 +1204,16 @@ human.folded and sheep.folded
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+False
+```
+
+
+
 - A) True
 - B) False
 - C) None
@@ -1153,9 +1225,15 @@ human.folded and sheep.folded
 {:.input_area}
 ```python
 # has access to Brain() methods
-sheep.print_info()
+human.print_info()
 ```
 
+
+{:.output_stream}
+```
+This brain is large and is  folded.
+
+```
 
 ### Classes Review
 
@@ -1193,7 +1271,35 @@ print(isinstance(a, object))
 ```
 
 
+{:.output_stream}
+```
+True
+True
+True
+True
+True
+
+```
+
 ### Functions are objects
+
+
+
+{:.input_area}
+```python
+sum([5, 4, 4, 6])
+```
+
+
+
+
+
+{:.output_data_text}
+```
+19
+```
+
+
 
 
 
@@ -1203,6 +1309,13 @@ print(isinstance(sum, object))
 print(isinstance(max, object))
 ```
 
+
+{:.output_stream}
+```
+True
+True
+
+```
 
 
 
@@ -1214,6 +1327,16 @@ def my_function():
     
 isinstance(my_function, object)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 ### Class definitions & instances are objects
@@ -1232,6 +1355,13 @@ print(isinstance(MyClass, object))
 print(isinstance(my_instance, object))
 ```
 
+
+{:.output_stream}
+```
+True
+True
+
+```
 
 ## Object-Oriented Programming
 

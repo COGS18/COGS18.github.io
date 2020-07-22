@@ -100,27 +100,21 @@
   - title: E1_Su20_Answers
     url: /materials/Exam-Prep/COGS18_E1_Su20
     not_numbered: true
-#   - title: Exam2-Review
-#     url: /materials/Exam2-Review
-#     not_numbered: true
+  - title: Exam2-Review
+    url: /materials/Exam-Prep/Exam2-Review
+    not_numbered: true
 #   - title: Exam2-Review-Answers
-#     url: /materials/Exam2-Review-Answers
+#     url: /materials/Exam-Prep/Exam2-Review-Answers
 #     not_numbered: true
-#   - title: Exam2-Practice
-#     url: /materials/Exam2-Practice
+  - title: Exam2-Practice
+    url: /materials/Exam-Prep/Exam2-Practice
+    not_numbered: true
+#   - title: E2_Practice_Su20_Answers
+#     url: /materials/Exam-PrepE2_Practice_Su20_Answers
+#     not_numbered: true      
+#   - title: E2-Answers
+#     url: /materials/E2-Answers
 #     not_numbered: true
-#   - title: E2_Practice_Sp20-PartII-Answers
-#     url: /materials/E2_Practice_Sp20-PartII-Answers
-#     not_numbered: true 
-#   - title: E2_Sp20_PartI_Answers
-#     url: /materials/E2_Sp20-PartI_Answers
-#     not_numbered: true
-#   - title: E1_Sp20_PartII_Answers
-#     url: /materials/E2_Sp20-PartII_Answers
-#     not_numbered: true       
-# #   - title: E2-Answers
-# #     url: /materials/E2-Answers
-# #     not_numbered: true
 
 
 - title: Coding Labs

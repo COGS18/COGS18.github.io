@@ -57,6 +57,15 @@ b = 15
 ```
 
 
+{:.output_stream}
+```
+Variable   Type    Data/Info
+----------------------------
+a          int     3
+b          int     15
+
+```
+
 ## Modules & Packages
 
 <div class="alert alert-success">
@@ -97,6 +106,32 @@ type(math)
 
 
 
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-2-0a474bb83797> in <module>()
+      1 # we haven't imported the module yet
+      2 # this code fails if you haven't yet imported math
+----> 3 type(math)
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'math' is not defined
+```
+
+
+
 
 {:.input_area}
 ```python
@@ -116,11 +151,31 @@ type(math)
 
 
 
+
+{:.output_data_text}
+```
+module
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # By the way - modules are objects
 isinstance(math, object)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+True
+```
+
 
 
 
@@ -131,6 +186,16 @@ isinstance(math, object)
 # remember to tab complete or use dir(math)
 math.sqrt(9)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3.0
+```
+
 
 
 ### `import` example: random module
@@ -154,11 +219,92 @@ type(random)
 
 
 
+
+{:.output_data_text}
+```
+module
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Explore what is available in random
 dir(random)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+['BPF',
+ 'LOG4',
+ 'NV_MAGICCONST',
+ 'RECIP_BPF',
+ 'Random',
+ 'SG_MAGICCONST',
+ 'SystemRandom',
+ 'TWOPI',
+ '_BuiltinMethodType',
+ '_MethodType',
+ '_Sequence',
+ '_Set',
+ '__all__',
+ '__builtins__',
+ '__cached__',
+ '__doc__',
+ '__file__',
+ '__loader__',
+ '__name__',
+ '__package__',
+ '__spec__',
+ '_acos',
+ '_bisect',
+ '_ceil',
+ '_cos',
+ '_e',
+ '_exp',
+ '_inst',
+ '_itertools',
+ '_log',
+ '_os',
+ '_pi',
+ '_random',
+ '_sha512',
+ '_sin',
+ '_sqrt',
+ '_test',
+ '_test_generator',
+ '_urandom',
+ '_warn',
+ 'betavariate',
+ 'choice',
+ 'choices',
+ 'expovariate',
+ 'gammavariate',
+ 'gauss',
+ 'getrandbits',
+ 'getstate',
+ 'lognormvariate',
+ 'normalvariate',
+ 'paretovariate',
+ 'randint',
+ 'random',
+ 'randrange',
+ 'sample',
+ 'seed',
+ 'setstate',
+ 'shuffle',
+ 'triangular',
+ 'uniform',
+ 'vonmisesvariate',
+ 'weibullvariate']
+```
+
 
 
 
@@ -203,6 +349,24 @@ random.sample?
 
 {:.input_area}
 ```python
+random.choice(to_choose_from)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'2'
+```
+
+
+
+
+
+{:.input_area}
+```python
 # Random example
 to_choose_from = ['1', '2', '3', '4', '5']
 number_to_choose = 2
@@ -212,6 +376,12 @@ chosen = random.sample(to_choose_from, number_to_choose)
 print(chosen)
 ```
 
+
+{:.output_stream}
+```
+['4', '1']
+
+```
 
 ## Imports: `from` & `as`
 
@@ -241,6 +411,16 @@ choice(to_choose_from)
 
 
 
+
+{:.output_data_text}
+```
+'4'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Import a module with a specific name in our namespace
@@ -255,7 +435,33 @@ import collections as cols
 ```python
 ## collections is not defined
 ## this code will fail
-collections.
+type(collections)
+```
+
+
+
+{:.output_traceback_line}
+```
+---------------------------------------------------------------------------
+```
+
+{:.output_traceback_line}
+```
+NameError                                 Traceback (most recent call last)
+```
+
+{:.output_traceback_line}
+```
+<ipython-input-20-45554599f3a7> in <module>()
+      1 ## collections is not defined
+      2 ## this code will fail
+----> 3 type(collections)
+
+```
+
+{:.output_traceback_line}
+```
+NameError: name 'collections' is not defined
 ```
 
 
@@ -276,6 +482,24 @@ cols.
 # Import a specific thing and give it a specific name
 from string import punctuation as punc
 ```
+
+
+
+
+{:.input_area}
+```python
+punc
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+```
+
 
 
 #### Clicker Question #1
@@ -299,7 +523,18 @@ Which of the following is NOT a valid Python import statement?
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
+```
+
+
+
+{:.output_traceback_line}
+```
+  File "<ipython-input-31-037fa158f972>", line 6
+    import ascii_letters from string
+                            ^
+SyntaxError: invalid syntax
+
 ```
 
 
@@ -393,6 +628,16 @@ my_remote_function(2, 1)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+3
+```
+
+
+
 ## Importing Custom Code II
 
 
@@ -416,11 +661,31 @@ type(nums)
 
 
 
+
+{:.output_data_text}
+```
+remote.MyNumbers
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Check 
 nums.add()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 
@@ -461,9 +726,19 @@ choice([1, 2, 3, 4, 5])
 
 
 
+
+{:.output_data_text}
+```
+4
+```
+
+
+
+
+
 {:.input_area}
 ```python
-from remote import choice
+from remote import choice 
 ```
 
 
@@ -482,6 +757,16 @@ choice?
 ```python
 choice([1, 2, 3, 4, 5])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 While you _can_ have functions with the same name in two different places...do your best to avoid this.
@@ -506,12 +791,32 @@ choice([2,3,4])
 
 
 
+
+{:.output_data_text}
+```
+2
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # a valid way to import
 import random
 random.choice([2,3,4,])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+3
+```
+
 
 
 <h1 align="center">We have finished Python!</h1>
