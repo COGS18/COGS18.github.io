@@ -61,14 +61,14 @@
   - title: 12-Namespaces
     url: /materials/12-Namespaces
     not_numbered: true
-  # - title: 13-CommandLine
-  #   url: /materials/13-CommandLine
-  #   not_numbered: true
-  # - title: 14-OpenSource-API
-  #   url: /materials/14-OpenSource-API
-  #   not_numbered: true
-  # - title: 15-Documentation-Style
-  #   url: /materials/15-Documentation-Style
+  - title: 13-CommandLine
+    url: /materials/13-CommandLine
+    not_numbered: true
+  - title: 14-Documentation-Style
+    url: /materials/14-Documentation-Style
+    not_numbered: true
+  # - title: 15-OpenSource-API
+  #   url: /materials/15-OpenSource-API
   #   not_numbered: true
   # - title: 16-AdvancedPython
   #   url: /materials/16-AdvancedPython
