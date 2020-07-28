@@ -12,6 +12,13 @@ next_page:
   title: 'A1-Syntax'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+## Course Announcements
+
+**Due Dates**
+- **CL5** due Wed (5/13)
+- **A5** due *Friday* (not Thursday) (11:59 PM) 
+- **Final Exam** Friday (due Sat 11 AM)
+
 # Documentation & Style
 
 - Documentation
@@ -56,8 +63,6 @@ Good code has good documentation - but code documentation should _not_ be used t
 
 Rather, comments should add any additional context and information that helps explain what the code is, how it works, and why it works that way. 
 
-These will all be components of your final project grade.
-
 #### Clicker Question #1
 
 What does the following code do?
@@ -72,6 +77,16 @@ def ff(jj):
     return '+'.join(oo)
 ff('Hello World.')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'72+101+108+108+111+32+87+111+114+108+100+46'
+```
+
 
 
 - A) Returns unicode code points, as a list
@@ -89,11 +104,20 @@ Improvement Considerations:
 
 {:.input_area}
 ```python
+str.join?
+```
+
+
+
+
+{:.input_area}
+```python
 # let's improve...
 def return_unicode(input_list):
     string = list()
     input_list = list(input_list)
-      
+    
+    # looping through to return unicode code point
     for character in input_list: 
         string.append(str(ord(character)))
         
@@ -102,6 +126,16 @@ def return_unicode(input_list):
 
 return_unicode('Hello World.')
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'72+101+108+108+111+32+87+111+114+108+100+46'
+```
+
 
 
 Improvement Considerations:
@@ -265,6 +299,28 @@ help(add)
 ```
 
 
+{:.output_stream}
+```
+Help on function add in module __main__:
+
+add(num1, num2)
+    Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition.
+
+
+```
+
 ### `__doc__`
 
 
@@ -274,6 +330,34 @@ help(add)
 # Docstrings get stored as the `__doc__` attribute
 # can also be accessed from there
 print(add.__doc__)
+```
+
+
+{:.output_stream}
+```
+Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : float
+        The result of the addition. 
+    
+
+```
+
+
+
+{:.input_area}
+```python
+# pull up source code for function
+add??
 ```
 
 
@@ -292,15 +376,6 @@ What should be included in a docstring?
 - C) 3, 5 
 - D) 1, 2, 4 
 - E) 1, 2, 3, 4, 5
-
-### Projects & Documentation
-
-**Do *all* of my functions need `numpy` documentation?**
-
-1. Your original code definitely needs `numpy` docstrings
-2. It's best if all your main functions have docstrings
-    - If you include functions from an assignment, document them
-    - If you write a teeny tiny function to accomplish a sumer small task, no need to document
 
 ## Documentation for a Software Project
 
@@ -358,6 +433,32 @@ Some of these Code Style notes will be more specific to Python, however.
 import this
 ```
 
+
+{:.output_stream}
+```
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
 
 ### Program Errors vs. Stylistic Issues
 
@@ -435,6 +536,16 @@ my_func()
 
 
 
+
+{:.output_data_text}
+```
+'234'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Goodness
@@ -450,7 +561,7 @@ def my_func():
 ```
 
 
-Note that documentation here is missing (as are comments). This is to highlight the spacing. You'll need documentation and comments.
+Note that documentation here is missing (as are comments). This is to highlight the spacing. You'll need documentation and comments on your final exam (will be specified in instructions).
 
 I promise it's better to comment as you go along rather than coming along after you've written all the code and adding comments.
 
@@ -502,6 +613,17 @@ def squared(input_number):
 ```
 
 
+
+
+{:.input_area}
+```python
+# Option D (added during lecture)
+def squared(input_number, power=2):
+    
+    return input_number ** power
+```
+
+
 ### Indentation
 
 Use spaces to indicate indentation levels, with each level defined as 4 spaces. 
@@ -516,6 +638,12 @@ if True:
 ```
 
 
+{:.output_stream}
+```
+Words.
+
+```
+
 
 
 {:.input_area}
@@ -525,6 +653,12 @@ if True:
     print('Words.')
 ```
 
+
+{:.output_stream}
+```
+Words.
+
+```
 
 ### Spacing
 
@@ -550,6 +684,22 @@ el = my_list [1]
 my_var = 1 + 2 == 3
 my_list = [1, 2, 3, 4]
 el = my_list[1]
+```
+
+
+
+
+{:.input_area}
+```python
+my_function(input1=7, input2=8)
+```
+
+
+
+
+{:.input_area}
+```python
+def my_function(input1=6, input2=7):
 ```
 
 
@@ -584,6 +734,14 @@ for i in [1, 2, 3]: print(i**2 + i%2)
 ```
 
 
+{:.output_stream}
+```
+2
+4
+10
+
+```
+
 
 
 {:.input_area}
@@ -600,9 +758,27 @@ for i in [1, 2, 3]:
 
 {:.input_area}
 ```python
-my_long_list = [1, 2, 3, 4, 5, 
+my_long_list = [1, 2, 3, 4, 5,
                 6, 7, 8, 9, 10]
 ```
+
+
+
+
+{:.input_area}
+```python
+my_string
+```
+
+
+
+
+
+{:.output_data_text}
+```
+'Python is a pretty great language.'
+```
+
 
 
 
@@ -643,8 +819,6 @@ import sys
 import numpy as np
 ```
 
-
-Note: If you don't know how to import a local/custom module, figure that out this week in Coding Lab or office hours.
 
 ## Specific Guidelines - Naming
 
@@ -791,13 +965,23 @@ Which of the following would not cause an error in Python and would store the st
 
 {:.input_area}
 ```python
-#my_string = "You're so close!"
+my_string = "You're so close!"
 #my_string = "You"re so close!"
 #my_string = 'You''re so close!'
-#my_string = "You\\'re so close!"
+# my_string = "You\\'re so close!"
 #my_string = 'You're so close!'
-#my_string
+my_string
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+"You're so close!"
+```
+
 
 
 ## Specific Guidelines - Comments
@@ -830,11 +1014,21 @@ week_5()
 
 
 
+
+{:.output_data_text}
+```
+'Remember to take breaks!'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Goodness
 def week_5():
-    
+
     # Randomly pick from list of de-stressing statements
     # to help students as they finish the quarter.
     statements = ["You've totally got this!", 
@@ -849,6 +1043,16 @@ def week_5():
 
 week_5()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+"You're so close!"
+```
+
 
 
 #### Inline comments
@@ -867,6 +1071,16 @@ week_5()#words of encouragement
 
 
 
+
+{:.output_data_text}
+```
+"You're so close!"
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Goodness
@@ -874,15 +1088,19 @@ week_5()  # words of encouragement
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+"You've totally got this!"
+```
+
+
+
 ## Specific Guidelines - Documentation
 
 - Write a descriptive docstring for all functions & classes
-
-Note: If you're borrowing functions from an assignment, you should add documentation to these functions.
-
-Comments within the functions you've borrowed noting that you've borrowed it as well as a general note in your project description will suffice for attribution.
-
-If you've modified/edited the code from the assignment, state that you modified.
 
 ## Linters
 
@@ -920,13 +1138,34 @@ def MyFunction(input_num):
 - E) 7 or more
 
 #### list here
-- 
+- function naming (my_function); not be CapWords
+- spacing in list
+- line spacing between statements
+- indentation (ind = 0)
+- variable naming == poor (non-descrptive)
+- conditional (if) all on a single line; should be separated
+- spacing for indexing into `my_list`
 
 
 
 {:.input_area}
 ```python
 # Let's fix this code
+# still missing documentation
+def my_function(input_num):
+
+    my_list = [0, 1, 2, 3]
+
+    if 1 in my_list:
+        ind = 1
+    else:
+        ind = 0
+
+    out_list = []
+    for i in my_list[ind:]:
+        out_list.append(input_num/i)
+
+    return out_list
 ```
 
 
@@ -937,4 +1176,39 @@ def MyFunction(input_num):
 # check using pylint
 !pylint linter_example.py
 ```
+
+
+{:.output_stream}
+```
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 8.89/10, +1.11)
+
+
+```
+
+
+
+{:.input_area}
+```python
+from linter_example import my_function
+```
+
+
+
+
+{:.input_area}
+```python
+my_function(2)
+```
+
+
+
+
+
+{:.output_data_text}
+```
+[2.0, 1.0, 0.6666666666666666]
+```
+
 

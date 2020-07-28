@@ -112,9 +112,9 @@
   - title: E2_Practice_Su20_Answers
     url: /materials/Exam-Prep/E2_Practice_Su20_Answers
     not_numbered: true      
-#   - title: E2-Answers
-#     url: /materials/E2-Answers
-#     not_numbered: true
+  - title: E2_Su20_Answers
+    url: /materials/Exam-Prep/COGS18_E2_Su20-Answers
+    not_numbered: true
 
 
 - title: Coding Labs

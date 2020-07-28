@@ -83,6 +83,12 @@ Do this by starting with `!`
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Su20
+
+```
+
 ## An important aside: File Paths
 
 <div class="alert alert-success">
@@ -118,6 +124,23 @@ An absolute file path starts with a slash `/` specifying the root directory.
 ```
 
 
+{:.output_stream}
+```
+01-Introduction.ipynb        13-CommandLine.ipynb
+02-Notebooks-Variables.ipynb 14-Documentation-Style.ipynb
+03-Operators.ipynb           A1-Syntax.ipynb
+04-Conditionals.ipynb        A2-Examples.ipynb
+05-Collections.ipynb         Check-In.ipynb
+06-Loops.ipynb               [34mExam-Prep[m[m
+07-Dictionaries.ipynb        LICENSE.txt
+08-FunctionsI.ipynb          README.md
+09-FunctionsII.ipynb         [34m__pycache__[m[m
+10-Testing-Debugging.ipynb   [34mimg[m[m
+11-Classes.ipynb             remote.py
+12-Namespaces.ipynb
+
+```
+
 #### Relative Paths
 
 <div class="alert alert-success">
@@ -133,6 +156,12 @@ An absolute file path starts with a slash `/` specifying the root directory.
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Su20
+
+```
+
 
 
 {:.input_area}
@@ -142,6 +171,14 @@ An absolute file path starts with a slash `/` specifying the root directory.
 !ls ../COGS108/Lectures-Sp20
 ```
 
+
+{:.output_stream}
+```
+[34m01_data_science[m[m     [34m04_viz[m[m              [34m07_machine_learning[m[m [34m10_communication[m[m
+[34m02_git_data[m[m         [34m05_analysis[m[m         [34m08_geospatial[m[m       README.md
+[34m03_wrangling[m[m        [34m06_text[m[m             [34m09_pca[m[m              [34mhow_tos[m[m
+
+```
 
 
 - `..` specify you want to move one directory up in your hierarchy
@@ -170,7 +207,7 @@ If your current working directory is `notebooks`, what is the **absolute path** 
 
 - A) `/scripts/cool_thing.py`
 - B) `scripts/cool_thing.py`
-- C) `scripts/cool_thing.py`
+- C) `notebooks/scripts/cool_thing.py`
 - D) `../scripts/cool_thing.py`
 - E) ¯\\\_(ツ)\_/¯
 
@@ -213,6 +250,12 @@ If your current working directory is `notebooks`, what is the **relative path** 
 ```
 
 
+{:.output_stream}
+```
+/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Su20
+
+```
+
 #### Change directory
 
 
@@ -241,6 +284,23 @@ Here, we saw `~/Desktop/`.
 !ls
 ```
 
+
+{:.output_stream}
+```
+01-Introduction.ipynb        13-CommandLine.ipynb
+02-Notebooks-Variables.ipynb 14-Documentation-Style.ipynb
+03-Operators.ipynb           A1-Syntax.ipynb
+04-Conditionals.ipynb        A2-Examples.ipynb
+05-Collections.ipynb         Check-In.ipynb
+06-Loops.ipynb               [34mExam-Prep[m[m
+07-Dictionaries.ipynb        LICENSE.txt
+08-FunctionsI.ipynb          README.md
+09-FunctionsII.ipynb         [34m__pycache__[m[m
+10-Testing-Debugging.ipynb   [34mimg[m[m
+11-Classes.ipynb             remote.py
+12-Namespaces.ipynb
+
+```
 
 ### More Shell Commands
 
@@ -290,6 +350,12 @@ Here, we saw `~/Desktop/`.
 ```
 
 
+{:.output_stream}
+```
+Hello World!
+
+```
+
 #### Print the contents of a file
 
 
@@ -329,8 +395,38 @@ Which is the best description of the following command:
 {:.input_area}
 ```python
 ## test out here
+!ls -l
 ```
 
+
+{:.output_stream}
+```
+total 1224
+-rw-r--r--   1 shannonellis  staff  17097 Jun 30 08:19 01-Introduction.ipynb
+-rw-r--r--   1 shannonellis  staff  41211 Jun 30 12:24 02-Notebooks-Variables.ipynb
+-rw-r--r--   1 shannonellis  staff  51129 Jul  1 12:19 03-Operators.ipynb
+-rw-r--r--   1 shannonellis  staff  18574 Jul  2 11:49 04-Conditionals.ipynb
+-rw-r--r--@  1 shannonellis  staff  42437 Jul 20 07:41 05-Collections.ipynb
+-rw-r--r--   1 shannonellis  staff  32465 Jul  7 12:19 06-Loops.ipynb
+-rw-r--r--   1 shannonellis  staff  35823 Jul  9 10:13 07-Dictionaries.ipynb
+-rw-r--r--   1 shannonellis  staff  43042 Jul 14 14:01 08-FunctionsI.ipynb
+-rw-r--r--   1 shannonellis  staff  41948 Jul 15 13:34 09-FunctionsII.ipynb
+-rw-r--r--   1 shannonellis  staff  59922 Jul 20 12:33 10-Testing-Debugging.ipynb
+-rw-r--r--   1 shannonellis  staff  46193 Jul 21 11:43 11-Classes.ipynb
+-rw-r--r--   1 shannonellis  staff  26606 Jul 21 13:39 12-Namespaces.ipynb
+-rw-r--r--   1 shannonellis  staff  24708 Jul 27 11:44 13-CommandLine.ipynb
+-rw-r--r--   1 shannonellis  staff  43455 Jul 27 10:14 14-Documentation-Style.ipynb
+-rw-r--r--   1 shannonellis  staff  13083 Jul  9 09:55 A1-Syntax.ipynb
+-rw-r--r--   1 shannonellis  staff  14457 Jul  9 09:55 A2-Examples.ipynb
+-rw-r--r--   1 shannonellis  staff   7242 May 15  2019 Check-In.ipynb
+drwxr-xr-x  13 shannonellis  staff    416 Jul 22 12:22 [34mExam-Prep[m[m
+-rw-r--r--   1 shannonellis  staff  19752 Sep 26  2019 LICENSE.txt
+-rw-r--r--@  1 shannonellis  staff    457 Jul  9 12:25 README.md
+drwxr-xr-x   8 shannonellis  staff    256 Jul 21 12:11 [34m__pycache__[m[m
+drwxr-xr-x  15 shannonellis  staff    480 Jul  9 09:55 [34mimg[m[m
+-rw-r--r--@  1 shannonellis  staff    729 Jul 21 12:13 remote.py
+
+```
 
 #### Clicker Question #4
 
