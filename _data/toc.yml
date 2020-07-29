@@ -67,9 +67,9 @@
   - title: 14-Documentation-Style
     url: /materials/14-Documentation-Style
     not_numbered: true
-  # - title: 15-OpenSource-API
-  #   url: /materials/15-OpenSource-API
-  #   not_numbered: true
+  - title: 15-OpenSource-API
+    url: /materials/15-OpenSource-API
+    not_numbered: true
   # - title: 16-AdvancedPython
   #   url: /materials/16-AdvancedPython
   #   not_numbered: true

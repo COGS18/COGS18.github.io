@@ -8,8 +8,8 @@ prev_page:
   url: /materials/13-CommandLine
   title: '13-CommandLine'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/15-OpenSource-API
+  title: '15-OpenSource-API'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
