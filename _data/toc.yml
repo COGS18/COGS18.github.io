@@ -70,9 +70,9 @@
   - title: 15-OpenSource-API
     url: /materials/15-OpenSource-API
     not_numbered: true
-  # - title: 16-AdvancedPython
-  #   url: /materials/16-AdvancedPython
-  #   not_numbered: true
+  - title: 16-AdvancedPython
+    url: /materials/16-AdvancedPython
+    not_numbered: true
   - title: A1-Syntax
     url: /materials/A1-Syntax
     not_numbered: true
@@ -115,7 +115,12 @@
   - title: E2_Su20_Answers
     url: /materials/Exam-Prep/COGS18_E2_Su20-Answers
     not_numbered: true
-
+  - title: Final-Review
+    url: /materials/Exam-Prep/Final-Review
+    not_numbered: true
+# - title: Final_Practice_Su20_Answers
+#     url: /materials/Exam-Prep/Final_Practice_Su20_Answers
+#     not_numbered: true  
 
 - title: Coding Labs
   url: /labs/source_Su20/CL1-Tooling
@@ -145,9 +150,9 @@
 #   # - title: CL5-CommandLine
 #   #   url: /labs/source_Su20/CL5-CommandLine
 #   #   not_numbered: true
-#   - title: CL5-Answers
-#     url: /labs/source_Su20/CL5-Answers
-#     not_numbered: true 
+  - title: CL5-Answers
+    url: /labs/source_Su20/CL5-Answers
+    not_numbered: true 
 
 # - title: Assignments
 #   url: /assignments/A1-GettingStarted

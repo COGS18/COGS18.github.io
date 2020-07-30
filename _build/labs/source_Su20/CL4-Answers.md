@@ -6,8 +6,8 @@ prev_page:
   url: /labs/source_Su20/CL3-Answers
   title: 'CL3-Answers'
 next_page:
-  url: /
-  title: ''
+  url: /labs/source_Su20/CL5-Answers
+  title: 'CL5-Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # CL4: Debugging & Classes

@@ -6,8 +6,8 @@ prev_page:
   url: /materials/Exam-Prep/E2_Practice_Su20_Answers
   title: 'E2_Practice_Su20_Answers'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/Exam-Prep/Final-Review
+  title: 'Final-Review'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # COGS 18 - Exam 2

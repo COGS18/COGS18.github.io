@@ -8,8 +8,8 @@ prev_page:
   url: /materials/14-Documentation-Style
   title: '14-Documentation-Style'
 next_page:
-  url: /materials/A1-Syntax
-  title: 'A1-Syntax'
+  url: /materials/16-AdvancedPython
+  title: '16-AdvancedPython'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Course Announcements
@@ -238,6 +238,12 @@ In Python (package) development... when `<MAJOR>` == 0, suggests a package in de
 ```
 
 
+{:.output_stream}
+```
+Python 3.7.0
+
+```
+
 
 
 {:.input_area}
@@ -247,6 +253,21 @@ In Python (package) development... when `<MAJOR>` == 0, suggests a package in de
 ```
 
 
+{:.output_stream}
+```
+Name: nltk
+Version: 3.3
+Summary: Natural Language Toolkit
+Home-page: http://nltk.org/
+Author: Steven Bird
+Author-email: stevenbird1@gmail.com
+License: Apache License, Version 2.0
+Location: /anaconda3/lib/python3.7/site-packages
+Requires: six
+Required-by: lisc
+
+```
+
 
 
 {:.input_area}
@@ -255,6 +276,16 @@ In Python (package) development... when `<MAJOR>` == 0, suggests a package in de
 import nltk
 nltk.__version__
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'3.3'
+```
+
 
 
 ### Dependencies
@@ -337,8 +368,19 @@ arr2 = np.array([[5, 6], [7, 8]])
 
 {:.input_area}
 ```python
-arr1
+arr2
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+array([[5, 6],
+       [7, 8]])
+```
+
 
 
 
@@ -346,8 +388,18 @@ arr1
 {:.input_area}
 ```python
 # lists of lists don't store dimensionality well
-[[1, 2], [3, 4]] 
+[[1, 2], [3, 4]]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+[[1, 2], [3, 4]]
+```
+
 
 
 #### Indexing Arrays
@@ -363,6 +415,17 @@ arr1
 
 
 
+
+{:.output_data_text}
+```
+array([[1, 2],
+       [3, 4]])
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Check the shape of the array
@@ -372,11 +435,31 @@ arr1.shape
 
 
 
+
+{:.output_data_text}
+```
+(2, 2)
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Index into a numpy array
-arr1[0, 0]
+arr1[0, 1]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+2
+```
+
 
 
 Working with N-dimensional (multidimensional) arrays is easy within `numpy`.
@@ -389,7 +472,7 @@ Working with N-dimensional (multidimensional) arrays is easy within `numpy`.
 ```python
 # arrays are most helpful when they
 # have the same length in each list
-np.array([[1, 2, 3, 4], [2, 3, 4]])
+array4 = np.array([[1, 2, 3, 4], [2, 3, 4]])
 ```
 
 
@@ -400,6 +483,17 @@ np.array([[1, 2, 3, 4], [2, 3, 4]])
 # arrays are meant to store homogeneous data
 np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+array([['1', '2', 'cogs18'],
+       ['2', '3', '4']], dtype='<U21')
+```
+
 
 
 #### Working with Arrays
@@ -417,11 +511,33 @@ arr1 + arr2
 
 
 
+
+{:.output_data_text}
+```
+array([[ 6,  8],
+       [10, 12]])
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Matrix mutliplication
 arr1 * arr2
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+array([[ 5, 12],
+       [21, 32]])
+```
+
 
 
 #### A brief reminder: `zip()`
@@ -436,6 +552,13 @@ for a, b in zip([1,2], ['a','b']):
     print(a, b)
 ```
 
+
+{:.output_stream}
+```
+1 a
+2 b
+
+```
 
 #### Clicker Question #1
 
@@ -456,6 +579,12 @@ print(output)
 ```
 
 
+{:.output_stream}
+```
+[6, 8, 10, 12]
+
+```
+
 - A) [1, 2, 3, 4]
 - B) [1, 2, 3, 4, 5, 6, 7, 8]
 - C) [6, 8, 10, 12]
@@ -474,10 +603,30 @@ data.sum()
 
 
 
+
+{:.output_data_text}
+```
+36
+```
+
+
+
+
+
 {:.input_area}
 ```python
 data.sum(axis=0)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+array([ 6,  8, 10, 12])
+```
+
 
 
 ## Heterogenous Data
@@ -511,6 +660,24 @@ d2 = {'Subj_ID': '002', 'score': 22, 'group' : 1, 'condition': 'perception'}
 
 {:.input_area}
 ```python
+d1
+```
+
+
+
+
+
+{:.output_data_text}
+```
+{'Subj_ID': '001', 'score': 16, 'group': 2, 'condition': 'cognition'}
+```
+
+
+
+
+
+{:.input_area}
+```python
 # Create a dataframe 
 df = pd.DataFrame([d1, d2], [0, 1])
 ```
@@ -527,6 +694,56 @@ df
 
 
 
+
+<div markdown="0">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Subj_ID</th>
+      <th>condition</th>
+      <th>group</th>
+      <th>score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>001</td>
+      <td>cognition</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>002</td>
+      <td>perception</td>
+      <td>1</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
 {:.input_area}
 ```python
 # You can index in pandas
@@ -536,11 +753,37 @@ df['condition']
 
 
 
+
+{:.output_data_text}
+```
+0     cognition
+1    perception
+Name: condition, dtype: object
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # You can index in pandas
 df.loc[0,:]
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+Subj_ID            001
+condition    cognition
+group                2
+score               16
+Name: 0, dtype: object
+```
+
 
 
 #### Working with DataFrames
@@ -555,11 +798,99 @@ df.describe()
 
 
 
+
+<div markdown="0">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>group</th>
+      <th>score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>2.000000</td>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1.500000</td>
+      <td>19.000000</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.707107</td>
+      <td>4.242641</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>16.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.250000</td>
+      <td>17.500000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.500000</td>
+      <td>19.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.750000</td>
+      <td>20.500000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>2.000000</td>
+      <td>22.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
 {:.input_area}
 ```python
 # Take the average of all numeric columns
 df.mean()
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+Subj_ID                     (1+9.5j)
+condition    (2.1213203435596424+8j)
+group                       (1.5+0j)
+score                        (19+0j)
+dtype: complex128
+```
+
 
 
 #### Clicker Question #2
@@ -602,6 +933,10 @@ plt.plot(dat);
 ```
 
 
+
+![png](../images/build/materials/15-OpenSource-API_100_0.png)
+
+
 - can change plot type
 - _lots_ of customizations possible
 
@@ -641,6 +976,10 @@ plt.hist(d2, 25, alpha=0.6);
 ```
 
 
+
+![png](../images/build/materials/15-OpenSource-API_106_0.png)
+
+
 ### Analysis - Statistical Comparisons
 
 
@@ -650,6 +989,16 @@ plt.hist(d2, 25, alpha=0.6);
 # Statistically compare the two distributions
 stats.ttest_ind(d1, d2)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+Ttest_indResult(statistic=-11.321459970682378, pvalue=7.612910941171958e-29)
+```
+
 
 
 ## COGS108: Data Science in Practice
@@ -699,6 +1048,16 @@ math.sqrt(9)
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+3.0
+```
+
+
+
 ### Imports: `from` & `as`
 
 
@@ -719,6 +1078,16 @@ choice(magic_8_ball)
 
 
 
+
+{:.output_data_text}
+```
+'Outlook not so good'
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # Import a specific object from a module using an alias
@@ -727,6 +1096,16 @@ from random import choice as ch
 # use shorter name 
 ch(magic_8_ball)
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+"Don't Count on it"
+```
+
 
 
 ### Importing Custom Code
@@ -749,6 +1128,16 @@ from remote import MyNumbers
 out = MyNumbers(2, 3).add()
 out
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+5
+```
+
 
 
 
@@ -822,6 +1211,12 @@ def sum_across_list(list_to_count, end_index, start_val=0):
 print(sum_across_list(end_index=2, list_to_count=[10, 10, 10, 10]))
 ```
 
+
+{:.output_stream}
+```
+20
+
+```
 
 - A) 10
 - B) 20
@@ -909,6 +1304,12 @@ print(search_url)
 ```
 
 
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?term=brain
+
+```
+
 
 
 {:.input_area}
@@ -930,6 +1331,12 @@ fetch_url = base_url + fetch + db + retmode + pubmed_id
 print(fetch_url)
 ```
 
+
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=30439964
+
+```
 
 But, our goal isn't to see this information in a web browser. Web browsers are for humans. We want to use this information computationally...
 
@@ -959,6 +1366,12 @@ print(search_url)
 ```
 
 
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?term=brain
+
+```
+
 
 
 {:.input_area}
@@ -978,6 +1391,39 @@ search_content
 ```
 
 
+
+
+
+{:.output_data_text}
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">
+<eSearchResult><Count>1982799</Count><RetMax>20</RetMax><RetStart>0</RetStart><IdList>
+<Id>32721125</Id>
+<Id>32721123</Id>
+<Id>32721081</Id>
+<Id>32721055</Id>
+<Id>32721035</Id>
+<Id>32720915</Id>
+<Id>32720904</Id>
+<Id>32720895</Id>
+<Id>32720870</Id>
+<Id>32720869</Id>
+<Id>32720857</Id>
+<Id>32720856</Id>
+<Id>32720845</Id>
+<Id>32720835</Id>
+<Id>32720776</Id>
+<Id>32720756</Id>
+<Id>32720711</Id>
+<Id>32720707</Id>
+<Id>32720701</Id>
+<Id>32720690</Id>
+</IdList><TranslationSet><Translation> <From>brain</From> <To>"brain"[MeSH Terms] OR "brain"[All Fields]</To> </Translation></TranslationSet><TranslationStack> <TermSet> <Term>"brain"[MeSH Terms]</Term> <Field>MeSH Terms</Field> <Count>1205235</Count> <Explode>Y</Explode> </TermSet> <TermSet> <Term>"brain"[All Fields]</Term> <Field>All Fields</Field> <Count>1590084</Count> <Explode>N</Explode> </TermSet> <OP>OR</OP> <OP>GROUP</OP> </TranslationStack><QueryTranslation>"brain"[MeSH Terms] OR "brain"[All Fields]</QueryTranslation></eSearchResult>
+```
+
+
+
 ### EUtils Fetch, through Python
 
 
@@ -987,6 +1433,12 @@ search_content
 print(fetch_url)
 ```
 
+
+{:.output_stream}
+```
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=30439964
+
+```
 
 
 
@@ -1003,8 +1455,539 @@ fetch_content = BeautifulSoup(fetch_page.content, 'lxml')
 {:.input_area}
 ```python
 # Check out the content of the page
-# fetch_content
+fetch_content
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+<?xml version="1.0" ?><!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<html><body><pubmedarticleset>
+<pubmedarticle>
+<medlinecitation owner="NLM" status="MEDLINE">
+<pmid version="1">30439964</pmid>
+<datecompleted>
+<year>2019</year>
+<month>04</month>
+<day>09</day>
+</datecompleted>
+<daterevised>
+<year>2019</year>
+<month>04</month>
+<day>09</day>
+</daterevised>
+<article pubmodel="Electronic-eCollection">
+<journal>
+<issn issntype="Electronic">1932-6203</issn>
+<journalissue citedmedium="Internet">
+<volume>13</volume>
+<issue>11</issue>
+<pubdate>
+<year>2018</year>
+</pubdate>
+</journalissue>
+<title>PloS one</title>
+<isoabbreviation>PLoS ONE</isoabbreviation>
+</journal>
+<articletitle>Hyperacute changes in blood mRNA expression profiles of rats after middle cerebral artery occlusion: Towards a stroke time signature.</articletitle>
+<pagination>
+<medlinepgn>e0206321</medlinepgn>
+</pagination>
+<elocationid eidtype="doi" validyn="Y">10.1371/journal.pone.0206321</elocationid>
+<abstract>
+<abstracttext>Stroke evolution is a highly dynamic but variable disease which makes clinical decision making difficult. Biomarker discovery programs intended to aid clinical decision making have however largely ignored the rapidity of stroke evolution. We have used gene array technology to determine blood mRNA expression changes over the first day after stroke in rats. Blood samples were collected from 8 male spontaneously hypertensive rats at 0, 1, 2, 3, 6 and 24h post stroke induction by middle cerebral artery occlusion. RNA was extracted from whole blood stabilized in PAXgene tubes and mRNA expression was detected by oligonucleotide Affymetrix microarray. Using a pairwise comparison model, 1932 genes were identified to vary significantly over time (pâ‰¤0.5x10(-7)) within 24h after stroke. Some of the top20 most changed genes are already known to be relevant to the ischemic stroke physiopathology (e.g. Il-1R, Nos2, Prok2). Cluster analysis showed multiple stereotyped and time dependent profiles of gene expression. Direction and rate of change of expression for some profiles varied dramatically during these 24h. Profiles with potential clinical utility including hyper acute or acute transient upregulation (with expression peaking from 2 to 6h after stroke and normalisation by 24h) were identified. We found that blood gene expression varies rapidly and stereotypically after stroke in rats. Previous researchers have often missed the optimum time for biomarker measurement. Temporally overlapping profiles have the potential to provide a biological "stroke clock" able to tell the clinician how far an individual stroke has evolved.</abstracttext>
+</abstract>
+<authorlist completeyn="Y">
+<author validyn="Y">
+<lastname>Dagonnier</lastname>
+<forename>Marie</forename>
+<initials>M</initials>
+<identifier source="ORCID">0000-0002-0981-4962</identifier>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Wilson</lastname>
+<forename>William John</forename>
+<initials>WJ</initials>
+<affiliationinfo>
+<affiliation>The Commonwealth Scientific and Industrial Research Organisation (CSIRO), Sydney, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Favaloro</lastname>
+<forename>Jenny Margaret</forename>
+<initials>JM</initials>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Rewell</lastname>
+<forename>Sarah Susan Jane</forename>
+<initials>SSJ</initials>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Lockett</lastname>
+<forename>Linda Jane</forename>
+<initials>LJ</initials>
+<affiliationinfo>
+<affiliation>The Commonwealth Scientific and Industrial Research Organisation (CSIRO), Sydney, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Sastra</lastname>
+<forename>Stephen Andrew</forename>
+<initials>SA</initials>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Jeffreys</lastname>
+<forename>Amy Lucienne</forename>
+<initials>AL</initials>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Dewey</lastname>
+<forename>Helen Margaret</forename>
+<initials>HM</initials>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Donnan</lastname>
+<forename>Geoffrey Alan</forename>
+<initials>GA</initials>
+<identifier source="ORCID">0000-0001-6324-3403</identifier>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+</author>
+<author validyn="Y">
+<lastname>Howells</lastname>
+<forename>David William</forename>
+<initials>DW</initials>
+<affiliationinfo>
+<affiliation>The Florey Institute of Neuroscience and Mental Health, Melbourne Brain Centre, Austin Campus, Heidelberg, Australia.</affiliation>
+</affiliationinfo>
+<affiliationinfo>
+<affiliation>School of Medicine, Faculty of Health, University of Tasmania, Hobart, Australia.</affiliation>
+</affiliationinfo>
+</author>
+</authorlist>
+<language>eng</language>
+<publicationtypelist>
+<publicationtype ui="D016428">Journal Article</publicationtype>
+</publicationtypelist>
+<articledate datetype="Electronic">
+<year>2018</year>
+<month>11</month>
+<day>15</day>
+</articledate>
+</article>
+<medlinejournalinfo>
+<country>United States</country>
+<medlineta>PLoS One</medlineta>
+<nlmuniqueid>101285081</nlmuniqueid>
+<issnlinking>1932-6203</issnlinking>
+</medlinejournalinfo>
+<chemicallist>
+<chemical>
+<registrynumber>0</registrynumber>
+<nameofsubstance ui="D015415">Biomarkers</nameofsubstance>
+</chemical>
+<chemical>
+<registrynumber>0</registrynumber>
+<nameofsubstance ui="D012333">RNA, Messenger</nameofsubstance>
+</chemical>
+</chemicallist>
+<citationsubset>IM</citationsubset>
+<meshheadinglist>
+<meshheading>
+<descriptorname majortopicyn="N" ui="D000818">Animals</descriptorname>
+</meshheading>
+<meshheading>
+<descriptorname majortopicyn="N" ui="D015415">Biomarkers</descriptorname>
+<qualifiername majortopicyn="N" ui="Q000097">blood</qualifiername>
+</meshheading>
+<meshheading>
+<descriptorname majortopicyn="Y" ui="D020869">Gene Expression Profiling</descriptorname>
+</meshheading>
+<meshheading>
+<descriptorname majortopicyn="N" ui="D020244">Infarction, Middle Cerebral Artery</descriptorname>
+<qualifiername majortopicyn="Y" ui="Q000097">blood</qualifiername>
+<qualifiername majortopicyn="Y" ui="Q000235">genetics</qualifiername>
+<qualifiername majortopicyn="N" ui="Q000601">surgery</qualifiername>
+</meshheading>
+<meshheading>
+<descriptorname majortopicyn="N" ui="D012333">RNA, Messenger</descriptorname>
+<qualifiername majortopicyn="N" ui="Q000097">blood</qualifiername>
+<qualifiername majortopicyn="N" ui="Q000235">genetics</qualifiername>
+<qualifiername majortopicyn="N" ui="Q000378">metabolism</qualifiername>
+</meshheading>
+<meshheading>
+<descriptorname majortopicyn="N" ui="D051381">Rats</descriptorname>
+</meshheading>
+<meshheading>
+<descriptorname majortopicyn="N" ui="D013997">Time Factors</descriptorname>
+</meshheading>
+</meshheadinglist>
+<coistatement>The authors have declared that no competing interests exist.</coistatement>
+</medlinecitation>
+<pubmeddata>
+<history>
+<pubmedpubdate pubstatus="received">
+<year>2018</year>
+<month>03</month>
+<day>08</day>
+</pubmedpubdate>
+<pubmedpubdate pubstatus="accepted">
+<year>2018</year>
+<month>10</month>
+<day>10</day>
+</pubmedpubdate>
+<pubmedpubdate pubstatus="entrez">
+<year>2018</year>
+<month>11</month>
+<day>16</day>
+<hour>6</hour>
+<minute>0</minute>
+</pubmedpubdate>
+<pubmedpubdate pubstatus="pubmed">
+<year>2018</year>
+<month>11</month>
+<day>16</day>
+<hour>6</hour>
+<minute>0</minute>
+</pubmedpubdate>
+<pubmedpubdate pubstatus="medline">
+<year>2019</year>
+<month>4</month>
+<day>10</day>
+<hour>6</hour>
+<minute>0</minute>
+</pubmedpubdate>
+</history>
+<publicationstatus>epublish</publicationstatus>
+<articleidlist>
+<articleid idtype="pubmed">30439964</articleid>
+<articleid idtype="doi">10.1371/journal.pone.0206321</articleid>
+<articleid idtype="pii">PONE-D-18-07138</articleid>
+<articleid idtype="pmc">PMC6237327</articleid>
+</articleidlist>
+<referencelist>
+<reference>
+<citation>Stroke. 2013 Jun;44(6 Suppl 1):S23-5</citation>
+<articleidlist>
+<articleid idtype="pubmed">23709718</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Lancet. 2004 Mar 6;363(9411):768-74</citation>
+<articleidlist>
+<articleid idtype="pubmed">15016487</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2000 Aug;31(8):1889-92</citation>
+<articleidlist>
+<articleid idtype="pubmed">10926952</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Genomics. 2014 Sep;104(3):163-9</citation>
+<articleidlist>
+<articleid idtype="pubmed">25135788</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Life Sci. 1999;64(13):1099-108</citation>
+<articleidlist>
+<articleid idtype="pubmed">10210272</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Neuroimmunol. 2012 Aug 15;249(1-2):60-5</citation>
+<articleidlist>
+<articleid idtype="pubmed">22591946</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>N Engl J Med. 1995 Dec 14;333(24):1581-7</citation>
+<articleidlist>
+<articleid idtype="pubmed">7477192</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 1989 Jan;20(1):84-91</citation>
+<articleidlist>
+<articleid idtype="pubmed">2643202</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Neurology. 2000 Dec 12;55(11):1649-55</citation>
+<articleidlist>
+<articleid idtype="pubmed">11113218</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Clin Neurosci. 2006 Jan;13(1):1-8</citation>
+<articleidlist>
+<articleid idtype="pubmed">16410192</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>N Engl J Med. 2008 Sep 25;359(13):1317-29</citation>
+<articleidlist>
+<articleid idtype="pubmed">18815396</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Neuroimmunol. 2007 Mar;184(1-2):53-68</citation>
+<articleidlist>
+<articleid idtype="pubmed">17188755</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Cerebrovasc Dis. 2011;32(6):517-27</citation>
+<articleidlist>
+<articleid idtype="pubmed">22104408</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Neurol. 2014 Mar;261(3):533-45</citation>
+<articleidlist>
+<articleid idtype="pubmed">24477489</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Hum Mol Genet. 2014 Nov 15;23(22):5866-78</citation>
+<articleidlist>
+<articleid idtype="pubmed">24939910</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Chest. 2008 Jun;133(6 Suppl):630S-669S</citation>
+<articleidlist>
+<articleid idtype="pubmed">18574275</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Neurology. 2010 Sep 14;75(11):1009-14</citation>
+<articleidlist>
+<articleid idtype="pubmed">20837969</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Ann Neurol. 2001 Dec;50(6):699-707</citation>
+<articleidlist>
+<articleid idtype="pubmed">11761467</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>PLoS One. 2012;7(9):e43830</citation>
+<articleidlist>
+<articleid idtype="pubmed">23028472</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Brain Res Bull. 2003 Aug 15;61(3):261-4</citation>
+<articleidlist>
+<articleid idtype="pubmed">12909296</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>PLoS One. 2013 Sep 12;8(9):e72758</citation>
+<articleidlist>
+<articleid idtype="pubmed">24069157</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Stroke Cerebrovasc Dis. 2009 Jul-Aug;18(4):269-76</citation>
+<articleidlist>
+<articleid idtype="pubmed">19560680</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Circulation. 2005 Jan 18;111(2):212-21</citation>
+<articleidlist>
+<articleid idtype="pubmed">15630028</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Br J Clin Pharmacol. 2012 Aug;74(2):230-40</citation>
+<articleidlist>
+<articleid idtype="pubmed">22320313</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Neurosci Methods. 2006 Sep 15;155(2):285-90</citation>
+<articleidlist>
+<articleid idtype="pubmed">16513179</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Neurol Sci. 2014 Oct 15;345(1-2):202-8</citation>
+<articleidlist>
+<articleid idtype="pubmed">25109534</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2008 Oct;39(10):2902-9</citation>
+<articleidlist>
+<articleid idtype="pubmed">18658039</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Cerebrovasc Dis. 2009;27(1):37-41</citation>
+<articleidlist>
+<articleid idtype="pubmed">19018136</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Expert Opin Biol Ther. 2001 Mar;1(2):227-37</citation>
+<articleidlist>
+<articleid idtype="pubmed">11727532</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Biomark Insights. 2017 Dec 20;12:1177271917749216</citation>
+<articleidlist>
+<articleid idtype="pubmed">29308009</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Neurology. 2001 Apr 24;56(8):1015-20</citation>
+<articleidlist>
+<articleid idtype="pubmed">11320171</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Neurol Sci. 2014 Dec;35(12):1977-82</citation>
+<articleidlist>
+<articleid idtype="pubmed">25030125</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2002 Apr;33(4):988-93</citation>
+<articleidlist>
+<articleid idtype="pubmed">11935049</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2011 Oct;42(10):2838-43</citation>
+<articleidlist>
+<articleid idtype="pubmed">21852612</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2010 Oct;41(10):2171-7</citation>
+<articleidlist>
+<articleid idtype="pubmed">20798371</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Cereb Blood Flow Metab. 2006 Aug;26(8):1089-102</citation>
+<articleidlist>
+<articleid idtype="pubmed">16395289</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Nat Protoc. 2009;4(8):1184-91</citation>
+<articleidlist>
+<articleid idtype="pubmed">19617889</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2009 May;40(5):e380-9</citation>
+<articleidlist>
+<articleid idtype="pubmed">19286602</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2009 Jan;40(1):77-85</citation>
+<articleidlist>
+<articleid idtype="pubmed">18948614</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Biol Res Nurs. 2015 May;17(3):248-56</citation>
+<articleidlist>
+<articleid idtype="pubmed">25124890</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Hum Exp Toxicol. 2008 Oct;27(10):761-7</citation>
+<articleidlist>
+<articleid idtype="pubmed">19042962</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>J Neurol. 2008 May;255(5):723-31</citation>
+<articleidlist>
+<articleid idtype="pubmed">18465111</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2004 Jan;35(1):57-63</citation>
+<articleidlist>
+<articleid idtype="pubmed">14671250</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Stroke. 2013 Mar;44(3):870-947</citation>
+<articleidlist>
+<articleid idtype="pubmed">23370205</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Circulation. 2012 Jan 3;125(1):188-97</citation>
+<articleidlist>
+<articleid idtype="pubmed">22215894</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Int J Stroke. 2015 Jul;10(5):759-62</citation>
+<articleidlist>
+<articleid idtype="pubmed">25833105</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Proc Natl Acad Sci U S A. 2012 Apr 3;109(14):5475-80</citation>
+<articleidlist>
+<articleid idtype="pubmed">22431614</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Cerebrovasc Dis. 2014;38(1):59-72</citation>
+<articleidlist>
+<articleid idtype="pubmed">25227260</articleid>
+</articleidlist>
+</reference>
+<reference>
+<citation>Pharmacol Rev. 2009 Mar;61(1):62-97</citation>
+<articleidlist>
+<articleid idtype="pubmed">19293146</articleid>
+</articleidlist>
+</reference>
+</referencelist>
+</pubmeddata>
+</pubmedarticle>
+</pubmedarticleset></body></html>
+```
+
 
 
 ### BeautifulSoup Objects
@@ -1020,11 +2003,31 @@ type(fetch_content)
 
 
 
+
+{:.output_data_text}
+```
+bs4.BeautifulSoup
+```
+
+
+
+
+
 {:.input_area}
 ```python
 # We can use some methods to access particular information
 fetch_content.find('year').text
 ```
+
+
+
+
+
+{:.output_data_text}
+```
+'2019'
+```
+
 
 
 ## Literature Scanner
@@ -1085,6 +2088,16 @@ for phrase in words['brain']:
 ```
 
 
+{:.output_stream}
+```
+Current clinical management of patients with glioblastoma.
+Treatment-triggered onset and diagnosis of Sheehan syndrome in a multiple myeloma patient.
+Phagocytosis-related NADPH oxidase 2 subunit gp91phox contributes to neurodegeneration after repeated systemic challenge with lipopolysaccharides.
+Ceasing Antiquated Conceptions: A Telling of the Early and Evolving History of Epilepsy.
+Deciphering the neural signature of human cardiovascular regulation.
+
+```
+
 ## Twitter API
 
 
@@ -1127,3 +2140,17 @@ for status in tweepy.Cursor(api.home_timeline).items(3):
     print(status.text, '\n')
 ```
 
+
+{:.output_stream}
+```
+CalMatters
+RT @mlevinreports: Thread on this story (1/?): Imperial County Superior Court proceeded with eviction cases in apparent violation of state… 
+
+Marco Rogers
+Oh. We really still talking about him losing? Like we've taken *any* action to stop voter suppression and election… https://t.co/3iXXJpUOYk 
+
+Jeff Leek
+RT @bencasselman: @PatcohenNYT @gillianreporter "But the stark urgency that faces families perilously close to losing their homes, skipping… 
+
+
+```
