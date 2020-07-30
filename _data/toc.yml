@@ -118,9 +118,9 @@
   - title: Final-Review
     url: /materials/Exam-Prep/Final-Review
     not_numbered: true
-# - title: Final_Practice_Su20_Answers
-#     url: /materials/Exam-Prep/Final_Practice_Su20_Answers
-#     not_numbered: true  
+  - title: Final_Practice_Su20_Answers
+    url: /materials/Exam-Prep/Practice_Final_Su20_Answers
+    not_numbered: true  
 
 - title: Coding Labs
   url: /labs/source_Su20/CL1-Tooling

@@ -6,17 +6,17 @@ prev_page:
   url: /materials/Exam-Prep/COGS18_E2_Su20-Answers
   title: 'E2_Su20_Answers'
 next_page:
-  url: /labs/source_Su20/CL1-Tooling
-  title: 'Coding Labs'
+  url: /materials/Exam-Prep/Practice_Final_Su20_Answers
+  title: 'Final_Practice_Su20_Answers'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-# Exam 2 Review
+# Final Exam Review
 
 - **Final Exam is tomorrow** (due Sat; 11 AM)
 - **A5 is due tomorrow** (11:59 PM)
     
 **Notes**
-- Please fill out your CAPEs
+- Please fill out your CAPEs (deadline: tomorrow at 8AM)
 - Post-course survey (ideally: fill out after the final exam): https://bit.ly/cogs18_post_su20
 
 ### General Exam Topics
@@ -128,7 +128,7 @@ This course used:
 
 Thank you to Tom for his original design of this course.
 
-Thank you to the TAs & IAs for all of their help thus Summer.
+Thank you to the TAs & IAs for all of their help this Summer.
 
 Thank you students for you time, effort and patience. 
 
