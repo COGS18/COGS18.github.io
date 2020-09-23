@@ -1,0 +1,110 @@
+- file: intro
+
+- part: Lecture Materials
+  chapters:
+  - file: materials/01-Introduction 
+    title: 01-Introduction 
+  - file: materials/02-Tooling 
+    title: 02-Tooling
+  # - file: materials/03-Variables
+  #   title: 03-Variables
+  # - file: materials/04-Operators
+  #   title: 04-Operators
+  # - file: materials/05-Conditionals
+  #   title: 05-Conditionals
+  # - file: materials/06-Collections
+  #   title: 06-Collections
+  # - file: materials/07-Loops
+  #   title: 07-Loops
+  # - file: materials/08-Dictionaries
+  #   title: 08-Dictionaries
+  # - file: materials/09-FunctionsI
+  #   title: 09-FunctionsI
+  # - file: materials/10-Algorithms
+  #   title: 10-Algorithms
+  # - file: materials/11-FunctionsII
+  #   title: 11-FunctionsII
+  # - file: materials/12-Debugging
+  #   title: 12-Debugging
+  # - file: materials/13-CodeTesting
+  #   title: 13-CodeTesting
+  # - file: materials/14-Objects
+  #   title: 14-Objects
+  # - file: materials/15-Classes
+  #   title: 15-Classes
+  # - file: materials/16-Namespaces
+  #   title: 16-Namespaces
+  # - file: materials/17-CommandLine
+  #   title: 17-CommandLine
+  # - file: materials/18-OpenSource
+  #   title: 18-OpenSource
+  # - file: materials/19-CodeStyle  
+  #   title: 19-CodeStyle
+  # - file: materials/20-Documentation
+  #   title: 20-Documentation
+  # - file: materials/21-CodeProjects
+  #   title: 21-CodeProjects
+  # - file: materials/22-APIs
+  #   title: 22-APIs
+  # - file: materials/23-AdvancedPython
+  #   title: 23-AdvancedPython
+  # - file: materials/24-WrapUp
+  #   title: 24-WrapUp
+
+
+# - part: Coding Labs (Answers)
+#   chapters:
+#   - file: labs/CL1-Tooling
+#     title: CL1-Tooling
+#   - file: labs/CL2-ProgrammingI
+#     title: CL2-ProgrammingI
+#   - file: labs/CL3-ProgrammingII
+#     title: CL3-ProgrammingII
+#   - file: labs/CL4-Functions
+#     title: CL4-Functions
+#   - file: labs/CL5-Debugging
+#     title: CL5-Debugging
+#   - file: labs/CL6-Classes
+#     title: CL6-Classes
+#   - file: labs/CL7-CommandLine
+#     title: CL7-CommandLine 
+
+
+# - part: Exam Prep
+#   chapters:
+#   # E1  
+#    - file: materials/Exam-Prep/E1-Practice
+#     title: E1-Practice
+#   - file: materials/Exam-Prep/E1-Review
+#     title: E1-Review
+#   - file: materials/Exam-Prep/E1-Review-Answers
+#     title: E1-Review-Answers
+#   - file: materials/Exam-Prep/E1-PracticeExam-Answers
+#     title: E1-PracticeExam-Answers
+#   # E2
+#   - file: materials/Exam-Prep/E2-Practice
+#     title: E2-Practice
+#   - file: materials/Exam-Prep/E2-Review
+#     title: E2-Review
+#   - file: materials/Exam-Prep/E2-Review-Answers
+#     title: E2-Review-Answers
+#   - file: materials/Exam-Prep/E2-PracticeExam-Answers
+#     title: E2-PracticePracticeExam-Answers    
+#   - file: materials/A1-Syntax
+#     title: A1-Syntax
+#   - file: materials/A2-Examples
+#     title: A2-Syntax
+
+# - part: Project
+#   chapters:
+#   - file: projects/PythonParty
+#     title: Python Party
+#   - file: projects/overview
+#     title: Project Overview
+#   - file: projects/ProjectIdeas
+#     title: Project Ideas
+#   - file: projects/faq
+#     title: Project FAQ
+
+
+

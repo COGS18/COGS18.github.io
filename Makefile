@@ -1,9 +1,4 @@
-
-
-
-
-
-.PHONY: help book clean serve
+.PHONY: help book clean serve textbook
 
 help:
 	@echo "Please use 'make <target>' where <target> is one of:"
@@ -13,14 +8,16 @@ help:
 	@echo "  serve       to serve the repository locally with Jekyll"
 
 book:
-	python scripts/generate_book.py
+	jupyter-book build ./
 
 runall:
 	python scripts/execute_all_notebooks.py
 
 clean:
 	python scripts/clean.py
-	rm -rf content
+	rm -rf materials
+	rm -rf labs
+	rm -rf projects
 
 serve:
 	#bundle exec guard
@@ -29,30 +26,25 @@ serve:
 textbook:
 	python scripts/clean.py
 
-	# Copy & build landing pages
-	cp -r landing content
-
 	# Copy & build materials
-	git clone --depth 1 https://github.com/COGS18/lecturenotes-su20 content/materials
-	rm content/materials/README.md
+	git clone --depth 1 https://github.com/COGS18/LectureNotes-Fa20 materials
+	rm materials/README.md
 
-	# Copy & build assignments
-	# git clone --depth 1 https://github.com/COGS18/assignments content/assignments
-	# rm content/assignments/README.md
 
 	# Copy & build coding labs
-	git clone --depth 1 https://github.com/COGS18/CodingLabs content/labs
-	rm content/labs/README.md
+	# git clone --depth 1 https://github.com/COGS18/CodingLabs/answers labs
+
 
 	# Copy & build project info
-	# git clone --depth 1 https://github.com/COGS18/projects content/projects
-	# rm content/projects/README.md
+	# git clone --depth 1 https://github.com/COGS18/projects projects
+	# rm projects/README.md
 
-	python scripts/generate_book.py
+	jupyter-book build ./
 
-	rm -rf content
+	rm -rf labs
+	rm -rf materials
+	rm -rf projects
 
-		
 
 home:
 	rm _build/intro.md
