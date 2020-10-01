@@ -7,14 +7,14 @@
 **Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fall 2018, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
 
 
-The PDF slides from the start of the first class are available here: https://cogs18.github.io/assets/intro/01_welcome.pdf
+The PDF slides from the start of the first class are available [here](assets/intro/01_welcome.pdf).
 
 ## Logistics
 
 - Who:
     - Instructor: Shannon Ellis 
     - TAs: Shivani and David
-    - "IAs": Qixuan ("Harrison"), Anuujin, Frank, Bora, Emma, Mani, and ...
+    - IAs: Qixuan ("Harrison"), Anuujin, Frank, Bora, Emma, Mani, Boning, and Bob
     
 - Where:
     - Lectures MWF @ 8AM (remote)

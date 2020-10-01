@@ -1,3 +1,4 @@
+
 # COGS 18: Introduction to Python
 
 **Fall 2020**  
@@ -28,17 +29,18 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
-| TA             | Shivani Bhakta	         | TBD              | TBD          |
-| TA 	           | David Liau              | TBD              | TBD          |
-| TA 	           | Qixuan "Harrison" Ma    | TBD              | TBD          |
-| IA	           | Mani Amani              | TBD              | --           |
+| TA             | Shivani Bhakta	         | TBD              | Fri 9:30-10:30 AM |
+| TA 	           | David Liau              | TBD              | Fri 2-3 PM   |
+| IA 	           | Qixuan "Harrison" Ma    | TBD              | --           |
+| IA	           | Mani Amani              | TBD              | Tue 12:30-1:30 PM |
 | IA	           | Frank Li                | TBD              | --           |
-| IA	           | TBD                     | TBD              | --           |
-| IA	           | TBD                     | TBD              | --           |
+| IA	           | Boning Yang             | TBD              | --           |
+| IA	           | Bob (Chongbin Zhang)    | TBD              | --           |
 | IA	           | Bora Mutluoglu          | TBD              | --           |
 | IA	           | Anuujin Tsedenbal       | TBD              | --           |
 | IA	           | Emma Yuan               | TBD              | --           |
 
+You may also see *Angela Cha* and *Geoff Lizar* answer questions on Piazza or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
 
 Course Website: https://cogs18.github.io   
 Canvas Course: https://canvas.ucsd.edu/courses/18771  
