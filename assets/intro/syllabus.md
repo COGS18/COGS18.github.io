@@ -29,16 +29,16 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
-| TA             | Shivani Bhakta	         | TBD              | Fri 9:30-10:30 AM |
-| TA 	           | David Liau              | TBD              | Fri 2-3 PM   |
-| IA 	           | Qixuan "Harrison" Ma    | TBD              | --           |
-| IA	           | Mani Amani              | TBD              | Tue 12:30-1:30 PM |
-| IA	           | Frank Li                | TBD              | --           |
-| IA	           | Boning Yang             | TBD              | --           |
-| IA	           | Bob (Chongbin Zhang)    | TBD              | --           |
-| IA	           | Bora Mutluoglu          | TBD              | --           |
-| IA	           | Anuujin Tsedenbal       | TBD              | --           |
-| IA	           | Emma Yuan               | TBD              | --           |
+| TA             | Shivani Bhakta	         | 12 PM; 1 PM      | Fri 9:30-10:30 AM |
+| TA 	           | David Liau              | 4 PM; 5PM        | Fri 2-3 PM   |
+| TA 	           | Qixuan "Harrison" Ma    | 11 AM            | --           |
+| IA	           | Mani Amani              | 3 PM             | Tue 12:30-1:30 PM |
+| IA	           | Frank Li                | --               | --           |
+| IA	           | Boning Yang             | --               | --           |
+| IA	           | Bob (Chongbin) Zhang    | 9 AM             | --           |
+| IA	           | Bora Mutluoglu          | 2 PM             | --           |
+| IA	           | Anuujin Tsedenbal       | --               | --           |
+| IA	           | Emma Yuan               | 10 AM            | --           |
 
 You may also see *Angela Cha* and *Geoff Lizar* answer questions on Piazza or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
 
