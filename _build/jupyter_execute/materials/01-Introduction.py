@@ -7,8 +7,6 @@
 **Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fall 2018, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
 
 
-The PDF slides from the start of the first class are available [here](assets/intro/01_welcome.pdf).
-
 ## Logistics
 
 - Who:
@@ -75,3 +73,9 @@ Uses in COGS18:
 - assignments
 - coding labs
 - exams
+
+To get the most up-to-date notes on datahub each day: 
+
+https://datahub.ucsd.edu/hub/user-redirect/git-sync?repo=https://github.com/COGS18/LectureNotes-Fa20
+
+^ This link is on the Canvas home page.

@@ -14,6 +14,8 @@
 - Fill out Course Survey: https://bit.ly/cogs18_survey_fa20
 
 
+<center><img src="img/calpirg.png" width="450px"></center>
+
 # Tooling
 
 This notebook will guide through the tools you will need for class materials and assignments, and how to get them. 
@@ -58,7 +60,7 @@ The official Python organization website is available <a href="https://www.pytho
 ## Python
 
 - Versions: there are different versions of Python.
-    - datahub uses 3.6
+    - datahub uses 3.7
 - Packages: Python includes a "base set" of code (the standard library), and an extensive ecosystem of third party packages
     - In this course, we will largely focus on the standard library
     - For access to other packages when we need them, we will use Anaconda
@@ -274,12 +276,6 @@ Lists are also possible:
 
 test it out down here to see...
 
-1. list item
-1. list item 
-1. list item
-
-\* <- escape character
-
 ### Code Cells
 
 Whenever you're writing code, you'll want to be sure the cell is set to be a code cell
@@ -307,12 +303,6 @@ c
 Write code that outputs the value '6'
 
 ## YOUR CODE HERE
-a = 12
-b = 1/2
-print(b)
-c = a * b
-
-c
 
 #### Clicker Question #4
 
