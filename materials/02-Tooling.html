@@ -27,6 +27,8 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -37,6 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Variables" href="03-Variables.html" />
     <link rel="prev" title="Introduction to Python" href="01-Introduction.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -84,6 +87,16 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
   </a>
  </li>
 </ul>
@@ -605,7 +618,7 @@ The main organizational structure of the notebook are 'cells'.
 <p>Cells, can be markdown (text), like this one.</p>
 <p>A brief note about Markdown. It’s a way to specify all formatting within the text itself.</p>
 <p>For example, italicized text can be specified with an <em>underscore</em> or <em>single asterisks</em>.</p>
-<p>Bold text requires <strong>two underccores</strong> or <strong>two asterisks</strong>.</p>
+<p>Bold text requires <strong>two underscores</strong> or <strong>two asterisks</strong>.</p>
 <div class="section" id="clicker-question-2">
 <h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">¶</a></h4>
 <p><strong>What does three underscores around text accomplish?</strong></p>
@@ -653,6 +666,10 @@ The main organizational structure of the notebook are 'cells'.
 <li><p>E) I’m lost</p></li>
 </ul>
 <p>test it out down here to see…</p>
+<ol class="simple">
+<li><p>list item</p></li>
+<li><p>list item 2</p></li>
+</ol>
 </div>
 </div>
 <div class="section" id="code-cells">
@@ -675,11 +692,33 @@ The main organizational structure of the notebook are 'cells'.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you execute a cell with just a variable name in it, it will also get printed</span>
 <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
 </pre></div>
 </div>
 </div>
@@ -822,6 +861,7 @@ D. What is this datahub you speak of?</p>
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="01-Introduction.html" title="previous page">Introduction to Python</a>
+    <a class='right-next' id="next-link" href="03-Variables.html" title="next page">Variables</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
