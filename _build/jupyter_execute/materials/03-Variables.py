@@ -37,10 +37,8 @@ my_var = 1  # `my_var` is a variable
 # This defines another variable
 other_var = 'variables are cool'
 
-
 # once you create a variable it's stored in your namespace
 other_var
-
 
 ## Code Variables != Math Variables
 
@@ -245,7 +243,7 @@ A general principle is to pick something and be consistent. In this course, I'll
 - use an escape `\` (backslash) before charater
 
 # double quotes on outside; single quote inside
-my_string = "i wan't to see a quote."
+my_string = "i won't not see a quote."
 my_string
 
 # backslash to "escape" quotation mark
@@ -279,6 +277,8 @@ After executing the following code, what will the type of `var_a` be?
 
 var_a = -17.5
 
+type(var_a)
+
 - A) String
 - B) Int
 - C) Float
@@ -290,6 +290,7 @@ var_a = -17.5
 After executing the following code, what will the type of `var_b` be?
 
 var_b = '-17.5'
+type(var_b)
 
 - A) String
 - B) Int
@@ -337,7 +338,7 @@ Now, the same value (1) is stored in both `a` (the original) and `b` (the alias)
 
 The variable types we've talked about today are all **immutable**. This means they cannot be altered after they're created. 
 
-immutable_string = 'COGS18 is the best!'
+immutable_string = 'COGS18 is the best!' 
 immutable_string[4]
 
 # cannot change part of the string after creation

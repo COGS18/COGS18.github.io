@@ -10,8 +10,8 @@
     title: 03-Variables
   - file: materials/04-Operators
     title: 04-Operators
-  # - file: materials/05-Conditionals
-  #   title: 05-Conditionals
+  - file: materials/05-Conditionals
+    title: 05-Conditionals
   # - file: materials/06-Collections
   #   title: 06-Collections
   # - file: materials/07-Loops

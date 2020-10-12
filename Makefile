@@ -51,3 +51,6 @@ home:
 	rm -rf _build/intro
 	cp -r landing content
 	python scripts/generate_book.py
+
+publish:
+	ghp-import -n -p -f ./_build/html

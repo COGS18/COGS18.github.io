@@ -1,3 +1,11 @@
+**Course Announcements**
+
+**Due Dates:**
+- A1 due Mon 10/12 (11:59)
+
+**Reminders:**
+- Fill out Course Survey: https://bit.ly/cogs18_survey_fa20
+
 # Operators
 
 - assignment
@@ -124,6 +132,10 @@ What value is stored in `math_out` from the code below?
 math_out = 32 / (1 + 3) ** 2 
 math_out
 
+12 / 5
+
+12 // 5
+
 - A) 2
 - B) 16
 - C) 64
@@ -185,7 +197,7 @@ False and print("Hi")
 True and print("Hi")
 
 # evaluates print statement before and
-print("Hi") and False
+print("Hi") and False 
 
 #### Clicker Question #6
 
@@ -246,10 +258,10 @@ Start with the code in the following cell. Replace `---` with operators or value
 - C) I'm unsure where to start
 
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 95
+shield_energy = 101
 
-(sword_charge ---) and (shield_energy ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 
 ## Understanding Boolean logic
 
@@ -283,10 +295,6 @@ bool('a')
 What would the following code cell return?
 
 '' and 'a'
-
-False and 'a'
-
-not True and 'a'
 
 - A) ''
 - B) 'a'
