@@ -12,8 +12,8 @@
     title: 04-Operators
   - file: materials/05-Conditionals
     title: 05-Conditionals
-  # - file: materials/06-Collections
-  #   title: 06-Collections
+  - file: materials/06-Collections
+    title: 06-Collections
   # - file: materials/07-Loops
   #   title: 07-Loops
   # - file: materials/08-Dictionaries

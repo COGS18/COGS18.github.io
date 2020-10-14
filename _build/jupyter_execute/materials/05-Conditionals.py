@@ -36,7 +36,8 @@ Replace `---` below with something that will print 'True'
 - C) I tried but am stuck.
 - D) I'm unsure where to start
 
-math = ---
+# use an expression that evaluates as True
+math = 13 <= 20
 
 if math:
     print('True')
@@ -63,7 +64,7 @@ Replace `---` below with something that will print 'False'.
 - C) I tried but am stuck.
 - D) I'm unsure where to start
 
-my_value = ---
+my_value = False
 
 if my_value:
     print('True')
@@ -119,7 +120,7 @@ elif condition_2:
 Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 </div>
 
-language = "s"
+language = "Python"
 
 if language == "Python" or language == "R":
     print("Yay!")

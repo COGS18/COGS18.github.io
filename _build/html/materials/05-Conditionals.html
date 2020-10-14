@@ -39,6 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Collections" href="06-Collections.html" />
     <link rel="prev" title="Operators" href="04-Operators.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,6 +102,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Collections.html">
+   06-Collections
   </a>
  </li>
 </ul>
@@ -383,7 +389,8 @@ Conditionals are statements that check for a condition, using the <code>if</code
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use an expression that evaluates as True</span>
+<span class="n">math</span> <span class="o">=</span> <span class="mi">13</span> <span class="o">&lt;=</span> <span class="mi">20</span>
 
 <span class="k">if</span> <span class="n">math</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
@@ -430,12 +437,17 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_value</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_value</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="k">if</span> <span class="n">my_value</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;False&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -502,7 +514,7 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-19-aedfc0cec5db&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-23-aedfc0cec5db&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
     <span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
        <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -518,7 +530,7 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
 Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;s&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
 
 <span class="k">if</span> <span class="n">language</span> <span class="o">==</span> <span class="s2">&quot;Python&quot;</span> <span class="ow">or</span> <span class="n">language</span> <span class="o">==</span> <span class="s2">&quot;R&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Yay!&quot;</span><span class="p">)</span>
@@ -530,7 +542,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hmmmmmmm
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Yay!
 </pre></div>
 </div>
 </div>
@@ -576,7 +588,7 @@ After Conditional
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Paul
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>George
 </pre></div>
 </div>
 </div>
@@ -600,11 +612,6 @@ After Conditional
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I broke Math&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I didn&#39;t do math&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I did Math
 </pre></div>
 </div>
 </div>
@@ -635,7 +642,7 @@ After Conditional
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Oh no.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I&#39;m here.
 </pre></div>
 </div>
 </div>
@@ -689,6 +696,7 @@ After Conditional
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="04-Operators.html" title="previous page">Operators</a>
+    <a class='right-next' id="next-link" href="06-Collections.html" title="next page">Collections</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
