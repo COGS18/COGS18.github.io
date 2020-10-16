@@ -35,7 +35,7 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 | IA	           | Mani Amani              | 3 PM             | Tue 12:30-1:30 PM |
 | IA	           | Frank Li                | --               | --           |
 | IA	           | Boning Yang             | --               | --           |
-| IA	           | Bob (Chongbin) Zhang    | 9 AM             | --           |
+| IA	           | Bob (Chongbin) Zhang    | 9 AM             | Sun 9-10 PM  |
 | IA	           | Bora Mutluoglu          | 2 PM             | --           |
 | IA	           | Anuujin Tsedenbal       | --               | --           |
 | IA	           | Emma Yuan               | 10 AM            | --           |

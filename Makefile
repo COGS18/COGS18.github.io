@@ -32,8 +32,12 @@ textbook:
 
 
 	# Copy & build coding labs
-	# git clone --depth 1 https://github.com/COGS18/CodingLabs/answers labs
-
+	git clone --depth 1 https://github.com/COGS18/CodingLabs labs
+	rm -rf labs/README.md
+	rm -rf labs/source/
+	rm -rf labs/source_Su20
+	mv labs/answers/* labs	
+	rm -r labs/answers
 
 	# Copy & build project info
 	# git clone --depth 1 https://github.com/COGS18/projects projects
@@ -42,6 +46,7 @@ textbook:
 	jupyter-book build ./
 
 	rm -rf labs
+
 	rm -rf materials
 	rm -rf projects
 

@@ -10,6 +10,9 @@
     - We start grading Friday
     - Post grades on Canvas; Release Feedback on datahub
     - Piazza post announcing grades available (72h for regrades)
+- Posting for help:
+    - Piazza! 
+    - Private post if code included
 
 **Survey Summary**
 
@@ -26,7 +29,6 @@
 
 %%writefile new_file.py
 # You can ignore the line above - it is used to help check your code
-
 a = 3
 print(status)
 
@@ -96,6 +98,7 @@ print(my_lst[2:4])
 # can determine type in list
 type(my_lst[2])
 
+# can combine forward and negative; equivalent to above
 my_lst[2:-1]
 
 # indexing to end of list
@@ -153,6 +156,7 @@ q2_lst[2:0:-1]
 What would be the appropriate line of code to return `['butter', '&', 'jelly']`?
 
 q3_lst = ['peanut', 'butter', '&','jelly']
+q3_lst[-3:]
 
 - A) `q3_lst[2:4]`
 - B) `q3_lst[1:3]`

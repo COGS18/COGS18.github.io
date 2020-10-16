@@ -14,8 +14,8 @@
     title: 05-Conditionals
   - file: materials/06-Collections
     title: 06-Collections
-  # - file: materials/07-Loops
-  #   title: 07-Loops
+  - file: materials/07-Loops
+    title: 07-Loops
   # - file: materials/08-Dictionaries
   #   title: 08-Dictionaries
   # - file: materials/09-FunctionsI
@@ -52,13 +52,11 @@
   #   title: 24-WrapUp
 
 
-# - part: Coding Labs (Answers)
-#   chapters:
-#   - file: labs/CL1-Tooling
-#     title: CL1-Tooling
-#   - file: labs/CL2-ProgrammingI
-#     title: CL2-ProgrammingI
-#   - file: labs/CL3-ProgrammingII
+- part: Coding Labs
+  chapters:
+  - file: labs/CL2-Answers
+    title: CL2-Answers
+  # - file: labs/CL3-ProgrammingII
 #     title: CL3-ProgrammingII
 #   - file: labs/CL4-Functions
 #     title: CL4-Functions

@@ -386,6 +386,8 @@ Using the variables provded below and identity operators replace `---` with code
 - B) I tried but am stuck.
 - C) I'm unsure where to start
 
+print(id(c), id(d))
+
 z = 5
 x = '5'
 c = 'Hello'
@@ -394,8 +396,8 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = c is d
+false_variable = z is x
 
 print(true_variable, false_variable)
 
