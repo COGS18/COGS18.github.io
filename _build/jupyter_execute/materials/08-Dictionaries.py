@@ -232,12 +232,6 @@ Write the code that would create a dictionary `car` that stores values about you
 - D) No clue where to start...
 
 # YOUR CODE HERE
-car = {'make': 'Hyundai' ,
-      'model': 'Sante Fe',
-      'year': 2017}
-
-# print(car)
-car
 
 ### Dictionaries are mutable
 

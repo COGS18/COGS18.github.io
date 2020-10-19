@@ -216,6 +216,8 @@ for temp in temperatures:
 for ind in [0, 1, 2, 3, 4]:
     print(ind)
 
+print(range(0,5))
+
 # the asterisk here unpacks the range
 # don't worry about this syntax now
 print(*range(0, 5))
@@ -340,6 +342,7 @@ for course in courses:
         break
   
     print(course)
+    print(course + '!')
 
 string = "love python"
 
@@ -427,7 +430,18 @@ print(counter)
 
 Write a loop that adds all the *odd* numbers between 1 and 1000 together.
 
-# YOUR CODE HERE
+# one possible approach
+out_sum = 0
+for val in range(1, 1000, 2):
+    out_sum = out_sum + val
+print(out_sum)
+
+# another possible approach
+odds = 0
+for val in range(1,1000):
+    if val % 2 !=0:
+        odds = odds + val
+print(odds)
 
 - A) I did it!
 - B) I think I did it.
@@ -440,7 +454,16 @@ Store your name as a string in a variable called `my_name`.
 
 Write a loop that will loop through all the letters in `my_name` and count all the vowels in your name.
 
-# YOUR CODE HERE
+# your name would differ
+my_name = 'Shannon'
+vowels = 'AEIOUaeiou'
+vowel_count = 0
+
+for letter in my_name:
+    if letter not in vowels:
+        vowel_count = vowel_count +1
+
+print(vowel_count)
 
 - A) I did it!
 - B) I think I did it.
