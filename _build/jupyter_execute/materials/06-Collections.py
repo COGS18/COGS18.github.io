@@ -263,7 +263,9 @@ print(updates)
 What would the following code accommplish?
 
 lst_update = [1, 2, 3, 0, 5]
-lst_update[3] = 4 
+lst_update[3] = 4  
+
+lst_update
 
 - A) replace 0 with 4 in `lst_update`
 - B) replace 4 with 0 in `lst_update`
@@ -377,8 +379,9 @@ After executing the following code, what will the second value stored in `second
 
 # Make a variable & an alias
 # change value of original variable
-my_tuple = (1, 2, 3, 4)
+my_tuple = (1, 2, 3, 4) 
 second_tuple = my_tuple
+print(second_tuple)
 my_tuple[1] = 29 
 
 - A) 1
