@@ -50,7 +50,10 @@
   #   title: 23-AdvancedPython
   # - file: materials/24-WrapUp
   #   title: 24-WrapUp
-
+  - file: materials/A1-Syntax
+    title: A1-Syntax
+  - file: materials/A2-Examples
+    title: A2-Examples
 
 - part: Coding Labs
   chapters:
@@ -68,15 +71,15 @@
 #     title: CL7-CommandLine 
 
 
-# - part: Exam Prep
-#   chapters:
-#   # E1  
-#    - file: materials/Exam-Prep/E1-Practice
-#     title: E1-Practice
-#   - file: materials/Exam-Prep/E1-Review
-#     title: E1-Review
-#   - file: materials/Exam-Prep/E1-Review-Answers
-#     title: E1-Review-Answers
+- part: Exam Prep
+  chapters:
+  # E1  
+  - file: materials/Exam-Prep/E1-Practice
+    title: E1-Practice
+  - file: materials/Exam-Prep/E1-Review
+    title: E1-Review
+  - file: materials/Exam-Prep/E1-Review-Answers
+    title: E1-Review-Answers
 #   - file: materials/Exam-Prep/E1-PracticeExam-Answers
 #     title: E1-PracticeExam-Answers
 #   # E2
@@ -88,10 +91,7 @@
 #     title: E2-Review-Answers
 #   - file: materials/Exam-Prep/E2-PracticeExam-Answers
 #     title: E2-PracticePracticeExam-Answers    
-#   - file: materials/A1-Syntax
-#     title: A1-Syntax
-#   - file: materials/A2-Examples
-#     title: A2-Syntax
+
 
 # - part: Project
 #   chapters:
