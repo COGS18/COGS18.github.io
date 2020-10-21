@@ -171,16 +171,19 @@ For example, `name_consonants` for 'Shannon' would return:
 Note that if you have no consonants in your name, this code would still run, but would return an empty dictionary.
 
 # code/output will differ based on who is taking the exam
-name_dict = {}
-
+# note that we didn't take off points if the first letter was or was not capitalized when grading
+name_consonants = {}
+vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+            
 for char in my_name:
-    if char not in name_dict:
-        name_dict[char] = 1
-    else:
-        name_dict[char] += 1
+    if char not in vowels:
+        if char not in name_consonants:
+            name_consonants[char] = 1
+        else:
+            name_consonants[char] += 1
 
 # check my work (optional)
-print(name_dict)
+name_consonants
 
 assert isinstance(name_consonants, dict)
 
@@ -196,18 +199,13 @@ Write code that will loop through the `name_consonants` dictionary created in th
 Be sure your answer refers back to `name_consonants` defined in the previous question
 
 # output will differ based on who is taking the exam
-name_vowels = {}
+consonant_count = 0
 
-for char in my_name:
-    if char in ['a', 'e', 'i', 'o', 'u', 
-                'A', 'E', 'I', 'O', 'U']:
-        if char not in name_vowels:
-            name_vowels[char] = 1
-        else:
-            name_vowels[char] += 1
+for key in name_consonants:
+    consonant_count += name_consonants[key]
 
 # check my work (optional)          
-print(name_vowels)
+print(consonant_count)
 
 assert consonant_count is not None
 
