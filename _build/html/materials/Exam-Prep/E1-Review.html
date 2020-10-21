@@ -163,6 +163,11 @@
    E1-Review-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1_Fa20_Practice-Answers.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -403,13 +408,20 @@
   <p><strong>Course Announcements</strong></p>
 <ul class="simple">
 <li><p><strong>Coding Lab</strong> due tonight (11:59 PM)</p></li>
+<li><p><strong>A2</strong> <em>really</em> due Thursday (11:59 PM)</p></li>
 <li><p><strong>Exam I</strong> Friday</p>
 <ul>
 <li><p>Fetch, complete and submit on Datahub</p></li>
-<li><p><em>No office hours this Friday</em></p></li>
+<li><p><em>No lecture or office hours this Friday</em></p></li>
 </ul>
 </li>
 <li><p><strong>A3</strong> not due until Mon 11/2</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>CL2 scores posted on Canvas</p></li>
+<li><p>A1 feedback (w/ score) now available on datahub (Canvas scores coming shortly; Avg: 7.57/8)</p></li>
+<li><p>Zoom Link for Thursday 4PM internship chat w/ Weilun is on Canvas Homepage (at bottom of table)</p></li>
 </ul>
 <div class="section" id="exam-1-review">
 <h1>Exam 1 Review<a class="headerlink" href="#exam-1-review" title="Permalink to this headline">¶</a></h1>
@@ -486,6 +498,34 @@
 </ol>
 <p>There are also a few Exam #1 Practice Problems <a class="reference external" href="https://cogs18.github.io/exams/Exam1-Practice">here</a>.</p>
 <p>And, there is a practice Exam on datahub.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># review of slices (related concept: indexing)</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">))</span>
+
+<span class="c1"># indexing</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># slicing - portion of the larger collection [start:stop:step]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># every other value starting at 1; stop &amp; not include 20</span>
+<span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+b
+[&#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
+[&#39;b&#39;, &#39;d&#39;]
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="topics-example-questions">

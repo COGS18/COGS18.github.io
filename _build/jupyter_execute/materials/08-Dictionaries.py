@@ -235,6 +235,10 @@ Write the code that would create a dictionary `car` that stores values about you
 - E) No clue where to start...
 
 # YOUR CODE HERE
+car = {'make': 'Hyundai',
+      'model': 'Santa Fe',
+      'year': 2017}
+print(car)
 
 ### Dictionaries are mutable
 
@@ -342,3 +346,18 @@ print(my_sentence)
 # Use character encodings to use symbols we want - example 2
 my_sentence = 'yo hablo ingl' + character_encodings[1] + 's'
 print(my_sentence)
+
+# A2 specifics
+print(ord('a'))
+
+print(chr(97))
+
+print(ord('a') + 6)
+
+chr(103)
+
+encoded = ''
+
+encoded = encoded + chr(ord('a') + 6)
+
+encoded

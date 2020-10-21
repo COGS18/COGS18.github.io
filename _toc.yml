@@ -80,8 +80,8 @@
     title: E1-Review
   - file: materials/Exam-Prep/E1-Review-Answers
     title: E1-Review-Answers
-#   - file: materials/Exam-Prep/E1-PracticeExam-Answers
-#     title: E1-PracticeExam-Answers
+  - file: materials/Exam-Prep/E1_Fa20_Practice-Answers
+    title: E1-PracticeExam-Answers
 #   # E2
 #   - file: materials/Exam-Prep/E2-Practice
 #     title: E2-Practice

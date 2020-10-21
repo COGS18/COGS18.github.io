@@ -1,9 +1,16 @@
 **Course Announcements**
+
 - **Coding Lab** due tonight (11:59 PM)
+- **A2** *really* due Thursday (11:59 PM)
 - **Exam I** Friday
     - Fetch, complete and submit on Datahub
-    - *No office hours this Friday*
+    - *No lecture or office hours this Friday*
 - **A3** not due until Mon 11/2
+
+Notes:
+- CL2 scores posted on Canvas
+- A1 feedback (w/ score) now available on datahub (Canvas scores coming shortly; Avg: 7.57/8)
+- Zoom Link for Thursday 4PM internship chat w/ Weilun is on Canvas Homepage (at bottom of table)
 
 # Exam 1 Review
 
@@ -55,6 +62,21 @@ There are two extra notebooks that you can use for review:
 There are also a few Exam #1 Practice Problems [here](https://cogs18.github.io/exams/Exam1-Practice).
 
 And, there is a practice Exam on datahub.
+
+# review of slices (related concept: indexing)
+
+my_list = ['a', 'b', 'c', 'd', 'e']
+print(len(my_list))
+
+# indexing
+print(my_list[1])
+
+# slicing - portion of the larger collection [start:stop:step]
+print(my_list[1:4])
+print(my_list[1:4:2])
+
+# every other value starting at 1; stop & not include 20
+range(1,20,2)
 
 ## Topics & Example Questions
 

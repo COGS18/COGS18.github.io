@@ -163,6 +163,11 @@
    E1-Review-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Fa20_Practice-Answers.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -783,6 +788,14 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Betty Jennings&#39;: &#39;bjennings@eniac.org&#39;,
+ &#39;Ada Lovelace&#39;: &#39;ada@analyticengine.com&#39;,
+ &#39;Alan Turing&#39;: &#39;aturing@thebomb.gov&#39;,
+ &#39;Grace Hopper&#39;: &#39;ghopper@navy.usa&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -796,6 +809,11 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: False, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -805,6 +823,11 @@ Loop Iteration
 <span class="p">}</span>
 
 <span class="n">mixed_types</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{True: [1, 2, 3], False: None}
 </pre></div>
 </div>
 </div>
@@ -822,6 +845,15 @@ Loop Iteration
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">car</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;make&#39;</span><span class="p">:</span> <span class="s1">&#39;Hyundai&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">2017</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;make&#39;: &#39;Hyundai&#39;, &#39;model&#39;: &#39;Santa Fe&#39;, &#39;year&#39;: 2017}
 </pre></div>
 </div>
 </div>
@@ -838,6 +870,11 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: False, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -847,12 +884,25 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <p>Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using <code class="docutils literal notranslate"><span class="pre">del</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">completed_coding_lab</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">completed_coding_lab</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -867,6 +917,14 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="dictionaries-and-operators">
@@ -877,6 +935,11 @@ Loop Iteration
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="s1">&#39;A1234&#39;</span> <span class="ow">in</span> <span class="n">completed_coding_lab</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Yes, that student is in this class&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Yes, that student is in this class
 </pre></div>
 </div>
 </div>
@@ -927,6 +990,11 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 91}
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p><strong>keys</strong> must be of an immutable type (string, tuple, integer, float, etc)</p></li>
@@ -940,6 +1008,18 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">35</span><span class="o">-</span><span class="mi">27</span><span class="n">b11708f095</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># lists are not allowed as key types</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code will produce an error</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="p">{[</span><span class="s1">&#39;Student&#39;</span><span class="p">]</span> <span class="p">:</span> <span class="mi">97</span><span class="p">}</span>
+
+<span class="ne">TypeError</span>: unhashable type: &#39;list&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>Dictionary keys are case sensitive.</p></li>
@@ -947,6 +1027,11 @@ Loop Iteration
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Student&#39;</span> <span class="p">:</span> <span class="mi">97</span><span class="p">,</span> <span class="s1">&#39;student&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;STUDENT&#39;</span> <span class="p">:</span> <span class="mi">91</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 97, &#39;student&#39;: 88, &#39;STUDENT&#39;: 91}
 </pre></div>
 </div>
 </div>
@@ -962,6 +1047,19 @@ Loop Iteration
     <span class="s1">&#39;Ada Lovelace&#39;</span> <span class="p">:</span> <span class="s1">&#39;aturing@thebomb.gov&#39;</span><span class="p">,</span>
     <span class="p">[</span><span class="s1">&#39;Grace Hopper&#39;</span><span class="p">]</span> <span class="p">:</span> <span class="s1">&#39;ghopper@navy.usa&#39;</span>
 <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">40</span><span class="o">-</span><span class="n">d0c1eab64f25</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="s1">&#39;Ada Lovelace&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ada@analyticengine.com&#39;</span><span class="p">],</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="s1">&#39;Ada Lovelace&#39;</span> <span class="p">:</span> <span class="s1">&#39;aturing@thebomb.gov&#39;</span><span class="p">,</span>
+<span class="ne">----&gt; </span><span class="mi">5</span>     <span class="p">[</span><span class="s1">&#39;Grace Hopper&#39;</span><span class="p">]</span> <span class="p">:</span> <span class="s1">&#39;ghopper@navy.usa&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="p">}</span>
+
+<span class="ne">TypeError</span>: unhashable type: &#39;list&#39;
 </pre></div>
 </div>
 </div>
@@ -997,12 +1095,83 @@ Loop Iteration
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>no hablo español
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use character encodings to use symbols we want - example 2</span>
 <span class="n">my_sentence</span> <span class="o">=</span> <span class="s1">&#39;yo hablo ingl&#39;</span> <span class="o">+</span> <span class="n">character_encodings</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;s&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>yo hablo inglés
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A2 specifics</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">97</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>97
+a
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>103
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">chr</span><span class="p">(</span><span class="mi">103</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;g&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">encoded</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="n">encoded</span> <span class="o">=</span> <span class="n">encoded</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">encoded</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;g&#39;
 </pre></div>
 </div>
 </div>
