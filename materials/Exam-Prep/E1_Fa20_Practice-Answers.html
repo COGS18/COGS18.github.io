@@ -637,21 +637,24 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># code/output will differ based on who is taking the exam</span>
-<span class="n">name_dict</span> <span class="o">=</span> <span class="p">{}</span>
-
+<span class="c1"># note that we didn&#39;t take off points if the first letter was or was not capitalized when grading</span>
+<span class="n">name_consonants</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">]</span>
+            
 <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">name_dict</span><span class="p">:</span>
-        <span class="n">name_dict</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">name_dict</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">name_consonants</span><span class="p">:</span>
+            <span class="n">name_consonants</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">name_consonants</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="c1"># check my work (optional)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name_dict</span><span class="p">)</span>
+<span class="n">name_consonants</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;S&#39;: 1, &#39;h&#39;: 1, &#39;a&#39;: 1, &#39;n&#39;: 3, &#39;o&#39;: 1}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;S&#39;: 1, &#39;h&#39;: 1, &#39;n&#39;: 3}
 </pre></div>
 </div>
 </div>
@@ -672,23 +675,18 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># output will differ based on who is taking the exam</span>
-<span class="n">name_vowels</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">consonant_count</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> 
-                <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">name_vowels</span><span class="p">:</span>
-            <span class="n">name_vowels</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">name_vowels</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">name_consonants</span><span class="p">:</span>
+    <span class="n">consonant_count</span> <span class="o">+=</span> <span class="n">name_consonants</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
 
 <span class="c1"># check my work (optional)          </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name_vowels</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">consonant_count</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;a&#39;: 1, &#39;o&#39;: 1}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
