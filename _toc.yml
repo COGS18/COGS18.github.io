@@ -59,16 +59,16 @@
   chapters:
   - file: labs/CL2-Answers
     title: CL2-Answers
-  # - file: labs/CL3-ProgrammingII
-#     title: CL3-ProgrammingII
-#   - file: labs/CL4-Functions
-#     title: CL4-Functions
-#   - file: labs/CL5-Debugging
-#     title: CL5-Debugging
-#   - file: labs/CL6-Classes
-#     title: CL6-Classes
-#   - file: labs/CL7-CommandLine
-#     title: CL7-CommandLine 
+  - file: labs/CL3-Answers
+    title: CL3-Answers
+#   - file: labs/CL4-Answers
+#     title: CL4-Answers
+#   - file: labs/CL5-Answers
+#     title: CL5-Answers
+#   - file: labs/CL6-Answers
+#     title: CL6-Answers
+#   - file: labs/CL7-Answers
+#     title: CL7-Answers
 
 
 - part: Exam Prep

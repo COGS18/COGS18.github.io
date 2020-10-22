@@ -37,7 +37,7 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 | IA	           | Boning Yang             | --               | --           |
 | IA	           | Bob (Chongbin) Zhang    | 9 AM             | Sun 9-10 PM  |
 | IA	           | Bora Mutluoglu          | 2 PM             | --           |
-| IA	           | Anuujin Tsedenbal       | --               | --           |
+| IA	           | Anuujin Tsedenbal       | --               | Thurs 9-10 PM|
 | IA	           | Emma Yuan               | 10 AM            | --           |
 
 You may also see *Angela Cha* and *Geoff Lizar* answer questions on Piazza or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
