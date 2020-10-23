@@ -1,0 +1,859 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CL5: Debugging &#8212; COGS 18 - Introduction To Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Lecture Materials
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/06-Collections.html">
+   06-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/07-Loops.html">
+   07-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/08-Dictionaries.html">
+   08-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL2-Answers.html">
+   CL2-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL3-Answers.html">
+   CL3-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1_Fa20_Practice-Answers.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/labs/CL5-Answers.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Flabs/CL5-Answers.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/labs/CL5-Answers.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/labs/CL5-Answers.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/labs/CL5-Answers.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-i-more-functions">
+   Part I: (More) Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reverse-a-string-function">
+     Reverse a string Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#palindrome-function">
+     Palindrome Function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-ii-debugging-questions">
+   Part II: Debugging Questions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-errors">
+     Creating Errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fixing-errors">
+     Fixing Errors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-iii-debugging-challenges">
+   Part III: Debugging Challenges
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#debugging-a-function">
+     Debugging A Function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exploring-code">
+   Exploring Code
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cl5-debugging">
+<h1>CL5: Debugging<a class="headerlink" href="#cl5-debugging" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the fourth coding lab!</p>
+<p>In this CodingLab we will be thinking and working on debugging &amp; objects.</p>
+<p>We will also start thinking about exploring all of the Python resources and tools that are available, with an eye towards starting to think about the projects.</p>
+<p>ANSWERS: There may be many valid answers to the questions in this coding lab, so it’s fine if your answers differ to those provided here, if they have the right output.</p>
+<div class="section" id="part-i-more-functions">
+<h2>Part I: (More) Functions<a class="headerlink" href="#part-i-more-functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="reverse-a-string-function">
+<h3>Reverse a string Function<a class="headerlink" href="#reverse-a-string-function" title="Permalink to this headline">¶</a></h3>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">reverse_string</span></code> that will take a string as an input and <code class="docutils literal notranslate"><span class="pre">return</span></code> the reverse of that string as its output. (For example, if the input were ‘apple’ the function woudl return ‘elppa’</p>
+<p>Note that there are multiple ways in which to approach this. One possible approach would use the logic laid out in this pseudocode:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># define function with input</span>
+    
+    <span class="c1"># generate empty string</span>
+    <span class="c1"># start counter at the length of the input string</span>
+    
+    <span class="c1"># while the counter is more than zero</span>
+        <span class="c1"># add the letter at index into the input string starting at end of input string to growing string</span>
+        <span class="c1"># decrease counter by 1</span>
+    
+    <span class="c1"># return string </span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">reverse_string</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    
+    <span class="n">rev</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span> 
+    
+    <span class="k">while</span> <span class="n">counter</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> 
+        <span class="n">rev</span> <span class="o">=</span> <span class="n">rev</span> <span class="o">+</span> <span class="n">input_string</span><span class="p">[</span><span class="n">counter</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">-</span> <span class="mi">1</span>
+    
+    <span class="k">return</span> <span class="n">rev</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">reverse_string</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;elppa&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="palindrome-function">
+<h3>Palindrome Function<a class="headerlink" href="#palindrome-function" title="Permalink to this headline">¶</a></h3>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">check_palindrome</span></code> that takes a string as an input and within that function determines whether the input string is a palindrome or not (a word or phrase that is read the same forward as it is backward - i.e. kayak, dad, etc.).</p>
+<p>If it is a palindrome, <code class="docutils literal notranslate"><span class="pre">return</span></code> ‘Hey! That’s a palindrome!’</p>
+<p>If it is not a palindrome, <code class="docutils literal notranslate"><span class="pre">return</span></code> ‘Bummer. Not a palindrome.’</p>
+<p>Remember that you created a function that can reverse a string above.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_palindrome</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="n">rev</span> <span class="o">=</span> <span class="n">reverse_string</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">rev</span> <span class="o">==</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;Hey! That&#39;s a palindrome!&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;Bummer. Not a palindrome.&quot;</span>
+    
+    <span class="k">return</span> <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">check_palindrome</span><span class="p">(</span><span class="s1">&#39;kayak&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Hey! That&#39;s a palindrome!&quot;</span>
+<span class="k">assert</span> <span class="n">check_palindrome</span><span class="p">(</span><span class="s1">&#39;blargh&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Bummer. Not a palindrome.&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-ii-debugging-questions">
+<h2>Part II: Debugging Questions<a class="headerlink" href="#part-ii-debugging-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-errors">
+<h3>Creating Errors<a class="headerlink" href="#creating-errors" title="Permalink to this headline">¶</a></h3>
+<p>For each of the follow Exceptions, write a small piece of code that will cause it to happen:</p>
+<ul class="simple">
+<li><p>ZeroDivisionError</p></li>
+<li><p>SyntaxError</p></li>
+<li><p>IndentationError</p></li>
+<li><p>TypeError</p></li>
+<li><p>IndexError</p></li>
+<li><p>KeyError</p></li>
+<li><p>ValueError</p></li>
+<li><p>NameError</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Zero Division Answer</span>
+<span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-3-bb3d282f11da&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Zero Division Answer</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Syntax Answer</span>
+<span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-4-625533441b23&gt;&quot;</span><span class="gt">, line </span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+                    <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Indentation Error</span>
+<span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-5-6369af162a3e&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+        <span class="o">^</span>
+<span class="ne">IndentationError</span>: expected an indented block
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Type error</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-11-9343b3b5f280&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: can only concatenate tuple (not &quot;int&quot;) to tuple
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Index Error</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-6-30dc726de1d4&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="ne">IndexError</span>: list index out of range
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Key Error</span>
+<span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+<span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-8-295af53e266f&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+
+<span class="ne">KeyError</span>: &#39;c&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Value Error</span>
+<span class="nb">int</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-13-b67a141da135&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Value Error</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: invalid literal for int() with base 10: &#39;a&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Name Error</span>
+<span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-14-9c0d71849fd4&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">a</span>
+
+<span class="ne">NameError</span>: name &#39;a&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fixing-errors">
+<h3>Fixing Errors<a class="headerlink" href="#fixing-errors" title="Permalink to this headline">¶</a></h3>
+<p>For each of the following cells, try to debug the code to fix any errors, and get it running.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It worked&#39;</span><span class="p">)</span>
+<span class="c1"># Answer: add a &#39;:&#39; to open the conditional code block</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-122-109b4889dbec&gt;&quot;</span><span class="gt">, line </span><span class="mi">1</span>
+    <span class="k">if</span> <span class="kc">True</span>
+           <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age_string</span> <span class="o">=</span> <span class="s2">&quot;My favourite number is &quot;</span> <span class="o">+</span> <span class="mi">27</span>
+<span class="c1"># Answer: typecase int to string, `+ str(27)`</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-121-4fb094c5d994&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">age_string</span> <span class="o">=</span> <span class="s2">&quot;My favourite number is &quot;</span> <span class="o">+</span> <span class="mi">27</span>
+
+<span class="ne">TypeError</span>: must be str, not int
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+<span class="c1"># Answer: assuming `a` was supposed to be a string, update to &#39;a&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">fe84cb26012f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+
+<span class="ne">NameError</span>: name &#39;a&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1st&#39;</span><span class="p">,</span> <span class="s1">&#39;2nd&#39;</span><span class="p">,</span> <span class="s1">&#39;3rd&#39;</span><span class="p">,</span> <span class="s1">&#39;4th&#39;</span><span class="p">,</span> <span class="s1">&#39;5th&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Printing the 3rd element of my list &#39;</span> <span class="o">+</span> <span class="n">my_list2</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># Answer: wrong syntax to index, replace with &#39;[]&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">b7acbbea7bc3</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">my_list2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1st&#39;</span><span class="p">,</span> <span class="s1">&#39;2nd&#39;</span><span class="p">,</span> <span class="s1">&#39;3rd&#39;</span><span class="p">,</span> <span class="s1">&#39;4th&#39;</span><span class="p">,</span> <span class="s1">&#39;5th&#39;</span><span class="p">]</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Printing the 3rd element of my list &#39;</span> <span class="o">+</span> <span class="n">my_list2</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="ne">TypeError</span>: &#39;list&#39; object is not callable
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Three plus five equals&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1"># Answer: Missing closing parenthesis - add &#39;)&#39; at the end</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-82866694322c&gt;&quot;</span><span class="gt">, line </span><span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Three plus five equals&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span>
+                                             <span class="o">^</span>
+<span class="ne">SyntaxError</span>: unexpected EOF while parsing
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-iii-debugging-challenges">
+<h2>Part III: Debugging Challenges<a class="headerlink" href="#part-iii-debugging-challenges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="debugging-a-function">
+<h3>Debugging A Function<a class="headerlink" href="#debugging-a-function" title="Permalink to this headline">¶</a></h3>
+<p>The following function has a series of issues with it.</p>
+<p>Work through debugging this function, fixing it up to be able to run with all the inputs below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">input_1</span><span class="p">,</span> <span class="n">input_2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A long function that might error.&quot;&quot;&quot;</span>
+    
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">input_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="n">input_2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">input_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_2</span><span class="p">):</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="n">input_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">input_2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-2-103c9b89a124&gt;&quot;</span><span class="gt">, line </span><span class="mi">4</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span>
+                       <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ANSWER: Fixed version</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">input_1</span><span class="p">,</span> <span class="n">input_2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A long function that might error.&quot;&quot;&quot;</span>
+    
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">input_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">answer</span> <span class="o">=</span> <span class="n">input_2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">input_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+            <span class="n">answer</span> <span class="o">=</span> <span class="kc">None</span>
+        
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_2</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">answer</span> <span class="o">=</span> <span class="n">input_1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">input_2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="n">answer</span> <span class="o">=</span> <span class="kc">None</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_function</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_function</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_function</span><span class="p">([</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_function</span><span class="p">([</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exploring-code">
+<h2>Exploring Code<a class="headerlink" href="#exploring-code" title="Permalink to this headline">¶</a></h2>
+<p>One of the great things about Python is how many tools, utilities and examples there are out there.</p>
+<p>Let’s start exploring what is available. GitHub is a website that people use to save and present code, below we have some notebooks that are hosted on GitHub showing the projects that they have made. Take time to look at one of the notebooks below that intrests you and read the explination as well as getting an understanding of what is being performed in each of the code cells.</p>
+<ul class="simple">
+<li><p>https://anaconda.org/jbednar/census/notebook - Demographic data plotted out on maps of the US, showing differences in racial segregation/integration in different cities.</p></li>
+<li><p>https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#linguistics-and-text-mining - Mining text to learn trends in bodies of text.</p></li>
+<li><p>https://anaconda.org/jbednar/nyc_taxi/notebook - NYC taxi data plotted out on cities of NYC</p></li>
+<li><p>https://www.fullstackpython.com/ - for advanced python user, next level guideline</p></li>
+</ul>
+<div class="alert alert-info">
+Go and explore <a href="https://github.com">GitHub</a>, and search for some Python projects. And/or check out this list of interesting <a href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">Jupyter Notebooks</a>. 
+</div></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./labs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>
