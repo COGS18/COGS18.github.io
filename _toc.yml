@@ -18,8 +18,8 @@
     title: 07-Loops
   - file: materials/08-Dictionaries
     title: 08-Dictionaries
-  # - file: materials/09-FunctionsI
-  #   title: 09-FunctionsI
+  - file: materials/09-FunctionsI
+    title: 09-FunctionsI
   # - file: materials/10-Algorithms
   #   title: 10-Algorithms
   # - file: materials/11-FunctionsII
