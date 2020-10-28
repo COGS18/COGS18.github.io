@@ -1,8 +1,8 @@
 **Course Announcements**
 
 **Due Dates:**
-- CL3 due Wed 10/28
-- A3 now available (due Mon 11/2)
+- **CL4\*** due Wed 10/28 
+- **A3** now available (due Mon 11/2)
 
 **Notes:**
 - CL3 grades availalble on Canvas
@@ -66,6 +66,10 @@ def double_value(num):
     # return output from function
     return doubled    
 
+# num does not exist outside function
+# functions have their own namespace
+num
+
 # excecute a function by calling function by name
 # adding input within parentheses
 double_value(num = 6) 
@@ -86,10 +90,18 @@ def add_two_numbers(num1, num2):
     # Return the answer
     return answer
 
+# variables created/defined within function
+# do not exist outside funciton
+answer
+
+# inputs could be strings
+# b/c operations still work on string type values
+add_two_numbers('good', 'morning')
+
 add_two_numbers(1, 2)
 
 # Execute our function again, on some other inputs
-output = add_two_numbers(-1, 4)
+output = add_two_numbers(3, 4)
 print(output)
 
 ## Function Example III
@@ -98,17 +110,34 @@ We aren't limited to a single operation within a function. We can use multiple o
 
 # determine if a value is even or odd
 def even_odd(value): 
-    if (value % 2 == 0): 
+    if value % 2 == 0: 
         out = "even"
     else: 
         out = "odd"
         
     return out
 
+# how to loop over a list within a function
+def even_odd_list(my_list):
+    out_list = []
+    
+    for val in my_list:
+        if val % 2 == 0: 
+            out_list.append("even")
+        else: 
+            out_list.append("odd")
+        
+    return out_list
+
+list_to_use = [1, 2, 5, 6]
+even_odd_list(list_to_use)
+
 # Execute our function
 # note that it's only printing the output
-even_odd(-1)
+out_1 = even_odd(-1)
+out_1 = even_odd(4)
 
+print(out_1)
 
 With functions, the logic behind our code no longer requires it to be executed from top to bottom of the notebook.
 
@@ -140,8 +169,16 @@ def remainder(number, divider):
     
     return r, w
 
+val_1, val_2 = remainder(12, 5)
+print(val_1)
+print(val_2)
+
+val_1 + val_2
+
 Given the function above, what will the code below print out?
 
+# prof ellis forgot to have function only return r above
+# no answers here correct
 ans_1 = remainder(12, 5)
 ans_2 = remainder(2, 2)
 
@@ -162,7 +199,13 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 - C) I tried but am stuck.
 - D) Super duper lost
 
+out_string = greet(name = 'COGS18 Students')
+print(out_string)
+
 ## YOUR CODE HERE
+def greet(name):
+    output = 'Hello ' + name + ' Good morning!'
+    return output
 
 ## Function Namespace I
 
@@ -173,6 +216,10 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 
 # Return a dictionary containing the current scope's local variables.
 # locals?
+
+locals()
+
+range?
 
 def check_function_namespace(function_input):
     # Check what is defined and available inside the function

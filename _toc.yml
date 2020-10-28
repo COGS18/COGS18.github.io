@@ -20,8 +20,8 @@
     title: 08-Dictionaries
   - file: materials/09-FunctionsI
     title: 09-FunctionsI
-  # - file: materials/10-Algorithms
-  #   title: 10-Algorithms
+  - file: materials/10-Algorithms
+    title: 10-Algorithms
   # - file: materials/11-FunctionsII
   #   title: 11-FunctionsII
   # - file: materials/12-Debugging
