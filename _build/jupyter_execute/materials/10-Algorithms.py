@@ -83,6 +83,8 @@ A version of a **selection sort**:
 - remove lowest item from current list
 - wash, rinse, repeat
 
+6 < None
+
 def sort_array(array_to_sort):
     """A function to sort an array."""
 
@@ -126,6 +128,12 @@ Using our `sort_array` function from above, what will the following code snippet
 data = ['a', 'c', 'b'] 
 sort_array(data)
 
+ord('a')
+
+ord('b')
+
+'a' < 'b' < 'c'
+
 - A) ['a', 'c', 'b']
 - B) ['a', 'b', 'c']
 - C) [97, 98, 99]
@@ -164,6 +172,8 @@ bin(False)
 #### Clicker Question #5
 
 Using our `sort_array` function from above, what will the following code snippet print out:
+
+[2, 2] < [1, 4]
 
 data = [[1, 4], [1, 2]]
 sort_array(data)
@@ -235,8 +245,6 @@ if not isinstance(string, str):
 ```
 
 This checks to see if the input is anything other than a string. If it is, the function prints a warning.
-
-opted_out = ['003', '009', '015', '016', '019', '020', '026', '028', '034', '040', '042', '047', '055', '061', '064', '066', '069']
 
 def string_manipulator(string):
     

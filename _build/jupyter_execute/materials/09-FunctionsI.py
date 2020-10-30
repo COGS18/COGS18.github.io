@@ -199,13 +199,13 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 - C) I tried but am stuck.
 - D) Super duper lost
 
-out_string = greet(name = 'COGS18 Students')
-print(out_string)
-
 ## YOUR CODE HERE
 def greet(name):
     output = 'Hello ' + name + ' Good morning!'
     return output
+
+out_string = greet(name = 'COGS18 Students')
+print(out_string)
 
 ## Function Namespace I
 
@@ -218,8 +218,6 @@ def greet(name):
 # locals?
 
 locals()
-
-range?
 
 def check_function_namespace(function_input):
     # Check what is defined and available inside the function

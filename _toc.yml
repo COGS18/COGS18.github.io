@@ -22,8 +22,8 @@
     title: 09-FunctionsI
   - file: materials/10-Algorithms
     title: 10-Algorithms
-  # - file: materials/11-FunctionsII
-  #   title: 11-FunctionsII
+  - file: materials/11-FunctionsII
+    title: 11-FunctionsII
   # - file: materials/12-Debugging
   #   title: 12-Debugging
   # - file: materials/13-CodeTesting
@@ -61,8 +61,8 @@
     title: CL2-Answers
   - file: labs/CL3-Answers
     title: CL3-Answers
-#   - file: labs/CL4-Answers
-#     title: CL4-Answers
+  - file: labs/CL4-Answers
+    title: CL4-Answers
 #   - file: labs/CL5-Answers
 #     title: CL5-Answers
 #   - file: labs/CL6-Answers
