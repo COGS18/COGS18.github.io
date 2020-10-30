@@ -1,4 +1,4 @@
-# CL3: Algorithmic Thinking
+# CL4: Algorithmic Thinking
 
 Welcome to the third coding lab!
 
