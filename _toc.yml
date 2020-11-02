@@ -24,8 +24,8 @@
     title: 10-Algorithms
   - file: materials/11-FunctionsII
     title: 11-FunctionsII
-  # - file: materials/12-Debugging
-  #   title: 12-Debugging
+  - file: materials/12-Debugging
+    title: 12-Debugging
   # - file: materials/13-CodeTesting
   #   title: 13-CodeTesting
   # - file: materials/14-Objects
@@ -82,6 +82,8 @@
     title: E1-Review-Answers
   - file: materials/Exam-Prep/E1_Fa20_Practice-Answers
     title: E1-PracticeExam-Answers
+  - file: materials/Exam-Prep/E1_Fa20-Answers
+    title: E1_FA20-Answers
 #   # E2
 #   - file: materials/Exam-Prep/E2-Practice
 #     title: E2-Practice

@@ -99,6 +99,7 @@ exponentiate(2, 3)
 # Keyword arguments are explicitly named as to which argument each value relates to
 exponentiate(number = 2, exponent = 3)
 
+# caution against doing this; confusing when reading code
 exponentiate(exponent = 3, number = 2)
 
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
@@ -119,7 +120,9 @@ What will the following code snippet print?
 def exponentiate(number, exponent = 2):    
     return number ** exponent
 
-exponentiate(exponent = 3, number = 2)
+# exponentiate(exponent = 3, number = 2)
+# make this better
+exponentiate(number = 2, exponent = 3)
 
 - A) 8
 - B) 9
@@ -177,7 +180,7 @@ my_int.is_integer()
 There are a whole bunch of string methods, all described [here](https://www.w3schools.com/python/python_ref_string.asp). We'll review a few of the most commonly used here.
 
 # Make a string all lower case
-'aBc'.lower()
+'aBcD'.lower()
 
 # Make a string all upper case
 'aBc'.upper()
@@ -199,6 +202,18 @@ for element in inputs:
     output = output + element.lower() + ' '
 
 output.capitalize()
+
+# student question about storing in a list
+inputs = ['fIx', 'tYpiNg', 'lIkE', 'tHiS']
+output = []
+
+for element in inputs:
+    output.append(element.lower())
+
+#output.capitalize()
+output
+
+str.capitalize?
 
 - A) 'fix typing like this ' 
 - B) ['fix', 'typing', 'like', 'this'] 
