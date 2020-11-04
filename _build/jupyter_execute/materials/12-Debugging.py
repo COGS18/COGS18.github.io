@@ -12,6 +12,11 @@
     - rubric for partial credit in feedback & answer key
     - *regrades* (private to instructors on piazza): followed instructions but lost points; include explanation
     - Note: Q9 accepted multiple approaches due to ambiguity in the wording (whether or not to include courses taught in 2019)
+- **A4** will be posted later today
+    - Part 1 can be completed now
+    - Parts 2 & 3 we start this week
+    - Due Mon 11/16 (2 weeks from now) <- it is longer than other assignments
+    - **Validate will give you a timed out error** (Use Kernel > Restart & Run all instead)
 
 **A note on `assert` cells**
 
@@ -49,6 +54,8 @@ def example_function(input_list):
     special_value = input_list[3]
     
     return running_sum + special_value
+
+example_function(input_list = [1, 2, 3])
 
 - A) Yes 
 - B) No
@@ -182,8 +189,12 @@ if num > 0
 
 What type of error will the following code produce?
 
-if num > 0:
+# without num will be a name error
+num = 5
+
+if num > 0:   
     print("Greater than 0")
+
 
 - A) Syntax 
 - B) Name
@@ -199,7 +210,7 @@ running_sum = 0
 my_list = [1, 2, 3, 4, 5]
 
 for val in my_list:
-    
+    # print(val)
     if val % 2 == 0:
         temp = val / (val - 4)
         #+= allows you to add the value on the right to the variable on the left 
@@ -238,6 +249,12 @@ print('\nmy_num is: ', my_num)
 
 ### Example with Try / Except
 
+int(6)
+
+int('Shannon')
+
+input('val')
+
 try:
     int(input('Number'))
 except:
@@ -245,15 +262,13 @@ except:
 
 #### Try / Except within a While Loop
 
-input("text")
-
 ask_for_num = True
 
 while ask_for_num:
     try:
         my_num = int(input("Please enter a number: "))
         ask_for_num = False
-    except ValueError:
+    except ValueError or NameError:
         print("Oops!  That was no valid number. Try again!")
         
 print('\nmy_num is: ', my_num)

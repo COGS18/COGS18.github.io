@@ -28,8 +28,8 @@
     title: 12-Debugging
   # - file: materials/13-CodeTesting
   #   title: 13-CodeTesting
-  # - file: materials/14-Objects
-  #   title: 14-Objects
+  - file: materials/13-Objects
+    title: 13-Objects
   # - file: materials/15-Classes
   #   title: 15-Classes
   # - file: materials/16-Namespaces
