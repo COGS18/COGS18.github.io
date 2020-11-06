@@ -145,6 +145,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="14-Classes.html">
+   14-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -174,6 +179,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../labs/CL4-Answers.html">
    CL4-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL5-Answers.html">
+   CL5-Answers
   </a>
  </li>
 </ul>
@@ -1092,7 +1102,22 @@ my_num is:  29
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">divide</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="mf">45e818</span><span class="n">b2b9c5</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">divide</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="nn">&lt;ipython-input-1-62d4f4a69b89&gt;</span> in <span class="ni">divide</span><span class="nt">(num1, num2)</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># define a function divide</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="k">return</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
 </pre></div>
 </div>
 </div>
@@ -1118,6 +1143,11 @@ my_num is:  29
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1138,6 +1168,23 @@ You can also write code to raise an Exception if something unexpected happens.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>An integer please: Shannon
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="n">df6803c14de3</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">my_int</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;An integer please: &#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">my_int</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">():</span>
+<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;I wanted a number! :(&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;My integer is: &#39;</span><span class="p">,</span> <span class="n">my_int</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: I wanted a number! :(
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="clicker-question-4">
@@ -1145,8 +1192,8 @@ You can also write code to raise an Exception if something unexpected happens.
 <p>Edit the code below (replacing <code class="docutils literal notranslate"><span class="pre">---</span></code> with either values or variable names) so that when executed, this cell returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">num2</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">try</span><span class="p">:</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
@@ -1154,6 +1201,11 @@ You can also write code to raise an Exception if something unexpected happens.
     <span class="n">output</span> <span class="o">=</span> <span class="kc">None</span>
     
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
 </pre></div>
 </div>
 </div>
