@@ -279,7 +279,7 @@ print('\nmy_num is: ', my_num)
 def divide(num1, num2):
     return num1 / num2
 
-print(divide(2, 0))
+divide(2, 0)
 
 # define a function safe_divide
 def safe_divide(num1, num2):
@@ -313,8 +313,8 @@ print('My integer is: ', my_int)
 
 Edit the code below (replacing `---` with either values or variable names) so that when executed, this cell returns `None`.
 
-num1 = ---
-num2 = ---
+num1 = 6
+num2 = 0
 
 try:
     output = num1 / num2

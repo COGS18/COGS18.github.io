@@ -4,6 +4,20 @@
 - **CL5** due tonight (11:59 PM)
 - **A4** due Mon 11/16 (11:59 PM) 
 
+**Notes**
+- Posted mid-course survey feedback
+    - responded to student questions
+    - Median time spent on assignments & exam:
+        - A1: 2h
+        - A2: 3.5
+        - Studying for exam: 2h
+        - Completing Exam: 2h
+    - Big Theme: Harder/more involved examples in lecture, please!
+    - Upcoming Extra Credit opportunities? 
+        - CAPEs & post-course survey
+        - Final Project: project & GitHub
+        
+
 # Objects
 
 - `date` & `datetime`
@@ -54,6 +68,12 @@ Ways to organize data (variables) and functions together.
 from datetime import date
 
 date?
+
+date(1988, 9, 29).year
+
+new_date.year
+
+date(day = 29, month = 9, year = 1988)
 
 # Set the data we want to store in our date object
 day = 29
