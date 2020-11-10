@@ -54,6 +54,8 @@
     title: A1-Syntax
   - file: materials/A2-Examples
     title: A2-Examples
+  - file: materials/A3-Inheritance
+    title: A3-Inheritance
 
 - part: Coding Labs
   chapters:
