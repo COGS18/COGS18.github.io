@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Namespaces" href="15-Namespaces.html" />
     <link rel="prev" title="Objects" href="13-Objects.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -147,6 +147,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    14-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-Namespaces.html">
+   15-Namespaces
   </a>
  </li>
  <li class="toctree-l1">
@@ -500,7 +505,7 @@
   <p><strong>Course Announcements</strong></p>
 <p><strong>Due Dates:</strong></p>
 <ul class="simple">
-<li><p><strong>A4</strong> due Mon 11/16 (11:59 PM)</p></li>
+<li><p><strong>A4</strong> due the Mon <em>after</em> next 11/16 (11:59 PM)</p></li>
 </ul>
 <p><strong>Notes</strong></p>
 <ul class="simple">
@@ -537,7 +542,29 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reverse_string</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;elpp&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">reverse_string</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;elppa&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AssertionError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="mi">3151</span><span class="n">a7b48a3a</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">assert</span> <span class="n">reverse_string</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;elppa&#39;</span>
+
+<span class="ne">AssertionError</span>: 
 </pre></div>
 </div>
 </div>
@@ -635,12 +662,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Woof&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># george, has &#39;Dog&#39; method(s)</span>
 <span class="c1"># remember we used `self`</span>
-<span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+<span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoofWoofWoof&#39;
 </pre></div>
 </div>
 </div>
@@ -684,6 +721,14 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;__main__.Dog at 0x107691a10&gt;,
+ &lt;__main__.Dog at 0x107691a50&gt;,
+ &lt;__main__.Dog at 0x107691a90&gt;,
+ &lt;__main__.Dog at 0x107691b10&gt;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -692,11 +737,24 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>__main__.Dog
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">dog</span> <span class="ow">in</span> <span class="n">pack_of_dogs</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WoofWoof
+WoofWoof
+WoofWoof
+WoofWoof
 </pre></div>
 </div>
 </div>
@@ -736,6 +794,12 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
         <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WoofWoof
+WoofWoof
 </pre></div>
 </div>
 </div>
@@ -790,6 +854,25 @@ Instance attributes are attributes that we can make be different for each instan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this code will give TypeError</span>
+<span class="n">Dog</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">17</span><span class="o">-</span><span class="mi">959</span><span class="n">c82c6a795</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># this code will give TypeError</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">Dog</span><span class="p">()</span>
+
+<span class="ne">TypeError</span>: __init__() missing 1 required positional argument: &#39;name&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a dog</span>
 <span class="c1"># what goes in the parentheses is defined in the __init__</span>
 <span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Gary&#39;</span><span class="p">)</span> 
@@ -805,6 +888,12 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Woof
+Gary
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -813,7 +902,24 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoof&#39;
+</pre></div>
 </div>
+</div>
+</div>
+<p><strong>Course Announcements</strong></p>
+<p><strong>Due Dates:</strong></p>
+<ul class="simple">
+<li><p><strong>A4</strong> due Mon 11/16 (11:59 PM)</p></li>
+</ul>
+<p><strong>Notes</strong></p>
+<ul class="simple">
+<li><p><strong>A3</strong> grades posted</p></li>
+<li><p>No class or Coding Lab Wednesday (Veteran’s Day)</p></li>
+<li><p><strong>CL6</strong> now available; due Wed of week 7 (11/18)</p></li>
+<li><p><strong>E2</strong> Friday of week 7 (11/20)</p></li>
+</ul>
 <div class="section" id="clicker-question-3">
 <h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h3>
 <p>Edit the code we’ve been using for the Class <code class="docutils literal notranslate"><span class="pre">Dog</span></code> to include information about the breed of the Class Dog in <code class="docutils literal notranslate"><span class="pre">NewDog</span></code>?</p>
@@ -824,8 +930,9 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
     
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">breed</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="n">breed</span>
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
@@ -836,6 +943,13 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## We&#39;ll execute here</span>
+<span class="n">lexi</span> <span class="o">=</span> <span class="n">NewDog</span><span class="p">(</span><span class="s1">&#39;Lexi&#39;</span><span class="p">,</span> <span class="s1">&#39;Italian Greyhound&#39;</span><span class="p">)</span>
+<span class="n">lexi</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Lexi&#39;
 </pre></div>
 </div>
 </div>
@@ -885,6 +999,18 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jaspurr  says:
+MeowMeow
+Barkley  says:
+WoofWoof
+Picatso  says:
+MeowMeow
+Ruffius  says:
+WoofWoof
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-4">
 <h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">¶</a></h3>
@@ -911,6 +1037,11 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="s1">&#39;Rob&#39;</span><span class="p">,</span> <span class="s1">&#39;rob@python.com&#39;</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
 <span class="n">student</span><span class="o">.</span><span class="n">check_score</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;rob@python.com&#39;
 </pre></div>
 </div>
 </div>
@@ -942,7 +1073,7 @@ Objects can also be built from other objects, inheriting their properties and bu
 <div class="section" id="class-inheritance-animal">
 <h3>Class Inheritance: <code class="docutils literal notranslate"><span class="pre">Animal()</span></code><a class="headerlink" href="#class-inheritance-animal" title="Permalink to this headline">¶</a></h3>
 <p>For our <code class="docutils literal notranslate"><span class="pre">Dog()</span></code> and <code class="docutils literal notranslate"><span class="pre">Cat()</span></code> example, you may on some more general <code class="docutils literal notranslate"><span class="pre">Animal()</span></code> class.</p>
-<p>You would want <code class="docutils literal notranslate"><span class="pre">Animal()</span></code> to inherit all the ‘stuff’ from the other classes. This would avoid the need to have the same code for the <code class="docutils literal notranslate"><span class="pre">speak</span></code> method in both <code class="docutils literal notranslate"><span class="pre">Cat()</span></code> and <code class="docutils literal notranslate"><span class="pre">Dog()</span></code>! Another way to cut down on copy + paste and code redundancy!</p>
+<p>You would want <code class="docutils literal notranslate"><span class="pre">Cat()</span></code> and <code class="docutils literal notranslate"><span class="pre">Dog()</span></code> to inherit all the ‘stuff’ from the <code class="docutils literal notranslate"><span class="pre">Animal</span></code> class. This would avoid the need to have the same code for the <code class="docutils literal notranslate"><span class="pre">speak</span></code> method in both <code class="docutils literal notranslate"><span class="pre">Cat()</span></code> and <code class="docutils literal notranslate"><span class="pre">Dog()</span></code>! Another way to cut down on copy + paste and code redundancy!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Animal</span><span class="p">():</span>
@@ -972,10 +1103,20 @@ Objects can also be built from other objects, inheriting their properties and bu
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoof&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Cat</span><span class="p">(</span><span class="s1">&#39;Purrnicia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;MeowMeowMeowMeow&#39;
 </pre></div>
 </div>
 </div>
@@ -1015,7 +1156,16 @@ Objects can also be built from other objects, inheriting their properties and bu
 <span class="n">my_hammer</span> <span class="o">=</span> <span class="n">Hammer</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_hammer</span><span class="o">.</span><span class="n">is_tool</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_hammer</span><span class="o">.</span><span class="n">why</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_hammer</span><span class="o">.</span><span class="n">tool_type</span><span class="p">)</span>
 <span class="n">my_hammer</span><span class="o">.</span><span class="n">use_tool</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+To hammer things.
+None
+Using tool.
 </pre></div>
 </div>
 </div>
@@ -1032,7 +1182,7 @@ Objects can also be built from other objects, inheriting their properties and bu
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Brain</span><span class="p">():</span> 
     
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">folded</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">folded</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">folded</span> <span class="o">=</span> <span class="n">folded</span>
         
@@ -1044,8 +1194,10 @@ Objects can also be built from other objects, inheriting their properties and bu
          
 <span class="k">class</span> <span class="nc">SheepBrain</span><span class="p">(</span><span class="n">Brain</span><span class="p">):</span>
     
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="s1">&#39;medium&#39;</span><span class="p">,</span> <span class="n">folded</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s1">&#39;medium&#39;</span><span class="p">,</span> <span class="n">folded</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">folded</span><span class="p">)</span>
+        
+    
 </pre></div>
 </div>
 </div>
@@ -1054,6 +1206,11 @@ Objects can also be built from other objects, inheriting their properties and bu
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sheep</span> <span class="o">=</span> <span class="n">SheepBrain</span><span class="p">()</span>
 <span class="n">sheep</span><span class="o">.</span><span class="n">print_info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This brain is medium and is not folded.
 </pre></div>
 </div>
 </div>
@@ -1103,6 +1260,11 @@ Objects can also be built from other objects, inheriting their properties and bu
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) True</p></li>
@@ -1115,6 +1277,11 @@ Objects can also be built from other objects, inheriting their properties and bu
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># has access to Brain() methods</span>
 <span class="n">sheep</span><span class="o">.</span><span class="n">print_info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This brain is medium and is not folded.
 </pre></div>
 </div>
 </div>
@@ -1485,7 +1652,7 @@ Objects can also be built from other objects, inheriting their properties and bu
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="13-Objects.html" title="previous page">Objects</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="15-Namespaces.html" title="next page">Namespaces</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

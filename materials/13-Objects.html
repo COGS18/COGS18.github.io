@@ -150,6 +150,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="15-Namespaces.html">
+   15-Namespaces
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -966,8 +971,15 @@ datetime<span class="o">?</span>
 </div>
 <div class="section" id="using-date-datetime-objects-in-user-defined-functions">
 <h3>Using <code class="docutils literal notranslate"><span class="pre">date</span></code>/ <code class="docutils literal notranslate"><span class="pre">datetime</span></code> objects in user-defined functions<a class="headerlink" href="#using-date-datetime-objects-in-user-defined-functions" title="Permalink to this headline">¶</a></h3>
-<p>What if we wanted to determine how many days there was in February of a given year?</p>
+<p>What if we wanted to determine how many days there were in February of a given year?</p>
 <p>We could write a function to do that!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
@@ -995,8 +1007,30 @@ datetime<span class="o">?</span>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">38</span><span class="o">-</span><span class="n">d15dd8991ceb</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: day is out of range for month
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># execute your function</span>
-<span class="n">count_feb_days</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">count_feb_days</span><span class="p">(</span><span class="mi">1900</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>28
 </pre></div>
 </div>
 </div>
