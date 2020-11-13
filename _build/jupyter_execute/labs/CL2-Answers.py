@@ -3,9 +3,9 @@
 
 Welcome to the second coding lab!
 
-CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each fill out your own notebook, if you prefer. 
+CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each still fill out your own notebook for submission. 
 
-CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go! 
+CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go! If you explore something beyond what is required in the notebook, feel free to leave that exploratory code in the notebook you submit.
 
 If you have a question about how something works / what something does - try it out, and see what happens! If you can't figure it out, reach out to your instructional staff - we're here to help!
 
@@ -88,7 +88,7 @@ Some more comparisons, with variable assignment:
 
 Bonus: both of the above questions can be written in (at least) two ways. 
 
-If you found an answer to them, see if you can update the construction, changing at least one operator, to answer the question in a different way. 
+If you found an answer to them, see if you can update the construction (by changing at least one operator) to answer the question in a different way. 
 
 Note: x^y indicates 'x to the power of y'
 
@@ -99,13 +99,13 @@ comp_1 = 17**2 != 289/3
 comp_2 = (3**4) > (4**3) > (1234 % 99)
 comp_2 = ((3**4) > (4**3)) and ((4**3)) > (1234 % 99)
 
-### Operator Explorations.
+### Operator Explorations
 
-For each of the following questions, start by writing out a guess of what you think it might do. 
+For each of the following questions, start by writing out your guess on the outcome.
 
 Then, test out each one by writing out some code. 
 
-Finally, once you have answered the question, using some code, add a comment in the markdown here with the answer. 
+Finally, once you have answered the question using code, add a comment in markdown with the answer.
 
 Questions:
 - If you divide a float by an int, what is the type of the outcome? What about dividing an int by a float?
@@ -138,11 +138,11 @@ You will notice, through the coding labs and assignments, code that looks somehi
 
 Using assert basically says to `assert that the following code is True`.
 
-Or, slightly more formally `assert that the following code evaluates as True`.
+Or, slightly more formally, `assert that the following code evaluates as True`.
 
 If the asserted code does not evaluate as True, it raises an error - meaning it interrupts the code execution because something went wrong.
 
-This can be used as a way to test that code does what you expect it to do - and is therefore part of how we will text your code programmatically. 
+This can be used as a way to test that code does what you expect it to do, and is therefore part of how we will test your code programmatically. 
 
 Because the use of `assert` will be common in course materials, let's take a moment to explore how it works and what happens when we use it.
 

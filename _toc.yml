@@ -32,8 +32,8 @@
     title: 13-Objects
   - file: materials/14-Classes
     title: 14-Classes
-  # - file: materials/16-Namespaces
-  #   title: 16-Namespaces
+  - file: materials/15-Namespaces
+    title: 15-Namespaces
   # - file: materials/17-CommandLine
   #   title: 17-CommandLine
   # - file: materials/18-OpenSource

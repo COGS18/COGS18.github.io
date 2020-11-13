@@ -217,9 +217,11 @@ print(now.weekday())
 
 ### Using `date`/ `datetime` objects in user-defined functions
 
-What if we wanted to determine how many days there was in February of a given year?
+What if we wanted to determine how many days there were in February of a given year?
 
 We could write a function to do that!
+
+from datetime import date
 
 # YOUR CODE HERE
 def count_feb_days(year):
@@ -241,5 +243,7 @@ def count_feb_days(year):
     
     return n_days
 
+date(2020, 1, 40)
+
 # execute your function
-count_feb_days(2020)
+count_feb_days(1900)

@@ -119,7 +119,7 @@ else:
 If you start from Jan 1st, 1757, and repeatedly add 8 days, until you hit 1800, how many times will it be a Monday?
 
 # YOUR CODE HERE
-check_date = date(1799, 1, 1)
+check_date = date(1757, 1, 1)
 
 adding = True
 mondays_count = 0

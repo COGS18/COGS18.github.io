@@ -150,6 +150,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../materials/15-Namespaces.html">
+   15-Namespaces
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../materials/A1-Syntax.html">
    A1-Syntax
   </a>
@@ -367,6 +372,11 @@
      </li>
     </ul>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#include-sketch-of-at-least-one-task">
+     Include sketch of (at least) one task
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -427,8 +437,8 @@
                 
   <div class="section" id="cl4-algorithmic-thinking">
 <h1>CL4: Algorithmic Thinking<a class="headerlink" href="#cl4-algorithmic-thinking" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to the third coding lab!</p>
-<p>In this CodingLab we will be thinking and working on functions and algorithms.</p>
+<p>Welcome to the fourth coding lab!</p>
+<p>In this Coding Lab we will be thinking and working on functions and algorithms.</p>
 <p>The first part is more abstract - thinking about algorithms and functions, and sketching out some pseudocode.</p>
 <p>After that, we’ll move to more practice with functions.</p>
 <div class="section" id="part-i-pseudocode">
@@ -457,9 +467,9 @@
 </div>
 <div class="section" id="pseudocode-in-python-format">
 <h3>Pseudocode in Python format<a class="headerlink" href="#pseudocode-in-python-format" title="Permalink to this headline">¶</a></h3>
-<p>You can also write pseudocode, that is much closer to Python, including Python syntax, but that is more of a template / outline.</p>
-<p>PseudoCode like this is sometimes just a work-in-progress that is just not yet finished.</p>
-<p>Note the use of the <code class="docutils literal notranslate"><span class="pre">pass</span></code> keyword - <code class="docutils literal notranslate"><span class="pre">pass</span></code> is just a placeholder keyword, that does nothing.</p>
+<p>You can also write pseudocode that is much closer to Python (including Python syntax) but maintains more of a template / outline.</p>
+<p>Pseudocode like this is sometimes just a work-in-progress that is just not yet finished.</p>
+<p>Note the use of the <code class="docutils literal notranslate"><span class="pre">pass</span></code> keyword - <code class="docutils literal notranslate"><span class="pre">pass</span></code> is just a placeholder keyword that does nothing.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># PseudoCode for a function to email a list of emails, and return a log of what was sent</span>
@@ -490,14 +500,14 @@
 <li><p>Given a list of 100K values, find the average and range of the list</p></li>
 <li><p>Sort an array of randomly generated numbers from smallest to largest</p></li>
 <li><p>Recognize the saddest part of a movie</p></li>
-<li><p>Recall specific facts, like answering ‘which day of the week was the 1st of June, 1997</p></li>
+<li><p>Recall specific facts, like answering ‘which day of the week was the 1st of June, 1997?’</p></li>
 <li><p>Identify the likely country of origin of a person from their accent</p></li>
 <li><p>Create a meme</p></li>
 <li><p>Sort a list of 10,000 names alphabetically</p></li>
 <li><p>Rank memes in order of how funny they are</p></li>
-<li><p>Given two locations, figure out the best route to drive to get between them</p></li>
+<li><p>Given two locations, figure out the best route to drive to get from one to another</p></li>
 <li><p>Recognize the emotional state of a person</p></li>
-<li><p>Flexibly change strategy, based on cues in the environment</p></li>
+<li><p>Flexibly change strategies based on cues in the environment</p></li>
 <li><p>Write and perform a winning rap battle</p></li>
 <li><p>Learn and be able to understand a human language</p></li>
 <li><p>Learn and be able to understand a programming language</p></li>
@@ -508,18 +518,18 @@
 </ul>
 <div class="section" id="instructions">
 <h3>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h3>
-<p>For the tasks above, we want to try and decide whether it is a task that computers would be better at, that humans would be better at, or if it would be a tie.</p>
-<p>In small groups (2 or 3 people, or on your own if groups are not possible), pick 3 or 4 examples from the list of tasks above, have a quick discussion about the task and hand and try to answer the question of who (computers and/or humans) this task would be easier for.</p>
+<p>For each task above, we want to try and decide whether it is a task that computers would be better at, that humans would be better at, or if it would be a tie.</p>
+<p>In small groups (2 or 3 people, or on your own if groups are not possible), pick 3 or 4 examples from the list of tasks above, have a quick discussion about the task at hand and try to answer the question of who (computers and/or humans) this task would be easier for.</p>
 <p>For each task, try to imagine how you might try and do this in Python.</p>
 <p>Use pseudocode to sketch out an outline of the procedure.</p>
 <ul class="simple">
 <li><p>If you think it is something computers can do well, your pseudocode should roughly cover the whole process.</p></li>
-<li><p>If you think think it is more of a human thing, try to identify which part of the process, in particular, is difficult to specify within a formal algorithm.</p></li>
+<li><p>If you think it is more of a human thing, try to identify which part of the process, in particular, is difficult to specify within a formal algorithm.</p></li>
 </ul>
-<p>As you work through a few examples, make sure you talk through at least one of each of ‘computer better’ and ‘human better’ task.</p>
-<p>Note: as a rule of thumb, computers can do, and are good at anything we can write down an algorithm to complete.</p>
-<p>So one way to think of this task is to think through if and how you can think of writing an algorithm to complete this task.</p>
-<p>Below is an example, with an answer for the first listed task.</p>
+<p>As you work through a few examples, make sure you talk through at least one of both ‘computer better’ and ‘human better’ tasks.</p>
+<p>Note: as a rule of thumb, computers can perform (and are good at) anything we can write down an algorithm.</p>
+<p>So one way to approach this section is to think through if and how you would write an algorithm to complete each task.</p>
+<p>Below is an example, with an answer for the first listed task. You will be asked to sketch out your own example under that.</p>
 <div class="section" id="example-given-a-list-of-100k-values-find-the-average-and-range-of-the-list">
 <h4>Example: Given a list of 100K values, find the average and range of the list<a class="headerlink" href="#example-given-a-list-of-100k-values-find-the-average-and-range-of-the-list" title="Permalink to this headline">¶</a></h4>
 <p>This is a task that is easier for computers because we can write down a clear set of steps to complete this task (we can write an algorithm).</p>
@@ -549,11 +559,15 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="section" id="include-sketch-of-at-least-one-task">
+<h3>Include sketch of (at least) one task<a class="headerlink" href="#include-sketch-of-at-least-one-task" title="Permalink to this headline">¶</a></h3>
+<p>After brainstorming, include a sketch of your pseudocode for at least one of the tasks you brainstormed about earlier:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Make some notes &amp; write some pseudocode for you chosen tasks here</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -645,7 +659,7 @@
 <div class="section" id="write-a-function-with-a-conditional-inside-it">
 <h3>Write a function with a conditional inside it<a class="headerlink" href="#write-a-function-with-a-conditional-inside-it" title="Permalink to this headline">¶</a></h3>
 <p>You can decide what this function does.</p>
-<p>It could, for example, take a boolean, and print out a status if the input is True.</p>
+<p>It could, for example, take in a boolean and print out a status if the given boolean is True.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
@@ -676,7 +690,7 @@
 <div class="section" id="write-a-function-with-a-loop-inside-it">
 <h3>Write a function with a loop inside it<a class="headerlink" href="#write-a-function-with-a-loop-inside-it" title="Permalink to this headline">¶</a></h3>
 <p>You can decide what this function does.</p>
-<p>It could, for example, take a list of numbers, and add 1 to each element, and return the new list.</p>
+<p>It could, for example, take a list of numbers, add 1 to each element, and return the new list.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
@@ -709,7 +723,7 @@
 <div class="section" id="write-a-function-with-a-loop-and-a-conditional-inside-it">
 <h3>Write a function with a loop and a conditional inside it<a class="headerlink" href="#write-a-function-with-a-loop-and-a-conditional-inside-it" title="Permalink to this headline">¶</a></h3>
 <p>You can decide what this function does.</p>
-<p>It could, for example, take a list of booleans, and count how many elements are True, returning a count of <code class="docutils literal notranslate"><span class="pre">True</span></code> values.</p>
+<p>It could, for example, take a list of booleans, count how many elements are True, and return a count of <code class="docutils literal notranslate"><span class="pre">True</span></code> values.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>

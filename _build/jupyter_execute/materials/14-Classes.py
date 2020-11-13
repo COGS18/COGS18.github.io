@@ -1,7 +1,7 @@
 **Course Announcements**
 
 **Due Dates:**
-- **A4** due Mon 11/16 (11:59 PM) 
+- **A4** due the Mon *after* next 11/16 (11:59 PM) 
 
 **Notes**
 - **CL5** grades posted and answers on website
@@ -26,6 +26,8 @@ def reverse_string(input_string):
         counter = counter - 1
     
     return rev
+
+reverse_string('apple')
 
 assert reverse_string('apple') == 'elppa'
 
@@ -92,7 +94,7 @@ george.sound
 
 # george, has 'Dog' method(s)
 # remember we used `self`
-george.speak()
+george.speak(4)
 
 #### Clicker Question #1
 
@@ -191,6 +193,9 @@ class Dog():
     def speak(self, n_times=2):
         return self.sound * n_times
 
+# this code will give TypeError
+Dog()
+
 # Initialize a dog
 # what goes in the parentheses is defined in the __init__
 gary = Dog(name = 'Gary') 
@@ -202,6 +207,17 @@ print(gary.name)     # This is a instance attribute
 # Check gary's methods
 gary.speak()
 
+**Course Announcements**
+
+**Due Dates:**
+- **A4** due Mon 11/16 (11:59 PM) 
+
+**Notes**
+- **A3** grades posted
+- No class or Coding Lab Wednesday (Veteran's Day)
+- **CL6** now available; due Wed of week 7 (11/18)
+- **E2** Friday of week 7 (11/20) 
+
 #### Clicker Question #3
 
 Edit the code we've been using for the Class `Dog` to include information about the breed of the Class Dog in `NewDog`?
@@ -211,13 +227,16 @@ class NewDog():
     
     sound = 'Woof'
     
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self, n_times=2):
         return self.sound * n_times
 
 ## We'll execute here
+lexi = NewDog('Lexi', 'Italian Greyhound')
+lexi.name
 
 - A) I did it!
 - B) I think I did it!
@@ -289,7 +308,7 @@ If you have a hierarchical structure, this can be very helpful.
 
 For our `Dog()` and `Cat()` example, you may on some more general `Animal()` class. 
 
-You would want `Animal()` to inherit all the 'stuff' from the other classes. This would avoid the need to have the same code for the `speak` method in both `Cat()` and `Dog()`! Another way to cut down on copy + paste and code redundancy!
+You would want `Cat()` and `Dog()` to inherit all the 'stuff' from the `Animal` class. This would avoid the need to have the same code for the `speak` method in both `Cat()` and `Dog()`! Another way to cut down on copy + paste and code redundancy!
 
 class Animal():
     
@@ -336,11 +355,14 @@ class Hammer(Tool): #inherit Tool class
         self.tool_type = 'Hammer'
         self.why = 'To hammer things.'
 
+
 my_tool = Tool()
 my_hammer = Hammer()
 print(my_hammer.is_tool)
 print(my_hammer.why)
+print(my_hammer.tool_type)
 my_hammer.use_tool()
+
 
 **Terminology**:
 
@@ -353,7 +375,7 @@ Given the following set of classes, what will the cell below print out?
 
 class Brain(): 
     
-    def __init__(self, size = None, folded = None):
+    def __init__(self, size=None, folded=None):
         self.size = size
         self.folded = folded
         
@@ -365,8 +387,10 @@ class Brain():
          
 class SheepBrain(Brain):
     
-    def __init__(self, size = 'medium', folded = False):
+    def __init__(self, size='medium', folded=False):
         super().__init__(size, folded)
+        
+    
 
 sheep = SheepBrain()
 sheep.print_info()
