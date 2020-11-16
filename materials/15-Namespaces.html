@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Command Line &amp; Scripts" href="16-CommandLine.html" />
     <link rel="prev" title="Classes" href="14-Classes.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -152,6 +152,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    15-Namespaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-CommandLine.html">
+   16-CommandLine
   </a>
  </li>
  <li class="toctree-l1">
@@ -465,11 +470,11 @@
   <p><strong>Course Announcements</strong></p>
 <p><strong>Due Dates:</strong></p>
 <ul class="simple">
-<li><p><strong>A5</strong> due Mon (11:59 PM)</p></li>
+<li><p><strong>A4</strong> due Mon (11:59 PM)</p></li>
 <li><p><strong>CL6</strong> due next Wednesday</p></li>
 <li><p><strong>E2</strong> next Friday (11/20)</p>
 <ul>
-<li><p>Review net Wednesday</p></li>
+<li><p>Review next Wednesday</p></li>
 <li><p>No Lecture next Friday</p></li>
 </ul>
 </li>
@@ -548,7 +553,7 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-2-0a474bb83797&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">0</span><span class="n">a474bb83797</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># we haven&#39;t imported the module yet</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code fails if you haven&#39;t yet imported math</span>
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
@@ -573,11 +578,21 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>module
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># By the way - modules are objects</span>
 <span class="nb">isinstance</span><span class="p">(</span><span class="n">math</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -587,6 +602,11 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using code from our math module</span>
 <span class="c1"># remember to tab complete or use dir(math)</span>
 <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0
 </pre></div>
 </div>
 </div>
@@ -608,11 +628,82 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>module
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Explore what is available in random</span>
 <span class="nb">dir</span><span class="p">(</span><span class="n">random</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BPF&#39;,
+ &#39;LOG4&#39;,
+ &#39;NV_MAGICCONST&#39;,
+ &#39;RECIP_BPF&#39;,
+ &#39;Random&#39;,
+ &#39;SG_MAGICCONST&#39;,
+ &#39;SystemRandom&#39;,
+ &#39;TWOPI&#39;,
+ &#39;_BuiltinMethodType&#39;,
+ &#39;_MethodType&#39;,
+ &#39;_Sequence&#39;,
+ &#39;_Set&#39;,
+ &#39;__all__&#39;,
+ &#39;__builtins__&#39;,
+ &#39;__cached__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__file__&#39;,
+ &#39;__loader__&#39;,
+ &#39;__name__&#39;,
+ &#39;__package__&#39;,
+ &#39;__spec__&#39;,
+ &#39;_acos&#39;,
+ &#39;_bisect&#39;,
+ &#39;_ceil&#39;,
+ &#39;_cos&#39;,
+ &#39;_e&#39;,
+ &#39;_exp&#39;,
+ &#39;_inst&#39;,
+ &#39;_itertools&#39;,
+ &#39;_log&#39;,
+ &#39;_os&#39;,
+ &#39;_pi&#39;,
+ &#39;_random&#39;,
+ &#39;_sha512&#39;,
+ &#39;_sin&#39;,
+ &#39;_sqrt&#39;,
+ &#39;_test&#39;,
+ &#39;_test_generator&#39;,
+ &#39;_urandom&#39;,
+ &#39;_warn&#39;,
+ &#39;betavariate&#39;,
+ &#39;choice&#39;,
+ &#39;choices&#39;,
+ &#39;expovariate&#39;,
+ &#39;gammavariate&#39;,
+ &#39;gauss&#39;,
+ &#39;getrandbits&#39;,
+ &#39;getstate&#39;,
+ &#39;lognormvariate&#39;,
+ &#39;normalvariate&#39;,
+ &#39;paretovariate&#39;,
+ &#39;randint&#39;,
+ &#39;random&#39;,
+ &#39;randrange&#39;,
+ &#39;sample&#39;,
+ &#39;seed&#39;,
+ &#39;setstate&#39;,
+ &#39;shuffle&#39;,
+ &#39;triangular&#39;,
+ &#39;uniform&#39;,
+ &#39;vonmisesvariate&#39;,
+ &#39;weibullvariate&#39;]
 </pre></div>
 </div>
 </div>
@@ -824,11 +915,6 @@ my_remote_function<span class="o">?</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="importing-custom-code-ii">
@@ -849,21 +935,11 @@ my_remote_function<span class="o">?</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>remote.MyNumbers
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check </span>
 <span class="n">nums</span><span class="o">.</span><span class="n">add</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
@@ -900,11 +976,6 @@ choice<span class="o">?</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -924,11 +995,6 @@ choice<span class="o">?</span>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">choice</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
@@ -959,7 +1025,8 @@ choice<span class="o">?</span>
 </div>
 </div>
 <h1 align="center">We have finished Python!</h1>
-<h3 align="right">well, kind of.</h3></div>
+<h3 align="right">well, kind of.</h3><h1 align="center">End of material on E2</h1>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -991,7 +1058,7 @@ choice<span class="o">?</span>
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="14-Classes.html" title="previous page">Classes</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="16-CommandLine.html" title="next page">Command Line &amp; Scripts</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

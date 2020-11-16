@@ -155,6 +155,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="16-CommandLine.html">
+   16-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -1295,8 +1300,8 @@ Using tool.
 <p>We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">:</span>
-    
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">():</span>
+        
     <span class="c1"># create three instance attributes</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prof</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1314,11 +1319,17 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+Ellis
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong><code class="docutils literal notranslate"><span class="pre">add_class()</span></code> method</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">():</span>
     
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prof</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1353,11 +1364,19 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363}]
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong><code class="docutils literal notranslate"><span class="pre">compare()</span></code> method</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">():</span>
     
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prof</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1370,8 +1389,7 @@ Using tool.
                              <span class="s1">&#39;quarter&#39;</span> <span class="p">:</span> <span class="n">quarter</span><span class="p">,</span>
                              <span class="s1">&#39;n_students&#39;</span><span class="p">:</span> <span class="n">n_students</span><span class="p">})</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">n_classes</span> <span class="o">+=</span> <span class="mi">1</span>
-        
-     
+           
     <span class="c1"># add method to compare values in classes</span>
     <span class="k">def</span> <span class="nf">compare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;most&#39;</span><span class="p">):</span>
     
@@ -1412,12 +1430,29 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 447},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp20&#39;, &#39;n_students&#39;: 469},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make comparison among all courses</span>
 <span class="c1"># returns the class with the most students</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}
 </pre></div>
 </div>
 </div>
@@ -1429,11 +1464,16 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88}
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>extending the functionality of the <code class="docutils literal notranslate"><span class="pre">compare()</span></code> method</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProfCourses</span><span class="p">():</span>
     
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prof</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">n_classes</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1491,6 +1531,11 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1499,11 +1544,29 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;su20&#39;,
+ &#39;n_students&#39;: 88,
+ &#39;n_exams&#39;: 3,
+ &#39;n_assignments&#39;: 5}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest assignments</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_assignments&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;fa19&#39;,
+ &#39;n_students&#39;: 301,
+ &#39;n_exams&#39;: 2,
+ &#39;n_assignments&#39;: 4}
 </pre></div>
 </div>
 </div>
@@ -1552,7 +1615,7 @@ Using tool.
 <li><p>You can Inherit attributes and methods from other objects</p>
 <ul>
 <li><p>pass the parent name into parentheses of child <code class="docutils literal notranslate"><span class="pre">class</span></code> definition</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">super()</span></code> refers to the parent you’re inheriting from (without having to specify parent class name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">super()</span></code> refers to the parent you’re inheriting from (without having to specify parent class’ name)</p></li>
 </ul>
 </li>
 </ul>
@@ -1574,6 +1637,15 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+True
+True
+True
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="functions-are-objects">
@@ -1585,6 +1657,12 @@ Using tool.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1593,6 +1671,11 @@ Using tool.
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;yay Python!&#39;</span><span class="p">)</span>
     
 <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_function</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1610,6 +1693,12 @@ Using tool.
 
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">MyClass</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">my_instance</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
 </pre></div>
 </div>
 </div>
