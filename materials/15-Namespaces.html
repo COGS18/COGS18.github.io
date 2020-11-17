@@ -233,6 +233,21 @@
    E1_FA20-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -755,6 +770,11 @@ random.sample<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;4&#39;, &#39;3&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -776,6 +796,11 @@ random.sample<span class="o">?</span>
 <span class="c1">## using this approach</span>
 <span class="c1">## to call this</span>
 <span class="n">choice</span><span class="p">(</span><span class="n">to_choose_from</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1&#39;
 </pre></div>
 </div>
 </div>
@@ -836,6 +861,14 @@ random.sample<span class="o">?</span>
 <span class="c1"># from os import path</span>
 <span class="c1"># from random import choice, choices</span>
 <span class="kn">import</span> <span class="nn">ascii_letters</span> <span class="kn">from</span> <span class="nn">string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-11-037fa158f972&gt;&quot;</span><span class="gt">, line </span><span class="mi">6</span>
+    <span class="kn">import</span> <span class="nn">ascii_letters</span> <span class="kn">from</span> <span class="nn">string</span>
+                            <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
@@ -915,6 +948,11 @@ my_remote_function<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="importing-custom-code-ii">
@@ -935,11 +973,21 @@ my_remote_function<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>remote.MyNumbers
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check </span>
 <span class="n">nums</span><span class="o">.</span><span class="n">add</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
@@ -976,10 +1024,15 @@ choice<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">choice</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">choice</span>  
 </pre></div>
 </div>
 </div>
@@ -995,6 +1048,11 @@ choice<span class="o">?</span>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">choice</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
@@ -1014,12 +1072,22 @@ choice<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a valid way to import</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>

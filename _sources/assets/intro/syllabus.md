@@ -30,7 +30,7 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
 | TA             | Shivani Bhakta	         | 12 PM; 1 PM      | Fri 9:30-10:30 AM |
-| TA 	           | David Liau              | 4 PM; 5PM        | Fri 2-3 PM   |
+| TA 	           | David Liau              | 4 PM; 5PM        | Thurs 2-3 PM   |
 | TA 	           | Qixuan "Harrison" Ma    | 11 AM            | --           |
 | IA	           | Mani Amani              | 3 PM             | Tue 12:30-1:30 PM |
 | IA	           | Frank Li                | --               | --           |
