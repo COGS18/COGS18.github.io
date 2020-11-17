@@ -1,10 +1,10 @@
 **Course Announcements**
 
 **Due Dates:**
-- **A5** due Mon (11:59 PM) 
+- **A4** due Mon (11:59 PM) 
 - **CL6** due next Wednesday
 - **E2** next Friday (11/20)
-    - Review net Wednesday
+    - Review next Wednesday
     - No Lecture next Friday
 
 # Namespaces
@@ -242,7 +242,7 @@ choice?
 
 choice([1, 2, 3, 4, 5])
 
-from remote import choice
+from remote import choice  
 
 # now it's from my remote module
 choice?
@@ -272,3 +272,5 @@ random.choice([2,3,4,])
 
 
 <h3 align="right">well, kind of.</h3>
+
+<h1 align="center">End of material on E2</h1>

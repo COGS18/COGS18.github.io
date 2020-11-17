@@ -447,8 +447,8 @@ What if we wanted some object type that would allow us to keep track of Professo
 
 We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.
 
-class ProfCourses:
-    
+class ProfCourses():
+        
     # create three instance attributes
     def __init__(self, prof):
         self.n_classes = 0
@@ -461,7 +461,7 @@ print(ellis_courses.prof)
 
 **`add_class()` method**
 
-class ProfCourses:
+class ProfCourses():
     
     def __init__(self, prof):
         self.n_classes = 0
@@ -491,7 +491,7 @@ ellis_courses.classes
 
 **`compare()` method**
 
-class ProfCourses:
+class ProfCourses():
     
     def __init__(self, prof):
         self.n_classes = 0
@@ -504,8 +504,7 @@ class ProfCourses:
                              'quarter' : quarter,
                              'n_students': n_students})
         self.n_classes += 1
-        
-     
+           
     # add method to compare values in classes
     def compare(self, attribute, direction='most'):
     
@@ -548,7 +547,7 @@ ellis_courses.compare('n_students', 'fewest')
 
 **extending the functionality of the `compare()` method**
 
-class ProfCourses:
+class ProfCourses():
     
     def __init__(self, prof):
         self.n_classes = 0
@@ -631,7 +630,7 @@ ellis_courses.compare('n_assignments', 'fewest')
 
 - You can Inherit attributes and methods from other objects
     - pass the parent name into parentheses of child `class` definition
-    - `super()` refers to the parent you're inheriting from (without having to specify parent class name
+    - `super()` refers to the parent you're inheriting from (without having to specify parent class' name)
 
 ## Everything in Python is an Object!
 

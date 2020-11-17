@@ -34,8 +34,8 @@
     title: 14-Classes
   - file: materials/15-Namespaces
     title: 15-Namespaces
-  # - file: materials/17-CommandLine
-  #   title: 17-CommandLine
+  - file: materials/16-CommandLine
+    title: 16-CommandLine
   # - file: materials/18-OpenSource
   #   title: 18-OpenSource
   # - file: materials/19-CodeStyle  
@@ -87,12 +87,12 @@
   - file: materials/Exam-Prep/E1_Fa20-Answers
     title: E1_FA20-Answers
 #   # E2
-#   - file: materials/Exam-Prep/E2-Practice
-#     title: E2-Practice
-#   - file: materials/Exam-Prep/E2-Review
-#     title: E2-Review
-#   - file: materials/Exam-Prep/E2-Review-Answers
-#     title: E2-Review-Answers
+  - file: materials/Exam-Prep/E2-Practice
+    title: E2-Practice
+  - file: materials/Exam-Prep/E2-Review
+    title: E2-Review
+  - file: materials/Exam-Prep/E2-Review-Answers
+    title: E2-Review-Answers
 #   - file: materials/Exam-Prep/E2-PracticeExam-Answers
 #     title: E2-PracticePracticeExam-Answers    
 
