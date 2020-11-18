@@ -4,7 +4,10 @@
     - released at 8AM; 24h to complete and submit
     - No Lecture
     - must be submitted on datahub
+- **CL6** due tonight (11:59PM)
 - No office hours on Friday for any Instructional Staff
+
+
 
 ## Exam II Plan (12.5 points)
 
@@ -36,6 +39,16 @@ There are three extra notebooks that you can use for review:
 There are also a few Exam #2 Practice Problems [here](https://cogs18.github.io/materials/Exam-Prep/E2-Practice.html) and a practice exam on datahub.
 
 ### Questions?
+
+### `try` and `except`
+
+- when you want to try code
+- but if that code fails, you want to do something else
+
+try:
+    # do something
+except:
+    # what happens if the try code does not work
 
 ## Functions
 

@@ -93,8 +93,8 @@
     title: E2-Review
   - file: materials/Exam-Prep/E2-Review-Answers
     title: E2-Review-Answers
-#   - file: materials/Exam-Prep/E2-PracticeExam-Answers
-#     title: E2-PracticePracticeExam-Answers    
+  - file: materials/Exam-Prep/E2_Practice_Fa20-Answers
+    title: E2-PracticeExam-Answer   
 
 
 # - part: Project

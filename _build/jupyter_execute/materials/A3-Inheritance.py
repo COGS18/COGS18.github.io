@@ -79,7 +79,7 @@ class Dog(Animal):
         super().__init__(name)         # specify to include parent instance attributes
         self.breed = breed
 
-my_dog = Dog('Ruffus', 'Italian Greyhound')
+my_dog = Dog(name = 'Ruffus', breed='Italian Greyhound')
 print('child class attribute:', my_dog.sound)
 print('child instance attribute:', my_dog.breed)
 print('parent instance attribute:', my_dog.name)
@@ -151,3 +151,31 @@ Note that this is not the case for `Animal()` (the parent class). There, you can
 
 my_animal = Animal(name='other animal name')
 my_animal.name
+
+While using `super()` is preferred, in response to a student question...
+
+What if we wanted to call the Parent class directly...rather than use `super()`? 
+
+We could use the syntax seen below, calling `Animal.__init__`, but know that `self` has to be passed in when this construct is used.
+
+class Animal():
+    
+    sound = 'Generic Animal Sound'
+    
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self, n_times=2):
+        return self.sound * n_times
+
+class Dog(Animal):
+    sound = 'Woof'
+    
+    def __init__(self, name, breed):
+        Animal.__init__(self, name)         # specify to include parent instance attributes
+        self.breed = breed
+
+my_dog = Dog('Ruffus','Italian Greyhound')
+print('child class attribute:', my_dog.sound)
+print('child instance attribute:', my_dog.breed)
+print('parent instance attribute:', my_dog.name)
