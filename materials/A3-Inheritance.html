@@ -248,6 +248,11 @@
    E2-Review-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Practice_Fa20-Answers.html">
+   E2-PracticeExam-Answer
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -463,10 +468,10 @@ child instance attribute: Italian Greyhound
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="n">bf27548ae5a2</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;child instance attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">breed</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># this next line will lead to an AttributeError</span>
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;parent instance attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">d9faa7907308</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># this next line will lead to an AttributeError</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;parent instance attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 
 <span class="ne">AttributeError</span>: &#39;Dog&#39; object has no attribute &#39;name&#39;
 </pre></div>
@@ -500,7 +505,7 @@ child instance attribute: Italian Greyhound
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Ruffus&#39;</span><span class="p">,</span> <span class="s1">&#39;Italian Greyhound&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Ruffus&#39;</span><span class="p">,</span> <span class="n">breed</span><span class="o">=</span><span class="s1">&#39;Italian Greyhound&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;child class attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">sound</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;child instance attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">breed</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;parent instance attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
@@ -510,7 +515,7 @@ child instance attribute: Italian Greyhound
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>child class attribute: Woof
 child instance attribute: Italian Greyhound
-parent instance attribute: Ruffus
+parent instance attribute: &lt;__main__.Dog object at 0x10c8cb6d0&gt;
 </pre></div>
 </div>
 </div>
@@ -632,6 +637,48 @@ parent instance attribute: Default Name
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;other animal name&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>While using <code class="docutils literal notranslate"><span class="pre">super()</span></code> is preferred, in response to a student question…</p>
+<p>What if we wanted to call the Parent class directly…rather than use <code class="docutils literal notranslate"><span class="pre">super()</span></code>?</p>
+<p>We could use the syntax seen below, calling <code class="docutils literal notranslate"><span class="pre">Animal.__init__</span></code>, but know that <code class="docutils literal notranslate"><span class="pre">self</span></code> has to be passed in when this construct is used.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Animal</span><span class="p">():</span>
+    
+    <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Generic Animal Sound&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    
+    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
+
+<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+    <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">breed</span><span class="p">):</span>
+        <span class="n">Animal</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>         <span class="c1"># specify to include parent instance attributes</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="n">breed</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Ruffus&#39;</span><span class="p">,</span><span class="s1">&#39;Italian Greyhound&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;child class attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">sound</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;child instance attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">breed</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;parent instance attribute:&#39;</span><span class="p">,</span> <span class="n">my_dog</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>child class attribute: Woof
+child instance attribute: Italian Greyhound
+parent instance attribute: Ruffus
 </pre></div>
 </div>
 </div>
