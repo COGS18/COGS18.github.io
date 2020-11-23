@@ -44,6 +44,7 @@ textbook:
 	# rm projects/README.md
 
 	jupyter-book build ./
+	cp assets/intro/projects/ProjectTemplate.zip _build/html/assets/intro/projects/
 
 	rm -rf labs
 
