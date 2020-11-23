@@ -1,5 +1,3 @@
-# COGS 18: Projects
-
 # Project Ideas
 
 ## Encryption
@@ -47,10 +45,11 @@ There are lots of helpful tutorials online; however, often it's difficult to fig
 1. Hangman
 2. Drawings from `turtle`
 3. tic-tac-toe
+4. blackjack
 
 $^*$If you have a really new hangman implementation/idea or are super stoked about your great `turtle` idea or have invented a spin on traditional tic-tac-toe, you'll need to pitch your idea to (via email or in office hours) and get approval from Professor Ellis
 
-# How to get started
+## How to get started
 
 - Pseudocode out the ideas you would like to explore / work on
 - Open a notebook, and get some code into it
