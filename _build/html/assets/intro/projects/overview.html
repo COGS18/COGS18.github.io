@@ -39,6 +39,8 @@
     <link rel="shortcut icon" href="../../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Project FAQ" href="faq.html" />
+    <link rel="prev" title="Python Party!" href="../../../materials/PythonParty.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -257,6 +259,28 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../materials/PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="faq.html">
+   Project FAQ
+  </a>
+ </li>
+</ul>
 
 </nav>
 
@@ -463,13 +487,14 @@
 <div class="section" id="project-schedule">
 <h2>Project Schedule<a class="headerlink" href="#project-schedule" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>W8: Project Description released; by the end of this week, you should have a project topic / outline</p></li>
+<li><p>W8: Project Description released</p></li>
+<li><p>W8: By the end of this week, you must have a project topic / outline</p></li>
 <li><p>W9-10: Work on the project</p>
 <ul>
-<li><p>Coding Lab during Weeks 9 and 10 will provide you with time to work on and get help with your Final Project.</p></li>
+<li><p>Coding Lab during Weeks 9-10 will provide you with time to work on and get help with your Final Project.</p></li>
 </ul>
 </li>
-<li><p><strong>Finals Week: projects due (see syllabus)</strong></p></li>
+<li><p><strong>Finals Week: projects due (11:59 PM, Mon, Dec 14th)</strong></p></li>
 </ul>
 </div>
 <div class="section" id="getting-started">
@@ -508,12 +533,13 @@ If you get stuck, pause, and ask for help</p></li>
 <p>There are more detailed project ideas in the <code class="docutils literal notranslate"><span class="pre">ProjectIdeas</span></code> notebook.</p>
 <div class="section" id="taboo-topics">
 <h3>Taboo Topics<a class="headerlink" href="#taboo-topics" title="Permalink to this headline">¶</a></h3>
-<p>While you’re allowed to work on a topic of your choosing there are two “taboo topics” - or topics that are not permitted for the COGS 18 final project. These two topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you’re allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren’t limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.</p>
+<p>While you’re allowed to work on a topic of your choosing there are a few “taboo topics” - or topics that are not permitted for the COGS 18 final project. These topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you’re allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren’t limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.</p>
 <p>This quarter, the Taboo Topics for the COGS18 final project are:</p>
 <ul class="simple">
 <li><p>Hangman</p></li>
 <li><p>Drawings from Turtle</p></li>
 <li><p>Tic-tac-toe</p></li>
+<li><p>Blackjack</p></li>
 </ul>
 <p>Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to Professor Ellis and ask for an exception. You’ll have to explain your idea. And, if approved, you’ll be able to work on your taboo topic of choice!</p>
 </div>
@@ -558,8 +584,8 @@ If you get stuck, pause, and ask for help</p></li>
 <h3><em>How to create a zip file</em><a class="headerlink" href="#how-to-create-a-zip-file" title="Permalink to this headline">¶</a></h3>
 <p>First, make sure everything is organized into a folder, as you want it. Then:</p>
 <ul class="simple">
-<li><p>On Mac: right-click on the folder, and click ‘Compress’.</p></li>
-<li><p>On Windows: right-click on the folder, go to ‘Send To’ and select ‘Compressed (zipped) folder’.</p></li>
+<li><p>On Mac: left click on the folder, and click ‘Compress’.</p></li>
+<li><p>On Windows: left click on the folder, go to ‘Send To’ and select ‘Compressed (zipped) folder’.</p></li>
 </ul>
 <p>In both cases, this will create a zip file, with the name ‘FolderName.zip’.</p>
 <p>You can upload this file to Canvas as your project submission.</p>
@@ -621,13 +647,7 @@ If you get stuck, pause, and ask for help</p></li>
 <li><p>Code is organized into functions (necessary) and/or classes (optional)</p>
 <ul>
 <li><p>You do not necessarily need to use classes (only if they make sense for the project)</p></li>
-<li><p>Must include at least:</p>
-<ul>
-<li><p>3 original functions</p></li>
-<li><p>OR 2 orginal classes, each with at least 1 method</p></li>
-<li><p>OR 2 original functions + 1 original class</p></li>
-</ul>
-</li>
+<li><p>Must include at least 3 original functions or methods</p></li>
 </ul>
 </li>
 <li><p>The code executes, without raising any errors, on expected inputs</p></li>
@@ -653,8 +673,8 @@ If you get stuck, pause, and ask for help</p></li>
 <li><p>Includes appropriate comments within the code</p></li>
 </ul>
 <p><em>Code Tests (10%)</em></p>
-<p>You must include <em>at least two</em> code tests in your project that test your original functions/methods. These should be organized into a test file, in a test folder, and use <code class="docutils literal notranslate"><span class="pre">pytest</span></code>. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.</p>
-<p><em>Extra Credit (up to 4%)</em></p>
+<p>You must include <em>at least three</em> code tests in your project that test your original functions/methods. These should be organized into a test file, in a test folder, and use <code class="docutils literal notranslate"><span class="pre">pytest</span></code>. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.</p>
+<p><em>Extra Credit (<em>up to</em> 4%)</em></p>
 <p>For extra credit, if you go above and beyond on the minimal project requirements and challenge yourself to approach a project that is more complex than the basic requirements, requires you to learn something beyond what was taught in the course, or uses code concepts not taught in class, explain this at the end of your Jupyter notebook. Here, you should explain <em>why</em> your approach was particularly difficult/challenging <em>for you</em> and how your work goes beyond the minimal project requirements.</p>
 <p><em>GitHub Extra Credit (1%)</em></p>
 <p>For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project.</p>
@@ -713,6 +733,8 @@ If you get stuck, pause, and ask for help</p></li>
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="../../../materials/PythonParty.html" title="previous page">Python Party!</a>
+    <a class='right-next' id="next-link" href="faq.html" title="next page">Project FAQ</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

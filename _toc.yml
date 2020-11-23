@@ -97,16 +97,16 @@
     title: E2-PracticeExam-Answer   
 
 
-# - part: Project
-#   chapters:
-#   - file: projects/PythonParty
-#     title: Python Party
-#   - file: projects/overview
-#     title: Project Overview
-#   - file: projects/ProjectIdeas
-#     title: Project Ideas
-#   - file: projects/faq
-#     title: Project FAQ
+- part: Project
+  chapters:
+  - file: materials/PythonParty
+    title: Python Party
+  - file: assets/intro/projects/overview
+    title: Project Overview
+  - file: assets/intro/projects/ProjectIdeas
+    title: Project Ideas
+  - file: assets/intro/projects/faq
+    title: Project FAQ
 
 
 

@@ -13,10 +13,11 @@ The broad objectives of this project are for you to:
 
 ### Project Schedule
 
-- W8: Project Description released; by the end of this week, you should have a project topic / outline
+- W8: Project Description released
+- W8: By the end of this week, you must have a project topic / outline
 - W9-10: Work on the project
-  - Coding Lab during Weeks 9 and 10 will provide you with time to work on and get help with your Final Project.
-- **Finals Week: projects due (see syllabus)**
+  - Coding Lab during Weeks 9-10 will provide you with time to work on and get help with your Final Project.
+- **Finals Week: projects due (11:59 PM, Mon, Dec 14th)**
 
 ### Getting Started
 
@@ -50,13 +51,14 @@ There are more detailed project ideas in the `ProjectIdeas` notebook.
 
 #### Taboo Topics
 
-While you're allowed to work on a topic of your choosing there are two "taboo topics" - or topics that are not permitted for the COGS 18 final project. These two topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you're allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren't limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.
+While you're allowed to work on a topic of your choosing there are a few "taboo topics" - or topics that are not permitted for the COGS 18 final project. These topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you're allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren't limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.
 
 This quarter, the Taboo Topics for the COGS18 final project are:
 
 - Hangman
 - Drawings from Turtle
 - Tic-tac-toe
+- Blackjack
 
 Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to Professor Ellis and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
 
@@ -100,8 +102,8 @@ Note that not all of these files / sections are mandatory, and they do not have 
 
 First, make sure everything is organized into a folder, as you want it. Then: 
 
-- On Mac: right-click on the folder, and click 'Compress'.
-- On Windows: right-click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
+- On Mac: left click on the folder, and click 'Compress'.
+- On Windows: left click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
 
 In both cases, this will create a zip file, with the name 'FolderName.zip'. 
 
@@ -148,10 +150,7 @@ The code you wrote to implement your design will be graded on the following requ
 - Uses appropriate code constructs (operators, conditionals, loops, error handling, etc)
 - Code is organized into functions (necessary) and/or classes (optional)
   - You do not necessarily need to use classes (only if they make sense for the project) 
-  - Must include at least:
-    - 3 original functions
-    - OR 2 orginal classes, each with at least 1 method
-    - OR 2 original functions + 1 original class
+  - Must include at least 3 original functions or methods
 - The code executes, without raising any errors, on expected inputs
 - There is a clear modular organization to the code
 
@@ -178,9 +177,9 @@ Documentation will be evaluated in terms of:
 
 *Code Tests (10%)*
 
-You must include *at least two* code tests in your project that test your original functions/methods. These should be organized into a test file, in a test folder, and use `pytest`. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.
+You must include *at least three* code tests in your project that test your original functions/methods. These should be organized into a test file, in a test folder, and use `pytest`. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.
 
-*Extra Credit (up to 4%)*
+*Extra Credit (*up to* 4%)*
 
 For extra credit, if you go above and beyond on the minimal project requirements and challenge yourself to approach a project that is more complex than the basic requirements, requires you to learn something beyond what was taught in the course, or uses code concepts not taught in class, explain this at the end of your Jupyter notebook. Here, you should explain _why_ your approach was particularly difficult/challenging _for you_ and how your work goes beyond the minimal project requirements.  
 
