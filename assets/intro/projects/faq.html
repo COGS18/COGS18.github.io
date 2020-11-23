@@ -39,6 +39,7 @@
     <link rel="shortcut icon" href="../../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="Final Project" href="overview.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -257,6 +258,28 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../materials/PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Project FAQ
+  </a>
+ </li>
+</ul>
 
 </nav>
 
@@ -452,7 +475,13 @@
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#do-we-need-a-docstring-for-init-functions-of-classes">
-     Do we need a docstring for init functions of classes?
+     Do we need a docstring for
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       __init__
+      </span>
+     </code>
+     functions of classes?
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -548,6 +577,11 @@
      Do we have to be present on the day that our final is scheduled?
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-i-specify-extra-credit">
+     How do I specify extra credit?
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -588,7 +622,7 @@
 </div>
 <div class="section" id="is-there-a-set-number-of-functions-or-classes-we-need-to-include">
 <h3>Is there a set number of functions or classes we need to include?<a class="headerlink" href="#is-there-a-set-number-of-functions-or-classes-we-need-to-include" title="Permalink to this headline">¶</a></h3>
-<p>You need at least 3 original functions, 2 original classes, or 2 original functions + 1 original class.</p>
+<p>You need at least 3 original functions or methods. There is no class requirement. (For example, you could have a single class with 3 methods. Or, no classes and 3 separate functions.)</p>
 </div>
 <div class="section" id="can-i-write-my-entire-project-code-into-one-class">
 <h3>Can I write my entire project code into one class?<a class="headerlink" href="#can-i-write-my-entire-project-code-into-one-class" title="Permalink to this headline">¶</a></h3>
@@ -645,8 +679,8 @@ https://docs.python.org/3/tutorial/modules.html</p>
 <p>Your module with your functions should have docstrings for functions and inline comments as needed. The Notebook would likely then (depending on your project) have a description of your project in a markdown cell, import your functions, and then run your main function to demonstrate how your project works. If you choose to run your project using a script rather than a Notebook, the Notebook should contain a short description of the project and a line of code that runs your script, such as <code class="docutils literal notranslate"><span class="pre">%run</span> <span class="pre">-i</span> <span class="pre">'script.py'</span></code> or <code class="docutils literal notranslate"><span class="pre">!python</span> <span class="pre">script.py</span></code>. Note that test functions don’t require docstrings, but including them is fine.</p>
 </div>
 <div class="section" id="do-we-need-a-docstring-for-init-functions-of-classes">
-<h3>Do we need a docstring for init functions of classes?<a class="headerlink" href="#do-we-need-a-docstring-for-init-functions-of-classes" title="Permalink to this headline">¶</a></h3>
-<p>Depends on how complicated your init function is. Can the reader tell at a glance what the init function is doing or which class variables are being set and why? If not, maybe describe those variables in code documentation and have a simple method comment that says “Class constructor for class Foo.” When in doubt, make comments!</p>
+<h3>Do we need a docstring for <code class="docutils literal notranslate"><span class="pre">__init__</span></code> functions of classes?<a class="headerlink" href="#do-we-need-a-docstring-for-init-functions-of-classes" title="Permalink to this headline">¶</a></h3>
+<p>Depends on how complicated your <code class="docutils literal notranslate"><span class="pre">__init__</span></code> function is. Can the reader tell at a glance what the init function is doing or which class variables are being set and why? If not, maybe describe those variables in code documentation and have a simple method comment that says “Class constructor for class Foo.” When in doubt, make comments!</p>
 </div>
 <div class="section" id="for-a-class-docstring-there-is-a-methods-section-to-list-the-methods-of-the-class-is-it-necessary-to-have-a-short-description-of-those-methods-again-in-the-class-docstring-since-there-are-methods-docstrings">
 <h3>For a class docstring, there is a methods section to list the methods of the class. Is it necessary to have a short description of those methods again in the class docstring since there are methods docstrings?<a class="headerlink" href="#for-a-class-docstring-there-is-a-methods-section-to-list-the-methods-of-the-class-is-it-necessary-to-have-a-short-description-of-those-methods-again-in-the-class-docstring-since-there-are-methods-docstrings" title="Permalink to this headline">¶</a></h3>
@@ -660,11 +694,11 @@ https://numpydoc.readthedocs.io/en/latest/format.html#documenting-class-instance
 <h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="how-many-tests-are-needed-do-we-need-tests-for-only-one-function-or-for-all-of-them-in-the-project">
 <h3>How many tests are needed? Do we need tests for only one function or for all of them in the project?<a class="headerlink" href="#how-many-tests-are-needed-do-we-need-tests-for-only-one-function-or-for-all-of-them-in-the-project" title="Permalink to this headline">¶</a></h3>
-<p>You need to test at least two functions or classses, using at least two test functions. These tests should be for your original code.</p>
+<p>You need to test at least three methods/functions, using at least three test functions. These tests should be for your original code.</p>
 </div>
 <div class="section" id="i-used-a-function-from-assignment-x-and-i-was-wondering-if-i-could-make-a-test-for-that-one-rather-than-a-function-i-wrote">
 <h3>I used a function from Assignment X, and I was wondering if I could make a test for that one rather than a function I wrote.<a class="headerlink" href="#i-used-a-function-from-assignment-x-and-i-was-wondering-if-i-could-make-a-test-for-that-one-rather-than-a-function-i-wrote" title="Permalink to this headline">¶</a></h3>
-<p>You may also (and are encouraged to) write test these functions as well; however, your two required tests must test your original code.</p>
+<p>You may also (and are encouraged to) write test these functions as well; however, your three required tests must test your original code.</p>
 </div>
 <div class="section" id="do-we-need-to-import-our-test-functions-into-our-script-notebook">
 <h3>Do we need to import our test functions into our script/Notebook?<a class="headerlink" href="#do-we-need-to-import-our-test-functions-into-our-script-notebook" title="Permalink to this headline">¶</a></h3>
@@ -722,6 +756,10 @@ https://stackoverflow.com/questions/35851323/how-to-test-a-function-with-input-c
 <div class="section" id="do-we-have-to-be-present-on-the-day-that-our-final-is-scheduled">
 <h3>Do we have to be present on the day that our final is scheduled?<a class="headerlink" href="#do-we-have-to-be-present-on-the-day-that-our-final-is-scheduled" title="Permalink to this headline">¶</a></h3>
 <p>No, all you need to do is make sure to turn in your final project.</p>
+</div>
+<div class="section" id="how-do-i-specify-extra-credit">
+<h3>How do I specify extra credit?<a class="headerlink" href="#how-do-i-specify-extra-credit" title="Permalink to this headline">¶</a></h3>
+<p>There is an extra credit opportunity on the final project. If you go above and beyond the requirements of the project and/or teach yourself something new in the process of completing the final project, explain this in the final cell of the Jupyter Notebook you turn in. This should include 1) your background in programming prior to this course and 2) a description of how you went above and beyond and/or what you learned in the process of completing the project.</p>
 <hr class="docutils" />
 <p><em>This document was originally written by <a class="reference external" href="https://github.com/SevSoltani">Severine Soltani</a>, an awesome COGS 18 Instructional Assistant. Thanks to Severine for taking the time to draft this to help students going forward!</em></p>
 </div>
@@ -756,6 +794,7 @@ https://stackoverflow.com/questions/35851323/how-to-test-a-function-with-input-c
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="overview.html" title="previous page">Final Project</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
