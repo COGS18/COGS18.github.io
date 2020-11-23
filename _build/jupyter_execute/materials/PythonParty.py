@@ -16,10 +16,10 @@ It's a little bit less of a party this quarter.
 
 Today starts the transition to a project-based course!
 
-Project Overview: https://cogs18.github.io/projects/Overview.html  
-Project Ideas: https://cogs18.github.io/projects/ProjectIdeas.html   
-Project FAQ: https://cogs18.github.io/projects/faq.html  
-Project Template: https://cogs18.github.io/assets/intro/ProjectTemplate.zip
+Project Overview: [https://cogs18.github.io/assets/intro/projects/overview]  
+Project Ideas: [https://cogs18.github.io/assets/intro/projects/ProjectIdeas.html]   
+Project FAQ: [https://cogs18.github.io/assets/intro/projects/faq.html]  
+Project Template: [click to download](https://cogs18.github.io/assets/intro/projects/ProjectTemplate.zip)
 
 ## Project Options
 ***new this quarter***
