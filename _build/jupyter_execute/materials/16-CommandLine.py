@@ -210,6 +210,7 @@ Here, we saw `~/Desktop/`.
 
 #### Open to see and edit contents of a file
 
+# will not work on datahub
 !open dir_name/new_file.py
 
 #### Clicker Question #3

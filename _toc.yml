@@ -26,8 +26,6 @@
     title: 11-FunctionsII
   - file: materials/12-Debugging
     title: 12-Debugging
-  # - file: materials/13-CodeTesting
-  #   title: 13-CodeTesting
   - file: materials/13-Objects
     title: 13-Objects
   - file: materials/14-Classes
@@ -36,6 +34,8 @@
     title: 15-Namespaces
   - file: materials/16-CommandLine
     title: 16-CommandLine
+  - file: materials/17-CodeTesting
+    title: 17-CodeTesting
   # - file: materials/18-OpenSource
   #   title: 18-OpenSource
   # - file: materials/19-CodeStyle  
