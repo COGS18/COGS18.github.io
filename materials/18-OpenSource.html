@@ -1,0 +1,862 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Source &#8212; COGS 18 - Introduction To Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scientific Computing" href="19-ScientificComputing.html" />
+    <link rel="prev" title="Code Testing" href="17-CodeTesting.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Lecture Materials
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Collections.html">
+   06-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Loops.html">
+   07-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Dictionaries.html">
+   08-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-FunctionsI.html">
+   09-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Algorithms.html">
+   10-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-FunctionsII.html">
+   11-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-Debugging.html">
+   12-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-Objects.html">
+   13-Objects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-Classes.html">
+   14-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-Namespaces.html">
+   15-Namespaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-CommandLine.html">
+   16-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   18-OpenSource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="19-ScientificComputing.html">
+   19-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A3-Inheritance.html">
+   A3-Inheritance
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL2-Answers.html">
+   CL2-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL3-Answers.html">
+   CL3-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL4-Answers.html">
+   CL4-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL5-Answers.html">
+   CL5-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL6-Answers.html">
+   CL6-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL7-Answers.html">
+   CL7-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Fa20_Practice-Answers.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Fa20-Answers.html">
+   E1_FA20-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Practice_Fa20-Answers.html">
+   E2-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Fa20-Answers.html">
+   E2_FA20-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/projects/overview.html">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/projects/ProjectIdeas.html">
+   Project Ideas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/projects/faq.html">
+   Project FAQ
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/materials/18-OpenSource.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/18-OpenSource.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/18-OpenSource.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/18-OpenSource.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/18-OpenSource.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aside-brief-history-of-python">
+   Aside: Brief History of Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic-timeline">
+     Basic Timeline
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-context">
+     For Context:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zen-of-python">
+     Zen of Python
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clicker-question-1">
+       Clicker Question #1
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beautiful-is-better-than-ugly-readability-counts">
+     Beautiful is better than ugly. Readability counts.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-is-better-than-complex-complex-is-better-than-complicated">
+     Simple is better than complex. Complex is better than complicated.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#there-should-be-one-and-preferably-only-one-obvious-way-to-do-it">
+     There should be one - and preferably only one - obvious way to do it
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#namespaces-are-one-honking-great-idea-let-s-do-more-of-those">
+     Namespaces are one honking great idea - let’s do more of those
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-final-note">
+   A Final Note
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licenses">
+   Licenses
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#open-source-developers">
+   Open Source Developers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#software-management-distribution">
+   Software Management &amp; Distribution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aside-project-jupyter">
+   Aside: Project Jupyter
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ipython">
+     IPython
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github">
+     GitHub
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#benefits-of-github">
+   Benefits of GitHub
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pypi-python-package-index">
+     PyPI: Python Package Index
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pip-python-installer">
+     PIP: Python Installer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies">
+     Dependencies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-note-on-conda">
+   A Note on Conda
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="open-source">
+<h1>Open Source<a class="headerlink" href="#open-source" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Open Source Software</p></li>
+<li><p>History of Python</p></li>
+<li><p>Zen of Python</p></li>
+<li><p>GitHub</p></li>
+<li><p>PyPI, PIP, Conda</p></li>
+</ul>
+<p><strong>Note</strong> We are skipping the vast majority of the notes included in this one, to spend more time on code style, documentation, etc. But, I wanted you to have them for your reference!</p>
+<p>This I’m covering during lecture:</p>
+<ul class="simple">
+<li><p>Zen of Python (briefly)</p></li>
+<li><p>Package Installation</p></li>
+</ul>
+<div class="alert alert-success">
+Open source software is software for which the source code is openly available.
+</div><p>The Source Code for Python (which is actually written in C) is all available.</p>
+<p>Open Source Software is free. (free = freedom)</p>
+<p>Open source software is software that the user can:</p>
+<ul class="simple">
+<li><p>use and install the software</p></li>
+<li><p>view the source code of the project</p></li>
+<li><p>distribute the software</p></li>
+<li><p>change the source code of the project</p></li>
+</ul>
+<p>Scientific research is often done in an exclusively open source environment.</p>
+<div class="section" id="aside-brief-history-of-python">
+<h2>Aside: Brief History of Python<a class="headerlink" href="#aside-brief-history-of-python" title="Permalink to this headline">¶</a></h2>
+<p>First conceptualized by <strong>Guido van Rossum</strong> in the late 1980s:</p>
+<ul class="simple">
+<li><p>ABC is a general-pupose programming language that influenced Python</p></li>
+<li><p>goal: simple scripting language</p>
+<ul>
+<li><p>basic syntax</p></li>
+<li><p>indentation rather than cruly braces or begin-end blocks</p></li>
+<li><p>developed certain data types (dictionary, list, strings, numbers)</p></li>
+</ul>
+</li>
+<li><p>he was the BDFL (benevolent dictator for life) until July 2018</p></li>
+</ul>
+<div class="section" id="basic-timeline">
+<h3>Basic Timeline<a class="headerlink" href="#basic-timeline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>1991: Python 0.9.0 was first released</p></li>
+<li><p>1994: Python 1.0 (lambda, map, filter, and reduce)</p></li>
+<li><p>2000: Python 2.0 (list comprehensions, full garbage collector, supported unicode)</p></li>
+<li><p>2008: Python 3.0 released (print function; not backwards-compatible, fulfilling the 13th law of the Zen of Python)</p></li>
+</ul>
+</div>
+<div class="section" id="for-context">
+<h3>For Context:<a class="headerlink" href="#for-context" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>1842: Ada Lovelace - first published computer program</p></li>
+<li><p>1940s: first high level programming language</p></li>
+<li><p>1956: FORTRAN - first commercially available</p></li>
+<li><p>1972: C</p></li>
+<li><p>1980s: Consolidation, modules, &amp; performance</p>
+<ul>
+<li><p>1987: Perl</p></li>
+</ul>
+</li>
+<li><p>1990s: Age of the Internet</p>
+<ul>
+<li><p>1991: Python</p></li>
+<li><p>1993: R</p></li>
+<li><p>1995: Java</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="zen-of-python">
+<h3>Zen of Python<a class="headerlink" href="#zen-of-python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>20 guidelines (the 20th is missing)</p></li>
+<li><p>sometimes contradictory in favor of flexibility</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a hidden easter egg</span>
+<span class="kn">import</span> <span class="nn">this</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tim Peters – the author of the Zen of Python – is a software developer and was a major contributor to the Python Programming language.</p>
+<div class="section" id="clicker-question-1">
+<h4>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">¶</a></h4>
+<p>Read through and think about the statements in the Zen of Python Which do you think is the most important?</p>
+<p>The one I think is most important is in…</p>
+<ul class="simple">
+<li><p>A) 1-5</p></li>
+<li><p>B) 6-10</p></li>
+<li><p>C) 11-15</p></li>
+<li><p>D) 16-19</p></li>
+<li><p>E) ¯\<em>(ツ)</em>/¯</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="beautiful-is-better-than-ugly-readability-counts">
+<h3>Beautiful is better than ugly. Readability counts.<a class="headerlink" href="#beautiful-is-better-than-ugly-readability-counts" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>readability prioritized</p></li>
+<li><p>Python prides itself on ease to work with</p></li>
+<li><p>code is read more often than it’s written</p></li>
+<li><p>documentation matters.</p></li>
+</ul>
+</div>
+<div class="section" id="simple-is-better-than-complex-complex-is-better-than-complicated">
+<h3>Simple is better than complex. Complex is better than complicated.<a class="headerlink" href="#simple-is-better-than-complex-complex-is-better-than-complicated" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>There’s more than one approach to solving a problem</p></li>
+<li><p>Something that is overly-complicated should be reconsidered - a different approach? A simpler solution?</p></li>
+</ul>
+</div>
+<div class="section" id="there-should-be-one-and-preferably-only-one-obvious-way-to-do-it">
+<h3>There should be one - and preferably only one - obvious way to do it<a class="headerlink" href="#there-should-be-one-and-preferably-only-one-obvious-way-to-do-it" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A slight shot at other programming languages</p></li>
+<li><p>With more than one way, reading is harder and writing is easier. Flexibility not worth it to Pythonistas.</p></li>
+</ul>
+</div>
+<div class="section" id="namespaces-are-one-honking-great-idea-let-s-do-more-of-those">
+<h3>Namespaces are one honking great idea - let’s do more of those<a class="headerlink" href="#namespaces-are-one-honking-great-idea-let-s-do-more-of-those" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Namespaces and global/local scopes prevent names in one module/scope from conflicting with names in another</p></li>
+<li><p>Namespaces are for avoiding naming conflicts (<em>not</em> unecessary categorization - b/c flat is better than nested)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="a-final-note">
+<h2>A Final Note<a class="headerlink" href="#a-final-note" title="Permalink to this headline">¶</a></h2>
+<p>The Zen of Python is a set of guidelines for Python.</p>
+<p>There are arguments for and against any of these.</p>
+<p>Different languages take different approaches.</p>
+<p>Language Wars are stupid.</p>
+<p><strong>Fun fact</strong>: Python is named after the British TV show Monty Python (not the snake).</p>
+</div>
+<div class="section" id="licenses">
+<h2>Licenses<a class="headerlink" href="#licenses" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+The details of how an open-source project can be used are detailed in its `license`, which explicitly states its terms of use. 
+</div><ul class="simple">
+<li><p>Open Source projects still have a license:</p>
+<ul>
+<li><p>sometimes it says: go do whatever you want with this</p></li>
+<li><p>other times it says: if you’re not a company/going to make money, you can use this</p></li>
+<li><p>and other times it says: you can use it but you have to attribute the original developers</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="open-source-developers">
+<h2>Open Source Developers<a class="headerlink" href="#open-source-developers" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+Open source software is often developed in an collaborative, public manner, through open collaboration.
+</div><p>Many are community-driven:</p>
+<ul class="simple">
+<li><p>open, public, &amp; collaborative</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> was intially written by Wes McKinney</p></li>
+</ul>
+<p>https://soundcloud.com/dataframed/data-science-tool-building</p>
+<p>How open source packages are maintained and updated:</p>
+<ul class="simple">
+<li><p>support from foundations</p></li>
+<li><p>grant funding</p></li>
+<li><p>out of the kindness of individual’s or the community’s heart(s)</p></li>
+</ul>
+</div>
+<div class="section" id="software-management-distribution">
+<h2>Software Management &amp; Distribution<a class="headerlink" href="#software-management-distribution" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Jupyter</p></li>
+<li><p>GitHub</p></li>
+<li><p>PyPI</p></li>
+<li><p>PIP</p></li>
+<li><p>Conda</p></li>
+</ul>
+</div>
+<div class="section" id="aside-project-jupyter">
+<h2>Aside: Project Jupyter<a class="headerlink" href="#aside-project-jupyter" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Spun off from IPython in 2014 (Fernando Perez)</p></li>
+<li><p>originally called “IPython Notebooks” (this is where .ipynb comes from)</p></li>
+<li><p>intended for use by those who program in Julia, Python, and R</p></li>
+<li><p>developed to support those who use interactive computing</p></li>
+</ul>
+<p>This document (.ipynb) IS a JSON document</p>
+<ul class="simple">
+<li><p>{‘key’ : ‘value’}</p></li>
+<li><p>nested &amp; hierarchical</p></li>
+<li><p>operating unit is the cell (Markdown, code, LaTeX, …)</p></li>
+</ul>
+<div class="section" id="ipython">
+<h3>IPython<a class="headerlink" href="#ipython" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Interactive Python</p></li>
+<li><p>Initial release: 2001</p></li>
+<li><p>Command Shell for interactive computing in the shell</p></li>
+</ul>
+<ul class="simple">
+<li><p>1991: Python 0.9.0 was first released</p></li>
+<li><p>1994: Python 1.0 (lambda, map, filter, and reduce)</p></li>
+<li><p>2000: Python 2.0 (list comprehensions, full garbage collector, supported unicode)</p></li>
+<li><p>2001: IPython released</p></li>
+<li><p>2008: Python 3.0 released (print function; not backwards-compatible, fulfilling the 13th law of the Zen of Python)</p></li>
+<li><p>2014: Jupyter notebooks spun off</p></li>
+</ul>
+</div>
+<div class="section" id="github">
+<h3>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+<b>GitHub</b> is a software development platform, which is used to host and develop open source projects.
+</div><p>Similar to Dropbox or Google Drive…but for code.</p>
+</div>
+</div>
+<div class="section" id="benefits-of-github">
+<h2>Benefits of GitHub<a class="headerlink" href="#benefits-of-github" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Share code</p></li>
+<li><p>Work collaboratively</p></li>
+<li><p>See others’ code</p></li>
+<li><p>Contribute to others’ code</p></li>
+</ul>
+<div class="alert alert-info">
+If you create a GitHub account and add your final project to a public repository on GitHub, you will receive extra credit on your final project.
+</div><p>But…what if you just want to <em>use</em> what’s available to you in Python…</p>
+<div class="section" id="pypi-python-package-index">
+<h3>PyPI: Python Package Index<a class="headerlink" href="#pypi-python-package-index" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+The Python Package Index is a software repository for the Python programming language.
+</div><p>Where packages are hosted. You can search and use packages from Python.</p>
+</div>
+<div class="section" id="pip-python-installer">
+<h3>PIP: Python Installer<a class="headerlink" href="#pip-python-installer" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+PIP is a Python tool for installing Python packages. 
+</div><p>It searches PyPi for you and allows you to install new python packages from the terminal.</p>
+<p>The format for this is:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">package_name</span></code></p>
+<p>On Datahub, you have to use the <code class="docutils literal notranslate"><span class="pre">--user</span></code> flag</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">package_name</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># for example </span>
+<span class="o">!</span>pip install neruodsp
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+Packages can have dependencies on each other, meaning they require (use) other packages to work.
+</div></div>
+</div>
+<div class="section" id="a-note-on-conda">
+<h2>A Note on Conda<a class="headerlink" href="#a-note-on-conda" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+Conda is a package management and environment management system. 
+</div><p><code class="docutils literal notranslate"><span class="pre">pip</span></code> manages single installs. <code class="docutils literal notranslate"><span class="pre">Conda</span></code> manages the whole system / environment and interactions between packages.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="17-CodeTesting.html" title="previous page">Code Testing</a>
+    <a class='right-next' id="next-link" href="19-ScientificComputing.html" title="next page">Scientific Computing</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

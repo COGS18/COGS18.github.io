@@ -165,6 +165,16 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="18-OpenSource.html">
+   18-OpenSource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="19-ScientificComputing.html">
+   19-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -209,6 +219,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../labs/CL6-Answers.html">
    CL6-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL7-Answers.html">
+   CL7-Answers
   </a>
  </li>
 </ul>
@@ -260,7 +275,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E2_Practice_Fa20-Answers.html">
-   E2-PracticeExam-Answer
+   E2-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Fa20-Answers.html">
+   E2_FA20-Answers
   </a>
  </li>
 </ul>
@@ -849,6 +869,11 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Fa20
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="change-directory">
@@ -874,6 +899,19 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># list files (list segments)</span>
 <span class="o">!</span>ls
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>01-Introduction.ipynb 09-FunctionsI.ipynb   A1-Syntax.ipynb
+01_welcome.pdf        10-Algorithms.ipynb   A2-Examples.ipynb
+02-Tooling.ipynb      11-FunctionsII.ipynb  A3-Inheritance.ipynb
+03-Variables.ipynb    12-Debugging.ipynb    <span class=" -Color -Color-Blue">Exam-Prep</span>
+04-Operators.ipynb    13-Objects.ipynb      PythonParty.ipynb
+05-Conditionals.ipynb 14-Classes.ipynb      README.md
+06-Collections.ipynb  15-Namespaces.ipynb   <span class=" -Color -Color-Blue">__pycache__</span>
+07-Loops.ipynb        16-CommandLine.ipynb  <span class=" -Color -Color-Blue">img</span>
+08-Dictionaries.ipynb 17-CodeTesting.ipynb  remote.py
 </pre></div>
 </div>
 </div>
@@ -1008,12 +1046,56 @@ Python files are plain-text files, with Python code in them, that can be execute
 <h3>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline">¶</a></h3>
 <div class="alert alert-success">
 A <b>script</b> is a Python file that can be run to execute a particular task. 
-</div></div>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>python script.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9 1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">run</span> script.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9 1
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 <div class="section" id="module-files">
 <h3>Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline">¶</a></h3>
 <div class="alert alert-success">
 A <b>module</b> file is a file with Python code (typically functions & classes) that we can import and use.
-</div><p>Remember: if you’re writing code, you cannot just click through to the file you want. You need to specify <em>using code</em> where the file you want is.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">remote</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_num</span> <span class="o">=</span> <span class="n">remote</span><span class="o">.</span><span class="n">MyNumbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">my_num</span><span class="o">.</span><span class="n">add</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+</pre></div>
+</div>
+</div>
+</div>
+<p>Remember: if you’re writing code, you cannot just click through to the file you want. You need to specify <em>using code</em> where the file you want is.</p>
 <p>This is where understanding file paths is critically important.</p>
 </div>
 </div>

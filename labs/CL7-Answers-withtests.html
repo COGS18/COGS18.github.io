@@ -39,8 +39,6 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Exam #1 Practice Questions" href="../materials/Exam-Prep/E1-Practice.html" />
-    <link rel="prev" title="CL6: Classes" href="CL6-Answers.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -195,7 +193,7 @@
   Coding Labs
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="CL2-Answers.html">
    CL2-Answers
@@ -221,8 +219,8 @@
    CL6-Answers
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL7-Answers.html">
    CL7-Answers
   </a>
  </li>
@@ -352,7 +350,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/labs/CL7-Answers.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/labs/CL7-Answers-withtests.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -372,10 +370,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Flabs/CL7-Answers.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Flabs/CL7-Answers-withtests.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/labs/CL7-Answers.ipynb"><button
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/labs/CL7-Answers-withtests.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -395,14 +393,14 @@
     <div class="dropdown-buttons">
         
         
-        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/labs/CL7-Answers.ipynb&branch=master"><button type="button"
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/labs/CL7-Answers-withtests.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/labs/CL7-Answers.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/labs/CL7-Answers-withtests.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="../_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
@@ -438,8 +436,13 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#part-iii-python-scripts">
-   Part III: Python Scripts
+  <a class="reference internal nav-link" href="#part-iii-tests">
+   Part III: Tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-iv-python-scripts">
+   Part IV: Python Scripts
   </a>
  </li>
 </ul>
@@ -573,8 +576,78 @@ Should I drink the soup?
 </div>
 </div>
 </div>
-<div class="section" id="part-iii-python-scripts">
-<h2>Part III: Python Scripts<a class="headerlink" href="#part-iii-python-scripts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="part-iii-tests">
+<h2>Part III: Tests<a class="headerlink" href="#part-iii-tests" title="Permalink to this headline">¶</a></h2>
+<p>Now write a test file that imports from your module file, and tests the functions/classes. (Refer back to testing lecture if you need to refresh your memory.)</p>
+<p>To do so, start with the new text file. It should import your classes and functions from the file you made above. Then, write a test function (<code class="docutils literal notranslate"><span class="pre">test_...</span></code>) for each function and class. Remember these should contain <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements and test the behavior of your functions. Save your file with a ‘.py’ extension, and then use <code class="docutils literal notranslate"><span class="pre">pytest</span></code> to execute it from the terminal.</p>
+<p>The code below has been stored in a file called <code class="docutils literal notranslate"><span class="pre">test_cravings.py</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cravings</span> <span class="k">as</span> <span class="nn">crave</span>
+
+<span class="k">def</span> <span class="nf">test_Noodles</span><span class="p">():</span>
+    <span class="c1"># test default values</span>
+    <span class="n">tonkotsu</span> <span class="o">=</span> <span class="n">crave</span><span class="o">.</span><span class="n">Noodles</span><span class="p">()</span>
+    <span class="k">assert</span> <span class="n">tonkotsu</span><span class="o">.</span><span class="n">available</span> <span class="o">==</span> <span class="kc">None</span>
+    <span class="k">assert</span> <span class="n">tonkotsu</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="kc">None</span>   
+    <span class="k">assert</span> <span class="n">tonkotsu</span><span class="o">.</span><span class="n">order_to_go</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;I&#39;m sorry, but we aren&#39;t taking to-go orders right now.&quot;</span>
+    
+<span class="k">def</span> <span class="nf">test_Ramen</span><span class="p">():</span>
+    <span class="c1"># test default values</span>
+    <span class="n">tonkotsu</span> <span class="o">=</span> <span class="n">crave</span><span class="o">.</span><span class="n">Ramen</span><span class="p">()</span>
+    <span class="k">assert</span> <span class="n">tonkotsu</span><span class="o">.</span><span class="n">available</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span>
+    <span class="k">assert</span> <span class="n">tonkotsu</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="s2">&quot;large&quot;</span>    
+    <span class="k">assert</span> <span class="n">tonkotsu</span><span class="o">.</span><span class="n">order_to_go</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;I&#39;ll have your order ready in 20 minutes&quot;</span>
+    
+    <span class="c1"># test other values</span>
+    <span class="n">ramen_small</span> <span class="o">=</span> <span class="n">crave</span><span class="o">.</span><span class="n">Ramen</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="s1">&#39;small&#39;</span><span class="p">,</span> <span class="n">available</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">ramen_small</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="s1">&#39;small&#39;</span>
+    <span class="k">assert</span> <span class="n">ramen_small</span><span class="o">.</span><span class="n">available</span> <span class="o">==</span> <span class="kc">None</span>
+    <span class="k">assert</span> <span class="n">ramen_small</span><span class="o">.</span><span class="n">order_to_go</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;I&#39;m sorry, but we aren&#39;t taking to-go orders right now.&quot;</span>
+
+<span class="k">def</span> <span class="nf">test_eating</span><span class="p">():</span>
+    <span class="n">tonkotsu</span> <span class="o">=</span> <span class="n">crave</span><span class="o">.</span><span class="n">Ramen</span><span class="p">()</span>
+    <span class="n">ramen_small</span> <span class="o">=</span> <span class="n">crave</span><span class="o">.</span><span class="n">Ramen</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="s1">&#39;small&#39;</span><span class="p">,</span> <span class="n">available</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">assert</span> <span class="n">crave</span><span class="o">.</span><span class="n">eating</span><span class="p">(</span><span class="n">tonkotsu</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Slurp slurp slurp, delicious!&#39;</span>
+    <span class="k">assert</span> <span class="n">crave</span><span class="o">.</span><span class="n">eating</span><span class="p">(</span><span class="n">ramen_small</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Quarantine can be rough. It be like that sometimes.&#39;</span>
+    
+<span class="k">def</span> <span class="nf">test_soup</span><span class="p">():</span>
+    <span class="n">tonkotsu</span> <span class="o">=</span> <span class="n">crave</span><span class="o">.</span><span class="n">Ramen</span><span class="p">()</span>
+    <span class="n">ramen_small</span> <span class="o">=</span> <span class="n">crave</span><span class="o">.</span><span class="n">Ramen</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="s1">&#39;small&#39;</span><span class="p">,</span> <span class="n">available</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">assert</span> <span class="n">crave</span><span class="o">.</span><span class="n">soup</span><span class="p">(</span><span class="n">tonkotsu</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s1">&#39;Should I drink the soup?&#39;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;I really shouldn&#39;t... There&#39;s too much sodium.&quot;</span>
+    <span class="k">assert</span> <span class="n">crave</span><span class="o">.</span><span class="n">soup</span><span class="p">(</span><span class="n">ramen_small</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s1">&#39;Should I drink the soup?&#39;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;You only live once! Slurp slurp slurp!&quot;</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_cravings.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.7.0, pytest-3.8.0, py-1.6.0, pluggy-0.7.1
+hypothesis profile &#39;default&#39; -&gt; database=DirectoryBasedExampleDatabase(&#39;/Users/shannonellis/Desktop/Teaching/COGS18/CodingLabs/source_Su20/.hypothesis/examples&#39;)
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/CodingLabs/source_Su20, inifile:
+plugins: remotedata-0.3.0, openfiles-0.3.0, doctestplus-0.1.3, astropy-header-0.1.1, arraydiff-0.2, hypothesis-4.36.2
+collected 4 items                                                              <span class=" -Color -Color-Bold"></span>
+
+<span class=" -Color -Color-Bold">test_cravings.py ....</span><span class=" -Color -Color-Bold -Color-Bold-Cyan">                                                    [100%]</span>
+
+<span class=" -Color -Color-Bold -Color-Bold-Green">=========================== 4 passed in 0.08 seconds ===========================</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Explain your success/struggles/failures with the above here:</p>
+</div>
+<div class="section" id="part-iv-python-scripts">
+<h2>Part IV: Python Scripts<a class="headerlink" href="#part-iv-python-scripts" title="Permalink to this headline">¶</a></h2>
 <p>Now write a small script that imports from your module file, and uses that code to do something.</p>
 <p>To do so, start with the new text file. It should import your classes and functions from the file you made above. Then, use these functions and classes to do something (write some Python code that does something with these objects). Save your file with a ‘.py’ extension, and then execute it from the terminal.</p>
 <p>I’ve stored the following few lines of code in a file called <code class="docutils literal notranslate"><span class="pre">cravings_script.py</span></code>:</p>
@@ -647,8 +720,6 @@ Should I drink the soup?
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="CL6-Answers.html" title="previous page">CL6: Classes</a>
-    <a class='right-next' id="next-link" href="../materials/Exam-Prep/E1-Practice.html" title="next page">Exam #1 Practice Questions</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
