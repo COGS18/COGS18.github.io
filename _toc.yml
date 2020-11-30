@@ -36,8 +36,10 @@
     title: 16-CommandLine
   - file: materials/17-CodeTesting
     title: 17-CodeTesting
-  # - file: materials/18-OpenSource
-  #   title: 18-OpenSource
+  - file: materials/18-OpenSource
+    title: 18-OpenSource
+  - file: materials/19-ScientificComputing
+    title: 19-ScientificComputing
   # - file: materials/19-CodeStyle  
   #   title: 19-CodeStyle
   # - file: materials/20-Documentation
@@ -69,8 +71,8 @@
     title: CL5-Answers
   - file: labs/CL6-Answers
     title: CL6-Answers
-#   - file: labs/CL7-Answers
-#     title: CL7-Answers
+  - file: labs/CL7-Answers
+    title: CL7-Answers
 
 
 - part: Exam Prep
@@ -94,8 +96,9 @@
   - file: materials/Exam-Prep/E2-Review-Answers
     title: E2-Review-Answers
   - file: materials/Exam-Prep/E2_Practice_Fa20-Answers
-    title: E2-PracticeExam-Answer   
-
+    title: E2-PracticeExam-Answers   
+  - file: materials/Exam-Prep/E2_Fa20-Answers
+    title: E2_FA20-Answers
 
 - part: Project
   chapters:

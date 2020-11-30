@@ -14,10 +14,10 @@ Open a terminal from the Jupyter notebook server (either on your local computer 
 - Make a new directory
 - Move inside that directory
 - Create a new Python file
-- Inside your terminal, use a text editor to open the file
+- Open the file (this may be from the Files tab on datahub)
 - Write some Python code inside that file
     - For example: print('Hello World')
-- Save and exit from the terminal text editor
+- Save the file (and return to the terminal
 - Execute the Python file from the terminal
 
 Describe your success/struggles/failures with the above steps here:
@@ -88,56 +88,7 @@ tonkotsu = crave.Ramen()
 print(crave.eating(tonkotsu))
 print(crave.soup(tonkotsu))
 
-## Part III: Tests
-
-Now write a test file that imports from your module file, and tests the functions/classes. (Refer back to testing lecture if you need to refresh your memory.)
-
-To do so, start with the new text file. It should import your classes and functions from the file you made above. Then, write a test function (`test_...`) for each function and class. Remember these should contain `assert` statements and test the behavior of your functions. Save your file with a '.py' extension, and then use `pytest` to execute it from the terminal.
-
-The code below has been stored in a file called `test_cravings.py`:
-
-import cravings as crave
-
-def test_Noodles():
-    # test default values
-    tonkotsu = crave.Noodles()
-    assert tonkotsu.available == None
-    assert tonkotsu.size == None   
-    assert tonkotsu.order_to_go() == "I'm sorry, but we aren't taking to-go orders right now."
-    
-def test_Ramen():
-    # test default values
-    tonkotsu = crave.Ramen()
-    assert tonkotsu.available == "Yes"
-    assert tonkotsu.size == "large"    
-    assert tonkotsu.order_to_go() == "I'll have your order ready in 20 minutes"
-    
-    # test other values
-    ramen_small = crave.Ramen(size='small', available=None)
-    assert ramen_small.size == 'small'
-    assert ramen_small.available == None
-    assert ramen_small.order_to_go() == "I'm sorry, but we aren't taking to-go orders right now."
-
-def test_eating():
-    tonkotsu = crave.Ramen()
-    ramen_small = crave.Ramen(size='small', available=None)
-
-    assert crave.eating(tonkotsu) == 'Slurp slurp slurp, delicious!'
-    assert crave.eating(ramen_small) == 'Quarantine can be rough. It be like that sometimes.'
-    
-def test_soup():
-    tonkotsu = crave.Ramen()
-    ramen_small = crave.Ramen(size='small', available=None)
-
-    assert crave.soup(tonkotsu) == "\n" + 'Should I drink the soup?' + "\n\t" + "I really shouldn't... There's too much sodium."
-    assert crave.soup(ramen_small) == "\n" + 'Should I drink the soup?' + "\n\t" + "You only live once! Slurp slurp slurp!"
-    
-
-!pytest test_cravings.py
-
-Explain your success/struggles/failures with the above here:
-
-## Part IV: Python Scripts
+## Part III: Python Scripts
 
 Now write a small script that imports from your module file, and uses that code to do something.
 

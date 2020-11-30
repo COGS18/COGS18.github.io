@@ -269,11 +269,20 @@ Python files are plain-text files, with Python code in them, that can be execute
 A <b>script</b> is a Python file that can be run to execute a particular task. 
 </div>
 
+!python script.py
+
+%run script.py
+
 ### Module Files
 
 <div class="alert alert-success">
 A <b>module</b> file is a file with Python code (typically functions & classes) that we can import and use.
 </div>
+
+import remote
+
+my_num = remote.MyNumbers(2,4)
+my_num.add()
 
 Remember: if you're writing code, you cannot just click through to the file you want. You need to specify _using code_ where the file you want is. 
 
