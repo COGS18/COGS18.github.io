@@ -201,6 +201,7 @@ df['condition']
 
 # You can index in pandas
 df.loc[0,:]
+df.loc[0,'condition']
 
 #### Working with DataFrames
 
@@ -212,9 +213,13 @@ df.describe()
 # Take the average of all numeric columns
 df.mean()
 
+df['condition'].value_counts()
+
 # breakdown of how many of each category there are
 val_counts = df['condition'].value_counts()
 val_counts
+
+type(val_counts)
 
 # what's the category that shows up the most 
 val_counts.idxmax()
@@ -242,7 +247,9 @@ import matplotlib.pyplot as plt
 dat = np.array([1, 2, 4, 8, 16, 32])
 
 # Plot the data
-plt.plot(dat);
+plt.plot(dat)
+# add xlabel
+plt.xlabel('label')
 
 - can change plot type
 - _lots_ of customizations possible
