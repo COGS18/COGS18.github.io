@@ -31,6 +31,7 @@ def extend(input_arg):
     return output
 
 # test here
+extend((1, 2))
 
 - A) `assert isinstance(extend([1, 2]), list)`
 - B) `assert extend([1, 2]) == [1, 2, 1, 2]`
@@ -58,7 +59,7 @@ assert extend([]) == []
 ## Code Testing
 
 <div class="alert alert-success">
-Code tests is code that runs and checks other code, to make sure it does what it is expected to do. 
+Code tests are code that runs and checks other code, to make sure it does what it is expected to do. 
 </div>
 
 ## How to Write Tests
@@ -85,7 +86,12 @@ Collect these snippets into a test function, and you get re-runnable tests for f
 def add(num1, num2):
     return num1 + num2
 
+add(2.7, 1.2)
+
 add(2.7, 1.2) == 3.9
+
+import math
+math.isclose(add(2.7, 1.2), 3.9)
 
 import math
 
@@ -99,7 +105,7 @@ def test_add():
     assert add(-2, -2) == -4
     
     # Test adding floats
-    # assert add(2.7, 1.2) == 3.9
+#     assert add(2.7, 1.2) == 3.9
     assert math.isclose(add(2.7, 1.2), 3.9)
     
     # Test adding with 0
@@ -118,6 +124,8 @@ def divide_list(in_list):
         output.append(el1 / el2)
     
     return output
+
+divide_list([0,1,2])
 
 # And the following test function:
 def test_divide_list():
@@ -217,7 +225,7 @@ Thought process:
     - check the output is expected output / expected type
 
 def sum_list(input_list):
-    """add all values in a list - return sum"""
+    """add all values in a list/tuple - return sum"""
     
     output = 0
     
@@ -227,17 +235,13 @@ def sum_list(input_list):
     return output
 
 ### YOUR TEST
-
-test_sum_list()
-
-### POSSIBLE TEST
 def test_sum_list():
-    
-    # write multiple asserts
-    assert callable(sum_list)
-    assert isinstance(sum_list([1, 2, 3, 4]), int)
-    assert sum_list([1, 2, 3, 4]) == 10
-    
+    assert sum_list([1, 2, 3]) == 6
+    assert isinstance(sum_list([1, 2, 3]), int)
+    assert sum_list((1, 2, 3)) == 6
+
+# test if input is what you expected (a list) on Wed
+
 test_sum_list()
 
 ### `pytest`
@@ -252,4 +256,41 @@ test_sum_list()
 2. If everything works, silently moves along. 
 4. For anything that fails, will alert you.
 
-**Available from Anaconda and on datahub** Just an FYI for now: We'll be returning to how to use this after the second midterm. 
+**Available from Anaconda and on datahub**
+
+def sum_list(input_list):
+    """add all values in a list - return sum"""
+    
+    # add in test for incorrect input
+    if not isinstance(input_list, list):
+        raise ValueError("Please provide the input as a list")
+    else:
+        output = 0
+
+        for val in input_list:
+            output += val
+        
+    return output
+
+# see how function performs here
+sum_list([1, 2, 3])
+# this below would raise error
+# sum_list(3)
+
+### POSSIBLE TEST
+def test_sum_list():
+    
+    # write multiple asserts
+    assert callable(sum_list)
+    assert isinstance(sum_list([1, 2, 3, 4]), int)
+    assert sum_list([1, 2, 3, 4]) == 10
+    
+    # include approach where testing for error
+    try: 
+        sum_list(3)
+    except ValueError:
+        assert True
+
+test_sum_list()
+
+!pytest tests.py

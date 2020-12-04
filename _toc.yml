@@ -40,10 +40,10 @@
     title: 18-OpenSource
   - file: materials/19-ScientificComputing
     title: 19-ScientificComputing
+  - file: materials/20-Documentation
+    title: 20-Documentation
   # - file: materials/19-CodeStyle  
   #   title: 19-CodeStyle
-  # - file: materials/20-Documentation
-  #   title: 20-Documentation
   # - file: materials/21-CodeProjects
   #   title: 21-CodeProjects
   # - file: materials/22-APIs

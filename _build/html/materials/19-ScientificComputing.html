@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Documentation" href="20-Documentation.html" />
     <link rel="prev" title="Open Source" href="18-OpenSource.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -172,6 +172,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    19-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20-Documentation.html">
+   20-Documentation
   </a>
  </li>
  <li class="toctree-l1">
@@ -537,17 +542,24 @@
   <p><strong>Course Announcements</strong></p>
 <p><strong>Due Dates:</strong></p>
 <ul class="simple">
-<li><p><strong>A5</strong> now due Friday of week 10 12/11 (11:59 PM)</p>
-<ul>
-<li><p>this is a change; I know you have a lot going on</p></li>
-<li><p>no late deadline for A5 (as this is the last day of class)</p></li>
-</ul>
-</li>
+<li><p><strong>A5</strong> now due Friday of week 10 12/11 (11:59 PM)</p></li>
 </ul>
 <p><strong>Notes</strong></p>
 <ul class="simple">
-<li><p>CL7 grades have been posted</p></li>
-<li><p>E2 grades have been posted (Class Average: 10.7/12.5; 85.8%)</p></li>
+<li><p>No more coding labs to turn in! But, coding lab is still happening and is a great place for making project progress!</p></li>
+<li><p>Extra Credit opportunities:</p>
+<ul>
+<li><p>Please fill out your <strong><span class="xref myst">CAPEs</span></strong> (+0.5% to grades if &gt;= 85% fill out)</p>
+<ul>
+<li><p>Please fill out for instructional staff as well!</p></li>
+<li><p>Feedback is really, really helpful!</p></li>
+</ul>
+</li>
+<li><p>Go above and beyond on <strong>final project</strong> (explain in notebook; up to 4% <em>on final project</em>)</p></li>
+<li><p>Put final project on <strong>GitHub</strong> (1% <em>on final project</em>)</p></li>
+<li><p><strong>Post-course survey</strong> (not yet released; +0.25% to final grade)</p></li>
+</ul>
+</li>
 </ul>
 <p><strong>Modules vs Scripts</strong></p>
 <ul class="simple">
@@ -560,8 +572,8 @@
 <li><p>A) Jupyter Notebook only</p></li>
 <li><p>B) module only</p></li>
 <li><p>C) module + Jupyter Notebook</p></li>
-<li><p>D) IPython</p></li>
-<li><p>E) Python in shell (command line)</p></li>
+<li><p>D) script only</p></li>
+<li><p>E) script + Jupyter Notebook</p></li>
 </ul>
 <p><strong>Clicker Question B</strong></p>
 <p>Your final project is a basic data analysis where you read a file in, create a few plots, and do a basic statistical analysis. How would you implement this?</p>
@@ -569,8 +581,8 @@
 <li><p>A) Jupyter Notebook only</p></li>
 <li><p>B) module only</p></li>
 <li><p>C) module + Jupyter Notebook</p></li>
-<li><p>D) IPython</p></li>
-<li><p>E) Python in shell (command line)</p></li>
+<li><p>D) script only</p></li>
+<li><p>E) script + Jupyter Notebook</p></li>
 </ul>
 <div class="section" id="scientific-computing">
 <h1>Scientific Computing<a class="headerlink" href="#scientific-computing" title="Permalink to this headline">¶</a></h1>
@@ -624,7 +636,13 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[5, 6],
+       [7, 8]])
 </pre></div>
 </div>
 </div>
@@ -636,13 +654,36 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1, 2], [3, 4]]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="indexing-arrays">
 <h4>Indexing Arrays<a class="headerlink" href="#indexing-arrays" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy.ndarray
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check out an array of data</span>
 <span class="n">arr1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1, 2],
+       [3, 4]])
 </pre></div>
 </div>
 </div>
@@ -654,11 +695,21 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2, 2)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Index into a numpy array</span>
 <span class="n">arr1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 </pre></div>
 </div>
 </div>
@@ -675,11 +726,26 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/anaconda3/envs/cogs18/lib/python3.7/site-packages/ipykernel_launcher.py:3: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
+  This is separate from the ipykernel package so we can avoid doing imports until
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([list([1, 2, 3, 4]), list([2, 3, 4])], dtype=object)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># arrays are meant to store homogeneous data</span>
 <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;cogs18&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[&#39;1&#39;, &#39;2&#39;, &#39;cogs18&#39;],
+       [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]], dtype=&#39;&lt;U21&#39;)
 </pre></div>
 </div>
 </div>
@@ -690,8 +756,40 @@
 <p>(Things you can’t do with lists)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1, 2],
+       [3, 4]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[5, 6],
+       [7, 8]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add arrays together</span>
 <span class="n">arr1</span> <span class="o">+</span> <span class="n">arr2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 6,  8],
+       [10, 12]])
 </pre></div>
 </div>
 </div>
@@ -700,6 +798,12 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matrix mutliplication</span>
 <span class="n">arr1</span> <span class="o">*</span> <span class="n">arr2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 5, 12],
+       [21, 32]])
 </pre></div>
 </div>
 </div>
@@ -712,6 +816,12 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">]):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 a
+2 b
 </pre></div>
 </div>
 </div>
@@ -733,6 +843,11 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[6, 8, 10, 12]
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) [1, 2, 3, 4]</p></li>
@@ -744,7 +859,53 @@
 <p>Note that if you find yourself looping over arrays…there is probably a better way.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">a</span>
+<span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([0, 1, 2, 3]),)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1, 2, 3, 4],
+       [5, 6, 7, 8]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>36
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>np.sum<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>np.where<span class="o">?</span>
 </pre></div>
 </div>
 </div>
@@ -752,6 +913,11 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 6,  8, 10, 12])
 </pre></div>
 </div>
 </div>
@@ -991,7 +1157,7 @@ If you are interested in data science and scientific computing in Python, consid
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="18-OpenSource.html" title="previous page">Open Source</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="20-Documentation.html" title="next page">Documentation</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

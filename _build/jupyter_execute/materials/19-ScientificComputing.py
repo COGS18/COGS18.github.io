@@ -2,12 +2,17 @@
 
 **Due Dates:**
 - **A5** now due Friday of week 10 12/11 (11:59 PM) 
-    - this is a change; I know you have a lot going on
-    - no late deadline for A5 (as this is the last day of class)
 
 **Notes**
-- CL7 grades have been posted 
-- E2 grades have been posted (Class Average: 10.7/12.5; 85.8%)
+- No more coding labs to turn in! But, coding lab is still happening and is a great place for making project progress!
+- Extra Credit opportunities:
+    - Please fill out your **[CAPEs](cape.ucsd.edu)** (+0.5% to grades if >= 85% fill out)
+        - Please fill out for instructional staff as well!
+        - Feedback is really, really helpful!
+    - Go above and beyond on **final project** (explain in notebook; up to 4% _on final project_)
+    - Put final project on **GitHub** (1% _on final project_)
+    - **Post-course survey** (not yet released; +0.25% to final grade)
+
 
 **Modules vs Scripts**
 
@@ -21,8 +26,8 @@ Your final project is a chatbot that will discuss sports with you. How would you
 - A) Jupyter Notebook only
 - B) module only 
 - C) module + Jupyter Notebook
-- D) IPython
-- E) Python in shell (command line)
+- D) script only
+- E) script + Jupyter Notebook
 
 **Clicker Question B**
 
@@ -31,8 +36,8 @@ Your final project is a basic data analysis where you read a file in, create a f
 - A) Jupyter Notebook only
 - B) module only 
 - C) module + Jupyter Notebook
-- D) IPython
-- E) Python in shell (command line)
+- D) script only
+- E) script + Jupyter Notebook
 
 # Scientific Computing
 
@@ -84,12 +89,14 @@ arr0 = np.array([1, 2, 3])
 arr1 = np.array([[1, 2], [3, 4]])
 arr2 = np.array([[5, 6], [7, 8]])
 
-arr1
+arr2
 
 # lists of lists don't store dimensionality well
 [[1, 2], [3, 4]] 
 
 #### Indexing Arrays
+
+type(arr1)
 
 # Check out an array of data
 arr1
@@ -114,6 +121,10 @@ np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 #### Working with Arrays
 
 (Things you can't do with lists)
+
+arr1
+
+arr2
 
 # Add arrays together
 arr1 + arr2
@@ -149,7 +160,17 @@ print(output)
 
 Note that if you find yourself looping over arrays...there is probably a better way.
 
+a = np.arange(10)
+a
+np.where(a < 4)
+
+data
+
 data.sum()
+
+np.sum?
+
+np.where?
 
 data.sum(axis=0)
 

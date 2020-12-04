@@ -224,7 +224,7 @@ On Datahub, you have to use the `--user` flag
 
 
 # for example 
-!pip install neruodsp
+!pip install --user neruodsp
 
 ### Dependencies
 
