@@ -185,6 +185,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="22-CodeProjects.html">
+   22-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -291,6 +296,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E2_Fa20-Answers.html">
    E2_FA20-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/Final-Review.html">
+   Final-Review
   </a>
  </li>
 </ul>
@@ -784,6 +794,8 @@ Code documentation is text that accompanies and/or is embedded within a software
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Because of X, we will use approach Y to do Z</span>
 <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list_of_elements</span><span class="p">:</span>
     <span class="c1"># comment for code block</span>
+    <span class="c1"># another line</span>
+    <span class="c1"># another explanation</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
@@ -815,7 +827,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 <span class="sd">    </span>
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    answer : float</span>
+<span class="sd">    answer : int or float</span>
 <span class="sd">        The result of the addition. </span>
 <span class="sd">    &quot;&quot;&quot;</span>
     
@@ -853,6 +865,26 @@ Code documentation is text that accompanies and/or is embedded within a software
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on function add in module __main__:
+
+add(num1, num2)
+    Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : int or float
+        The result of the addition.
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="doc">
@@ -862,6 +894,24 @@ Code documentation is text that accompanies and/or is embedded within a software
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Docstrings get stored as the `__doc__` attribute</span>
 <span class="c1"># can also be accessed from there</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">add</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Add two numbers together. 
+    
+    Parameters
+    ----------
+    num1 : int or float
+        The first number, to be added. 
+    num2 : int or float
+        The second number, to be added.
+    
+    Returns
+    -------
+    answer : int or float
+        The result of the addition. 
+    
 </pre></div>
 </div>
 </div>
@@ -893,7 +943,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 <li><p>It’s best if all your main functions have docstrings</p>
 <ul class="simple">
 <li><p>If you include functions from an assignment, document them</p></li>
-<li><p>If you write a teeny tiny function to accomplish a sumer small task, no need to document</p></li>
+<li><p>If you write a teeny tiny function to accomplish a super small task, no need to document</p></li>
 </ul>
 </li>
 </ol>

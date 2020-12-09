@@ -44,8 +44,8 @@
     title: 20-Documentation
   - file: materials/21-CodeStyle  
     title: 21-CodeStyle
-  # - file: materials/21-CodeProjects
-  #   title: 21-CodeProjects
+  - file: materials/22-CodeProjects
+    title: 22-CodeProjects
   # - file: materials/22-APIs
   #   title: 22-APIs
   # - file: materials/23-AdvancedPython
@@ -99,6 +99,9 @@
     title: E2-PracticeExam-Answers   
   - file: materials/Exam-Prep/E2_Fa20-Answers
     title: E2_FA20-Answers
+  - file: materials/Exam-Prep/Final-Review
+    title: Final-Review
+
 
 - part: Project
   chapters:

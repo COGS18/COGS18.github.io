@@ -7,8 +7,6 @@
 - **CL6** due tonight (11:59PM)
 - No office hours on Friday for any Instructional Staff
 
-
-
 ## Exam II Plan (12.5 points)
 
 Part I: **E1 Review** (3 points) 

@@ -167,6 +167,8 @@ for element in list_of_elements:
 # Because of X, we will use approach Y to do Z
 for element in list_of_elements:
     # comment for code block
+    # another line
+    # another explanation
     pass
 
 ## Docstrings
@@ -192,7 +194,7 @@ def add(num1, num2):
     
     Returns
     -------
-    answer : float
+    answer : int or float
         The result of the addition. 
     """
     
@@ -247,7 +249,7 @@ What should be included in a docstring?
 1. Your original code definitely needs `numpy` docstrings
 2. It's best if all your main functions have docstrings
     - If you include functions from an assignment, document them
-    - If you write a teeny tiny function to accomplish a sumer small task, no need to document
+    - If you write a teeny tiny function to accomplish a super small task, no need to document
 
 ## Documentation for a Software Project
 
