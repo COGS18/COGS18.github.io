@@ -190,6 +190,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="23-WrapUp.html">
+   23-WrapUp
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -301,6 +306,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/Final-Review.html">
    Final-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/Practice_Final-Answers.html">
+   Practice_Final-Answers
   </a>
  </li>
 </ul>
@@ -1129,7 +1139,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Badness</span>
-<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Prof</span><span class="se">\&#39;</span><span class="s1">s Project&#39;</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Prof</span><span class="se">\&#39;</span><span class="s1">s Project&#39;</span> 
 </pre></div>
 </div>
 </div>
@@ -1192,6 +1202,11 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;re going to do great!&quot;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1214,6 +1229,11 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;re so close!&quot;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="inline-comments">
@@ -1230,11 +1250,21 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;re so close!&quot;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Goodness</span>
 <span class="n">week_10</span><span class="p">()</span>  <span class="c1"># words of encouragement</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;re going to do great!&quot;
 </pre></div>
 </div>
 </div>
@@ -1285,19 +1315,31 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 </div>
 <div class="section" id="list-here">
 <h3>list here<a class="headerlink" href="#list-here" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>function uses CapWords, rather than snake_case</p></li>
+<li><p>indentation (ind = 0)</p></li>
+<li><p>if statement should be two lines</p></li>
+<li><p>extra spaces (spacing issues)</p></li>
+<li><p>naming (<code class="docutils literal notranslate"><span class="pre">qq</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">i</span></code>)</p></li>
+<li><p>no docstring!</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s fix this code</span>
-<span class="k">def</span> <span class="nf">MyFunction</span><span class="p">(</span><span class="n">input_num</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">input_num</span><span class="p">):</span>
     
     <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-    <span class="k">if</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span> <span class="n">ind</span> <span class="o">=</span> <span class="mi">1</span>
+    
+    <span class="k">if</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span> 
+        <span class="n">ind</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-      <span class="n">ind</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">qq</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">my_list</span> <span class="p">[</span><span class="n">ind</span><span class="p">:]:</span>
-        <span class="n">qq</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">input_num</span><span class="o">/</span><span class="n">i</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">qq</span>
+        <span class="n">ind</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">list_out</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">[</span><span class="n">ind</span><span class="p">:]:</span>
+        <span class="n">list_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">input_num</span><span class="o">/</span><span class="n">i</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">list_out</span>
 </pre></div>
 </div>
 </div>
@@ -1306,6 +1348,21 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check using pylint</span>
 <span class="o">!</span>pylint linter_example.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>************* Module linter_example
+linter_example.py:5:0: C0303: Trailing whitespace (trailing-whitespace)
+linter_example.py:10:0: C0303: Trailing whitespace (trailing-whitespace)
+linter_example.py:15:0: C0305: Trailing newlines (trailing-newlines)
+linter_example.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+linter_example.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 4.44/10 (previous run: 6.67/10, -2.22)
+
+
 </pre></div>
 </div>
 </div>
