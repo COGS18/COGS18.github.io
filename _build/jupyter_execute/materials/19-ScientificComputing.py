@@ -89,7 +89,7 @@ arr0 = np.array([1, 2, 3])
 arr1 = np.array([[1, 2], [3, 4]])
 arr2 = np.array([[5, 6], [7, 8]])
 
-arr2
+arr1
 
 # lists of lists don't store dimensionality well
 [[1, 2], [3, 4]] 

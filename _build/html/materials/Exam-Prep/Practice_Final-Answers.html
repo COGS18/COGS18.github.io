@@ -1,0 +1,941 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COGS 18 - Practice Final Exam &#8212; COGS 18 - Introduction To Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Python Party!" href="../PythonParty.html" />
+    <link rel="prev" title="Final Exam Review" href="Final-Review.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Lecture Materials
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-Collections.html">
+   06-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../07-Loops.html">
+   07-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../08-Dictionaries.html">
+   08-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../09-FunctionsI.html">
+   09-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../10-Algorithms.html">
+   10-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../11-FunctionsII.html">
+   11-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../12-Debugging.html">
+   12-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../13-Objects.html">
+   13-Objects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../14-Classes.html">
+   14-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../15-Namespaces.html">
+   15-Namespaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../16-CommandLine.html">
+   16-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../18-OpenSource.html">
+   18-OpenSource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../19-ScientificComputing.html">
+   19-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../20-Documentation.html">
+   20-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../21-CodeStyle.html">
+   21-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../22-CodeProjects.html">
+   22-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../23-WrapUp.html">
+   23-WrapUp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A3-Inheritance.html">
+   A3-Inheritance
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL2-Answers.html">
+   CL2-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL3-Answers.html">
+   CL3-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL4-Answers.html">
+   CL4-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL5-Answers.html">
+   CL5-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL6-Answers.html">
+   CL6-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL7-Answers.html">
+   CL7-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1_Fa20_Practice-Answers.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1_Fa20-Answers.html">
+   E1_FA20-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2_Practice_Fa20-Answers.html">
+   E2-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2_Fa20-Answers.html">
+   E2_FA20-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Final-Review.html">
+   Final-Review
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Practice_Final-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../assets/intro/projects/overview.html">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../assets/intro/projects/ProjectIdeas.html">
+   Project Ideas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../assets/intro/projects/faq.html">
+   Project FAQ
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/materials/Exam-Prep/Practice_Final-Answers.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/Exam-Prep/Practice_Final-Answers.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/Exam-Prep/Practice_Final-Answers.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/Exam-Prep/Practice_Final-Answers.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/Exam-Prep/Practice_Final-Answers.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timing">
+     Timing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-rules">
+     The Rules
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1-variables-conditionals-loops-3-5-points">
+   Part 1: Variables, Conditionals, &amp; Loops (3.5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q1-conditionals-2-points">
+     Q1 - Conditionals (2 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q2-loops-1-5-points">
+     Q2 - Loops (1.5 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-functions-testing-5-points">
+   Part 2: Functions &amp; Testing (5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q3-years-to-days-2-5-points">
+     Q3 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       years_to_days
+      </span>
+     </code>
+     (2.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q4-test-function-test-years-to-days-2-5-points">
+     Q4 - Test Function:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       test_years_to_days
+      </span>
+     </code>
+     (2.5 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-style-documentation-11-points">
+   Part 3: Style &amp; Documentation (11 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q5-code-style-3-points">
+     Q5 - Code Style (3 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q6-years-py-1-point">
+     Q6 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       years.py
+      </span>
+     </code>
+     (1 point)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q7-function-ii-7-25-points">
+     Q7 - Function II (7.25 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-4-true-false-1-5-points">
+   Part 4: True/False (1.5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q8-true-false-1-5-points">
+     Q8 - True/False (1.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#final-exam-complete">
+     Final Exam complete!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cogs-18-practice-final-exam">
+<h1>COGS 18 - Practice Final Exam<a class="headerlink" href="#cogs-18-practice-final-exam" title="Permalink to this headline">¶</a></h1>
+<p>This is the practice final exam for Fall 2020. It covers topics through the end of the course.</p>
+<p>This exam is out of 0 points, worth 0% of your grade.</p>
+<p><strong>PLEASE DO NOT CHANGE THE NAME OF THIS FILE.</strong></p>
+<p><strong>PLEASE DO NOT COPY &amp; PASTE OR DELETE CELLS INLCUDED IN THE EXAM.</strong> (Note that you can add additional cells, if you want to test things out.</p>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="timing">
+<h3>Timing<a class="headerlink" href="#timing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The exam is designed to take you ~2-3 hours.</p></li>
+<li><p>If it takes you longer than 2-3 hours, you’re free to use that time.</p></li>
+<li><p>Regardless of when you start, the exam must be submited by Mon 12/14 at 11:59 PM.</p></li>
+</ul>
+</div>
+<div class="section" id="the-rules">
+<h3>The Rules<a class="headerlink" href="#the-rules" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You are to complete this exam on your own.</p></li>
+<li><p>This is open-notes &amp; open-Google</p></li>
+<li><p>You may not talk to any humans about this exam.</p></li>
+<li><p>The following are all <em>prohibited</em>:</p>
+<ul>
+<li><p>text/phone/online chat communication</p></li>
+<li><p>posting questions to a message board where a human could respond</p></li>
+<li><p>asking anyone via any form about a question on this test directly</p></li>
+</ul>
+</li>
+<li><p>Clarification questions will <em><strong>not</strong></em> be allowed and there will be no posting on Piazza about the exam at all.</p>
+<ul>
+<li><p>Piazza posts about the exam will not be answered and will be deleted.</p></li>
+<li><p>Students who post questions about the exam to Piazza are at risk of losing points on the exam.</p></li>
+<li><p>If you are confused about wording, add a note to your exam explaining your confusion and how you interpreted the question.</p></li>
+<li><p>Note: This policy is b/c we are incapable of responding for all of the time when the exam is being completed. This is the only way to make it fair across the board for students.</p></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: red;">Note: </span> There <em>is</em> a chance for partial credit on some questions, so <em>some</em> code is better than <em>no</em> code. Even if it throws an error, having some code that partially answers the question will benefit you/your grade.</p>
+</div>
+</div>
+<div class="section" id="part-1-variables-conditionals-loops-3-5-points">
+<h2>Part 1: Variables, Conditionals, &amp; Loops (3.5 points)<a class="headerlink" href="#part-1-variables-conditionals-loops-3-5-points" title="Permalink to this headline">¶</a></h2>
+<p>Review E1 for material in this section</p>
+<div class="section" id="q1-conditionals-2-points">
+<h3>Q1 - Conditionals (2 points)<a class="headerlink" href="#q1-conditionals-2-points" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="q2-loops-1-5-points">
+<h3>Q2 - Loops (1.5 points)<a class="headerlink" href="#q2-loops-1-5-points" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="part-2-functions-testing-5-points">
+<h2>Part 2: Functions &amp; Testing (5 points)<a class="headerlink" href="#part-2-functions-testing-5-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q3-years-to-days-2-5-points">
+<h3>Q3 - <code class="docutils literal notranslate"><span class="pre">years_to_days</span></code> (2.5 points)<a class="headerlink" href="#q3-years-to-days-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">years_to_days()</span></code> that takes the number of years as its input and then convers that to days (You should assume there are 365 days in a year for this question.) Return the number of days from the function as an integer.</p>
+<p>Note:</p>
+<ul class="simple">
+<li><p>You can assume the input val is numeric</p></li>
+<li><p>This function is admittedly <em>less</em> involved than the function on your exam, so that we can focus on the new material</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">def</span> <span class="nf">years_to_days</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="o">*</span><span class="mi">365</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">years_to_days</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="k">assert</span> <span class="n">years_to_days</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">365</span>
+<span class="k">assert</span> <span class="n">years_to_days</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">547</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>RUBRIC USED IN GRADING</p>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q4-test-function-test-years-to-days-2-5-points">
+<h3>Q4 - Test Function: <code class="docutils literal notranslate"><span class="pre">test_years_to_days</span></code> (2.5 points)<a class="headerlink" href="#q4-test-function-test-years-to-days-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Write a test function <code class="docutils literal notranslate"><span class="pre">test_years_to_days()</span></code> that:</p>
+<ol class="simple">
+<li><p>contains at least three asserts that test the functionality of <code class="docutils literal notranslate"><span class="pre">years_to_days()</span></code></p></li>
+<li><p>passes silently when executed</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># specific tests will differ</span>
+<span class="k">def</span> <span class="nf">test_years_to_days</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">years_to_days</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">years_to_days</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="nb">int</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">years_to_days</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">365</span>
+    <span class="k">assert</span> <span class="n">years_to_days</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">547</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">test_years_to_days</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">test_years_to_days</span><span class="p">()</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;good&#39;</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;bad&#39;</span>
+    
+<span class="k">assert</span> <span class="n">out</span> <span class="o">==</span> <span class="s1">&#39;good&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>RUBRIC USED IN GRADING</p>
+<p>=== END MARK SCHEME ===</p>
+</div>
+</div>
+<div class="section" id="part-3-style-documentation-11-points">
+<h2>Part 3: Style &amp; Documentation (11 points)<a class="headerlink" href="#part-3-style-documentation-11-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q5-code-style-3-points">
+<h3>Q5 - Code Style (3 points)<a class="headerlink" href="#q5-code-style-3-points" title="Permalink to this headline">¶</a></h3>
+<p>In the file <code class="docutils literal notranslate"><span class="pre">years.py</span></code>, there is a function <code class="docutils literal notranslate"><span class="pre">days_to_years()</span></code>. The code is functional; however, the API/naming and code style need improvement. And, documentation and code comments are completely missing.</p>
+<p>Edit the function in <code class="docutils literal notranslate"><span class="pre">years.py</span></code> to:</p>
+<ol class="simple">
+<li><p>Improve the function’s API/naming (but: do <em>not</em> change the function’s name)</p></li>
+<li><p>Improve the overall code style (using what we discussed in class about PEP8)</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">numpy</span></code> style docstring (at the level discussed in class)</p></li>
+<li><p>Add code comments where needed</p></li>
+</ol>
+<p>Be sure to save changes in <code class="docutils literal notranslate"><span class="pre">years.py</span></code> when completed.</p>
+<p>Note: You do not have to actually add any code to this notebook for this question.</p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>RUBRIC USED IN GRADING</p>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q6-years-py-1-point">
+<h3>Q6 - <code class="docutils literal notranslate"><span class="pre">years.py</span></code> (1 point)<a class="headerlink" href="#q6-years-py-1-point" title="Permalink to this headline">¶</a></h3>
+<p>You now have two functions and two test functions, but they’re not all yet organized! Let’s do that now…</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">years.py</span></code></strong></p>
+<ol class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">years_to_days()</span></code> (from Q3) to <code class="docutils literal notranslate"><span class="pre">years.py</span></code></p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">numpy</span></code>-style docstring &amp; appropriate code comments to <code class="docutils literal notranslate"><span class="pre">years_to_days()</span></code> (if you haven’t already).</p></li>
+<li><p>Double check the naming/code style used in <code class="docutils literal notranslate"><span class="pre">years_to_days()</span></code> - improve if needed</p></li>
+</ol>
+<p><strong><code class="docutils literal notranslate"><span class="pre">test_years.py</span></code></strong></p>
+<ol class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">test_years_to_days</span></code> (from Q4) to <code class="docutils literal notranslate"><span class="pre">test_years.py</span></code></p></li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">import</span></code> statement at top (if needed)</p></li>
+</ol>
+<p>Once completed, <code class="docutils literal notranslate"><span class="pre">import</span></code> both of the functions from <code class="docutils literal notranslate"><span class="pre">years.py</span></code> below, such that the code <code class="docutils literal notranslate"><span class="pre">yr.years_to_days(1)</span></code> and <code class="docutils literal notranslate"><span class="pre">yr.days_to_years(365)</span></code> both execute without issue.</p>
+<p>Note: You may have to restart your kernel for the <code class="docutils literal notranslate"><span class="pre">import</span></code> to work without issue.</p>
+<p>What should be in <code class="docutils literal notranslate"><span class="pre">years.py</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">days_to_years</span><span class="p">(</span><span class="n">input_days</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;convert input value into years</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    input_days: int or float</span>
+<span class="sd">        input number of days to be converted</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    output_years: float</span>
+<span class="sd">        converted value in years</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># convert to years, round to two decimal place</span>
+    <span class="n">output_years</span> <span class="o">=</span> <span class="n">input_days</span><span class="o">/</span><span class="mi">365</span>
+    <span class="n">output_years</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">output_years</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+   
+    <span class="k">return</span> <span class="n">output_years</span>
+
+<span class="k">def</span> <span class="nf">years_to_days</span><span class="p">(</span><span class="n">input_years</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;convert input value into days</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    input_years: int or float</span>
+<span class="sd">        input number of years to be converted</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    output_days: float</span>
+<span class="sd">        converted value in years</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">output_days</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">input_years</span> <span class="o">*</span> <span class="mi">365</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">output_days</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>What should be in <code class="docutils literal notranslate"><span class="pre">test_years.py</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">years</span> <span class="kn">import</span> <span class="n">days_to_years</span><span class="p">,</span> <span class="n">years_to_days</span>
+
+<span class="c1"># specific asserts will vary</span>
+<span class="k">def</span> <span class="nf">test_days_to_years</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">days_to_years</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">days_to_years</span><span class="p">(</span><span class="mi">365</span><span class="p">),</span> <span class="nb">float</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">days_to_years</span><span class="p">(</span><span class="mi">365</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="k">assert</span> <span class="n">days_to_years</span><span class="p">(</span><span class="mi">547</span><span class="p">)</span> <span class="o">==</span> <span class="mf">1.5</span>
+
+
+<span class="k">def</span> <span class="nf">test_years_to_days</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">years_to_days</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">years_to_days</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="nb">int</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">years_to_days</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">365</span>
+    <span class="k">assert</span> <span class="n">years_to_days</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">547</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">years</span> <span class="k">as</span> <span class="nn">yr</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to check your work (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">yr</span><span class="o">.</span><span class="n">years_to_days</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">yr</span><span class="o">.</span><span class="n">years_to_days</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">365</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">yr</span><span class="o">.</span><span class="n">days_to_years</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">yr</span><span class="o">.</span><span class="n">days_to_years</span><span class="p">(</span><span class="mi">365</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to run pytest</span>
+<span class="c1"># to run pytest</span>
+<span class="o">!</span>pytest test_years.py
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>RUBRIC USED FOR GRADING</p>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q7-function-ii-7-25-points">
+<h3>Q7 - Function II (7.25 points)<a class="headerlink" href="#q7-function-ii-7-25-points" title="Permalink to this headline">¶</a></h3>
+<p>Another function + code style + documentation + import question will be included here</p>
+</div>
+</div>
+<div class="section" id="part-4-true-false-1-5-points">
+<h2>Part 4: True/False (1.5 points)<a class="headerlink" href="#part-4-true-false-1-5-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q8-true-false-1-5-points">
+<h3>Q8 - True/False (1.5 points)<a class="headerlink" href="#q8-true-false-1-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Following the instructions &amp; example above, store the appropriate boolean in the variable provided for each of the following statements:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">objects</span></code> | In Python, everything is an object</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">objects</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">objects</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">objects</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="final-exam-complete">
+<h3>Final Exam complete!<a class="headerlink" href="#final-exam-complete" title="Permalink to this headline">¶</a></h3>
+<p>Good work - you’re done with the final exam!</p>
+<p>Check your work, and then when you’re ready, <strong>submit on datahub</strong>.</p>
+<p>We will not have your exam until you click submit and see this show up under ‘submitted assignments’.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials/Exam-Prep"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="Final-Review.html" title="previous page">Final Exam Review</a>
+    <a class='right-next' id="next-link" href="../PythonParty.html" title="next page">Python Party!</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>

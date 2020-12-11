@@ -5,10 +5,10 @@
 - **Final Project/Exam** (Mon 12/14; 11:59 PM)
 
 **Notes**
-- Please fill out your **[CAPEs](cape.ucsd.edu)** (current: 35%)
+- Please fill out your **[CAPEs](cape.ucsd.edu)** (current: 44%)
 - Please complete **[post-course survey](https://docs.google.com/forms/d/e/1FAIpQLScOn6HK0y0vwZ5Ql4EOBy1DBKwrunr0rycUDjgAeDGqM_IhFA/viewform?usp=sf_link)** (ideally after you finish exam/project)
 - Final Exam: Review & Practice Exam
-    - There will be a minimal practice exam on datahub (functions are simpler than real exam; process is the same)
+    - There is a minimal practice exam on datahub (functions are simpler than real exam; process is the same)
     - Review in Exam-Prep
 - Prof Ellis' Office Hours Monday of Finals Week (1-3 PM)
     - by appointment only (10 min slots): https://cogs18.youcanbook.me/

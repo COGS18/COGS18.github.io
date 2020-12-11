@@ -314,7 +314,7 @@ When a string contains single or double quote characters: use the other one to a
 
 
 # Badness
-my_string = 'Prof\'s Project'
+my_string = 'Prof\'s Project' 
 
 # Goodness
 my_string = "Prof's Project"
@@ -428,18 +428,28 @@ def MyFunction(input_num):
 - E) 7 or more
 
 ### list here
+- function uses CapWords, rather than snake_case
+- indentation (ind = 0)
+- if statement should be two lines
+- extra spaces (spacing issues)
+- naming (`qq` & `i`) 
+- no docstring! 
 
 # let's fix this code
-def MyFunction(input_num):
+def my_function(input_num):
     
     my_list = [0,1,2,3]
-    if 1 in my_list: ind = 1
+    
+    if 1 in my_list: 
+        ind = 1
     else:
-      ind = 0
-    qq = []
-    for i in my_list [ind:]:
-        qq.append(input_num/i)
-    return qq
+        ind = 0
+    
+    list_out = []
+    for i in my_list[ind:]:
+        list_out.append(input_num/i)
+    
+    return list_out
 
 # check using pylint
 !pylint linter_example.py

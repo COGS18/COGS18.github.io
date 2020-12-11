@@ -50,8 +50,8 @@
   #   title: 22-APIs
   # - file: materials/23-AdvancedPython
   #   title: 23-AdvancedPython
-  # - file: materials/24-WrapUp
-  #   title: 24-WrapUp
+  - file: materials/23-WrapUp
+    title: 23-WrapUp
   - file: materials/A1-Syntax
     title: A1-Syntax
   - file: materials/A2-Examples
@@ -101,7 +101,8 @@
     title: E2_FA20-Answers
   - file: materials/Exam-Prep/Final-Review
     title: Final-Review
-
+  - file: materials/Exam-Prep/Practice_Final-Answers
+    title: Practice_Final-Answers
 
 - part: Project
   chapters:
