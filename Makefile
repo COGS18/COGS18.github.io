@@ -27,7 +27,7 @@ textbook:
 	python scripts/clean.py
 
 	# Copy & build materials
-	git clone --depth 1 https://github.com/COGS18/LectureNotes-Fa20 materials
+	git clone --depth 1 https://github.com/COGS18/LectureNotes-Wi21 materials
 	rm materials/README.md
 
 

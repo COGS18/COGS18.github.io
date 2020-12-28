@@ -1,7 +1,9 @@
 
 # COGS 18: Introduction to Python
 
-**Fall 2020**  
+THIS IS A DRAFT SYLLABUS AND WILL CHANGE BEFORE THE QUARTER STARTS. 
+
+**Winter 2021**  
 **MWF 8-8:50 (remote)**  
 
 ---
@@ -25,30 +27,26 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 ## COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
-**Instructor Office Hours**: Mon 1-3 PM
+**Instructor Office Hours**: Friday 11 AM - 1 PM
 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
-| TA             | Shivani Bhakta	         | 12 PM; 1 PM      | Fri 9:30-10:30 AM |
-| TA 	           | David Liau              | 4 PM; 5PM        | Thurs 2-3 PM   |
-| TA 	           | Qixuan "Harrison" Ma    | 11 AM            | --           |
-| IA	           | Mani Amani              | 3 PM             | Tue 12:30-1:30 PM |
-| IA	           | Frank Li                | --               | --           |
-| IA	           | Boning Yang             | --               | --           |
-| IA	           | Bob (Chongbin) Zhang    | 9 AM             | Sun 9-10 PM  |
-| IA	           | Bora Mutluoglu          | 2 PM             | --           |
-| IA	           | Anuujin Tsedenbal       | --               | Thurs 9-10 PM|
-| IA	           | Emma Yuan               | 10 AM            | --           |
+| TA             | Aiden Iveris	           | 9A; 10A          | TBD          |
+| IA	           | Beibei Du               | --               | --           |
+| IA	           | Jaime Izabal            | --               | --           |
+| IA	           | Scott Yang              | --               | --           |
+| IA	           | Andrew Nguyen           | --               | --           |
 
-You may also see *Angela Cha* and *Geoff Lizar* answer questions on Piazza or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
+
+You may also see *Angela Cha*, *Geoff Lizar*, or *Harrison Ma* answer questions on Campuswire/Discord or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
 
 Course Website: https://cogs18.github.io   
-Canvas Course: https://canvas.ucsd.edu/courses/18771  
-Course Piazza*: http://piazza.com/ucsd/fall2020/cogs18  
+Canvas Course: https://canvas.ucsd.edu/courses/21696   
+Course Campuswire*: https://campuswire.com/c/G5A5B51F9   
 Assignment Submission: https://datahub.ucsd.edu  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
-*You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. Your Instructor and TAs will be able to see who you are.
+*You will be able to post anonymously on Campuswire; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
 
 ---
 
@@ -68,7 +66,7 @@ To achieve these objectives, information will be presented during lecture. You w
 ## COURSE MATERIALS
 
 - All materials will be provided via the [course website](https://cogs18.github.io) and [datahub](https://datahub.ucsd.edu)
-- Software: Python >=3.6 (Anaconda distribution); Jupyter Notebooks
+- Software: Python >=3.6 (Anaconda distribution); Jupyter Notebooks (this will be available on datahub)
 - iclickers will *NOT* be used this quarter
 - No required textbook; optional textbook: https://shanellis.github.io/pythonbook (currently under development; feedback welcome)
 
@@ -86,9 +84,9 @@ Note: If you do not have consistent access to the technology needed to fully acc
 |                 | \% of Grade   | Requirement  |
 | --------------: |:-------------:|:------------------------------|
 | Assignments 	  | 40\%       	  | Complete 5 Assignments        |
-| Midterms        | 25\%          | Complete 2 Online Exams       |
-| Coding Lab      | 14\%		      | Participate in 7 Coding Labs  |
-| Final Project	  | 21\%          | Complete Final Project        |
+| Midterms        | 25\%          | Complete 2 online Exams       |
+| Coding Lab      | 16\%		      | Participate in 8 Coding Labs  |
+| Final Project	  | 19\%          | Complete Final Project OR Final Exam |
 
 **Exam timing**: For the midterms, there will be a flexible window during which you can complete the exams.
 
@@ -100,7 +98,7 @@ To calculate final grades, I use the [standard grading scale](https://pages.stol
  
 ### Assignment Regrades
 
-We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post *privately* on Piazza to "Instructors" using the "regrades" tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
+We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post *privately* on Campuswire to "Instructors" using the "regrades" tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
 
 Note that points will *not* be rewarded if you fail to follow instructions. For example, if the instructions say to name the variable `orange` and you name it `ornage` (misspelled), you will not be rewarded credit upon regrade. This is because (1) following instructions and being detail-oriented is important and (2) there are hundreds of students taking the course this quarter. It would be an unfair burden to place on TAs if we didn't have this policy.
 
@@ -117,9 +115,9 @@ Lectures will take place at their scheduled time for those who are able to atten
 
 However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials. If a lecture recording ever fails during class, Prof Ellis will re-record a lecture, ensuring all students have access to the material. Lecture recordings will be available on Canvas in the Media Gallery by 2PM after the live lecture is delivered.
 
-### Coding Labs (14\%)
+### Coding Labs (16\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 7 different coding labs (2\% each). 
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2\% each). 
 
 Coding labs will be submitted in the same place as assignments using the same process; however, they will *not* be autograded for *correctness*. They will instead be spot-checked by instructional staff for concerted student *effort*.
 
@@ -129,7 +127,7 @@ Note: You should be signed up for the CodingLab for which you can attend. Howeve
 
 ### Assignments (40\%)
 
-There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays by 11:59 PM. 
+There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Fridays by 11:59 PM. 
 
 Late assignments will be accepted at 75\% credit for 72 hours (3 days) after the assignment's due date. Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
@@ -146,9 +144,15 @@ During exams this quarter, you *will* be allowed to consult outside resources (y
 As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's *always* a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::
 
 
-### Final Project (21\%)
+### Final Project OR Exam (19\%)
 
-Successful completion of this class will require you to complete an independent coding project worth 21\% of your final grade. We will discuss the details elsewhere; however, briefly, you will either (1) expand upon one of the class assignments adding original elements or (2) write original code for a project topic of your choosing. The goal of this project is to demonstrate that you can write good, well-documented code that solves the problem you've set out to solve.
+Students will choose whether they complete the final project OR the final exam, worth 19\% of your final grade Students get to choose which option is best for them but may only submit one *and* there are two limitations of choosing the final exam 1) There is no opportunity for extra credit on the final exam and 2) the highest grade you can get if you choose the exam is an A. (To earn an A+, you must do the final project.)
+
+**Final Project**
+You will learn more from the final project than you will from the final exam, but the project is more time-consuming and involved. We will discuss the details elsewhere; however, briefly, you will either (1) expand upon one of the class assignments adding original elements or (2) write original code for a project topic of your choosing. The goal of this project is to demonstrate that you can write good, well-documented code that solves the problem you've set out to solve.
+
+**Final Exam**
+The final exam will be taken on the same platform and with the same time constraints as the midterm. Further details will be discussed in class. 
 
 ---
 
@@ -156,55 +160,55 @@ Successful completion of this class will require you to complete an independent 
 
 | Date    | Week |Lecture | Day | Topic           | Assignment (due 11:59 PM) | CodingLab (due 11:59 PM)  |
 | -------:|:----:|:-------|:---:|:----------------|:--------------------------|:--------------------------|
-| 10/2    | 0	   | 1      | F   | Why Program?    |                           |                         	| 
-| 10/5    | 1	   | 2      | M   | Tooling		      |                           |                         	| 
-| 10/7    | 1	   | 3      | W   | Variables       |                           | CL1: Tooling 		          |
-| 10/9    | 1    | 4      | F   | Operators       |                           |                         	| 
-| 10/12   | 2	   | 5      | M   | Conditionals    | A1: Getting Started       |                       		| 
-| 10/14   | 2	   | 6      | W   | Collections     |                           | CL2: Programming I        | 
-| 10/16   | 2	   | 7      | F   | Loops          	|                           |         			            | 
-| 10/19   | 3	   | 8      | M   | Dictionaries [*]| A2: Ciphers               |                         	| 
-| 10/21   | 3	   | --     | W   | Review          |            			          | CL3: Programming II       |
-| 10/23   | 3	   | --     | F   | **Exam I**      |                  	        |                         	| 
-| 10/26   | 4	   | 9      | M   | Functions I     |                        	  | 				                  | 
-| 10/28   | 4	   | 10     | W   | Algorithms  	  |                        		| CL4: Functions	          |
-| 10/30   | 4	   | 11     | F   | Functions II    |            			          |                        		| 
-| 11/2    | 5	   | 12     | M   | Debugging       | A3: Chatbots              |                         	| 
-| 11/4    | 5	   | 13     | W   | Code Testing    |                       	 	| CL5: Debugging 	          |
-| 11/6    | 5	   | 14     | F   | Objects         |                        		|                         	| 
-| 11/9    | 6	   | 15     | M   | Classes         |   				                |                         	| 
-| 11/11   | 6	   | --     | W   | **No Class**  	|               		        |                        		| 
-| 11/13   | 6	   | 16     | F   | Namespaces      |                       		|        			              | 
-| 11/16   | 7	   | 17     | M   | Command Line [**]| A4: Artificial Agents	  |                         	| 
-| 11/18   | 7	   | --     | W   | Review  	 	    |      				              | CL6: Classes              | 
-| 11/20   | 7	   | --     | F   | **Exam II**  		| 	 			                  |                         	| 
-| 11/23   | 8	   | --     | M   | Python Party  	| 	   		                 	|                         	| 
-| 11/25   | 8	   | 18     | W   | Open Source 		|     			              	| CL7:  Command Line        | 
-| 11/27   | 8	   | --     | F   | **No Class**   		| 				                  |                         	| 
-| 11/30   | 9	   | 19     | M   | Code Style   		| 			                   	|                         	| 
-| 12/2    | 9	   | 20     | W   | Documentation  	| 				                  |                         	| 
-| 12/4    | 9	   | 21     | F   | Code Projects 	|     		               		|                         	| 
-| 12/7    | 10   | 22     | M   | APIs  		     	| A5: Experimentation       |    	                			| 
-| 12/9    | 10   | 23     | W   | Advanced Python | 				                  |                         	| 
-| 12/11   | 10   | 24     | F   | Wrap Up   		  | 			                  	|                        		| 
+| 1/4    | 1	   | 1      | M   | Introduction    |                           |                         	| 
+| 1/6    | 1	   | 2      | W   | Tooling & Help  |                           | CL1: Tooling 		          |
+| 1/8    | 1     | 3      | F   | Variables       |                           |                         	| 
+| 1/11   | 2	   | 4      | M   | Operators       |                           |                       		| 
+| 1/13   | 2	   | 5      | W   | Conditionals    |                           | CL2: Programming I        | 
+| 1/15   | 2	   | 6      | F   | Debugging       |                           |         			            | 
+| 1/18   | 3	   | --     | M   | **No Class**  	|                           |                         	| 
+| 1/20   | 3	   | 7      | W   | Collections     |            			          | CL3: Programming II       |
+| 1/22   | 3	   | 8      | F   | Loops           | A1: Getting-Started       |                         	| 
+| 1/25   | 4	   | 9      | M   | Dictionaries [*]|                        	  | 				                  | 
+| 1/27   | 4	   | 10     | W   | Functions I     |                        		| CL4: Functions	          |
+| 1/29   | 4	   | --     | F   | Review          | A2: Ciphers               |                        		| 
+| 2/1    | 5	   | --     | M   | **Midterm I**   |                           |                         	| 
+| 2/3    | 5	   | 11     | W   | Algorithms  	  |                       	 	| CL5: Debugging 	          |
+| 2/5    | 5	   | 12     | F   | Functions II    |                           |                         	| 
+| 2/8    | 6	   | 13     | M   | Classes I       |   				                |                         	| 
+| 2/10   | 6	   | --     | W   | Classes II [**] |               		        | CL6: Classes             	| 
+| 2/12   | 6	   | --     | F   | Review          | A3: Chatbots              |        			              | 
+| 2/15   | 7	   | --     | M   | **No Class**   	| 	                        |                         	| 
+| 2/17   | 7	   | --     | W   | **Midterm II**  |      				              | No Coding Lab (Exam)      | 
+| 2/19   | 7	   | --     | F   | Python Party  	| 	 			                  |                         	| 
+| 2/22   | 8	   | 14     | M   | Command Line    | 	   		                 	|                         	| 
+| 2/24   | 8	   | 15     | W   | Modules & Scripts |     			              | CL7: Command Line         | 
+| 2/26   | 8	   | 16     | F   | Scientific Computing | 				              |                         	| 
+| 3/1    | 9	   | 17     | M   | Code Testing    | 			                   	|                         	| 
+| 3/3    | 9	   | 18     | W   | Code Style   		| 				                  | CL8: Scientific Computing	| 
+| 3/5    | 9	   | 19     | F   | Documentation  	|                           |                           | 
+| 3/8    | 10    | 20     | M   | Code Projects 	|                           |    	                			| 
+| 3/10   | 10    | 21     | W   | Advanced Python | 				                  |                         	| 
+| 3/12   | 10    | 22     | F   | Wrap Up   		  | A4: Experimentation    		|                        		| 
 
-**Final Exam**: There is no final exam. Final Projects are due on the date of the final exam (Mon 12/14) by 11:59 PM.
+**Final Exam**: Final Projects and Final Exams are due on the date of the final exam (Mon 3/15) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:   
-[\*] denotes the last day of material covered on Midterm #1.   
-[\*\*] the last day for material on Midterm #2.
+[\*] denotes the last day of material covered on Midterm I.   
+[\*\*] the last day for material on Midterm II.
 
 ---
 
 ## OTHER GOOD STUFF
 
-### Piazza Rules
+### Campuswire Rules
 
-Piazza is an incredible resource for technical classes. It gives you a place to post questions and an opportunity to answer others' questions. We do our very best as an instructional staff to answer each and every question in a timely manner. We also want to make sure this platform is being used to learn and not thwarting anyone's education. To make all of this possible, there are a few rules we ask you all to follow:
+Campuswire is an incredible resource for technical classes. It gives you a place to post questions and an opportunity to answer others' questions. We do our very best as an instructional staff to answer each and every question in a timely manner. We also want to make sure this platform is being used to learn and not thwarting anyone's education. To make all of this possible, there are a few rules for this course's campuswire:
 
 1. Before posting your question, look at questions that have already been posted to avoid duplicates.
-2. If posting about an assignment, include the question number in the Summary line. 
-3. Never post an answer to or code for an assignment on a public post. Pseudocode is encouraged for public posts. If you must include code for an assignment, make this post private (to "Instructors" only) on Piazza. 
+2. If posting about an assignment, note title should have assignment number, question number, and 1-2 words about the question. (i.e. A1 Q1 Variable Naming)
+3. Never post an answer to or code for an assignment on a public post. Pseudocode is encouraged for public posts. If you must include code for an assignment, make this post private (to "Instructors & TAs" only) on Campuswire. 
+4. Your post must include not only your question/where you're stuck, but also what you've already done to try to solve it so far and what resources (class notes, online URLs, etc.) you used to try to answer the question up to this point.
 
 ### Class Conduct
 
@@ -237,16 +241,15 @@ http://disabilities.ucsd.edu
 
 It's great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we're able to get to everyone's questions. 
 
-That said, to ensure that we're respecting their time, TAs and IAs have been instructed they're only obligated to answer questions between normal working hours (M-F 9AM-5PM). Professor Ellis is also going to do her best to stick to these working hours. However, I know that's not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
+That said, to ensure that we're respecting their time, TAs and IAs have been instructed they're only obligated to answer questions between normal working hours (M-F 9AM-5PM). Professor Ellis is also going to do her best to stick to these working hours and only go on Campuswire MWF each week. However, I know that's not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
 
 If you have:
 
-- **questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so post these to Piazza! 
-- **a technical assignment question** - come to office hours (or post to Piazza). Answering technical questions is often best accomplished 'in person' where we can discuss the question and talk through ideas. However, if that is not possible, post your question to Piazza. Be as specific as you can in the question you ask. And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
-- **been stuck on something for a while (>30min) and aren't even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn't working. That's OK - we've all been there! IF you are stuck, you can and should reach out for help, even if you aren't exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on Piazza). If you don't have a specific question, include the information you have (what you're stuck on, the code you've been trying that hasn't been happening, and/or the error messages you've been getting).
-- **questions about course logistics** - first, check the syllabus. If you can't find the answer there, first ask a classmate. If still unsure, post on Piazza.
-- **questions about a grade** - Post on piazza with "regrades" tag in a private post to "Instructors".
-- **a specific CodingLab-related question** - send a direct message on Piazza to your TA/IA
+- **questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so post these to Campuswire! 
+- **a technical assignment question** - come to office hours (or post to Campuswire). Answering technical questions is often best accomplished 'in person' where we can discuss the question and talk through ideas. However, if that is not possible, post your question to Campuswire. Be as specific as you can in the question you ask. And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
+- **been stuck on something for a while (>30min) and aren't even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn't working. That's OK - we've all been there! IF you are stuck, you can and should reach out for help, even if you aren't exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on Campuswire). If you don't have a specific question, include the information you have (what you're stuck on, the code you've been trying that hasn't been happening, and/or the error messages you've been getting).
+- **questions about course logistics** - first, check the syllabus. If you can't find the answer there, first ask a classmate. If still unsure, post on Campuswire.
+- **questions about a grade** - Post on Campuswire with "regrades" tag in a private post to "Instructors & TAs".
 - **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Professor Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS18 in the email subject line and your full name in your message.
 - **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the [anonymous Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)*
 
@@ -258,5 +261,5 @@ Most students call me Professor/Prof Ellis, and that's great! This is how I typi
 
 ### What I should call you
 
-I should call you by your preferred name, with the correct pronunciation. Please correct me (either in the chat, out loud on zoom, or via email/Piazza after the fact...however you're most comfortable) if I ever make a mistake.
+I should call you by your preferred name, with the correct pronunciation. Please correct me (either in the chat, out loud on zoom, or via email/Campuswire after the fact...however you're most comfortable) if I ever make a mistake.
 

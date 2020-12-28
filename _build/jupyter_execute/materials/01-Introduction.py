@@ -1,24 +1,22 @@
-<div class="alert alert-danger">
-  <strong>Reminder:</strong> All lectures for COGS 18 are being recorded.
-</div>
-
 # Introduction to Python
 
 **Important Note**: This course was originally designed and developed by [Tom Donoghue](https://tomdonoghue.github.io/). While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fall 2018, *tons* of credit for this course is due to Tom for his awesome work getting this course off the ground.
 
 
+The PDF slides from the start of the first class are available here: https://cogs18.github.io/assets/intro/01_welcome.pdf
+
 ## Logistics
 
 - Who:
     - Instructor: Shannon Ellis 
-    - TAs: Shivani and David
-    - IAs: Qixuan ("Harrison"), Anuujin, Frank, Bora, Emma, Mani, Boning, and Bob
+    - TA: Aiden
+    - IAs: Beibei, Jaime, Scott, Andrew
     
 - Where:
     - Lectures MWF @ 8AM (remote)
-    - Coding Lab Sections (Wed; 9AM - 6PM)
+    - Coding Lab Sections (Wed 9AM & 10 AM)
     - Course Website: https://cogs18.github.io
-    - Piazza Page: https://piazza.com/ucsd/fall2020/cogs18
+    - Campuswire Page: https://campuswire.com/p/G5A5B51F9
 
 ## Expectations & Approach
 
@@ -73,9 +71,3 @@ Uses in COGS18:
 - assignments
 - coding labs
 - exams
-
-To get the most up-to-date notes on datahub each day: 
-
-https://datahub.ucsd.edu/hub/user-redirect/git-sync?repo=https://github.com/COGS18/LectureNotes-Fa20
-
-^ This link is on the Canvas home page.
