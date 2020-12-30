@@ -41,8 +41,8 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 You may also see *Angela Cha*, *Geoff Lizar*, or *Harrison Ma* answer questions on Campuswire/Discord or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
 
 Course Website: https://cogs18.github.io   
-Canvas Course: https://canvas.ucsd.edu/courses/21696  
-Course Campuswire*: https://campuswire.com/c/G5A5B51F9
+Canvas Course: https://canvas.ucsd.edu/courses/21696   
+Course Campuswire*: https://campuswire.com/c/G5A5B51F9   
 Assignment Submission: https://datahub.ucsd.edu  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
@@ -170,26 +170,26 @@ The final exam will be taken on the same platform and with the same time constra
 | 1/20   | 3	   | 7      | W   | Collections     |            			          | CL3: Programming II       |
 | 1/22   | 3	   | 8      | F   | Loops           | A1: Getting-Started       |                         	| 
 | 1/25   | 4	   | 9      | M   | Dictionaries [*]|                        	  | 				                  | 
-| 1/27   | 4	   | 10     | W   | Functions I     |                        		| CL4: Functions	          |
+| 1/27   | 4	   | 10     | W   | Functions I     |                        		| CL4: Loops & Debugging    |
 | 1/29   | 4	   | --     | F   | Review          | A2: Ciphers               |                        		| 
 | 2/1    | 5	   | --     | M   | **Midterm I**   |                           |                         	| 
-| 2/3    | 5	   | 11     | W   | Algorithms  	  |                       	 	| CL5: Debugging 	          |
+| 2/3    | 5	   | 11     | W   | Algorithms  	  |                       	 	| CL5: Functions 	          |
 | 2/5    | 5	   | 12     | F   | Functions II    |                           |                         	| 
 | 2/8    | 6	   | 13     | M   | Classes I       |   				                |                         	| 
 | 2/10   | 6	   | --     | W   | Classes II [**] |               		        | CL6: Classes             	| 
 | 2/12   | 6	   | --     | F   | Review          | A3: Chatbots              |        			              | 
 | 2/15   | 7	   | --     | M   | **No Class**   	| 	                        |                         	| 
 | 2/17   | 7	   | --     | W   | **Midterm II**  |      				              | No Coding Lab (Exam)      | 
-| 2/19   | 7	   | --     | F   | Python Party  	| 	 			                  |                         	| 
+| 2/19   | 7	   | --     | F   | Python Party  	| A4: Artifical Agents      |                         	| 
 | 2/22   | 8	   | 14     | M   | Command Line    | 	   		                 	|                         	| 
 | 2/24   | 8	   | 15     | W   | Modules & Scripts |     			              | CL7: Command Line         | 
-| 2/26   | 8	   | 16     | F   | Scientific Computing | 				              |                         	| 
+| 2/26   | 8	   | 16     | F   | Scientific Computing |                      |                         	| 
 | 3/1    | 9	   | 17     | M   | Code Testing    | 			                   	|                         	| 
 | 3/3    | 9	   | 18     | W   | Code Style   		| 				                  | CL8: Scientific Computing	| 
-| 3/5    | 9	   | 19     | F   | Documentation  	|                           |                           | 
+| 3/5    | 9	   | 19     | F   | Documentation  	| A5: Experimentation    	  |                           | 
 | 3/8    | 10    | 20     | M   | Code Projects 	|                           |    	                			| 
 | 3/10   | 10    | 21     | W   | Advanced Python | 				                  |                         	| 
-| 3/12   | 10    | 22     | F   | Wrap Up   		  | A4: Experimentation    		|                        		| 
+| 3/12   | 10    | 22     | F   | Wrap Up   		  |                           |                        		| 
 
 **Final Exam**: Final Projects and Final Exams are due on the date of the final exam (Mon 3/15) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
@@ -257,7 +257,7 @@ If you have:
 
 ### What should you call me?
 
-Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. I'm also totally OK with you addressing me as Shannon or Dr. Ellis. I would prefer you *not* address me as Ms./Miss/Mrs. Ellis (but I likely won't correct you....it's really not that big of a deal). 
+Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. I'm also totally OK with you addressing me as Shannon or Dr. Ellis. I would prefer you *not* address me as Ms./Miss/Mrs. Ellis (but I likely won't correct you....it's really not that big of a deal to me). 
 
 ### What I should call you
 
