@@ -1,6 +1,6 @@
 # Final Project
 
-As part of completing COGS 18, you must complete an independent project. This final project is worth 21% of your grade for the course.
+As part of completing COGS 18, you must complete an independent project (or complete the final exam).
 
 ### Objectives
 
@@ -17,7 +17,7 @@ The broad objectives of this project are for you to:
 - W9: By the end of this week, you must have a project topic / outline
 - W9-10: Work on the project
   - Coding Lab during Weeks 9-10 will provide you with time to work on and get help with your Final Project.
-- **Finals Week: projects due (11:59 PM, Mon, Dec 14th)**
+- **Finals Week: projects due**
 
 ### Getting Started
 
@@ -59,6 +59,7 @@ This quarter, the Taboo Topics for the COGS18 final project are:
 - Drawings from Turtle
 - Tic-tac-toe
 - Blackjack
+- Magic 8 Ball
 
 Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to Professor Ellis and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
 
@@ -84,7 +85,13 @@ Projects are individual, and each person needs to submit a project including (at
 
 ### Submitting Your Project
 
-You will be submitting a zip file containing your project to Canvas. This zip file must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
+#### Option 1: Complete and submit on datahub
+
+This will be the same process as used throughout the quarter. Fetch, complete, and submit on datahub. Note that any files in the final project folder will be viewable by us.
+
+#### Option 2: Submit on Canvas
+
+Some things (i.e. tkinter or other GUI interfaces) don't work on datahub. Other times, you just want to work on your computer. In this case, you can submit a zip file containing your project to Canvas. This zip file must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
 
 MyProjectFolder/  
 

@@ -2,19 +2,6 @@
 
 Coding Labs are a hands-on section of the course in which you must attend a lab section and work through a provided lab exercise during the 50 minute lab meeting time.
 
-## Coding Lab Schedule
-
-| Lab            | Week(s)        | Name  |
-| -------------: |:--------------:|:-----------|
-| CL1 	         | W1	            | Tooling |
-| CL2 	         | W2             | Programming I |
-| CL3	           | W3             | Programming II |
-| CL4	           | W4             | Functions |
-| CL5	           | W5             | Debugging |
-| CL6	           | W7             | Classes |
-| CL7	           | W8             | Command Line |
-
-
 ## Lab Attendance
 
 To get credit for the Coding Labs, you must make a concerted effort at completing each week's coding lab and submit the lab on datahub. 
