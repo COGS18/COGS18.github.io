@@ -31,10 +31,10 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
-| TA             | Aiden Iveris	           | 9A; 10A          | TBD          |
+| TA             | Aiden Iveris	           | 9A; 10A          | Tu 9-10 PM   |
 | IA	           | Beibei Du               | 10A              | --           |
 | IA	           | Jaime Izabal            | 9A               | --           |
-| IA	           | Scott Yang              | --               | TBD          |
+| IA	           | Scott Yang              | --               | Th 8-9 PM    |
 | IA	           | Andrew Nguyen           | --               | TBD          |
 
 
