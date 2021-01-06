@@ -31,11 +31,11 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
-| TA             | Aiden Iveris	           | 9A; 10A          | TBD          |
-| IA	           | Beibei Du               | --               | --           |
-| IA	           | Jaime Izabal            | --               | --           |
-| IA	           | Scott Yang              | --               | --           |
-| IA	           | Andrew Nguyen           | --               | --           |
+| TA             | Aiden Iveris	           | 9A; 10A          | Tu 9-10 PM   |
+| IA	           | Beibei Du               | 10A              | --           |
+| IA	           | Jaime Izabal            | 9A               | --           |
+| IA	           | Scott Yang              | --               | Th 8-9 PM    |
+| IA	           | Andrew Nguyen           | --               | TBD          |
 
 
 You may also see *Angela Cha*, *Geoff Lizar*, or *Harrison Ma* answer questions on Campuswire/Discord or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
