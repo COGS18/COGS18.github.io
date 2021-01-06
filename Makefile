@@ -48,6 +48,12 @@ textbook:
 	
 	# copy first day of slides to _build
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
+	
+	# copy non-md images to build
+	cp materials/img/anaconda.png _build/html/_images/
+	cp materials/img/conda.png _build/html/_images/
+	cp materials/img/jupyter.png _build/html/_images/
+	cp materials/img/python.png _build/html/_images/
 
 	# rm -rf labs
 

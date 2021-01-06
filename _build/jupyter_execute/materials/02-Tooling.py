@@ -1,4 +1,4 @@
-<center><img src="img/CALPIRG.png" width="700px"></center>
+![CALPIRG](img/CALPIRG.png)
 
 **Course Announcements**
 
@@ -60,7 +60,7 @@ The official Python organization website is available <a href="https://www.pytho
     - In this course, we will largely focus on the standard library
     - For access to other packages when we need them, we will use Anaconda
 
-<center><img src="img/anaconda.png" width="450px"></center>
+<center><img src="img/anaconda.png" width="350px"></center>
 
 <div class="alert alert-success">
 Anaconda is an open-source distribution of Python, focused on scientific computing in Python. 
@@ -139,7 +139,7 @@ UCSD hosts its version of JupyterHub and calls it datahub. This is what you'll b
 
 It is available here: http://datahub.ucsd.edu
 
-<center><img src="img/datahub.png" width="800px"></center>
+![datahub](img/datahub.png)
 
 ### When to use Datahub?
 
@@ -381,4 +381,4 @@ D. What is this datahub you speak of?
 - E. I'm going to work to download it in CodingLab.
 
 
-<center><img src="img/doing_it_right.png" width="900px"></center>
+![](img/doing_it_right.png)
