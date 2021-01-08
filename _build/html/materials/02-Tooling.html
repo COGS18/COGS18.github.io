@@ -39,6 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Variables" href="03-Variables.html" />
     <link rel="prev" title="Introduction to Python" href="01-Introduction.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,6 +87,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
   </a>
  </li>
 </ul>
@@ -423,7 +429,7 @@
 <div class="section" id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <p>This course and associated materials do not presume any prior knowledge of Python, or programming in general.</p>
-<p>To work with the course materials, you will need make sure you have access to the tools tools described here on datahub.</p>
+<p>To work with the course materials, you will need make sure you have access to the tools described here on datahub.</p>
 <p>It will be helpful for the final project if they are also installed on the computer you will be using.</p>
 <p>None of the materials are computationally heavy.</p>
 </div>
@@ -610,7 +616,7 @@ The main organizational structure of the notebook are 'cells'.
 <p>Cells, can be markdown (text), like this one.</p>
 <p>A brief note about Markdown. It’s a way to specify all formatting within the text itself.</p>
 <p>For example, italicized text can be specified with an <em>underscore</em> or <em>single asterisks</em>.</p>
-<p>Bold text requires <strong>two underccores</strong> or <strong>two asterisks</strong>.</p>
+<p>Bold text requires <strong>two underscores</strong> or <strong>two asterisks</strong>.</p>
 <div class="section" id="clicker-question-2">
 <h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">¶</a></h4>
 <p><strong>What does three underscores around text accomplish?</strong></p>
@@ -658,9 +664,11 @@ The main organizational structure of the notebook are 'cells'.
 <li><p>E) I’m lost</p></li>
 </ul>
 <p>test it out down here to see…</p>
-<p>list item
-list item
-list item</p>
+<ol class="simple">
+<li><p>list item</p></li>
+<li><p>list item</p></li>
+<li><p>list item</p></li>
+</ol>
 </div>
 </div>
 <div class="section" id="code-cells">
@@ -683,11 +691,21 @@ list item</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you execute a cell with just a variable name in it, it will also get printed</span>
 <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
 </pre></div>
 </div>
 </div>
@@ -711,6 +729,13 @@ list item</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE</span>
+<span class="n">val</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
 </pre></div>
 </div>
 </div>
@@ -831,6 +856,7 @@ D. What is this datahub you speak of?</p>
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="01-Introduction.html" title="previous page">Introduction to Python</a>
+    <a class='right-next' id="next-link" href="03-Variables.html" title="next page">Variables</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

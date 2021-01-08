@@ -28,7 +28,7 @@ This notebook will guide through the tools you will need for class materials and
 
 This course and associated materials do not presume any prior knowledge of Python, or programming in general. 
 
-To work with the course materials, you will need make sure you have access to the tools tools described here on datahub. 
+To work with the course materials, you will need make sure you have access to the tools described here on datahub. 
 
 It will be helpful for the final project if they are also installed on the computer you will be using. 
 
@@ -222,7 +222,7 @@ A brief note about Markdown. It's a way to specify all formatting within the tex
 
 For example, italicized text can be specified with an _underscore_ or *single asterisks*.
 
-Bold text requires __two underccores__ or **two asterisks**.
+Bold text requires __two underscores__ or **two asterisks**.
 
 #### Clicker Question #2
 
@@ -235,7 +235,6 @@ Bold text requires __two underccores__ or **two asterisks**.
 - E) I'm lost
 
 ___you can write your markdown text here to determine the answer to the question___
-
 
 ### Markdown Headers
 
@@ -271,9 +270,9 @@ Lists are also possible:
 
 test it out down here to see...
 
-list item
-list item 
-list item
+1. list item
+1. list item 
+1. list item
 
 ### Code Cells
 
@@ -302,6 +301,8 @@ c
 Write code that outputs the value '6'
 
 ## YOUR CODE HERE
+val = 6
+print(val)
 
 #### Clicker Question #4
 

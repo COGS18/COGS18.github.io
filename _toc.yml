@@ -6,8 +6,8 @@
     title: 01-Introduction 
   - file: materials/02-Tooling 
     title: 02-Tooling
-  # - file: materials/03-Variables
-  #   title: 03-Variables
+  - file: materials/03-Variables
+    title: 03-Variables
   # - file: materials/04-Operators
   #   title: 04-Operators
   # - file: materials/05-Conditionals

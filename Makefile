@@ -54,6 +54,7 @@ textbook:
 	cp materials/img/conda.png _build/html/_images/
 	cp materials/img/jupyter.png _build/html/_images/
 	cp materials/img/python.png _build/html/_images/
+	cp materials/img/hack.py.png _build/html/_images/
 
 	# rm -rf labs
 
