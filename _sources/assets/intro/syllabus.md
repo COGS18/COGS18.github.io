@@ -1,8 +1,6 @@
 
 # COGS 18: Introduction to Python
 
-THIS IS A DRAFT SYLLABUS AND WILL CHANGE BEFORE THE QUARTER STARTS. 
-
 **Winter 2021**  
 **MWF 8-8:50 (remote)**  
 
@@ -40,10 +38,10 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 
 You may also see *Angela Cha*, *Geoff Lizar*, or *Harrison Ma* answer questions on Campuswire/Discord or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
 
-Course Website: https://cogs18.github.io   
-Canvas Course: https://canvas.ucsd.edu/courses/21696   
-Course Campuswire*: https://campuswire.com/c/G5A5B51F9   
-Assignment Submission: https://datahub.ucsd.edu  
+Course Website: [https://cogs18.github.io]   
+Canvas Course: [https://canvas.ucsd.edu/courses/21696]   
+Course Campuswire*: [https://campuswire.com/c/G5A5B51F9]   
+Assignment Submission: [https://datahub.ucsd.edu]  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
 *You will be able to post anonymously on Campuswire; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
