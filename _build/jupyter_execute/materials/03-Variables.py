@@ -20,7 +20,7 @@
 
 ## Programming With Python
 
-Programming: a way to ask computer to store values (variables), and do things with them (operations).`
+Programming: a way to ask computer to store values (variables), and do things with them (operations).
 
 # This is a comment. You can write a comment by using a `#`
 my_variable = 12 
@@ -41,7 +41,6 @@ other_var = 'variables are cool'
 
 # once you create a variable it's stored in your namespace
 other_var
-
 
 ## Code Variables != Math Variables
 
@@ -210,7 +209,7 @@ type(yet_another_integer)
 my_float = 1.0
 another_float = -231.45
 
-type(another_float)
+type(my_float)
 
 ### String
 
@@ -262,7 +261,7 @@ string_quote
 my_bool = True
 another_bool = False
 
-type(another_bool)
+type(my_bool)
 
 ## None
 
@@ -271,6 +270,7 @@ type(another_bool)
 </div>
 
 the_concept_of_nothing = None
+next_None = None
 
 type(the_concept_of_nothing)
 
