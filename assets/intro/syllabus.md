@@ -31,7 +31,7 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 | -------------: |:------------------------|:-----------------|:-------------|
 | TA             | Aiden Iveris	           | 9A; 10A          | Tu 9-10 PM   |
 | IA	           | Beibei Du               | 10A              | --           |
-| IA	           | Jaime Izabal            | 9A               | --           |
+| IA	           | Jaime Izabal            | 9A               | Th 2-3 PM    |
 | IA	           | Scott Yang              | --               | Th 8-9 PM    |
 | IA	           | Andrew Nguyen           | --               | Wed 8-9 PM   |
 

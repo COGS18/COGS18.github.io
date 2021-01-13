@@ -1,3 +1,5 @@
+<center><img src="img/gwc_gbm.png" width="800px"></center>
+
 **Course Announcements**
 
 **Due Dates**
@@ -21,10 +23,10 @@
 
 a = 3
 adfasf = 'asdf'
-b = 'new'
+b = 'newly'
 print(status)
 
-status = False
+status = True
 
 %run -i new_file.py  
 assert status == False
@@ -146,6 +148,8 @@ b = 17 % 7
 
 print(a, 'remainder', b)
 
+print(17 // 7, 'remainder', 17 % 7)
+
 `//` is an operator for floor division (integer division)
 
 #### Clicker Question #4
@@ -236,6 +240,8 @@ True == True
 True != False
 
 'aa' == 'aa'
+
+'aa' and 'aa'
 
 12 <= 13
 

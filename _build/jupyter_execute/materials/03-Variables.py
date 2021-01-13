@@ -291,6 +291,7 @@ var_a = -17.5
 After executing the following code, what will the type of `var_b` be?
 
 var_b = '-17.5'
+type(var_b)
 
 - A) String
 - B) Int
@@ -324,6 +325,9 @@ a = 1
 b = a
 print(b)
 
+new_var = 'hello'
+alias_var = new_var
+
 Here, the value 1 is assigned to the variable `a`.  
 
 We then make an **alias** of `a` and store that in the variable `b`. 
@@ -343,6 +347,10 @@ immutable_string[4]
 
 # cannot change part of the string after creation
 immutable_string[4] = '0'
+
+new_string = 'COGS18 is the best' + ' class'
+immutable_string = 'COGS18 is the best class'
+immutable_string
 
 Python does have **mutable** types. We'll talk about these later in the course, and these are where aliasing shines!
 
