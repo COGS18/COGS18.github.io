@@ -39,6 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Conditionals" href="05-Conditionals.html" />
     <link rel="prev" title="Variables" href="03-Variables.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -96,6 +97,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Conditionals.html">
+   05-Conditionals
   </a>
  </li>
 </ul>
@@ -370,7 +376,7 @@
         
               <div>
                 
-  <p><strong>Course Announcements</strong></p>
+  <center><img src="img/gwc_gbm.png" width="800px"></center><p><strong>Course Announcements</strong></p>
 <p><strong>Due Dates</strong></p>
 <ul class="simple">
 <li><p>CL2 due Wed</p></li>
@@ -399,18 +405,38 @@
 
 <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">adfasf</span> <span class="o">=</span> <span class="s1">&#39;asdf&#39;</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;new&#39;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;newly&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">status</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting new_file.py
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">status</span> <span class="o">=</span> <span class="kc">False</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">status</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="o">%</span><span class="k">run</span> -i new_file.py  
 <span class="k">assert</span> <span class="n">status</span> <span class="o">==</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AssertionError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">Teaching</span><span class="o">/</span><span class="n">COGS18</span><span class="o">/</span><span class="n">LectureNotes</span><span class="o">-</span><span class="n">Wi21</span><span class="o">/</span><span class="n">new_file</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;-i new_file.py&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">assert</span> <span class="n">status</span> <span class="o">==</span> <span class="kc">False</span>
+
+<span class="ne">AssertionError</span>: 
 </pre></div>
 </div>
 </div>
@@ -454,12 +480,25 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">div_result</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">div_result</span><span class="p">)</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">div_result</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.0
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>float
 </pre></div>
 </div>
 </div>
@@ -478,12 +517,22 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11.0
+</pre></div>
+</div>
+</div>
 </div>
 <p>To specify that you want the addition to occur first, you would use parentheses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">specify_operations</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">16</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">specify_operations</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.5
 </pre></div>
 </div>
 </div>
@@ -496,6 +545,11 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_value</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">/</span> <span class="p">(</span><span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> 
 <span class="n">my_value</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>13.0
 </pre></div>
 </div>
 </div>
@@ -520,11 +574,21 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remainder of 17 divided by 7</span>
 <span class="mi">17</span> <span class="o">%</span> <span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -536,6 +600,11 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">remainder</span> <span class="o">=</span> <span class="mi">16</span> <span class="o">%</span> <span class="mi">5</span>
 <span class="n">remainder</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 </pre></div>
 </div>
 </div>
@@ -582,6 +651,23 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2 remainder 3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">17</span> <span class="o">//</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;remainder&#39;</span><span class="p">,</span> <span class="mi">17</span> <span class="o">%</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2 remainder 3
+</pre></div>
+</div>
+</div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">//</span></code> is an operator for floor division (integer division)</p>
 <div class="section" id="clicker-question-4">
@@ -591,6 +677,11 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math_out</span> <span class="o">=</span> <span class="mi">32</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> 
 <span class="n">math_out</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.0
 </pre></div>
 </div>
 </div>
@@ -623,10 +714,20 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -637,10 +738,20 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -649,6 +760,11 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># two nots cancel one another out</span>
 <span class="ow">not</span> <span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -664,6 +780,18 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">Teaching</span><span class="o">/</span><span class="n">COGS18</span><span class="o">/</span><span class="n">LectureNotes</span><span class="o">-</span><span class="n">Wi21</span><span class="o">/</span><span class="n">new_file</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># &#39;TRUE&#39; is not a boolean</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># &#39;True&#39; is</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">TRUE</span> <span class="ow">and</span> <span class="n">TRUE</span>
+
+<span class="ne">NameError</span>: name &#39;TRUE&#39; is not defined
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-5">
 <h4>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this headline">¶</a></h4>
@@ -671,6 +799,11 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -688,6 +821,11 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="ow">not</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -721,10 +859,20 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="o">==</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -735,6 +883,11 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -742,10 +895,27 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;aa&#39;</span> <span class="ow">and</span> <span class="s1">&#39;aa&#39;</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">12</span> <span class="o">&lt;=</span> <span class="mi">13</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1313,6 +1483,7 @@ Operators and variables can also be chained together into arbitrarily complex ex
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="03-Variables.html" title="previous page">Variables</a>
+    <a class='right-next' id="next-link" href="05-Conditionals.html" title="next page">Conditionals</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
