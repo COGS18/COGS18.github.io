@@ -12,6 +12,8 @@
     title: 04-Operators
   - file: materials/05-Conditionals
     title: 05-Conditionals
+  - file: materials/06-Debugging
+    title: 06-Debugging
   # - file: materials/06-Collections
   #   title: 06-Collections
   # - file: materials/07-Loops
@@ -59,10 +61,10 @@
   # - file: materials/A3-Inheritance
   #   title: A3-Inheritance
 
-# - part: Coding Labs
-#   chapters:
-#   - file: labs/CL2-Answers
-#     title: CL2-Answers
+- part: Coding Labs
+  chapters:
+  - file: labs/CL2-ProgrammingI
+    title: CL2-ProgrammingI
 #   - file: labs/CL3-Answers
 #     title: CL3-Answers
 #   - file: labs/CL4-Answers

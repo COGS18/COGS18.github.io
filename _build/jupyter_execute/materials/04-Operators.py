@@ -257,10 +257,10 @@ Start with the code in the following cell. Replace `---` with operators or value
 - C) I'm unsure where to start
 
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 95
+shield_energy = 101
 
-(sword_charge ---) and (shield_energy ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 
 ## Understanding Boolean logic
 
@@ -391,8 +391,8 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = d is c
+false_variable = z is x
 
 print(true_variable, false_variable)
 
@@ -472,8 +472,8 @@ f = 567
 g = 567
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = a is c
+false_variable = d is e
 
 print(true_variable, false_variable)
 
@@ -507,7 +507,7 @@ print(' ' in x)
 Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 </div>
 
-'COGS' + ' 18'
+'COGS' + ' ' + '18'
 
 'a' + 'b' + 'c'
 
@@ -517,12 +517,25 @@ Operators sometimes do different things on different types of variables. For exa
 Operators and variables can also be chained together into arbitrarily complex expressions.
 </div>
 
+'a'
+
+(13 % 7 >= 7)
+
 # Note that you can use parentheses to chunk sections
 (13 % 7 >= 7) and ('COGS' + '18' == 'COGS18')
+
+
 
 (13 % 7 >= 7)
 
 ('COGS' + '18' == 'COGS18')
+
+a = 900
+b = 900
+
+a == b
+
+a is b
 
 #### Clicker Question #12
 
