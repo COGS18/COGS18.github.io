@@ -8,74 +8,7 @@ CodingLabs are also meant to be exploratory. There are broad questions in the no
 
 If you have a question about how something works / what something does - try it out, and see what happens!
 
-## Part 1: Collection types
-
-Collections are Python variable types than can store a 'collection' of items.
-
-### Collection Questions
-
-Create a list and a tuple. Fill them with with any values you want. 
-
-Call them `my_list` and `my_tuple`.
-
-### BEGIN SOLUTION
-# specific values will differ
-
-my_list = [1, 2, 3]
-my_tuple = ('a', 'b', 'c')
-### END SOLUTION
-
-Use the following cells to check the types of the variables you write are as expected
-
-type(my_list)
-
-type(my_tuple)
-
-#### Declaring Collections
-
-Note that there can be more than one way to declare collections. 
-
-As well as declaring them with '[]' and '()', we can use the list & tuple constructors, as shown below. 
-
-# Run me! - This creates another list & tuple, using the list & tuple constructors
-some_list = list([1, 2, 3, 4, 5])
-some_tuple = tuple(["peanut", "butter", "and", "jelly"])
-
-print("'some_list' contains: \t", some_list)
-print("'some_tuple' contains: \t", some_tuple)
-
-Compare the types of these variables to your equivalent variables to confirm.
-
-In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass. 
-
-# Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be
-assert isinstance(some_list, _WRITE_IN_TYPE_HERE_)
-assert isinstance(some_tuple, _WRITE_IN_TYPE_HERE_)
-
-### Indexing
-
-Given the following list, do the following operations:
-- Get the length of the list (assign this to a variable `lst_len`)
-- Get the 1st element of the list (call the selection `ind1`)
-- Get the last element of the list (call the selection `ind2`)
-- Get the second to the fourth element of the list (call the selection `ind3`)
-- Get from the fifth element, to the end of the list (call the selection `ind4`)
-- Get every second element of the list, starting at the first element (call the selection `ind5`)
-- Get every second element of the list, starting at the second element (call the selection `ind6`)
-
-my_lst = ['a', True, 12, 'tomato', False, None, 23, 'python', [], 5.5]
-
-### BEGIN SOLUTION
-lst_len = len(my_lst)
-ind1 = my_lst[0]
-ind2 = my_lst[-1]
-ind3 = my_lst[1:5]
-ind4 = my_lst[4:]
-ind5 = my_lst[0::2]
-ind6 = my_lst[1::2]
-### END SOLUTION
-
-## Part 2: Conditionals
+## Part 1: Conditionals
 
 Conditionals a form of control flow for executing certain code if a specific condition is met. 
 
@@ -203,7 +136,7 @@ if v1 == True:
         print('Also YES!')
 ### END SOLUTION
 
-## Part 3: Debugging Questions
+## Part 2: Debugging Questions
 
 ### Creating Errors
 For each of the follow Exceptions, write a small piece of code that will cause it to happen:
@@ -298,6 +231,73 @@ print('Three plus five equals' + str(3+5))
 
 ### END SOLUTION
 
+
+## Part 3: Collection types
+
+Collections are Python variable types than can store a 'collection' of items.
+
+### Collection Questions
+
+Create a list and a tuple. Fill them with with any values you want. 
+
+Call them `my_list` and `my_tuple`.
+
+### BEGIN SOLUTION
+# specific values will differ
+
+my_list = [1, 2, 3]
+my_tuple = ('a', 'b', 'c')
+### END SOLUTION
+
+Use the following cells to check the types of the variables you write are as expected
+
+type(my_list)
+
+type(my_tuple)
+
+#### Declaring Collections
+
+Note that there can be more than one way to declare collections. 
+
+As well as declaring them with '[]' and '()', we can use the list & tuple constructors, as shown below. 
+
+# Run me! - This creates another list & tuple, using the list & tuple constructors
+some_list = list([1, 2, 3, 4, 5])
+some_tuple = tuple(["peanut", "butter", "and", "jelly"])
+
+print("'some_list' contains: \t", some_list)
+print("'some_tuple' contains: \t", some_tuple)
+
+Compare the types of these variables to your equivalent variables to confirm.
+
+In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass. 
+
+# Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be
+assert isinstance(some_list, _WRITE_IN_TYPE_HERE_)
+assert isinstance(some_tuple, _WRITE_IN_TYPE_HERE_)
+
+### Indexing
+
+Given the following list, do the following operations:
+- Get the length of the list (assign this to a variable `lst_len`)
+- Get the 1st element of the list (call the selection `ind1`)
+- Get the last element of the list (call the selection `ind2`)
+- Get the second to the fourth element of the list (call the selection `ind3`)
+- Get from the fifth element, to the end of the list (call the selection `ind4`)
+- Get every second element of the list, starting at the first element (call the selection `ind5`)
+- Get every second element of the list, starting at the second element (call the selection `ind6`)
+
+my_lst = ['a', True, 12, 'tomato', False, None, 23, 'python', [], 5.5]
+
+### BEGIN SOLUTION
+lst_len = len(my_lst)
+ind1 = my_lst[0]
+ind2 = my_lst[-1]
+ind3 = my_lst[1:5]
+ind4 = my_lst[4:]
+ind5 = my_lst[0::2]
+ind6 = my_lst[1::2]
+### END SOLUTION
 
 ## The End!
 

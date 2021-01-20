@@ -33,7 +33,7 @@ Replace `---` below with something that will print 'True'
 - C) I tried but am stuck.
 - D) I'm unsure where to start
 
-math = ---
+math = 3 < 5
 
 if math:
     print('True')
@@ -60,12 +60,18 @@ Replace `---` below with something that will print 'False'.
 - C) I tried but am stuck.
 - D) I'm unsure where to start
 
-my_value = ---
+my_value = 5 < 3
 
 if my_value:
     print('True')
+    a = 3
+    b = 4
 else: 
     print('False')
+    a = 5
+    b = 6
+    
+print(a)
 
 ## Conditional: `elif`
 
@@ -74,7 +80,7 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
 </div>
 
 condition_1 = False
-condition_2 = True
+condition_2 = False
 
 if condition_1:
     print('This code executes if condition_1 evaluates as True.')

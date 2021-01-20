@@ -107,6 +107,11 @@
    06-Debugging
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -230,32 +235,8 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#part-1-collection-types">
-   Part 1: Collection types
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#collection-questions">
-     Collection Questions
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#declaring-collections">
-       Declaring Collections
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#indexing">
-     Indexing
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#part-2-conditionals">
-   Part 2: Conditionals
+  <a class="reference internal nav-link" href="#part-1-conditionals">
+   Part 1: Conditionals
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -300,8 +281,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#part-3-debugging-questions">
-   Part 3: Debugging Questions
+  <a class="reference internal nav-link" href="#part-2-debugging-questions">
+   Part 2: Debugging Questions
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -312,6 +293,30 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#fixing-errors">
      Fixing Errors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-collection-types">
+   Part 3: Collection types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collection-questions">
+     Collection Questions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#declaring-collections">
+       Declaring Collections
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#indexing">
+     Indexing
     </a>
    </li>
   </ul>
@@ -337,107 +342,8 @@
 <p>CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each fill out your own notebook, if you prefer.</p>
 <p>CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go!</p>
 <p>If you have a question about how something works / what something does - try it out, and see what happens!</p>
-<div class="section" id="part-1-collection-types">
-<h2>Part 1: Collection types<a class="headerlink" href="#part-1-collection-types" title="Permalink to this headline">¶</a></h2>
-<p>Collections are Python variable types than can store a ‘collection’ of items.</p>
-<div class="section" id="collection-questions">
-<h3>Collection Questions<a class="headerlink" href="#collection-questions" title="Permalink to this headline">¶</a></h3>
-<p>Create a list and a tuple. Fill them with with any values you want.</p>
-<p>Call them <code class="docutils literal notranslate"><span class="pre">my_list</span></code> and <code class="docutils literal notranslate"><span class="pre">my_tuple</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
-<span class="c1"># specific values will differ</span>
-
-<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span>
-<span class="c1">### END SOLUTION</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Use the following cells to check the types of the variables you write are as expected</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="declaring-collections">
-<h4>Declaring Collections<a class="headerlink" href="#declaring-collections" title="Permalink to this headline">¶</a></h4>
-<p>Note that there can be more than one way to declare collections.</p>
-<p>As well as declaring them with ‘[]’ and ‘()’, we can use the list &amp; tuple constructors, as shown below.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run me! - This creates another list &amp; tuple, using the list &amp; tuple constructors</span>
-<span class="n">some_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-<span class="n">some_tuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="s2">&quot;peanut&quot;</span><span class="p">,</span> <span class="s2">&quot;butter&quot;</span><span class="p">,</span> <span class="s2">&quot;and&quot;</span><span class="p">,</span> <span class="s2">&quot;jelly&quot;</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;some_list&#39; contains: </span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">some_list</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;some_tuple&#39; contains: </span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">some_tuple</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Compare the types of these variables to your equivalent variables to confirm.</p>
-<p>In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be</span>
-<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_list</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
-<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_tuple</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="indexing">
-<h3>Indexing<a class="headerlink" href="#indexing" title="Permalink to this headline">¶</a></h3>
-<p>Given the following list, do the following operations:</p>
-<ul class="simple">
-<li><p>Get the length of the list (assign this to a variable <code class="docutils literal notranslate"><span class="pre">lst_len</span></code>)</p></li>
-<li><p>Get the 1st element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind1</span></code>)</p></li>
-<li><p>Get the last element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind2</span></code>)</p></li>
-<li><p>Get the second to the fourth element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind3</span></code>)</p></li>
-<li><p>Get from the fifth element, to the end of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind4</span></code>)</p></li>
-<li><p>Get every second element of the list, starting at the first element (call the selection <code class="docutils literal notranslate"><span class="pre">ind5</span></code>)</p></li>
-<li><p>Get every second element of the list, starting at the second element (call the selection <code class="docutils literal notranslate"><span class="pre">ind6</span></code>)</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="p">[],</span> <span class="mf">5.5</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
-<span class="n">lst_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_lst</span><span class="p">)</span>
-<span class="n">ind1</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">ind2</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">ind3</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
-<span class="n">ind4</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
-<span class="n">ind5</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">ind6</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
-<span class="c1">### END SOLUTION</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="part-2-conditionals">
-<h2>Part 2: Conditionals<a class="headerlink" href="#part-2-conditionals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="part-1-conditionals">
+<h2>Part 1: Conditionals<a class="headerlink" href="#part-1-conditionals" title="Permalink to this headline">¶</a></h2>
 <p>Conditionals a form of control flow for executing certain code if a specific condition is met.</p>
 <div class="section" id="conditional-questions">
 <h3>Conditional Questions<a class="headerlink" href="#conditional-questions" title="Permalink to this headline">¶</a></h3>
@@ -607,8 +513,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="part-3-debugging-questions">
-<h2>Part 3: Debugging Questions<a class="headerlink" href="#part-3-debugging-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="part-2-debugging-questions">
+<h2>Part 2: Debugging Questions<a class="headerlink" href="#part-2-debugging-questions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="creating-errors">
 <h3>Creating Errors<a class="headerlink" href="#creating-errors" title="Permalink to this headline">¶</a></h3>
 <p>For each of the follow Exceptions, write a small piece of code that will cause it to happen:</p>
@@ -739,20 +645,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="n">e087e0c2913c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">age_string</span> <span class="o">=</span> <span class="s2">&quot;My favourite number is &quot;</span> <span class="o">+</span> <span class="mi">27</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">### BEGIN SOLUTION</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Answer: typecase int to string, `+ str(27)`</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">age_string</span> <span class="o">=</span> <span class="s2">&quot;My favourite number is &quot;</span> <span class="o">+</span> <span class="s2">&quot;27&quot;</span>
-
-<span class="ne">TypeError</span>: can only concatenate str (not &quot;int&quot;) to str
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -762,6 +654,105 @@
 <span class="c1"># Answer: Missing closing parenthesis - add &#39;)&#39; at the end</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Three plus five equals&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span><span class="p">))</span>
 
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-3-collection-types">
+<h2>Part 3: Collection types<a class="headerlink" href="#part-3-collection-types" title="Permalink to this headline">¶</a></h2>
+<p>Collections are Python variable types than can store a ‘collection’ of items.</p>
+<div class="section" id="collection-questions">
+<h3>Collection Questions<a class="headerlink" href="#collection-questions" title="Permalink to this headline">¶</a></h3>
+<p>Create a list and a tuple. Fill them with with any values you want.</p>
+<p>Call them <code class="docutils literal notranslate"><span class="pre">my_list</span></code> and <code class="docutils literal notranslate"><span class="pre">my_tuple</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># specific values will differ</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Use the following cells to check the types of the variables you write are as expected</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="declaring-collections">
+<h4>Declaring Collections<a class="headerlink" href="#declaring-collections" title="Permalink to this headline">¶</a></h4>
+<p>Note that there can be more than one way to declare collections.</p>
+<p>As well as declaring them with ‘[]’ and ‘()’, we can use the list &amp; tuple constructors, as shown below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run me! - This creates another list &amp; tuple, using the list &amp; tuple constructors</span>
+<span class="n">some_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="n">some_tuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="s2">&quot;peanut&quot;</span><span class="p">,</span> <span class="s2">&quot;butter&quot;</span><span class="p">,</span> <span class="s2">&quot;and&quot;</span><span class="p">,</span> <span class="s2">&quot;jelly&quot;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;some_list&#39; contains: </span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">some_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;some_tuple&#39; contains: </span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">some_tuple</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Compare the types of these variables to your equivalent variables to confirm.</p>
+<p>In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_list</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_tuple</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indexing">
+<h3>Indexing<a class="headerlink" href="#indexing" title="Permalink to this headline">¶</a></h3>
+<p>Given the following list, do the following operations:</p>
+<ul class="simple">
+<li><p>Get the length of the list (assign this to a variable <code class="docutils literal notranslate"><span class="pre">lst_len</span></code>)</p></li>
+<li><p>Get the 1st element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind1</span></code>)</p></li>
+<li><p>Get the last element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind2</span></code>)</p></li>
+<li><p>Get the second to the fourth element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind3</span></code>)</p></li>
+<li><p>Get from the fifth element, to the end of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind4</span></code>)</p></li>
+<li><p>Get every second element of the list, starting at the first element (call the selection <code class="docutils literal notranslate"><span class="pre">ind5</span></code>)</p></li>
+<li><p>Get every second element of the list, starting at the second element (call the selection <code class="docutils literal notranslate"><span class="pre">ind6</span></code>)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="p">[],</span> <span class="mf">5.5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">lst_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_lst</span><span class="p">)</span>
+<span class="n">ind1</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">ind2</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">ind3</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">ind4</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<span class="n">ind5</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">ind6</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
 <span class="c1">### END SOLUTION</span>
 </pre></div>
 </div>

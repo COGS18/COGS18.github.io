@@ -1,5 +1,6 @@
 **Course Announcements**
 - A1 due next Friday
+- CL2 answers posted on website
 - No Class Monday (MLK, Jr Day)
 
 # Debugging
@@ -40,9 +41,8 @@ Python does its best to tell you:
 
 # will produce a syntax error
 # and specifically an indentation error
-my_list = [1, 2]
-for value in my_list:
-print(value)
+if 3 < 4:
+print('value')
 
 Python gives you a readout about what it was expecting and where you appear to have gone wrong.
 
@@ -84,8 +84,8 @@ new_variable == 1
 
 IndexError occurs when you try to access an index that doesn't exist.
 
-my_list = [1, 2, 3]
-my_list[5]
+my_string = 'COGS18'
+my_string[6]
 
 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
 my_dictionary = {'name1' : 1, 'name2' : 2}
@@ -96,9 +96,6 @@ my_dictionary['name3']
 ValueError occurs when you try to use an illegal value for something.
 
 int('cat')
-
-my_list = [1, 2, 3]
-my_list.remove(0)
 
 ### TypeError
 

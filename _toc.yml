@@ -14,8 +14,8 @@
     title: 05-Conditionals
   - file: materials/06-Debugging
     title: 06-Debugging
-  # - file: materials/06-Collections
-  #   title: 06-Collections
+  - file: materials/07-Collections
+    title: 07-Collections
   # - file: materials/07-Loops
   #   title: 07-Loops
   # - file: materials/08-Dictionaries
