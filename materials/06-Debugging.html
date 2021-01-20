@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 2: Programming I" href="../labs/CL2-ProgrammingI.html" />
+    <link rel="next" title="Collections" href="07-Collections.html" />
     <link rel="prev" title="Conditionals" href="05-Conditionals.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,6 +107,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
   </a>
  </li>
 </ul>
@@ -380,6 +385,7 @@
   <p><strong>Course Announcements</strong></p>
 <ul class="simple">
 <li><p>A1 due next Friday</p></li>
+<li><p>CL2 answers posted on website</p></li>
 <li><p>No Class Monday (MLK, Jr Day)</p></li>
 </ul>
 <div class="section" id="debugging">
@@ -418,6 +424,14 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-3-dfda8e0f217c&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="kc">True</span>
+           <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
 </div>
 <p>Python does its best to tell you:</p>
 <ul class="simple">
@@ -428,9 +442,16 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># will produce a syntax error</span>
 <span class="c1"># and specifically an indentation error</span>
-<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="k">if</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-7-ee13a40853a2&gt;&quot;</span><span class="gt">, line </span><span class="mi">4</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="o">^</span>
+<span class="ne">IndentationError</span>: expected an indented block
 </pre></div>
 </div>
 </div>
@@ -450,6 +471,17 @@ Exceptions are errors that occur when a code is executed.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># produces ZeroDivisionError</span>
 <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mf">79e900</span><span class="n">a17bd3</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># produces ZeroDivisionError</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
 </pre></div>
 </div>
 </div>
@@ -478,12 +510,28 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">4</span><span class="n">acade15292f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># If you typo a name, you will get a NameError</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">varaible</span>
+
+<span class="ne">NameError</span>: name &#39;varaible&#39; is not defined
+</pre></div>
+</div>
+</div>
 </div>
 <p>While it’s annoying, it’s helpful that Python doesn’t just <em>guess</em> that you <em>meant</em> ‘variable’….because sometimes Python would guess wrong. It’s better for Python to just give us the error.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You also get a name error if you try to use the wrong operator for assignment</span>
 <span class="n">new_variable</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -494,8 +542,19 @@ Exceptions are errors that occur when a code is executed.
 <p>IndexError occurs when you try to access an index that doesn’t exist.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">my_list</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;COGS18&#39;</span>
+<span class="n">my_string</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mi">562</span><span class="n">cc9d58aa8</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;COGS18&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+
+<span class="ne">IndexError</span>: string index out of range
 </pre></div>
 </div>
 </div>
@@ -505,6 +564,18 @@ Exceptions are errors that occur when a code is executed.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Relatedly, &#39;KeyError&#39; occurs if you ask for a dictionary key that doesn&#39;t exist</span>
 <span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name1&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;name2&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 <span class="n">my_dictionary</span><span class="p">[</span><span class="s1">&#39;name3&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">15</span><span class="o">-</span><span class="mi">84</span><span class="n">a1c00e4833</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Relatedly, &#39;KeyError&#39; occurs if you ask for a dictionary key that doesn&#39;t exist</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name1&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;name2&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">my_dictionary</span><span class="p">[</span><span class="s1">&#39;name3&#39;</span><span class="p">]</span>
+
+<span class="ne">KeyError</span>: &#39;name3&#39;
 </pre></div>
 </div>
 </div>
@@ -519,11 +590,13 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">my_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">16</span><span class="o">-</span><span class="mi">1</span><span class="n">c6b28888bbe</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: invalid literal for int() with base 10: &#39;cat&#39;
 </pre></div>
 </div>
 </div>
@@ -534,6 +607,16 @@ Exceptions are errors that occur when a code is executed.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a_string&#39;</span> <span class="o">+</span> <span class="mi">12</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">17</span><span class="o">-</span><span class="mi">57</span><span class="n">c293ee5895</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="s1">&#39;a_string&#39;</span> <span class="o">+</span> <span class="mi">12</span>
+
+<span class="ne">TypeError</span>: can only concatenate str (not &quot;int&quot;) to str
 </pre></div>
 </div>
 </div>
@@ -574,6 +657,14 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-18-ad228ac1793f&gt;&quot;</span><span class="gt">, line </span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span>
+              <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) Syntax</p></li>
@@ -590,6 +681,17 @@ Exceptions are errors that occur when a code is executed.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Greater than 0&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="n">ff8076b6898</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Greater than 0&quot;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;num&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -620,6 +722,20 @@ Exceptions are errors that occur when a code is executed.
         <span class="n">running_sum</span> <span class="o">+=</span> <span class="n">temp</span> 
         <span class="c1"># equivalent to:</span>
         <span class="c1"># running_sum = running_sum + temp</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">21</span><span class="o">-</span><span class="mi">215726</span><span class="n">ba149c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="k">if</span> <span class="n">val</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="ne">----&gt; </span><span class="mi">7</span>         <span class="n">temp</span> <span class="o">=</span> <span class="n">val</span> <span class="o">/</span> <span class="p">(</span><span class="n">val</span> <span class="o">-</span> <span class="mi">4</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span>         <span class="c1">#+= allows you to add the value on the right to the variable on the left</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>         <span class="c1"># and assign it to the variable on the left</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
 </pre></div>
 </div>
 </div>
@@ -811,7 +927,7 @@ You can also write code to raise an Exception if something unexpected happens.
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="05-Conditionals.html" title="previous page">Conditionals</a>
-    <a class='right-next' id="next-link" href="../labs/CL2-ProgrammingI.html" title="next page">Coding Lab 2: Programming I</a>
+    <a class='right-next' id="next-link" href="07-Collections.html" title="next page">Collections</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
