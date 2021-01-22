@@ -168,7 +168,7 @@ The final exam will be taken on the same platform and with the same time constra
 | 1/20   | 3	   | 7      | W   | Collections     |            			          | CL3: Programming II       |
 | 1/22   | 3	   | 8      | F   | Loops           | A1: Getting-Started       |                         	| 
 | 1/25   | 4	   | 9      | M   | Dictionaries [*]|                        	  | 				                  | 
-| 1/27   | 4	   | 10     | W   | Review          |                        		| CL4: Loops & Debugging    |
+| 1/27   | 4	   | 10     | W   | Review          |                        		| CL4: Loops                |
 | 1/29   | 4	   | --     | F   | **Midterm I**   | A2: Ciphers               |                        		| 
 | 2/1    | 5	   | --     | M   | Functions I     |                           |                         	| 
 | 2/3    | 5	   | 11     | W   | Algorithms  	  |                       	 	| CL5: Functions 	          |

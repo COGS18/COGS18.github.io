@@ -189,24 +189,22 @@ print('\nmy_num is: ', my_num)
 
 ### Example with Try / Except
 
+int('asdlkfjasdflj')
+
 try:
     int(input('Number'))
 except:
-    print("nahhh")
+    print('nahhh')
 
 #### Try / Except within a While Loop
 
 # getting an input from a user
 input("text")
 
-ask_for_num = True
-
-while ask_for_num:
-    try:
-        my_num = int(input("Please enter a number: "))
-        ask_for_num = False
-    except ValueError: # can specify what type of error 
-        print("Oops!  That was no valid number. Try again!")
+try:
+    my_num = int(input("Please enter a number: "))
+except ValueError: # can specify what type of error 
+    print("Oops!  That was no valid number. Try again!")
         
 print('\nmy_num is: ', my_num)
 
@@ -221,6 +219,7 @@ You can also write code to raise an Exception if something unexpected happens.
 `raise` is a keyword that tells Python you want to create your own error.
 
 my_int = input('An integer please: ')
+
 if not my_int.isnumeric():
     raise ValueError('I wanted a number! :(')
     
@@ -230,8 +229,10 @@ print('My integer is: ', my_int)
 
 Edit the code below (replacing `---` with either values or variable names) so that when executed, this cell returns `None`.
 
-num1 = ---
-num2 = ---
+output = 6/0
+
+num1 = 6
+num2 = 0
 
 try:
     output = num1 / num2
@@ -259,7 +260,12 @@ print(output)
 
 Google: "How to check whether a variable stores an even value _in python_"
 
+my_val = 6
 
+# check if positive and even (conditional)
+if my_val > 0 and (my_val % 2) == 0:    
+    # if true, store 1 in output
+    output == 1
 
 ### Don't understand the error message
 
@@ -267,7 +273,11 @@ So you try to accomplish the task...below is your first attempt
 
 # this code has errors
 # we're going to debug together in class
-my_val = 6
+my_val = 5
 
-if my_val > 0 and my_val % 2 = 0:
-    output == 1
+if my_val > 0 and my_val % 2 == 0:
+    output = 1
+else:
+    output = None
+    
+print(output)

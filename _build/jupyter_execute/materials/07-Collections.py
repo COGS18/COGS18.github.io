@@ -125,6 +125,7 @@ q2_lst[2:0:-1]
 What would be the appropriate line of code to return `['butter', '&', 'jelly']`?
 
 q3_lst = ['peanut', 'butter', '&','jelly']
+q3_lst[1:4:2]
 
 - A) `q3_lst[2:4]`
 - B) `q3_lst[1:3]`
@@ -184,7 +185,7 @@ False in practice_lst
 #searching partial strings
 'cogs' in practice_lst
 
-'cogs18' not in practice_lst
+'cogs18' in practice_lst
 
 #### Clicker #4
 

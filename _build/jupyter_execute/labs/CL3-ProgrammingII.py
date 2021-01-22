@@ -2,7 +2,7 @@
 
 Welcome to the third coding lab!
 
-CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each fill out your own notebook, if you prefer. 
+CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook if you're able.
 
 CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go! 
 
@@ -38,9 +38,9 @@ print(result)
 
 #### Controlling Output With Conditionals II
 
-In the cell below, first write something into each result assignment related to  for example, it could be "B1 is False & B2 is True"). 
+In the cell below, first write something into each `result` assignment string below. For example, it could be something like: "B1 is False & B2 is True"). 
 
-Then make sure you can change values of b1 & b2 to make the program execute each option. 
+Then make sure you can change values of `b1` & `b2` to make the program execute each option. 
 
 # ToDo: Update b1 & b2 to control what gets executed
 b1 = False
@@ -55,6 +55,19 @@ elif b1 and b2:
     result = ''
 else:
     result = ''
+    
+### BEGIN SOLUTION
+# specific strings could vary
+if b1 and not b2:
+    result = 'b1 true; b2 false'
+elif not b1 and b2:
+    result = 'b1 false; b2 true'
+elif b1 and b2:
+    result = 'both true'
+else:
+    result = 'both false'
+
+### END SOLUTION
 
 print(result)
 
@@ -231,7 +244,6 @@ print('Three plus five equals' + str(3+5))
 
 ### END SOLUTION
 
-
 ## Part 3: Collection types
 
 Collections are Python variable types than can store a 'collection' of items.
@@ -275,6 +287,11 @@ In the cell below, write in the type of the objects that you expect them to be, 
 # Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be
 assert isinstance(some_list, _WRITE_IN_TYPE_HERE_)
 assert isinstance(some_tuple, _WRITE_IN_TYPE_HERE_)
+
+### BEGIN SOLUTION
+assert isinstance(some_list, list)
+assert isinstance(some_tuple, tuple)
+### END SOLUTION
 
 ### Indexing
 

@@ -56,7 +56,7 @@ textbook:
 	cp materials/img/python.png _build/html/_images/
 	cp materials/img/hack.py.png _build/html/_images/
 
-	# rm -rf labs
+	rm -rf labs
 
 	rm -rf materials
 	# rm -rf projects
