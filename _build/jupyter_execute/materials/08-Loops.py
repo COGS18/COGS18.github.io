@@ -1,8 +1,8 @@
 **Course Announcements**
 
-- **A1** due Friday
+- **A1** due tonight (11:59 PM)
 - Looking ahead: 
-    - **A2** (due Friday 11:59 PM)
+    - **A2** (due _next_ Friday 11:59 PM)
         - Q8: `assert cur_num == 41`
         - there was a typo in A2 originally
     - **E1** (due Sat at 8 AM)

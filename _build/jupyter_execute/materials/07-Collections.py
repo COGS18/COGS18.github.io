@@ -231,8 +231,14 @@ print(updates)
 
 What would the following code accommplish?
 
+# how to compare lists
+# question from lecture
+[1, 2, 3] < [2, 2, 3]
+[1, 2, 3] == [2, 2, 3]
+
 lst_update = [1, 2, 3, 0, 5]
 lst_update[3] = 4 
+lst_update
 
 - A) replace 0 with 4 in `lst_update`
 - B) replace 4 with 0 in `lst_update`
@@ -294,6 +300,9 @@ a = 1
 b = a
 print(b)
 
+a = 2
+print(b)
+
 Here, the value 1 is assigned to the variable `a`.  
 
 We then make an **alias** of `a` and store that in the variable `b`. 
@@ -348,6 +357,7 @@ After executing the following code, what will the second value stored in `second
 # change value of original variable
 my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
+print(second_tuple[1])
 my_tuple[1] = 29 
 
 - A) 1
