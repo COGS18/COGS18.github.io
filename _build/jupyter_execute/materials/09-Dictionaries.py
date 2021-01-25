@@ -1,6 +1,11 @@
 **Course Announcements**
+
+Due dates/Deadlines
 - **A2** (due Friday 11:59 PM)
 - **E1** (due Sat at 8 AM)
+
+Notes
+- **CL3** scores posted (reminder to check your work!)
 
 # Encodings & Dictionaries
 

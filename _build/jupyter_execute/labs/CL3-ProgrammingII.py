@@ -106,9 +106,9 @@ Use conditions to check whether `val_1` is a string or an integer object:
 # Set a test value for `val_1`
 val_1 = 'string'
 
-if isinstance(val_1, str):
+if isinstance(val_1, str) and len(val_1) > 8:
     output = True
-elif isinstance(val_1, int):
+elif isinstance(val_1, int) and val_1 < 100:
     output = True
 else:
     output = False
