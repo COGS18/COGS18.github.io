@@ -39,10 +39,10 @@
 
 There are two extra notebooks that you can use for review:
 
-1. [A1-Syntax](https://cogs18.github.io/materials/A1-Syntax/)
-2. [A2-Examples](https://cogs18.github.io/materials/A2-Examples/)
+1. [A1-Syntax](https://cogs18.github.io/materials/A1-Syntax.html)
+2. [A2-Examples](https://cogs18.github.io/materials/A2-Examples.html)
 
-There are also a few Exam #1 Practice Problems [here](https://cogs18.github.io/exams/Exam1-Practice).
+There are also a few Exam #1 Practice Problems [here](https://cogs18.github.io/materials/Exam-Prep/E1-Review.html).
 
 And, there is a practice Exam on datahub.
 
