@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 2: Programming I" href="../labs/CL2-ProgrammingI.html" />
+    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
     <link rel="prev" title="Control Flow - Loops" href="08-Loops.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -124,6 +124,16 @@
    09-Dictionaries
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -139,6 +149,28 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../labs/CL3-ProgrammingII.html">
    CL3-ProgrammingII
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
   </a>
  </li>
 </ul>
@@ -555,7 +587,7 @@ Encoding can be thought of as the process of 'changing representation', and deco
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set the value we want to encode</span>
-<span class="n">character_encoding</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">character_encoding</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="c1"># Use conditional to interpret the character as a particular symbol</span>
 <span class="k">if</span> <span class="n">character_encoding</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -564,6 +596,11 @@ Encoding can be thought of as the process of 'changing representation', and deco
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;é&#39;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">character_encoding</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;¿&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>¿
 </pre></div>
 </div>
 </div>
@@ -591,11 +628,21 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;key_1&#39;: &#39;value_1&#39;, &#39;key_2&#39;: &#39;value_2&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the type of the dictionary</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict
 </pre></div>
 </div>
 </div>
@@ -605,6 +652,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionaries also have a length</span>
 <span class="c1"># length refers to how many pairs there are</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
 </pre></div>
 </div>
 </div>
@@ -619,6 +671,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;value_1&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -628,6 +685,16 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loop Iteration&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Key:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Value:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">item</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loop Iteration
+	Key:	 key_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 key_2
+	Value:	 value_2
 </pre></div>
 </div>
 </div>
@@ -660,7 +727,12 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">height_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;height_1&#39;</span> <span class="p">:</span> <span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;height_2&#39;</span><span class="p">:</span> <span class="mi">68</span><span class="p">,</span> <span class="s1">&#39;height_3&#39;</span> <span class="p">:</span> <span class="mi">65</span><span class="p">,</span> <span class="s1">&#39;height_4&#39;</span> <span class="p">:</span> <span class="mi">72</span><span class="p">}</span>
-<span class="n">height_dict</span><span class="p">[</span><span class="o">---</span><span class="p">]</span>
+<span class="n">height_dict</span><span class="p">[</span><span class="s1">&#39;height_2&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68
 </pre></div>
 </div>
 </div>
@@ -688,6 +760,14 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Betty Jennings&#39;: &#39;bjennings@eniac.org&#39;,
+ &#39;Ada Lovelace&#39;: &#39;ada@analyticengine.com&#39;,
+ &#39;Alan Turing&#39;: &#39;aturing@thebomb.gov&#39;,
+ &#39;Grace Hopper&#39;: &#39;ghopper@navy.usa&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -701,6 +781,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: False, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -710,6 +795,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <span class="p">}</span>
 
 <span class="n">mixed_types</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{True: [1, 2, 3], False: None}
 </pre></div>
 </div>
 </div>
@@ -726,6 +816,13 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">car</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;make&#39;</span><span class="p">:</span><span class="s1">&#39;Hyundai&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">:</span><span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span><span class="mi">2017</span><span class="p">}</span>
+<span class="n">car</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;make&#39;: &#39;Hyundai&#39;, &#39;model&#39;: &#39;Santa Fe&#39;, &#39;year&#39;: &#39;2017&#39;}
 </pre></div>
 </div>
 </div>
@@ -961,7 +1058,7 @@ Unicode is a system of systematically and consistently representing characters.
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="08-Loops.html" title="previous page">Control Flow - Loops</a>
-    <a class='right-next' id="next-link" href="../labs/CL2-ProgrammingI.html" title="next page">Coding Lab 2: Programming I</a>
+    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
