@@ -54,10 +54,10 @@
   # #   title: 23-AdvancedPython
   # - file: materials/23-WrapUp
   #   title: 23-WrapUp
-  # - file: materials/A1-Syntax
-  #   title: A1-Syntax
-  # - file: materials/A2-Examples
-  #   title: A2-Examples
+  - file: materials/A1-Syntax
+    title: A1-Syntax
+  - file: materials/A2-Examples
+    title: A2-Examples
   # - file: materials/A3-Inheritance
   #   title: A3-Inheritance
 
@@ -77,15 +77,15 @@
 #     title: CL7-Answers
 
 
-# - part: Exam Prep
-#   chapters:
-#   # E1  
-#   - file: materials/Exam-Prep/E1-Practice
-#     title: E1-Practice
-#   - file: materials/Exam-Prep/E1-Review
-#     title: E1-Review
-#   - file: materials/Exam-Prep/E1-Review-Answers
-#     title: E1-Review-Answers
+- part: Exam Prep
+  chapters:
+  # E1  
+  - file: materials/Exam-Prep/E1-Practice
+    title: E1-Practice
+  - file: materials/Exam-Prep/E1-Review
+    title: E1-Review
+  - file: materials/Exam-Prep/E1-Review-Answers
+    title: E1-Review-Answers
 #   - file: materials/Exam-Prep/E1_Fa20_Practice-Answers
 #     title: E1-PracticeExam-Answers
 #   - file: materials/Exam-Prep/E1_Fa20-Answers

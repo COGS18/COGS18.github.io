@@ -121,7 +121,7 @@ Every time we see that number, we can evaluate it to replace it with the charact
 ### Character Encoding in Code
 
 # Set the value we want to encode
-character_encoding = 0
+character_encoding = 2
 
 # Use conditional to interpret the character as a particular symbol
 if character_encoding == 0:
@@ -187,7 +187,7 @@ Which of the following would create a dictionary of length 3?
 Fill in the '---' in the code below to return the value stored in the second key.
 
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
-height_dict[---]
+height_dict['height_2']
 
 - A) I did it
 - B) I think I did it...
@@ -230,6 +230,8 @@ Write the code that would create a dictionary `car` that stores values about you
 - D) No clue where to start...
 
 # YOUR CODE HERE
+car = {'make':'Hyundai', 'model':'Santa Fe', 'year':2017}
+car
 
 ### Dictionaries are mutable
 

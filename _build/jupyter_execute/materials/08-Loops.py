@@ -293,7 +293,7 @@ for item in my_lst:
         continue
     else:
         counter = counter + 1
-        
+
 print(counter)
 
 - A) 0 
@@ -423,7 +423,16 @@ print(counter)
 
 Write a loop that adds all the *odd* numbers between 1 and 1000 together.
 
+# for loop; conditional checking if value is odd
+# start counter; while loop; loop until counter is a certain value 
+
 # YOUR CODE HERE
+total = 0
+
+for val in range(1,1001,2):
+    total = total + val
+    
+print(total)
 
 - A) I did it!
 - B) I think I did it.
@@ -437,6 +446,15 @@ Store your name as a string in a variable called `my_name`.
 Write a loop that will loop through all the letters in `my_name` and count all the vowels in your name.
 
 # YOUR CODE HERE
+vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+my_name = 'Shannon'
+counter = 0 
+
+for ltr in my_name:
+    if ltr in vowels:
+        counter = counter + 1
+        
+print(counter)
 
 - A) I did it!
 - B) I think I did it.
