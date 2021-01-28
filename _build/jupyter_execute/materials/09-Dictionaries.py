@@ -352,3 +352,5 @@ out = chr(ord(inp))
 
 assert inp == out
 print('Input: \t', inp, '\nOutput: ', out)
+
+chr(ord(inp) + 2)
