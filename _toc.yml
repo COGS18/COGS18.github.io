@@ -67,8 +67,8 @@
     title: CL2-ProgrammingI
   - file: labs/CL3-ProgrammingII
     title: CL3-ProgrammingII
-#   - file: labs/CL4-Loops
-#     title: CL4-Loops
+  - file: labs/CL4-Loops
+    title: CL4-Loops
 #   - file: labs/CL5-Answers
 #     title: CL5-Answers
 #   - file: labs/CL6-Answers
