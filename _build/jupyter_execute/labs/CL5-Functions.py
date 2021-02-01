@@ -2,7 +2,7 @@
 
 Welcome to the fifth coding lab!
 
-Part I is more abstract - thinking about algorithms and functions, and sketching out some pseudocode. After that, we'll move to more practice with writing functions in Part II and finish with a return to debugging in the context of function in Part III. 
+Part I is more abstract - thinking about algorithms and functions, and sketching out some pseudocode. After that, we'll move to more practice with writing functions in Part II and finish with a return to debugging in the context of functions in Part III. 
 
 ## Part I: PseudoCode
 
