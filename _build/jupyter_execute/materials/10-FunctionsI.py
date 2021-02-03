@@ -72,7 +72,7 @@ def double_value(num):
 
 # excecute a function by calling function by name
 # adding input within parentheses
-double_value(num = 6) 
+double_value(num=6) 
 
 # equivalent function call
 # without specifying parameter
@@ -90,7 +90,7 @@ def add_two_numbers(num1, num2):
     # Return the answer
     return answer
 
-add_two_numbers(1, 2)
+add_two_numbers(7, 5)
 
 # Execute our function again, on some other inputs
 output = add_two_numbers(-1, 4)
@@ -110,9 +110,10 @@ def even_odd(value):
     return out
 
 # Execute our function
-# note that it's only printing the output
-even_odd(-1)
+val_1 = even_odd(6)
+val_2 = even_odd(-1)
 
+print(val_1, val_2)
 
 With functions, the logic behind our code no longer requires it to be executed from top to bottom of the notebook.
 
@@ -166,6 +167,20 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 - D) Super duper lost
 
 ## YOUR CODE HERE
+# define function
+def greet(name):
+    
+    output = 'Hello, ' + name + '! Good morning!'
+    
+    return output
+
+# call/execute the function
+greet(name='students')
+
+# execute function & store output to variable
+# call that variable out
+out = greet(name='students')
+print(out)
 
 ## Function Namespace I
 

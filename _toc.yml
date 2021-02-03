@@ -22,12 +22,10 @@
     title: 09-Dictionaries
   - file: materials/10-FunctionsI
     title: 10-FunctionsI
-  # - file: materials/10-Algorithms
-  #   title: 10-Algorithms
-  # - file: materials/11-FunctionsII
-  #   title: 11-FunctionsII
-  # - file: materials/12-Debugging
-  #   title: 12-Debugging
+  - file: materials/11-Algorithms
+    title: 11-Algorithms
+  - file: materials/12-FunctionsII
+    title: 12-FunctionsII
   # - file: materials/13-Objects
   #   title: 13-Objects
   # - file: materials/14-Classes
