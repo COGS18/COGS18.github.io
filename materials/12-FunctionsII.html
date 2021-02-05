@@ -198,6 +198,11 @@
    E1-PracticeExam-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Wi21.html">
+   E1_Wi21-Answers
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -496,9 +501,14 @@
 
 <span class="c1"># create dictionary and execute function</span>
 <span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;first&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;third&#39;</span> <span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
-<span class="n">out</span> <span class="o">=</span> <span class="n">my_func</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">my_func</span><span class="p">(</span><span class="n">my_dictionary</span><span class="o">=</span><span class="n">dictionary</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3]
 </pre></div>
 </div>
 </div>
@@ -559,7 +569,12 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the function, using default value</span>
-<span class="n">exponentiate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
 </pre></div>
 </div>
 </div>
@@ -572,11 +587,21 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you can always state this explicitly</span>
-<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -594,18 +619,34 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keyword arguments are explicitly named as to which argument each value relates to</span>
-<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exponentiate</span><span class="p">(</span><span class="n">exponent</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keyword arguments are explicitly named as to which argument each value relates to</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is confusing to readers of code</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -615,6 +656,14 @@ Arguments to a function can be indicated by either position or keyword.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: once you have a keyword argument, you can&#39;t have other positional arguments afterwards</span>
 <span class="c1"># this cell will produce an error</span>
 <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-14-82d192fd1eb1&gt;&quot;</span><span class="gt">, line </span><span class="mi">3</span>
+    <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+                            <span class="o">^</span>
+<span class="ne">SyntaxError</span>: positional argument follows keyword argument
 </pre></div>
 </div>
 </div>
