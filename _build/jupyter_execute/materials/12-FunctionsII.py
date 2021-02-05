@@ -24,7 +24,7 @@ def my_func(my_dictionary):
 
 # create dictionary and execute function
 dictionary = {'first' : 1, 'second' : 2, 'third' : 3}
-out = my_func(dictionary)
+out = my_func(my_dictionary=dictionary)
 
 print(out)
 
@@ -69,14 +69,14 @@ def exponentiate(number, exponent = 2):
     return number ** exponent
 
 # Use the function, using default value
-exponentiate(3)
+exponentiate(number=3)
 
 # Call the function, over-riding default value with something else
 # python assumes values are in order of parameters specified in definition
 exponentiate(2, 3)
 
 # you can always state this explicitly
-exponentiate(number = 2, exponent = 3)
+exponentiate(number=2, exponent=3)
 
 ## Positional vs. Keyword Arguments
 
@@ -88,9 +88,10 @@ Arguments to a function can be indicated by either position or keyword.
 exponentiate(2, 3)
 
 # Keyword arguments are explicitly named as to which argument each value relates to
-exponentiate(number = 2, exponent = 3)
+exponentiate(number=2, exponent=3)
 
-exponentiate(exponent = 3, number = 2)
+# this is confusing to readers of code
+exponentiate(exponent=3, number=2)
 
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
 # this cell will produce an error

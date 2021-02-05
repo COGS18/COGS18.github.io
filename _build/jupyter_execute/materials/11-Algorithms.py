@@ -75,11 +75,13 @@ A version of a **selection sort**:
 - remove lowest item from current list
 - wash, rinse, repeat
 
+not False
+
 def sort_array(array_to_sort):
     """A function to sort an array."""
 
     is_sorted = False    # Keeps track of when we are done sorting
-    sorted_array = []    # A new list that we will use to 
+    sorted_array = []    # A new list that we will use to sort our input
      
     while not is_sorted:
 
