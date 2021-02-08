@@ -1,3 +1,21 @@
+**Course Announcements**
+
+Due Dates:
+- [**mid-course survey**](https://docs.google.com/forms/d/e/1FAIpQLScEWLSdS55cy0s7sLICCNjZo9PIxAO1pjQLmRLN4m1VYlE3eg/viewform?usp=sf_link) (*optional for EC*; tonight 11:59 PM; link on Canvas)
+- **A3** due *next* Friday 2/12 
+   
+
+Notes:
+
+- **E1** grades posted
+    - Mean: 10.79/12.5 (86.3%)
+    - Answer Key:
+        - [On course website](https://cogs18.github.io/materials/Exam-Prep/E1_Wi21.html)
+        - In Exam-Prep folder on datahub
+    - regrades by Mon 8AM
+        - explain where you lost points but think you should not have
+        - note: I handle all regrades and regrade the entire exam: score can increase, decrease, or stay the same
+
 # Functions II
 
 - more on user-defined functions
@@ -111,7 +129,12 @@ What will the following code snippet print?
 def exponentiate(number, exponent = 2):    
     return number ** exponent
 
-exponentiate(exponent = 3, number = 2)
+# try to avoid incorrect order
+exponentiate(exponent=3, number=2)
+
+# better approach
+exponentiate(number=2, exponent=3)
+
 
 - A) 8
 - B) 9
@@ -148,12 +171,16 @@ my_list = [1, 2, 3]
 my_list.append(4)
 print(my_list)
 
+my_list
+
 The method `append()` is called directly on the list `my_list`
 
 # append is a method for lists
 # this will error with a string
 my_string = 'cogs18'
 my_string.append('!')
+
+my_string + '!'
 
 # The `is_integer()` method, defined on floats
 my_float = 12.2
@@ -169,7 +196,7 @@ my_int.is_integer()
 There are a whole bunch of string methods, all described [here](https://www.w3schools.com/python/python_ref_string.asp). We'll review a few of the most commonly used here.
 
 # Make a string all lower case
-'aBc'.lower()
+'aBcDEF'.lower()
 
 # Make a string all upper case
 'aBc'.upper()
@@ -339,7 +366,7 @@ car.values()
 Typing the object/variable name you want to find methods for followed by a '.' and then pressing tab will display all the methods available for that type of object.
 
 # Define a test string
-my_string = 'Python'
+my_string = 'Python is great'
 
 # See all the available methods on an object with tab complete
 my_string.

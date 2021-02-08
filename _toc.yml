@@ -26,8 +26,8 @@
     title: 11-Algorithms
   - file: materials/12-FunctionsII
     title: 12-FunctionsII
-  # - file: materials/13-Objects
-  #   title: 13-Objects
+  - file: materials/13-Classes
+    title: 13-Classes
   # - file: materials/14-Classes
   #   title: 14-Classes
   # - file: materials/15-Namespaces
@@ -67,12 +67,12 @@
     title: CL3-ProgrammingII
   - file: labs/CL4-Loops
     title: CL4-Loops
-#   - file: labs/CL5-Answers
-#     title: CL5-Answers
-#   - file: labs/CL6-Answers
-#     title: CL6-Answers
-#   - file: labs/CL7-Answers
-#     title: CL7-Answers
+  - file: labs/CL5-Functions
+    title: CL5-Functions
+#   - file: labs/CL6-Classes
+#     title: CL6-Classes
+#   - file: labs/CL7-CommandLine
+#     title: CL7-CommandLine
 
 
 - part: Exam Prep
