@@ -89,10 +89,10 @@
   - file: materials/Exam-Prep/E1_Wi21
     title: E1_Wi21-Answers
 # #   # E2
-#   - file: materials/Exam-Prep/E2-Practice
-#     title: E2-Practice
-#   - file: materials/Exam-Prep/E2-Review
-#     title: E2-Review
+  - file: materials/Exam-Prep/E2-Practice
+    title: E2-Practice
+  - file: materials/Exam-Prep/E2-Review
+    title: E2-Review
 #   - file: materials/Exam-Prep/E2-Review-Answers
 #     title: E2-Review-Answers
 #   - file: materials/Exam-Prep/E2_Practice_Fa20-Answers

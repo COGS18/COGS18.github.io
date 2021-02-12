@@ -327,9 +327,12 @@ class Dog():
     def speak(self, n_times=2):
         return self.sound * n_times
 
+# this will fail now that name is an instance attribute
+gary = Dog()
+
 # Initialize a dog
 # what goes in the parentheses is defined in the __init__
-gary = Dog(name = 'Gary') 
+gary = Dog(name='Gary') 
 
 # Check gary's attributes
 print(gary.sound)    # This is an class attribute
@@ -347,17 +350,37 @@ class NewDog():
     
     sound = 'Woof'
     
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self, n_times=2):
         return self.sound * n_times
 
 ## We'll execute here
+lexi = NewDog(name='Lexi', breed='Italian Greyhound')
+buster = NewDog(name='Buster', breed='Poodle')
+print(lexi.breed)
+print(lexi.name)
+
+output_variable = lexi.speak(6)
 
 - A) I did it!
 - B) I think I did it!
 - C) So lost. -_-
+
+**Course Announcements**
+
+**Due Dates**
+- CL6 due today
+- A3 due Friday
+
+**Notes**
+- Next week:
+    - No Class Monday (Holiday) or Wed (midterm)
+    - No Coding Lab next week
+    - E2 Wed (due Thurs at 8 AM)
+    - A4 due Friday
 
 ## Class example: Cat
 
@@ -416,7 +439,7 @@ What if we wanted some object type that would allow us to keep track of Professo
 
 We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.
 
-class ProfCourses:
+class ProfCourses():
     
     # create three instance attributes
     def __init__(self, prof):
@@ -430,7 +453,7 @@ print(ellis_courses.prof)
 
 **`add_class()` method**
 
-class ProfCourses:
+class ProfCourses():
     
     def __init__(self, prof):
         self.n_classes = 0
@@ -447,6 +470,7 @@ class ProfCourses:
         # increase value store in n_classes
         # by 1 any time a class is added
         self.n_classes += 1
+        # self.n_classes = self.n_classes + 1
 
 # create ellis_courses
 ellis_courses = ProfCourses('Ellis')
@@ -460,7 +484,7 @@ ellis_courses.classes
 
 **`compare()` method**
 
-class ProfCourses:
+class ProfCourses():
     
     def __init__(self, prof):
         self.n_classes = 0
