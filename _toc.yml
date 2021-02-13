@@ -69,8 +69,8 @@
     title: CL4-Loops
   - file: labs/CL5-Functions
     title: CL5-Functions
-#   - file: labs/CL6-Classes
-#     title: CL6-Classes
+  - file: labs/CL6-Classes
+    title: CL6-Classes
 #   - file: labs/CL7-CommandLine
 #     title: CL7-CommandLine
 
