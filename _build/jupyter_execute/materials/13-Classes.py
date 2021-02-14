@@ -334,6 +334,8 @@ gary = Dog()
 # what goes in the parentheses is defined in the __init__
 gary = Dog(name='Gary') 
 
+gary.speak()
+
 # Check gary's attributes
 print(gary.sound)    # This is an class attribute
 print(gary.name)     # This is a instance attribute

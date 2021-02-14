@@ -1,55 +1,7 @@
-# Exam 2 Review
+# Exam 2 Review (Answers)
 
-- **A3** is due tonight
-- **Exam #2 is released next Wednesday** 
-    - released at 8AM; 24h to complete and submit
-    - must be **submitted on datahub by Thurs 2/18 at 8 AM**
-- **A4 is due next Friday 2/19** (11:59 PM)
-- No Class Monday (Holiday)
-- No Coding Lab or Office Hours on Wednesday next week
 
-## Exam II Plan (12.5 points)
-
-Part I: **E1 Review** (3 points) 
-- Q1: Variables, Operators, & Indexing (0.5 points)
-- Q2: Conditionals & Loops (1.25 point)
-- Q3: Loop to Complete a Task (1.25 points)
-
-Part II: **Functions** (4.5 points)  
-- Q4: Function execution (0.75 points)*
-- Q5: Function I (1.25 points)*
-- Q6: Function II (1.25 points)*
-- Q7: Debugging (1.25 points)*
-
-Part III: **Objects & Classes** (5 points)
-- Q8: Classes I (2.5 points)*
-- Q9: Classes II (2.5 points)*
-
-\* : includes manual grading (partial credit)
-
-**Note about `random`**
-
-On the Practice midterm: there is a question that asks you to `import random`. There is a function from the `random` module called `choice()` that will choose an element from a list at random.
-
-This will be required to do Q10 on the practice midterm.
-
-*Note*: we have not covered imports or the `random` module yet; this question would NOT be fair game for your midterm.
-
-import random
-random.choice(['a', 'b', 'c', 'd'])
-
-### Reminder: 
-
-There are two extra notebooks that you can use for review:
-
-1. [A1-Syntax](https://cogs18.github.io/materials/A1-Syntax/)
-2. [A2-Examples](https://cogs18.github.io/materials/A2-Examples/)
-
-There are also a few Exam #2 Practice Problems [here](https://cogs18.github.io/materials/Exam2-Practice) and a practice exam on datahub.
-
-### Questions?
-
-## Functions
+### Functions
 
 - `def`
     - `return`
@@ -84,7 +36,23 @@ def sum_list(my_list):
 
 ## CODE TO TEST HERE
 
-## Objects & Classes
+#### Functions Answers
+
+## Functions Quesiton #1
+
+def remainder(num1, num2):  # set default values within parenthesis
+    out = num1 % num2
+    return out
+
+## Functions Question #2
+
+my_remainder = remainder(10, 4)
+my_remainder
+
+## Functions Question #3
+sum_list([1, 2, 3])
+
+### Objects & Classes
 
 - objects & `class`
     - attributes
@@ -129,7 +97,34 @@ Fill in the blanks:
 	In Python, everything is a(n) ______________. 
 
 
-## Python & Jupyter Extras
+#### Objects & Classes Answers
+
+Question #1A: 
+
+class Rocket():
+    
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+        
+    def move_up(self):
+        self.y += 1
+
+Question #1B:
+
+my_rocket = Rocket()
+
+Question #1C:
+
+my_rocket.move_up()
+my_rocket.move_up()
+my_rocket.y
+
+Question #2: 
+- method
+- object
+
+### Python & Jupyter Extras
 - encodings (`chr` & `ord`)
 - whitespace
 - namespace
@@ -158,7 +153,32 @@ For each of the following, indicate if the statement is True or False about Pyth
 - True/False Every Python variable is available from every namespace		
 - True/False `ls` is a shell command that creates a new file 		
 - True/False `cd` returns your current working directory		
+- True/False Everything in Python is an object
 - True/False `print_name()` folles best practices for function naming
+
+#### Extras Answers
+
+# Extras Question #1
+print(chr(ord('A')))
+
+Extras Question #2
+
+returning information about what objects are stored in your namespace (i.e. variables, functions, classes, etc.)
+
+%whos
+
+Extras Question #3
+
+For each of the following, indicate if the statement is True or False about Python and programming:
+
+- **True**/False Whitespace matters in Python
+- True/**False** Comments in Python start with '%' 					
+- True/**False** You have to specify a data type when you define a variable
+- True/**False** Every Python variable is available from every namespace		
+- True/**False** `ls` is a shell command that creates a new file 		
+- True/**False** `cd` returns your current working directory		
+- **True**/False Everything in Python is an object
+- **True**/False `print_name()` follows best practices for function naming
 
 <h2><center>After the second exam:</center></h2>
 

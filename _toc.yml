@@ -93,10 +93,10 @@
     title: E2-Practice
   - file: materials/Exam-Prep/E2-Review
     title: E2-Review
-#   - file: materials/Exam-Prep/E2-Review-Answers
-#     title: E2-Review-Answers
-#   - file: materials/Exam-Prep/E2_Practice_Fa20-Answers
-#     title: E2-PracticeExam-Answers   
+  - file: materials/Exam-Prep/E2-Review-Answers
+    title: E2-Review-Answers
+  - file: materials/Exam-Prep/E2_Wi21_Practice_Answers 
+    title: E2-PracticeExam-Answers 
 #   - file: materials/Exam-Prep/E2_Fa20-Answers
 #     title: E2_FA20-Answers
 #   - file: materials/Exam-Prep/Final-Review
