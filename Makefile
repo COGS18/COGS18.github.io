@@ -44,7 +44,7 @@ textbook:
 
 	jupyter-book build ./
 	# get project template 
-	cp assets/intro/projects/ProjectTemplate.zip _build/html/assets/intro/projects/
+	cp projects/ProjectTemplate.zip _build/html/assets/intro/projects/
 	
 	# copy first day of slides to _build
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
