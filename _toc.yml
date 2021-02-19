@@ -104,16 +104,16 @@
 #   - file: materials/Exam-Prep/Practice_Final-Answers
 #     title: Practice_Final-Answers
 
-# - part: Project
-#   chapters:
-#   - file: materials/PythonParty
-#     title: Python Party
-#   - file: assets/intro/projects/overview
-#     title: Project Overview
-#   - file: assets/intro/projects/ProjectIdeas
-#     title: Project Ideas
-#   - file: assets/intro/projects/faq
-#     title: Project FAQ
+- part: Project
+  chapters:
+  - file: materials/PythonParty
+    title: Python Party
+  - file: assets/intro/projects/overview
+    title: Project Overview
+  - file: assets/intro/projects/ProjectIdeas
+    title: Project Ideas
+  - file: assets/intro/projects/faq
+    title: Project FAQ
 
 
 
