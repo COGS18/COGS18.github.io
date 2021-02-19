@@ -1,5 +1,3 @@
-# COGS 18: Projects
-
 # Project Ideas
 
 ## Encryption
@@ -53,7 +51,7 @@ There are lots of helpful tutorials online; however, often it's difficult to fig
 
 $^*$If you have a really new hangman implementation/idea or are super stoked about your great `turtle` idea or have invented a spin on traditional tic-tac-toe/blackjack/magic 8 ball/rock, paper, scissors, you'll need to pitch your idea to (via email/campuswire or in office hours) and get approval from Professor Ellis
 
-# How to get started
+## How to get started
 
 - Pseudocode out the ideas you would like to explore / work on
 - Open a notebook, and get some code into it

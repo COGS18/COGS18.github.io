@@ -108,11 +108,11 @@
   chapters:
   - file: materials/PythonParty
     title: Python Party
-  - file: assets/intro/projects/overview
+  - file: projects/overview
     title: Project Overview
-  - file: assets/intro/projects/ProjectIdeas
+  - file: projects/ProjectIdeas
     title: Project Ideas
-  - file: assets/intro/projects/faq
+  - file: projects/faq
     title: Project FAQ
 
 
