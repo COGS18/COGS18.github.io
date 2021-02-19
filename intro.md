@@ -29,4 +29,4 @@ An overview of the Assignments is available [here](assets/intro/assignments/over
 
 ### Project
 
-An overview of the Project is available [here](assets/intro/projects/overview) and we've compiled a number of Frequently Asked questions (FAQs) [here](assets/intro/projects/faq). A template for the project will be provided.
+An overview of the Project is available [here](https://cogs18.github.io/projects/overview.html) and we've compiled a number of Frequently Asked questions (FAQs) [here](https://cogs18.github.io/projects/faq.html). A template for the project will be provided.
