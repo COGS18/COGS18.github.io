@@ -135,7 +135,7 @@ You *are* permitted to work with classmates on assignments; however, you are per
 
 There will be a flexible 24h time window during which students will be able to complete each midterm exam. While each exam will be designed to take ~1h, you could theoretically (although it's not advised) work on the exam for 24h, as long as its turned in on time. There will be no late submissions for midterm exams. 
 
-There will be two midterms, each taking place on a Friday. Each midterm is worth 12.5\% of your grade. The exams will include varied question types and will be taken online.
+There will be two midterms (see Course Schedule). Each midterm is worth 12.5\% of your grade. The exams will include varied question types and will be taken online.
 
 During exams this quarter, you *will* be allowed to consult outside resources (your notes, Google, etc.); however, you ***must complete the exam on your own without any type of communication with other humans***. For example, while you're allowed to look something up on Google or look over your class notes, you may not ask anyone about a question or their thoughts regarding your answer. You may not text/communicate on any messaging apps about the exam with anyone. You may not take the exam while looking at someone else's exam/computer. On exam days, there will be no office hours.
 

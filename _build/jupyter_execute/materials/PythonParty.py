@@ -25,7 +25,7 @@ Project Template: https://cogs18.github.io/assets/intro/projects/ProjectTemplate
 Choose ONE:
 - **Complete the final project**
     - we're discussing the details today
-    - submitted on Canvas by 11:59 PM on day of the final
+    - submitted on Canvas or datahub by 11:59 PM on day of the final
     - opportunity to learn the most! 
     - takes a lot more time    
 - **Complete the final exam** 
@@ -43,7 +43,7 @@ Submit one, *NOT* both (I have lots of grading at the end of the quarter!). If y
 - must implement some new thing (_not_ grading on complexity)
 - completed individually
 - uses good code practices
-- What you will turn in: zip file with your project
+- What you will turn in: zip file with your project or submit on datahub
     - \>= 1 Jupyter notebook (minimally includes project description)
         - ideally: demonstrates how your project runs (likely only a few lines of code)
     - \>= 1 module _or_ script
