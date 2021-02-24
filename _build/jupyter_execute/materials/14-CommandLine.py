@@ -106,7 +106,7 @@ An absolute file path starts with a slash `/` specifying the root directory.
 
 
 - `..` specify you want to move one directory up in your hierarchy
-- `COGS108/Lectures-Fa20` specifies the path to the directory I want to list files in
+- `COGS108/Lectures-Wi21` specifies the path to the directory I want to list files in
 - each directory is separated with a slash (`/`)
 
 This **relative** path does _not_ start with a leading slash (b/c it's not an absolute path).
@@ -228,7 +228,10 @@ Which is the best description of the following command:
 - D) `ls` is analogous to a function, and `-l` is like a parameter
 - E) There is no clear analogy here to Python
 
+!ls
+
 ## test out here
+!ls -l 
 
 #### Clicker Question #4
 
