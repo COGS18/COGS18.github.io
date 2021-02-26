@@ -86,7 +86,7 @@ print(crave.eating(tonkotsu))
 print(crave.soup(tonkotsu))
 ### END SOLUTION
 
-## Part II: Python Scripts
+## Part III: Python Scripts
 
 Now write a small script that imports from your module file, and uses that code to do something.
 

@@ -154,7 +154,7 @@ Which of the following is NOT a valid Python import statement?
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
 
 ## Importing Custom Code I
 
@@ -254,6 +254,11 @@ It's Python legal but bad for your nerves.
 If you see `from module import *` this means to import everything (read as 'from module import everything'). 
 
 This is generally considered not to be the best, as it is then unclear in your code exactly where the functionality came from.
+
+# don't do it
+# avoid doing * imports
+from random import *
+choice([2,3,4])
 
 # a valid way to import
 from random import choice

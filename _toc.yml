@@ -36,8 +36,8 @@
   #   title: 17-CodeTesting
   # - file: materials/18-OpenSource
   #   title: 18-OpenSource
-  # - file: materials/19-ScientificComputing
-  #   title: 19-ScientificComputing
+  - file: materials/16-ScientificComputing
+    title: 16-ScientificComputing
   # - file: materials/20-Documentation
   #   title: 20-Documentation
   # - file: materials/21-CodeStyle  
@@ -69,8 +69,8 @@
     title: CL5-Functions
   - file: labs/CL6-Classes
     title: CL6-Classes
-#   - file: labs/CL7-CommandLine
-#     title: CL7-CommandLine
+  - file: labs/CL7-CommandLine
+    title: CL7-CommandLine
 
 
 - part: Exam Prep
