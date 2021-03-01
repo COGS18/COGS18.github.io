@@ -5,6 +5,7 @@
 - A5 due *next* Friday
 
 **Notes**
+- CL7 : some struggles - check answer key and try again
 - Exam scores will *not* be posted today
     - Academic Integrity Concerns
     - Feel free to share your thoughts/feelings on this with me (DM on Campsuwire or email)
@@ -59,7 +60,7 @@ arr0 = np.array([1, 2, 3])
 arr1 = np.array([[1, 2], [3, 4]])
 arr2 = np.array([[5, 6], [7, 8]])
 
-arr1
+arr2
 
 # lists of lists don't store dimensionality well
 [[1, 2], [3, 4]] 
@@ -72,6 +73,7 @@ arr1
 `numpy` arrays are an object type...so they have associated attributes (below) and methods (we'll get to these in a second)!
 
 # Check the shape of the array
+# rows, columns
 arr1.shape
 
 # Index into a numpy array
@@ -109,7 +111,7 @@ for a, b in zip([1,2], ['a','b']):
 
 Given the following code, what will it print out?
 
-data = np.array([[1, 2, 3, 4],
+data = np.array([[1, 2, 3, 4], 
                  [5, 6, 7, 8]])
  
 output = []
@@ -159,6 +161,10 @@ out
 
 # check to be sure
 data[1,3]
+
+np.array([1,2])
+
+np.array([[1,2]])
 
 ## Heterogenous Data
 
