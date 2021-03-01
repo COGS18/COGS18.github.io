@@ -27,7 +27,10 @@ def extend(input_arg):
         output.append(element)
     return output
 
+extend((1, 2))
+
 # test here
+assert extend((1, 2)) == (1, 2, 1, 2)
 
 - A) `assert isinstance(extend([1, 2]), list)`
 - B) `assert extend([1, 2]) == [1, 2, 1, 2]`
@@ -82,7 +85,7 @@ Collect these snippets into a test function, and you get re-runnable tests for f
 def add(num1, num2):
     return num1 + num2
 
-# import math
+import math
 
 def test_add():
     """Tests for the `add` function."""
@@ -94,8 +97,8 @@ def test_add():
     assert add(-2, -2) == -4
     
     # Test adding floats
-    assert add(2.7, 1.2) == 3.9
-    # assert math.isclose(add(2.7, 1.2), 3.9)
+    # assert add(2.7, 1.2) == 3.9
+    assert math.isclose(add(2.7, 1.2), 3.9)
     
     # Test adding with 0
     assert add(2, 0) == 2
@@ -103,7 +106,7 @@ def test_add():
 # Run our test function
 test_add()
 
-add(2.7, 1.2) == 3.9
+add(2.7, 1.2)
 
 #### Clicker Question #2
 
@@ -115,6 +118,8 @@ def divide_list(in_list):
         output.append(el1 / el2)
     
     return output
+
+divide_list([1,0,2])
 
 # And the following test function:
 def test_divide_list():
@@ -133,7 +138,7 @@ divide_list((0,2,3))
 ## PyTest
 
 <div class="alert alert-info">
-<b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module that for writing and running test code. It is available from Anaconda and datahub.
+<b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module for writing and running test code. It is available from Anaconda and datahub.
 </div>
 
 ## Levels of Code Testing:
@@ -221,15 +226,30 @@ Thought process:
 def sum_list(input_list):
     """add all values in a list - return sum"""
     
-    output = 0
+    output = 0 
     
     for val in input_list:
         output += val
         
     return output
 
-### YOUR TEST
+assert isinstance(sum_list([1, 2, 3]), int)
 
+### YOUR TEST
+def test_sum_list():
+    assert isinstance(sum_list([1, 2, 3]), int)
+    assert sum_list([1, 2, 3]) == 6
+
+test_sum_list()
+
+### POSSIBLE TEST
+def test_sum_list():
+    
+    # write multiple asserts
+    assert callable(sum_list)
+    assert isinstance(sum_list([1, 2, 3, 4]), int)
+    assert sum_list([1, 2, 3, 4]) == 10
+    
 test_sum_list()
 
 ### `pytest`
@@ -244,4 +264,6 @@ test_sum_list()
 2. If everything works, silently moves along. 
 4. For anything that fails, will alert you.
 
-**Available from Anaconda and on datahub** Just an FYI for now: We'll be returning to how to use this after the second midterm. 
+**Available from Anaconda and on datahub** 
+
+!pytest ../test_functions.py
