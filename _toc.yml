@@ -32,16 +32,17 @@
     title: 14-CommandLine
   - file: materials/15-Modules
     title: 15-Modules
-  # - file: materials/17-CodeTesting
-  #   title: 17-CodeTesting
+
   # - file: materials/18-OpenSource
   #   title: 18-OpenSource
   - file: materials/16-ScientificComputing
     title: 16-ScientificComputing
+  - file: materials/17-CodeTesting
+    title: 17-CodeTesting
+  - file: materials/18-CodeStyle  
+    title: 18-CodeStyle
   # - file: materials/20-Documentation
   #   title: 20-Documentation
-  # - file: materials/21-CodeStyle  
-  #   title: 21-CodeStyle
   # - file: materials/22-CodeProjects
   #   title: 22-CodeProjects
   # # - file: materials/22-APIs

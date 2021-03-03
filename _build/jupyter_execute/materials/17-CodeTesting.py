@@ -267,3 +267,40 @@ test_sum_list()
 **Available from Anaconda and on datahub** 
 
 !pytest ../test_functions.py
+
+## Variable Type Checking
+
+def sum_list(input_list):
+    """add all values in a list - return sum"""
+    
+    if not isinstance(input_list, list):
+        raise ValueError("Please provide a list as input")
+    else:
+        output = 0 
+
+        for val in input_list:
+            output += val
+        
+    return output
+
+# when provided a list as input
+sum_list([1,2,3])
+
+# when something other than a list is input
+sum_list((1,2,3))
+
+# updated test to consider incorrect input
+import pytest 
+
+def test_sum_list():
+    
+    # write multiple asserts
+    assert callable(sum_list)
+    assert isinstance(sum_list([1, 2, 3, 4]), int)
+    assert sum_list([1, 2, 3, 4]) == 10
+    
+    # check that exception is raised
+    with pytest.raises(Exception) as e_info:
+        sum_list((1,2,3))
+
+test_sum_list()
