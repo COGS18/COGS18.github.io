@@ -1,10 +1,10 @@
-# Coding Lab 8: Scientific Computing
+# CL8: Scientific Computing
 
 Welcome to the eighth coding lab!
 
 This coding lab focuses on getting comfortable working with data using `pandas`, writing code that adheres to good code style principles, and code testing.
 
-# Part 0: Setup
+## Part 0: Setup
 
 Data wrangling often requires additional functionality outside what's included in Python by default. For this, we'll import other functionality from helpful packages.
 

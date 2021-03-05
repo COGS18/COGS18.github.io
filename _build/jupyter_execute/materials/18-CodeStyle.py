@@ -14,7 +14,7 @@
 
 **Common struggles**
 - Q2/Q5
-    - struggled to figure out what piecies were needed/how to combine multiple pieces (every third letter + removal + reversal)
+    - struggled to figure out what pieces were needed/how to combine multiple pieces (every third letter + removal + reversal)
     - did not take off if answer did not consider letters that appear more than once
 - Classes (Q8 & Q9): 
     - when/where to use `self`
@@ -25,8 +25,9 @@ Do you have an idea of what you want to do for your **project**?
 
 - A) absolutely no idea
 - B) some idea, but not sure
-- C) I know exactly what I want to do
-- D) I think I'm going to take the final exam
+- C) fairly good idea
+- D) I know exactly what I want to do
+- E) I think I'm going to take the final exam
 
 Example Final Projects: https://github.com/COGS18/Projects
 
@@ -138,7 +139,7 @@ def my_func():
     my_nums = '123'
     output = ''
     
-    for num in my_nums: 
+    for num in my_nums:   
         output += str(int(num) + 1)
     
     return output
@@ -186,7 +187,7 @@ if True:
   print('Words.')
 
 # Goodness
-if True:
+if True:     
     print('Words.')
 
 ### Spacing
@@ -235,7 +236,7 @@ for i in [1, 2, 3]:
 
 ### Multi-Line
 
-my_long_list = [1, 2, 3, 4, 5, 
+my_long_list = [1, 2, 3, 4, 5,
                 6, 7, 8, 9, 10]
 
 # Note: you can explicitly indicate a new line with '\'
@@ -258,6 +259,8 @@ import os
 import sys
 
 import numpy as np
+
+# custom code after
 
 Note: If you don't know how to import a local/custom module, figure that out this week in Coding Lab or office hours.
 

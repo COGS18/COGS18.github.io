@@ -41,8 +41,8 @@
     title: 17-CodeTesting
   - file: materials/18-CodeStyle  
     title: 18-CodeStyle
-  # - file: materials/20-Documentation
-  #   title: 20-Documentation
+  - file: materials/19-Documentation
+    title: 19-Documentation
   # - file: materials/22-CodeProjects
   #   title: 22-CodeProjects
   # # - file: materials/22-APIs
@@ -72,7 +72,8 @@
     title: CL6-Classes
   - file: labs/CL7-CommandLine
     title: CL7-CommandLine
-
+  - file: labs/CL8-ScientificComputing
+    title: CL8-ScientificComputing
 
 - part: Exam Prep
   chapters:

@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Documentation" href="19-Documentation.html" />
     <link rel="prev" title="Code Testing" href="17-CodeTesting.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -170,6 +170,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -214,6 +219,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../labs/CL7-CommandLine.html">
    CL7-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL8-ScientificComputing.html">
+   CL8-ScientificComputing
   </a>
  </li>
 </ul>
@@ -618,7 +628,7 @@
 <ul class="simple">
 <li><p>Q2/Q5</p>
 <ul>
-<li><p>struggled to figure out what piecies were needed/how to combine multiple pieces (every third letter + removal + reversal)</p></li>
+<li><p>struggled to figure out what pieces were needed/how to combine multiple pieces (every third letter + removal + reversal)</p></li>
 <li><p>did not take off if answer did not consider letters that appear more than once</p></li>
 </ul>
 </li>
@@ -634,8 +644,9 @@ Do you have an idea of what you want to do for your <strong>project</strong>?</p
 <ul class="simple">
 <li><p>A) absolutely no idea</p></li>
 <li><p>B) some idea, but not sure</p></li>
-<li><p>C) I know exactly what I want to do</p></li>
-<li><p>D) I think I’m going to take the final exam</p></li>
+<li><p>C) fairly good idea</p></li>
+<li><p>D) I know exactly what I want to do</p></li>
+<li><p>E) I think I’m going to take the final exam</p></li>
 </ul>
 <p>Example Final Projects: https://github.com/COGS18/Projects</p>
 <p><strong>Clicker Question #2</strong></p>
@@ -675,6 +686,31 @@ Coding style refers to a set of conventions for how to write good code.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">this</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren&#39;t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you&#39;re Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it&#39;s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let&#39;s do more of those!
 </pre></div>
 </div>
 </div>
@@ -762,6 +798,11 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;234&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -771,7 +812,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
     <span class="n">my_nums</span> <span class="o">=</span> <span class="s1">&#39;123&#39;</span>
     <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">my_nums</span><span class="p">:</span> 
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">my_nums</span><span class="p">:</span>   
         <span class="n">output</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
     
     <span class="k">return</span> <span class="n">output</span>
@@ -837,12 +878,22 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Words.
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Goodness</span>
-<span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+<span class="k">if</span> <span class="kc">True</span><span class="p">:</span>     
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Words.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Words.
 </pre></div>
 </div>
 </div>
@@ -906,6 +957,13 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+4
+10
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -921,7 +979,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <h3>Multi-Line<a class="headerlink" href="#multi-line" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_long_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_long_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span>
                 <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -961,6 +1019,8 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># custom code after</span>
 </pre></div>
 </div>
 </div>
@@ -1142,6 +1202,11 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Remember to take breaks!&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1164,6 +1229,11 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Sleep, water, and food are really important!&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="inline-comments">
@@ -1180,11 +1250,21 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;re so close!&quot;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Goodness</span>
 <span class="n">week_9</span><span class="p">()</span>  <span class="c1"># words of encouragement</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Sleep, water, and food are really important!&#39;
 </pre></div>
 </div>
 </div>
@@ -1290,7 +1370,7 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="17-CodeTesting.html" title="previous page">Code Testing</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="19-Documentation.html" title="next page">Documentation</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
