@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coding Lab 8: Scientific Computing &#8212; COGS 18 - Introduction To Python</title>
+    <title>CL8: Scientific Computing &#8212; COGS 18 - Introduction To Python</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -39,6 +39,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exam #1 Practice Questions" href="../materials/Exam-Prep/E1-Practice.html" />
+    <link rel="prev" title="CL7: Command Line" href="CL7-CommandLine.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -168,6 +170,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../materials/19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../materials/A1-Syntax.html">
    A1-Syntax
   </a>
@@ -183,7 +190,7 @@
   Coding Labs
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="CL2-ProgrammingI.html">
    CL2-ProgrammingI
@@ -212,6 +219,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="CL7-CommandLine.html">
    CL7-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   CL8-ScientificComputing
   </a>
  </li>
 </ul>
@@ -407,7 +419,66 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-0-setup">
+   Part 0: Setup
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-i-pandas">
+   Part I:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pandas
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-data">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pandas
+      </span>
+     </code>
+     : data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-attributes">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pandas
+      </span>
+     </code>
+     : attributes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-methods">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pandas
+      </span>
+     </code>
+     : methods
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-ii-code-style">
+   Part II: Code Style
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-iii-code-testing">
+   Part III: Code Testing
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -416,13 +487,12 @@
         
               <div>
                 
-  <div class="section" id="coding-lab-8-scientific-computing">
-<h1>Coding Lab 8: Scientific Computing<a class="headerlink" href="#coding-lab-8-scientific-computing" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="cl8-scientific-computing">
+<h1>CL8: Scientific Computing<a class="headerlink" href="#cl8-scientific-computing" title="Permalink to this headline">¶</a></h1>
 <p>Welcome to the eighth coding lab!</p>
 <p>This coding lab focuses on getting comfortable working with data using <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, writing code that adheres to good code style principles, and code testing.</p>
-</div>
 <div class="section" id="part-0-setup">
-<h1>Part 0: Setup<a class="headerlink" href="#part-0-setup" title="Permalink to this headline">¶</a></h1>
+<h2>Part 0: Setup<a class="headerlink" href="#part-0-setup" title="Permalink to this headline">¶</a></h2>
 <p>Data wrangling often requires additional functionality outside what’s included in Python by default. For this, we’ll import other functionality from helpful packages.</p>
 <p><strong>Import the following packages using their common shortened name found in parentheses:</strong></p>
 <ul class="simple">
@@ -444,6 +514,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">pd</span>
 <span class="k">assert</span> <span class="n">np</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -785,6 +856,8 @@ Name: New registered voters, dtype: float64
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="CL7-CommandLine.html" title="previous page">CL7: Command Line</a>
+    <a class='right-next' id="next-link" href="../materials/Exam-Prep/E1-Practice.html" title="next page">Exam #1 Practice Questions</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
