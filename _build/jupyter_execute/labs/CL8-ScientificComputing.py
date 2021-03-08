@@ -103,6 +103,17 @@ def get_most_common(d,c):
   a=MC.idxmax();b=MC.max()
   return a,b 
 
+### BEGIN SOLUTION
+def get_most_common(df, variable):  # better parameter names
+    
+    # fix indentation; betterspacing around operators; improve variable names
+    most_common = df[variable].value_counts() 
+    max_label = most_common.idxmax()
+    max_value = most_common.max()  # separate out onto two lines
+    
+    return max_label, max_value 
+### END SOLUTION
+
 # execute function
 get_most_common(df, 'Jurisdiction')
 

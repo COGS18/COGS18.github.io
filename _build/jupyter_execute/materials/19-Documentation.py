@@ -3,6 +3,10 @@
 - A5 due tonight (11:59 PM)
 - Final: due Mon 3/15 11:59 PM
 
+**Notes**
+- Please fill out CAPEs (ends 3/15 at 8AM PST)
+    - if >= 85% of class complete, +0.5% to everyone's grades
+
 # Documentation
 
 - readability
@@ -51,7 +55,7 @@ def ff(jj):
     oo = list(); jj = list(jj) 
     for ii in jj: oo.append(str(ord(ii)))
     return '+'.join(oo)
-ff('Hello World.')
+ff('Hello World.')   
 
 - A) Returns unicode code points, as a list
 - B) Encodes a string as a cypher, returning a string of alphabetical characters
@@ -68,7 +72,9 @@ Improvement Considerations:
 def return_unicode(input_list):
     string = list()
     input_list = list(input_list)
-      
+    
+    # to add each character's unicode value
+    # to string list 
     for character in input_list: 
         string.append(str(ord(character)))
         
@@ -150,7 +156,7 @@ How to use comments:
 
 # This is a loop that iterates over elements in a list
 for element in list_of_elements:
-    pass
+    pass 
 
 #### Good Comments
 
@@ -182,7 +188,7 @@ def add(num1, num2):
     
     Returns
     -------
-    answer : float
+    answer : int or float
         The result of the addition. 
     """
     

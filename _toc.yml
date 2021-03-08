@@ -43,8 +43,8 @@
     title: 18-CodeStyle
   - file: materials/19-Documentation
     title: 19-Documentation
-  # - file: materials/22-CodeProjects
-  #   title: 22-CodeProjects
+  - file: materials/20-CodeProjects
+    title: 20-CodeProjects
   # # - file: materials/22-APIs
   # #   title: 22-APIs
   # # - file: materials/23-AdvancedPython

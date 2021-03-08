@@ -208,6 +208,10 @@ class MyNumbers():
 # Import some custom code
 from remote import my_remote_function
 
+import my_module as mm
+
+my_module.my_remote_function(2,4)
+
 # Investigate our imported function
 my_remote_function?
 

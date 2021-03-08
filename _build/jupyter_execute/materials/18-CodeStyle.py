@@ -463,10 +463,29 @@ def MyFunction(input_num):
 - E) 7 or more
 
 ### list here
-
+- ind = 0 indentation
+- function name not snake_case
+- line 4 has two things; separate into two lines
+- bad variable naming
+- extra space before `[` when indexing
+- consider line spacing between "components" of code
+- spaces between elements of list are missing
 
 # Let's fix this code
+def my_function(input_num):
 
+    my_list = [0, 1, 2, 3]
+
+    if 1 in my_list: 
+        ind = 1
+    else:
+        ind = 0
+
+    out_list = []
+    for i in my_list[ind:]:
+        out_list.append(input_num/i)
+ 
+    return out_list
 
 # check using pylint
 !pylint linter_example.py
