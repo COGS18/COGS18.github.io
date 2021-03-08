@@ -175,6 +175,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="20-CodeProjects.html">
+   20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -994,6 +999,36 @@ random.sample<span class="o">?</span>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import some custom code</span>
 <span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">my_remote_function</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">34</span><span class="n">d365f32df9</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Import some custom code</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">my_remote_function</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;remote&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">my_module</span> <span class="k">as</span> <span class="nn">mm</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_module</span><span class="o">.</span><span class="n">my_remote_function</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
 </pre></div>
 </div>
 </div>

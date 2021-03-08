@@ -175,6 +175,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../materials/20-CodeProjects.html">
+   20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../materials/A1-Syntax.html">
    A1-Syntax
   </a>
@@ -749,6 +754,17 @@ Name: New registered voters, dtype: float64
   <span class="n">MC</span><span class="o">=</span><span class="n">d</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
   <span class="n">a</span><span class="o">=</span><span class="n">MC</span><span class="o">.</span><span class="n">idxmax</span><span class="p">();</span><span class="n">b</span><span class="o">=</span><span class="n">MC</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
   <span class="k">return</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> 
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="k">def</span> <span class="nf">get_most_common</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">variable</span><span class="p">):</span>  <span class="c1"># better parameter names</span>
+    
+    <span class="c1"># fix indentation; betterspacing around operators; improve variable names</span>
+    <span class="n">most_common</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">variable</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> 
+    <span class="n">max_label</span> <span class="o">=</span> <span class="n">most_common</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()</span>
+    <span class="n">max_value</span> <span class="o">=</span> <span class="n">most_common</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>  <span class="c1"># separate out onto two lines</span>
+    
+    <span class="k">return</span> <span class="n">max_label</span><span class="p">,</span> <span class="n">max_value</span> 
+<span class="c1">### END SOLUTION</span>
 </pre></div>
 </div>
 </div>
