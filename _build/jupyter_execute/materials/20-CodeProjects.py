@@ -155,6 +155,8 @@ def get_input():
     
     return msg, out_msg
 
+get_input()
+
 def is_question(input_string):
     """determine if input from user is a question"""
     
@@ -164,6 +166,8 @@ def is_question(input_string):
         output = False
     
     return output
+
+is_question('asdlfkjasdflj')
 
 def end_chat(input_list):
     """identify if user says 'quit' in input and end chat"""
@@ -238,6 +242,7 @@ def test_is_question():
     assert is_question('not?') == True
     assert is_question('not') == False
 
+# passes silently
 test_is_question()
 
 ...move to test file...check pytest from terminal/notebook

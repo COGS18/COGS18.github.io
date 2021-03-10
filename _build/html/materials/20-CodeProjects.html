@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Advanced Python" href="21-AdvancedPython.html" />
     <link rel="prev" title="Documentation" href="19-Documentation.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -177,6 +177,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21-AdvancedPython.html">
+   21-AdvancedPython
   </a>
  </li>
  <li class="toctree-l1">
@@ -690,6 +695,18 @@ Refactoring is the process of restructuring existing computer code, without chan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	hi
+OUTPUT: Thanks!
+INPUT :	huh?
+OUTPUT: I&#39;m too shy to answer questions. What do you want to talk about?
+INPUT :	cogs 18
+OUTPUT: Yeah!
+INPUT :	quit
+OUTPUT: Bye!
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -718,6 +735,21 @@ Refactoring is the process of restructuring existing computer code, without chan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">get_input</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	hi
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;hi&#39;, None)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_question</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;determine if input from user is a question&quot;&quot;&quot;</span>
     
@@ -727,6 +759,18 @@ Refactoring is the process of restructuring existing computer code, without chan
         <span class="n">output</span> <span class="o">=</span> <span class="kc">False</span>
     
     <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">is_question</span><span class="p">(</span><span class="s1">&#39;asdlfkjasdflj&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -799,6 +843,18 @@ Refactoring is the process of restructuring existing computer code, without chan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	hi
+OUTPUT: Yeah!
+INPUT :	how are you?
+OUTPUT: I&#39;m too shy to answer questions. What do you want to talk about?
+INPUT :	ok
+OUTPUT: Huh?
+INPUT :	quit
+OUTPUT: Bye
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -835,7 +891,8 @@ Refactoring is the process of restructuring existing computer code, without chan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_is_question</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># passes silently</span>
+<span class="n">test_is_question</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -874,7 +931,7 @@ Refactoring is the process of restructuring existing computer code, without chan
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="19-Documentation.html" title="previous page">Documentation</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="21-AdvancedPython.html" title="next page">Advanced Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

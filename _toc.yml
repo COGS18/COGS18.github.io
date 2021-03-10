@@ -47,8 +47,8 @@
     title: 20-CodeProjects
   # # - file: materials/22-APIs
   # #   title: 22-APIs
-  # # - file: materials/23-AdvancedPython
-  # #   title: 23-AdvancedPython
+  - file: materials/21-AdvancedPython
+    title: 21-AdvancedPython
   # - file: materials/23-WrapUp
   #   title: 23-WrapUp
   - file: materials/A1-Syntax
