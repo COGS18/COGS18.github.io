@@ -1,0 +1,1342 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COGS 18 - Practice Final Exam &#8212; COGS 18 - Introduction To Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Python Party!" href="../PythonParty.html" />
+    <link rel="prev" title="COGS 18 - Exam 2" href="E2_Wi21.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Lecture Materials
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../08-Loops.html">
+   08-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../10-FunctionsI.html">
+   10-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../14-CommandLine.html">
+   14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../15-Modules.html">
+   15-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../16-ScientificComputing.html">
+   16-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../18-CodeStyle.html">
+   18-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../20-CodeProjects.html">
+   20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../21-AdvancedPython.html">
+   21-AdvancedPython
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../22-WrapUp.html">
+   22-WrapUp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL4-Loops.html">
+   CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL5-Functions.html">
+   CL5-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL7-CommandLine.html">
+   CL7-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL8-ScientificComputing.html">
+   CL8-ScientificComputing
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1_Wi21_Practice_Answers.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1_Wi21.html">
+   E1_Wi21-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2_Wi21_Practice_Answers.html">
+   E2-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2_Wi21.html">
+   E2_Wi21-Answers
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Practice_Final-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/overview.html">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/ProjectIdeas.html">
+   Project Ideas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/faq.html">
+   Project FAQ
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/materials/Exam-Prep/Practice_Final_Wi21-Answers.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/Exam-Prep/Practice_Final_Wi21-Answers.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/Exam-Prep/Practice_Final_Wi21-Answers.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/Exam-Prep/Practice_Final_Wi21-Answers.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/Exam-Prep/Practice_Final_Wi21-Answers.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timing">
+     Timing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-rules">
+     The Rules
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1-variables-conditionals-loops-3-5-points">
+   Part 1: Variables, Conditionals, &amp; Loops (3.5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q1-conditionals-2-points">
+     Q1 - Conditionals (2 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q2-loops-1-5-points">
+     Q2 - Loops (1.5 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-functions-testing-5-points">
+   Part 2: Functions &amp; Testing (5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q3-atbash-encrypt-2-5-points">
+     Q3 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       atbash_encrypt
+      </span>
+     </code>
+     (2.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q4-test-function-test-atbash-encrypt-2-5-points">
+     Q4 - Test Function:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       test_atbash_encrypt
+      </span>
+     </code>
+     (2.5 points)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#this-blank-cell-included-intentionally-do-not-do-anything-here-it-s-being-used-in-grading">
+       <strong>
+        This “blank” cell included intentionally.
+       </strong>
+       Do not do anything here. (It’s being used in grading.)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-style-documentation-11-points">
+   Part 3: Style &amp; Documentation (11 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q5-code-style-3-points">
+     Q5 - Code Style (3 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q6-atbash-py-1-point">
+     Q6 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       atbash.py
+      </span>
+     </code>
+     (1 point)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q7-atbash-wrapper-7-25-points">
+     Q7 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       atbash_wrapper
+      </span>
+     </code>
+     (7.25 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-4-true-false-1-5-points">
+   Part 4: True/False (1.5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q8-true-false-1-5-points">
+     Q8 - True/False (1.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-final-exam-complete">
+     Practice Final Exam complete!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contents-of-atbash-py">
+     contents of atbash.py
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contents-of-test-atbash-py">
+     contents of test_atbash.py
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cogs-18-practice-final-exam">
+<h1>COGS 18 - Practice Final Exam<a class="headerlink" href="#cogs-18-practice-final-exam" title="Permalink to this headline">¶</a></h1>
+<p>This is the practice final exam for Winter 2021. It covers topics through the end of the course.</p>
+<p>This exam is out of 0 points, worth 0% of your grade. (The real final will be worth 19% of your grade)</p>
+<p><strong>PLEASE DO NOT CHANGE THE NAME OF THIS FILE.</strong></p>
+<p><strong>PLEASE DO NOT COPY &amp; PASTE OR DELETE CELLS INLCUDED IN THE EXAM.</strong> (Note that you can add additional cells, if you want to test things out.</p>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="timing">
+<h3>Timing<a class="headerlink" href="#timing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The exam is designed to take you ~2-3 hours.</p></li>
+<li><p>If it takes you longer than 2-3 hours, you’re free to use that time.</p></li>
+</ul>
+</div>
+<div class="section" id="the-rules">
+<h3>The Rules<a class="headerlink" href="#the-rules" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You are to complete this exam on your own.</p></li>
+<li><p>This is open-notes &amp; open-Google.</p></li>
+<li><p>You may not talk to any humans about this exam.</p></li>
+<li><p>The following are all <em>prohibited</em>:</p>
+<ul>
+<li><p>text/phone/online chat communication</p></li>
+<li><p>posting questions to a message board where a human could respond</p></li>
+<li><p>asking anyone via any form about a question on this test directly</p></li>
+</ul>
+</li>
+<li><p>Clarification questions will <em><strong>not</strong></em> be allowed and there will be no posting on Campuswire about the exam at all.</p>
+<ul>
+<li><p>Campuswire posts about the exam will not be answered and will be deleted.</p></li>
+<li><p>Students who post questions about the exam to Campuswire are at risk of losing points on the exam.</p></li>
+<li><p>If you are confused about wording, add a note to your exam explaining your confusion and how you interpreted the question.</p></li>
+<li><p>Note: This policy is b/c we are incapable of responding for 3d straight. This is the only way to make it fair across the board for students.</p></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: red;">Note: </span> There <em>is</em> a chance for partial credit on some questions, so <em>some</em> code is better than <em>no</em> code. Even if it throws an error, having some code that partially answers the question will benefit you/your grade.</p>
+</div>
+</div>
+<div class="section" id="part-1-variables-conditionals-loops-3-5-points">
+<h2>Part 1: Variables, Conditionals, &amp; Loops (3.5 points)<a class="headerlink" href="#part-1-variables-conditionals-loops-3-5-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q1-conditionals-2-points">
+<h3>Q1 - Conditionals (2 points)<a class="headerlink" href="#q1-conditionals-2-points" title="Permalink to this headline">¶</a></h3>
+<p><strong>Goal</strong>: Given a character, return the capitalized character in the reverse position within the alphabet in the variable <code class="docutils literal notranslate"><span class="pre">output</span></code>. For example, if the input character is ‘A’ or ‘a’, <code class="docutils literal notranslate"><span class="pre">output</span></code> would store ‘Z’. If the character is ‘B’ or ‘b’, the <code class="docutils literal notranslate"><span class="pre">output</span></code> would store ‘Y’. (and vice versa: the input ‘Z’ or ‘z’ would store ‘A’ in <code class="docutils literal notranslate"><span class="pre">output</span></code>).</p>
+<p><strong>Approach</strong>:</p>
+<p>Using the three variables provided below (<code class="docutils literal notranslate"><span class="pre">alpha</span></code>, <code class="docutils literal notranslate"><span class="pre">reverse_alpha</span></code>, and <code class="docutils literal notranslate"><span class="pre">char</span></code>), write code to acommplish the following:</p>
+<ul class="simple">
+<li><p>check if the in input variable (<code class="docutils literal notranslate"><span class="pre">char</span></code>) is a string of length 1:</p>
+<ul>
+<li><p>if it is:</p>
+<ul>
+<li><p>convert the input (<code class="docutils literal notranslate"><span class="pre">char</span></code>) to upper case</p></li>
+<li><p>check to see if this upper case value is a value in <code class="docutils literal notranslate"><span class="pre">alpha</span></code></p>
+<ul>
+<li><p>if it is: use <code class="docutils literal notranslate"><span class="pre">reverse_alpha</span></code> (provided below) to store the reverse alphabetical position in <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>otherwise (if the input is not a string of length 1):</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">output</span></code> should store <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Note: feel free to test your code with values of <code class="docutils literal notranslate"><span class="pre">char</span></code> other than <code class="docutils literal notranslate"><span class="pre">'m'</span></code>, but be sure that <code class="docutils literal notranslate"><span class="pre">char</span> <span class="pre">=</span> <span class="pre">'m'</span></code> when you submit your exam.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># these three variables provided</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+<span class="n">reverse_alpha</span> <span class="o">=</span> <span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
+<span class="n">char</span> <span class="o">=</span> <span class="s1">&#39;m&#39;</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">char</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">alpha</span><span class="p">:</span>
+        <span class="n">position</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">reverse_alpha</span><span class="p">[</span><span class="n">position</span><span class="p">]</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="n">output</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">output</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">output</span> <span class="o">==</span> <span class="s1">&#39;N&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>if hard-coded, no partial credit</p></li>
+<li><p>correctly checks if str/length 1 (0.5)</p></li>
+<li><p>converts to upper case correctly (0.25)</p></li>
+<li><p>checks if in alpha correctly (0.25)</p></li>
+<li><p>finds position in reverse list correctly (0.5)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q2-loops-1-5-points">
+<h3>Q2 - Loops (1.5 points)<a class="headerlink" href="#q2-loops-1-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Let’s build on that last question!</p>
+<p>Here, you will write code that will again find the reverse alphabetical position; however, in this code, you will need to be able to do this for an entire string, not just a single character.</p>
+<p>Your code should again use <code class="docutils literal notranslate"><span class="pre">alpha</span></code> and <code class="docutils literal notranslate"><span class="pre">reverse_alpha</span></code> (from Q1), but should return the character in the reverse alphabetical position for the entire string stored in <code class="docutils literal notranslate"><span class="pre">input_string</span></code>. Store the reverse alphabetical string (which should be in all CAPS in the variable <code class="docutils literal notranslate"><span class="pre">output_string</span></code>.</p>
+<p>If the upper case of any character in your string is not in <code class="docutils literal notranslate"><span class="pre">alpha</span></code>, <code class="docutils literal notranslate"><span class="pre">output_string</span></code> should store <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>Notes:</p>
+<ol class="simple">
+<li><p>Your code can assume <code class="docutils literal notranslate"><span class="pre">input_string</span></code> is a string and your code does not need to check this.</p></li>
+<li><p>Feel free to test your code with values of <code class="docutils literal notranslate"><span class="pre">input_string</span></code> other than <code class="docutils literal notranslate"><span class="pre">'HELLO'</span></code>, but be sure that <code class="docutils literal notranslate"><span class="pre">input_string</span> <span class="pre">=</span> <span class="pre">'HELLO'</span></code> when you submit your exam.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_string</span> <span class="o">=</span> <span class="s1">&#39;HELLO&#39;</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="n">output_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+    <span class="n">char</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">alpha</span><span class="p">:</span>
+        <span class="n">position</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+        <span class="n">output_string</span> <span class="o">+=</span> <span class="n">reverse_alpha</span><span class="p">[</span><span class="n">position</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">output_string</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">break</span>
+        
+<span class="n">output_string</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">output_string</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">output_string</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>if hard-coded, no points</p></li>
+<li><p>loops through string correctly (0.25)</p></li>
+<li><p>extends string correctly (0.5)</p></li>
+<li><p>sets output_string to None correctly (0.25)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+</div>
+<div class="section" id="part-2-functions-testing-5-points">
+<h2>Part 2: Functions &amp; Testing (5 points)<a class="headerlink" href="#part-2-functions-testing-5-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q3-atbash-encrypt-2-5-points">
+<h3>Q3 - <code class="docutils literal notranslate"><span class="pre">atbash_encrypt</span></code> (2.5 points)<a class="headerlink" href="#q3-atbash-encrypt-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Let’s continue the process!</p>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> that takes a string as its input and returns the reverse alphabetical string as its output (the same task as Q2…just turning it into a function).</p>
+<p>Remember that functions have their own namespace, so you’ll likely want to redefine <code class="docutils literal notranslate"><span class="pre">alpha</span></code> and <code class="docutils literal notranslate"><span class="pre">reverse_alpha</span></code> in your function directly. (I promise this will come in handy later in the exam…)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">def</span> <span class="nf">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+    <span class="n">reverse_alpha</span> <span class="o">=</span> <span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
+
+    <span class="n">output_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="n">char</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">alpha</span><span class="p">:</span>
+            <span class="n">position</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+            <span class="n">output_string</span> <span class="o">+=</span> <span class="n">reverse_alpha</span><span class="p">[</span><span class="n">position</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output_string</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">break</span>
+        
+    <span class="k">return</span> <span class="n">output_string</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your function (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">atbash_encrypt</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;cogs&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;XLTH&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">)</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;COGS&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;XLTH&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="q4-test-function-test-atbash-encrypt-2-5-points">
+<h3>Q4 - Test Function: <code class="docutils literal notranslate"><span class="pre">test_atbash_encrypt</span></code> (2.5 points)<a class="headerlink" href="#q4-test-function-test-atbash-encrypt-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Write a test function <code class="docutils literal notranslate"><span class="pre">test_atbash_encrypt()</span></code> that:</p>
+<ol class="simple">
+<li><p>contains at least three asserts that test the functionality of <code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code></p></li>
+<li><p>passes silently when executed</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># specific tests will differ</span>
+<span class="k">def</span> <span class="nf">test_atbash_encrypt</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+    <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your function (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">test_atbash_encrypt</span><span class="p">)</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">test_atbash_encrypt</span><span class="p">()</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;good&#39;</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;bad&#39;</span>
+    
+<span class="k">assert</span> <span class="n">out</span> <span class="o">==</span> <span class="s1">&#39;good&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="this-blank-cell-included-intentionally-do-not-do-anything-here-it-s-being-used-in-grading">
+<h4><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)<a class="headerlink" href="#this-blank-cell-included-intentionally-do-not-do-anything-here-it-s-being-used-in-grading" title="Permalink to this headline">¶</a></h4>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>test function defined correctly (0.25)</p></li>
+<li><p>contains at least three asserts (0.5)</p></li>
+<li><p>asserts are meaningful for function (0.75)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+</div>
+</div>
+<div class="section" id="part-3-style-documentation-11-points">
+<h2>Part 3: Style &amp; Documentation (11 points)<a class="headerlink" href="#part-3-style-documentation-11-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q5-code-style-3-points">
+<h3>Q5 - Code Style (3 points)<a class="headerlink" href="#q5-code-style-3-points" title="Permalink to this headline">¶</a></h3>
+<p>In the file <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code>, there is a function <code class="docutils literal notranslate"><span class="pre">atbash_decrypt()</span></code>. The code is functional and the function name is the name we want; however, within the function, the variable naming and code style need improvement. And, documentation and code comments are completely missing.</p>
+<p>Edit the function in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code> to:</p>
+<ol class="simple">
+<li><p>Improve the function’s variable naming (but: do <em>not</em> change the function’s name)</p></li>
+<li><p>Improve the overall code style (using what we discussed in class about PEP8)</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">numpy</span></code> style docstring (at the level discussed in class)</p></li>
+<li><p>Add code comments where needed</p></li>
+</ol>
+<p>Be sure to save changes in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code> when completed.</p>
+<p>Note: You do not have to actually add any code to this notebook for this question. All changes occur in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code>. (Partial credit for this question is awarded at the end of the exam.)</p>
+</div>
+<div class="section" id="q6-atbash-py-1-point">
+<h3>Q6 - <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code> (1 point)<a class="headerlink" href="#q6-atbash-py-1-point" title="Permalink to this headline">¶</a></h3>
+<p>You now have two functions and two test functions, but they’re not all yet organized! Let’s do that now…</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">atbash.py</span></code></strong></p>
+<ol class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> (from Q3) to <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code></p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">numpy</span></code>-style docstring &amp; appropriate code comments to <code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> (if you haven’t already) in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code>.</p></li>
+<li><p>Double check the naming/code style used in <code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> - improve if needed</p></li>
+</ol>
+<p><strong><code class="docutils literal notranslate"><span class="pre">test_atbash.py</span></code></strong></p>
+<ol class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">test_atbash_encrypt</span></code> (from Q4) to <code class="docutils literal notranslate"><span class="pre">test_atbash.py</span></code></p></li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">import</span></code> statement at top (if needed)</p></li>
+</ol>
+<p>Once completed, <code class="docutils literal notranslate"><span class="pre">import</span></code> both of the functions from <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code> below, such that the code <code class="docutils literal notranslate"><span class="pre">ab.atbash_encrypt('HELLO')</span></code> and <code class="docutils literal notranslate"><span class="pre">ab.atbash_decrypt('SVOOL')</span></code> both execute without issue.</p>
+<p>Note: You may have to restart your kernel for the <code class="docutils literal notranslate"><span class="pre">import</span></code> to work without issue.</p>
+<p>The assert cells below this question only test the import. The style/tests will be manually graded in Q7 (which is why that one is worth so many points).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="kn">import</span> <span class="nn">atbash</span> <span class="k">as</span> <span class="nn">ab</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to check your work (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">ab</span><span class="o">.</span><span class="n">atbash_encrypt</span><span class="p">)</span>
+
+<span class="c1"># hidden test to ensure atbash_encrypt works on import</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">ab</span><span class="o">.</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">ab</span><span class="o">.</span><span class="n">atbash_decrypt</span><span class="p">)</span>
+
+<span class="c1"># hidden test to ensure atbash_decrypt works on import</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">ab</span><span class="o">.</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="q7-atbash-wrapper-7-25-points">
+<h3>Q7 - <code class="docutils literal notranslate"><span class="pre">atbash_wrapper</span></code> (7.25 points)<a class="headerlink" href="#q7-atbash-wrapper-7-25-points" title="Permalink to this headline">¶</a></h3>
+<p>Your module now has two functions (in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code>) and two accompanying test functions (in <code class="docutils literal notranslate"><span class="pre">test_atbash.py</span></code>). Let’s add one final function and one final test function to complete the project.</p>
+<p>Steps:</p>
+<ul class="simple">
+<li><p>Add a function <code class="docutils literal notranslate"><span class="pre">atbash_wrapper()</span></code> to <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code></p>
+<ul>
+<li><p>It should take two input parameters: <code class="docutils literal notranslate"><span class="pre">input_string</span></code> and <code class="docutils literal notranslate"><span class="pre">method</span></code></p></li>
+<li><p>Within the function:</p>
+<ul>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">method</span> <span class="pre">=</span> <span class="pre">'encrypt'</span></code>, use <code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> with <code class="docutils literal notranslate"><span class="pre">input_string</span></code> as the input to the function, returning, the output</p></li>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">method</span> <span class="pre">=</span> <span class="pre">'decrypt'</span></code>, use <code class="docutils literal notranslate"><span class="pre">atbash_decrypt()</span></code> with <code class="docutils literal notranslate"><span class="pre">input_string</span></code> as the input to the function, returning the output</p></li>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">method</span></code> is anything other than these two specific strings, the function should <code class="docutils literal notranslate"><span class="pre">return</span></code> the string “Expecting method to be either ‘encrypt’ or ‘decrypt’”.  &lt;- Just copy + paste the string to avoid typing issues :)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Add a test function <code class="docutils literal notranslate"><span class="pre">test_atbash_wrapper()</span></code> to <code class="docutils literal notranslate"><span class="pre">test_atbash.py</span></code> to test the functionality of <code class="docutils literal notranslate"><span class="pre">atbash_wrapper()</span></code></p>
+<ul>
+<li><p>This test should contain at least three <code class="docutils literal notranslate"><span class="pre">asserts</span></code> and should pass silently</p></li>
+<li><p>Update imports at the top of the file (if needed)</p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># After accomplishing tasks above, feel free to use this cell to check your work (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests to ensure wrapper function works for decryption</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="kn">import</span> <span class="nn">atbash</span> <span class="k">as</span> <span class="nn">ab</span>
+<span class="k">assert</span> <span class="n">ab</span><span class="o">.</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">,</span> <span class="s1">&#39;decrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests to ensure wrapper function works for encryption</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">ab</span><span class="o">.</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">,</span> <span class="s1">&#39;encrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests to ensure wrapper function works when method is anything other than encrypt or decrypt</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">ab</span><span class="o">.</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">,</span> <span class="s1">&#39;blargh&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Expecting method to be either &#39;encrypt&#39; or &#39;decrypt&#39;&quot;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests to ensure test functions pass silently</span>
+<span class="c1"># uses pytest</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="n">out</span> <span class="o">=</span> <span class="o">!</span>pytest test_atbash.py
+<span class="k">assert</span> <span class="n">out</span><span class="o">.</span><span class="n">grep</span><span class="p">(</span><span class="s2">&quot;ERRORS&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="k">assert</span> <span class="n">out</span><span class="o">.</span><span class="n">grep</span><span class="p">(</span><span class="s2">&quot;FAILED&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading code style and documentation of <code class="docutils literal notranslate"><span class="pre">atbash_encrypt</span></code> in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code>.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>partial credit for <code class="docutils literal notranslate"><span class="pre">atbash_encrypt</span></code> in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code>:</p>
+<ul class="simple">
+<li><p>has numpy-style docstring &amp; comments (<strong>0.75 points</strong>)</p></li>
+<li><p>uses good naming/API + Code Style (<strong>0.75 points</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading code style and documentation of <code class="docutils literal notranslate"><span class="pre">atbash_decrypt</span></code> in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code>, from Q5.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p><code class="docutils literal notranslate"><span class="pre">atbash_decrypt</span></code> in <code class="docutils literal notranslate"><span class="pre">atbash.py</span></code> (partial credit from Q5)</p>
+<ul class="simple">
+<li><p>has numpy style docstring (<strong>0.75 points</strong>)</p></li>
+<li><p>has at least one good code comment; does not comment every line (<strong>0.75 points</strong>)</p></li>
+<li><p>has good Code Style (<strong>0.75 points</strong>)</p>
+<ul>
+<li><p>some line spacing</p></li>
+<li><p>spacing around operators</p></li>
+</ul>
+</li>
+<li><p>has better naming (<strong>0.75 points</strong>)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span></code> is no longer <code class="docutils literal notranslate"><span class="pre">l</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">alpha</span></code>/<code class="docutils literal notranslate"><span class="pre">reverse_alpha</span></code> are lowercase</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">letter_index</span></code> uses snakecase</p></li>
+</ul>
+</li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading tests and imports in <code class="docutils literal notranslate"><span class="pre">test_atbash.py</span></code>)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>partial credit for <code class="docutils literal notranslate"><span class="pre">test_atbash.py</span></code>:</p>
+<ul class="simple">
+<li><p>contains <code class="docutils literal notranslate"><span class="pre">test_atbash_encrypt</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">test_wrapper</span></code> (<strong>1 point</strong>)</p></li>
+<li><p>all 3 functions inported at top correctly (<strong>0.5 points</strong>)</p></li>
+<li><p>agreement between import at top and how used in tests (<strong>0.5 points</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+</div>
+<div class="section" id="part-4-true-false-1-5-points">
+<h2>Part 4: True/False (1.5 points)<a class="headerlink" href="#part-4-true-false-1-5-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q8-true-false-1-5-points">
+<h3>Q8 - True/False (1.5 points)<a class="headerlink" href="#q8-true-false-1-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Following the instructions &amp; example above, store the appropriate boolean in the variable provided for each of the following statements:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">function_names</span></code> | <code class="docutils literal notranslate"><span class="pre">basketball_game</span></code> is a better function name than <code class="docutils literal notranslate"><span class="pre">BasketballGame</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> | <code class="docutils literal notranslate"><span class="pre">pwd</span></code> is a shell command that prints your current working directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> | <code class="docutils literal notranslate"><span class="pre">cd</span></code> is a shell command that lists the files in your current working directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">relative_paths</span></code> | relative paths specify location relative to the computer’s root directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">script</span></code> | To execute a script <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code> from a Jupyter Notebook in the same directory, the cell would contain <code class="docutils literal notranslate"><span class="pre">!python</span> <span class="pre">my_script.py</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">module</span></code> | To import a module <code class="docutils literal notranslate"><span class="pre">my_module.py</span></code> from a Jupyter Notebook in the same directory, the cell would contain <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">my_module.py</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">function_names</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">pwd</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">cd</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">relative_paths</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">script</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">module</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">function_names</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">function_names</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">pwd</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">pwd</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">cd</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">cd</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">relative_paths</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">relative_paths</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">script</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">script</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">module</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">module</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="practice-final-exam-complete">
+<h3>Practice Final Exam complete!<a class="headerlink" href="#practice-final-exam-complete" title="Permalink to this headline">¶</a></h3>
+<p>Good work - you’re done with the final exam!</p>
+<p>Check your work, and then when you’re ready, <strong>submit on datahub</strong>.</p>
+<p>We will not have your exam until you click submit and see this show up under ‘submitted assignments’.</p>
+</div>
+<div class="section" id="contents-of-atbash-py">
+<h3>contents of atbash.py<a class="headerlink" href="#contents-of-atbash-py" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">atbash_decrypt</span><span class="p">(</span><span class="n">crypto</span><span class="p">):</span>     
+    <span class="sd">&quot;&quot;&quot;Decrypt Message using atbash method, returning reverse alphabetical position. </span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    crypto : string</span>
+<span class="sd">        The string to be decrypted.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    message : string</span>
+<span class="sd">        The atbash decrypted message. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">alpha</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+    <span class="n">reverse_alpha</span> <span class="o">=</span> <span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">crypto</span> <span class="o">=</span> <span class="n">crypto</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+   
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">crypto</span><span class="p">:</span>
+        <span class="c1"># if char in crypto is found, </span>
+        <span class="c1"># return indexed letters from reverse alpha</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">reverse_alpha</span><span class="p">:</span>
+            <span class="n">letter_index</span> <span class="o">=</span> <span class="n">reverse_alpha</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+            <span class="n">message</span> <span class="o">=</span> <span class="n">message</span> <span class="o">+</span> <span class="n">alpha</span><span class="p">[</span><span class="n">letter_index</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">message</span> <span class="o">=</span> <span class="n">message</span> <span class="o">+</span> <span class="n">char</span>
+        
+    <span class="k">return</span> <span class="n">message</span>
+
+
+<span class="k">def</span> <span class="nf">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Reverse alphabetical position of letters within a string. </span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    input_string : string</span>
+<span class="sd">        string to be encrypthed</span>
+<span class="sd">        </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    answer : string</span>
+<span class="sd">        The encrypted string, storing the reverse alphabetical position of input string. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+   
+    <span class="n">alpha</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+    <span class="n">reverse_alpha</span> <span class="o">=</span> <span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
+    <span class="n">output_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="n">char</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>  <span class="c1"># covert to upper case</span>
+    
+        <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+            <span class="n">index</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>  <span class="c1"># get position</span>
+            <span class="n">output_string</span> <span class="o">+=</span> <span class="n">reverse_alpha</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output_string</span> <span class="o">+=</span> <span class="n">char</span>
+        
+    <span class="k">return</span> <span class="n">output_string</span>
+
+
+        
+<span class="k">def</span> <span class="nf">atbash_wrapper</span><span class="p">(</span><span class="n">input_string</span><span class="p">,</span> <span class="n">method</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Reverse alphabetical position of letters within a string. </span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    input_string : string</span>
+<span class="sd">        string to be encrypted or decrypted</span>
+<span class="sd">    method: string</span>
+<span class="sd">        The method to use (&quot;encrypt&quot; or &quot;decrypt&quot;)</span>
+<span class="sd">        </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    ouput : string</span>
+<span class="sd">        The string, either encrypted or decrypted as indicated by method. </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+           
+    <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;encrypt&#39;</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;decrypt&#39;</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Expecting method to be either &#39;encrypt&#39; or &#39;decrypt&#39;&quot;</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="contents-of-test-atbash-py">
+<h3>contents of test_atbash.py<a class="headerlink" href="#contents-of-test-atbash-py" title="Permalink to this headline">¶</a></h3>
+<p>Note: Your specific tests could differ</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atbash</span> <span class="kn">import</span> <span class="n">atbash_decrypt</span><span class="p">,</span> <span class="n">atbash_encrypt</span><span class="p">,</span> <span class="n">atbash_wrapper</span>
+
+<span class="k">def</span> <span class="nf">test_atbash_decrypt</span><span class="p">():</span>
+
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s2">&quot;HMVZPB KBGSLM HMZPV&quot;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s2">&quot;HMVZPB KBGSLM HMZPV&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;SNEAKY PYTHON SNAKE&quot;</span>
+
+<span class="k">def</span> <span class="nf">test_atbash_encrypt</span><span class="p">():</span>
+    
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s2">&quot;VCZN&quot;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s2">&quot;VCZN&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;EXAM&quot;</span>
+    
+    
+<span class="k">def</span> <span class="nf">test_atbash_wrapper</span><span class="p">():</span>
+    
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s2">&quot;HMVZPB KBGSLM HMZPV&quot;</span><span class="p">,</span> <span class="s2">&quot;decrypt&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;SNEAKY PYTHON SNAKE&quot;</span>
+    <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s2">&quot;SNEAKY PYTHON SNAKE&quot;</span><span class="p">,</span> <span class="s2">&quot;encrypt&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;HMVZPB KBGSLM HMZPV&quot;</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials/Exam-Prep"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="E2_Wi21.html" title="previous page">COGS 18 - Exam 2</a>
+    <a class='right-next' id="next-link" href="../PythonParty.html" title="next page">Python Party!</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>
