@@ -49,8 +49,8 @@
   # #   title: 22-APIs
   - file: materials/21-AdvancedPython
     title: 21-AdvancedPython
-  # - file: materials/23-WrapUp
-  #   title: 23-WrapUp
+  - file: materials/22-WrapUp
+    title: 22-WrapUp
   - file: materials/A1-Syntax
     title: A1-Syntax
   - file: materials/A2-Examples
@@ -101,8 +101,8 @@
     title: E2_Wi21-Answers
 #   - file: materials/Exam-Prep/Final-Review
 #     title: Final-Review
-#   - file: materials/Exam-Prep/Practice_Final-Answers
-#     title: Practice_Final-Answers
+  - file: materials/Exam-Prep/Practice_Final_Wi21-Answers
+    title: Practice_Final-Answers
 
 - part: Project
   chapters:

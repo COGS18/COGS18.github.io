@@ -5,6 +5,7 @@
 **Notes**
 - Please fill out CAPEs (ends 3/15 at 8AM PST; currently: ~50%) 
 - CL8 and A5 scores posted
+- Practice Final exam released
 
 # Advanced Python
 
@@ -200,7 +201,7 @@ output_list
 
 # This list comprehension is equivalent to the cell above
 # note the square brackets on the outside
-[ind + 1 for ind in [0, 1, 2]]
+[ind + 1 for ind in [0, 1, 2]] 
 
 # You can also include conditionals inside a list comprehension
 my_list = [1, 2, 3, 4, 5]
@@ -249,7 +250,7 @@ def is_bool(val):
     else:
         return False
 
-#filter?
+filter?
 
 out = []
 
@@ -308,7 +309,7 @@ my_list = [1, 2, 3, 4]
 list(map(double, my_list))
 
 # Note - we can use lambda functions with map
-list(map(lambda x: x *2, my_list))
+list(map(lambda x: x*2, my_list))
 
 ## Conditional Assignment
 
