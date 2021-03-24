@@ -12,7 +12,7 @@ The outline for assignments is as follows:
 | A2 | Ciphers | Collections, Loops & Encodings | 
 | A3 | Chatbots | Functions & Algorithms | 
 | A4 | Artificial Agents | Methods, Classes & Objects | 
-| A5 | Experimentation | modules, Code Style, Documentation | 
+| A5 | Experimentation | Scintific Computing, Modules, Code Style, Documentation | 
 
 Assignments are cumulative - previously covered topics may also appear in a future assignment. Due dates are listed on the syllabus.
 
@@ -42,9 +42,9 @@ Follow these instructions for working with these notebooks:
 
 ### Questions About Assignments
 
-Please ask all questions on Campuswire and/or in office hours. 
+Please ask all questions on Campuswire(B00)/Piazza(C00) and/or in office hours. 
 
-A note on posting code on Campuswire: When asking or answering questions on Campuswire, do not post code that answers assignment questions. If you want to post larger segments of code, do so in a private post.
+A note on posting code: When asking or answering questions, do not post code that answers assignment questions. If you want to post larger segments of code, do so in a private post.
 
 ### To ask about an extension
 
@@ -56,7 +56,7 @@ Grades will be released on Canvas about a week after the submission due date and
 
 ### Regrades
 
-If you have a question about a grade, post a note on Campuswire privately to Instructors using the "regrades" tag.
+If you have a question about a grade, post a note on Campuswire(B00)/Piazza(C00) privately to Instructors using the "regrades" tag.
 
 Questions about grades include asking where you lost points, clarifying why you lost points, and asking about potential regrades (overall, or for particular questions). Please first check the information and guidelines below first. Note that because assignments are programmatically graded on a particular computer, course staff in office hours will not have immediate access to your particular submission, and where you lost points.
 

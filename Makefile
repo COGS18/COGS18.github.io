@@ -26,35 +26,35 @@ serve:
 textbook:
 	python scripts/clean.py
 	
-	# Copy & build materials
-	git clone --depth 1 https://github.com/COGS18/LectureNotes-Wi21 materials
-	rm materials/README.md
+	# Copy & build materials - Ellis
+	git clone --depth 1 https://github.com/COGS18/LectureNotes-Sp21-Ellis materials
 
+	# Copy & build materials - Bardolph
+	# git clone --depth 1 https://github.com/COGS18/LectureNotes-Sp21-Bardolph materials_bardolph
+	# rm materials_bardolph/README.md
 
 	# Copy & build coding labs
-	git clone --depth 1 https://github.com/COGS18/CodingLabs labs
-	rm -rf labs/README.md
-	rm -rf Archive
-	mv labs/source/* labs	
-	rm -rf labs/source
+	# git clone --depth 1 https://github.com/COGS18/CodingLabs labs
+	# rm -rf labs/README.md
+	# rm -rf Archive
+	# mv labs/source/* labs	
+	# rm -rf labs/source
 
 	# Copy & build project info
-	git clone --depth 1 https://github.com/COGS18/projects projects
-	rm projects/README.md
+	# git clone --depth 1 https://github.com/COGS18/projects projects
+	# rm projects/README.md
 
 	jupyter-book build ./
 	# get project template 
-	cp projects/ProjectTemplate.zip _build/html/assets/intro/projects/
+	# cp projects/ProjectTemplate.zip _build/html/assets/intro/projects/
 	
 	# copy first day of slides to _build
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
 	
 	# copy non-md images to build
-	cp materials/img/anaconda.png _build/html/_images/
-	cp materials/img/conda.png _build/html/_images/
-	cp materials/img/jupyter.png _build/html/_images/
-	cp materials/img/python.png _build/html/_images/
-	cp materials/img/hack.py.png _build/html/_images/
+	mkdir _build/html/_images
+	cp materials/img/* _build/html/_images/
+
 
 	rm -rf labs
 

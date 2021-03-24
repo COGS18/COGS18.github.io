@@ -13,15 +13,15 @@ The broad objectives of this project are for you to:
 
 ### Project Schedule
 
-- W8: Project Description released
-- W9: By the end of this week, you must have a project topic / outline
+- W7: Project Description released
+- W8: By the end of this week, you must have a project topic / outline
 - W9-10: Work on the project
   - Coding Lab during Weeks 9-10 will provide you with time to work on and get help with your Final Project.
 - **Finals Week: projects due**
 
 ### Getting Started
 
-We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.
+We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Campuswire(B00)/Piazza(C00)). This will give us a chance to give you feedback and help guide your project plans.
 
 Suggestions for working on projects:
 
@@ -61,7 +61,7 @@ This quarter, the Taboo Topics for the COGS18 final project are:
 - Blackjack
 - Magic 8 Ball
 
-Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to Professor Ellis and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
+Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to Professor Ellis/Professor Bardolph and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
 
 ### Project Scope
 
@@ -109,8 +109,8 @@ Note that not all of these files / sections are mandatory, and they do not have 
 
 First, make sure everything is organized into a folder, as you want it. Then: 
 
-- On Mac: left click on the folder, and click 'Compress'.
-- On Windows: left click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
+- On Mac: right click on the folder, and click 'Compress'.
+- On Windows: right click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
 
 In both cases, this will create a zip file, with the name 'FolderName.zip'. 
 

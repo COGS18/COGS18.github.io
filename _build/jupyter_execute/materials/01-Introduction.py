@@ -9,14 +9,14 @@ The PDF slides from the start of the first class are available here: https://cog
 
 - Who:
     - Instructor: Shannon Ellis 
-    - TA: Aiden
-    - IAs: Beibei, Jaime, Scott, Andrew
+    - TA: Shivani
+    - IAs: Elton, Hinn, Cain, & Andrew
     
 - Where:
     - Lectures MWF @ 8AM (remote)
     - Coding Lab Sections (Wed 9AM & 10 AM)
     - Course Website: https://cogs18.github.io
-    - Campuswire Page: https://campuswire.com/p/G5A5B51F9
+    - Campuswire Page: https://campuswire.com/p/GD823FEDD
 
 ## Expectations & Approach
 
@@ -70,4 +70,4 @@ Uses in COGS18:
 - lecture notes
 - assignments
 - coding labs
-- exams
+- final project/exam

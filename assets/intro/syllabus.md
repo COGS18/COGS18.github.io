@@ -1,8 +1,10 @@
 
-# COGS 18: Introduction to Python
+# COGS 18: Introduction to Python 
 
-**Winter 2021**  
+**Spring 2021 (B00)**  
 **MWF 8-8:50 (remote)**  
+
+DRAFT: This syllabus will be finalized during week 1 of the quarter.
 
 ---
 
@@ -25,22 +27,22 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 ## COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
-**Instructor Office Hours**: Friday 11 AM - 1 PM
+**Instructor Office Hours**: Monday 10 AM - 12 PM
 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
-| TA             | Aiden Iveris	           | 9A; 10A          | Tu 9-10 PM   |
-| IA	           | Beibei Du               | 10A              | --           |
-| IA	           | Jaime Izabal            | 9A               | Th 2-3 PM    |
-| IA	           | Scott Yang              | --               | Th 8-9 PM    |
-| IA	           | Andrew Nguyen           | --               | Wed 8-9 PM   |
+| TA             | Shivani Bhakta          | 9A; 10A          | TBD          |
+| IA	           | Elton Ho                | --               | --           |
+| IA	           | Hinn Zhang              | --               | TBD          |
+| IA	           | Cain Cheng              | --               | TBD          |
+| IA	           | Andrew Nguyen           | --               | TBD          |
 
 
 You may also see *Angela Cha*, *Geoff Lizar*, or *Harrison Ma* answer questions on Campuswire/Discord or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
 
 Course Website: [https://cogs18.github.io]   
-Canvas Course: [https://canvas.ucsd.edu/courses/21696]   
-Course Campuswire*: [https://campuswire.com/c/G5A5B51F9]   
+Canvas Course: [https://canvas.ucsd.edu/courses/25024]   
+Course Campuswire*: [https://campuswire.com/c/GD823FEDD]   
 Assignment Submission: [https://datahub.ucsd.edu]  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
@@ -156,40 +158,40 @@ The final exam will be taken on the same platform and with the same time constra
 
 ## COURSE SCHEDULE
 
-| Date    | Week |Lecture | Day | Topic           | Assignment (due 11:59 PM) | CodingLab (due 11:59 PM)  |
+| Date    | Week |Lecture | Day | Topic           | Assignment ( 11:59 PM) | CodingLab ( 11:59 PM)  |
 | -------:|:----:|:-------|:---:|:----------------|:--------------------------|:--------------------------|
-| 1/4    | 1	   | 1      | M   | Introduction    |                           |                         	| 
-| 1/6    | 1	   | 2      | W   | Tooling & Help  |                           | CL1: Tooling 		          |
-| 1/8    | 1     | 3      | F   | Variables       |                           |                         	| 
-| 1/11   | 2	   | 4      | M   | Operators       |                           |                       		| 
-| 1/13   | 2	   | 5      | W   | Conditionals    |                           | CL2: Programming I        | 
-| 1/15   | 2	   | 6      | F   | Debugging       |                           |         			            | 
-| 1/18   | 3	   | --     | M   | **No Class**  	|                           |                         	| 
-| 1/20   | 3	   | 7      | W   | Collections     |            			          | CL3: Programming II       |
-| 1/22   | 3	   | 8      | F   | Loops           | A1: Getting-Started       |                         	| 
-| 1/25   | 4	   | 9      | M   | Dictionaries [*]|                        	  | 				                  | 
-| 1/27   | 4	   | --     | W   | Review          |                        		| CL4: Loops                |
-| 1/29   | 4	   | --     | F   | **Midterm I**   | A2: Ciphers               |                        		| 
-| 2/1    | 5	   | 10     | M   | Functions I     |                           |                         	| 
-| 2/3    | 5	   | 11     | W   | Algorithms  	  |                       	 	| CL5: Functions 	          |
-| 2/5    | 5	   | 12     | F   | Functions II    |                           |                         	| 
-| 2/8    | 6	   | 13     | M   | Classes I       |   				                |                         	| 
-| 2/10   | 6	   | 13     | W   | Classes II [**] |               		        | CL6: Classes             	| 
-| 2/12   | 6	   | --     | F   | Review          | A3: Chatbots              |        			              | 
-| 2/15   | 7	   | --     | M   | **No Class**   	| 	                        |                         	| 
-| 2/17   | 7	   | --     | W   | **Midterm II**  |      				              | No Coding Lab (Exam)      | 
-| 2/19   | 7	   | --     | F   | Python Party  	| A4: Artifical Agents      |                         	| 
-| 2/22   | 8	   | 14     | M   | Command Line    | 	   		                 	|                         	| 
-| 2/24   | 8	   | 15     | W   | Modules & Scripts |     			              | CL7: Command Line         | 
-| 2/26   | 8	   | 16     | F   | Scientific Computing |                      |                         	| 
-| 3/1    | 9	   | 17     | M   | Code Testing    | 			                   	|                         	| 
-| 3/3    | 9	   | 18     | W   | Code Style   		| 				                  | CL8: Scientific Computing	| 
-| 3/5    | 9	   | 19     | F   | Documentation  	| A5: Experimentation    	  |                           | 
-| 3/8    | 10    | 20     | M   | Code Projects 	|                           |    	                			| 
-| 3/10   | 10    | 21     | W   | Advanced Python | 				                  |                         	| 
-| 3/12   | 10    | 22     | F   | Wrap Up   		  |                           |                        		| 
+| 3/29    | 1	   | 1      | M   | Introduction    |                           |                         	| 
+| 3/31    | 1	   | 2      | W   | Tooling & Integrity|                        | CL1: Tooling & Integrity  |
+| 4/2     | 1    | 3      | F   | Variables       |                           |                         	| 
+| 4/5     | 2	   | 4      | M   | Operators       |                           |                       		| 
+| 4/7     | 2	   | 5      | W   | Conditionals    |                           | CL2: Programming I        | 
+| 4/9     | 2	   | 6      | F   | Debugging       |                           |         			            | 
+| 4/12    | 3	   | 7      | M   | Collections    	| A1: Getting-Started       |                         	| 
+| 4/14    | 3	   | 8      | W   | Loops           |            			          | CL3: Programming II       |
+| 4/16    | 3	   | 9      | F   | Dictionaries [*]|                           |                         	| 
+| 4/19    | 4	   | --     | M   | -               | A2: Ciphers               | 				                  | 
+| 4/21    | 4	   | --     | W   | Review          |                        		| CL4: Loops                |
+| 4/23    | 4	   | --     | F   | **Midterm I**   |                           |                        		| 
+| 4/26    | 5	   | 10     | M   | Functions I     |                           |                         	| 
+| 4/28    | 5	   | 11     | W   | Algorithms  	  |                       	 	| CL5: Functions 	          |
+| 4/30    | 5	   | 12     | F   | Functions II    |                           |                         	| 
+| 5/3     | 6	   | 13     | M   | Classes I       |   				                |                         	| 
+| 5/5     | 6	   | 13     | W   | Classes II [**] |               		        | CL6: Classes             	| 
+| 5/7     | 6	   | --     | F   | Review          |                           |        			              | 
+| 5/10    | 7	   | --     | M   | **Midterm II**  | A3: Chatbots              |                         	| 
+| 5/12    | 7	   | --     | W   | Command Line    |      				              | CL7: Command Line         | 
+| 5/14    | 7	   | 14     | F   | Python Party    |                           |                         	| 
+| 5/17    | 8	   | --     | M   | Modules & Scripts|A4: Artifical Agents     	|                         	| 
+| 5/19    | 8	   | 15     | W   | Scientific Computing|     			            | CL8: Scientific Computing	| 
+| 5/21    | 8	   | 16     | F   | Code Testing    |                           |                         	| 
+| 5/24    | 9	   | 17     | M   | Code Style   		| 			                   	|                         	| 
+| 5/26    | 9	   | 18     | W   | Documentation  	| 				                  |                           | 
+| 5/28    | 9	   | 19     | F   | Code Projects 	| A5: Experimentation    	  |                           | 
+| 5/21    | 10   | 20     | M   | **No Class**    |                           |    	                			| 
+| 6/2     | 10   | 21     | W   | Advanced Python | 				                  |                         	| 
+| 6/4     | 10   | 22     | F   | Wrap Up   		  |                           |                        		| 
 
-**Final Exam**: Final Projects and Final Exams are due on the date of the final exam (Mon 3/15) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
+**Final Exam**: Final Projects and Final Exams are due on the date of the final exam (Fri 6/11) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:   
 [\*] denotes the last day of material covered on Midterm I.   
@@ -255,7 +257,7 @@ If you have:
 
 ### What should you call me?
 
-Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. I'm also totally OK with you addressing me as Shannon or Dr. Ellis. I would prefer you *not* address me as Ms./Miss/Mrs. Ellis (but I likely won't correct you....it's really not that big of a deal to me). 
+Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. I'm also totally OK with you addressing me as Shannon or Dr. Ellis. I would prefer you *not* address me as Ms./Miss/Mrs. Ellis. 
 
 ### What I should call you
 
