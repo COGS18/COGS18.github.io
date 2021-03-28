@@ -10,7 +10,7 @@ The PDF slides from the start of the first class are available here: https://cog
 - Who:
     - Instructor: Shannon Ellis 
     - TA: Shivani
-    - IAs: Elton, Hinn, Cain, & Andrew
+    - IAs: Elton, Hinn, & Andrew
     
 - Where:
     - Lectures MWF @ 8AM (remote)

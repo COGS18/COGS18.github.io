@@ -32,13 +32,10 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
 | TA             | Shivani Bhakta          | 9A; 10A          | TBD          |
-| IA	           | Elton Ho                | --               | --           |
+| IA	           | Elton Ho                | 9A; 10A          | --           |
 | IA	           | Hinn Zhang              | --               | TBD          |
-| IA	           | Cain Cheng              | --               | TBD          |
 | IA	           | Andrew Nguyen           | --               | TBD          |
 
-
-You may also see *Angela Cha*, *Geoff Lizar*, or *Harrison Ma* answer questions on Campuswire/Discord or host occasional office hours. These are former COGS 18 students/IAs who are volunteering their time this quarter.
 
 Course Website: [https://cogs18.github.io]   
 Canvas Course: [https://canvas.ucsd.edu/courses/25024]   
@@ -66,9 +63,9 @@ To achieve these objectives, information will be presented during lecture. You w
 ## COURSE MATERIALS
 
 - All materials will be provided via the [course website](https://cogs18.github.io) and [datahub](https://datahub.ucsd.edu)
-- Software: Python >=3.6 (Anaconda distribution); Jupyter Notebooks (this will be available on datahub)
-- iclickers will *NOT* be used this quarter
-- No required textbook; optional textbook: https://shanellis.github.io/pythonbook (currently under development; feedback welcome)
+  - Software (optional): Python >=3.6 (Anaconda distribution); Jupyter Notebooks (this will be available on datahub)
+  - iclickers will *NOT* be used this quarter
+  - No required textbook; optional textbook: https://shanellis.github.io/pythonbook (currently under development; feedback welcome)
 
 Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. 
 
@@ -105,9 +102,7 @@ Note that points will *not* be rewarded if you fail to follow instructions. For 
 
 ### Attendance
 
-Attendance will be neither required nor incentivized for any part of the course this quarter. This policy is in place because we do not want to disadvantage students working in different time zones.
-
-While lectures and coding labs will take place during their scheduled times, there *will* be options for students to complete all work asynchronously.
+Attendance will be neither required nor incentivized for any part of the course this quarter. This policy is in place because we do not want to disadvantage students working in different time zones. While lectures and coding labs will take place during their scheduled times, there *will* be options for students to complete all work asynchronously.
 
 ### Lecture
 
@@ -119,11 +114,11 @@ However, every lecture will also be recorded and shared so that students who are
 
 Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2\% each). 
 
-Coding labs will be submitted in the same place as assignments using the same process; however, they will *not* be autograded for *correctness*. They will instead be spot-checked by instructional staff for concerted student *effort*.
+Coding labs will be submitted in the same place as assignments using the same process; however, they will *not* be autograded for *correctness*. They will instead be spot-checked by instructional staff for concerted student *effort*. There are no late submissions for coding labs.
 
 While you're encouraged to work on these during your assigned lab times in the zoom session with instructional staff present (particularly if you're struggling with the material!), you are not required to do so. To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 PM each week. There will be no coding labs due on campus holidays.
 
-Note: You should be signed up for the CodingLab for which you can attend. However, if you are unable to attend the CodingLab for which you are signed up, you are free to attend the other CodingLab in a given week. Note that this policy could change if too many people are attending one CodingLab each week. We intentionally have CodingLab capped at 45 people so that students can get help from their TAs and IAs during this time.
+Note: You should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend the other Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 50 so that students can get help from their TAs and IAs during this time.
 
 ### Assignments (40\%)
 
@@ -135,7 +130,7 @@ You *are* permitted to work with classmates on assignments; however, you are per
 
 ### Midterms (25\%)
 
-There will be a flexible 24h time window during which students will be able to complete each midterm exam. While each exam will be designed to take ~1h, you could theoretically (although it's not advised) work on the exam for 24h, as long as its turned in on time. There will be no late submissions for midterm exams. 
+There will be a flexible 24h time window during which students will be able to complete each midterm exam. There will be no late submissions for midterm exams (however, if something comes up in your life specifically, definitely email Professor Ellis). 
 
 There will be two midterms (see Course Schedule). Each midterm is worth 12.5\% of your grade. The exams will include varied question types and will be taken online.
 
@@ -180,14 +175,14 @@ The final exam will be taken on the same platform and with the same time constra
 | 5/7     | 6	   | --     | F   | Review          |                           |        			              | 
 | 5/10    | 7	   | --     | M   | **Midterm II**  | A3: Chatbots              |                         	| 
 | 5/12    | 7	   | --     | W   | Command Line    |      				              | CL7: Command Line         | 
-| 5/14    | 7	   | 14     | F   | Python Party    |                           |                         	| 
-| 5/17    | 8	   | --     | M   | Modules & Scripts|A4: Artifical Agents     	|                         	| 
+| 5/14    | 7	   | --     | F   | Python Party    |                           |                         	| 
+| 5/17    | 8	   | 14     | M   | Modules & Scripts|A4: Artifical Agents     	|                         	| 
 | 5/19    | 8	   | 15     | W   | Scientific Computing|     			            | CL8: Scientific Computing	| 
 | 5/21    | 8	   | 16     | F   | Code Testing    |                           |                         	| 
 | 5/24    | 9	   | 17     | M   | Code Style   		| 			                   	|                         	| 
 | 5/26    | 9	   | 18     | W   | Documentation  	| 				                  |                           | 
-| 5/28    | 9	   | 19     | F   | Code Projects 	| A5: Experimentation    	  |                           | 
-| 5/21    | 10   | 20     | M   | **No Class**    |                           |    	                			| 
+| 5/28    | 9	   | 19     | F   | Code Projects 	|                           |                           | 
+| 5/21    | 10   | 20     | M   | **No Class**    | A5: Experimentation    	  |    	                			| 
 | 6/2     | 10   | 21     | W   | Advanced Python | 				                  |                         	| 
 | 6/4     | 10   | 22     | F   | Wrap Up   		  |                           |                        		| 
 
