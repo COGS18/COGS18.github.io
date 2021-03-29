@@ -32,15 +32,15 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 | Role           | Name          					 | Coding Lab       | Office Hours |
 | -------------: |:------------------------|:-----------------|:-------------|
 | TA             | Shivani Bhakta          | 9A; 10A          | TBD          |
-| IA	           | Elton Ho                | 9A; 10A          | --           |
+| IA	           | Elton Ho                | --               | TBD          |
 | IA	           | Hinn Zhang              | --               | TBD          |
 | IA	           | Andrew Nguyen           | --               | TBD          |
 
 
-Course Website: [https://cogs18.github.io]   
-Canvas Course: [https://canvas.ucsd.edu/courses/25024]   
-Course Campuswire*: [https://campuswire.com/c/GD823FEDD]   
-Assignment Submission: [https://datahub.ucsd.edu]  
+Course Website: [https://cogs18.github.io](https://cogs18.github.io)
+Canvas Course: [https://canvas.ucsd.edu/courses/25024](https://canvas.ucsd.edu/courses/25024)   
+Course Campuswire*: [https://campuswire.com/c/GD823FEDD](https://campuswire.com/c/GD823FEDD)   
+Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
 *You will be able to post anonymously on Campuswire; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
@@ -65,11 +65,11 @@ To achieve these objectives, information will be presented during lecture. You w
 - All materials will be provided via the [course website](https://cogs18.github.io) and [datahub](https://datahub.ucsd.edu)
   - Software (optional): Python >=3.6 (Anaconda distribution); Jupyter Notebooks (this will be available on datahub)
   - iclickers will *NOT* be used this quarter
-  - No required textbook; optional textbook: https://shanellis.github.io/pythonbook (currently under development; feedback welcome)
+  - No required textbook; optional textbook: [https://shanellis.github.io/pythonbook](https://shanellis.github.io/pythonbook) (currently under development; feedback welcome)
 
 Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. 
 
-Note: If you do not have consistent access to the technology needed to fully access remote instruction options, please use the form below to request a loaner laptop for the period during which you will be learning remotely due to the COVID-19 pandemic: https://eforms.ucsd.edu/view.php?id=490887. (For any issues that you may have, please email vcsa@ucsd.edu and they will work to assist you.)
+Note: If you do not have consistent access to the technology needed to fully access remote instruction options, please use the form below to request a loaner laptop for the period during which you will be learning remotely due to the COVID-19 pandemic: [https://eforms.ucsd.edu/view.php?id=490887](https://eforms.ucsd.edu/view.php?id=490887). (For any issues that you may have, please email vcsa@ucsd.edu and they will work to assist you.)
 
 
 ---
@@ -110,6 +110,8 @@ Lectures will take place at their scheduled time for those who are able to atten
 
 However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials. If a lecture recording ever fails during class, Prof Ellis will re-record a lecture, ensuring all students have access to the material. Lecture recordings will be available on Canvas in the Media Gallery by 2PM after the live lecture is delivered.
 
+There will also be a daily lecture survey (link on Canvas) to provide feedback about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final projec/exam (*not* your final course grade).
+
 ### Coding Labs (16\%)
 
 Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2\% each). 
@@ -122,7 +124,7 @@ Note: You should be signed up for the Coding Lab for which you can attend. Howev
 
 ### Assignments (40\%)
 
-There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Fridays by 11:59 PM. 
+There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays by 11:59 PM. 
 
 Late assignments will be accepted at 75\% credit for 72 hours (3 days) after the assignment's due date. Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
