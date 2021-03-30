@@ -16,6 +16,7 @@ runall:
 clean:
 	python scripts/clean.py
 	rm -rf materials
+	rm -rf materials_bardolph
 	rm -rf labs
 	rm -rf projects
 
@@ -30,8 +31,8 @@ textbook:
 	git clone --depth 1 https://github.com/COGS18/LectureNotes-Sp21-Ellis materials
 
 	# Copy & build materials - Bardolph
-	# git clone --depth 1 https://github.com/COGS18/LectureNotes-Sp21-Bardolph materials_bardolph
-	# rm materials_bardolph/README.md
+	git clone --depth 1 https://github.com/COGS18/LectureNotes-Sp21-Bardolph materials_bardolph
+	#rm materials_bardolph/README.md
 
 	# Copy & build coding labs
 	# git clone --depth 1 https://github.com/COGS18/CodingLabs labs
@@ -59,6 +60,8 @@ textbook:
 	rm -rf labs
 
 	rm -rf materials
+	rm -rf materials_bardolph
+
 	rm -rf projects
 
 

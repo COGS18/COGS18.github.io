@@ -4,8 +4,8 @@
   chapters:
   - file: materials/01-Introduction 
     title: 01-Introduction 
-  # - file: materials/02-Tooling 
-  #   title: 02-Tooling
+  - file: materials/02-Tooling 
+    title: 02-Tooling
   # - file: materials/03-Variables
   #   title: 03-Variables
   # - file: materials/04-Operators
@@ -51,10 +51,10 @@
   # - file: materials/A2-Examples
   #   title: A2-Examples
 
-# - part: Lectures (Bardolph)
-#   chapters:
-#   - file: materials/01-Introduction 
-#     title: 01-Introduction 
+- part: Lectures (Bardolph)
+  chapters:
+  - file: materials_bardolph/01-Introduction 
+    title: 01-Introduction 
   # - file: materials_bardolph/02-Tooling 
   #   title: 02-Tooling
   # - file: materials_bardolph/03-Variables
