@@ -62,10 +62,8 @@ textbook:
 
 
 	rm -rf labs
-
 	rm -rf materials
 	rm -rf materials_bardolph
-
 	rm -rf projects
 
 
