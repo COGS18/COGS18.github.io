@@ -51,9 +51,13 @@ textbook:
 	
 	# copy first day of slides to _build
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
+
+	# copy megan's syllabus
+	cp assets/intro/Cogs18_Syllabus_SP21_draft.pdf _build/html/assets/intro/
+
 	
 	# copy non-md images to build
-	mkdir _build/html/_images
+	# mkdir _build/html/_images
 	cp materials/img/* _build/html/_images/
 
 
