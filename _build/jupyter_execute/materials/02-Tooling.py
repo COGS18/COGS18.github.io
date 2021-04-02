@@ -222,6 +222,8 @@ Cells are an independent 'unit'. When you click into a cell, you can 'run' it by
 
 Cells come in different types for writing different things - mainly, text or code. 
 
+Add some text into this cell
+
 #### Markdown Cells
 
 Cells, can be markdown (text), like this one.
@@ -242,7 +244,7 @@ Bold text requires __two underccores__ or **two asterisks**.
 - D) normal text
 - E) I'm lost
 
-you can write/edit your markdown text here to determine the answer to the question
+___you can write/edit your markdown text here to determine the answer to the question___
 
 ### Markdown Headers
 
@@ -278,9 +280,9 @@ Lists are also possible:
 
 test it out down here to see...
 
-list item
-list item 
-list item
+1. list item
+1. list item 
+1. list item
 
 #### Code Cells
 
@@ -294,7 +296,8 @@ b = 2
 c = a - b
 print(c)
 
-# If you execute a cell with just a variable name in it, it will also get printed
+# If you execute a cell with just a variable name in it, 
+# it will also get printed
 c
 
 #### Running Cells
@@ -309,6 +312,10 @@ c
 Write code that outputs the value '6'
 
 ## YOUR CODE HERE
+print(3 + 3)
+a
+print(b)
+c
 
 #### Clicker Question #4
 
@@ -339,7 +346,7 @@ capacities, which can autocomplete what you are typing, and/or be used to explor
 ra
 
 # If there is only one option, tab-complete will auto-complete what you are typing
-ran
+range
 
 ### Web Browser
 

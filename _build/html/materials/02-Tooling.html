@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction to Python" href="../materials_bardolph/01-Introduction.html" />
+    <link rel="next" title="Variables" href="03-Variables.html" />
     <link rel="prev" title="Introduction to Python" href="01-Introduction.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,6 +89,16 @@
    02-Tooling
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -104,6 +114,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials_bardolph/02-Tooling.html">
    02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL1-Tooling.html">
+   CL1-Tooling
   </a>
  </li>
 </ul>
@@ -623,6 +650,7 @@ and they also have some example notebooks
     The main organizational structure of the notebook are <b>cells</b>.
 </div><p>Cells are an independent ‘unit’. When you click into a cell, you can ‘run’ it by clicking Shift + Enter, or by pressing the play (Run) button above.</p>
 <p>Cells come in different types for writing different things - mainly, text or code.</p>
+<p>Add some text into this cell</p>
 <div class="section" id="markdown-cells">
 <h4>Markdown Cells<a class="headerlink" href="#markdown-cells" title="Permalink to this headline">¶</a></h4>
 <p>Cells, can be markdown (text), like this one.</p>
@@ -640,7 +668,7 @@ and they also have some example notebooks
 <li><p>D) normal text</p></li>
 <li><p>E) I’m lost</p></li>
 </ul>
-<p>you can write/edit your markdown text here to determine the answer to the question</p>
+<p><em><strong>you can write/edit your markdown text here to determine the answer to the question</strong></em></p>
 </div>
 </div>
 <div class="section" id="markdown-headers">
@@ -677,9 +705,11 @@ and they also have some example notebooks
 <li><p>E) I’m lost</p></li>
 </ul>
 <p>test it out down here to see…</p>
-<p>list item
-list item
-list item</p>
+<ol class="simple">
+<li><p>list item</p></li>
+<li><p>list item</p></li>
+<li><p>list item</p></li>
+</ol>
 </div>
 <div class="section" id="code-cells">
 <h4>Code Cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">¶</a></h4>
@@ -701,11 +731,22 @@ list item</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you execute a cell with just a variable name in it, it will also get printed</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you execute a cell with just a variable name in it, </span>
+<span class="c1"># it will also get printed</span>
 <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
 </pre></div>
 </div>
 </div>
@@ -729,6 +770,19 @@ list item</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+2
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
 </pre></div>
 </div>
 </div>
@@ -773,7 +827,7 @@ capacities, which can autocomplete what you are typing, and/or be used to explor
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If there is only one option, tab-complete will auto-complete what you are typing</span>
-<span class="n">ran</span>
+<span class="nb">range</span>
 </pre></div>
 </div>
 </div>
@@ -860,7 +914,7 @@ For more useful information, check out Jupyter Notebooks
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="01-Introduction.html" title="previous page">Introduction to Python</a>
-    <a class='right-next' id="next-link" href="../materials_bardolph/01-Introduction.html" title="next page">Introduction to Python</a>
+    <a class='right-next' id="next-link" href="03-Variables.html" title="next page">Variables</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

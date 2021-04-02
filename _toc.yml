@@ -6,10 +6,10 @@
     title: 01-Introduction 
   - file: materials/02-Tooling 
     title: 02-Tooling
-  # - file: materials/03-Variables
-  #   title: 03-Variables
-  # - file: materials/04-Operators
-  #   title: 04-Operators
+  - file: materials/03-Variables
+    title: 03-Variables
+  - file: materials/04-Operators
+    title: 04-Operators
   # - file: materials/05-Conditionals
   #   title: 05-Conditionals
   # - file: materials/06-Debugging
@@ -57,8 +57,8 @@
     title: 01-Introduction 
   - file: materials_bardolph/02-Tooling 
     title: 02-Tooling
-  # - file: materials_bardolph/03-Variables
-  #   title: 03-Variables
+  - file: materials_bardolph/03-Variables
+    title: 03-Variables
   # - file: materials_bardolph/04-Operators
   #   title: 04-Operators
   # - file: materials_bardolph/05-Conditionals
@@ -103,8 +103,10 @@
   #   title: A2-Examples
 
 
-# - part: Coding Labs
-#   chapters:
+- part: Coding Labs
+  chapters:
+  - file: labs/CL1-Tooling
+    title: CL1-Tooling
 #   - file: labs/CL2-ProgrammingI
 #     title: CL2-ProgrammingI
 #   - file: labs/CL3-ProgrammingII
