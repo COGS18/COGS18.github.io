@@ -45,10 +45,10 @@ To edit the text in this cell, double-click on it.
 
 Add information below about yourself to get practice with editing text cells.
 
-Name:   
-PID:  
-College:  
-Major:  
+Name: Professor   
+PID: A1234567  
+College: ERC  
+Major: All things Python!  
 
 
 ### Markdown
@@ -69,21 +69,21 @@ Note that to see the formatting changes, you'll have to run the cell using the R
 
 ### YOUR TURN: Edit this text
 
-This is a heading level 4 (H4)
+#### This is a heading level 4 (H4)
 
-This sentence is italicized.
+*This sentence is italicized.*
 
 Below is a bulleted list:
-bullet item 1 
-bullet item 2
-bullet item 3
+- bullet item 1 
+- bullet item 2
+- bullet item 3
 
 Below is a numbered list:
-list item 1
-list item 2
-list item 3
+1. list item 1
+1. list item 2
+1. list item 3
 
-This sentence is bold AND italic.
+***This sentence is bold AND italic.***
 
 ### Code Cells
 
