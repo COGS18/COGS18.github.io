@@ -288,13 +288,6 @@
   <a class="reference internal nav-link" href="#remainder">
    Remainder
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clicker-question-4">
-     Clicker Question #4
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#logical-boolean-operators">
@@ -307,13 +300,8 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#clicker-question-5">
-       Clicker Question #5
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#clicker-question-6">
-       Clicker Question #6
+      <a class="reference internal nav-link" href="#clicker-question-4">
+       Clicker Question #4
       </a>
      </li>
     </ul>
@@ -326,8 +314,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clicker-question-7">
-     Clicker Question #7
+    <a class="reference internal nav-link" href="#clicker-question-5">
+     Clicker Question #5
     </a>
    </li>
   </ul>
@@ -338,13 +326,13 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clicker-question-8">
-     Clicker Question #8
+    <a class="reference internal nav-link" href="#clicker-question-6">
+     Clicker Question #6
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clicker-question-9">
-     Clicker Question #9
+    <a class="reference internal nav-link" href="#clicker-question-7">
+     Clicker Question #7
     </a>
    </li>
   </ul>
@@ -355,8 +343,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clicker-question-10">
-     Clicker Question #10
+    <a class="reference internal nav-link" href="#clicker-question-8">
+     Clicker Question #8
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -365,8 +353,8 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#clicker-question-11">
-       Clicker Question #11
+      <a class="reference internal nav-link" href="#clicker-question-9">
+       Clicker Question #9
       </a>
      </li>
     </ul>
@@ -389,8 +377,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clicker-question-12">
-     Clicker Question #12
+    <a class="reference internal nav-link" href="#clicker-question-10">
+     Clicker Question #10
     </a>
    </li>
   </ul>
@@ -405,7 +393,27 @@
         
               <div>
                 
-  <p><strong>A1: Clarification/Demo</strong></p>
+  <p><strong>Course Announcements</strong></p>
+<p>Due Dates:</p>
+<ul class="simple">
+<li><p>Pre-course survey “due” tonight</p></li>
+<li><p>CL2 due Wednesday (11:59 PM)</p></li>
+<li><p>A1 due Monday (3/12, 11:59 PM)</p></li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: What did <code class="docutils literal notranslate"><span class="pre">\</span></code> do inside of a string again?<br />
+A: The backslash acts as an “escape” character. This means that whatever character follows after the backslash should be intererpeted as a “string literal.” For example, if a quote is part of your string and you want to literally use a quotation mark (as a character, rather than to indicate the start or stop of a string), you could put <code class="docutils literal notranslate"><span class="pre">\&quot;</span></code> within your string. This tells the computer to use the <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> as a character.</p>
+<p>Q: You keep using underscores in your variable names…is that required?<br />
+A: It’s not required, but it is common in Python to use snake_case (all lower case, separate words with an <code class="docutils literal notranslate"><span class="pre">-</span></code>), so we’ll use this throughout the course. You will be required to use this in your final exam/final project…but we’ll discuss this explicitly when we talk about Code Style.</p>
+<p>Q: Is there a back button?<br />
+A: There is not a back button, but you can put your cursor within a cell and undo (ctrl/cmd + z)!</p>
+<p>Q: How to handle data with integers and decimals?<br />
+A: We’ll get to this, but know for now that Python can work with both, but it will just convert everything to a float. If you want to specify the value to be an integer you would “typecast” (meaning specify the varaibles type) using <code class="docutils literal notranslate"><span class="pre">int(var_name)</span></code>, where <code class="docutils literal notranslate"><span class="pre">var_name</span></code> would be the variable you want to cast as an integer.</p>
+<p>Q: What’st he difference between double quote and single quote in output?<br />
+A: Nothing. They’re equivalent.</p>
+<p>Q: Can we put semicolons at the end of the line in python? Is that normal?<br />
+A: While this</p>
+<p><strong>A1: Clarification/Demo</strong></p>
 <ul class="simple">
 <li><p>variables created in <code class="docutils literal notranslate"><span class="pre">%%writefile</span></code> will be stored in file</p></li>
 <li><p>these variables will overwrite variables created in test cells</p></li>
@@ -415,8 +423,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%writefile</span> new_file.py
 <span class="c1"># You can ignore the line above - it is used to help check your code</span>
 
-<span class="n">a</span><span class="o">=</span> <span class="mi">3</span>
-<span class="n">adfasf</span> <span class="o">=</span> <span class="s1">&#39;asdf&#39;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;new&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">status</span><span class="p">)</span>
 </pre></div>
@@ -602,24 +609,6 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 </div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">//</span></code> is an operator for floor division (integer division)</p>
-<div class="section" id="clicker-question-4">
-<h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">¶</a></h3>
-<p>What value is stored in <code class="docutils literal notranslate"><span class="pre">math_out</span></code> from the code below?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math_out</span> <span class="o">=</span> <span class="mi">32</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> 
-<span class="n">math_out</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ul class="simple">
-<li><p>A) 2</p></li>
-<li><p>B) 16</p></li>
-<li><p>C) 64</p></li>
-<li><p>D) This code will fail</p></li>
-</ul>
-</div>
 </div>
 <div class="section" id="logical-boolean-operators">
 <h2>Logical (Boolean) operators<a class="headerlink" href="#logical-boolean-operators" title="Permalink to this headline">¶</a></h2>
@@ -683,25 +672,8 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-5">
-<h4>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this headline">¶</a></h4>
-<p>How will the following boolean expression evaluate:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ul class="simple">
-<li><p>A) True</p></li>
-<li><p>B) False</p></li>
-<li><p>C) None</p></li>
-<li><p>D) This code will fail</p></li>
-</ul>
-</div>
-<div class="section" id="clicker-question-6">
-<h4>Clicker Question #6<a class="headerlink" href="#clicker-question-6" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="clicker-question-4">
+<h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">¶</a></h4>
 <p>How will the following boolean expression evaluate:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -768,8 +740,8 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-7">
-<h3>Clicker Question #7<a class="headerlink" href="#clicker-question-7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="clicker-question-5">
+<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this headline">¶</a></h3>
 <p>Assume you’re writing a videogame that will only slay the dragon only if our magic lightsabre sword is charged to 90 or higher and we have 100 or more energy units in our protective shield.</p>
 <p>Start with the code in the following cell. Replace <code class="docutils literal notranslate"><span class="pre">---</span></code> with operators or values that will evaluate to <code class="docutils literal notranslate"><span class="pre">True</span></code> when the cell is run (and slay the dragon!).</p>
 <ul class="simple">
@@ -844,8 +816,8 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-8">
-<h3>Clicker Question #8<a class="headerlink" href="#clicker-question-8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="clicker-question-6">
+<h3>Clicker Question #6<a class="headerlink" href="#clicker-question-6" title="Permalink to this headline">¶</a></h3>
 <p>What would the following code cell return?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -862,7 +834,7 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the left value in parentheses is True</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the left value in parentheses evaluates as True</span>
 <span class="s1">&#39;a&#39;</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span> <span class="ow">and</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -870,21 +842,7 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;b&#39;</span> <span class="ow">and</span> <span class="s1">&#39;a&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="ow">and</span> <span class="s1">&#39;b&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the left value in parentheses is True</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the left value in parentheses evaluates as True</span>
 <span class="s1">&#39;a&#39;</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span> <span class="ow">and</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -892,7 +850,7 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the left value in parentheses is False</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the left value in parentheses evaluates as False</span>
 <span class="s1">&#39;a&#39;</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;&#39;</span> <span class="ow">and</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -927,20 +885,6 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;&#39;</span> <span class="ow">or</span> <span class="s1">&#39;&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;b&#39;</span> <span class="ow">or</span> <span class="s1">&#39;&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span> <span class="ow">or</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -961,8 +905,8 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-9">
-<h3>Clicker Question #9<a class="headerlink" href="#clicker-question-9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="clicker-question-7">
+<h3>Clicker Question #7<a class="headerlink" href="#clicker-question-7" title="Permalink to this headline">¶</a></h3>
 <p>What would the following code cell return?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1023,8 +967,8 @@ Python uses <code>is</code> and <code>is not</code> to compare identity. These o
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-10">
-<h3>Clicker Question #10<a class="headerlink" href="#clicker-question-10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="clicker-question-8">
+<h3>Clicker Question #8<a class="headerlink" href="#clicker-question-8" title="Permalink to this headline">¶</a></h3>
 <p>Using the variables provded below and identity operators replace <code class="docutils literal notranslate"><span class="pre">---</span></code> with code such that <code class="docutils literal notranslate"><span class="pre">true_variable</span></code> will return <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">false_variable</span></code> will return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <ul class="simple">
 <li><p>A) I did it!</p></li>
@@ -1160,8 +1104,8 @@ Python uses <code>is</code> and <code>is not</code> to compare identity. These o
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-11">
-<h4>Clicker Question #11<a class="headerlink" href="#clicker-question-11" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="clicker-question-9">
+<h4>Clicker Question #9<a class="headerlink" href="#clicker-question-9" title="Permalink to this headline">¶</a></h4>
 <p>Using the variables provded below and identity operators replace <code class="docutils literal notranslate"><span class="pre">---</span></code> with code such that <code class="docutils literal notranslate"><span class="pre">true_variable</span></code> will return <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">false_variable</span></code> will return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <ul class="simple">
 <li><p>A) I did it!</p></li>
@@ -1282,8 +1226,8 @@ Operators and variables can also be chained together into arbitrarily complex ex
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-12">
-<h3>Clicker Question #12<a class="headerlink" href="#clicker-question-12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="clicker-question-10">
+<h3>Clicker Question #10<a class="headerlink" href="#clicker-question-10" title="Permalink to this headline">¶</a></h3>
 <p>How will the following expression evaluate:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
