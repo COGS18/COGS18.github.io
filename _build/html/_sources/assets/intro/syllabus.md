@@ -4,8 +4,6 @@
 **Spring 2021 (B00)**  
 **MWF 8-8:50 (remote)**  
 
-DRAFT: This syllabus will be finalized during week 1 of the quarter.
-
 ---
 
 ## COURSE OVERVIEW
@@ -29,12 +27,12 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
 **Instructor Office Hours**: Monday 10 AM - 12 PM
 
-| Role           | Name          					 | Coding Lab       | Office Hours |
-| -------------: |:------------------------|:-----------------|:-------------|
-| TA             | Shivani Bhakta          | 9A; 10A          | TBD          |
-| IA	           | Elton Ho                | --               | TBD          |
-| IA	           | Hinn Zhang              | --               | TBD          |
-| IA	           | Andrew Nguyen           | --               | TBD          |
+| Role           | Name          					 | Coding Lab       | Office Hours            |
+| -------------: |:------------------------|:-----------------|:------------------------|
+| TA             | Shivani Bhakta          | 9A; 10A          | Fri 9-10 AM             |
+| IA	           | Elton Ho                | --               | Fri 11 AM-12 PM         |
+| IA	           | Hinn Zhang              | --               | Wed 11:30 AM - 12:30 PM |
+| IA	           | Andrew Nguyen           | --               | Wed 9-10 PM             |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)

@@ -1,3 +1,30 @@
+**Course Announcements**
+
+Due Dates:
+- Pre-course survey "due" tonight
+- CL2 due Wednesday (11:59 PM)
+- A1 due Monday (3/12, 11:59 PM)
+
+**Q&A**
+
+Q: What did `\` do inside of a string again?  
+A: The backslash acts as an "escape" character. This means that whatever character follows after the backslash should be intererpeted as a "string literal." For example, if a quote is part of your string and you want to literally use a quotation mark (as a character, rather than to indicate the start or stop of a string), you could put `\"` within your string. This tells the computer to use the `"` as a character.
+
+Q: You keep using underscores in your variable names...is that required?  
+A: It's not required, but it is common in Python to use snake_case (all lower case, separate words with an `-`), so we'll use this throughout the course. You will be required to use this in your final exam/final project...but we'll discuss this explicitly when we talk about Code Style.
+
+Q: Is there a back button?  
+A: There is not a back button, but you can put your cursor within a cell and undo (ctrl/cmd + z)!
+
+Q: How to handle data with integers and decimals?  
+A: We'll get to this, but know for now that Python can work with both, but it will just convert everything to a float. If you want to specify the value to be an integer you would "typecast" (meaning specify the varaibles type) using `int(var_name)`, where `var_name` would be the variable you want to cast as an integer.
+
+Q: What'st he difference between double quote and single quote in output?  
+A: Nothing. They're equivalent.
+
+Q: Can we put semicolons at the end of the line in python? Is that normal?  
+A: While this
+
 **A1: Clarification/Demo**
 
 - variables created in `%%writefile` will be stored in file
@@ -6,8 +33,7 @@
 %%writefile new_file.py
 # You can ignore the line above - it is used to help check your code
 
-a= 3
-adfasf = 'asdf'
+a = 3
 b = 'new'
 print(status)
 
@@ -135,18 +161,6 @@ print(a, 'remainder', b)
 
 `//` is an operator for floor division (integer division)
 
-#### Clicker Question #4
-
-What value is stored in `math_out` from the code below?
-
-math_out = 32 / (1 + 3) ** 2 
-math_out
-
-- A) 2
-- B) 16
-- C) 64
-- D) This code will fail
-
 ## Logical (Boolean) operators
 - use Boolean logic
 - logical operators: `and`, `or`, and `not`
@@ -179,18 +193,7 @@ not (not True)
 # 'True' is
 TRUE and TRUE
 
-#### Clicker Question #5
-
-How will the following boolean expression evaluate:
-
-True and False
-
-- A) True
-- B) False
-- C) None
-- D) This code will fail
-
-#### Clicker Question #6
+#### Clicker Question #4
 
 How will the following boolean expression evaluate:
 
@@ -226,7 +229,7 @@ True != False
 
 12 <= 13
 
-#### Clicker Question #7
+#### Clicker Question #5
 
 Assume you're writing a videogame that will only slay the dragon only if our magic lightsabre sword is charged to 90 or higher and we have 100 or more energy units in our protective shield. 
 
@@ -270,7 +273,7 @@ bool('a')
 
 'b' and 'a'
 
-#### Clicker Question #8
+#### Clicker Question #6
 
 What would the following code cell return?
 
@@ -281,17 +284,13 @@ What would the following code cell return?
 - C) `True`
 - D) `False`
 
-# the left value in parentheses is True
+# the left value in parentheses evaluates as True
 'a' == ('b' and 'a')
 
-'b' and 'a'
-
-'a' and 'b'
-
-# the left value in parentheses is True
+# the left value in parentheses evaluates as True
 'a' == ('a' and 'b')
 
-# the left value in parentheses is False
+# the left value in parentheses evaluates as False
 'a' == ('' and 'a')
 
 # what we actually wanted python to do
@@ -305,17 +304,13 @@ What would the following code cell return?
 # empty string evaluates as False
 '' or 'b'
 
-'' or ''
-
-'b' or ''
-
 'a' == ('a' or 'b')
 
 'b' == ('a' or 'b')
 
 'b' == 'a' or 'b' == 'b'
 
-#### Clicker Question #9
+#### Clicker Question #7
 
 What would the following code cell return?
 
@@ -354,7 +349,7 @@ print(c is not a)
 # testing for value equality
 a == b == c
 
-#### Clicker Question #10
+#### Clicker Question #8
 
 
 Using the variables provded below and identity operators replace `---` with code such that `true_variable` will return `True` and `false_variable` will return `False`. 
@@ -436,7 +431,7 @@ false_variable_string = p is q
 
 print(false_variable_integer, false_variable_string)
 
-#### Clicker Question #11
+#### Clicker Question #9
 
 Using the variables provded below and identity operators replace `---` with code such that `true_variable` will return `True` and `false_variable` will return `False`. 
 
@@ -505,7 +500,7 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 ('COGS' + '18' == 'COGS18')
 
-#### Clicker Question #12
+#### Clicker Question #10
 
 How will the following expression evaluate:
 

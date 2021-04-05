@@ -1,5 +1,6 @@
 **Course Announcements**
 
+- Student Survey "due" Monday
 - CL1 scores Posted & answers on website
 - A1 now available (due Mon of week 3)
 
@@ -82,7 +83,7 @@ my_var = 2
 
 my_var = my_var + 1
 
-print(my_var)
+my_var
 
 - A) 2
 - B) 3
@@ -96,6 +97,8 @@ After executing the following code, what will be the value of `diff_var`?
 diff_var = my_variabel - my_var
 
 print(diff_var)
+
+my_variable - my_var
 
 - A) 4
 - B) 9
@@ -260,7 +263,7 @@ A general principle is to pick something and be consistent. In this course, I'll
 
 #### Aside: What if you want to print a quotation mark?
 - use double quotes outside with apostraphe inside quotes
-- use an escape `\` (backslash) before charater
+- use an escape `\` (backslash) before character
 
 # double quotes on outside; single quote inside
 my_string = "i wan't to see a quote."
@@ -309,6 +312,8 @@ After executing the following code, what will the type of `var_b` be?
 
 var_b = '-17.5'
 
+type(var_b)
+
 - A) String
 - B) Int
 - C) Float
@@ -323,6 +328,8 @@ n = 1
 a = 'm'
 m = n
 type(m)
+
+m
 
 - A) String
 - B) Int
