@@ -1,46 +1,20 @@
 **Course Announcements**
 
-Due Dates:
-- Pre-course survey "due" tonight
-- CL2 due Wednesday (11:59 PM)
-- A1 due Monday (3/12, 11:59 PM)
+- **CL2** due Wed 4/6 (11:59PM)
+- **A1** due Mon 4/12 (11:59PM)
+- All assignments released and submitted through Datahub
+- Students can complete the [lecture participation survey](https://forms.gle/y4gY4DYTq9aFSkC76) once for each lecture (extra credit points)
 
 **Q&A**
 
-Q: What did `\` do inside of a string again?  
-A: The backslash acts as an "escape" character. This means that whatever character follows after the backslash should be intererpeted as a "string literal." For example, if a quote is part of your string and you want to literally use a quotation mark (as a character, rather than to indicate the start or stop of a string), you could put `\"` within your string. This tells the computer to use the `"` as a character.
+Q: Why do we need different variable types?  
+A: Different variable types can do different things - for example, we can add numbers together (but we can't add letters), we can concatenate strings, we can use Booleans (True/False) to run and check logical tests.  
 
-Q: You keep using underscores in your variable names...is that required?  
-A: It's not required, but it is common in Python to use snake_case (all lower case, separate words with an `-`), so we'll use this throughout the course. You will be required to use this in your final exam/final project...but we'll discuss this explicitly when we talk about Code Style.
+Q: I don't really understand mutable vs. immutable variables.  
+A: That's ok for now! It will make more sense when we start covering collections (lists, tuples, etc.).  
 
-Q: Is there a back button?  
-A: There is not a back button, but you can put your cursor within a cell and undo (ctrl/cmd + z)!
-
-Q: How to handle data with integers and decimals?  
-A: We'll get to this, but know for now that Python can work with both, but it will just convert everything to a float. If you want to specify the value to be an integer you would "typecast" (meaning specify the varaibles type) using `int(var_name)`, where `var_name` would be the variable you want to cast as an integer.
-
-Q: What'st he difference between double quote and single quote in output?  
-A: Nothing. They're equivalent.
-
-Q: Can we put semicolons at the end of the line in python? Is that normal?  
-A: While this is common and even required in some other programming languages, do your best to avoid doing it in Python. It's unecessary and makes your code less readable.
-
-**A1: Clarification/Demo**
-
-- variables created in `%%writefile` will be stored in file
-- these variables will overwrite variables created in test cells
-
-%%writefile new_file.py
-# You can ignore the line above - it is used to help check your code
-
-a = 3
-b = 'new'
-print(status)
-
-status = False
-
-%run -i new_file.py  
-assert status == False
+Q: Is it normal if I don't understand most of A1 right now?  
+A: Yes! After this lecture and Lecture 5, you should be able to complete the assignment.
 
 # Operators
 
@@ -95,7 +69,7 @@ To specify that you want the addition to occur first, you would use parentheses.
 specify_operations = (3 + 16) / 2
 print(specify_operations)
 
-#### Clicker Question #1
+#### Poll Question #1
 
 What would be the value stored in `my_value`? 
 
@@ -122,7 +96,7 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 # remainder of 17 divided by 7
 17 % 7
 
-#### Clicker Question #2
+#### Poll Question #2
 
 What would be the value stored in `remainder`?
 
@@ -135,7 +109,7 @@ remainder
 - D) 3.2
 - E) Produces an error
 
-#### Clicker Question #3
+#### Poll Question #3
 
 What would be the value stored in `modulo_time`?
 
@@ -193,9 +167,9 @@ not (not True)
 # 'True' is
 TRUE and TRUE
 
-#### Clicker Question #4
+#### Poll Question #4
 
-How will the following boolean expression evaluate:
+How will the following boolean expression evaluate?
 
 True and not False
 
@@ -229,9 +203,9 @@ True != False
 
 12 <= 13
 
-#### Clicker Question #5
+#### Poll Question #5
 
-Assume you're writing a videogame that will only slay the dragon only if our magic lightsabre sword is charged to 90 or higher and we have 100 or more energy units in our protective shield. 
+Assume you're writing a videogame that will only slay the dragon only if our magic lightsaber sword is charged to 90 or higher and we have 100 or more energy units in our protective shield. 
 
 
 Start with the code in the following cell. Replace `---` with operators or values that will evaluate to `True` when the cell is run (and slay the dragon!).
@@ -241,10 +215,10 @@ Start with the code in the following cell. Replace `---` with operators or value
 - C) I'm unsure where to start
 
 ## EDIT CODE HERE
-sword_charge = 92
-shield_energy = 100
+sword_charge = ---
+shield_energy = ---
 
-(sword_charge >= 90) and (shield_energy >= 100)
+(sword_charge ---) and (shield_energy ---)
 
 ## Understanding Boolean logic
 
@@ -273,7 +247,7 @@ bool('a')
 
 'b' and 'a'
 
-#### Clicker Question #6
+#### Poll Question #6
 
 What would the following code cell return?
 
@@ -349,7 +323,7 @@ print(c is not a)
 # testing for value equality
 a == b == c
 
-#### Clicker Question #8
+#### Poll Question #8
 
 
 Using the variables provded below and identity operators replace `---` with code such that `true_variable` will return `True` and `false_variable` will return `False`. 
@@ -367,8 +341,8 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = c is d
-false_variable = z is x
+true_variable = ---
+false_variable = ---
 
 print(true_variable, false_variable)
 
@@ -431,7 +405,7 @@ false_variable_string = p is q
 
 print(false_variable_integer, false_variable_string)
 
-#### Clicker Question #9
+#### Poll Question #9
 
 Using the variables provded below and identity operators replace `---` with code such that `true_variable` will return `True` and `false_variable` will return `False`. 
 
@@ -500,9 +474,9 @@ Operators and variables can also be chained together into arbitrarily complex ex
 
 ('COGS' + '18' == 'COGS18')
 
-#### Clicker Question #10
+#### Poll Question #10
 
-How will the following expression evaluate:
+How will the following expression evaluate?
 
 2**2 >= 4 and 13%3 > 1
 

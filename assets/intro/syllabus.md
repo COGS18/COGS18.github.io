@@ -32,7 +32,7 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 | TA             | Shivani Bhakta          | 9A; 10A          | Fri 9-10 AM             |
 | IA	           | Elton Ho                | --               | Fri 11 AM-12 PM         |
 | IA	           | Hinn Zhang              | --               | Wed 11:30 AM - 12:30 PM |
-| IA	           | Andrew Nguyen           | --               | Wed 9-10 PM             |
+| IA	           | Andrew Nguyen           | --               | Th 3-4 PM             |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)

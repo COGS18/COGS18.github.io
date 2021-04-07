@@ -10,8 +10,8 @@
     title: 03-Variables
   - file: materials/04-Operators
     title: 04-Operators
-  # - file: materials/05-Conditionals
-  #   title: 05-Conditionals
+  - file: materials/05-Conditionals
+    title: 05-Conditionals
   # - file: materials/06-Debugging
   #   title: 06-Debugging
   # - file: materials/07-Collections
@@ -59,8 +59,8 @@
     title: 02-Tooling
   - file: materials_bardolph/03-Variables
     title: 03-Variables
-  # - file: materials_bardolph/04-Operators
-  #   title: 04-Operators
+  - file: materials_bardolph/04-Operators
+    title: 04-Operators
   # - file: materials_bardolph/05-Conditionals
   #   title: 05-Conditionals
   # - file: materials_bardolph/06-Debugging
