@@ -104,6 +104,11 @@
    05-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -129,6 +134,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials_bardolph/04-Operators.html">
    04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/05-Conditionals.html">
+   05-Conditionals
   </a>
  </li>
 </ul>
@@ -1255,10 +1265,20 @@ False
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">simple_string</span><span class="p">),</span> <span class="nb">id</span><span class="p">(</span><span class="n">simple_string2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4486225648 4486225648
 </pre></div>
 </div>
 </div>
@@ -1277,10 +1297,20 @@ False
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">longer_string</span><span class="p">),</span> <span class="nb">id</span><span class="p">(</span><span class="n">longer_string2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4543037776 4543040656
 </pre></div>
 </div>
 </div>
@@ -1299,10 +1329,20 @@ False
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4482757424 4482757424
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">d</span> <span class="ow">is</span> <span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1323,6 +1363,11 @@ False
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1339,6 +1384,11 @@ False
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-9">
 <h4>Clicker Question #9<a class="headerlink" href="#clicker-question-9" title="Permalink to this headline">¶</a></h4>
@@ -1350,6 +1400,32 @@ False
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># equality (values are the same)</span>
+<span class="n">f</span> <span class="o">==</span> <span class="n">g</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># identity (place in memory)</span>
+<span class="n">f</span> <span class="ow">is</span> <span class="n">g</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">b</span>
@@ -1359,10 +1435,15 @@ False
 <span class="n">g</span> <span class="o">=</span> <span class="mi">567</span>
 
 <span class="c1"># EDIT CODE HERE</span>
-<span class="n">true_variable</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">false_variable</span> <span class="o">=</span> <span class="o">---</span>
+<span class="n">true_variable</span> <span class="o">=</span> <span class="n">a</span> <span class="ow">is</span> <span class="n">c</span>
+<span class="n">false_variable</span> <span class="o">=</span> <span class="n">f</span> <span class="ow">is</span> <span class="n">g</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">true_variable</span><span class="p">,</span> <span class="n">false_variable</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True False
 </pre></div>
 </div>
 </div>
@@ -1387,10 +1468,20 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;L&#39;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1401,6 +1492,11 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1408,10 +1504,20 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1423,7 +1529,27 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;COGS&#39;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;18&#39;</span>
+
+<span class="n">a</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;COGS 18&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;COGS&#39;</span> <span class="o">+</span> <span class="s1">&#39; 18&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;COGS 18&#39;
 </pre></div>
 </div>
 </div>
@@ -1431,6 +1557,11 @@ Operators sometimes do different things on different types of variables. For exa
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="o">+</span> <span class="s1">&#39;b&#39;</span> <span class="o">+</span> <span class="s1">&#39;c&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;abc&#39;
 </pre></div>
 </div>
 </div>
@@ -1447,10 +1578,20 @@ Operators and variables can also be chained together into arbitrarily complex ex
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">13</span> <span class="o">%</span> <span class="mi">7</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1461,6 +1602,11 @@ Operators and variables can also be chained together into arbitrarily complex ex
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-10">
 <h3>Clicker Question #10<a class="headerlink" href="#clicker-question-10" title="Permalink to this headline">¶</a></h3>
@@ -1468,6 +1614,35 @@ Operators and variables can also be chained together into arbitrarily complex ex
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="mi">13</span><span class="o">%</span><span class="k">3</span> &gt; 1
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span> <span class="o">&gt;=</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">13</span><span class="o">%</span><span class="k">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 </pre></div>
 </div>
 </div>
