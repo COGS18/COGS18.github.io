@@ -1,3 +1,4 @@
+
 - file: intro
 
 - part: Lectures (Ellis)
@@ -107,8 +108,8 @@
   chapters:
   - file: labs/CL1-Tooling
     title: CL1-Tooling
-#   - file: labs/CL2-ProgrammingI
-#     title: CL2-ProgrammingI
+  - file: labs/CL2-ProgrammingI
+    title: CL2-ProgrammingI
 #   - file: labs/CL3-ProgrammingII
 #     title: CL3-ProgrammingII
 #   - file: labs/CL4-Loops
