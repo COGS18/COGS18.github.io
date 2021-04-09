@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="next" title="Conditionals" href="05-Conditionals.html" />
     <link rel="prev" title="Variables" href="03-Variables.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -104,6 +104,11 @@
    05-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -129,6 +134,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Conditionals.html">
+   05-Conditionals
   </a>
  </li>
 </ul>
@@ -410,13 +420,18 @@
 <li><p>All assignments released and submitted through Datahub</p></li>
 <li><p>Students can complete the <a class="reference external" href="https://forms.gle/y4gY4DYTq9aFSkC76">lecture participation survey</a> once for each lecture (extra credit points)</p></li>
 </ul>
-<p><strong>Q&amp;A</strong></p>
+<p><strong>Q&amp;A (Monday’s lecture)</strong></p>
 <p>Q: Why do we need different variable types?<br />
 A: Different variable types can do different things - for example, we can add numbers together (but we can’t add letters), we can concatenate strings, we can use Booleans (True/False) to run and check logical tests.</p>
 <p>Q: I don’t really understand mutable vs. immutable variables.<br />
 A: That’s ok for now! It will make more sense when we start covering collections (lists, tuples, etc.).</p>
 <p>Q: Is it normal if I don’t understand most of A1 right now?<br />
 A: Yes! After this lecture and Lecture 5, you should be able to complete the assignment.</p>
+<p><strong>Q&amp;A (Wednesday’s lecture)</strong></p>
+<p>Q: The “slay the dragon” example was confusing/too difficult.<br />
+A: That sounds really normal! Take time to think about new problems, attend Coding Lab &amp; office hours and ask questions, and realize that knowledge comes mostly from <em>practice.</em></p>
+<p>Q: What is the purpose of Boolean logic? What can we use it for?<br />
+A: One place where we will use Booleans is with conditionals - covered in this lecture. You will see more uses for comparisons and Boolean logic as your code becomes more complex.</p>
 <div class="section" id="operators">
 <h1>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
@@ -553,6 +568,9 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 <div class="section" id="poll-question-3">
 <h4>Poll Question #3<a class="headerlink" href="#poll-question-3" title="Permalink to this headline">¶</a></h4>
 <p>What would be the value stored in <code class="docutils literal notranslate"><span class="pre">modulo_time</span></code>?</p>
+<p>Note: There’s nothing special about modulo_time, it’s just a variable name we created. The same thing could be accomplished with this code:<br />
+<code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">4</span> <span class="pre">*</span> <span class="pre">2</span> <span class="pre">%</span> <span class="pre">5</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">a</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modulo_time</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">%</span> <span class="mi">5</span>
@@ -586,6 +604,27 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 </div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">//</span></code> is an operator for floor division (integer division)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">17</span> <span class="o">//</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">17</span> <span class="o">%</span> <span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">17</span><span class="o">/</span><span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="logical-boolean-operators">
 <h2>Logical (Boolean) operators<a class="headerlink" href="#logical-boolean-operators" title="Permalink to this headline">¶</a></h2>
@@ -595,7 +634,7 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 </ul>
 <p>Booleans are named after the British mathematician - George Boole. He first formulated Boolean algebra, which are a set of rules for how to reason with and combine these values. This is the basis of all modern computer logic.</p>
 <div class="alert alert-success">
-Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean logic. These operators return booleans.
+Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean logic. These operators These operators often return booleans, but can return any Python value.
 </div><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">and</span></code> : True if both are true</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">or</span></code> : True if at least one is true</p></li>
@@ -645,6 +684,21 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <span class="c1"># &#39;TRUE&#39; is not a boolean</span>
 <span class="c1"># &#39;True&#39; is</span>
 <span class="n">TRUE</span> <span class="ow">and</span> <span class="n">TRUE</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">true</span> <span class="ow">and</span> <span class="n">true</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_variable</span> <span class="o">=</span> <span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -729,10 +783,10 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## EDIT CODE HERE</span>
-<span class="n">sword_charge</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">shield_energy</span> <span class="o">=</span> <span class="o">---</span>
+<span class="n">sword_charge</span> <span class="o">=</span> <span class="mi">95</span>
+<span class="n">shield_energy</span> <span class="o">=</span> <span class="mi">100000</span>
 
-<span class="p">(</span><span class="n">sword_charge</span> <span class="o">---</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">shield_energy</span> <span class="o">---</span><span class="p">)</span>
+<span class="p">(</span><span class="n">sword_charge</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">shield_energy</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -962,8 +1016,8 @@ Python uses <code>is</code> and <code>is not</code> to compare identity. These o
 <span class="n">f</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 
 <span class="c1"># EDIT CODE HERE</span>
-<span class="n">true_variable</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">false_variable</span> <span class="o">=</span> <span class="o">---</span>
+<span class="n">true_variable</span> <span class="o">=</span> <span class="n">d</span> <span class="ow">is</span> <span class="n">c</span>
+<span class="n">false_variable</span> <span class="o">=</span> <span class="n">z</span> <span class="ow">is</span> <span class="n">x</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">true_variable</span><span class="p">,</span> <span class="n">false_variable</span><span class="p">)</span>
 </pre></div>
@@ -1252,7 +1306,7 @@ Operators and variables can also be chained together into arbitrarily complex ex
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="03-Variables.html" title="previous page">Variables</a>
-    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+    <a class='right-next' id="next-link" href="05-Conditionals.html" title="next page">Conditionals</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

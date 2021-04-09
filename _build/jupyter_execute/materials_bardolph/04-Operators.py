@@ -5,7 +5,7 @@
 - All assignments released and submitted through Datahub
 - Students can complete the [lecture participation survey](https://forms.gle/y4gY4DYTq9aFSkC76) once for each lecture (extra credit points)
 
-**Q&A**
+**Q&A (Monday's lecture)**
 
 Q: Why do we need different variable types?  
 A: Different variable types can do different things - for example, we can add numbers together (but we can't add letters), we can concatenate strings, we can use Booleans (True/False) to run and check logical tests.  
@@ -15,6 +15,14 @@ A: That's ok for now! It will make more sense when we start covering collections
 
 Q: Is it normal if I don't understand most of A1 right now?  
 A: Yes! After this lecture and Lecture 5, you should be able to complete the assignment.
+
+**Q&A (Wednesday's lecture)**
+
+Q: The "slay the dragon" example was confusing/too difficult.  
+A: That sounds really normal! Take time to think about new problems, attend Coding Lab & office hours and ask questions, and realize that knowledge comes mostly from *practice.*  
+
+Q: What is the purpose of Boolean logic? What can we use it for?  
+A: One place where we will use Booleans is with conditionals - covered in this lecture. You will see more uses for comparisons and Boolean logic as your code becomes more complex.  
 
 # Operators
 
@@ -113,6 +121,10 @@ remainder
 
 What would be the value stored in `modulo_time`?
 
+Note: There's nothing special about modulo_time, it's just a variable name we created. The same thing could be accomplished with this code:  
+`a = 4 * 2 % 5`  
+`a`
+
 modulo_time = 4 * 2 % 5
 modulo_time
 
@@ -135,6 +147,12 @@ print(a, 'remainder', b)
 
 `//` is an operator for floor division (integer division)
 
+print(17 // 7)
+
+17 % 7
+
+17/7
+
 ## Logical (Boolean) operators
 - use Boolean logic
 - logical operators: `and`, `or`, and `not`
@@ -142,7 +160,7 @@ print(a, 'remainder', b)
 Booleans are named after the British mathematician - George Boole. He first formulated Boolean algebra, which are a set of rules for how to reason with and combine these values. This is the basis of all modern computer logic.
 
 <div class="alert alert-success">
-Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean logic. These operators return booleans.
+Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean logic. These operators These operators often return booleans, but can return any Python value.
 </div>
 
 - `and` : True if both are true
@@ -166,6 +184,11 @@ not (not True)
 # 'TRUE' is not a boolean
 # 'True' is
 TRUE and TRUE
+
+true and true
+
+my_variable = True and False
+print(my_variable)
 
 #### Poll Question #4
 
@@ -215,10 +238,10 @@ Start with the code in the following cell. Replace `---` with operators or value
 - C) I'm unsure where to start
 
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 95
+shield_energy = 100000
 
-(sword_charge ---) and (shield_energy ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 
 ## Understanding Boolean logic
 
@@ -341,8 +364,8 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = d is c
+false_variable = z is x
 
 print(true_variable, false_variable)
 

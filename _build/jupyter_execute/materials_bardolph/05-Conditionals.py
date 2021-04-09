@@ -4,26 +4,20 @@
 - CL2 due tonight (11:59 PM)
 - A1 due Monday (11:59 PM)
 
-**Survey (N=115)** 
+**Survey (N=262)** 
 - You should have gotten an email reply from me with a PS specific to you
-- Time zones: 80% in PST; 9% in Eastern Asia
-- 67% have never programmed before
-- Hobbies: Reading, gaming, Netflix/TV/movies, beach, sleep, music, art
-- Futures: psychologist, happy, successful, content, physician, entrepreneur
+- Time zones: 81% in PDT (UTC -7/8); 10% in Eastern Asia
+- 68% have never programmed before
+- Hobbies: Gaming, hang with friends, baking/cooking, reading, music, beach, family
+- Futures: psychologist, researcher, grad school, engineer, undecided, happy, successful
 
 **Q&A**
 
-Q: In the lecture notes, it was mentioned that operators "and", "or", and "not" will return the booleans "True" and "False." Based on this, why does the code " 'a' and 'b' " not return a boolean when we are using the "and" operator?  
-A: Great question - this was a mistake! I will fix this in the notes to read "Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean logic. These operators often return booleans, but can return any Python value." Apologies for error.
+Q: The "slay the dragon" example was confusing/too difficult.  
+A: That sounds really normal! Take time to think about new problems, attend Coding Lab & office hours and ask questions, and realize that knowledge comes mostly from *practice.*  
 
-Q: when using `%%writefile`  to create a new file, is it possible to correct the mistake without making another file ?  
-A: So, when you re-run that cell, it will not create a new file. It will update what was previously in that file with the new code....storing it in the same file.
-
-Q: How am I able to delete a cell after adding it in the wrong spot? Also, how can I switch a code cell(the default for mine) to a markdown cell?  
-A: Keyboard shortcuts can be really helpful here. To delete a cell, click to the left of the cell you want to delete to select it and then type "D" twice on your keyboard. To toggle a code cell to markdown, select the cell by clicking to the left of the cell and typing "M" once on your keyboard. For the reverse (markdown -> code), it's "Y" on your keyboard. (Alternatively, you can select the cell and choose from the drop-down menu along the top to choose markdown or code. For deleting a cell, this is in the Edit menu at top.)
-
-Q: We've learned a lot of operations already so how do you recommend we organize this information for exams and assignments? A list? Chart?  
-A: Honestly, I'd recommend learning them/committing them to memory so that you don't have to look them up each time you want to use them. But, of course that takes time, If it were me (and there are lots of possible solutions), I would make a "cheat sheet" - a single paper (or single screen on a computer) where all of the opertaors are organized with generally what they do. These sorts of [cheat sheets](https://www.pythoncheatsheet.org/) exist...but sometimes students learn best by making their own!
+Q: What is the purpose of Boolean logic? What can we use it for?  
+A: One place where we will use Booleans is with conditionals - covered in this lecture. You will see more uses for comparisons and Boolean logic as your code becomes more complex.  
 
 # Conditionals
 
@@ -46,7 +40,7 @@ if condition:
 if condition == True:
     print('This code executes if the condition evaluates as True.')
 
-#### Clicker Question #1
+#### Poll Question #1
 
 Replace `---` below with something that will print 'True'
 
@@ -55,7 +49,7 @@ Replace `---` below with something that will print 'True'
 - C) I tried but am stuck.
 - D) I'm unsure where to start
 
-math = 3 > 2
+math = ---
 
 if math:
     print('True')
@@ -73,7 +67,7 @@ if condition:
 else: 
     print('This code executes if the condition evaluates as False')
 
-#### Clicker Question #2
+#### Poll Question #2
 
 Replace `---` below with something that will print 'False'.
 
@@ -82,7 +76,7 @@ Replace `---` below with something that will print 'False'.
 - C) I tried but am stuck.
 - D) I'm unsure where to start
 
-my_value = 19 <= 10
+my_value = ---
 
 if my_value:
     print('True')
@@ -138,7 +132,7 @@ elif condition_2:
 Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 </div>
 
-language = "Perl"
+language = "s"
 
 if language == "Python" or language == "R":
     print("Yay!")
@@ -159,9 +153,9 @@ elif number > 5:
 
 print('After Conditional')
 
-#### Clicker Question #3
+#### Poll Question #3
 
-What will the following code snippet print out:
+What will the following code snippet print out?
 
 condition = False
 
@@ -180,9 +174,9 @@ else:
 - D) Paul, George 
 - E) Ringo
 
-#### Clicker Question #4
+#### Poll Question #4
 
-What will the following code snippet print out:
+What will the following code snippet print out?
 
 if 1 + 1 == 2:
     print("I did Math")
@@ -196,7 +190,7 @@ else:
 - C) I didn't do math
 - D) This code won't execute
 
-#### Clicker Question #5
+#### Poll Question #5
 
 What will the following code snippet print out:
 

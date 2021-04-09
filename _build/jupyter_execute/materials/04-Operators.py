@@ -439,6 +439,12 @@ Using the variables provded below and identity operators replace `---` with code
 - B) I tried but am stuck.
 - C) I'm unsure where to start
 
+# equality (values are the same)
+f == g
+
+# identity (place in memory)
+f is g
+
 a = 5
 b = 5
 c = b
@@ -448,8 +454,8 @@ f = 567
 g = 567
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = a is c
+false_variable = f is g
 
 print(true_variable, false_variable)
 
@@ -483,6 +489,11 @@ print(' ' in x)
 Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 </div>
 
+a = 'COGS'
+b = '18'
+
+a + ' ' + b
+
 'COGS' + ' 18'
 
 'a' + 'b' + 'c'
@@ -505,6 +516,10 @@ Operators and variables can also be chained together into arbitrarily complex ex
 How will the following expression evaluate:
 
 2**2 >= 4 and 13%3 > 1
+
+2**2 >= 4
+
+13%3
 
 - a) True
 - b) False
