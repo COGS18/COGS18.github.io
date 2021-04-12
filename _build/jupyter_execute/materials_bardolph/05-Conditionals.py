@@ -1,12 +1,11 @@
 **Course Announcements**
 
 **Due Dates**
-- CL2 due tonight (11:59 PM)
 - A1 due Monday (11:59 PM)
+- Submit CL1 & CL2 by end of Saturday if not already submitted
 
 **Survey (N=262)** 
-- You should have gotten an email reply from me with a PS specific to you
-- Time zones: 81% in PDT (UTC -7/8); 10% in Eastern Asia
+- Time zones: 81% in PDT (UTC -7/8); 10% in Eastern Asia (UTC +8)
 - 68% have never programmed before
 - Hobbies: Gaming, hang with friends, baking/cooking, reading, music, beach, family
 - Futures: psychologist, researcher, grad school, engineer, undecided, happy, successful

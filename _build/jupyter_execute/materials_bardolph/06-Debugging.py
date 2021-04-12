@@ -3,27 +3,6 @@
 - A1 due Monday (11:59 PM)
 - CL3 & A2 will be released Friday afternoon
 
-**Q&A**
-
-Q: The homework asks us to create conditionals where the boolean variables change from being true to false in the same cell and ask that the outcome or output be set to different strings. How is this possible? No matter what combination of conditional I try, I always get an assertion error because the outcome doesnt exactly equal a certain string. Can I define a variable as having more than one value?  
-A: Note that the variable being checked (i.e. `status` is defined in the test cells. So, your code should only have conditional in it. It should not define what is in `status` in your answer).
-
-Q: Why are the integers between -5 and 256 inclusive? Why don't programmers commonly use numbers outside this domain?  
-A: I don't actually know why these specifically (and a quick search didn't find the answer). But, to clarify, it's not that programmers don't use values outside of this range...they just don't do it as frequently. 
-
-Q: Do we have to leave the `raise NotImplementedError` in assignment?  
-A: No - do not leave it in there. You should delete this and replace it with your code every time you see it.
-
-Q: I am having trouble using keyboard shortcuts when trying to change the type of cell and in deleting cells. What do you think is going wrong?  
-A: Make sure you're clicking to the left of the cell to select it before you try to use the keyboard shortcut. If that's not the issue, OH is a great place for us to take a look!
-
-Q: Is it possible to subtract or replace parts of a string?  
-A: Nope - since strings are immutable, you can't change parts of it after defining, but you can overwrite the string and extract parts of a string using indexing (We'll get to this shortly!)
-
-Q: I wonder how, in more complicated programs, can we better use if and elif when dealing with nested if statements.  
-A: While not something you need to worry about yet, a whole bunch of nested ifs are often an indication of the need for refactored code. When we get to functions, that may help, as we can often replace some of the nested structure with a standalone function.
-
-
 # Debugging
 
 - Errors
@@ -211,8 +190,6 @@ print('\nmy_num is: ', my_num)
 
 ### Example with Try / Except
 
-int('asdflajksdfal;ksjdf')
-
 try:
     int(input('Number'))
 except:
@@ -229,7 +206,6 @@ You can also write code to raise an Exception if something unexpected happens.
 `raise` is a keyword that tells Python you want to create your own error.
 
 my_int = input('An integer please: ')
-
 if not my_int.isnumeric():
     raise ValueError('I wanted a number! :(')
     
@@ -239,10 +215,8 @@ print('My integer is: ', my_int)
 
 Edit the code below (replacing `---` with either values or variable names) so that when executed, this cell returns `None`.
 
-3 / 0
-
-num1 = 3
-num2 = 0
+num1 = ---
+num2 = ---
 
 try:
     output = num1 / num2
@@ -271,22 +245,15 @@ print(output)
 
 Google: "How to check whether a variable stores an even value _in python_"
 
-# variable my_val
 
-# if my_val is positive (> 0) and even:
-    # output = 1
 
 ### Don't understand the error message
 
 So you try to accomplish the task...below is your first attempt
 
-output
-
 # this code has errors
 # we're going to debug together in class
 my_val = 6
 
-if my_val > 0 and my_val % 2 == 0:
-    print(my_val)
-    output = 1
-    print(output)
+if my_val > 0 and my_val % 2 = 0:
+    output == 1
