@@ -499,6 +499,15 @@
 <li><p>A1 will be graded on Friday (all assignments graded ~1wk from due date)</p></li>
 <li><p>E1 (1<span class="math notranslate nohighlight">\(^{st}\)</span> midterm) is <em>next</em> Friday</p></li>
 </ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: I am still confused on the purpose of the Tuples. Why do we need to separate the collection to tuples and list?<br />
+A: Whenever you do not want to allow users or your code to change values in a collection, you’ll want to use a tuple, as this avoids inadvertent changes. The opposite, when you want to be able to update part of a collection, is when you’ll want to use a list.</p>
+<p>Q: I like to take notes on datahub after updating my lecture notes from the Canvas. if I update my lecture notes from the link on Canvas after I edit the files, will that overwrite my own notes and change all the files to default (notes from class without my own notes)?<br />
+A: Nope - your notes will still be there!</p>
+<p>Q: What does -1 mean as a step? Skip every element?<br />
+A: Nope. 1 means show every element. -1 actually reverses the output, so the output return the slice in the reverse order.</p>
+<p>Q: Are <code class="docutils literal notranslate"><span class="pre">range()</span></code> objects mutable or immutable?<br />
+A: They are immutable.</p>
 <div class="section" id="control-flow-loops">
 <h1>Control Flow - Loops<a class="headerlink" href="#control-flow-loops" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
@@ -556,6 +565,15 @@ A <b>while loop</b> is a procedure to repeat a piece of code while some conditio
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-5
+-4
+-3
+-2
+-1
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="while-loop-example-i">
 <h3>While Loop Example I<a class="headerlink" href="#while-loop-example-i" title="Permalink to this headline">¶</a></h3>
@@ -569,6 +587,11 @@ A <b>while loop</b> is a procedure to repeat a piece of code while some conditio
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Establishing Connection...&#39;</span><span class="p">)</span>
     
     <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Establishing Connection...
 </pre></div>
 </div>
 </div>
@@ -589,6 +612,11 @@ A <b>while loop</b> is a procedure to repeat a piece of code while some conditio
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Asking for user input...
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-1">
 <h4>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">¶</a></h4>
@@ -602,6 +630,14 @@ A <b>while loop</b> is a procedure to repeat a piece of code while some conditio
     <span class="n">temperature</span> <span class="o">=</span> <span class="n">temperature</span> <span class="o">-</span> <span class="mi">1</span>
     
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The tea is cool enough.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>115
+114
+113
+The tea is cool enough.
 </pre></div>
 </div>
 </div>
@@ -630,6 +666,11 @@ A <b>while loop</b> is a procedure to repeat a piece of code while some conditio
         <span class="n">keep_looping</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
 </pre></div>
 </div>
 </div>
@@ -684,6 +725,14 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A
+True
+12
+	Last value:  12
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="for-loop-example-ii">
@@ -697,6 +746,16 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>p
+y
+t
+h
+o
+n
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-3">
 <h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h4>
@@ -707,6 +766,13 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+2
+3
 </pre></div>
 </div>
 </div>
@@ -734,6 +800,18 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) 1</p></li>
@@ -758,12 +836,26 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+2
+3
+4
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the asterisk here unpacks the range</span>
 <span class="c1"># don&#39;t worry about this syntax now</span>
 <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 1 2 3 4
 </pre></div>
 </div>
 </div>
@@ -776,12 +868,27 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+2
+3
+4
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Range, like indexing, is defined by &#39;start&#39;, &#39;stop&#39;, &#39;step&#39;</span>
 <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+4
 </pre></div>
 </div>
 </div>
@@ -797,6 +904,18 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>114
+115
+116
+The tea is too hot!
+117
+The tea is too hot!
+118
+The tea is too hot!
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-5">
 <h4>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this headline">¶</a></h4>
@@ -805,6 +924,13 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+4
+7
 </pre></div>
 </div>
 </div>
@@ -838,6 +964,13 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+3
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -853,17 +986,33 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cogs9
+cogs9!
+cogs108
+cogs108!
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s1">&#39;python&#39;</span>
 
 <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span> 
     
-    <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;p&quot;</span> <span class="ow">or</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span> <span class="ow">or</span> <span class="n">char</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
         <span class="k">continue</span>
         
     <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>t
+h
+o
+n
 </pre></div>
 </div>
 </div>
@@ -883,6 +1032,11 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
         <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
         
 <span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
 </pre></div>
 </div>
 </div>
