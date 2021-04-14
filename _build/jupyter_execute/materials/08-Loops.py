@@ -7,6 +7,20 @@
 - A1 will be graded on Friday (all assignments graded ~1wk from due date)
 - E1 (1$^{st}$ midterm) is *next* Friday
 
+**Q&A**
+
+Q: I am still confused on the purpose of the Tuples. Why do we need to separate the collection to tuples and list?  
+A: Whenever you do not want to allow users or your code to change values in a collection, you'll want to use a tuple, as this avoids inadvertent changes. The opposite, when you want to be able to update part of a collection, is when you'll want to use a list.
+
+Q: I like to take notes on datahub after updating my lecture notes from the Canvas. if I update my lecture notes from the link on Canvas after I edit the files, will that overwrite my own notes and change all the files to default (notes from class without my own notes)?  
+A: Nope - your notes will still be there!
+
+Q: What does -1 mean as a step? Skip every element?  
+A: Nope. 1 means show every element. -1 actually reverses the output, so the output return the slice in the reverse order.
+
+Q: Are `range()` objects mutable or immutable?  
+A: They are immutable.
+
 # Control Flow - Loops
 
 - `while`
@@ -272,11 +286,11 @@ for course in courses:
     print(course)
     print(course + '!')
 
-string = "python"
+string = 'python'
 
 for char in string: 
     
-    if char == "p" or char == "y":
+    if char == 'p' or char == 'y':
         continue
         
     print(char)

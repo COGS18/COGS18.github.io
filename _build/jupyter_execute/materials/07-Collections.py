@@ -430,6 +430,8 @@ print(counter)
 
 What will be the value of `counter` after this code is run?
 
+len(things_that_are_good)
+
 things_that_are_good = ['python', 'data', 'science', 'tacos']
 
 counter = 0
