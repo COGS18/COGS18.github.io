@@ -8,7 +8,7 @@ Introduction to Python (COGS 18) is a course offered by the Department of Cognit
 
 ### Current Iteration
 
-Introduction to Python is currently running for Spring 2021, for which you can check out the **current syllabi** for [Section B00 (Ellis)](assets/intro/syllabus) and [Section C00 (Bardolph)](https://cogs18.github.io/assets/intro/Cogs18_Syllabus_SP21_draft.pdf). 
+Introduction to Python is currently running for Spring 2021, for which you can check out the **current syllabi** for [Section B00 (Ellis)](assets/intro/syllabus) and [Section C00 (Bardolph)](https://cogs18.github.io/assets/intro/Cogs18_Syllabus_SP21.pdf). 
 
 Given all that is going on in the world and the fact that we are remote, this course will run a bit differently than it has in the past. All material will still be available online. All lectures will be recorded and available to view when it is most convenient for students. And, flexibility will be built in throughout the course to ensure we're supporting students in their learning while also taking into account the additional issues students may be facing this quarter.
 

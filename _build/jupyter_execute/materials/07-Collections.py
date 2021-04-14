@@ -1,5 +1,7 @@
 **Course Announcements**
 
+- A1 due tonight (11:59 PM)
+    - should run from top to bottom (Kernel > Restart + Run all OR Validate)
 - CL3 due Wed (4/14)
 - A2 now available (due Mon 4/19)
 - Just putting it on your radar: 1$^{st}$ midterm is Friday of *next* week (week 4; 4/23)
@@ -74,7 +76,7 @@ print(my_lst[1])
 print(my_lst[-1])
 
 # Indexing: Grab a group of adjacent items using `start:stop`, called a slice
-print(my_lst[2:4])
+print(my_lst[2:4]) 
 
 # can determine type in list
 type(my_lst[2])
@@ -205,6 +207,8 @@ ex2_lst = [0, False, 'ten', None]
 
 bool_1 = False in ex2_lst
 bool_2 = 10 not in ex2_lst
+print(bool_1)
+print(bool_2)
 
 output = bool_1 and bool_2
 
@@ -243,6 +247,8 @@ What would the following code accommplish?
 
 lst_update = [1, 2, 3, 0, 5]
 lst_update[3] = 4 
+
+print(lst_update)
 
 - A) replace 0 with 4 in `lst_update`
 - B) replace 4 with 0 in `lst_update`
@@ -348,6 +354,14 @@ first_list
 # check alias_list
 alias_list
 
+# works in both directions
+# if you update alias_list
+# first_list also updated
+alias_list[2] = 929
+alias_list
+
+first_list
+
 For *mutable* type variables, when you change one, both change.
 
 #### Clicker Question #8
@@ -359,6 +373,8 @@ After executing the following code, what will the second value stored in `second
 my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
 my_tuple[1] = 29 
+
+second_tuple[1]
 
 - A) 1
 - B) 2

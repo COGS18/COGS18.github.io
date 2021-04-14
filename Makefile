@@ -54,7 +54,7 @@ textbook:
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
 
 	# copy megan's syllabus
-	cp assets/intro/Cogs18_Syllabus_SP21_draft.pdf _build/html/assets/intro/
+	cp assets/intro/Cogs18_Syllabus_SP21.pdf _build/html/assets/intro/
 
 	
 	# copy non-md images to build
