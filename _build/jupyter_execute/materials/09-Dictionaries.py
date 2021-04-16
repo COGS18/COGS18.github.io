@@ -289,29 +289,6 @@ To determine if a specified key is present in a dictionary we can use the `in` o
 if 'A1234' in completed_coding_lab:
     print('Yes, that student is in this class')
 
-#### Clicker Question #4
-
-What will the value of `result` be after this code has run?
-
-dictionary = {'alpha' : [8, 12], 
-              'beta'  : [13, 30], 
-              'theta' : [4, 8]}
-
-check = 10
-
-for item in dictionary:
-    temp = dictionary[item]
-    if temp[0] <= check <= temp[1]:
-        result = item
-        
-print(result)
-
-- A) alpha
-- B) [8, 12] 
-- C) beta 
-- D) theta 
-- E) alpha beta
-
 ### Additional Dictionary Properties
 
 - Only one value per key. No duplicate keys allowed. 
@@ -332,7 +309,7 @@ print(result)
 
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
 
-#### Clicker Question #5
+#### Clicker Question #4
 
 Why does the following code produce an error?
 
