@@ -19,8 +19,8 @@
     title: 07-Collections
   - file: materials/08-Loops
     title: 08-Loops
-  # - file: materials/09-Dictionaries
-  #   title: 09-Dictionaries
+  - file: materials/09-Dictionaries
+    title: 09-Dictionaries
   # - file: materials/10-FunctionsI
   #   title: 10-FunctionsI
   # - file: materials/11-Algorithms
@@ -110,8 +110,8 @@
     title: CL1-Tooling
   - file: labs/CL2-ProgrammingI
     title: CL2-ProgrammingI
-#   - file: labs/CL3-ProgrammingII
-#     title: CL3-ProgrammingII
+  - file: labs/CL3-ProgrammingII
+    title: CL3-ProgrammingII
 #   - file: labs/CL4-Loops
 #     title: CL4-Loops
 #   - file: labs/CL5-Functions
