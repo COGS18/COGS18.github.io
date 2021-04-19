@@ -214,7 +214,7 @@ Which of the following would create a dictionary of length 3?
 Fill in the '---' in the code below to return the value stored in the second key.
 
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
-height_dict[---]
+height_dict['height_2']
 
 - A) I did it
 - B) I think I did it...
@@ -257,6 +257,10 @@ Write the code that would create a dictionary `car` that stores values about you
 - D) No clue where to start...
 
 # YOUR CODE HERE
+car = {'make':'Hyundai', 
+       'model':'Santa Fe',
+       'year':2017}
+car
 
 ### Dictionaries are mutable
 
@@ -317,8 +321,10 @@ student_emails = {
     'Betty Jennings' : 'bjennings@eniac.org',
     'Ada Lovelace' : ['ada@analyticengine.com'],
     'Ada Lovelace' : 'aturing@thebomb.gov',
-    ['Grace Hopper'] : 'ghopper@navy.usa'
+    'Grace Hopper' : 'ghopper@navy.usa'
 }
+
+student_emails
 
 - A) duplicate keys
 - B) mutable key specified

@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction to Python" href="../materials_bardolph/01-Introduction.html" />
+    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
     <link rel="prev" title="Control Flow - Loops" href="08-Loops.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -124,6 +124,16 @@
    09-Dictionaries
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -171,6 +181,11 @@
    08-Loops
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -191,6 +206,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../labs/CL3-ProgrammingII.html">
    CL3-ProgrammingII
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review.html">
+   E1-Review
   </a>
  </li>
 </ul>
@@ -644,6 +676,11 @@ Encoding can be thought of as the process of 'changing representation', and deco
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ñ
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -668,11 +705,21 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;key_1&#39;: &#39;value_1&#39;, &#39;key_2&#39;: &#39;value_2&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the type of the dictionary</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict
 </pre></div>
 </div>
 </div>
@@ -685,6 +732,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="dictionaries-indexing-looping">
@@ -693,6 +745,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionaries are indexed using their keys</span>
 <span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;key_1&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;value_1&#39;
 </pre></div>
 </div>
 </div>
@@ -708,6 +765,16 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loop Iteration
+	Key:	 key_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 key_2
+	Value:	 value_2
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -716,6 +783,16 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loop Iteration&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Key:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Value:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loop Iteration
+	Key:	 key_1
+	Value:	 value_1
+Loop Iteration
+	Key:	 key_2
+	Value:	 value_2
 </pre></div>
 </div>
 </div>
@@ -737,7 +814,12 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">height_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;height_1&#39;</span> <span class="p">:</span> <span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;height_2&#39;</span><span class="p">:</span> <span class="mi">68</span><span class="p">,</span> <span class="s1">&#39;height_3&#39;</span> <span class="p">:</span> <span class="mi">65</span><span class="p">,</span> <span class="s1">&#39;height_4&#39;</span> <span class="p">:</span> <span class="mi">72</span><span class="p">}</span>
-<span class="n">height_dict</span><span class="p">[</span><span class="o">---</span><span class="p">]</span>
+<span class="n">height_dict</span><span class="p">[</span><span class="s1">&#39;height_2&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68
 </pre></div>
 </div>
 </div>
@@ -765,6 +847,14 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Betty Jennings&#39;: &#39;bjennings@eniac.org&#39;,
+ &#39;Ada Lovelace&#39;: &#39;ada@analyticengine.com&#39;,
+ &#39;Alan Turing&#39;: &#39;aturing@thebomb.gov&#39;,
+ &#39;Grace Hopper&#39;: &#39;ghopper@navy.usa&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -778,6 +868,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: False, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -787,6 +882,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <span class="p">}</span>
 
 <span class="n">mixed_types</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{True: [1, 2, 3], False: None}
 </pre></div>
 </div>
 </div>
@@ -803,6 +903,15 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">car</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;make&#39;</span><span class="p">:</span><span class="s1">&#39;Hyundai&#39;</span><span class="p">,</span> 
+       <span class="s1">&#39;model&#39;</span><span class="p">:</span><span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;year&#39;</span><span class="p">:</span><span class="mi">2017</span><span class="p">}</span>
+<span class="n">car</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;make&#39;: &#39;Hyundai&#39;, &#39;model&#39;: &#39;Santa Fe&#39;, &#39;year&#39;: 2017}
 </pre></div>
 </div>
 </div>
@@ -819,6 +928,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: False, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -828,12 +942,25 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <p>Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using <code class="docutils literal notranslate"><span class="pre">del</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">completed_coding_lab</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">completed_coding_lab</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -848,6 +975,14 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="dictionaries-and-operators">
@@ -858,6 +993,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="s1">&#39;A1234&#39;</span> <span class="ow">in</span> <span class="n">completed_coding_lab</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Yes, that student is in this class&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Yes, that student is in this class
 </pre></div>
 </div>
 </div>
@@ -879,6 +1019,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 91}
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p><strong>keys</strong> must be of an immutable type (string, tuple, integer, float, etc)</p></li>
@@ -892,6 +1037,18 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">23</span><span class="o">-</span><span class="mi">27</span><span class="n">b11708f095</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># lists are not allowed as key types</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code will produce an error</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="p">{[</span><span class="s1">&#39;Student&#39;</span><span class="p">]</span> <span class="p">:</span> <span class="mi">97</span><span class="p">}</span>
+
+<span class="ne">TypeError</span>: unhashable type: &#39;list&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>Dictionary keys are case sensitive.</p></li>
@@ -899,6 +1056,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Student&#39;</span> <span class="p">:</span> <span class="mi">97</span><span class="p">,</span> <span class="s1">&#39;student&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;STUDENT&#39;</span> <span class="p">:</span> <span class="mi">91</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 97, &#39;student&#39;: 88, &#39;STUDENT&#39;: 91}
 </pre></div>
 </div>
 </div>
@@ -912,8 +1074,22 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
     <span class="s1">&#39;Betty Jennings&#39;</span> <span class="p">:</span> <span class="s1">&#39;bjennings@eniac.org&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Ada Lovelace&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ada@analyticengine.com&#39;</span><span class="p">],</span>
     <span class="s1">&#39;Ada Lovelace&#39;</span> <span class="p">:</span> <span class="s1">&#39;aturing@thebomb.gov&#39;</span><span class="p">,</span>
-    <span class="p">[</span><span class="s1">&#39;Grace Hopper&#39;</span><span class="p">]</span> <span class="p">:</span> <span class="s1">&#39;ghopper@navy.usa&#39;</span>
+    <span class="s1">&#39;Grace Hopper&#39;</span> <span class="p">:</span> <span class="s1">&#39;ghopper@navy.usa&#39;</span>
 <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student_emails</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Betty Jennings&#39;: &#39;bjennings@eniac.org&#39;,
+ &#39;Ada Lovelace&#39;: &#39;aturing@thebomb.gov&#39;,
+ &#39;Grace Hopper&#39;: &#39;ghopper@navy.usa&#39;}
 </pre></div>
 </div>
 </div>
@@ -949,12 +1125,22 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>no hablo español
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use character encodings to use symbols we want - example 2</span>
 <span class="n">my_sentence</span> <span class="o">=</span> <span class="s1">&#39;yo hablo ingl&#39;</span> <span class="o">+</span> <span class="n">character_encodings</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;s&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>yo hablo inglés
 </pre></div>
 </div>
 </div>
@@ -982,10 +1168,20 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>97
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">97</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a
 </pre></div>
 </div>
 </div>
@@ -1001,6 +1197,12 @@ Unicode is a system of systematically and consistently representing characters.
 
 <span class="k">assert</span> <span class="n">inp</span> <span class="o">==</span> <span class="n">out</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input: </span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">inp</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Output: &#39;</span><span class="p">,</span> <span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Input: 	 b 
+Output:  b
 </pre></div>
 </div>
 </div>
@@ -1038,7 +1240,7 @@ Unicode is a system of systematically and consistently representing characters.
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="08-Loops.html" title="previous page">Control Flow - Loops</a>
-    <a class='right-next' id="next-link" href="../materials_bardolph/01-Introduction.html" title="next page">Introduction to Python</a>
+    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
