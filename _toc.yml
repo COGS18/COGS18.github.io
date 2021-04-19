@@ -47,10 +47,6 @@
   #   title: 21-AdvancedPython
   # - file: materials/22-WrapUp
   #   title: 22-WrapUp
-  - file: materials/A1-Syntax
-    title: A1-Syntax
-  - file: materials/A2-Examples
-    title: A2-Examples
 
 - part: Lectures (Bardolph)
   chapters:
@@ -125,6 +121,10 @@
 
 - part: Exam Prep
   chapters:
+  - file: materials/A1-Syntax
+    title: A1-Syntax
+  - file: materials/A2-Examples
+    title: A2-Examples
   # E1  
   - file: materials/Exam-Prep/E1-Practice
     title: E1-Practice
