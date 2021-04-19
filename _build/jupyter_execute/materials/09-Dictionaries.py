@@ -383,3 +383,31 @@ out = chr(ord(inp))
 
 assert inp == out
 print('Input: \t', inp, '\nOutput: ', out)
+
+## Extra Practice
+
+### Extra Practice #1
+
+Generate a dictionary called `about_me` that meets the following criteria:
+
+- has three keys: 'name', 'favorite_game', and 'height'
+- stores _your_ `name` (string), `favorite_game` (string), and `height` (int) in inches as each key's value
+
+
+# YOUR CODE HERE
+
+- A) I did it!
+- B) I think I did it.
+- C) I started but am now stuck.
+- D) I have no idea where to start.
+
+### Extra Practice #2
+
+Store your name in the variable `my_name`. Then, encode your  name, such that each letter is first replaced by the unicode code point for that letter plus 500 and then turned back into a character using `chr`. Store the new output in `out_name`.
+
+# YOUR CODE HERE
+
+- A) I did it!
+- B) I think I did it.
+- C) I started but am now stuck.
+- D) I have no idea where to start.
