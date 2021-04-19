@@ -384,6 +384,27 @@ out = chr(ord(inp))
 assert inp == out
 print('Input: \t', inp, '\nOutput: ', out)
 
+**Course Announcements**
+
+**Due Dates**
+- A2 due tonight
+- CL4 due Wednesday
+- E1 is Friday (released 8AM; due Sat 8AM)
+
+**Q&A**
+
+Q: I know it was right at the end of the class but the ord and chr were confusing. I know that one gives an integer and the other a character but why? What is the integer part supposed to be? / How do we find which unicode represents a specific character?    
+A: `ord` returns the [unicode code points](https://en.wikipedia.org/wiki/List_of_Unicode_characters) for any given character. It's a way to represent a character as a number. This allows characters to be interpreted consistently across computing systems.
+
+Q: If we are building an app for python, how does the code interact with a user? How does the dictionary play a part of that?  
+A: This is a tougher question to answer here. One way, would be through a GUI (See `tkinter`, for example) where there is python code behind the scenes and the user enters information. The way a dictionary comes into play is if you wanted to store information about each user, for example. The user's name/ID could be the key and what you information wanted to store about that user would be its value.
+
+Q: What does '+=' in CL 4?  
+A: `+=` is shorthand for "add the thing on the right to the variable on the left and store it back in the variable on the left. For example `a += 4` is the same as `a = a + 4`.
+
+Q: Once we open the midterm will it be timed or do we have a 24hr window to complete it?  
+A: 24h window
+
 ## Extra Practice
 
 ### Extra Practice #1
