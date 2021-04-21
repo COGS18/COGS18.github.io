@@ -225,6 +225,16 @@
    E1-Review
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Sp21_Practice.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -1224,12 +1234,41 @@ Output:  b
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>97
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">chr</span><span class="p">(</span><span class="mi">97</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;a&#39;
+</pre></div>
+</div>
+</div>
+</div>
 <p><strong>Course Announcements</strong></p>
 <p><strong>Due Dates</strong></p>
 <ul class="simple">
 <li><p>A2 due tonight</p></li>
 <li><p>CL4 due Wednesday</p></li>
-<li><p>E1 is Friday (released 8AM; due Sat 8AM)</p></li>
+<li><p>E1 is Friday (released 8AM; due Sat 8AM)</p>
+<ul>
+<li><p>No Office Hours Friday</p></li>
+<li><p>No Lecture on Friday</p></li>
+</ul>
+</li>
 </ul>
 <p><strong>Q&amp;A</strong></p>
 <p>Q: I know it was right at the end of the class but the ord and chr were confusing. I know that one gives an integer and the other a character but why? What is the integer part supposed to be? / How do we find which unicode represents a specific character?<br />
@@ -1254,6 +1293,15 @@ A: 24h window</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">about_me</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s1">&#39;Shannon&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;favorite_game&#39;</span><span class="p">:</span><span class="s1">&#39;Coup&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;height&#39;</span><span class="p">:</span><span class="mi">65</span><span class="p">}</span>
+<span class="n">about_me</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;name&#39;: &#39;Shannon&#39;, &#39;favorite_game&#39;: &#39;Coup&#39;, &#39;height&#39;: 65}
 </pre></div>
 </div>
 </div>
@@ -1270,7 +1318,32 @@ A: 24h window</p>
 <p>Store your name in the variable <code class="docutils literal notranslate"><span class="pre">my_name</span></code>. Then, encode your  name, such that each letter is first replaced by the unicode code point for that letter plus 500 and then turned back into a character using <code class="docutils literal notranslate"><span class="pre">chr</span></code>. Store the new output in <code class="docutils literal notranslate"><span class="pre">out_name</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ɇ&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="n">my_name</span> <span class="o">=</span> <span class="s1">&#39;Shannon&#39;</span>
+<span class="n">out_name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="k">for</span> <span class="n">ltr</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+    <span class="n">out_name</span> <span class="o">=</span> <span class="n">out_name</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">ltr</span><span class="p">)</span> <span class="o">+</span> <span class="mi">500</span><span class="p">)</span>
+<span class="c1">#     print(out_name)</span>
+
+<span class="n">out_name</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ɇɜɕɢɢɣɢ&#39;
 </pre></div>
 </div>
 </div>
