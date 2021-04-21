@@ -1,28 +1,4 @@
-**Course Announcements**
-
-- CL4 due tonight
-- E1 released Friday (due Sat 8AM)
-    - no lecture Friday
-    - no OH Friday
-    - answer keys for E1-Review and Practice Exam posted this afternoon
-
-# Exam 1 Review
-
-**Exam 1 Topics**
-- Q0: Honor Code (0.1 points)
-- Variables & Operators (3.75 points)
-    - Q1: Variables
-    - Q2: Math Operators
-    - Q3: Comparison Operators
-    - Q4: Membership Operators
-    - Q5: String Concatenation
-- Collections & Indexing (3 points)
-    - Q6: Lists & Indexing
-    - Q7: Dictionaries & Tuples
-- Control Flow - Conditionals & Loops (5.65 points)
-    - Q8: Conditionals
-    - Q9: `for` loop
-    - Q10: Accomplishing a task
+# Exam 1 Review (Answers)
 
 ## Midterm Expectations
 
@@ -96,6 +72,27 @@ Edit the code at right with how would you return the specified values on left:
 
 Write a line of code that would change the third element of a list `my_list` to store the value `12`.
 
+#### Data Types Answers
+
+Data Types Question #1
+
+Tuples are created with () and are immutable.  
+Lists are created with [] and are mutable.
+
+# Data Types Question #2
+ice_cream = ['vanilla', 'chocolate', 'strawberry', 'cherry', 'salted caramel']
+print(ice_cream[-5:-2])
+print(ice_cream[:3])
+ice_cream[0:3]
+
+# Data Types Question #3
+my_list[2] = 12 
+
+# Data Types Question #3
+my_list = [1, 2 , 3, 4, 5, 6]
+my_list[2] = 12
+my_list
+
 ### Operators
 
 - assignment : `=`
@@ -111,7 +108,7 @@ What is the difference between `=` and `==`?
 
 #### Operators Question #2
 
-Create a variable `oper_var` that uses both the not and or operators (each at least once) such that `oper_var` stores (returns) the value `True`.
+Create a variable `oper_var` that uses both the `not` and `or` operators (each at least once) such that `oper_var` stores (returns) the value `True`.
 
 #### Operators Question #3
 
@@ -120,6 +117,43 @@ Using at least 4 different math operators, create a variable `math_var` that sto
 #### Operators Question #4
 
 Create a variable `string_concat` that demonstrates how you can concatenate two different strings together with a space between the two different strings. 
+
+#### Operators Answers
+
+Operators Question #1
+
+= is an assignment operator  
+== checks for equality
+
+# Operators Question #2
+
+# one possible answer
+# a = not False
+# b = not True
+# open_var = a or b
+
+# OR
+open_var = not False or not True
+print(open_var)
+
+# Operators Question #3
+# one possible answer to get to 18
+math_var =   36 // ((((2 + 3) * 2) / 2) - 3)
+math_var 
+
+# Operators Question #4
+# possible answer
+
+string_concat = 'COGS' + ' ' + '18'
+print(string_concat)
+# OR
+a = 'COGS'
+b = '18'
+string_concat = a + ' ' + b
+print(string_concat)
+
+string_concat = 'COGS ' + '18'
+print(string_concat)
 
 ### Conditionals
 
@@ -143,11 +177,48 @@ Given the following outline of a conditional:
 ```
 
 1. If `COND_A` and `COND_B` are both `True`, which code block(s) evaluate?
-2. If `COND_A` is False and `COND_B` is `True`, which code block(s) evaluate?
+2. If `COND_A` is `False` and `COND_B` is `True`, which code block(s) evaluate?
 
-#### Conditionals Question #2
+#### Conditionals Question #3
 
 You use have a list that stores 20 different integers. You use a comparison operator to compare the relationship between two of the elements in the list and store that output in a variable. What would the type of that output variable be?
+
+#### Conditionals Answers
+
+Conditionals Question #1
+
+necessary, optional, optional
+
+Conditionals Question #2
+
+1. Code Block A
+2. Code Block B
+
+###### how to check your thinking when you're studying
+COND_A = True
+COND_B = True
+
+if COND_A:
+    print('a')
+elif COND_B:
+    print('b')
+else:
+    print('c')
+
+Conditionals Question #3
+
+A Boolean
+
+# Example code to demonstrate:
+test_list = range(0,21)
+
+# test 1
+out = test_list[1] != test_list[2]
+print(type(out))
+
+# test 2
+out = test_list[17] <= test_list[15]
+print(type(out))
 
 ### Loops
 
@@ -170,3 +241,39 @@ Initialize an additional variable called `reverse_pet` that will store an empty 
 Then, using indexing, loop through each letter in that list such that `reverse_pet` stores a list with your favorite pet spelled backward.
 
 For example, if your favorite pet were "cat", the output stored in `reverse_pet` should be: `['t', 'a', 'c']`
+
+
+#### Loops Answers
+
+Loops Question #1
+
+for and while
+
+# Loops Question #2
+ind = 1
+
+while ind <= 4:
+    print(ind)
+    ind += 1
+    #or ind = ind + 1
+
+# Loops Question #3
+
+fav_pet = ['p', 'u', 'p', 'p', 'y']
+
+reverse_pet = []
+for letter in fav_pet[::-1]:
+    reverse_pet.append(letter)
+
+#OR
+reverse_pet = []
+for letter in [fav_pet[4], fav_pet[3], fav_pet[2], fav_pet[1], fav_pet[0]]:
+    reverse_pet.append(letter)
+
+#OR
+
+reverse_pet = []
+for letter in [fav_pet[-1], fav_pet[-2], fav_pet[-3], fav_pet[-4], fav_pet[-5]]:
+    reverse_pet.append(letter)
+    
+print(reverse_pet)

@@ -384,12 +384,18 @@ out = chr(ord(inp))
 assert inp == out
 print('Input: \t', inp, '\nOutput: ', out)
 
+ord('a')
+
+chr(97)
+
 **Course Announcements**
 
 **Due Dates**
 - A2 due tonight
 - CL4 due Wednesday
 - E1 is Friday (released 8AM; due Sat 8AM)
+    - No Office Hours Friday
+    - No Lecture on Friday
 
 **Q&A**
 
@@ -416,6 +422,10 @@ Generate a dictionary called `about_me` that meets the following criteria:
 
 
 # YOUR CODE HERE
+about_me = {'name':'Shannon', 
+            'favorite_game':'Coup', 
+            'height':65}
+about_me
 
 - A) I did it!
 - B) I think I did it.
@@ -426,7 +436,17 @@ Generate a dictionary called `about_me` that meets the following criteria:
 
 Store your name in the variable `my_name`. Then, encode your  name, such that each letter is first replaced by the unicode code point for that letter plus 500 and then turned back into a character using `chr`. Store the new output in `out_name`.
 
+chr(ord('S') + 500)
+
 # YOUR CODE HERE
+my_name = 'Shannon'
+out_name = ''
+
+for ltr in my_name:
+    out_name = out_name + chr(ord(ltr) + 500)
+#     print(out_name)
+
+out_name
 
 - A) I did it!
 - B) I think I did it.

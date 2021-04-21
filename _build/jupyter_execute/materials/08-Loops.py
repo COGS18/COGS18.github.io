@@ -438,6 +438,19 @@ print(counter)
 Write a loop that adds all the *odd* numbers between 1 and 1000 together.
 
 # YOUR CODE HERE
+# loop through values from 1 to 1000:
+output = 0
+
+for val in range(1,1000):
+    # if odd:
+    if val % 2 != 0:
+        # add value to variable
+        output = output + val
+
+print(output)
+
+# could also use range(1,1000,2) to 
+# skip every other value
 
 - A) I did it!
 - B) I think I did it.
@@ -450,7 +463,22 @@ Store your name as a string in a variable called `my_name`.
 
 Write a loop that will loop through all the letters in `my_name` and count all the vowels in your name.
 
+'A' in ['A', 'E', 'I', 'O', 'U']
+
 # YOUR CODE HERE
+my_name = 'Shannon'
+counter = 0 
+vowels = ['A', 'E', 'I', 'O', 'U', 
+          'a', 'e', 'i', 'o', 'u']
+
+# loop each letter through my_name:
+for letter in my_name:
+    # if letter is vowel:
+    if letter in vowels:
+        # increase counter by 1
+        counter = counter + 1
+
+print(counter)
 
 - A) I did it!
 - B) I think I did it.
