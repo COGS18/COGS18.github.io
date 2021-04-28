@@ -8,6 +8,7 @@ Due Dates:
         - this will give you the opportunity to fix mistakes
 
 Notes:
+- [Mid-course survey available](https://forms.gle/aZDw9EF2ALWQe8pM6) on Canvas (extra credit for completion by this Sat)
 - A2 grades & feedback released
 - E1 grading is underway
 
@@ -70,7 +71,7 @@ def double_value(num):
 
 # excecute a function by calling function by name
 # adding input within parentheses
-double_value(num=6) 
+double_value(num = 6) 
 
 # equivalent function call
 # without specifying parameter
@@ -108,6 +109,7 @@ def even_odd(value):
     return out
 
 # Execute our function
+# note that it's only printing the output
 even_odd(-1)
 
 With functions, the logic behind our code no longer requires it to be executed from top to bottom of the notebook.
@@ -162,11 +164,6 @@ Write a function `greet` that takes the parameter `name`. Inside the function, c
 - D) Super duper lost
 
 ## YOUR CODE HERE
-def greet(name):
-    output = 'Hello ' + name + '. Good morning!'
-    return output
-
-greet(name='Shannon')
 
 ## Function Namespace I
 
@@ -212,7 +209,7 @@ Names defined inside a function only exist within the function.
 # global variables are always available
 my_var = 'I am a variable'
 
-print(check_function_namespace(my_var))
+check_function_namespace(my_var)
 
 print(my_var)
 

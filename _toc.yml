@@ -23,10 +23,10 @@
     title: 09-Dictionaries
   - file: materials/10-FunctionsI
     title: 10-FunctionsI
-  # - file: materials/11-Algorithms
-  #   title: 11-Algorithms
-  # - file: materials/12-FunctionsII
-  #   title: 12-FunctionsII
+  - file: materials/11-Algorithms
+    title: 11-Algorithms
+  - file: materials/12-FunctionsII
+    title: 12-FunctionsII
   # - file: materials/13-Classes
   #   title: 13-Classes
   # - file: materials/14-CommandLine
@@ -68,8 +68,8 @@
     title: 08-Loops
   - file: materials_bardolph/09-Dictionaries
     title: 09-Dictionaries
-  # - file: materials_bardolph/10-FunctionsI
-  #   title: 10-FunctionsI
+  - file: materials_bardolph/10-FunctionsI
+    title: 10-FunctionsI
   # - file: materials_bardolph/11-Algorithms
   #   title: 11-Algorithms
   # - file: materials_bardolph/12-FunctionsII
