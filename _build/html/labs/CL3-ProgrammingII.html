@@ -196,6 +196,16 @@
    10-FunctionsI
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -221,6 +231,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="CL4-Loops.html">
    CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL5-Functions.html">
+   CL5-Functions
   </a>
  </li>
 </ul>
@@ -258,6 +273,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21_Practice.html">
    E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21.html">
+   E1_Sp21-Answers
   </a>
  </li>
 </ul>
@@ -596,7 +616,7 @@
 <li><p>If so, set the value <code class="docutils literal notranslate"><span class="pre">output</span></code> to True</p></li>
 </ul>
 </li>
-<li><p>Else, set output to False</p></li>
+<li><p>Else, set <code class="docutils literal notranslate"><span class="pre">output</span></code> to False</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -618,7 +638,14 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -917,6 +944,14 @@ Also YES!
 <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span>
 <span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

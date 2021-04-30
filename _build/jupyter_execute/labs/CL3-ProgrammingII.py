@@ -100,7 +100,7 @@ Use conditions to check whether `val_1` is a string or an integer object:
     - If so, set the value `output` to True
 - If it is an integer, compare whether it is less than 100
     - If so, set the value `output` to True
-- Else, set output to False
+- Else, set `output` to False
 
 ### BEGIN SOLUTION
 # Set a test value for `val_1`
@@ -116,6 +116,8 @@ else:
 # Check the output
 print(output)
 ### END SOLUTION
+
+assert isinstance(output, bool)
 
 ### Operator Explorations
 
@@ -260,6 +262,9 @@ Call them `my_list` and `my_tuple`.
 my_list = [1, 2, 3]
 my_tuple = ('a', 'b', 'c')
 ### END SOLUTION
+
+assert isinstance(my_list, list)
+assert isinstance(my_tuple, tuple)
 
 Use the following cells to check the types of the variables you write are as expected
 

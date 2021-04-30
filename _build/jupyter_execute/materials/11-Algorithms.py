@@ -8,7 +8,7 @@ Due Dates:
 - **CL5** due today (11:59 PM)
 - **[Mid-Course Survey](https://docs.google.com/forms/d/e/1FAIpQLScE182NPFjsKn78p2MqzsQtxxVgCyw8tPYKToDF4J_4YybmAw/viewform?usp=sf_link)** "due" Mon 5/3 (*optional*; link also on Canvas)
 - **A3** due 5/10 (Mon of Wk 7)
-    - whatever you submit it by 5/3 (next Mon; wk 6), we'll "grade" it & release feedback (*optional*)
+    - whatever you submit by 5/3 (next Mon; wk 6), we'll "grade" it & release feedback (*optional*)
 
 
 **Q&A**
@@ -50,7 +50,10 @@ Can you write an algorithm to make a ham and cheese sandwich.
 
 ## Algorithm for making a ham & cheese sandwich
 
-
+- take bread
+- put ham on bread
+- put cheese on ham
+- put bread on cheese
 
 Humans are pretty good at making sandwiches. Computers may struggle a bit.
 
@@ -91,7 +94,7 @@ def sort_array(array_to_sort):
     """A function to sort an array."""
 
     is_sorted = False    # Keeps track of when we are done sorting
-    sorted_array = []    # A new list that we will use to 
+    sorted_array = []    # A new list that we will use to store sorted values
      
     while not is_sorted:
 
@@ -110,6 +113,10 @@ def sort_array(array_to_sort):
             is_sorted = True
     
     return sorted_array
+
+test_list = [4, 3, 6]
+
+sort_array(test_list)
 
 ## Using `sort_array`
 

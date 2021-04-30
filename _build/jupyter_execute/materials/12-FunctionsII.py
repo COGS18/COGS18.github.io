@@ -1,7 +1,32 @@
+**Course Anouncements**
+
+**Due Dates**:
+- **[Mid-Course Survey](https://docs.google.com/forms/d/e/1FAIpQLScE182NPFjsKn78p2MqzsQtxxVgCyw8tPYKToDF4J_4YybmAw/viewform?usp=sf_link)** "due" Mon 5/3 (*optional*; link also on Canvas)
+- **A3** due 5/10 (Mon of Wk 7)
+    - whatever you submit by 5/3 (this Mon; wk 6), we'll "grade" it & release feedback (*optional*)
+
+**Notes**
+- **E1** scores havee been released
+    - check score on canvas; feedback on datahub; answer key on website
+    - *regrades* open until Monday at 9AM 
+        - Prof Ellis handles all regrades
+        - She will regrade your entire exam - score can go up, down, or stay the same
+- **E2** is Monday of wk 7 (just an FYI)
+
+**Q&A**
+
+Q: I'm still confused why `lowest = None` in our `sort_array`. Doesn't that mess up the loop?  
+A: Remember that `lowest = None` happens *before* the loop, so `lowest = None` the first time through the loop. Try stepping through that example with a short list going through each iteration in your head/on paper. Then, try to do it without the `lowest = None` in the code. If still uncertain, we can discuss in OH!
+
+Q: Since there are numbers associated with the letters and the emojis you said last time are the same as well, would that mean things like emojis can also be sorted that way?  
+A: Yup! Try this out: `ord('😃')`
+
+Q: In the sort_array loop, how is the variable lowest=None changed to lowest=item? I thought these were immutable.  
+A: Great question! They *are* immutable, which means *part* of the variable cannot be changed. However, you *can* overwrite what's stored in the variable by assigning a new value to the variable. That's what's happening here.
+
 # Functions II
 
 - more on user-defined functions
-    - docstrings
     - default values
 - methods
     - string, list, & dictionary
@@ -45,7 +70,7 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 Specify a default value in a function by doing an assignment within the function definition.
 
 # Create a function, that has a default values for a parameter
-def exponentiate(number, exponent = 2):  
+def exponentiate(number, exponent=2):  
     return number ** exponent
 
 # Use the function, using default value
@@ -56,7 +81,7 @@ exponentiate(3)
 exponentiate(2, 3)
 
 # you can always state this explicitly
-exponentiate(number = 2, exponent = 3)
+exponentiate(number=2, exponent=3)
 
 ## Positional vs. Keyword Arguments
 
@@ -68,19 +93,22 @@ Arguments to a function can be indicated by either position or keyword.
 exponentiate(2, 3)
 
 # Keyword arguments are explicitly named as to which argument each value relates to
-exponentiate(number = 2, exponent = 3)
+exponentiate(number=2, exponent=3)
 
-exponentiate(exponent = 3, number = 2)
+# discouraging flipping the order of parameters
+# even if python allows it
+# avoids confusion for the humans
+exponentiate(exponent=3, number=2)
 
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
 # this cell will produce an error
-exponentiate(number = 2, 3)
+exponentiate(number=2, 3)
 
 Reminder, setting a default value for parameters is allowed during function *definition*.
 
 (This may look like what we did above, but here we are including a default value for one parameter during function definition. During function *execution*, you can't mix and match using positional vs. keywords)
 
-def exponentiate(number, exponent = 2):    
+def exponentiate(number, exponent=2):    
     return number ** exponent
 
 #### Clicker Question #2
@@ -90,7 +118,11 @@ What will the following code snippet print?
 def exponentiate(number, exponent = 2):    
     return number ** exponent
 
-exponentiate(exponent = 3, number = 2)
+# avoid doing this
+exponentiate(exponent=3, number=2)
+
+# keep same order
+exponentiate(number=2, exponent=3)
 
 - A) 8
 - B) 9

@@ -236,6 +236,74 @@ def count_bool(list_of_bools):
 count_bool([True, None, False, 12])
 ### END SOLUTION
 
+### Function Challenge
+
+The World Health Organization has contacted Professor Ellis to ask for her help sorting between people that should be quarantined and people that shouldn’t. Unfortunately, she’s too busy grading assignments, exams, and coding labs. As such, your task is to help Professor Ellis accomplish this!
+
+Write a function called `to_quarantine`. This function should take two input parmeters: a dictionary(`input_dict`) and `quarantine`. The default value for `quarantine` should be `True`.
+
+Within this function, if `quarantine` is `True`, return all the keys from the input `quarantine_dict` whose values are `True` in a list. If `quarantine` is `False`, return all the keys from the input `quarantine_dict` whose values are `False` in a list.
+
+# you could use this dictionary to test your function
+test_dict = {'King Triton': True,
+             'Racoon One': True,
+             'Sun God': False,
+             'Racoon Two': False,
+             'Cole Slaw': False,
+             'Racoon Three': True,
+             'Dr. Py T. Hon': True
+            }
+
+### BEGIN SOLUTION
+
+# def to_quarantine(input_dict, quarantine=True):
+    
+#     do_quarantine = []
+#     dont_quarantine = []
+
+#     for person in input_dict:
+#         if input_dict[person]:
+#             do_quarantine.append(person)
+#         else:
+#             dont_quarantine.append(person)
+    
+#     if quarantine:
+#         output = do_quarantine
+#     else:
+#         output = dont_quarantine
+
+#     return output
+
+# OR 
+
+# def to_quarantine(input_dict, quarantine=True):
+#     out = []
+    
+#     if quarantine:
+#         for person in input_dict:
+#             if input_dict[person]:
+#                 out.append(person)
+#     else:
+#         for person in input_dict:
+#             if not input_dict[person]:
+#                 out.append(person)    
+
+#     return out
+
+# OR
+
+def to_quarantine(input_dict, quarantine=True):
+    new_list = []
+    for x in input_dict:
+        if input_dict[x] == quarantine:
+            new_list.append(x)
+
+    return new_list
+### END SOLUTION
+
+assert to_quarantine(input_dict={'A': True, 'B': False, 'C': True, 'D': False}) == ['A', 'C']
+assert to_quarantine({'A': True, 'B': False, 'C': True, 'D': False}, quarantine=False) == ['B', 'D']
+
 ## Part III: Debugging Questions
 
 ### Fixing Errors

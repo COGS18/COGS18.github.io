@@ -196,6 +196,16 @@
    10-FunctionsI
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -221,6 +231,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../labs/CL4-Loops.html">
    CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL5-Functions.html">
+   CL5-Functions
   </a>
  </li>
 </ul>
@@ -258,6 +273,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E1_Sp21_Practice.html">
    E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Sp21.html">
+   E1_Sp21-Answers
   </a>
  </li>
 </ul>
@@ -508,7 +528,7 @@
 <li><p><strong><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLScE182NPFjsKn78p2MqzsQtxxVgCyw8tPYKToDF4J_4YybmAw/viewform?usp=sf_link">Mid-Course Survey</a></strong> “due” Mon 5/3 (<em>optional</em>; link also on Canvas)</p></li>
 <li><p><strong>A3</strong> due 5/10 (Mon of Wk 7)</p>
 <ul>
-<li><p>whatever you submit it by 5/3 (next Mon; wk 6), we’ll “grade” it &amp; release feedback (<em>optional</em>)</p></li>
+<li><p>whatever you submit by 5/3 (next Mon; wk 6), we’ll “grade” it &amp; release feedback (<em>optional</em>)</p></li>
 </ul>
 </li>
 </ul>
@@ -544,6 +564,12 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </div>
 <div class="section" id="algorithm-for-making-a-ham-cheese-sandwich">
 <h2>Algorithm for making a ham &amp; cheese sandwich<a class="headerlink" href="#algorithm-for-making-a-ham-cheese-sandwich" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>take bread</p></li>
+<li><p>put ham on bread</p></li>
+<li><p>put cheese on ham</p></li>
+<li><p>put bread on cheese</p></li>
+</ul>
 <p>Humans are pretty good at making sandwiches. Computers may struggle a bit.</p>
 </div>
 <div class="section" id="algorithm-example-sorting">
@@ -590,7 +616,7 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
     <span class="sd">&quot;&quot;&quot;A function to sort an array.&quot;&quot;&quot;</span>
 
     <span class="n">is_sorted</span> <span class="o">=</span> <span class="kc">False</span>    <span class="c1"># Keeps track of when we are done sorting</span>
-    <span class="n">sorted_array</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># A new list that we will use to </span>
+    <span class="n">sorted_array</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># A new list that we will use to store sorted values</span>
      
     <span class="k">while</span> <span class="ow">not</span> <span class="n">is_sorted</span><span class="p">:</span>
 
@@ -613,6 +639,33 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sort_array</span><span class="p">(</span><span class="n">test_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+3
+6
+4
+6
+6
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3, 4, 6]
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="using-sort-array">
 <h2>Using <code class="docutils literal notranslate"><span class="pre">sort_array</span></code><a class="headerlink" href="#using-sort-array" title="Permalink to this headline">¶</a></h2>
@@ -622,6 +675,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <span class="n">unsorted_array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
 <span class="n">sorted_array</span> <span class="o">=</span> <span class="n">sort_array</span><span class="p">(</span><span class="n">unsorted_array</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[7, 12, 12, 19, 25]
 </pre></div>
 </div>
 </div>
@@ -635,6 +693,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2.3, 2.9, 21.3, 56.7, 99.9]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-3">
 <h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h3>
@@ -643,6 +706,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span> 
 <span class="n">sort_array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
 </pre></div>
 </div>
 </div>
@@ -663,6 +731,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -670,10 +743,20 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>97
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>98
 </pre></div>
 </div>
 </div>
@@ -685,6 +768,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
 <span class="n">sort_array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[False, True, True]
 </pre></div>
 </div>
 </div>
@@ -706,6 +794,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -713,10 +806,20 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0b1&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bin</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0b0&#39;
 </pre></div>
 </div>
 </div>
@@ -728,6 +831,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
 <span class="n">sort_array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1, 2], [1, 4]]
 </pre></div>
 </div>
 </div>
@@ -752,11 +860,21 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4, 6, 7]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># what about a list of strings?</span>
 <span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;asdf&#39;</span><span class="p">,</span><span class="s1">&#39;abcd&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;abcd&#39;, &#39;asdf&#39;]
 </pre></div>
 </div>
 </div>
@@ -767,6 +885,13 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+[False, True, True]
+[[1, 2], [1, 4]]
 </pre></div>
 </div>
 </div>

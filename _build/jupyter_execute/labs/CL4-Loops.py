@@ -21,7 +21,7 @@ Note: Sometimes, we accidentally make loops that never end.
 
 First, declare a variable called `counter` that has type int and value zero.
 
-Then write a while loop that runs 10 times and use 'counter' to track how many times the loop runs. 
+Then write a `while` loop that runs 10 times and use `counter` to track how many times the loop runs. 
 
 ### BEGIN SOLUTION
 counter = 0
@@ -46,7 +46,7 @@ counter = 0
 
 while True:
     
-    print("the value of 'counter' = {}".format(counter))
+    print("the value of 'counter' = " + str(counter))
     counter +=1
     
 ### BEGIN SOLUTION
@@ -63,7 +63,7 @@ counter = 0
 # edit condition
 while counter < 10:
     
-    print("the value of 'counter' = {}".format(counter))
+    print("the value of 'counter' = " + str(counter))
     counter +=1
 ### END SOLUTION
 

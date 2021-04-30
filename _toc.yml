@@ -70,10 +70,10 @@
     title: 09-Dictionaries
   - file: materials_bardolph/10-FunctionsI
     title: 10-FunctionsI
-  # - file: materials_bardolph/11-Algorithms
-  #   title: 11-Algorithms
-  # - file: materials_bardolph/12-FunctionsII
-  #   title: 12-FunctionsII
+  - file: materials_bardolph/11-Algorithms
+    title: 11-Algorithms
+  - file: materials_bardolph/12-FunctionsII
+    title: 12-FunctionsII
   # - file: materials_bardolph/13-Classes
   #   title: 13-Classes
   # - file: materials_bardolph/14-CommandLine
@@ -110,8 +110,8 @@
     title: CL3-ProgrammingII
   - file: labs/CL4-Loops
     title: CL4-Loops
-#   - file: labs/CL5-Functions
-#     title: CL5-Functions
+  - file: labs/CL5-Functions
+    title: CL5-Functions
 #   - file: labs/CL6-Classes
 #     title: CL6-Classes
 #   - file: labs/CL7-CommandLine
@@ -134,8 +134,8 @@
     title: E1-Review-Answers
   - file: materials/Exam-Prep/E1_Sp21_Practice
     title: E1-PracticeExam-Answers
-  # - file: materials/Exam-Prep/E1_Sp21
-#     title: E1_Wi21-Answers
+  - file: materials/Exam-Prep/E1_Sp21
+    title: E1_Sp21-Answers
 # # #   # E2
 #   - file: materials/Exam-Prep/E2-Practice
 #     title: E2-Practice
