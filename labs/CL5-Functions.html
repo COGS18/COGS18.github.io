@@ -39,6 +39,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Syntax" href="../materials/A1-Syntax.html" />
+    <link rel="prev" title="CL4: Loops" href="CL4-Loops.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -194,13 +196,23 @@
    10-FunctionsI
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
   Coding Labs
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="CL1-Tooling.html">
    CL1-Tooling
@@ -219,6 +231,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="CL4-Loops.html">
    CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   CL5-Functions
   </a>
  </li>
 </ul>
@@ -256,6 +273,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21_Practice.html">
    E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21.html">
+   E1_Sp21-Answers
   </a>
  </li>
 </ul>
@@ -445,6 +467,11 @@
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#function-challenge">
+     Function Challenge
+    </a>
    </li>
   </ul>
  </li>
@@ -775,6 +802,87 @@
 </div>
 </div>
 </div>
+<div class="section" id="function-challenge">
+<h3>Function Challenge<a class="headerlink" href="#function-challenge" title="Permalink to this headline">¶</a></h3>
+<p>The World Health Organization has contacted Professor Ellis to ask for her help sorting between people that should be quarantined and people that shouldn’t. Unfortunately, she’s too busy grading assignments, exams, and coding labs. As such, your task is to help Professor Ellis accomplish this!</p>
+<p>Write a function called <code class="docutils literal notranslate"><span class="pre">to_quarantine</span></code>. This function should take two input parmeters: a dictionary(<code class="docutils literal notranslate"><span class="pre">input_dict</span></code>) and <code class="docutils literal notranslate"><span class="pre">quarantine</span></code>. The default value for <code class="docutils literal notranslate"><span class="pre">quarantine</span></code> should be <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Within this function, if <code class="docutils literal notranslate"><span class="pre">quarantine</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, return all the keys from the input <code class="docutils literal notranslate"><span class="pre">quarantine_dict</span></code> whose values are <code class="docutils literal notranslate"><span class="pre">True</span></code> in a list. If <code class="docutils literal notranslate"><span class="pre">quarantine</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>, return all the keys from the input <code class="docutils literal notranslate"><span class="pre">quarantine_dict</span></code> whose values are <code class="docutils literal notranslate"><span class="pre">False</span></code> in a list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you could use this dictionary to test your function</span>
+<span class="n">test_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;King Triton&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+             <span class="s1">&#39;Racoon One&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+             <span class="s1">&#39;Sun God&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+             <span class="s1">&#39;Racoon Two&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+             <span class="s1">&#39;Cole Slaw&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+             <span class="s1">&#39;Racoon Three&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+             <span class="s1">&#39;Dr. Py T. Hon&#39;</span><span class="p">:</span> <span class="kc">True</span>
+            <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+
+<span class="c1"># def to_quarantine(input_dict, quarantine=True):</span>
+    
+<span class="c1">#     do_quarantine = []</span>
+<span class="c1">#     dont_quarantine = []</span>
+
+<span class="c1">#     for person in input_dict:</span>
+<span class="c1">#         if input_dict[person]:</span>
+<span class="c1">#             do_quarantine.append(person)</span>
+<span class="c1">#         else:</span>
+<span class="c1">#             dont_quarantine.append(person)</span>
+    
+<span class="c1">#     if quarantine:</span>
+<span class="c1">#         output = do_quarantine</span>
+<span class="c1">#     else:</span>
+<span class="c1">#         output = dont_quarantine</span>
+
+<span class="c1">#     return output</span>
+
+<span class="c1"># OR </span>
+
+<span class="c1"># def to_quarantine(input_dict, quarantine=True):</span>
+<span class="c1">#     out = []</span>
+    
+<span class="c1">#     if quarantine:</span>
+<span class="c1">#         for person in input_dict:</span>
+<span class="c1">#             if input_dict[person]:</span>
+<span class="c1">#                 out.append(person)</span>
+<span class="c1">#     else:</span>
+<span class="c1">#         for person in input_dict:</span>
+<span class="c1">#             if not input_dict[person]:</span>
+<span class="c1">#                 out.append(person)    </span>
+
+<span class="c1">#     return out</span>
+
+<span class="c1"># OR</span>
+
+<span class="k">def</span> <span class="nf">to_quarantine</span><span class="p">(</span><span class="n">input_dict</span><span class="p">,</span> <span class="n">quarantine</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">new_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">input_dict</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">input_dict</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">==</span> <span class="n">quarantine</span><span class="p">:</span>
+            <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">new_list</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">to_quarantine</span><span class="p">(</span><span class="n">input_dict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">})</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">to_quarantine</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span> <span class="n">quarantine</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="part-iii-debugging-questions">
 <h2>Part III: Debugging Questions<a class="headerlink" href="#part-iii-debugging-questions" title="Permalink to this headline">¶</a></h2>
@@ -942,6 +1050,8 @@ Go and explore <a href="https://github.com">GitHub</a>, and search for some Pyth
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="CL4-Loops.html" title="previous page">CL4: Loops</a>
+    <a class='right-next' id="next-link" href="../materials/A1-Syntax.html" title="next page">Python Syntax</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

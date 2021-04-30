@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="../materials/A1-Syntax.html" />
+    <link rel="next" title="CL5: Functions" href="CL5-Functions.html" />
     <link rel="prev" title="Coding Lab 3: Programming II" href="CL3-ProgrammingII.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -196,6 +196,16 @@
    10-FunctionsI
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -221,6 +231,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL5-Functions.html">
+   CL5-Functions
   </a>
  </li>
 </ul>
@@ -258,6 +273,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21_Practice.html">
    E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21.html">
+   E1_Sp21-Answers
   </a>
  </li>
 </ul>
@@ -424,7 +444,7 @@
 <div class="section" id="loops">
 <h3>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h3>
 <p>First, declare a variable called <code class="docutils literal notranslate"><span class="pre">counter</span></code> that has type int and value zero.</p>
-<p>Then write a while loop that runs 10 times and use ‘counter’ to track how many times the loop runs.</p>
+<p>Then write a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop that runs 10 times and use <code class="docutils literal notranslate"><span class="pre">counter</span></code> to track how many times the loop runs.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
@@ -457,7 +477,7 @@
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of &#39;counter&#39; = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of &#39;counter&#39; = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
     <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
     
 <span class="c1">### BEGIN SOLUTION</span>
@@ -491,7 +511,7 @@ the value of &#39;counter&#39; = 9
 <span class="c1"># edit condition</span>
 <span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of &#39;counter&#39; = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of &#39;counter&#39; = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
     <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
 <span class="c1">### END SOLUTION</span>
 </pre></div>
@@ -741,7 +761,7 @@ Yay.
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="CL3-ProgrammingII.html" title="previous page">Coding Lab 3: Programming II</a>
-    <a class='right-next' id="next-link" href="../materials/A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="CL5-Functions.html" title="next page">CL5: Functions</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
