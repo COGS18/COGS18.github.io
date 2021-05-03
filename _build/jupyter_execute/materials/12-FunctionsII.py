@@ -5,7 +5,7 @@
 - **A3** due 5/10 (Mon of Wk 7)
     - whatever you submit by 5/3 (this Mon; wk 6), we'll "grade" it & release feedback (*optional*)
 
-**Notes**
+**Notes**:
 - **E1** scores havee been released
     - check score on canvas; feedback on datahub; answer key on website
     - *regrades* open until Monday at 9AM 
@@ -180,7 +180,7 @@ my_int.is_integer()
 There are a whole bunch of string methods, all described [here](https://www.w3schools.com/python/python_ref_string.asp). We'll review a few of the most commonly used here.
 
 # Make a string all lower case
-'aBc'.lower()
+'aBcDE'.lower()
 
 # Make a string all upper case
 'aBc'.upper()
@@ -212,6 +212,8 @@ output.capitalize()
 ## List Methods
 
 There are also a bunch of list methods, all described [here](https://www.w3schools.com/python/python_ref_list.asp). You've seen some of these before, but we'll review a few of the most commonly used here.
+
+?list.sort
 
 # sort sorts integers in numerical orders
 ints = [16, 88, 33, 40]
@@ -353,7 +355,7 @@ Typing the object/variable name you want to find methods for followed by a '.' a
 my_string = 'Python'
 
 # See all the available methods on an object with tab complete
-my_string.
+my_string. 
 
 Using the function `dir()` returns all methods available
 
@@ -365,7 +367,7 @@ dir(my_string)
 Note that:
 
 ```python
-my_variable.function_call()
+my_variable.method_call()
 ```
 
 acts like:
