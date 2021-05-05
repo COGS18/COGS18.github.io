@@ -74,8 +74,8 @@
     title: 11-Algorithms
   - file: materials_bardolph/12-FunctionsII
     title: 12-FunctionsII
-  # - file: materials_bardolph/13-Classes
-  #   title: 13-Classes
+  - file: materials_bardolph/13-Classes
+    title: 13-Classes
   # - file: materials_bardolph/14-CommandLine
   #   title: 14-CommandLine
   # - file: materials_bardolph/15-Modules

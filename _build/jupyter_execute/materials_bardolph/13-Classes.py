@@ -1,30 +1,21 @@
-![Study Abroad](img/study_abroad.png)
-
 **Course Announcements**
 
 **Due Dates**:
-- **[Mid-Course Survey](https://docs.google.com/forms/d/e/1FAIpQLScE182NPFjsKn78p2MqzsQtxxVgCyw8tPYKToDF4J_4YybmAw/viewform?usp=sf_link)** "due" tonight 5/3 (*optional*; link also on Canvas)
+
 - **CL6** due Wednesday (11:59 PM)
 - **A3** due 5/10 (next Mon)
     - whatever you submit by tonight, we'll "grade" it & release feedback (*optional*)
     
 **Notes**:
-- **A4** now available
+- **A4** will be posted by the end of the day today
 - **E2** is next Monday
 
-**Q&A**
-
-Q: the following question is more for curiosity : if we use the method `.remove()`, can it only remove one element in a list, or can we specify more than element?  
-A: Good question - it will only remove the first occurrence in a list, by definition. It does *not* have an additional parameter to specify how many to remove.
-
-Q: I was confused about the dictionary methods that are aren't in place.  
-A: Think of these like typical functions/variables we've specified previously. In order to store the results, they have to be assigned (`=`) back to a variable. Those that operate in place (do NOT need to be assigned back to the variable) are the new and different thing!
 
 Q: I find it hard to work with dictionary since there are two variables.  
 A: This is normal. Being very clear to yourself about what the key is, what each value is and knowing how to index using a key to get a value can be really helpful as you work through dictionary problems!
 
 Q: How many days do we have to request regrade once our grade is released?  
-A: Three days/72 hours from release of grades
+A: Three days (72 hours) from release of grades
 
 Q: What’s the difference between `append` and `+=`?   <br> 
 A: `append` is a list method that operates in place. It will only work on lists and it will add the element specified to the list directly (in place). `+=`, on the other hand is the equivalent of adding (`+`) or concatenating (`+`) whatever is on the right hand side to the variable on the left. For example `x += y` is short hand for: `x = x + y`.
@@ -32,11 +23,6 @@ A: `append` is a list method that operates in place. It will only work on lists 
 Q: Why would anyone use a function over a method if they're very very similar?  
 A: Functions are generalizable; they can operate on multiple types of input (think of `type()` or `len()` for example). Methods, however, are more organized and keep related methods attached to the object they operate on. So, it depends on the task your accomplishing as to which is best to use.
 
-Q: Would you be able to either have a whole lecture dedicated to going over loops with more complex examples? Or maybe just add a 30 minute or so video to the media gallery on canvas about it?  
-A: I've added this to my to do list! Will work on a video explaining to add to Canvas today.
-
-Q: In float.is_integer(my_float), the first float in green is a function?  
-A: Nope the `float` here specifies the *type* of object `is_integer()` method is attached/belongs to.
 
 # Classes
 
@@ -68,7 +54,7 @@ Given what we've discussed in this course so far, if you wanted to store informa
 date_string = '29/09/1988'
 print(date_string)
 
-# A date, stored as a list of numbers
+# A date, stored as a list of number
 date_list = ['29', '09', '1988']
 date_list
 
@@ -146,7 +132,7 @@ print(my_date, my_date2)
 # calculate the difference between times
 time_diff = my_date - my_date2
 print(time_diff.days,  "days") #in days
-print(time_diff.days/365, "years") #in years
+print(time_diff.days/365,"years") #in years
 
 ### Listing Attributes & Methods : `dir`
 
@@ -331,16 +317,6 @@ This creates four different `Dog` type objects and stores them in a list. But, u
 <div class="alert alert-success">
 Instance attributes are attributes that we can make be different for each instance of a class. <code>__init__</code> is a special method used to define instance attributes. 
 </div>
-
-**Course Announcements**
-
-- **CL6** due tonight (11:59 PM)
-- **A3** due 5/10 (next Mon)
-    - A3 feedback available for those who submitted
-- **E2** is next Monday (due Tues 8AM)
-    - No Lecture Monday
-    - No OH Monday
-        - Prof Ellis will hold additional OH *this* Thurs (tomorrow) 1-3 PM; will use my normal Zoom OH link
 
 ## Example Class: Dog Revisited
 
@@ -531,8 +507,6 @@ class ProfCourses():
 ellis_courses = ProfCourses('Ellis')
 
 # add a bunch of classes
-ellis_courses.add_class('COGS18', 'wi21', 100)
-ellis_courses.add_class('COGS108', 'wi21', 300)
 ellis_courses.add_class('COGS18', 'fa20', 363)
 ellis_courses.add_class('COGS108', 'fa20', 447)
 ellis_courses.add_class('COGS18', 'su20', 88)
@@ -593,8 +567,6 @@ class ProfCourses():
 ellis_courses = ProfCourses('Ellis')
 
 # add a bunch of classes
-ellis_courses.add_class('COGS18', 'wi21', 100)
-ellis_courses.add_class('COGS108', 'wi21', 300)
 ellis_courses.add_class('COGS18', 'fa20', 363, 2, 5)
 ellis_courses.add_class('COGS108', 'fa20', 447, 0, 6)
 ellis_courses.add_class('COGS18', 'su20', 88, 3, 5)
