@@ -362,7 +362,7 @@ class Dog():
 
 # Initialize a dog
 # what goes in the parentheses is defined in the __init__
-gary = Dog(name = 'Gary') 
+gary = Dog(name='Gary') 
 
 # Check gary's attributes
 print(gary.sound)    # This is an class attribute
@@ -380,13 +380,16 @@ class NewDog():
     
     sound = 'Woof'
     
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
-    
+        self.breed = breed
+            
     def speak(self, n_times=2):
         return self.sound * n_times
 
 ## We'll execute here
+lexi = NewDog(name='Lexi', breed='Italian Greyhound')
+lexi.breed
 
 - A) I did it!
 - B) I think I did it!
@@ -459,6 +462,7 @@ class ProfCourses():
 
 ellis_courses = ProfCourses('Ellis')
 print(ellis_courses.n_classes)
+print(ellis_courses.classes)
 print(ellis_courses.prof)
 
 **`add_class()` method**
@@ -593,8 +597,8 @@ class ProfCourses():
 ellis_courses = ProfCourses('Ellis')
 
 # add a bunch of classes
-ellis_courses.add_class('COGS18', 'wi21', 100)
-ellis_courses.add_class('COGS108', 'wi21', 300)
+ellis_courses.add_class('COGS18', 'wi21', 100, 2.5, 5)
+ellis_courses.add_class('COGS108', 'wi21', 300, 0, 4)
 ellis_courses.add_class('COGS18', 'fa20', 363, 2, 5)
 ellis_courses.add_class('COGS108', 'fa20', 447, 0, 6)
 ellis_courses.add_class('COGS18', 'su20', 88, 3, 5)

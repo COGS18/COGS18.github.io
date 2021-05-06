@@ -136,11 +136,11 @@
     title: E1-PracticeExam-Answers
   - file: materials/Exam-Prep/E1_Sp21
     title: E1_Sp21-Answers
-# # #   # E2
-#   - file: materials/Exam-Prep/E2-Practice
-#     title: E2-Practice
-#   - file: materials/Exam-Prep/E2-Review
-#     title: E2-Review
+  # E2
+  - file: materials/Exam-Prep/E2-Practice
+    title: E2-Practice
+  - file: materials/Exam-Prep/E2-Review
+    title: E2-Review
 #   - file: materials/Exam-Prep/E2-Review-Answers
 #     title: E2-Review-Answers
 #   - file: materials/Exam-Prep/E2_Wi21_Practice_Answers 

@@ -290,6 +290,16 @@
    E1_Sp21-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -1287,7 +1297,7 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a dog</span>
 <span class="c1"># what goes in the parentheses is defined in the __init__</span>
-<span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Gary&#39;</span><span class="p">)</span> 
+<span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Gary&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -1300,11 +1310,22 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Woof
+Gary
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check gary&#39;s methods</span>
 <span class="n">gary</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoof&#39;
 </pre></div>
 </div>
 </div>
@@ -1319,9 +1340,10 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
     
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">breed</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-    
+        <span class="bp">self</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="n">breed</span>
+            
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
 </pre></div>
@@ -1331,6 +1353,13 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## We&#39;ll execute here</span>
+<span class="n">lexi</span> <span class="o">=</span> <span class="n">NewDog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Lexi&#39;</span><span class="p">,</span> <span class="n">breed</span><span class="o">=</span><span class="s1">&#39;Italian Greyhound&#39;</span><span class="p">)</span>
+<span class="n">lexi</span><span class="o">.</span><span class="n">breed</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Italian Greyhound&#39;
 </pre></div>
 </div>
 </div>
@@ -1380,6 +1409,18 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jaspurr  says:
+MeowMeow
+Barkley  says:
+WoofWoof
+Picatso  says:
+MeowMeow
+Ruffius  says:
+WoofWoof
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-8">
 <h3>Clicker Question #8<a class="headerlink" href="#clicker-question-8" title="Permalink to this headline">¶</a></h3>
@@ -1406,6 +1447,11 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="s1">&#39;Rob&#39;</span><span class="p">,</span> <span class="s1">&#39;rob@python.com&#39;</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
 <span class="n">student</span><span class="o">.</span><span class="n">check_score</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;rob@python.com&#39;
 </pre></div>
 </div>
 </div>
@@ -1440,7 +1486,15 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_classes</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">classes</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">prof</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+[]
+Ellis
 </pre></div>
 </div>
 </div>
@@ -1480,6 +1534,14 @@ Instance attributes are attributes that we can make be different for each instan
 <span class="c1"># see output</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_classes</span><span class="p">)</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">classes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363}]
 </pre></div>
 </div>
 </div>
@@ -1544,6 +1606,20 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;wi21&#39;, &#39;n_students&#39;: 100},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;wi21&#39;, &#39;n_students&#39;: 300},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 447},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp20&#39;, &#39;n_students&#39;: 469},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1553,11 +1629,21 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest students</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88}
 </pre></div>
 </div>
 </div>
@@ -1611,8 +1697,8 @@ Instance attributes are attributes that we can make be different for each instan
 <span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
 
 <span class="c1"># add a bunch of classes</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;wi21&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;wi21&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;wi21&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;wi21&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">447</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;su20&#39;</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -1625,6 +1711,11 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1633,11 +1724,29 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;su20&#39;,
+ &#39;n_students&#39;: 88,
+ &#39;n_exams&#39;: 3,
+ &#39;n_assignments&#39;: 5}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest assignments</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_assignments&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;fa19&#39;,
+ &#39;n_students&#39;: 301,
+ &#39;n_exams&#39;: 2,
+ &#39;n_assignments&#39;: 4}
 </pre></div>
 </div>
 </div>
@@ -1700,6 +1809,15 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+True
+True
+True
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="functions-are-objects">
@@ -1711,6 +1829,12 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1719,6 +1843,11 @@ Instance attributes are attributes that we can make be different for each instan
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;yay Python!&#39;</span><span class="p">)</span>
     
 <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_function</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1736,6 +1865,12 @@ Instance attributes are attributes that we can make be different for each instan
 
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">MyClass</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">my_instance</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
 </pre></div>
 </div>
 </div>
