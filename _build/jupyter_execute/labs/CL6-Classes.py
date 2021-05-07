@@ -114,12 +114,7 @@ class TritonCourse():
     university = "UC San Diego"
     
     def __init__(self, department, code, title):
-        """
-        department: string
-        code: int
-        title: string
-        """
-    
+
         self.department = department
         self.code = code
         self.title = title
@@ -169,11 +164,6 @@ class TritonCourse():
     university = "UC San Diego"
     
     def __init__(self, department, code, title):
-        """
-        department: string
-        code: int
-        title: string
-        """
     
         self.department = department
         self.code = code
@@ -196,3 +186,70 @@ cogs18.print_info()
     - Create at least one methods that takes in an argument (doesn't just use class & instance attributes)
     - Create at least one method that has a conditional in it, one with a loop, and one with a try/except
 
+### BEGIN SOLUTION
+# specifics will differ between students
+print("\nTritonCourse Example:")
+class TritonCourse():
+    
+    university = "UC San Diego"
+    location = "La Jolla"
+    
+    def __init__(self, department, code, title, quarter, enrollment):
+    
+        self.department = department
+        self.code = code
+        self.title = title
+        self.quarter = quarter
+        self.enrollment = enrollment
+    
+    def print_info(self):
+        print(self.department + str(self.code) + ": " + self.title)
+    
+    def determine_large(self):
+        if (self.enrollment) > 100:
+            output = "large enrollment"
+        else:
+            output = "typical enrollment"
+        return output
+
+# test it out 
+my_course = TritonCourse("Cognitive Science", "COGS 18", 
+                        "Introduction to Python",
+                        "Sp22", 330)
+print(my_course.enrollment)
+print(my_course.determine_large())
+
+print("\nOffice Hours Example:")
+# trying out another class
+class OfficeHours():
+    
+    university = 'UC San Diego'
+    
+    def __init__(self):
+        self.n_students = 0
+        self.who_arrived = []
+    
+    def add_student(self, first_name):
+        try:
+            assert type(first_name) == str
+            self.n_students += 1
+            self.who_arrived.append(first_name)
+        except:
+            print("please provide a first name as a string to the method call")
+   
+    def busy_OH(self):
+        if self.n_students > 10:
+            output = 'busy OH'
+        else:
+            output = 'typical OH'
+        return output
+
+
+may6 = OfficeHours()
+may6.add_student(4) # this one will trigger the exception
+may6.add_student("Shannon")
+may6.add_student("Josh")
+print(may6.n_students)
+print(may6.who_arrived)
+print(may6.busy_OH())
+### END SOLUTION
