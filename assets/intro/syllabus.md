@@ -174,13 +174,13 @@ The final exam will be taken on the same platform and with the same time constra
 | 5/5     | 6	   | 13     | W   | Classes II [**] |               		        | CL6: Classes             	| 
 | 5/7     | 6	   | --     | F   | Review          |                           |        			              | 
 | 5/10    | 7	   | --     | M   | **Midterm II**  | A3: Chatbots              |                         	| 
-| 5/12    | 7	   | --     | W   | Command Line    |      				              | CL7: Command Line         | 
+| 5/12    | 7	   | --     | W   | Command Line    |      				              |          | 
 | 5/14    | 7	   | --     | F   | Python Party    |                           |                         	| 
 | 5/17    | 8	   | 14     | M   | Modules & Scripts|A4: Artifical Agents     	|                         	| 
-| 5/19    | 8	   | 15     | W   | Scientific Computing|     			            | CL8: Scientific Computing	| 
+| 5/19    | 8	   | 15     | W   | Scientific Computing|     			            | (edited: 5/7) CL7: Command Line 	| 
 | 5/21    | 8	   | 16     | F   | Code Testing    |                           |                         	| 
 | 5/24    | 9	   | 17     | M   | Code Style   		| 			                   	|                         	| 
-| 5/26    | 9	   | 18     | W   | Documentation  	| 				                  |                           | 
+| 5/26    | 9	   | 18     | W   | Documentation  	| 				                  | (edited: 5/7) CL8: Scientific Computing                          | 
 | 5/28    | 9	   | 19     | F   | Code Projects 	|                           |                           | 
 | 5/21    | 10   | 20     | M   | **No Class**    | A5: Experimentation    	  |    	                			| 
 | 6/2     | 10   | 21     | W   | Advanced Python | 				                  |                         	| 
