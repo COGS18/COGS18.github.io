@@ -1,47 +1,7 @@
-**Course Announcements**
-
-- **A3** due Mon (5/10)
-- **E2** is Monday (due Tues 8AM)
-    - No Lecture Monday
-    - No OH Monday
-- **A4** due the following Mon (5/17) 
-- **CL7** released today but not due until the following Wed (5/19)
+# Exam 2 Review (Answers)
 
 
-# Exam 2 Review
-
-## Exam II Plan (12.5 points)
-
-Honor Code (0.1 points)
-
-Part I: **Methods & Debugging** (3.5 points) 
-- Q1: Method I (0.75 points)*
-- Q2: Method II (1.25 point)*
-- Q3: Debugging (1.5 points)*
-
-Part II: **Functions** (4.4 points)  
-- Q4: Function Execution (1 point)
-- Q5: Function I (1.65 points)*
-- Q6: Function II (1.75 points)*
-
-Part III: **Objects & Classes** (4.5 points)
-- Q7: Classes I (2.25 point)*
-- Q8: Classes II (2.25 points)*
-
-\* : includes manual grading (partial credit)
-
-### Reminder: 
-
-There are two extra notebooks that you can use for review:
-
-1. [A1-Syntax](https://cogs18.github.io/materials/A1-Syntax.html)
-2. [A2-Examples](https://cogs18.github.io/materials/A2-Examples.html)
-
-There are also a few Exam #2 Practice Problems [here](https://cogs18.github.io/materials/Exam-Prep/E2-Practice.html) and a practice exam on datahub.
-
-### Questions?
-
-## Functions
+### Functions
 
 - `def`
     - `return`
@@ -76,7 +36,23 @@ def sum_list(my_list):
 
 ## CODE TO TEST HERE
 
-## Objects & Classes
+#### Functions Answers
+
+## Functions Quesiton #1
+
+def remainder(num1, num2):  # set default values within parenthesis
+    out = num1 % num2
+    return out
+
+## Functions Question #2
+
+my_remainder = remainder(10, 4)
+my_remainder
+
+## Functions Question #3
+sum_list([1, 2, 3])
+
+### Objects & Classes
 
 - objects & `class`
     - attributes
@@ -121,7 +97,34 @@ Fill in the blanks:
 	In Python, everything is a(n) ______________. 
 
 
-## Python & Jupyter Extras
+#### Objects & Classes Answers
+
+Question #1A: 
+
+class Rocket():
+    
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+        
+    def move_up(self):
+        self.y += 1
+
+Question #1B:
+
+my_rocket = Rocket()
+
+Question #1C:
+
+my_rocket.move_up()
+my_rocket.move_up()
+my_rocket.y
+
+Question #2: 
+- method
+- object
+
+### Python & Jupyter Extras
 - encodings (`chr` & `ord`)
 - whitespace
 - namespace
@@ -150,7 +153,32 @@ For each of the following, indicate if the statement is True or False about Pyth
 - True/False Every Python variable is available from every namespace		
 - True/False `ls` is a shell command that creates a new file 		
 - True/False `cd` returns your current working directory		
+- True/False Everything in Python is an object
 - True/False `print_name()` folles best practices for function naming
+
+#### Extras Answers
+
+# Extras Question #1
+print(chr(ord('A')))
+
+Extras Question #2
+
+returning information about what objects are stored in your namespace (i.e. variables, functions, classes, etc.)
+
+%whos
+
+Extras Question #3
+
+For each of the following, indicate if the statement is True or False about Python and programming:
+
+- **True**/False Whitespace matters in Python
+- True/**False** Comments in Python start with '%' 					
+- True/**False** You have to specify a data type when you define a variable
+- True/**False** Every Python variable is available from every namespace		
+- True/**False** `ls` is a shell command that creates a new file 		
+- True/**False** `cd` returns your current working directory		
+- **True**/False Everything in Python is an object
+- **True**/False `print_name()` follows best practices for function naming
 
 <h2><center>After the second exam:</center></h2>
 
