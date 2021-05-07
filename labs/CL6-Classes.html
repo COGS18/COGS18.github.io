@@ -39,6 +39,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Syntax" href="../materials/A1-Syntax.html" />
+    <link rel="prev" title="CL5: Functions" href="CL5-Functions.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -220,7 +222,7 @@
   Coding Labs
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="CL1-Tooling.html">
    CL1-Tooling
@@ -244,6 +246,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="CL5-Functions.html">
    CL5-Functions
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   CL6-Classes
   </a>
  </li>
 </ul>
@@ -617,12 +624,7 @@
     <span class="n">university</span> <span class="o">=</span> <span class="s2">&quot;UC San Diego&quot;</span>
     
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        department: string</span>
-<span class="sd">        code: int</span>
-<span class="sd">        title: string</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-    
+
         <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">=</span> <span class="n">department</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
@@ -697,11 +699,6 @@
     <span class="n">university</span> <span class="o">=</span> <span class="s2">&quot;UC San Diego&quot;</span>
     
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        department: string</span>
-<span class="sd">        code: int</span>
-<span class="sd">        title: string</span>
-<span class="sd">        &quot;&quot;&quot;</span>
     
         <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">=</span> <span class="n">department</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
@@ -742,6 +739,92 @@
 </ul>
 </li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># specifics will differ between students</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">TritonCourse Example:&quot;</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">TritonCourse</span><span class="p">():</span>
+    
+    <span class="n">university</span> <span class="o">=</span> <span class="s2">&quot;UC San Diego&quot;</span>
+    <span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;La Jolla&quot;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">quarter</span><span class="p">,</span> <span class="n">enrollment</span><span class="p">):</span>
+    
+        <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">=</span> <span class="n">department</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">quarter</span> <span class="o">=</span> <span class="n">quarter</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">enrollment</span> <span class="o">=</span> <span class="n">enrollment</span>
+    
+    <span class="k">def</span> <span class="nf">print_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">determine_large</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">enrollment</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;large enrollment&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;typical enrollment&quot;</span>
+        <span class="k">return</span> <span class="n">output</span>
+
+<span class="c1"># test it out </span>
+<span class="n">my_course</span> <span class="o">=</span> <span class="n">TritonCourse</span><span class="p">(</span><span class="s2">&quot;Cognitive Science&quot;</span><span class="p">,</span> <span class="s2">&quot;COGS 18&quot;</span><span class="p">,</span> 
+                        <span class="s2">&quot;Introduction to Python&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;Sp22&quot;</span><span class="p">,</span> <span class="mi">330</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_course</span><span class="o">.</span><span class="n">enrollment</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_course</span><span class="o">.</span><span class="n">determine_large</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Office Hours Example:&quot;</span><span class="p">)</span>
+<span class="c1"># trying out another class</span>
+<span class="k">class</span> <span class="nc">OfficeHours</span><span class="p">():</span>
+    
+    <span class="n">university</span> <span class="o">=</span> <span class="s1">&#39;UC San Diego&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_students</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">who_arrived</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">def</span> <span class="nf">add_student</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first_name</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">first_name</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">n_students</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">who_arrived</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">first_name</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;please provide a first name as a string to the method call&quot;</span><span class="p">)</span>
+   
+    <span class="k">def</span> <span class="nf">busy_OH</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_students</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;busy OH&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;typical OH&#39;</span>
+        <span class="k">return</span> <span class="n">output</span>
+
+
+<span class="n">may6</span> <span class="o">=</span> <span class="n">OfficeHours</span><span class="p">()</span>
+<span class="n">may6</span><span class="o">.</span><span class="n">add_student</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># this one will trigger the exception</span>
+<span class="n">may6</span><span class="o">.</span><span class="n">add_student</span><span class="p">(</span><span class="s2">&quot;Shannon&quot;</span><span class="p">)</span>
+<span class="n">may6</span><span class="o">.</span><span class="n">add_student</span><span class="p">(</span><span class="s2">&quot;Josh&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">may6</span><span class="o">.</span><span class="n">n_students</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">may6</span><span class="o">.</span><span class="n">who_arrived</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">may6</span><span class="o">.</span><span class="n">busy_OH</span><span class="p">())</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TritonCourse Example:
+330
+large enrollment
+
+Office Hours Example:
+please provide a first name as a string to the method call
+2
+[&#39;Shannon&#39;, &#39;Josh&#39;]
+typical OH
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -773,6 +856,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="CL5-Functions.html" title="previous page">CL5: Functions</a>
+    <a class='right-next' id="next-link" href="../materials/A1-Syntax.html" title="next page">Python Syntax</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
