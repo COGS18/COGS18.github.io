@@ -43,12 +43,12 @@ textbook:
 	rm -rf labs/source
 
 	# Copy & build project info
-	# git clone --depth 1 https://github.com/COGS18/projects projects
-	# rm projects/README.md
+	git clone --depth 1 https://github.com/COGS18/projects projects
+	rm projects/README.md
 
 	jupyter-book build ./
 	# get project template 
-	# cp projects/ProjectTemplate.zip _build/html/assets/intro/projects/
+	cp projects/ProjectTemplate.zip _build/html/assets/intro/projects/
 	
 	# copy first day of slides to _build
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/

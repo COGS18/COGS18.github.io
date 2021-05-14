@@ -31,8 +31,8 @@
     title: 13-Classes
   - file: materials/14-CommandLine
     title: 14-CommandLine
-  # - file: materials/15-Modules
-  #   title: 15-Modules
+  - file: materials/15-Modules
+    title: 15-Modules
   # - file: materials/16-ScientificComputing
   #   title: 16-ScientificComputing
   # - file: materials/17-CodeTesting
@@ -76,10 +76,10 @@
     title: 12-FunctionsII
   - file: materials_bardolph/13-Classes
     title: 13-Classes
-  # - file: materials_bardolph/14-CommandLine
-  #   title: 14-CommandLine
-  # - file: materials_bardolph/15-Modules
-  #   title: 15-Modules
+  - file: materials_bardolph/14-CommandLine
+    title: 14-CommandLine
+  - file: materials_bardolph/15-Modules
+    title: 15-Modules
   # - file: materials_bardolph/16-ScientificComputing
   #   title: 16-ScientificComputing
   # - file: materials_bardolph/17-CodeTesting
@@ -151,16 +151,16 @@
 #   - file: materials/Exam-Prep/Practice_Final_Wi21-Answers
 #     title: Practice_Final-Answers
 
-# - part: Project
-#   chapters:
-#   - file: materials/PythonParty
-#     title: Python Party
-#   - file: projects/overview
-#     title: Project Overview
-#   - file: projects/ProjectIdeas
-#     title: Project Ideas
-#   - file: projects/faq
-#     title: Project FAQ
+- part: Project
+  chapters:
+  - file: materials/PythonParty
+    title: Python Party
+  - file: projects/overview
+    title: Project Overview
+  - file: projects/ProjectIdeas
+    title: Project Ideas
+  - file: projects/faq
+    title: Project FAQ
 
 
 
