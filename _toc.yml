@@ -33,8 +33,8 @@
     title: 14-CommandLine
   - file: materials/15-Modules
     title: 15-Modules
-  # - file: materials/16-ScientificComputing
-  #   title: 16-ScientificComputing
+  - file: materials/16-ScientificComputing
+    title: 16-ScientificComputing
   # - file: materials/17-CodeTesting
   #   title: 17-CodeTesting
   # - file: materials/18-CodeStyle  
@@ -80,8 +80,8 @@
     title: 14-CommandLine
   - file: materials_bardolph/15-Modules
     title: 15-Modules
-  # - file: materials_bardolph/16-ScientificComputing
-  #   title: 16-ScientificComputing
+  - file: materials_bardolph/16-ScientificComputing
+    title: 16-ScientificComputing
   # - file: materials_bardolph/17-CodeTesting
   #   title: 17-CodeTesting
   # - file: materials_bardolph/18-CodeStyle  
