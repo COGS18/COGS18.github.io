@@ -1,3 +1,15 @@
+**Course Announcements**
+
+- **A4** due tonight
+- **CL7** due Wednesday
+
+**Notes**
+- Prof Ellis' OH (on [Canvas](https://canvas.ucsd.edu/courses/27184/pages/additional-office-hours?module_item_id=902808)): 
+    - Mon: 10-11 AM; 2-3 PM
+    - Wed: 10-11 AM
+    - Fri: 2-3 PM
+- Have the option to attend lecture live at 8AM or 11AM (same zoom link)
+
 # Modules & Scripts
 
 - namespaces & scope
@@ -128,6 +140,8 @@ collections.
 # this is how you would do it
 cols.
 
+punc
+
 # putting it all together
 # Import a specific thing and give it a specific name
 from string import punctuation as punc
@@ -149,7 +163,7 @@ Which of the following is NOT a valid Python import statement?
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
 
 ## Importing Custom Code I
 
@@ -249,6 +263,10 @@ It's Python legal but bad for your nerves.
 If you see `from module import *` this means to import everything (read as 'from module import everything'). 
 
 This is generally considered not to be the best, as it is then unclear in your code exactly where the functionality came from.
+
+# avoid doing this
+from random import *
+choice([2,3,4])
 
 # a valid way to import
 from random import choice

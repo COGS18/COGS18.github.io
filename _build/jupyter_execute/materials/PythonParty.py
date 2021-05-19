@@ -2,7 +2,19 @@
 
 **Due Dates**
 - **A4** due Monday
-- **CL7** due *next* Wednesday
+- **CL7** due Wednesday
+
+**Notes**
+- Starting next week:
+    - Lecture at 8 or 11
+    - More Coding Lab times (note: there will be 2 different zoom links)
+    - More OH options
+        - Prof Ellis' OH change: 
+            - Mon: 10-11 AM; 2-3 PM
+            - Wed: 10-11 AM
+            - Fri: 2-3 PM
+    - all zoom links will be (but are not yet) on Canvas
+
 
 **Q&A**
 
@@ -33,7 +45,7 @@ Project Template: https://cogs18.github.io/assets/intro/projects/ProjectTemplate
 Choose ONE:
 - **Complete the final project**
     - we're discussing the details today
-    - submitted on Canvas by 11:59 PM on day of the final
+    - submitted on Canvas or datahub by 11:59 PM on day of the final
     - opportunity to learn the most! 
     - takes a lot more time  
     - opportunity for extra credit 
@@ -53,7 +65,7 @@ Submit one, *NOT* both (I have lots of grading at the end of the quarter!). If y
 - must implement some new thing (_not_ grading on complexity)
 - completed individually
 - uses good code practices
-- What you will turn in: zip file with your project
+- What you will turn in: zip file with your project on Canvas or submit on datahub
     - \>= 1 Jupyter notebook (minimally includes project description)
         - ideally: demonstrates how your project runs (likely only a few lines of code)
     - \>= 1 module _or_ script
@@ -64,7 +76,7 @@ Submit one, *NOT* both (I have lots of grading at the end of the quarter!). If y
 - Encryption (A2)
 - Chatbots (A3)
 - Artificial Agents (A4)
-- A Data Analysis
+- A Data Analysis (A5)
 - Choose your own adventure (propose and develop your own project idea)
 
 ### Taboo (Off-limit) topics $^*$

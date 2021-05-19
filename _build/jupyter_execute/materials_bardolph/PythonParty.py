@@ -2,7 +2,19 @@
 
 **Due Dates**
 - **A4** due Monday
-- **CL7** due *next* Wednesday
+- **CL7** due Wednesday
+
+**Notes**
+- Starting next week:
+    - Lecture at 8 or 11 (Zoom link for 11AM will change; I will message everyone)
+    - More Coding Lab times (note: there will be 2 different zoom links)
+    - A few more OH options
+        - Prof Ellis' OH: 
+            - Mon: 10-11 AM; 2-3 PM
+            - Wed: 10-11 AM
+            - Fri: 2-3 PM
+    - all zoom links will be (but are not yet) on Canvas
+
 
 # Python Party!
 
@@ -22,7 +34,7 @@ Project Template: https://cogs18.github.io/assets/intro/projects/ProjectTemplate
 Choose ONE:
 - **Complete the final project**
     - we're discussing the details today
-    - submitted on Canvas by 11:59 PM on day of the final
+    - submitted on Canvas or datahub by 11:59 PM on day of the final
     - opportunity to learn the most! 
     - takes a lot more time  
     - opportunity for extra credit 
@@ -42,7 +54,7 @@ Submit one, *NOT* both (I have lots of grading at the end of the quarter!). If y
 - must implement some new thing (_not_ grading on complexity)
 - completed individually
 - uses good code practices
-- What you will turn in: zip file with your project
+- What you will turn in: zip file with your project or submit on datahub
     - \>= 1 Jupyter notebook (minimally includes project description)
         - ideally: demonstrates how your project runs (likely only a few lines of code)
     - \>= 1 module _or_ script
@@ -65,6 +77,24 @@ Submit one, *NOT* both (I have lots of grading at the end of the quarter!). If y
 - Rock, Paper, Scissors
 
 $^*$If you have a really new hangman implementation/idea or are super stoked about your great `turtle` idea or have invented a spin on traditional tic-tac-toe/blackjack/magic 8 ball/rock, paper, scissors, you'll need to pitch your idea to (via campuswire/email or in office hours) and get approval from Professor Ellis
+
+#### Clicker Question #1
+Do you have an idea of what you want to do for your **project**?
+
+- A) absolutely no idea
+- B) some idea, but not sure
+- C) fairly good idea
+- D) I know exactly what I want to do.
+- E) I'm thinking I'm going to take the final exam
+
+## Python Party!
+
+
+We're lucky to have some of your instructional staff here today to introduce and explain their COGS 18 project!
+
+### Example Projects: 
+
+* Previous Examples: https://github.com/COGS18/Projects#projects
 
 ### Process:
 
@@ -104,22 +134,3 @@ $^*$If you have a really new hangman implementation/idea or are super stoked abo
 #### Extra Credit:
 - Go beyond the requirements of the project / press yourself to learn something new (*up to* 4%)
 - Put your project on GitHub (1%)
-
-
-#### Clicker Question #1
-Do you have an idea of what you want to do for your **project**?
-
-- A) absolutely no idea
-- B) some idea, but not sure
-- C) fairly good idea
-- D) I know exactly what I want to do.
-- E) I'm thinking I'm going to take the final exam
-
-### Example Projects: 
-
-* Previous Examples: https://github.com/COGS18/Projects#projects
-
-## Python Party!
-
-
-We're lucky to have some of your instructional staff here today to introduce and explain their COGS 18 project!

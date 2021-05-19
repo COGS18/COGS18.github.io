@@ -25,7 +25,7 @@ Please take care of yourselves and one another, and I'll work as hard as needed 
 ## COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
-**Instructor Office Hours**: Monday 10 AM - 12 PM
+**Instructor Office Hours**: Mon: 10-11 AM; 2-3 PM; Wed: 10-11 AM; Fri: 2-3 PM
 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
@@ -182,7 +182,7 @@ The final exam will be taken on the same platform and with the same time constra
 | 5/24    | 9	   | 17     | M   | Code Style   		| 			                   	|                         	| 
 | 5/26    | 9	   | 18     | W   | Documentation  	| 				                  | (edited: 5/7) CL8: Scientific Computing                          | 
 | 5/28    | 9	   | 19     | F   | Code Projects 	|                           |                           | 
-| 5/21    | 10   | 20     | M   | **No Class**    | A5: Experimentation    	  |    	                			| 
+| 5/31    | 10   | 20     | M   | **No Class**    | A5: Experimentation    	  |    	                			| 
 | 6/2     | 10   | 21     | W   | Advanced Python | 				                  |                         	| 
 | 6/4     | 10   | 22     | F   | Wrap Up   		  |                           |                        		| 
 

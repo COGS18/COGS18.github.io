@@ -1,3 +1,27 @@
+**Course Announcements**
+
+- **A4** due tonight
+- **CL7** due Wednesday
+
+**Notes**
+- Prof Ellis' new OH: 
+    - Mon: 10-11 AM; 2-3 PM
+    - Wed: 10-11 AM
+    - Fri: 2-3 PM
+- Have the option to attend lecture live at 8AM or 11AM (same zoom link)
+- Additional OH and coding lab times added to main canvas page
+
+**Q&A**
+
+Q: Is the final exam going to be cumulative? How difficult will it be?  
+A: It will be cumulative, but will focus on the material after the second midterm. Students typically find it more difficult than the first midterm but less difficult than the second. This is b/c there is less code to write on the final overall. We'll discuss details soon.
+
+Q: What does minimal viable product and modular design mean?  
+A: Minimal viable product means the simplest product that you can make that still works. Making a product that is *simple* without additional features guarantees you have a functioning product. Then, using modular design, were you can add in additional pieces/features (think of each "piece" of your project as a function or class, for example) without breaking the original product, and instead, just incorporating the new piece.
+
+Q: Would doing a chatbox for a certain topic/person be a good idea?  
+A: Yup! That would work.
+
 # Modules & Scripts
 
 - namespaces & scope
@@ -149,7 +173,17 @@ Which of the following is NOT a valid Python import statement?
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
+
+from string import ascii_letters
+
+ascii_letters?
+
+ascii_letters
+
+from string import punctuation
+
+punctuation
 
 ## Importing Custom Code I
 
@@ -233,7 +267,7 @@ choice?
 
 choice([1, 2, 3, 4, 5])
 
-from remote import choice
+from remote import choice 
 
 # now it's from my remote module
 choice?
@@ -249,6 +283,11 @@ It's Python legal but bad for your nerves.
 If you see `from module import *` this means to import everything (read as 'from module import everything'). 
 
 This is generally considered not to be the best, as it is then unclear in your code exactly where the functionality came from.
+
+# avoid doing this
+# unclear in code when used
+# where functions came from
+from random import *
 
 # a valid way to import
 from random import choice
