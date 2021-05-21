@@ -4,7 +4,7 @@
 
 **Notes**
 - E2 scores posted; answer key available on website
-- Additional OH and coding lab link added to main canvas page
+- Additional OH and coding lab link added to Canvas
 - A5 now available (we have not yet covered all material; due 5/31)
 
 **Q&A**
@@ -104,7 +104,7 @@ arr1
 `numpy` arrays are an object type...so they have associated attributes (below) and methods (we'll get to these in a second)!
 
 # Check the shape of the array
-arr1.shape
+arr1.shape 
 
 # Index into a numpy array
 arr1[0, 0]
@@ -123,6 +123,10 @@ np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 #### Working with Arrays
 
 (Things you can't do with lists)
+
+arr1
+
+arr2
 
 # Add arrays together
 arr1 + arr2
@@ -143,6 +147,11 @@ Given the following code, what will it print out?
 
 data = np.array([[1, 2, 3, 4],
                  [5, 6, 7, 8]])
+
+data[0, :]
+
+data = np.array([[1, 2, 3, 4],
+                 [5, 6, 7, 8]])
  
 output = []
 for d1, d2 in zip(data[0, :], data[1, :]):
@@ -157,6 +166,8 @@ print(output)
 - E) [36]
 
 Note that if you find yourself looping over arrays...there is probably a better way.
+
+data
 
 # sum method
 # by default sums all values in array
@@ -181,6 +192,8 @@ max_val
 But what if you wanted to know not what the max value was...but where in your original array that value was found. 
 
 There are also *functions* in `numpy` that operate on arrays. 
+
+data
 
 # see documentation for np.where()
 np.where?
@@ -254,6 +267,8 @@ df['condition'].unique()
 len(df['condition'].unique())
 # equivalent to
 df['condition'].nunique()
+
+type(df)
 
 # how many rows there are in a series/df
 len(df)

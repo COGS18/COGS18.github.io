@@ -3,10 +3,9 @@
 - **CL7** due tonight
 
 **Notes**
-- E2 scores posted; answer keys available
+- E2 scores posted; answer key available on website/Exam-Prep folder on datahub
 - Additional OH and coding lab times added to main canvas page
 - A5 now available (we have not yet covered all material; due 5/31)
-
 
 **Q&A**
 
@@ -65,6 +64,10 @@ So we use arrays.
 
 Allow you to efficiently operate on arrays (linear algebra, matrix operations, etc.)
 
+# to install a package
+# on datahub
+!pip install --user name_of_package
+
 import numpy as np
 
 # Create some arrays of data
@@ -108,19 +111,24 @@ np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 # Add arrays together
 arr1 + arr2
 
-# Matrix mutliplication
+# Matrix multiplication
 arr1 * arr2
 
 #### A brief aside: `zip()`
 
 `zip()` takes two iterables (things you can loop over) and loop over them together.
 
-for a, b in zip([1,2], ['a','b']):
+for a, b in zip([1, 2], ['a', 'b']):
     print(a, b)
 
 #### Clicker Question #1
 
 Given the following code, what will it print out?
+
+data = np.array([[1, 2, 3, 4],
+                 [5, 6, 7, 8]])
+
+data[0, :]
 
 data = np.array([[1, 2, 3, 4],
                  [5, 6, 7, 8]])
@@ -138,6 +146,9 @@ print(output)
 - E) [36]
 
 Note that if you find yourself looping over arrays...there is probably a better way.
+
+# take a look at array
+data
 
 # sum method
 # by default sums all values in array
@@ -163,6 +174,8 @@ But what if you wanted to know not what the max value was...but where in your or
 
 There are also *functions* in `numpy` that operate on arrays. 
 
+data
+
 # see documentation for np.where()
 np.where?
 
@@ -184,7 +197,7 @@ data[1,3]
 
 Pandas is Python library for managing heterogenous data.
 
-At it's core, Pandas is used for the **DataFrame** object, which is:
+At its core, Pandas is used for the **DataFrame** object, which is:
 - a data structure for labeled rows and columns of data
 - associated methods and utilities for working with data.
 - each column contains a `pandas` **Series**
@@ -235,6 +248,8 @@ df['condition'].unique()
 len(df['condition'].unique())
 # equivalent to
 df['condition'].nunique()
+
+type(df)
 
 # how many rows there are in a series/df
 len(df)

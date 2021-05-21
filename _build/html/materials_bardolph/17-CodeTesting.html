@@ -1,0 +1,1063 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Testing &#8212; COGS 18 - Introduction To Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="prev" title="Scientific Computing" href="16-ScientificComputing.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Lectures (Ellis)
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/08-Loops.html">
+   08-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/10-FunctionsI.html">
+   10-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/14-CommandLine.html">
+   14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/15-Modules.html">
+   15-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/16-ScientificComputing.html">
+   16-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Lectures (Bardolph)
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Loops.html">
+   08-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-FunctionsI.html">
+   10-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-CommandLine.html">
+   14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-Modules.html">
+   15-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-ScientificComputing.html">
+   16-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   17-CodeTesting
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL4-Loops.html">
+   CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL5-Functions.html">
+   CL5-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21_Practice.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1_Sp21.html">
+   E1_Sp21-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E2_Sp21_Practice.html">
+   E2-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E2_Sp21.html">
+   E2_Sp21-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/overview.html">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/ProjectIdeas.html">
+   Project Ideas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/faq.html">
+   Project FAQ
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/materials_bardolph/17-CodeTesting.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials_bardolph/17-CodeTesting.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials_bardolph/17-CodeTesting.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials_bardolph/17-CodeTesting.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials_bardolph/17-CodeTesting.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#writing-good-code">
+   Writing Good Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-1">
+     Clicker Question #1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-asserts">
+     Clicker Question - Asserts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Code Testing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-write-tests">
+   Why Write Tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-best-laziest-argument-for-writing-tests">
+   The Best (Laziest) Argument for Writing Tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-write-tests">
+   How to Write Tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-test-code">
+   Example Test Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-2">
+     Clicker Question #2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-driven-development">
+   Test Driven Development
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Test Driven Development
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-coverage">
+   Test Coverage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#levels-of-code-testing">
+   Levels of Code Testing:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#four-general-types">
+     Four general types
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unit-tests">
+     Unit Tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#not-tests-but-related">
+     Not tests, but related
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clicker-question-3">
+       Clicker Question #3
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pytest">
+   PyTest
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pytest
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#executing-pytest">
+       Executing
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         pytest
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><strong>Course Announcements</strong></p>
+<ul class="simple">
+<li><p><strong>CL8</strong> due next Wednesday (posted later today)</p></li>
+<li><p><strong>A5</strong> due Monday of week 10 (5/31)</p></li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: If you did the code differently from the autograder but still had functional code using a different method, will you still only get partial credit?
+A: On an assignment, you’d get credit. On an exam, if we specified that a certain method/object/function be used and it was not, you would only get partial credit.</p>
+<p>Q: Does numpy only apply to making matrices?<br />
+A: For the most part; it’s really made for creating and operating on matrices.</p>
+<p>Q: When indexing arrays or DataFrame objects, how can include a range of columns and/or rows? We talked about how we can do this for individual or all columns or rows, but what if I wanted to only find the values from rows 2-4 or columns 1-3?
+A: This is where the <code class="docutils literal notranslate"><span class="pre">loc</span></code> method is quite helpful. <code class="docutils literal notranslate"><span class="pre">df.loc[2:5,</span> <span class="pre">1:4]</span></code> would do what you’re looking for!</p>
+<p>Q: Does plotting only serve for drawing graphs?<br />
+A: Hmmm….making plots is typically for creating lots of different types of graphs. Not sure what else you had in mind here, so do reach out if still unsure!</p>
+<p>Q: I am curious on how often pandas are used for heterogenous data like the example from lecture on logging subject information from possibly some type of experiment. I always assumed people just used excel or spreadsheets to log this kind of data, but I was wondering how often Python is used to store this data, since it appears to be much faster?<br />
+A: Python (and R, another programming language) are used <em>all</em> the time for operating on data. The reason is b/c 1) it is faster, but 2) it’s reproducible. If I give you the data and the code, you can generate the results as well. With Excel that’s not exactly possible unless you meticulously write down all the pointing and clicking you did.</p>
+<p>Q: This is more so for my final project, but for the plotting section, can you use that to create a map in a sense?<br />
+A: Yup! There is a package called <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> that may be helpful for this purpose!</p>
+<p>Q: Is it always required to include the imported module name before using one of its methods?<br />
+A: If you import the module/package directly <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">module</span></code>, then yes, you always have to specify the module/package name before referring to a function from it. However if you import the function directly <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">module</span> <span class="pre">import</span> <span class="pre">function</span></code>, then you can call <code class="docutils literal notranslate"><span class="pre">function</span></code> directly. The exception here is when we’re talking about methods. Once an object of a particular class is created (DataFrame, numpy array, etc.), you can call the methods directly <code class="docutils literal notranslate"><span class="pre">df.method()</span></code> without the package/module name before it.</p>
+<p>Q: Is there a website that introduces these packages, or if I want to use other packages, where can I find them?<br />
+A: There is a lot of documentation on line. Searching the package name and python (<code class="docutils literal notranslate"><span class="pre">'pandas</span> <span class="pre">python</span></code>) will help you find the documentation! <a class="reference external" href="https://pypi.org/project/pip/">PyP</a> is a searchable place for packages as well.</p>
+<p>Q: Pandas vs Scipy??
+A: Pandas for getting the data into the format you need; Scipy (the package) is for analyzing those data after you get them into the format you need.</p>
+<p>Q: Can we invite tables from Excel into python?<br />
+A: Yup! There are <code class="docutils literal notranslate"><span class="pre">read_</span></code> methods in pandas to read external files in.</p>
+<p>Q: Will we be covering other major libraries?<br />
+A: No this quarter.</p>
+<p>Q: The plotting won’t be on the exam correct?<br />
+A: Correct. The plotting &amp; stats (t-test) at the end were just shared for an FYI.</p>
+<p>Q: Since packages like numpy use objects like arrays and pandas use objects like DataFrame, does that mean they can only be used with those packages?<br />
+A: Kind of. These packages are often designed to work well together. So, while the DataFrame object is a pandas object, it sometimes borrows from other related packages. Happy to answer this question in more detail and discuss dependencies in office hours!</p>
+<p>Q: will we incorporate these into our final project somehow, or is it just there as an option?<br />
+A: Up to you if you use these in your final project; not required! DataFrames and matrices (and the methods we’ve discussed) are fair game for the final exam, however.</p>
+<p>Q: How might we use these to facilitate something on our final project?<br />
+A: If your project involves keeping track of information in rows and columns, consider a <code class="docutils literal notranslate"><span class="pre">numpy</span></code> array. If your project involves storing data and using it (analyzing, plotting, etc.), consider <code class="docutils literal notranslate"><span class="pre">pandas</span></code>.</p>
+<div class="section" id="code-testing">
+<h1>Code Testing<a class="headerlink" href="#code-testing" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>smoke tests</p></li>
+<li><p>unit tests</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pytest</span></code></p></li>
+</ul>
+<div class="section" id="writing-good-code">
+<h2>Writing Good Code<a class="headerlink" href="#writing-good-code" title="Permalink to this headline">¶</a></h2>
+<p>All in all, write code that is:</p>
+<ul class="simple">
+<li><p><strong>Tested</strong></p></li>
+<li><p>Documented</p></li>
+<li><p>Well organized (follows a style guide)</p></li>
+</ul>
+<p>And you will have understandable, maintainable, and trustable code.</p>
+<div class="section" id="clicker-question-1">
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">¶</a></h3>
+<p>Given the following code, which assert will fail?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="n">input_arg</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">input_arg</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">input_arg</span><span class="p">:</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">isinstance(extend([1,</span> <span class="pre">2]),</span> <span class="pre">list)</span></code></p></li>
+<li><p>B) <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">extend([1,</span> <span class="pre">2])</span> <span class="pre">==</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">1,</span> <span class="pre">2]</span></code></p></li>
+<li><p>C) <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">extend((1,</span> <span class="pre">2))</span> <span class="pre">==</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">1,</span> <span class="pre">2)</span></code></p></li>
+<li><p>D) <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">extend(['a',</span> <span class="pre">'b',</span> <span class="pre">'c'])</span> <span class="pre">==</span> <span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'c',</span> <span class="pre">'a',</span> <span class="pre">'b',</span> <span class="pre">'c']</span></code></p></li>
+<li><p>E) <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">extend([])</span> <span class="pre">==</span> <span class="pre">[]</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="clicker-question-asserts">
+<h3>Clicker Question - Asserts<a class="headerlink" href="#clicker-question-asserts" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that extend returns a list</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">extend</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]),</span> <span class="nb">list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that an input list returns the expected result</span>
+<span class="k">assert</span> <span class="n">extend</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check if the function works on tuples</span>
+<span class="k">assert</span> <span class="n">extend</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that a different input list (different lengths / contents) returns expected result</span>
+<span class="k">assert</span> <span class="n">extend</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that an empty list executes, executing an empty list</span>
+<span class="k">assert</span> <span class="n">extend</span><span class="p">([])</span> <span class="o">==</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Code Testing<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+Code tests is code that runs and checks other code, to make sure it does what it is expected to do. 
+</div></div>
+<div class="section" id="why-write-tests">
+<h2>Why Write Tests<a class="headerlink" href="#why-write-tests" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>To ensure code does what it is supposed to</p></li>
+<li><p>To have a system for checking things when you change things in the code</p></li>
+</ul>
+<p>Tests, when run, help identify code that will give an error if something has gone wrong.</p>
+</div>
+<div class="section" id="the-best-laziest-argument-for-writing-tests">
+<h2>The Best (Laziest) Argument for Writing Tests<a class="headerlink" href="#the-best-laziest-argument-for-writing-tests" title="Permalink to this headline">¶</a></h2>
+<p>Whenever you write new code, you will find yourself using little snippets of code to check it.</p>
+<p>Collect these snippets into a test function, and you get re-runnable tests for free.</p>
+<p><img alt="" src="../_images/code_testing1.png" /></p>
+<p>Source: https://twitter.com/jimhester_/status/1361697676832739328</p>
+</div>
+<div class="section" id="how-to-write-tests">
+<h2>How to Write Tests<a class="headerlink" href="#how-to-write-tests" title="Permalink to this headline">¶</a></h2>
+<p>Given a function or class you want to test:</p>
+<ul class="simple">
+<li><p>You need to have an expectation for what it should do</p></li>
+<li><p>Write out some example cases, with known answers</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">assert</span></code> to check that your example cases do run as expected</p></li>
+<li><p>Collect these examples into test functions, stored in test files</p></li>
+</ul>
+</div>
+<div class="section" id="example-test-code">
+<h2>Example Test Code<a class="headerlink" href="#example-test-code" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import math</span>
+
+<span class="k">def</span> <span class="nf">test_add</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Tests for the `add` function.&quot;&quot;&quot;</span>
+    
+    <span class="c1"># Test adding positve numbers</span>
+    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+    
+    <span class="c1"># Test adding negative numbers</span>
+    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">4</span>
+    
+    <span class="c1"># Test adding floats</span>
+    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">3.9</span>
+    <span class="c1"># assert math.isclose(add(2.7, 1.2), 3.9)</span>
+    
+    <span class="c1"># Test adding with 0</span>
+    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run our test function</span>
+<span class="n">test_add</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add</span><span class="p">(</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">3.9</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="clicker-question-2">
+<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given the following function:</span>
+<span class="k">def</span> <span class="nf">divide_list</span><span class="p">(</span><span class="n">in_list</span><span class="p">):</span>    
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">el1</span><span class="p">,</span> <span class="n">el2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">in_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">in_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el1</span> <span class="o">/</span> <span class="n">el2</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># And the following test function:</span>
+<span class="k">def</span> <span class="nf">test_divide_list</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">divide_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]),</span> <span class="nb">list</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">divide_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_divide_list</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) These tests will pass, and this function is well tested</p></li>
+<li><p>B) These tests will pass, but this function needs more tests</p></li>
+<li><p>C) These tests will fail, but they cover the needed cases</p></li>
+<li><p>D) These tests will fail, and we should also have more tests</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">divide_list</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="test-driven-development">
+<h2>Test Driven Development<a class="headerlink" href="#test-driven-development" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+In software development, <b>test-driven development</b> is an approach in which you write tests first -  and then write code to pass the tests. 
+</div><div class="section" id="id2">
+<h3>Test Driven Development<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Ensures you go into writing code with a good plan / outline</p></li>
+<li><p>Ensures that you have a test suite, as you can not decide to neglect test code after the fact</p></li>
+<li><p>Note: when you complete (or at least write) assignments for this class, you are effectively doing test-driven development</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="test-coverage">
+<h2>Test Coverage<a class="headerlink" href="#test-coverage" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+<b>Test coverage</b> is the proportion of a software project that is run by the test suite. 
+</div></div>
+<div class="section" id="levels-of-code-testing">
+<h2>Levels of Code Testing:<a class="headerlink" href="#levels-of-code-testing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Smoke Tests</p></li>
+<li><p><strong>Unit Tests</strong></p></li>
+<li><p>Integration Tests</p></li>
+<li><p>System Tests</p></li>
+</ul>
+<div class="section" id="four-general-types">
+<h3>Four general types<a class="headerlink" href="#four-general-types" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p><strong>Smoke tests</strong> - preliminary tests to basic functionality; checks if something runs (but not necessarily if it does the right thing) (sanity check)</p></li>
+<li><p><strong>Unit tests</strong> - test functions &amp; objects to ensure that they code is behaving as expected</p></li>
+<li><p><strong>Integration tests</strong> - tests functions, classes &amp; modules interacting</p></li>
+<li><p><strong>System tests</strong> - tests end-to-end behavior</p></li>
+</ol>
+</div>
+<div class="section" id="unit-tests">
+<h3>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>one test for each “piece” of your code (each function, each class, each module, etc)</p></li>
+<li><p>passes silently if true</p></li>
+<li><p>error if it fails</p></li>
+<li><p>consider “edge cases”</p></li>
+<li><p>help you resist the urge to assume computers will act how you think it will work</p></li>
+<li><p>functions used with pytest start with <code class="docutils literal notranslate"><span class="pre">test_</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="not-tests-but-related">
+<h3>Not tests, but related<a class="headerlink" href="#not-tests-but-related" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>asserts - make a statement of fact about code</p></li>
+<li><p>static checks - check your code as you go that it behaves as expected</p></li>
+<li><p>argument validation - checks to see if the input given to a function</p></li>
+</ul>
+<div class="section" id="clicker-question-3">
+<h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h4>
+<p>Write a test function that checks the following piece of code:</p>
+<ul class="simple">
+<li><p>A) I did it!</p></li>
+<li><p>B) I think I did it!</p></li>
+<li><p>C) I’m lost.</p></li>
+</ul>
+<p>Thought process:</p>
+<ol class="simple">
+<li><p>Define test function <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">test_...</span></code></p></li>
+<li><p>make <code class="docutils literal notranslate"><span class="pre">assert</span></code>ion within the test function</p>
+<ul class="simple">
+<li><p>check that the function is callable</p></li>
+<li><p>check that function sums the list (which was our expectation)</p></li>
+<li><p>check the output is expected output / expected type</p></li>
+</ul>
+</li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_list</span><span class="p">(</span><span class="n">input_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;add all values in a list - return sum&quot;&quot;&quot;</span>
+    
+    <span class="n">output</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">+=</span> <span class="n">val</span>
+        
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### YOUR TEST</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_sum_list</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="pytest">
+<h2>PyTest<a class="headerlink" href="#pytest" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-info">
+<b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module that for writing and running test code. It is available from Anaconda and datahub.
+</div><div class="section" id="id3">
+<h3><code class="docutils literal notranslate"><span class="pre">pytest</span></code><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>check if error raised when expected to be raised</p></li>
+<li><p>autorun all of your tests</p></li>
+<li><p>formal testing to your code/projects</p></li>
+</ul>
+<div class="section" id="executing-pytest">
+<h4>Executing <code class="docutils literal notranslate"><span class="pre">pytest</span></code><a class="headerlink" href="#executing-pytest" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Look for any file called <code class="docutils literal notranslate"><span class="pre">test_...</span></code></p></li>
+<li><p>If everything works, silently moves along.</p></li>
+<li><p>For anything that fails, will alert you.</p></li>
+</ol>
+<p><strong>Available from Anaconda and on datahub</strong></p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials_bardolph"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="16-ScientificComputing.html" title="previous page">Scientific Computing</a>
+    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>
