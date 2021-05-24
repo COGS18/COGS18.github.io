@@ -151,3 +151,15 @@ test_get_most_common()
 out = test_get_most_common()
 # out should store none if passes silently
 assert out == None
+
+## Part IV: `pytest` (*optional*)
+
+Let's try out `pytest!`
+
+1. Copy the function `get_most_common` to a `functions.py` file (in the same directory as this notebook.)
+2. Copy the test function `test_get_most_common` to a test file `test_functions.py`. Be sure to add the necessary `import` statement to the top of this file.
+3. Execute `pytest` in the cell below.
+
+### BEGIN SOLUTION
+!pytest test_functions.py
+### END SOLUTION

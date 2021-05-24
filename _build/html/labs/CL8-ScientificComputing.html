@@ -162,6 +162,11 @@
    17-CodeTesting
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/18-CodeStyle.html">
+   18-CodeStyle
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -252,6 +257,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials_bardolph/17-CodeTesting.html">
    17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/18-CodeStyle.html">
+   18-CodeStyle
   </a>
  </li>
 </ul>
@@ -555,6 +565,21 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#part-iii-code-testing">
    Part III: Code Testing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-iv-pytest-optional">
+   Part IV:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pytest
+    </span>
+   </code>
+   (
+   <em>
+    optional
+   </em>
+   )
   </a>
  </li>
 </ul>
@@ -912,6 +937,24 @@ Name: New registered voters, dtype: float64
 <span class="n">out</span> <span class="o">=</span> <span class="n">test_get_most_common</span><span class="p">()</span>
 <span class="c1"># out should store none if passes silently</span>
 <span class="k">assert</span> <span class="n">out</span> <span class="o">==</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-iv-pytest-optional">
+<h2>Part IV: <code class="docutils literal notranslate"><span class="pre">pytest</span></code> (<em>optional</em>)<a class="headerlink" href="#part-iv-pytest-optional" title="Permalink to this headline">¶</a></h2>
+<p>Let’s try out <code class="docutils literal notranslate"><span class="pre">pytest!</span></code></p>
+<ol class="simple">
+<li><p>Copy the function <code class="docutils literal notranslate"><span class="pre">get_most_common</span></code> to a <code class="docutils literal notranslate"><span class="pre">functions.py</span></code> file (in the same directory as this notebook.)</p></li>
+<li><p>Copy the test function <code class="docutils literal notranslate"><span class="pre">test_get_most_common</span></code> to a test file <code class="docutils literal notranslate"><span class="pre">test_functions.py</span></code>. Be sure to add the necessary <code class="docutils literal notranslate"><span class="pre">import</span></code> statement to the top of this file.</p></li>
+<li><p>Execute <code class="docutils literal notranslate"><span class="pre">pytest</span></code> in the cell below.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="o">!</span>pytest test_functions.py
+<span class="c1">### END SOLUTION</span>
 </pre></div>
 </div>
 </div>
