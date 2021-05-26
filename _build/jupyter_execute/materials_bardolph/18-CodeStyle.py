@@ -148,10 +148,10 @@ my_func()
 # Goodness
 def my_func():
     
-    my_nums = '123'
+    my_nums = '123'    
     output = ''
     
-    for num in my_nums: 
+    for num in my_nums:  
         output += str(int(num) + 1)
     
     return output
@@ -162,7 +162,7 @@ I promise it's better to comment as you go along rather than coming along after 
 
 Similar to writing: write comments -> write code -> review code & comments
 
-#### Clicker Question #3
+#### Clicker Question #1
 
 Which of these is best - A, B, or C?
 
@@ -199,7 +199,7 @@ if True:
   print('Words.')
 
 # Goodness
-if True:
+if True:    
     print('Words.')
 
 ### Spacing
@@ -217,7 +217,7 @@ my_var = 1 + 2 == 3
 my_list = [1, 2, 3, 4]
 el = my_list[1]
 
-#### Clicker Question #4
+#### Clicker Question #2
 
 Which of the following uses PEP-approved spacing?
 
@@ -248,7 +248,7 @@ for i in [1, 2, 3]:
 
 ### Multi-Line
 
-my_long_list = [1, 2, 3, 4, 5, 
+my_long_list = [1, 2, 3, 4, 5,
                 6, 7, 8, 9, 10]
 
 # Note: you can explicitly indicate a new line with '\'
@@ -314,7 +314,7 @@ class MyClass():
 
 Note: snake_case is easier to read than CapWords, so we use snake_case for the things (variables, functions) that we name more frequently.
 
-#### Clicker Question #5
+#### Clicker Question #3
 
 If you were reading code and came cross the following, which of the following would you expect to be a class?
 
@@ -324,7 +324,7 @@ If you were reading code and came cross the following, which of the following wo
 - D) `philliesgame`
 - E) `PhIlLiEsGaMe`
 
-#### Clicker Question #6
+#### Clicker Question #4
 
 If you were reading code and came cross the following, which of the following would you expect to be a function or variable name?
 
@@ -363,7 +363,7 @@ my_string = 'Prof\'s Project'
 # Goodness
 my_string = "Prof's Project"
 
-#### Clicker Question #7
+#### Clicker Question #5
 
 Which of the following would not cause an error in Python and would store the string *You're so close!*  ?
 
@@ -373,12 +373,12 @@ Which of the following would not cause an error in Python and would store the st
 - D) `my_string = "You\\'re so close"`
 - E) `my_string = 'You're so close!'`
 
-#my_string = "You're so close!"
-#my_string = "You"re so close!"
-#my_string = 'You''re so close!'
-#my_string = "You\\'re so close!"
-#my_string = 'You're so close!'
-#my_string
+# my_string = "You're so close!"
+# my_string = "You"re so close!"
+my_string = 'You''re so close!'
+# my_string = "You\\'re so close!"
+# my_string = 'You're so close!'
+my_string
 
 ## Specific Guidelines - Comments
 
@@ -448,7 +448,12 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 
 `pylint` is available from Anaconda to check this for you. (Not available on datahub.)
 
-#### Clicker Question #8
+```python
+# to install on datahub
+!pip install --user pylint
+```
+
+#### Clicker Question #6
 
 How many PEP8 violations can you find in this code?
 
@@ -469,11 +474,31 @@ def MyFunction(input_num):
 - D) 5 or 6
 - E) 7 or more
 
-### list here
-
+- function name (not descriptive)
+- spacing in the list
+- spacing (line)
+- no indent after the if statement; new line
+- indentation issue (ind = 0)
+- variable naming (`qq`)
+- spaces in append
+- spaces in indexing
+- function name not snake_case
 
 # Let's fix this code
+def append_list(input_num):
+    
+    my_list = [0, 1, 2, 3]
+    
+    if 1 in my_list: 
+        ind = 1
+    else:
+        ind = 0
+   
+    output_list = []
+    for val in my_list[ind:]:
+        output_list.append(input_num / val)
 
+    return output_list
 
 # check using pylint
 !pylint linter_example.py

@@ -39,8 +39,8 @@
     title: 17-CodeTesting
   - file: materials/18-CodeStyle  
     title: 18-CodeStyle
-  # - file: materials/19-Documentation
-  #   title: 19-Documentation
+  - file: materials/19-Documentation
+    title: 19-Documentation
   # - file: materials/20-CodeProjects
   #   title: 20-CodeProjects
   # - file: materials/21-AdvancedPython
@@ -86,8 +86,8 @@
     title: 17-CodeTesting
   - file: materials_bardolph/18-CodeStyle  
     title: 18-CodeStyle
-  # - file: materials_bardolph/19-Documentation
-  #   title: 19-Documentation
+  - file: materials_bardolph/19-Documentation
+    title: 19-Documentation
   # - file: materials_bardolph/20-CodeProjects
   #   title: 20-CodeProjects
   # - file: materials_bardolph/21-AdvancedPython
