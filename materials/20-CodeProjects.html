@@ -1,0 +1,1239 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Projects &#8212; COGS 18 - Introduction To Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction to Python" href="../materials_bardolph/01-Introduction.html" />
+    <link rel="prev" title="Documentation" href="19-Documentation.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Lectures (Ellis)
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Loops.html">
+   08-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-FunctionsI.html">
+   10-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-CommandLine.html">
+   14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-Modules.html">
+   15-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-ScientificComputing.html">
+   16-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18-CodeStyle.html">
+   18-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   20-CodeProjects
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Lectures (Bardolph)
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/08-Loops.html">
+   08-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/10-FunctionsI.html">
+   10-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/14-CommandLine.html">
+   14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/15-Modules.html">
+   15-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/16-ScientificComputing.html">
+   16-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/18-CodeStyle.html">
+   18-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/20-CodeProjects.html">
+   20-CodeProjects
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL4-Loops.html">
+   CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL5-Functions.html">
+   CL5-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL7-CommandLine.html">
+   CL7-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL8-ScientificComputing.html">
+   CL8-ScientificComputing
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Sp21_Practice.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Sp21.html">
+   E1_Sp21-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Sp21_Practice.html">
+   E2-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Sp21.html">
+   E2_Sp21-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/overview.html">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/ProjectIdeas.html">
+   Project Ideas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/faq.html">
+   Project FAQ
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/materials/20-CodeProjects.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/20-CodeProjects.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/20-CodeProjects.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/20-CodeProjects.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/20-CodeProjects.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-check-in">
+   Project Check-In
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modular-design">
+     Modular Design
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimal-viable-product">
+     Minimal Viable Product
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#test-driven-development">
+     Test-Driven Development
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rapid-prototyping">
+     Rapid Prototyping
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#some-examples">
+       Some examples
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-organization">
+   Project Organization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#project-workflow">
+     Project Workflow
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#project-notes">
+       Project Notes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#project-design">
+     Project Design
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-unit-tests">
+     Adding Unit Tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-code">
+     Writing Code
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#atbash-encrypt">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         atbash_encrypt
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#moving-to-a-module">
+     Moving to a module…
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#atbash-decrypt">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         atbash_decrypt
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#atbash-wrapper">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         atbash_wrapper
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#documentation">
+     Documentation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#putting-it-all-together">
+     Putting it all together
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#refactoring">
+     Refactoring
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#refactoring-example-chatbot">
+       Refactoring Example: Chatbot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#refactored-example-chatbot">
+       Refactored Example: Chatbot
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-review">
+   Code Review
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><strong>Course Announcements</strong></p>
+<p>Due Dates:</p>
+<ul class="simple">
+<li><p>A4 due Monday (5/31)</p></li>
+<li><p>Final Project/Exam (Fri 6/11 at 11:59 PM)</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>No lecture/OH on Monday (Memorial Day)</p></li>
+<li><p>No OH for staff during Finals Week (Prof Ellis will have some; details TBD)</p></li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: Is doing/getting the extra credit on the project required for A+ in the class?<br />
+A: Nope! Not required. If you do the project and have a score that earns an A+, you’ll get an A+ in the class.</p>
+<div class="section" id="code-projects">
+<h1>Code Projects<a class="headerlink" href="#code-projects" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>modular design</p></li>
+<li><p>minimal viable product</p></li>
+<li><p>test-driven development</p></li>
+<li><p>rapid prototyping</p></li>
+<li><p>project organization</p></li>
+<li><p>refactoring</p></li>
+<li><p>code review</p></li>
+</ul>
+<div class="section" id="project-check-in">
+<h2>Project Check-In<a class="headerlink" href="#project-check-in" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="modular-design">
+<h3>Modular Design<a class="headerlink" href="#modular-design" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+Modular design, like modular programming, is the approach of designing and building things as independent modules. 
+</div></div>
+<div class="section" id="minimal-viable-product">
+<h3>Minimal Viable Product<a class="headerlink" href="#minimal-viable-product" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+A 'minimal viable product' is a product that contains the minimum amount of implemented features to use the code product - no more, no less.</div></div>
+<div class="section" id="test-driven-development">
+<h3>Test-Driven Development<a class="headerlink" href="#test-driven-development" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+Writing the tests as soon as you have a plan & before you've written the code.
+</div></div>
+<div class="section" id="rapid-prototyping">
+<h3>Rapid Prototyping<a class="headerlink" href="#rapid-prototyping" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+Rapid prototyping is an approach for developing things in which you work on minimal prototypes and iterate on them quickly. 
+</div><div class="section" id="some-examples">
+<h4>Some examples<a class="headerlink" href="#some-examples" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Chatbot: start and end a chat</p></li>
+<li><p>Data Analysis: read a dataset in, make a basic plot</p></li>
+<li><p>Car Inventory: object with method that adds a car to the Inventory</p></li>
+<li><p>Artificial Agents: simple bot moves around randomly</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="project-organization">
+<h2>Project Organization<a class="headerlink" href="#project-organization" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Notebooks</strong>: good for interactive development</p>
+<ul>
+<li><p>For when seeing the inputs and outputs of code running needs to be seen start to finish</p></li>
+<li><p>file ends in <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Modules</strong>: for storing mature Python code, that you can import</p>
+<ul>
+<li><p>you don’t <em>use</em> the functions in there, just define them</p></li>
+<li><p>file ends in <code class="docutils literal notranslate"><span class="pre">.py</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Scripts</strong>: a Python file for executing a particular task</p>
+<ul>
+<li><p>this takes an input and does something start to finish</p></li>
+<li><p>file ends in <code class="docutils literal notranslate"><span class="pre">.py</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="project-workflow">
+<h3>Project Workflow<a class="headerlink" href="#project-workflow" title="Permalink to this headline">¶</a></h3>
+<p>Typical project workflow:</p>
+<ul class="simple">
+<li><p>Develop plan and write tests</p></li>
+<li><p>Develop code interactively in a Jupyter notebook/text editor</p></li>
+<li><p>As functions &amp; classes become mature, move them to Python files that you then <code class="docutils literal notranslate"><span class="pre">import</span></code></p>
+<ul>
+<li><p>As you do so, go back through them to check for code style, add documentation, and run your code tests</p></li>
+</ul>
+</li>
+<li><p>At the end of a project, (maybe) write a standalone script that runs the project</p></li>
+</ul>
+<div class="section" id="project-notes">
+<h4>Project Notes<a class="headerlink" href="#project-notes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Design and write tests</p></li>
+<li><p>Write some code</p></li>
+<li><p>Test to make sure it works</p></li>
+<li><p>Check code style (naming, spacing, etc.)</p></li>
+<li><p>Add documentation</p></li>
+<li><p>Move to module (if necessary)</p></li>
+<li><p>Run all tests</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="project-design">
+<h3>Project Design<a class="headerlink" href="#project-design" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Idea: atbash encryption: return the capitalized, reverse alphabetical letter for each character in the input string</p></li>
+<li><p>Design:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> : take input string and retrun atbash encrypted string</p>
+<ul>
+<li><p>inputs: <code class="docutils literal notranslate"><span class="pre">input_string</span></code></p></li>
+<li><p>returns: <code class="docutils literal notranslate"><span class="pre">atbash_string</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">atbash_decrypt()</span></code> : take encrypted string and decrypt using atbash</p>
+<ul>
+<li><p>inputs: <code class="docutils literal notranslate"><span class="pre">atbash_string</span></code></p></li>
+<li><p>returns: <code class="docutils literal notranslate"><span class="pre">decrypted_string</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">atbash_wrapper()</span></code> : does either of the above, as specified with input parameter</p>
+<ul>
+<li><p>inputs: <code class="docutils literal notranslate"><span class="pre">input_string</span></code>, <code class="docutils literal notranslate"><span class="pre">method</span></code> (either ‘encrypt’ or ‘decrypt’, default: ‘encrypt’)</p></li>
+<li><p>returns <code class="docutils literal notranslate"><span class="pre">output_string</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="adding-unit-tests">
+<h3>Adding Unit Tests<a class="headerlink" href="#adding-unit-tests" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_atbash_encrypt</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+    <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+    
+<span class="k">def</span> <span class="nf">test_atbash_decrypt</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
+    <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
+
+<span class="k">def</span> <span class="nf">test_atbash_wrapper</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+    <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
+    <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;decrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
+    <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;decrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
+    <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;blargh&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;method should be either &#39;decrypt&#39; or &#39;encrypt&#39;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>…move to test file</p>
+<p>…will uncomment as I write the code/functions</p>
+</div>
+<div class="section" id="writing-code">
+<h3>Writing Code<a class="headerlink" href="#writing-code" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="atbash-encrypt">
+<h4><code class="docutils literal notranslate"><span class="pre">atbash_encrypt</span></code><a class="headerlink" href="#atbash-encrypt" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+    <span class="n">reverse_alpha</span> <span class="o">=</span> <span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
+
+    <span class="n">atbash_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="n">char</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">alpha</span><span class="p">:</span>
+            <span class="n">position</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+            <span class="n">atbash_string</span> <span class="o">+=</span> <span class="n">reverse_alpha</span><span class="p">[</span><span class="n">position</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">atbash_string</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">break</span>
+        
+    <span class="k">return</span> <span class="n">atbash_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># smoke test</span>
+<span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="moving-to-a-module">
+<h3>Moving to a module…<a class="headerlink" href="#moving-to-a-module" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>consider imports at the top</p></li>
+</ul>
+<p>Note on <code class="docutils literal notranslate"><span class="pre">imports</span></code>: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top. This applies to test files as well.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="atbash-decrypt">
+<h4><code class="docutils literal notranslate"><span class="pre">atbash_decrypt</span></code><a class="headerlink" href="#atbash-decrypt" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># reminder: consider code style! </span>
+<span class="k">def</span> <span class="nf">atbash_decrypt</span><span class="p">(</span><span class="n">atbash_string</span><span class="p">):</span>    
+    <span class="n">ALPHA</span><span class="o">=</span><span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+    <span class="n">REVERSEALPHA</span><span class="o">=</span><span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
+    <span class="n">atbash_string</span><span class="o">=</span><span class="n">atbash_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="n">decrypted_string</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">atbash_string</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">REVERSEALPHA</span><span class="p">:</span>
+            <span class="n">letterindex</span><span class="o">=</span><span class="n">REVERSEALPHA</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+            <span class="n">decrypted_string</span><span class="o">=</span><span class="n">decrypted_string</span><span class="o">+</span><span class="n">ALPHA</span> <span class="p">[</span><span class="n">letterindex</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">decrypted_string</span><span class="o">=</span><span class="n">decrypted_string</span><span class="o">+</span><span class="n">l</span>
+    <span class="k">return</span> <span class="n">decrypted_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># smoke test</span>
+<span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="atbash-wrapper">
+<h4><code class="docutils literal notranslate"><span class="pre">atbash_wrapper</span></code><a class="headerlink" href="#atbash-wrapper" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">atbash_wrapper</span><span class="p">(</span><span class="n">input_string</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">):</span>
+    
+    <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;encrypt&#39;</span><span class="p">:</span>
+        <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;decrypt&#39;</span><span class="p">:</span>
+        <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">output_string</span> <span class="o">=</span> <span class="s2">&quot;method should be either &#39;decrypt&#39; or &#39;encrypt&#39;&quot;</span>
+    
+    <span class="k">return</span> <span class="n">output_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># smoke test</span>
+<span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Code in final project/exam requires:</p>
+<ul>
+<li><p>numpy-style docstrings</p></li>
+<li><p>code comments</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="putting-it-all-together">
+<h3>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atbash</span> <span class="kn">import</span> <span class="n">atbash_wrapper</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;decrypt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;blargh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="refactoring">
+<h3>Refactoring<a class="headerlink" href="#refactoring" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+Refactoring is the process of restructuring existing computer code, without changing its external behaviour. 
+</div><p>Think of this as restructuring and final edits on your essay.</p>
+<p><strong>Nesting Functions</strong> - If you have a whole bunch of functions, if statements, and for/while loops together within a single function, you probably want (need?) to refactor.</p>
+<p>Clean functions accomplish a <strong>single task</strong>!</p>
+<p><strong>DRY</strong>: Don’t Repeat Yourself</p>
+<div class="section" id="refactoring-example-chatbot">
+<h4>Refactoring Example: Chatbot<a class="headerlink" href="#refactoring-example-chatbot" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+
+<span class="k">def</span> <span class="nf">have_a_chat</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Main function to run our chatbot.&quot;&quot;&quot;</span>
+    
+    <span class="n">chat</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">while</span> <span class="n">chat</span><span class="p">:</span>
+
+        <span class="c1"># Get a message from the user</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;INPUT :</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">out_msg</span> <span class="o">=</span> <span class="kc">None</span>
+        
+        <span class="c1"># Check if the input is a question</span>
+        <span class="n">input_string</span> <span class="o">=</span> <span class="n">msg</span>
+        <span class="k">if</span> <span class="s1">&#39;?&#39;</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+            <span class="n">question</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">question</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># Check for an end msg </span>
+        <span class="k">if</span> <span class="s1">&#39;quit&#39;</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+            <span class="n">out_msg</span> <span class="o">=</span> <span class="s1">&#39;Bye!&#39;</span>
+            <span class="n">chat</span> <span class="o">=</span> <span class="kc">False</span>
+            
+        <span class="c1"># If we don&#39;t have an output yet, but the input was a question, </span>
+        <span class="c1"># return msg related to it being a question</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">out_msg</span> <span class="ow">and</span> <span class="n">question</span><span class="p">:</span>
+            <span class="n">out_msg</span> <span class="o">=</span> <span class="s2">&quot;I&#39;m too shy to answer questions. What do you want to talk about?&quot;</span>
+
+        <span class="c1"># Catch-all to say something if msg not caught &amp; processed so far</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">out_msg</span><span class="p">:</span>
+            <span class="n">out_msg</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s1">&#39;Good.&#39;</span><span class="p">,</span> <span class="s1">&#39;Okay&#39;</span><span class="p">,</span> <span class="s1">&#39;Huh?&#39;</span><span class="p">,</span> <span class="s1">&#39;Yeah!&#39;</span><span class="p">,</span> <span class="s1">&#39;Thanks!&#39;</span><span class="p">])</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;OUTPUT:&#39;</span><span class="p">,</span> <span class="n">out_msg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">have_a_chat</span><span class="p">()</span>  
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="refactored-example-chatbot">
+<h4>Refactored Example: Chatbot<a class="headerlink" href="#refactored-example-chatbot" title="Permalink to this headline">¶</a></h4>
+<p>What this function does:</p>
+<ol class="simple">
+<li><p>takes an input</p></li>
+<li><p>checks if input is a question</p></li>
+<li><p>checks if input is supposed to end the chat</p></li>
+<li><p>return appropriate response if question, end chat, or other</p></li>
+</ol>
+<p>That’s four different things! Functions should do a single thing…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_input</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;ask user for an input message&quot;&quot;&quot;</span>
+    
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;INPUT :</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">out_msg</span> <span class="o">=</span> <span class="kc">None</span>
+    
+    <span class="k">return</span> <span class="n">msg</span><span class="p">,</span> <span class="n">out_msg</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_question</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;determine if input from user is a question&quot;&quot;&quot;</span>
+    
+    <span class="k">if</span> <span class="s1">&#39;?&#39;</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="kc">False</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">end_chat</span><span class="p">(</span><span class="n">input_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;identify if user says &#39;quit&#39; in input and end chat&quot;&quot;&quot;</span>
+    
+    <span class="k">if</span> <span class="s1">&#39;quit&#39;</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;Bye&#39;</span>
+        <span class="n">chat</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">chat</span> <span class="o">=</span> <span class="kc">True</span>
+        
+    <span class="k">return</span> <span class="n">output</span><span class="p">,</span> <span class="n">chat</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">return_message</span><span class="p">(</span><span class="n">out_msg</span><span class="p">,</span> <span class="n">question</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;generic responses for the chatbot to return&quot;&quot;&quot;</span>
+        
+    <span class="c1"># If we don&#39;t have an output yet, but the input was a question, </span>
+    <span class="c1"># return msg related to it being a question</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">out_msg</span> <span class="ow">and</span> <span class="n">question</span><span class="p">:</span>
+        <span class="n">out_msg</span> <span class="o">=</span> <span class="s2">&quot;I&#39;m too shy to answer questions. What do you want to talk about?&quot;</span>
+
+    <span class="c1"># Catch-all to say something if msg not caught &amp; processed so far</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">out_msg</span><span class="p">:</span>
+        <span class="n">out_msg</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s1">&#39;Good.&#39;</span><span class="p">,</span> <span class="s1">&#39;Okay&#39;</span><span class="p">,</span> <span class="s1">&#39;Huh?&#39;</span><span class="p">,</span> <span class="s1">&#39;Yeah!&#39;</span><span class="p">,</span> <span class="s1">&#39;Thanks!&#39;</span><span class="p">])</span>
+        
+    <span class="k">return</span> <span class="n">out_msg</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">have_a_chat</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Main function to run our chatbot.&quot;&quot;&quot;</span>
+    
+    <span class="n">chat</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">while</span> <span class="n">chat</span><span class="p">:</span>
+
+        <span class="c1"># Get input message from the user</span>
+        <span class="n">msg</span><span class="p">,</span> <span class="n">out_msg</span> <span class="o">=</span> <span class="n">get_input</span><span class="p">()</span>
+        
+        <span class="c1"># Check if the input is a question</span>
+        <span class="n">question</span> <span class="o">=</span> <span class="n">is_question</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+         
+        <span class="c1"># Check for an end msg </span>
+        <span class="n">out_msg</span><span class="p">,</span> <span class="n">chat</span> <span class="o">=</span> <span class="n">end_chat</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+       
+        <span class="c1"># specify what to return</span>
+        <span class="n">out_msg</span> <span class="o">=</span> <span class="n">return_message</span><span class="p">(</span><span class="n">out_msg</span> <span class="o">=</span> <span class="n">out_msg</span><span class="p">,</span> <span class="n">question</span> <span class="o">=</span> <span class="n">question</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;OUTPUT:&#39;</span><span class="p">,</span> <span class="n">out_msg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">have_a_chat</span><span class="p">()</span>  
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="code-review">
+<h2>Code Review<a class="headerlink" href="#code-review" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+Code reviews is a process for systematically reviewing someone else's code. 
+</div><p>This is what you’ll have the chance to do in coding lab next week!</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="19-Documentation.html" title="previous page">Documentation</a>
+    <a class='right-next' id="next-link" href="../materials_bardolph/01-Introduction.html" title="next page">Introduction to Python</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>
