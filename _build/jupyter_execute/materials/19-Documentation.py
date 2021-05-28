@@ -7,7 +7,8 @@ Due Dates:
 Notes:
 - Scientific Computing Lecture on Canvas issue:
     - Have reuploaded lecture on Media Gallery (will be out of order)
-- No Lecture/OH on Monday (Memeorial Day Holiday)
+- No Lecture/OH on Monday (Memorial Day Holiday)
+- Folder for module/scripts practice: CL7_student_examples
 
 # Documentation
 
@@ -70,6 +71,8 @@ Improvement Considerations:
 - Structural considerations: indentations & spacing
 - Improved naming: functions & variables
 - Add Comments within code
+
+list('Hello World.')
 
 def return_unicode(input_list):
     string = list()
@@ -188,7 +191,7 @@ def add(num1, num2):
     
     Returns
     -------
-    answer : float
+    answer : int or float
         The result of the addition. 
     """
     
@@ -243,7 +246,7 @@ What should be included in a docstring?
 1. Your original code definitely needs `numpy` docstrings (required)
 2. It's best if all your main functions have docstrings (optional)
     - If you include functions from an assignment, go ahead document them
-    - If you write a teeny tiny function to accomplish a sumer small task, no need to document
+    - If you write a teeny tiny function to accomplish a super small task, no need to document
 
 ## Documentation for a Software Project
 
@@ -282,7 +285,7 @@ The rules, if you're new to this can be [dizzying](https://www.python.org/dev/pe
 
 - `<MAJOR>` - increase by 1 w/ incompatible API changes
 - `<MINOR>` - increase by 1 w/ added functionality in a backwards-compatible manner
-- `<MAINTENANCE>` - (aka patch) inrease by 1 w/  backwards-compatible bug fixes.
+- `<MAINTENANCE>` - (aka patch) increase by 1 w/  backwards-compatible bug fixes.
 
 # see version information
 import pandas as pd
