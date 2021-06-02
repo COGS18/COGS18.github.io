@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction to Python" href="../materials_bardolph/01-Introduction.html" />
+    <link rel="next" title="Advanced Python" href="21-AdvancedPython.html" />
     <link rel="prev" title="Documentation" href="19-Documentation.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -179,6 +179,11 @@
    20-CodeProjects
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21-AdvancedPython.html">
+   21-AdvancedPython
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -284,6 +289,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials_bardolph/20-CodeProjects.html">
    20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/21-AdvancedPython.html">
+   21-AdvancedPython
   </a>
  </li>
 </ul>
@@ -686,11 +696,16 @@
   <p><strong>Course Announcements</strong></p>
 <p>Due Dates:</p>
 <ul class="simple">
-<li><p>A4 due Monday (5/31)</p></li>
-<li><p>Final Project/Exam (Fri 6/11 at 11:59 PM)</p></li>
+<li><p>A5 due Monday (5/31)</p></li>
+<li><p>Final Project/Exam (Fri 6/11 at 11:59 PM)</p>
+<ul>
+<li><p>Exam: will have &gt;= 48h to complete</p></li>
+</ul>
+</li>
 </ul>
 <p>Notes:</p>
 <ul class="simple">
+<li><p>Please fill out your CAPEs (+1% if &gt;=85% response rate)</p></li>
 <li><p>No lecture/OH on Monday (Memorial Day)</p></li>
 <li><p>No OH for staff during Finals Week (Prof Ellis will have some; details TBD)</p></li>
 </ul>
@@ -874,8 +889,26 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># smoke test</span>
-<span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+<span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ZYX&#39;
 </pre></div>
 </div>
 </div>
@@ -890,7 +923,39 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <p>Note on <code class="docutils literal notranslate"><span class="pre">imports</span></code>: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top. This applies to test files as well.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pylint atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>************* Module atbash
+atbash.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+atbash.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.33/10 (previous run: 8.33/10, +0.00)
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.7.7, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Sp21-Ellis
+<span class=" -Color -Color-Bold">collecting ... </span>
+<span class=" -Color -Color-Bold">collected 1 item                                                               </span>
+
+test_atbash.py <span class=" -Color -Color-Green">.                                                         [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">1 passed</span><span class=" -Color -Color-Green"> in 0.01s ===============================</span>
 </pre></div>
 </div>
 </div>
@@ -922,10 +987,101 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;HELLO&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># doesn&#39;t handle non-letters correctly</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pylint atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>************* Module atbash
+atbash.py:18:34: C0303: Trailing whitespace (trailing-whitespace)
+atbash.py:28:0: C0304: Final newline missing (missing-final-newline)
+atbash.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+atbash.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+atbash.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+atbash.py:19:4: C0103: Variable name &quot;ALPHA&quot; doesn&#39;t conform to snake_case naming style (invalid-name)
+atbash.py:20:4: C0103: Variable name &quot;REVERSEALPHA&quot; doesn&#39;t conform to snake_case naming style (invalid-name)
+atbash.py:23:8: C0103: Variable name &quot;l&quot; doesn&#39;t conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 6.52/10 (previous run: 8.33/10, -1.81)
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pylint atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>************* Module atbash
+atbash.py:31:0: C0303: Trailing whitespace (trailing-whitespace)
+atbash.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+atbash.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+atbash.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.26/10 (previous run: 6.09/10, +2.17)
+
+
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.7.7, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Sp21-Ellis
+collected 2 items                                                              
+
+test_atbash.py <span class=" -Color -Color-Green">..                                                        [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">2 passed</span><span class=" -Color -Color-Green"> in 0.01s ===============================</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import our module and use it</span>
+<span class="kn">import</span> <span class="nn">atbash</span> <span class="k">as</span> <span class="nn">ab</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ab</span><span class="o">.</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="n">ab</span><span class="o">.</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;HELLO&#39;
 </pre></div>
 </div>
 </div>
@@ -940,7 +1096,7 @@ Rapid prototyping is an approach for developing things in which you work on mini
     <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;encrypt&#39;</span><span class="p">:</span>
         <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;decrypt&#39;</span><span class="p">:</span>
-        <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+        <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">output_string</span> <span class="o">=</span> <span class="s2">&quot;method should be either &#39;decrypt&#39; or &#39;encrypt&#39;&quot;</span>
     
@@ -956,10 +1112,28 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.7.7, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Sp21-Ellis
+<span class=" -Color -Color-Bold">collecting ... </span>
+<span class=" -Color -Color-Bold">collected 3 items                                                              </span>
+
+test_atbash.py <span class=" -Color -Color-Green">...                                                       [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">3 passed</span><span class=" -Color -Color-Green"> in 0.03s ===============================</span>
 </pre></div>
 </div>
 </div>
@@ -1214,7 +1388,7 @@ Code reviews is a process for systematically reviewing someone else's code.
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="19-Documentation.html" title="previous page">Documentation</a>
-    <a class='right-next' id="next-link" href="../materials_bardolph/01-Introduction.html" title="next page">Introduction to Python</a>
+    <a class='right-next' id="next-link" href="21-AdvancedPython.html" title="next page">Advanced Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

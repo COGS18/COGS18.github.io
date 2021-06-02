@@ -1,10 +1,12 @@
 **Course Announcements**
 
 Due Dates:
-- A4 due Monday (5/31)
+- A5 due Monday (5/31)
 - Final Project/Exam (Fri 6/11 at 11:59 PM)
+    - Exam: will have >= 48h to complete
 
 Notes:
+- Please fill out your CAPEs (+1% if >=85% response rate)
 - No lecture/OH on Monday (Memorial Day)
 - No OH for staff during Finals Week (Prof Ellis will have some; details TBD)
 
@@ -151,14 +153,19 @@ def atbash_encrypt(input_string):
         
     return atbash_string
 
+output = atbash_encrypt('Hello!')
+print(output)
+
 # smoke test
-atbash_encrypt('Hello')
+atbash_encrypt('abc')
 
 ### Moving to a module...
 
 - consider imports at the top
 
 Note on `imports`: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top. This applies to test files as well.
+
+!pylint atbash.py
 
 !pytest test_atbash.py
 
@@ -180,7 +187,19 @@ def atbash_decrypt(atbash_string):
 # smoke test
 atbash_decrypt('SVOOL')
 
+# doesn't handle non-letters correctly
+
+!pylint atbash.py
+
+!pylint atbash.py
+
 !pytest test_atbash.py
+
+# import our module and use it
+import atbash as ab
+
+ab.atbash_encrypt('hello')
+ab.atbash_decrypt('svool')
 
 #### `atbash_wrapper`
 
@@ -189,7 +208,7 @@ def atbash_wrapper(input_string, method='encrypt'):
     if method == 'encrypt':
         output_string = atbash_encrypt(input_string)
     elif method == 'decrypt':
-        output_string = atbash_encrypt(input_string)
+        output_string = atbash_decrypt(input_string)
     else:
         output_string = "method should be either 'decrypt' or 'encrypt'"
     

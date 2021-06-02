@@ -43,8 +43,8 @@
     title: 19-Documentation
   - file: materials/20-CodeProjects
     title: 20-CodeProjects
-  # - file: materials/21-AdvancedPython
-  #   title: 21-AdvancedPython
+  - file: materials/21-AdvancedPython
+    title: 21-AdvancedPython
   # - file: materials/22-WrapUp
   #   title: 22-WrapUp
 
@@ -90,8 +90,8 @@
     title: 19-Documentation
   - file: materials_bardolph/20-CodeProjects
     title: 20-CodeProjects
-  # - file: materials_bardolph/21-AdvancedPython
-  #   title: 21-AdvancedPython
+  - file: materials_bardolph/21-AdvancedPython
+    title: 21-AdvancedPython
   # - file: materials_bardolph/22-WrapUp
   #   title: 22-WrapUp
   # - file: materials_bardolph/A1-Syntax
