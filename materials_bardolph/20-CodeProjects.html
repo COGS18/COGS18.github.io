@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="next" title="Advanced Python" href="21-AdvancedPython.html" />
     <link rel="prev" title="Documentation" href="19-Documentation.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -179,6 +179,11 @@
    20-CodeProjects
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/21-AdvancedPython.html">
+   21-AdvancedPython
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -284,6 +289,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21-AdvancedPython.html">
+   21-AdvancedPython
   </a>
  </li>
 </ul>
@@ -686,11 +696,16 @@
   <p><strong>Course Announcements</strong></p>
 <p>Due Dates:</p>
 <ul class="simple">
-<li><p>A4 due Monday (5/31)</p></li>
-<li><p>Final Project/Exam (Fri 6/11 at 11:59 PM)</p></li>
+<li><p>A5 due Monday (5/31)</p></li>
+<li><p>Final Project/Exam (Fri 6/11 at 11:59 PM)</p>
+<ul>
+<li><p>Exam: will have &gt;= 48h to complete</p></li>
+</ul>
+</li>
 </ul>
 <p>Notes:</p>
 <ul class="simple">
+<li><p>Please fill out your CAPEs (+1% if &gt;=85% response rate)</p></li>
 <li><p>No lecture/OH on Monday (Memorial Day)</p></li>
 <li><p>No OH for staff during Finals Week (Prof Ellis will have some; details TBD)</p></li>
 </ul>
@@ -816,7 +831,7 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <li><p>Idea: atbash encryption: return the capitalized, reverse alphabetical letter for each character in the input string</p></li>
 <li><p>Design:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> : take input string and retrun atbash encrypted string</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> : take input string and return atbash encrypted string</p>
 <ul>
 <li><p>inputs: <code class="docutils literal notranslate"><span class="pre">input_string</span></code></p></li>
 <li><p>returns: <code class="docutils literal notranslate"><span class="pre">atbash_string</span></code></p></li>
@@ -875,6 +890,18 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <h4><code class="docutils literal notranslate"><span class="pre">atbash_encrypt</span></code><a class="headerlink" href="#atbash-encrypt" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;hello&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
     <span class="n">alpha</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
     <span class="n">reverse_alpha</span> <span class="o">=</span> <span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
@@ -898,7 +925,7 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># smoke test</span>
-<span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+<span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;!!!&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -913,7 +940,38 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <p>Note on <code class="docutils literal notranslate"><span class="pre">imports</span></code>: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top. This applies to test files as well.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">atbash</span> <span class="k">as</span> <span class="nn">ab</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ab</span><span class="o">.</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.7.7, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Sp21-Bardolph
+collected 1 item                                                               
+
+test_atbash.py <span class=" -Color -Color-Green">.                                                         [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">1 passed</span><span class=" -Color -Color-Green"> in 0.03s ===============================</span>
 </pre></div>
 </div>
 </div>
@@ -945,10 +1003,28 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;HELLO&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.7.7, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Sp21-Bardolph
+<span class=" -Color -Color-Bold">collecting ... </span>
+<span class=" -Color -Color-Bold">collected 2 items                                                              </span>
+
+test_atbash.py <span class=" -Color -Color-Green">..                                                        [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">2 passed</span><span class=" -Color -Color-Green"> in 0.02s ===============================</span>
 </pre></div>
 </div>
 </div>
@@ -963,7 +1039,7 @@ Rapid prototyping is an approach for developing things in which you work on mini
     <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;encrypt&#39;</span><span class="p">:</span>
         <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;decrypt&#39;</span><span class="p">:</span>
-        <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+        <span class="n">output_string</span> <span class="o">=</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">output_string</span> <span class="o">=</span> <span class="s2">&quot;method should be either &#39;decrypt&#39; or &#39;encrypt&#39;&quot;</span>
     
@@ -975,7 +1051,34 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># smoke test</span>
-<span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;aslfsdklj&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;method should be either &#39;decrypt&#39; or &#39;encrypt&#39;&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pylint atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>************* Module atbash
+atbash.py:44:0: C0305: Trailing newlines (trailing-newlines)
+atbash.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+atbash.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+atbash.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+atbash.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.33/10 (previous run: 8.70/10, -0.36)
+
+
 </pre></div>
 </div>
 </div>
@@ -983,6 +1086,18 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.7.7, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-Sp21-Bardolph
+collected 3 items                                                              
+
+test_atbash.py <span class=" -Color -Color-Green">...                                                       [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">3 passed</span><span class=" -Color -Color-Green"> in 0.04s ===============================</span>
 </pre></div>
 </div>
 </div>
@@ -1237,7 +1352,7 @@ Code reviews is a process for systematically reviewing someone else's code.
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="19-Documentation.html" title="previous page">Documentation</a>
-    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+    <a class='right-next' id="next-link" href="21-AdvancedPython.html" title="next page">Advanced Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
