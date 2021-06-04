@@ -229,11 +229,22 @@ atbash_wrapper('hello')
 
 from atbash import atbash_wrapper
 
+# use wrapper to encrypt by default
 atbash_wrapper('hello')
 
+# wrapper also does decryption
 atbash_wrapper('svool', method='decrypt')
 
+# returns string when non-method provided
 atbash_wrapper('hello', method='blargh')
+
+**atbash improvement**
+
+import atbash as ab
+
+ab.atbash_encrypt('hello')
+
+ab.atbash_decrypt('hello')
 
 ### Refactoring
 
@@ -287,7 +298,7 @@ def have_a_chat():
 
         print('OUTPUT:', out_msg)
 
-have_a_chat()  
+have_a_chat()
 
 #### Refactored Example: Chatbot
 

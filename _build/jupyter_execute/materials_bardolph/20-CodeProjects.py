@@ -254,11 +254,22 @@ atbash_wrapper('svool', method='aslfsdklj')
 
 from atbash import atbash_wrapper
 
+# carry out atbash encryption by default
 atbash_wrapper('hello')
 
+# carry out atbash decryption
 atbash_wrapper('svool', method='decrypt')
 
+# gives appropriate response if incorrect method provided
 atbash_wrapper('hello', method='blargh')
+
+**atbash improvements**
+
+import atbash as ab
+
+ab.atbash_encrypt('hello')
+
+ab.atbash_decrypt('hello')
 
 ### Refactoring
 
@@ -312,7 +323,7 @@ def have_a_chat():
 
         print('OUTPUT:', out_msg)
 
-have_a_chat()  
+have_a_chat()
 
 #### Refactored Example: Chatbot
 

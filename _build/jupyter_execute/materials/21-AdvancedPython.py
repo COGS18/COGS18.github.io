@@ -27,7 +27,6 @@ A: We'll discuss this a bit more today, but here's the simplest approach: 1) Fun
 - list comprehensions
 - map
 - APIs
-- Software versioning
 - overloading operators
 
 ...or: a day of shortcuts
@@ -47,6 +46,11 @@ import antigravity
 ## String Formatting
 
 Use the `format` method to manipulate and format strings.
+
+# class question about including an attribute from a class
+myobj = MyClass()
+
+"Hello! My name is {}. My job is {}, and I work on {}".format(myobj.attr_name, job, topic)
 
 name = "Shannon"
 job = "Assistant Teaching Professor"

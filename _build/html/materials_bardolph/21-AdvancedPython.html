@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="next" title="Wrap Up" href="22-WrapUp.html" />
     <link rel="prev" title="Code Projects" href="20-CodeProjects.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -184,6 +184,11 @@
    21-AdvancedPython
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/22-WrapUp.html">
+   22-WrapUp
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -294,6 +299,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    21-AdvancedPython
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22-WrapUp.html">
+   22-WrapUp
   </a>
  </li>
 </ul>
@@ -805,7 +815,6 @@ A: Yup! On the final project, it’s up to you!</p>
 <li><p>list comprehensions</p></li>
 <li><p>map</p></li>
 <li><p>APIs</p></li>
-<li><p>Software versioning</p></li>
 <li><p>overloading operators</p></li>
 </ul>
 <p>…or: a day of shortcuts</p>
@@ -834,6 +843,11 @@ A: Yup! On the final project, it’s up to you!</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hello! My name is Shannon. My job is Assistant Teaching Professor, and I work on Python&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="sets">
@@ -846,12 +860,22 @@ A: Yup! On the final project, it’s up to you!</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4}
+</pre></div>
+</div>
+</div>
 </div>
 <p>Like lists, they are iterable &amp; mutable.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">my_set</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4, 6}
 </pre></div>
 </div>
 </div>
@@ -865,6 +889,11 @@ A: Yup! On the final project, it’s up to you!</p>
 <span class="n">clicker_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">clicker_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">clicker_set</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4, 6}
 </pre></div>
 </div>
 </div>
@@ -898,6 +927,11 @@ A: Yup! On the final project, it’s up to you!</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counter({1: 3, 0: 1, 2: 1})
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -912,11 +946,38 @@ A: Yup! On the final project, it’s up to you!</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counter({1: 3, 0: 1, 2: 1})
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># can count how many of each letter are in there</span>
 <span class="n">Counter</span><span class="p">(</span><span class="s2">&quot;I wonder how many times I use the letter &#39;e&#39;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counter({&#39;I&#39;: 2,
+         &#39; &#39;: 9,
+         &#39;w&#39;: 2,
+         &#39;o&#39;: 2,
+         &#39;n&#39;: 2,
+         &#39;d&#39;: 1,
+         &#39;e&#39;: 7,
+         &#39;r&#39;: 2,
+         &#39;h&#39;: 2,
+         &#39;m&#39;: 2,
+         &#39;a&#39;: 1,
+         &#39;y&#39;: 1,
+         &#39;t&#39;: 4,
+         &#39;i&#39;: 1,
+         &#39;s&#39;: 2,
+         &#39;u&#39;: 1,
+         &#39;l&#39;: 1,
+         &quot;&#39;&quot;: 2})
 </pre></div>
 </div>
 </div>
@@ -1526,7 +1587,7 @@ An <b>API</b> is a programmatic interface to an application - a software to soft
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="20-CodeProjects.html" title="previous page">Code Projects</a>
-    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+    <a class='right-next' id="next-link" href="22-WrapUp.html" title="next page">Wrap Up</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

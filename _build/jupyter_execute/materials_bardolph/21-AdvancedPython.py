@@ -87,7 +87,6 @@ A: Yup! On the final project, it's up to you!
 - list comprehensions
 - map
 - APIs
-- Software versioning
 - overloading operators
 
 ...or: a day of shortcuts

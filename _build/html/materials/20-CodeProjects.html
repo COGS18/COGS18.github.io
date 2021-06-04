@@ -184,6 +184,11 @@
    21-AdvancedPython
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22-WrapUp.html">
+   22-WrapUp
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -294,6 +299,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials_bardolph/21-AdvancedPython.html">
    21-AdvancedPython
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials_bardolph/22-WrapUp.html">
+   22-WrapUp
   </a>
  </li>
 </ul>
@@ -1162,21 +1172,71 @@ test_atbash.py <span class=" -Color -Color-Green">...                           
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use wrapper to encrypt by default</span>
+<span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;decrypt&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># wrapper also does decryption</span>
+<span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;decrypt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;HELLO&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;blargh&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># returns string when non-method provided</span>
+<span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;blargh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;method should be either &#39;decrypt&#39; or &#39;encrypt&#39;&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>atbash improvement</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">atbash</span> <span class="k">as</span> <span class="nn">ab</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ab</span><span class="o">.</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ab</span><span class="o">.</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
 </pre></div>
 </div>
 </div>
@@ -1235,7 +1295,19 @@ Refactoring is the process of restructuring existing computer code, without chan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">have_a_chat</span><span class="p">()</span>  
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">have_a_chat</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	hi
+OUTPUT: Huh?
+INPUT :	how are you?
+OUTPUT: I&#39;m too shy to answer questions. What do you want to talk about?
+INPUT :	nothing
+OUTPUT: Okay
+INPUT :	quit
+OUTPUT: Bye!
 </pre></div>
 </div>
 </div>
@@ -1344,6 +1416,18 @@ Refactoring is the process of restructuring existing computer code, without chan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">have_a_chat</span><span class="p">()</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	hi
+OUTPUT: Yeah!
+INPUT :	how are you?
+OUTPUT: I&#39;m too shy to answer questions. What do you want to talk about?
+INPUT :	fine
+OUTPUT: Good.
+INPUT :	quit
+OUTPUT: Bye
 </pre></div>
 </div>
 </div>

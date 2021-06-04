@@ -45,8 +45,8 @@
     title: 20-CodeProjects
   - file: materials/21-AdvancedPython
     title: 21-AdvancedPython
-  # - file: materials/22-WrapUp
-  #   title: 22-WrapUp
+  - file: materials/22-WrapUp
+    title: 22-WrapUp
 
 - part: Lectures (Bardolph)
   chapters:
@@ -92,8 +92,8 @@
     title: 20-CodeProjects
   - file: materials_bardolph/21-AdvancedPython
     title: 21-AdvancedPython
-  # - file: materials_bardolph/22-WrapUp
-  #   title: 22-WrapUp
+  - file: materials_bardolph/22-WrapUp
+    title: 22-WrapUp
   # - file: materials_bardolph/A1-Syntax
   #   title: A1-Syntax
   # - file: materials_bardolph/A2-Examples
