@@ -1,0 +1,1141 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COGS 18 - Final Exam &#8212; COGS 18 - Introduction To Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Lectures (Ellis)
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/08-Loops.html">
+   08-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/10-FunctionsI.html">
+   10-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/14-CommandLine.html">
+   14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/15-Modules.html">
+   15-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/16-ScientificComputing.html">
+   16-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/18-CodeStyle.html">
+   18-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/20-CodeProjects.html">
+   20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/21-AdvancedPython.html">
+   21-AdvancedPython
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/22-WrapUp.html">
+   22-WrapUp
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Lectures (Bardolph)
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-Debugging.html">
+   06-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../08-Loops.html">
+   08-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../09-Dictionaries.html">
+   09-Dictionaries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../10-FunctionsI.html">
+   10-FunctionsI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../11-Algorithms.html">
+   11-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../12-FunctionsII.html">
+   12-FunctionsII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../14-CommandLine.html">
+   14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../15-Modules.html">
+   15-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../16-ScientificComputing.html">
+   16-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../18-CodeStyle.html">
+   18-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../20-CodeProjects.html">
+   20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../21-AdvancedPython.html">
+   21-AdvancedPython
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../22-WrapUp.html">
+   22-WrapUp
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL4-Loops.html">
+   CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL5-Functions.html">
+   CL5-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL7-CommandLine.html">
+   CL7-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL8-ScientificComputing.html">
+   CL8-ScientificComputing
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/A1-Syntax.html">
+   A1-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/A2-Examples.html">
+   A2-Examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E1_Sp21_Practice.html">
+   E1-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E1_Sp21.html">
+   E1_Sp21-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E2-Practice.html">
+   E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E2_Sp21_Practice.html">
+   E2-PracticeExam-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/E2_Sp21.html">
+   E2_Sp21-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/Exam-Prep/PracticeFinal/Practice_Final_Sp21.html">
+   Practice_Final-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../materials/PythonParty.html">
+   Python Party
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/overview.html">
+   Project Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/ProjectIdeas.html">
+   Project Ideas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/faq.html">
+   Project FAQ
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/materials_bardolph/PracticeFinal/Practice_Final_Sp21.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials_bardolph/PracticeFinal/Practice_Final_Sp21.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials_bardolph/PracticeFinal/Practice_Final_Sp21.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials_bardolph/PracticeFinal/Practice_Final_Sp21.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials_bardolph/PracticeFinal/Practice_Final_Sp21.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timing">
+     Timing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-rules">
+     The Rules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q0-honor-code">
+     Q0 - Honor Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1-functions-modules-code-style-10-points">
+   Part 1: Functions, Modules, &amp; Code Style (10 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q1-chatbot-module-0-5-points">
+     Q1 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       chatbot
+      </span>
+     </code>
+     module (0.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q2-about-ucsd-function-2-5-points">
+     Q2 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       about_ucsd
+      </span>
+     </code>
+     function (2.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q3-about-ucsd-to-chatbot-module-1-point">
+     Q3 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       about_ucsd
+      </span>
+     </code>
+     to
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       chatbot
+      </span>
+     </code>
+     module (1 point)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q4-code-style-3-5-points">
+     Q4 - Code Style (3.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q5-editing-return-message-and-have-a-chat-2-5-points">
+     Q5 - editing
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       return_message
+      </span>
+     </code>
+     and
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       have_a_chat
+      </span>
+     </code>
+     (2.5 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-code-documentation-5-points">
+   Part 2: Code Documentation (5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q6-code-comments-2-points">
+     Q6 - Code Comments (2 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q7-numpy-style-docstrings-3-points">
+     Q7 -
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       numpy
+      </span>
+     </code>
+     -style docstrings (3 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-code-testing-4-points">
+   Part 3: Code Testing (4 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q8-code-tests-4-points">
+     Q8 - Code tests (4 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#final-exam-complete">
+     Final Exam complete!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cogs-18-final-exam">
+<h1>COGS 18 - Final Exam<a class="headerlink" href="#cogs-18-final-exam" title="Permalink to this headline">¶</a></h1>
+<p>This is the practice final exam for Spring 2021. It covers topics through the end of the course.</p>
+<p>This exam is out of 0 points, but the real final will be worth 19 points (19% of your grade).</p>
+<p><strong>PLEASE DO NOT CHANGE THE NAME OF THIS FILE.</strong></p>
+<p><strong>PLEASE DO NOT COPY &amp; PASTE OR DELETE CELLS INLCUDED IN THE EXAM.</strong> (Note that you can add additional cells, if you want to test things out.</p>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="timing">
+<h3>Timing<a class="headerlink" href="#timing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The exam is designed to take you ~2-3h.</p></li>
+<li><p>There will be a 48+ hour window during which you can complete this exam.</p></li>
+<li><p>If it takes you longer than 3h, you’re free to use that time.</p></li>
+</ul>
+</div>
+<div class="section" id="the-rules">
+<h3>The Rules<a class="headerlink" href="#the-rules" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You are to complete this exam on your own.</p></li>
+<li><p>This is open-notes &amp; open-Google</p></li>
+<li><p>You may not talk to any humans about this exam.</p></li>
+<li><p>The following are all <em>prohibited</em>:</p>
+<ul>
+<li><p>text/phone/online chat communication</p></li>
+<li><p>posting questions to a message board where a human could respond (Campuswire, Discord, Chegg, any similar site)</p></li>
+<li><p>viewing exam questions from a message board (as described above)</p></li>
+<li><p>asking anyone via any form about a question on this test directly</p></li>
+</ul>
+</li>
+<li><p>Clarification questions will <em><strong>not</strong></em> be allowed and there will be no posting on Campuswire about the exam at all.</p>
+<ul>
+<li><p>Campuswire posts about the exam will not be answered and will be deleted.</p></li>
+<li><p>Students who post questions about the exam to Campuswire are at risk of losing points on the exam.</p></li>
+<li><p>If you are confused about wording, add a note to your exam explaining your confusion and how you interpreted the question.</p></li>
+<li><p>Note: This policy is b/c we are incapable of responding for 48+ hours straight. This is the only way to make it fair across the board for students.</p></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: red;">Note: </span> There <em>is</em> a chance for partial credit on some questions, so <em>some</em> code is better than <em>no</em> code. Even if it throws an error, having some code that partially answers the question will benefit you/your grade.</p>
+</div>
+<div class="section" id="q0-honor-code">
+<h3>Q0 - Honor Code<a class="headerlink" href="#q0-honor-code" title="Permalink to this headline">¶</a></h3>
+<p>In the cell below, include a variable <code class="docutils literal notranslate"><span class="pre">honor_code</span></code> that stores the boolean <code class="docutils literal notranslate"><span class="pre">True</span></code> if you agree to the following statement:</p>
+<blockquote>
+<div><p>I agree that this exam was completed individually with the knowlege in my brain, information the notes from this course, and/or with searching for help on the Internet <em>without searching for answers to the text from these questions directly</em>. I did not ask anyone about specific questions on this exam. I did not post these questions (in part or in whole) on the Internet. I did not copy answers to these questions from anywhere or anyone else. I understand all code I’ve written on this exam and could explain my answers to someone else if asked.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">honor_code</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">honor_code</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-1-functions-modules-code-style-10-points">
+<h2>Part 1: Functions, Modules, &amp; Code Style (10 points)<a class="headerlink" href="#part-1-functions-modules-code-style-10-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q1-chatbot-module-0-5-points">
+<h3>Q1 - <code class="docutils literal notranslate"><span class="pre">chatbot</span></code> module (0.5 points)<a class="headerlink" href="#q1-chatbot-module-0-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Notice that in the folder with your exam there are two .py files provided.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code> includes a few functions for the module you’ll be working with and editing throughout this exam. Go ahead and open this file now and take a glance at the code. Nothing you need to change yet. The exam will walk you through the steps needed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chatbot_tests.py</span></code> will (eventually) include your test functions. We’ll get to those later.</p></li>
+</ul>
+<p>For now, import the <code class="docutils literal notranslate"><span class="pre">chatbot</span></code> module so that <code class="docutils literal notranslate"><span class="pre">chat.have_a_chat()</span></code> executes and allows you to have a chat. (Note that <code class="docutils literal notranslate"><span class="pre">'quit'</span></code> will allow you to end the chat.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="kn">import</span> <span class="nn">chatbot</span> <span class="k">as</span> <span class="nn">chat</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your work (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">chat</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">chat</span><span class="o">.</span><span class="n">have_a_chat</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chat</span><span class="o">.</span><span class="n">end_chat</span><span class="p">(</span><span class="s1">&#39;this has quit in the middle&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;Bye&#39;, False)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="q2-about-ucsd-function-2-5-points">
+<h3>Q2 - <code class="docutils literal notranslate"><span class="pre">about_ucsd</span></code> function (2.5 points)<a class="headerlink" href="#q2-about-ucsd-function-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>While our chatbot functions, it’s pretty generic right now, so let’s help make it a bit more interesting. Write a function in the cell below called <code class="docutils literal notranslate"><span class="pre">about_ucsd()</span></code>.</p>
+<p>This function will determine if the input is about UCSD.</p>
+<ul class="simple">
+<li><p>It should have a single parameter: <code class="docutils literal notranslate"><span class="pre">input_string</span></code>.</p></li>
+<li><p>The function should detect if the <code class="docutils literal notranslate"><span class="pre">input_string</span></code> contains any of the following: <code class="docutils literal notranslate"><span class="pre">'UCSD',</span> <span class="pre">'ucsd',</span> <span class="pre">'UC</span> <span class="pre">San</span> <span class="pre">Diego',</span> <span class="pre">or</span> <span class="pre">'University</span> <span class="pre">of</span> <span class="pre">California,</span> <span class="pre">San</span> <span class="pre">Diego'</span></code>.</p>
+<ul>
+<li><p>If it contains any of the above, the function should <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p>otherwise, the function should <code class="docutils literal notranslate"><span class="pre">return</span></code> False.</p></li>
+</ul>
+</li>
+</ul>
+<p>Be sure to use good code style here.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">def</span> <span class="nf">about_ucsd</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    
+    <span class="n">to_check</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;UCSD&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;ucsd&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;UC San Diego&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;University of California, San Diego&#39;</span><span class="p">]</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="nb">any</span><span class="p">(</span><span class="n">val</span> <span class="ow">in</span> <span class="n">input_string</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">to_check</span><span class="p">)</span> 
+    
+    <span class="k">return</span> <span class="n">out</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your work (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">about_ucsd</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="c1"># returns false</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">about_ucsd</span><span class="p">(</span><span class="s1">&#39;hi&#39;</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">about_ucsd</span><span class="p">)</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="c1"># returns True</span>
+<span class="k">assert</span> <span class="n">about_ucsd</span><span class="p">(</span><span class="s1">&#39;ucsd&#39;</span><span class="p">)</span> 
+<span class="k">assert</span> <span class="n">about_ucsd</span><span class="p">(</span><span class="s1">&#39;UCSD&#39;</span><span class="p">)</span> 
+<span class="k">assert</span> <span class="n">about_ucsd</span><span class="p">(</span><span class="s1">&#39;UC San Diego&#39;</span><span class="p">)</span> 
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>defined correctly; single input (<strong>0.25 points</strong>)</p></li>
+<li><p>specified list (or other) to check correctly (<strong>0.25 points</strong>)</p></li>
+<li><p>checks list correctly to return boolean (<strong>0.25 points</strong>)</p></li>
+<li><p>has return statement (<strong>0.25 points</strong>)</p></li>
+<li><p>adheres to good code style (<strong>0.5 points</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q3-about-ucsd-to-chatbot-module-1-point">
+<h3>Q3 - <code class="docutils literal notranslate"><span class="pre">about_ucsd</span></code> to <code class="docutils literal notranslate"><span class="pre">chatbot</span></code> module (1 point)<a class="headerlink" href="#q3-about-ucsd-to-chatbot-module-1-point" title="Permalink to this headline">¶</a></h3>
+<p>Copy your <code class="docutils literal notranslate"><span class="pre">about_ucsd</span></code> function to the <code class="docutils literal notranslate"><span class="pre">chatbot</span></code> module. Save the changes to the <code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code> file.</p>
+<p>Then, restart your kernel, and rerun your code from Q1 to <code class="docutils literal notranslate"><span class="pre">import</span></code> the module.</p>
+<p>Note, you do not need to write any code in this notebook for this question, but you can use the cell below to be sure you have accomplished the task correctly.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE MODULE</span>
+<span class="c1"># but you can use this cell to test/execute/check your work (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests to ensure Q3 is done correctly</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="kn">import</span> <span class="nn">chatbot</span> <span class="k">as</span> <span class="nn">chat</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">chat</span><span class="o">.</span><span class="n">about_ucsd</span><span class="p">(</span><span class="s1">&#39;hi&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">chat</span><span class="o">.</span><span class="n">about_ucsd</span><span class="p">(</span><span class="s1">&#39;UCSD&#39;</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="q4-code-style-3-5-points">
+<h3>Q4 - Code Style (3.5 points)<a class="headerlink" href="#q4-code-style-3-5-points" title="Permalink to this headline">¶</a></h3>
+<p>At this point, you’ve got a few functions in your <code class="docutils literal notranslate"><span class="pre">chatbot</span></code> module; however, if you look at the code, you’ll notice that some of the functions don’t have very good code style.</p>
+<p>For this question, improve the code style, using what we discussed in class to improve the readiability and style of the <code class="docutils literal notranslate"><span class="pre">is_question()</span></code> and <code class="docutils literal notranslate"><span class="pre">end_chat()</span></code> functions.</p>
+<p>Note, you do not need to write any code in this notebook for this question. All work will occur in <code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code></p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p><code class="docutils literal notranslate"><span class="pre">is_question()</span></code></p>
+<ul class="simple">
+<li><p>spacing around operators fixed (<strong>0.5 points</strong>)</p></li>
+<li><p>variable names improved (<strong>0.5 points</strong>)</p></li>
+<li><p>line spacing improved (<strong>0.5 points</strong>)</p></li>
+<li><p>if/else on separate lines (<strong>0.5 points</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p><code class="docutils literal notranslate"><span class="pre">end_chat()</span></code></p>
+<ul class="simple">
+<li><p>spacing around operators fixed (<strong>0.5 points</strong>)</p></li>
+<li><p>variable names improved (<strong>0.5 points</strong>)</p></li>
+<li><p>if/else on separate lines (<strong>0.5 points</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q5-editing-return-message-and-have-a-chat-2-5-points">
+<h3>Q5 - editing <code class="docutils literal notranslate"><span class="pre">return_message</span></code> and <code class="docutils literal notranslate"><span class="pre">have_a_chat</span></code> (2.5 points)<a class="headerlink" href="#q5-editing-return-message-and-have-a-chat-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>At this point, you’ve written your <code class="docutils literal notranslate"><span class="pre">about_ucsd()</span></code> function and moved it into the <code class="docutils literal notranslate"><span class="pre">chatbot</span></code> module; however, its functionality has not <em>yet</em> been incorporated into the chatbot.</p>
+<p>Be sure you understand the code of all of the functions provided.</p>
+<p>Then, within the <code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code> module, edit <code class="docutils literal notranslate"><span class="pre">return_message()</span></code> using the following approach:</p>
+<ul class="simple">
+<li><p>has three input parameters: <code class="docutils literal notranslate"><span class="pre">out_msg</span></code>, <code class="docutils literal notranslate"><span class="pre">question</span></code>, <code class="docutils literal notranslate"><span class="pre">ucsd</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ucsd</span></code> will be a boolean indicating <code class="docutils literal notranslate"><span class="pre">True</span></code> if the user mentioned UCSD and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p></li>
+</ul>
+</li>
+<li><p>has the same functionality as provided originally, <em>with the following addition</em>:</p>
+<ul>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">question</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> and <code class="docutils literal notranslate"><span class="pre">about_ucsd()</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, this function will <code class="docutils literal notranslate"><span class="pre">return</span></code> a response at random from the list of <code class="docutils literal notranslate"><span class="pre">ucsd_facts</span></code> provided below.</p></li>
+</ul>
+</li>
+</ul>
+<p>Finally, in the <code class="docutils literal notranslate"><span class="pre">have_a_chat</span></code> function, edit <code class="docutils literal notranslate"><span class="pre">return_message</span></code> as needed and incorporate <code class="docutils literal notranslate"><span class="pre">about_ucsd()</span></code> such that if the user mentions UCSD (as specified in Q2), the chatbot will return a <code class="docutils literal notranslate"><span class="pre">ucsd_facts</span></code> at random.</p>
+<p>Note: no code needs to be written in the notebook here. All changes will be made in <code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ucsd_facts</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;UCSD sits on the ancestral homelands of the Kumeyaay Nation.&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;UCSD has more than 220,000 Eucalyptus trees on its campus.&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;UCSD was founded in 1960.&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;UCSD receives more than $1B in research funding annually.&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;UCSD has more than 130 different majors and more than 40,000 students.&#39;</span>
+             <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE MODULE</span>
+<span class="c1"># but you can use this cell to test/execute/check your work (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check that chatbot works with questions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="kn">import</span> <span class="nn">chatbot</span> <span class="k">as</span> <span class="nn">chat</span>
+<span class="k">assert</span> <span class="n">chat</span><span class="o">.</span><span class="n">return_message</span><span class="p">(</span><span class="n">out_msg</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">question</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ucsd</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;I&#39;m too shy to answer questions. What do you want to talk about?&quot;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check that chatbot works when UCSD is mentioned</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="n">ucsd_facts</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;UCSD sits on the ancestral homelands of the Kumeyaay Nation.&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;UCSD has more than 220,000 Eucalyptus trees on its campus.&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;UCSD was founded in 1960.&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;UCSD receives more than $1B in research funding annually.&#39;</span><span class="p">,</span>
+              <span class="s2">&quot;UCSD has more than 130 different majors and more than 40,000 students.&quot;</span>
+             <span class="p">]</span>
+<span class="k">assert</span> <span class="n">chat</span><span class="o">.</span><span class="n">return_message</span><span class="p">(</span><span class="n">out_msg</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">question</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ucsd</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ucsd_facts</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-2-code-documentation-5-points">
+<h2>Part 2: Code Documentation (5 points)<a class="headerlink" href="#part-2-code-documentation-5-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q6-code-comments-2-points">
+<h3>Q6 - Code Comments (2 points)<a class="headerlink" href="#q6-code-comments-2-points" title="Permalink to this headline">¶</a></h3>
+<p>At this point, your chatbot is fully functional (for the purposes of this exam). Go through your module and be sure that all functions (both the ones provided and the ones your wrote/edited) have sufficient code comments.</p>
+<p>Note: Nothing has to be done in this notebook. All changes will be in <code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code>.</p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>sufficient good code comments throughout module (<strong>2 points</strong>)</p>
+<ul>
+<li><p>if <em>too</em> many comments (<strong>-0.5 points</strong>)</p></li>
+<li><p>if comments don’t explain code’s logic (<strong>-1 point</strong>)</p></li>
+</ul>
+</li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q7-numpy-style-docstrings-3-points">
+<h3>Q7 - <code class="docutils literal notranslate"><span class="pre">numpy</span></code>-style docstrings (3 points)<a class="headerlink" href="#q7-numpy-style-docstrings-3-points" title="Permalink to this headline">¶</a></h3>
+<p>Add <code class="docutils literal notranslate"><span class="pre">numpy</span></code>-style docstrings to the <code class="docutils literal notranslate"><span class="pre">is_question</span></code>, <code class="docutils literal notranslate"><span class="pre">end_chat</span></code>, and <code class="docutils literal notranslate"><span class="pre">return_message</span></code> functions within <code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code></p>
+<p>Note: Nothing has to be done in this notebook. All changes will be in <code class="docutils literal notranslate"><span class="pre">chatbot.py</span></code>.</p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>all (3) functions have <code class="docutils literal notranslate"><span class="pre">numpy</span></code>-style docstrings (<strong>3 points</strong>)</p>
+<ul>
+<li><p>if not numpy-style but has docstrings (-1.5)</p></li>
+</ul>
+</li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+</div>
+<div class="section" id="part-3-code-testing-4-points">
+<h2>Part 3: Code Testing (4 points)<a class="headerlink" href="#part-3-code-testing-4-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q8-code-tests-4-points">
+<h3>Q8 - Code tests (4 points)<a class="headerlink" href="#q8-code-tests-4-points" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">chatbot_tests.py</span></code> has been provided for you, but it’s empty.</p>
+<p>Add three test functions to test the functions: <code class="docutils literal notranslate"><span class="pre">is_question()</span></code>, <code class="docutils literal notranslate"><span class="pre">end_chat()</span></code>, and <code class="docutils literal notranslate"><span class="pre">return_message()</span></code> from the <code class="docutils literal notranslate"><span class="pre">chatbot</span></code> module.</p>
+<p>Each test function should have at least three <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements and should test the functionality of a single function.</p>
+<p>Remember that you’ll want to consider what needs to be <code class="docutils literal notranslate"><span class="pre">import</span></code>ed at the top of your <code class="docutils literal notranslate"><span class="pre">chatbot_tests.py</span></code> file.</p>
+<p>Note: Nothing has to be done in this notebook. All changes will be in <code class="docutils literal notranslate"><span class="pre">chatbot_tests.py</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE TEST FUNCTIONS ARE IN `chatbot_tests` </span>
+<span class="c1"># but feel free to test out here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests to ensure test functions pass silently</span>
+<span class="c1"># uses pytest</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="n">out</span> <span class="o">=</span> <span class="o">!</span>pytest chatbot_tests.py
+<span class="k">assert</span> <span class="n">out</span><span class="o">.</span><span class="n">grep</span><span class="p">(</span><span class="s2">&quot;ERRORS&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="k">assert</span> <span class="n">out</span><span class="o">.</span><span class="n">grep</span><span class="p">(</span><span class="s2">&quot;FAILED&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>(3) test functions are there with correct name (<strong>1 point</strong>)</p></li>
+<li><p>each test function contains three asserts that test functionality (<strong>1 point</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="final-exam-complete">
+<h3>Final Exam complete!<a class="headerlink" href="#final-exam-complete" title="Permalink to this headline">¶</a></h3>
+<p>Good work - you’re done with the final exam!</p>
+<p>Check your work, and then when you’re ready, <strong>submit on datahub</strong>.</p>
+<p>We will not have your exam until you click submit and see this show up under ‘submitted assignments’.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials_bardolph/PracticeFinal"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>
