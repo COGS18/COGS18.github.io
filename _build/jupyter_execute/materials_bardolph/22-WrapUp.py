@@ -2,6 +2,7 @@
 
 Due Dates:
 - Final Project/Exam (due Fri 6/11 at 11:59 PM)
+    - Final exam to be released Tuesday at noon
 
 Notes:
 - Please fill out your CAPEs (+1% if >=85% response rate) - current: ~33%
@@ -13,7 +14,7 @@ Extra Credit:
     - [Post Course Survey](https://docs.google.com/forms/d/e/1FAIpQLSf9I1wACoWHiG2Qsvs1R0YKYHDwwMy_jEDlLVo1IbDdmsl1rw/viewform?usp=sf_link) (link also on Canvas)
 - Project:
     - Going above and beyond requirements (explained in project notebook; up to 4% on the project)
-    - putting your project on [GitHub](https://docs.google.com/forms/d/e/1FAIpQLSfSyvosjv-j3C4TMzZ1g3hW_y1gLBZRopxvyM3Y_OASTIOuJA/viewform?usp=sf_link) (link also on Canvas; up to 1% on project)
+    - putting your project on [GitHub](https://docs.google.com/forms/d/e/1FAIpQLSfSyvosjv-j3C4TMzZ1g3hW_y1gLBZRopxvyM3Y_OASTIOuJA/viewform?usp=sf_link) (link also on Canvas; 1% on project)
 
 **Q&A**
 
@@ -79,7 +80,7 @@ After COGS 18, I feel \_\_\_\_\_\_\_\_\_\_\_\_ my Python programming abilities
 
 - A) very confident in
 - B) somewhat confident in
-- C) middle-of-the-raod about
+- C) middle-of-the-road about
 - D) somewhat unsure about
 - E) very unsure about
 
@@ -130,7 +131,9 @@ This course used:
 
 Thank you to Tom for his original design of this course.
 
-Thank you to the TAs & IAs for their tireless work on this class.
+Thank you to Megan for teaching the vast majority of this course!
+
+Thank you to the TAs & IAs for their tireless work on this class. (and for being so flexible/helpful when I stepped in)
 
 Thank you students for you time, effort and patience. 
 

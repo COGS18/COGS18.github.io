@@ -148,8 +148,8 @@
   - file: materials/Exam-Prep/E2_Sp21
     title: E2_Sp21-Answers
 # ## Final    
-#   - file: materials/Exam-Prep/Practice_Final_Wi21-Answers
-#     title: Practice_Final-Answers
+  - file: materials/Exam-Prep/PracticeFinal/Practice_Final_Sp21
+    title: Practice_Final-Answers
 
 - part: Project
   chapters:
