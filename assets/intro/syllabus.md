@@ -1,8 +1,10 @@
 
 # COGS 18: Introduction to Python 
 
-**Spring 2021 (B00)**  
-**MWF 8-8:50 (remote)**  
+**Fall 2021**  
+**MWF 8-8:50 (Peterson Hall 110)**  
+
+THIS IS A DRAFT SYLLABUS. SYLLABUS WILL BE FINALIZED WEEK 1 OF CLASS.
 
 ---
 
@@ -12,32 +14,35 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ---
 
-### A Note About Remote Learning
+### A Note About Returning to In-Person Learning
 
-For some of you, remote learning is new. For others, you've got a bit of practice. For all of us, there is a lot going on in the world. While students have always been under a fair amount of pressure and stress, the struggles students may encounter this quarter (for a whole bunch of different reasons) may go beyond what is typical. I want you all to know that I fully understand this and am here to help you succeed. 
+Fall quarter is always a transition quarter as everyone settles back into studying and adjusts to life and learning on campus. However, for so many of you and regardless of your year of study, after more than a year of remote learning, this is your first time learning on campus. So, it's going to be a bigger transition than usual. I'm here to support your learning through this! 
 
 While regular deadlines have been established to help keep you all on track, I want you to know up front that I am a very reasonable person. While I ask that you all do your best to meet deadlines that have been set, know that if you're struggling, I absolutely want you to reach out to let me know, to ask for an extension, or to discuss some other accommodation.
-
-Please take care of yourselves and one another, and I'll work as hard as needed to ensure success for all students this quarter.
 
 ---
 
 ## COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
-**Instructor Office Hours**: Mon: 10-11 AM; 2-3 PM; Wed: 10-11 AM; Fri: 2-3 PM
+**Instructor Office Hours**: Fridays: 11AM - 1PM
 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
-| TA             | Shivani Bhakta          | 9A; 10A          | Fri 9-10 AM             |
-| IA	           | Elton Ho                | --               | Fri 11 AM-12 PM         |
-| IA	           | Hinn Zhang              | --               | Wed 11:30 AM - 12:30 PM |
-| IA	           | Andrew Nguyen           | --               | Th 3-4 PM               |
+| TA             | TBD                     | TBD              | TBD                     |
+| TA             | TBD                     | TBD              | TBD                     |
+| TA             | TBD                     | TBD              | TBD                     |
+| IA	           | TBD                     | TBD              | TBD                     |
+| IA	           | TBD                     | TBD              | TBD                     |
+| IA	           | TBD                     | TBD              | TBD                     |
+| IA	           | TBD                     | TBD              | TBD                     |
+| IA	           | TBD                     | TBD              | TBD                     |
+| IA	           | TBD                     | TBD              | TBD                     |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)
-Canvas Course: [https://canvas.ucsd.edu/courses/25024](https://canvas.ucsd.edu/courses/25024)   
-Course Campuswire*: [https://campuswire.com/c/GD823FEDD](https://campuswire.com/c/GD823FEDD)   
+Canvas Course: [https://canvas.ucsd.edu/courses/25024](https://canvas.ucsd.edu/courses/)   
+Course Campuswire*: [https://campuswire.com/c/](https://campuswire.com/c/)   
 Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
@@ -47,12 +52,14 @@ Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF
 
 ## COURSE OBJECTIVES
 
-- Program at an introductory level in the Python programming language
-- Read basic Python programs, recognizing the structures they use and be able to explain how they work
-- Solve basic problems using programmatic solutions
-- Write and debug small Python programs
-- Execute Python programs on your local computer, using notebooks and the command line
-- Describe and implement best practices in Python, keeping in mind that programming is done by and for humans
+Our main goal is that you are able to program at an introductory level in the Python programming language at the end of this course. To that end we expect that you will be able to: 
+
+- Read basic Python programs, recognizing the structures used and explaining how they work
+- Write Python code to solve basic computational problems
+- Debug small Python programs by identifying and fixing the bug
+- Execute Python programs in Jupyter notebooks and from Python scripts 
+- Demonstrate familiarity with the command line
+- Describe and implement best practices (code style, documentation, and testing) in Python 
 
 To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during coding lab, and throughout all assignments. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
 
@@ -67,7 +74,7 @@ To achieve these objectives, information will be presented during lecture. You w
 
 Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. 
 
-Note: If you do not have consistent access to the technology needed to fully access remote instruction options, please use the form below to request a loaner laptop for the period during which you will be learning remotely due to the COVID-19 pandemic: [https://eforms.ucsd.edu/view.php?id=490887](https://eforms.ucsd.edu/view.php?id=490887). (For any issues that you may have, please email vcsa@ucsd.edu and they will work to assist you.)
+Note: If you do not have consistent access to the technology needed, please use the form below to request a loaner laptop: [https://eforms.ucsd.edu/view.php?id=490887](https://eforms.ucsd.edu/view.php?id=490887). (For any issues that you may have, please email vcsa@ucsd.edu and they will work to assist you.)
 
 
 ---
@@ -77,13 +84,11 @@ Note: If you do not have consistent access to the technology needed to fully acc
 **Grading**: 
 
 |                 | \% of Grade   | Requirement  |
-| --------------: |:-------------:|:------------------------------|
-| Assignments 	  | 40\%       	  | Complete 5 Assignments        |
-| Midterms        | 25\%          | Complete 2 online Exams       |
-| Coding Lab      | 16\%		      | Participate in 8 Coding Labs  |
+| --------------: |:-------------:|:-------------------------------------|
+| Assignments 	  | 40\%       	  | Complete 5 Assignments               |
+| Midterms        | 25\%          | Complete 2 Exams                     |
+| Coding Lab      | 16\%		      | Participate in 8 Coding Labs         |
 | Final Project	  | 19\%          | Complete Final Project OR Final Exam |
-
-**Exam timing**: For the midterms, there will be a flexible window during which you can complete the exams.
 
 ### Grades
 
@@ -93,36 +98,30 @@ To calculate final grades, I use the [standard grading scale](https://pages.stol
  
 ### Assignment Regrades
 
-We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post *privately* on Campuswire to "Instructors" using the "regrades" tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
+We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post *privately* on Campuswire to "Instructors & TAs" using the "regrades" tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
 
 Note that points will *not* be rewarded if you fail to follow instructions. For example, if the instructions say to name the variable `orange` and you name it `ornage` (misspelled), you will not be rewarded credit upon regrade. This is because (1) following instructions and being detail-oriented is important and (2) there are hundreds of students taking the course this quarter. It would be an unfair burden to place on TAs if we didn't have this policy.
 
 
 ### Attendance
 
-Attendance will be neither required nor incentivized for any part of the course this quarter. This policy is in place because we do not want to disadvantage students working in different time zones. While lectures and coding labs will take place during their scheduled times, there *will* be options for students to complete all work asynchronously.
+TBD
 
 ### Lecture
 
-Lectures will take place at their scheduled time for those who are able to attend. As typically occurs in COGS 18, students will be encouraged to follow along with the notes, will be given time to complete small coding challenges during lecture on their own, and will have the opportunity to see their classmates thoughts (via zoom polls, rather than with iclickers) during lecture.
+Students are encouraged to attend lecture live; however, all lectures will also be podcast. During lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates thoughts during lecture.
 
-However, every lecture will also be recorded and shared so that students who are not able to or choose not to watch during the scheduled class time are still able to receive and digest all class materials. If a lecture recording ever fails during class, Prof Ellis will re-record a lecture, ensuring all students have access to the material. Lecture recordings will be available on Canvas in the Media Gallery by 2PM after the live lecture is delivered.
-
-There will also be a daily lecture survey (link on Canvas) to provide feedback about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final projec/exam (*not* your final course grade).
+There will be a daily lecture survey (link on Canvas) to provide feedback and ask questions about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final project/exam (*not* your final course grade). Each day's survey will be up for at least three days can be completed regardless of whether you attend class synchronously.
 
 ### Coding Labs (16\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2\% each). 
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2\% each). Coding labs are *graded for concerted effort* (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 PM each week. There are no late submissions for coding labs.
 
-Coding labs will be submitted in the same place as assignments using the same process; however, they will *not* be autograded for *correctness*. They will instead be spot-checked by instructional staff for concerted student *effort*. There are no late submissions for coding labs.
-
-While you're encouraged to work on these during your assigned lab times in the zoom session with instructional staff present (particularly if you're struggling with the material!), you are not required to do so. To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 PM each week. There will be no coding labs due on campus holidays.
-
-Note: You should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend the other Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 50 so that students can get help from their TAs and IAs during this time.
+Note: You should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend the other Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 35 so that students can get help from their TAs and IAs during this time.
 
 ### Assignments (40\%)
 
-There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due on Mondays by 11:59 PM. 
+There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date. 
 
 Late assignments will be accepted at 75\% credit for 72 hours (3 days) after the assignment's due date. Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
@@ -130,63 +129,62 @@ You *are* permitted to work with classmates on assignments; however, you are per
 
 ### Midterms (25\%)
 
-There will be a flexible 24h time window during which students will be able to complete each midterm exam. There will be no late submissions for midterm exams (however, if something comes up in your life specifically, definitely email Professor Ellis). 
+There will be two (2) midterms. The format of these exams and how they are administered (in-person vs take-home) will be discussed and decided on by the class during the first week of class. After this decision, this syllabus will be updated.
 
-There will be two midterms (see Course Schedule). Each midterm is worth 12.5\% of your grade. The exams will include varied question types and will be taken online.
-
-During exams this quarter, you *will* be allowed to consult outside resources (your notes, Google, etc.); however, you ***must complete the exam on your own without any type of communication with other humans***. For example, while you're allowed to look something up on Google or look over your class notes, you may not ask anyone about a question or their thoughts regarding your answer. You may not text/communicate on any messaging apps about the exam with anyone. You may not take the exam while looking at someone else's exam/computer. On exam days, there will be no office hours.
+Each midterm is worth 12.5\% of your grade. The exams will include varied question types and will be taken online.
 
 As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's *always* a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::
 
 
 ### Final Project OR Exam (19\%)
 
-Students will choose whether they complete the final project OR the final exam, worth 19\% of your final grade Students get to choose which option is best for them but may only submit one *and* there are two limitations of choosing the final exam 1) There is no opportunity for extra credit on the final exam and 2) the highest grade you can get if you choose the exam is an A. (To earn an A+, you must do the final project.)
+Students will choose whether they complete the final project OR the final exam, worth 19\% of your final grade Students get to choose which option is best for them but may only submit one *and* there are three limitations of choosing the final exam 1) There is no opportunity for extra credit on the final exam, 2) you cannot get help from anyone else while taking the final exam, and 3) the highest grade you can get if you choose the exam is an A. (To earn an A+, you must do the final project.)
 
 **Final Project**
 You will learn more from the final project than you will from the final exam, but the project is more time-consuming and involved. We will discuss the details elsewhere; however, briefly, you will either (1) expand upon one of the class assignments adding original elements or (2) write original code for a project topic of your choosing. The goal of this project is to demonstrate that you can write good, well-documented code that solves the problem you've set out to solve.
 
 **Final Exam**
-The final exam will be taken on the same platform and with the same time constraints as the midterm. Further details will be discussed in class. 
+The final exam will be take-home and you will have at least 48 hours to complete the exam. It will be the completion of a guided, mini-project, focusing on the material learned in the last third of the course. Additional details will be discussed in class. 
 
 ---
 
 ## COURSE SCHEDULE
 
-| Date    | Week |Lecture | Day | Topic           | Assignment ( 11:59 PM) | CodingLab ( 11:59 PM)  |
-| -------:|:----:|:-------|:---:|:----------------|:--------------------------|:--------------------------|
-| 3/29    | 1	   | 1      | M   | Introduction    |                           |                         	| 
-| 3/31    | 1	   | 2      | W   | Tooling & Integrity|                        | CL1: Tooling & Integrity  |
-| 4/2     | 1    | 3      | F   | Variables       |                           |                         	| 
-| 4/5     | 2	   | 4      | M   | Operators       |                           |                       		| 
-| 4/7     | 2	   | 5      | W   | Conditionals    |                           | CL2: Programming I        | 
-| 4/9     | 2	   | 6      | F   | Debugging       |                           |         			            | 
-| 4/12    | 3	   | 7      | M   | Collections    	| A1: Getting-Started       |                         	| 
-| 4/14    | 3	   | 8      | W   | Loops           |            			          | CL3: Programming II       |
-| 4/16    | 3	   | 9      | F   | Dictionaries [*]|                           |                         	| 
-| 4/19    | 4	   | --     | M   | -               | A2: Ciphers               | 				                  | 
-| 4/21    | 4	   | --     | W   | Review          |                        		| CL4: Loops                |
-| 4/23    | 4	   | --     | F   | **Midterm I**   |                           |                        		| 
-| 4/26    | 5	   | 10     | M   | Functions I     |                           |                         	| 
-| 4/28    | 5	   | 11     | W   | Algorithms  	  |                       	 	| CL5: Functions 	          |
-| 4/30    | 5	   | 12     | F   | Functions II    |                           |                         	| 
-| 5/3     | 6	   | 13     | M   | Classes I       |   				                |                         	| 
-| 5/5     | 6	   | 13     | W   | Classes II [**] |               		        | CL6: Classes             	| 
-| 5/7     | 6	   | --     | F   | Review          |                           |        			              | 
-| 5/10    | 7	   | --     | M   | **Midterm II**  | A3: Chatbots              |                         	| 
-| 5/12    | 7	   | --     | W   | Command Line    |      				              |          | 
-| 5/14    | 7	   | --     | F   | Python Party    |                           |                         	| 
-| 5/17    | 8	   | 14     | M   | Modules & Scripts|A4: Artifical Agents     	|                         	| 
-| 5/19    | 8	   | 15     | W   | Scientific Computing|     			            | (edited: 5/7) CL7: Command Line 	| 
-| 5/21    | 8	   | 16     | F   | Code Testing    |                           |                         	| 
-| 5/24    | 9	   | 17     | M   | Code Style   		| 			                   	|                         	| 
-| 5/26    | 9	   | 18     | W   | Documentation  	| 				                  | (edited: 5/7) CL8: Scientific Computing                          | 
-| 5/28    | 9	   | 19     | F   | Code Projects 	|                           |                           | 
-| 5/31    | 10   | 20     | M   | **No Class**    | A5: Experimentation    	  |    	                			| 
-| 6/2     | 10   | 21     | W   | Advanced Python | 				                  |                         	| 
-| 6/4     | 10   | 22     | F   | Wrap Up   		  |                           |                        		| 
+| Date     | Week  |Lecture | Day | Topic               | Assignment ( 11:59 PM)    | CodingLab ( 11:59 PM)  |
+| --------:|:-----:|:-------|:---:|:--------------------|:--------------------------|:--------------------------|
+| 9/24     | 0	   | 1      | F   | Introduction        |                           |                         	| 
+| 9/27     | 1	   | 2      | M   | Tooling & Integrity |                           |                          	| 
+| 9/29     | 1	   | 3      | W   | Variables           |                           | CL1: Tooling & Integrity  |
+| 10/1     | 1     | 4      | F   | Operators           |                           |                         	| 
+| 10/4     | 2	   | 5      | M   | Conditionals        |                           |                       		| 
+| 10/6     | 2	   | 6      | W   | Debugging           |                           | CL2: Programming I        | 
+| 10/8     | 2	   | 7      | F   | Collections    	    | A1: Getting-Started       |         			            | 
+| 10/11    | 3	   | 8      | M   | Loops               |                           |                         	| 
+| 10/13    | 3	   | 9      | W   | Dictionaries [*]    |            			          | CL3: Programming II       |
+| 10/15    | 3	   | --     | F   | Review              | A2: Ciphers               |                         	| 
+| 10/18    | 4	   | --     | M   | **Midterm I**       |                           | 				                  | 
+| 10/20    | 4	   | 10     | W   | Functions I         |                        		| CL4: Loops                |
+| 10/22    | 4	   | 11     | F   | Algorithms  	      |                           |                        		| 
+| 10/25    | 5	   | 12     | M   | Functions II        | A3: Chatbots              |                         	| 
+| 10/27    | 5	   | 13     | W   | Classes I           |                       	 	| CL5: Functions 	          |
+| 10/29    | 5	   | 14     | F   | Classes II          |                           |                         	| 
+| 11/1     | 6	   | 15     | M   | Command Line [**]   |                           |                         	| 
+| 11/3     | 6	   | --     | W   | Review              |                           | CL6: Classes             	| 
+| 11/5     | 6	   | --     | F   | **Midterm II**      |               		        |        			              | 
+| 11/8     | 7	   | --     | M   | Python Party        | A4: Artificial Agents     |                         	| 
+| 11/10    | 7	   | 16     | W   | Modules & Scripts   |      				              | CL7: Command Line         | 
+| 11/12    | 7	   | 17     | F   | Scientific Computing|                           |                         	| 
+| 11/15    | 8	   | 18     | M   | Code Testing        |                           |                         	| 
+| 11/17    | 8	   | 19     | W   | Code Style   		    |     			                | CL8: Scientific Computing | 
+| 11/19    | 8	   | 20     | F   | Documentation  	    | A5: Experimentation    	  |                         	| 
+| 11/22    | 9	   | 21     | M   | Code Projects 	    | 			                   	|                         	| 
+| 11/24    | 9	   | 22     | W   |                     | 				                  |                           | 
+| 11/26    | 9	   | --     | F   | **No Class**        |                           |                           | 
+| 11/29    | 10    | 23     | M   | APIs                |                           |    	                			| 
+| 12/1     | 10    | 24     | W   | Advanced Python     | 				                  |                         	| 
+| 12/3     | 10    | 25     | F   | Wrap Up   		      |                           |                        		| 
 
-**Final Exam**: Final Projects and Final Exams are due on the date of the final exam (Fri 6/11) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
+**Final Exam/Project**: Final Projects and Final Exams are due on the date of the final exam (Mon 12/6) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:   
 [\*] denotes the last day of material covered on Midterm I.   
@@ -252,9 +250,9 @@ If you have:
 
 ### What should you call me?
 
-Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. I'm also totally OK with you addressing me as Shannon or Dr. Ellis. I would prefer you *not* address me as Ms./Miss/Mrs. Ellis. 
+Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. But, I'm also totally OK with you addressing me as Shannon or Dr. Ellis. (I would prefer you *not* address me as Ms./Miss/Mrs. Ellis.)
 
 ### What I should call you
 
-I should call you by your preferred name, with the correct pronunciation. Please correct me (either in the chat, out loud on zoom, or via email/Campuswire after the fact...however you're most comfortable) if I ever make a mistake.
+I should call you by your preferred name, with the correct pronunciation. Please correct me (either in the moment or via email/Campuswire after the fact...however you're most comfortable) if I ever make a mistake.
 

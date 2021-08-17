@@ -14,14 +14,14 @@ The broad objectives of this project are for you to:
 ### Project Schedule
 
 - W7: Project Description released
-- W8: By the end of this week, you must have a project topic / outline
+- W8: By the end of this week, you should have a project topic / outline
 - W9-10: Work on the project
   - Coding Lab during Weeks 9-10 will provide you with time to work on and get help with your Final Project.
 - **Finals Week: projects due**
 
 ### Getting Started
 
-We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Campuswire(B00)/Piazza(C00)). This will give us a chance to give you feedback and help guide your project plans.
+We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Campuswire. This will give us a chance to give you feedback and help guide your project plans.
 
 Suggestions for working on projects:
 
@@ -44,7 +44,7 @@ Possible topics:
 - Encryption (A2)
 - Chatbots (A3)
 - Artificial Agents (A4)
-- Data Analysis
+- Data Analysis (A5)
 - Choose your own adventure (propose and develop your own project idea)
 
 There are more detailed project ideas in the `ProjectIdeas` notebook.
