@@ -29,14 +29,14 @@ While regular deadlines have been established to help keep you all on track, I w
 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
-| TA             | TBD                     | TBD              | TBD                     |
-| TA             | TBD                     | TBD              | TBD                     |
-| TA             | TBD                     | TBD              | TBD                     |
-| IA	           | TBD                     | TBD              | TBD                     |
-| IA	           | TBD                     | TBD              | TBD                     |
-| IA	           | TBD                     | TBD              | TBD                     |
-| IA	           | TBD                     | TBD              | TBD                     |
-| IA	           | TBD                     | TBD              | TBD                     |
+| TA             | Yueying (Holly) Dong	   | TBD              | TBD                     |
+| TA             | Dillan Elise Cellier    | TBD              | TBD                     |
+| TA             | Eena Lee Kosik          | TBD              | TBD                     |
+| IA	           | Evan Eguchi             | TBD              | TBD                     |
+| IA	           | Brian Fang	             | TBD              | TBD                     |
+| IA	           | Rongyu Ma               | TBD              | TBD                     |
+| IA	           | Yvonne Luo              | TBD              | TBD                     |
+| IA	           | Hannah Contreras        | TBD              | TBD                     |
 | IA	           | TBD                     | TBD              | TBD                     |
 
 
@@ -129,7 +129,7 @@ You *are* permitted to work with classmates on assignments; however, you are per
 
 ### Midterms (25\%)
 
-There will be two (2) midterms. The format of these exams and how they are administered (in-person vs take-home) will be discussed and decided on by the class during the first week of class. After this decision, this syllabus will be updated.
+There will be two (2) midterms. As we transition back to in-person learning this quarter, all midterms will be take-home exams. You will have 24 hours to complete each exam. The exam will be open-notes and open-Google; however, it will have to be completed individually. Students will not be permitted to discuss the questions on the exam with anyone.
 
 Each midterm is worth 12.5\% of your grade. The exams will include varied question types and will be taken online.
 
@@ -178,7 +178,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 11/17    | 8	   | 19     | W   | Code Style   		    |     			                | CL8: Scientific Computing | 
 | 11/19    | 8	   | 20     | F   | Documentation  	    | A5: Experimentation    	  |                         	| 
 | 11/22    | 9	   | 21     | M   | Code Projects 	    | 			                   	|                         	| 
-| 11/24    | 9	   | 22     | W   |                     | 				                  |                           | 
+| 11/24    | 9	   | 22     | W   | Catch up Day        | 				                  |                           | 
 | 11/26    | 9	   | --     | F   | **No Class**        |                           |                           | 
 | 11/29    | 10    | 23     | M   | APIs                |                           |    	                			| 
 | 12/1     | 10    | 24     | W   | Advanced Python     | 				                  |                         	| 
