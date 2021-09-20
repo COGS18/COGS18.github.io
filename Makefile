@@ -46,7 +46,7 @@ textbook:
 	# cp projects/ProjectTemplate.zip _build/html/assets/intro/projects/
 	
 	# copy first day of slides to _build
-	# cp assets/intro/01_welcome.pdf _build/html/assets/intro/
+	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
 	
 	# copy non-md images to build
 	mkdir _build/html/_images
