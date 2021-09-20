@@ -29,20 +29,20 @@ While regular deadlines have been established to help keep you all on track, I w
 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
-| TA             | Yueying (Holly) Dong	   | TBD              | TBD                     |
-| TA             | Dillan Elise Cellier    | TBD              | TBD                     |
-| TA             | Eena Lee Kosik          | TBD              | TBD                     |
+| TA             | Holly(Yueying) Dong	   | TBD              | TBD                     |
+| TA             | Dillan Cellier          | TBD              | TBD                     |
+| TA             | Eena Kosik              | TBD              | TBD                     |
 | IA	           | Evan Eguchi             | TBD              | TBD                     |
 | IA	           | Brian Fang	             | TBD              | TBD                     |
 | IA	           | Rongyu Ma               | TBD              | TBD                     |
 | IA	           | Yvonne Luo              | TBD              | TBD                     |
 | IA	           | Hannah Contreras        | TBD              | TBD                     |
-| IA	           | TBD                     | TBD              | TBD                     |
+| IA	           | Efrain Contreras        | TBD              | TBD                     |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)
 Canvas Course: [https://canvas.ucsd.edu/courses/25024](https://canvas.ucsd.edu/courses/)   
-Course Campuswire*: [https://campuswire.com/c/](https://campuswire.com/c/)   
+Course Campuswire*: [https://campuswire.com/c/](https://campuswire.com/c/G3CF63BDA)   
 Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
@@ -54,11 +54,11 @@ Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF
 
 Our main goal is that you are able to program at an introductory level in the Python programming language at the end of this course. To that end we expect that you will be able to: 
 
-- Read basic Python programs, recognizing the structures used and explaining how they work
+- Read basic Python programs, recognizing the structures used (i.e. variables, conditionals, loops, functions) and explaining how they work
 - Write Python code to solve basic computational problems
-- Debug small Python programs by identifying and fixing the bug
+- Debug small Python programs by identifying and fixing the bug(s)
 - Execute Python programs in Jupyter notebooks and from Python scripts 
-- Demonstrate familiarity with the command line
+- Demonstrate familiarity with the command line 
 - Describe and implement best practices (code style, documentation, and testing) in Python 
 
 To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during coding lab, and throughout all assignments. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
@@ -105,13 +105,13 @@ Note that points will *not* be rewarded if you fail to follow instructions. For 
 
 ### Attendance
 
-TBD
+Attendance will not be incentivized this quarter, given that we are mid-transition in our return to in-person learning, and I do not want to encourage anyone to come to class if they're not feeling well. This applies to lecture as well as coding lab.
 
 ### Lecture
 
 Students are encouraged to attend lecture live; however, all lectures will also be podcast. During lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates thoughts during lecture.
 
-There will be a daily lecture survey (link on Canvas) to provide feedback and ask questions about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final project/exam (*not* your final course grade). Each day's survey will be up for at least three days can be completed regardless of whether you attend class synchronously.
+There will be a daily participation survey (link on Canvas) to provide feedback and ask questions about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final project/exam (*not* your final course grade). Each day's survey will be up for at least three days and can be completed regardless of whether you attend class in-person.
 
 ### Coding Labs (16\%)
 
@@ -131,7 +131,7 @@ You *are* permitted to work with classmates on assignments; however, you are per
 
 There will be two (2) midterms. As we transition back to in-person learning this quarter, all midterms will be take-home exams. You will have 24 hours to complete each exam. The exam will be open-notes and open-Google; however, it will have to be completed individually. Students will not be permitted to discuss the questions on the exam with anyone.
 
-Each midterm is worth 12.5\% of your grade. The exams will include varied question types and will be taken online.
+Each midterm is worth 12.5\% of your grade. The exams will include varied question types, will be taken online, and will be due at 11:59 PM on the day of the assigned midterm.
 
 As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's *always* a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::
 
@@ -165,9 +165,9 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 10/18    | 4	   | --     | M   | **Midterm I**       |                           | 				                  | 
 | 10/20    | 4	   | 10     | W   | Functions I         |                        		| CL4: Loops                |
 | 10/22    | 4	   | 11     | F   | Algorithms  	      |                           |                        		| 
-| 10/25    | 5	   | 12     | M   | Functions II        | A3: Chatbots              |                         	| 
+| 10/25    | 5	   | 12     | M   | Functions II        |                           |                         	| 
 | 10/27    | 5	   | 13     | W   | Classes I           |                       	 	| CL5: Functions 	          |
-| 10/29    | 5	   | 14     | F   | Classes II          |                           |                         	| 
+| 10/29    | 5	   | 14     | F   | Classes II          | A3: Chatbots              |                         	| 
 | 11/1     | 6	   | 15     | M   | Command Line [**]   |                           |                         	| 
 | 11/3     | 6	   | --     | W   | Review              |                           | CL6: Classes             	| 
 | 11/5     | 6	   | --     | F   | **Midterm II**      |               		        |        			              | 
