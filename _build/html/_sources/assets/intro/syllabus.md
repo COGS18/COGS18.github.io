@@ -34,7 +34,7 @@ While regular deadlines have been established to help keep you all on track, I w
 | TA             | Eena Kosik              | TBD              | TBD                     |
 | IA	           | Evan Eguchi             | TBD              | TBD                     |
 | IA	           | Brian Fang	             | TBD              | TBD                     |
-| IA	           | Rongyu Ma               | TBD              | TBD                     |
+| IA	           | Janice                  | TBD              | TBD                     |
 | IA	           | Yvonne Luo              | TBD              | TBD                     |
 | IA	           | Hannah Contreras        | TBD              | TBD                     |
 | IA	           | Efrain Contreras        | TBD              | TBD                     |
@@ -42,8 +42,8 @@ While regular deadlines have been established to help keep you all on track, I w
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)
 Canvas Course: [https://canvas.ucsd.edu/courses/25024](https://canvas.ucsd.edu/courses/)   
-Course Campuswire*: [https://campuswire.com/c/](https://campuswire.com/c/G3CF63BDA)   
-Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)
+Course Campuswire*: [https://campuswire.com/c/G3CF63BDA](https://campuswire.com/c/G3CF63BDA)     
+Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
 *You will be able to post anonymously on Campuswire; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
@@ -252,7 +252,7 @@ If you have:
 
 Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. But, I'm also totally OK with you addressing me as Shannon or Dr. Ellis. (I would prefer you *not* address me as Ms./Miss/Mrs. Ellis.)
 
-### What I should call you
+### What should I call you?
 
 I should call you by your preferred name, with the correct pronunciation. Please correct me (either in the moment or via email/Campuswire after the fact...however you're most comfortable) if I ever make a mistake.
 
