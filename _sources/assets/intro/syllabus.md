@@ -24,11 +24,9 @@ While regular deadlines have been established to help keep you all on track, I w
 
 ## COURSE STAFF & INFORMATION
 
-**Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
-**Instructor Office Hours**: Fri 10:30AM - 12:30PM (CSB courtyard)
-
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
+| Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --               |  Fri 10:30AM - 12:30PM (CSB courtyard) |
 | TA             | Holly(Yueying) Dong	   | 1 & 2 PM         | Wed 10-11 (Mandeville Coffee Cart) |
 | TA             | Dillan Cellier          | 4 & 5 PM         | TBD                     |
 | TA             | Eena Kosik              | 9 & 10 AM        | TBD                     |
