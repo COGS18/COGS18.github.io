@@ -25,19 +25,19 @@ While regular deadlines have been established to help keep you all on track, I w
 ## COURSE STAFF & INFORMATION
 
 **Instructor**: Shannon Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  
-**Instructor Office Hours**: Fridays: 11AM - 1PM
+**Instructor Office Hours**: Fri 10:30AM - 12:30PM (CSB courtyard)
 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
-| TA             | Holly(Yueying) Dong	   | TBD              | TBD                     |
-| TA             | Dillan Cellier          | TBD              | TBD                     |
-| TA             | Eena Kosik              | TBD              | TBD                     |
-| IA	           | Evan Eguchi             | TBD              | TBD                     |
-| IA	           | Brian Fang	             | TBD              | TBD                     |
-| IA	           | Janice                  | TBD              | TBD                     |
-| IA	           | Yvonne Luo              | TBD              | TBD                     |
-| IA	           | Hannah Contreras        | TBD              | TBD                     |
-| IA	           | Efrain Contreras        | TBD              | TBD                     |
+| TA             | Holly(Yueying) Dong	   | 1 & 2 PM         | Wed 10-11 (Mandeville Coffee Cart) |
+| TA             | Dillan Cellier          | 4 & 5 PM         | TBD                     |
+| TA             | Eena Kosik              | 9 & 10 AM        | TBD                     |
+| IA	           | Evan Eguchi             | 11 AM & 12 PM    | Mon 10:30-11:20 AM (CSB 114) |
+| IA	           | Brian Fang	             | 10 & 11 AM       | Mon 11:20AM-12:20PM  (CSB 114) |
+| IA	           | Janice                  | 4 & 5 PM         | --                      |
+| IA	           | Yvonne Luo              | 9 AM & 3 PM      | --                      |
+| IA	           | Hannah Contreras        | 2 & 3 PM         | --                      |
+| IA	           | Efrain                  | 12 & 1 PM        | TBD                     |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)
