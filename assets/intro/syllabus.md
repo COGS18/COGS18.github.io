@@ -26,13 +26,13 @@ While regular deadlines have been established to help keep you all on track, I w
 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
-| Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --               |  Fri 10:30AM - 12:30PM (CSB courtyard) |
-| TA             | Holly(Yueying) Dong	   | 1 & 2 PM         | Wed 10-11 (Mandeville Coffee Cart) |
-| TA             | Dillan Cellier          | 4 & 5 PM         | TBD                     |
+| TA             | Dillan Cellier          | 4 & 5 PM         | Mon 10-11 AM (CSB 231)  |
 | IA	           | Evan Eguchi             | 11 AM & 12 PM    | Mon 10:30-11:20 AM (CSB 114) |
 | IA	           | Brian Fang	             | 10 & 11 AM       | Mon 11:20AM-12:20PM  (CSB 114) |
 | IA	           | Efrain                  | 12 & 1 PM        | Mon  12:10 - 1 PM (CSB 114)  |
 | TA             | Eena Kosik              | 9 & 10 AM        | Tues 8:50 - 9:40 AM (CSB 114) |
+| TA             | Holly(Yueying) Dong	   | 1 & 2 PM         | Wed 10-11 (Mandeville Coffee Cart) |
+| Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --               |  Fri 10:30AM - 12:30PM (CSB courtyard) |
 | IA	           | Janice                  | 4 & 5 PM         | --                      |
 | IA	           | Yvonne Luo              | 9 AM & 3 PM      | --                      |
 | IA	           | Hannah Contreras        | 2 & 3 PM         | --                      |
