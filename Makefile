@@ -49,7 +49,7 @@ textbook:
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
 	
 	# copy non-md images to build
-	mkdir _build/html/_images
+	# mkdir _build/html/_images
 	cp materials/img/* _build/html/_images/
 
 

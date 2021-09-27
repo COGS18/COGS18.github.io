@@ -13,7 +13,7 @@
 # - Who:
 #     - Instructor: Shannon Ellis 
 #     - TA: Holly(Yueying) Dong, Dillan Cellier, Eena Kosik
-#     - IAs: Efrain Contreras, Evan Eguchi, Brian Fang, Rongyu Ma, Yvonne Luo, Hannah Contreras 
+#     - IAs: Efrain Contreras, Evan Eguchi, Brian Fang, Janice, Yvonne Luo, Hannah Contreras 
 #     
 # - Where:
 #     - Lectures MWF @ 8AM (Peterson Hall 110)

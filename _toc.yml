@@ -5,3 +5,5 @@ options:
 chapters:
 - file: materials/01-Introduction
   title: 01-Introduction
+- file: materials/02-Tooling
+  title: 02-Tooling
