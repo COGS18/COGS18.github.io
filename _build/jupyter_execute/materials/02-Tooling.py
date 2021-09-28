@@ -288,7 +288,7 @@ get_ipython().system('python --version')
 # - D) normal text
 # - E) I'm lost
 
-# you can write/edit your markdown text here to determine the answer to the question
+# ___you can write/edit your markdown text here to determine the answer to the question___
 
 # ### Markdown Headers
 # 
@@ -332,7 +332,7 @@ get_ipython().system('python --version')
 # 
 # Whenever you're writing code, you'll want to be sure the cell is set to be a code cell
 
-# In[ ]:
+# In[2]:
 
 
 # Cell can also be code.
@@ -340,7 +340,7 @@ a = 1
 b = 2
 
 
-# In[ ]:
+# In[3]:
 
 
 # Cells can also have output, that gets printed out below the cell.
@@ -348,7 +348,7 @@ c = a - b
 print(c)
 
 
-# In[ ]:
+# In[7]:
 
 
 # If you execute a cell with just a variable name in it, it will also get printed
@@ -366,10 +366,12 @@ c
 # 
 # Write code that outputs the value '6'
 
-# In[ ]:
+# In[12]:
 
 
 ## YOUR CODE HERE
+a = 6
+print(a)
 
 
 # #### Clicker Question #4
@@ -386,7 +388,7 @@ c
 # Jupyter has useful shortcuts. Add a single <code>?</code> after a function or class get a window with the documentation, or a double <code>??</code> to pull up the source code. 
 # </div>
 
-# In[ ]:
+# In[13]:
 
 
 # For example, execute this cell to see the documentation for the 'abs'
