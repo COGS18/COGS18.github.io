@@ -1,10 +1,13 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 
 # COGS 18: Introduction to Python 
 
 **Fall 2021**  
 **MWF 8-8:50 (Peterson Hall 110)**  
-
-THIS IS A DRAFT SYLLABUS. SYLLABUS WILL BE FINALIZED WEEK 1 OF CLASS.
 
 ---
 
@@ -67,7 +70,7 @@ To achieve these objectives, information will be presented during lecture. You w
 
 - All materials will be provided via the [course website](https://cogs18.github.io) and [datahub](https://datahub.ucsd.edu)
   - Software (optional): Python >=3.6 (Anaconda distribution); Jupyter Notebooks (this will be available on datahub)
-  - iclickers will *NOT* be used this quarter
+  - iclickers will be used but not reequired this quarter
   - No required textbook; optional textbook: [https://shanellis.github.io/pythonbook](https://shanellis.github.io/pythonbook) (currently under development; feedback welcome)
 
 Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download. 
