@@ -1,13 +1,37 @@
+# format: jb-book
+# root: intro
+# options:
+#   caption: Lectures
+# chapters:
+# - file: materials/01-Introduction
+#   title: 01-Introduction
+# - file: materials/02-Tooling
+#   title: 02-Tooling
+# - file: materials/03-Variables
+#   title: 03-Variables
+# - file: materials/04-Operators
+#   title: 04-Operators
+#   # caption: Coding Labs
+# chapters:
+# - file: labs/CL1-Tooling
+#   title: CL1-Tooling
+
+
 format: jb-book
 root: intro
-options:
-  caption: Lectures
-chapters:
-- file: materials/01-Introduction
-  title: 01-Introduction
-- file: materials/02-Tooling
-  title: 02-Tooling
-- file: materials/03-Variables
-  title: 03-Variables
-- file: materials/04-Operators
-  title: 04-Operators
+parts:
+  - caption: Lectures
+    chapters:
+    - file: materials/01-Introduction
+      title: 01-Introduction
+    - file: materials/02-Tooling
+      title: 02-Tooling
+    - file: materials/03-Variables
+      title: 03-Variables
+    - file: materials/04-Operators
+      title: 04-Operators
+  - caption: Coding Labs
+    chapters:
+    - file: labs/CL1-Tooling
+      title: CL1-Tooling
+

@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Lab 1: Tech Setup &amp; Tooling &#8212; COGS 18 - Introduction To Python</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/labs/source/CL1-Tooling.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Flabs/source/CL1-Tooling.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/labs/source/CL1-Tooling.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/labs/source/CL1-Tooling.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/labs/source/CL1-Tooling.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reminders">
+   Reminders:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1-jupyter">
+   Part 1: Jupyter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cells">
+   Cells
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#your-turn-add-a-new-cell">
+     YOUR TURN: Add a new cell
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#your-turn-editing-text-cells">
+     YOUR TURN: Editing Text Cells
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown">
+     Markdown
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#your-turn-edit-this-text">
+     YOUR TURN: Edit this text
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-cells">
+     Code Cells
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-codinglab-assignment-submission">
+   Part 2: CodingLab &amp; Assignment Submission
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1-log-into-datahub">
+     Step 1: Log Into datahub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2-fetch-assignment">
+     Step 2: Fetch Assignment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3-complete-submit">
+     Step 3: Complete &amp; Submit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-academic-integrity">
+   Part 3: Academic Integrity
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional-anaconda">
+   Optional: Anaconda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-end">
+   The End!
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="coding-lab-1-tech-setup-tooling">
+<h1>Coding Lab 1: Tech Setup &amp; Tooling<a class="headerlink" href="#coding-lab-1-tech-setup-tooling" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the first coding lab!</p>
+<p>CodingLab labs are meant to be interactive - so, feel free to find another person to work together with on your CodingLab notebooks.</p>
+<p>For this lab, it’s really important that you’re comfortable with all of the tools we introduce here, as we’ll be using them throughout the quarter. So, while you should feel free to consult with your classmates, you’ll want to be sure you carry out each part on your own.</p>
+<p>If you have a question about how something works / what something does - try it out, and see what happens! If you get stuck, consult your classmates. If you’re still stuck, your instructional staff are there to help!</p>
+<div class="section" id="reminders">
+<h2>Reminders:<a class="headerlink" href="#reminders" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>PLEASE DO NOT CHANGE THE NAME OF THIS FILE.</strong></p></li>
+<li><p><strong>PLEASE DO NOT COPY &amp; PASTE OR DELETE CELLS INLCUDED IN THE ASSIGNMENT.</strong> (Adding new cells is allowed!)</p></li>
+</ul>
+</div>
+<div class="section" id="part-1-jupyter">
+<h2>Part 1: Jupyter<a class="headerlink" href="#part-1-jupyter" title="Permalink to this headline">¶</a></h2>
+<p>This is a Jupyter Notebook! They are a very helpful learning tool because they allow plain text (like this!) and code (coming up!) to be combined in a single document.</p>
+<p>The notes presented in lecture are Jupyter Notebooks. Your CodingLabs will be in Jupyter Notebooks. And, your assignments will be completed in Jupyter Notebooks. So, you’ll want to get very comfortable with working within a notebook.</p>
+</div>
+<div class="section" id="cells">
+<h2>Cells<a class="headerlink" href="#cells" title="Permalink to this headline">¶</a></h2>
+<p>The operational unit of the notebook is the cell.</p>
+<p>Cells are primarily either text (Markdown) or code.</p>
+<p>If you click on this cell, you should see in the menu above that it says “Markdown”</p>
+<div class="section" id="your-turn-add-a-new-cell">
+<h3>YOUR TURN: Add a new cell<a class="headerlink" href="#your-turn-add-a-new-cell" title="Permalink to this headline">¶</a></h3>
+<p>Single click on this cell.</p>
+<p>Then, click the ‘+’ icon on the toolbar at the top to add a new cell below this one.</p>
+<p>The cell you just added above is a code cell by default. You can tell by the <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code> to the left of the cell and the fact that the drop-down box above says “Code”</p>
+<p>Use that drop-down menu to change the type of that cell you just created to be a text cell. Type the following in that cell “Learning to program in Python makes me …” and finish the sentence with how you feel about learning to program in python.</p>
+</div>
+<div class="section" id="your-turn-editing-text-cells">
+<h3>YOUR TURN: Editing Text Cells<a class="headerlink" href="#your-turn-editing-text-cells" title="Permalink to this headline">¶</a></h3>
+<p>To edit the text in this cell, double-click on it.</p>
+<p>Add information below about yourself to get practice with editing text cells.</p>
+<p>Name:<br />
+PID:<br />
+College:<br />
+Major:</p>
+</div>
+<div class="section" id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
+<p>As discussed in lecture, these cells are formatted using <a class="reference external" href="https://www.markdownguide.org/basic-syntax/">Markdown syntax</a>.</p>
+<p>Edit the text in the cell below so that it has the formatting specified by the text.</p>
+<p>For example, if the text said:</p>
+<p>This sentence is bold.</p>
+<p>You would edit the text so that it was bold:</p>
+<p><strong>This sentence is bold.</strong></p>
+<p>Note that to see the formatting changes, you’ll have to run the cell using the Run icon above (or more simply use ‘Shift + Enter’ on your keyboard.</p>
+</div>
+<div class="section" id="your-turn-edit-this-text">
+<h3>YOUR TURN: Edit this text<a class="headerlink" href="#your-turn-edit-this-text" title="Permalink to this headline">¶</a></h3>
+<p>This is a heading level 4 (H4)</p>
+<p>This sentence is italicized.</p>
+<p>Below is a bulleted list:
+bullet item 1
+bullet item 2
+bullet item 3</p>
+<p>Below is a numbered list:
+list item 1
+list item 2
+list item 3</p>
+<p>This sentence is bold AND italic.</p>
+</div>
+<div class="section" id="code-cells">
+<h3>Code Cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">¶</a></h3>
+<p>Below this cell, you see a code cell.</p>
+<p>In it you will see</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Any time you see this in a coding lab, assignment, or exam, you’ll replace it with your answer.</p>
+<p>Code is added to cells, but they have to be Run (executed) for the code to be processed.</p>
+<p>Type <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">3</span></code> in the code cell below. Then, click “Run” from the menu above of press ‘Shift + Enter’ on your keybood to execute that code.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this should not give any output if you did the above</span>
+<span class="c1"># this checks to make sure x exists </span>
+<span class="c1"># but it does NOT check that it has the right value</span>
+<span class="k">assert</span> <span class="n">x</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>After running the code cell above, there will be a number between the brackets to the left of the cell. Each time you run a code cell, this number will increase by 1. Run the code cell below to see what we mean.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">29</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>One thing that sometimes trips users up is the fact that cells do NOT have to be run in order from top to bottom. Python remembers whatever was executed most recently. To see what we mean, run the cell below and see what it returns:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, return to the cell above where you defined <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">3</span></code> and change it to <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">9</span></code>. Be sure to re-run this cell. When you do so, note that the number to the left of the cell updates to be the most recent number. <code class="docutils literal notranslate"><span class="pre">x</span></code> is now defined as 9, as that is the most recent cell that executed.</p>
+<p>The <strong>order</strong> in which the cells are run matters <strong>NOT</strong> the order in which they appear in the notebook.</p>
+</div>
+</div>
+<div class="section" id="part-2-codinglab-assignment-submission">
+<h2>Part 2: CodingLab &amp; Assignment Submission<a class="headerlink" href="#part-2-codinglab-assignment-submission" title="Permalink to this headline">¶</a></h2>
+<p>Assignments will be retrieved and submitted on <a class="reference external" href="https://datahub.ucsd.edu">datahub</a>.</p>
+<p><strong>Datahub</strong> is a server-based service hosted by UCSD. It provides each of you with a space to complete your work. This is space on a UCSD server. You have your own account where you can save your own files and do your own computing. This is what you’ll use to complete your assignments.</p>
+<div class="section" id="step-1-log-into-datahub">
+<h3>Step 1: Log Into datahub<a class="headerlink" href="#step-1-log-into-datahub" title="Permalink to this headline">¶</a></h3>
+<p>To get this CodingLab, your Instructional Staff guided you through logging onto datahub. Be sure that you’re familiar with this process. The steps are explained below.</p>
+<p><strong>Log in (using your UCSD credentials/gmail account) to <a class="reference external" href="https://datahub.ucsd.edu">datahub</a>.</strong></p>
+<p>Note that <em>if</em> you are officially on the class roster (this includes those on the waitlist!), there will be an environment for this class there for you. For example., you should see an environment than starts with “COGS 18”. Click on this and then click ‘Launch Environment’.</p>
+<p>Your server space will launch.</p>
+<p>Notice the tabs along the top. One of these should say “Assignments.” This is where you will fetch, complete, and submit coding labs and assignments. Let’s practice this process now.</p>
+</div>
+<div class="section" id="step-2-fetch-assignment">
+<h3>Step 2: Fetch Assignment<a class="headerlink" href="#step-2-fetch-assignment" title="Permalink to this headline">¶</a></h3>
+<p>Under the ‘Assignments’ tab, you will see an assignment called ‘A_Practice_COGS18_FA21’.</p>
+<ol>
+<li><p><strong>Click Fetch</strong> to get your copy of this practice assignment.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> After clicking Fetch, this assignment will be listed under your &quot;Downloaded Assignments&quot;. 
+ You *could* click on this assignment there, but let&#39;s take a look at where this assignment lives on your space in the server. 
+</pre></div>
+</div>
+</li>
+<li><p><strong>Click on the Files tab</strong> along the top. There should now be a directory (folder) in there called “Practice”</p></li>
+<li><p><strong>Click on the “A_Practice_COGS18_FA21” directory</strong> to display its contents.</p></li>
+<li><p>Within this directory, you’ll see a Jupyter Notebook. <strong>Click on this notebook</strong> to open it up.</p></li>
+</ol>
+<p>Now, once you open up this file, you’re ready to complete the practice assignment!</p>
+<div class="alert alert-danger">
+Whatever you do, please <b> DO NOT RENAME CODINGLAB OR ASSIGNMENT NOTEBOOK FILES! </b>
+</div><p>When completing your assignments, you will write and execute your code directly within this document, but you <strong>should not</strong> rename it. Our autograding system is expecting a file of the same name.</p>
+</div>
+<div class="section" id="step-3-complete-submit">
+<h3>Step 3: Complete &amp; Submit<a class="headerlink" href="#step-3-complete-submit" title="Permalink to this headline">¶</a></h3>
+<p>Complete the assignment within the notebook you’ve just opened up.</p>
+<p>Be sure to read all of the text within the notebook as this information applies to all of your assignment submissions this quarter.</p>
+<p>Once you complete the assignment, submit it on Datahub. You’ll see this assignment show up within the “Submitted Assignments” section within the “Assignments” tab.</p>
+<p>We’re not going to grade this one, but we wanted to be sure you all got practice before doing the real thing for class.</p>
+<div class="alert alert-danger">
+If you fail to click "Submit", we will not have access to or be able to grade your assignment. <b>ALWAYS REMEMBER TO CLICK SUBMIT.</b>
+</div></div>
+</div>
+<div class="section" id="part-3-academic-integrity">
+<h2>Part 3: Academic Integrity<a class="headerlink" href="#part-3-academic-integrity" title="Permalink to this headline">¶</a></h2>
+<p>Navigate to the following pages:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://academicintegrity.ucsd.edu/excel-integrity/define-cheating/index.html">https://academicintegrity.ucsd.edu/excel-integrity/define-cheating/index.html</a></p></li>
+<li><p><a class="reference external" href="https://academicintegrity.ucsd.edu/faq">https://academicintegrity.ucsd.edu/faq</a> (read the “Does…count as cheating?” section)</p></li>
+</ul>
+<p>Read and reflect on the content there. Then, respond to the following situations with your own thoughts in the cell provided after each situation using Markdown text.</p>
+<p>Consider 1) if the action was a violation of academic integrity in COGS 18 and 2) if it was, what do you think the consequence should be.</p>
+<p><strong>Situation 1</strong></p>
+<p>A COGS 18 student is working on an assignment and is particularly stuck on one question. They go back through the notes and just can’t figure it out. They look at the staff office hours schedule and realize that they won’t be able to make it to any staff office hours this week, so they decide to ask a classmate for help. Their classmate agrees to meet. During this meeting they discuss where the stuck student is confused. The classmate helps the stuck student through the question. The stuck student writes the code during this process for the assignment and then explains the code they’ve just written back to their helpful classmate. The stuck student thanks their classmate for their help.</p>
+<p>REPLACE THIS TEXT WITH YOUR THOUGHTS.</p>
+<p><strong>Situation 2</strong></p>
+<p>A COGS 18 student is taking their exam. During this, they realize they’re running out of time before the submission deadline and still have two questions left they just can’t figure out. They text their friend who is in the class asking for the answers to those two questions. Their friend (who has already submitted the exam), wanting to help out, sends his exam code along. The struggling student changes the code a little bit and submits his exam.</p>
+<p>REPLACE THIS TEXT WITH YOUR THOUGHTS.</p>
+<p><strong>Situation 3</strong></p>
+<p>A COGS 18 student is taking their exam. During this, they realize they just can’t figure out two questions while taking the exam. They copy the question from the exam and search in Google. In this search, they see a website pop up with this exact question in it…and click on the link. To their surprise, the answer to both questions are there on the website. They copy the code into their exam and submit their exam.</p>
+<p>REPLACE THIS TEXT WITH YOUR THOUGHTS.</p>
+</div>
+<div class="section" id="optional-anaconda">
+<h2>Optional: Anaconda<a class="headerlink" href="#optional-anaconda" title="Permalink to this headline">¶</a></h2>
+<p>As noted above, assignments will be completed on Datahub. However, the second part of the course involves completing a project. This <em>can</em> be completed on datahub, but you’ll likely want to complete this on your local computer. To do so, you’ll need Python downloaded on your computer.</p>
+<p>Additionally, after this course, if you want to have the tools we use here, you’ll want to have them installed on your own computer.</p>
+<p>To ensure that this is possible, we ask that you <strong>download the <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda Distribution</a> now</strong>. This is available for mac, windows,and linux operating systems. However, note that if you have a linux-based machine, you may run into a few hurdles upon installation.</p>
+<p>The Anaconda distribution is:</p>
+<blockquote>
+<div><p>a package manager, an environment manager, a Python/R data science distribution, and a collection of over 1,500+ open source packages. Anaconda is free and easy to install, and it offers free community support.”</p>
+</div></blockquote>
+<p>This provides you with a local copy of Jupyter and access to commonly-used python packages.</p>
+</div>
+<div class="section" id="the-end">
+<h2>The End!<a class="headerlink" href="#the-end" title="Permalink to this headline">¶</a></h2>
+<p>This is the end of the first Coding Lab!</p>
+<p>Be sure you’ve made a concerted effort to complete all the tasks specified in this lab. Then, go ahead and submit on datahub!</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./labs/source"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
