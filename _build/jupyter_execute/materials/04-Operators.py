@@ -1,8 +1,49 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **Course Announcements**
+# 
+# - **A1** due *next* Fri (10/8; 11:59 PM)
+# - **CL2** will be posted this afternoon
+# - **CL1** "answers" are posted on the website 
+
+# - CL grades are typically posted before class on *Mondays*
+#     - this week: they've been posted on Canvas
+#     - if you messed up submission, go ahead and submit (*this week only*)
+#     - I will regrade and give credit if you submit by 11:59 PM tonight (Friday)
+
+# **Q&A**
+# 
+# Q: I am not sure which assignment I submit will be graded (is it the last one?)  
+# A: Yes. We only have access to the most recent submission.
+# 
+# Q: I’m a little confused about when we open a new box versus add new lines    
+# A: Largely, this is up to you. On assignments, typically, a single cell is provided. All your code can go in that single cell. However, you're allowed to add additional cells if you prefer. It matters that the code is there, and that the answer is in a cell before the tests (the `assert`s), but not how many cells there are.
+# 
+# Q: I am still confused on how to print quotation marks in strings. Can the apostrophe be used anywhere inside quotes? What is the backslash used for and where should it be placed?     
+# A: If you use double quotes (") to start the string, you can have as many apostrophes within the string as you want. The backslash is used any time you want to indicate that the following character right after the backslash should be a "string literal" ...meaning part of the string.
+# 
+# Q: When will iclickers become mandatory?   
+# A: They will not be mandatory this quarter, as I'm not requiring/incentivizing attendance. However, they will be used to check the class' understanding.
+# 
+# Q: in the notebook, on the top right of each cell, there is a dropdown for 'slide type'. what does that do? I observed no change on the notebook when I change it.   
+# A: This is what I use to display as a slideshow. Changing it on your end will not change the notebook.
+# 
+# Q: Is there a way to clear all code I've written in a notebook not just the output (which seemed to be an option under Kernel). For example, what if I started an assignment but I wanted to be safe the next time I open it, and I wanted to clear everything I edited and wrote?   
+# A: There is no straightforward way to do this in the same notebook. *However*, if you rename the folder containing the assignment/lab, you'll be able to fetch a new (blank) copy from the assignments tab.
+# 
+# Q: What did you mean by immutable cannot be altered after being created? What is or is not being altered?   
+# A: Immutable means that you cannot change a part of the value stored in the variable once it is defined. For example if a variable stores the string "cat", you cannot change it to "bat" (changing the first letter) by specifying you want to change the c to a b. This is because it is an immutable type variable. If you wanted to store "bat", you would have to redefine the entire string "bat". This will make more sense when we get to mutable type variables next week! 
+# 
+# Q: Will we get feedback on the homework? And if there is tutoring aside from lab?  
+# A: Yes, you will get feedback on homework and coding lab answers are posted for you to check your work. No tutoring, but there are lots of office hours throughout the week!
+# 
+# Q: how to pound(#) multiple lines?  
+# A: Highlight them and then use cmd/ctrl + space bar on your keyboard.
+
 # **A1: Clarification/Demo**
 # 
+# - when finished, your assignments should run from top to bottom *without you having to change anything*
 # - variables created in `%%writefile` will be stored in file
 # - these variables will overwrite variables created in test cells
 

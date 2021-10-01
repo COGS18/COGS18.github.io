@@ -164,7 +164,7 @@ x
 
 # ### Step 2: Fetch Assignment
 # 
-# Under the 'Assignments' tab, you will see an assignment called 'Practice_COGS18_SP21'. 
+# Under the 'Assignments' tab, you will see an assignment called 'A_Practice_COGS18_FA21'. 
 # 
 # 1. **Click Fetch** to get your copy of this practice assignment. 
 # 
@@ -173,7 +173,7 @@ x
 # 
 # 2. **Click on the Files tab** along the top. There should now be a directory (folder) in there called "Practice"
 # 
-# 3. **Click on the "Practice_COGS18_SP21" directory** to display its contents.
+# 3. **Click on the "A_Practice_COGS18_FA21" directory** to display its contents.
 # 
 # 4. Within this directory, you'll see a Jupyter Notebook. **Click on this notebook** to open it up. 
 # 
@@ -226,7 +226,7 @@ x
 # 
 # A COGS 18 student is taking their exam. During this, they realize they just can't figure out two questions while taking the exam. They copy the question from the exam and search in Google. In this search, they see a website pop up with this exact question in it...and click on the link. To their surprise, the answer to both questions are there on the website. They copy the code into their exam and submit their exam.
 
-# **Prof's thoughts**: This one may *seem* tough, but hopefully after I explain, it will clear things up as to why this is NOT ok. In this case, this code would NOT be code you wrote/came up with and thus you cannot use it on your exam. If/when this happens, it's because someone from COGS 18 this quarter posted my exam to the Internet. First, exams are *my* intellectual property (and so they are not your's to share/post publicly on a site like Chegg, for example) and are completely different from one quarter to the next, so I'm typically able to determine who posted it *and* who used the answer. *It is in your best interest to stay OFF of sites like Chegg.* If you're struggling on a question, a lot of other students are likely struggling on that question. It could be becasue I made the question too difficult (which I'll always consider when graing). The only way I can assess what you do and do not know (and what I have an have not taught well) is if you take the exam using your brain (with help from notes and general searches on the Internet for specific concepts). Please do NOT post my exam questions to the Internet. Please do not search for my exam questions on the Internet. Please avoid sites where answers are posted when taking exams.
+# **Prof's thoughts**: This one may *seem* tough, but hopefully after I explain, it will clear things up as to why this is NOT ok. In this case, this code would NOT be code you wrote/came up with and thus you cannot use it on your exam. If/when this happens, it's because someone from COGS 18 this quarter posted my exam to the Internet. First, exams are *my* intellectual property (and so they are not your's to share/post publicly on a site like Chegg, for example) and are completely different from one quarter to the next, so I'm typically able to determine who posted it *and* who used the answer. *It is in your best interest to stay OFF of sites like Chegg.* If you're struggling on a question, a lot of other students are likely struggling on that question. It could be becasue I made the question too difficult (which I'll always consider when grading). The only way I can assess what you do and do not know (and what I have an have not taught well) is if you take the exam using your brain (with help from notes and general searches on the Internet for specific concepts). Please do NOT post my exam questions to the Internet. Please do not search for my exam questions on the Internet. Please avoid sites where answers are posted when taking exams.
 
 # ## Optional: Anaconda
 # 
