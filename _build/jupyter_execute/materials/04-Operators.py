@@ -47,13 +47,13 @@
 # - variables created in `%%writefile` will be stored in file
 # - these variables will overwrite variables created in test cells
 
-# In[ ]:
+# In[1]:
 
 
 get_ipython().run_cell_magic('writefile', 'new_file.py', "# You can ignore the line above - it is used to help check your code\n\na = 3\nb = 'new'\nprint(status)")
 
 
-# In[ ]:
+# In[2]:
 
 
 status = False
@@ -81,7 +81,7 @@ assert status == False
 # Python uses <code>=</code> for assignment.
 # </div>
 
-# In[ ]:
+# In[3]:
 
 
 my_var = 1
@@ -98,13 +98,13 @@ my_var = 1
 # Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> for 'sum', 'substract', 'multiply', and 'divide', repsectively.
 # </div>
 
-# In[ ]:
+# In[4]:
 
 
 print(2 + 3)
 
 
-# In[ ]:
+# In[5]:
 
 
 div_result = 4 / 2 
@@ -119,7 +119,7 @@ type(div_result)
 # - follow the rules for order of operations.
 # - parentheses specify which order you want to occur first
 
-# In[ ]:
+# In[8]:
 
 
 order_operations = 3 + 16 / 2
@@ -128,7 +128,7 @@ print(order_operations)
 
 # To specify that you want the addition to occur first, you would use parentheses.
 
-# In[ ]:
+# In[9]:
 
 
 specify_operations = (3 + 16) / 2
@@ -141,7 +141,7 @@ print(specify_operations)
 # 
 # Note: Best to think about it before running the code to ensure you understand.
 
-# In[ ]:
+# In[10]:
 
 
 my_value = (3 + 2) + 16 / (4 / 2) 
@@ -160,14 +160,14 @@ my_value
 # Python also has <code>**</code> for exponentiation and <code>%</code> for remainder (called modulus). These also return numbers.
 # </div>
 
-# In[ ]:
+# In[11]:
 
 
 # 2 to the power 3
 2 ** 3
 
 
-# In[ ]:
+# In[12]:
 
 
 # remainder of 17 divided by 7
@@ -178,7 +178,7 @@ my_value
 # 
 # What would be the value stored in `remainder`?
 
-# In[ ]:
+# In[13]:
 
 
 remainder = 16 % 5
@@ -195,7 +195,7 @@ remainder
 # 
 # What would be the value stored in `modulo_time`?
 
-# In[ ]:
+# In[14]:
 
 
 modulo_time = 4 * 2 % 5
@@ -214,7 +214,7 @@ modulo_time
 # 
 # The way I first thought of involved a package and we haven't talked about those yet...
 
-# In[ ]:
+# In[15]:
 
 
 a = 17 // 7
@@ -239,31 +239,31 @@ print(a, 'remainder', b)
 # - `or` : True if at least one is true
 # - `not` : True only if false
 
-# In[ ]:
+# In[16]:
 
 
 True and True
 
 
-# In[ ]:
+# In[17]:
 
 
 True or True
 
 
-# In[ ]:
+# In[18]:
 
 
 True and not False
 
 
-# In[ ]:
+# In[19]:
 
 
 not False
 
 
-# In[ ]:
+# In[20]:
 
 
 # two nots cancel one another out
@@ -272,7 +272,7 @@ not (not True)
 
 # ### Capitalization matters
 
-# In[ ]:
+# In[21]:
 
 
 # this will give you an error
@@ -285,7 +285,7 @@ TRUE and TRUE
 # 
 # How will the following boolean expression evaluate:
 
-# In[ ]:
+# In[22]:
 
 
 True and not False
@@ -309,7 +309,7 @@ True and not False
 # - `<=` : value on left is less than *or equal to* value on right
 # - `>=` : value on left is greater than or equal to value on the right
 
-# In[ ]:
+# In[29]:
 
 
 a = 12
@@ -317,25 +317,25 @@ b = 13
 a > b
 
 
-# In[ ]:
+# In[30]:
 
 
 True == True
 
 
-# In[ ]:
+# In[31]:
 
 
 True != False
 
 
-# In[ ]:
+# In[34]:
 
 
 'aa' == 'aa'
 
 
-# In[ ]:
+# In[35]:
 
 
 12 <= 13
@@ -352,14 +352,30 @@ True != False
 # - B) I tried but am stuck.
 # - C) I'm unsure where to start
 
-# In[ ]:
+# In[40]:
+
+
+# variables must be defined prior to using in operations
+friday > 5 and saturday > 6
+
+friday = 10
+saturday = 7
+
+
+# In[41]:
+
+
+sword_charge
+
+
+# In[42]:
 
 
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 95
+shield_energy = 100
 
-(sword_charge ---) and (shield_energy ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 
 
 # ## Understanding Boolean logic
@@ -372,14 +388,14 @@ shield_energy = ---
 # 1. Python considers empty strings as having boolean value of `False`. Non-empty string as having boolean value of `True`.
 # 
 
-# In[ ]:
+# In[43]:
 
 
 empty_string = ''
 bool(empty_string)
 
 
-# In[ ]:
+# In[46]:
 
 
 nonempty_string = 'string has something in it'
@@ -389,25 +405,25 @@ bool(nonempty_string)
 # 2.  For `and` operator if left value is `True`, then right value is checked and returned. If left value is `False`, then that left value is returned.
 # 
 
-# In[ ]:
+# In[47]:
 
 
 True and False
 
 
-# In[ ]:
+# In[48]:
 
 
 bool('a')
 
 
-# In[ ]:
+# In[49]:
 
 
 'a' and 'b'
 
 
-# In[ ]:
+# In[50]:
 
 
 'b' and 'a'
@@ -417,7 +433,7 @@ bool('a')
 # 
 # What would the following code cell return?
 
-# In[ ]:
+# In[51]:
 
 
 '' and 'a'
@@ -428,28 +444,28 @@ bool('a')
 # - C) `True`
 # - D) `False`
 
-# In[ ]:
+# In[52]:
 
 
 # the left value in parentheses evaluates as True
 'a' == ('b' and 'a')
 
 
-# In[ ]:
+# In[53]:
 
 
 # the left value in parentheses evaluates as True
 'a' == ('a' and 'b')
 
 
-# In[ ]:
+# In[54]:
 
 
 # the left value in parentheses evaluates as False
 'a' == ('' and 'a')
 
 
-# In[ ]:
+# In[55]:
 
 
 # what we actually wanted python to do

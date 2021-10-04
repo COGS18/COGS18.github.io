@@ -107,6 +107,11 @@
    04-Operators
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/05-Conditionals.html">
+   05-Conditionals
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -480,8 +485,8 @@ True
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
-<span class="n">comp_1</span> <span class="o">=</span> <span class="ow">not</span> <span class="mi">17</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">289</span><span class="o">/</span><span class="mi">3</span>
-<span class="n">comp_1</span> <span class="o">=</span> <span class="mi">17</span><span class="o">**</span><span class="mi">2</span> <span class="o">!=</span> <span class="mi">289</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">comp_1</span> <span class="o">=</span> <span class="ow">not</span> <span class="mi">17</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">867</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">comp_1</span> <span class="o">=</span> <span class="mi">17</span><span class="o">**</span><span class="mi">2</span> <span class="o">!=</span> <span class="mi">867</span><span class="o">/</span><span class="mi">3</span>
 
 <span class="n">comp_2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">1234</span> <span class="o">%</span> <span class="mi">99</span><span class="p">)</span>
 <span class="n">comp_2</span> <span class="o">=</span> <span class="p">((</span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="mi">3</span><span class="p">))</span> <span class="ow">and</span> <span class="p">((</span><span class="mi">4</span><span class="o">**</span><span class="mi">3</span><span class="p">))</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">1234</span> <span class="o">%</span> <span class="mi">99</span><span class="p">)</span>
@@ -538,7 +543,7 @@ True
 </div>
 <div class="section" id="part-3-asserts">
 <h2>Part 3: Asserts<a class="headerlink" href="#part-3-asserts" title="Permalink to this headline">¶</a></h2>
-<p>You will notice, through the coding labs and assignments, code that looks something like <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">True</span></code>, in which the assert statement is used.</p>
+<p>You will notice, through the coding labs and assignments, code that looks something like <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">True</span></code>, in which the assert statement is used. The goal, in your coding labs and assignments is for <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements to “pass silently”…meaning give no output.</p>
 <p>Using assert essentially means to <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">code</span> <span class="pre">is</span> <span class="pre">True</span></code>.</p>
 <p>Or, slightly more formally, <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">code</span> <span class="pre">evaluates</span> <span class="pre">as</span> <span class="pre">True</span></code>.</p>
 <p>If the asserted code does not evaluate as True, it raises an error - meaning it interrupts the code execution because something went wrong.</p>
@@ -547,7 +552,6 @@ True
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Declare a variable called `boolean` that  has type boolean, and passes the assert in the next cell</span>
-
 
 <span class="c1">### BEGIN SOLUTION</span>
 <span class="n">boolean</span> <span class="o">=</span> <span class="kc">True</span>
@@ -574,13 +578,20 @@ True
 </div>
 <div class="section" id="assert-explorations">
 <h3>Assert Explorations<a class="headerlink" href="#assert-explorations" title="Permalink to this headline">¶</a></h3>
-<p>Now, explore using assert. What happens if you assert an integer, or a string?</p>
+<p>Now, explore using assert.</p>
+<p>What happens if you assert a True comparison, like <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">&lt;</span> <span class="pre">10</span></code>? a False comparison, <code class="docutils literal notranslate"><span class="pre">like</span> <span class="pre">6</span> <span class="pre">&gt;</span> <span class="pre">10</span></code>?</p>
+<p>What happens if you assert an integer? or a string?</p>
 <p>What happens if you assert None?</p>
 <p>Find at least one integer that raises an assertion error.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
 <span class="c1"># specific asserts will vary </span>
+<span class="c1"># Asserting True comparison will pass silently</span>
+<span class="k">assert</span> <span class="mi">6</span> <span class="o">&lt;</span> <span class="mi">10</span>
+
+<span class="c1"># Asserting False compariosn will raise assertion error</span>
+<span class="k">assert</span> <span class="mi">6</span> <span class="o">&gt;</span> <span class="mi">10</span> 
 
 <span class="c1"># Asserting an integer asserts as True</span>
 <span class="k">assert</span> <span class="mi">12</span>
@@ -601,12 +612,12 @@ True
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">AssertionError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">16</span><span class="o">-</span><span class="mi">5</span><span class="n">bc695638219</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> 
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># Asserting None asserts as False</span>
-<span class="ne">---&gt; </span><span class="mi">11</span> <span class="k">assert</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> 
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># The integer 0 asserts as False (it gets interpreted as False)</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">8</span><span class="n">d4f3cb63b3b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># Asserting False compariosn will raise assertion error</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="k">assert</span> <span class="mi">6</span> <span class="o">&gt;</span> <span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> 
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1"># Asserting an integer asserts as True</span>
 
 <span class="ne">AssertionError</span>: 
 </pre></div>

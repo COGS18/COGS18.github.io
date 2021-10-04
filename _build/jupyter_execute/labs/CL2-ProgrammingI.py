@@ -157,8 +157,8 @@ print(False or True)
 
 
 ### BEGIN SOLUTION
-comp_1 = not 17**2 == 289/3
-comp_1 = 17**2 != 289/3
+comp_1 = not 17**2 == 867/3
+comp_1 = 17**2 != 867/3
 
 comp_2 = (3**4) > (4**3) > (1234 % 99)
 comp_2 = ((3**4) > (4**3)) and ((4**3)) > (1234 % 99)
@@ -202,7 +202,7 @@ print(type(12/2.0))
 
 # ## Part 3: Asserts
 # 
-# You will notice, through the coding labs and assignments, code that looks something like `assert True`, in which the assert statement is used.
+# You will notice, through the coding labs and assignments, code that looks something like `assert True`, in which the assert statement is used. The goal, in your coding labs and assignments is for `assert` statements to "pass silently"...meaning give no output.
 # 
 # Using assert essentially means to `assert that the following code is True`.
 # 
@@ -218,7 +218,6 @@ print(type(12/2.0))
 
 
 # Declare a variable called `boolean` that  has type boolean, and passes the assert in the next cell
-
 
 ### BEGIN SOLUTION
 boolean = True
@@ -241,17 +240,26 @@ assert boolean
 
 # ###  Assert Explorations
 # 
-# Now, explore using assert. What happens if you assert an integer, or a string? 
+# Now, explore using assert. 
+# 
+# What happens if you assert a True comparison, like `6 < 10`? a False comparison, `like 6 > 10`?
+# 
+# What happens if you assert an integer? or a string? 
 # 
 # What happens if you assert None?
 # 
 # Find at least one integer that raises an assertion error. 
 
-# In[16]:
+# In[1]:
 
 
 ### BEGIN SOLUTION
 # specific asserts will vary 
+# Asserting True comparison will pass silently
+assert 6 < 10
+
+# Asserting False compariosn will raise assertion error
+assert 6 > 10 
 
 # Asserting an integer asserts as True
 assert 12
