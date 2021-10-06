@@ -11,6 +11,18 @@
 #     - nobody else from the waitlist will be enrolled
 #     - waitlist "ends" Friday (meaning, those not enrolled will lose course access at that point)
 
+# In[ ]:
+
+
+**[AD]: EGE Outreach**
+    
+EDGE, a free, year-long mentorship program offered to help introduce STEM-related fields to high school girls hosted by UCSD’s Society of Women Engineers and Women In Computing
+ 
+As a mentor, you will be a resource to your mentee(s) for the duration of one school year and be expected to attend one virtual mentor-mentee meet-up event per quarter.
+
+Sign up to be a mentor now at https://tinyurl.com/edgement2021! The deadline for mentor sign-ups is October 16, 2021 at 11:59 pm.
+
+
 # **Q&A**
 # 
 # Q: I am confused about the difference between equality and identity operator and when to use each.  
