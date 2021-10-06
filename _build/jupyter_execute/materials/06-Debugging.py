@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **[AD]: EDGE Outreach**
+#     
+# EDGE, a free, year-long mentorship program offered to help introduce STEM-related fields to high school girls hosted by UCSD’s Society of Women Engineers and Women In Computing
+#  
+# As a mentor, you will be a resource to your mentee(s) for the duration of one school year and be expected to attend one virtual mentor-mentee meet-up event per quarter.
+# 
+# Sign up to be a mentor now at https://tinyurl.com/edgement2021! The deadline for mentor sign-ups is October 16, 2021 at 11:59 pm.
+#         
+# ![EDGE](img/edge.png)
+
 # **Course Announcements**
 # 
 # - **CL2** due tonight (11:59 PM)
@@ -10,18 +20,6 @@
 #     - first five from each section have been informed they can now enroll
 #     - nobody else from the waitlist will be enrolled
 #     - waitlist "ends" Friday (meaning, those not enrolled will lose course access at that point)
-
-# In[ ]:
-
-
-**[AD]: EGE Outreach**
-    
-EDGE, a free, year-long mentorship program offered to help introduce STEM-related fields to high school girls hosted by UCSD’s Society of Women Engineers and Women In Computing
- 
-As a mentor, you will be a resource to your mentee(s) for the duration of one school year and be expected to attend one virtual mentor-mentee meet-up event per quarter.
-
-Sign up to be a mentor now at https://tinyurl.com/edgement2021! The deadline for mentor sign-ups is October 16, 2021 at 11:59 pm.
-
 
 # **Q&A**
 # 
@@ -68,7 +66,7 @@ Sign up to be a mentor now at https://tinyurl.com/edgement2021! The deadline for
 
 # ### Syntax Error Examples
 
-# In[ ]:
+# In[3]:
 
 
 # will produce a syntax error
@@ -80,7 +78,7 @@ if True
 # - what type of error it is
 # - and where it _thinks_ it occurred (`^`)
 
-# In[ ]:
+# In[9]:
 
 
 # will produce a syntax error
@@ -103,7 +101,7 @@ print(value)
 # 
 # ZeroDivisionError occurs when you try to divide by zero. 
 
-# In[ ]:
+# In[5]:
 
 
 # produces ZeroDivisionError
@@ -118,14 +116,14 @@ print(value)
 # 
 # NameError occurs when you try to access a name that Python does not know.
 
-# In[ ]:
+# In[6]:
 
 
 # Define a variable
 variable = 12
 
 
-# In[ ]:
+# In[7]:
 
 
 # If you typo a name, you will get a NameError
@@ -134,7 +132,7 @@ varaible
 
 # While it's annoying, it's helpful that Python doesn't just _guess_ that you _meant_ 'variable'....because sometimes Python would guess wrong. It's better for Python to just give us the error.
 
-# In[ ]:
+# In[13]:
 
 
 # You also get a name error if you try to use the wrong operator for assignment
@@ -145,14 +143,14 @@ new_variable == 1
 # 
 # IndexError occurs when you try to access an index that doesn't exist.
 
-# In[ ]:
+# In[14]:
 
 
 my_string = 'COGS18'
 my_string[6]
 
 
-# In[ ]:
+# In[15]:
 
 
 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist

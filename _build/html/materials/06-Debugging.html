@@ -382,7 +382,12 @@
         
               <div>
                 
-  <p><strong>Course Announcements</strong></p>
+  <p><strong>[AD]: EDGE Outreach</strong></p>
+<p>EDGE, a free, year-long mentorship program offered to help introduce STEM-related fields to high school girls hosted by UCSD’s Society of Women Engineers and Women In Computing</p>
+<p>As a mentor, you will be a resource to your mentee(s) for the duration of one school year and be expected to attend one virtual mentor-mentee meet-up event per quarter.</p>
+<p>Sign up to be a mentor now at <a class="reference external" href="https://tinyurl.com/edgement2021">https://tinyurl.com/edgement2021</a>! The deadline for mentor sign-ups is October 16, 2021 at 11:59 pm.</p>
+<p><img alt="EDGE" src="../_images/edge.png" /></p>
+<p><strong>Course Announcements</strong></p>
 <ul class="simple">
 <li><p><strong>CL2</strong> due tonight (11:59 PM)</p></li>
 <li><p><strong>A1</strong> due Fri</p></li>
@@ -395,19 +400,6 @@
 </ul>
 </li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>**[AD]: EGE Outreach**
-    
-EDGE, a free, year-long mentorship program offered to help introduce STEM-related fields to high school girls hosted by UCSD’s Society of Women Engineers and Women In Computing
- 
-As a mentor, you will be a resource to your mentee(s) for the duration of one school year and be expected to attend one virtual mentor-mentee meet-up event per quarter.
-
-Sign up to be a mentor now at https://tinyurl.com/edgement2021! The deadline for mentor sign-ups is October 16, 2021 at 11:59 pm.
-</pre></div>
-</div>
-</div>
-</div>
 <p><strong>Q&amp;A</strong></p>
 <p>Q: I am confused about the difference between equality and identity operator and when to use each.<br />
 A: Anytime you want to check if the value in two variables is the same, you’ll use the equality operator (<code class="docutils literal notranslate"><span class="pre">==</span></code>). If you ever want to check if something is stored in the same place in memory (uncommon in this course), you’d use the identity operators.</p>
@@ -455,6 +447,14 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-3-dfda8e0f217c&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="kc">True</span>
+           <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
 </div>
 <p>Python does its best to tell you:</p>
 <ul class="simple">
@@ -467,6 +467,14 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 <span class="c1"># and specifically an indentation error</span>
 <span class="k">if</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-9-f50cd2dca413&gt;&quot;</span><span class="gt">, line </span><span class="mi">4</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="o">^</span>
+<span class="ne">IndentationError</span>: expected an indented block
 </pre></div>
 </div>
 </div>
@@ -486,6 +494,17 @@ Exceptions are errors that occur when a code is executed.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># produces ZeroDivisionError</span>
 <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="mf">79e900</span><span class="n">a17bd3</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># produces ZeroDivisionError</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
 </pre></div>
 </div>
 </div>
@@ -514,12 +533,34 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">7</span><span class="o">-</span><span class="mi">4</span><span class="n">acade15292f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># If you typo a name, you will get a NameError</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">varaible</span>
+
+<span class="ne">NameError</span>: name &#39;varaible&#39; is not defined
+</pre></div>
+</div>
+</div>
 </div>
 <p>While it’s annoying, it’s helpful that Python doesn’t just <em>guess</em> that you <em>meant</em> ‘variable’….because sometimes Python would guess wrong. It’s better for Python to just give us the error.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You also get a name error if you try to use the wrong operator for assignment</span>
 <span class="n">new_variable</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="mi">4</span><span class="n">f05423dede6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># You also get a name error if you try to use the wrong operator for assignment</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">new_variable</span> <span class="o">==</span> <span class="mi">1</span>
+
+<span class="ne">NameError</span>: name &#39;new_variable&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -535,6 +576,17 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mi">562</span><span class="n">cc9d58aa8</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;COGS18&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+
+<span class="ne">IndexError</span>: string index out of range
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -542,6 +594,18 @@ Exceptions are errors that occur when a code is executed.
 <span class="c1"># we&#39;ll talk about dictionaries soon</span>
 <span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name1&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;name2&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 <span class="n">my_dictionary</span><span class="p">[</span><span class="s1">&#39;name3&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">15</span><span class="o">-</span><span class="mi">961985</span><span class="n">c4de9b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># we&#39;ll talk about dictionaries soon</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name1&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;name2&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">my_dictionary</span><span class="p">[</span><span class="s1">&#39;name3&#39;</span><span class="p">]</span>
+
+<span class="ne">KeyError</span>: &#39;name3&#39;
 </pre></div>
 </div>
 </div>

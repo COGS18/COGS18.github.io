@@ -47,7 +47,7 @@
 # Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
 # </div>
 
-# In[5]:
+# In[14]:
 
 
 condition = True
@@ -108,10 +108,10 @@ else:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start
 
-# In[ ]:
+# In[18]:
 
 
-my_value = ---
+my_value = ''
 
 if my_value:
     print('True')
@@ -125,7 +125,7 @@ else:
 # After an <code>if</code> statement, you can have any number of <code>elif</code>`s (meaning 'else if') to check other conditions.
 # </div>
 
-# In[ ]:
+# In[21]:
 
 
 condition_1 = False
@@ -143,7 +143,7 @@ else:
 # 
 # An else statement is not required, but if both the `if` and the `elif` condtions are not met (both evaluate as `False`), then nothing is returned.
 
-# In[ ]:
+# In[22]:
 
 
 condition_1 = False
@@ -159,7 +159,7 @@ elif condition_2:
 # 
 # The order will always be `if`-`elif`-`else`...with only the `if` being required. If the `elif` is at the end...it will never be tested, as the `else` will have already returned a value once reached (and thus Python will throw an error).
 
-# In[ ]:
+# In[23]:
 
 
 ## THIS CODE WILL PRODUCE AN ERROR
@@ -180,10 +180,21 @@ elif condition_2:
 # Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 # </div>
 
-# In[ ]:
+# In[32]:
 
 
-language = "s"
+language = "Python"
+
+if language == "Python":
+    print("Yay")
+elif language == "Python":
+    print('Something else')
+
+
+# In[25]:
+
+
+language = "Python"
 
 if language == "Python" or language == "R":
     print("Yay!")
@@ -193,7 +204,7 @@ else:
     print("Get yourself a programming language!")
 
 
-# In[ ]:
+# In[31]:
 
 
 # Exploring conditionals
@@ -213,7 +224,25 @@ print('After Conditional')
 # 
 # What will the following code snippet print out:
 
-# In[ ]:
+# In[37]:
+
+
+not True
+
+
+# In[39]:
+
+
+not condition
+
+
+# In[34]:
+
+
+not False
+
+
+# In[33]:
 
 
 condition = False
@@ -258,7 +287,7 @@ else:
 # 
 # What will the following code snippet print out:
 
-# In[ ]:
+# In[44]:
 
 
 conditional = False
