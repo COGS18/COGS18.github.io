@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="next" title="Debugging" href="06-Debugging.html" />
     <link rel="prev" title="Operators" href="04-Operators.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -112,6 +112,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    05-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Debugging.html">
+   06-Debugging
   </a>
  </li>
 </ul>
@@ -399,12 +404,22 @@ Conditionals are statements that check for a condition, using the <code>if</code
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This code executes if the condition evaluates as True.
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># equivalent to above</span>
 <span class="k">if</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as True.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This code executes if the condition evaluates as True.
 </pre></div>
 </div>
 </div>
@@ -420,10 +435,15 @@ Conditionals are statements that check for a condition, using the <code>if</code
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
 
 <span class="k">if</span> <span class="n">math</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -442,6 +462,11 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as True.&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as False&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This code executes if the condition evaluates as False
 </pre></div>
 </div>
 </div>
@@ -646,6 +671,11 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <li><p>The order of conditional blocks is always <code class="docutils literal notranslate"><span class="pre">if</span></code> then <code class="docutils literal notranslate"><span class="pre">elif</span></code>(s) then <code class="docutils literal notranslate"><span class="pre">else</span></code></p></li>
 <li><p>Code is only ever executed if the condition is met</p></li>
 </ul>
+<p><strong>Final Notes</strong></p>
+<ul class="simple">
+<li><p>You now have all information needed for A1</p></li>
+<li><p>Reminder to fill out daily feedback survey</p></li>
+</ul>
 </div>
 </div>
 
@@ -675,7 +705,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="04-Operators.html" title="previous page">Operators</a>
-    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+    <a class='right-next' id="next-link" href="06-Debugging.html" title="next page">Debugging</a>
 
         </div>
         

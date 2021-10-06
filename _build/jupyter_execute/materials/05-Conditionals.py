@@ -47,7 +47,7 @@
 # Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
 # </div>
 
-# In[ ]:
+# In[5]:
 
 
 condition = True
@@ -56,7 +56,7 @@ if condition:
     print('This code executes if the condition evaluates as True.')
 
 
-# In[ ]:
+# In[6]:
 
 
 # equivalent to above
@@ -73,10 +73,10 @@ if condition == True:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start
 
-# In[ ]:
+# In[10]:
 
 
-math = ---
+math = ' '
 
 if math:
     print('True')
@@ -88,7 +88,7 @@ if math:
 # After an <code>if</code>, you can use an <code>else</code> that will run if the conditional(s) above have not run.
 # </div>
 
-# In[ ]:
+# In[11]:
 
 
 condition = False
@@ -286,8 +286,7 @@ else:
 # - The order of conditional blocks is always `if` then `elif`(s) then `else`
 # - Code is only ever executed if the condition is met
 
-# In[ ]:
-
-
-
-
+# **Final Notes**
+# 
+# - You now have all information needed for A1
+# - Reminder to fill out daily feedback survey

@@ -473,34 +473,58 @@ bool('a')
 'a' == 'a' and 'a' == 'b' 
 
 
+# 1. Python considers empty strings as having boolean value of `False`. Non-empty string as having boolean value of `True`.
+# 
+
+# 2.  For `and` operator if left value is `True`, then right value is checked and returned. If left value is `False`, then that left value is returned.
+# 
+
 # 3. For `or` operator if left value is `True`, then it is returned, otherwise if left value is `False`, then right value is returned.
 
-# In[ ]:
+# In[57]:
+
+
+(3 < 6) or (5 > 10)
+
+
+# In[58]:
+
+
+3 < 6
+
+
+# In[63]:
+
+
+'a'
+
+
+# In[56]:
 
 
 'a' or 'b'
 
 
-# In[ ]:
+# In[59]:
 
 
 # empty string evaluates as False
 '' or 'b'
 
 
-# In[ ]:
+# In[60]:
 
 
 'a' == ('a' or 'b')
 
 
-# In[ ]:
+# In[61]:
 
 
 'b' == ('a' or 'b')
 
 
-# In[ ]:
+# In[62]:
 
 
 'b' == 'a' or 'b' == 'b'
@@ -510,7 +534,7 @@ bool('a')
 # 
 # What would the following code cell return?
 
-# In[ ]:
+# In[64]:
 
 
 'a' == ('' or 'a')
@@ -532,7 +556,7 @@ bool('a')
 # - `is` : True if both refer to the same object
 # - `is not` : True if they do not refer to the same object
 
-# In[ ]:
+# In[65]:
 
 
 a = 927
@@ -540,7 +564,7 @@ b = a
 c = 927
 
 
-# In[ ]:
+# In[66]:
 
 
 print(a is b)
@@ -551,14 +575,14 @@ print(c is a)
 
 # If we wanted that second statement to evaluate as `True` we could use `is not`...
 
-# In[ ]:
+# In[67]:
 
 
 # make a True statement
 print(c is not a)
 
 
-# In[ ]:
+# In[68]:
 
 
 # testing for value equality
@@ -575,7 +599,7 @@ a == b == c
 # - B) I tried but am stuck.
 # - C) I'm unsure where to start
 
-# In[ ]:
+# In[69]:
 
 
 z = 5
@@ -586,8 +610,8 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = c is d
+false_variable = z is not x
 
 print(true_variable, false_variable)
 
@@ -606,58 +630,58 @@ print(true_variable, false_variable)
 # 
 # The rules behind this are a bit fuzzy, so we'll just go through a few examples here. But, if you want to read more about string interning and how Python handles this, you can read more [here](http://guilload.com/python-string-interning/).
 
-# In[ ]:
+# In[71]:
 
 
 simple_string = 'string'
 simple_string2 = 'string'
 
 
-# In[ ]:
+# In[72]:
 
 
 simple_string is simple_string2
 
 
-# In[ ]:
+# In[73]:
 
 
 print(id(simple_string), id(simple_string2))
 
 
-# In[ ]:
+# In[74]:
 
 
 longer_string = 'really long string that just keeps going'
 longer_string2 = 'really long string that just keeps going'
 
 
-# In[ ]:
+# In[75]:
 
 
 longer_string is longer_string2
 
 
-# In[ ]:
+# In[76]:
 
 
 print(id(longer_string), id(longer_string2))
 
 
-# In[ ]:
+# In[77]:
 
 
 d = 5
 e = 5
 
 
-# In[ ]:
+# In[78]:
 
 
 print(id(d), id(e))
 
 
-# In[ ]:
+# In[79]:
 
 
 print(d is e)
@@ -665,7 +689,7 @@ print(d is e)
 
 # Python implementation front loads an array of integers between -5 to 256, so these objects *already exist*.
 
-# In[ ]:
+# In[83]:
 
 
 # Python doesn't create a new object here
@@ -680,7 +704,7 @@ true_variable_string = l is m
 print(true_variable_integer, true_variable_string)
 
 
-# In[ ]:
+# In[84]:
 
 
 # Python DOES create a new object here
@@ -703,7 +727,7 @@ print(false_variable_integer, false_variable_string)
 # - B) I tried but am stuck.
 # - C) I'm unsure where to start
 
-# In[ ]:
+# In[88]:
 
 
 a = 5
@@ -715,8 +739,8 @@ f = 567
 g = 567
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = a is b
+false_variable = f is g
 
 print(true_variable, false_variable)
 
@@ -734,32 +758,32 @@ print(true_variable, false_variable)
 # - `in` : True if value is found in the sequence
 # - `not in` : True if value is not found in the sequence
 
-# In[ ]:
+# In[96]:
 
 
 x = 'I love COGS18!'
 print('l' in x)
 
 
-# In[ ]:
+# In[90]:
 
 
 print('L' in x)
 
 
-# In[ ]:
+# In[91]:
 
 
 print('COGS' in x)
 
 
-# In[ ]:
+# In[92]:
 
 
 print('CSOG' in x)
 
 
-# In[ ]:
+# In[97]:
 
 
 print(' ' in x)
@@ -771,13 +795,13 @@ print(' ' in x)
 # Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 # </div>
 
-# In[ ]:
+# In[100]:
 
 
 'COGS' + ' 18'
 
 
-# In[ ]:
+# In[101]:
 
 
 'a' + 'b' + 'c'
@@ -789,20 +813,20 @@ print(' ' in x)
 # Operators and variables can also be chained together into arbitrarily complex expressions.
 # </div>
 
-# In[ ]:
+# In[102]:
 
 
 # Note that you can use parentheses to chunk sections
 (13 % 7 >= 7) and ('COGS' + '18' == 'COGS18')
 
 
-# In[ ]:
+# In[103]:
 
 
 (13 % 7 >= 7)
 
 
-# In[ ]:
+# In[104]:
 
 
 ('COGS' + '18' == 'COGS18')
@@ -812,7 +836,7 @@ print(' ' in x)
 # 
 # How will the following expression evaluate:
 
-# In[ ]:
+# In[1]:
 
 
 2**2 >= 4 and 13%3 > 1

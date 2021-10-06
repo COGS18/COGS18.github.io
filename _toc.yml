@@ -13,6 +13,8 @@ parts:
       title: 04-Operators
     - file: materials/05-Conditionals
       title: 05-Conditionals
+    - file: materials/06-Debugging
+      title: 06-Debugging
   - caption: Coding Labs
     chapters:
     - file: labs/CL1-Tooling
