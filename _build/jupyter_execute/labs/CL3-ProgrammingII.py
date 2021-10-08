@@ -320,6 +320,34 @@ print('Three plus five equals' + str(3+5))
 ### END SOLUTION
 
 
+# ### Debugging Challenge
+# 
+# You're trying to write code that will count the number of vowels in your name, storing that value in `counter`. To get started, you store your name in the variable `my_name` and write the code you see below. However, the code below is not quite working...work to debug the code below to accomplish the task!
+# 
+# Note: This question uses a `for` loop. Next week's coding lab will get you lots of loops practice!
+
+# In[2]:
+
+
+my_name == 'Shannon'
+vowels = ['A','E','I','O','U', 'a', 'e', 'i', 'o', 'u']
+counter = 0
+
+for char in my_name:
+    if char == vowels:
+        counter =  1
+
+### BEGIN SOLUTION
+# code will differ based on who is taking the exam
+my_name = 'Shannon'
+counter = 0
+
+for char in my_name:
+    if char in vowels:
+        counter += 1
+### END SOLUTION
+
+
 # ## Part 3: Collection types
 # 
 # Collections are Python variable types than can store a 'collection' of items.

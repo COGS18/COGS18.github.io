@@ -117,6 +117,11 @@
    06-Debugging
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -127,6 +132,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="CL1-Tooling.html">
    CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL2-ProgrammingI.html">
+   CL2-ProgrammingI
   </a>
  </li>
 </ul>
@@ -299,6 +309,11 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#fixing-errors">
      Fixing Errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#debugging-challenge">
+     Debugging Challenge
     </a>
    </li>
   </ul>
@@ -774,6 +789,48 @@ Also YES!
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Three plus five equals&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span><span class="p">))</span>
 
 <span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="debugging-challenge">
+<h3>Debugging Challenge<a class="headerlink" href="#debugging-challenge" title="Permalink to this headline">¶</a></h3>
+<p>You’re trying to write code that will count the number of vowels in your name, storing that value in <code class="docutils literal notranslate"><span class="pre">counter</span></code>. To get started, you store your name in the variable <code class="docutils literal notranslate"><span class="pre">my_name</span></code> and write the code you see below. However, the code below is not quite working…work to debug the code below to accomplish the task!</p>
+<p>Note: This question uses a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. Next week’s coding lab will get you lots of loops practice!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_name</span> <span class="o">==</span> <span class="s1">&#39;Shannon&#39;</span>
+<span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;E&#39;</span><span class="p">,</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="s1">&#39;O&#39;</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">]</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">vowels</span><span class="p">:</span>
+        <span class="n">counter</span> <span class="o">=</span>  <span class="mi">1</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># code will differ based on who is taking the exam</span>
+<span class="n">my_name</span> <span class="o">=</span> <span class="s1">&#39;Shannon&#39;</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">afbf1bbf1f0f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">vowels</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>         <span class="n">counter</span> <span class="o">=</span>  <span class="mi">1</span>
+
+<span class="ne">NameError</span>: name &#39;my_name&#39; is not defined
 </pre></div>
 </div>
 </div>

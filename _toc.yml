@@ -15,8 +15,12 @@ parts:
       title: 05-Conditionals
     - file: materials/06-Debugging
       title: 06-Debugging
+    - file: materials/07-Collections
+      title: 07-Collections
   - caption: Coding Labs
     chapters:
     - file: labs/CL1-Tooling
       title: CL1-Tooling
+    - file: labs/CL2-ProgrammingI
+      title: CL2-ProgrammingI
 
