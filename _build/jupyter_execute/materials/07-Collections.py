@@ -48,21 +48,21 @@
 
 # ### List examples
 
-# In[ ]:
+# In[1]:
 
 
 # Define a list
 lst = [1, 'a', True]
 
 
-# In[ ]:
+# In[2]:
 
 
 # Print out the contents of a list
 print(lst)
 
 
-# In[ ]:
+# In[3]:
 
 
 # Check the type of a list
@@ -95,62 +95,62 @@ item_E = [1234]
 # <b>Indexing</b> refers to selecting an item from within a collection. Indexing is done with square brackets.
 # </div>
 
-# In[ ]:
+# In[4]:
 
 
 # Define a list 
 my_lst = ['Julian', 'Amal', 'Richard', 'Juan', 'Xuan']
 
 
-# In[ ]:
+# In[5]:
 
 
 # Indexing: Count forward, starting at 0, with positive numbers
 print(my_lst[1])
 
 
-# In[ ]:
+# In[6]:
 
 
 # Indexing: Count backward, starting at -1, with negative numbers
 print(my_lst[-1])
 
 
-# In[ ]:
+# In[7]:
 
 
 # Indexing: Grab a group of adjacent items using `start:stop`, called a slice
 print(my_lst[2:4])
 
 
-# In[ ]:
+# In[8]:
 
 
 # can determine type in list
 type(my_lst[2])
 
 
-# In[ ]:
+# In[9]:
 
 
 my_lst[2:-1]
 
 
-# In[ ]:
+# In[10]:
 
 
 # indexing to end of list
 print(my_lst[2:])
 
 
-# In[ ]:
+# In[11]:
 
 
 # Indexing from beginning of list
 print(my_lst[:4])
 
 
-# In[ ]:
+# In[12]:
 
 
 # slicing by skipping a value [start:stop:step]
@@ -159,26 +159,26 @@ print(my_lst[0:4:2])
 
 # ### Index Practices
 
-# In[ ]:
+# In[13]:
 
 
 # Define a list for the examples
 example_lst = [1, 2, 3, 4, 5]
 
 
-# In[ ]:
+# In[14]:
 
 
 example_lst[2]
 
 
-# In[ ]:
+# In[15]:
 
 
 example_lst[-3]
 
 
-# In[ ]:
+# In[16]:
 
 
 example_lst[1:3]
@@ -188,7 +188,7 @@ example_lst[1:3]
 # 
 # What will be the output of the following piece of code:
 
-# In[ ]:
+# In[19]:
 
 
 q2_lst = ['a', 'b', 'c','d']

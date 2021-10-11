@@ -163,7 +163,7 @@ my_dictionary['name3']
 # 
 # ValueError occurs when you try to use an illegal value for something.
 
-# In[ ]:
+# In[16]:
 
 
 int('cat')
@@ -171,7 +171,7 @@ int('cat')
 
 # ### TypeError
 
-# In[ ]:
+# In[17]:
 
 
 'a_string' + 12
@@ -196,7 +196,7 @@ int('cat')
 # 
 # What type of error will the following code produce?
 
-# In[ ]:
+# In[18]:
 
 
 if num > 0
@@ -213,7 +213,7 @@ if num > 0
 # 
 # What type of error will the following code produce?
 
-# In[ ]:
+# In[19]:
 
 
 if num > 0:
@@ -230,7 +230,7 @@ if num > 0:
 # 
 # The trace (log) of what Python did as it went through your code. Gets printed out if Python runs into an error.
 
-# In[ ]:
+# In[20]:
 
 
 running_sum = 0
@@ -273,7 +273,7 @@ except:
 
 # ### Try / Except Example 
 
-# In[ ]:
+# In[22]:
 
 
 # Example: we want to get an input number from the user
@@ -285,7 +285,13 @@ print('\nmy_num is: ', my_num)
 
 # ### Example with Try / Except
 
-# In[ ]:
+# In[25]:
+
+
+int('Shannon')
+
+
+# In[26]:
 
 
 try:
@@ -304,7 +310,7 @@ except:
 # 
 # `raise` is a keyword that tells Python you want to create your own error.
 
-# In[ ]:
+# In[28]:
 
 
 my_int = input('An integer please: ')
@@ -318,11 +324,11 @@ print('My integer is: ', my_int)
 # 
 # Edit the code below (replacing `---` with either values or variable names) so that when executed, this cell returns `None`.
 
-# In[ ]:
+# In[29]:
 
 
-num1 = ---
-num2 = ---
+num1 = 45
+num2 = 0
 
 try:
     output = num1 / num2
@@ -351,10 +357,16 @@ print(output)
 # 
 # Google: "How to check whether a variable stores an even value _in python_"
 
-# In[ ]:
+# In[36]:
 
 
+# positive: >0 
+my_val = -18
 
+if my_val > 0 and (my_val % 2) == 0: # need to figure out how to check if even
+    output = 1
+
+print(output)
 
 
 # ### Don't understand the error message
