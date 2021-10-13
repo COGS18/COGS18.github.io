@@ -19,10 +19,21 @@ parts:
       title: 07-Collections
     - file: materials/08-Loops
       title: 08-Loops
+    - file: materials/09-Dictionaries
+      title: 09-Dictionaries
+    - file: materials/A1-Syntax
+      title: A1-Syntax
+    - file: materials/A2-Examples
+      title: A2-Examples     
   - caption: Coding Labs
     chapters:
     - file: labs/CL1-Tooling
       title: CL1-Tooling
     - file: labs/CL2-ProgrammingI
       title: CL2-ProgrammingI
-
+  - caption: Exam Prep
+    chapters:
+    - file: materials/Exam-Prep/E1-Review
+      title: E1-Review
+    - file: materials/Exam-Prep/E1-Practice
+      title: E1-Practice

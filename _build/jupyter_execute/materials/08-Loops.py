@@ -4,6 +4,8 @@
 # **[Ad]**: W.O.R.M in STEM
 # 
 # ![worm](img/worm.png)
+# 
+# Link: https://forms.gle/Ep8k1Xx7zmYydozj7
 
 # **Course Announcements**
 # 
@@ -89,7 +91,7 @@ email = lst[1]
 
 # ### `while` loop Example
 
-# In[ ]:
+# In[8]:
 
 
 number = -5

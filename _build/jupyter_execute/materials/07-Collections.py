@@ -230,10 +230,11 @@ q2_lst[2:0:-1]
 # 
 # What would be the appropriate line of code to return `['butter', '&', 'jelly']`?
 
-# In[ ]:
+# In[27]:
 
 
 q3_lst = ['peanut', 'butter', '&','jelly']
+q3_lst[-3:]
 
 
 # - A) `q3_lst[2:4]`
@@ -259,7 +260,7 @@ q3_lst = ['peanut', 'butter', '&','jelly']
 
 # ### Length of a collection
 
-# In[ ]:
+# In[28]:
 
 
 # Define a new list
@@ -275,21 +276,21 @@ len(another_lst)
 # The <code>in</code> operator asks whether an element is present inside a collection, and returns a boolean answer. 
 # </div>
 
-# In[ ]:
+# In[29]:
 
 
 # Define a new list to work with
 lst_again = [True, 13, None, 'apples']
 
 
-# In[ ]:
+# In[30]:
 
 
 # Check if a particular element is present in the list
 True in lst_again
 
 
-# In[ ]:
+# In[31]:
 
 
 # The `in` operator can also be combined with the `not` operator
@@ -298,49 +299,49 @@ True in lst_again
 
 # ### Practice with `in`
 
-# In[ ]:
+# In[32]:
 
 
 # Define a list to practice with
 practice_lst = [1, True, 'alpha', 13, 'cogs18']
 
 
-# In[ ]:
+# In[33]:
 
 
 13 in practice_lst
 
 
-# In[ ]:
+# In[34]:
 
 
 False in practice_lst
 
 
-# In[ ]:
+# In[35]:
 
 
 'True' in practice_lst
 
 
-# In[ ]:
+# In[36]:
 
 
 #searching partial strings
 'cogs' in practice_lst
 
 
-# In[ ]:
+# In[37]:
 
 
-'cogs18' not in practice_lst
+'cogs18' not in practice_lst 
 
 
 # #### Clicker #4
 # 
 # After executing the following code, what will be the value of `output`?
 
-# In[ ]:
+# In[38]:
 
 
 ex2_lst = [0, False, 'ten', None]
@@ -368,28 +369,28 @@ print(output)
 # Lists are <i>mutable</i>, meaning after definition, you can update and change things about the list.
 # </div>
 
-# In[ ]:
+# In[39]:
 
 
 # Define a list
 updates = [1, 2, 3]
 
 
-# In[ ]:
+# In[40]:
 
 
 # Check the contents of the list
 print(updates)
 
 
-# In[ ]:
+# In[41]:
 
 
 # Redefine a particular element of the list
 updates[1] = 0
 
 
-# In[ ]:
+# In[42]:
 
 
 # Check the contents of the list
@@ -421,35 +422,35 @@ lst_update[3] = 4
 
 # ### Tuple Examples
 
-# In[ ]:
+# In[43]:
 
 
 # Define a tuple
 tup = (2, 'b', False)
 
 
-# In[ ]:
+# In[44]:
 
 
 # Print out the contents of a tuple
 print(tup)
 
 
-# In[ ]:
+# In[45]:
 
 
 # Check the type of a tuple
 type(tup)
 
 
-# In[ ]:
+# In[46]:
 
 
 # Index into a tuple
 tup[0]
 
 
-# In[ ]:
+# In[47]:
 
 
 # Get the length of a tuple
@@ -458,7 +459,7 @@ len(tup)
 
 # ### Tuples are Immutable
 
-# In[ ]:
+# In[48]:
 
 
 # Tuples are immutable - meaning after they defined, you can't change them
@@ -490,7 +491,7 @@ item_E = [1234]
 # 
 # Note: This was introduced in the Variables lecture.
 
-# In[ ]:
+# In[49]:
 
 
 # Make a variable, and an alias
@@ -511,7 +512,7 @@ print(b)
 # 
 # After executing the following code, what will the values stored in `a` and `b` be?
 
-# In[ ]:
+# In[50]:
 
 
 # Make a variable & an alias
@@ -536,7 +537,7 @@ print(b)
 # 
 # What happens if we make an alias of a **mutable** variable, like a list?
 
-# In[ ]:
+# In[51]:
 
 
 first_list = [1, 2, 3, 4]
@@ -544,7 +545,7 @@ alias_list = first_list
 alias_list
 
 
-# In[ ]:
+# In[52]:
 
 
 #change second value of first_list
@@ -552,7 +553,7 @@ first_list[1] = 29
 first_list
 
 
-# In[ ]:
+# In[53]:
 
 
 # check alias_list
@@ -565,7 +566,7 @@ alias_list
 # 
 # After executing the following code, what will the second value stored in `second_tuple`?
 
-# In[ ]:
+# In[54]:
 
 
 # Make a variable & an alias
@@ -573,6 +574,12 @@ alias_list
 my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
 my_tuple[1] = 29 
+
+
+# In[55]:
+
+
+second_tuple
 
 
 # - A) 1
@@ -595,35 +602,35 @@ my_tuple[1] = 29
 # Strings act similarly to ordered collections of homogenous elements - specifically characters. But, they are <b>immutable</b>.
 # </div>
 
-# In[ ]:
+# In[56]:
 
 
 # Define a string
 my_str = 'TheFamousFive'
 
 
-# In[ ]:
+# In[57]:
 
 
 # Index into a string
 my_str[2]
 
 
-# In[ ]:
+# In[58]:
 
 
 # Ask if an item is in a string
 'Fam' in my_str
 
 
-# In[ ]:
+# In[59]:
 
 
 # Check the length of a string
 len(my_str)
 
 
-# In[ ]:
+# In[60]:
 
 
 # Index into a string
@@ -633,7 +640,7 @@ my_str[1:3] = 'HE'
 
 # ### SideNote: using counters
 
-# In[ ]:
+# In[61]:
 
 
 # Initialize a counter variable
@@ -641,14 +648,14 @@ counter = 0
 print(counter)
 
 
-# In[ ]:
+# In[62]:
 
 
 counter = counter + 1
 print(counter)
 
 
-# In[ ]:
+# In[63]:
 
 
 counter = counter + 1
@@ -661,7 +668,7 @@ print(counter)
 # 
 # What will be the value of `counter` after this code is run?
 
-# In[ ]:
+# In[64]:
 
 
 things_that_are_good = ['python', 'data', 'science', 'tacos']
