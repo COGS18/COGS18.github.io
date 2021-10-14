@@ -31,6 +31,8 @@ parts:
       title: CL1-Tooling
     - file: labs/CL2-ProgrammingI
       title: CL2-ProgrammingI
+    - file: labs/CL3-ProgrammingII
+      title: CL3-ProgrammingII
   - caption: Exam Prep
     chapters:
     - file: materials/Exam-Prep/E1-Review

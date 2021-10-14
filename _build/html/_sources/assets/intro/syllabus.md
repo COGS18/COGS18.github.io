@@ -41,7 +41,7 @@ While regular deadlines have been established to help keep you all on track, I w
 | IA	           | Hannah Contreras        | 2 & 3 PM         | --                      |
 
 
-Course Website: [https://cogs18.github.io](https://cogs18.github.io)
+Course Website: [https://cogs18.github.io](https://cogs18.github.io)  
 Canvas Course: [https://canvas.ucsd.edu/courses/25024](https://canvas.ucsd.edu/courses/)   
 Course Campuswire*: [https://campuswire.com/c/G3CF63BDA](https://campuswire.com/c/G3CF63BDA)     
 Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)  
