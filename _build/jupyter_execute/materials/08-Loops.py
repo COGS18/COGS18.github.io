@@ -105,7 +105,7 @@ while number < 0:
 # 
 # How many temperature values will be output from this `while` loop before "The tea is cool enough." is printed?
 
-# In[ ]:
+# In[11]:
 
 
 temperature = 115
@@ -128,7 +128,7 @@ print('The tea is cool enough.')
 # 
 # What will be the value of `counter` after this loop is run:
 
-# In[ ]:
+# In[12]:
 
 
 keep_looping = True
@@ -182,7 +182,7 @@ print('\nFinal counter: ', counter)
 # 
 # Looping through a list
 
-# In[ ]:
+# In[13]:
 
 
 # Define a list of items
@@ -199,7 +199,7 @@ print('\tLast value: ', my_item)
 # 
 # Looping through a string
 
-# In[ ]:
+# In[14]:
 
 
 # Loop across items in a string
@@ -211,7 +211,7 @@ for char in 'python':
 # 
 # What will the following loop print out:
 
-# In[ ]:
+# In[15]:
 
 
 my_lst = [0, 1, 2, 3, 4]
@@ -257,14 +257,20 @@ for temp in temperatures:
 
 # ### `range` Examples
 
-# In[ ]:
+# In[16]:
 
 
 for ind in [0, 1, 2, 3, 4]:
     print(ind)
 
 
-# In[ ]:
+# In[18]:
+
+
+range(0, 5)
+
+
+# In[17]:
 
 
 # the asterisk here unpacks the range
@@ -272,7 +278,7 @@ for ind in [0, 1, 2, 3, 4]:
 print(*range(0, 5))
 
 
-# In[ ]:
+# In[19]:
 
 
 # Loop across a sequence of numbers, using range
@@ -280,7 +286,7 @@ for ind in range(0, 5):
     print(ind)
 
 
-# In[ ]:
+# In[20]:
 
 
 # Range, like indexing, is defined by 'start', 'stop', 'step'
@@ -288,7 +294,7 @@ for ind in range(2, 6, 2):
     print(ind)
 
 
-# In[ ]:
+# In[21]:
 
 
 # using range in example above
@@ -303,7 +309,13 @@ for temp in range(114, 119):
 # 
 # How many values would this loop print and what would be the last value printed? 
 
-# In[ ]:
+# In[32]:
+
+
+print(*range(1, 10, 3))
+
+
+# In[22]:
 
 
 for ind in range(1, 10, 3):
@@ -325,7 +337,7 @@ for ind in range(1, 10, 3):
 
 # ### `continue` examples
 
-# In[ ]:
+# In[23]:
 
 
 lst = [0, 1, 2, 3]
@@ -338,7 +350,7 @@ for item in lst:
     print(item)
 
 
-# In[ ]:
+# In[24]:
 
 
 courses = ['cogs9', 'cogs18', 'cogs108']
@@ -352,7 +364,7 @@ for course in courses:
     print(course + '!')
 
 
-# In[ ]:
+# In[25]:
 
 
 string = "python"
@@ -369,7 +381,7 @@ for char in string:
 # 
 # What will be the value of `counter` after this code has run:
 
-# In[ ]:
+# In[33]:
 
 
 counter = 0
@@ -396,7 +408,7 @@ print(counter)
 # <code>break</code> is a special operator to break out of a loop.
 # </div>
 
-# In[ ]:
+# In[34]:
 
 
 connected = False
@@ -411,7 +423,7 @@ while not connected:
 
 # ### `break` examples
 
-# In[ ]:
+# In[35]:
 
 
 lst = [0, 1, 2, 3]
@@ -424,7 +436,7 @@ for item in lst:
     print(item)
 
 
-# In[ ]:
+# In[36]:
 
 
 courses = ["cogs9", "cogs18", "cogs108"]
@@ -437,7 +449,7 @@ for course in courses:
     print(course)
 
 
-# In[ ]:
+# In[37]:
 
 
 string = "love python"
@@ -449,7 +461,7 @@ for char in string:
     print(char)
 
 
-# In[ ]:
+# In[38]:
 
 
 # using range in example above
@@ -465,7 +477,7 @@ for temp in range(114, 119):
 # 
 # What will the following code print out:
 
-# In[ ]:
+# In[44]:
 
 
 number = 1
@@ -491,7 +503,7 @@ while True:
 # 
 # (In other words, how many times in this `for` loop will something be printed out?)
 
-# In[ ]:
+# In[45]:
 
 
 # using range in example above
@@ -515,7 +527,7 @@ for temp in range(114, 119):
 # 
 # What will be the value of `counter` after this code has run:
 
-# In[ ]:
+# In[46]:
 
 
 counter = 0
@@ -543,10 +555,16 @@ print(counter)
 # 
 # Write a loop that adds all the *odd* numbers between 1 and 1000 together.
 
-# In[ ]:
+# In[41]:
 
 
 # YOUR CODE HERE
+output = 0
+
+for val in range(1, 1000, 2):
+    output = output + val
+    
+output
 
 
 # - A) I did it!
@@ -560,10 +578,19 @@ print(counter)
 # 
 # Write a loop that will loop through all the letters in `my_name` and count all the vowels in your name.
 
-# In[ ]:
+# In[43]:
 
 
 # YOUR CODE HERE
+my_name = 'Shannon'
+vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+count = 0 
+
+for ltr in my_name:
+    if ltr in vowels:
+        count = count + 1 
+        
+count
 
 
 # - A) I did it!

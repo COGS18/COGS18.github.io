@@ -295,6 +295,23 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#midterm-notes">
+   Midterm Notes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-1">
+     Clicker Question #1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-2">
+     Clicker Question #2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#midterm-expectations">
    Midterm Expectations
   </a>
@@ -417,12 +434,60 @@
         
               <div>
                 
-  <div class="section" id="exam-1-review">
-<h1>Exam 1 Review<a class="headerlink" href="#exam-1-review" title="Permalink to this headline">¶</a></h1>
-<p><strong>Exam 1 Topics</strong> (this may be updated by Friday 10/15)</p>
+  <p><strong>Course Announcements</strong></p>
 <ul class="simple">
-<li><p>Q0: Honor Code (0.1 points)</p></li>
-<li><p>Variables &amp; Operators (3.75 points)</p>
+<li><p><strong>E1</strong> due Monday at 11:59 PM</p>
+<ul>
+<li><p>released this afternoon (I’ll message via Campuswire)</p></li>
+<li><p>complete individually</p></li>
+<li><p>submit on datahub</p></li>
+<li><p>No lecture or office hours Monday</p></li>
+</ul>
+</li>
+<li><p><strong>A2</strong> due <em>next Friday</em> 10/22 (11:59 PM)</p>
+<ul>
+<li><p>Recommended to complete before exam: Q1-2, 4-12</p></li>
+</ul>
+</li>
+<li><p><strong>CL4</strong> will be released this afternoon; due Wed</p>
+<ul>
+<li><p>Loops practice; can complete all of it</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Prof Ellis’ Office Hours</strong></p>
+<p><img alt="courtyar" src="../../_images/courtyard.png" /></p>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: For loops, do we ever move through loops backwards?<br />
+A: You could, but we won’t.</p>
+<p>Q: what is <code class="docutils literal notranslate"><span class="pre">isinstance</span></code>?<br />
+A: This returns True if the variable specified right after the parentheses is of the type specified after hte comma. For example <code class="docutils literal notranslate"><span class="pre">isinstance(6,</span> <span class="pre">int)</span></code> would return True b/c 6 is an integer. <code class="docutils literal notranslate"><span class="pre">isinstance(6,</span> <span class="pre">str)</span></code> would return False b/c 6 is not a string.</p>
+<p>Q: How can you use for loops to add all the numbers in a range together?<br />
+A: See discussions on campuswire.</p>
+<p>Q: Will the lectures always give examples that will help with the assignments? I’m stuck on Q7 on A2 and can’t seem to find an example similar.<br />
+A: You’ll always have seen the basic concepts in lectures and coding labs needed to figure out the assignments. But, you won’t always have a “similar example.” The idea is if you really understand the concept, you can figure out the question’s answer. If you’re just trying to copy+paste and “make it work,” you’ll struggle on a handful of questions.</p>
+<p>Q: I am wondering why I got such a bad grade on A1, I need to re-evaluate and try to do my best. It’s important I dont make the same mistakes twice.<br />
+A: Check your feedback on datahub, and come to office hours if still unsure. We definitely want to be sure you’re clear and good to go for future assignments!</p>
+<p>Q: I am kind of iffy on the difference between continue and break when writing the loop.<br />
+A: <code class="docutils literal notranslate"><span class="pre">continue</span></code> means “skip to the next iteration of the loop”; <code class="docutils literal notranslate"><span class="pre">break</span></code> means break out of the loop. Do not go on. Do not go to the next iteration. Just stop.</p>
+<p>Q: To have access to my coding work in the future, I need something called Anaconda right? How do I set that up?<br />
+A: See part 3 of the first coding lab. You can download Anaconda to your computer.</p>
+<p>Q: Is there a great place to find coding help for specific issues or questions? google is not the most reliable<br />
+A: For this class, campuswire is the best place.</p>
+<p>Q: Does the “continue” apply only for the “for” or can it be used for other purposes? Can I apply “continue” to other situations other than for “for” and does it run completely from the top of the cell?<br />
+A: <code class="docutils literal notranslate"><span class="pre">continue</span></code> can be used in any loop; it runs from the top of the loop, not necessarily the top of the cell.</p>
+<p>Q: Can we have more than one “and” or “or” operator for a if condition?<br />
+A: Yup.</p>
+<p>Q: How do you define odd and even numbers in a range, and them add them together?<br />
+A: Think about the logic about how you can use range’s <code class="docutils literal notranslate"><span class="pre">start</span></code>, <code class="docutils literal notranslate"><span class="pre">stop</span></code>, and <code class="docutils literal notranslate"><span class="pre">step</span></code> for the first part. Then, consider the logic you would need in the loop to add the values together.</p>
+<p>Q: For the break function, does it matter if you put break after the for statement or after the print statement?<br />
+A: Yes, if you put it before the <code class="docutils literal notranslate"><span class="pre">print()</span></code> statement, it will break before printing. If you put it after, it will <code class="docutils literal notranslate"><span class="pre">print</span></code> first.</p>
+<div class="section" id="exam-1-review">
+<h1>Exam 1 Review<a class="headerlink" href="#exam-1-review" title="Permalink to this headline">¶</a></h1>
+<p><strong>Exam 1 Topics</strong> (updated Friday 10/15)</p>
+<ul class="simple">
+<li><p>Q0: Honor Code (0.15 points)</p></li>
+<li><p>Variables &amp; Operators (3.65 points)</p>
 <ul>
 <li><p>Q1: Variables</p></li>
 <li><p>Q2: Math Operators</p></li>
@@ -431,20 +496,55 @@
 <li><p>Q5: String Concatenation</p></li>
 </ul>
 </li>
-<li><p>Collections &amp; Indexing (3 points)</p>
+<li><p>Collections &amp; Indexing (2.5 points)</p>
 <ul>
 <li><p>Q6: Lists &amp; Indexing</p></li>
-<li><p>Q7: Dictionaries &amp; Tuples</p></li>
+<li><p>Q7: Tuples</p></li>
+<li><p>Q8: Collections &amp; Indexing</p></li>
 </ul>
 </li>
-<li><p>Control Flow - Conditionals &amp; Loops (5.65 points)</p>
+<li><p>Control Flow - Conditionals &amp; Loops (6.2 points)</p>
 <ul>
-<li><p>Q8: Conditionals</p></li>
-<li><p>Q9: <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
-<li><p>Q10: Accomplishing a task</p></li>
+<li><p>Q9: Conditionals</p></li>
+<li><p>Q10: <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
+<li><p>Q11: Accomplishing a task</p></li>
 </ul>
 </li>
 </ul>
+<div class="section" id="midterm-notes">
+<h2>Midterm Notes<a class="headerlink" href="#midterm-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>I’m not trying to trick you:</p>
+<ul>
+<li><p>variable is <code class="docutils literal notranslate"><span class="pre">var_str</span></code>…it’s going to be a string</p></li>
+<li><p>question is called “Membership Operators”…it’s about membership operators</p></li>
+</ul>
+</li>
+<li><p>Do not hard code.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">assert</span></code>s will guide you less than on exams</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">append</span></code> helpful on one exam question</p></li>
+</ul>
+<div class="section" id="clicker-question-1">
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">¶</a></h3>
+<p>Which topic would you like to review on the practice midterm?</p>
+<ul class="simple">
+<li><p>A) Variables &amp; Operators</p></li>
+<li><p>B) Collections &amp; Indexing</p></li>
+<li><p>C) Loops</p></li>
+<li><p>D) Conditionals</p></li>
+<li><p>E) Accomplishing a task</p></li>
+</ul>
+</div>
+<div class="section" id="clicker-question-2">
+<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">¶</a></h3>
+<p>Click in when you…</p>
+<ul class="simple">
+<li><p>A) have finished</p></li>
+<li><p>B) think you have finished but aren’t totally sure</p></li>
+<li><p>C) are stuck.</p></li>
+</ul>
+</div>
+</div>
 <div class="section" id="midterm-expectations">
 <h2>Midterm Expectations<a class="headerlink" href="#midterm-expectations" title="Permalink to this headline">¶</a></h2>
 <p>You will be expected to:</p>
