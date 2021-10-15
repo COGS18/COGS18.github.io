@@ -52,6 +52,17 @@ assert counter == 10
 # Note: Sometimes, we accidentally make loops that never end - try that by running the cell below before adding 
 # 
 # If that happens, interrupt the cell by selecting it and then pressing "ctrl+c". Alternatively, press the "stop" button (square icon) in the Jupyter toolbar. 
+# 
+# For refernece, the starter code provided is:
+# ```python
+# counter = 0
+# 
+# while True:
+#     
+#     print("the value of 'counter' = " + str(counter))
+#     counter +=1
+#     
+# ```
 
 # In[8]:
 
@@ -102,6 +113,8 @@ while counter < 10:
 #     - Write a loop that loops across, and prints out, the first half of a list
 # - Write a loop with a conditional inside it.
 # - Can you have loops inside loops? If you think so, try and write a nested loop. 
+# 
+# Reminder: you can add as many cells as you'd like to test these out! 
 
 # In[5]:
 
@@ -184,6 +197,45 @@ for a_val in [1, 2, 3]:
 
 
 ### END SOLUTION
+
+
+# ### Specific looping task
+# 
+# `print`ing the output is great to learn about and explore loops, but typically we're looping to generate some output. 
+# 
+# Generate a list below that stores various integers and strings. 
+# 
+# Write a loop that will separate out the elements in your list by type, such that all the integers are stored in a list called `my_ints` and all of the strings are stored in a list called `my_strs`
+
+# In[1]:
+
+
+### BEGIN SOLUTION
+# the specific list you create is up to you
+my_list = [1, "apple", 15, "banana", 29, 30, "yay python!"]
+my_ints = []
+my_strs = []
+
+for val in my_list:
+    if type(val) == int:
+        my_ints.append(val)
+    elif type(val) == str:
+        my_strs.append(val)
+        
+print(my_ints)
+print(my_strs)
+### END SOLUTION
+
+
+# In[4]:
+
+
+assert type(my_ints) == list
+assert type(my_strs) == list
+
+# check to make sure all values in each list are of expected type
+assert all([isinstance(x, int) for x in my_ints])
+assert all([isinstance(x, str) for x in my_strs])
 
 
 # ## Part 3: Nested Loop Challenge

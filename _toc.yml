@@ -37,5 +37,9 @@ parts:
     chapters:
     - file: materials/Exam-Prep/E1-Review
       title: E1-Review
+    - file: materials/Exam-Prep/E1-Review-Answers
+      title: E1-Review-Answers
     - file: materials/Exam-Prep/E1-Practice
       title: E1-Practice
+    - file: materials/Exam-Prep/E1_Fa21_Practice
+      title: E1_Fa21_Practice-Answers

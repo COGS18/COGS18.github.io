@@ -80,13 +80,55 @@
 #     - variable is `var_str`...it's going to be a string
 #     - question is called "Membership Operators"...it's about membership operators
 # - Do not hard code.
-# - `assert`s will guide you less than on exams
+# - `assert`s will guide you less than on assignments
 # - `append` helpful on one exam question
 
-# In[ ]:
+# In[8]:
 
 
+my_list = ['a', 'b', 'c']
+my_list.append('d')
+my_list
 
+
+# **`while` loop review**
+# 
+# - will loop until condition is false
+
+# In[9]:
+
+
+condition = 3
+
+while condition <= 10:
+    print('Hello')
+    condition = condition + 1
+    print(condition)
+    print('next iteration')
+
+
+# In[16]:
+
+
+var_a = "I'm"
+var_b = "with the exam!"
+
+options = ["done", "finished", "tired of working"]
+
+
+# In[17]:
+
+
+# hard-coding; what to avoid
+my_string = "I'm done with the exam."
+my_string
+
+
+# In[18]:
+
+
+my_string = var_a + ' ' + options[1] + ' ' + var_b
+my_string
 
 
 # #### Clicker Question #1
