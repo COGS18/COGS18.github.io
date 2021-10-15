@@ -177,8 +177,18 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../materials/Exam-Prep/E1-Practice.html">
    E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1_Fa21_Practice.html">
+   E1_Fa21_Practice-Answers
   </a>
  </li>
 </ul>
@@ -313,6 +323,13 @@
   <a class="reference internal nav-link" href="#part-2-loop-explorations">
    Part 2: Loop Explorations
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#specific-looping-task">
+     Specific looping task
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#part-3-nested-loop-challenge">
@@ -374,6 +391,16 @@
 <p>Add your own code that causes the loop to exit when the <code class="docutils literal notranslate"><span class="pre">counter</span></code> variable reaches 10. You can use <code class="docutils literal notranslate"><span class="pre">break</span></code> to do this.</p>
 <p>Note: Sometimes, we accidentally make loops that never end - try that by running the cell below before adding</p>
 <p>If that happens, interrupt the cell by selecting it and then pressing “ctrl+c”. Alternatively, press the “stop” button (square icon) in the Jupyter toolbar.</p>
+<p>For refernece, the starter code provided is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of &#39;counter&#39; = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
+    <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
+    
+</pre></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
@@ -461,6 +488,7 @@ the value of &#39;counter&#39; = 9
 <li><p>Write a loop with a conditional inside it.</p></li>
 <li><p>Can you have loops inside loops? If you think so, try and write a nested loop.</p></li>
 </ul>
+<p>Reminder: you can add as many cells as you’d like to test these out!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
@@ -581,6 +609,51 @@ Yay.
 3 b
 3 c
 </pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="specific-looping-task">
+<h3>Specific looping task<a class="headerlink" href="#specific-looping-task" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">print</span></code>ing the output is great to learn about and explore loops, but typically we’re looping to generate some output.</p>
+<p>Generate a list below that stores various integers and strings.</p>
+<p>Write a loop that will separate out the elements in your list by type, such that all the integers are stored in a list called <code class="docutils literal notranslate"><span class="pre">my_ints</span></code> and all of the strings are stored in a list called <code class="docutils literal notranslate"><span class="pre">my_strs</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># the specific list you create is up to you</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;yay python!&quot;</span><span class="p">]</span>
+<span class="n">my_ints</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">my_strs</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">my_ints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">my_strs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="n">my_ints</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_strs</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 15, 29, 30]
+[&#39;apple&#39;, &#39;banana&#39;, &#39;yay python!&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_ints</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span>
+<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_strs</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span>
+
+<span class="c1"># check to make sure all values in each list are of expected type</span>
+<span class="k">assert</span> <span class="nb">all</span><span class="p">([</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">my_ints</span><span class="p">])</span>
+<span class="k">assert</span> <span class="nb">all</span><span class="p">([</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">my_strs</span><span class="p">])</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
