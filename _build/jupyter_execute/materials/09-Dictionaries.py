@@ -218,11 +218,11 @@ int(0b1011)
 
 # ### Character Encoding in Code
 
-# In[ ]:
+# In[3]:
 
 
 # Set the value we want to encode
-character_encoding = 0
+character_encoding = 2
 
 # Use conditional to interpret the character as a particular symbol
 if character_encoding == 0:
@@ -242,28 +242,28 @@ elif character_encoding == 2:
 
 # ### Dictionaries as Key-Value Collections
 
-# In[ ]:
+# In[4]:
 
 
 # Create a dictionary
 dictionary = {'key_1' : 'value_1', 'key_2' : 'value_2'}
 
 
-# In[ ]:
+# In[5]:
 
 
 # Check the contents of the dictionary
 print(dictionary)
 
 
-# In[ ]:
+# In[6]:
 
 
 # Check the type of the dictionary
 type(dictionary)
 
 
-# In[ ]:
+# In[7]:
 
 
 # Dictionaries also have a length
@@ -273,14 +273,14 @@ len(dictionary)
 
 # ### Dictionaries: Indexing & Looping
 
-# In[ ]:
+# In[8]:
 
 
 # Dictionaries are indexed using their keys
 dictionary['key_1']
 
 
-# In[ ]:
+# In[9]:
 
 
 # Loop over a dictionary loops across the keys
@@ -291,7 +291,7 @@ for item in dictionary:
     print('\tValue:\t', dictionary[item])
 
 
-# In[ ]:
+# In[10]:
 
 
 # another approach that you will find if you Google
@@ -316,11 +316,18 @@ for key, val in dictionary.items():
 # 
 # Fill in the '---' in the code below to return the value stored in the second key.
 
-# In[ ]:
+# In[11]:
 
 
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
-height_dict[---]
+height_dict['height_2']
+
+
+# In[12]:
+
+
+# cannot index into dictionary by index number; must use key
+height_dict[0]
 
 
 # - A) I did it
@@ -330,7 +337,7 @@ height_dict[---]
 
 # ### Example Dictionaries
 
-# In[ ]:
+# In[13]:
 
 
 student_emails = {
@@ -343,7 +350,7 @@ student_emails = {
 student_emails
 
 
-# In[ ]:
+# In[14]:
 
 
 completed_coding_lab = {
@@ -355,7 +362,7 @@ completed_coding_lab = {
 completed_coding_lab
 
 
-# In[ ]:
+# In[15]:
 
 
 mixed_types = {
@@ -375,24 +382,29 @@ mixed_types
 # - C) I tried and am stuck
 # - D) No clue where to start...
 
-# In[1]:
+# In[17]:
 
 
 # YOUR CODE HERE
+car = {'make' : "Hyundai",
+      'model' : "Santa Fe",
+      'year' : 2017}
+
+car
 
 
 # ### Dictionaries are mutable
 # 
 # This means that dictionaries, once created, values *can* be updated.
 
-# In[ ]:
+# In[18]:
 
 
 # remember what dictionary we created above
 completed_coding_lab
 
 
-# In[ ]:
+# In[19]:
 
 
 # change value of specified key
@@ -402,14 +414,14 @@ completed_coding_lab
 
 # Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using `del`.
 
-# In[ ]:
+# In[20]:
 
 
 print(completed_coding_lab)
 len(completed_coding_lab)
 
 
-# In[ ]:
+# In[21]:
 
 
 ## remove key-value pair using del
@@ -425,7 +437,7 @@ len(completed_coding_lab)
 # 
 # To determine if a specified key is present in a dictionary we can use the `in` operator:
 
-# In[ ]:
+# In[24]:
 
 
 if 'A1234' in completed_coding_lab:
@@ -436,7 +448,7 @@ if 'A1234' in completed_coding_lab:
 # 
 # What will the value of `result` be after this code has run?
 
-# In[ ]:
+# In[25]:
 
 
 dictionary = {'alpha' : [8, 12], 
@@ -464,7 +476,7 @@ print(result)
 # - Only one value per key. No duplicate keys allowed. 
 #     - If duplicate keys specified during assignment, the last assignment wins.
 
-# In[ ]:
+# In[26]:
 
 
 # Last duplicate key assigned wins
@@ -474,7 +486,7 @@ print(result)
 # - **keys** must be of an immutable type (string, tuple, integer, float, etc)
 # - Note: **values** can be of any type
 
-# In[ ]:
+# In[27]:
 
 
 # lists are not allowed as key types
@@ -485,7 +497,7 @@ print(result)
 # - Dictionary keys are case sensitive.
 # 
 
-# In[ ]:
+# In[28]:
 
 
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
@@ -495,7 +507,7 @@ print(result)
 # 
 # Why does the following code produce an error?
 
-# In[ ]:
+# In[30]:
 
 
 student_emails = {
@@ -506,6 +518,12 @@ student_emails = {
 }
 
 
+# In[31]:
+
+
+student_emails
+
+
 # - A) duplicate keys
 # - B) mutable key specified
 # - C) keys are case sensitive 
@@ -514,7 +532,7 @@ student_emails = {
 
 # ## Character Encodings with Dictionaries
 
-# In[ ]:
+# In[32]:
 
 
 # Define some character encodings
@@ -524,7 +542,7 @@ character_encodings = {
 }
 
 
-# In[ ]:
+# In[33]:
 
 
 # Use character encodings to use symbols we want - example 1
@@ -532,7 +550,7 @@ my_sentence = 'no hablo espa' + character_encodings[0] + 'ol'
 print(my_sentence)
 
 
-# In[ ]:
+# In[34]:
 
 
 # Use character encodings to use symbols we want - example 2
@@ -562,13 +580,13 @@ print(my_sentence)
 
 # ### ord & chr examples
 
-# In[ ]:
+# In[35]:
 
 
 print(ord('a'))
 
 
-# In[ ]:
+# In[36]:
 
 
 print(chr(97))
@@ -578,7 +596,25 @@ print(chr(97))
 # 
 # `ord` and `chr` are inverses of one another. 
 
-# In[ ]:
+# In[38]:
+
+
+ord(inp)
+
+
+# In[39]:
+
+
+chr(98)
+
+
+# In[40]:
+
+
+chr(ord('b'))
+
+
+# In[37]:
 
 
 inp = 'b'
@@ -613,10 +649,24 @@ print('Input: \t', inp, '\nOutput: ', out)
 # 
 # Store your name in the variable `my_name`. Then, encode your  name, such that each letter is first replaced by the unicode code point for that letter plus 500 and then turned back into a character using `chr`. Store the new output in `out_name`.
 
-# In[ ]:
+# In[46]:
+
+
+chr(ord('S') + 500)
+
+
+# In[42]:
 
 
 # YOUR CODE HERE
+my_name = 'Shannon'
+out_name = ''
+
+for char in my_name:
+    new_ltr = chr(ord(char) + 500)
+    out_name = out_name + new_ltr
+
+out_name
 
 
 # - A) I did it!
