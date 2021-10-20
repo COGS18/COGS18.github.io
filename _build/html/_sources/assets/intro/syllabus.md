@@ -162,14 +162,14 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 10/8     | 2	   | 7      | F   | Collections    	    | A1: Getting-Started       |         			            | 
 | 10/11    | 3	   | 8      | M   | Loops               |                           |                         	| 
 | 10/13    | 3	   | 9      | W   | Dictionaries [*]    |            			          | CL3: Programming II       |
-| 10/15    | 3	   | --     | F   | Review              | A2: Ciphers               |                         	| 
+| 10/15    | 3	   | --     | F   | Review              |                           |                         	| 
 | 10/18    | 4	   | --     | M   | **Midterm I**       |                           | 				                  | 
 | 10/20    | 4	   | 10     | W   | Functions I         |                        		| CL4: Loops                |
-| 10/22    | 4	   | 11     | F   | Algorithms  	      |                           |                        		| 
+| 10/22    | 4	   | 11     | F   | Algorithms  	      | A2: Ciphers               |                        		| 
 | 10/25    | 5	   | 12     | M   | Functions II        |                           |                         	| 
 | 10/27    | 5	   | 13     | W   | Classes I           |                       	 	| CL5: Functions 	          |
-| 10/29    | 5	   | 14     | F   | Classes II          | A3: Chatbots              |                         	| 
-| 11/1     | 6	   | 15     | M   | Command Line [**]   |                           |                         	| 
+| 10/29    | 5	   | 14     | F   | Classes II          |                           |                         	| 
+| 11/1     | 6	   | 15     | M   | Command Line [**]   | A3: Chatbots              |                         	| 
 | 11/3     | 6	   | --     | W   | Review              |                           | CL6: Classes             	| 
 | 11/5     | 6	   | --     | F   | **Midterm II**      |               		        |        			              | 
 | 11/8     | 7	   | --     | M   | Python Party        | A4: Artificial Agents     |                         	| 
