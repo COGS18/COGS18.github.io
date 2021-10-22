@@ -21,6 +21,8 @@ parts:
       title: 08-Loops
     - file: materials/09-Dictionaries
       title: 09-Dictionaries
+    - file: materials/10-FunctionsI
+      title: 10-FunctionsI
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples
@@ -33,6 +35,8 @@ parts:
       title: CL2-ProgrammingI
     - file: labs/CL3-ProgrammingII
       title: CL3-ProgrammingII
+    - file: labs/CL4-Loops
+      title: CL4-Loops
   - caption: Exam Prep
     chapters:
     - file: materials/Exam-Prep/E1-Review
