@@ -210,6 +210,11 @@
    E1_Fa21_Practice-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Fa21-Answers.html">
+   E1_Fa21-Answers
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -460,7 +465,7 @@
 <p><strong>Notes</strong></p>
 <ul class="simple">
 <li><p>CL4 grades have been posted</p></li>
-<li><p>E1 grades will be posted later today (there will be an accompanying Campuswire post)</p></li>
+<li><p>E1 grades will be posted later today (there will be an accompanying Campuswire post &amp; Answer Keys)</p></li>
 </ul>
 <p><strong>Q&amp;A</strong></p>
 <p>Q: Are there any meaning behind using ( ), [ ], or { } for different commands? Or is it just to make it easy to differentiate between types.<br />
@@ -506,6 +511,10 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </div>
 <div class="section" id="algorithm-for-making-a-ham-cheese-sandwich">
 <h2>Algorithm for making a ham &amp; cheese sandwich<a class="headerlink" href="#algorithm-for-making-a-ham-cheese-sandwich" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Define variables which are ingredients (<code class="docutils literal notranslate"><span class="pre">bread</span> <span class="pre">=</span> <span class="pre">&quot;bread&quot;</span></code>)</p></li>
+<li><p>Put ingredients in order <code class="docutils literal notranslate"><span class="pre">bread</span></code> and then <code class="docutils literal notranslate"><span class="pre">ham</span></code> and then <code class="docutils literal notranslate"><span class="pre">cheese</span></code> and then <code class="docutils literal notranslate"><span class="pre">bread</span></code>.</p></li>
+</ol>
 <p>Humans are pretty good at making sandwiches. Computers may struggle a bit.</p>
 </div>
 <div class="section" id="algorithm-example-sorting">
@@ -548,13 +557,26 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sort_array</span><span class="p">(</span><span class="n">array_to_sort</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A function to sort an array.&quot;&quot;&quot;</span>
 
-    <span class="n">is_sorted</span> <span class="o">=</span> <span class="kc">False</span>    <span class="c1"># Keeps track of when we are done sorting</span>
+    <span class="n">not_yet_sorted</span> <span class="o">=</span> <span class="kc">True</span>    <span class="c1"># Keeps track of when we are done sorting</span>
     <span class="n">sorted_array</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># A new list that we will use to </span>
      
-    <span class="k">while</span> <span class="ow">not</span> <span class="n">is_sorted</span><span class="p">:</span>
+    <span class="k">while</span> <span class="n">not_yet_sorted</span><span class="p">:</span>
 
         <span class="n">lowest</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">array_to_sort</span><span class="p">:</span>
@@ -568,7 +590,7 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
         <span class="n">array_to_sort</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">lowest</span><span class="p">)</span>   <span class="c1"># Drop the now sorted value from the original array</span>
 
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">array_to_sort</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>    <span class="c1"># When `array_to_sort` is empty, we are done sorting</span>
-            <span class="n">is_sorted</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">not_yet_sorted</span> <span class="o">=</span> <span class="kc">False</span>
     
     <span class="k">return</span> <span class="n">sorted_array</span>
 </pre></div>
@@ -582,8 +604,19 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort an array of integers</span>
 <span class="n">unsorted_array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
-<span class="n">sorted_array</span> <span class="o">=</span> <span class="n">sort_array</span><span class="p">(</span><span class="n">unsorted_array</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">)</span>
+<span class="n">sorted_array</span> <span class="o">=</span> <span class="n">sort_array</span><span class="p">(</span><span class="n">array_to_sort</span> <span class="o">=</span> <span class="n">unsorted_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[7, 12, 12, 19, 25]
 </pre></div>
 </div>
 </div>
@@ -597,6 +630,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2.3, 2.9, 21.3, 56.7, 99.9]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-3">
 <h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h3>
@@ -605,6 +643,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span> 
 <span class="n">sort_array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
 </pre></div>
 </div>
 </div>
@@ -625,6 +668,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -632,10 +680,20 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>97
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>98
 </pre></div>
 </div>
 </div>
@@ -647,6 +705,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
 <span class="n">sort_array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[False, True, True]
 </pre></div>
 </div>
 </div>
@@ -668,6 +731,11 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -675,10 +743,20 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0b1&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bin</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0b0&#39;
 </pre></div>
 </div>
 </div>
@@ -690,6 +768,23 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
 <span class="n">sort_array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1, 2], [1, 4]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -714,11 +809,21 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4, 6, 7]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># what about a list of strings?</span>
 <span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;asdf&#39;</span><span class="p">,</span><span class="s1">&#39;abcd&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;abcd&#39;, &#39;asdf&#39;]
 </pre></div>
 </div>
 </div>
@@ -729,6 +834,13 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+[False, True, True]
+[[1, 2], [1, 4]]
 </pre></div>
 </div>
 </div>
@@ -780,8 +892,8 @@ The complexity of an algorithm characterizes the relationship between the input 
 <li><p><code class="docutils literal notranslate"><span class="pre">classinfo</span></code> : class, type, or tuple of classes and types</p></li>
 </ul>
 <p>For example, using the <code class="docutils literal notranslate"><span class="pre">string_manipulator</span></code> function from earlier, note that I’ve added the following two lines:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Warning: please provide a string as input&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Warning: please provide a string as input&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>This checks to see if the input is anything other than a string. If it is, the function prints a warning.</p>
@@ -842,6 +954,24 @@ The complexity of an algorithm characterizes the relationship between the input 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># raise error instead of print message</span>
 <span class="n">string_manipulator</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">30</span><span class="o">-</span><span class="mi">3</span><span class="n">a9e147048ec</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># raise error instead of print message</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">string_manipulator</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="nn">&lt;ipython-input-29-b86327c4f7d7&gt;</span> in <span class="ni">string_manipulator</span><span class="nt">(string)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">:</span>
+<span class="ne">----&gt; </span><span class="mi">4</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Please provide a string as input&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>         <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="ne">ValueError</span>: Please provide a string as input
 </pre></div>
 </div>
 </div>

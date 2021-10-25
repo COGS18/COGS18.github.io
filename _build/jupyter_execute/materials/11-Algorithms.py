@@ -9,7 +9,7 @@
 # 
 # **Notes**
 # - CL4 grades have been posted
-# - E1 grades will be posted later today (there will be an accompanying Campuswire post)
+# - E1 grades will be posted later today (there will be an accompanying Campuswire post & Answer Keys)
 
 # **Q&A**
 # 
@@ -69,6 +69,8 @@
 
 # ## Algorithm for making a ham & cheese sandwich
 # 
+# 1. Define variables which are ingredients (`bread = "bread"`)
+# 2. Put ingredients in order `bread` and then `ham` and then `cheese` and then `bread`.
 # 
 
 # Humans are pretty good at making sandwiches. Computers may struggle a bit.
@@ -77,7 +79,7 @@
 # 
 # Given a list of numbers, how can we sort it into the correct order?
 
-# In[ ]:
+# In[1]:
 
 
 # Define a list of numbers
@@ -110,16 +112,23 @@ list_of_numbers = [2, 1, 3]
 # - remove lowest item from current list
 # - wash, rinse, repeat
 
-# In[ ]:
+# In[2]:
+
+
+my_list = [0, 0, 0]
+len(my_list)
+
+
+# In[9]:
 
 
 def sort_array(array_to_sort):
     """A function to sort an array."""
 
-    is_sorted = False    # Keeps track of when we are done sorting
+    not_yet_sorted = True    # Keeps track of when we are done sorting
     sorted_array = []    # A new list that we will use to 
      
-    while not is_sorted:
+    while not_yet_sorted:
 
         lowest = None
         for item in array_to_sort:
@@ -133,23 +142,28 @@ def sort_array(array_to_sort):
         array_to_sort.remove(lowest)   # Drop the now sorted value from the original array
 
         if len(array_to_sort) == 0:    # When `array_to_sort` is empty, we are done sorting
-            is_sorted = True
+            not_yet_sorted = False
     
     return sorted_array
 
 
 # ## Using `sort_array`
 
-# In[ ]:
+# In[10]:
 
 
 # Sort an array of integers
 unsorted_array = [12, 7, 19, 12, 25]
-sorted_array = sort_array(unsorted_array)
+sorted_array = sort_array(array_to_sort = unsorted_array)
+
+
+# In[11]:
+
+
 print(sorted_array)
 
 
-# In[ ]:
+# In[12]:
 
 
 # Sort an array of floats
@@ -162,7 +176,7 @@ print(sorted_array)
 # 
 # Using our `sort_array` function from above, what will the following code snippet print out:
 
-# In[ ]:
+# In[13]:
 
 
 data = ['a', 'c', 'b'] 
@@ -177,19 +191,19 @@ sort_array(data)
 
 # ### How Python evaluates strings
 
-# In[ ]:
+# In[14]:
 
 
 'a' < 'b'
 
 
-# In[ ]:
+# In[15]:
 
 
 ord('a')
 
 
-# In[ ]:
+# In[16]:
 
 
 ord('b')
@@ -199,7 +213,7 @@ ord('b')
 # 
 # Using our `sort_array` function from above, what will the following code snippet print out:
 
-# In[ ]:
+# In[17]:
 
 
 data = [True, False, True]
@@ -214,19 +228,19 @@ sort_array(data)
 
 # ### How Python evaluates Booleans
 
-# In[ ]:
+# In[18]:
 
 
 True < False
 
 
-# In[ ]:
+# In[19]:
 
 
 bin(True)
 
 
-# In[ ]:
+# In[20]:
 
 
 bin(False)
@@ -236,11 +250,17 @@ bin(False)
 # 
 # Using our `sort_array` function from above, what will the following code snippet print out:
 
-# In[ ]:
+# In[21]:
 
 
 data = [[1, 4], [1, 2]]
 sort_array(data)
+
+
+# In[28]:
+
+
+[2,2] < [1,4]
 
 
 # - A) [[1, 4], [1, 2]]  
@@ -251,7 +271,7 @@ sort_array(data)
 
 # ## SideNote: `sorted`
 
-# In[ ]:
+# In[24]:
 
 
 # Sort a list, with `sorted`
@@ -259,14 +279,14 @@ data = [7, 4, 6]
 sorted(data)
 
 
-# In[ ]:
+# In[25]:
 
 
 # what about a list of strings?
 sorted(['asdf','abcd'])
 
 
-# In[ ]:
+# In[26]:
 
 
 # Sort different data types
@@ -322,8 +342,8 @@ print(sorted([[1, 4], [1, 2]]))
 # For example, using the `string_manipulator` function from earlier, note that I've added the following two lines: 
 # 
 # ```python
-# if not isinstance(string, str):
-#     print("Warning: please provide a string as input")
+#     if type(string) != str:
+#         print("Warning: please provide a string as input")
 # ```
 # 
 # This checks to see if the input is anything other than a string. If it is, the function prints a warning.
@@ -361,7 +381,7 @@ string_manipulator(5)
 
 # However, sometimes, you want it to raise an error rather than just print something. Here we use `raise` instead of print. In this case, an error will be returned (with our specified message) to the user if the wrong variable type is provided:
 
-# In[ ]:
+# In[29]:
 
 
 def string_manipulator(string):
@@ -378,7 +398,7 @@ def string_manipulator(string):
         return output
 
 
-# In[ ]:
+# In[30]:
 
 
 # raise error instead of print message
