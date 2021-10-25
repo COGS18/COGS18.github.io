@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Algorithms" href="11-Algorithms.html" />
     <link rel="prev" title="Encodings &amp; Dictionaries" href="09-Dictionaries.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -137,6 +137,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Functions I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-Algorithms.html">
+   11-Algorithms
   </a>
  </li>
  <li class="toctree-l1">
@@ -685,6 +690,11 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE  </span>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    
+    <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;, Good morning!&#39;</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
 </pre></div>
 </div>
 </div>
@@ -692,6 +702,7 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST YOUR FUNCTION HERE</span>
+<span class="n">greet</span><span class="p">(</span><span class="s1">&#39;students&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -704,6 +715,16 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="k">def</span> <span class="nf">create_dictionary</span><span class="p">(</span><span class="n">lst_1</span><span class="p">,</span> <span class="n">lst_2</span><span class="p">):</span>
+    
+    <span class="n">joined_dictionary</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">lst_1</span><span class="p">:</span>
+        <span class="n">joined_dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">lst_2</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">joined_dictionary</span>
 </pre></div>
 </div>
 </div>
@@ -711,6 +732,12 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST YOUR FUNCTION HERE</span>
+<span class="c1"># Note that the two input lists are the </span>
+<span class="c1"># same length for the function to work properly</span>
+<span class="n">random_lst_1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
+<span class="n">random_lst_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="n">create_dictionary</span><span class="p">(</span><span class="n">random_lst_1</span><span class="p">,</span> <span class="n">random_lst_2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -845,7 +872,7 @@ You are metaphorically writing the instructions for how to make the cheeseburger
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="09-Dictionaries.html" title="previous page">Encodings &amp; Dictionaries</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="11-Algorithms.html" title="next page">Algorithms</a>
 
         </div>
         

@@ -23,6 +23,8 @@ parts:
       title: 09-Dictionaries
     - file: materials/10-FunctionsI
       title: 10-FunctionsI
+    - file: materials/11-Algorithms
+      title: 11-Algorithms
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples

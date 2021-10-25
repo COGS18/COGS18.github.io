@@ -255,12 +255,18 @@ print(ans_1 + ans_2)
 
 
 ## YOUR CODE HERE  
+def greet(name):
+    
+    output = 'Hello ' + name + ', Good morning!'
+    
+    return output
 
 
 # In[ ]:
 
 
 # TEST YOUR FUNCTION HERE
+greet('students')
 
 
 # #### Clicker Question #3 
@@ -273,12 +279,28 @@ print(ans_1 + ans_2)
 
 
 # YOUR CODE HERE
+def create_dictionary(lst_1, lst_2):
+    
+    joined_dictionary = {}
+    counter = 0
+
+    for key in lst_1:
+        joined_dictionary[key] = lst_2[counter]
+        counter += 1
+
+    return joined_dictionary
 
 
 # In[ ]:
 
 
 # TEST YOUR FUNCTION HERE
+# Note that the two input lists are the 
+# same length for the function to work properly
+random_lst_1 = ['a', 'b', 'c', 'd']
+random_lst_2 = [1, 2, 3, 4]
+
+create_dictionary(random_lst_1, random_lst_2)
 
 
 # ## Function Namespace 
