@@ -25,6 +25,8 @@ parts:
       title: 10-FunctionsI
     - file: materials/11-Algorithms
       title: 11-Algorithms
+    - file: materials/12-FunctionsII
+      title: 12-FunctionsII
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples
