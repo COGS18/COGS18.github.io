@@ -172,9 +172,9 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 11/1     | 6	   | 15     | M   | Command Line [**]   | A3: Chatbots              |                         	| 
 | 11/3     | 6	   | --     | W   | Review              |                           | CL6: Classes             	| 
 | 11/5     | 6	   | --     | F   | **Midterm II**      |               		        |        			              | 
-| 11/8     | 7	   | --     | M   | Python Party        | A4: Artificial Agents     |                         	| 
+| 11/8     | 7	   | --     | M   | Python Party        |                           |                         	| 
 | 11/10    | 7	   | 16     | W   | Modules & Scripts   |      				              | CL7: Command Line         | 
-| 11/12    | 7	   | 17     | F   | Scientific Computing|                           |                         	| 
+| 11/12    | 7	   | 17     | F   | Scientific Computing| A4: Artificial Agents     |                         	| 
 | 11/15    | 8	   | 18     | M   | Code Testing        |                           |                         	| 
 | 11/17    | 8	   | 19     | W   | Code Style   		    |     			                | CL8: Scientific Computing | 
 | 11/19    | 8	   | 20     | F   | Documentation  	    | A5: Experimentation    	  |                         	| 

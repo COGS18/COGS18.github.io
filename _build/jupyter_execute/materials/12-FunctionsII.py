@@ -7,6 +7,8 @@
 # - A3 due Monday 11/1 (11:59 PM)
 # - mid-course survey now [available](https://docs.google.com/forms/d/e/1FAIpQLSfZVIyKtegSiD3oRiKT6BwnQbTMFELxXwfhCuyKa1CmMsCk0A/viewform?usp=sf_link) (*optional*; link also on Canvas; due Mon 11/1 for extra credit)
 # - E1 regrades open until Thursday night
+# 
+# - podcast subtitles?
 
 # **Q&A**
 # 
@@ -62,7 +64,7 @@
 # 
 # If you write a function called `is_odd()` which takes an input `value`, 
 
-# In[ ]:
+# In[2]:
 
 
 def is_odd(value):
@@ -76,7 +78,7 @@ def is_odd(value):
 
 # to use that function, you would execute `is_odd(value)` ....something like `is_odd(value = 6)`
 
-# In[ ]:
+# In[3]:
 
 
 out1 = is_odd(6)
@@ -88,7 +90,7 @@ out1,out2
 # 
 # What will the following code snippet print?
 
-# In[ ]:
+# In[4]:
 
 
 def my_func(my_dictionary):
@@ -120,21 +122,21 @@ print(out)
 # Arguments to a function can be indicated by either position or keyword.
 # </div>
 
-# In[ ]:
+# In[5]:
 
 
 def exponentiate(number, exponent):    
     return number ** exponent
 
 
-# In[ ]:
+# In[6]:
 
 
 # Positional arguments use the position of the input value to infer which argument each value relates to
 exponentiate(2, 3)
 
 
-# In[ ]:
+# In[7]:
 
 
 # Keyword arguments are explicitly named as to which argument each value relates to
@@ -143,13 +145,13 @@ exponentiate(number = 2, exponent = 3)
 
 # Note: when using Keyword arguments position/order no longer matters, but try to keep them in the same order as they're defined in the function to avoid confusion.
 
-# In[ ]:
+# In[8]:
 
 
 exponentiate(exponent = 3, number = 2)
 
 
-# In[ ]:
+# In[9]:
 
 
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
@@ -170,23 +172,23 @@ exponentiate(number = 2, 3)
 # 1. Sometimes, you know something will have a particular value most often, so it's more convenient to set up a default value
 # 2. Or, you might have many arguments in one function, by specifying a default, you don't have to manually input all values
 
-# In[ ]:
+# In[11]:
 
 
 # Create a function, that has a default values for a parameter
 # Save time when we know exponengt often takes the value of 2
-def exponentiate(number, exponent = 2):  
+def exponentiate(number, exponent = 2):
     return number ** exponent
 
 
-# In[ ]:
+# In[12]:
 
 
 # Use the function, using default value
 exponentiate(3)
 
 
-# In[ ]:
+# In[13]:
 
 
 # Call the function, over-riding default value with something else
@@ -199,7 +201,7 @@ print(a,b)
 # 
 # What will the following code snippet print?
 
-# In[ ]:
+# In[14]:
 
 
 def exponentiate(number, exponent = 2):    
@@ -217,7 +219,7 @@ exponentiate(exponent = 3, number = 2)
 # ### Nested functions (functions within functions)
 # - a function which is defined within another function
 
-# In[ ]:
+# In[16]:
 
 
 def is_odd(value):
@@ -229,7 +231,7 @@ def is_odd(value):
     return answer
 
 
-# In[ ]:
+# In[18]:
 
 
 def new_function(my_list):
@@ -243,7 +245,7 @@ def new_function(my_list):
     return output 
 
 
-# In[ ]:
+# In[19]:
 
 
 new_function([1,2,3,4])
@@ -271,7 +273,7 @@ new_function([1,2,3,4])
 
 # In other words: methods "belong to" an object.
 
-# In[ ]:
+# In[20]:
 
 
 # The `append` method, defined on lists
@@ -282,24 +284,25 @@ print(my_list)
 
 # The method `append()` is called directly on the list `my_list`
 
-# In[ ]:
+# In[23]:
 
 
 # append is a method for lists
 # this will error with a string
 my_string = 'cogs18'
-my_string.append('!')
+#my_string.append('!')
+#my_string + '!'
 
 
-# In[ ]:
+# In[25]:
 
 
 # The `is_integer()` method, defined on floats
-my_float = 12.2
+my_float = 12.0
 my_float.is_integer()
 
 
-# In[ ]:
+# In[26]:
 
 
 # The `is_integer()` method, attempted on an integer
@@ -329,7 +332,7 @@ my_string.
 
 # Using the function `dir()` returns all methods available
 
-# In[ ]:
+# In[27]:
 
 
 # For our purposes now, you can ignore any leading underscores (these are special methods)
@@ -354,7 +357,7 @@ dir(my_string)
 # 
 # **Don't forget the parentheses!! The parentheses ( ) indicates executing code**
 
-# In[ ]:
+# In[28]:
 
 
 #example of using a method 
@@ -364,7 +367,7 @@ my_list.append(12345)
 my_list
 
 
-# In[ ]:
+# In[29]:
 
 
 #example of using a function
@@ -386,14 +389,14 @@ result
 
 # ### Method / Function documentation
 
-# In[ ]:
+# In[32]:
 
 
 # method documentation
 get_ipython().run_line_magic('pinfo', 'float.is_integer')
 
 
-# In[ ]:
+# In[35]:
 
 
 # function documentation
@@ -406,42 +409,42 @@ get_ipython().run_line_magic('pinfo', 'type')
 # 
 # There are a whole bunch of string methods, all described [here](https://www.w3schools.com/python/python_ref_string.asp). We'll review a few of the most commonly used here.
 
-# In[ ]:
+# In[36]:
 
 
 # Make a string all lower case
 'aBc123'.lower()
 
 
-# In[ ]:
+# In[37]:
 
 
 # Make a string all upper case
 'aBc123'.upper()
 
 
-# In[ ]:
+# In[38]:
 
 
 # Capitalize a string
 'python is great. yeey. '.capitalize()
 
 
-# In[ ]:
+# In[39]:
 
 
 # Captilize every element in a string
 'i love python python loves me'.title()
 
 
-# In[ ]:
+# In[40]:
 
 
 # Find the index of where a string starts 
 print('Hello, my name is'.find('name'))
 
 
-# In[ ]:
+# In[41]:
 
 
 print('Hello, my name is'[10])
@@ -451,7 +454,7 @@ print('Hello, my name is'[10])
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[43]:
 
 
 inputs = ['fIx', 'tYpiNg', 'lIkE', 'tHiS']
@@ -459,7 +462,7 @@ output = ''
 
 for element in inputs:
     output = output + element.lower() + ' '
-
+print(output)
 output.capitalize()
 
 
@@ -473,7 +476,7 @@ output.capitalize()
 # 
 # There are also a bunch of list methods, all described [here](https://www.w3schools.com/python/python_ref_list.asp). You've seen some of these before, but we'll review a few of the most commonly used here.
 
-# In[ ]:
+# In[44]:
 
 
 # sort sorts integers in numerical orders
@@ -482,14 +485,14 @@ ints.sort()
 ints
 
 
-# In[ ]:
+# In[45]:
 
 
 ints.sort(reverse=True) # helpful for third assignment :) 
 ints
 
 
-# In[ ]:
+# In[46]:
 
 
 # append adds to the end of a list
@@ -497,7 +500,7 @@ ints.append(2)
 ints
 
 
-# In[ ]:
+# In[47]:
 
 
 # remove value from list
@@ -505,13 +508,13 @@ ints.remove(40)
 ints
 
 
-# In[ ]:
+# In[48]:
 
 
 get_ipython().run_line_magic('pinfo', 'list.remove')
 
 
-# In[ ]:
+# In[49]:
 
 
 # reverse order of list
@@ -523,7 +526,7 @@ ints
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[50]:
 
 
 list_string = ['a', 'c', 'd', 'b']
@@ -543,7 +546,7 @@ list_string
 # As with string and list methods, there are many described [here](https://www.w3schools.com/python/python_ref_dictionary.asp) that are helpful when working with dictionaries.
 # 
 
-# In[ ]:
+# In[51]:
 
 
 car = {
@@ -556,7 +559,7 @@ car = {
 car.keys()
 
 
-# In[ ]:
+# In[52]:
 
 
 # get returns the value of a specified key
@@ -576,7 +579,7 @@ print(mod2)
 print(car['model'])
 
 
-# In[ ]:
+# In[53]:
 
 
 # update adds a key-value pair
@@ -619,7 +622,7 @@ print(car)
 
 # #### List methods that are in place
 
-# In[ ]:
+# In[54]:
 
 
 # Reverse a list, direct update without assignment 
@@ -629,7 +632,7 @@ my_list.reverse()
 print(my_list)
 
 
-# In[ ]:
+# In[58]:
 
 
 # Sort a list
@@ -641,33 +644,33 @@ print(my_numbers)
 
 # #### Dictionary methods that are not in place
 
-# In[ ]:
+# In[59]:
 
 
 car
 
 
-# In[ ]:
+# In[60]:
 
 
 # Return the keys in the dictionary
 car.keys() 
 
 
-# In[ ]:
+# In[61]:
 
 
 car
 
 
-# In[ ]:
+# In[62]:
 
 
 out = car.keys() 
 out
 
 
-# In[ ]:
+# In[63]:
 
 
 # print keys
@@ -675,7 +678,7 @@ print(type(out))
 print(out)
 
 
-# In[ ]:
+# In[64]:
 
 
 # car has not changed
@@ -722,7 +725,7 @@ def find_even(my_list):
             continue
     return output
 
-def exponentiate_even_number(my_list,power = 2):
+def exponentiate_even_number(my_list, power = 2):
     output = []
     even_list = find_even(my_list)
     for i in even_list:

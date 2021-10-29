@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Classes" href="13-Classes.html" />
     <link rel="prev" title="Algorithms" href="11-Algorithms.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -150,6 +150,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="13-Classes.html">
+   13-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -184,6 +189,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../labs/CL4-Loops.html">
    CL4-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL5-Functions.html">
+   CL5-Functions
   </a>
  </li>
 </ul>
@@ -489,6 +499,7 @@
 <li><p>A3 due Monday 11/1 (11:59 PM)</p></li>
 <li><p>mid-course survey now <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSfZVIyKtegSiD3oRiKT6BwnQbTMFELxXwfhCuyKa1CmMsCk0A/viewform?usp=sf_link">available</a> (<em>optional</em>; link also on Canvas; due Mon 11/1 for extra credit)</p></li>
 <li><p>E1 regrades open until Thursday night</p></li>
+<li><p>podcast subtitles?</p></li>
 </ul>
 <p><strong>Q&amp;A</strong></p>
 <p>Q: For the sort_array algorithm, is lowest = None the only way to put the first item into comparison? This part is a little confusing.<br />
@@ -566,6 +577,11 @@ A: You can do either. Today’s lecture will explain more/why!</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(False, True)
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="clicker-question-1">
@@ -588,6 +604,11 @@ A: You can do either. Today’s lecture will explain more/why!</p>
 <span class="n">out</span> <span class="o">=</span> <span class="n">my_func</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3]
 </pre></div>
 </div>
 </div>
@@ -620,11 +641,21 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keyword arguments are explicitly named as to which argument each value relates to</span>
 <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -636,12 +667,25 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: once you have a keyword argument, you can&#39;t have other positional arguments afterwards</span>
 <span class="c1"># this cell will produce an error</span>
 <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-9-82d192fd1eb1&gt;&quot;</span><span class="gt">, line </span><span class="mi">3</span>
+    <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+                              <span class="o">^</span>
+<span class="ne">SyntaxError</span>: positional argument follows keyword argument
 </pre></div>
 </div>
 </div>
@@ -663,7 +707,7 @@ Soo… What’s the purpose of default values?</p>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a function, that has a default values for a parameter</span>
 <span class="c1"># Save time when we know exponengt often takes the value of 2</span>
-<span class="k">def</span> <span class="nf">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>  
+<span class="k">def</span> <span class="nf">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">number</span> <span class="o">**</span> <span class="n">exponent</span>
 </pre></div>
 </div>
@@ -676,6 +720,11 @@ Soo… What’s the purpose of default values?</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -683,6 +732,11 @@ Soo… What’s the purpose of default values?</p>
 <span class="n">a</span> <span class="o">=</span> <span class="n">exponentiate</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8 8
 </pre></div>
 </div>
 </div>
@@ -697,6 +751,11 @@ Soo… What’s the purpose of default values?</p>
     <span class="k">return</span> <span class="n">number</span> <span class="o">**</span> <span class="n">exponent</span>
 
 <span class="n">exponentiate</span><span class="p">(</span><span class="n">exponent</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -747,6 +806,28 @@ Soo… What’s the purpose of default values?</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>the value of val is:  1
+the function is_odd(val) will evaluate to:  True 
+
+the output list is:  [&#39;yay!&#39;] 
+
+the value of val is:  2
+the function is_odd(val) will evaluate to:  False 
+
+the value of val is:  3
+the function is_odd(val) will evaluate to:  True 
+
+the output list is:  [&#39;yay!&#39;, &#39;yay!&#39;] 
+
+the value of val is:  4
+the function is_odd(val) will evaluate to:  False 
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;yay!&#39;, &#39;yay!&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -774,6 +855,11 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
+</pre></div>
+</div>
+</div>
 </div>
 <p>The method <code class="docutils literal notranslate"><span class="pre">append()</span></code> is called directly on the list <code class="docutils literal notranslate"><span class="pre">my_list</span></code></p>
 <div class="cell docutils container">
@@ -781,7 +867,8 @@ For our purposes, <b>objects</b> are any data variable.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># append is a method for lists</span>
 <span class="c1"># this will error with a string</span>
 <span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;cogs18&#39;</span>
-<span class="n">my_string</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;!&#39;</span><span class="p">)</span>
+<span class="c1">#my_string.append(&#39;!&#39;)</span>
+<span class="c1">#my_string + &#39;!&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -789,8 +876,13 @@ For our purposes, <b>objects</b> are any data variable.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The `is_integer()` method, defined on floats</span>
-<span class="n">my_float</span> <span class="o">=</span> <span class="mf">12.2</span>
+<span class="n">my_float</span> <span class="o">=</span> <span class="mf">12.0</span>
 <span class="n">my_float</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -801,6 +893,18 @@ For our purposes, <b>objects</b> are any data variable.
 <span class="c1"># this code will produce an error</span>
 <span class="n">my_int</span> <span class="o">=</span> <span class="mi">12</span>
 <span class="n">my_int</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">26</span><span class="o">-</span><span class="n">ba89eed6f102</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code will produce an error</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">my_int</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">my_int</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span>
+
+<span class="ne">AttributeError</span>: &#39;int&#39; object has no attribute &#39;is_integer&#39;
 </pre></div>
 </div>
 </div>
@@ -835,6 +939,90 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__contains__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__getitem__&#39;,
+ &#39;__getnewargs__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__iter__&#39;,
+ &#39;__le__&#39;,
+ &#39;__len__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__mod__&#39;,
+ &#39;__mul__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rmod__&#39;,
+ &#39;__rmul__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;capitalize&#39;,
+ &#39;casefold&#39;,
+ &#39;center&#39;,
+ &#39;count&#39;,
+ &#39;encode&#39;,
+ &#39;endswith&#39;,
+ &#39;expandtabs&#39;,
+ &#39;find&#39;,
+ &#39;format&#39;,
+ &#39;format_map&#39;,
+ &#39;index&#39;,
+ &#39;isalnum&#39;,
+ &#39;isalpha&#39;,
+ &#39;isascii&#39;,
+ &#39;isdecimal&#39;,
+ &#39;isdigit&#39;,
+ &#39;isidentifier&#39;,
+ &#39;islower&#39;,
+ &#39;isnumeric&#39;,
+ &#39;isprintable&#39;,
+ &#39;isspace&#39;,
+ &#39;istitle&#39;,
+ &#39;isupper&#39;,
+ &#39;join&#39;,
+ &#39;ljust&#39;,
+ &#39;lower&#39;,
+ &#39;lstrip&#39;,
+ &#39;maketrans&#39;,
+ &#39;partition&#39;,
+ &#39;removeprefix&#39;,
+ &#39;removesuffix&#39;,
+ &#39;replace&#39;,
+ &#39;rfind&#39;,
+ &#39;rindex&#39;,
+ &#39;rjust&#39;,
+ &#39;rpartition&#39;,
+ &#39;rsplit&#39;,
+ &#39;rstrip&#39;,
+ &#39;split&#39;,
+ &#39;splitlines&#39;,
+ &#39;startswith&#39;,
+ &#39;strip&#39;,
+ &#39;swapcase&#39;,
+ &#39;title&#39;,
+ &#39;translate&#39;,
+ &#39;upper&#39;,
+ &#39;zfill&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="correspondance-between-functions-methods">
@@ -859,6 +1047,11 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 12345]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -877,6 +1070,11 @@ For our purposes, <b>objects</b> are any data variable.
 <span class="c1">#function call</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">is_odd</span><span class="p">(</span><span class="n">my_int</span><span class="p">)</span>
 <span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -912,11 +1110,21 @@ type<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;abc123&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make a string all upper case</span>
 <span class="s1">&#39;aBc123&#39;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ABC123&#39;
 </pre></div>
 </div>
 </div>
@@ -928,11 +1136,21 @@ type<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Python is great. yeey. &#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Captilize every element in a string</span>
 <span class="s1">&#39;i love python python loves me&#39;</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;I Love Python Python Loves Me&#39;
 </pre></div>
 </div>
 </div>
@@ -944,10 +1162,20 @@ type<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, my name is&#39;</span><span class="p">[</span><span class="mi">10</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n
 </pre></div>
 </div>
 </div>
@@ -962,8 +1190,16 @@ type<span class="o">?</span>
 
 <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">inputs</span><span class="p">:</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="n">element</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
-
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
 <span class="n">output</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fix typing like this 
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Fix typing like this &#39;
 </pre></div>
 </div>
 </div>
@@ -989,11 +1225,21 @@ type<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[16, 33, 40, 88]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ints</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># helpful for third assignment :) </span>
 <span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[88, 40, 33, 16]
 </pre></div>
 </div>
 </div>
@@ -1006,12 +1252,22 @@ type<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[88, 40, 33, 16, 2]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remove value from list</span>
 <span class="n">ints</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 <span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[88, 33, 16, 2]
 </pre></div>
 </div>
 </div>
@@ -1031,6 +1287,11 @@ type<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2, 16, 33, 88]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-4">
 <h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">¶</a></h3>
@@ -1041,6 +1302,11 @@ type<span class="o">?</span>
 <span class="n">list_string</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 <span class="n">list_string</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
 <span class="n">list_string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;]
 </pre></div>
 </div>
 </div>
@@ -1070,6 +1336,11 @@ type<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;])
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1081,6 +1352,12 @@ type<span class="o">?</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mod2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>M5
+M5
 </pre></div>
 </div>
 </div>
@@ -1099,6 +1376,11 @@ type<span class="o">?</span>
 <span class="n">car</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;Black&quot;</span><span class="p">})</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;brand&#39;: &#39;BMW&#39;, &#39;model&#39;: &#39;M5&#39;, &#39;year&#39;: 2019, &#39;color&#39;: &#39;Black&#39;}
 </pre></div>
 </div>
 </div>
@@ -1144,6 +1426,11 @@ Some methods update the object directly (in place) without assignment, whereas o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;c&#39;, &#39;b&#39;, &#39;a&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1152,6 +1439,11 @@ Some methods update the object directly (in place) without assignment, whereas o
 <span class="n">my_numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">my_numbers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-1, 3, 13]
 </pre></div>
 </div>
 </div>
@@ -1165,11 +1457,21 @@ Some methods update the object directly (in place) without assignment, whereas o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;brand&#39;: &#39;BMW&#39;, &#39;model&#39;: &#39;M5&#39;, &#39;year&#39;: 2019, &#39;color&#39;: &#39;Black&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Return the keys in the dictionary</span>
 <span class="n">car</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;, &#39;color&#39;])
 </pre></div>
 </div>
 </div>
@@ -1180,11 +1482,21 @@ Some methods update the object directly (in place) without assignment, whereas o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;brand&#39;: &#39;BMW&#39;, &#39;model&#39;: &#39;M5&#39;, &#39;year&#39;: 2019, &#39;color&#39;: &#39;Black&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">car</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> 
 <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;, &#39;color&#39;])
 </pre></div>
 </div>
 </div>
@@ -1197,12 +1509,24 @@ Some methods update the object directly (in place) without assignment, whereas o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict_keys&#39;&gt;
+dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;, &#39;color&#39;])
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># car has not changed</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">car</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt;
+{&#39;brand&#39;: &#39;BMW&#39;, &#39;model&#39;: &#39;M5&#39;, &#39;year&#39;: 2019, &#39;color&#39;: &#39;Black&#39;}
 </pre></div>
 </div>
 </div>
@@ -1262,7 +1586,7 @@ Some methods update the object directly (in place) without assignment, whereas o
             <span class="k">continue</span>
     <span class="k">return</span> <span class="n">output</span>
 
-<span class="k">def</span> <span class="nf">exponentiate_even_number</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span><span class="n">power</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">exponentiate_even_number</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">power</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
     <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">even_list</span> <span class="o">=</span> <span class="n">find_even</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">even_list</span><span class="p">:</span>
@@ -1317,7 +1641,7 @@ Some methods update the object directly (in place) without assignment, whereas o
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="11-Algorithms.html" title="previous page">Algorithms</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="13-Classes.html" title="next page">Classes</a>
 
         </div>
         

@@ -27,6 +27,8 @@ parts:
       title: 11-Algorithms
     - file: materials/12-FunctionsII
       title: 12-FunctionsII
+    - file: materials/13-Classes
+      title: 13-Classes
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples
@@ -41,6 +43,8 @@ parts:
       title: CL3-ProgrammingII
     - file: labs/CL4-Loops
       title: CL4-Loops
+    - file: labs/CL5-Functions
+      title: CL5-Functions
   - caption: Exam Prep
     chapters:
     - file: materials/Exam-Prep/E1-Review
