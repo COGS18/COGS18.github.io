@@ -31,7 +31,7 @@ While regular deadlines have been established to help keep you all on track, I w
 | -------------: |:------------------------|:-----------------|:------------------------|
 | TA             | Dillan Cellier          | 4 & 5 PM         | Mon 10-11 AM (CSB 231)  |
 | IA	           | Evan Eguchi             | 11 AM & 12 PM    | Mon 10:30-11:20 AM (CSB 114) |
-| IA	           | Brian Fang	             | 10 & 11 AM       | Mon 11:20AM-12:20PM  (CSB 114) |
+| IA	           | Brian Fang	             | 10 & 11 AM       | Fri 2-3 PM  (CSB 114) |
 | IA	           | Efrain                  | 12 & 1 PM        | Mon  12:10 - 1 PM (CSB 114)  |
 | TA             | Eena Kosik              | 9 & 10 AM        | Tues 8:50 - 9:40 AM (Zoom - link on Canvas) |
 | TA             | Holly(Yueying) Dong	   | 1 & 2 PM         | Wed 10-11 (Mandeville Coffee Cart) |

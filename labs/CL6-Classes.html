@@ -392,6 +392,35 @@
   <a class="reference internal nav-link" href="#part-iii-objects-explorations">
    Part III: Objects Explorations
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objects-challenge">
+     Objects Challenge
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#method-add-student">
+       Method:
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         add_student
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#method-calculate-points">
+       Method:
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         calculate_points
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -521,12 +550,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The language python has lots of goodness.
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create another instance of our class</span>
 <span class="n">english</span> <span class="o">=</span> <span class="n">Language</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">,</span> <span class="s1">&#39;human&#39;</span><span class="p">,</span> <span class="s1">&#39;some&#39;</span><span class="p">)</span>
 <span class="n">english</span><span class="o">.</span><span class="n">print_goodness_level</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The language english has some goodness.
 </pre></div>
 </div>
 </div>
@@ -575,6 +614,13 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">cogs18</span><span class="o">.</span><span class="n">department</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cogs18</span><span class="o">.</span><span class="n">code</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cogs18</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>COGS
+18
+Introduction to Python
 </pre></div>
 </div>
 </div>
@@ -639,6 +685,11 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the method works on our cogs18 instance</span>
 <span class="n">cogs18</span> <span class="o">=</span> <span class="n">TritonCourse</span><span class="p">(</span><span class="s2">&quot;COGS&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="s2">&quot;Introduction to Python&quot;</span><span class="p">)</span>
 <span class="n">cogs18</span><span class="o">.</span><span class="n">print_info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>COGS18: Introduction to Python
 </pre></div>
 </div>
 </div>
@@ -745,6 +796,94 @@ please provide a first name as a string to the method call
 [&#39;Shannon&#39;, &#39;Josh&#39;]
 typical OH
 </pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="objects-challenge">
+<h3>Objects Challenge<a class="headerlink" href="#objects-challenge" title="Permalink to this headline">¶</a></h3>
+<p>Define an object <code class="docutils literal notranslate"><span class="pre">Cogs18Students</span></code> that has:</p>
+<ul class="simple">
+<li><p>Instance Attibutes:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">students</span></code> : list (initalize it as an empty list)</p></li>
+</ul>
+</li>
+<li><p>Methods:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">add_student()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">calculate_points()</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="method-add-student">
+<h4>Method: <code class="docutils literal notranslate"><span class="pre">add_student</span></code><a class="headerlink" href="#method-add-student" title="Permalink to this headline">¶</a></h4>
+<p>Input(s):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pid</span></code> : string</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a1</span></code> : int or float</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a2</span></code> : int or float</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">e1</span></code> : int or float</p></li>
+</ul>
+<p>This method, when executed should take in the student’s PID and their scores on A1, A2 and E1. These values should be stored in a single dictionary for each student with the keys ‘PID’, ‘A1’, ‘A1’, and ‘E1’, with the student’s respective PID and scores as the values for each key. This dictionary should then be added to the <code class="docutils literal notranslate"><span class="pre">students</span></code> attribute for the class.</p>
+</div>
+<div class="section" id="method-calculate-points">
+<h4>Method: <code class="docutils literal notranslate"><span class="pre">calculate_points</span></code><a class="headerlink" href="#method-calculate-points" title="Permalink to this headline">¶</a></h4>
+<p>Input(s):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">student_pid</span></code> : string</p></li>
+</ul>
+<p>This method should calculate the total number of points for all assignments for the student PID specified in <code class="docutils literal notranslate"><span class="pre">student_pid</span></code>. The sum of the students’ points on A1, A2, and E1 should be returned from the method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">class</span> <span class="nc">Cogs18Students</span><span class="p">:</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">students</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">add_student</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">e1</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;PID&#39;</span><span class="p">:</span> <span class="n">pid</span><span class="p">,</span>
+                              <span class="s1">&#39;A1&#39;</span><span class="p">:</span> <span class="n">a1</span><span class="p">,</span>
+                              <span class="s1">&#39;A2&#39;</span><span class="p">:</span> <span class="n">a2</span><span class="p">,</span> 
+                              <span class="s1">&#39;E1&#39;</span><span class="p">:</span> <span class="n">e1</span><span class="p">})</span>
+        
+    <span class="k">def</span> <span class="nf">calculate_points</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">student_pid</span><span class="p">):</span>
+        
+        <span class="n">total_points</span> <span class="o">=</span> <span class="mi">0</span>
+        
+        <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">students</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">element</span><span class="p">[</span><span class="s1">&#39;PID&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">student_pid</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">element</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">key</span> <span class="o">!=</span> <span class="s1">&#39;PID&#39;</span><span class="p">:</span>
+                        <span class="n">total_points</span> <span class="o">+=</span> <span class="n">element</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+        
+        <span class="k">return</span> <span class="n">total_points</span>
+
+<span class="n">cogs18</span> <span class="o">=</span> <span class="n">Cogs18Students</span><span class="p">()</span>  <span class="c1"># initialize object</span>
+<span class="n">cogs18</span><span class="o">.</span><span class="n">add_student</span><span class="p">(</span><span class="s1">&#39;A1234&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">)</span>  <span class="c1"># add student</span>
+<span class="n">cogs18</span><span class="o">.</span><span class="n">add_student</span><span class="p">(</span><span class="s1">&#39;A7777&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">)</span>  <span class="c1"># add another student</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cogs18</span><span class="o">.</span><span class="n">students</span><span class="p">)</span>  <span class="c1"># see what&#39;s stored in attribute</span>
+<span class="n">cogs18</span><span class="o">.</span><span class="n">calculate_points</span><span class="p">(</span><span class="s1">&#39;A7777&#39;</span><span class="p">)</span>  <span class="c1"># test out my method</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;PID&#39;: &#39;A1234&#39;, &#39;A1&#39;: 8, &#39;A2&#39;: 8, &#39;E1&#39;: 12.5}, {&#39;PID&#39;: &#39;A7777&#39;, &#39;A1&#39;: 8, &#39;A2&#39;: 6, &#39;E1&#39;: 12.5}]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>26.5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialiaze a Cogs18Students object here</span>
+<span class="c1"># test out your methods</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
