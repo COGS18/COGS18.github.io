@@ -401,6 +401,11 @@
        Clicker Question #4
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clicker-question-warm-up">
+       Clicker Question (Warm-up)
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -535,9 +540,12 @@
 <ul class="simple">
 <li><p>A3 due Monday 11/1 (11:59 PM)</p></li>
 <li><p>E2 next Friday 11/5 - review will be Wed.</p></li>
-<li><p>A4 now available; due Fri 11/12 &lt;- this is a change</p></li>
+<li><p>A4 posted later today; due Fri 11/12 &lt;- this is a change</p></li>
 <li><p>mid-course survey now <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSfZVIyKtegSiD3oRiKT6BwnQbTMFELxXwfhCuyKa1CmMsCk0A/viewform?usp=sf_link">available</a> (<em>optional</em>; link also on Canvas; due Mon 11/1 for extra credit)</p></li>
+</ul>
+<ul class="simple">
 <li><p>Lecture recordings now available in Media Gallery on Canvas (allows for subtitles)</p></li>
+<li><p>E1 regrades have been handled</p></li>
 </ul>
 <p><strong>CL5 Feedback</strong></p>
 <ul class="simple">
@@ -569,11 +577,21 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;, &#39;color&#39;])
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># original object remains unchanged</span>
 <span class="n">car</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;brand&#39;: &#39;BMW&#39;, &#39;model&#39;: &#39;M5&#39;, &#39;year&#39;: 2019, &#39;color&#39;: &#39;Black&#39;}
 </pre></div>
 </div>
 </div>
@@ -629,12 +647,22 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29/09/1988
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A date, stored as a list of number</span>
 <span class="n">date_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;29&#39;</span><span class="p">,</span> <span class="s1">&#39;09&#39;</span><span class="p">,</span> <span class="s1">&#39;1988&#39;</span><span class="p">]</span>
 <span class="n">date_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;29&#39;, &#39;09&#39;, &#39;1988&#39;]
 </pre></div>
 </div>
 </div>
@@ -650,12 +678,22 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A date, stored as a dictionary</span>
 <span class="n">date_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;day&#39;</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">1988</span><span class="p">}</span>
 <span class="n">date_dictionary</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;day&#39;: 29, &#39;month&#39;: 9, &#39;year&#39;: 1988}
 </pre></div>
 </div>
 </div>
@@ -692,11 +730,21 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988-09-29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check what type of thing `my_date` is</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.date
 </pre></div>
 </div>
 </div>
@@ -718,6 +766,11 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -726,11 +779,21 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the year attribute</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">year</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988
 </pre></div>
 </div>
 </div>
@@ -744,6 +807,11 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Method to return what day of the week the date is</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -765,6 +833,11 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988-09-29 1980-07-29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -772,6 +845,12 @@ date.weekday<span class="o">?</span>
 <span class="n">time_diff</span> <span class="o">=</span> <span class="n">my_date</span> <span class="o">-</span> <span class="n">my_date2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="p">,</span>  <span class="s2">&quot;days&quot;</span><span class="p">)</span> <span class="c1">#in days</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="o">/</span><span class="mi">365</span><span class="p">,</span><span class="s2">&quot;years&quot;</span><span class="p">)</span> <span class="c1">#in years</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2984 days
+8.175342465753424 years
 </pre></div>
 </div>
 </div>
@@ -797,6 +876,57 @@ date.weekday<span class="o">?</span>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## dir ouputs all methods and attributes</span>
 <span class="c1">## we&#39;ll talk about the double underscores next lecture</span>
 <span class="nb">dir</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__le__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__radd__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rsub__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__sub__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;ctime&#39;,
+ &#39;day&#39;,
+ &#39;fromisocalendar&#39;,
+ &#39;fromisoformat&#39;,
+ &#39;fromordinal&#39;,
+ &#39;fromtimestamp&#39;,
+ &#39;isocalendar&#39;,
+ &#39;isoformat&#39;,
+ &#39;isoweekday&#39;,
+ &#39;max&#39;,
+ &#39;min&#39;,
+ &#39;month&#39;,
+ &#39;replace&#39;,
+ &#39;resolution&#39;,
+ &#39;strftime&#39;,
+ &#39;timetuple&#39;,
+ &#39;today&#39;,
+ &#39;toordinal&#39;,
+ &#39;weekday&#39;,
+ &#39;year&#39;]
 </pre></div>
 </div>
 </div>
@@ -840,6 +970,69 @@ date.weekday<span class="o">?</span>
 <li><p>C) <code class="docutils literal notranslate"><span class="pre">lets.name()</span></code></p></li>
 <li><p>D) <a class="reference external" href="http://lets.get.name">lets.get.name</a>()</p></li>
 <li><p>E) ¯\_(ツ)_/¯</p></li>
+</ul>
+<p><strong>Course Announcements (Mon 11/1)</strong></p>
+<ul class="simple">
+<li><p>A3 due tonight (11:59 PM)</p></li>
+<li><p>CL6 due Wed</p></li>
+<li><p>E2 this Friday 11/5</p></li>
+<li><p>A4 is now available (you can already do Part I)</p></li>
+<li><p>mid-course survey now <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSfZVIyKtegSiD3oRiKT6BwnQbTMFELxXwfhCuyKa1CmMsCk0A/viewform?usp=sf_link">available</a> (<em>optional</em>; link also on Canvas; due tonight for extra credit)</p></li>
+<li><p>Brian OH now <strong>Friday 2-3 PM</strong> (CSB 114; syllabus has been updated)</p></li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: What will be the length of the exam?<br />
+A: I haven’t written it yet, but similar to E1.</p>
+<p>Q: Would we only use the import command with objects or are there other instances?<br />
+A: There are other things we can import. We’ll discuss this after the second midterm!</p>
+<p>Q: So does a default value just mean defining the value within the parentheses of a function?<br />
+A: Yes - that’s how you define one. Then, when you <em>execute</em> that function, the default value will be used without you having to pass a value to that parameter.</p>
+<p>Q: Where I can get more resources to study?<br />
+A: In addition to class notes, coding labs, assignments, and prior exams, there is also the coures <a class="reference external" href="https://shanellis.github.io/pythonbook/content/intro.html">textbook</a>, which has additional practice problems (and answer keys). There is also <a class="reference external" href="https://pythontutor.com/">pythontutor</a>, which allows you to visualize your code. The Internet also has additional practice problems, youtubue has tutorial videos, etc.</p>
+<p>Q: Why are there parentheses after methods even if we don’t write things inside? For example: some_list.lower() or some_list.upper().<br />
+A: The parentheses indicate that code should be executed. There will always be parentheses after functions and methods. <em>Sometimes</em> there are parameters we want to control. We would then specify those within the parentheses. This is true for methods and functions.</p>
+<p>Q: Is there a database or website we can refer to when encountering errors?<br />
+A: There’s not one site. Understanding what error messages mean is a skill practiced over time. The debugging lecture explains each of them. But, googling your error message can sometimes be helpful if you’re unsure of what it means.</p>
+<p>Q: How do we know when to import an object?<br />
+A: We’ll disuss this in a coming lecture in more detail, but when the functionality is not yet available in your current namespace.</p>
+<p>Q: is there a way to check each step a function. Normally for a loop or conditional I can write a print statement and check if it works, but it seems I can’t check to see if a part of a function works without running the whole thing.<br />
+A: You can define the function and comment out parts you aren’t ready to test yet. Then, you would execute the function and see if the output is what you expected. <code class="docutils literal notranslate"><span class="pre">print()</span></code> statements can still be helpful here. Then, you can uncomment/finish writing the function, re-define it, and retest it.</p>
+<p>Q: What is the main difference between the functions and classes?<br />
+A: Functions do not store attributes. They are just functions. Classes store attributes and methods, which are attached to the object type.</p>
+<p>Q: How to better study and prepare for the upcoming midterm? What topics to focus on?<br />
+A: We’ll discuss this in the review, but the midterm will focus on what we’ve covered since the first midterm. It will be dictionaries, a lot of functions, and some classes.</p>
+<p><strong>Global vs. local variables</strong></p>
+<ul class="simple">
+<li><p><strong>global</strong> - a variable defined in your notebook</p></li>
+<li><p><strong>local</strong> - a variable defined within a function</p></li>
+</ul>
+<ol class="simple">
+<li><p>These two namespaces cannot “see” one another</p></li>
+<li><p>Functions only have access to the variables defined within them <em>or</em> those passed in as parameters</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## common error we&#39;ve seen</span>
+<span class="n">output_val</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">sum_values</span><span class="p">(</span><span class="n">input_list</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span> 
+            <span class="n">output_val</span> <span class="o">+=</span> <span class="n">value</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">continue</span>
+            
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="clicker-question-warm-up">
+<h4>Clicker Question (Warm-up)<a class="headerlink" href="#clicker-question-warm-up" title="Permalink to this headline">¶</a></h4>
+<p>Would you rather…</p>
+<ul class="simple">
+<li><p>A) have <strong>24h for the exam</strong> and <strong>no class or office hours Friday</strong> (exam would be released before class Fri; due Sat at 8AM)</p></li>
+<li><p>B) have <strong>~60h for the exam</strong> but <strong>have class and office hours Friday</strong> (exam would be released Fri afternoon; due Mon before class at 8AM)</p></li>
 </ul>
 </div>
 </div>

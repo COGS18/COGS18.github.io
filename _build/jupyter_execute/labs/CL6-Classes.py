@@ -30,7 +30,7 @@
 #     # return string 
 # ```
 
-# In[ ]:
+# In[1]:
 
 
 ### BEGIN SOLUTION
@@ -47,7 +47,7 @@ def reverse_string(input_string):
 ### END SOLUTION
 
 
-# In[ ]:
+# In[2]:
 
 
 assert reverse_string('apple') == 'elppa'
@@ -63,7 +63,7 @@ assert reverse_string('apple') == 'elppa'
 # 
 # Remember that you created a function that can reverse a string above.
 
-# In[ ]:
+# In[3]:
 
 
 ### BEGIN SOLUTION
@@ -79,7 +79,7 @@ def check_palindrome(input_string):
 ### END SOLUTION
 
 
-# In[ ]:
+# In[4]:
 
 
 assert check_palindrome('kayak') == "Hey! That's a palindrome!"
@@ -90,7 +90,7 @@ assert check_palindrome('blargh') == 'Bummer. Not a palindrome.'
 
 # ## Example Class
 
-# In[ ]:
+# In[5]:
 
 
 class Language():
@@ -111,7 +111,7 @@ class Language():
         print('The language', self.name, 'has', self.amount_of_goodness, 'goodness.')
 
 
-# In[ ]:
+# In[6]:
 
 
 # Create an instance of our class
@@ -119,7 +119,7 @@ python = Language('python', 'computer', 'lots of')
 python.print_goodness_level()
 
 
-# In[ ]:
+# In[7]:
 
 
 # Create another instance of our class
@@ -139,7 +139,7 @@ english.print_goodness_level()
 # 
 # That is, write a class called `TritonCourse` that has instance attributes `department` (string), `code` (int), and `title` (string). 
 
-# In[ ]:
+# In[8]:
 
 
 ### BEGIN SOLUTION
@@ -161,14 +161,14 @@ class TritonCourse():
 # 
 # You can then print out the attributes and check that they hold the values that you expect. 
 
-# In[ ]:
+# In[9]:
 
 
 # Define an instance of our class
 cogs18 = TritonCourse("COGS", 18, "Introduction to Python")
 
 
-# In[ ]:
+# In[10]:
 
 
 # Check the instance attributes
@@ -184,7 +184,7 @@ print(cogs18.title)
 # - MUS 8, "American Music: Jazz Culture"
 #     - Save the result to a variable called `class2`
 
-# In[ ]:
+# In[11]:
 
 
 ### BEGIN SOLUTION
@@ -205,7 +205,7 @@ class2 = TritonCourse("MUS", 8, "American Music: Jazz Culture")
 # 
 #     `COGS 18 : Introduction to Python`
 
-# In[ ]:
+# In[12]:
 
 
 ### BEGIN SOLUTION
@@ -224,7 +224,7 @@ class TritonCourse():
 ### END SOLUTION
 
 
-# In[ ]:
+# In[13]:
 
 
 # Check the method works on our cogs18 instance
@@ -241,7 +241,7 @@ cogs18.print_info()
 #     - Create at least one methods that takes in an argument (doesn't just use class & instance attributes)
 #     - Create at least one method that has a conditional in it, one with a loop, and one with a try/except
 
-# In[15]:
+# In[14]:
 
 
 ### BEGIN SOLUTION
@@ -311,4 +311,74 @@ print(may6.n_students)
 print(may6.who_arrived)
 print(may6.busy_OH())
 ### END SOLUTION
+
+
+# ### Objects Challenge
+# 
+# Define an object `Cogs18Students` that has: 
+# 
+# - Instance Attibutes:
+#     - `students` : list (initalize it as an empty list)
+# - Methods:
+#     - `add_student()`
+#     - `calculate_points()`
+#     
+# #### Method: `add_student`
+# 
+# Input(s):
+# - `pid` : string
+# - `a1` : int or float
+# - `a2` : int or float
+# - `e1` : int or float
+# 
+# This method, when executed should take in the student's PID and their scores on A1, A2 and E1. These values should be stored in a single dictionary for each student with the keys 'PID', 'A1', 'A1', and 'E1', with the student's respective PID and scores as the values for each key. This dictionary should then be added to the `students` attribute for the class.
+# 
+# #### Method: `calculate_points`
+# 
+#  
+# Input(s):
+# - `student_pid` : string
+# 
+# This method should calculate the total number of points for all assignments for the student PID specified in `student_pid`. The sum of the students' points on A1, A2, and E1 should be returned from the method.
+
+# In[18]:
+
+
+### BEGIN SOLUTION
+class Cogs18Students:
+    
+    def __init__(self):
+        self.students = []
+
+    def add_student(self, pid, a1, a2, e1):
+        self.students.append({'PID': pid,
+                              'A1': a1,
+                              'A2': a2, 
+                              'E1': e1})
+        
+    def calculate_points(self, student_pid):
+        
+        total_points = 0
+        
+        for element in self.students:
+            if element['PID'] == student_pid:
+                for key in element:
+                    if key != 'PID':
+                        total_points += element[key]
+        
+        return total_points
+
+cogs18 = Cogs18Students()  # initialize object
+cogs18.add_student('A1234', 8, 8, 12.5)  # add student
+cogs18.add_student('A7777', 8, 6, 12.5)  # add another student
+print(cogs18.students)  # see what's stored in attribute
+cogs18.calculate_points('A7777')  # test out my method
+### END SOLUTION
+
+
+# In[16]:
+
+
+# initialiaze a Cogs18Students object here
+# test out your methods
 

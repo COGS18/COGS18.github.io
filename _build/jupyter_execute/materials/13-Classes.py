@@ -5,10 +5,11 @@
 # 
 # - A3 due Monday 11/1 (11:59 PM)
 # - E2 next Friday 11/5 - review will be Wed.
-# - A4 now available; due Fri 11/12 <- this is a change
+# - A4 posted later today; due Fri 11/12 <- this is a change
 # - mid-course survey now [available](https://docs.google.com/forms/d/e/1FAIpQLSfZVIyKtegSiD3oRiKT6BwnQbTMFELxXwfhCuyKa1CmMsCk0A/viewform?usp=sf_link) (*optional*; link also on Canvas; due Mon 11/1 for extra credit)
+
 # - Lecture recordings now available in Media Gallery on Canvas (allows for subtitles)
-# 
+# - E1 regrades have been handled
 
 # **CL5 Feedback**
 # 
@@ -21,7 +22,7 @@
 # 
 # - In place directly update the object, *without assignment*
 
-# In[ ]:
+# In[2]:
 
 
 my_list = ['a', 'b', 'c']
@@ -31,14 +32,14 @@ my_list
 
 # - Not in place creates a new object; original object remains unchanged
 
-# In[ ]:
+# In[3]:
 
 
 car = {'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
 car.keys()
 
 
-# In[ ]:
+# In[4]:
 
 
 # original object remains unchanged
@@ -88,7 +89,7 @@ car
 
 # ### Storing Dates (Motivation)
 
-# In[ ]:
+# In[5]:
 
 
 # A date, stored as a string
@@ -96,7 +97,7 @@ date_string = '29/09/1988'
 print(date_string)
 
 
-# In[ ]:
+# In[6]:
 
 
 # A date, stored as a list of number
@@ -104,7 +105,7 @@ date_list = ['29', '09', '1988']
 date_list
 
 
-# In[ ]:
+# In[7]:
 
 
 # A date, stored as a series of numbers
@@ -115,7 +116,7 @@ year = 1988
 print(day)
 
 
-# In[ ]:
+# In[8]:
 
 
 # A date, stored as a dictionary
@@ -127,20 +128,20 @@ date_dictionary
 
 # ### Example Object: Date
 
-# In[ ]:
+# In[9]:
 
 
 # Import a date object
 from datetime import date
 
 
-# In[ ]:
+# In[10]:
 
 
 get_ipython().run_line_magic('pinfo', 'date')
 
 
-# In[ ]:
+# In[11]:
 
 
 # Set the data we want to store in our date object
@@ -153,7 +154,7 @@ my_date = date(year, month, day)
 print(my_date)
 
 
-# In[ ]:
+# In[12]:
 
 
 # Check what type of thing `my_date` is
@@ -172,21 +173,21 @@ type(my_date)
 
 # **attributes** maintain the object's state, simply returning information about the object to you
 
-# In[ ]:
+# In[13]:
 
 
 # Get the day attribute
 my_date.day
 
 
-# In[ ]:
+# In[14]:
 
 
 # Get the month attribute
 my_date.month
 
 
-# In[ ]:
+# In[15]:
 
 
 # Get the year attribute
@@ -199,14 +200,14 @@ my_date.year
 
 # **methods** modify the object's state
 
-# In[ ]:
+# In[16]:
 
 
 # Method to return what day of the week the date is
 my_date.weekday()
 
 
-# In[ ]:
+# In[17]:
 
 
 # Reminder: check documentation with '?'
@@ -215,7 +216,7 @@ get_ipython().run_line_magic('pinfo', 'date.weekday')
 
 # It's also possible to carry out operations on multiple date objects.
 
-# In[ ]:
+# In[19]:
 
 
 # define a second date
@@ -223,7 +224,7 @@ my_date2 = date(1980, 7, 29)
 print(my_date, my_date2)
 
 
-# In[ ]:
+# In[20]:
 
 
 # calculate the difference between times
@@ -246,7 +247,7 @@ my_date.
 date.
 
 
-# In[ ]:
+# In[21]:
 
 
 ## dir ouputs all methods and attributes
@@ -290,6 +291,78 @@ my_date = date(year = 1050, month = 12, day = 12)
 # - C) `lets.name()`
 # - D) lets.get.name()
 # - E) ¯\\\_(ツ)\_/¯
+
+# **Course Announcements (Mon 11/1)**
+# 
+# - A3 due tonight (11:59 PM)
+# - CL6 due Wed 
+# - E2 this Friday 11/5
+# - A4 is now available (you can already do Part I)
+# - mid-course survey now [available](https://docs.google.com/forms/d/e/1FAIpQLSfZVIyKtegSiD3oRiKT6BwnQbTMFELxXwfhCuyKa1CmMsCk0A/viewform?usp=sf_link) (*optional*; link also on Canvas; due tonight for extra credit)
+# - Brian OH now **Friday 2-3 PM** (CSB 114; syllabus has been updated)
+
+# **Q&A**
+# 
+# Q: What will be the length of the exam?  
+# A: I haven't written it yet, but similar to E1.
+# 
+# Q: Would we only use the import command with objects or are there other instances?  
+# A: There are other things we can import. We'll discuss this after the second midterm!
+# 
+# Q: So does a default value just mean defining the value within the parentheses of a function?  
+# A: Yes - that's how you define one. Then, when you *execute* that function, the default value will be used without you having to pass a value to that parameter.
+# 
+# Q: Where I can get more resources to study?  
+# A: In addition to class notes, coding labs, assignments, and prior exams, there is also the coures [textbook](https://shanellis.github.io/pythonbook/content/intro.html), which has additional practice problems (and answer keys). There is also [pythontutor](https://pythontutor.com/), which allows you to visualize your code. The Internet also has additional practice problems, youtubue has tutorial videos, etc.  
+# 
+# Q: Why are there parentheses after methods even if we don't write things inside? For example: some_list.lower() or some_list.upper().  
+# A: The parentheses indicate that code should be executed. There will always be parentheses after functions and methods. *Sometimes* there are parameters we want to control. We would then specify those within the parentheses. This is true for methods and functions.
+# 
+# Q: Is there a database or website we can refer to when encountering errors?  
+# A: There's not one site. Understanding what error messages mean is a skill practiced over time. The debugging lecture explains each of them. But, googling your error message can sometimes be helpful if you're unsure of what it means.
+# 
+# Q: How do we know when to import an object?  
+# A: We'll disuss this in a coming lecture in more detail, but when the functionality is not yet available in your current namespace.
+# 
+# Q: is there a way to check each step a function. Normally for a loop or conditional I can write a print statement and check if it works, but it seems I can't check to see if a part of a function works without running the whole thing.  
+# A: You can define the function and comment out parts you aren't ready to test yet. Then, you would execute the function and see if the output is what you expected. `print()` statements can still be helpful here. Then, you can uncomment/finish writing the function, re-define it, and retest it.
+# 
+# Q: What is the main difference between the functions and classes?  
+# A: Functions do not store attributes. They are just functions. Classes store attributes and methods, which are attached to the object type.
+# 
+# Q: How to better study and prepare for the upcoming midterm? What topics to focus on?  
+# A: We'll discuss this in the review, but the midterm will focus on what we've covered since the first midterm. It will be dictionaries, a lot of functions, and some classes.
+# 
+
+# **Global vs. local variables**
+# 
+# - **global** - a variable defined in your notebook
+# - **local** - a variable defined within a function
+
+# 1. These two namespaces cannot "see" one another
+# 2. Functions only have access to the variables defined within them *or* those passed in as parameters
+
+# In[ ]:
+
+
+## common error we've seen
+output_val = 0
+
+def sum_values(input_list):
+    for value in input_list:
+        try: 
+            output_val += value
+        except:
+            continue
+            
+
+
+# #### Clicker Question (Warm-up)
+# 
+# Would you rather...
+# 
+# - A) have **24h for the exam** and **no class or office hours Friday** (exam would be released before class Fri; due Sat at 8AM)
+# - B) have **~60h for the exam** but **have class and office hours Friday** (exam would be released Fri afternoon; due Mon before class at 8AM)
 
 # ### Objects Summary
 # 

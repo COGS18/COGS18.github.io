@@ -255,6 +255,13 @@ assert all([isinstance(x, str) for x in my_strs])
 # - You will have two indices counters, one for each loop. 
 # - For the print statement, it will look something like `print(index_inner, end=" ")`
 
+# In[3]:
+
+
+print("a", end=" ")
+print("b")
+
+
 # In[6]:
 
 

@@ -1599,7 +1599,32 @@ dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;, &#39;color&#39;])
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_input</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-<span class="n">exponentiate_even_number</span><span class="p">(</span><span class="n">list_input</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">exponentiate_even_number</span><span class="p">(</span><span class="n">my_list</span><span class="o">=</span><span class="n">list_input</span><span class="p">,</span> <span class="n">power</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4, 16, 36, 64, 100]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exponentiate_even_number</span><span class="p">(</span><span class="n">list_input</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[8, 64, 216, 512, 1000]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">find_even</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">exponentiate_even_number</span><span class="p">(</span><span class="n">list_input</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">216</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>

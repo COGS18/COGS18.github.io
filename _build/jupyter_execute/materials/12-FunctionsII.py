@@ -713,7 +713,7 @@ car.values()
 # 
 # What will the following code snippet print?
 
-# In[ ]:
+# In[1]:
 
 
 def find_even(my_list):
@@ -733,11 +733,24 @@ def exponentiate_even_number(my_list, power = 2):
     return output
 
 
-# In[ ]:
+# In[8]:
 
 
 list_input = [1,3,5,7,9,2,4,6,8,10]
+exponentiate_even_number(my_list=list_input, power=3)
+
+
+# In[6]:
+
+
 exponentiate_even_number(list_input,3)
+
+
+# In[5]:
+
+
+assert callable(find_even)
+assert exponentiate_even_number(list_input,3) == [8, 64, 216, 512, 1000]
 
 
 # - A) [2,4,6,8,10]
