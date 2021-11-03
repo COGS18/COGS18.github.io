@@ -22,7 +22,7 @@
 # 
 # - In place directly update the object, *without assignment*
 
-# In[2]:
+# In[1]:
 
 
 my_list = ['a', 'b', 'c']
@@ -32,14 +32,14 @@ my_list
 
 # - Not in place creates a new object; original object remains unchanged
 
-# In[3]:
+# In[2]:
 
 
 car = {'brand': 'BMW', 'model': 'M5', 'year': 2019, 'color': 'Black'}
 car.keys()
 
 
-# In[4]:
+# In[3]:
 
 
 # original object remains unchanged
@@ -89,7 +89,7 @@ car
 
 # ### Storing Dates (Motivation)
 
-# In[5]:
+# In[4]:
 
 
 # A date, stored as a string
@@ -97,7 +97,7 @@ date_string = '29/09/1988'
 print(date_string)
 
 
-# In[6]:
+# In[5]:
 
 
 # A date, stored as a list of number
@@ -105,7 +105,7 @@ date_list = ['29', '09', '1988']
 date_list
 
 
-# In[7]:
+# In[6]:
 
 
 # A date, stored as a series of numbers
@@ -116,7 +116,7 @@ year = 1988
 print(day)
 
 
-# In[8]:
+# In[7]:
 
 
 # A date, stored as a dictionary
@@ -128,20 +128,20 @@ date_dictionary
 
 # ### Example Object: Date
 
-# In[9]:
+# In[8]:
 
 
 # Import a date object
 from datetime import date
 
 
-# In[10]:
+# In[9]:
 
 
 get_ipython().run_line_magic('pinfo', 'date')
 
 
-# In[11]:
+# In[10]:
 
 
 # Set the data we want to store in our date object
@@ -154,7 +154,7 @@ my_date = date(year, month, day)
 print(my_date)
 
 
-# In[12]:
+# In[11]:
 
 
 # Check what type of thing `my_date` is
@@ -173,21 +173,21 @@ type(my_date)
 
 # **attributes** maintain the object's state, simply returning information about the object to you
 
-# In[13]:
+# In[12]:
 
 
 # Get the day attribute
 my_date.day
 
 
-# In[14]:
+# In[13]:
 
 
 # Get the month attribute
 my_date.month
 
 
-# In[15]:
+# In[14]:
 
 
 # Get the year attribute
@@ -200,14 +200,14 @@ my_date.year
 
 # **methods** modify the object's state
 
-# In[16]:
+# In[15]:
 
 
 # Method to return what day of the week the date is
 my_date.weekday()
 
 
-# In[17]:
+# In[16]:
 
 
 # Reminder: check documentation with '?'
@@ -216,7 +216,7 @@ get_ipython().run_line_magic('pinfo', 'date.weekday')
 
 # It's also possible to carry out operations on multiple date objects.
 
-# In[19]:
+# In[17]:
 
 
 # define a second date
@@ -224,7 +224,7 @@ my_date2 = date(1980, 7, 29)
 print(my_date, my_date2)
 
 
-# In[20]:
+# In[18]:
 
 
 # calculate the difference between times
@@ -235,7 +235,7 @@ print(time_diff.days/365,"years") #in years
 
 # ### Listing Attributes & Methods : `dir`
 
-# In[ ]:
+# In[19]:
 
 
 # tab complete to access
@@ -247,7 +247,7 @@ my_date.
 date.
 
 
-# In[21]:
+# In[20]:
 
 
 ## dir ouputs all methods and attributes
@@ -259,7 +259,7 @@ dir(my_date)
 # 
 # Given the code below:
 
-# In[ ]:
+# In[21]:
 
 
 my_date = date(year = 1050, month = 12, day = 12)
@@ -297,7 +297,7 @@ my_date = date(year = 1050, month = 12, day = 12)
 # - A3 due tonight (11:59 PM)
 # - CL6 due Wed 
 # - E2 this Friday 11/5
-# - A4 is now available (you can already do Part I)
+# - A4 is now available (you can already do Part I; due 11/12)
 # - mid-course survey now [available](https://docs.google.com/forms/d/e/1FAIpQLSfZVIyKtegSiD3oRiKT6BwnQbTMFELxXwfhCuyKa1CmMsCk0A/viewform?usp=sf_link) (*optional*; link also on Canvas; due tonight for extra credit)
 # - Brian OH now **Friday 2-3 PM** (CSB 114; syllabus has been updated)
 
@@ -342,7 +342,7 @@ my_date = date(year = 1050, month = 12, day = 12)
 # 1. These two namespaces cannot "see" one another
 # 2. Functions only have access to the variables defined within them *or* those passed in as parameters
 
-# In[ ]:
+# In[22]:
 
 
 ## common error we've seen
@@ -354,7 +354,15 @@ def sum_values(input_list):
             output_val += value
         except:
             continue
-            
+    
+    return output_val
+
+
+# In[23]:
+
+
+# this code will error
+sum_values(['a', 1, 10])
 
 
 # #### Clicker Question (Warm-up)
@@ -385,7 +393,7 @@ def sum_values(input_list):
 
 # ## Example Class: Dog
 
-# In[ ]:
+# In[24]:
 
 
 # Define a class with `class`. 
@@ -416,21 +424,21 @@ class Dog():
 # - like functions, a new namespace is created within a Class
 # 
 
-# In[ ]:
+# In[25]:
 
 
 # Initialize a dog object
 george = Dog()
 
 
-# In[ ]:
+# In[26]:
 
 
 # george, has 'sound' attribute(s) from Dog()
 george.sound
 
 
-# In[ ]:
+# In[27]:
 
 
 # george, has 'Dog' method(s)
@@ -442,7 +450,7 @@ george.speak()
 # 
 # Which of the following statements is true about the example we've been using? 
 
-# In[ ]:
+# In[28]:
 
 
 class Dog():
@@ -460,28 +468,34 @@ class Dog():
 
 # ### Using our Dog Objects
 
-# In[ ]:
+# In[29]:
 
 
 # Initialize a group of dogs
 pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 
 
-# In[ ]:
+# In[30]:
 
 
 # take a look at this
 pack_of_dogs
 
 
-# In[ ]:
+# In[31]:
+
+
+type(pack_of_dogs)
+
+
+# In[32]:
 
 
 # take a look at this
 type(pack_of_dogs[0])
 
 
-# In[ ]:
+# In[33]:
 
 
 for dog in pack_of_dogs:
@@ -494,7 +508,7 @@ for dog in pack_of_dogs:
 # An <b>instance</b> is particular instantiation of a class object. <code>self</code> refers to the current instance. 
 # </div>
 
-# In[ ]:
+# In[34]:
 
 
 # Initialize a dog object
@@ -511,7 +525,7 @@ george = Dog()
 # 
 # How many instances of `Dog()` are created below and how many times does the `speak()` method execute?
 
-# In[ ]:
+# In[35]:
 
 
 pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
@@ -536,7 +550,7 @@ for doggie in pack_of_dogs:
 # 
 # An instance attribute specific to the instance we're on. This allows different instances of the same class to be unique (have different values stored in attributes and use those in methods).
 
-# In[ ]:
+# In[36]:
 
 
 # Initialize a group of dogs
@@ -554,7 +568,7 @@ pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 # - Two trailing underscores (a `dunder`, or double underscore) is used to indicate something Python recognizes and knows what to do every time it sees it.
 # - Here, we use `__init__` to execute the code within it every time you initialize an object.
 
-# In[ ]:
+# In[37]:
 
 
 class Dog():
@@ -571,7 +585,7 @@ class Dog():
         return self.sound * n_times
 
 
-# In[ ]:
+# In[38]:
 
 
 # Initialize a dog
@@ -579,7 +593,7 @@ class Dog():
 gary = Dog(name = 'Gary') 
 
 
-# In[ ]:
+# In[39]:
 
 
 # Check gary's attributes
@@ -587,7 +601,7 @@ print(gary.sound)    # This is an class attribute
 print(gary.name)     # This is a instance attribute
 
 
-# In[ ]:
+# In[40]:
 
 
 # Check gary's methods
@@ -598,7 +612,7 @@ gary.speak()
 # 
 # Edit the code we've been using for the Class `Dog` to include information about the breed of the Class Dog in `NewDog`?
 
-# In[ ]:
+# In[41]:
 
 
 # EDIT CODE HERE
@@ -606,17 +620,21 @@ class NewDog():
     
     sound = 'Woof'
     
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self, n_times=2):
         return self.sound * n_times
 
 
-# In[ ]:
+# In[42]:
 
 
 ## We'll execute here
+lexi = NewDog(name='Lexi', breed='Italian Greyhound')
+print(lexi.sound, lexi.name, lexi.breed)
+lexi.speak(n_times=4)
 
 
 # - A) I did it!
@@ -625,7 +643,14 @@ class NewDog():
 
 # ## Class example: Cat
 
-# In[ ]:
+# In[43]:
+
+
+cat_object = Cat(name='Shannon')
+cat_object.name
+
+
+# In[44]:
 
 
 # Define a class 'Cat'
@@ -642,7 +667,7 @@ class Cat():
 
 # ## Instances Examples
 
-# In[ ]:
+# In[45]:
 
 
 # Define some instances of our objects
@@ -650,7 +675,7 @@ pets = [Cat('Jaspurr'), Dog('Barkley'),
         Cat('Picatso'), Dog('Ruffius')]
 
 
-# In[ ]:
+# In[46]:
 
 
 for pet in pets:
@@ -662,7 +687,7 @@ for pet in pets:
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[47]:
 
 
 class MyClass():
@@ -679,7 +704,7 @@ class MyClass():
             return None
 
 
-# In[ ]:
+# In[48]:
 
 
 student = MyClass('Rob', 'rob@python.com', 62)
@@ -691,6 +716,75 @@ student.check_score()
 # - C) False 
 # - D) 'rob@python.com'
 # - E) None
+
+# **Course Announcements**
+# 
+# **Due Dates**
+# - CL6 due tonight 
+# - E2 released this Friday; due **Mon at 8AM**
+# 
+# **Notes**
+# - CL5 and mid-course survey scores posted
+# - Posts with code on campuswire *must* be private to TAs & Instructors
+#     - going forward; points will be deducted and/or student will be submitted to AIO
+#     - if you answer a post with code in it to help a fellow student, you will NOT be in trouble
+
+# **Mid-course Survey Summary**
+# 
+# - N=270 (out of possible 378; 71% response rate)
+# - Getting Help: 
+#     - Coding Labs: have to wait too long; encouraging you to ask the person next to you before staff 
+#     - Campuswire: if you feel you're not getting help, be sure question is marked as "Unresolved"
+#     - Being told to Google: this is part of the process! (We've seen progress here.)
+
+# - Office hours: more on Th/Fri *and* more zoom
+#     - Brian moved his office hours from Mon to Fri
+#     - Prof now holding additional 10min slots on Thurs 3-4 by appt only
+#         - see link to sign up on Canvas
+#         - please come ready to ask questions
+#         - please cancel if you can't make it
+
+# - Harder/more examples please
+#     - be sure to check answer keys after coding labs
+#     - have already started implementing this in lectures
+#     - [additional practice problems](https://shanellis.github.io/pythonbook/content/intro.html) (With answer keys)
+
+# **E2 Notes**
+# - will be released Fri @ ~5PM; will be **due Mon at 8AM**
+#     - there WILL be lecture *and* office hours on Friday
+# - 8 Questions: 
+#     - Part I: Methods and Debugging (3Qs; 3.5 pts)
+#     - Part II: Functions (3 Qs; 4.4 pts)
+#     - Part III: Clases (2 Qs; 4.5 pts)
+# - Practice E2 is *way* longer than the real E2
+#     - Answer key will be posted on Thursday
+# - Review Friday: bring questions!
+
+# **Q&A**
+# 
+# Q: Can you just use any word other than self while creating the method? Also why the dunder  
+# A: Theoretically, yes, you could use any word other than `self`. In practice, we're going to use `self`, as the python community all kind of "agrees" that this is what we'll do. And the dunder around `__init__` indicates that this is a special "magic" method...with `__init__` specifically defining instance attributes.
+# 
+# Q: I find the challenge in CL6 is particularly difficult, so I just wonder if we are going to have similar questions in E2?  
+# A: You could have one question on E2 similar to the challenge on CL6...but it would be the last question on the exam and the most difficult overall. It would also have partial credit attached, so even if you didn't figure it out completely, you could earn partial points.
+# 
+# Q: I understood that attributes are variables defined inside a class and an object is defined by a class. Is an object a special type of variable that can contain multiple variables inside it?   
+# A: That's one aspect of a new object type (meaning a new `class` of object)! It can also have methods defined within it. Making it "more" than just a way to store multiple variables.
+# 
+# Q: Is there a specific time that exam 2 will be released on Friday afternoon?  
+# A: After Brian's OH for sure; likely around 5PM. A campuswire post will be sent when posted.
+# 
+# Q: what happens if i answer this participation quiz two days after actual class time? Does it still count for participation?  
+# A: If you respond while the lecture is still included in the drop-down menu, you'll receive credit.
+# 
+# Q: within a class, can you only define an instance attribute (or write def __init__) once?  
+# A: Yes, you only want to define it once; however, you can define as many intributes as you want within that `__init__` 
+# 
+# Q: Why is the object "date" from the date example in last Friday's lecture all lowercase, rather than uppercase, like "Date?"  
+# A: Great question! While CapWords is convention, the developers of the `date` type object did not follow convention. I think `Date` would be better!
+# 
+# Q: Where do we commonly use global namespaces? Do we use local namespaces in other forms of coding in addition to functions? Also, for instances do we ALWAYS use self as the first parameter?  
+# A: You use the global namespace any time you define a variable/function/class in a jupyter notebook. You create a separate local name space any time you define a new function or class. And yup! `self` will always be first in instance attribute definition.
 
 # ### Example: `ProfCourses()`
 # 
@@ -805,6 +899,10 @@ class ProfCourses():
 ellis_courses = ProfCourses('Ellis')
 
 # add a bunch of classes
+ellis_courses.add_class('COGS108', 'sp21', 311)
+ellis_courses.add_class('COGS18', 'sp21', 430)
+ellis_courses.add_class('COGS108', 'wi21', 431)
+ellis_courses.add_class('COGS18', 'wi21', 99)
 ellis_courses.add_class('COGS18', 'fa20', 363)
 ellis_courses.add_class('COGS108', 'fa20', 447)
 ellis_courses.add_class('COGS18', 'su20', 88)
@@ -881,6 +979,10 @@ class ProfCourses():
 ellis_courses = ProfCourses('Ellis')
 
 # add a bunch of classes
+ellis_courses.add_class('COGS108', 'sp21', 311, 0, 4)
+ellis_courses.add_class('COGS18', 'sp21', 430, 2, 5)
+ellis_courses.add_class('COGS108', 'wi21', 431, 0, 4)
+ellis_courses.add_class('COGS18', 'wi21', 99, 2, 5)
 ellis_courses.add_class('COGS18', 'fa20', 363, 2, 5)
 ellis_courses.add_class('COGS108', 'fa20', 447, 0, 6)
 ellis_courses.add_class('COGS18', 'su20', 88, 3, 5)
