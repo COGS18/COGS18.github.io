@@ -721,7 +721,7 @@ student.check_score()
 # 
 # **Due Dates**
 # - CL6 due tonight 
-# - E2 released this Friday; due **Mon at 8AM**
+# - E2 released this Friday (~5PM); due **Mon at 8AM**
 # 
 # **Notes**
 # - CL5 and mid-course survey scores posted
@@ -755,9 +755,10 @@ student.check_score()
 # - 8 Questions: 
 #     - Part I: Methods and Debugging (3Qs; 3.5 pts)
 #     - Part II: Functions (3 Qs; 4.4 pts)
-#     - Part III: Clases (2 Qs; 4.5 pts)
+#     - Part III: Classes (2 Qs; 4.5 pts)
 # - Practice E2 is *way* longer than the real E2
 #     - Answer key will be posted on Thursday
+#     - Revew/Practice notebooks also available on course website and in Exam-Prep folder on datahub
 # - Review Friday: bring questions!
 
 # **Q&A**
@@ -794,7 +795,7 @@ student.check_score()
 # 
 # We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.
 
-# In[ ]:
+# In[53]:
 
 
 class ProfCourses():
@@ -806,7 +807,7 @@ class ProfCourses():
         self.prof = prof
 
 
-# In[ ]:
+# In[54]:
 
 
 ellis_courses = ProfCourses('Ellis')
@@ -816,7 +817,7 @@ print(ellis_courses.prof)
 
 # **`add_class()` method**
 
-# In[ ]:
+# In[55]:
 
 
 class ProfCourses():
@@ -838,14 +839,16 @@ class ProfCourses():
         self.n_classes += 1
 
 
-# In[ ]:
+# In[58]:
 
 
 # create ellis_courses
 ellis_courses = ProfCourses('Ellis')
+print(ellis_courses.n_classes)
 
 # add a class
 ellis_courses.add_class('COGS18', 'fa20', 363)
+ellis_courses.add_class('new class', 'fa20', 100)
 
 # see output
 print(ellis_courses.n_classes)
@@ -854,7 +857,7 @@ ellis_courses.classes
 
 # **`compare()` method**
 
-# In[ ]:
+# In[59]:
 
 
 class ProfCourses():
@@ -892,7 +895,7 @@ class ProfCourses():
         return output
 
 
-# In[ ]:
+# In[60]:
 
 
 # create ellis_courses
@@ -914,7 +917,7 @@ print(ellis_courses.n_classes)
 ellis_courses.classes
 
 
-# In[ ]:
+# In[65]:
 
 
 # make comparison among all courses
@@ -922,7 +925,7 @@ ellis_courses.classes
 ellis_courses.compare('n_students')
 
 
-# In[ ]:
+# In[64]:
 
 
 # return the class with the fewest students
@@ -931,7 +934,7 @@ ellis_courses.compare('n_students', 'fewest')
 
 # **extending the functionality of the `compare()` method**
 
-# In[ ]:
+# In[66]:
 
 
 class ProfCourses():
@@ -972,7 +975,7 @@ class ProfCourses():
         return output
 
 
-# In[ ]:
+# In[67]:
 
 
 # create ellis_courses
@@ -994,14 +997,14 @@ ellis_courses.add_class('COGS18', 'fa19', 301, 2, 4)
 print(ellis_courses.n_classes)
 
 
-# In[ ]:
+# In[68]:
 
 
 # return the class with the most exams
 ellis_courses.compare('n_exams', 'most')
 
 
-# In[ ]:
+# In[69]:
 
 
 # return the class with the fewest assignments
@@ -1036,7 +1039,7 @@ ellis_courses.compare('n_assignments', 'fewest')
 
 # ### Data variables are objects
 
-# In[ ]:
+# In[70]:
 
 
 print(isinstance(True, object))
@@ -1050,14 +1053,14 @@ print(isinstance(a, object))
 
 # ### Functions are objects
 
-# In[ ]:
+# In[71]:
 
 
 print(isinstance(sum, object))
 print(isinstance(max, object))
 
 
-# In[ ]:
+# In[72]:
 
 
 # Custom function are also objects
@@ -1069,7 +1072,7 @@ isinstance(my_function, object)
 
 # ### Class definitions & instances are objects
 
-# In[ ]:
+# In[76]:
 
 
 class MyClass():
@@ -1077,7 +1080,6 @@ class MyClass():
         self.data = 13
 
 my_instance = MyClass()
-
 print(isinstance(MyClass, object))
 print(isinstance(my_instance, object))
 

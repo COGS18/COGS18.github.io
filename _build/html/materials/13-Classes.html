@@ -196,6 +196,11 @@
    CL5-Functions
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -234,8 +239,18 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E2-Practice.html">
    E2-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Fa21_Practice-Answers.html">
+   E2_Fa21_Practice-Answers
   </a>
  </li>
 </ul>
@@ -1567,7 +1582,7 @@ WoofWoof
 <p><strong>Due Dates</strong></p>
 <ul class="simple">
 <li><p>CL6 due tonight</p></li>
-<li><p>E2 released this Friday; due <strong>Mon at 8AM</strong></p></li>
+<li><p>E2 released this Friday (~5PM); due <strong>Mon at 8AM</strong></p></li>
 </ul>
 <p><strong>Notes</strong></p>
 <ul class="simple">
@@ -1624,12 +1639,13 @@ WoofWoof
 <ul>
 <li><p>Part I: Methods and Debugging (3Qs; 3.5 pts)</p></li>
 <li><p>Part II: Functions (3 Qs; 4.4 pts)</p></li>
-<li><p>Part III: Clases (2 Qs; 4.5 pts)</p></li>
+<li><p>Part III: Classes (2 Qs; 4.5 pts)</p></li>
 </ul>
 </li>
 <li><p>Practice E2 is <em>way</em> longer than the real E2</p>
 <ul>
 <li><p>Answer key will be posted on Thursday</p></li>
+<li><p>Revew/Practice notebooks also available on course website and in Exam-Prep folder on datahub</p></li>
 </ul>
 </li>
 <li><p>Review Friday: bring questions!</p></li>
@@ -1678,6 +1694,12 @@ A: You use the global namespace any time you define a variable/function/class in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+Ellis
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong><code class="docutils literal notranslate"><span class="pre">add_class()</span></code> method</strong></p>
 <div class="cell docutils container">
@@ -1707,13 +1729,25 @@ A: You use the global namespace any time you define a variable/function/class in
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create ellis_courses</span>
 <span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_classes</span><span class="p">)</span>
 
 <span class="c1"># add a class</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">)</span>
+<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_class</span><span class="p">(</span><span class="s1">&#39;new class&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 
 <span class="c1"># see output</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_classes</span><span class="p">)</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">classes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+2
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363},
+ {&#39;course_name&#39;: &#39;new class&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 100}]
 </pre></div>
 </div>
 </div>
@@ -1780,6 +1814,22 @@ A: You use the global namespace any time you define a variable/function/class in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp21&#39;, &#39;n_students&#39;: 311},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;sp21&#39;, &#39;n_students&#39;: 430},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;wi21&#39;, &#39;n_students&#39;: 431},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;wi21&#39;, &#39;n_students&#39;: 99},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 447},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp20&#39;, &#39;n_students&#39;: 469},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1789,11 +1839,21 @@ A: You use the global namespace any time you define a variable/function/class in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest students</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88}
 </pre></div>
 </div>
 </div>
@@ -1863,6 +1923,11 @@ A: You use the global namespace any time you define a variable/function/class in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1871,11 +1936,29 @@ A: You use the global namespace any time you define a variable/function/class in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;su20&#39;,
+ &#39;n_students&#39;: 88,
+ &#39;n_exams&#39;: 3,
+ &#39;n_assignments&#39;: 5}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest assignments</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_assignments&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;fa19&#39;,
+ &#39;n_students&#39;: 301,
+ &#39;n_exams&#39;: 2,
+ &#39;n_assignments&#39;: 4}
 </pre></div>
 </div>
 </div>
@@ -1938,6 +2021,15 @@ A: You use the global namespace any time you define a variable/function/class in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+True
+True
+True
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="functions-are-objects">
@@ -1946,6 +2038,12 @@ A: You use the global namespace any time you define a variable/function/class in
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="nb">sum</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="nb">max</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
 </pre></div>
 </div>
 </div>
@@ -1960,6 +2058,11 @@ A: You use the global namespace any time you define a variable/function/class in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="class-definitions-instances-are-objects">
@@ -1971,9 +2074,14 @@ A: You use the global namespace any time you define a variable/function/class in
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="mi">13</span>
 
 <span class="n">my_instance</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">MyClass</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">my_instance</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
 </pre></div>
 </div>
 </div>

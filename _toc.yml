@@ -45,6 +45,8 @@ parts:
       title: CL4-Loops
     - file: labs/CL5-Functions
       title: CL5-Functions
+    - file: labs/CL6-Classes
+      title: CL6-Classes
   - caption: Exam Prep
     chapters:
     - file: materials/Exam-Prep/E1-Review
@@ -59,8 +61,10 @@ parts:
       title: E1_Fa21-Answers
     - file: materials/Exam-Prep/E2-Review
       title: E2-Review
-    # - file: materials/Exam-Prep/E2-Review-Answers
-    #   title: E2-Review-Answers
+    - file: materials/Exam-Prep/E2-Review-Answers
+      title: E2-Review-Answers
     - file: materials/Exam-Prep/E2-Practice
       title: E2-Practice
+    - file: materials/Exam-Prep/E2_Fa21_Practice-Answers
+      title: E2_Fa21_Practice-Answers
 
