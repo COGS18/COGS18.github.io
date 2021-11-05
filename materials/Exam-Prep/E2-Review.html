@@ -370,12 +370,29 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#questions">
+     Questions?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clicker-question-1">
+       Clicker Question #1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clicker-question-2">
+       Clicker Question #2
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#reminder">
      Reminder:
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#questions">
+    <a class="reference internal nav-link" href="#id1">
      Questions?
     </a>
    </li>
@@ -453,7 +470,44 @@
         
               <div>
                 
-  <div class="section" id="exam-2-review">
+  <p><strong>Course Announcements</strong></p>
+<ul class="simple">
+<li><p><strong>E2</strong> released ~5PM tonight; <strong>due Mon at 8AM</strong></p>
+<ul>
+<li><p>Answer keys have been posted (website &amp; Exam-Prep folder on datahub)</p></li>
+</ul>
+</li>
+<li><p><strong>A4</strong> due Fri 11/12</p>
+<ul>
+<li><p>Before the exam, I’d recommend completing Q1-Q4</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: what does “self” exactly mean or do?<br />
+A: <code class="docutils literal notranslate"><span class="pre">self</span></code> allows you to explicitly refer to the current instance of the object type. Since each object an differ in the values stored in its attributes, any time you want to refer to a specifc instance of an object, we use <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
+<p>Q: Why was ‘most’ the default when using the compare method?<br />
+A: Becuase I decided that would be what people would want to use most often. We could have chosen a different value.</p>
+<p>Q: What are examples of projects for the final- what can I NOT do?<br />
+A: We’ll discuss details next Friday in class. Examples are <a class="reference external" href="https://github.com/COGS18/Projects">here</a>. You cannot do a project on topics for which there are tons of tutorials already online. This will be better defined next week.</p>
+<p>Q: for the ProfCourses example, what could be an example of a class attribute for this class<br />
+A: If everyone using <code class="docutils literal notranslate"><span class="pre">ProfCourses</span></code> were a UCSD professor, a class attribute could be <code class="docutils literal notranslate"><span class="pre">university</span> <span class="pre">=</span> <span class="pre">'UCSD'</span></code>…as that would be true for every <code class="docutils literal notranslate"><span class="pre">ProfCourses</span></code> object.</p>
+<p>Q: A question that still remains is the difference between class attributes and instance attributes. I think that instance attributes are more specific, but I’m not sure about the difference in the purpose for them. I’m unsure when I would determine something as a class attribute or instance attribute.<br />
+A: First, a class attribute is something that would be true for ALL instances of that object type (think about the <code class="docutils literal notranslate"><span class="pre">Dog</span></code> example. All dogs say “Woof”…class attribute. An instance attribute is something you’d want to be able to change depending on the specific instance (for <code class="docutils literal notranslate"><span class="pre">Dog</span></code>, this was <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">breed</span></code>, as each dog does not have the same). On the exam, we’ll specify whether something should be an instance or class attribute.</p>
+<p>Q: When I do assignment I could achieve the goal following the step by step instruction, but I think I can’t code to achieve some functions if I don’t have those detailed instruction. Is this normal?<br />
+A: This is normal. However, you should always think through the code after you “get it right” to make sure you understand what the steps are doing. Also, this is why we have the project at the end. We’ve given you lots of guidance throughout the quarter. The project is the time for you to figure more out on your own!</p>
+<p>Q: Would there ever be a reason for having multiple <em>init</em> in a class? Would I only use <em>init</em> within a class or are there other reasons that I would use <em>init</em>?<br />
+A: Only one <code class="docutils literal notranslate"><span class="pre">__init__</span></code> per class!</p>
+<p>Q: At the beginning, you showed a link for additional practice problems for harder and more examples and I clicked on it. However, the page says This book is currently under development. Full home page coming soon.”
+I was wondering when it would come?<br />
+A: While it’s still under development, there’s a lot there already. The table of contents at the left of the page will have more practice there for you.</p>
+<p>Q: When to use self and when to not.<br />
+A: We always use self as the first parameter in instance attribute <code class="docutils literal notranslate"><span class="pre">__init__</span></code> and the first parameter for methods. Then, any time you want to refer back to an attribute for the object, you’ll need <code class="docutils literal notranslate"><span class="pre">self</span></code> before it.</p>
+<p>Q: how does python know what you meant by ‘fewest’ and ‘most’ when comparing courses in the ProfCourses example from class?<br />
+A: It was the value taken in as a parameter for the method.</p>
+<p>Q: Can’t find the online office hours sign up sheet<br />
+A: It’s on the main canvas home page for the course.</p>
+<div class="section" id="exam-2-review">
 <h1>Exam 2 Review<a class="headerlink" href="#exam-2-review" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="exam-ii-plan-12-5-points">
 <h2>Exam II Plan (12.5 points)<a class="headerlink" href="#exam-ii-plan-12-5-points" title="Permalink to this headline">¶</a></h2>
@@ -476,6 +530,28 @@
 <li><p>Q8: Classes II (2.25 points)*</p></li>
 </ul>
 <p>* : includes manual grading (partial credit)</p>
+<div class="section" id="questions">
+<h3>Questions?<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="clicker-question-1">
+<h4>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">¶</a></h4>
+<p>Which topic would you like to review on the practice midterm?</p>
+<ul class="simple">
+<li><p>A) Methods</p></li>
+<li><p>B) Debugging</p></li>
+<li><p>C) Functions</p></li>
+<li><p>D) Classes</p></li>
+</ul>
+</div>
+<div class="section" id="clicker-question-2">
+<h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">¶</a></h4>
+<p>Click in when you…</p>
+<ul class="simple">
+<li><p>A) have finished</p></li>
+<li><p>B) think you have finished but aren’t totally sure</p></li>
+<li><p>C) are stuck.</p></li>
+</ul>
+</div>
+</div>
 <div class="section" id="reminder">
 <h3>Reminder:<a class="headerlink" href="#reminder" title="Permalink to this headline">¶</a></h3>
 <p>There are two extra notebooks that you can use for review:</p>
@@ -485,8 +561,8 @@
 </ol>
 <p>There are also a few Exam #2 Practice Problems <a class="reference external" href="https://cogs18.github.io/materials/Exam-Prep/E2-Practice.html">here</a> and a practice exam on datahub.</p>
 </div>
-<div class="section" id="questions">
-<h3>Questions?<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Questions?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="functions">
