@@ -1,6 +1,49 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **Course Announcements**
+# 
+# - **E2** released ~5PM tonight; **due Mon at 8AM**
+#     - Answer keys have been posted (website & Exam-Prep folder on datahub)
+# - **A4** due Fri 11/12
+#     - Before the exam, I'd recommend completing Q1-Q4
+
+# **Q&A**
+# 
+# Q: what does "self" exactly mean or do?  
+# A: `self` allows you to explicitly refer to the current instance of the object type. Since each object an differ in the values stored in its attributes, any time you want to refer to a specifc instance of an object, we use `self`.
+# 
+# Q: Why was 'most' the default when using the compare method?  
+# A: Becuase I decided that would be what people would want to use most often. We could have chosen a different value.
+# 
+# Q: What are examples of projects for the final- what can I NOT do?  
+# A: We'll discuss details next Friday in class. Examples are [here](https://github.com/COGS18/Projects). You cannot do a project on topics for which there are tons of tutorials already online. This will be better defined next week.
+# 
+# Q: for the ProfCourses example, what could be an example of a class attribute for this class  
+# A: If everyone using `ProfCourses` were a UCSD professor, a class attribute could be `university = 'UCSD'`...as that would be true for every `ProfCourses` object.
+# 
+# Q: A question that still remains is the difference between class attributes and instance attributes. I think that instance attributes are more specific, but I'm not sure about the difference in the purpose for them. I'm unsure when I would determine something as a class attribute or instance attribute.  
+# A: First, a class attribute is something that would be true for ALL instances of that object type (think about the `Dog` example. All dogs say "Woof"...class attribute. An instance attribute is something you'd want to be able to change depending on the specific instance (for `Dog`, this was `name` and `breed`, as each dog does not have the same). On the exam, we'll specify whether something should be an instance or class attribute.
+# 
+# Q: When I do assignment I could achieve the goal following the step by step instruction, but I think I can't code to achieve some functions if I don't have those detailed instruction. Is this normal?   
+# A: This is normal. However, you should always think through the code after you "get it right" to make sure you understand what the steps are doing. Also, this is why we have the project at the end. We've given you lots of guidance throughout the quarter. The project is the time for you to figure more out on your own!
+# 
+# Q: Would there ever be a reason for having multiple _init_ in a class? Would I only use _init_ within a class or are there other reasons that I would use _init_?  
+# A: Only one `__init__` per class!
+# 
+# Q: At the beginning, you showed a link for additional practice problems for harder and more examples and I clicked on it. However, the page says This book is currently under development. Full home page coming soon."
+# I was wondering when it would come?  
+# A: While it's still under development, there's a lot there already. The table of contents at the left of the page will have more practice there for you.
+# 
+# Q: When to use self and when to not.  
+# A: We always use self as the first parameter in instance attribute `__init__` and the first parameter for methods. Then, any time you want to refer back to an attribute for the object, you'll need `self` before it.
+# 
+# Q: how does python know what you meant by 'fewest' and 'most' when comparing courses in the ProfCourses example from class?   
+# A: It was the value taken in as a parameter for the method.
+# 
+# Q: Can’t find the online office hours sign up sheet  
+# A: It's on the main canvas home page for the course.
+
 # # Exam 2 Review
 
 # ## Exam II Plan (12.5 points)
@@ -22,6 +65,25 @@
 # - Q8: Classes II (2.25 points)*
 # 
 # \* : includes manual grading (partial credit)
+
+# ### Questions?
+
+# #### Clicker Question #1
+# 
+# Which topic would you like to review on the practice midterm?
+# 
+# - A) Methods
+# - B) Debugging
+# - C) Functions
+# - D) Classes
+
+# #### Clicker Question #2
+# 
+# Click in when you...
+# 
+# - A) have finished
+# - B) think you have finished but aren't totally sure
+# - C) are stuck.
 
 # ### Reminder: 
 # 
@@ -49,7 +111,7 @@
 # #### Functions Question #1
 # Write, in real code, a function called `remainder` that takes two inputs, divides the first input by the second and returns the remainder.
 
-# In[1]:
+# In[ ]:
 
 
 ## YOUR CODE HERE
@@ -58,7 +120,7 @@
 # #### Functions Question #2
 # Using the function `remainder` you wrote above, write the python code you would use to return the remainder of 10 divided by 4. Store the output in the variable `my_remainder`.
 
-# In[2]:
+# In[ ]:
 
 
 ## YOUR CODE HERE
@@ -67,7 +129,7 @@
 # #### Functions Question #3
 # Assuming the following function has been defined, what would `sum_list([1, 2, 3])` return?
 
-# In[3]:
+# In[ ]:
 
 
 def sum_list(my_list):
@@ -79,7 +141,7 @@ def sum_list(my_list):
     return total
 
 
-# In[4]:
+# In[ ]:
 
 
 ## CODE TO TEST HERE
@@ -105,7 +167,7 @@ def sum_list(my_list):
 # 
 # Your `Rocket` should also have the method `move_up()`. This method should increment the y-position of the rocket by 1. 
 
-# In[8]:
+# In[ ]:
 
 
 ## YOUR CODE HERE
@@ -117,7 +179,7 @@ def sum_list(my_list):
 # 
 # Create an instance `my_rocket` of your Rocket object.
 
-# In[9]:
+# In[ ]:
 
 
 ## YOUR CODE HERE
@@ -127,7 +189,7 @@ def sum_list(my_list):
 # 
 # Update `my_rocket` so that `my_rocket` has the `y` position 3.
 
-# In[10]:
+# In[ ]:
 
 
 ## YOUR CODE HERE

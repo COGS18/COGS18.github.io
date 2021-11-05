@@ -717,7 +717,7 @@ student.check_score()
 # - D) 'rob@python.com'
 # - E) None
 
-# **Course Announcements**
+# **Course Announcements** (Wed 11/3)
 # 
 # **Due Dates**
 # - CL6 due tonight 
