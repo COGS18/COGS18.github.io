@@ -393,7 +393,7 @@ sum_values(['a', 1, 10])
 
 # ## Example Class: Dog
 
-# In[24]:
+# In[1]:
 
 
 # Define a class with `class`. 
@@ -406,6 +406,13 @@ class Dog():
     # Class methods for objects of type Dog
     def speak(self, n_times=2):
         return self.sound * n_times
+
+
+# In[3]:
+
+
+an_instance = Dog()
+an_instance.speak()
 
 
 # A reminder:

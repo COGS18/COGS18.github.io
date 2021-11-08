@@ -5,7 +5,7 @@
 # 
 # - **E2** released ~5PM tonight; **due Mon at 8AM**
 #     - Answer keys have been posted (website & Exam-Prep folder on datahub)
-# - **A4** due Fri 11/12
+# - **A4** due next Fri 11/12
 #     - Before the exam, I'd recommend completing Q1-Q4
 
 # **Q&A**

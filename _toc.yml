@@ -29,6 +29,8 @@ parts:
       title: 12-FunctionsII
     - file: materials/13-Classes
       title: 13-Classes
+    - file: materials/14-CommandLine
+      title: 14-CommandLine
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples

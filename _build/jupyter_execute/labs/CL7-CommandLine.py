@@ -31,7 +31,7 @@
 # First, in the notebook below, do the following:
 # 
 # - Write at least one new Class
-#     - Make sure there is at least one method in the class that prints something out
+#     - Make sure there is at least one method in the class that returns something/prints something out
 # - Write two new functions, that do something with instances of your new class(es)
 #     - For example, take a list of custom objects, and call a method on each one
 
