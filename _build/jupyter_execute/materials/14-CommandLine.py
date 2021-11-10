@@ -76,7 +76,7 @@
 
 # #### Check current directory
 
-# In[ ]:
+# In[1]:
 
 
 # print working directory
@@ -107,7 +107,7 @@ get_ipython().system('pwd')
 # An absolute file path starts with a slash `/` specifying the root directory.
 # 
 
-# In[ ]:
+# In[2]:
 
 
 ## absolute path
@@ -122,14 +122,14 @@ get_ipython().system('ls /Users/shannonellis/Desktop/Teaching/COGS18/Materials')
 # <b>Relative paths</b> specify the path to a file from your <b>current working directory</b> (where your computer is working right now). 
 # </div>
 
-# In[ ]:
+# In[3]:
 
 
 # remind us of our current working directory
 get_ipython().system('pwd')
 
 
-# In[ ]:
+# In[4]:
 
 
 # relative path
@@ -198,7 +198,7 @@ get_ipython().system('ls ../../COGS108/Lectures-Wi21')
 
 # #### Check current directory
 
-# In[ ]:
+# In[5]:
 
 
 # print working directory
@@ -221,7 +221,7 @@ get_ipython().system('cd ~/ ')
 
 # #### List files in a directory
 
-# In[ ]:
+# In[6]:
 
 
 # list files (list segments)
@@ -232,7 +232,7 @@ get_ipython().system('ls')
 
 # #### Make a new directory
 
-# In[ ]:
+# In[7]:
 
 
 # make directory 
@@ -241,7 +241,7 @@ get_ipython().system('mkdir dir_name')
 
 # #### Create a file
 
-# In[ ]:
+# In[8]:
 
 
 # create an empty file
@@ -250,7 +250,7 @@ get_ipython().system('touch new_file.py ')
 
 # #### Move a file
 
-# In[ ]:
+# In[9]:
 
 
 # move file
@@ -262,7 +262,7 @@ get_ipython().system('mv new_file.py dir_name/')
 
 # #### Print out a message
 
-# In[ ]:
+# In[10]:
 
 
 get_ipython().system('echo Hello World!')
@@ -270,7 +270,7 @@ get_ipython().system('echo Hello World!')
 
 # #### Print the contents of a file
 
-# In[ ]:
+# In[11]:
 
 
 get_ipython().system('cat dir_name/new_file.py')
@@ -297,10 +297,11 @@ get_ipython().system('open dir_name/new_file.py')
 # - D) `ls` is analogous to a function, and `-l` is like a parameter
 # - E) There is no clear analogy here to Python
 
-# In[ ]:
+# In[12]:
 
 
 ## test out here
+get_ipython().system('ls -l')
 
 
 # #### Clicker Question #4

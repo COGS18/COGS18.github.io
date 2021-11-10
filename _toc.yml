@@ -31,6 +31,8 @@ parts:
       title: 13-Classes
     - file: materials/14-CommandLine
       title: 14-CommandLine
+    - file: materials/15-Modules
+      title: 15-Modules
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples
