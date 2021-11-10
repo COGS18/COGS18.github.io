@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Modules &amp; Scripts" href="15-Modules.html" />
     <link rel="prev" title="Classes" href="13-Classes.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -157,6 +157,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    14-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-Modules.html">
+   15-Modules
   </a>
  </li>
  <li class="toctree-l1">
@@ -655,6 +660,11 @@ A <b>command line interface</b> is a way to interact with a computer through wri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-COGS18
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -682,6 +692,29 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>01-Introduction.ipynb         20-CodeProjects-chatbot.ipynb
+02-Tooling.ipynb              20-CodeProjects.ipynb
+03-Variables.ipynb            21-AdvancedPython.ipynb
+04-Operators.ipynb            22-WrapUp.ipynb
+05-Conditionals.ipynb         A1-Syntax.ipynb
+06-Debugging.ipynb            A2-Examples.ipynb
+07-Collections.ipynb          <span class=" -Color -Color-Blue">Archive</span>
+08-Loops.ipynb                Check-In.ipynb
+09-Dictionaries.ipynb         LICENSE.txt
+10-FunctionsI.ipynb           README.md
+11-Algorithms.ipynb           <span class=" -Color -Color-Blue">__pycache__</span>
+12-FunctionsII.ipynb          atbash.py
+13-Classes.ipynb              <span class=" -Color -Color-Blue">img</span>
+14-CommandLine.ipynb          my_file.py
+15-Modules.ipynb              <span class=" -Color -Color-Blue">my_module</span>
+16-ScientificComputing.ipynb  remote.py
+17-CodeTesting.ipynb          stw.py
+18-CodeStyle.ipynb            test_atbash.py
+19-Documentation.ipynb
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="relative-paths">
@@ -695,12 +728,24 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-COGS18
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># relative path</span>
 <span class="c1"># this is specific to my computer</span>
 <span class="o">!</span>ls ../../COGS108/Lectures-Wi21
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Blue">01_intro</span>            <span class=" -Color -Color-Blue">04_dataviz</span>          <span class=" -Color -Color-Blue">07_machine_learning</span> <span class=" -Color -Color-Blue">10_communication</span>
+<span class=" -Color -Color-Blue">02_python</span>           <span class=" -Color -Color-Blue">05_analysis</span>         <span class=" -Color -Color-Blue">08_text</span>             README.md
+<span class=" -Color -Color-Blue">03_data</span>             <span class=" -Color -Color-Blue">06_inference</span>        <span class=" -Color -Color-Blue">09_geospatial</span>
 </pre></div>
 </div>
 </div>
@@ -797,6 +842,11 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-COGS18
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="change-directory">
@@ -821,6 +871,17 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># list files (list segments)</span>
 <span class="o">!</span>ls
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>01-Introduction.ipynb 07-Collections.ipynb  14-CommandLine.ipynb
+01-Welcome.pdf        08-Loops.ipynb        A1-Syntax.ipynb
+02-Tooling.ipynb      09-Dictionaries.ipynb A2-Examples.ipynb
+03-Variables.ipynb    10-FunctionsI.ipynb   <span class=" -Color -Color-Blue">Exam-Prep</span>
+04-Operators.ipynb    11-Algorithms.ipynb   <span class=" -Color -Color-Blue">img</span>
+05-Conditionals.ipynb 12-FunctionsII.ipynb
+06-Debugging.ipynb    13-Classes.ipynb
 </pre></div>
 </div>
 </div>
@@ -874,6 +935,11 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello World!
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="print-the-contents-of-a-file">
@@ -911,6 +977,32 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## test out here</span>
+<span class="o">!</span>ls -l
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 4280
+-rw-r--r--   1 shannonellis  staff     6072 Sep 20 13:01 01-Introduction.ipynb
+-rw-r--r--@  1 shannonellis  staff  1647599 Sep 20 11:41 01-Welcome.pdf
+-rw-r--r--   1 shannonellis  staff    32726 Oct 15 07:50 02-Tooling.ipynb
+-rw-r--r--   1 shannonellis  staff    35130 Sep 30 15:46 03-Variables.ipynb
+-rw-r--r--   1 shannonellis  staff    52929 Oct  5 13:50 04-Operators.ipynb
+-rw-r--r--   1 shannonellis  staff    18371 Oct  6 08:37 05-Conditionals.ipynb
+-rw-r--r--   1 shannonellis  staff    32293 Oct  8 08:38 06-Debugging.ipynb
+-rw-r--r--   1 shannonellis  staff    43342 Oct 11 08:39 07-Collections.ipynb
+-rw-r--r--   1 shannonellis  staff    29014 Oct 16 06:37 08-Loops.ipynb
+-rw-r--r--   1 shannonellis  staff    43593 Oct 20 08:50 09-Dictionaries.ipynb
+-rw-r--r--@  1 shannonellis  staff    21464 Oct 25 06:49 10-FunctionsI.ipynb
+-rw-r--r--   1 shannonellis  staff    25442 Oct 27 07:04 11-Algorithms.ipynb
+-rw-r--r--@  1 shannonellis  staff    45972 Oct 29 08:26 12-FunctionsII.ipynb
+-rw-r--r--   1 shannonellis  staff    69090 Nov  5 08:13 13-Classes.ipynb
+-rw-r--r--   1 shannonellis  staff    25642 Nov  8 08:30 14-CommandLine.ipynb
+-rw-r--r--   1 shannonellis  staff    13108 Oct 13 07:08 A1-Syntax.ipynb
+-rw-r--r--   1 shannonellis  staff    13582 Oct 13 07:07 A2-Examples.ipynb
+drwxr-xr-x  13 shannonellis  staff      416 Nov  5 07:59 <span class=" -Color -Color-Blue">Exam-Prep</span>
+drwxr-xr-x   3 shannonellis  staff       96 Nov  8 08:26 <span class=" -Color -Color-Blue">dir_name</span>
+drwxr-xr-x  18 shannonellis  staff      576 Oct 21 14:10 <span class=" -Color -Color-Blue">img</span>
 </pre></div>
 </div>
 </div>
@@ -1074,7 +1166,7 @@ Text-editors are programs made for editing text. Many text-editors are designed 
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="13-Classes.html" title="previous page">Classes</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="15-Modules.html" title="next page">Modules &amp; Scripts</a>
 
         </div>
         
