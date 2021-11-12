@@ -51,6 +51,8 @@ parts:
       title: CL5-Functions
     - file: labs/CL6-Classes
       title: CL6-Classes
+    - file: labs/CL7-CommandLine
+      title: CL7-CommandLine
   - caption: Exam Prep
     chapters:
     - file: materials/Exam-Prep/E1-Review
@@ -71,4 +73,13 @@ parts:
       title: E2-Practice
     - file: materials/Exam-Prep/E2_Fa21_Practice-Answers
       title: E2_Fa21_Practice-Answers
-
+  - caption: Projects
+    chapters:
+    - file: materials/Projects/PythonParty
+      title: PythonParty
+    - file: materials/Projects/overview
+      title: Overview
+    - file: materials/Projects/faq
+      title: FAQ
+    - file: materials/Projects/ProjectIdeas
+      title: ProjectIdeas

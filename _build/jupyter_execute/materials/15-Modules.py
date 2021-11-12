@@ -5,7 +5,8 @@
 # - CL7 due tonight (11:59 PM)
 # - A4 due Friday (11:59 PM)
 # 
-# **Note**:
+# **Notes**:
+# - A3 and CL6 scores have been posted
 # - No class Wed before Thanksgiving (11/24)
 
 # **Q&A** 
@@ -68,7 +69,7 @@
 
 # That is, the *scope* of an object is where it is available to / from. 
 
-# In[ ]:
+# In[1]:
 
 
 # see what's stored in global namespace
@@ -106,7 +107,7 @@ get_ipython().run_line_magic('whos', '')
 
 # For something not yet in your Namespace...
 
-# In[ ]:
+# In[2]:
 
 
 # we haven't imported the module yet
@@ -114,21 +115,21 @@ get_ipython().run_line_magic('whos', '')
 type(math)
 
 
-# In[ ]:
+# In[3]:
 
 
 # Import the math module
 import math
 
 
-# In[ ]:
+# In[4]:
 
 
 # Check the type of math
 type(math)
 
 
-# In[ ]:
+# In[5]:
 
 
 # By the way - modules are objects
@@ -138,6 +139,12 @@ isinstance(math, object)
 # In[ ]:
 
 
+math.
+
+
+# In[6]:
+
+
 # Using code from our math module
 # remember to tab complete or use dir(math)
 math.sqrt(9)
@@ -145,20 +152,20 @@ math.sqrt(9)
 
 # ### `import` example: random module
 
-# In[ ]:
+# In[8]:
 
 
 import random
 
 
-# In[ ]:
+# In[9]:
 
 
 # Random is also a module
 type(random)
 
 
-# In[ ]:
+# In[10]:
 
 
 # Explore what is available in random
@@ -172,14 +179,14 @@ dir(random)
 random.
 
 
-# In[ ]:
+# In[11]:
 
 
 ## access documentation
 get_ipython().run_line_magic('pinfo', 'random.choice')
 
 
-# In[ ]:
+# In[12]:
 
 
 ## access underlying code
@@ -188,14 +195,14 @@ get_ipython().run_line_magic('pinfo2', 'random.choice')
 
 # ### `random` Example
 
-# In[ ]:
+# In[16]:
 
 
 # random.sample() documentation
 get_ipython().run_line_magic('pinfo', 'random.sample')
 
 
-# In[ ]:
+# In[15]:
 
 
 # Random example
@@ -213,14 +220,14 @@ print(chosen)
 # <code>from</code> and <code>as</code> allows us to decide exactly what objects to import into our namespace, and what we call them (in our namespace).
 # </div>
 
-# In[ ]:
+# In[17]:
 
 
 # Import a specific object from a module
 from random import choice
 
 
-# In[ ]:
+# In[18]:
 
 
 ## do NOT have to type module name 
@@ -229,7 +236,7 @@ from random import choice
 choice(to_choose_from)
 
 
-# In[ ]:
+# In[19]:
 
 
 # Import a module with a specific name in our namespace
@@ -252,7 +259,7 @@ collections.
 cols.
 
 
-# In[ ]:
+# In[20]:
 
 
 # putting it all together
@@ -272,7 +279,7 @@ from string import punctuation as punc
 
 # #### Clicker Question Answer
 
-# In[ ]:
+# In[22]:
 
 
 # Check our imports
@@ -280,7 +287,7 @@ from string import punctuation as punc
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
 
 
 # ## Importing Custom Code I
@@ -441,12 +448,19 @@ choice([1, 2, 3, 4, 5])
 # In[ ]:
 
 
+# avoid this
+from random import *
+
+
+# In[23]:
+
+
 # a valid way to import
 from random import choice
 choice([2,3,4])
 
 
-# In[ ]:
+# In[24]:
 
 
 # a valid way to import
