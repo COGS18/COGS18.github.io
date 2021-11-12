@@ -211,6 +211,11 @@
    CL6-Classes
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL7-CommandLine.html">
+   CL7-CommandLine
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -261,6 +266,33 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E2_Fa21_Practice-Answers.html">
    E2_Fa21_Practice-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Projects/PythonParty.html">
+   PythonParty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Projects/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Projects/faq.html">
+   FAQ
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Projects/ProjectIdeas.html">
+   ProjectIdeas
   </a>
  </li>
 </ul>
@@ -514,8 +546,9 @@
 <li><p>CL7 due tonight (11:59 PM)</p></li>
 <li><p>A4 due Friday (11:59 PM)</p></li>
 </ul>
-<p><strong>Note</strong>:</p>
+<p><strong>Notes</strong>:</p>
 <ul class="simple">
+<li><p>A3 and CL6 scores have been posted</p></li>
 <li><p>No class Wed before Thanksgiving (11/24)</p></li>
 </ul>
 <p><strong>Q&amp;A</strong></p>
@@ -572,6 +605,14 @@ A <b>namespace</b> is a 'place' with a set of names and their corresponding obje
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable   Type    Data/Info
+----------------------------
+a          int     3
+b          int     15
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="modules-packages">
@@ -606,6 +647,18 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">0</span><span class="n">a474bb83797</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># we haven&#39;t imported the module yet</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code fails if you haven&#39;t yet imported math</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;math&#39; is not defined
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -622,11 +675,28 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>module
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># By the way - modules are objects</span>
 <span class="nb">isinstance</span><span class="p">(</span><span class="n">math</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
@@ -636,6 +706,11 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using code from our math module</span>
 <span class="c1"># remember to tab complete or use dir(math)</span>
 <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0
 </pre></div>
 </div>
 </div>
@@ -657,11 +732,83 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>module
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Explore what is available in random</span>
 <span class="nb">dir</span><span class="p">(</span><span class="n">random</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BPF&#39;,
+ &#39;LOG4&#39;,
+ &#39;NV_MAGICCONST&#39;,
+ &#39;RECIP_BPF&#39;,
+ &#39;Random&#39;,
+ &#39;SG_MAGICCONST&#39;,
+ &#39;SystemRandom&#39;,
+ &#39;TWOPI&#39;,
+ &#39;_Sequence&#39;,
+ &#39;_Set&#39;,
+ &#39;__all__&#39;,
+ &#39;__builtins__&#39;,
+ &#39;__cached__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__file__&#39;,
+ &#39;__loader__&#39;,
+ &#39;__name__&#39;,
+ &#39;__package__&#39;,
+ &#39;__spec__&#39;,
+ &#39;_accumulate&#39;,
+ &#39;_acos&#39;,
+ &#39;_bisect&#39;,
+ &#39;_ceil&#39;,
+ &#39;_cos&#39;,
+ &#39;_e&#39;,
+ &#39;_exp&#39;,
+ &#39;_floor&#39;,
+ &#39;_inst&#39;,
+ &#39;_log&#39;,
+ &#39;_os&#39;,
+ &#39;_pi&#39;,
+ &#39;_random&#39;,
+ &#39;_repeat&#39;,
+ &#39;_sha512&#39;,
+ &#39;_sin&#39;,
+ &#39;_sqrt&#39;,
+ &#39;_test&#39;,
+ &#39;_test_generator&#39;,
+ &#39;_urandom&#39;,
+ &#39;_warn&#39;,
+ &#39;betavariate&#39;,
+ &#39;choice&#39;,
+ &#39;choices&#39;,
+ &#39;expovariate&#39;,
+ &#39;gammavariate&#39;,
+ &#39;gauss&#39;,
+ &#39;getrandbits&#39;,
+ &#39;getstate&#39;,
+ &#39;lognormvariate&#39;,
+ &#39;normalvariate&#39;,
+ &#39;paretovariate&#39;,
+ &#39;randbytes&#39;,
+ &#39;randint&#39;,
+ &#39;random&#39;,
+ &#39;randrange&#39;,
+ &#39;sample&#39;,
+ &#39;seed&#39;,
+ &#39;setstate&#39;,
+ &#39;shuffle&#39;,
+ &#39;triangular&#39;,
+ &#39;uniform&#39;,
+ &#39;vonmisesvariate&#39;,
+ &#39;weibullvariate&#39;]
 </pre></div>
 </div>
 </div>
@@ -713,6 +860,11 @@ random.sample<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;2&#39;, &#39;3&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -734,6 +886,11 @@ random.sample<span class="o">?</span>
 <span class="c1">## using this approach</span>
 <span class="c1">## to call this</span>
 <span class="n">choice</span><span class="p">(</span><span class="n">to_choose_from</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;2&#39;
 </pre></div>
 </div>
 </div>
@@ -793,7 +950,15 @@ random.sample<span class="o">?</span>
 <span class="c1"># from statistics import mean as average</span>
 <span class="c1"># from os import path</span>
 <span class="c1"># from random import choice, choices</span>
-<span class="c1"># import ascii_letters from string</span>
+<span class="kn">import</span> <span class="nn">ascii_letters</span> <span class="kn">from</span> <span class="nn">string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-22-037fa158f972&gt;&quot;</span><span class="gt">, line </span><span class="mi">6</span>
+    <span class="kn">import</span> <span class="nn">ascii_letters</span> <span class="kn">from</span> <span class="nn">string</span>
+                         <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
@@ -966,9 +1131,22 @@ choice<span class="o">?</span>
 <p>This is generally considered not to be the best, as it is then unclear in your code exactly where the functionality came from.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># avoid this</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a valid way to import</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
 <span class="n">choice</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -978,6 +1156,11 @@ choice<span class="o">?</span>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a valid way to import</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
 </pre></div>
 </div>
 </div>

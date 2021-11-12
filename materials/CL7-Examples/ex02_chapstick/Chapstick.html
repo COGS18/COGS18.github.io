@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Ideas &#8212; COGS 18 - Introduction To Python</title>
+    <title>Module Import &#8212; COGS 18 - Introduction To Python</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,8 +49,6 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="shortcut icon" href="../../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -90,87 +88,87 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/01-Introduction.html">
+  <a class="reference internal" href="../../01-Introduction.html">
    01-Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/02-Tooling.html">
+  <a class="reference internal" href="../../02-Tooling.html">
    02-Tooling
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/03-Variables.html">
+  <a class="reference internal" href="../../03-Variables.html">
    03-Variables
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/04-Operators.html">
+  <a class="reference internal" href="../../04-Operators.html">
    04-Operators
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/05-Conditionals.html">
+  <a class="reference internal" href="../../05-Conditionals.html">
    05-Conditionals
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/06-Debugging.html">
+  <a class="reference internal" href="../../06-Debugging.html">
    06-Debugging
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/07-Collections.html">
+  <a class="reference internal" href="../../07-Collections.html">
    07-Collections
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/08-Loops.html">
+  <a class="reference internal" href="../../08-Loops.html">
    08-Loops
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/09-Dictionaries.html">
+  <a class="reference internal" href="../../09-Dictionaries.html">
    09-Dictionaries
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/10-FunctionsI.html">
+  <a class="reference internal" href="../../10-FunctionsI.html">
    Functions I
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/11-Algorithms.html">
+  <a class="reference internal" href="../../11-Algorithms.html">
    11-Algorithms
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/12-FunctionsII.html">
+  <a class="reference internal" href="../../12-FunctionsII.html">
    12-FunctionsII
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/13-Classes.html">
+  <a class="reference internal" href="../../13-Classes.html">
    13-Classes
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/14-CommandLine.html">
+  <a class="reference internal" href="../../14-CommandLine.html">
    14-CommandLine
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/15-Modules.html">
+  <a class="reference internal" href="../../15-Modules.html">
    15-Modules
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/A1-Syntax.html">
+  <a class="reference internal" href="../../A1-Syntax.html">
    A1-Syntax
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/A2-Examples.html">
+  <a class="reference internal" href="../../A2-Examples.html">
    A2-Examples
   </a>
  </li>
@@ -211,6 +209,11 @@
    CL6-Classes
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../labs/CL7-CommandLine.html">
+   CL7-CommandLine
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -219,48 +222,75 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E1-Review.html">
+  <a class="reference internal" href="../../Exam-Prep/E1-Review.html">
    E1-Review
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E1-Review-Answers.html">
+  <a class="reference internal" href="../../Exam-Prep/E1-Review-Answers.html">
    E1-Review-Answers
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E1-Practice.html">
+  <a class="reference internal" href="../../Exam-Prep/E1-Practice.html">
    E1-Practice
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E1_Fa21_Practice.html">
+  <a class="reference internal" href="../../Exam-Prep/E1_Fa21_Practice.html">
    E1_Fa21_Practice-Answers
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E1_Fa21-Answers.html">
+  <a class="reference internal" href="../../Exam-Prep/E1_Fa21-Answers.html">
    E1_Fa21-Answers
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E2-Review.html">
+  <a class="reference internal" href="../../Exam-Prep/E2-Review.html">
    E2-Review
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E2-Review-Answers.html">
+  <a class="reference internal" href="../../Exam-Prep/E2-Review-Answers.html">
    E2-Review-Answers
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E2-Practice.html">
+  <a class="reference internal" href="../../Exam-Prep/E2-Practice.html">
    E2-Practice
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../../materials/Exam-Prep/E2_Fa21_Practice-Answers.html">
+  <a class="reference internal" href="../../Exam-Prep/E2_Fa21_Practice-Answers.html">
    E2_Fa21_Practice-Answers
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Projects/PythonParty.html">
+   PythonParty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Projects/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Projects/faq.html">
+   FAQ
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Projects/ProjectIdeas.html">
+   ProjectIdeas
   </a>
  </li>
 </ul>
@@ -304,7 +334,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/assets/intro/projects/ProjectIdeas.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../../_sources/materials/CL7-Examples/ex02_chapstick/Chapstick.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -324,10 +354,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fassets/intro/projects/ProjectIdeas.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/CL7-Examples/ex02_chapstick/Chapstick.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/assets/intro/projects/ProjectIdeas.ipynb"><button
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/CL7-Examples/ex02_chapstick/Chapstick.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -348,14 +378,14 @@
     <div class="dropdown-buttons">
         
         
-        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/assets/intro/projects/ProjectIdeas.ipynb&branch=master"><button type="button"
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/CL7-Examples/ex02_chapstick/Chapstick.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/assets/intro/projects/ProjectIdeas.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/CL7-Examples/ex02_chapstick/Chapstick.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="../../../_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
@@ -369,52 +399,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#encryption">
-   Encryption
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#chatbots">
-   Chatbots
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#artificial-agents">
-   Artificial Agents
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#research">
-   Research
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#choose-your-own-adventure">
-   Choose your own adventure
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#taboo-topics">
-   Taboo Topics
-   <span class="math notranslate nohighlight">
-    \(^*\)
-   </span>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to-get-started">
-   How to get started
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -423,101 +407,67 @@
         
               <div>
                 
-  <div class="section" id="project-ideas">
-<h1>Project Ideas<a class="headerlink" href="#project-ideas" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="encryption">
-<h2>Encryption<a class="headerlink" href="#encryption" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Integrate email into the encryption code, so you can send and receive encrypted messages</p></li>
-<li><p>Explore ‘code breaking’, writing code that code break the encryption of some of the encryption schemes</p></li>
-</ul>
+  <div class="section" id="module-import">
+<h1>Module Import<a class="headerlink" href="#module-import" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">YOLO</span> <span class="k">as</span> <span class="nn">chap</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">chap</span><span class="o">.</span><span class="n">Chapstick</span><span class="p">(</span><span class="s1">&#39;a brand&#39;</span><span class="p">),</span> <span class="n">chap</span><span class="o">.</span><span class="n">Chapstick</span><span class="p">(</span><span class="s1">&#39;b brand&#39;</span><span class="p">),</span> 
+     <span class="n">chap</span><span class="o">.</span><span class="n">Chapstick</span><span class="p">(</span><span class="s1">&#39;c brand&#39;</span><span class="p">),</span> <span class="n">chap</span><span class="o">.</span><span class="n">Chapstick</span><span class="p">(</span><span class="s1">&#39;d brand&#39;</span><span class="p">)]</span>
+
+<span class="n">chap</span><span class="o">.</span><span class="n">rate_chapsticks</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">chap</span><span class="o">.</span><span class="n">Chapstick</span><span class="p">(</span><span class="s1">&#39;good brand&#39;</span><span class="p">)</span>
+<span class="n">chap</span><span class="o">.</span><span class="n">use_alot_of_chapstick</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="chatbots">
-<h2>Chatbots<a class="headerlink" href="#chatbots" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Extend the chatbot to talk about some new topics, or a new kind of interaction</p>
-<ul>
-<li><p>For example, update the chatbot to more systematically answer questions</p></li>
-<li><p>Or focus on a particular topic, like answering questions about Python</p></li>
-</ul>
-</li>
-<li><p>Set up Chatbots that can talk to each other</p></li>
-</ul>
 </div>
-<div class="section" id="artificial-agents">
-<h2>Artificial Agents<a class="headerlink" href="#artificial-agents" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Make the agents interact with each other</p>
-<ul>
-<li><p>What happens when they are in the same place? Can they ‘eat’ each other?</p></li>
-</ul>
-</li>
-<li><p>Add something new to the world: obstacles (walls?), or targers (food?)</p></li>
-<li><p>Add a new exploration scheme for the bots to perform</p></li>
-<li><p>Note: if you are want to scale up this idea, you can look into the ‘pelita’ application (from the demo)</p></li>
-</ul>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The best chapstick is c brand with 97 total uses
+good brand chapstick has been used 1 times.
+You have 80 uses left
+good brand chapstick has been used 2 times.
+You have 79 uses left
+good brand chapstick has been used 3 times.
+You have 78 uses left
+good brand chapstick has been used 4 times.
+You have 77 uses left
+good brand chapstick has been used 5 times.
+You have 76 uses left
+good brand chapstick has been used 6 times.
+You have 75 uses left
+good brand chapstick has been used 7 times.
+You have 74 uses left
+good brand chapstick has been used 8 times.
+You have 73 uses left
+good brand chapstick has been used 9 times.
+You have 72 uses left
+good brand chapstick has been used 10 times.
+You have 71 uses left
+good brand chapstick has been used 11 times.
+You have 70 uses left
+good brand chapstick has been used 12 times.
+You have 69 uses left
+good brand chapstick has been used 13 times.
+You have 68 uses left
+good brand chapstick has been used 14 times.
+You have 67 uses left
+good brand chapstick has been used 15 times.
+You have 66 uses left
+good brand chapstick has been used 16 times.
+You have 65 uses left
+good brand chapstick has been used 17 times.
+You have 64 uses left
+good brand chapstick has been used 18 times.
+You have 63 uses left
+good brand chapstick has been used 19 times.
+You have 62 uses left
+good brand chapstick has been used 20 times.
+You have 61 uses left
+</pre></div>
 </div>
-<div class="section" id="research">
-<h2>Research<a class="headerlink" href="#research" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Use LiteratureScanner to investigate an area of research in the literature</p></li>
-<li><p>Explore scientific python to analyze a small dataset</p></li>
-</ul>
 </div>
-<div class="section" id="choose-your-own-adventure">
-<h2>Choose your own adventure<a class="headerlink" href="#choose-your-own-adventure" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Choose an area you are interested in, and explore what people do in it (read code!)</p>
-<ul>
-<li><p>If you want to try and use an external tool / codebase, consider writing a demo / tutorial for it</p></li>
-</ul>
-</li>
-<li><p>Find an API, and write some code to get some data / do some procedures with it</p></li>
-<li><p>You can also check out and build of one of the demos from the 0th class</p></li>
-<li><p>One option: create text based programs, that mimic some programs you would like</p></li>
-<li><p>Build some sort of utility that you would find useful</p>
-<ul>
-<li><p>File management, organizing pictures, indexing files,</p></li>
-</ul>
-</li>
-<li><p>If you are interested in an area of research, start a project related to that</p>
-<ul>
-<li><p>This can be a way to learn those specific tools</p>
-<ul>
-<li><p>For example: get a working demo, and sketch out a tutorial</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="taboo-topics">
-<h2>Taboo Topics <span class="math notranslate nohighlight">\(^*\)</span><a class="headerlink" href="#taboo-topics" title="Permalink to this headline">¶</a></h2>
-<p>There are lots of helpful tutorials online; however, often it’s difficult to figure out how to make <em>your</em> implementation different than these online tutorials. It’s also boring and a pain to grade. So, to avoid any issues, there are two taboo topics this quarter:</p>
-<ol class="simple">
-<li><p>Hangman</p></li>
-<li><p>Drawings from <code class="docutils literal notranslate"><span class="pre">turtle</span></code></p></li>
-<li><p>tic-tac-toe</p></li>
-<li><p>blackjack</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(^*\)</span>If you have a really new hangman implementation/idea or are super stoked about your great <code class="docutils literal notranslate"><span class="pre">turtle</span></code> idea or have invented a spin on traditional tic-tac-toe, you’ll need to pitch your idea to (via email or in office hours) and get approval from Professor Ellis</p>
-</div>
-<div class="section" id="how-to-get-started">
-<h2>How to get started<a class="headerlink" href="#how-to-get-started" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Pseudocode out the ideas you would like to explore / work on</p></li>
-<li><p>Open a notebook, and get some code into it</p>
-<ul>
-<li><p>If you are doing an assignment related project, see which code you need, and isolate it</p></li>
-</ul>
-</li>
-<li><p>Start exploring! Write some extra code that starts</p>
-<ul>
-<li><p>Figure out what you will need to do your idea</p></li>
-</ul>
-</li>
-<li><p>When you start having ‘mature’ functions / classes, try moving them into a script</p></li>
-</ul>
 </div>
 </div>
 
@@ -534,7 +484,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./assets/intro/projects"
+            path: "./materials/CL7-Examples/ex02_chapstick"
         },
         predefinedOutput: true
     }

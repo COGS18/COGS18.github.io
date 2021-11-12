@@ -1,6 +1,6 @@
 # Final Project
 
-As part of completing COGS 18, you must complete an independent project (or complete the final exam).
+As part of completing COGS 18, you must complete an independent project (or take the final exam).
 
 ### Objectives
 
@@ -16,12 +16,11 @@ The broad objectives of this project are for you to:
 - W7: Project Description released
 - W8: By the end of this week, you should have a project topic / outline
 - W9-10: Work on the project
-  - Coding Lab during Weeks 9-10 will provide you with time to work on and get help with your Final Project.
 - **Finals Week: projects due**
 
 ### Getting Started
 
-We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Campuswire. This will give us a chance to give you feedback and help guide your project plans.
+We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Campuswire). This will give us a chance to give you feedback and help guide your project plans.
 
 Suggestions for working on projects:
 
@@ -60,8 +59,11 @@ This quarter, the Taboo Topics for the COGS18 final project are:
 - Tic-tac-toe
 - Blackjack
 - Magic 8 Ball
+- Rock, Paper, Scissors
+- Snake Game
+- Connect4 Game 
 
-Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to Professor Ellis/Professor Bardolph and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
+Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to your Professor and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
 
 ### Project Scope
 
@@ -77,7 +79,7 @@ As you work through your project, we recommend taking an approach in which you u
 
 ### Project Requirements
 
-To complete the project you must submit a zip file containing your project, which will include Python code (>=3.6) that implements your project. Your project must include (at least) one Jupyter notebook and one python file (a module file and/or a python script). The Jupyter notebook file will minimally include a description of the project and code that demonstrates your project, organized in cells.
+To complete the project you must submit your project, which will include Python code (>=3.6) that implements your project. Your project must include (at least) one Jupyter notebook, one python file (a module file and/or a python script), and one test file. The Jupyter notebook file will minimally include a description of the project and code that demonstrates your project, organized in cells.
 
 The actual code for the project can be organized into either the notebook, and/or into python files, as either module files and/or scripts. Exactly where and how you organize the code can and should be decided by the project topic itself. For example, projects that are more focused on functions and classes may be more organized into a module organization. For some projects, the code may be well organized into a script that executes your project. For other projects, with more interactive components, much of the code may be presented within the Jupyter notebook. Regardless of the project, the design should be modular and include original code.
 
@@ -85,18 +87,13 @@ Projects are individual, and each person needs to submit a project including (at
 
 ### Submitting Your Project
 
-#### Option 1: Complete and submit on datahub
-
-This will be the same process as used throughout the quarter. Fetch, complete, and submit on datahub. Note that any files in the final project folder will be viewable by us.
-
-#### Option 2: Submit on Canvas
-
-Some things (i.e. tkinter or other GUI interfaces) don't work on datahub. Other times, you just want to work on your computer. In this case, you can submit a zip file containing your project to Canvas. This zip file must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
+You will be submitting either 1) the project folder on datahub (note all contents of the folder will be submitted when you click submit on datahub) or 2) a zip file containing your project to Canvas. This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
 
 MyProjectFolder/  
 
   - ProjectNotebook.ipynb
   - my_module/
+    - classes.py
     - functions.py
     - test_functions.py
   - scripts/
@@ -109,8 +106,8 @@ Note that not all of these files / sections are mandatory, and they do not have 
 
 First, make sure everything is organized into a folder, as you want it. Then: 
 
-- On Mac: right click on the folder, and click 'Compress'.
-- On Windows: right click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
+- On Mac: right-click on the folder, and click 'Compress'.
+- On Windows: right-click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
 
 In both cases, this will create a zip file, with the name 'FolderName.zip'. 
 
@@ -167,7 +164,7 @@ Structurally, we will be evaluating the following criteria:
 
 - Uses blank lines to separate code elements and logical structure 
 - Uses good indentation & spacing
-- Has 1 statement per line, and max line length of 79 characters
+- Has 1 statement per line, and line length is not too long (~<80 characters)
 
 In terms of naming, we will be evaluating the following criteria: 
 
@@ -192,7 +189,7 @@ For extra credit, if you go above and beyond on the minimal project requirements
 
 *GitHub Extra Credit (1%)*
 
-For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project.
+For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project. (Note: This should be the *unzipped* version of your project, so that others on GitHub can see your code.)
 
 ### External Code
 
@@ -200,7 +197,7 @@ Your project may include external code - that can be code from the course (assig
 
 ##### Course Code
 
-You are welcome and even expected to take code from the course, in particular code from the assignments.
+You are welcome and even expected to take code from the course, in particular code from the assignments. This does not need to be cited, but it also will not count as original/unique code you've written. Note that superficial code changes (i.e. simply changing variable/function names) doe NOT count as making code unique/original.
 
 ##### Code co-developed with other student(s)
 
