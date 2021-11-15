@@ -13,10 +13,20 @@
 
 # **Course Announcements**
 # 
-# - A4 due Friday (11:59 PM)
+# - A4 due today (11:59 PM)
 # - No class Wed before Thanksgiving (11/24)
 # - CL7 Answer Key posted & Examples now available on datahub (CL7-Examples folder)
 # - Final Project Template now available on datahub *and* website
+
+# **Q&A**
+# 
+# Q: What is the difference between modules and scripts?  A: See notes/Wednesday's leture. Modules store functions/classes you want to use/import elsewhere. Scripts store code you want to run from top to bottom.
+# 
+# Q: What is the difference between opening a text file or a terminal?  
+# A: The terminal allows you to interact with your computer's file system. Opening a file allows you to interact with that file.
+# 
+# Q: What would happen if a run a cell with code before copying and pasting it to a new .py file? Would I still be able to import a function from that code?  
+# A: That code would then exist in your current namespace. You definitely coudl still import the function...but you wouldn't easily be able to tell if the code was from your notebook's global namespace (the cell you ran) or the module.
 
 # ## Project-based Course
 # 

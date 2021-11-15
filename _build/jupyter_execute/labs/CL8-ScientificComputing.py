@@ -7,6 +7,10 @@
 # 
 # This coding lab focuses on getting comfortable working with data using `pandas`, writing code that adheres to good code style principles, and code testing.
 
+# <font color='red'>**Note!**</font> We have only covered Parts 0-II prior to this week's coding lab. We will only be grading to see concerted effort on those parts. 
+# 
+# However, we encourage you to revisit this coding lab after testing is discussed in class and give those parts a try.
+
 # ## Part 0: Setup
 # 
 # Data wrangling often requires additional functionality outside what's included in Python by default. For this, we'll import other functionality from helpful packages.
@@ -179,6 +183,48 @@ get_most_common(df, 'Jurisdiction')
 # store output in two separate variables
 month_common, month_val = get_most_common(df, 'Month')
 print(month_common, month_val)
+
+
+# Provided is a function you've seen before in A3...but here with particularly terrible code style. As above, edit the function for code style. Its functionality will not change, but its readability will.
+
+# In[1]:
+
+
+# edit code style for this function
+def end_chat(i):
+    if 'quit' in i:o='Bye';c=False
+    else:o=None;c=True      
+    return o, c
+
+### BEGIN SOLUTION
+def end_chat(input_string):  # better parameter name
+    
+    # fix indentation; better spacing around operators; improve variable names
+    if 'quit' in input_string:
+        output = 'Bye'
+        chat = False # separate out onto two lines
+    else:
+        output = None
+        chat = True
+    
+    return output, chat 
+### END SOLUTION
+
+
+# In[2]:
+
+
+# execute function
+end_chat('I want to quit')
+
+
+# In[3]:
+
+
+# execute function
+# store output in two separate variables
+output, chat = end_chat('I want to quit')
+print(output, chat)
 
 
 # ## Part III: Code Testing
