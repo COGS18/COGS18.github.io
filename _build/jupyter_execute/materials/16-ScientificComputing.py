@@ -116,13 +116,13 @@
 # 
 # Allow you to efficiently operate on arrays (linear algebra, matrix operations, etc.)
 
-# In[ ]:
+# In[5]:
 
 
 import numpy as np
 
 
-# In[ ]:
+# In[2]:
 
 
 # Create some arrays of data
@@ -131,13 +131,13 @@ arr1 = np.array([[1, 2], [3, 4]])
 arr2 = np.array([[5, 6], [7, 8]])
 
 
-# In[ ]:
+# In[5]:
 
 
-arr1
+arr2
 
 
-# In[ ]:
+# In[6]:
 
 
 # lists of lists don't store dimensionality well
@@ -146,7 +146,7 @@ arr1
 
 # #### Arrays: attributes, methods, & indexing
 
-# In[ ]:
+# In[7]:
 
 
 # Check out an array of data
@@ -155,14 +155,14 @@ arr1
 
 # `numpy` arrays are an object type...so they have associated attributes (below) and methods (we'll get to these in a second)!
 
-# In[ ]:
+# In[8]:
 
 
 # Check the shape of the array
 arr1.shape
 
 
-# In[ ]:
+# In[9]:
 
 
 # Index into a numpy array
@@ -173,7 +173,7 @@ arr1[0, 0]
 
 # #### Notes on Arrays
 
-# In[ ]:
+# In[10]:
 
 
 # arrays are most helpful when they
@@ -181,7 +181,7 @@ arr1[0, 0]
 np.array([[1, 2, 3, 4], [2, 3, 4]])
 
 
-# In[ ]:
+# In[11]:
 
 
 # arrays are meant to store homogeneous data
@@ -192,14 +192,14 @@ np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 # 
 # (Things you can't do with lists)
 
-# In[ ]:
+# In[12]:
 
 
 # Add arrays together
 arr1 + arr2
 
 
-# In[ ]:
+# In[13]:
 
 
 # Matrix mutliplication
@@ -210,7 +210,7 @@ arr1 * arr2
 
 # `zip()` takes two iterables (things you can loop over) and loop over them together.
 
-# In[ ]:
+# In[14]:
 
 
 for a, b in zip([1,2], ['a','b']):
@@ -221,10 +221,10 @@ for a, b in zip([1,2], ['a','b']):
 # 
 # Given the following code, what will it print out?
 
-# In[ ]:
+# In[15]:
 
 
-data = np.array([[1, 2, 3, 4],
+data = np.array([[1, 2, 3, 4], 
                  [5, 6, 7, 8]])
  
 output = []
@@ -242,7 +242,7 @@ print(output)
 
 # Note that if you find yourself looping over arrays...there is probably a better way.
 
-# In[ ]:
+# In[16]:
 
 
 # sum method
@@ -250,7 +250,7 @@ print(output)
 data.sum()
 
 
-# In[ ]:
+# In[17]:
 
 
 # sum method
@@ -259,7 +259,7 @@ data.sum()
 data.sum(axis=0)
 
 
-# In[ ]:
+# In[18]:
 
 
 # typecasting to a different variable type
@@ -270,7 +270,7 @@ type(out_list)
 
 # What if you wanted to find the max value in an array...there's a method for that!
 
-# In[ ]:
+# In[19]:
 
 
 # find max value in array
@@ -282,14 +282,14 @@ max_val
 # 
 # There are also *functions* in `numpy` that operate on arrays. 
 
-# In[ ]:
+# In[20]:
 
 
 # see documentation for np.where()
 get_ipython().run_line_magic('pinfo', 'np.where')
 
 
-# In[ ]:
+# In[21]:
 
 
 # find position in array with max value
@@ -297,7 +297,13 @@ out = np.where(data == max_val)
 out
 
 
-# In[ ]:
+# In[23]:
+
+
+data
+
+
+# In[22]:
 
 
 # check to be sure
@@ -320,13 +326,13 @@ data[1,3]
 # - associated methods and utilities for working with data.
 # - each column contains a `pandas` **Series**
 
-# In[ ]:
+# In[6]:
 
 
 import pandas as pd
 
 
-# In[ ]:
+# In[25]:
 
 
 # Create some example heterogenous data
@@ -335,21 +341,21 @@ d2 = {'Subj_ID': '002', 'score': 22, 'group' : 1, 'condition': 'perception'}
 d3 = {'Subj_ID': '003', 'score': 18, 'group' : 1, 'condition': 'perception'}
 
 
-# In[ ]:
+# In[26]:
 
 
 # Create a dataframe 
 df = pd.DataFrame([d1, d2, d3], [0, 1, 2])
 
 
-# In[ ]:
+# In[27]:
 
 
 # Check out the dataframe
 df
 
 
-# In[ ]:
+# In[28]:
 
 
 # You can index in pandas
@@ -357,7 +363,7 @@ df
 df['condition']
 
 
-# In[ ]:
+# In[29]:
 
 
 # You can index in pandas
@@ -365,7 +371,7 @@ df['condition']
 df.loc[0,:]
 
 
-# In[ ]:
+# In[30]:
 
 
 # attribute of df object
@@ -377,21 +383,21 @@ df.shape
 # 
 # There are *a lot* of functions and methods within `pandas`. The general syntax is `df.method()` where the `method()` operates directly on the dataframe `df`.
 
-# In[ ]:
+# In[31]:
 
 
 # calculate summary statistics
 df.describe()
 
 
-# In[ ]:
+# In[34]:
 
 
 # Take the average of all numeric columns
 df.mean()
 
 
-# In[ ]:
+# In[35]:
 
 
 # breakdown of how many of each category there are
@@ -399,14 +405,14 @@ val_counts = df['condition'].value_counts()
 val_counts
 
 
-# In[ ]:
+# In[36]:
 
 
 # which unique values are there in condition? 
 df['condition'].unique()
 
 
-# In[ ]:
+# In[37]:
 
 
 # how many unique values are there
@@ -415,21 +421,21 @@ len(df['condition'].unique())
 df['condition'].nunique()
 
 
-# In[ ]:
+# In[38]:
 
 
 # how many rows there are in a series/df
 len(df)
 
 
-# In[ ]:
+# In[39]:
 
 
 # what's the category that shows up the most 
 val_counts.idxmax()
 
 
-# In[ ]:
+# In[40]:
 
 
 # what's the count of the value that shows up the most
@@ -448,7 +454,7 @@ val_counts.max()
 
 # ## Plotting
 
-# In[ ]:
+# In[4]:
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -456,14 +462,14 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 
 
-# In[ ]:
+# In[42]:
 
 
 # Create some data
 dat = np.array([1, 2, 4, 8, 16, 32])
 
 
-# In[ ]:
+# In[45]:
 
 
 # Plot the data
@@ -478,14 +484,20 @@ plt.plot(dat);
 # - `scipy` - statistical analysis
 # - `sklearn` - machine learning
 
-# In[ ]:
+# In[47]:
+
+
+get_ipython().system('pip install --user scipy')
+
+
+# In[1]:
 
 
 import scipy as sp
 from scipy import stats
 
 
-# In[ ]:
+# In[2]:
 
 
 # Simulate some data
@@ -495,7 +507,7 @@ d2 = stats.norm.rvs(loc=0.5, size=1000)
 
 # ### Analysis - Plotting the Data
 
-# In[ ]:
+# In[7]:
 
 
 # Plot the data
@@ -505,7 +517,7 @@ plt.hist(d2, 25, alpha=0.6);
 
 # ### Analysis - Statistical Comparisons
 
-# In[ ]:
+# In[8]:
 
 
 # Statistically compare the two distributions

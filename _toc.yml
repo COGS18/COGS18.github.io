@@ -77,6 +77,9 @@ parts:
       title: E2-Practice
     - file: materials/Exam-Prep/E2_Fa21_Practice-Answers
       title: E2_Fa21_Practice-Answers
+    - file: materials/Exam-Prep/E2_Fa21-Answers
+      title: E2_Fa21-Answers
+
   - caption: Projects
     chapters:
     - file: materials/Projects/PythonParty
