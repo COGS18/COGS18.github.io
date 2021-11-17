@@ -43,6 +43,7 @@ textbook:
 
 	jupyter-book build ./
 	# get project template 
+	mkdir -p _build/html/assets/intro/projects/
 	cp assets/intro/projects/ProjectTemplate.zip _build/html/assets/intro/projects/
 	
 	# copy first day of slides to _build

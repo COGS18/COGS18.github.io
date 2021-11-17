@@ -1,6 +1,115 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **Course Announcements**
+# 
+# **Due Dates**
+# - **CL8** due tonight
+# - **A5** due Friday of week 10 (12/3)
+# - **Final exam/project** due Mon of Finals week (12/6; 11:59 PM)
+#     - Final Exam will be released Friday afternoon of week 10
+
+# **Q&A**
+# 
+# Q: I'm curious to see what other packages can be imported and used in order to create a cool project.   
+# A: There are SO many. If there's a topic/thing you care about, there's likely a package for it. Search packages [here](https://pypi.org/)
+# 
+# Q: What is an example of when I would use the summing of integers in an array `(data.sum(axis=0))` ?  
+# A: See coding lab and A5! But, imagine you have data stored in a dataframe where `1` indicated yes and `0` indicated no. If you wanted to know how many respondents in your dataset said yes, it would be helpful!
+# 
+# Q: For the where method of array, why we use np.where( ) while other methods we just use our variable names like arriving.sum( )  
+# A: Great question! `where()` is a *function* while `sum()` is a method that operates on (meaning is defined within) the `numpy.array` object.
+# 
+# Q: One clarification question I had was for finding positions in arrays or dataframes, do we count from 0 as we would for collections?  
+# A: Yup!
+# 
+# Q: What is the difference between zip and using index to loop through integers?  
+# A: While these topics can be used together, they are distinct. Indexing allows you to specify a position in a collection. `zip` allows you to iterate through two collections at the same time.
+# 
+# Q: On average, about how long does it take to complete the final exam?  
+# A: ~3 hours (but of course there is a range)
+# 
+# Q: Do we need to incorporate this into our final project/exam?  
+# A: If you do the final exam, we will use `pandas`. If you're doing hte final project, you don't *have* to...unless it would be helpful to what you're trying to accomplish (so it could be helpful). It will be required for A5 and CL8.
+# 
+# Q: What are some careers that use either pandas or numpy?  
+# A: Data Scientist, Data analyst, Machine learning engineer, Neuroscientist, Psychology/Psychiatry, Biology research in general, etc.
+# 
+# Q: Is there a way to display the array as "empty seats" like [   ]  and then put an x in it when someone does choose that seat?  
+# A: Yup! There is an np.nan, where nan stands "for not a number" that you could use as a placeholder until you "fill" the seat.
+# 
+# Q: When will we learn more about the formatting for the project? (i.e. documentation)  
+# A: Testing this Friday. Documentation on Monday. (Course schedule [here](https://cogs18.github.io/assets/intro/syllabus.html#course-schedule)).
+# 
+# Q: It seems part 0 in CL8 has some problem: after I type "import np" and "import pd" there is an error saying there are no such modules?  
+# A: Refer back to the notes on how to import these packages properly
+# 
+# Q: What is the grade breakdown for this class?  
+# A: https://cogs18.github.io/assets/intro/syllabus.html#grading-attendance
+# 
+# Q: Why aren't you teaching COGS 108 next quarter? :(  
+# A: Teaching a new course is *a lot* of work. So, Jason Fleischer (students love him!) taught COGS 108 for the first time this Fa21 quarter. To allow him to utilize all that work again, he'll teach it this winter as well. I'll be back to teaching it next academic year...but I know that may not be what you want to hear.
+# 
+# Q: What's the difference between 'replace = True' and 'replace = False' in parenthesis for the sample method?  
+# A: This has to do with sampling with and without replacement (a statistics concept). Explanation [here](https://www.statisticshowto.com/sampling-with-replacement-without/).
+# 
+# Q: If we flat out did not understand today's topic, and we are not taking the final exam but doing the project instead, should we make sure we understand it or will we technically not be needing it?  
+# A: You'll need it for CL8 and A5. 
+# 
+# Q: An we sit in the coding lab during week 10 and work on our projects even if we don't necessarily have a question before coming in?  
+# A: Absolutely! Sometimes during week 10 students come in and stay for a handful of hours just to have a dedicated space/time to focus on the project. That's more than welcome!
+# 
+# Q: I also signed up for cogs 108 too (but waitlisted, would you know how many people get off the waitlist for this class?)  
+# A: I can't say for sure. Typically it's ~3-5/section.
+# 
+
+# **E2 Notes**
+# - Functions:
+#     - default values for parameters: `def wear_mask(group_size, location='indoors', vaccinated=True):`
+# - Classes: 
+#     - attributes vs parameters
+#     - when the heck to use `self`
+
+# **Q8**: `TaskCalculator()`
+# 
+# - when to use `self`
+#     - first input "parameter" to any `def`
+#     - any time you want to reference an instance attribute
+
+# In[ ]:
+
+
+# from the answer key
+class TaskCalculator():
+    
+    def __init__(self):  # why no parameter here
+        self.daily_tasks = []
+        
+    def add_task(self, task):
+        self.daily_tasks.append(task)
+        
+    def calculate_time(self):
+        # if you want to use a variable, it must be an attribute, defined within method, or passed in as input
+        long_tasks = ['write one exam', 'grade exam', 'prep lecture', 'office hours']
+        short_tasks = ['review lecture', 'grade assignment', 'staff meeting', 'answer email']
+        
+        time_sum = 0
+        
+        for val in self.daily_tasks: # must use self to reference attribute!
+            if val in long_tasks:
+                time_sum += 2  # equivalent to time_sum = time_sum + 2
+            elif val in short_tasks:
+                time_sum +=1
+                
+        return time_sum
+
+
+# In[ ]:
+
+
+### test it out
+
+
 # # Code Style
 # 
 # - PEP8

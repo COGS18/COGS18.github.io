@@ -610,7 +610,112 @@
         
               <div>
                 
-  <div class="section" id="code-style">
+  <p><strong>Course Announcements</strong></p>
+<p><strong>Due Dates</strong></p>
+<ul class="simple">
+<li><p><strong>CL8</strong> due tonight</p></li>
+<li><p><strong>A5</strong> due Friday of week 10 (12/3)</p></li>
+<li><p><strong>Final exam/project</strong> due Mon of Finals week (12/6; 11:59 PM)</p>
+<ul>
+<li><p>Final Exam will be released Friday afternoon of week 10</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: I’m curious to see what other packages can be imported and used in order to create a cool project.<br />
+A: There are SO many. If there’s a topic/thing you care about, there’s likely a package for it. Search packages <a class="reference external" href="https://pypi.org/">here</a></p>
+<p>Q: What is an example of when I would use the summing of integers in an array <code class="docutils literal notranslate"><span class="pre">(data.sum(axis=0))</span></code> ?<br />
+A: See coding lab and A5! But, imagine you have data stored in a dataframe where <code class="docutils literal notranslate"><span class="pre">1</span></code> indicated yes and <code class="docutils literal notranslate"><span class="pre">0</span></code> indicated no. If you wanted to know how many respondents in your dataset said yes, it would be helpful!</p>
+<p>Q: For the where method of array, why we use np.where( ) while other methods we just use our variable names like arriving.sum( )<br />
+A: Great question! <code class="docutils literal notranslate"><span class="pre">where()</span></code> is a <em>function</em> while <code class="docutils literal notranslate"><span class="pre">sum()</span></code> is a method that operates on (meaning is defined within) the <code class="docutils literal notranslate"><span class="pre">numpy.array</span></code> object.</p>
+<p>Q: One clarification question I had was for finding positions in arrays or dataframes, do we count from 0 as we would for collections?<br />
+A: Yup!</p>
+<p>Q: What is the difference between zip and using index to loop through integers?<br />
+A: While these topics can be used together, they are distinct. Indexing allows you to specify a position in a collection. <code class="docutils literal notranslate"><span class="pre">zip</span></code> allows you to iterate through two collections at the same time.</p>
+<p>Q: On average, about how long does it take to complete the final exam?<br />
+A: ~3 hours (but of course there is a range)</p>
+<p>Q: Do we need to incorporate this into our final project/exam?<br />
+A: If you do the final exam, we will use <code class="docutils literal notranslate"><span class="pre">pandas</span></code>. If you’re doing hte final project, you don’t <em>have</em> to…unless it would be helpful to what you’re trying to accomplish (so it could be helpful). It will be required for A5 and CL8.</p>
+<p>Q: What are some careers that use either pandas or numpy?<br />
+A: Data Scientist, Data analyst, Machine learning engineer, Neuroscientist, Psychology/Psychiatry, Biology research in general, etc.</p>
+<p>Q: Is there a way to display the array as “empty seats” like [   ]  and then put an x in it when someone does choose that seat?<br />
+A: Yup! There is an np.nan, where nan stands “for not a number” that you could use as a placeholder until you “fill” the seat.</p>
+<p>Q: When will we learn more about the formatting for the project? (i.e. documentation)<br />
+A: Testing this Friday. Documentation on Monday. (Course schedule <a class="reference external" href="https://cogs18.github.io/assets/intro/syllabus.html#course-schedule">here</a>).</p>
+<p>Q: It seems part 0 in CL8 has some problem: after I type “import np” and “import pd” there is an error saying there are no such modules?<br />
+A: Refer back to the notes on how to import these packages properly</p>
+<p>Q: What is the grade breakdown for this class?<br />
+A: <a class="reference external" href="https://cogs18.github.io/assets/intro/syllabus.html#grading-attendance">https://cogs18.github.io/assets/intro/syllabus.html#grading-attendance</a></p>
+<p>Q: Why aren’t you teaching COGS 108 next quarter? :(<br />
+A: Teaching a new course is <em>a lot</em> of work. So, Jason Fleischer (students love him!) taught COGS 108 for the first time this Fa21 quarter. To allow him to utilize all that work again, he’ll teach it this winter as well. I’ll be back to teaching it next academic year…but I know that may not be what you want to hear.</p>
+<p>Q: What’s the difference between ‘replace = True’ and ‘replace = False’ in parenthesis for the sample method?<br />
+A: This has to do with sampling with and without replacement (a statistics concept). Explanation <a class="reference external" href="https://www.statisticshowto.com/sampling-with-replacement-without/">here</a>.</p>
+<p>Q: If we flat out did not understand today’s topic, and we are not taking the final exam but doing the project instead, should we make sure we understand it or will we technically not be needing it?<br />
+A: You’ll need it for CL8 and A5.</p>
+<p>Q: An we sit in the coding lab during week 10 and work on our projects even if we don’t necessarily have a question before coming in?<br />
+A: Absolutely! Sometimes during week 10 students come in and stay for a handful of hours just to have a dedicated space/time to focus on the project. That’s more than welcome!</p>
+<p>Q: I also signed up for cogs 108 too (but waitlisted, would you know how many people get off the waitlist for this class?)<br />
+A: I can’t say for sure. Typically it’s ~3-5/section.</p>
+<p><strong>E2 Notes</strong></p>
+<ul class="simple">
+<li><p>Functions:</p>
+<ul>
+<li><p>default values for parameters: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">wear_mask(group_size,</span> <span class="pre">location='indoors',</span> <span class="pre">vaccinated=True):</span></code></p></li>
+</ul>
+</li>
+<li><p>Classes:</p>
+<ul>
+<li><p>attributes vs parameters</p></li>
+<li><p>when the heck to use <code class="docutils literal notranslate"><span class="pre">self</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Q8</strong>: <code class="docutils literal notranslate"><span class="pre">TaskCalculator()</span></code></p>
+<ul class="simple">
+<li><p>when to use <code class="docutils literal notranslate"><span class="pre">self</span></code></p>
+<ul>
+<li><p>first input “parameter” to any <code class="docutils literal notranslate"><span class="pre">def</span></code></p></li>
+<li><p>any time you want to reference an instance attribute</p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># from the answer key</span>
+<span class="k">class</span> <span class="nc">TaskCalculator</span><span class="p">():</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># why no parameter here</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">daily_tasks</span> <span class="o">=</span> <span class="p">[]</span>
+        
+    <span class="k">def</span> <span class="nf">add_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">daily_tasks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">calculate_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># if you want to use a variable, it must be an attribute, defined within method, or passed in as input</span>
+        <span class="n">long_tasks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;write one exam&#39;</span><span class="p">,</span> <span class="s1">&#39;grade exam&#39;</span><span class="p">,</span> <span class="s1">&#39;prep lecture&#39;</span><span class="p">,</span> <span class="s1">&#39;office hours&#39;</span><span class="p">]</span>
+        <span class="n">short_tasks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;review lecture&#39;</span><span class="p">,</span> <span class="s1">&#39;grade assignment&#39;</span><span class="p">,</span> <span class="s1">&#39;staff meeting&#39;</span><span class="p">,</span> <span class="s1">&#39;answer email&#39;</span><span class="p">]</span>
+        
+        <span class="n">time_sum</span> <span class="o">=</span> <span class="mi">0</span>
+        
+        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">daily_tasks</span><span class="p">:</span> <span class="c1"># must use self to reference attribute!</span>
+            <span class="k">if</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">long_tasks</span><span class="p">:</span>
+                <span class="n">time_sum</span> <span class="o">+=</span> <span class="mi">2</span>  <span class="c1"># equivalent to time_sum = time_sum + 2</span>
+            <span class="k">elif</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">short_tasks</span><span class="p">:</span>
+                <span class="n">time_sum</span> <span class="o">+=</span><span class="mi">1</span>
+                
+        <span class="k">return</span> <span class="n">time_sum</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### test it out</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="code-style">
 <h1>Code Style<a class="headerlink" href="#code-style" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>PEP8</p></li>
