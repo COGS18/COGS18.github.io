@@ -64,6 +64,7 @@
 # 
 
 # **E2 Notes**
+# - Scores were posted on Mon; regrades due Thurs night
 # - Functions:
 #     - default values for parameters: `def wear_mask(group_size, location='indoors', vaccinated=True):`
 # - Classes: 
@@ -76,12 +77,12 @@
 #     - first input "parameter" to any `def`
 #     - any time you want to reference an instance attribute
 
-# In[ ]:
+# In[1]:
 
 
 # from the answer key
 class TaskCalculator():
-    
+        
     def __init__(self):  # why no parameter here
         self.daily_tasks = []
         
@@ -104,10 +105,27 @@ class TaskCalculator():
         return time_sum
 
 
-# In[ ]:
+# In[5]:
 
 
 ### test it out
+my_task = TaskCalculator()
+my_task.daily_tasks
+
+
+# In[6]:
+
+
+my_task.add_task('test task')
+my_task.add_task('write one exam')
+
+my_task.daily_tasks
+
+
+# In[7]:
+
+
+my_task.calculate_time()
 
 
 # # Code Style
@@ -138,7 +156,7 @@ class TaskCalculator():
 
 # ## The Zen of Python
 
-# In[ ]:
+# In[8]:
 
 
 import this
@@ -196,7 +214,7 @@ import this
 
 # This allows you to - at a glance - identify what pieces of code are there.
 
-# In[ ]:
+# In[9]:
 
 
 # Badness
@@ -208,7 +226,7 @@ def my_func():
     return output
 
 
-# In[ ]:
+# In[10]:
 
 
 my_func()
@@ -218,8 +236,7 @@ my_func()
 
 
 # Goodness
-def my_func():
-    
+def my_func():   
     my_nums = '123'
     output = ''
     
@@ -279,7 +296,7 @@ def squared(input_number):
 # 
 # Use spaces to indicate indentation levels, with each level defined as 4 spaces. 
 
-# In[ ]:
+# In[11]:
 
 
 # Badness
@@ -287,7 +304,7 @@ if True:
   print('Words.')
 
 
-# In[ ]:
+# In[12]:
 
 
 # Goodness
@@ -300,7 +317,7 @@ if True:
 # - Put one (and only one) space between each element
 # - Index and assignment don't have a space between opening & closing '()' or '[]'
 
-# In[ ]:
+# In[13]:
 
 
 # Badnesses
@@ -309,7 +326,7 @@ my_list  =  [ 1,2,3,4 ]
 el = my_list [1]
 
 
-# In[ ]:
+# In[14]:
 
 
 # Goodnesses
@@ -340,7 +357,7 @@ el = my_list[1]
 # 
 # - While you *can* condense multiple statements into one line, you usually shouldn't.
 
-# In[ ]:
+# In[15]:
 
 
 # Badness
@@ -352,7 +369,7 @@ for i in [1, 2, 3]: print(i**2 + i%2)
 
 # Goodness
 for i in [1, 2, 3]:
-    print(i**2 + i%2)
+    print(i ** 2 + i % 2)
 
 
 # ### Multi-Line
@@ -360,11 +377,11 @@ for i in [1, 2, 3]:
 # In[ ]:
 
 
-my_long_list = [1, 2, 3, 4, 5, 
+my_long_list = [1, 2, 3, 4, 5,
                 6, 7, 8, 9, 10]
 
 
-# In[ ]:
+# In[16]:
 
 
 # Note: you can explicitly indicate a new line with '\'
@@ -501,14 +518,14 @@ class MyClass():
 # 
 # 
 
-# In[ ]:
+# In[17]:
 
 
 # Badness
 my_string = 'Prof\'s Project'
 
 
-# In[ ]:
+# In[18]:
 
 
 # Goodness
@@ -547,26 +564,26 @@ my_string = "Prof's Project"
 # - are indented to the same level as that code. 
 # - Each line of a block comment starts with a # and a single space
 
-# In[ ]:
+# In[19]:
 
 
 # Badness
 import random
 
-def week_9():
+def week_8():
 # help try to destress students by picking one thing from the following list using random
     statements = ["You've totally got this!","You're so close!","You're going to do great!","Remember to take breaks!","Sleep, water, and food are really important!"]
     out = random.choice(statements)
     return out
 
-week_9()
+week_8()
 
 
-# In[ ]:
+# In[20]:
 
 
 # Goodness
-def week_9():
+def week_8():
     
     # Randomly pick from list of de-stressing statements
     # to help students as they finish the quarter.
@@ -580,7 +597,7 @@ def week_9():
     
     return out
 
-week_9()
+week_8()
 
 
 # #### Inline comments
@@ -588,18 +605,18 @@ week_9()
 # - to be separated by at least two spaces from the statement
 # - start with a # and a single space
 
-# In[ ]:
+# In[22]:
 
 
 # Badness
-week_9()#words of encouragement
+week_8()#words of encouragement
 
 
-# In[ ]:
+# In[24]:
 
 
 # Goodness
-week_9()  # words of encouragement
+week_8()  # words of encouragement
 
 
 # ## Specific Guidelines - Documentation

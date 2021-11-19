@@ -619,7 +619,7 @@ gary.speak()
 # 
 # Edit the code we've been using for the Class `Dog` to include information about the breed of the Class Dog in `NewDog`?
 
-# In[41]:
+# In[4]:
 
 
 # EDIT CODE HERE
@@ -633,6 +633,14 @@ class NewDog():
     
     def speak(self, n_times=2):
         return self.sound * n_times
+
+
+# In[ ]:
+
+
+my_dog = NewDog('Lexi', 'Italian Greyhound')
+my_dog.breed
+my_dog.speak(6)
 
 
 # In[42]:
@@ -864,7 +872,7 @@ ellis_courses.classes
 
 # **`compare()` method**
 
-# In[59]:
+# In[1]:
 
 
 class ProfCourses():
@@ -900,6 +908,14 @@ class ProfCourses():
             output = fewest
 
         return output
+
+
+# In[3]:
+
+
+ellis_courses = ProfCourses('Ellis')
+
+ellis_courses.add_class('a','fa21',200)
 
 
 # In[60]:
