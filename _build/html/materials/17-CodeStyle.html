@@ -180,6 +180,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="19-Documentation.html">
+   19-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -600,11 +605,6 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#clicker-question-6">
      Clicker Question #6
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#list-here">
-     list here
     </a>
    </li>
   </ul>
@@ -1414,12 +1414,33 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 <li><p>D) 5 or 6</p></li>
 <li><p>E) 7 or more</p></li>
 </ul>
-</div>
-<div class="section" id="list-here">
-<h3>list here<a class="headerlink" href="#list-here" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>function name should be snake_case, not CapWords</p></li>
+<li><p>missing spaces between elements in <code class="docutils literal notranslate"><span class="pre">my_list</span></code></p></li>
+<li><p>mising new line for conditional in line 4 (after <code class="docutils literal notranslate"><span class="pre">my_list:</span></code></p></li>
+<li><p>incorrect indentation line 6 (ind = 0)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">qq</span></code> is not an informative variable name</p></li>
+<li><p>consider blank lines between variable definition, conditional, for loop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">i</span></code> not a good variable</p></li>
+<li><p>space before <code class="docutils literal notranslate"><span class="pre">[ind:]</span></code></p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s fix this code</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">input_num</span><span class="p">):</span>
+
+    <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+        <span class="n">ind</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ind</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="n">output_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">[</span><span class="n">ind</span><span class="p">:]:</span>
+        <span class="n">output_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">input_num</span><span class="o">/</span><span class="n">val</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">output_list</span>
 </pre></div>
 </div>
 </div>
@@ -1427,7 +1448,20 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check using pylint</span>
-<span class="o">!</span>pylint linter_example.py
+<span class="o">!</span>pylint my_linter.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>************* Module my_linter
+my_linter.py:6:0: W0311: Bad indentation. Found 7 spaces, expected 8 (bad-indentation)
+my_linter.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+my_linter.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 6.67/10 (previous run: 6.67/10, +0.00)
+
+
 </pre></div>
 </div>
 </div>

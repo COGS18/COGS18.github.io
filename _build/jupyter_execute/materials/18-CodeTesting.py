@@ -70,7 +70,13 @@
 # 
 # Given the following code, which assert will fail?
 
-# In[ ]:
+# In[6]:
+
+
+get_ipython().run_line_magic('pinfo', 'list.copy')
+
+
+# In[1]:
 
 
 def extend(input_arg):
@@ -80,10 +86,11 @@ def extend(input_arg):
     return output
 
 
-# In[ ]:
+# In[2]:
 
 
 # test here
+extend([1, 2])
 
 
 # - A) `assert isinstance(extend([1, 2]), list)`
@@ -94,35 +101,35 @@ def extend(input_arg):
 
 # ### Clicker Question - Asserts
 
-# In[ ]:
+# In[3]:
 
 
 # Check that extend returns a list
 assert isinstance(extend([1, 2]), list)
 
 
-# In[ ]:
+# In[4]:
 
 
 # Check that an input list returns the expected result
 assert extend([1, 2]) == [1, 2, 1, 2]
 
 
-# In[ ]:
+# In[5]:
 
 
 # Check if the function works on tuples
 assert extend((1, 2)) == (1, 2, 1, 2)
 
 
-# In[ ]:
+# In[7]:
 
 
 # Check that a different input list (different lengths / contents) returns expected result
 assert extend(['a', 'b', 'c']) == ['a', 'b', 'c', 'a', 'b', 'c']
 
 
-# In[ ]:
+# In[8]:
 
 
 # Check that an empty list executes, executing an empty list
@@ -192,7 +199,7 @@ assert extend([]) == []
 # 
 # What function should do: write a function `add` that adds two inputs together
 
-# In[ ]:
+# In[9]:
 
 
 # things I think should be true
@@ -202,10 +209,10 @@ add(2.7, 1.2) == 3.9
 add(2, 0) == 2
 
 
-# In[ ]:
+# In[19]:
 
 
-# import math
+import math
 
 def test_add():
     """Tests for the `add` function."""
@@ -217,21 +224,27 @@ def test_add():
     assert add(-2, -2) == -4
     
     # Test adding floats
-    assert add(2.7, 1.2) == 3.9
-    # assert math.isclose(add(2.7, 1.2), 3.9)
+    # assert add(2.7, 1.2) == 3.9
+    assert math.isclose(add(2.7, 1.2), 3.9)
     
     # Test adding with 0
     assert add(2, 0) == 2
 
 
-# In[ ]:
+# In[11]:
 
 
 def add(num1, num2):
     return num1 + num2
 
 
-# In[ ]:
+# In[18]:
+
+
+add(2.7, 1.2)
+
+
+# In[20]:
 
 
 # Run our test function
@@ -247,17 +260,29 @@ test_add()
 # - C) I'm lost/don't understand what we're supposed to be doing.
 
 # Brainstorm here...
+# - output type is correct: `type(remove_punctation('Hello!')) == str`
+# - if execute function on a string, output string would have punctuation removed (`remove_punctation('Hello!') == 'Hello'`)
+# - test other positions for punctuation
+# - test other punctuation marks
 
 # In[ ]:
 
 
 # assert statements here
+assert type(remove_punctation('Hello!')) == str
+assert remove_punctation('Hello!') == 'Hello'
+assert remove_punctation('&He@llo!') == 'Hello'
 
 
-# In[ ]:
+# In[21]:
 
 
 # test function here
+def test_remove_punctuation():
+    assert isinstance(remove_punctation('Hello!'), str)
+    assert type(remove_punctation('Hello!')) == str
+    assert remove_punctation('Hello!') == 'Hello'
+    assert remove_punctation('&He@llo!') == 'Hello'
 
 
 # In[ ]:

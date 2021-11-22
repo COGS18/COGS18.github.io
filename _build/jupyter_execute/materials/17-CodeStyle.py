@@ -668,18 +668,38 @@ def MyFunction(input_num):
 # - D) 5 or 6
 # - E) 7 or more
 
-# ### list here
-# 
+# 1. function name should be snake_case, not CapWords
+# 2. missing spaces between elements in `my_list`
+# 3. mising new line for conditional in line 4 (after `my_list:`
+# 4. incorrect indentation line 6 (ind = 0)
+# 5. `qq` is not an informative variable name 
+# 6. consider blank lines between variable definition, conditional, for loop
+# 7. `i` not a good variable
+# 8. space before `[ind:]`
 
 # In[1]:
 
 
 # Let's fix this code
+def my_function(input_num):
+
+    my_list = [0, 1, 2, 3]
+
+    if 1 in my_list:
+        ind = 1
+    else:
+        ind = 0
+
+    output_list = []
+    for val in my_list[ind:]:
+        output_list.append(input_num/val)
+
+    return output_list
 
 
-# In[ ]:
+# In[26]:
 
 
 # check using pylint
-get_ipython().system('pylint linter_example.py')
+get_ipython().system('pylint my_linter.py')
 

@@ -39,6 +39,8 @@ parts:
       title: 17-CodeStyle
     - file: materials/18-CodeTesting
       title: 18-CodeTesting
+    - file: materials/19-Documentation
+      title: 19-Documentation
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples
