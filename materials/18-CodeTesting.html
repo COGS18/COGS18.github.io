@@ -185,6 +185,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="20-CodeProjects.html">
+   20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="A1-Syntax.html">
    A1-Syntax
   </a>
@@ -899,9 +904,9 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># assert statements here</span>
-<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">remove_punctation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
-<span class="k">assert</span> <span class="n">remove_punctation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
-<span class="k">assert</span> <span class="n">remove_punctation</span><span class="p">(</span><span class="s1">&#39;&amp;He@llo!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
+<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
+<span class="k">assert</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
+<span class="k">assert</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="s1">&#39;&amp;He@llo!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -910,10 +915,10 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test function here</span>
 <span class="k">def</span> <span class="nf">test_remove_punctuation</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">remove_punctation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">remove_punctation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
-    <span class="k">assert</span> <span class="n">remove_punctation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
-    <span class="k">assert</span> <span class="n">remove_punctation</span><span class="p">(</span><span class="s1">&#39;&amp;He@llo!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
+    <span class="k">assert</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
+    <span class="k">assert</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="s1">&#39;&amp;He@llo!&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -921,6 +926,18 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># function here</span>
+<span class="kn">import</span> <span class="nn">string</span>
+
+<span class="k">def</span> <span class="nf">remove_punctuation</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="n">output_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    
+    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">val</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">:</span>
+            <span class="n">output_string</span> <span class="o">+=</span> <span class="n">val</span>
+    
+    <span class="k">return</span> <span class="n">output_string</span>
+
+<span class="n">test_remove_punctuation</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -946,6 +963,7 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># And the following test function:</span>
 <span class="k">def</span> <span class="nf">test_divide_list</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">divide_list</span><span class="p">)</span>
     <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">divide_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]),</span> <span class="nb">list</span><span class="p">)</span>
     <span class="k">assert</span> <span class="n">divide_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 </pre></div>
@@ -968,6 +986,23 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">divide_list</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">33</span><span class="o">-</span><span class="n">c91f35be7f5f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">divide_list</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="nn">&lt;ipython-input-30-1f783ab343a3&gt;</span> in <span class="ni">divide_list</span><span class="nt">(in_list)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="k">for</span> <span class="n">el1</span><span class="p">,</span> <span class="n">el2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">in_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">in_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+<span class="ne">----&gt; </span><span class="mi">6</span>         <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el1</span> <span class="o">/</span> <span class="n">el2</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="k">return</span> <span class="n">output</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
 </pre></div>
 </div>
 </div>
@@ -1028,6 +1063,10 @@ In software development, <b>test-driven development</b> is an approach in which 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### YOUR TEST</span>
+<span class="k">def</span> <span class="nf">test_sum_list</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">sum_list</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">sum_list</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">int</span>
+    <span class="k">assert</span> <span class="n">sum_list</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">==</span> <span class="mi">9</span>
 </pre></div>
 </div>
 </div>
@@ -1075,6 +1114,26 @@ In software development, <b>test-driven development</b> is an approach in which 
 <li><p>For anything that fails, will alert you.</p></li>
 </ol>
 <p><strong>Available from Anaconda and on datahub</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_my_module.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.9.5, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-COGS18
+plugins: anyio-3.3.0
+collected 1 item                                                               
+
+test_my_module.py <span class=" -Color -Color-Green">.                                                      [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">1 passed</span><span class=" -Color -Color-Green"> in 0.01s ===============================</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
