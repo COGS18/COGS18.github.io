@@ -269,31 +269,43 @@ test_add()
 
 
 # assert statements here
-assert type(remove_punctation('Hello!')) == str
-assert remove_punctation('Hello!') == 'Hello'
-assert remove_punctation('&He@llo!') == 'Hello'
+assert type(remove_punctuation('Hello!')) == str
+assert remove_punctuation('Hello!') == 'Hello'
+assert remove_punctuation('&He@llo!') == 'Hello'
 
 
-# In[21]:
+# In[25]:
 
 
 # test function here
 def test_remove_punctuation():
-    assert isinstance(remove_punctation('Hello!'), str)
-    assert type(remove_punctation('Hello!')) == str
-    assert remove_punctation('Hello!') == 'Hello'
-    assert remove_punctation('&He@llo!') == 'Hello'
+    assert isinstance(remove_punctuation('Hello!'), str)
+    assert type(remove_punctuation('Hello!')) == str
+    assert remove_punctuation('Hello!') == 'Hello'
+    assert remove_punctuation('&He@llo!') == 'Hello'
 
 
-# In[ ]:
+# In[29]:
 
 
 # function here
+import string
+
+def remove_punctuation(input_string):
+    output_string = ''
+    
+    for val in input_string:
+        if val not in string.punctuation:
+            output_string += val
+    
+    return output_string
+
+test_remove_punctuation()
 
 
 # #### Clicker Question #3
 
-# In[ ]:
+# In[30]:
 
 
 # Given the following function:
@@ -306,16 +318,17 @@ def divide_list(in_list):
     return output
 
 
-# In[ ]:
+# In[34]:
 
 
 # And the following test function:
 def test_divide_list():
+    assert callable(divide_list)
     assert isinstance(divide_list([1, 2]), list)
     assert divide_list([1, 2, 4]) == [2, 2]
 
 
-# In[ ]:
+# In[35]:
 
 
 test_divide_list()
@@ -326,7 +339,7 @@ test_divide_list()
 # - C) These tests will fail, but they cover the needed cases
 # - D) These tests will fail, and we should also have more tests
 
-# In[ ]:
+# In[33]:
 
 
 divide_list((0,2,3))
@@ -365,7 +378,7 @@ divide_list((0,2,3))
 #     - check the output is expected output / expected type
 #     - check that function sums the list (which was our expectation)
 
-# In[ ]:
+# In[36]:
 
 
 def sum_list(input_list):
@@ -379,13 +392,17 @@ def sum_list(input_list):
     return output
 
 
-# In[ ]:
+# In[37]:
 
 
 ### YOUR TEST
+def test_sum_list():
+    assert callable(sum_list)
+    assert type(sum_list([3, 4, 2])) == int
+    assert sum_list([3, 4, 2]) == 9
 
 
-# In[ ]:
+# In[38]:
 
 
 test_sum_list()
@@ -424,3 +441,9 @@ test_sum_list()
 # 4. For anything that fails, will alert you.
 # 
 # **Available from Anaconda and on datahub**
+
+# In[39]:
+
+
+get_ipython().system('pytest test_my_module.py')
+

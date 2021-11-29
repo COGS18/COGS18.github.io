@@ -41,6 +41,8 @@ parts:
       title: 18-CodeTesting
     - file: materials/19-Documentation
       title: 19-Documentation
+    - file: materials/20-CodeProjects
+      title: 20-CodeProjects
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples

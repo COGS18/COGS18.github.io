@@ -7,7 +7,7 @@
 # - **A5** due Friday of week 10 (12/3)
 # - **Final exam/project** due Mon of Finals week (12/6; 11:59 PM)
 #     - Final Exam will be released Friday afternoon of week 10
-# - **CAPEs** - please fill out your [CAPEs](https://cape.ucsd.edu/) (+1% if 85\% of class completes their CAPEs)
+# - **CAPEs** - please fill out your [CAPEs](https://cape.ucsd.edu/) (+1% if >=85\% of class completes their CAPEs)
 # 
 
 # Q: Will there be a deduction on grade for assignments if we fail to follow code style, if so, how much?  
@@ -97,7 +97,7 @@
 # 
 # What does the following code do?
 
-# In[ ]:
+# In[3]:
 
 
 def ff(jj):
@@ -118,14 +118,16 @@ ff('Hello World.')
 # - Improved naming: functions & variables
 # - Add Comments within code
 
-# In[ ]:
+# In[2]:
 
 
 def return_unicode(input_list):
-    string = list()
-    input_list = list(input_list)
+    string = list() 
+    input_list = list(input_list) 
       
     for character in input_list: 
+        # get unicode code point of character
+        # store it as a string; append to list
         string.append(str(ord(character)))
         
     output_string = '+'.join(string)
@@ -146,7 +148,7 @@ return_unicode('Hello World.')
 # - Add Comments within code
 # - **Proper Documentation!**
 
-# In[ ]:
+# In[4]:
 
 
 # Let's fix this code!
@@ -239,7 +241,7 @@ for element in list_of_elements:
 
 # ### Example Docstring
 
-# In[ ]:
+# In[5]:
 
 
 def add(num1, num2):
@@ -275,13 +277,13 @@ def add(num1, num2):
 
 # ### Docstrings are available through the code
 
-# In[ ]:
+# In[6]:
 
 
 get_ipython().run_line_magic('pinfo', 'add')
 
 
-# In[ ]:
+# In[7]:
 
 
 # The `help` function prints out the `docstring` 
@@ -291,7 +293,7 @@ help(add)
 
 # ### `__doc__`
 
-# In[ ]:
+# In[8]:
 
 
 # Docstrings get stored as the `__doc__` attribute
