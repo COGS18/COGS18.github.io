@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Advanced Python" href="21-AdvancedPython.html" />
     <link rel="prev" title="Documentation" href="19-Documentation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -187,6 +187,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    20-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21-AdvancedPython.html">
+   21-AdvancedPython
   </a>
  </li>
  <li class="toctree-l1">
@@ -593,6 +598,7 @@
 <li><p><strong>A5</strong> due Friday (11:59)</p></li>
 <li><p><strong>Final exam/project</strong> due next Mon (12/6; 11:59 PM)</p>
 <ul>
+<li><p>Practice Final will be released Mon afternoon; answer key posted Wed</p></li>
 <li><p>Final Exam will be released Friday afternoon</p></li>
 </ul>
 </li>
@@ -780,7 +786,6 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </div>
 </div>
 <p>…move to test file</p>
-<p>…will uncomment as I write the code/functions</p>
 </div>
 <div class="section" id="writing-code">
 <h3>Writing Code<a class="headerlink" href="#writing-code" title="Permalink to this headline">¶</a></h3>
@@ -815,6 +820,11 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -827,6 +837,20 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.9.5, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-COGS18
+plugins: anyio-3.3.0
+<span class=" -Color -Color-Bold">collecting ... </span>
+<span class=" -Color -Color-Bold">collected 0 items                                                              </span>
+
+<span class=" -Color -Color-Yellow">============================ no tests ran in 0.01s =============================</span>
+<span class=" -Color -Color-Red">ERROR: file or directory not found: test_atbash.py</span>
+
 </pre></div>
 </div>
 </div>
@@ -949,7 +973,7 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="alert alert-success">
 Refactoring is the process of restructuring existing computer code, without changing its external behaviour. 
 </div><p>Think of this as restructuring and final edits on your essay.</p>
-<p><strong>Nesting Functions</strong> - If you have a whole bunch of functions, if statements, and for/while loops together within a single function, you probably want (need?) to refactor.</p>
+<p><strong>Nesting Functions/Conditionals/Loops</strong> - If you have a whole bunch of functions, if statements, and for/while loops together within a single function, you probably want (need?) to refactor.</p>
 <p>Clean functions accomplish a <strong>single task</strong>!</p>
 <p><strong>DRY</strong>: Don’t Repeat Yourself</p>
 <div class="section" id="refactoring-example-chatbot">
@@ -1147,7 +1171,7 @@ Code reviews is a process for systematically reviewing someone else's code.
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="19-Documentation.html" title="previous page">Documentation</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="21-AdvancedPython.html" title="next page">Advanced Python</a>
 
         </div>
         
