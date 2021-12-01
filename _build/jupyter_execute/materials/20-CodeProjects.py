@@ -5,6 +5,7 @@
 # 
 # - **A5** due Friday (11:59)
 # - **Final exam/project** due next Mon (12/6; 11:59 PM)
+#     - Practice Final will be released Mon afternoon; answer key posted Wed
 #     - Final Exam will be released Friday afternoon
 # - **CAPEs** - please fill out your [CAPEs](https://cape.ucsd.edu/) (+1% if >=85\% of class completes their CAPEs)
 # - **[Post-Course Survey](https://docs.google.com/forms/d/e/1FAIpQLSfqwgORTqIj1h6Zb5MJB_StJnAVTgrOEboq60frGv4Z4xN3Wg/viewform?usp=sf_link)** ("due" 12/6 11:59 PM; link also on Canvas); ideally, fill out *after* taking final exam/completing final project
@@ -178,14 +179,12 @@ def test_atbash_wrapper():
 
 
 # ...move to test file
-# 
-# ...will uncomment as I write the code/functions
 
 # ### Writing Code
 
 # #### `atbash_encrypt`
 
-# In[ ]:
+# In[1]:
 
 
 def atbash_encrypt(input_string):
@@ -206,7 +205,7 @@ def atbash_encrypt(input_string):
     return atbash_string
 
 
-# In[ ]:
+# In[2]:
 
 
 # smoke test
@@ -219,7 +218,7 @@ atbash_encrypt('Hello')
 
 # Note on `imports`: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top. This applies to test files as well.
 
-# In[ ]:
+# In[3]:
 
 
 get_ipython().system('pytest test_atbash.py')
@@ -227,7 +226,7 @@ get_ipython().system('pytest test_atbash.py')
 
 # #### `atbash_decrypt`
 
-# In[1]:
+# In[ ]:
 
 
 # reminder: consider code style! 
@@ -327,7 +326,7 @@ atbash_wrapper('hello', method='blargh')
 
 # Think of this as restructuring and final edits on your essay. 
 
-# **Nesting Functions** - If you have a whole bunch of functions, if statements, and for/while loops together within a single function, you probably want (need?) to refactor.
+# **Nesting Functions/Conditionals/Loops** - If you have a whole bunch of functions, if statements, and for/while loops together within a single function, you probably want (need?) to refactor.
 
 # Clean functions accomplish a **single task**!
 

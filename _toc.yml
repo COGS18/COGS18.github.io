@@ -43,6 +43,8 @@ parts:
       title: 19-Documentation
     - file: materials/20-CodeProjects
       title: 20-CodeProjects
+    - file: materials/21-AdvancedPython
+      title: 21-AdvancedPython
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples
