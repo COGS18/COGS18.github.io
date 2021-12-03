@@ -334,7 +334,7 @@ atbash_wrapper('hello', method='blargh')
 
 # #### Refactoring Example: Chatbot
 
-# In[ ]:
+# In[4]:
 
 
 import random 
@@ -374,7 +374,7 @@ def have_a_chat():
         print('OUTPUT:', out_msg)
 
 
-# In[ ]:
+# In[5]:
 
 
 have_a_chat()  
@@ -391,7 +391,7 @@ have_a_chat()
 # 
 # That's four different things! Functions should do a single thing...
 
-# In[ ]:
+# In[6]:
 
 
 def get_input():
@@ -403,7 +403,19 @@ def get_input():
     return msg, out_msg
 
 
-# In[ ]:
+# In[8]:
+
+
+msg, out_msg = get_input()
+
+
+# In[11]:
+
+
+print(out_msg)
+
+
+# In[12]:
 
 
 def is_question(input_string):
@@ -417,7 +429,7 @@ def is_question(input_string):
     return output
 
 
-# In[ ]:
+# In[13]:
 
 
 def end_chat(input_list):
@@ -433,7 +445,7 @@ def end_chat(input_list):
     return output, chat
 
 
-# In[ ]:
+# In[14]:
 
 
 def return_message(out_msg, question):
@@ -451,7 +463,7 @@ def return_message(out_msg, question):
     return out_msg
 
 
-# In[ ]:
+# In[15]:
 
 
 def have_a_chat():
@@ -476,7 +488,7 @@ def have_a_chat():
         print('OUTPUT:', out_msg)
 
 
-# In[ ]:
+# In[16]:
 
 
 have_a_chat()  
@@ -488,4 +500,4 @@ have_a_chat()
 # Code reviews is a process for systematically reviewing someone else's code. 
 # </div>
 
-# This is what you'll have the chance to do in coding lab next week!
+# This is what you'll have the chance to do in coding lab today!

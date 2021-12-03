@@ -45,6 +45,8 @@ parts:
       title: 20-CodeProjects
     - file: materials/21-AdvancedPython
       title: 21-AdvancedPython
+    - file: materials/22-WrapUp
+      title: 22-WrapUp
     - file: materials/A1-Syntax
       title: A1-Syntax
     - file: materials/A2-Examples

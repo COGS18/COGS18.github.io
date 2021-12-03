@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="A1-Syntax.html" />
+    <link rel="next" title="Wrap Up" href="22-WrapUp.html" />
     <link rel="prev" title="Code Projects" href="20-CodeProjects.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -192,6 +192,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    21-AdvancedPython
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22-WrapUp.html">
+   22-WrapUp
   </a>
  </li>
  <li class="toctree-l1">
@@ -670,11 +675,15 @@
 <ul class="simple">
 <li><p>No Coding Lab to turn in tonight - Coding Lab today is project-focused</p></li>
 <li><p><strong>A5</strong> due Friday (11:59)</p></li>
-<li><p><strong>Final exam/project</strong> due Mon (12/6; 11:59 PM)</p></li>
-<li><p><strong>Finals Week Office Hours</strong> - normal office hours are <em>not</em> happening</p>
+<li><p><strong>Final exam/project</strong> due Mon (12/6; 11:59 PM)</p>
+<ul>
+<li><p>Project EC: <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe9WBkspvL4OYKQocamdpwa58HLJGiEbYKQUi6VFn21utVM3g/viewform?usp=sf_link">GitHub EC</a> (link also on Canvas) and/or “going above and beyond” (described in submitted notebook)</p></li>
+</ul>
+</li>
+<li><p><strong>Finals Week Office Hours</strong> - normal office hours are <em>not</em> happening during finals week</p>
 <ul>
 <li><p><strong>Prof</strong>: OH by 10 min appt on Mon 1-3 PM (see Canvas page for Calendly link to sign up; please cancel if you’re not going to show; come ready to ask question - I will stick to the schedule)</p></li>
-<li><p>If <strong>staff</strong> decide to hold, they’ll post to campuswire (they are not requried to do so)</p></li>
+<li><p>If <strong>staff</strong> decide to hold, they’ll post to campuswire (they are not required to do so)</p></li>
 </ul>
 </li>
 <li><p><strong>CAPEs</strong> - please fill out your <a class="reference external" href="https://cape.ucsd.edu/">CAPEs</a> (+1% if &gt;=85% of class completes their CAPEs; currently: ~40%)</p></li>
@@ -782,12 +791,58 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1.3.0&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <p>In Python package development… when <code class="docutils literal notranslate"><span class="pre">&lt;MAJOR&gt;</span></code> == 0, suggests a package in development</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install lisc
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting lisc
+  Downloading lisc-0.2.0-py3-none-any.whl (88 kB)
+     |████████████████████████████████| 88 kB 6.3 MB/s eta 0:00:011
+?25hRequirement already satisfied: numpy&gt;=1.17.1 in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from lisc) (1.20.3)
+Collecting lxml
+  Downloading lxml-4.6.4-cp39-cp39-macosx_10_14_x86_64.whl (4.5 MB)
+     |████████████████████████████████| 4.5 MB 6.8 MB/s eta 0:00:01
+?25hRequirement already satisfied: requests in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from lisc) (2.26.0)
+Requirement already satisfied: beautifulsoup4 in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from lisc) (4.9.3)
+Requirement already satisfied: soupsieve&gt;1.2 in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from beautifulsoup4-&gt;lisc) (2.2.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from requests-&gt;lisc) (2.0.3)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from requests-&gt;lisc) (3.2)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from requests-&gt;lisc) (2021.5.30)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages (from requests-&gt;lisc) (1.26.6)
+Installing collected packages: lxml, lisc
+Successfully installed lisc-0.2.0 lxml-4.6.4
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see version information</span>
-<span class="o">!</span>pip show pandas
+<span class="o">!</span>pip show lisc
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name: lisc
+Version: 0.2.0
+Summary: Literature Scanner
+Home-page: https://github.com/lisc-tools/lisc
+Author: Thomas Donoghue
+Author-email: tdonoghue.research@gmail.com
+License: Apache License, 2.0
+Location: /Users/shannonellis/opt/anaconda3/envs/research/lib/python3.9/site-packages
+Requires: requests, numpy, beautifulsoup4, lxml
+Required-by: 
 </pre></div>
 </div>
 </div>
@@ -807,6 +862,11 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hello! My name is Shannon. My job is Assistant Teaching Professor, and I work on Python&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="sets">
@@ -819,12 +879,22 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4}
+</pre></div>
+</div>
+</div>
 </div>
 <p>Like lists, they are iterable &amp; mutable.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">my_set</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4, 6}
 </pre></div>
 </div>
 </div>
@@ -838,6 +908,11 @@ Documentation sites are a host of a package's documentation, for code users.
 <span class="n">clicker_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">clicker_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">clicker_set</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4, 6}
 </pre></div>
 </div>
 </div>
@@ -871,6 +946,11 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counter({1: 3, 0: 1, 2: 1})
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -885,11 +965,38 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counter({1: 3, 0: 1, 2: 1})
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># can count how many of each letter are in there</span>
 <span class="n">Counter</span><span class="p">(</span><span class="s2">&quot;I wonder how many times I use the letter &#39;e&#39;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counter({&#39;I&#39;: 2,
+         &#39; &#39;: 9,
+         &#39;w&#39;: 2,
+         &#39;o&#39;: 2,
+         &#39;n&#39;: 2,
+         &#39;d&#39;: 1,
+         &#39;e&#39;: 7,
+         &#39;r&#39;: 2,
+         &#39;h&#39;: 2,
+         &#39;m&#39;: 2,
+         &#39;a&#39;: 1,
+         &#39;y&#39;: 1,
+         &#39;t&#39;: 4,
+         &#39;i&#39;: 1,
+         &#39;s&#39;: 2,
+         &#39;u&#39;: 1,
+         &#39;l&#39;: 1,
+         &quot;&#39;&quot;: 2})
 </pre></div>
 </div>
 </div>
@@ -915,10 +1022,20 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">all</span><span class="p">(</span><span class="n">my_bool_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -930,6 +1047,11 @@ Documentation sites are a host of a package's documentation, for code users.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
 <span class="nb">any</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -967,6 +1089,11 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;string&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -976,12 +1103,22 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;string&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set a specified attribute</span>
 <span class="nb">setattr</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="s1">&#39;var_b&#39;</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">instance</span><span class="o">.</span><span class="n">var_b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>13
 </pre></div>
 </div>
 </div>
@@ -1003,6 +1140,8 @@ Documentation sites are a host of a package's documentation, for code users.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use *arguments to demonstrate args</span>
 <span class="k">def</span> <span class="nf">tell_audience</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">arguments</span><span class="p">))</span>
+    
     <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">arguments</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
 </pre></div>
@@ -1015,12 +1154,26 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;tuple&#39;&gt;
+asdf
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tell_audience</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">,</span> 
               <span class="s2">&quot;My name is Shannon.&quot;</span><span class="p">,</span> 
               <span class="s2">&quot;My job is Assistant Teaching Professor.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;tuple&#39;&gt;
+Hello!
+My name is Shannon.
+My job is Assistant Teaching Professor.
 </pre></div>
 </div>
 </div>
@@ -1048,6 +1201,20 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>type:  &lt;class &#39;dict&#39;&gt; 
+
+key:  first
+value:  Shannon 
+
+key:  last
+value:  Ellis 
+
+key:  email
+value:  sellis@ucsd.edu 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1071,12 +1238,22 @@ Documentation sites are a host of a package's documentation, for code users.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This list comprehension is equivalent to the cell above</span>
 <span class="c1"># note the square brackets on the outside</span>
 <span class="p">[</span><span class="n">ind</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3]
 </pre></div>
 </div>
 </div>
@@ -1094,6 +1271,12 @@ Documentation sites are a host of a package's documentation, for code users.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_list2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4, 5]
+[2, 4]
 </pre></div>
 </div>
 </div>
@@ -1496,7 +1679,7 @@ An <b>API</b> is a programmatic interface to an application - a software to soft
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="20-CodeProjects.html" title="previous page">Code Projects</a>
-    <a class='right-next' id="next-link" href="A1-Syntax.html" title="next page">Python Syntax</a>
+    <a class='right-next' id="next-link" href="22-WrapUp.html" title="next page">Wrap Up</a>
 
         </div>
         

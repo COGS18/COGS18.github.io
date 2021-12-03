@@ -6,9 +6,10 @@
 # - No Coding Lab to turn in tonight - Coding Lab today is project-focused
 # - **A5** due Friday (11:59)
 # - **Final exam/project** due Mon (12/6; 11:59 PM)
-# - **Finals Week Office Hours** - normal office hours are *not* happening
+#     - Project EC: [GitHub EC](https://docs.google.com/forms/d/e/1FAIpQLSe9WBkspvL4OYKQocamdpwa58HLJGiEbYKQUi6VFn21utVM3g/viewform?usp=sf_link) (link also on Canvas) and/or "going above and beyond" (described in submitted notebook)
+# - **Finals Week Office Hours** - normal office hours are *not* happening during finals week
 #     - **Prof**: OH by 10 min appt on Mon 1-3 PM (see Canvas page for Calendly link to sign up; please cancel if you're not going to show; come ready to ask question - I will stick to the schedule)
-#     - If **staff** decide to hold, they'll post to campuswire (they are not requried to do so)
+#     - If **staff** decide to hold, they'll post to campuswire (they are not required to do so)
 # - **CAPEs** - please fill out your [CAPEs](https://cape.ucsd.edu/) (+1% if >=85\% of class completes their CAPEs; currently: ~40%)
 # - **[Post-Course Survey](https://docs.google.com/forms/d/e/1FAIpQLSfqwgORTqIj1h6Zb5MJB_StJnAVTgrOEboq60frGv4Z4xN3Wg/viewform?usp=sf_link)** ("due" 12/6 11:59 PM; link also on Canvas); ideally, fill out *after* taking final exam/completing final project
 
@@ -68,7 +69,7 @@
 
 # You do *not* need to incorporate these into your project, but if they'll help you, go for it!
 
-# In[ ]:
+# In[1]:
 
 
 import antigravity
@@ -113,7 +114,7 @@ import antigravity
 # - `<MINOR>` - increase by 1 w/ added functionality in a backwards-compatible manner
 # - `<MAINTENANCE>` - (aka patch) increase by 1 w/  backwards-compatible bug fixes.
 
-# In[ ]:
+# In[2]:
 
 
 # see version information
@@ -123,18 +124,24 @@ pd.__version__
 
 # In Python package development... when `<MAJOR>` == 0, suggests a package in development
 
-# In[ ]:
+# In[5]:
+
+
+get_ipython().system('pip install lisc')
+
+
+# In[6]:
 
 
 # see version information
-get_ipython().system('pip show pandas')
+get_ipython().system('pip show lisc')
 
 
 # ## String Formatting
 
 # Use the `format` method to manipulate and format strings.
 
-# In[ ]:
+# In[7]:
 
 
 name = "Shannon"
@@ -148,7 +155,7 @@ topic = "Python"
 
 # Sets are a variable type that store **only unique entries**.
 
-# In[ ]:
+# In[8]:
 
 
 my_set = set([1, 1, 2, 3, 4])
@@ -157,7 +164,7 @@ my_set
 
 # Like lists, they are iterable & mutable.
 
-# In[ ]:
+# In[9]:
 
 
 my_set.add(6)
@@ -168,7 +175,7 @@ my_set
 # 
 # How many values would be in the following set?
 
-# In[ ]:
+# In[10]:
 
 
 clicker_set = set([1, 1, 2, 2, 3, 4])
@@ -191,13 +198,13 @@ clicker_set
 
 # "Special editions" of collections we've discussed before (lists, tuples, and dictionaries).
 
-# In[ ]:
+# In[11]:
 
 
 from collections import Counter
 
 
-# In[ ]:
+# In[12]:
 
 
 # count how many elements there are in collection
@@ -205,19 +212,19 @@ from collections import Counter
 Counter([1, 0, 1, 2, 1])
 
 
-# In[ ]:
+# In[13]:
 
 
 import collections
 
 
-# In[ ]:
+# In[14]:
 
 
 collections.Counter([1, 0, 1, 2, 1])
 
 
-# In[ ]:
+# In[15]:
 
 
 # can count how many of each letter are in there
@@ -236,19 +243,19 @@ Counter("I wonder how many times I use the letter 'e'")
 
 # `any` and `all` evaluate collections for whether elements evaluate as True. 
 
-# In[ ]:
+# In[16]:
 
 
 my_bool_list = [True, False, True]
 
 
-# In[ ]:
+# In[17]:
 
 
 any(my_bool_list)
 
 
-# In[ ]:
+# In[18]:
 
 
 all(my_bool_list)
@@ -258,7 +265,7 @@ all(my_bool_list)
 # 
 # What would the following return?
 
-# In[ ]:
+# In[19]:
 
 
 my_list = [True, True, False, True]
@@ -277,7 +284,7 @@ any(my_list)
 
 # Flexibly return and define instance attributes.
 
-# In[ ]:
+# In[20]:
 
 
 class MyClass():
@@ -290,13 +297,13 @@ class MyClass():
 instance = MyClass()
 
 
-# In[ ]:
+# In[21]:
 
 
 instance.var_a
 
 
-# In[ ]:
+# In[22]:
 
 
 # Get a specified attribute
@@ -304,7 +311,7 @@ instance.var_a
 getattr(instance, 'var_a')
 
 
-# In[ ]:
+# In[23]:
 
 
 # Set a specified attribute
@@ -320,22 +327,24 @@ print(instance.var_b)
 
 # ### `*args`
 
-# In[ ]:
+# In[29]:
 
 
 # use *arguments to demonstrate args
 def tell_audience(*arguments):
+    print(type(arguments))
+    
     for arg in arguments:
         print(arg)
 
 
-# In[ ]:
+# In[30]:
 
 
 tell_audience('asdf')
 
 
-# In[ ]:
+# In[31]:
 
 
 tell_audience("Hello!", 
@@ -345,7 +354,7 @@ tell_audience("Hello!",
 
 # ### `**kwargs`
 
-# In[ ]:
+# In[27]:
 
 
 def tell_audience_kwargs(**info):
@@ -356,7 +365,7 @@ def tell_audience_kwargs(**info):
         print("value: ", value, "\n")
 
 
-# In[ ]:
+# In[28]:
 
 
 tell_audience_kwargs(first='Shannon', 
@@ -373,7 +382,7 @@ tell_audience_kwargs(first='Shannon',
 # `[ expression for item in list if conditional ]`
 # 
 
-# In[ ]:
+# In[32]:
 
 
 # NOT a list comprehension
@@ -388,7 +397,7 @@ for ind in input_list:
 output_list
 
 
-# In[ ]:
+# In[33]:
 
 
 # This list comprehension is equivalent to the cell above
@@ -396,7 +405,7 @@ output_list
 [ind + 1 for ind in [0, 1, 2]]
 
 
-# In[ ]:
+# In[34]:
 
 
 # You can also include conditionals inside a list comprehension
@@ -404,7 +413,7 @@ my_list = [1, 2, 3, 4, 5]
 my_list2 = [val for val in my_list if val % 2 == 0]
 
 
-# In[ ]:
+# In[35]:
 
 
 print(my_list)
