@@ -2,18 +2,6 @@
 
 Assignments will be done in Jupyter Notebooks. They will be released and submitted on [datahub](http::/datahub.ucsd.edu).
 
-## Assignment Schedule
-
-The outline for assignments is as follows:
-
-|   | Name  | Topics  | 
-|-----: |:------------|:------------------|
-| A1 | Getting Started | Variables, Operators & Conditionals |
-| A2 | Ciphers | Collections, Loops & Encodings | 
-| A3 | Chatbots | Functions & Algorithms | 
-| A4 | Artificial Agents | Methods, Classes & Objects | 
-| A5 | Experimentation | Scientific Computing, Modules, Code Style, Documentation | 
-
 Assignments are cumulative - previously covered topics may also appear in a future assignment. Due dates are listed on the syllabus.
 
 ### Late Submissions

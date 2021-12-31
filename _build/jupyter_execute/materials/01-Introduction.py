@@ -12,14 +12,14 @@
 # 
 # - Who:
 #     - Instructor: Shannon Ellis 
-#     - TA: Holly(Yueying) Dong, Dillan Cellier, Eena Kosik
-#     - IAs: Efrain Contreras, Evan Eguchi, Brian Fang, Janice, Yvonne Luo, Hannah Contreras 
+#     - TA: Shivani, Holly, & Sam
+#     - IAs: Andrew, Donovan, Ethan, Matthew, Susana, & Xiaoxuan
 #     
 # - Where:
-#     - Lectures MWF @ 8AM (Peterson Hall 110)
-#     - Coding Lab Sections (CSB 115; Wed 9AM-5PM)
+#     - Lectures MWF @ 8AM (Zoom/Peterson Hall 110)
+#     - Coding Lab Sections (Zoom/CSB 115; Wed 9AM-5PM)
 #     - Course Website: https://cogs18.github.io
-#     - Campuswire Page: https://campuswire.com/c/G3CF63BDA
+#     - Campuswire Page: https://campuswire.com/p/G9193CB28
 
 # ## Expectations & Approach
 # 
@@ -81,5 +81,4 @@ print(c)
 # - lecture notes
 # - assignments
 # - coding labs
-# - exams
 # - final project/exam
