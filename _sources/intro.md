@@ -1,6 +1,6 @@
 # Welcome to COGS 18: Introduction to Python!
 
-COGS 18 | Shannon Ellis | Fall 2021 | UCSD
+COGS 18 | Shannon Ellis | Winter 2022 | UCSD
 
 ### Overview
 
@@ -8,7 +8,7 @@ Introduction to Python (COGS 18) is a course offered by the Department of Cognit
 
 ### Current Iteration
 
-Introduction to Python is currently running for Fall 2021, for which you can check out the current [syllabus](assets/intro/syllabus). 
+Introduction to Python is currently running for Winter 2022, for which you can check out the current [syllabus](assets/intro/syllabus). 
 
 
 ### Materials

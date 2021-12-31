@@ -6,8 +6,10 @@ output:
 
 # COGS 18: Introduction to Python 
 
-**Fall 2021**  
-**MWF 8-8:50 (Peterson Hall 110)**  
+**Winter 2022**  
+**MWF 8-8:50 (Zoom for weeks 1-2; Peterson Hall 110)**  
+
+THIS IS A DRAFT. SYLLABUS WILL BE FINALIZED DURING WEEK 1 OF THE QUARTER.
 
 ---
 
@@ -17,11 +19,11 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ---
 
-### A Note About Returning to In-Person Learning
+### A Note About Returning to Learning Remotely
 
-Fall quarter is always a transition quarter as everyone settles back into studying and adjusts to life and learning on campus. However, for so many of you and regardless of your year of study, after more than a year of remote learning, this is your first time learning on campus. So, it's going to be a bigger transition than usual. I'm here to support your learning through this! 
+As we embark on this Winter quarter, campus has announced that we will be learning remotely for the first two weeks of the quarter. During the first two weeks, all course components will take place remotely on Zoom. For the remainder of the quarter, the intention is to return to in-person lecture and lab; however, specifics will be communicated to students as we see how the quarter unfolds.
 
-While regular deadlines have been established to help keep you all on track, I want you to know up front that I am a very reasonable person. While I ask that you all do your best to meet deadlines that have been set, know that if you're struggling, I absolutely want you to reach out to let me know, to ask for an extension, or to discuss some other accommodation.
+Through all of this, I'm here to support your learning! While regular deadlines have been established to help keep you all on track, I want you to know up front that I am a very reasonable person. While I ask that you all do your best to meet deadlines that have been set, know that if you're struggling, I absolutely want you to reach out to let me know, to ask for an extension, or to discuss some other accommodation.
 
 ---
 
@@ -29,21 +31,21 @@ While regular deadlines have been established to help keep you all on track, I w
 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
-| TA             | Dillan Cellier          | 4 & 5 PM         | Mon 10-11 AM (CSB 231)  |
-| IA	           | Evan Eguchi             | 11 AM & 12 PM    | Mon 10:30-11:20 AM (CSB 114) |
-| IA	           | Efrain                  | 12 & 1 PM        | Mon  12:10 - 1 PM (CSB 114)  |
-| TA             | Eena Kosik              | 9 & 10 AM        | Tues 8:50 - 9:40 AM (Zoom - link on Canvas) |
-| TA             | Holly(Yueying) Dong	   | 1 & 2 PM         | Wed 10-11 (Mandeville Coffee Cart) |
-| Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --               |  Fri 10:30AM - 12:30PM (CSB courtyard) |
-| IA	           | Brian Fang	             | 10 & 11 AM       | Fri 2-3 PM  (CSB 114) |
-| IA	           | Janice                  | 4 & 5 PM         | --                      |
-| IA	           | Yvonne Luo              | 9 AM & 3 PM      | --                      |
-| IA	           | Hannah Contreras        | 2 & 3 PM         | --                      |
+| Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --              | Mon 9-11 AM |
+| TA	           | Shivani Bhakta          | TBD              | TBD                     |
+| TA             | Holly(Yueying) Dong     | TBD              | TBD                     |
+| TA	           | Sam Lau                 | TBD              | TBD                     |
+| IA             | Donovan Cronkhite       | TBD              | TBD                     |
+| IA             | Susanna Anil	           | TBD              | TBD                     |
+| IA	           | Andrew Pan              | TBD              | TBD                     |
+| IA	           | Xiaoxuan Zhang	         | TBD              | TBD                     |
+| IA	           | Ethan Wadsworth	       | TBD              | TBD                     |
+| IA	           | Matthew Chong	         | TBD              | TBD                     |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)  
-Canvas Course: [https://canvas.ucsd.edu/courses/25024](https://canvas.ucsd.edu/courses/)   
-Course Campuswire*: [https://campuswire.com/c/G3CF63BDA](https://campuswire.com/c/G3CF63BDA)     
+Canvas Course: [https://canvas.ucsd.edu/courses/33580](https://canvas.ucsd.edu/courses/33580)   
+Course Campuswire*: [https://campuswire.com/p/G9193CB28](https://campuswire.com/p/G9193CB28) (login code on Canvas)     
 Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)    
 
@@ -106,17 +108,17 @@ Note that points will *not* be rewarded if you fail to follow instructions. For 
 
 ### Attendance
 
-Attendance will not be incentivized this quarter, given that we are mid-transition in our return to in-person learning, and I do not want to encourage anyone to come to class if they're not feeling well. This applies to lecture as well as coding lab.
+Attendance will not be recorder nor incentivized this quarter, given that we are (still) mid-transition in our return to in-person learning, and I do not want to encourage anyone to come to class if they're not feeling well. This applies to lecture as well as coding lab.
 
 ### Lecture
 
-Students are encouraged to attend lecture live; however, all lectures will also be podcast. During lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates thoughts during lecture.
+Students are encouraged to attend lecture live (either via zoom or in person); however, all lectures will also be recorded/podcast. During lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates thoughts during lecture.
 
-There will be a daily participation survey (link on Canvas) to provide feedback and ask questions about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final project/exam (*not* your final course grade). Each day's survey will be up for at least three days and can be completed regardless of whether you attend class in-person.
+There will be a daily participation survey (link on Canvas) to provide feedback and ask questions about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final project/exam (*not* your final course grade). Each day's survey will be up for at least three days and can be completed regardless of whether you attend class live or watch the recording.
 
 ### Coding Labs (16\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2\% each). Coding labs are *graded for concerted effort* (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 PM each week. There are no late submissions for coding labs.
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (2\% each; lowest coding lab score dropped). Coding labs are *graded for concerted effort* (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 PM each week. There are no late submissions for coding labs.
 
 Note: You should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend the other Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 35 so that students can get help from their TAs and IAs during this time.
 
@@ -130,7 +132,7 @@ You *are* permitted to work with classmates on assignments; however, you are per
 
 ### Midterms (25\%)
 
-There will be two (2) midterms. As we transition back to in-person learning this quarter, all midterms will be take-home exams. You will have 24 hours to complete each exam. The exam will be open-notes and open-Google; however, it will have to be completed individually. Students will not be permitted to discuss the questions on the exam with anyone.
+There will be two (2) midterms. All midterms will be take-home exams. You will have at least 24 hours to complete each exam. The exam will be open-notes and open-Google; however, it will have to be completed individually. Students will not be permitted to discuss the questions on the exam with anyone.
 
 Each midterm is worth 12.5\% of your grade. The exams will include varied question types, will be taken online, and will be due at 11:59 PM on the day of the assigned midterm.
 
@@ -151,45 +153,44 @@ The final exam will be take-home and you will have at least 48 hours to complete
 
 ## COURSE SCHEDULE
 
-| Date     | Week  |Lecture | Day | Topic               | Assignment ( 11:59 PM)    | CodingLab ( 11:59 PM)  |
+| Date     | Week  |Lecture | Day | Topic               | Assignment/Exam (11:59 PM)| CodingLab (11:59 PM)      |
 | --------:|:-----:|:-------|:---:|:--------------------|:--------------------------|:--------------------------|
-| 9/24     | 0	   | 1      | F   | Introduction        |                           |                         	| 
-| 9/27     | 1	   | 2      | M   | Tooling & Integrity |                           |                          	| 
-| 9/29     | 1	   | 3      | W   | Variables           |                           | CL1: Tooling & Integrity  |
-| 10/1     | 1     | 4      | F   | Operators           |                           |                         	| 
-| 10/4     | 2	   | 5      | M   | Conditionals        |                           |                       		| 
-| 10/6     | 2	   | 6      | W   | Debugging           |                           | CL2: Programming I        | 
-| 10/8     | 2	   | 7      | F   | Collections    	    | A1: Getting-Started       |         			            | 
-| 10/11    | 3	   | 8      | M   | Loops               |                           |                         	| 
-| 10/13    | 3	   | 9      | W   | Dictionaries [*]    |            			          | CL3: Programming II       |
-| 10/15    | 3	   | --     | F   | Review              |                           |                         	| 
-| 10/18    | 4	   | --     | M   | **Midterm I**       |                           | 				                  | 
-| 10/20    | 4	   | 10     | W   | Functions I         |                        		| CL4: Loops                |
-| 10/22    | 4	   | 11     | F   | Algorithms  	      | A2: Ciphers               |                        		| 
-| 10/25    | 5	   | 12     | M   | Functions II        |                           |                         	| 
-| 10/27    | 5	   | 13     | W   | Classes I           |                       	 	| CL5: Functions 	          |
-| 10/29    | 5	   | 14     | F   | Classes II          |                           |                         	| 
-| 11/1     | 6	   | 15     | M   | Command Line [**]   | A3: Chatbots              |                         	| 
-| 11/3     | 6	   | --     | W   | Review              |                           | CL6: Classes             	| 
-| 11/5     | 6	   | --     | F   | **Midterm II**      |               		        |        			              | 
-| 11/8     | 7	   | --     | M   | Command Line        |                           |                         	| 
-| 11/10    | 7	   | 16     | W   | Modules & Scripts   |      				              | CL7: Command Line         | 
-| 11/12    | 7	   | 17     | F   | Python Party        | A4: Artificial Agents     |                         	| 
-| 11/15    | 8	   | 18     | M   | Scientific Computing|                           |                         	| 
-| 11/17    | 8	   | 19     | W   | Code Style   		    |     			                | CL8: Scientific Computing | 
-| 11/19    | 8	   | 20     | F   | Code Testing  	    |                           |                         	| 
-| 11/22    | 9	   | 21     | M   | Documentation 	    | 			                   	|                         	| 
-| 11/24    | 9	   | 22     | W   | **No Class**        | 				                  |                           | 
-| 11/26    | 9	   | --     | F   | **No Class**        |                           |                           | 
-| 11/29    | 10    | 23     | M   | Code Projects       |                           |    	                			| 
-| 12/1     | 10    | 24     | W   | APIs/Advanced Python| 				                  |                         	| 
-| 12/3     | 10    | 25     | F   | Wrap Up   		      | A5: Experimentation    	  |                        		| 
+| 1/3      | 1	   | 1      | M   | Introduction        |                           |                         	| 
+| 1/5      | 1	   | 2      | W   | Tooling & Integrity |                           | CL1: Tooling & Integrity  | 
+| 1/7      | 1	   | 3      | F   | Variables           |                           |                           |
+| 1/10     | 2     | 4      | M   | Operators           |                           |                         	| 
+| 1/12     | 2	   | 5      | W   | Functions I         |                           | CL2: Programming I        | 
+| 1/14     | 2	   | 6      | F   | Functions II        |                           |                           |
+| 1/17     | 3	   | --     | M   | **No Class**        | A1: Getting-Started       |         			            | 
+| 1/19     | 3	   | 7      | W   | Conditionals        |                           | CL3: Functions            | 
+| 1/21     | 3	   | 8      | F   | Debugging           |                           |                           |
+| 1/24     | 4	   | 9      | M   | Collections [*]     |                           |                         	| 
+| 1/26     | 4	   | --     | W   | Review              |                           | CL4: Programming II       | 
+| 1/28     | 4	   | 10     | F   | Loops I             | **E1**                    |                           |
+| 1/31     | 5	   | 11     | M   | Loops II            | A2: Ciphers               |                        		| 
+| 2/2      | 5	   | 12     | W   | Dictionaries        |                        	  | CL5: Loops     	          | 
+| 2/4      | 5	   | 13     | F   | Algorithms          |                           |                           |
+| 2/7      | 6	   | 14     | M   | Classes I           | A3: Chatbots              |                         	| 
+| 2/9      | 6	   | 15     | W   | Classes II          |                           | CL6: Classes             	| 
+| 2/11     | 6	   | 16     | F   | Command Line  [**]  |                           |                           |
+| 2/14     | 7	   | --     | M   | Review              | A4: Artificial Agents     |        			              | 
+| 2/16     | 7	   | 17     | W   | Scientific Computing|                           | CL7: Command Line         | 
+| 2/18     | 7	   | --     | F   | Python Party        | **E2**                    |                           |
+| 2/21     | 8	   | --     | M   | **No Class**        |                           |                         	| 
+| 2/23     | 8	   | 18     | W   | Modules & Scripts I |                           | CL8: Scientific Computing | 
+| 2/25     | 8	   | 19     | F   | Code Style          |     			                |                           | 
+| 2/28     | 9	   | 20     | M   | Documentation       |                           |                         	| 
+| 3/2      | 9	   | 21     | W   | Code Testing        | 			                   	| CL9: Good Code           	| 
+| 3/4      | 9	   | 22     | F   | Code Projects       | 				                  |                           | 
+| 4/7      | 10    | --     | M   | Catch-up            | A5: Experimentation			  |    	                			| 
+| 4/9      | 10    | 23     | W   | APIs/Advanced Python|                           |                         	| 
+| 4/11     | 10    | 24     | F   | Wrap Up   		      |     	                    |                        		| 
 
-**Final Exam/Project**: Final Projects and Final Exams are due on the date of the final exam (Mon 12/6) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
+**Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam (Mon 3/14) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:   
-[\*] denotes the last day of material covered on Midterm I.   
-[\*\*] the last day for material on Midterm II.
+[\*] denotes the last day of material covered on Midterm I (E1).   
+[\*\*] the last day for material on Midterm II (E2).
 
 ---
 
