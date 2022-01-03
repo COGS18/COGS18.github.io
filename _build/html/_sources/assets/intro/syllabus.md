@@ -198,9 +198,9 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 2/28     | 9	   | 20     | M   | Documentation       |                           |                         	| 
 | 3/2      | 9	   | 21     | W   | Code Testing        | 			                   	| CL9: Good Code           	| 
 | 3/4      | 9	   | 22     | F   | Code Projects       | 				                  |                           | 
-| 4/7      | 10    | --     | M   | Catch-up            | A5: Experimentation			  |    	                			| 
-| 4/9      | 10    | 23     | W   | APIs/Advanced Python|                           |                         	| 
-| 4/11     | 10    | 24     | F   | Wrap Up   		      |     	                    |                        		| 
+| 3/7      | 10    | --     | M   | Catch-up            | A5: Experimentation			  |    	                			| 
+| 3/9      | 10    | 23     | W   | APIs/Advanced Python|                           |                         	| 
+| 3/11     | 10    | 24     | F   | Wrap Up   		      |     	                    |                        		| 
 
 **Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam (Mon 3/14) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
