@@ -33,12 +33,12 @@ Through all of this, I'm here to support your learning! While regular deadlines 
 | -------------: |:------------------------|:-----------------|:------------------------|
 | Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --              | Mon 9-11 AM |
 | TA	           | Shivani Bhakta          | TBD              | TBD                     |
-| TA             | Holly(Yueying) Dong     | TBD              | TBD                     |
+| TA             | Holly Dong              | TBD              | TBD                     |
 | TA	           | Sam Lau                 | TBD              | TBD                     |
 | IA             | Donovan Cronkhite       | TBD              | TBD                     |
-| IA             | Susanna Anil	           | TBD              | TBD                     |
+| IA             | Suzy Anil	             | TBD              | TBD                     |
 | IA	           | Andrew Pan              | TBD              | TBD                     |
-| IA	           | Xiaoxuan Zhang	         | TBD              | TBD                     |
+| IA	           | Xiaoxuan(Andrina) Zhang | TBD              | TBD                     |
 | IA	           | Ethan Wadsworth	       | TBD              | TBD                     |
 | IA	           | Matthew Chong	         | TBD              | TBD                     |
 
@@ -97,7 +97,23 @@ Note: If you do not have consistent access to the technology needed, please use 
 
 All grades will be released on Canvas. It is your responsibility to check that your assignment was submitted, that your grade is accurate, and to get in touch if any are missing and/or you think there is a problem.
 
-To calculate final grades, I use the [standard grading scale](https://pages.stolaf.edu/dietz/typical-grading-scale/) and do not round grades up.
+To calculate final grades, I use the standard grading scale and do not round grades up (given the numerous extra credit opportunities offered):
+
+ <span>Percentage</span>        | <span>Letter Grade</span>
+----------------------|----------------
+97-100%  | A+
+93-96%   | A
+90-92%   | A-
+87-89%   | B+
+83-86%   | B
+80-82%   | B-
+77-79%   | C+
+73-76%   | C
+70-72%   | C-
+67-69%   | D+
+63-66%   | D
+60-62%   | D-
+<60%     | F
  
 ### Assignment Regrades
 
