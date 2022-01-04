@@ -32,15 +32,15 @@ Through all of this, I'm here to support your learning! While regular deadlines 
 | Role           | Name          					 | Coding Lab       | Office Hours            |
 | -------------: |:------------------------|:-----------------|:------------------------|
 | Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --              | Mon 9-11 AM |
-| TA	           | Shivani Bhakta          | TBD              | TBD                     |
-| TA             | Holly Dong              | TBD              | TBD                     |
-| TA	           | Sam Lau                 | TBD              | TBD                     |
-| IA             | Donovan Cronkhite       | TBD              | TBD                     |
-| IA             | Suzy Anil	             | TBD              | TBD                     |
-| IA	           | Andrew Pan              | TBD              | TBD                     |
-| IA	           | Xiaoxuan(Andrina) Zhang | TBD              | TBD                     |
-| IA	           | Ethan Wadsworth	       | TBD              | TBD                     |
-| IA	           | Matthew Chong	         | TBD              | TBD                     |
+| TA	           | Sam Lau                 | 1PM & 2PM        | Mon 11AM-12PM           |
+| IA	           | Ethan Wadsworth	       | 12PM & 3PM       | Mon 3-4PM               |
+| TA             | Holly Dong              | 4PM & 5PM        | Tues 10-11AM            |
+| IA	           | Matthew Chong	         | 11AM & 5PM       | Wed 1-2PM               |
+| IA             | Donovan Cronkhite       | 9AM & 10AM       | Thurs 10-11AM           |
+| IA	           | Xiaoxuan(Andrina) Zhang | 2PM & 3PM        | Thurs 10-11AM           |
+| IA             | Suzy Anil	             | 1PM & 4PM        | TBD                     |
+| IA	           | Andrew Pan              | 11AM & 12PM      | TBD                     |
+| TA	           | Shivani Bhakta          | 9AM & 10AM       | TBD                     |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)  
