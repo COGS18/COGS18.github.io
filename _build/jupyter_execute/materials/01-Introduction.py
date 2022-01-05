@@ -13,7 +13,7 @@
 # - Who:
 #     - Instructor: Shannon Ellis 
 #     - TA: Shivani, Holly, & Sam
-#     - IAs: Andrew, Donovan, Ethan, Matthew, Susana, & Xiaoxuan
+#     - IAs: Andrew, Donovan, Ethan, Matthew, Suzy, & Xiaoxuan(Andrina)
 #     
 # - Where:
 #     - Lectures MWF @ 8AM (Zoom/Peterson Hall 110)
