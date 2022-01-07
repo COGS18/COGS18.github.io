@@ -35,12 +35,12 @@ Through all of this, I'm here to support your learning! While regular deadlines 
 | TA	           | Sam Lau                 | 1PM & 2PM        | Mon 11AM-12PM           |
 | IA	           | Ethan Wadsworth	       | 12PM & 3PM       | Mon 3-4PM               |
 | TA             | Holly Dong              | 4PM & 5PM        | Tues 10-11AM            |
+| IA             | Suzy Anil	             | 1PM & 4PM        | Tues 1-2PM              |
 | IA	           | Matthew Chong	         | 11AM & 5PM       | Wed 1-2PM               |
 | IA             | Donovan Cronkhite       | 9AM & 10AM       | Thurs 10-11AM           |
 | IA	           | Xiaoxuan(Andrina) Zhang | 2PM & 3PM        | Thurs 10-11AM           |
-| IA             | Suzy Anil	             | 1PM & 4PM        | TBD                     |
+| TA	           | Shivani Bhakta          | 9AM & 10AM       | Fri 9-10AM              |
 | IA	           | Andrew Pan              | 11AM & 12PM      | TBD                     |
-| TA	           | Shivani Bhakta          | 9AM & 10AM       | TBD                     |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)  

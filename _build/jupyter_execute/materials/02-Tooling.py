@@ -164,6 +164,7 @@
 # - Course Lecture Slides
 # - CodingLabs
 # - Assignments
+# - Exams
 # - Final Project/Exam
 
 # #### Lecture Slides:
@@ -257,7 +258,7 @@
 # - D) normal text
 # - E) I'm lost
 
-# you can write/edit your markdown text here to determine the answer to the question
+# ___you can write/edit your markdown text here to determine the answer to the question___
 
 # ### Markdown Headers
 # 
@@ -293,15 +294,15 @@
 
 # test it out down here to see...
 # 
-# list item
-# list item 
-# list item
+# 1. list item  
+# 1. list item   
+# 1. list item  
 
 # #### Code Cells
 # 
 # Whenever you're writing code, you'll want to be sure the cell is set to be a code cell
 
-# In[ ]:
+# In[12]:
 
 
 # Cell can also be code.
@@ -309,7 +310,7 @@ a = 1
 b = 2
 
 
-# In[ ]:
+# In[13]:
 
 
 # Cells can also have output, that gets printed out below the cell.
@@ -317,7 +318,7 @@ c = a - b
 print(c)
 
 
-# In[ ]:
+# In[14]:
 
 
 # If you execute a cell with just a variable name in it, it will also get printed
@@ -335,10 +336,12 @@ c
 # 
 # Write code that outputs the value '6'
 
-# In[ ]:
+# In[17]:
 
 
 ## YOUR CODE HERE
+a = 3 + 3
+a
 
 
 # #### Clicker Question #4

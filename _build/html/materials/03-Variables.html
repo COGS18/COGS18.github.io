@@ -1,0 +1,959 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables &#8212; COGS 18 - Introduction To Python</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="prev" title="Tools" href="02-Tooling.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   03-Variables
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/materials/03-Variables.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/03-Variables.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/03-Variables.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/03-Variables.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/03-Variables.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#programming-with-python">
+   Programming With Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#defining-variables">
+     Defining Variables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-variables-math-variables">
+   Code Variables != Math Variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-1">
+     Clicker Question #1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-2">
+     Clicker Question #2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assignment-notes">
+     Assignment Notes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#declaring-variables-cheat-sheet">
+   Declaring Variables Cheat Sheet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reserved-words">
+   Reserved Words
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kernels">
+   Kernels
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namespace">
+   Namespace
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-style">
+   Code Style
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variable-types">
+   Variable Types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#int">
+     Int
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#float">
+     Float
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#string">
+     String
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#quotation-marks">
+       Quotation Marks
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aside-what-if-you-want-to-print-a-quotation-mark">
+       Aside: What if you want to print a quotation mark?
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boolean">
+   Boolean
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#none">
+   None
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-3">
+     Clicker Question #3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-4">
+     Clicker Question #4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-5">
+     Clicker Question #5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mutable-vs-immutable">
+     Mutable vs Immutable
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indentation">
+   Indentation
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><strong>Course Announcements</strong></p>
+<ul class="simple">
+<li><p><strong>CL1</strong> has been graded; opportunity to resubmit for full credit by Sunday night</p></li>
+<li><p>Pre-course survey “due” tonight (optional for EC; 11:59 PM)</p></li>
+<li><p><strong>A1</strong> now available; due Mon 1/17 (11:59 PM)</p>
+<ul>
+<li><p>Discuss: completion, <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">NotImplementedError()</span></code>, <code class="docutils literal notranslate"><span class="pre">asserts</span></code>, hidden tests, validate, Kernel</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: I understand the notebook but I am still unsure as to what we need to do to it? Is it just for us to have and follow along during lecture or do we need to turn it in?<br />
+A: For lecture notes, what you do with the notebook is totally up to you. If I were taking the class, I’d follow along and add my notes to the Jupyter notebook and use that for studying. You do NOT turn your notes in. <em>However</em>, we will be using notebooks for labs, assignments, and exams. In those cases you <em>will</em> submit the notebook on datahub.</p>
+<p>Q: Is it possible to pull from external libraries in this notebook?<br />
+A: (First, this is not required knowledge for COGS 18 students at this point) Yup! Some libraries have already been installed for you on datahub (<code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, etc.) and can be imported directly. For those not yet installed, you would have to install prior to being able to import into the notebook.</p>
+<p>Q: What is anaconda?<br />
+A: Anaconda is a distribution of Python, Jupyter Notebooks, and additional software packages that make scientific computing possible. Unlike datahub (which lives on UCSD computers and to which you’ll <em>eventually</em> lose access), Anaconda “lives” on your computer, giving you access to all the technology used in this class after COGS 18 ends.</p>
+<p>Q: For the In [ ] part that shows how many times the cell is run, you said that for assignments/coding labs to keep everything in order. If we were to go back and forth/if we had to recheck something and it becomes out of order would we lose points for this? Or is there a way to clear it and get it to the right number?<br />
+A: Yup - going back and forth as you do the assignment/lab is totally normal. At the end, once you’re finished “Kernel &gt; Restart and Run All” will run your code from top to bottom. Good practice to get into right before you submit!</p>
+<p>Q: For the coding time part, since it was possible to have multiple answers does it mean that there isn’t a definite answer? Would this also apply to exams or is there a specific answer?<br />
+A: Yes. Sometimes on exams there are multiple approaches. So long as what you do follows the instructions, it will be correct.</p>
+<p>Q: I have a question about the Practice Coding Lab. The code was favorite_class = ‘A’, but there was no output. The code is correct, so why is there no output. What is the difference between this code and a code that does have an output.<br />
+A: We’ll discuss this more today! This is because you created a variable <code class="docutils literal notranslate"><span class="pre">favorite_class</span></code>. To see what is stored in that variable, you could add the line <code class="docutils literal notranslate"><span class="pre">favorite_class</span></code> beneath what you’ve written and it will display your choice.</p>
+<p>Q: I am curious whether we can have access to these notes ahead of time like a week in advance if possible because I need to read over them a few times before lecture to be able to understand the professor faster or be on her pace.<br />
+A: I typically edit these the morning of lecture. I’ll <em>try</em> to get them out the day before…but I can’t make any promises. I wish I could get them done sooner! That said, older versions of the notes are available <a class="reference external" href="https://github.com/COGS18/Materials">here</a>…so that could be a place to start. I start with these versions of the notes and update them for this quarter before class, so the notes at that link will be similar to what’s presented in class.</p>
+<p>Q: Everything is great, Dr. Ellis, can you please speak a bit slower? That will help do digest information.<br />
+A: A totally reasonable request - I’ll work on this! (Not an excuse, but on Zoom, it’s harder for me b/c I can’t see your faces and see that I’m going too fast…so I’ll just have to be more conscious of this. I <em>know</em> I speak too fast and am working on it. Thanks for this request!)</p>
+<p>Q: I’m still curious about any other resources we’ll be using throughout the quarter.<br />
+A: We’ve now covered all of the tools we’ll be directly using this quarter.</p>
+<p>Q: I couldn’t get command z to undo anything and the lecture said that is how you can undo. Is there a way to undo other than that?<br />
+A: Be sure the cell where you wanted to undo was selected. The other option is from the Edit menu at the top of the notebook.</p>
+<p>Q: I know that it is recommended to download Anaconda if you intend to do the project at the end of the quarter, but how exactly would this program be more helpful than just using Jupyterhub for the project? I was considering downloading but still wasn’t sure what the actual benefits were to using it, especially if by the end of the quarter I feel more comfortable with Jupyterhub.<br />
+A: Main benefits: 1) having acccess to technology after the course ends (And you lose access to datahub) and 2) datahub is web-based, which requires access to the Internet. At the end of the quarter, datahub gets quite busy so it can be slow <em>and</em> it occassionally goes down for a bit of time given all the students working on it. Having it on your computer avoids these issues. That said, most students choose to complete the final project on datahub given their comfort.</p>
+<p>Q: Does it matter if we use Markdown or HTML tags in our Coding Labs should they be asked for?<br />
+A: Nope - you could use either.</p>
+<p>Q: Is the final project and the final exam the same thing or different? and do we have to complete both?<br />
+A: You will choose to do either the exam or the project. We’ll discuss later.</p>
+<p>Q: Must this survey be submitted on the same day as the lecture? <br />
+A: Nope. If the lecture is available from the drop-down menu, then you can get credit.</p>
+<p>Q: Are we going to use datahub during exam?<br />
+A: Yes.</p>
+<div class="section" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Definition</p></li>
+<li><p>Namespace</p></li>
+<li><p>Code Style</p></li>
+<li><p>Variable types</p></li>
+</ul>
+<p><strong>Vocab</strong></p>
+<ul class="simple">
+<li><p><strong>Variable</strong>: The name given to something in programming that stores some information</p></li>
+<li><p><strong>Definition</strong>/<strong>Assignment</strong>/<strong>Declaration</strong>: To create a variable using the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
+</ul>
+<div class="section" id="programming-with-python">
+<h2>Programming With Python<a class="headerlink" href="#programming-with-python" title="Permalink to this headline">¶</a></h2>
+<p>Programming: a way to ask computer to store values (variables), and do things with them (operations).`</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a comment. You can write a comment by using a `#`</span>
+<span class="n">my_variable</span> <span class="o">=</span> <span class="mi">12</span> 
+
+<span class="n">my_other_variable</span> <span class="o">=</span> <span class="mi">13</span> <span class="c1"># Comments can be &#39;inline&#39;, like this one</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="defining-variables">
+<h3>Defining Variables<a class="headerlink" href="#defining-variables" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+In programming, variables are things that store values. Variables are defined with <code>name = value</code>.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_var</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># `my_var` is a variable</span>
+
+<span class="c1"># This defines another variable</span>
+<span class="n">other_var</span> <span class="o">=</span> <span class="s1">&#39;variables are cool&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># once you create a variable it&#39;s stored in your namespace</span>
+<span class="n">other_var</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="code-variables-math-variables">
+<h2>Code Variables != Math Variables<a class="headerlink" href="#code-variables-math-variables" title="Permalink to this headline">¶</a></h2>
+<p>In mathematics: <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to equality (as a statement of truth).</p>
+<p>In coding: <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to assignment.</p>
+<p>Math: What is x?</p>
+<p><span class="math notranslate nohighlight">\(y = 10x + 2\)</span></p>
+<p>Code: What is x?</p>
+<p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">1</span></code></p>
+<div class="section" id="clicker-question-1">
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">¶</a></h3>
+<p>After executing the following code, what will be the value of <code class="docutils literal notranslate"><span class="pre">my_var</span></code>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_var</span> <span class="o">=</span> <span class="mi">2</span> 
+
+<span class="n">my_var</span> <span class="o">=</span> <span class="n">my_var</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) 2</p></li>
+<li><p>B) 3</p></li>
+<li><p>C) “my_var + 1”</p></li>
+<li><p>D) This code will fail</p></li>
+</ul>
+</div>
+<div class="section" id="clicker-question-2">
+<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">¶</a></h3>
+<p>After executing the following code, what will be the value of <code class="docutils literal notranslate"><span class="pre">diff_var</span></code>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diff_var</span> <span class="o">=</span> <span class="n">my_variabel</span> <span class="o">-</span> <span class="n">my_var</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">diff_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) 4</p></li>
+<li><p>B) 9</p></li>
+<li><p>C) “my_variable - my_var”</p></li>
+<li><p>D) This code will fail</p></li>
+</ul>
+</div>
+<div class="section" id="assignment-notes">
+<h3>Assignment Notes<a class="headerlink" href="#assignment-notes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In programming <code class="docutils literal notranslate"><span class="pre">=</span></code> means assignment</p></li>
+<li><p>There can be more than one assignment in a single line</p></li>
+<li><p>Anything to the right of the <code class="docutils literal notranslate"><span class="pre">=</span></code> is evaluated before assignment</p>
+<ul>
+<li><p>This process proceeds from right to left</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="declaring-variables-cheat-sheet">
+<h2>Declaring Variables Cheat Sheet<a class="headerlink" href="#declaring-variables-cheat-sheet" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Names are always on the left of the <code class="docutils literal notranslate"><span class="pre">=</span></code>, values are always on the right</p></li>
+<li><p>Names are case sensitive</p></li>
+<li><p>Variables must start with letters (or underscores)</p>
+<ul>
+<li><p>After that, they can include numbers</p></li>
+<li><p>They cannot include special characters (like &amp;, *, #, etc)</p></li>
+</ul>
+</li>
+<li><p>Python doesn’t care what you name your variables</p>
+<ul>
+<li><p>Humans do care. Pick names that describe the data / value that they store</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="reserved-words">
+<h2>Reserved Words<a class="headerlink" href="#reserved-words" title="Permalink to this headline">¶</a></h2>
+<p>There are 33 words that are not allowed to be used for variable assignment in Python 3.6.</p>
+<table type="text/css">
+  <tr>
+      <td><code>False</code></td>
+      <td><code>None</code></td>
+      <td><code>True</code></td>
+      <td><code>and</code></td>
+      <td><code>as</code></td>
+      <td><code>assert</code></td>
+      <td><code>break</code></td>
+  </tr>
+  <tr>
+      <td><code>class</code></td>
+      <td><code>continue</code></td>
+      <td><code>def</code></td>
+      <td><code>del</code></td>
+      <td><code>elif</code></td>
+      <td><code>else</code></td>
+      <td><code>except</code></td>
+  </tr>
+  <tr>
+      <td><code>finally</code></td>
+      <td><code>for</code></td>
+      <td><code>from</code></td>
+      <td><code>global</code></td>
+      <td><code>if</code></td>
+      <td><code>import</code></td>
+      <td><code>in</code></td>
+  </tr>
+  <tr>
+      <td><code>is</code></td>
+      <td><code>lambda</code></td>
+      <td><code>nonlocal</code></td>
+      <td><code>not</code></td>
+      <td><code>or</code></td>
+      <td><code>pass</code></td>
+      <td><code>raise</code></td>
+  </tr>    
+  <tr>
+      <td><code>return</code></td>
+      <td><code>try</code></td>
+      <td><code>while</code></td>
+      <td><code>with</code></td>
+      <td><code>yield</code></td>
+  </tr>    
+</table><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you will get an error if you try to assign a variable to one of these words</span>
+<span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="kernels">
+<h2>Kernels<a class="headerlink" href="#kernels" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+The <b>kernel</b> is the thing that executes your code. It is what connects the notebook (as you see it) with the part of your computer that runs code. 
+</div><p>Your kernel also stores your <strong>namespace</strong> - all the variables and code that you have declared (executed).</p>
+<p>It can be useful to clear and re-launch the kernel. You can do this from the ‘kernel’ drop down menu, at the top, optionally also clearing all ouputs. Note that this will erase any variables that are stored in memory.</p>
+</div>
+<div class="section" id="namespace">
+<h2>Namespace<a class="headerlink" href="#namespace" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+The <b>namespace</b> is the 'place' where all your currently defined code is declared - all the things you have stored in active memory. 
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>whos<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can list everything declared in the namespace with &#39;%whos&#39;</span>
+<span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="code-style">
+<h2>Code Style<a class="headerlink" href="#code-style" title="Permalink to this headline">¶</a></h2>
+<p>Code style considerations <em>do NOT affect the functionality</em> of your code, but <em>DO affect readability</em>.</p>
+<p>Get in good habits now!</p>
+<p>For variable assignment:</p>
+<ul class="simple">
+<li><p>we use a single space around assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
+<li><p>we use <strong>snake_case</strong> for variable names (All lowercase, underscores between words)</p></li>
+<li><p>use informative variable names…something that tells you a bit about what’s being stored</p></li>
+</ul>
+<ul class="simple">
+<li><p>Ideal: <code class="docutils literal notranslate"><span class="pre">my_variable</span> <span class="pre">=</span> <span class="pre">6</span></code></p></li>
+<li><p>Avoid: <code class="docutils literal notranslate"><span class="pre">MyVariable=6</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="variable-types">
+<h2>Variable Types<a class="headerlink" href="#variable-types" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+Every variable has a <b>type</b>, which refers to the kind of variable that it is, and how the computer stores that data.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Declare a variable</span>
+<span class="n">variable_name</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># You can always ask Python &#39;what type is this variable&#39; using:</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">variable_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="int">
+<h3>Int<a class="headerlink" href="#int" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+<b>Integers</b> store whole numbers.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_integer</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">another_integer</span> <span class="o">=</span> <span class="mi">321</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># integers can be signed</span>
+<span class="n">yet_another_integer</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">yet_another_integer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="float">
+<h3>Float<a class="headerlink" href="#float" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+<b>Floats</b> store signed, decimal-point numbers.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_float</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">another_float</span> <span class="o">=</span> <span class="o">-</span><span class="mf">231.45</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">another_float</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="string">
+<h3>String<a class="headerlink" href="#string" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+<b>Strings</b> store characters, as text. 
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;words, words, words&#39;</span>
+<span class="n">another_string</span> <span class="o">=</span> <span class="s1">&#39;more words&#39;</span>
+
+<span class="c1"># Note that strings can be defined with either &#39;&#39; or &quot;&quot;</span>
+<span class="n">and_another</span> <span class="o">=</span> <span class="s2">&quot;and some more&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">and_another</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">and_another</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="quotation-marks">
+<h4>Quotation Marks<a class="headerlink" href="#quotation-marks" title="Permalink to this headline">¶</a></h4>
+<p>About those quotation marks…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;This is a single-quoted string.&#39;</span>
+<span class="n">my_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;This is a double-quoted string.&quot;</span>
+<span class="n">my_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note that Python will put single quotes around it, even if you specify double quotes.</p>
+<p>A general principle is to pick something and be consistent. In this course, I’ll do my best to only use single quotes.</p>
+</div>
+<div class="section" id="aside-what-if-you-want-to-print-a-quotation-mark">
+<h4>Aside: What if you want to print a quotation mark?<a class="headerlink" href="#aside-what-if-you-want-to-print-a-quotation-mark" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>use double quotes outside with apostraphe inside quotes</p></li>
+<li><p>use an escape <code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash) before character</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># double quotes on outside; single quote inside</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;i wan&#39;t to see a quote.&quot;</span>
+<span class="n">my_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># backslash to &quot;escape&quot; quotation mark</span>
+<span class="n">string_quote</span> <span class="o">=</span> <span class="s2">&quot;And she said, </span><span class="se">\&quot;</span><span class="s2">Please teach me Python!</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+<span class="n">string_quote</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="boolean">
+<h2>Boolean<a class="headerlink" href="#boolean" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+<b>Booleans</b> store <code>True</code> or <code>False</code>. 
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_bool</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">another_bool</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">another_bool</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="none">
+<h2>None<a class="headerlink" href="#none" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+<code>None</code> is a special type that stores <code>None</code>, used to denote a null or empty value.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">the_concept_of_nothing</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">the_concept_of_nothing</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="clicker-question-3">
+<h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h3>
+<p>After executing the following code, what will the type of <code class="docutils literal notranslate"><span class="pre">var_a</span></code> be?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var_a</span> <span class="o">=</span> <span class="o">-</span><span class="mf">17.5</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) String</p></li>
+<li><p>B) Int</p></li>
+<li><p>C) Float</p></li>
+<li><p>D) Boolean</p></li>
+<li><p>E) None</p></li>
+</ul>
+</div>
+<div class="section" id="clicker-question-4">
+<h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">¶</a></h3>
+<p>After executing the following code, what will the type of <code class="docutils literal notranslate"><span class="pre">var_b</span></code> be?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var_b</span> <span class="o">=</span> <span class="s1">&#39;-17.5&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) String</p></li>
+<li><p>B) Int</p></li>
+<li><p>C) Float</p></li>
+<li><p>D) Boolean</p></li>
+<li><p>E) None</p></li>
+</ul>
+</div>
+<div class="section" id="clicker-question-5">
+<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this headline">¶</a></h3>
+<p>After executing the following code, what will the type of the variable <code class="docutils literal notranslate"><span class="pre">m</span></code> be?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;m&#39;</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">n</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) String</p></li>
+<li><p>B) Int</p></li>
+<li><p>C) Float</p></li>
+<li><p>D) Boolean</p></li>
+<li><p>E) None</p></li>
+</ul>
+</div>
+<div class="section" id="mutable-vs-immutable">
+<h3>Mutable vs Immutable<a class="headerlink" href="#mutable-vs-immutable" title="Permalink to this headline">¶</a></h3>
+<p>The variable types we’ve talked about today are all <strong>immutable</strong>. This means they cannot be altered after they’re created.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">immutable_string</span> <span class="o">=</span> <span class="s1">&#39;COGS18 is the best!&#39;</span>
+<span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># cannot change part of the string after creation</span>
+<span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Python does have <strong>mutable</strong> types. We’ll talk about these later in the course, and these are where aliasing shines!</p>
+</div>
+</div>
+<div class="section" id="indentation">
+<h2>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h2>
+<p>Just a <em>brief</em> word on indentation.</p>
+<p>Python <em>does</em> care about whitespace.</p>
+<p>You will get an error if Python runs into unanticipated whitespace.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p>There <em>are</em> times when indentation will be required and expected. We’ll discuss these in future lectures.</p>
+<center><img src="img/doing_it_right.png" width="900px"></center>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="02-Tooling.html" title="previous page">Tools</a>
+    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shannon Ellis and Tom Donoghue<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

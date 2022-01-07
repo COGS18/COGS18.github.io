@@ -30,12 +30,12 @@ textbook:
 	git clone --depth 1 https://github.com/COGS18/LectureNotes-COGS18 materials
 
 	# Copy & build coding labs
-	# git clone --depth 1 https://github.com/COGS18/CodingLabs labs
-	# rm -rf labs/README.md
-	# rm -rf labs/Archive
-	# rm labs/source/CL1-Tooling.ipynb
-	# mv labs/source/* labs	
-	# rm -rf labs/source
+	git clone --depth 1 https://github.com/COGS18/CodingLabs labs
+	rm -rf labs/README.md
+	rm -rf labs/Archive
+	rm labs/source/CL1-Tooling.ipynb
+	mv labs/source/* labs	
+	rm -rf labs/source
 
 	# Copy & build project info
 	# git clone --depth 1 https://github.com/COGS18/projects projects
@@ -54,7 +54,7 @@ textbook:
 	cp materials/img/* _build/html/_images/
 
 
-	# rm -rf labs
+	rm -rf labs
 	rm -rf materials
 	# rm -rf projects
 
