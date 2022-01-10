@@ -358,7 +358,7 @@ a
 # Jupyter has useful shortcuts. Add a single <code>?</code> after a function or class get a window with the documentation, or a double <code>??</code> to pull up the source code. 
 # </div>
 
-# In[ ]:
+# In[20]:
 
 
 # For example, execute this cell to see the documentation for the 'abs'

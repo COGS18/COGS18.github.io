@@ -71,7 +71,7 @@
 
 # Programming: a way to ask computer to store values (variables), and do things with them (operations).`
 
-# In[ ]:
+# In[1]:
 
 
 # This is a comment. You can write a comment by using a `#`
@@ -86,7 +86,7 @@ my_other_variable = 13 # Comments can be 'inline', like this one
 # In programming, variables are things that store values. Variables are defined with <code>name = value</code>.
 # </div>
 
-# In[ ]:
+# In[4]:
 
 
 my_var = 1  # `my_var` is a variable
@@ -95,7 +95,14 @@ my_var = 1  # `my_var` is a variable
 other_var = 'variables are cool'
 
 
-# In[ ]:
+# In[8]:
+
+
+print(other_var, my_var)
+print(my_var)
+
+
+# In[5]:
 
 
 # once you create a variable it's stored in your namespace
@@ -120,10 +127,12 @@ other_var
 # 
 # After executing the following code, what will be the value of `my_var`?
 
-# In[ ]:
+# In[10]:
 
 
 my_var = 2 
+
+print(my_var)
 
 my_var = my_var + 1
 
@@ -139,11 +148,30 @@ print(my_var)
 # 
 # After executing the following code, what will be the value of `diff_var`?
 
-# In[ ]:
+# In[12]:
 
+
+my_variable
+
+
+# In[13]:
+
+
+my_var
+
+
+# In[14]:
+
+
+my_variable - my_var
+
+
+# In[16]:
+
+
+my_variabel = 6
 
 diff_var = my_variabel - my_var
-
 print(diff_var)
 
 
@@ -219,7 +247,7 @@ print(diff_var)
 #   </tr>    
 # </table>
 
-# In[ ]:
+# In[17]:
 
 
 # you will get an error if you try to assign a variable to one of these words

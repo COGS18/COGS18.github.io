@@ -7,9 +7,7 @@ output:
 # COGS 18: Introduction to Python 
 
 **Winter 2022**  
-**MWF 8-8:50 (Zoom for weeks 1-2; Peterson Hall 110)**  
-
-THIS IS A DRAFT. SYLLABUS WILL BE FINALIZED DURING WEEK 1 OF THE QUARTER.
+**MWF 8-8:50 (Zoom through January; Peterson Hall 110)**  
 
 ---
 
@@ -40,7 +38,7 @@ Through all of this, I'm here to support your learning! While regular deadlines 
 | IA             | Donovan Cronkhite       | 9AM & 10AM       | Thurs 10-11AM           |
 | IA	           | Xiaoxuan(Andrina) Zhang | 2PM & 3PM        | Thurs 10-11AM           |
 | TA	           | Shivani Bhakta          | 9AM & 10AM       | Fri 9-10AM              |
-| IA	           | Andrew Pan              | 11AM & 12PM      | TBD                     |
+| IA	           | Andrew Pan              | 11AM & 12PM      | Thurs 2-3PM             |
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)  

@@ -54,7 +54,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="next" title="Operators" href="04-Operators.html" />
     <link rel="prev" title="Tools" href="02-Tooling.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -104,6 +104,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
   </a>
  </li>
 </ul>
@@ -453,8 +458,27 @@ In programming, variables are things that store values. Variables are defined wi
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">other_var</span><span class="p">,</span> <span class="n">my_var</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>variables are cool 1
+1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># once you create a variable it&#39;s stored in your namespace</span>
 <span class="n">other_var</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;variables are cool&#39;
 </pre></div>
 </div>
 </div>
@@ -476,9 +500,17 @@ In programming, variables are things that store values. Variables are defined wi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_var</span> <span class="o">=</span> <span class="mi">2</span> 
 
+<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+
 <span class="n">my_var</span> <span class="o">=</span> <span class="n">my_var</span> <span class="o">+</span> <span class="mi">1</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+3
 </pre></div>
 </div>
 </div>
@@ -495,9 +527,51 @@ In programming, variables are things that store values. Variables are defined wi
 <p>After executing the following code, what will be the value of <code class="docutils literal notranslate"><span class="pre">diff_var</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diff_var</span> <span class="o">=</span> <span class="n">my_variabel</span> <span class="o">-</span> <span class="n">my_var</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_variable</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_var</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_variable</span> <span class="o">-</span> <span class="n">my_var</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_variabel</span> <span class="o">=</span> <span class="mi">6</span>
 
+<span class="n">diff_var</span> <span class="o">=</span> <span class="n">my_variabel</span> <span class="o">-</span> <span class="n">my_var</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">diff_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -591,6 +665,14 @@ In programming, variables are things that store values. Variables are defined wi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you will get an error if you try to assign a variable to one of these words</span>
 <span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-17-1c44ba76d8f9&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
@@ -930,7 +1012,7 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="02-Tooling.html" title="previous page">Tools</a>
-    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+    <a class='right-next' id="next-link" href="04-Operators.html" title="next page">Operators</a>
 
         </div>
         
