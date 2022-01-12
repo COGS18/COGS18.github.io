@@ -5,8 +5,8 @@
 # 
 # Due Dates:
 # - **CL2** due Wednesday (11:59 PM)
-# - **A1** now available; due next Mon 1/17 (11:59 PM)
-#     - originally a typo in Q10, instructions referred to `student_b` twice, third one should be `student_c` (`assert`s would make it clear we wanted `student_c`
+# - **A1** due next Mon 1/17 (11:59 PM)
+#     - originally a typo in Q10, instructions referred to `student_b` twice, third one should be `student_c` (`assert`s would make it clear we wanted `student_c`)
 # 
 # Notes:
 # - Office Hours Start today!
@@ -77,7 +77,7 @@
 # Python uses <code>=</code> for assignment.
 # </div>
 
-# In[ ]:
+# In[1]:
 
 
 my_var = 1
@@ -94,13 +94,20 @@ my_var = 1
 # Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> for 'sum', 'substract', 'multiply', and 'divide', repsectively.
 # </div>
 
-# In[ ]:
+# In[2]:
 
 
 print(2 + 3)
 
 
-# In[ ]:
+# In[6]:
+
+
+reusable = 4 / 2
+type(reusable)
+
+
+# In[3]:
 
 
 div_result = 4 / 2 
@@ -115,7 +122,7 @@ type(div_result)
 # - follow the rules for order of operations.
 # - parentheses specify which order you want to occur first
 
-# In[ ]:
+# In[7]:
 
 
 order_operations = 3 + 16 / 2
@@ -124,7 +131,7 @@ print(order_operations)
 
 # To specify that you want the addition to occur first, you would use parentheses.
 
-# In[ ]:
+# In[8]:
 
 
 specify_operations = (3 + 16) / 2

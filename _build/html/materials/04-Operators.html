@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="next" title="Functions" href="05-Functions.html" />
     <link rel="prev" title="Variables" href="03-Variables.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -107,6 +107,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Functions.html">
+   05-Functions
   </a>
  </li>
 </ul>
@@ -375,9 +380,9 @@
 <p>Due Dates:</p>
 <ul class="simple">
 <li><p><strong>CL2</strong> due Wednesday (11:59 PM)</p></li>
-<li><p><strong>A1</strong> now available; due next Mon 1/17 (11:59 PM)</p>
+<li><p><strong>A1</strong> due next Mon 1/17 (11:59 PM)</p>
 <ul>
-<li><p>originally a typo in Q10, instructions referred to <code class="docutils literal notranslate"><span class="pre">student_b</span></code> twice, third one should be <code class="docutils literal notranslate"><span class="pre">student_c</span></code> (<code class="docutils literal notranslate"><span class="pre">assert</span></code>s would make it clear we wanted <code class="docutils literal notranslate"><span class="pre">student_c</span></code></p></li>
+<li><p>originally a typo in Q10, instructions referred to <code class="docutils literal notranslate"><span class="pre">student_b</span></code> twice, third one should be <code class="docutils literal notranslate"><span class="pre">student_c</span></code> (<code class="docutils literal notranslate"><span class="pre">assert</span></code>s would make it clear we wanted <code class="docutils literal notranslate"><span class="pre">student_c</span></code>)</p></li>
 </ul>
 </li>
 </ul>
@@ -459,12 +464,38 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reusable</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">reusable</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>float
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">div_result</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">div_result</span><span class="p">)</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">div_result</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.0
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>float
 </pre></div>
 </div>
 </div>
@@ -483,12 +514,22 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11.0
+</pre></div>
+</div>
+</div>
 </div>
 <p>To specify that you want the addition to occur first, you would use parentheses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">specify_operations</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">16</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">specify_operations</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.5
 </pre></div>
 </div>
 </div>
@@ -1097,7 +1138,7 @@ Operators and variables can also be chained together into arbitrarily complex ex
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="03-Variables.html" title="previous page">Variables</a>
-    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">Coding Lab 1: Tech Setup &amp; Tooling</a>
+    <a class='right-next' id="next-link" href="05-Functions.html" title="next page">Functions</a>
 
         </div>
         

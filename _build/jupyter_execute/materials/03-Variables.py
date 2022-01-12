@@ -71,7 +71,7 @@
 
 # Programming: a way to ask computer to store values (variables), and do things with them (operations).`
 
-# In[1]:
+# In[2]:
 
 
 # This is a comment. You can write a comment by using a `#`
@@ -86,7 +86,7 @@ my_other_variable = 13 # Comments can be 'inline', like this one
 # In programming, variables are things that store values. Variables are defined with <code>name = value</code>.
 # </div>
 
-# In[4]:
+# In[3]:
 
 
 my_var = 1  # `my_var` is a variable
@@ -95,7 +95,7 @@ my_var = 1  # `my_var` is a variable
 other_var = 'variables are cool'
 
 
-# In[8]:
+# In[4]:
 
 
 print(other_var, my_var)
@@ -127,7 +127,7 @@ other_var
 # 
 # After executing the following code, what will be the value of `my_var`?
 
-# In[10]:
+# In[6]:
 
 
 my_var = 2 
@@ -148,25 +148,25 @@ print(my_var)
 # 
 # After executing the following code, what will be the value of `diff_var`?
 
-# In[12]:
+# In[7]:
 
 
 my_variable
 
 
-# In[13]:
+# In[8]:
 
 
 my_var
 
 
-# In[14]:
+# In[9]:
 
 
 my_variable - my_var
 
 
-# In[16]:
+# In[10]:
 
 
 my_variabel = 6
@@ -247,7 +247,7 @@ print(diff_var)
 #   </tr>    
 # </table>
 
-# In[17]:
+# In[1]:
 
 
 # you will get an error if you try to assign a variable to one of these words
@@ -276,7 +276,7 @@ try = 6
 get_ipython().run_line_magic('pinfo', 'whos')
 
 
-# In[ ]:
+# In[12]:
 
 
 # You can list everything declared in the namespace with '%whos'
@@ -303,7 +303,7 @@ get_ipython().run_line_magic('whos', '')
 # Every variable has a <b>type</b>, which refers to the kind of variable that it is, and how the computer stores that data.
 # </div>
 
-# In[ ]:
+# In[2]:
 
 
 # Declare a variable
@@ -319,14 +319,14 @@ type(variable_name)
 # <b>Integers</b> store whole numbers.
 # </div>
 
-# In[ ]:
+# In[3]:
 
 
 my_integer = 1
 another_integer = 321
 
 
-# In[ ]:
+# In[4]:
 
 
 # integers can be signed
@@ -340,14 +340,14 @@ type(yet_another_integer)
 # <b>Floats</b> store signed, decimal-point numbers.
 # </div>
 
-# In[ ]:
+# In[5]:
 
 
 my_float = 1.0
 another_float = -231.45
 
 
-# In[ ]:
+# In[6]:
 
 
 type(another_float)
@@ -359,7 +359,7 @@ type(another_float)
 # <b>Strings</b> store characters, as text. 
 # </div>
 
-# In[ ]:
+# In[7]:
 
 
 my_string = 'words, words, words'
@@ -369,7 +369,7 @@ another_string = 'more words'
 and_another = "and some more"
 
 
-# In[ ]:
+# In[8]:
 
 
 print(and_another)
@@ -380,14 +380,14 @@ type(and_another)
 # 
 # About those quotation marks...
 
-# In[ ]:
+# In[9]:
 
 
 my_string = 'This is a single-quoted string.'
 my_string
 
 
-# In[ ]:
+# In[10]:
 
 
 my_string = "This is a double-quoted string."
@@ -402,15 +402,15 @@ my_string
 # - use double quotes outside with apostraphe inside quotes
 # - use an escape `\` (backslash) before character
 
-# In[ ]:
+# In[11]:
 
 
 # double quotes on outside; single quote inside
-my_string = "i wan't to see a quote."
+my_string = "i wan't to see a apostrophe."
 my_string
 
 
-# In[ ]:
+# In[12]:
 
 
 # backslash to "escape" quotation mark
@@ -424,14 +424,20 @@ string_quote
 # <b>Booleans</b> store <code>True</code> or <code>False</code>. 
 # </div>
 
-# In[ ]:
+# In[13]:
 
 
 my_bool = True
 another_bool = False
 
 
-# In[ ]:
+# In[16]:
+
+
+another_bool
+
+
+# In[14]:
 
 
 type(another_bool)
@@ -443,13 +449,13 @@ type(another_bool)
 # <code>None</code> is a special type that stores <code>None</code>, used to denote a null or empty value.
 # </div>
 
-# In[ ]:
+# In[17]:
 
 
 the_concept_of_nothing = None
 
 
-# In[ ]:
+# In[18]:
 
 
 type(the_concept_of_nothing)
@@ -459,10 +465,11 @@ type(the_concept_of_nothing)
 # 
 # After executing the following code, what will the type of `var_a` be?
 
-# In[ ]:
+# In[20]:
 
 
 var_a = -17.5
+type(var_a)
 
 
 # - A) String
@@ -491,7 +498,7 @@ var_b = '-17.5'
 # 
 # After executing the following code, what will the type of the variable `m` be?
 
-# In[ ]:
+# In[21]:
 
 
 n = 1
@@ -510,14 +517,14 @@ type(m)
 # 
 # The variable types we've talked about today are all **immutable**. This means they cannot be altered after they're created. 
 
-# In[ ]:
+# In[22]:
 
 
 immutable_string = 'COGS18 is the best!'
 immutable_string[4]
 
 
-# In[ ]:
+# In[23]:
 
 
 # cannot change part of the string after creation
@@ -534,7 +541,7 @@ immutable_string[4] = '0'
 # 
 # You will get an error if Python runs into unanticipated whitespace.
 
-# In[ ]:
+# In[30]:
 
 
 a = 1

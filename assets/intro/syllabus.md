@@ -33,7 +33,7 @@ Through all of this, I'm here to support your learning! While regular deadlines 
 | TA	           | Sam Lau                 | 1PM & 2PM        | Mon 11AM-12PM           |
 | IA	           | Ethan Wadsworth	       | 12PM & 3PM       | Mon 3-4PM               |
 | TA             | Holly Dong              | 4PM & 5PM        | Tues 10-11AM            |
-| IA             | Suzy Anil	             | 1PM & 4PM        | Tues 1-2PM              |
+| IA             | Suzy Anil	             | 1PM & 4PM        | Tues 3-4PM              |
 | IA	           | Matthew Chong	         | 11AM & 5PM       | Wed 1-2PM               |
 | IA             | Donovan Cronkhite       | 9AM & 10AM       | Thurs 10-11AM           |
 | IA	           | Xiaoxuan(Andrina) Zhang | 2PM & 3PM        | Thurs 10-11AM           |
@@ -260,7 +260,7 @@ If you have:
 - **questions about course logistics** - first, check the syllabus. If you can't find the answer there, first ask a classmate. If still unsure, post on Campuswire.
 - **questions about a grade** - Post on Campuswire with "regrades" tag in a private post to "Instructors & TAs".
 - **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Professor Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS18 in the email subject line and your full name in your message.
-- **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the [anonymous Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)*
+- **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the [anonymous Google Form](https://goo.gl/forms/2nXnDNbgYuS1 OsGF2)*
 
 *This form can be taken down at any time if it's not being used for its intended purpose; however, you all will be notified should that happen. 
 
