@@ -31,13 +31,13 @@ Through all of this, I'm here to support your learning! While regular deadlines 
 | -------------: |:------------------------|:-----------------|:------------------------|
 | Instructor     | Prof Ellis ([sellis@ucsd.edu](mailto:sellis@ucsd.edu))  | --              | Mon 9-11 AM |
 | TA	           | Sam Lau                 | 1PM & 2PM        | Mon 11AM-12PM           |
+| TA	           | Shivani Bhakta          | 9AM & 10AM       | Mon 12-1PM              |
 | IA	           | Ethan Wadsworth	       | 12PM & 3PM       | Mon 3-4PM               |
 | TA             | Holly Dong              | 4PM & 5PM        | Tues 10-11AM            |
 | IA             | Suzy Anil	             | 1PM & 4PM        | Tues 3-4PM              |
 | IA	           | Matthew Chong	         | 11AM & 5PM       | Wed 1-2PM               |
 | IA             | Donovan Cronkhite       | 9AM & 10AM       | Thurs 10-11AM           |
 | IA	           | Xiaoxuan(Andrina) Zhang | 2PM & 3PM        | Thurs 10-11AM           |
-| TA	           | Shivani Bhakta          | 9AM & 10AM       | Fri 9-10AM              |
 | IA	           | Andrew Pan              | 11AM & 12PM      | Thurs 2-3PM             |
 
 

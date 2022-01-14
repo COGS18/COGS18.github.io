@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# **Course Announcements**
+# **Course Announcements (Wed 1/12)**
 # 
 # Due Dates:
 # - **CL2** due tonight (11:59 PM)
 # - **A1** due Mon 1/17 (11:59 PM)
 # 
 # Notes:
-# - Waitlist: If you were spots 1-5, check your email; you can now enroll; I don't anticipate others being enrolled
+# - Waitlist: If you were spots 1-5, check your email (Thanh Maxwell); you can now enroll; I don't anticipate others being enrolled
 # - No class or office hours this Monday (Dr. MLK, Jr. Day)
 
 # **Q&A**
@@ -90,6 +90,116 @@
 # 
 # Q: Will there be situations where you can use indents in code?  
 # A: Yes! Loops, functions, conditionals - we're getting there!
+
+# **Course Announcements (Fri 1/14)**
+# 
+# Due Dates:
+# - **A1** due Mon 1/17, but will be accepted for full credit through late deadline (1/20; 11:59 PM)
+# 
+# Notes:
+# - No class or office hours Monday (Dr. MLK, Jr. Day)
+#     - Prof Ellis make-up OH: Tuesday 1-3 PM (1/18; same Zoom link as on Canvas)
+# - Coding Labs
+#     - Answer keys posted each week - check your work!
+#     - Reminder: we drop the lowest coding lab (no extensions)
+#     - Coding labs are for your exploration, knowledge - add notes, add comments, explain to yourself what you didn't understand, try something out if you're curious
+# - Campuswire exists as a resource for Q&A
+#     - if code included, must be private to instructor & TAs
+
+# **Q&A**
+# 
+# Q: When you have '', no space and nothing written in it, does it mean something? Or is it just empty?  
+# A: This is an empty string. We'll see how it can be useful to define an empty string and add to it when we get to loops.
+# 
+# Q: Are we often going to use the membership operators in assignments/coding labs?  
+# A: Eh, we'll use them but not as frequently as comparison or mathematic operators. We'll see how they can be more helpful when we discuss collections.
+# 
+# Q: Can you go over the class example again on friday?  
+# A: Not sure which you mean - mind making a campuswire post and I'll explain more there?
+# 
+# Q: What's the difference between = and ==?  
+# A: `=` is for assignment. It stores what is on the right in the variable on the left. `==` is a for comparison. It checks for equality. It checks if the thing on the left's value is exactly equal to the thing on the right's value, returning either `True` or `False`.
+# 
+# Q: Also, in the section titled "Identity Operators," I am confused about why a and c are not equal when they are both the same value. Is it because they are physically a different variable?
+# A: They store the same value (are equal) but are not stored in the same place in memory (are NOT identical).
+# 
+# Q: I wanted to clarify that the skipped section of the notes regarding "is" and "is not" is not something we need to learn on our own.  
+# A: Confirmed. You will not be tested on this.
+# 
+# Q: Lastly, on the homework, my string on the fourth test for Q1 continuously gets an error. What are potential issues that come up with strings?  
+# A: Questions like this are best posted to campuswire - go ahead and post there, pelase!
+# 
+# Q: Can True == not False? I tried it out, but it said there was a syntax error.  
+# A: Ah, this is a syntax case. For this to be True, you'd need parentheses: `True == (not False)` (not something I would test you on)
+# 
+# Q: I wonder why everytime I click "enter" in Python, I run a code instead of going to the next line.  
+# A: Hmmmm...not sure. You may have changed a setting? This is something we could look at in Office Hours.
+# 
+# Q: Can we download the notebook in code instead of the PDF?  
+# A: Yes, you'd download the .ipynb file (or .py if you're downloading from datahub and just want the text file).
+# 
+# Q: How often do will we use boolean logic in coding? Like if we were to extend this to having a career in coding  
+# A: A lot.
+# 
+# Q: When using "and" or "or ", do the mathematical expressions on the left and right sides of them have to be put in parentheses as a whole?  
+# A: A somewhat unhelpful answer...sometimes. If you want to ensure everything to the left of and is considered together and then to the right of considered together, best to put parentheses around them.
+# 
+# Q: How can we use something returned later on in our code?  
+# A: The cell where the variable is defined must be executed before the variable can be used.
+# 
+
+# **Review: `assert` statements**
+#     
+# - `assert` statements "pass silently" (give no output) when the statemetn after `assert` evaluates as `True`
+
+# In[ ]:
+
+
+# true statements pass silently
+assert True
+assert 3 < 6
+assert 'COGS 18 is the best!'
+
+
+# In[ ]:
+
+
+# false statements throw an assertion error
+my_string = 'COGS 18 is the best!'
+
+assert my_string == 'COGS 18'
+
+
+# - If one `assert` statement throws an error in a cell, no other `assert` statements in the cell are executed
+
+# In[ ]:
+
+
+assert False
+assert 0
+assert ''
+
+
+# - We use `assert`s to let you know you're on the right track in assignments
+# 
+# For example, if the instructions told you to store the string 'COGS 18 is the best!' in the variable `my_string` 
+
+# In[ ]:
+
+
+# YOUR CODE HERE
+raise NotImplementedError()
+
+
+# In[ ]:
+
+
+# visible test may be...
+assert type(my_string) == str
+
+# hidden test may be...
+assert my_string == 'COGS 18 is the best!'
+
 
 # # Functions
 # 
@@ -380,7 +490,6 @@ exponentiate(exponent=3, number=2)
 # - B) 9
 # - C) SyntaxError
 # - D) None
-# 
 
 # Note: when using Keyword arguments position/order no longer matters
 

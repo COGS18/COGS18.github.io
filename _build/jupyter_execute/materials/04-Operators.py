@@ -144,11 +144,11 @@ print(specify_operations)
 # 
 # Note: Best to think about it before running the code to ensure you understand.
 
-# In[ ]:
+# In[13]:
 
 
-my_value = (3 + 2) + 16 / (4 / 2) 
-my_value
+my_value = (3 + 2) + 16 / (4 / 2)
+print(my_value)
 
 
 # - A) 7.0
@@ -163,14 +163,14 @@ my_value
 # Python also has <code>**</code> for exponentiation and <code>%</code> for remainder (called modulus). These also return numbers.
 # </div>
 
-# In[ ]:
+# In[14]:
 
 
 # 2 to the power 3
 2 ** 3
 
 
-# In[ ]:
+# In[15]:
 
 
 # remainder of 17 divided by 7
@@ -181,7 +181,7 @@ my_value
 # 
 # What would be the value stored in `remainder`?
 
-# In[ ]:
+# In[16]:
 
 
 remainder = 16 % 5
@@ -240,31 +240,31 @@ print(a, 'remainder', b)
 # - `or` : True if at least one is true
 # - `not` : True only if false
 
-# In[ ]:
+# In[17]:
 
 
 True and True
 
 
-# In[ ]:
+# In[18]:
 
 
 True or True
 
 
-# In[ ]:
+# In[19]:
 
 
 True and not False
 
 
-# In[ ]:
+# In[20]:
 
 
 not False
 
 
-# In[ ]:
+# In[21]:
 
 
 # two nots cancel one another out
@@ -273,7 +273,7 @@ not (not True)
 
 # ### Capitalization matters
 
-# In[ ]:
+# In[22]:
 
 
 # this will give you an error
@@ -281,21 +281,6 @@ not (not True)
 # 'True' is
 TRUE and TRUE
 
-
-# #### Clicker Question #4
-# 
-# How will the following boolean expression evaluate:
-
-# In[ ]:
-
-
-(6 < 10) and (4 == 4)
-
-
-# - A) True
-# - B) False
-# - C) None
-# - D) This code will fail
 
 # ## Comparison Operators
 
@@ -310,7 +295,7 @@ TRUE and TRUE
 # - `<=` : value on left is less than *or equal to* value on right
 # - `>=` : value on left is greater than or equal to value on the right
 
-# In[ ]:
+# In[23]:
 
 
 a = 12
@@ -318,29 +303,50 @@ b = 13
 a > b
 
 
-# In[ ]:
+# In[24]:
 
 
 True == True
 
 
-# In[ ]:
+# In[25]:
 
 
 True != False
 
 
-# In[ ]:
+# In[28]:
 
 
 'aa' == 'aa'
 
 
-# In[ ]:
+# In[29]:
 
 
 12 <= 13
 
+
+# #### Clicker Question #4
+# 
+# How will the following boolean expression evaluate:
+
+# In[34]:
+
+
+(6 > 10) and (4 == 4)
+
+
+# In[30]:
+
+
+(6 < 10) and (4 == 4)
+
+
+# - A) True
+# - B) False
+# - C) None
+# - D) This code will fail
 
 # #### Clicker Question #5
 # 
@@ -353,14 +359,14 @@ True != False
 # - B) I tried but am stuck.
 # - C) I'm unsure where to start
 
-# In[ ]:
+# In[37]:
 
 
 ## EDIT CODE HERE
-sword_charge = ---
-shield_energy = ---
+sword_charge = 90
+shield_energy = 100
 
-(sword_charge ---) and (shield_energy ---)
+(sword_charge >= 90) and (shield_energy >= 100)
 
 
 # ## Identity Operators
@@ -374,7 +380,7 @@ shield_energy = ---
 # - `is` : True if both refer to the same object
 # - `is not` : True if they do not refer to the same object
 
-# In[ ]:
+# In[38]:
 
 
 a = 927
@@ -382,7 +388,7 @@ b = a
 c = 927
 
 
-# In[ ]:
+# In[39]:
 
 
 print(a is b)
@@ -393,14 +399,14 @@ print(c is a)
 
 # If we wanted that second statement to evaluate as `True` we could use `is not`...
 
-# In[ ]:
+# In[40]:
 
 
 # make a True statement
 print(c is not a)
 
 
-# In[ ]:
+# In[41]:
 
 
 # testing for value equality
@@ -417,7 +423,7 @@ a == b == c
 # - B) I tried but am stuck.
 # - C) I'm unsure where to start
 
-# In[ ]:
+# In[42]:
 
 
 z = 5
@@ -428,8 +434,8 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = z is not x
+false_variable = z is x
 
 print(true_variable, false_variable)
 
@@ -576,32 +582,32 @@ print(true_variable, false_variable)
 # - `in` : True if value is found in the sequence
 # - `not in` : True if value is not found in the sequence
 
-# In[ ]:
+# In[43]:
 
 
 x = 'I love COGS18!'
 print('l' in x)
 
 
-# In[ ]:
+# In[44]:
 
 
 print('L' in x)
 
 
-# In[ ]:
+# In[45]:
 
 
 print('COGS' in x)
 
 
-# In[ ]:
+# In[46]:
 
 
 print('CSOG' in x)
 
 
-# In[ ]:
+# In[47]:
 
 
 print(' ' in x)
@@ -613,13 +619,21 @@ print(' ' in x)
 # Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 # </div>
 
-# In[ ]:
+# In[48]:
 
 
 'COGS' + ' 18'
 
 
-# In[ ]:
+# In[53]:
+
+
+cogs = 'COGS'
+number = '18'
+cogs + ' ' + number
+
+
+# In[49]:
 
 
 'a' + 'b' + 'c'
@@ -631,20 +645,26 @@ print(' ' in x)
 # Operators and variables can also be chained together into arbitrarily complex expressions.
 # </div>
 
-# In[ ]:
+# In[56]:
+
+
+('COGS' + '18' == 'COGS18')
+
+
+# In[55]:
 
 
 # Note that you can use parentheses to chunk sections
 (13 % 7 >= 7) and ('COGS' + '18' == 'COGS18')
 
 
-# In[ ]:
+# In[57]:
 
 
 (13 % 7 >= 7)
 
 
-# In[ ]:
+# In[58]:
 
 
 ('COGS' + '18' == 'COGS18')
@@ -654,7 +674,13 @@ print(' ' in x)
 # 
 # How will the following expression evaluate:
 
-# In[ ]:
+# In[62]:
+
+
+13%3 > 1
+
+
+# In[63]:
 
 
 2**2 >= 4 and 13%3 > 1
@@ -669,3 +695,26 @@ print(' ' in x)
 # 
 # - Single space around operators
 # - No spaces after leading parentheses or before trailing parentheses
+
+# Notes below are from student questions/discussion at the end of lecture:
+
+# In[68]:
+
+
+# or clarification
+# one side must evaluate as True to return True
+
+my_var = 6 > 10
+print(my_var)
+my_other_var = 5 <= 5
+
+my_var or my_other_var
+
+
+# In[69]:
+
+
+a = '5'
+b = "5" 
+a == b
+
