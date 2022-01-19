@@ -112,6 +112,11 @@
    05-Functions
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -241,6 +246,52 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-debugging-questions">
+   Part 2: Debugging Questions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-errors">
+     Creating Errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fixing-errors">
+     Fixing Errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#debugging-challenge">
+     Debugging Challenge
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-collection-types">
+   Part 3: Collection types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collection-questions">
+     Collection Questions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#declaring-collections">
+       Declaring Collections
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#indexing">
+     Indexing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#part-1-loops-review">
    Part 1: Loops Review
   </a>
@@ -285,11 +336,417 @@
         
               <div>
                 
-  <div class="section" id="cl4-loops">
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># figure out what to keep</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cl4-loops">
 <h1>CL4: Loops<a class="headerlink" href="#cl4-loops" title="Permalink to this headline">¶</a></h1>
 <p>Welcome to the fourth coding lab!</p>
 <p>In this Coding Lab we will really focus in on understanding loops.</p>
 <p><strong>Note</strong>: You may <em>not</em> be able to complete all of this in 50 minutes, particularly the challenge in Part 3.  This are meant to help you gain mastery and provide additional practices, not to stress you out a ton. Make a concerted effort. Do your best to complete it. But, if you don’t figure it all out, that’s why we post answers for these!</p>
+<div class="section" id="part-2-debugging-questions">
+<h2>Part 2: Debugging Questions<a class="headerlink" href="#part-2-debugging-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-errors">
+<h3>Creating Errors<a class="headerlink" href="#creating-errors" title="Permalink to this headline">¶</a></h3>
+<p>For each of the follow Exceptions, write a small piece of code that will cause it to happen:</p>
+<ul class="simple">
+<li><p>ZeroDivisionError</p></li>
+<li><p>SyntaxError</p></li>
+<li><p>IndentationError</p></li>
+<li><p>TypeError</p></li>
+<li><p>IndexError</p></li>
+<li><p>ValueError</p></li>
+<li><p>NameError</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ZeroDividisionError</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Zero Division Answer</span>
+<span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="n">ed6be6017f0d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">### BEGIN SOLUTION</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Zero Division Answer</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1">### END SOLUTION</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SyntaxError</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Syntax Answer</span>
+<span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-9-be9b0a2c23f4&gt;&quot;</span><span class="gt">, line </span><span class="mi">5</span>
+    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+                    <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># IndentationError</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Indentation Error</span>
+<span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-10-c6211a37f78d&gt;&quot;</span><span class="gt">, line </span><span class="mi">6</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+        <span class="o">^</span>
+<span class="ne">IndentationError</span>: expected an indented block
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TypeError</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Type error</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mf">588e2</span><span class="n">eac522e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">### BEGIN SOLUTION</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Type error</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1">### END SOLUTION</span>
+
+<span class="ne">TypeError</span>: can only concatenate tuple (not &quot;int&quot;) to tuple
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># IndexError</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Index Error</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="n">d7e1cc63f92d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Index Error</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1">### END SOLUTION</span>
+
+<span class="ne">IndexError</span>: list index out of range
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ValueError</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Value Error</span>
+<span class="nb">int</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="mi">10</span><span class="n">ee50481867</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">### BEGIN SOLUTION</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Value Error</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1">### END SOLUTION</span>
+
+<span class="ne">ValueError</span>: invalid literal for int() with base 10: &#39;a&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># NameError</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Name Error</span>
+<span class="n">a</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mi">7</span><span class="n">aa3cf16c49c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">### BEGIN SOLUTION</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Name Error</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">a</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1">### END SOLUTION</span>
+
+<span class="ne">NameError</span>: name &#39;a&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fixing-errors">
+<h3>Fixing Errors<a class="headerlink" href="#fixing-errors" title="Permalink to this headline">¶</a></h3>
+<p>For each of the following cells, try to debug the code to fix any errors, and get it running.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It worked&#39;</span><span class="p">)</span>
+    
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Answer: add a &#39;:&#39; to open the conditional code block</span>
+<span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;It worked&#39;</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age_string</span> <span class="o">=</span> <span class="s2">&quot;My favorite number is &quot;</span> <span class="o">+</span> <span class="mi">27</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Answer: typecase int to string</span>
+<span class="n">age_string</span> <span class="o">=</span> <span class="s2">&quot;My favorite number is &quot;</span> <span class="o">+</span> <span class="s2">&quot;27&quot;</span>
+<span class="c1"># OR</span>
+<span class="n">age_string</span> <span class="o">=</span> <span class="s2">&quot;My favorite number is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">27</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Three plus five equals&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># Answer: Missing closing parenthesis - add &#39;)&#39; at the end</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Three plus five equals&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="debugging-challenge">
+<h3>Debugging Challenge<a class="headerlink" href="#debugging-challenge" title="Permalink to this headline">¶</a></h3>
+<p>You’re trying to write code that will count the number of vowels in your name, storing that value in <code class="docutils literal notranslate"><span class="pre">counter</span></code>. To get started, you store your name in the variable <code class="docutils literal notranslate"><span class="pre">my_name</span></code> and write the code you see below. However, the code below is not quite working…work to debug the code below to accomplish the task!</p>
+<p>Note: This question uses a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. Next week’s coding lab will get you lots of loops practice!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_name</span> <span class="o">==</span> <span class="s1">&#39;Shannon&#39;</span>
+<span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;E&#39;</span><span class="p">,</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="s1">&#39;O&#39;</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">]</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">vowels</span><span class="p">:</span>
+        <span class="n">counter</span> <span class="o">=</span>  <span class="mi">1</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># code will differ based on who is taking the exam</span>
+<span class="n">my_name</span> <span class="o">=</span> <span class="s1">&#39;Shannon&#39;</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">afbf1bbf1f0f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">vowels</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>         <span class="n">counter</span> <span class="o">=</span>  <span class="mi">1</span>
+
+<span class="ne">NameError</span>: name &#39;my_name&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-3-collection-types">
+<h2>Part 3: Collection types<a class="headerlink" href="#part-3-collection-types" title="Permalink to this headline">¶</a></h2>
+<p>Collections are Python variable types than can store a ‘collection’ of items.</p>
+<div class="section" id="collection-questions">
+<h3>Collection Questions<a class="headerlink" href="#collection-questions" title="Permalink to this headline">¶</a></h3>
+<p>Create a list and a tuple. Fill them with with any values you want.</p>
+<p>Call them <code class="docutils literal notranslate"><span class="pre">my_list</span></code> and <code class="docutils literal notranslate"><span class="pre">my_tuple</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># specific values will differ</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Use the following cells to check the types of the variables you write are as expected</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>list
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>tuple
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="declaring-collections">
+<h4>Declaring Collections<a class="headerlink" href="#declaring-collections" title="Permalink to this headline">¶</a></h4>
+<p>Note that there can be more than one way to declare collections.</p>
+<p>As well as declaring them with ‘[]’ and ‘()’, we can use the list &amp; tuple constructors, as shown below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run me! - This creates another list &amp; tuple, using the list &amp; tuple constructors</span>
+<span class="n">some_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="n">some_tuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="s2">&quot;peanut&quot;</span><span class="p">,</span> <span class="s2">&quot;butter&quot;</span><span class="p">,</span> <span class="s2">&quot;and&quot;</span><span class="p">,</span> <span class="s2">&quot;jelly&quot;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;some_list&#39; contains: </span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">some_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;some_tuple&#39; contains: </span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">some_tuple</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;some_list&#39; contains: 	 [1, 2, 3, 4, 5]
+&#39;some_tuple&#39; contains: 	 (&#39;peanut&#39;, &#39;butter&#39;, &#39;and&#39;, &#39;jelly&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Compare the types of these variables to your equivalent variables to confirm.</p>
+<p>In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_list</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_tuple</span><span class="p">,</span> <span class="n">_WRITE_IN_TYPE_HERE_</span><span class="p">)</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">some_tuple</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indexing">
+<h3>Indexing<a class="headerlink" href="#indexing" title="Permalink to this headline">¶</a></h3>
+<p>Given the following list, do the following operations:</p>
+<ul class="simple">
+<li><p>Get the length of the list (assign this to a variable <code class="docutils literal notranslate"><span class="pre">lst_len</span></code>)</p></li>
+<li><p>Get the 1st element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind1</span></code>)</p></li>
+<li><p>Get the last element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind2</span></code>)</p></li>
+<li><p>Get the second to the fourth element of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind3</span></code>)</p></li>
+<li><p>Get from the fifth element, to the end of the list (call the selection <code class="docutils literal notranslate"><span class="pre">ind4</span></code>)</p></li>
+<li><p>Get every second element of the list, starting at the first element (call the selection <code class="docutils literal notranslate"><span class="pre">ind5</span></code>)</p></li>
+<li><p>Get every second element of the list, starting at the second element (call the selection <code class="docutils literal notranslate"><span class="pre">ind6</span></code>)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="p">[],</span> <span class="mf">5.5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">lst_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_lst</span><span class="p">)</span>
+<span class="n">ind1</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">ind2</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">ind3</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">ind4</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<span class="n">ind5</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">ind6</span> <span class="o">=</span> <span class="n">my_lst</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="section" id="part-1-loops-review">
 <h2>Part 1: Loops Review<a class="headerlink" href="#part-1-loops-review" title="Permalink to this headline">¶</a></h2>
 <p>We will now explore two ways to iterate over data in Python - <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> loops.</p>
