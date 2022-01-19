@@ -94,7 +94,7 @@
 # **Course Announcements (Fri 1/14)**
 # 
 # Due Dates:
-# - **A1** due Mon 1/17, but will be accepted for full credit through late deadline (1/20; 11:59 PM)
+# - **A1** due Mon 1/17, but will be accepted for full credit through late deadline (Thurs 1/20; 11:59 PM)
 # 
 # Notes:
 # - No class or office hours Monday (Dr. MLK, Jr. Day)
@@ -152,7 +152,7 @@
 #     
 # - `assert` statements "pass silently" (give no output) when the statemetn after `assert` evaluates as `True`
 
-# In[ ]:
+# In[3]:
 
 
 # true statements pass silently
@@ -161,7 +161,7 @@ assert 3 < 6
 assert 'COGS 18 is the best!'
 
 
-# In[ ]:
+# In[4]:
 
 
 # false statements throw an assertion error
@@ -172,7 +172,7 @@ assert my_string == 'COGS 18'
 
 # - If one `assert` statement throws an error in a cell, no other `assert` statements in the cell are executed
 
-# In[ ]:
+# In[8]:
 
 
 assert False
@@ -184,14 +184,32 @@ assert ''
 # 
 # For example, if the instructions told you to store the string 'COGS 18 is the best!' in the variable `my_string` 
 
-# In[ ]:
+# In[12]:
 
 
-# YOUR CODE HERE
-raise NotImplementedError()
+my_string = 'COGS 18 is the best!'
+my_string
 
 
-# In[ ]:
+# In[18]:
+
+
+happy_friday = 'I love COGS18'
+
+
+# In[19]:
+
+
+assert happy_friday == 'I love COGS18'
+
+
+# In[63]:
+
+
+type(my_string)
+
+
+# In[25]:
 
 
 # visible test may be...
@@ -231,12 +249,12 @@ assert my_string == 'COGS 18 is the best!'
 # ## Modular Programming
 # 
 # <div class="alert alert-success">
-# Modular programming is an approach to programming that focuses on building programs from indendent modules ('pieces'). 
+# Modular programming is an approach to programming that focuses on building programs from independent modules ('pieces'). 
 # </div>
 
 # Copy + Pasting the same/similar bit of code is to be avoided.
 # 
-# **Functions** were one way to avoid this.
+# **Functions** are one way to avoid this.
 # 
 # **Loops** are another! (we'll get to these soon...)
 
@@ -247,16 +265,16 @@ assert my_string == 'COGS 18 is the best!'
 # - Functions are the building blocks of programs, and can be flexibly combined and executed in specified orders
 #     - This allows us to build up arbitrarily complex, well-organized programs
 
-# In[ ]:
+# In[27]:
 
 
 # you've seen functions before
 # here we use the type() function
-my_var = [3, 4, 5]
+my_var = 'hi'
 type(my_var)
 
 
-# In[ ]:
+# In[28]:
 
 
 # the function print() doesn't depend on type()
@@ -269,7 +287,7 @@ print(my_var)
 # When you use `def`, **you are defining a function**.
 # You are metaphorically writing the instructions for how to make the cheeseburger.
 
-# In[ ]:
+# In[42]:
 
 
 # define a function: double_value
@@ -281,18 +299,24 @@ def double_value(num):
     doubled = num + num
     
     # return output from function
-    return doubled    
+    return doubled
 
 
-# In[ ]:
+# In[43]:
 
 
 # excecute a function by calling the function's name
 # and defining the parameter within the parentheses
-double_value(num = 2) 
+my_output = double_value(num = 2) 
 
 
-# In[ ]:
+# In[44]:
+
+
+my_output
+
+
+# In[31]:
 
 
 # equivalent function call
@@ -305,7 +329,7 @@ double_value(2)
 # 
 # Here we are defining a function with multiple parameters
 
-# In[ ]:
+# In[45]:
 
 
 def add_two_numbers(num1, num2):
@@ -317,13 +341,13 @@ def add_two_numbers(num1, num2):
     return answer
 
 
-# In[ ]:
+# In[46]:
 
 
 add_two_numbers(5, 14)
 
 
-# In[ ]:
+# In[54]:
 
 
 # Execute our function again on some other inputs to double check 
@@ -351,7 +375,7 @@ print(output)
 # 
 # A) 0   &emsp;B) 2    &emsp;C) 4    &emsp;D) '2r.2 + 1'    &emsp;E) ¯\\\_(ツ)\_/¯
 
-# In[ ]:
+# In[55]:
 
 
 def remainder(number, divider):
@@ -361,7 +385,7 @@ def remainder(number, divider):
     return r
 
 
-# In[ ]:
+# In[57]:
 
 
 ans_1 = remainder(12, 5)
@@ -398,22 +422,28 @@ print(ans_1 + ans_2)
 # 
 # Specify a default value in a function by doing an assignment within the function definition.
 
-# In[ ]:
+# In[70]:
 
 
 # Create a function, that has a default values for a parameter
-def exponentiate(number, exponent=2):  
+def exponentiate(number, exponent=2):
     return number ** exponent
 
 
-# In[ ]:
+# In[72]:
+
+
+exponentiate(3)
+
+
+# In[59]:
 
 
 # Use the function, using default value
 exponentiate(3)
 
 
-# In[ ]:
+# In[60]:
 
 
 # Call the function, over-riding default value with something else
@@ -421,7 +451,7 @@ exponentiate(3)
 exponentiate(2, 3)
 
 
-# In[ ]:
+# In[61]:
 
 
 # you can always state this explicitly

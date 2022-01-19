@@ -112,6 +112,11 @@
    05-Functions
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -287,36 +292,14 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#function-questions">
-     Function Questions
+    <a class="reference internal nav-link" href="#write-a-function-with-a-loop-inside-it">
+     Write a function with a loop inside it
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#write-a-function-that-takes-one-input-multiplies-it-by-two-and-returns-the-result">
-       Write a function that takes one input, multiplies it by two and returns the result
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#write-a-function-that-takes-two-inputs-adds-them-together-and-returns-the-result">
-       Write a function that takes two inputs, adds them together, and returns the result
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#write-a-function-with-a-conditional-inside-it">
-       Write a function with a conditional inside it
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#write-a-function-with-a-loop-inside-it">
-       Write a function with a loop inside it
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#write-a-function-with-a-loop-and-a-conditional-inside-it">
-       Write a function with a loop and a conditional inside it
-      </a>
-     </li>
-    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#write-a-function-with-a-loop-and-a-conditional-inside-it">
+     Write a function with a loop and a conditional inside it
+    </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#function-challenge">
@@ -497,111 +480,8 @@
 <div class="section" id="part-2-functions">
 <h2>Part 2: Functions<a class="headerlink" href="#part-2-functions" title="Permalink to this headline">¶</a></h2>
 <p>Functions are a way to organize code into a procedure that we can repeat and use whenever we want.</p>
-<div class="section" id="function-questions">
-<h3>Function Questions<a class="headerlink" href="#function-questions" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="write-a-function-that-takes-one-input-multiplies-it-by-two-and-returns-the-result">
-<h4>Write a function that takes one input, multiplies it by two and returns the result<a class="headerlink" href="#write-a-function-that-takes-one-input-multiplies-it-by-two-and-returns-the-result" title="Permalink to this headline">¶</a></h4>
-<p>This function has been started for you, with the name <code class="docutils literal notranslate"><span class="pre">mult_two</span></code>.</p>
-<p>Add some more code to finish this function.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mult_two</span><span class="p">(</span><span class="n">input_number</span><span class="p">):</span>
-    
-
-<span class="c1">### BEGIN SOLUTION</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="n">input_number</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="k">return</span> <span class="n">answer</span>
-<span class="c1">### END SOLUTION</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that you can use the function</span>
-<span class="n">mult_two</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check this function returns the correct outputs</span>
-<span class="k">assert</span> <span class="n">mult_two</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
-<span class="k">assert</span> <span class="n">mult_two</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="write-a-function-that-takes-two-inputs-adds-them-together-and-returns-the-result">
-<h4>Write a function that takes two inputs, adds them together, and returns the result<a class="headerlink" href="#write-a-function-that-takes-two-inputs-adds-them-together-and-returns-the-result" title="Permalink to this headline">¶</a></h4>
-<p>Call this function <code class="docutils literal notranslate"><span class="pre">add_two</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_two</span><span class="p">(</span><span class="n">_FILL_IN_INPUTS_</span><span class="p">):</span>
-    
-<span class="c1">### BEGIN SOLUTION</span>
-<span class="k">def</span> <span class="nf">add_two</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-
-    <span class="n">answer</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
-    <span class="k">return</span> <span class="n">answer</span>
-<span class="c1">### END SOLUTION</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that you can use the function</span>
-<span class="n">add_two</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check this function returns the correct number</span>
-<span class="k">assert</span> <span class="n">add_two</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
-<span class="k">assert</span> <span class="n">add_two</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="write-a-function-with-a-conditional-inside-it">
-<h4>Write a function with a conditional inside it<a class="headerlink" href="#write-a-function-with-a-conditional-inside-it" title="Permalink to this headline">¶</a></h4>
-<p>You can decide what this function does.</p>
-<p>It could, for example, take in a boolean and print out a status if the given boolean is True.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
-<span class="k">def</span> <span class="nf">check_bool</span><span class="p">(</span><span class="n">input_bool</span><span class="p">):</span>
-    
-    <span class="k">if</span> <span class="n">input_bool</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;Status is True&#39;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;Status is not True&#39;</span>
-    
-    <span class="k">return</span> <span class="n">out</span>
-<span class="c1">### END SOLUTION</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 <div class="section" id="write-a-function-with-a-loop-inside-it">
-<h4>Write a function with a loop inside it<a class="headerlink" href="#write-a-function-with-a-loop-inside-it" title="Permalink to this headline">¶</a></h4>
+<h3>Write a function with a loop inside it<a class="headerlink" href="#write-a-function-with-a-loop-inside-it" title="Permalink to this headline">¶</a></h3>
 <p>You can decide what this function does.</p>
 <p>It could, for example, take a list of numbers, add 1 to each element, and return the new list.</p>
 <div class="cell docutils container">
@@ -622,7 +502,7 @@
 </div>
 </div>
 <div class="section" id="write-a-function-with-a-loop-and-a-conditional-inside-it">
-<h4>Write a function with a loop and a conditional inside it<a class="headerlink" href="#write-a-function-with-a-loop-and-a-conditional-inside-it" title="Permalink to this headline">¶</a></h4>
+<h3>Write a function with a loop and a conditional inside it<a class="headerlink" href="#write-a-function-with-a-loop-and-a-conditional-inside-it" title="Permalink to this headline">¶</a></h3>
 <p>You can decide what this function does.</p>
 <p>It could, for example, take a list of booleans, count how many elements are True, and return a count of <code class="docutils literal notranslate"><span class="pre">True</span></code> values.</p>
 <div class="cell docutils container">
@@ -648,7 +528,6 @@
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
 </pre></div>
-</div>
 </div>
 </div>
 </div>

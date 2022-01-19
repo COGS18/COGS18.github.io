@@ -5,13 +5,249 @@
 # 
 # Welcome to the third coding lab!
 # 
-# CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook if you're able.
+# CodingLab labs are meant to be interactive - so find another person to work together with on this notebook if you're able.
 # 
 # CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go! 
 # 
 # If you have a question about how something works / what something does - try it out, and see what happens!
 
-# ## Part 1: Conditionals
+# ## Part I: PseudoCode
+# 
+# First, let's briefly consider the idea of pseudocode. 
+# 
+# Pseudocode is an informal, 'high-level' sketch or description of a program or algorithm. 
+# 
+# It will typically resemble the structure of a program, but the details to make it actually run have not been fleshed out. 
+
+# ### Pseudocode Human Language
+# 
+# Some pseudocode is written in human level language, in a way that sketches out the tasks and general control flow. 
+# 
+# This highly abstract pseudocode is often not specific to any particular programming language. 
+
+# ```
+# # PseudoCode for checking if a student got full credit on assignment
+# 
+# function that takes a list of student ids with student grades
+# 
+#     create an output object to collect full credit
+# 
+#     for student in list of grades
+# 
+#         if grade of student is equal to max grade
+#             add to list of full credits
+# 
+#     return list of students who got full credit
+# ```
+
+# ### Pseudocode in Python format
+# 
+# You can also write pseudocode, that is much closer to Python (including Python syntax) but maintains more of a template / outline. 
+# 
+# Pseudocode like this is sometimes just a work-in-progress that is just not yet finished. 
+# 
+# Note the use of the `pass` keyword - `pass` is just a placeholder keyword that does nothing.
+
+# In[1]:
+
+
+# PseudoCode for a function to email a list of emails, and return a log of what was sent
+def sent_emails(list_of_emails):
+
+    emails_sent = {}  # Define an output variable for the logging
+
+    for email in list_of_emails: # loop through all of the emails in a list of emails
+
+        # Send email to current student
+        pass
+
+        # Add logging information that email was sent
+        email_sent[email] = True
+
+    return emails_sent
+
+
+# ## Part II: Computation &  Algorithms
+# 
+# Both computers and humans are good at some things, and bad at others. However, it tends to be different things that computers and humans are good at. 
+# 
+# Here is a list of possible tasks that a human and/or computer could try and do:
+# 
+# - Given a list of 100K values, find the average and range of the list
+# - Sort an array of randomly generated numbers from smallest to largest
+# - Recognize the saddest part of a movie
+# - Recall specific facts, like answering 'which day of the week was the 1st of June, 1997?'
+# - Identify the likely country of origin of a person from their accent
+# - Create a meme
+# - Sort a list of 10,000 names alphabetically
+# - Rank memes in order of how funny they are
+# - Given two locations, figure out the best route to drive to get from one to another
+# - Recognize the emotional state of a person
+# - Flexibly change strategies based on cues in the environment
+# - Write and perform a winning rap battle 
+# - Learn and be able to understand a human language
+# - Learn and be able to understand a programming language
+# - Play tic-tac-toe
+# - Write a review of a movie
+# - Play chess
+# - Play PACMAN
+
+# ### Instructions
+# 
+# For each task above, we want to try and decide whether it is a task that computers would be better at, that humans would be better at, or if it would be a tie.
+# 
+# In small groups (2 or 3 people, or on your own if groups are not possible/you're not doing this in coding lab directly), pick 3 or 4 examples from the list of tasks above, have a quick discussion about the task at hand and try to answer the question of who (computers and/or humans) this task would be easier for. 
+# 
+# For each task, try to imagine how you might try and do this in Python. You don't need to know how to write the actual code yet; you can use comments to describe the step.
+# 
+# Use pseudocode to sketch out an outline of the procedure for a 'computer better' task. 
+# - If you think it is something computers can do well, your pseudocode should roughly cover the whole process.
+# 
+# Note: as a rule of thumb, computers can perform (and are good at) anything we can write down a specified list of steps (aka an algorithm). 
+# 
+# So one way to approach this section is to think through if and how you would write an algorithm to complete each task.
+# 
+# Below is an example, with an answer for the first listed task. You will be asked to sketch out your own example under that.
+
+# #### Example: Given a list of 100K values, find the average and range of the list
+# 
+# This is a task that is easier for computers because we can write down a clear set of steps to complete this task (we can write an algorithm). 
+# 
+# Humans would not be good at completing this task, as there are a lot of steps to complete, and it would be slow, and we might not have the memory to do it.  
+
+# In[2]:
+
+
+# Pseudocode for list of value statistics
+def list_statistics():
+    
+    # Find the mean of the list of values. 
+    pass
+    # To do so:
+        # Find the total sum of the list
+        # Find the number of elements in the list
+        # Divide the sum by the number of elements
+        
+    # Find the range of the list of values. 
+    pass
+    # To do so:
+        # Find the maximum value of the list
+        # Find the minimum value of the list
+        # Calculate range by subtracting the max from the min for the array
+    
+    # Return the mean and range of the array
+    return None
+
+
+# ### Include sketch of (at least) one task
+# 
+# After brainstorming, include a sketch of your pseudocode for at least one of the tasks you brainstormed about earlier:
+
+# In[3]:
+
+
+## Make some notes & write some pseudocode for you chosen task(s) here
+
+
+# ## Part 2: Functions
+# 
+# Functions are a way to organize code into a procedure that we can repeat and use whenever we want. 
+
+# ### Function Questions
+
+# #### Write a function that takes one input, multiplies it by two and returns the result
+# 
+# This function has been started for you, with the name `mult_two`.
+# 
+# Add some more code to finish this function. 
+
+# In[4]:
+
+
+def mult_two(input_number):
+    
+
+### BEGIN SOLUTION
+    answer = input_number * 2
+    return answer
+### END SOLUTION
+
+
+# In[5]:
+
+
+# Check that you can use the function
+mult_two(2)
+
+
+# In[6]:
+
+
+# Check this function returns the correct outputs
+assert mult_two(2) == 4
+assert mult_two(3) == 6
+
+
+# #### Write a function that takes two inputs, adds them together, and returns the result
+# 
+# Call this function `add_two`.
+
+# In[10]:
+
+
+def add_two(_FILL_IN_INPUTS_):
+    
+### BEGIN SOLUTION
+def add_two(num1, num2):
+
+    answer = num1 + num2
+    return answer
+### END SOLUTION
+
+
+# In[11]:
+
+
+# Check that you can use the function
+add_two(2, 2)
+
+
+# In[12]:
+
+
+# Check this function returns the correct number
+assert add_two(2, 2) == 4
+assert add_two(3, 2) == 5
+
+
+# #### Write a function with a conditional inside it
+# 
+# You can decide what this function does. 
+# 
+# It could, for example, take in a boolean and print out a status if the given boolean is True. 
+
+# In[13]:
+
+
+### BEGIN SOLUTION
+def check_bool(input_bool):
+    
+    if input_bool == True:
+        out = 'Status is True'
+    else:
+        out = 'Status is not True'
+    
+    return out
+### END SOLUTION
+
+
+# In[ ]:
+
+
+# you can test out your function down here...
+
+
+# ## Part 3: Conditionals
 # 
 # Conditionals a form of control flow for executing certain code if a specific condition is met. 
 
@@ -183,275 +419,6 @@ if v1 == True and v2 == False:
 if v1 == True:
     if v2 == False:
         print('Also YES!')
-### END SOLUTION
-
-
-# ## Part 2: Debugging Questions
-
-# ### Creating Errors
-# For each of the follow Exceptions, write a small piece of code that will cause it to happen:
-# - ZeroDivisionError
-# - SyntaxError
-# - IndentationError
-# - TypeError
-# - IndexError
-# - ValueError
-# - NameError
-
-# In[8]:
-
-
-# ZeroDividisionError
-
-### BEGIN SOLUTION
-# Zero Division Answer
-1/0
-### END SOLUTION
-
-
-# In[9]:
-
-
-# SyntaxError
-
-### BEGIN SOLUTION
-# Syntax Answer
-for el in [1, 2]
-    print(el)
-### END SOLUTION
-
-
-# In[10]:
-
-
-# IndentationError
-
-### BEGIN SOLUTION
-# Indentation Error
-for el in [1, 2]:
-print(el)
-### END SOLUTION
-
-
-# In[11]:
-
-
-# TypeError
-
-### BEGIN SOLUTION
-# Type error
-(1, 2) + (2)
-### END SOLUTION
-
-
-# In[12]:
-
-
-# IndexError
-
-### BEGIN SOLUTION
-# Index Error
-lst = [1, 2]
-lst[2]
-### END SOLUTION
-
-
-# In[13]:
-
-
-# ValueError
-
-### BEGIN SOLUTION
-# Value Error
-int('a')
-### END SOLUTION
-
-
-# In[14]:
-
-
-# NameError
-
-### BEGIN SOLUTION
-# Name Error
-a
-### END SOLUTION
-
-
-# ### Fixing Errors
-# 
-# For each of the following cells, try to debug the code to fix any errors, and get it running. 
-
-# In[ ]:
-
-
-if True
-    print('It worked')
-    
-### BEGIN SOLUTION
-# Answer: add a ':' to open the conditional code block
-if True:
-    print('It worked')
-### END SOLUTION
-
-
-# In[ ]:
-
-
-age_string = "My favorite number is " + 27
-
-### BEGIN SOLUTION
-# Answer: typecase int to string
-age_string = "My favorite number is " + "27"
-# OR
-age_string = "My favorite number is " + str(27)
-### END SOLUTION
-
-
-# In[ ]:
-
-
-print('Three plus five equals' + str(3+5)
-
-### BEGIN SOLUTION
-# Answer: Missing closing parenthesis - add ')' at the end
-print('Three plus five equals' + str(3+5))
-
-### END SOLUTION
-
-
-# ### Debugging Challenge
-# 
-# You're trying to write code that will count the number of vowels in your name, storing that value in `counter`. To get started, you store your name in the variable `my_name` and write the code you see below. However, the code below is not quite working...work to debug the code below to accomplish the task!
-# 
-# Note: This question uses a `for` loop. Next week's coding lab will get you lots of loops practice!
-
-# In[2]:
-
-
-my_name == 'Shannon'
-vowels = ['A','E','I','O','U', 'a', 'e', 'i', 'o', 'u']
-counter = 0
-
-for char in my_name:
-    if char == vowels:
-        counter =  1
-
-### BEGIN SOLUTION
-# code will differ based on who is taking the exam
-my_name = 'Shannon'
-counter = 0
-
-for char in my_name:
-    if char in vowels:
-        counter += 1
-### END SOLUTION
-
-
-# ## Part 3: Collection types
-# 
-# Collections are Python variable types than can store a 'collection' of items.
-
-# ### Collection Questions
-# 
-# Create a list and a tuple. Fill them with with any values you want. 
-# 
-# Call them `my_list` and `my_tuple`.
-
-# In[5]:
-
-
-### BEGIN SOLUTION
-# specific values will differ
-
-my_list = [1, 2, 3]
-my_tuple = ('a', 'b', 'c')
-### END SOLUTION
-
-
-# In[7]:
-
-
-assert isinstance(my_list, list)
-assert isinstance(my_tuple, tuple)
-
-
-# Use the following cells to check the types of the variables you write are as expected
-
-# In[19]:
-
-
-type(my_list)
-
-
-# In[20]:
-
-
-type(my_tuple)
-
-
-# #### Declaring Collections
-# 
-# Note that there can be more than one way to declare collections. 
-# 
-# As well as declaring them with '[]' and '()', we can use the list & tuple constructors, as shown below. 
-
-# In[21]:
-
-
-# Run me! - This creates another list & tuple, using the list & tuple constructors
-some_list = list([1, 2, 3, 4, 5])
-some_tuple = tuple(["peanut", "butter", "and", "jelly"])
-
-print("'some_list' contains: \t", some_list)
-print("'some_tuple' contains: \t", some_tuple)
-
-
-# Compare the types of these variables to your equivalent variables to confirm.
-# 
-# In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass. 
-
-# In[ ]:
-
-
-# Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be
-assert isinstance(some_list, _WRITE_IN_TYPE_HERE_)
-assert isinstance(some_tuple, _WRITE_IN_TYPE_HERE_)
-
-### BEGIN SOLUTION
-assert isinstance(some_list, list)
-assert isinstance(some_tuple, tuple)
-### END SOLUTION
-
-
-# ### Indexing
-# 
-# Given the following list, do the following operations:
-# - Get the length of the list (assign this to a variable `lst_len`)
-# - Get the 1st element of the list (call the selection `ind1`)
-# - Get the last element of the list (call the selection `ind2`)
-# - Get the second to the fourth element of the list (call the selection `ind3`)
-# - Get from the fifth element, to the end of the list (call the selection `ind4`)
-# - Get every second element of the list, starting at the first element (call the selection `ind5`)
-# - Get every second element of the list, starting at the second element (call the selection `ind6`)
-
-# In[23]:
-
-
-my_lst = ['a', True, 12, 'tomato', False, None, 23, 'python', [], 5.5]
-
-
-# In[24]:
-
-
-### BEGIN SOLUTION
-lst_len = len(my_lst)
-ind1 = my_lst[0]
-ind2 = my_lst[-1]
-ind3 = my_lst[1:4]
-ind4 = my_lst[4:]
-ind5 = my_lst[0::2]
-ind6 = my_lst[1::2]
 ### END SOLUTION
 
 

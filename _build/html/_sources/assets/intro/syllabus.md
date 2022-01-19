@@ -172,9 +172,9 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 1/3      | 1	   | 1      | M   | Introduction        |                           |                         	| 
 | 1/5      | 1	   | 2      | W   | Tooling & Integrity |                           | CL1: Tooling & Integrity  | 
 | 1/7      | 1	   | 3      | F   | Variables           |                           |                           |
-| 1/10     | 2     | 4      | M   | Operators           |                           |                         	| 
-| 1/12     | 2	   | 5      | W   | Functions I         |                           | CL2: Programming I        | 
-| 1/14     | 2	   | 6      | F   | Functions II        |                           |                           |
+| 1/10     | 2     | 4      | M   | Operators I         |                           |                         	| 
+| 1/12     | 2	   | 5      | W   | Operators II        |                           | CL2: Programming I        | 
+| 1/14     | 2	   | 6      | F   | Functions           |                           |                           |
 | 1/17     | 3	   | --     | M   | **No Class**        | A1: Getting-Started       |         			            | 
 | 1/19     | 3	   | 7      | W   | Conditionals        |                           | CL3: Functions            | 
 | 1/21     | 3	   | 8      | F   | Debugging           |                           |                           |
@@ -260,7 +260,7 @@ If you have:
 - **questions about course logistics** - first, check the syllabus. If you can't find the answer there, first ask a classmate. If still unsure, post on Campuswire.
 - **questions about a grade** - Post on Campuswire with "regrades" tag in a private post to "Instructors & TAs".
 - **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Professor Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS18 in the email subject line and your full name in your message.
-- **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the [anonymous Google Form](https://goo.gl/forms/2nXnDNbgYuS1 OsGF2)*
+- **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the [anonymous Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)*
 
 *This form can be taken down at any time if it's not being used for its intended purpose; however, you all will be notified should that happen. 
 
@@ -270,5 +270,5 @@ Most students call me Professor/Prof Ellis, and that's great! This is how I typi
 
 ### What should I call you?
 
-I should call you by your preferred name, with the correct pronunciation. Please correct me (either in the moment or via email/Campuswire after the fact...however you're most comfortable) if I ever make a mistake.
+I should call you by your name, with the correct pronunciation. Please correct me (either in the moment or via email/Campuswire after the fact...however you're most comfortable) if I ever make a mistake.
 

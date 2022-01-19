@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[ ]:
+
+
+# figure out what to keep
+
+
 # # CL4: Loops
 # 
 # Welcome to the fourth coding lab!
@@ -8,6 +14,281 @@
 # In this Coding Lab we will really focus in on understanding loops.
 
 # **Note**: You may *not* be able to complete all of this in 50 minutes, particularly the challenge in Part 3.  This are meant to help you gain mastery and provide additional practices, not to stress you out a ton. Make a concerted effort. Do your best to complete it. But, if you don't figure it all out, that's why we post answers for these!
+
+# ## Part 2: Debugging Questions
+
+# ### Creating Errors
+# For each of the follow Exceptions, write a small piece of code that will cause it to happen:
+# - ZeroDivisionError
+# - SyntaxError
+# - IndentationError
+# - TypeError
+# - IndexError
+# - ValueError
+# - NameError
+
+# In[8]:
+
+
+# ZeroDividisionError
+
+### BEGIN SOLUTION
+# Zero Division Answer
+1/0
+### END SOLUTION
+
+
+# In[9]:
+
+
+# SyntaxError
+
+### BEGIN SOLUTION
+# Syntax Answer
+for el in [1, 2]
+    print(el)
+### END SOLUTION
+
+
+# In[10]:
+
+
+# IndentationError
+
+### BEGIN SOLUTION
+# Indentation Error
+for el in [1, 2]:
+print(el)
+### END SOLUTION
+
+
+# In[11]:
+
+
+# TypeError
+
+### BEGIN SOLUTION
+# Type error
+(1, 2) + (2)
+### END SOLUTION
+
+
+# In[12]:
+
+
+# IndexError
+
+### BEGIN SOLUTION
+# Index Error
+lst = [1, 2]
+lst[2]
+### END SOLUTION
+
+
+# In[13]:
+
+
+# ValueError
+
+### BEGIN SOLUTION
+# Value Error
+int('a')
+### END SOLUTION
+
+
+# In[14]:
+
+
+# NameError
+
+### BEGIN SOLUTION
+# Name Error
+a
+### END SOLUTION
+
+
+# ### Fixing Errors
+# 
+# For each of the following cells, try to debug the code to fix any errors, and get it running. 
+
+# In[ ]:
+
+
+if True
+    print('It worked')
+    
+### BEGIN SOLUTION
+# Answer: add a ':' to open the conditional code block
+if True:
+    print('It worked')
+### END SOLUTION
+
+
+# In[ ]:
+
+
+age_string = "My favorite number is " + 27
+
+### BEGIN SOLUTION
+# Answer: typecase int to string
+age_string = "My favorite number is " + "27"
+# OR
+age_string = "My favorite number is " + str(27)
+### END SOLUTION
+
+
+# In[ ]:
+
+
+print('Three plus five equals' + str(3+5)
+
+### BEGIN SOLUTION
+# Answer: Missing closing parenthesis - add ')' at the end
+print('Three plus five equals' + str(3+5))
+
+### END SOLUTION
+
+
+# ### Debugging Challenge
+# 
+# You're trying to write code that will count the number of vowels in your name, storing that value in `counter`. To get started, you store your name in the variable `my_name` and write the code you see below. However, the code below is not quite working...work to debug the code below to accomplish the task!
+# 
+# Note: This question uses a `for` loop. Next week's coding lab will get you lots of loops practice!
+
+# In[2]:
+
+
+my_name == 'Shannon'
+vowels = ['A','E','I','O','U', 'a', 'e', 'i', 'o', 'u']
+counter = 0
+
+for char in my_name:
+    if char == vowels:
+        counter =  1
+
+### BEGIN SOLUTION
+# code will differ based on who is taking the exam
+my_name = 'Shannon'
+counter = 0
+
+for char in my_name:
+    if char in vowels:
+        counter += 1
+### END SOLUTION
+
+
+# ## Part 3: Collection types
+# 
+# Collections are Python variable types than can store a 'collection' of items.
+
+# ### Collection Questions
+# 
+# Create a list and a tuple. Fill them with with any values you want. 
+# 
+# Call them `my_list` and `my_tuple`.
+
+# In[5]:
+
+
+### BEGIN SOLUTION
+# specific values will differ
+
+my_list = [1, 2, 3]
+my_tuple = ('a', 'b', 'c')
+### END SOLUTION
+
+
+# In[7]:
+
+
+assert isinstance(my_list, list)
+assert isinstance(my_tuple, tuple)
+
+
+# Use the following cells to check the types of the variables you write are as expected
+
+# In[19]:
+
+
+type(my_list)
+
+
+# In[20]:
+
+
+type(my_tuple)
+
+
+# #### Declaring Collections
+# 
+# Note that there can be more than one way to declare collections. 
+# 
+# As well as declaring them with '[]' and '()', we can use the list & tuple constructors, as shown below. 
+
+# In[21]:
+
+
+# Run me! - This creates another list & tuple, using the list & tuple constructors
+some_list = list([1, 2, 3, 4, 5])
+some_tuple = tuple(["peanut", "butter", "and", "jelly"])
+
+print("'some_list' contains: \t", some_list)
+print("'some_tuple' contains: \t", some_tuple)
+
+
+# Compare the types of these variables to your equivalent variables to confirm.
+# 
+# In the cell below, write in the type of the objects that you expect them to be, and make sure the asserts pass. 
+
+# In[ ]:
+
+
+# Fill in `_WRITE_IN_TYPE_HERE` with the type you expect each variable to be
+assert isinstance(some_list, _WRITE_IN_TYPE_HERE_)
+assert isinstance(some_tuple, _WRITE_IN_TYPE_HERE_)
+
+### BEGIN SOLUTION
+assert isinstance(some_list, list)
+assert isinstance(some_tuple, tuple)
+### END SOLUTION
+
+
+# ### Indexing
+# 
+# Given the following list, do the following operations:
+# - Get the length of the list (assign this to a variable `lst_len`)
+# - Get the 1st element of the list (call the selection `ind1`)
+# - Get the last element of the list (call the selection `ind2`)
+# - Get the second to the fourth element of the list (call the selection `ind3`)
+# - Get from the fifth element, to the end of the list (call the selection `ind4`)
+# - Get every second element of the list, starting at the first element (call the selection `ind5`)
+# - Get every second element of the list, starting at the second element (call the selection `ind6`)
+
+# In[23]:
+
+
+my_lst = ['a', True, 12, 'tomato', False, None, 23, 'python', [], 5.5]
+
+
+# In[24]:
+
+
+### BEGIN SOLUTION
+lst_len = len(my_lst)
+ind1 = my_lst[0]
+ind2 = my_lst[-1]
+ind3 = my_lst[1:4]
+ind4 = my_lst[4:]
+ind5 = my_lst[0::2]
+ind6 = my_lst[1::2]
+### END SOLUTION
+
+
+# In[ ]:
+
+
+
+
 
 # ## Part 1: Loops Review
 # 

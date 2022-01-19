@@ -6,7 +6,7 @@
 # 
 # Welcome to the second coding lab!
 # 
-# CodingLab labs are meant to be interactive - so you should find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each still fill out your own notebook for submission.
+# CodingLab labs are meant to be interactive - so you are encouraged find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each still fill out your own notebook for submission.
 # 
 # CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go! If you explore something beyond what is required in the notebook, feel free to leave that exploratory code in the notebook you submit.
 # 
