@@ -136,6 +136,11 @@
    CL2-ProgrammingI
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -838,7 +843,10 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <p>A) I did it!  B) I think I did it.  C) I tried but I am stuck.  D) Super duper lost</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE  </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE </span>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; Good morning!&#39;</span>
+    <span class="k">return</span> <span class="n">output</span>
 </pre></div>
 </div>
 </div>
@@ -846,6 +854,19 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST YOUR FUNCTION HERE</span>
+<span class="n">my_variable</span> <span class="o">=</span> <span class="n">greet</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Students&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_variable</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hello name Good morning!&#39;
 </pre></div>
 </div>
 </div>
@@ -933,11 +954,21 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keyword arguments are explicitly named as to which argument each value relates to</span>
 <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -948,12 +979,25 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: once you have a keyword argument, you can&#39;t have other positional arguments afterwards</span>
 <span class="c1"># this cell will produce an error</span>
 <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-98-f1cf69c6b3be&gt;&quot;</span><span class="gt">, line </span><span class="mi">3</span>
+    <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+                            <span class="o">^</span>
+<span class="ne">SyntaxError</span>: positional argument follows keyword argument
 </pre></div>
 </div>
 </div>
@@ -976,7 +1020,15 @@ Arguments to a function can be indicated by either position or keyword.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>    
     <span class="k">return</span> <span class="n">number</span> <span class="o">**</span> <span class="n">exponent</span>
 
-<span class="n">exponentiate</span><span class="p">(</span><span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1"># exponentiate(exponent=3, number=2)</span>
+
+<span class="c1"># best to keep arguments in the same order as definition</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -1008,6 +1060,27 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable          Type        Data/Info
+---------------------------------------
+add_two_numbers   function    &lt;function add_two_numbers at 0x7fe5ce9979d0&gt;
+ans_1             int         2
+ans_2             int         0
+answer            int         3
+double_value      function    &lt;function double_value at 0x7fe5ce997a60&gt;
+exponentiate      function    &lt;function exponentiate at 0x7fe5d051d8b0&gt;
+greet             function    &lt;function greet at 0x7fe5d051d160&gt;
+happy_frday       str         I love COGS18
+happy_friday      str         I love COGS18
+my_output         int         4
+my_string         str         COGS 18 is the best!
+my_var            str         hi
+my_variable       str         Hello Students Good morning!
+output            int         3
+remainder         function    &lt;function remainder at 0x7fe5ce997b80&gt;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="variables-defined-inside-a-function-only-exist-within-that-function">
 <h3>Variables defined inside a function only exist within that function.<a class="headerlink" href="#variables-defined-inside-a-function-only-exist-within-that-function" title="Permalink to this headline">¶</a></h3>
@@ -1022,6 +1095,11 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I am a variable
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1032,15 +1110,25 @@ Arguments to a function can be indicated by either position or keyword.
     
     <span class="k">return</span> <span class="n">my_var</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">concat_self</span><span class="p">(</span><span class="n">my_var</span><span class="p">))</span>
+<span class="n">concat_self</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;I am a variable I am a variable&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see that my_var in global name space remains unchanged</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see that my_var in global namespace remains unchanged</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I am a variable
 </pre></div>
 </div>
 </div>
@@ -1051,6 +1139,11 @@ Arguments to a function can be indicated by either position or keyword.
 <span class="c1"># is to assign to variable my_var in global namespace</span>
 <span class="n">my_var</span> <span class="o">=</span> <span class="n">concat_self</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I am a variable I am a variable
 </pre></div>
 </div>
 </div>
@@ -1074,7 +1167,7 @@ Arguments to a function can be indicated by either position or keyword.
     
     <span class="n">r</span> <span class="o">=</span> <span class="n">number</span> <span class="o">%</span> <span class="n">divider</span>
     
-    <span class="k">return</span> <span class="n">r</span>
+    <span class="k">return</span> <span class="n">r</span> 
 </pre></div>
 </div>
 </div>

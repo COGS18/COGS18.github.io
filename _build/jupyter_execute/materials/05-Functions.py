@@ -400,16 +400,26 @@ print(ans_1 + ans_2)
 # 
 # A) I did it! &emsp;B) I think I did it. &emsp;C) I tried but I am stuck. &emsp;D) Super duper lost
 
-# In[ ]:
+# In[92]:
 
 
-## YOUR CODE HERE  
+## YOUR CODE HERE 
+def greet(name):
+    output = 'Hello ' + name + ' Good morning!'
+    return output
 
 
-# In[ ]:
+# In[94]:
 
 
 # TEST YOUR FUNCTION HERE
+my_variable = greet(name='Students')
+
+
+# In[91]:
+
+
+my_variable
 
 
 # ## Default Values
@@ -464,27 +474,27 @@ exponentiate(number=2, exponent=3)
 # Arguments to a function can be indicated by either position or keyword.
 # </div>
 
-# In[ ]:
+# In[95]:
 
 
 # Positional arguments use the position to infer which argument each value relates to
 exponentiate(2, 3)
 
 
-# In[ ]:
+# In[96]:
 
 
 # Keyword arguments are explicitly named as to which argument each value relates to
 exponentiate(number=2, exponent=3)
 
 
-# In[ ]:
+# In[97]:
 
 
 exponentiate(exponent=3, number=2)
 
 
-# In[ ]:
+# In[98]:
 
 
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
@@ -507,13 +517,16 @@ def exponentiate(number, exponent=2):
 # 
 # What will the following code snippet print?
 
-# In[ ]:
+# In[100]:
 
 
 def exponentiate(number, exponent=2):    
     return number ** exponent
 
-exponentiate(exponent=3, number=2)
+# exponentiate(exponent=3, number=2)
+
+# best to keep arguments in the same order as definition
+exponentiate(number=2, exponent=3)
 
 
 # - A) 8
@@ -530,7 +543,7 @@ exponentiate(exponent=3, number=2)
 #     - variables explicitly passed into them
 #     - variables defined inside the function
 
-# In[ ]:
+# In[101]:
 
 
 # You can check variables defined in the global namespace with `%whos`
@@ -539,7 +552,7 @@ get_ipython().run_line_magic('whos', '')
 
 # ### Variables defined inside a function only exist within that function.
 
-# In[ ]:
+# In[106]:
 
 
 # Names used inside a function are independent of those used outside
@@ -550,7 +563,7 @@ my_var = 'I am a variable'
 print(my_var)
 
 
-# In[ ]:
+# In[109]:
 
 
 # define a function that uses my_var inside the function
@@ -560,17 +573,17 @@ def concat_self(my_var):
     
     return my_var
 
-print(concat_self(my_var))
+concat_self(my_var)
 
 
-# In[ ]:
+# In[104]:
 
 
-# see that my_var in global name space remains unchanged
+# see that my_var in global namespace remains unchanged
 print(my_var)
 
 
-# In[ ]:
+# In[105]:
 
 
 # only way to change my_var in global namespace
@@ -589,14 +602,14 @@ print(my_var)
 
 # ### Functions: Good Code Style
 
-# In[ ]:
+# In[110]:
 
 
 def remainder(number, divider=2):
     
     r = number % divider
     
-    return r
+    return r 
 
 
 # ### Functions: Code Style to Avoid

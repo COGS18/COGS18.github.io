@@ -97,7 +97,7 @@
 # Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
 # </div>
 
-# In[ ]:
+# In[4]:
 
 
 condition = True
@@ -106,11 +106,11 @@ if condition:
     print('This code executes if the condition evaluates as True.')
 
 
-# In[ ]:
+# In[5]:
 
 
 # equivalent to above
-if condition == True:
+if condition == True:  
     print('This code executes if the condition evaluates as True.')
 
 
@@ -123,10 +123,10 @@ if condition == True:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start
 
-# In[ ]:
+# In[9]:
 
 
-math = ---
+math = 3 < 4
 
 if math:
     print('True')
@@ -138,7 +138,7 @@ if math:
 # After an <code>if</code>, you can use an <code>else</code> that will run if the conditional(s) above have not run.
 # </div>
 
-# In[ ]:
+# In[10]:
 
 
 condition = False
@@ -158,10 +158,10 @@ else:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start
 
-# In[ ]:
+# In[12]:
 
 
-my_value = ---
+my_value = 3 == 4
 
 if my_value:
     print('True')
@@ -175,7 +175,7 @@ else:
 # After an <code>if</code> statement, you can have any number of <code>elif</code>`s (meaning 'else if') to check other conditions.
 # </div>
 
-# In[ ]:
+# In[13]:
 
 
 condition_1 = False
@@ -193,7 +193,7 @@ else:
 # 
 # An else statement is not required, but if both the `if` and the `elif` condtions are not met (both evaluate as `False`), then nothing is returned.
 
-# In[ ]:
+# In[14]:
 
 
 condition_1 = False
@@ -209,7 +209,7 @@ elif condition_2:
 # 
 # The order will always be `if`-`elif`-`else`...with only the `if` being required. If the `elif` is at the end...it will never be tested, as the `else` will have already returned a value once reached (and thus Python will throw an error).
 
-# In[ ]:
+# In[15]:
 
 
 ## THIS CODE WILL PRODUCE AN ERROR
@@ -230,19 +230,21 @@ elif condition_2:
 # Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 # </div>
 
-# In[ ]:
+# In[24]:
 
 
 speed_limit = 65
-speed = 
+speed = 70
 
 if speed > speed_limit:
     ticket = True
 else:
     ticket = False
+    
+ticket
 
 
-# In[ ]:
+# In[21]:
 
 
 # string value comparisons also possible
