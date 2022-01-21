@@ -52,6 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exam 1 Review" href="../materials/Exam-Prep/E1-Review.html" />
     <link rel="prev" title="Coding Lab 2: Programming I" href="CL2-ProgrammingI.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -143,6 +144,23 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    CL3-ProgrammingII
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/Exam-Prep/E1-Practice.html">
+   E1-Practice
   </a>
  </li>
 </ul>
@@ -655,7 +673,7 @@
 <span class="n">value</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="c1"># This code provided</span>
-<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+<span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;small value&#39;</span>
     <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
@@ -765,9 +783,9 @@
 <span class="c1"># Set a test value for `val_1`</span>
 <span class="n">val_1</span> <span class="o">=</span> <span class="s1">&#39;string&#39;</span>
 
-<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val_1</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">val_1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">:</span>
+<span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">val_1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">val_1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">:</span>
     <span class="n">output</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val_1</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="n">val_1</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+<span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">val_1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">val_1</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
     <span class="n">output</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">output</span> <span class="o">=</span> <span class="kc">False</span>
@@ -786,7 +804,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="o">==</span> <span class="nb">bool</span>
 </pre></div>
 </div>
 </div>
@@ -874,6 +892,7 @@ Also YES!
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="CL2-ProgrammingI.html" title="previous page">Coding Lab 2: Programming I</a>
+    <a class='right-next' id="next-link" href="../materials/Exam-Prep/E1-Review.html" title="next page">Exam 1 Review</a>
 
         </div>
         
