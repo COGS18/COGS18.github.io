@@ -4,7 +4,7 @@
 # **Course Announcements (Wed 1/12)**
 # 
 # Due Dates:
-# - **CL4** due Wedn 1/16 (11:59 PM; released this afternoon)
+# - **CL4** due Wed 1/26 (11:59 PM; released this afternoon)
 # - **E1** (midterm) due Sun 1/30 11:59 PM
 # - **A2** due Mon 1/31 (11:59 PM)
 # 
@@ -112,21 +112,21 @@
 
 # ### List examples
 
-# In[ ]:
+# In[1]:
 
 
 # Define a list
 lst = [1, 'a', True]
 
 
-# In[ ]:
+# In[2]:
 
 
 # Print out the contents of a list
 print(lst)
 
 
-# In[ ]:
+# In[3]:
 
 
 # Check the type of a list
@@ -139,49 +139,61 @@ type(lst)
 # <b>Indexing</b> refers to selecting an item from within a collection. Indexing is done with square brackets.
 # </div>
 
-# In[ ]:
+# In[4]:
 
 
 # Define a list 
 my_lst = ['Julian', 'Amal', 'Richard', 'Juan', 'Xuan']
 
 
-# In[ ]:
+# In[5]:
 
 
 # Indexing: Count forward, starting at 0, with positive numbers
 print(my_lst[1])
 
 
-# In[ ]:
+# In[6]:
 
 
 # Indexing: Count backward, starting at -1, with negative numbers
 print(my_lst[-1])
 
 
-# In[ ]:
+# In[7]:
 
 
 # Indexing: Grab a group of adjacent items using `start:stop`, called a slice
 print(my_lst[2:4])
 
 
-# In[ ]:
+# In[8]:
 
 
 # indexing to end of list
 print(my_lst[2:])
 
 
-# In[ ]:
+# In[12]:
 
 
 # Indexing from beginning of list
 print(my_lst[:4])
 
 
-# In[ ]:
+# In[14]:
+
+
+my_lst
+
+
+# In[23]:
+
+
+my_lst[0:4:3]
+
+
+# In[13]:
 
 
 # slicing by skipping a value [start:stop:step]

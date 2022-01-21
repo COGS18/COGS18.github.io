@@ -72,14 +72,15 @@ parts:
   #     title: CL7-CommandLine
   #   - file: labs/CL8-ScientificComputing
   #     title: CL8-ScientificComputing
-  # - caption: Exam Prep
-  #   chapters:
-  #   - file: materials/Exam-Prep/E1-Review
-  #     title: E1-Review
+
+  - caption: Exam Prep
+    chapters:
+    - file: materials/Exam-Prep/E1-Review
+      title: E1-Review
   #   - file: materials/Exam-Prep/E1-Review-Answers
   #     title: E1-Review-Answers
-  #   - file: materials/Exam-Prep/E1-Practice
-  #     title: E1-Practice
+    - file: materials/Exam-Prep/E1-Practice
+      title: E1-Practice
   #   - file: materials/Exam-Prep/E1_Fa21_Practice
   #     title: E1_Fa21_Practice-Answers
   #   - file: materials/Exam-Prep/E1_Fa21-Answers

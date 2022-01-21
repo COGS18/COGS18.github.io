@@ -244,13 +244,38 @@ else:
 ticket
 
 
-# In[ ]:
+# In[7]:
+
+
+get_ipython().run_line_magic('whos', '')
+
+
+# In[10]:
+
+
+a1 = 'completed'
+
+if a1 == 'completed':
+    action = 'grade'
+
+if a1 == 'in progress':
+    action = 'wait'
+    
+if a1 == 'not started':
+    action = 'incomplete'
+else:
+    action = 'uncertain'
+
+print(action)
+
+
+# In[9]:
 
 
 # string value comparisons also possible
 a1 = 'completed'
 
-if a1 == 'completed'
+if a1 == 'completed':
     action = 'grade'
 elif a1 == 'in progress':
     action = 'wait'
@@ -259,12 +284,37 @@ elif a1 == 'not started':
 else:
     action = 'uncertain'
 
+print(action)
+
 
 # #### Clicker Question #3
 # 
 # What will the following code snippet print out:
 
+# In[16]:
+
+
+# condition
+
+5 > 10
+
+
 # In[ ]:
+
+
+condition = False
+
+if condition == True:
+    print("John")
+elif condition == False:
+    print("Paul")
+elif condition == False:
+    print("George")
+else:
+    print("Ringo")
+
+
+# In[17]:
 
 
 condition = False
@@ -309,7 +359,7 @@ else:
 # 
 # What will the following code snippet print out:
 
-# In[ ]:
+# In[23]:
 
 
 conditional = False
@@ -344,7 +394,7 @@ else:
 
 # ### Conditionals: Good Code Style
 
-# In[2]:
+# In[25]:
 
 
 value = 16
@@ -357,7 +407,7 @@ else:
 
 # ### Conditionals: Code Style to Avoid
 
-# In[3]:
+# In[26]:
 
 
 if value%2==0:out="even" # avoid statement on same line as conditional
@@ -369,7 +419,7 @@ else:out="odd"           # don't forget about spacing around operators!
 # 
 # Let's define a more interesting function than what we did in the functions lecture. Here we are using conditionals within our function.
 
-# In[ ]:
+# In[31]:
 
 
 # Determine if a value is even or odd
@@ -379,11 +429,11 @@ def even_odd(value):
         out = "even"
     else: 
         out = "odd"
-        
+            
     return out
 
 
-# In[ ]:
+# In[32]:
 
 
 # Execute our function to check that

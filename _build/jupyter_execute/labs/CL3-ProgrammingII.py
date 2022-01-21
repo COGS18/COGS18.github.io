@@ -268,7 +268,7 @@ def check_bool(input_bool):
 value = 10
 
 # This code provided
-if isinstance(value, int):
+if type(value) == int:
     if value < 10:
         result = 'small value'
     if value >= 10:
@@ -368,9 +368,9 @@ else:
 # Set a test value for `val_1`
 val_1 = 'string'
 
-if isinstance(val_1, str) and len(val_1) > 8:
+if type(val_1) == str and len(val_1) > 8:
     output = True
-elif isinstance(val_1, int) and val_1 < 100:
+elif type(val_1) == int and val_1 < 100:
     output = True
 else:
     output = False
@@ -383,7 +383,7 @@ print(output)
 # In[3]:
 
 
-assert isinstance(output, bool)
+assert type(output) == bool
 
 
 # ### Operator Explorations

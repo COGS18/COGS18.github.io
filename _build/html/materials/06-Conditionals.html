@@ -147,6 +147,23 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -672,10 +689,50 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable   Type    Data/Info
+----------------------------
+a1         str     in progress
+action     str     wait
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="s1">&#39;completed&#39;</span>
+
+<span class="k">if</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;completed&#39;</span><span class="p">:</span>
+    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;grade&#39;</span>
+
+<span class="k">if</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;in progress&#39;</span><span class="p">:</span>
+    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;wait&#39;</span>
+    
+<span class="k">if</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;not started&#39;</span><span class="p">:</span>
+    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;incomplete&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;uncertain&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>uncertain
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># string value comparisons also possible</span>
 <span class="n">a1</span> <span class="o">=</span> <span class="s1">&#39;completed&#39;</span>
 
-<span class="k">if</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;completed&#39;</span>
+<span class="k">if</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;completed&#39;</span><span class="p">:</span>
     <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;grade&#39;</span>
 <span class="k">elif</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;in progress&#39;</span><span class="p">:</span>
     <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;wait&#39;</span>
@@ -683,6 +740,13 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
     <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;incomplete&#39;</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;uncertain&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>wait
 </pre></div>
 </div>
 </div>
@@ -690,6 +754,36 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <div class="section" id="clicker-question-3">
 <h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h3>
 <p>What will the following code snippet print out:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># condition</span>
+
+<span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">if</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Paul&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;George&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ringo&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
@@ -702,6 +796,11 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;George&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ringo&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Paul
 </pre></div>
 </div>
 </div>
@@ -751,6 +850,11 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Oh no.&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m here.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I&#39;m here.
 </pre></div>
 </div>
 </div>
@@ -819,7 +923,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
         <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;even&quot;</span>
     <span class="k">else</span><span class="p">:</span> 
         <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;odd&quot;</span>
-        
+            
     <span class="k">return</span> <span class="n">out</span>
 </pre></div>
 </div>
@@ -830,6 +934,11 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Execute our function to check that</span>
 <span class="c1"># it is working according to our expectations</span>
 <span class="n">even_odd</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;odd&#39;
 </pre></div>
 </div>
 </div>
