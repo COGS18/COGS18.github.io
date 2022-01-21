@@ -15,10 +15,11 @@ parts:
       title: 05-Functions
     - file: materials/06-Conditionals
       title: 06-Conditionals
-  #   - file: materials/06-Debugging
+    - file: materials/07-Collections
+      title: 07-Collections
+    # - file: materials/06-Debugging
   #     title: 06-Debugging
-  #   - file: materials/07-Collections
-  #     title: 07-Collections
+
   #   - file: materials/08-Loops
   #     title: 08-Loops
   #   - file: materials/09-Dictionaries

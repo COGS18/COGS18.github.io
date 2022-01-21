@@ -177,8 +177,8 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 1/14     | 2	   | 6      | F   | Functions           |                           |                           |
 | 1/17     | 3	   | --     | M   | **No Class**        | A1: Getting-Started       |         			            | 
 | 1/19     | 3	   | 7      | W   | Conditionals        |                           | CL3: Functions            | 
-| 1/21     | 3	   | 8      | F   | Debugging           |                           |                           |
-| 1/24     | 4	   | 9      | M   | Collections [*]     |                           |                         	| 
+| 1/21     | 3	   | 8      | F   | Collections          |                           |                           |
+| 1/24     | 4	   | 9      | M   | Debugging  [*]     |                           |                         	| 
 | 1/26     | 4	   | --     | W   | Review              |                           | CL4: Programming II       | 
 | 1/28     | 4	   | 10     | F   | Loops I             | **E1**                    |                           |
 | 1/31     | 5	   | 11     | M   | Loops II            | A2: Ciphers               |                        		| 

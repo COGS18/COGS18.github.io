@@ -244,7 +244,7 @@ else:
 ticket
 
 
-# In[21]:
+# In[ ]:
 
 
 # string value comparisons also possible
