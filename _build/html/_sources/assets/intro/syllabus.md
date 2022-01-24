@@ -176,12 +176,12 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 1/12     | 2	   | 5      | W   | Operators II        |                           | CL2: Programming I        | 
 | 1/14     | 2	   | 6      | F   | Functions           |                           |                           |
 | 1/17     | 3	   | --     | M   | **No Class**        | A1: Getting-Started       |         			            | 
-| 1/19     | 3	   | 7      | W   | Conditionals        |                           | CL3: Programming II       | 
-| 1/21     | 3	   | 8      | F   | Collections         |                           |                           |
-| 1/24     | 4	   | 9      | M   | Debugging  [*]      |                           |                         	| 
+| 1/19     | 3	   | 7      | W   | Conditionals I      |                           | CL3: Programming II       | 
+| 1/21     | 3	   | 8      | F   | Conditionals II     |                           |                           |
+| 1/24     | 4	   | 9      | M   | Collections [*]     |                           |                         	| 
 | 1/26     | 4	   | --     | W   | Review              |                           | CL4: Collections          | 
-| 1/28     | 4	   | 10     | F   | Loops I             | **E1** (due Sun 1/30; 11:59 PM)|                           |
-| 1/31     | 5	   | 11     | M   | Loops II            | A2: Ciphers               |                        		| 
+| 1/28     | 4	   | 10     | F   | Debugging           | **E1** (due Sun 1/30; 11:59 PM)|                           |
+| 1/31     | 5	   | 11     | M   | Loops               | A2: Ciphers               |                        		| 
 | 2/2      | 5	   | 12     | W   | Dictionaries        |                        	  | CL5: Loops     	          | 
 | 2/4      | 5	   | 13     | F   | Algorithms          |                           |                           |
 | 2/7      | 6	   | 14     | M   | Classes I           | A3: Chatbots              |                         	| 
