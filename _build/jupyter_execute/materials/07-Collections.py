@@ -254,8 +254,6 @@ my_lst[0:4:3]
 print(my_lst[0:4:2])
 
 
-# 
-
 # ### Reminders
 
 # - Python is zero-based (The first index is '0')
@@ -273,17 +271,23 @@ print(my_lst[0:4:2])
 # 
 # What would be the appropriate line of code to return `['butter', '&', 'jelly']`?
 
-# In[ ]:
+# In[24]:
 
 
-q3_lst = ['peanut', 'butter', '&','jelly']
+q1_lst = ['peanut', 'butter', '&', 'jelly']
 
 
-# - A) `q3_lst[2:4]`
-# - B) `q3_lst[1:3]`
-# - C) `q3_lst[:-2]`
-# - D) `q3_lst[-3:]`
-# - E) `q3_lst[1:4:2]`
+# In[29]:
+
+
+q1_lst[-3:]
+
+
+# - A) `q1_lst[2:4]`
+# - B) `q1_lst[1:3]`
+# - C) `q1_lst[:-2]`
+# - D) `q1_lst[-3:]`
+# - E) `q1_lst[1:4:2]`
 
 # Note: The following has been added to the notes due to student questions in previous iterations. This and the following two cells are *not* someting you'll be tested on. Including as an FYI for those curious.
 # 
@@ -316,21 +320,21 @@ q3_lst[3:0:-1]
 # Lists are <i>mutable</i>, meaning after definition, you can update and change things about the list.
 # </div>
 
-# In[ ]:
+# In[30]:
 
 
 # reminder what's in my_lst 
 my_lst
 
 
-# In[ ]:
+# In[31]:
 
 
 # Redefine a particular element of the list
 my_lst[2] = 'Rich'
 
 
-# In[ ]:
+# In[32]:
 
 
 # Check the contents of the list
@@ -341,11 +345,21 @@ print(my_lst)
 # 
 # What would the following code accommplish?
 
-# In[ ]:
+# In[36]:
 
 
 lst_update = [1, 2, 3, 0, 5]
+print(lst_update[3])
 lst_update[3] = 4 
+lst_update
+
+
+# In[35]:
+
+
+lst_update = [1, 2, 3, 0, 5]
+lst_update[3] = ["a", "b"]
+lst_update
 
 
 # - A) replace 0 with 4 in `lst_update`
@@ -362,35 +376,35 @@ lst_update[3] = 4
 
 # ### Tuple Examples
 
-# In[ ]:
+# In[37]:
 
 
 # Define a tuple
 tup = (2, 'b', False)
 
 
-# In[ ]:
+# In[38]:
 
 
 # Print out the contents of a tuple
 print(tup)
 
 
-# In[ ]:
+# In[39]:
 
 
 # Check the type of a tuple
 type(tup)
 
 
-# In[ ]:
+# In[40]:
 
 
 # Index into a tuple
 tup[0]
 
 
-# In[ ]:
+# In[41]:
 
 
 # Get the length of a tuple
@@ -399,7 +413,13 @@ len(tup)
 
 # ### Tuples are Immutable
 
-# In[ ]:
+# In[42]:
+
+
+tup
+
+
+# In[43]:
 
 
 # Tuples are immutable - meaning after they defined, you can't change them
@@ -436,28 +456,28 @@ item_E = (12)
 
 # ### Dictionaries as Key-Value Collections
 
-# In[ ]:
+# In[44]:
 
 
 # Create a dictionary
 dictionary = {'key_1' : 'value_1', 'key_2' : 'value_2'}
 
 
-# In[ ]:
+# In[45]:
 
 
 # Check the contents of the dictionary
 print(dictionary)
 
 
-# In[ ]:
+# In[46]:
 
 
 # Check the type of the dictionary
 type(dictionary)
 
 
-# In[ ]:
+# In[47]:
 
 
 # Dictionaries also have a length
@@ -467,7 +487,15 @@ len(dictionary)
 
 # ### Dictionaries: Indexing
 
-# In[ ]:
+# In[50]:
+
+
+# can't index with index number OR value
+dictionary[0]  # won't work
+dictionary['value_1']  # won't work
+
+
+# In[48]:
 
 
 # Dictionaries are indexed using their keys
@@ -478,7 +506,7 @@ dictionary['key_1']
 # 
 # This means that dictionaries, once created, values *can* be updated.
 
-# In[ ]:
+# In[51]:
 
 
 completed_assignment = {
@@ -490,7 +518,7 @@ completed_assignment = {
 completed_assignment
 
 
-# In[ ]:
+# In[54]:
 
 
 # change value of specified key
@@ -500,14 +528,14 @@ completed_assignment
 
 # Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using `del`.
 
-# In[ ]:
+# In[57]:
 
 
 print(completed_assignment)
 len(completed_assignment)
 
 
-# In[ ]:
+# In[58]:
 
 
 ## remove key-value pair using del
@@ -522,7 +550,7 @@ len(completed_assignment)
 # - Only one value per key. No duplicate keys allowed. 
 #     - If duplicate keys specified during assignment, the last assignment wins.
 
-# In[ ]:
+# In[59]:
 
 
 # Last duplicate key assigned wins
@@ -532,7 +560,7 @@ len(completed_assignment)
 # - **keys** must be of an immutable type (string, tuple, integer, float, etc)
 # - Note: **values** can be of any type
 
-# In[ ]:
+# In[60]:
 
 
 # lists are not allowed as key types
@@ -543,7 +571,7 @@ len(completed_assignment)
 # - Dictionary keys are case sensitive.
 # 
 
-# In[ ]:
+# In[61]:
 
 
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
@@ -553,11 +581,11 @@ len(completed_assignment)
 # 
 # Fill in the '---' in the code below to return the value stored in the second key.
 
-# In[ ]:
+# In[63]:
 
 
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
-height_dict[---]
+height_dict['height_2']
 
 
 # - A) I did it
@@ -586,7 +614,7 @@ height_dict[---]
 # The <code>in</code> operator asks whether an element is present inside a collection, and returns a boolean answer. 
 # </div>
 
-# In[ ]:
+# In[64]:
 
 
 # Define a new list and dictionary to work with
@@ -594,28 +622,28 @@ lst_again = [True, 13, None, 'apples']
 dict_again = {'Shannon': 33, 'Josh': 41}
 
 
-# In[ ]:
+# In[65]:
 
 
 # Check if a particular element is present in the list
 True in lst_again
 
 
-# In[ ]:
+# In[66]:
 
 
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 
 
-# In[ ]:
+# In[67]:
 
 
 # In a dictionary, checks if value is a key
 'Shannon' in dict_again
 
 
-# In[ ]:
+# In[68]:
 
 
 # does not check for values in dictionary
