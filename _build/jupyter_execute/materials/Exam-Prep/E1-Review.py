@@ -84,6 +84,51 @@
 
 # ![written response](../img/written_response.png)
 
+# In[5]:
+
+
+# referencing an element in a dictionary within a function
+my_dict = {'A':1,
+          'B':2,
+          'C':3}
+
+my_dict['A']
+
+def print_key(dictionary, key):
+    
+    out = dictionary[key]
+    
+    return out
+
+
+# In[10]:
+
+
+my_dict['A']
+
+
+# In[12]:
+
+
+print_key(my_dict, 'C')
+
+
+# In[8]:
+
+
+2%3 
+
+
+# In[9]:
+
+
+# assignment order (from E1_practice)
+var_b = 2
+var_a = var_b = 5
+
+print(var_a, var_b)
+
+
 # # Exam 1 Review
 
 # ## Midterm Expectations

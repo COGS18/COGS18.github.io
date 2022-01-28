@@ -694,13 +694,13 @@ print(output)
 
 # ### ord & chr examples
 
-# In[ ]:
+# In[69]:
 
 
 print(ord('a'))
 
 
-# In[ ]:
+# In[74]:
 
 
 print(chr(97))
@@ -710,19 +710,27 @@ print(chr(97))
 # 
 # `ord` and `chr` are inverses of one another. 
 
-# In[ ]:
+# In[82]:
 
 
 inp = 'b'
 out = chr(ord(inp))
 
 assert inp == out
-print('Input: \t', inp, '\nOutput: ', out)
 
+# print('Input: \t', inp, '\nOutput: ', out)
+print(inp, out)
+
+
+# END OF MATERIAL FOR A2 AND FOR E1
+# 
+# WILL DO STUFF BELOW ON FRIDAY 1/28
 
 # ## Aside: Aliases
 # 
 # Note: This was introduced in the Variables lecture.
+# 
+# 
 
 # In[ ]:
 
