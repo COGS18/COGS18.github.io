@@ -53,7 +53,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Exam 1 Review (Answers)" href="E1-Review-Answers.html" />
-    <link rel="prev" title="Coding Lab 3: Programming II" href="../../labs/CL3-ProgrammingII.html" />
+    <link rel="prev" title="CL4: Collections" href="../../labs/CL4-Collections.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -124,6 +124,11 @@
    07-Collections
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../08-Debugging.html">
+   08-Debugging
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -144,6 +149,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../labs/CL3-ProgrammingII.html">
    CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL4-Collections.html">
+   CL4-Collections
   </a>
  </li>
 </ul>
@@ -489,6 +499,76 @@ A: This will be a focus of today’s coding lab review - encouraging you to atte
 <li><p>If it doesn’t say to define a function, you don’t have to define a function</p></li>
 </ul>
 <p><img alt="written response" src="../../_images/written_response.png" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># referencing an element in a dictionary within a function</span>
+<span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+          <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+          <span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+
+<span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">print_key</span><span class="p">(</span><span class="n">dictionary</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    
+    <span class="n">out</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">print_key</span><span class="p">(</span><span class="n">my_dict</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">%</span><span class="k">3</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># assignment order (from E1_practice)</span>
+<span class="n">var_b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var_a</span> <span class="o">=</span> <span class="n">var_b</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">var_a</span><span class="p">,</span> <span class="n">var_b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 5
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="exam-1-review">
 <h1>Exam 1 Review<a class="headerlink" href="#exam-1-review" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="midterm-expectations">
@@ -721,7 +801,7 @@ A: This will be a focus of today’s coding lab review - encouraging you to atte
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../../labs/CL3-ProgrammingII.html" title="previous page">Coding Lab 3: Programming II</a>
+    <a class='left-prev' id="prev-link" href="../../labs/CL4-Collections.html" title="previous page">CL4: Collections</a>
     <a class='right-next' id="next-link" href="E1-Review-Answers.html" title="next page">Exam 1 Review (Answers)</a>
 
         </div>
