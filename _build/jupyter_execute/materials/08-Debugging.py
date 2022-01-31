@@ -98,7 +98,7 @@
 
 # ### Syntax Error Examples
 
-# In[ ]:
+# In[3]:
 
 
 # will produce a syntax error
@@ -110,7 +110,7 @@ if True
 # - what type of error it is
 # - and where it _thinks_ it occurred (`^`)
 
-# In[ ]:
+# In[14]:
 
 
 # will produce a syntax error
@@ -133,7 +133,7 @@ print(value)
 # 
 # ZeroDivisionError occurs when you try to divide by zero. 
 
-# In[ ]:
+# In[7]:
 
 
 # produces ZeroDivisionError
@@ -148,14 +148,14 @@ print(value)
 # 
 # NameError occurs when you try to access a name that Python does not know.
 
-# In[ ]:
+# In[8]:
 
 
 # Define a variable
 variable = 12
 
 
-# In[ ]:
+# In[9]:
 
 
 # If you typo a name, you will get a NameError
@@ -164,7 +164,7 @@ varaible
 
 # While it's annoying, it's helpful that Python doesn't just _guess_ that you _meant_ 'variable'....because sometimes Python would guess wrong. It's better for Python to just give us the error.
 
-# In[ ]:
+# In[10]:
 
 
 # You also get a name error if you try to use the wrong operator for assignment
@@ -175,14 +175,25 @@ new_variable == 1
 # 
 # IndexError occurs when you try to access an index that doesn't exist.
 
-# In[ ]:
+# In[11]:
 
 
 my_string = 'COGS18'
 my_string[6]
 
 
-# In[ ]:
+# In[20]:
+
+
+my_list = ['a', 'b']
+# direct indexing errors
+# my_list[2]
+# can include an index that doesn't exist
+# in a slice
+my_list[1:5]
+
+
+# In[12]:
 
 
 # Relatedly, 'KeyError' occurs if you ask for a dictionary key that doesn't exist
@@ -194,7 +205,7 @@ my_dictionary['name3']
 # 
 # ValueError occurs when you try to use an illegal value for something.
 
-# In[ ]:
+# In[21]:
 
 
 int('cat')
@@ -204,7 +215,7 @@ int('cat')
 # 
 # TypeError occurs when you try to do something with a variable type that python cannot interpret.
 
-# In[ ]:
+# In[22]:
 
 
 'a_string' + 12
@@ -229,7 +240,7 @@ int('cat')
 # 
 # What type of error will the following code produce?
 
-# In[ ]:
+# In[23]:
 
 
 if num > 0
@@ -249,8 +260,28 @@ if num > 0
 # In[ ]:
 
 
+num = 6
+
+
+# In[24]:
+
+
 if num > 0:
     print("Greater than 0")
+
+
+# In[26]:
+
+
+# syntax errors checked first
+# then python executes code - checks for exceptions
+if num > 0:
+    print("Greater than 0")
+
+my_val = 6
+
+if my_val < 0
+    print('hi')
 
 
 # - A) Syntax 
@@ -267,7 +298,7 @@ if num > 0:
 
 # For example...say you're trying to write a function that takes a character as input, turns it into its unicode code point...with an offset of 500, turns *that* back into a character and returns the output...Your first attempt (**which has errors**) is below:
 
-# In[1]:
+# In[27]:
 
 
 def encode_char(char):
@@ -277,6 +308,45 @@ def encode_char(char):
     char + 500 = offset
     # turn into character
     chr(offset)
+
+
+# In[45]:
+
+
+def encode_char(char):
+    # turn into code point
+    unicode = ord(char)
+    # add offset
+    offset = unicode + 500
+    # turn into character
+    offset = chr(offset)
+    
+    return offset
+
+
+# In[ ]:
+
+
+def encode_char(char):
+    # turn into code point
+    # add offset
+    # into charaeter
+    unicode = chr(ord(char) + 500)
+
+    return unicode
+
+
+# In[41]:
+
+
+ord('a') + 500
+chr(597)
+
+
+# In[42]:
+
+
+encode_char('a')
 
 
 # What to look for and think about:
@@ -293,10 +363,10 @@ def encode_char(char):
 # 3. *Think* about what you would need to change to fix the issue (do not just guess wildly trying to pass the `assert` - will waste your time)
 # 4. Fix the code; re-execute; re-run the assert
 
-# In[ ]:
+# In[46]:
 
 
-assert callable encode_char
+assert callable(encode_char)
 assert type(encode_char('c')) == str
 assert encode_char('c') == 'ɗ'
 

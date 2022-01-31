@@ -732,7 +732,7 @@ print(inp, out)
 # 
 # 
 
-# In[ ]:
+# In[83]:
 
 
 # Make a variable, and an alias
@@ -753,7 +753,7 @@ print(b)
 # 
 # After executing the following code, what will the values stored in `a` and `b` be?
 
-# In[ ]:
+# In[84]:
 
 
 # Make a variable & an alias
@@ -778,7 +778,7 @@ print(b)
 # 
 # What happens if we make an alias of a **mutable** variable, like a list?
 
-# In[ ]:
+# In[85]:
 
 
 first_list = [1, 2, 3, 4]
@@ -786,7 +786,7 @@ alias_list = first_list
 alias_list
 
 
-# In[ ]:
+# In[86]:
 
 
 #change second value of first_list
@@ -794,7 +794,7 @@ first_list[1] = 29
 first_list
 
 
-# In[ ]:
+# In[87]:
 
 
 # check alias_list
@@ -807,7 +807,7 @@ alias_list
 # 
 # After executing the following code, what will the second value stored in `second_tuple`?
 
-# In[ ]:
+# In[91]:
 
 
 # Make a variable & an alias
@@ -815,6 +815,14 @@ alias_list
 my_tuple = (1, 2, 3, 4)
 second_tuple = my_tuple
 my_tuple[1] = 29 
+# will not print b/c after error encountered
+print(second_tuple[1])
+
+
+# In[89]:
+
+
+second_tuple[1]
 
 
 # - A) 1

@@ -7,7 +7,7 @@ output:
 # COGS 18: Introduction to Python 
 
 **Winter 2022**  
-**MWF 8-8:50 (Zoom through January; Peterson Hall 110)**  
+**MWF 8-8:50 (Zoom Lecture)**  
 
 ---
 
@@ -182,7 +182,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 1/26     | 4	   | --     | W   | Review              |                           | CL4: Collections          | 
 | 1/28     | 4	   | 10     | F   | Debugging           | **E1** (due Sun 1/30; 11:59 PM)|                           |
 | 1/31     | 5	   | 11     | M   | Loops               | A2: Ciphers               |                        		| 
-| 2/2      | 5	   | 12     | W   | Dictionaries        |                        	  | CL5: Loops     	          | 
+| 2/2      | 5	   | 12     | W   | Loops II            |                        	  | CL5: Loops     	          | 
 | 2/4      | 5	   | 13     | F   | Algorithms          |                           |                           |
 | 2/7      | 6	   | 14     | M   | Classes I           | A3: Chatbots              |                         	| 
 | 2/9      | 6	   | 15     | W   | Classes II          |                           | CL6: Classes             	| 
