@@ -387,10 +387,19 @@ assert encode_char('c') == 'ɗ'
 # 
 # Google: "How to check whether a variable stores an even value _in python_"
 
-# In[ ]:
+# In[7]:
 
 
+# this code has errors
+# we're going to debug together in class
+my_val = -2
 
+if my_val > 0 and my_val % 2 == 0:
+    output = 1
+else:
+    output = 0
+
+output
 
 
 # ### Don't understand the error message?
@@ -416,7 +425,7 @@ if my_val > 0 and my_val % 2 = 0:
 
 # For this example, I'm going to introduce `input()`, a function which allows us to get input from the user.
 
-# In[ ]:
+# In[12]:
 
 
 # Example: we want to get an input number from the user
@@ -428,7 +437,13 @@ print('\nmy_num is: ', my_num)
 
 # ### `try` / `except` Block
 
-# In[ ]:
+# In[11]:
+
+
+int('monday')
+
+
+# In[15]:
 
 
 try:
@@ -447,7 +462,7 @@ except:
 # 
 # `raise` is a keyword that tells Python you want to create your own error.
 
-# In[ ]:
+# In[17]:
 
 
 my_int = input('An integer please: ')
@@ -464,8 +479,15 @@ print('My integer is: ', my_int)
 # In[ ]:
 
 
-num1 = ---
-num2 = ---
+# if ... is true:
+    # run this code
+
+
+# In[18]:
+
+
+num1 = 56
+num2 = 0
 
 try:
     output = num1 / num2

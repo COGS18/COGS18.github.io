@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# **Course Announcements**
+# **Course Announcements (Mon 1/31)**
 # 
 # Due Dates:
 # - **A2** due tonight(11:59 PM)
@@ -12,7 +12,7 @@
 # - **CL4** grades posted
 # - **A3** will be made available this afternoon
 
-# **Q&A**
+# **Q&A  (Mon 1/31)**
 # 
 # Q: Why is Python favored by many programmers? What are the benefits to using other programming languages?  
 # A: It's often favored for its readability relative to other languages. Other languages however are faster, for example, and so are used instead of Python. Python is also used in many fields b/c of the external packages available that make doing a particular task easier in Python (i.e. data science, neuroscience, etc.)
@@ -47,6 +47,52 @@
 # Q: what's offset mean in the debugging code?  
 # A: It was a variable name chosen in the example used.
 
+# **Course Announcements (Wed 2/2)**
+# 
+# Due Dates:
+# - **CL5** due tonight
+# - **A3** due Mon (11:59 PM)
+# - [mid-course survey](https://docs.google.com/forms/d/e/1FAIpQLSdswcDdmqv_kogN7mGkhr_1DJ6jDMLPVblqlz_BZyxizZrOSw/viewform?usp=sf_link) "due" Mon (11:59 PM; optional for EC; link also on Canvas)
+# 
+# Notes: 
+# - E1 grading underway - hope to post scores/discuss in class Monday
+# - Happy Lunar New Year!
+
+# **Q&A (Wed 2/2)**
+# 
+# Q: I understand the difference between an "if/else" block and a "try/except" block, but I'm still confused on why or when we would want to use a "try/except" block. Wouldn't we want our code to not error at all? Or if it did error, why would we want our code to continue on and not be broken when we could fix that error instead?  
+# A: Think about this in the context of a loop. Say you have 1000 emails that you want to send and there is a typo in the 400th email. Would you only want the first 399 to send and then error out and stop? *Or* would you want it to send all of the 999 emails, *except* the 400th and just send you a little message letting you know that one wouldn't send. In my mind, the latter is much better...and would be a perfect case for a try/except block!
+# 
+# Q: For the debugging lecture, will there be any other errors that appear that we didnt go over?   
+# A: There are some rare errors that exist that we didn't cover...but we discussed the vast majority of them.
+# 
+# Q: When could/would we have functions in a loop? How different is a function from a loop?  
+# A: It's more typical to have a loop in a function. We'll see examples of these coming up (lots in A3!) And, a function allows you to specify a set of instructions, which run/execute that set of instructions when you call the function. A loop on the other hand specifies some set of operations that you want to execute over and over again until a condition is no longer true (while loop) *or* until you reach the end of the collection you're looping over (for loop)
+# 
+# Q: Learning that the placement of print statements inside loops can affect the loop itself (as shown in the bill, index example in class).  
+# A: Just a reminder that the print statement did NOT change what the loop was doing. The placement of the print statement simply changed *when* a variable was being printed. The loop was still doing the same thing...it was just the print statement's location that changed.
+# 
+# Q: What's difference of defining variable inside and outside the function?  
+# A: A variable defined outside the function exists in your global namespace...so you can call it at any point in your notebook. A variable defined inside your function only exists in your local (function's) namespace...so you can only use it/reference it within your function.
+# 
+# Q: I'm still a bit confused about the difference between loop and conditionals. Can you explain it again?  
+# A: A conditional specifies which set of code should execute under which condition. A loop specifies to repeat a piece of code over and over again.
+# 
+# Q: do we use print or return statements in loops?  
+# A: `print()`. `return` is only to return output from functions
+# 
+# Q: What specifically can we do with the raise function  
+# A: Specify your own error messages to be used. We will *not* be requiring you to do this on your exam/assignments...but it's good to know it's possible to better understand that someone had to write the error messages you see...and b/c it is sometimes helpful when people go to do their final project.
+# 
+# Q: What are prime examples of coding loops being used in real life?  
+# A: Oh my gosh there are so many! Any time you want to do a process over and over again, think loops! So, while it's not a programming example, each day is a bit like a loop in that you probably have a similar process to get ready in the morning (shower, brush teeth, eat breakfast, etc.). We'll see lots and lots of programming examples in A3.
+# 
+# Q: Will the answer be considered wrong if a print statement is not in the right place during a 'while' loop?  
+# A: Nope. `print` statements are never required...they're there to help your understanding/to "see" what is going on inside the code.
+# 
+# Q: I have downloaded Anaconda, but the jupyter notebook that it opens does not have the lecture notes or anything related to this course. Is there a way to transfer the files and assignment to the Anaconda Jupyter notebook.  
+# A: To get the notes, you would want to download them from the website and then open them in Anaconda *or* click on the first link on the home page of Canvas to pull the notes into datahub (this is what most students do). Definitely something we could help you with in office hours! 
+
 # # Loops
 # 
 # - `while`
@@ -57,7 +103,7 @@
 
 # ### SideNote: counters
 
-# In[ ]:
+# In[1]:
 
 
 # Initialize a counter variable
@@ -65,14 +111,14 @@ counter = 0
 print(counter)
 
 
-# In[ ]:
+# In[2]:
 
 
 counter = counter + 1
 print(counter)
 
 
-# In[ ]:
+# In[3]:
 
 
 counter = counter + 1
@@ -120,7 +166,7 @@ email = lst[1]
 
 # ### `while` Loop Example I
 
-# In[ ]:
+# In[9]:
 
 
 number = -5
@@ -132,7 +178,13 @@ while number < 0:
 
 # ### `while` Loop Example II
 
-# In[ ]:
+# In[20]:
+
+
+20 <= 20
+
+
+# In[22]:
 
 
 shopping_budget = 20
@@ -149,7 +201,7 @@ while bill < shopping_budget:
     index = index + 1
     
     #print bill so we can see what's going on
-    print(bill)
+    print(bill, index)
 
 
 # #### Clicker Question #1
