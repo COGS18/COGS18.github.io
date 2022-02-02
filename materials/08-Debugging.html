@@ -995,6 +995,27 @@ Exceptions are errors that occur when a code is executed.
 <p>“Write code that will check whether the value stored in <code class="docutils literal notranslate"><span class="pre">my_val</span></code> is both positive and even. If it is, store the integer <code class="docutils literal notranslate"><span class="pre">1</span></code> in the variable <code class="docutils literal notranslate"><span class="pre">output</span></code>”</p>
 <p>…How do I check whether a variable stores an even value?</p>
 <p>Google: “How to check whether a variable stores an even value <em>in python</em>”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this code has errors</span>
+<span class="c1"># we&#39;re going to debug together in class</span>
+<span class="n">my_val</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
+
+<span class="k">if</span> <span class="n">my_val</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">my_val</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">output</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="don-t-understand-the-error-message">
 <h3>Don’t understand the error message?<a class="headerlink" href="#don-t-understand-the-error-message" title="Permalink to this headline">¶</a></h3>
@@ -1028,15 +1049,45 @@ Exceptions do not necessarily have to lead to breaking the program - they can be
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please type a number: 5
+
+my_num is:  5
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="try-except-block">
 <h3><code class="docutils literal notranslate"><span class="pre">try</span></code> / <code class="docutils literal notranslate"><span class="pre">except</span></code> Block<a class="headerlink" href="#try-except-block" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;monday&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">557</span><span class="n">a7aee15e0</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;monday&#39;</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: invalid literal for int() with base 10: &#39;monday&#39;
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
     <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Number&#39;</span><span class="p">))</span>
 <span class="k">except</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nahhh&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number asdfoasdf
+nahhh
 </pre></div>
 </div>
 </div>
@@ -1060,14 +1111,39 @@ You can also write code to raise an Exception if something unexpected happens.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>An integer please: asdfjasdfija
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">17</span><span class="o">-</span><span class="n">df6803c14de3</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">my_int</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;An integer please: &#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">my_int</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">():</span>
+<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;I wanted a number! :(&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;My integer is: &#39;</span><span class="p">,</span> <span class="n">my_int</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: I wanted a number! :(
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-3">
 <h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h4>
 <p>Edit the code below (replacing <code class="docutils literal notranslate"><span class="pre">---</span></code> with either values or variable names) so that when executed, this cell returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">num2</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># if ... is true:</span>
+    <span class="c1"># run this code</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">56</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">try</span><span class="p">:</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
@@ -1075,6 +1151,11 @@ You can also write code to raise an Exception if something unexpected happens.
     <span class="n">output</span> <span class="o">=</span> <span class="kc">None</span>
     
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
 </pre></div>
 </div>
 </div>
