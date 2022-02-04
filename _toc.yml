@@ -21,14 +21,8 @@ parts:
       title: 08-Debugging
     - file: materials/09-Loops
       title: 09-Loops
-  #   - file: materials/09-Dictionaries
-  #     title: 09-Dictionaries
-  #   - file: materials/10-FunctionsI
-  #     title: 10-FunctionsI
-  #   - file: materials/11-Algorithms
-  #     title: 11-Algorithms
-  #   - file: materials/12-FunctionsII
-  #     title: 12-FunctionsII
+    - file: materials/10-Algorithms
+      title: 10-Algorithms
   #   - file: materials/13-Classes
   #     title: 13-Classes
   #   - file: materials/14-CommandLine
