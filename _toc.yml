@@ -63,8 +63,8 @@ parts:
       title: CL3-ProgrammingII
     - file: labs/CL4-Collections
       title: CL4-Collections
-  #   - file: labs/CL5-Functions
-  #     title: CL5-Functions
+    - file: labs/CL5-Loops
+      title: CL5-Loops
   #   - file: labs/CL6-Classes
   #     title: CL6-Classes
   #   - file: labs/CL7-CommandLine

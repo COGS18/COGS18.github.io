@@ -27,10 +27,10 @@ textbook:
 	python scripts/clean.py
 	
 	# Copy & build materials - Ellis
-	git clone --depth 1 https://github.com/COGS18/LectureNotes-COGS18 materials
+	git clone --depth 1 git@github.com:COGS18/LectureNotes-COGS18.git materials
 
 	# Copy & build coding labs
-	git clone --depth 1 https://github.com/COGS18/CodingLabs labs
+	git clone --depth 1 git@github.com:COGS18/CodingLabs.git labs
 	rm -rf labs/README.md
 	rm -rf labs/Archive
 	rm labs/source/CL1-Tooling.ipynb
@@ -38,7 +38,7 @@ textbook:
 	rm -rf labs/source
 
 	# Copy & build project info
-	# git clone --depth 1 https://github.com/COGS18/projects projects
+	# git clone --depth 1 git@github.com:COGS18/projects.git projects
 	# rm projects/README.md
 
 	jupyter-book build ./

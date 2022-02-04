@@ -178,12 +178,6 @@ while number < 0:
 
 # ### `while` Loop Example II
 
-# In[20]:
-
-
-20 <= 20
-
-
 # In[22]:
 
 
@@ -208,7 +202,7 @@ while bill < shopping_budget:
 # 
 # How many temperature values will be output from this `while` loop before "The tea is cool enough." is printed?
 
-# In[ ]:
+# In[8]:
 
 
 temperature = 115
@@ -231,7 +225,7 @@ print('The tea is cool enough.')
 # 
 # What will be the value of `counter` after this loop is run:
 
-# In[ ]:
+# In[11]:
 
 
 keep_looping = True
@@ -259,7 +253,7 @@ print(counter)
 # 
 # Looping through a list of items
 
-# In[ ]:
+# In[16]:
 
 
 # Define a list of items
@@ -277,7 +271,7 @@ for my_item in list_of_items:
 # 
 # Looping through a string
 
-# In[ ]:
+# In[28]:
 
 
 # Loop across items in a string
@@ -293,7 +287,7 @@ for char in my_string:
 # 
 # How many values will be `print`ed from this `for` loop before it *first* prints "The tea is too hot!"?
 
-# In[ ]:
+# In[45]:
 
 
 temperatures = [114, 115, 116, 117, 118]
@@ -301,7 +295,7 @@ temperatures = [114, 115, 116, 117, 118]
 for temp in temperatures: 
     print(temp)
     
-    if(temp > 115):
+    if temp > 115:
         print('The tea is too hot!')
 
 
@@ -320,14 +314,14 @@ for temp in temperatures:
 
 # ### `range` Examples
 
-# In[ ]:
+# In[33]:
 
 
 for ind in [0, 1, 2, 3, 4]:
     print(ind)
 
 
-# In[ ]:
+# In[36]:
 
 
 # the asterisk here unpacks the range
@@ -335,7 +329,7 @@ for ind in [0, 1, 2, 3, 4]:
 print(*range(0, 5))
 
 
-# In[ ]:
+# In[37]:
 
 
 # Loop across a sequence of numbers, using range
@@ -343,7 +337,7 @@ for ind in range(0, 5):
     print(ind)
 
 
-# In[ ]:
+# In[38]:
 
 
 # Range, like indexing, is defined by 'start', 'stop', 'step'
@@ -351,11 +345,13 @@ for ind in range(2, 6, 2):
     print(ind)
 
 
-# In[ ]:
+# In[49]:
 
 
 # using range in example above
-for temp in range(114, 119): 
+my_range = range(114, 119)
+
+for temp in my_range: 
     print(temp)
     
     if(temp > 115):
@@ -366,7 +362,13 @@ for temp in range(114, 119):
 # 
 # How many values would this loop print and what would be the last value printed? 
 
-# In[ ]:
+# In[63]:
+
+
+print(*range(1, 10))
+
+
+# In[50]:
 
 
 for ind in range(1, 10, 3):
@@ -388,7 +390,7 @@ for ind in range(1, 10, 3):
 
 # ### `continue` examples
 
-# In[ ]:
+# In[51]:
 
 
 lst = [0, 1, 2, 3]
@@ -404,6 +406,12 @@ for item in lst:
 # In[ ]:
 
 
+course !=
+
+
+# In[52]:
+
+
 courses = ['cogs9', 'cogs18', 'cogs108']
 
 for course in courses:
@@ -415,7 +423,7 @@ for course in courses:
     print(course + '!')
 
 
-# In[ ]:
+# In[53]:
 
 
 string = "python"

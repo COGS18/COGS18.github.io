@@ -11,7 +11,7 @@
 # 
 # If you have a question about how something works / what something does - try it out, and see what happens!
 
-# ## Part I: PseudoCode
+# ## Part 1: PseudoCode
 # 
 # First, let's briefly consider the idea of pseudocode. 
 # 
@@ -67,7 +67,7 @@ def sent_emails(list_of_emails):
     return emails_sent
 
 
-# ## Part II: Computation &  Algorithms
+# ### Computation &  Algorithms
 # 
 # Both computers and humans are good at some things, and bad at others. However, it tends to be different things that computers and humans are good at. 
 # 
