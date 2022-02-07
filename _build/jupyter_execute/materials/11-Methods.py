@@ -13,7 +13,7 @@
 # - **E1** grades and answer key posted
 #     - Regrade requests (all handled by Prof Ellis): 
 #         - YES when you believe you lost points and should not have (human error; we missed something, etc.)
-#         - NOT for when you don't like the rubric, misread the instructions, *meant* to do soemthing else, etc.
+#         - NOT for when you don't like the rubric, misread the instructions, *meant* to do something else, etc.
 
 # **Q&A**
 # 
@@ -186,7 +186,7 @@ my_int.is_integer()
 'Hello, my name is'.find('name')
 
 
-# #### Clicker Question #3
+# #### Clicker Question #2
 # 
 # What will the following code snippet print out?
 
@@ -258,7 +258,7 @@ ints.reverse()
 ints
 
 
-# #### Clicker Question #4
+# #### Clicker Question #3
 # 
 # What will the following code snippet print out?
 
@@ -324,7 +324,7 @@ car.update({"color": "Black"})
 print(car) 
 
 
-# #### Clicker Question #5
+# #### Clicker Question #4
 # 
 # Assuming `dictionary` is a dictionary that exists, what would the following accomplish:
 # 
@@ -340,7 +340,7 @@ print(car)
 # - D) Return the value for the key 'letter' from `dictionary`
 # 
 
-# #### Clicker Question #6
+# #### Clicker Question #5
 # 
 # Which method would you use to add a new key-value pair to a dictionary?
 # 
