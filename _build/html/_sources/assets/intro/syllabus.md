@@ -184,8 +184,8 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 1/31     | 5	   | 11     | M   | Loops               | A2: Ciphers               |                        		| 
 | 2/2      | 5	   | 12     | W   | Loops II            |                        	  | CL5: Loops     	          | 
 | 2/4      | 5	   | 13     | F   | Algorithms          |                           |                           |
-| 2/7      | 6	   | 14     | M   | Classes I           |                           |                         	| 
-| 2/9      | 6	   | 15     | W   | Classes II          | A3: Chatbots (due Th 2/10 11:59 PM)   | CL6: Classes             	| 
+| 2/7      | 6	   | 14     | M   | Methods             |                           |                         	| 
+| 2/9      | 6	   | 15     | W   | Classes             | A3: Chatbots (due Th 2/10 11:59 PM)   | CL6: Classes             	| 
 | 2/11     | 6	   | 16     | F   | Command Line  [**]  |                           |                           |
 | 2/14     | 7	   | --     | M   | Review              |                           |        			              | 
 | 2/16     | 7	   | 17     | W   | Scientific Computing|                           | CL7: Command Line         | 

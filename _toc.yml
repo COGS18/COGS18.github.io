@@ -23,6 +23,8 @@ parts:
       title: 09-Loops
     - file: materials/10-Algorithms
       title: 10-Algorithms
+    - file: materials/11-Methods
+      title: 11-Methods
   #   - file: materials/13-Classes
   #     title: 13-Classes
   #   - file: materials/14-CommandLine
@@ -43,8 +45,8 @@ parts:
   #     title: 21-AdvancedPython
   #   - file: materials/22-WrapUp
   #     title: 22-WrapUp
-  #   - file: materials/A1-Syntax
-  #     title: A1-Syntax
+    - file: materials/A1-CodeStyle
+      title: A1-CodeStyle
   #   - file: materials/A2-Examples
   #     title: A2-Examples     
   - caption: Coding Labs
@@ -76,8 +78,8 @@ parts:
       title: E1-Practice
     - file: materials/Exam-Prep/E1_Wi22_Practice-Answers
       title: E1_Wi22_Practice-Answers
-  #   - file: materials/Exam-Prep/E1_Fa21-Answers
-  #     title: E1_Fa21-Answers
+    - file: materials/Exam-Prep/E1_Wi22
+      title: E1_Wi22-Answers
   #   - file: materials/Exam-Prep/E2-Review
   #     title: E2-Review
   #   - file: materials/Exam-Prep/E2-Review-Answers

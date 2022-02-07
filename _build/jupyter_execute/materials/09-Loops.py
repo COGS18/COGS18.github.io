@@ -440,7 +440,13 @@ for char in string:
 # 
 # What will be the value of `counter` after this code has run:
 
-# In[ ]:
+# In[7]:
+
+
+'Friday' in my_lst
+
+
+# In[3]:
 
 
 counter = 0
@@ -469,20 +475,20 @@ print(counter)
 
 # ### `break` examples
 
-# In[ ]:
+# In[54]:
 
 
 lst = [0, 1, 2, 3]
 
 for item in lst:
-    
-    if item == 2:
+        
+    if item == 2:    
         break
     
     print(item)
 
 
-# In[ ]:
+# In[9]:
 
 
 courses = ["cogs9", "cogs18", "cogs108"]
@@ -495,7 +501,7 @@ for course in courses:
     print(course)
 
 
-# In[ ]:
+# In[10]:
 
 
 string = "love python"
@@ -507,7 +513,7 @@ for char in string:
     print(char)
 
 
-# In[ ]:
+# In[15]:
 
 
 # using range in example above
@@ -523,7 +529,7 @@ for temp in range(114, 119):
 # 
 # What will the following code print out:
 
-# In[ ]:
+# In[61]:
 
 
 number = 1
@@ -573,7 +579,7 @@ for temp in range(114, 119):
 # 
 # What will be the value of `counter` after this code has run:
 
-# In[ ]:
+# In[64]:
 
 
 counter = 0
@@ -597,14 +603,20 @@ print(counter)
 
 # ### Dictionaries: Indexing & Looping
 
-# In[ ]:
+# In[25]:
+
+
+dictionary = {'key_1':1, 'key_2':2, 'key_3':3}
+
+
+# In[26]:
 
 
 # Dictionaries are indexed using their keys
 dictionary['key_1']
 
 
-# In[ ]:
+# In[27]:
 
 
 # Loop over a dictionary loops across the keys
@@ -615,7 +627,7 @@ for item in dictionary:
     print('\tValue:\t', dictionary[item])
 
 
-# In[ ]:
+# In[28]:
 
 
 # another approach that you will find if you Google
@@ -656,10 +668,31 @@ while number<0:print(number);number=number+1 # avoid all on a single line
 # 
 # Write a function `count_odd()` contatining a loop that will add all the *odd* numbers for the input range together.
 
-# In[ ]:
+# In[52]:
 
 
 # YOUR CODE HERE
+# define function count_odd
+# takes a range of numbers as input
+# loop over each value in the range
+# inside the function check if is odd
+# add to output if it is odd
+
+def count_odd(input_range):
+    output = 0
+    for val in input_range:
+        if val % 2 == 0:
+            continue
+        else:
+            output = output + val
+    return output
+            
+
+
+# In[53]:
+
+
+count_odd(range(1,6))
 
 
 # - A) I did it!

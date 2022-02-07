@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# **Course Announcements (Wed 2/2)**
+# **Course Announcements**
 # 
 # Due Dates:
-# - **A3** due Thursday 2/10 (11:59 PM) [This is a change; Canvas and syllabus updated; late deadline Sunday)
+# - **A3** due Thursday 2/10 (11:59 PM) [This is a change; Canvas and syllabus updated; late deadline Sunday]
 # - [mid-course survey](https://docs.google.com/forms/d/e/1FAIpQLSdswcDdmqv_kogN7mGkhr_1DJ6jDMLPVblqlz_BZyxizZrOSw/viewform?usp=sf_link) "due" Mon (11:59 PM; optional for EC; link also on Canvas)
 # 
 # Notes:
