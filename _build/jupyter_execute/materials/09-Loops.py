@@ -704,10 +704,29 @@ count_odd(range(1,6))
 # 
 # Write a function `count_vowels()` containing a loop that will loop through all the letters in `my_name` (the input parameter) and count all the vowels in your name.
 
-# In[ ]:
+# In[78]:
 
 
 # YOUR CODE HERE
+def count_vowels(my_name):
+    vowel = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+    count = 0
+
+    # loop through each character in my_name
+    for ltr in my_name:
+        # if letter in name is a vowel
+        if ltr in vowel:
+            # count vowel
+            # count += 1 # shorthand; same as below
+            count = count + 1
+    
+    return count
+
+
+# In[77]:
+
+
+count_vowels('ShannonAEO')
 
 
 # - A) I did it!
@@ -721,8 +740,30 @@ count_odd(range(1,6))
 # 
 # A) I did it! &emsp;B) I think I did it. &emsp;C) I tried but I am stuck. &emsp;D) Super duper lost
 
-# In[ ]:
+# In[79]:
 
 
 # YOUR CODE HERE
+def create_dictionary(lst_1, lst_2):
+    
+    joined_dictionary = {}
+    counter = 0
+
+    for key in lst_1:
+        joined_dictionary[key] = lst_2[counter]
+        counter += 1
+
+    return joined_dictionary
+
+
+# In[80]:
+
+
+# TEST YOUR FUNCTION HERE
+# Note that the two input lists are the 
+# same length for the function to work properly
+random_lst_1 = ['a', 'b', 'c', 'd']
+random_lst_2 = [1, 2, 3, 4]
+
+create_dictionary(random_lst_1, random_lst_2)
 

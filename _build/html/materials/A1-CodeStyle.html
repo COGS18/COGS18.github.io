@@ -53,7 +53,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
-    <link rel="prev" title="Methods" href="11-Methods.html" />
+    <link rel="prev" title="Classes" href="12-Classes.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -149,6 +149,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="11-Methods.html">
    11-Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-Classes.html">
+   12-Classes
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -662,7 +667,46 @@
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
-<p>Coming Soon</p>
+<ul class="simple">
+<li><p>CapWords for class names</p></li>
+<li><p>one blank line between methods/functions</p></li>
+</ul>
+<p><strong>Good Code Style</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">():</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
+    
+    <span class="k">def</span> <span class="nf">check_score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">&lt;=</span> <span class="mi">65</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">email</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Code Style to Avoid</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">my_class</span><span class="p">():</span> <span class="c1"># uses snake case for name</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>   <span class="c1"># no blank lines between methods  </span>
+    <span class="k">def</span> <span class="nf">check_score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">&lt;=</span> <span class="mi">65</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">email</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="overall-structure">
 <h2>Overall Structure<a class="headerlink" href="#overall-structure" title="Permalink to this headline">¶</a></h2>
@@ -921,11 +965,11 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="11-Methods.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="12-Classes.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Methods</p>
+            <p class="prev-next-title">Classes</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">

@@ -113,9 +113,46 @@ number=-5
 while number<0:print(number);number=number+1 # avoid all on a single line
 
 
-# ## Classes 
+# ## Classes
 # 
-# Coming Soon
+# - CapWords for class names
+# - one blank line between methods/functions
+
+# **Good Code Style**
+
+# In[1]:
+
+
+class MyClass():
+    
+    def __init__(self, name, email, score):
+        self.name = name
+        self.email = email
+        self.score = score
+    
+    def check_score(self):        
+        if self.score <= 65:
+            return self.email
+        else:
+            return None
+
+
+# **Code Style to Avoid**
+
+# In[ ]:
+
+
+class my_class(): # uses snake case for name
+    def __init__(self, name, email, score):
+        self.name = name
+        self.email = email
+        self.score = score   # no blank lines between methods  
+    def check_score(self):        
+        if self.score <= 65:
+            return self.email
+        else:
+            return None
+
 
 # ## Overall Structure
 

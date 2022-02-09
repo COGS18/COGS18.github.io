@@ -69,7 +69,7 @@
 # 
 # What will the following code snippet print?
 
-# In[ ]:
+# In[6]:
 
 
 def my_func(my_dictionary):
@@ -78,8 +78,9 @@ def my_func(my_dictionary):
 
     for item in my_dictionary:
         value = my_dictionary[item]
-        output.append(value) #append method adds an item to end of a list
-    
+        output.append(value) # append method adds an item to end of a list
+        print(output)
+        
     return output
 
 # create dictionary and execute function
@@ -117,7 +118,7 @@ print(out)
 
 # In other words: methods "belong to" an object.
 
-# In[ ]:
+# In[3]:
 
 
 # The `append` method, defined on lists
@@ -126,9 +127,29 @@ my_list.append(4)
 print(my_list)
 
 
+# In[4]:
+
+
+my_list = [1, 2, 3]
+print(my_list)
+my_list.append(4)
+
+
+# In[5]:
+
+
+my_list
+
+
+# In[7]:
+
+
+get_ipython().run_line_magic('pinfo', 'list.append')
+
+
 # The method `append()` is called directly on the list `my_list`
 
-# In[ ]:
+# In[8]:
 
 
 # append is a method for lists
@@ -137,7 +158,7 @@ my_string = 'cogs18'
 my_string.append('!')
 
 
-# In[ ]:
+# In[11]:
 
 
 # The `is_integer()` method, defined on floats
@@ -145,7 +166,7 @@ my_float = 12.2
 my_float.is_integer()
 
 
-# In[ ]:
+# In[12]:
 
 
 # The `is_integer()` method, attempted on an integer
@@ -158,28 +179,28 @@ my_int.is_integer()
 # 
 # There are a whole bunch of string methods, all described [here](https://www.w3schools.com/python/python_ref_string.asp). We'll review a few of the most commonly used here.
 
-# In[ ]:
+# In[13]:
 
 
 # Make a string all lower case
 'aBc'.lower()
 
 
-# In[ ]:
+# In[14]:
 
 
 # Make a string all upper case
 'aBc'.upper()
 
 
-# In[ ]:
+# In[15]:
 
 
 # Capitalize a string
 'python is great'.capitalize()
 
 
-# In[ ]:
+# In[16]:
 
 
 # Find the index of where a string starts 
@@ -190,7 +211,7 @@ my_int.is_integer()
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[19]:
 
 
 inputs = ['fIx', 'tYpiNg', 'lIkE', 'tHiS']
@@ -212,7 +233,7 @@ output.capitalize()
 # 
 # There are also a bunch of list methods, all described [here](https://www.w3schools.com/python/python_ref_list.asp). You've seen some of these before, but we'll review a few of the most commonly used here.
 
-# In[ ]:
+# In[20]:
 
 
 # sort sorts integers in numerical orders
@@ -221,14 +242,20 @@ ints.sort()
 ints
 
 
-# In[ ]:
+# In[26]:
+
+
+get_ipython().run_line_magic('pinfo', 'list.sort')
+
+
+# In[21]:
 
 
 ints.sort(reverse=True)
 ints
 
 
-# In[ ]:
+# In[22]:
 
 
 # append adds to the end of a list
@@ -236,7 +263,7 @@ ints.append(2)
 ints
 
 
-# In[ ]:
+# In[23]:
 
 
 # remove value from list
@@ -244,13 +271,13 @@ ints.remove(40)
 ints
 
 
-# In[ ]:
+# In[24]:
 
 
 get_ipython().run_line_magic('pinfo', 'list.remove')
 
 
-# In[ ]:
+# In[25]:
 
 
 # reverse order of list
@@ -262,7 +289,7 @@ ints
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[27]:
 
 
 list_string = ['a', 'c', 'd', 'b']
@@ -282,7 +309,7 @@ list_string
 # As with string and list methods, there are many described [here](https://www.w3schools.com/python/python_ref_dictionary.asp) that are helpful when working with dictionaries.
 # 
 
-# In[ ]:
+# In[28]:
 
 
 car = {
@@ -295,7 +322,20 @@ car = {
 car.keys()
 
 
-# In[ ]:
+# In[30]:
+
+
+my_keys = car.keys()
+type(my_keys)
+
+
+# In[31]:
+
+
+car.values()
+
+
+# In[29]:
 
 
 # get returns the value of a specified key
