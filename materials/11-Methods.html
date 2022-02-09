@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Code Style" href="A1-CodeStyle.html" />
+    <link rel="next" title="Classes" href="12-Classes.html" />
     <link rel="prev" title="Algorithms" href="10-Algorithms.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -149,6 +149,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    11-Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-Classes.html">
+   12-Classes
   </a>
  </li>
  <li class="toctree-l1">
@@ -626,8 +631,9 @@ A: This is shorthand. It is equivaelnt to <code class="docutils literal notransl
 
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_dictionary</span><span class="p">:</span>
         <span class="n">value</span> <span class="o">=</span> <span class="n">my_dictionary</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
-        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#append method adds an item to end of a list</span>
-    
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1"># append method adds an item to end of a list</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+        
     <span class="k">return</span> <span class="n">output</span>
 
 <span class="c1"># create dictionary and execute function</span>
@@ -635,6 +641,14 @@ A: This is shorthand. It is equivaelnt to <code class="docutils literal notransl
 <span class="n">out</span> <span class="o">=</span> <span class="n">my_func</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1]
+[1, 2]
+[1, 2, 3]
+[1, 2, 3]
 </pre></div>
 </div>
 </div>
@@ -671,6 +685,44 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>list.append<span class="o">?</span>
+</pre></div>
+</div>
+</div>
 </div>
 <p>The method <code class="docutils literal notranslate"><span class="pre">append()</span></code> is called directly on the list <code class="docutils literal notranslate"><span class="pre">my_list</span></code></p>
 <div class="cell docutils container">
@@ -679,6 +731,18 @@ For our purposes, <b>objects</b> are any data variable.
 <span class="c1"># this will error with a string</span>
 <span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;cogs18&#39;</span>
 <span class="n">my_string</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">jp</span><span class="o">/</span><span class="n">hdbfltdj035719571j9wynwm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_57867</span><span class="o">/</span><span class="mf">2888451100.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this will error with a string</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;cogs18&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">my_string</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;!&#39;</span><span class="p">)</span>
+
+<span class="ne">AttributeError</span>: &#39;str&#39; object has no attribute &#39;append&#39;
 </pre></div>
 </div>
 </div>
@@ -691,6 +755,11 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -698,6 +767,18 @@ For our purposes, <b>objects</b> are any data variable.
 <span class="c1"># this code will produce an error</span>
 <span class="n">my_int</span> <span class="o">=</span> <span class="mi">12</span>
 <span class="n">my_int</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">jp</span><span class="o">/</span><span class="n">hdbfltdj035719571j9wynwm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_57867</span><span class="o">/</span><span class="mf">3124505102.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code will produce an error</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">my_int</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">my_int</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span>
+
+<span class="ne">AttributeError</span>: &#39;int&#39; object has no attribute &#39;is_integer&#39;
 </pre></div>
 </div>
 </div>
@@ -714,11 +795,21 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;abc&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make a string all upper case</span>
 <span class="s1">&#39;aBc&#39;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ABC&#39;
 </pre></div>
 </div>
 </div>
@@ -730,11 +821,21 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Python is great&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Find the index of where a string starts </span>
 <span class="s1">&#39;Hello, my name is&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
 </pre></div>
 </div>
 </div>
@@ -751,6 +852,11 @@ For our purposes, <b>objects</b> are any data variable.
     <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="n">element</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
 
 <span class="n">output</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Fix typing like this &#39;
 </pre></div>
 </div>
 </div>
@@ -776,11 +882,28 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[16, 33, 40, 88]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>list.sort<span class="o">?</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ints</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[88, 40, 33, 16]
 </pre></div>
 </div>
 </div>
@@ -793,12 +916,22 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[88, 40, 33, 16, 2]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remove value from list</span>
 <span class="n">ints</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 <span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[88, 33, 16, 2]
 </pre></div>
 </div>
 </div>
@@ -818,6 +951,11 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2, 16, 33, 88]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-3">
 <h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">¶</a></h3>
@@ -828,6 +966,11 @@ For our purposes, <b>objects</b> are any data variable.
 <span class="n">list_string</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 <span class="n">list_string</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
 <span class="n">list_string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;]
 </pre></div>
 </div>
 </div>
@@ -857,6 +1000,36 @@ For our purposes, <b>objects</b> are any data variable.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_keys</span> <span class="o">=</span> <span class="n">car</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">my_keys</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">car</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_values([&#39;BMW&#39;, &#39;M5&#39;, 2019])
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -868,6 +1041,12 @@ For our purposes, <b>objects</b> are any data variable.
 
 <span class="nb">print</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mod2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>M5
+M5
 </pre></div>
 </div>
 </div>
@@ -1128,10 +1307,10 @@ Some methods update the object directly (in place), whereas others return an upd
             <p class="prev-next-title">Algorithms</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="A1-CodeStyle.html" title="next page">
+    <a class='right-next' id="next-link" href="12-Classes.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Code Style</p>
+        <p class="prev-next-title">Classes</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

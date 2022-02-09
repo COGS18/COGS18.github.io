@@ -185,18 +185,18 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 2/2      | 5	   | 12     | W   | Loops II            |                        	  | CL5: Loops     	          | 
 | 2/4      | 5	   | 13     | F   | Algorithms          |                           |                           |
 | 2/7      | 6	   | 14     | M   | Methods             |                           |                         	| 
-| 2/9      | 6	   | 15     | W   | Classes             | A3: Chatbots (due Th 2/10 11:59 PM)   | CL6: Classes             	| 
-| 2/11     | 6	   | 16     | F   | Command Line  [**]  |                           |                           |
-| 2/14     | 7	   | --     | M   | Review              |                           |        			              | 
-| 2/16     | 7	   | 17     | W   | Scientific Computing|                           | CL7: Command Line         | 
-| 2/18     | 7	   | --     | F   | Python Party        | **E2**                    |                           |
+| 2/9      | 6	   | 15     | W   | Classes I           | A3: Chatbots (due Th 2/10 11:59 PM)   | CL6: Classes             	| 
+| 2/11     | 6	   | 16     | F   | Classes II          |                           |                           |
+| 2/14     | 7	   | --     | M   | Command Line [**]   |                           |        			              | 
+| 2/16     | 7	   | 17     | W   | Review              |                           | CL7: Command Line         | 
+| 2/18     | 7	   | --     | F   | **No Class**        |**E2** (due Sun 2/20; 11:59 PM)|                           |
 | 2/21     | 8	   | --     | M   | **No Class**        |                           |                         	| 
-| 2/23     | 8	   | 18     | W   | Modules & Scripts I |                           | CL8: Scientific Computing | 
-| 2/25     | 8	   | 19     | F   | Code Style          |     			                |                           | 
-| 2/28     | 9	   | 20     | M   | Documentation       | A4: Artificial Agents     |                         	| 
-| 3/2      | 9	   | 21     | W   | Code Testing        | 			                   	| CL9: Good Code           	| 
-| 3/4      | 9	   | 22     | F   | Code Projects       | 				                  |                           | 
-| 3/7      | 10    | --     | M   | Catch-up            |                           |    	                			| 
+| 2/23     | 8	   | 18     | W   | Scientific Computing|                           | CL8: Scientific Computing | 
+| 2/25     | 8	   | 19     | F   | Python Party        |     			                |                           | 
+| 2/28     | 9	   | 20     | M   | Modules & Scripts   | A4: Artificial Agents     |                         	| 
+| 3/2      | 9	   | 21     | W   | Code Style & Documentation | 			             	| CL9: Good Code           	| 
+| 3/4      | 9	   | 22     | F   | Code Testing        | 				                  |                           | 
+| 3/7      | 10    | --     | M   | Code Projects       |                           |    	                			| 
 | 3/9      | 10    | 23     | W   | APIs/Advanced Python|                           |                         	| 
 | 3/11     | 10    | 24     | F   | Wrap Up   		      | A5: Experimentation			  |                        		| 
 
