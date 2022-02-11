@@ -161,6 +161,16 @@
    A1-CodeStyle
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A2-Syntax.html">
+   A2-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A3-Examples.html">
+   A3-Examples
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -223,6 +233,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E1_Wi22.html">
    E1_Wi22-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review.html">
+   E2-Review
   </a>
  </li>
 </ul>
@@ -1110,6 +1125,11 @@ Some methods update the object directly (in place), whereas others return an upd
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;c&#39;, &#39;b&#39;, &#39;a&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1121,6 +1141,11 @@ Some methods update the object directly (in place), whereas others return an upd
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-1, 3, 13]
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="dictionary-methods-that-are-not-in-place">
@@ -1128,6 +1153,11 @@ Some methods update the object directly (in place), whereas others return an upd
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">car</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;brand&#39;: &#39;BMW&#39;, &#39;model&#39;: &#39;M5&#39;, &#39;year&#39;: 2019}
 </pre></div>
 </div>
 </div>
@@ -1148,6 +1178,12 @@ Some methods update the object directly (in place), whereas others return an upd
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict_keys&#39;&gt;
+dict_keys([&#39;brand&#39;, &#39;model&#39;, &#39;year&#39;])
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1157,11 +1193,22 @@ Some methods update the object directly (in place), whereas others return an upd
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt;
+{&#39;brand&#39;: &#39;BMW&#39;, &#39;model&#39;: &#39;M5&#39;, &#39;year&#39;: 2019}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Return the values in the dicionary</span>
 <span class="n">car</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_values([&#39;BMW&#39;, &#39;M5&#39;, 2019])
 </pre></div>
 </div>
 </div>
@@ -1196,13 +1243,97 @@ Some methods update the object directly (in place), whereas others return an upd
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__contains__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__getitem__&#39;,
+ &#39;__getnewargs__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__iter__&#39;,
+ &#39;__le__&#39;,
+ &#39;__len__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__mod__&#39;,
+ &#39;__mul__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rmod__&#39;,
+ &#39;__rmul__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;capitalize&#39;,
+ &#39;casefold&#39;,
+ &#39;center&#39;,
+ &#39;count&#39;,
+ &#39;encode&#39;,
+ &#39;endswith&#39;,
+ &#39;expandtabs&#39;,
+ &#39;find&#39;,
+ &#39;format&#39;,
+ &#39;format_map&#39;,
+ &#39;index&#39;,
+ &#39;isalnum&#39;,
+ &#39;isalpha&#39;,
+ &#39;isascii&#39;,
+ &#39;isdecimal&#39;,
+ &#39;isdigit&#39;,
+ &#39;isidentifier&#39;,
+ &#39;islower&#39;,
+ &#39;isnumeric&#39;,
+ &#39;isprintable&#39;,
+ &#39;isspace&#39;,
+ &#39;istitle&#39;,
+ &#39;isupper&#39;,
+ &#39;join&#39;,
+ &#39;ljust&#39;,
+ &#39;lower&#39;,
+ &#39;lstrip&#39;,
+ &#39;maketrans&#39;,
+ &#39;partition&#39;,
+ &#39;removeprefix&#39;,
+ &#39;removesuffix&#39;,
+ &#39;replace&#39;,
+ &#39;rfind&#39;,
+ &#39;rindex&#39;,
+ &#39;rjust&#39;,
+ &#39;rpartition&#39;,
+ &#39;rsplit&#39;,
+ &#39;rstrip&#39;,
+ &#39;split&#39;,
+ &#39;splitlines&#39;,
+ &#39;startswith&#39;,
+ &#39;strip&#39;,
+ &#39;swapcase&#39;,
+ &#39;title&#39;,
+ &#39;translate&#39;,
+ &#39;upper&#39;,
+ &#39;zfill&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="correspondance-between-functions-methods">
 <h2>Correspondance Between Functions &amp; Methods<a class="headerlink" href="#correspondance-between-functions-methods" title="Permalink to this headline">¶</a></h2>
 <p>All methods are functions. Methods are special functions <em>attached</em> to a variable type. All functions are NOT methods.</p>
 <p>Note that:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_variable</span><span class="o">.</span><span class="n">function_call</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_variable</span><span class="o">.</span><span class="n">method_call</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>acts like:</p>
