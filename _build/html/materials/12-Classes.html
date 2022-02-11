@@ -161,6 +161,16 @@
    A1-CodeStyle
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A2-Syntax.html">
+   A2-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A3-Examples.html">
+   A3-Examples
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -223,6 +233,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E1_Wi22.html">
    E1_Wi22-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review.html">
+   E2-Review
   </a>
  </li>
 </ul>
@@ -741,7 +756,7 @@
             
               <div>
                 
-  <p><strong>Course Announcements</strong></p>
+  <p><strong>Course Announcements (Wed 2/8)</strong></p>
 <p>Due Dates:</p>
 <ul class="simple">
 <li><p><strong>CL6</strong> due tonight (11:59 PM)</p></li>
@@ -752,6 +767,7 @@
 <li><p>mid-course EC posted</p></li>
 <li><p>reminder about interactions with staff</p></li>
 <li><p>Code Style guide has been posted</p></li>
+<li><p><strong>A4</strong> released this afternoon (due Mon 2/28)</p></li>
 <li><p><strong>E1</strong></p>
 <ul>
 <li><p>regrades submitted so far have been addressed</p></li>
@@ -793,6 +809,76 @@ A: No, you likely hadn’t re-executed the cell after moving the list inside the
 A: The updated notes from the previous class are posted to the course website before the next day’s class.</p>
 <p>Q: Can I append 2 lists together somehow? Do we need to know algorithms for the upcoming exam?<br />
 A: Yes - if you want to take two lists and turn them into one list, you can use the <code class="docutils literal notranslate"><span class="pre">+</span></code> operator. And, the algorithms notes do not introduce any new topics, but help solidify understanding of functions + loops, so it may be good to review, but there is nothing new topic-wise in that lecture.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># question asked at the end of class Wednesday</span>
+<span class="c1"># &quot;Could you please explain what does random.choice function mean in A3 Q16?&quot;</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Course Announcements (Fri 2/11)</strong></p>
+<p>Due Dates:</p>
+<ul class="simple">
+<li><p><strong>CL6</strong> due (again) next Wednesday (11:59 PM)</p></li>
+<li><p><strong>E2</strong> due next Sunday (2/20; released 2/17)</p></li>
+<li><p><strong>A4</strong> due Mon 2/28</p></li>
+</ul>
+<p>Note:</p>
+<ul class="simple">
+<li><p>E2 Practice Exam released on datahub</p></li>
+<li><p>CL7-9 due dates pushed back by a week (Canvas and Syllabus have been udpated)</p></li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: How do I put a conditional, loop, or try/except in a method?<br />
+A: The same way you would inside a function. Only difference is if you want to refer back to an attribute from the class you would need <code class="docutils literal notranslate"><span class="pre">self.</span></code> before the name of the attribute.</p>
+<p>Q: I think I’m still confused about what purpose creating our own classes/objects have. Why wouldn’t we just create those functions (like the speak function/method in the Dog class we talked about today in lecture) within our code without having to define a new class altogether? Is it only because it makes some operations easier later in our code?<br />
+A: Great question. A few things: 1) It allows you to organize things that work together together. 2) It allows you to avoid repeating yourself. Specifically, imagine a class with four methods, all of which need to reference the attribute <code class="docutils literal notranslate"><span class="pre">this_thing</span></code>. Rather than defining <code class="docutils literal notranslate"><span class="pre">this_thing</span></code> separately in four different functions, you’d create teh attribute once (in the class) and then reference in each method as needed. 3) …and we won’t get to this in this intro class is classes allow for inheritance, meaning they allow for one class to “inherit” the attributes from another class. This allows you to design code that has a hierachical structure…that functions do not as easily allow for.</p>
+<p>Q: Can you go over the classes notes again and give us a challenging questions, please?<br />
+A: Yup - we’ll be doing this today (and likely Monday).</p>
+<p>Q: Why is it okay if sometime there is an empty parentheses after the defined function?<br />
+A: This indicates that you want to execute the method with default parameters or that there is no input to the function/method. If you wanted to chance the value for any parameters, you’d need to specify it within the parentheses.</p>
+<p>Q: When do we place values inside the parentheses of methods? I’ve noticed that with certain methods, we simply indicate the object in the beginning and then specify the method type after the period (my_list.reverse()) but sometimes we place values inside the parentheses. Just not sure when which is done.<br />
+A: See above for similar question…but stuff goes in there when you want to pass in values to the parameters of the method.</p>
+<p>Q: Why is checking the documentation for something useful?<br />
+A: So you know what it does/how to use it. Googling also useful for this.</p>
+<p>Q: Whats the difference between method and class?<br />
+A: A class defines a new object type. These objects can have methods attached to them. So, by definition, methods are defined <em>within</em> classes.</p>
+<p>Q: I am really confused on using ‘counter’ in functions. I am not sure what it means when it is 0 and how it works in the functions?<br />
+A: <code class="docutils literal notranslate"><span class="pre">counter</span></code> is a variable that allows you to “keep track” of how many times a loop has iterated. For example, if <code class="docutils literal notranslate"><span class="pre">counter</span></code> is zero before the loop and inside the loop you have <code class="docutils literal notranslate"><span class="pre">c=ounter</span> <span class="pre">=</span> <span class="pre">counter</span> <span class="pre">+</span> <span class="pre">1</span></code>, after that loop runs the first iteration counter will store the value 1 (<code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">+</span> <span class="pre">1</span></code>) …indicating that that line of code has executed. The next time through counter would store 2, and so on. Happy to discuss/explain this in office hours!</p>
+<p>Q: Do you make classes or do classes exist and you use them?<br />
+A: Both! For example, we <code class="docutils literal notranslate"><span class="pre">import</span></code>ed the <code class="docutils literal notranslate"><span class="pre">date</span></code> object type. That class has already been defined and we used it…but we can also define our own and use them.</p>
+<p>Q: Is object and class kind of the same thing?<br />
+A: Yup - we define a new <code class="docutils literal notranslate"><span class="pre">class</span></code> which allows us to create a new object of that class type.</p>
+<p>Q: How do you concatenate after an integer? ‘\n’ after an integer ?<br />
+A: If you want to concatenate…you probably need to typecast the integer to a string using <code class="docutils literal notranslate"><span class="pre">str()</span></code> and then concatenate from there…but seeing your specific use case may be helpful. Feel free to ask on campuswire with more specifics!</p>
+<p><strong>Black History Month</strong>: Foundational Fridays</p>
+<ul class="simple">
+<li><p>1960s: <a class="reference external" href="https://www.nytimes.com/2020/02/24/science/katherine-johnson-dead.html">Katherine G. Johnson</a> and <a class="reference external" href="https://scientificwomen.net/women/vaughan-dorothy-103">Dorothy Vaughan</a> (NASA)</p>
+<ul>
+<li><p>helped calculate flight path to the moon</p></li>
+<li><p>“rigorously educated, supremely capable yet largely unheralded”</p></li>
+<li><p>“teaching herself and her staff the programming language of FORTRAN”</p></li>
+<li><p>each is featured in “Hidden Figures</p></li>
+</ul>
+</li>
+<li><p>1969: <a class="reference external" href="https://medium.com/&#64;mayborn_unt/clarence-skip-ellis-the-first-black-ph-d-in-computer-science-6ccae49b148">Clarence “Skip” Ellis</a> - first black man to earn his PhD in CS from UIUC (note: ACM was founded in 1947)</p>
+<ul>
+<li><p>worked at Bell Laboratories, IBM, and Xerox</p></li>
+<li><p>worked on the team developing the world’s first personal computer (PC) and its related interfaces and software</p></li>
+<li><p>1992 - Professor at University of Colorado Boulder</p></li>
+<li><p>In a 2003 survey, he was the <em>only</em> full black prof at the 50 largest US research universities (one of four black profs in total…among 1,332 faculty)</p></li>
+</ul>
+</li>
+</ul>
 <div class="tex2jax_ignore mathjax_ignore section" id="classes">
 <h1>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
@@ -833,12 +919,22 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29/09/1988
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A date, stored as a list of number</span>
 <span class="n">date_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;29&#39;</span><span class="p">,</span> <span class="s1">&#39;09&#39;</span><span class="p">,</span> <span class="s1">&#39;1988&#39;</span><span class="p">]</span>
 <span class="n">date_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;29&#39;, &#39;09&#39;, &#39;1988&#39;]
 </pre></div>
 </div>
 </div>
@@ -854,12 +950,22 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A date, stored as a dictionary</span>
 <span class="n">date_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;day&#39;</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">1988</span><span class="p">}</span>
 <span class="n">date_dictionary</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;day&#39;: 29, &#39;month&#39;: 9, &#39;year&#39;: 1988}
 </pre></div>
 </div>
 </div>
@@ -896,11 +1002,21 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988-09-29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check what type of thing `my_date` is</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.date
 </pre></div>
 </div>
 </div>
@@ -922,6 +1038,11 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -930,11 +1051,21 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the year attribute</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">year</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988
 </pre></div>
 </div>
 </div>
@@ -948,6 +1079,11 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Method to return what day of the week the date is</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -969,13 +1105,24 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988-09-29 1980-07-29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># calculate the difference between times</span>
 <span class="n">time_diff</span> <span class="o">=</span> <span class="n">my_date</span> <span class="o">-</span> <span class="n">my_date2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="p">,</span>  <span class="s2">&quot;days&quot;</span><span class="p">)</span> <span class="c1">#in days</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="o">/</span><span class="mi">365</span><span class="p">,</span><span class="s2">&quot;years&quot;</span><span class="p">)</span> <span class="c1">#in years</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="o">/</span><span class="mi">365</span><span class="p">,</span> <span class="s2">&quot;years&quot;</span><span class="p">)</span> <span class="c1">#in years</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2984 days
+8.175342465753424 years
 </pre></div>
 </div>
 </div>
@@ -1001,6 +1148,57 @@ date.weekday<span class="o">?</span>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## dir ouputs all methods and attributes</span>
 <span class="c1">## we&#39;ll talk about the double underscores next lecture</span>
 <span class="nb">dir</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__le__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__radd__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rsub__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__sub__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;ctime&#39;,
+ &#39;day&#39;,
+ &#39;fromisocalendar&#39;,
+ &#39;fromisoformat&#39;,
+ &#39;fromordinal&#39;,
+ &#39;fromtimestamp&#39;,
+ &#39;isocalendar&#39;,
+ &#39;isoformat&#39;,
+ &#39;isoweekday&#39;,
+ &#39;max&#39;,
+ &#39;min&#39;,
+ &#39;month&#39;,
+ &#39;replace&#39;,
+ &#39;resolution&#39;,
+ &#39;strftime&#39;,
+ &#39;timetuple&#39;,
+ &#39;today&#39;,
+ &#39;toordinal&#39;,
+ &#39;weekday&#39;,
+ &#39;year&#39;]
 </pre></div>
 </div>
 </div>
@@ -1131,12 +1329,22 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Woof&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># george, has &#39;Dog&#39; method(s)</span>
 <span class="c1"># remember we used `self`</span>
 <span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoof&#39;
 </pre></div>
 </div>
 </div>
@@ -1180,6 +1388,14 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;__main__.Dog at 0x7f8b584420d0&gt;,
+ &lt;__main__.Dog at 0x7f8b58442400&gt;,
+ &lt;__main__.Dog at 0x7f8b48a2e0d0&gt;,
+ &lt;__main__.Dog at 0x7f8b48a2e6d0&gt;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1188,11 +1404,24 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>__main__.Dog
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">dog</span> <span class="ow">in</span> <span class="n">pack_of_dogs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="n">n_times</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WoofWoofWoofWoof
+WoofWoofWoofWoof
+WoofWoofWoofWoof
+WoofWoofWoofWoof
 </pre></div>
 </div>
 </div>

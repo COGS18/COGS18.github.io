@@ -398,7 +398,7 @@ print(car)
 
 # #### List methods that are in place
 
-# In[ ]:
+# In[34]:
 
 
 # Reverse a list
@@ -408,7 +408,7 @@ my_list.reverse()
 print(my_list)
 
 
-# In[ ]:
+# In[35]:
 
 
 # Sort a list
@@ -420,20 +420,20 @@ print(my_numbers)
 
 # #### Dictionary methods that are not in place
 
-# In[ ]:
+# In[36]:
 
 
 car
 
 
-# In[ ]:
+# In[37]:
 
 
 # Return the keys in the dictionary
 out = car.keys() 
 
 
-# In[ ]:
+# In[38]:
 
 
 # print keys
@@ -441,7 +441,7 @@ print(type(out))
 print(out)
 
 
-# In[ ]:
+# In[39]:
 
 
 # car has not changed
@@ -449,7 +449,7 @@ print(type(car))
 print(car)
 
 
-# In[ ]:
+# In[40]:
 
 
 # Return the values in the dicionary
@@ -460,7 +460,7 @@ car.values()
 
 # Typing the object/variable name you want to find methods for followed by a '.' and then pressing tab will display all the methods available for that type of object.
 
-# In[ ]:
+# In[41]:
 
 
 # Define a test string
@@ -476,7 +476,7 @@ my_string.
 
 # Using the function `dir()` returns all methods available
 
-# In[ ]:
+# In[42]:
 
 
 # For our purposes now, you can ignore any leading underscores (these are special methods)
@@ -490,7 +490,7 @@ dir(my_string)
 # Note that:
 # 
 # ```python
-# my_variable.function_call()
+# my_variable.method_call()
 # ```
 # 
 # acts like:

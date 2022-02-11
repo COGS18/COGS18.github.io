@@ -43,12 +43,14 @@ parts:
   #     title: 20-CodeProjects
   #   - file: materials/21-AdvancedPython
   #     title: 21-AdvancedPython
-  #   - file: materials/22-WrapUp
+  #   - file: materials/22-WraspUp
   #     title: 22-WrapUp
     - file: materials/A1-CodeStyle
       title: A1-CodeStyle
-  #   - file: materials/A2-Examples
-  #     title: A2-Examples     
+    - file: materials/A2-Syntax
+      title: A2-Syntax   
+    - file: materials/A3-Examples
+      title: A3-Examples    
   - caption: Coding Labs
     chapters:
     - file: labs/CL1-Tooling
@@ -80,8 +82,8 @@ parts:
       title: E1_Wi22_Practice-Answers
     - file: materials/Exam-Prep/E1_Wi22
       title: E1_Wi22-Answers
-  #   - file: materials/Exam-Prep/E2-Review
-  #     title: E2-Review
+    - file: materials/Exam-Prep/E2-Review
+      title: E2-Review
   #   - file: materials/Exam-Prep/E2-Review-Answers
   #     title: E2-Review-Answers
   #   - file: materials/Exam-Prep/E2-Practice

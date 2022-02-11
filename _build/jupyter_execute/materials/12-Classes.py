@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# **Course Announcements**
+# **Course Announcements (Wed 2/8)**
 # 
 # Due Dates:
 # - **CL6** due tonight (11:59 PM)
@@ -11,6 +11,7 @@
 # - mid-course EC posted
 # - reminder about interactions with staff
 # - Code Style guide has been posted
+# - **A4** released this afternoon (due Mon 2/28)
 # - **E1**
 #     - regrades submitted so far have been addressed
 #     - **E1 Q10**: if the only thing wrong was a typo in your string, you should have had autograder credit returned and been deducted only 0.05 points for typo; submit a regrade request if not the case
@@ -48,6 +49,74 @@
 # Q: Can I append 2 lists together somehow? Do we need to know algorithms for the upcoming exam?  
 # A: Yes - if you want to take two lists and turn them into one list, you can use the `+` operator. And, the algorithms notes do not introduce any new topics, but help solidify understanding of functions + loops, so it may be good to review, but there is nothing new topic-wise in that lecture.
 
+# In[29]:
+
+
+# question asked at the end of class Wednesday
+# "Could you please explain what does random.choice function mean in A3 Q16?"
+import random
+
+random.choice([1, 2, 3, 4])
+
+
+# **Course Announcements (Fri 2/11)**
+# 
+# Due Dates:
+# - **CL6** due (again) next Wednesday (11:59 PM)
+# - **E2** due next Sunday (2/20; released 2/17)
+# - **A4** due Mon 2/28
+# 
+# Note: 
+# - E2 Practice Exam released on datahub
+# - CL7-9 due dates pushed back by a week (Canvas and Syllabus have been udpated)
+
+# **Q&A**
+# 
+# Q: How do I put a conditional, loop, or try/except in a method?   
+# A: The same way you would inside a function. Only difference is if you want to refer back to an attribute from the class you would need `self.` before the name of the attribute.
+# 
+# Q: I think I'm still confused about what purpose creating our own classes/objects have. Why wouldn't we just create those functions (like the speak function/method in the Dog class we talked about today in lecture) within our code without having to define a new class altogether? Is it only because it makes some operations easier later in our code?  
+# A: Great question. A few things: 1) It allows you to organize things that work together together. 2) It allows you to avoid repeating yourself. Specifically, imagine a class with four methods, all of which need to reference the attribute `this_thing`. Rather than defining `this_thing` separately in four different functions, you'd create teh attribute once (in the class) and then reference in each method as needed. 3) ...and we won't get to this in this intro class is classes allow for inheritance, meaning they allow for one class to "inherit" the attributes from another class. This allows you to design code that has a hierachical structure...that functions do not as easily allow for.
+# 
+# Q: Can you go over the classes notes again and give us a challenging questions, please?   
+# A: Yup - we'll be doing this today (and likely Monday).
+# 
+# Q: Why is it okay if sometime there is an empty parentheses after the defined function?   
+# A: This indicates that you want to execute the method with default parameters or that there is no input to the function/method. If you wanted to chance the value for any parameters, you'd need to specify it within the parentheses.
+# 
+# Q: When do we place values inside the parentheses of methods? I've noticed that with certain methods, we simply indicate the object in the beginning and then specify the method type after the period (my_list.reverse()) but sometimes we place values inside the parentheses. Just not sure when which is done.   
+# A: See above for similar question...but stuff goes in there when you want to pass in values to the parameters of the method.
+# 
+# Q: Why is checking the documentation for something useful?  
+# A: So you know what it does/how to use it. Googling also useful for this.
+# 
+# Q: Whats the difference between method and class?  
+# A: A class defines a new object type. These objects can have methods attached to them. So, by definition, methods are defined *within* classes.
+# 
+# Q: I am really confused on using 'counter' in functions. I am not sure what it means when it is 0 and how it works in the functions?  
+# A: `counter` is a variable that allows you to "keep track" of how many times a loop has iterated. For example, if `counter` is zero before the loop and inside the loop you have `c=ounter = counter + 1`, after that loop runs the first iteration counter will store the value 1 (`0 + 1`) ...indicating that that line of code has executed. The next time through counter would store 2, and so on. Happy to discuss/explain this in office hours!
+# 
+# Q: Do you make classes or do classes exist and you use them?  
+# A: Both! For example, we `import`ed the `date` object type. That class has already been defined and we used it...but we can also define our own and use them.
+# 
+# Q: Is object and class kind of the same thing?  
+# A: Yup - we define a new `class` which allows us to create a new object of that class type.
+# 
+# Q: How do you concatenate after an integer? '\n' after an integer ?   
+# A: If you want to concatenate...you probably need to typecast the integer to a string using `str()` and then concatenate from there...but seeing your specific use case may be helpful. Feel free to ask on campuswire with more specifics!
+
+# **Black History Month**: Foundational Fridays
+# - 1960s: [Katherine G. Johnson](https://www.nytimes.com/2020/02/24/science/katherine-johnson-dead.html) and [Dorothy Vaughan](https://scientificwomen.net/women/vaughan-dorothy-103) (NASA) 
+#     - helped calculate flight path to the moon 
+#     - "rigorously educated, supremely capable yet largely unheralded"
+#     - "teaching herself and her staff the programming language of FORTRAN"
+#     - each is featured in "Hidden Figures
+# - 1969: [Clarence "Skip" Ellis](https://medium.com/@mayborn_unt/clarence-skip-ellis-the-first-black-ph-d-in-computer-science-6ccae49b148) - first black man to earn his PhD in CS from UIUC (note: ACM was founded in 1947)
+#     - worked at Bell Laboratories, IBM, and Xerox
+#     - worked on the team developing the world’s first personal computer (PC) and its related interfaces and software
+#     - 1992 - Professor at University of Colorado Boulder 
+#     - In a 2003 survey, he was the *only* full black prof at the 50 largest US research universities (one of four black profs in total...among 1,332 faculty)
+
 # # Classes
 # 
 # - objects
@@ -74,7 +143,7 @@
 
 # ### Storing Dates (Motivation)
 
-# In[ ]:
+# In[1]:
 
 
 # A date, stored as a string
@@ -82,7 +151,7 @@ date_string = '29/09/1988'
 print(date_string)
 
 
-# In[ ]:
+# In[2]:
 
 
 # A date, stored as a list of number
@@ -90,7 +159,7 @@ date_list = ['29', '09', '1988']
 date_list
 
 
-# In[ ]:
+# In[3]:
 
 
 # A date, stored as a series of numbers
@@ -101,7 +170,7 @@ year = 1988
 print(day)
 
 
-# In[ ]:
+# In[4]:
 
 
 # A date, stored as a dictionary
@@ -113,20 +182,20 @@ date_dictionary
 
 # ### Example Object: Date
 
-# In[ ]:
+# In[5]:
 
 
 # Import a date object
 from datetime import date
 
 
-# In[ ]:
+# In[6]:
 
 
 get_ipython().run_line_magic('pinfo', 'date')
 
 
-# In[ ]:
+# In[7]:
 
 
 # Set the data we want to store in our date object
@@ -139,7 +208,7 @@ my_date = date(year, month, day)
 print(my_date)
 
 
-# In[ ]:
+# In[8]:
 
 
 # Check what type of thing `my_date` is
@@ -158,21 +227,21 @@ type(my_date)
 
 # **attributes** maintain the object's state, simply returning information about the object to you
 
-# In[ ]:
+# In[9]:
 
 
 # Get the day attribute
 my_date.day
 
 
-# In[ ]:
+# In[10]:
 
 
 # Get the month attribute
 my_date.month
 
 
-# In[ ]:
+# In[11]:
 
 
 # Get the year attribute
@@ -185,14 +254,14 @@ my_date.year
 
 # **methods** modify the object's state
 
-# In[ ]:
+# In[12]:
 
 
 # Method to return what day of the week the date is
 my_date.weekday()
 
 
-# In[ ]:
+# In[13]:
 
 
 # Reminder: check documentation with '?'
@@ -201,7 +270,7 @@ get_ipython().run_line_magic('pinfo', 'date.weekday')
 
 # It's also possible to carry out operations on multiple date objects.
 
-# In[ ]:
+# In[14]:
 
 
 # define a second date
@@ -209,13 +278,13 @@ my_date2 = date(1980, 7, 29)
 print(my_date, my_date2)
 
 
-# In[ ]:
+# In[15]:
 
 
 # calculate the difference between times
 time_diff = my_date - my_date2
 print(time_diff.days,  "days") #in days
-print(time_diff.days/365,"years") #in years
+print(time_diff.days/365, "years") #in years
 
 
 # ### Listing Attributes & Methods : `dir`
@@ -232,7 +301,7 @@ my_date.
 date.
 
 
-# In[ ]:
+# In[16]:
 
 
 ## dir ouputs all methods and attributes
@@ -298,7 +367,7 @@ my_date = date(year = 1050, month = 12, day = 12)
 
 # ## Example Class: Dog
 
-# In[ ]:
+# In[17]:
 
 
 # Define a class with `class`. 
@@ -329,21 +398,21 @@ class Dog():
 # - like functions, a new namespace is created within a Class
 # 
 
-# In[ ]:
+# In[18]:
 
 
 # Initialize a dog object
 george = Dog()
 
 
-# In[ ]:
+# In[19]:
 
 
 # george, has 'sound' attribute(s) from Dog()
 george.sound
 
 
-# In[ ]:
+# In[20]:
 
 
 # george, has 'Dog' method(s)
@@ -373,32 +442,32 @@ class Dog():
 
 # ### Using our Dog Objects
 
-# In[ ]:
+# In[21]:
 
 
 # Initialize a group of dogs
 pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 
 
-# In[ ]:
+# In[22]:
 
 
 # take a look at this
 pack_of_dogs
 
 
-# In[ ]:
+# In[23]:
 
 
 # take a look at this
 type(pack_of_dogs[0])
 
 
-# In[ ]:
+# In[26]:
 
 
 for dog in pack_of_dogs:
-    print(dog.speak())
+    print(dog.speak(n_times=4))
 
 
 # ## Instances & self
