@@ -798,17 +798,6 @@
 <li><p>Coding labs maybe a bit too long</p></li>
 <li><p>if you asked a question, should have gotten a response via Campuswire DM/email</p></li>
 </ul>
-<p><strong>Q&amp;A</strong></p>
-<p>Q: In class we saw that using car[‘model’] and car.get(‘model’) produced the same result for a dictionary. If they are effectively the same, what would be the reason to use the get method over simply using square braces?<br />
-A: While python <em>tries</em> to prioritize having <em>one</em> way to do things, it sometimes falls short. This is one case where there are two equivalent ways. As fair as I’m concerned, pick one and stick to it for consistency…whichever is more readable for you.</p>
-<p>Q: I am still not sure about where the return statement should be in a loop. Can you go over that again?<br />
-A: The return statement should be placed where/when you want the output to return. If you want it to return the first time through your loop (typically you don’t want this), the <code class="docutils literal notranslate"><span class="pre">return</span></code> statement would be indented within the loop. If you want it to <code class="docutils literal notranslate"><span class="pre">return</span></code> once the loop terminates, it would be after the loop and at the same level of indentation as the loop. This is a great question for office hours if still confused.</p>
-<p>Q: I tried the same example and I defined the list of vowels inside the function yet it still said there was an error with the list of vowels being defined before assignment, but when I just rewrote my code it was fine, so does python get overwhelmed or need to restart sometimes?<br />
-A: No, you likely hadn’t re-executed the cell after moving the list inside the function?</p>
-<p>Q: Will the codes changed in class by instructor be updated in our lecture notes? It seems like it doesn’t, but I’d like to have it.<br />
-A: The updated notes from the previous class are posted to the course website before the next day’s class.</p>
-<p>Q: Can I append 2 lists together somehow? Do we need to know algorithms for the upcoming exam?<br />
-A: Yes - if you want to take two lists and turn them into one list, you can use the <code class="docutils literal notranslate"><span class="pre">+</span></code> operator. And, the algorithms notes do not introduce any new topics, but help solidify understanding of functions + loops, so it may be good to review, but there is nothing new topic-wise in that lecture.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># question asked at the end of class Wednesday</span>
@@ -825,6 +814,17 @@ A: Yes - if you want to take two lists and turn them into one list, you can use 
 </div>
 </div>
 </div>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: In class we saw that using car[‘model’] and car.get(‘model’) produced the same result for a dictionary. If they are effectively the same, what would be the reason to use the get method over simply using square braces?<br />
+A: While python <em>tries</em> to prioritize having <em>one</em> way to do things, it sometimes falls short. This is one case where there are two equivalent ways. As fair as I’m concerned, pick one and stick to it for consistency…whichever is more readable for you.</p>
+<p>Q: I am still not sure about where the return statement should be in a loop. Can you go over that again?<br />
+A: The return statement should be placed where/when you want the output to return. If you want it to return the first time through your loop (typically you don’t want this), the <code class="docutils literal notranslate"><span class="pre">return</span></code> statement would be indented within the loop. If you want it to <code class="docutils literal notranslate"><span class="pre">return</span></code> once the loop terminates, it would be after the loop and at the same level of indentation as the loop. This is a great question for office hours if still confused.</p>
+<p>Q: I tried the same example and I defined the list of vowels inside the function yet it still said there was an error with the list of vowels being defined before assignment, but when I just rewrote my code it was fine, so does python get overwhelmed or need to restart sometimes?<br />
+A: No, you likely hadn’t re-executed the cell after moving the list inside the function?</p>
+<p>Q: Will the codes changed in class by instructor be updated in our lecture notes? It seems like it doesn’t, but I’d like to have it.<br />
+A: The updated notes from the previous class are posted to the course website before the next day’s class.</p>
+<p>Q: Can I append 2 lists together somehow? Do we need to know algorithms for the upcoming exam?<br />
+A: Yes - if you want to take two lists and turn them into one list, you can use the <code class="docutils literal notranslate"><span class="pre">+</span></code> operator. And, the algorithms notes do not introduce any new topics, but help solidify understanding of functions + loops, so it may be good to review, but there is nothing new topic-wise in that lecture.</p>
 <p><strong>Course Announcements (Fri 2/11)</strong></p>
 <p>Due Dates:</p>
 <ul class="simple">
@@ -867,7 +867,7 @@ A: If you want to concatenate…you probably need to typecast the integer to a s
 <li><p>helped calculate flight path to the moon</p></li>
 <li><p>“rigorously educated, supremely capable yet largely unheralded”</p></li>
 <li><p>“teaching herself and her staff the programming language of FORTRAN”</p></li>
-<li><p>each is featured in “Hidden Figures</p></li>
+<li><p>each is featured in “Hidden Figures”</p></li>
 </ul>
 </li>
 <li><p>1969: <a class="reference external" href="https://medium.com/&#64;mayborn_unt/clarence-skip-ellis-the-first-black-ph-d-in-computer-science-6ccae49b148">Clarence “Skip” Ellis</a> - first black man to earn his PhD in CS from UIUC (note: ACM was founded in 1947)</p>
@@ -879,6 +879,116 @@ A: If you want to concatenate…you probably need to typecast the integer to a s
 </ul>
 </li>
 </ul>
+<p><strong>Course Announcements (Mon 2/14)</strong></p>
+<p>Due Dates:</p>
+<ul class="simple">
+<li><p><strong>CL6</strong> due (again) Wednesday (11:59 PM) - <em>NO</em> new CL this week</p></li>
+<li><p><strong>E2</strong> due Sunday (2/20; 11:59 PM); released Thursday 2/17 3PM</p></li>
+<li><p><strong>A4</strong> due Mon 2/28</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>No lecture this Friday (exam) OR next Monday (holiday)</p></li>
+</ul>
+<p><strong>Q&amp;A</strong> (Mon 2/14)</p>
+<p>Q: I was wondering if we can include ‘if’ and ‘else’ inside a class?<br />
+A: Absolutely - this would typically happen within a method inside a class.</p>
+<p>Q: If we already spent over an hour on the coding lab and finished most of the questions, can we just turn that in for this week?<br />
+A: Yup. Now, of course understanding the material throughout the lab is important for the exam, so I encourage you to be sure you’ve looked over it again as your understanding increases. And, if you do that and edit your code prior to Wednesday’s deadline, mine as well submit the most recent/completed lab.</p>
+<p>Q: Also, what’s the use of doing self.(insert parameter) = parameter?<br />
+A: This allows you to define an instance attribute with the input from the user, specifying the value for the attribute on creation of an instance of the ojbect.</p>
+<p>Q: Do we only use self.<em>input parameter</em> when using the <strong>init</strong> and then in other methods we would just use the variable names without the self. ?<br />
+A: When defining attributes, yes. Note that when referring to an attribute within a method <code class="docutils literal notranslate"><span class="pre">self.</span></code> will always be before the attribute name (regardless of whether it is a class or instance attribute).</p>
+<p>Q: Can there be a method within a method?<br />
+A: There <em>could</em> but that’s not good code design typically.</p>
+<p>Q: Where are class objects stored overall?<br />
+A: When defined in a notebook, they are stored in your namespace (same place as variables and functions are stored)</p>
+<p>Q: When a word is in blue in Python, does that just mean it’s a name of some specific procedure (e.g., function names) or data type (e.g., class names)?<br />
+A: Yup.</p>
+<p>Q: When would we need a return statement for class methods?<br />
+A: When you want the method to return that output/be able to store it in a variable.</p>
+<p>Q: why do we need to put self in front of the parameters? what does that do?<br />
+A: This refers to the attributes for <em>that particular instance</em> of the object. These values could differ from one object to another (see example in class today and how the attribute’s value changes as we use the object).</p>
+<p>Q: if we did not declare a parameter inside ‘<strong>init</strong>’ and instead declared the parameter in another method inside the class, can we use call the parameter in a 3rd method?<br />
+A: Nope. Each method has its own namespace. If you want to use the attribute/parameter in more than one method, best to define it as either a class or instance attribute.</p>
+<p>Q: I’m a little confused on the purpose of <strong>init</strong>, since I thought we always had to use it, but some of the examples didn’t. Is it just there when we want to have attributes that will be different for each instance (like the dog’s breeds)? But doesn’t need to be used if all the instances will be the exact same?<br />
+A: Yup - neither class nor instance attributes are <em>required</em>. Class attributes are for things that will be consistent/the same for every object of that type (sound of a dog). Instance attributes are for things that could take different values for each insetance of that object type (breed/name of a dog). Neither is required; both are allowed within a class.</p>
+<p>Q: When referring to instances, is self always the parameter we need to use?<br />
+A: Yes - we will always use <code class="docutils literal notranslate"><span class="pre">self</span></code>. (For a more complete answer, <em>theoretically</em> you could use a different word, but the Python community has settled on <code class="docutils literal notranslate"><span class="pre">self</span></code>, so we’ll use <code class="docutils literal notranslate"><span class="pre">self</span></code> and you’ll see <code class="docutils literal notranslate"><span class="pre">self</span></code> if you look up others’ code on the Internet.)</p>
+<p>Q: is the purpose of instance attributes being that they can be edited whereas class attributes can not?<br />
+A: That’s one way to think of them. The other difference is that instance attributes’ values can/will differ for each instance of the object created…whereas class attributes will not.</p>
+<p>Q: Up to which question in A4 will cover the material in E2?
+A: Theoretically, all of it is fair game on A4…but the questions on the exam will not be as involved/difficult as the CarInventory or Bots questions from A4.</p>
+<p>Q: For the final project, do we use the same code and build on it from A3 or do we start a completely new code?<br />
+A: We’ll discuss this in a week or so. Either is allowed…but you’ll be required to write <em>additional</em> code on top of any code used from the assignment.</p>
+<p>Q: What’s the different between functions and classes<br />
+A: Functions stand on their own, take input, carry out some operators and return output. Classes on the other hand can have functions defined <em>within them</em> (methods), but they <em>also</em> allow you to define attributes that are part of the class. This allows you to organize your code better.</p>
+<p>Q: Also, could you give an example of how to use try and except inside a class since I am still confused about that.<br />
+A: See below…in this example, I’ve decided to add a <code class="docutils literal notranslate"><span class="pre">lbs</span></code> instance attribute and use this within the speak method. If it’s a larger dog (&gt;50 pounds), the dog will bark more times (<code class="docutils literal notranslate"><span class="pre">n_times</span> <span class="pre">*</span> <span class="pre">2</span></code>). If it’s smaller, it will only bark <code class="docutils literal notranslate"><span class="pre">n_times</span></code>. However…if someone tried to store a non-numeric value…that would cause the <code class="docutils literal notranslate"><span class="pre">try</span></code> to error…if we didn’t have the <code class="docutils literal notranslate"><span class="pre">except</span></code>. Here, instead of getting an error, we <code class="docutils literal notranslate"><span class="pre">print</span></code> out a message to the user.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Dog</span><span class="p">():</span>
+    
+    <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">lbs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lbs</span> <span class="o">=</span> <span class="n">lbs</span>
+    
+    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span> 
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lbs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span> <span class="o">*</span> <span class="mi">2</span>
+            <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lbs</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">50</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Expecting lbs to be numeric. Please edit the lbs attribute.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># small dog</span>
+<span class="n">lexi</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Lexi&#39;</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="n">lexi</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoof&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># big dog</span>
+<span class="n">greg</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Greg&#39;</span><span class="p">,</span> <span class="mi">65</span><span class="p">)</span>
+<span class="n">greg</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoofWoofWoof&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># would cause error if we didn&#39;t have try/except</span>
+<span class="n">sparky</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Sparky&#39;</span><span class="p">,</span> <span class="s1">&#39;small&#39;</span><span class="p">)</span>
+<span class="n">sparky</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Expecting lbs to be numeric. Please edit the lbs attribute.
+</pre></div>
+</div>
+</div>
+</div>
 <div class="tex2jax_ignore mathjax_ignore section" id="classes">
 <h1>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
@@ -1354,12 +1464,26 @@ date.weekday<span class="o">?</span>
 <p>Which of the following statements is true about the example we’ve been using?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Dog</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># edited clicker question due to student question at ~23min</span>
+<span class="k">class</span> <span class="nc">Dog</span><span class="p">():</span>
     
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
     
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
+    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">separator</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">+</span> <span class="n">separator</span><span class="p">)</span> <span class="o">*</span> <span class="n">n_times</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+<span class="n">gary</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="n">separator</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Woof-Woof-&#39;
 </pre></div>
 </div>
 </div>
@@ -1464,6 +1588,12 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WoofWoof
+WoofWoof
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) 2 instances, 2 method executions</p></li>
@@ -1515,9 +1645,27 @@ Instance attributes are attributes that we can make be different for each instan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this will error now; no name provided</span>
+<span class="n">george</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">jp</span><span class="o">/</span><span class="n">hdbfltdj035719571j9wynwm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_74257</span><span class="o">/</span><span class="mf">3561848622.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">george</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+
+<span class="ne">TypeError</span>: __init__() missing 1 required positional argument: &#39;name&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a dog</span>
 <span class="c1"># what goes in the parentheses is defined in the __init__</span>
-<span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Gary&#39;</span><span class="p">)</span> 
+<span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Gary&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -1530,11 +1678,22 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Woof
+Gary
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check gary&#39;s methods</span>
 <span class="n">gary</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoof&#39;
 </pre></div>
 </div>
 </div>
@@ -1549,8 +1708,9 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
     
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">breed</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="n">breed</span>
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
@@ -1561,6 +1721,13 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## We&#39;ll execute here</span>
+<span class="n">lexi</span> <span class="o">=</span> <span class="n">NewDog</span><span class="p">(</span><span class="s1">&#39;Lexi&#39;</span><span class="p">,</span> <span class="s1">&#39;Italian Greyhound&#39;</span><span class="p">)</span>
+<span class="n">lexi</span><span class="o">.</span><span class="n">breed</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Italian Greyhound&#39;
 </pre></div>
 </div>
 </div>
@@ -1610,6 +1777,18 @@ Instance attributes are attributes that we can make be different for each instan
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jaspurr  says:
+MeowMeow
+Barkley  says:
+WoofWoof
+Picatso  says:
+MeowMeow
+Ruffius  says:
+WoofWoof
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-8">
 <h3>Clicker Question #8<a class="headerlink" href="#clicker-question-8" title="Permalink to this headline">¶</a></h3>
@@ -1634,8 +1813,13 @@ Instance attributes are attributes that we can make be different for each instan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="s1">&#39;Rob&#39;</span><span class="p">,</span> <span class="s1">&#39;rob@python.com&#39;</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Rob&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;rob@python.com&#39;</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mi">62</span><span class="p">)</span>
 <span class="n">student</span><span class="o">.</span><span class="n">check_score</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rob@python.com
 </pre></div>
 </div>
 </div>
@@ -1665,7 +1849,7 @@ Instance attributes are attributes that we can make be different for each instan
         <span class="bp">self</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
     
-    <span class="k">def</span> <span class="nf">check_score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>        
+    <span class="k">def</span> <span class="nf">check_score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">&lt;=</span> <span class="mi">65</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">email</span>
         <span class="k">else</span><span class="p">:</span>
@@ -1712,8 +1896,14 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_classes</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">prof</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+Ellis
 </pre></div>
 </div>
 </div>
@@ -1728,16 +1918,16 @@ Instance attributes are attributes that we can make be different for each instan
         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">prof</span> <span class="o">=</span> <span class="n">prof</span>
     
-    <span class="c1"># add method that will add classes as a dictionary</span>
-    <span class="c1"># to our attribute (classes)...which is a list</span>
+    <span class="c1"># add method that will add courses as a dictionary</span>
+    <span class="c1"># to our attribute (courses)...which is a list</span>
     <span class="k">def</span> <span class="nf">add_course</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">course_name</span><span class="p">,</span> <span class="n">quarter</span><span class="p">,</span> <span class="n">n_students</span><span class="p">):</span>
         
-        <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;course_name&#39;</span><span class="p">:</span> <span class="n">course_name</span><span class="p">,</span>
-                             <span class="s1">&#39;quarter&#39;</span> <span class="p">:</span> <span class="n">quarter</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;course_name&#39;</span><span class="p">:</span> <span class="n">course_name</span><span class="p">,</span> 
+                             <span class="s1">&#39;quarter&#39;</span> <span class="p">:</span> <span class="n">quarter</span><span class="p">,</span> 
                              <span class="s1">&#39;n_students&#39;</span><span class="p">:</span> <span class="n">n_students</span><span class="p">})</span>
-        <span class="c1"># increase value store in n_classes</span>
+        <span class="c1"># increase value store in n_courses</span>
         <span class="c1"># by 1 any time a class is added</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">n_classes</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_courses</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
@@ -1752,7 +1942,15 @@ Instance attributes are attributes that we can make be different for each instan
 
 <span class="c1"># see output</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">courses</span>
+<span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363}]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 </pre></div>
 </div>
 </div>
@@ -1773,9 +1971,8 @@ Instance attributes are attributes that we can make be different for each instan
                              <span class="s1">&#39;quarter&#39;</span> <span class="p">:</span> <span class="n">quarter</span><span class="p">,</span>
                              <span class="s1">&#39;n_students&#39;</span><span class="p">:</span> <span class="n">n_students</span><span class="p">})</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">n_courses</span> <span class="o">+=</span> <span class="mi">1</span>
-        
-     
-    <span class="c1"># add method to compare values in classes</span>
+            
+    <span class="c1"># add method to compare values in courses</span>
     <span class="k">def</span> <span class="nf">compare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;most&#39;</span><span class="p">):</span>
     
         <span class="n">fewest</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -1853,8 +2050,7 @@ Instance attributes are attributes that we can make be different for each instan
                              <span class="s1">&#39;n_exams&#39;</span> <span class="p">:</span> <span class="n">n_exams</span><span class="p">,</span>
                              <span class="s1">&#39;n_assignments&#39;</span> <span class="p">:</span> <span class="n">n_assignments</span><span class="p">})</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">n_courses</span> <span class="o">+=</span> <span class="mi">1</span>
-        
-     
+             
     <span class="k">def</span> <span class="nf">compare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;most&#39;</span><span class="p">):</span>
     
         <span class="n">fewest</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>

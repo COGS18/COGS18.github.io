@@ -8,16 +8,16 @@
 # 
 # Part I: **Methods, Debugging, & Code Style** (4.5 points) 
 # - Q1: Method I (0.75 points)*
-# - Q2: Method II (1.25 point)*
+# - Q2: Method II (1.25 points)*
 # - Q3: Debugging & Code Style (2.5 points)*
 # 
-# Part II: **Loops & Functions** (3.5 points)  
-# - Q4: Function I (1.5 points)*
-# - Q5: Function II (2 points)*
+# Part II: **Loops & Functions** (4 points)  
+# - Q4: Function I (1.75 points)*
+# - Q5: Function II (2.25 points)*
 # 
 # Part III: **Classes** (4 points)
-# - Q7: Classes I (1.5 points)*
-# - Q8: Classes II (2.5 points)*
+# - Q6: Classes I (1.5 points)*
+# - Q7: Classes II (2.5 points)*
 # 
 # \* : includes manual grading (partial credit)
 

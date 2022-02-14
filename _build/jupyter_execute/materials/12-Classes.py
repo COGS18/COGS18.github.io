@@ -32,6 +32,16 @@
 # - Coding labs maybe a bit too long
 # - if you asked a question, should have gotten a response via Campuswire DM/email
 
+# In[29]:
+
+
+# question asked at the end of class Wednesday
+# "Could you please explain what does random.choice function mean in A3 Q16?"
+import random
+
+random.choice([1, 2, 3, 4])
+
+
 # **Q&A**
 # 
 # Q: In class we saw that using car['model'] and car.get('model') produced the same result for a dictionary. If they are effectively the same, what would be the reason to use the get method over simply using square braces?  
@@ -48,16 +58,6 @@
 # 
 # Q: Can I append 2 lists together somehow? Do we need to know algorithms for the upcoming exam?  
 # A: Yes - if you want to take two lists and turn them into one list, you can use the `+` operator. And, the algorithms notes do not introduce any new topics, but help solidify understanding of functions + loops, so it may be good to review, but there is nothing new topic-wise in that lecture.
-
-# In[29]:
-
-
-# question asked at the end of class Wednesday
-# "Could you please explain what does random.choice function mean in A3 Q16?"
-import random
-
-random.choice([1, 2, 3, 4])
-
 
 # **Course Announcements (Fri 2/11)**
 # 
@@ -110,12 +110,120 @@ random.choice([1, 2, 3, 4])
 #     - helped calculate flight path to the moon 
 #     - "rigorously educated, supremely capable yet largely unheralded"
 #     - "teaching herself and her staff the programming language of FORTRAN"
-#     - each is featured in "Hidden Figures
+#     - each is featured in "Hidden Figures"
 # - 1969: [Clarence "Skip" Ellis](https://medium.com/@mayborn_unt/clarence-skip-ellis-the-first-black-ph-d-in-computer-science-6ccae49b148) - first black man to earn his PhD in CS from UIUC (note: ACM was founded in 1947)
 #     - worked at Bell Laboratories, IBM, and Xerox
 #     - worked on the team developing the world’s first personal computer (PC) and its related interfaces and software
 #     - 1992 - Professor at University of Colorado Boulder 
 #     - In a 2003 survey, he was the *only* full black prof at the 50 largest US research universities (one of four black profs in total...among 1,332 faculty)
+
+# **Course Announcements (Mon 2/14)**
+# 
+# Due Dates:
+# - **CL6** due (again) Wednesday (11:59 PM) - *NO* new CL this week
+# - **E2** due Sunday (2/20; 11:59 PM); released Thursday 2/17 3PM
+# - **A4** due Mon 2/28
+# 
+# Notes:
+# - No lecture this Friday (exam) OR next Monday (holiday)
+
+# **Q&A** (Mon 2/14)
+# 
+# Q: I was wondering if we can include 'if' and 'else' inside a class?   
+# A: Absolutely - this would typically happen within a method inside a class.
+# 
+# Q: If we already spent over an hour on the coding lab and finished most of the questions, can we just turn that in for this week?  
+# A: Yup. Now, of course understanding the material throughout the lab is important for the exam, so I encourage you to be sure you've looked over it again as your understanding increases. And, if you do that and edit your code prior to Wednesday's deadline, mine as well submit the most recent/completed lab.
+#  
+# Q: Also, what's the use of doing self.(insert parameter) = parameter?  
+# A: This allows you to define an instance attribute with the input from the user, specifying the value for the attribute on creation of an instance of the ojbect.
+# 
+# Q: Do we only use self.*input parameter* when using the __init__ and then in other methods we would just use the variable names without the self. ?  
+# A: When defining attributes, yes. Note that when referring to an attribute within a method `self.` will always be before the attribute name (regardless of whether it is a class or instance attribute).
+# 
+# Q: Can there be a method within a method?  
+# A: There *could* but that's not good code design typically.
+# 
+# Q: Where are class objects stored overall?   
+# A: When defined in a notebook, they are stored in your namespace (same place as variables and functions are stored)
+# 
+# Q: When a word is in blue in Python, does that just mean it's a name of some specific procedure (e.g., function names) or data type (e.g., class names)?  
+# A: Yup. 
+# 
+# Q: When would we need a return statement for class methods?  
+# A: When you want the method to return that output/be able to store it in a variable.
+# 
+# Q: why do we need to put self in front of the parameters? what does that do?  
+# A: This refers to the attributes for *that particular instance* of the object. These values could differ from one object to another (see example in class today and how the attribute's value changes as we use the object).
+# 
+# Q: if we did not declare a parameter inside '__init__' and instead declared the parameter in another method inside the class, can we use call the parameter in a 3rd method?  
+# A: Nope. Each method has its own namespace. If you want to use the attribute/parameter in more than one method, best to define it as either a class or instance attribute.
+# 
+# Q: I'm a little confused on the purpose of __init__, since I thought we always had to use it, but some of the examples didn't. Is it just there when we want to have attributes that will be different for each instance (like the dog's breeds)? But doesn't need to be used if all the instances will be the exact same?  
+# A: Yup - neither class nor instance attributes are *required*. Class attributes are for things that will be consistent/the same for every object of that type (sound of a dog). Instance attributes are for things that could take different values for each insetance of that object type (breed/name of a dog). Neither is required; both are allowed within a class.
+# 
+# Q: When referring to instances, is self always the parameter we need to use?  
+# A: Yes - we will always use `self`. (For a more complete answer, *theoretically* you could use a different word, but the Python community has settled on `self`, so we'll use `self` and you'll see `self` if you look up others' code on the Internet.)
+# 
+# Q: is the purpose of instance attributes being that they can be edited whereas class attributes can not?  
+# A: That's one way to think of them. The other difference is that instance attributes' values can/will differ for each instance of the object created...whereas class attributes will not. 
+# 
+# Q: Up to which question in A4 will cover the material in E2?
+# A: Theoretically, all of it is fair game on A4...but the questions on the exam will not be as involved/difficult as the CarInventory or Bots questions from A4. 
+# 
+# Q: For the final project, do we use the same code and build on it from A3 or do we start a completely new code?  
+# A: We'll discuss this in a week or so. Either is allowed...but you'll be required to write *additional* code on top of any code used from the assignment.
+# 
+# Q: What’s the different between functions and classes  
+# A: Functions stand on their own, take input, carry out some operators and return output. Classes on the other hand can have functions defined *within them* (methods), but they *also* allow you to define attributes that are part of the class. This allows you to organize your code better.
+# 
+# Q: Also, could you give an example of how to use try and except inside a class since I am still confused about that.   
+# A: See below...in this example, I've decided to add a `lbs` instance attribute and use this within the speak method. If it's a larger dog (>50 pounds), the dog will bark more times (`n_times * 2`). If it's smaller, it will only bark `n_times`. However...if someone tried to store a non-numeric value...that would cause the `try` to error...if we didn't have the `except`. Here, instead of getting an error, we `print` out a message to the user.
+
+# In[94]:
+
+
+class Dog():
+    
+    sound = 'Woof'
+    
+    def __init__(self, name, lbs):
+        self.name = name
+        self.lbs = lbs
+    
+    def speak(self, n_times=2):
+        try: 
+            if int(self.lbs) > 50:
+                return self.sound * n_times * 2
+            elif int(self.lbs) <= 50:
+                return self.sound * n_times
+        except:
+            print('Expecting lbs to be numeric. Please edit the lbs attribute.')
+
+
+# In[91]:
+
+
+# small dog
+lexi = Dog('Lexi', 14)
+lexi.speak()
+
+
+# In[92]:
+
+
+# big dog
+greg = Dog('Greg', 65)
+greg.speak()
+
+
+# In[93]:
+
+
+# would cause error if we didn't have try/except
+sparky = Dog('Sparky', 'small')
+sparky.speak()
+
 
 # # Classes
 # 
@@ -424,15 +532,23 @@ george.speak()
 # 
 # Which of the following statements is true about the example we've been using? 
 
-# In[ ]:
+# In[39]:
 
 
+# edited clicker question due to student question at ~23min
 class Dog():
     
     sound = 'Woof'
     
-    def speak(self, n_times=2):
-        return self.sound * n_times
+    def speak(self, separator, n_times=2):
+        return (self.sound + separator) * n_times
+
+
+# In[42]:
+
+
+gary = Dog()
+gary.speak(separator='-')
 
 
 # - A) `Dog` is a Class, `sound` is an attribute, and `speak` is a method. 
@@ -463,7 +579,7 @@ pack_of_dogs
 type(pack_of_dogs[0])
 
 
-# In[26]:
+# In[33]:
 
 
 for dog in pack_of_dogs:
@@ -476,7 +592,7 @@ for dog in pack_of_dogs:
 # An <b>instance</b> is particular instantiation of a class object. <code>self</code> refers to the current instance. 
 # </div>
 
-# In[ ]:
+# In[34]:
 
 
 # Initialize a dog object
@@ -493,7 +609,7 @@ george = Dog()
 # 
 # How many instances of `Dog()` are created below and how many times does the `speak()` method execute?
 
-# In[ ]:
+# In[37]:
 
 
 pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
@@ -536,7 +652,7 @@ pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 # - Two trailing underscores (a `dunder`, or double underscore) is used to indicate something Python recognizes and knows what to do every time it sees it.
 # - Here, we use `__init__` to execute the code within it every time you initialize an object.
 
-# In[ ]:
+# In[43]:
 
 
 class Dog():
@@ -553,15 +669,22 @@ class Dog():
         return self.sound * n_times
 
 
-# In[ ]:
+# In[44]:
+
+
+# this will error now; no name provided
+george = Dog()
+
+
+# In[45]:
 
 
 # Initialize a dog
 # what goes in the parentheses is defined in the __init__
-gary = Dog(name = 'Gary') 
+gary = Dog(name='Gary') 
 
 
-# In[ ]:
+# In[46]:
 
 
 # Check gary's attributes
@@ -569,7 +692,7 @@ print(gary.sound)    # This is an class attribute
 print(gary.name)     # This is a instance attribute
 
 
-# In[ ]:
+# In[47]:
 
 
 # Check gary's methods
@@ -580,7 +703,7 @@ gary.speak()
 # 
 # Edit the code we've been using for the Class `Dog` to include information about the breed of the Class Dog in `NewDog`?
 
-# In[ ]:
+# In[48]:
 
 
 # EDIT CODE HERE
@@ -588,17 +711,20 @@ class NewDog():
     
     sound = 'Woof'
     
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self, n_times=2):
         return self.sound * n_times
 
 
-# In[ ]:
+# In[53]:
 
 
 ## We'll execute here
+lexi = NewDog('Lexi', 'Italian Greyhound')
+lexi.breed
 
 
 # - A) I did it!
@@ -607,7 +733,7 @@ class NewDog():
 
 # ## Class example: Cat
 
-# In[ ]:
+# In[54]:
 
 
 # Define a class 'Cat'
@@ -624,7 +750,7 @@ class Cat():
 
 # ## Instances Examples
 
-# In[ ]:
+# In[55]:
 
 
 # Define some instances of our objects
@@ -632,7 +758,7 @@ pets = [Cat('Jaspurr'), Dog('Barkley'),
         Cat('Picatso'), Dog('Ruffius')]
 
 
-# In[ ]:
+# In[56]:
 
 
 for pet in pets:
@@ -644,7 +770,7 @@ for pet in pets:
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[59]:
 
 
 class MyClass():
@@ -661,10 +787,10 @@ class MyClass():
             return None
 
 
-# In[ ]:
+# In[61]:
 
 
-student = MyClass('Rob', 'rob@python.com', 62)
+student = MyClass(name='Rob', email='rob@python.com', score=62)
 student.check_score()
 
 
@@ -691,7 +817,7 @@ class MyClass():
         self.email = email
         self.score = score
     
-    def check_score(self):        
+    def check_score(self): 
         if self.score <= 65:
             return self.email
         else:
@@ -723,7 +849,7 @@ class my_class(): # uses snake case for name
 # 
 # We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.
 
-# In[ ]:
+# In[62]:
 
 
 class ProfCourses():
@@ -735,17 +861,17 @@ class ProfCourses():
         self.prof = prof
 
 
-# In[ ]:
+# In[63]:
 
 
 ellis_courses = ProfCourses('Ellis')
-print(ellis_courses.n_classes)
+print(ellis_courses.n_courses)
 print(ellis_courses.prof)
 
 
 # **`add_class()` method**
 
-# In[ ]:
+# In[64]:
 
 
 class ProfCourses():
@@ -755,19 +881,19 @@ class ProfCourses():
         self.courses = []
         self.prof = prof
     
-    # add method that will add classes as a dictionary
-    # to our attribute (classes)...which is a list
+    # add method that will add courses as a dictionary
+    # to our attribute (courses)...which is a list
     def add_course(self, course_name, quarter, n_students):
         
-        self.courses.append({'course_name': course_name,
-                             'quarter' : quarter,
+        self.courses.append({'course_name': course_name, 
+                             'quarter' : quarter, 
                              'n_students': n_students})
-        # increase value store in n_classes
+        # increase value store in n_courses
         # by 1 any time a class is added
-        self.n_classes += 1
+        self.n_courses += 1
 
 
-# In[ ]:
+# In[66]:
 
 
 # create ellis_courses
@@ -778,7 +904,7 @@ ellis_courses.add_course('COGS18', 'fa20', 363)
 
 # see output
 print(ellis_courses.courses)
-ellis_courses.courses
+ellis_courses.n_courses
 
 
 # **`compare()` method**
@@ -799,9 +925,8 @@ class ProfCourses():
                              'quarter' : quarter,
                              'n_students': n_students})
         self.n_courses += 1
-        
-     
-    # add method to compare values in classes
+            
+    # add method to compare values in courses
     def compare(self, attribute, direction='most'):
     
         fewest = self.courses[0]
@@ -876,8 +1001,7 @@ class ProfCourses():
                              'n_exams' : n_exams,
                              'n_assignments' : n_assignments})
         self.n_courses += 1
-        
-     
+             
     def compare(self, attribute, direction='most'):
     
         fewest = self.courses[0]
