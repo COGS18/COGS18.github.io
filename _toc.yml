@@ -84,12 +84,12 @@ parts:
       title: E1_Wi22-Answers
     - file: materials/Exam-Prep/E2-Review
       title: E2-Review
-  #   - file: materials/Exam-Prep/E2-Review-Answers
-  #     title: E2-Review-Answers
+    - file: materials/Exam-Prep/E2-Review-Answers
+      title: E2-Review-Answers
   #   - file: materials/Exam-Prep/E2-Practice
   #     title: E2-Practice
-  #   - file: materials/Exam-Prep/E2_Fa21_Practice-Answers
-  #     title: E2_Fa21_Practice-Answers
+    - file: materials/Exam-Prep/E2_Wi22_Practice
+      title: E2_Wi22_Practice-Answers
   #   - file: materials/Exam-Prep/E2_Fa21-Answers
   #     title: E2_Fa21-Answers
 

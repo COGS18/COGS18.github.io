@@ -871,7 +871,7 @@ print(ellis_courses.prof)
 
 # **`add_class()` method**
 
-# In[64]:
+# In[96]:
 
 
 class ProfCourses():
@@ -885,12 +885,36 @@ class ProfCourses():
     # to our attribute (courses)...which is a list
     def add_course(self, course_name, quarter, n_students):
         
-        self.courses.append({'course_name': course_name, 
+        =.append({'course_name': course_name, 
                              'quarter' : quarter, 
                              'n_students': n_students})
         # increase value store in n_courses
         # by 1 any time a class is added
         self.n_courses += 1
+
+
+# In[97]:
+
+
+ellis_courses = ProfCourses('Ellis')
+
+
+# In[101]:
+
+
+ellis_courses.courses
+
+
+# In[102]:
+
+
+ellis_courses.add_course('COGS18', 'fa20', 363)
+
+
+# In[104]:
+
+
+ellis_courses.courses
 
 
 # In[66]:
@@ -909,7 +933,7 @@ ellis_courses.n_courses
 
 # **`compare()` method**
 
-# In[ ]:
+# In[105]:
 
 
 class ProfCourses():
@@ -946,7 +970,7 @@ class ProfCourses():
         return output
 
 
-# In[ ]:
+# In[106]:
 
 
 # create ellis_courses
@@ -964,7 +988,7 @@ print(ellis_courses.n_courses)
 ellis_courses.courses
 
 
-# In[ ]:
+# In[107]:
 
 
 # make comparison among all courses
@@ -972,7 +996,7 @@ ellis_courses.courses
 ellis_courses.compare('n_students')
 
 
-# In[ ]:
+# In[108]:
 
 
 # return the class with the fewest students
@@ -981,7 +1005,7 @@ ellis_courses.compare('n_students', 'fewest')
 
 # **extending the functionality of the `compare()` method**
 
-# In[ ]:
+# In[115]:
 
 
 class ProfCourses():
@@ -1007,9 +1031,9 @@ class ProfCourses():
         fewest = self.courses[0]
         most = self.courses[0] 
         
-        for my_class in self.courses:
+        for my_course in self.courses:
             if my_course[attribute] <= fewest[attribute]:
-                fewest = my_course
+                fewest = my_course=
             elif my_course[attribute] >= most[attribute]:
                 most = my_course
                 
@@ -1021,7 +1045,7 @@ class ProfCourses():
         return output
 
 
-# In[ ]:
+# In[116]:
 
 
 # create ellis_courses
@@ -1039,14 +1063,14 @@ ellis_courses.add_course('COGS18', 'fa19', 301, 2, 4)
 print(ellis_courses.n_courses)
 
 
-# In[ ]:
+# In[117]:
 
 
 # return the class with the most exams
 ellis_courses.compare('n_exams', 'most')
 
 
-# In[ ]:
+# In[118]:
 
 
 # return the class with the fewest assignments
@@ -1081,7 +1105,7 @@ ellis_courses.compare('n_assignments', 'fewest')
 
 # ### Data variables are objects
 
-# In[ ]:
+# In[109]:
 
 
 print(isinstance(True, object))
@@ -1095,14 +1119,14 @@ print(isinstance(a, object))
 
 # ### Functions are objects
 
-# In[ ]:
+# In[110]:
 
 
 print(isinstance(sum, object))
 print(isinstance(max, object))
 
 
-# In[ ]:
+# In[111]:
 
 
 # Custom function are also objects
@@ -1114,7 +1138,7 @@ isinstance(my_function, object)
 
 # ### Class definitions & instances are objects
 
-# In[ ]:
+# In[112]:
 
 
 class MyClass():
