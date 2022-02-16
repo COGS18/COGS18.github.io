@@ -556,7 +556,47 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="exam-2-review">
+  <p><strong>Course Announcements</strong></p>
+<p>Due Dates:</p>
+<ul class="simple">
+<li><p><strong>CL6</strong> due (again) tonight (11:59 PM) - <em>NO</em> new CL this week</p></li>
+<li><p><strong>E2</strong> due Sunday (2/20; 11:59 PM); released Thursday 2/17 3PM</p></li>
+<li><p><strong>A4</strong> due Mon 2/28</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>No lecture this Friday (exam) OR Monday (holiday)</p></li>
+<li><p><strong>A3</strong> scores posted</p></li>
+<li><p>Exam Review answer keys have been posted</p></li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: Will functions and classes only use for loops if loops are included at all? While loops aren’t used for these cases?<br />
+A: <code class="docutils literal notranslate"><span class="pre">while</span></code> loops can be used within functions, although we will use <code class="docutils literal notranslate"><span class="pre">for</span></code> loops more frequently.</p>
+<p>Q: For the compare method examples why / how did it also return the number of courses printed? Like the first one I know is 5 and the second is 6 but how did it do it and do we need to have it?<br />
+A: This was because I had a line of code asking to print the <code class="docutils literal notranslate"><span class="pre">n_classes</span></code> <em>attribute</em> from the object. It was not from the method.</p>
+<p>Q: I am also confused about the use of “self” and when to use “self”.<br />
+A: <code class="docutils literal notranslate"><span class="pre">self</span></code> allows us to refer to the <em>current instance</em> of a given object. Tips for when to use self: 1) before the name of the attribute when defining instsance attributes; 2) as the first parameter to every method; 3) within methods anytime you want to reference an attribute (whether it’s a class attribute OR an instance attribute, <code class="docutils literal notranslate"><span class="pre">self.</span></code> will be needed)</p>
+<p>Q: Will our lectures in the future keep building to produce even longer segments of code?<br />
+A: No. (I believe) Classes is the longest code we’ll go through/build toward in this course.</p>
+<p>Q: How much points does each participation survey worth?<br />
+A: Not totally sure, but if you complete every single one, it’s 3.5% to your final project/final exam.</p>
+<p>Q: I’m confused about the compare method example. Why do we specifically define the 0th index for the fewest and most variables, (fewest = self.course [0]) in the function?<br />
+A: This was to give us something to compare to the first time through the loop.</p>
+<p>Q: The only part that I don’t get is why can we set both most and fewest to the index [0]. Wouldn’t it contradict each other?<br />
+A: Similar to the above question (read that first), we start with both being the same…but notice in the conditional, <code class="docutils literal notranslate"><span class="pre">most</span></code> and <code class="docutils literal notranslate"><span class="pre">fewest</span></code> change differently, depending upon the stated condition….so they won’t end up the same.</p>
+<p>Q: will we be using isinstance tool more in this class or not really?<br />
+A: Nope. Don’t worry about it; just know that everything in python is an object/python is an object-oriented programming language.</p>
+<p>Q: If python is an object program, what other program types are there and what would those do?<br />
+A: Lots explained <a class="reference external" href="https://en.wikipedia.org/wiki/Programming_paradigm">here</a>.</p>
+<p>Q: for the instance in class, can you create a compare method that gives you both the most and fewest value?<br />
+A: Yup! I encourage you to edit the code provided to return both! Let’s discuss in office hours or on campuswire if you struggle to determine how to do that.</p>
+<p>Q: when we used the command dir(my_date) we get a list of methods and attributes, can we use this on any object, or how can we know what methods we can use in which objects. I got confused because professor said that we use append for lists but can we use for any other type of object?<br />
+A: For that example, those methods/attributes can <em>only</em> be used with <em>date</em> type objects. So, you must first know the type of the object and <em>then</em> can determine what methods are available.</p>
+<p>Q: How do we extract an attribute if it’s a string? I am getting a TypeError: string indices must be integers.
+A: I’d have to see your specific example, but remember if you’re trying to index into a string, what goes between the brackets must be an integer (<code class="docutils literal notranslate"><span class="pre">i.e.</span> <span class="pre">my_string[0]</span></code>) So, this error suggests you’re trying to index using something other than an integer.</p>
+<p>Q: In ProfCourses, Why does the last self.n_courses+1 in add_course add 1 every time a new course is added? I’m still a little confused about this because it doesn’t look like a loop.<br />
+A: You’re right that it’s NOT a loop. Each time the method is called the previous value in <code class="docutils literal notranslate"><span class="pre">n_courses</span></code> is increased by 1…so it does NOT loop, but rather would increase by one each time the method is called/executed on an object.</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="exam-2-review">
 <h1>Exam 2 Review<a class="headerlink" href="#exam-2-review" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="exam-ii-plan-12-5-points">
 <h2>Exam II Plan (12.5 points)<a class="headerlink" href="#exam-ii-plan-12-5-points" title="Permalink to this headline">¶</a></h2>
