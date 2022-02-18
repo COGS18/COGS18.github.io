@@ -5,7 +5,7 @@
 # 
 # Due Dates:
 # - **CL6** due (again) tonight (11:59 PM) - *NO* new CL this week
-# - **E2** due Sunday (2/20; 11:59 PM); released Thursday 2/17 3PM
+# - **E2** due Sunday (2/20; 11:59 PM); released Thursday (tomorrow) 2/17 3PM
 # - **A4** due Mon 2/28
 # 
 # Notes:

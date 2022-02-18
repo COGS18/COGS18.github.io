@@ -63,8 +63,8 @@ parts:
       title: CL4-Collections
     - file: labs/CL5-Loops
       title: CL5-Loops
-  #   - file: labs/CL6-Classes
-  #     title: CL6-Classes
+    - file: labs/CL6-Classes
+      title: CL6-Classes
   #   - file: labs/CL7-CommandLine
   #     title: CL7-CommandLine
   #   - file: labs/CL8-ScientificComputing

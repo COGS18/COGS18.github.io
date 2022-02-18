@@ -189,15 +189,15 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 2/11     | 6	   | 16     | F   | Classes II          |                           |                           |
 | 2/14     | 7	   | --     | M   | Classes III [**]    |                           |        			              | 
 | 2/16     | 7	   | 17     | W   | Review              |                           | CL6: Classes             	| 
-| 2/18     | 7	   | --     | F   | **No Class**        |**E2** (due Sun 2/20; 11:59 PM)|                           |
+| 2/18     | 7	   | --     | F   | **No Class**        |**E2** (due Sun 2/20; 11:59 PM)|                       |
 | 2/21     | 8	   | --     | M   | **No Class**        |                           |                         	| 
-| 2/23     | 8	   | 18     | W   | Command Line        |                           | CL7: Command Line         | 
+| 2/23     | 8	   | 18     | W   | Command Line        |                           |                           | 
 | 2/25     | 8	   | 19     | F   | Python Party        |     			                |                           | 
-| 2/28     | 9	   | 20     | M   | Scientific Computing   | A4: Artificial Agents     |                         	| 
-| 3/2      | 9	   | 21     | W   | Modules & Scripts   | 			             	| CL8: Scientific Computing | 
-| 3/4      | 9	   | 22     | F   | Code Style & Documentation  | 				                  |                           | 
+| 2/28     | 9	   | 20     | M   | Scientific Computing| A4: Artificial Agents     |                         	| 
+| 3/2      | 9	   | 21     | W   | Modules & Scripts   | 			                  	| CL7: Command Line         | 
+| 3/4      | 9	   | 22     | F   | Code Style & Documentation| 				            |                           | 
 | 3/7      | 10    | --     | M   | Code Testing        |                           |    	                			| 
-| 3/9      | 10    | 23     | W   | Code Projects       |                           | CL9: Good Code            | 
+| 3/9      | 10    | 23     | W   | Code Projects       |                           | CL8: Scientific Computing & Good Code            | 
 | 3/11     | 10    | 24     | F   | Wrap Up   		      | A5: Experimentation			  |                        		| 
 
 **Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam (Mon 3/14) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
