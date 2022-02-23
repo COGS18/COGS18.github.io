@@ -27,8 +27,8 @@ parts:
       title: 11-Methods
     - file: materials/12-Classes
       title: 12-Classes
-  #   - file: materials/14-CommandLine
-  #     title: 14-CommandLine
+    - file: materials/13-CommandLine
+      title: 13-CommandLine
   #   - file: materials/15-Modules
   #     title: 15-Modules
   #   - file: materials/16-ScientificComputing
