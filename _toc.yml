@@ -93,13 +93,13 @@ parts:
   #   - file: materials/Exam-Prep/E2_Fa21-Answers
   #     title: E2_Fa21-Answers
 
-  # - caption: Projects
-  #   chapters:
-  #   - file: materials/Projects/PythonParty
-  #     title: PythonParty
-  #   - file: materials/Projects/overview
-  #     title: Overview
-  #   - file: materials/Projects/faq
-  #     title: FAQ
-  #   - file: materials/Projects/ProjectIdeas
-  #     title: ProjectIdeas
+  - caption: Projects
+    chapters:
+    - file: projects/PythonParty
+      title: PythonParty
+    - file: projects/overview
+      title: Overview
+    - file: projects/faq
+      title: FAQ
+    - file: projects/ProjectIdeas
+      title: ProjectIdeas
