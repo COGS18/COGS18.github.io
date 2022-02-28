@@ -98,7 +98,7 @@
 
 # #### Check current directory
 
-# In[ ]:
+# In[1]:
 
 
 # print working directory
@@ -144,7 +144,7 @@ get_ipython().system('ls /Users/shannonellis/Desktop/Teaching/COGS18/LectureNote
 # <b>Relative paths</b> specify the path to a file from your <b>current working directory</b> (where your computer is working right now). 
 # </div>
 
-# In[ ]:
+# In[2]:
 
 
 # remind us of our current working directory
@@ -220,7 +220,7 @@ get_ipython().system('ls ../../COGS108')
 
 # #### Check current directory
 
-# In[ ]:
+# In[4]:
 
 
 # print working directory
@@ -284,7 +284,7 @@ get_ipython().system('mv new_file.py dir_name/')
 
 # #### Print out a message
 
-# In[ ]:
+# In[5]:
 
 
 get_ipython().system('echo Hello World!')
@@ -319,10 +319,11 @@ get_ipython().system('open dir_name/new_file.py')
 # - D) `ls` is analogous to a function, and `-l` is like a parameter
 # - E) There is no clear analogy here to Python
 
-# In[ ]:
+# In[7]:
 
 
 ## test out here
+get_ipython().system('ls -l')
 
 
 # #### Clicker Question #4

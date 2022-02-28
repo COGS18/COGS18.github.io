@@ -193,8 +193,8 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 2/21     | 8	   | --     | M   | **No Class**        |                           |                         	| 
 | 2/23     | 8	   | 18     | W   | Command Line        |                           |                           | 
 | 2/25     | 8	   | 19     | F   | Python Party        |     			                |                           | 
-| 2/28     | 9	   | 20     | M   | Scientific Computing| A4: Artificial Agents     |                         	| 
-| 3/2      | 9	   | 21     | W   | Modules & Scripts   | 			                  	| CL7: Command Line         | 
+| 2/28     | 9	   | 20     | M   | Modules & Scripts   | A4: Artificial Agents     |                         	| 
+| 3/2      | 9	   | 21     | W   | Scientific Computing| 			                  	| CL7: Command Line         | 
 | 3/4      | 9	   | 22     | F   | Code Style & Documentation| 				            |                           | 
 | 3/7      | 10    | --     | M   | Code Testing        |                           |    	                			| 
 | 3/9      | 10    | 23     | W   | Code Projects       |                           | CL8: Scientific Computing & Good Code            | 
