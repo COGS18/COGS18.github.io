@@ -90,8 +90,8 @@ parts:
   #     title: E2-Practice
     - file: materials/Exam-Prep/E2_Wi22_Practice
       title: E2_Wi22_Practice-Answers
-  #   - file: materials/Exam-Prep/E2_Fa21-Answers
-  #     title: E2_Fa21-Answers
+    - file: materials/Exam-Prep/E2_Wi22
+      title: E2_Wi22-Answers
 
   - caption: Projects
     chapters:

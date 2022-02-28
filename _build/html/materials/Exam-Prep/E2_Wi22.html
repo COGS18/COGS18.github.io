@@ -1,0 +1,1405 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COGS 18 - Exam 2 &#8212; COGS 18 - Introduction To Python</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Python Party!" href="../../projects/PythonParty.html" />
+    <link rel="prev" title="COGS 18 - Practice Exam 2" href="E2_Wi22_Practice.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../05-Functions.html">
+   05-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../08-Debugging.html">
+   08-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../09-Loops.html">
+   09-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../10-Algorithms.html">
+   10-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../11-Methods.html">
+   11-Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../12-Classes.html">
+   12-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../13-CommandLine.html">
+   13-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A1-CodeStyle.html">
+   A1-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A2-Syntax.html">
+   A2-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../A3-Examples.html">
+   A3-Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL4-Collections.html">
+   CL4-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL5-Loops.html">
+   CL5-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../labs/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1_Wi22_Practice-Answers.html">
+   E1_Wi22_Practice-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E1_Wi22.html">
+   E1_Wi22-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="E2_Wi22_Practice.html">
+   E2_Wi22_Practice-Answers
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   E2_Wi22-Answers
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/PythonParty.html">
+   PythonParty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/faq.html">
+   FAQ
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../projects/ProjectIdeas.html">
+   ProjectIdeas
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/materials/Exam-Prep/E2_Wi22.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/Exam-Prep/E2_Wi22.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/Exam-Prep/E2_Wi22.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/Exam-Prep/E2_Wi22.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/Exam-Prep/E2_Wi22.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timing">
+     Timing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-rules">
+     The Rules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q0-honor-code">
+     Q0 - Honor Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1-methods-debugging-code-style-4-5-points">
+   Part 1: Methods, Debugging, &amp; Code Style (4.5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q1-method-i-0-75-points">
+     Q1 - Method I (0.75 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q2-method-ii-1-25-points">
+     Q2 - Method II (1.25 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q3-debugging-code-style-2-5-points">
+     Q3 - Debugging &amp; Code Style (2.5 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-loops-functions-4-points">
+   Part 2: Loops &amp; Functions (4 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q4-function-i-purchase-items-1-75-points">
+     Q4 - Function I:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       purchase_items()
+      </span>
+     </code>
+     (1.75 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q5-function-ii-string-shortener-2-25-points">
+     Q5 - Function II:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       string_shortener()
+      </span>
+     </code>
+     (2.25 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-classes-4-points">
+   Part 3: Classes (4 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q6-classes-i-classroster-1-5-points">
+     Q6 - Classes I:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ClassRoster()
+      </span>
+     </code>
+     (1.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q7-classes-ii-warehouse-2-5-points">
+     Q7 - Classes II:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Warehouse()
+      </span>
+     </code>
+     (2.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exam-ii-complete">
+     Exam II complete!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>COGS 18 - Exam 2</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timing">
+     Timing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-rules">
+     The Rules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q0-honor-code">
+     Q0 - Honor Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1-methods-debugging-code-style-4-5-points">
+   Part 1: Methods, Debugging, &amp; Code Style (4.5 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q1-method-i-0-75-points">
+     Q1 - Method I (0.75 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q2-method-ii-1-25-points">
+     Q2 - Method II (1.25 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q3-debugging-code-style-2-5-points">
+     Q3 - Debugging &amp; Code Style (2.5 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-loops-functions-4-points">
+   Part 2: Loops &amp; Functions (4 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q4-function-i-purchase-items-1-75-points">
+     Q4 - Function I:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       purchase_items()
+      </span>
+     </code>
+     (1.75 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q5-function-ii-string-shortener-2-25-points">
+     Q5 - Function II:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       string_shortener()
+      </span>
+     </code>
+     (2.25 points)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-classes-4-points">
+   Part 3: Classes (4 points)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q6-classes-i-classroster-1-5-points">
+     Q6 - Classes I:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ClassRoster()
+      </span>
+     </code>
+     (1.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#q7-classes-ii-warehouse-2-5-points">
+     Q7 - Classes II:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Warehouse()
+      </span>
+     </code>
+     (2.5 points)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exam-ii-complete">
+     Exam II complete!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="cogs-18-exam-2">
+<h1>COGS 18 - Exam 2<a class="headerlink" href="#cogs-18-exam-2" title="Permalink to this headline">¶</a></h1>
+<p>This is the second exam for Winter 2022. It covers topics through the Classes Lecture.</p>
+<p>This total exam is out of 12.5 points, worth 12.5% of your grade.</p>
+<p><strong>PLEASE DO NOT CHANGE THE NAME OF THIS FILE.</strong></p>
+<p><strong>PLEASE DO NOT COPY &amp; PASTE OR DELETE CELLS INLCUDED IN THE EXAM.</strong> (Note that you can add additional cells, if you want to test things out.</p>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="timing">
+<h3>Timing<a class="headerlink" href="#timing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The exam is designed to take you ~1-2h.</p></li>
+<li><p>If it takes you longer than 1-2h, you’re free to use that time, so long as you submit the exam before the deadline (Sunday 11:59 PM)</p></li>
+</ul>
+</div>
+<div class="section" id="the-rules">
+<h3>The Rules<a class="headerlink" href="#the-rules" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You are to complete this exam on your own.</p></li>
+<li><p>This is open-notes &amp; open-Google</p></li>
+<li><p>You may not talk to any humans about this exam.</p></li>
+<li><p>The following are all <em>prohibited</em>:</p>
+<ul>
+<li><p>text/phone/online chat communication</p></li>
+<li><p>posting questions to a message board where a human could respond (Campuswire, Discord, Chegg, any similar site)</p></li>
+<li><p>viewing exam questions from a message board (as described above)</p></li>
+<li><p>asking anyone via any form about a question on this test directly</p></li>
+</ul>
+</li>
+<li><p>Clarification questions will <em><strong>not</strong></em> be allowed and there will be no posting on Campuswire about the exam at all.</p>
+<ul>
+<li><p>Campuswire posts about the exam will not be answered and will be deleted.</p></li>
+<li><p>Students who post questions about the exam to Campuswire are at risk of losing points on the exam.</p></li>
+<li><p>If you are confused about wording, add a note to your exam explaining your confusion and how you interpreted the question.</p></li>
+<li><p>Note: This policy is b/c we are incapable of responding for the entirety of hte exam. This is the only way to make it fair across the board for students.</p></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: red;">Note: </span> There <em>is</em> a chance for partial credit on some questions, so <em>some</em> code is better than <em>no</em> code. Even if it throws an error, having some code that partially answers the question will benefit you/your grade.</p>
+</div>
+<div class="section" id="q0-honor-code">
+<h3>Q0 - Honor Code<a class="headerlink" href="#q0-honor-code" title="Permalink to this headline">¶</a></h3>
+<p>In the cell below, include a variable <code class="docutils literal notranslate"><span class="pre">honor_code</span></code> that stores the boolean <code class="docutils literal notranslate"><span class="pre">True</span></code> if you agree to the following statement:</p>
+<blockquote>
+<div><p>I agree that this exam was completed individually with the knowlege in my brain, information the notes from this course, and/or with searching for help on the Internet <em>without searching for answers to the text from these questions directly</em>. I did not ask anyone about specific questions on this exam. I did not post these questions (in part or in whole) on the Internet. I did not copy answers to these questions from anywhere or anyone else. I understand all code I’ve written on this exam and could explain my answers to someone else if asked.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">honor_code</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">honor_code</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="part-1-methods-debugging-code-style-4-5-points">
+<h2>Part 1: Methods, Debugging, &amp; Code Style (4.5 points)<a class="headerlink" href="#part-1-methods-debugging-code-style-4-5-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q1-method-i-0-75-points">
+<h3>Q1 - Method I (0.75 points)<a class="headerlink" href="#q1-method-i-0-75-points" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">title()</span></code> is a built-in string method that “converts the first character of each word to upper case”.</p>
+<p>Store your favorite book’s title using all lowercase characters in the variable <code class="docutils literal notranslate"><span class="pre">fav_book</span></code>.</p>
+<p>Then, use the <code class="docutils literal notranslate"><span class="pre">.title()</span></code> string method to convert the string in <code class="docutils literal notranslate"><span class="pre">fav_book</span></code> to title case (meaning the first letter of each word is upper case), and storing this result in the variable <code class="docutils literal notranslate"><span class="pre">book_title</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># specific strings will differ</span>
+<span class="n">fav_book</span> <span class="o">=</span> <span class="s1">&#39;evicted&#39;</span>
+<span class="n">book_title</span> <span class="o">=</span> <span class="n">fav_book</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fav_book</span><span class="p">,</span> <span class="n">book_title</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>evicted Evicted
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">fav_book</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">fav_book</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">book_title</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">book_title</span><span class="o">.</span><span class="n">istitle</span><span class="p">()</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>uses <code class="docutils literal notranslate"><span class="pre">title()</span></code> syntax correctly (<strong>0.35 pts</strong>)</p></li>
+<li><p>uses <code class="docutils literal notranslate"><span class="pre">fav_book</span></code> when calling <code class="docutils literal notranslate"><span class="pre">.title()</span></code> (<strong>0.2 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q2-method-ii-1-25-points">
+<h3>Q2 - Method II (1.25 points)<a class="headerlink" href="#q2-method-ii-1-25-points" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">.count()</span></code> is a built-in tuple method that “returns the number of times a specified value occurs in a tuple.”</p>
+<p>In the cell below, the variable <code class="docutils literal notranslate"><span class="pre">students_fruits</span></code> has been provided for you. Using <em>only</em> <code class="docutils literal notranslate"><span class="pre">students_fruits</span></code> and the <code class="docutils literal notranslate"><span class="pre">count()</span></code> method, generate the three variables specified at left in the bulleted list below, satisfying the following criteria:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">apple_count</span></code> | the number of times <code class="docutils literal notranslate"><span class="pre">'apple'</span></code> shows up in <code class="docutils literal notranslate"><span class="pre">students_fruits</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lychee_count</span></code> | the number of times <code class="docutils literal notranslate"><span class="pre">'lychee'</span></code> shows up in <code class="docutils literal notranslate"><span class="pre">students_fruits</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pineapple_count</span></code> | the number of times <code class="docutils literal notranslate"><span class="pre">'pineapple'</span></code> shows up in <code class="docutils literal notranslate"><span class="pre">students_fruits</span></code></p></li>
+</ul>
+<p>Note you will have to execute the cell with the variable provided below before being able to reference it in your answer.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># these variables provided for you</span>
+<span class="c1"># you will not be able to edit this cell</span>
+<span class="n">students_fruits</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="s1">&#39;dragonfruit&#39;</span><span class="p">,</span> <span class="s1">&#39;starfruit&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="s1">&#39;pineapple&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;grapefruit&#39;</span><span class="p">,</span> <span class="s1">&#39;lime&#39;</span><span class="p">,</span> <span class="s1">&#39;lychee&#39;</span><span class="p">,</span> <span class="s1">&#39;plum&#39;</span><span class="p">,</span> <span class="s1">&#39;plum&#39;</span><span class="p">,</span> <span class="s1">&#39;pineapple&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ignore this cell; it&#39;s being used in grading</span>
+<span class="c1"># be sure to put your answer in the cell below this cell</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="c1"># editing tuple to avoid hard-coding issues </span>
+<span class="n">students_fruits</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="s1">&#39;dragonfruit&#39;</span><span class="p">,</span> <span class="s1">&#39;starfruit&#39;</span><span class="p">,</span> <span class="s1">&#39;lychee&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="s1">&#39;pineapple&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;grapefruit&#39;</span><span class="p">,</span> <span class="s1">&#39;lime&#39;</span><span class="p">,</span> <span class="s1">&#39;lychee&#39;</span><span class="p">,</span> <span class="s1">&#39;plum&#39;</span><span class="p">,</span> <span class="s1">&#39;plum&#39;</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">apple_count</span> <span class="o">=</span> <span class="n">students_fruits</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span>
+<span class="n">lychee_count</span> <span class="o">=</span> <span class="n">students_fruits</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;lychee&#39;</span><span class="p">)</span>
+<span class="n">pineapple_count</span> <span class="o">=</span> <span class="n">students_fruits</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;pineapple&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">apple_count</span><span class="p">,</span> <span class="n">lychee_count</span><span class="p">,</span> <span class="n">pineapple_count</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4 2 1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">apple_count</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">apple_count</span> <span class="o">==</span> <span class="mi">4</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">lychee_count</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">lychee_count</span> <span class="o">==</span> <span class="mi">2</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">pineapple_count</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">pineapple_count</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">count()</span></code> syntax correct (called directly on object) (<strong>0.5 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q3-debugging-code-style-2-5-points">
+<h3>Q3 - Debugging &amp; Code Style (2.5 points)<a class="headerlink" href="#q3-debugging-code-style-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>In the cell below, there is a function that is not operating as anticipated <em>and</em> that has poor code style.</p>
+<p><code class="docutils literal notranslate"><span class="pre">determine_letter_grade()</span></code> is <em>supposed</em> to take a student’s points received (<code class="docutils literal notranslate"><span class="pre">student_points</span></code>) on an assignment as well as the possible points the student <em>could</em> have earned (<code class="docutils literal notranslate"><span class="pre">possible_points</span></code>) and <code class="docutils literal notranslate"><span class="pre">return</span></code> the letter grade the student earned…but it’s not quite functioning as anticipated.</p>
+<p>More specifically, this function should:</p>
+<ul class="simple">
+<li><p>calculate the <em>percentage</em> of the possible points the student earned on the assignment (Note: you’re only expected to account for percentages between 0 and 100 inclusive…so you don’t have to consider 101%, for example.)</p></li>
+<li><p>use the dictionary (<code class="docutils literal notranslate"><span class="pre">letter_grades</span></code>) provided in the function below to determine what letter grade (the key in the dictionary) the student has earned. Note that the values in the dictionary are the range of possible percentages corresponding to the letter grade. The lower bound should be included in the range while the upper value for each element in the dictionary should <em>not</em> be included in the range for that letter value (i.e. 90% would be an ‘A’; 80% would be a ‘B’, etc.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> the letter grade earned from the function</p></li>
+</ul>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">determine_letter_grade(student_points</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">possible_points</span> <span class="pre">=</span> <span class="pre">10)</span></code> would <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">'A'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">determine_letter_grade(student_points</span> <span class="pre">=</span> <span class="pre">89,</span> <span class="pre">possible_points</span> <span class="pre">=</span> <span class="pre">100)</span></code> would <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">'B'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">determine_letter_grade(student_points</span> <span class="pre">=</span> <span class="pre">5,</span> <span class="pre">possible_points</span> <span class="pre">=</span> <span class="pre">10)</span></code> would <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">'F'</span></code></p></li>
+</ul>
+<p><strong>Debug, edit, and test the function provided below so that it accomplishes the intended goal.</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">determine_letter_grade</span><span class="p">(</span><span class="n">student_points</span><span class="p">,</span><span class="n">possible_points</span><span class="p">):</span>
+    <span class="n">letter_grades</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:(</span><span class="mi">90</span><span class="p">,</span><span class="mi">101</span><span class="p">),</span><span class="s1">&#39;B&#39;</span><span class="p">:(</span><span class="mi">80</span><span class="p">,</span><span class="mi">90</span><span class="p">),</span><span class="s1">&#39;C&#39;</span><span class="p">:(</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">),</span><span class="s1">&#39;D&#39;</span><span class="p">:(</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">),</span><span class="s1">&#39;F&#39;</span><span class="p">:(</span><span class="mi">0</span><span class="p">,</span><span class="mi">60</span><span class="p">)}</span>
+    <span class="n">percentage</span><span class="o">=</span><span class="p">(</span><span class="n">student_points</span><span class="o">/</span><span class="n">possible_points</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letter_grades</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">percentage</span><span class="o">&lt;=</span><span class="n">letter_grades</span><span class="p">[</span><span class="n">letter</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">percentage</span><span class="o">&gt;=</span><span class="n">letter_grades</span><span class="p">[</span><span class="n">letter</span><span class="p">][</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">letter_grades</span><span class="p">[</span><span class="n">letter</span><span class="p">])</span>
+        <span class="k">break</span>
+</pre></div>
+</div>
+<p><em>Then</em>, be sure to <strong>edit the function you generate so that it follows the code style guidelines</strong> discussed in class.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">def</span> <span class="nf">determine_letter_grade</span><span class="p">(</span><span class="n">student_points</span><span class="p">,</span> <span class="n">possible_points</span><span class="p">):</span>
+
+    <span class="n">letter_grades</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="mi">101</span><span class="p">),</span>
+                     <span class="s1">&#39;B&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> 
+                     <span class="s1">&#39;C&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">),</span> 
+                     <span class="s1">&#39;D&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span> 
+                     <span class="s1">&#39;F&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">)}</span>
+
+    <span class="n">percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">student_points</span><span class="o">/</span><span class="n">possible_points</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letter_grades</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">percentage</span> <span class="o">&gt;=</span> <span class="n">letter_grades</span><span class="p">[</span><span class="n">letter</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">percentage</span> <span class="o">&lt;</span> <span class="n">letter_grades</span><span class="p">[</span><span class="n">letter</span><span class="p">][</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="n">letter</span>
+            <span class="k">break</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your thinking (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">determine_letter_grade</span>
+<span class="c1"># hidden tests to check the specific cases given in the instructions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">determine_letter_grade</span><span class="p">(</span><span class="n">student_points</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">possible_points</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span> 
+<span class="k">assert</span> <span class="n">determine_letter_grade</span><span class="p">(</span><span class="n">student_points</span> <span class="o">=</span> <span class="mi">89</span><span class="p">,</span> <span class="n">possible_points</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span>
+<span class="k">assert</span> <span class="n">determine_letter_grade</span><span class="p">(</span><span class="n">student_points</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">possible_points</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> 
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">determine_letter_grade</span><span class="p">)</span>
+<span class="c1"># hidden tests to check additional cases beyond what was specified in the instructions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">determine_letter_grade</span><span class="p">(</span><span class="n">student_points</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">possible_points</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span>
+<span class="k">assert</span> <span class="n">determine_letter_grade</span><span class="p">(</span><span class="n">student_points</span> <span class="o">=</span> <span class="mi">18</span><span class="p">,</span> <span class="n">possible_points</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading for debugging.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>Check if points lost on autograder above:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">percentage</span></code> calculates percentage (<code class="docutils literal notranslate"><span class="pre">*100</span></code> added) (<strong>0.25 pts</strong>)</p></li>
+<li><p>conditional operator logic fixed <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> (<strong>0.25 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">break</span></code> moved inside the conditional (or removed/handled some other way) (<strong>0.25 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print</span></code> statement -&gt; <code class="docutils literal notranslate"><span class="pre">return</span></code> statement (<strong>0.25 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code>s <code class="docutils literal notranslate"><span class="pre">letter</span></code> (key) not the value (<strong>0.25 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading for code style.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>Code Style:</p>
+<ul class="simple">
+<li><p>Improved spacing in dictionary for readability (<strong>0.25 pts</strong>)</p></li>
+<li><p>some logical line spacing included (<strong>0.25 pts</strong>)</p></li>
+<li><p>reasonable spacing around operators (<strong>0.25 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+</div>
+<div class="section" id="part-2-loops-functions-4-points">
+<h2>Part 2: Loops &amp; Functions (4 points)<a class="headerlink" href="#part-2-loops-functions-4-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q4-function-i-purchase-items-1-75-points">
+<h3>Q4 - Function I: <code class="docutils literal notranslate"><span class="pre">purchase_items()</span></code> (1.75 points)<a class="headerlink" href="#q4-function-i-purchase-items-1-75-points" title="Permalink to this headline">¶</a></h3>
+<p>In this question, you’re going to define a function called <code class="docutils literal notranslate"><span class="pre">purchase_items()</span></code> that will take two parameters as input:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cost</span></code> | a dictionary of the items (the keys; strings) and how much each item costs (the values; ints or floats)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cash</span></code> | how much cash the buyer gave the cashier (int or float)</p></li>
+</ul>
+<p>Within the function, your code should:</p>
+<ul class="simple">
+<li><p>Determine if the <code class="docutils literal notranslate"><span class="pre">cash</span></code> provided is enough to pay for all the items in <code class="docutils literal notranslate"><span class="pre">items</span></code>.</p></li>
+<li><p>If there is enough <code class="docutils literal notranslate"><span class="pre">cash</span></code>, the function should determine (and <code class="docutils literal notranslate"><span class="pre">return</span></code>) how much change the buyer should receive, given how much they paid <code class="docutils literal notranslate"><span class="pre">cash</span></code> and how much the items in <code class="docutils literal notranslate"><span class="pre">cost</span></code> cost in total.</p></li>
+<li><p>If there is not enough <code class="docutils literal notranslate"><span class="pre">cash</span></code> to cover <em>all</em> the items in <code class="docutils literal notranslate"><span class="pre">items</span></code>, the function should <code class="docutils literal notranslate"><span class="pre">return</span></code> the string ‘More cash needed’</p></li>
+</ul>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">purchase_items(cost={'tool':</span> <span class="pre">10,</span> <span class="pre">'food':</span> <span class="pre">5.5},</span> <span class="pre">cash=16)</span></code> should <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">0.5</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">purchase_items(cost={'tool':</span> <span class="pre">10,</span> <span class="pre">'food':</span> <span class="pre">5},</span> <span class="pre">cash=15)</span></code> should <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">0</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">purchase_items(cost={'tool':</span> <span class="pre">10,</span> <span class="pre">'food':</span> <span class="pre">5},</span> <span class="pre">cash=14)</span></code> should <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">'More</span> <span class="pre">cash</span> <span class="pre">needed'</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">def</span> <span class="nf">purchase_items</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">cash</span><span class="p">):</span>
+
+    <span class="n">sum_values</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cost</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+    
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">cost</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">cash</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">cash</span> <span class="o">=</span> <span class="n">cash</span> <span class="o">-</span> <span class="n">cost</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+        
+    <span class="k">if</span> <span class="n">cash</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> 
+        <span class="n">cash</span> <span class="o">=</span> <span class="s1">&#39;More cash needed&#39;</span>
+    
+    <span class="k">return</span> <span class="n">cash</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL BELOW</span>
+<span class="c1"># but you can use this cell to test/execute/check your thinking (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">purchase_items</span>
+<span class="c1"># hidden tests to check the specific cases given in the instructions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">purchase_items</span><span class="p">(</span><span class="n">cost</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;tool&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;food&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">},</span> <span class="n">cash</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.5</span>
+<span class="k">assert</span> <span class="n">purchase_items</span><span class="p">(</span><span class="n">cost</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;tool&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;food&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span> <span class="n">cash</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="k">assert</span> <span class="n">purchase_items</span><span class="p">(</span><span class="n">cost</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;tool&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;food&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span> <span class="n">cash</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;More cash needed&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">purchase_items</span><span class="p">)</span>
+<span class="c1"># hidden tests to check additional cases beyond what was specified in the instructions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="c1"># ensuring works with different length dictionaries/other keys</span>
+<span class="k">assert</span> <span class="n">purchase_items</span><span class="p">(</span><span class="n">cost</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;tool&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;food&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;gas&#39;</span><span class="p">:</span> <span class="mi">40</span><span class="p">},</span> <span class="n">cash</span><span class="o">=</span><span class="mi">106</span><span class="p">)</span> <span class="o">==</span> <span class="mi">60</span>
+<span class="k">assert</span> <span class="n">purchase_items</span><span class="p">(</span><span class="n">cost</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">},</span> <span class="n">cash</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;More cash needed&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>Only check if autograder credit lost above:</p>
+<ul class="simple">
+<li><p>function defined correctly with two input parameters <code class="docutils literal notranslate"><span class="pre">cost</span></code> and <code class="docutils literal notranslate"><span class="pre">cash</span></code> (<strong>0.15 pts</strong>)</p></li>
+<li><p>loops through <code class="docutils literal notranslate"><span class="pre">cost</span></code> dictionary (<strong>0.25 pts</strong>)</p></li>
+<li><p>has conditionals to determine:</p>
+<ul>
+<li><p>when out of cash (<strong>0.35 pts</strong>)</p></li>
+<li><p>when string should be returned (<strong>0.3 pts</strong>)</p></li>
+</ul>
+</li>
+<li><p>has <code class="docutils literal notranslate"><span class="pre">return</span></code> statement (<strong>0.1 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q5-function-ii-string-shortener-2-25-points">
+<h3>Q5 - Function II: <code class="docutils literal notranslate"><span class="pre">string_shortener()</span></code>  (2.25 points)<a class="headerlink" href="#q5-function-ii-string-shortener-2-25-points" title="Permalink to this headline">¶</a></h3>
+<p>Define a function <code class="docutils literal notranslate"><span class="pre">string_shortener()</span></code> that takes two parameters as inputs <code class="docutils literal notranslate"><span class="pre">str_list</span></code> (a list of strings) and <code class="docutils literal notranslate"><span class="pre">int_list</span></code> (a list of integers).</p>
+<p>Within the function, your code should extract the number of characters in each element of <code class="docutils literal notranslate"><span class="pre">str_list</span></code> as specified by the integer in the corresponding element in <code class="docutils literal notranslate"><span class="pre">int_list</span></code>, adding each shortened string to <code class="docutils literal notranslate"><span class="pre">output_list</span></code> (which should be <code class="docutils literal notranslate"><span class="pre">return</span></code>ed from the function.) For example, if the first element in <code class="docutils literal notranslate"><span class="pre">str_list</span></code> were <code class="docutils literal notranslate"><span class="pre">'hello'</span></code>, and the first element in <code class="docutils literal notranslate"><span class="pre">int_list</span></code> were <code class="docutils literal notranslate"><span class="pre">3</span></code>, the string <code class="docutils literal notranslate"><span class="pre">'hel'</span></code> (the first three letters of <code class="docutils literal notranslate"><span class="pre">'hello'</span></code>) should be added to <code class="docutils literal notranslate"><span class="pre">output_list</span></code>.</p>
+<p>One caveat, is that <em>if</em> the integer specified in <code class="docutils literal notranslate"><span class="pre">int_list</span></code> is <em>greater</em> than the number of characters in the corresponding element in <code class="docutils literal notranslate"><span class="pre">str_list</span></code>, then <code class="docutils literal notranslate"><span class="pre">None</span></code> should be added to <code class="docutils literal notranslate"><span class="pre">output_list</span></code> (instead of a shortened string).</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">string_shortener(str_list=['hello',</span> <span class="pre">'hey',</span> <span class="pre">'everything'],</span> <span class="pre">int_list=[3,</span> <span class="pre">2,</span> <span class="pre">5])</span></code> should <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">['hel',</span> <span class="pre">'he',</span> <span class="pre">'every']</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string_shortener(str_list=['somanyletters',</span> <span class="pre">'everything'],</span> <span class="pre">int_list=[40,</span> <span class="pre">17])</span></code> should <code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">[None,</span> <span class="pre">None]</span></code></p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>you can assume that the length of both inputs is the same (your code does NOT have to check for/account for this)</p></li>
+<li><p>you can assume that <code class="docutils literal notranslate"><span class="pre">str_list</span></code> contains a list of strings and <code class="docutils literal notranslate"><span class="pre">int_list</span></code> contains a list of integers (your code does NOT have to check for/account for this)</p></li>
+<li><p>the <code class="docutils literal notranslate"><span class="pre">output_list</span></code> should always have the same number of elements as the input parameter lists</p></li>
+<li><p>remember that <code class="docutils literal notranslate"><span class="pre">zip()</span></code>, introduced on A4, is available for use. This question <em>can</em> be completed without <code class="docutils literal notranslate"><span class="pre">zip()</span></code>…but it may be simpler if you use <code class="docutils literal notranslate"><span class="pre">zip()</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">def</span> <span class="nf">string_shortener</span><span class="p">(</span><span class="n">str_list</span><span class="p">,</span> <span class="n">int_list</span><span class="p">):</span>
+    
+    <span class="n">output_list</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># can be accomplished without zip by specifying/using index</span>
+    <span class="k">for</span> <span class="n">my_int</span><span class="p">,</span> <span class="n">my_str</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">int_list</span><span class="p">,</span> <span class="n">str_list</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">my_int</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_str</span><span class="p">):</span>
+            <span class="n">output_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">my_str</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">my_int</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">output_list</span>
+        
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your thinking (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">string_shortener</span>
+<span class="c1"># hidden test to check that the output is of the expected type (a list)</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">string_shortener</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">string_shortener</span><span class="p">(</span><span class="n">str_list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;hi&#39;</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">],</span> <span class="n">int_list</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">list</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check the first example provided in the instructions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">string_shortener</span><span class="p">(</span><span class="n">str_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;hey&#39;</span><span class="p">,</span> <span class="s1">&#39;everything&#39;</span><span class="p">],</span> <span class="n">int_list</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;hel&#39;</span><span class="p">,</span> <span class="s1">&#39;he&#39;</span><span class="p">,</span> <span class="s1">&#39;every&#39;</span><span class="p">]</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check the second example provided in the instructions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">string_shortener</span><span class="p">(</span><span class="n">str_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;somanyletters&#39;</span><span class="p">,</span> <span class="s1">&#39;everything&#39;</span><span class="p">],</span> <span class="n">int_list</span><span class="o">=</span><span class="p">[</span><span class="mi">40</span><span class="p">,</span> <span class="mi">17</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check example not provided in the instructions</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="c1"># checks that code works with combination of strings and None</span>
+<span class="k">assert</span> <span class="n">string_shortener</span><span class="p">(</span><span class="n">str_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;everything&#39;</span><span class="p">],</span> <span class="n">int_list</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">17</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>Check if points lost on autograder above:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code> correct with 2 parameters <code class="docutils literal notranslate"><span class="pre">str_list</span></code> and <code class="docutils literal notranslate"><span class="pre">int_list</span></code> (<strong>0.15 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_list</span></code> initialized as an empty list (<strong>0.25 pts</strong>)</p></li>
+<li><p>code loops through <code class="docutils literal notranslate"><span class="pre">str_list</span></code> and <code class="docutils literal notranslate"><span class="pre">int_list</span></code> (does NOT have to be at the same time) (<strong>0.25 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.append()</span></code> used to add element to <code class="docutils literal notranslate"><span class="pre">output_list</span></code> (or equivalent) (<strong>0.25 pts</strong>)</p></li>
+<li><p>has conditional to account for length of string (<strong>0.25 pts</strong>)</p></li>
+<li><p>includes <code class="docutils literal notranslate"><span class="pre">return</span></code> statement (<strong>0.1 pts</strong>)</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>if only issue is <code class="docutils literal notranslate"><span class="pre">return</span></code> statement is missing, return autograder credit lost and only deduct for <code class="docutils literal notranslate"><span class="pre">return</span></code> statement missing</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+</div>
+<div class="section" id="part-3-classes-4-points">
+<h2>Part 3: Classes (4 points)<a class="headerlink" href="#part-3-classes-4-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q6-classes-i-classroster-1-5-points">
+<h3>Q6 - Classes I: <code class="docutils literal notranslate"><span class="pre">ClassRoster()</span></code> (1.5 points)<a class="headerlink" href="#q6-classes-i-classroster-1-5-points" title="Permalink to this headline">¶</a></h3>
+<p>The following class has been provided for you:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClassRoster</span><span class="p">():</span>
+        
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">course</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">students</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">course</span> <span class="o">=</span> <span class="n">course</span>
+        
+    <span class="k">def</span> <span class="nf">add_student</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="n">pid</span><span class="p">:</span> <span class="n">name</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>In the cell below, describe what a class is in general and what the <code class="docutils literal notranslate"><span class="pre">ClassRoster</span></code> class does. Be sure to be specific in your answer, and make sure to discuss each of its components (This will likely require you to talk about specific lines of code).</p>
+<p>Note: you do not need to write any python code for this question; we’re looking for a written explanation in the cell provided below.</p>
+<p><span style="color:red">Be sure to include your text response in the cell below!</span></p>
+<p>Possible answer:</p>
+<p>In general, a class defines a a blueprint for creating a new object, allowing for attributes (variables/data) and functions (methods) to be organized and operate together.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ClassRoster</span></code> class has two instance-specifc attributes: <code class="docutils literal notranslate"><span class="pre">course</span></code> (initialized with the value specified by the user for the <code class="docutils literal notranslate"><span class="pre">course</span></code> parameter on instantiation) and <code class="docutils literal notranslate"><span class="pre">students</span></code> (initialized as an empty list). The use of <code class="docutils literal notranslate"><span class="pre">self</span></code> here indicates that these values can/will differ between different instantiations of the class (i.e. for different courses).</p>
+<p>The class also has a method, <code class="docutils literal notranslate"><span class="pre">add_student</span></code>, that takes two parameters (<code class="docutils literal notranslate"><span class="pre">pid</span></code> and a student’s <code class="docutils literal notranslate"><span class="pre">name</span></code>). This method appends a key (<code class="docutils literal notranslate"><span class="pre">pid</span></code>) - value (<code class="docutils literal notranslate"><span class="pre">name</span></code>) pair to the instance attribute <code class="docutils literal notranslate"><span class="pre">students</span></code> list. Together, this allows an instructor to add all of their studentes to their <code class="docutils literal notranslate"><span class="pre">students</span></code> list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your thinking (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>describes what a class is; generally describes that a ClassRoster object would allow you to keep track of a list of students PIDs and names as a dictionary in the <code class="docutils literal notranslate"><span class="pre">students</span></code> list (<strong>0.25 pts</strong>)</p></li>
+<li><p>has <em>some</em> reasonable explanation of what <code class="docutils literal notranslate"><span class="pre">self</span></code> is in explanation (<strong>0.25 pts</strong>)</p></li>
+<li><p>describes the instance attributes:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">students</span></code> is initialized as an empty list (<strong>0.25 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">course</span></code> takes input from the user (<strong>0.25 pts</strong>)</p></li>
+</ul>
+</li>
+<li><p>describes the <code class="docutils literal notranslate"><span class="pre">add_student</span></code> method:</p>
+<ul>
+<li><p>takes two parameters from the user (<strong>0.1 pts</strong>)</p></li>
+<li><p>correctly desctibes that the parameters are stored in a dictionary AND that that dictionary is appended to the <code class="docutils literal notranslate"><span class="pre">students</span></code> attribute (<strong>0.4 pts</strong>)</p></li>
+</ul>
+</li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="q7-classes-ii-warehouse-2-5-points">
+<h3>Q7 - Classes II: <code class="docutils literal notranslate"><span class="pre">Warehouse()</span></code> (2.5 points)<a class="headerlink" href="#q7-classes-ii-warehouse-2-5-points" title="Permalink to this headline">¶</a></h3>
+<p>Define a class <code class="docutils literal notranslate"><span class="pre">Warehouse()</span></code> that meets the following specifications:</p>
+<ul class="simple">
+<li><p>has a class attribute: <code class="docutils literal notranslate"><span class="pre">purpose</span></code> which always has the value ‘storing goods’ (a string)</p></li>
+<li><p>has one instance attribute</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">department</span></code> | a string corresponding to the department; this is specified by the user on creation of a <code class="docutils literal notranslate"><span class="pre">Warehouse()</span></code> type object using the <code class="docutils literal notranslate"><span class="pre">department</span></code> parameter</p></li>
+</ul>
+</li>
+<li><p>has two methods:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">calculate_imports()</span></code></p>
+<ul>
+<li><p>calculates the sum of all the values in <code class="docutils literal notranslate"><span class="pre">imports</span></code> (the function’s parameter; a <em>list</em> of all the imports for the department)</p></li>
+<li><p>This function should <code class="docutils literal notranslate"><span class="pre">return</span></code> the string <code class="docutils literal notranslate"><span class="pre">'Total</span> <span class="pre">imports</span> <span class="pre">for</span> <span class="pre">[department]:</span> <span class="pre">[sum</span> <span class="pre">of</span> <span class="pre">imports]'</span></code>, where <code class="docutils literal notranslate"><span class="pre">[department]</span></code> and <code class="docutils literal notranslate"><span class="pre">[sum</span> <span class="pre">of</span> <span class="pre">imports]</span></code> are replaced with the <code class="docutils literal notranslate"><span class="pre">department</span></code> attribute and sum total calculated within the function, respectively</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">calculate_exports()</span></code></p>
+<ul>
+<li><p>calculates the sum of all the values in <code class="docutils literal notranslate"><span class="pre">exports</span></code> (the function’s parameter; a <em>list</em> of all the exports for the department)</p></li>
+<li><p>This function should <code class="docutils literal notranslate"><span class="pre">return</span></code> the string <code class="docutils literal notranslate"><span class="pre">'Total</span> <span class="pre">exports</span> <span class="pre">for</span> <span class="pre">[department]:</span> <span class="pre">[sum</span> <span class="pre">of</span> <span class="pre">exports]'</span></code>, where <code class="docutils literal notranslate"><span class="pre">[department]</span></code> and <code class="docutils literal notranslate"><span class="pre">[sum</span> <span class="pre">of</span> <span class="pre">sum</span> <span class="pre">of</span> <span class="pre">exports]</span></code> are replaced with the <code class="docutils literal notranslate"><span class="pre">department</span></code> attribute and sum total calculated within the function, respectively</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>For example, if you were to create an instance of this object with the <code class="docutils literal notranslate"><span class="pre">'crafts'</span></code> and then called the <code class="docutils literal notranslate"><span class="pre">calculate_imports()</span></code> method on that object with the input <code class="docutils literal notranslate"><span class="pre">[4,5,6]</span></code>, you would expect this to <code class="docutils literal notranslate"><span class="pre">return</span></code> the string <code class="docutils literal notranslate"><span class="pre">'Total</span> <span class="pre">imports</span> <span class="pre">for</span> <span class="pre">crafts:</span> <span class="pre">15'</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="k">class</span> <span class="nc">Warehouse</span><span class="p">():</span>
+        
+    <span class="n">purpose</span> <span class="o">=</span> <span class="s1">&#39;storing goods&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">department</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">=</span> <span class="n">department</span>
+        
+    <span class="k">def</span> <span class="nf">calculate_imports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">imports</span><span class="p">):</span>
+        <span class="n">sum_imports</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">imports</span><span class="p">)</span>     
+        <span class="k">return</span> <span class="s2">&quot;Total imports for &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sum_imports</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">calculate_exports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exports</span><span class="p">):</span>
+        <span class="n">sum_exports</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">exports</span><span class="p">)</span>     
+        <span class="k">return</span> <span class="s2">&quot;Total exports for &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sum_exports</span><span class="p">)</span>
+    
+    <span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your thinking (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">Warehouse</span><span class="p">)</span>
+<span class="n">my_warehouse</span> <span class="o">=</span> <span class="n">Warehouse</span><span class="p">(</span><span class="n">department</span><span class="o">=</span><span class="s1">&#39;Clothing&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests for class attribute</span>
+<span class="k">assert</span> <span class="n">my_warehouse</span><span class="o">.</span><span class="n">purpose</span> <span class="o">==</span> <span class="s1">&#39;storing goods&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests for instance attribute</span>
+<span class="k">assert</span> <span class="n">my_warehouse</span><span class="o">.</span><span class="n">department</span> <span class="o">==</span> <span class="s1">&#39;Clothing&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests for method calculate_imports</span>
+<span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">Warehouse</span><span class="o">.</span><span class="n">calculate_imports</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">my_warehouse</span><span class="o">.</span><span class="n">calculate_imports</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span> <span class="o">==</span> <span class="s1">&#39;Total imports for Clothing: 15&#39;</span>
+<span class="c1"># ensure executes with correct parameter name</span>
+<span class="k">assert</span> <span class="n">my_warehouse</span><span class="o">.</span><span class="n">calculate_imports</span><span class="p">(</span><span class="n">imports</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span> <span class="o">==</span> <span class="s1">&#39;Total imports for Clothing: 15&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tests for method calculate_exports</span>
+<span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">Warehouse</span><span class="o">.</span><span class="n">calculate_exports</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">my_warehouse</span><span class="o">.</span><span class="n">calculate_exports</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="s1">&#39;Total exports for Clothing: 6&#39;</span>
+<span class="c1"># ensure executes with correct parameter name</span>
+<span class="k">assert</span> <span class="n">my_warehouse</span><span class="o">.</span><span class="n">calculate_exports</span><span class="p">(</span><span class="n">exports</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="s1">&#39;Total exports for Clothing: 6&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>Check if points lost on autograder above (Note none of the tests were hidden…so we should avoid many string errors):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">class</span></code> defined correctly (<strong>0.1 pts</strong>)</p></li>
+<li><p>class attribute correct (<strong>0.2 pts</strong>)</p></li>
+<li><p>instance attribute</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">__init__(self,</span> <span class="pre">department)</span></code> correct (<strong>0.2 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">self</span></code> used within definition (<strong>0.2 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">department</span></code> attribute initialized correctly (<strong>0.2 pts</strong>)</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">calculate_import</span></code> and/or <code class="docutils literal notranslate"><span class="pre">calculate_export</span></code> methods (grade the one that’s more corrrect):</p>
+<ul>
+<li><p>method definition correct with <code class="docutils literal notranslate"><span class="pre">self</span></code> and additional parameter (<strong>0.2 pts</strong>)</p></li>
+<li><p>calculates sum correctly (<strong>0.1 pts</strong>)</p></li>
+<li><p>uses self. to refer to attribute in string  (<strong>0.2 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code>s a concatenated string (even if string incorrect) (<strong>0.1 pts</strong>)</p></li>
+</ul>
+</li>
+</ul>
+<p>Note: autograder credit can be returned for portions above if particular aspect (class attribute, instance attribute, or method) were correct, but test failed because overall <code class="docutils literal notranslate"><span class="pre">class</span></code> was defined incorrectly</p>
+<p>=== END MARK SCHEME ===</p>
+</div>
+<div class="section" id="exam-ii-complete">
+<h3>Exam II complete!<a class="headerlink" href="#exam-ii-complete" title="Permalink to this headline">¶</a></h3>
+<p>Good work - you’re done with the second exam!</p>
+<p>Check your work, and then when you’re ready, <strong>submit on datahub</strong>.</p>
+<p>We will not have your exam until you click submit and see this show up under ‘submitted assignments’.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials/Exam-Prep"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="E2_Wi22_Practice.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">COGS 18 - Practice Exam 2</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../../projects/PythonParty.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python Party!</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Shannon Ellis and Tom Donoghue<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
