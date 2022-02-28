@@ -1,0 +1,1231 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modules &amp; Scripts &#8212; COGS 18 - Introduction To Python</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Functions.html">
+   05-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Debugging.html">
+   08-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-Loops.html">
+   09-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Algorithms.html">
+   10-Algorithms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-Methods.html">
+   11-Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-Classes.html">
+   12-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-CommandLine.html">
+   13-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A1-CodeStyle.html">
+   A1-CodeStyle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A2-Syntax.html">
+   A2-Syntax
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A3-Examples.html">
+   A3-Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL4-Collections.html">
+   CL4-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL5-Loops.html">
+   CL5-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1-Practice.html">
+   E1-Practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Wi22_Practice-Answers.html">
+   E1_Wi22_Practice-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E1_Wi22.html">
+   E1_Wi22-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Wi22_Practice.html">
+   E2_Wi22_Practice-Answers
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/PythonParty.html">
+   PythonParty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/faq.html">
+   FAQ
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/ProjectIdeas.html">
+   ProjectIdeas
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/materials/14-Modules.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/14-Modules.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/14-Modules.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/14-Modules.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/14-Modules.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namespaces-scope">
+   Namespaces &amp; Scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modules-packages">
+   Modules &amp; Packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     import
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-example-math-module">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       import
+      </span>
+     </code>
+     example: math module
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-example-random-module">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       import
+      </span>
+     </code>
+     example: random module
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#random-example">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       random
+      </span>
+     </code>
+     Example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#imports-from-as">
+   Imports:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     from
+    </span>
+   </code>
+   &amp;
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     as
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-1">
+     Clicker Question #1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-answer">
+     Clicker Question Answer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-custom-code-i">
+   Importing Custom Code I
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-remote-py">
+   module:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     remote.py
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-custom-code-ii">
+   Importing Custom Code II
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#name-conflicts">
+   Name Conflicts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-note-on">
+   A note on
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     *
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#script-remote-script-py">
+   script:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     remote_script.py
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Modules & Scripts</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#namespaces-scope">
+   Namespaces &amp; Scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modules-packages">
+   Modules &amp; Packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     import
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-example-math-module">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       import
+      </span>
+     </code>
+     example: math module
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-example-random-module">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       import
+      </span>
+     </code>
+     example: random module
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#random-example">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       random
+      </span>
+     </code>
+     Example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#imports-from-as">
+   Imports:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     from
+    </span>
+   </code>
+   &amp;
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     as
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-1">
+     Clicker Question #1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-question-answer">
+     Clicker Question Answer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-custom-code-i">
+   Importing Custom Code I
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-remote-py">
+   module:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     remote.py
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-custom-code-ii">
+   Importing Custom Code II
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#name-conflicts">
+   Name Conflicts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-note-on">
+   A note on
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     *
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#script-remote-script-py">
+   script:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     remote_script.py
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <p><strong>Course Announcements</strong></p>
+<ul class="simple">
+<li><p><strong>A4</strong> due tonight (11:59 PM)</p></li>
+<li><p><strong>CL7</strong> due Wednesday</p></li>
+</ul>
+<p>Looking forward:</p>
+<ul class="simple">
+<li><p><strong>CL8</strong> due <em>next</em> Wed 3/9</p></li>
+<li><p><strong>A5</strong> due <em>next</em> Fri 3/11</p></li>
+<li><p><strong>Final exam/project</strong> due Mon 3/14</p>
+<ul>
+<li><p>Project: Submit on either Canvas or datahub</p>
+<ul>
+<li><p>if you submit on datahub, Canvas will say your project is “missing” - it’s NOT missing; if you see under submitted assignments on datahub, you’re fine</p></li>
+<li><p>when you submit on datahub, it will <em>look</em> like only your notebook is submitted; I promise everything in the folder is submitted</p></li>
+<li><p>I reach out to students who do not submit either a final exam/final project, so if you don’t hear from me on Tuesday of finals week, your submissin is fine.</p></li>
+</ul>
+</li>
+<li><p>Exam: Complete and submit on datahub; there will be a practice exam</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Q&amp;A</strong></p>
+<p>Q: Is the final exam a project or will it have questions similar to the previous exams we have taken?<br />
+A: The final exam is a “mini project” - there will be a practice final exam so you can see. There will be a few questions similar to previous exams but it will also involve modules, documentation, and testing (the material focused on the last few weeks), which will involve .py files along with a jupyter notebook.</p>
+<p>Q: For the final project I have a few ideas, but after looking at some examples I am feeling a bit scrambled. I know Andrew said that he had some trouble thinking of how to start, and I was wondering there could be some more explanation on maybe a general process of the final project?<br />
+A: I will do a demo final project in class during week 10, but we would love you to get started before that, so office hours can be a great place to get your thoughts sorted out!</p>
+<p>Q: how difficult will the final exam be?<br />
+A: About as difficult as previous exams. There will be less coding but more “pieces” that have to fit/work togeter (see first Q from today)</p>
+<p>Q: I am wondering how to come up with a project, or know if something is within my knowledge to create? I have some ideas but they feel too ambitous<br />
+A: We can help you scope your project during office hours!</p>
+<p>Q: Were the banned topics listed in class the only banned topics, or are there more?<br />
+A: Those are the only ones. Generally, it’s in your best interest NOT to choose a project where there’s a whole bunch of code already online. You just want to avoid using someone else’s code and claiming it as your own. (You <em>can</em> use someone else’s code, but you must cite it and it cannot count as your original code).</p>
+<p>Q: Can the Final Project be Assignment style where I pretend I am the professor of a class assigning a task (haha)?<br />
+A: Sure! Just be sure you plan out ahead of time what your three original functions/methods would be and the general approach. Like, is this game-like? Or are you building a system to help profs make assignments? something else?</p>
+<p>Q: When I try to use ‘vi new_script.py’ in the terminal on datahub, I get an error message saying a swap file already exists “.new_script.py.swp”. I chose ‘edit anyway’ but then it doesn’t let me edit the file. Is there a way to fix this?<br />
+A: This is a question for office hours. We’d have to see your computer specifically.</p>
+<p>Q: Do we get partial points on the final exam if we get part of the code right?<br />
+A: Yes</p>
+<p>Q: For the project what software can I use to work on it away from datahub?<br />
+A: Anaconda - see last part of the first coding lab</p>
+<p>Q: For the final exam, it is said that we can’t get A+ does that mean if we have an A+ at the end will it be brought to an A or does it mean that if we have an A it can’t be brought to an A+?<br />
+A: The former. If you do the final exam, the highest grade you can get is an A.</p>
+<p>Q: How will the extra credit be applied to the final project based on component we needed additionally?<br />
+A: If you go above and beyond, we will award up to 4% on the final project. This will be part of your project grade</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="modules-scripts">
+<h1>Modules &amp; Scripts<a class="headerlink" href="#modules-scripts" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>namespaces &amp; scope</p></li>
+<li><p>modules</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">import</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">from</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">as</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="namespaces-scope">
+<h2>Namespaces &amp; Scope<a class="headerlink" href="#namespaces-scope" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+A <b>namespace</b> is a 'place' with a set of names and their corresponding objects.
+</div><p>Each Jupyter Notebook has its own Namespace.</p>
+<p>If you have two notebooks open at the same time, they don’t know about eachother or what variables have been created in the other.</p>
+<p>Names that are defined and available in a given namespace are in <strong>scope</strong>.</p>
+<p>That is, the <em>scope</em> of an object is where it is available to / from.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see what&#39;s stored in global namespace</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="modules-packages">
+<h2>Modules &amp; Packages<a class="headerlink" href="#modules-packages" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+A <b>module</b> is a set of Python code with functions, classes, etc. available in it. A Python <b>package</b> is a directory of modules.
+</div><p>Modules are stored in Python files (.py). We can import these files into our namespace, to gain access to the module within Python.</p>
+<p>In A3 you had to import the package: <code class="docutils literal notranslate"><span class="pre">nltk</span></code>:</p>
+<ul class="simple">
+<li><p><strong>package</strong> is a whole bunch of modules</p></li>
+<li><p>a <strong>module</strong> stores python (.py) files</p></li>
+<li><p>when imported, we have access to its functionality</p></li>
+</ul>
+</div>
+<div class="section" id="import">
+<h2><code class="docutils literal notranslate"><span class="pre">import</span></code><a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+<code>import</code> is a keyword to import external code into the local namespace.
+</div><p>Why do it this way (importing modules)?</p>
+<ol class="simple">
+<li><p>Minimize startup costs</p></li>
+<li><p>Functions in different packages could have the same name - break programs</p></li>
+</ol>
+<div class="section" id="import-example-math-module">
+<h3><code class="docutils literal notranslate"><span class="pre">import</span></code> example: math module<a class="headerlink" href="#import-example-math-module" title="Permalink to this headline">¶</a></h3>
+<p>For something not yet in your Namespace…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we haven&#39;t imported the module yet</span>
+<span class="c1"># this code fails if you haven&#39;t yet imported math</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the math module</span>
+<span class="kn">import</span> <span class="nn">math</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the type of math</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># By the way - modules are objects</span>
+<span class="nb">isinstance</span><span class="p">(</span><span class="n">math</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using code from our math module</span>
+<span class="c1"># remember to tab complete or use dir(math)</span>
+<span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="import-example-random-module">
+<h3><code class="docutils literal notranslate"><span class="pre">import</span></code> example: random module<a class="headerlink" href="#import-example-random-module" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Random is also a module</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">random</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Explore what is available in random</span>
+<span class="nb">dir</span><span class="p">(</span><span class="n">random</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># working with random</span>
+<span class="n">random</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## access documentation</span>
+random.choice<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## access underlying code</span>
+random.choice<span class="o">??</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="random-example">
+<h3><code class="docutils literal notranslate"><span class="pre">random</span></code> Example<a class="headerlink" href="#random-example" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># random.sample() documentation</span>
+random.sample<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Random example</span>
+<span class="n">to_choose_from</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">]</span>
+<span class="n">number_to_choose</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">chosen</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">to_choose_from</span><span class="p">,</span> <span class="n">number_to_choose</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">chosen</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="imports-from-as">
+<h2>Imports: <code class="docutils literal notranslate"><span class="pre">from</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">as</span></code><a class="headerlink" href="#imports-from-as" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+<code>from</code> and <code>as</code> allows us to decide exactly what objects to import into our namespace, and what we call them (in our namespace).
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import a specific object from a module</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## do NOT have to type module name </span>
+<span class="c1">## using this approach</span>
+<span class="c1">## to call this</span>
+<span class="n">choice</span><span class="p">(</span><span class="n">to_choose_from</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import a module with a specific name in our namespace</span>
+<span class="c1"># used when module names are long</span>
+<span class="kn">import</span> <span class="nn">collections</span> <span class="k">as</span> <span class="nn">cols</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## collections is not defined</span>
+<span class="c1">## this code will fail</span>
+<span class="n">collections</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is how you would do it</span>
+<span class="n">cols</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># putting it all together</span>
+<span class="c1"># Import a specific thing and give it a specific name</span>
+<span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span> <span class="k">as</span> <span class="n">punc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="clicker-question-1">
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">¶</a></h3>
+<p>Which of the following is NOT a valid Python import statement?</p>
+<ul class="simple">
+<li><p>A) <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">collections</span> <span class="pre">as</span> <span class="pre">col</span></code></p></li>
+<li><p>B) <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">statistics</span> <span class="pre">import</span> <span class="pre">mean</span> <span class="pre">as</span> <span class="pre">average</span></code></p></li>
+<li><p>B) <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">os</span> <span class="pre">import</span> <span class="pre">path</span></code></p></li>
+<li><p>D) <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">random</span> <span class="pre">import</span> <span class="pre">choice,</span> <span class="pre">choices</span></code></p></li>
+<li><p>E) <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">ascii_letters</span> <span class="pre">from</span> <span class="pre">string</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="clicker-question-answer">
+<h3>Clicker Question Answer<a class="headerlink" href="#clicker-question-answer" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check our imports</span>
+<span class="c1"># import collections as col</span>
+<span class="c1"># from statistics import mean as average</span>
+<span class="c1"># from os import path</span>
+<span class="c1"># from random import choice, choices</span>
+<span class="c1"># import ascii_letters from string</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="importing-custom-code-i">
+<h2>Importing Custom Code I<a class="headerlink" href="#importing-custom-code-i" title="Permalink to this headline">¶</a></h2>
+<p>Why do this?</p>
+<p>Having a whole bunch of functions in a Jupyter Notebook will start to get clutered.</p>
+<p>Also, they’re not reusable later without copying them into your new notebook.</p>
+<p>Modules avoid this!</p>
+</div>
+<div class="section" id="module-remote-py">
+<h2>module: <code class="docutils literal notranslate"><span class="pre">remote.py</span></code><a class="headerlink" href="#module-remote-py" title="Permalink to this headline">¶</a></h2>
+<p>If you want to practice using import with the <code class="docutils literal notranslate"><span class="pre">remote</span></code> example in lecture, store the code in the next cell in a text file saved as <code class="docutils literal notranslate"><span class="pre">remote.py</span></code>. Be sure this is saved in the same directory (folder) as the notebook from which you’re trying to call it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_remote_function</span><span class="p">(</span><span class="n">input_1</span><span class="p">,</span> <span class="n">input_2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A function from far away.</span>
+<span class="sd">    </span>
+<span class="sd">    This function returns the sum of the two inputs.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">return</span> <span class="n">input_1</span> <span class="o">+</span> <span class="n">input_2</span>
+
+<span class="k">def</span> <span class="nf">choice</span><span class="p">(</span><span class="n">list_to_choose_from</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Choose and return an item from a list. </span>
+<span class="sd">    </span>
+<span class="sd">    Notes: I am a custom choice function: I am NOT from `random`.</span>
+<span class="sd">    </span>
+<span class="sd">    Hint: my favorite is the last list item.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">return</span> <span class="n">list_to_choose_from</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">class</span> <span class="nc">MyNumbers</span><span class="p">():</span>
+    
+    <span class="n">kind_of_thing</span> <span class="o">=</span> <span class="s1">&#39;numbers&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">num1</span> <span class="o">=</span> <span class="n">num1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num2</span> <span class="o">=</span> <span class="n">num2</span>
+        
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">num1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">num2</span>
+    
+    <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">num2</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">num1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import some custom code</span>
+<span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">my_remote_function</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Investigate our imported function</span>
+my_remote_function<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run our function</span>
+<span class="n">my_remote_function</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="importing-custom-code-ii">
+<h2>Importing Custom Code II<a class="headerlink" href="#importing-custom-code-ii" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import a class class from an external module</span>
+<span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">MyNumbers</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define an instance of our custom class</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="n">MyNumbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check </span>
+<span class="n">nums</span><span class="o">.</span><span class="n">add</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the definition of the code we imported</span>
+nums.add<span class="o">??</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="name-conflicts">
+<h2>Name Conflicts<a class="headerlink" href="#name-conflicts" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># choice is currently from random module</span>
+choice<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">choice</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">choice</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># now it&#39;s from my remote module</span>
+choice<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">choice</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>While you <em>can</em> have functions with the same name in two different places…do your best to avoid this.</p>
+<p>It’s Python legal but bad for your nerves.</p>
+</div>
+<div class="section" id="a-note-on">
+<h2>A note on <code class="docutils literal notranslate"><span class="pre">*</span></code><a class="headerlink" href="#a-note-on" title="Permalink to this headline">¶</a></h2>
+<p>If you see <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">module</span> <span class="pre">import</span> <span class="pre">*</span></code> this means to import everything (read as ‘from module import everything’).</p>
+<p>This is generally considered not to be the best, as it is then unclear in your code exactly where the functionality came from.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a valid way to import</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
+<span class="n">choice</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a valid way to import</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="script-remote-script-py">
+<h2>script: <code class="docutils literal notranslate"><span class="pre">remote_script.py</span></code><a class="headerlink" href="#script-remote-script-py" title="Permalink to this headline">¶</a></h2>
+<p>If you want to run your own script example in lecture, store the code in the next cell in a text file saved as <code class="docutils literal notranslate"><span class="pre">remote_script.py</span></code>. Be sure this is saved in the same directory (folder) as the notebook from which you’re trying to call it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">remote</span> <span class="kn">import</span> <span class="n">MyNumbers</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="n">MyNumbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nums value: &quot;</span><span class="p">,</span> <span class="n">nums</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nums type: &quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># run the script</span>
+<span class="o">!</span>python remote_script.py
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Shannon Ellis and Tom Donoghue<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
