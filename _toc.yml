@@ -31,8 +31,8 @@ parts:
       title: 13-CommandLine
     - file: materials/154Modules
       title: 14-Modules
-  #   - file: materials/16-ScientificComputing
-  #     title: 16-ScientificComputing   
+    - file: materials/15-ScientificComputing
+      title: 15-ScientificComputing   
   #   - file: materials/17-CodeStyle
   #     title: 17-CodeStyle
   #   - file: materials/18-CodeTesting

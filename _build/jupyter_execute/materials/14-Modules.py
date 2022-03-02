@@ -13,7 +13,7 @@
 #     - Project: Submit on either Canvas or datahub
 #         - if you submit on datahub, Canvas will say your project is "missing" - it's NOT missing; if you see under submitted assignments on datahub, you're fine
 #         - when you submit on datahub, it will *look* like only your notebook is submitted; I promise everything in the folder is submitted
-#         - I reach out to students who do not submit either a final exam/final project, so if you don't hear from me on Tuesday of finals week, your submissin is fine.
+#         - I reach out to students who do not submit either a final exam/final project, so if you don't hear from me on Tuesday of finals week, your submissi0n is fine.
 #     - Exam: Complete and submit on datahub; there will be a practice exam
 
 # **Q&A**
@@ -73,7 +73,7 @@
 
 # That is, the *scope* of an object is where it is available to / from. 
 
-# In[ ]:
+# In[1]:
 
 
 # see what's stored in global namespace
@@ -111,7 +111,7 @@ get_ipython().run_line_magic('whos', '')
 
 # For something not yet in your Namespace...
 
-# In[ ]:
+# In[2]:
 
 
 # we haven't imported the module yet
@@ -119,14 +119,14 @@ get_ipython().run_line_magic('whos', '')
 type(math)
 
 
-# In[ ]:
+# In[3]:
 
 
 # Import the math module
 import math
 
 
-# In[ ]:
+# In[4]:
 
 
 # Check the type of math
@@ -136,11 +136,17 @@ type(math)
 # In[ ]:
 
 
+math.
+
+
+# In[5]:
+
+
 # By the way - modules are objects
 isinstance(math, object)
 
 
-# In[ ]:
+# In[6]:
 
 
 # Using code from our math module
@@ -150,20 +156,20 @@ math.sqrt(9)
 
 # ### `import` example: random module
 
-# In[ ]:
+# In[7]:
 
 
 import random
 
 
-# In[ ]:
+# In[8]:
 
 
 # Random is also a module
 type(random)
 
 
-# In[ ]:
+# In[9]:
 
 
 # Explore what is available in random
@@ -177,14 +183,14 @@ dir(random)
 random.
 
 
-# In[ ]:
+# In[10]:
 
 
 ## access documentation
 get_ipython().run_line_magic('pinfo', 'random.choice')
 
 
-# In[ ]:
+# In[11]:
 
 
 ## access underlying code
@@ -193,14 +199,14 @@ get_ipython().run_line_magic('pinfo2', 'random.choice')
 
 # ### `random` Example
 
-# In[ ]:
+# In[12]:
 
 
 # random.sample() documentation
 get_ipython().run_line_magic('pinfo', 'random.sample')
 
 
-# In[ ]:
+# In[14]:
 
 
 # Random example
@@ -218,14 +224,14 @@ print(chosen)
 # <code>from</code> and <code>as</code> allows us to decide exactly what objects to import into our namespace, and what we call them (in our namespace).
 # </div>
 
-# In[ ]:
+# In[15]:
 
 
 # Import a specific object from a module
 from random import choice
 
 
-# In[ ]:
+# In[16]:
 
 
 ## do NOT have to type module name 
@@ -234,7 +240,7 @@ from random import choice
 choice(to_choose_from)
 
 
-# In[ ]:
+# In[17]:
 
 
 # Import a module with a specific name in our namespace
@@ -257,7 +263,19 @@ collections.
 cols.
 
 
-# In[ ]:
+# In[20]:
+
+
+punctuation
+
+
+# In[19]:
+
+
+punc
+
+
+# In[18]:
 
 
 # putting it all together
@@ -271,13 +289,13 @@ from string import punctuation as punc
 # 
 # - A) `import collections as col`
 # - B) `from statistics import mean as average`
-# - B) `from os import path`
+# - C) `from os import path`
 # - D) `from random import choice, choices`
 # - E) `import ascii_letters from string`
 
 # #### Clicker Question Answer
 
-# In[ ]:
+# In[21]:
 
 
 # Check our imports
@@ -285,7 +303,7 @@ from string import punctuation as punc
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
 
 
 # ## Importing Custom Code I
@@ -341,21 +359,21 @@ class MyNumbers():
         return self.num2 - self.num1
 
 
-# In[ ]:
+# In[1]:
 
 
 # Import some custom code
 from remote import my_remote_function
 
 
-# In[ ]:
+# In[2]:
 
 
 # Investigate our imported function
 get_ipython().run_line_magic('pinfo', 'my_remote_function')
 
 
-# In[ ]:
+# In[3]:
 
 
 # Run our function
@@ -364,14 +382,14 @@ my_remote_function(2, 1)
 
 # ## Importing Custom Code II
 
-# In[ ]:
+# In[4]:
 
 
 # Import a class class from an external module
 from remote import MyNumbers
 
 
-# In[ ]:
+# In[5]:
 
 
 # Define an instance of our custom class
@@ -379,14 +397,14 @@ nums = MyNumbers(2, 3)
 type(nums)
 
 
-# In[ ]:
+# In[6]:
 
 
 # Check 
 nums.add()
 
 
-# In[ ]:
+# In[7]:
 
 
 # Check the definition of the code we imported
@@ -395,39 +413,39 @@ get_ipython().run_line_magic('pinfo2', 'nums.add')
 
 # ## Name Conflicts
 
-# In[ ]:
+# In[17]:
 
 
 from random import choice
 
 
-# In[ ]:
+# In[9]:
 
 
 # choice is currently from random module
 get_ipython().run_line_magic('pinfo', 'choice')
 
 
-# In[ ]:
+# In[18]:
 
 
 choice([1, 2, 3, 4, 5])
 
 
-# In[ ]:
+# In[19]:
 
 
 from remote import choice
 
 
-# In[ ]:
+# In[12]:
 
 
 # now it's from my remote module
 get_ipython().run_line_magic('pinfo', 'choice')
 
 
-# In[ ]:
+# In[20]:
 
 
 choice([1, 2, 3, 4, 5])
@@ -446,17 +464,25 @@ choice([1, 2, 3, 4, 5])
 # In[ ]:
 
 
+# avoid this
+from random import *
+choice()
+
+
+# In[21]:
+
+
 # a valid way to import
 from random import choice
 choice([2,3,4])
 
 
-# In[ ]:
+# In[22]:
 
 
 # a valid way to import
 import random
-random.choice([2,3,4,])
+random.choice([2,3,4])
 
 
 # ## script: `remote_script.py`
@@ -473,7 +499,7 @@ print("nums value: ", nums)
 print("nums type: ", type(nums))
 
 
-# In[ ]:
+# In[23]:
 
 
 # run the script
