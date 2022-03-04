@@ -89,13 +89,13 @@
 # 
 # Allow you to efficiently operate on arrays (linear algebra, matrix operations, etc.)
 
-# In[ ]:
+# In[1]:
 
 
 import numpy as np
 
 
-# In[ ]:
+# In[2]:
 
 
 # Create some arrays of data
@@ -104,13 +104,13 @@ arr1 = np.array([[1, 2], [3, 4]])
 arr2 = np.array([[5, 6], [7, 8]])
 
 
-# In[ ]:
+# In[5]:
 
 
-arr1
+arr2
 
 
-# In[ ]:
+# In[6]:
 
 
 # lists of lists don't store dimensionality well
@@ -119,7 +119,7 @@ arr1
 
 # #### Arrays: attributes, methods, & indexing
 
-# In[ ]:
+# In[7]:
 
 
 # Check out an array of data
@@ -128,25 +128,31 @@ arr1
 
 # `numpy` arrays are an object type...so they have associated attributes (below) and methods (we'll get to these in a second)!
 
-# In[ ]:
+# In[8]:
 
 
 # Check the shape of the array
 arr1.shape
 
 
-# In[ ]:
+# In[9]:
 
 
 # Index into a numpy array
 arr1[0, 0]
 
 
+# In[11]:
+
+
+arr1[1,0]
+
+
 # Working with N-dimensional (multidimensional) arrays is easy within `numpy`.
 
 # #### Notes on Arrays
 
-# In[ ]:
+# In[12]:
 
 
 # arrays are most helpful when they
@@ -154,7 +160,7 @@ arr1[0, 0]
 np.array([[1, 2, 3, 4], [2, 3, 4]])
 
 
-# In[ ]:
+# In[13]:
 
 
 # arrays are meant to store homogeneous data
@@ -165,14 +171,14 @@ np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 # 
 # (Things you can't do with lists)
 
-# In[ ]:
+# In[14]:
 
 
 # Add arrays together
 arr1 + arr2
 
 
-# In[ ]:
+# In[15]:
 
 
 # Matrix mutliplication
@@ -183,7 +189,7 @@ arr1 * arr2
 
 # `zip()` takes two iterables (things you can loop over) and loop over them together.
 
-# In[ ]:
+# In[16]:
 
 
 for a, b in zip([1,2], ['a','b']):
@@ -194,7 +200,13 @@ for a, b in zip([1,2], ['a','b']):
 # 
 # Given the following code, what will it print out?
 
-# In[ ]:
+# In[19]:
+
+
+data[1, :]
+
+
+# In[17]:
 
 
 data = np.array([[1, 2, 3, 4],
@@ -215,7 +227,13 @@ print(output)
 
 # Note that if you find yourself looping over arrays...there is probably a better way.
 
-# In[ ]:
+# In[20]:
+
+
+data
+
+
+# In[21]:
 
 
 # sum method
@@ -223,7 +241,7 @@ print(output)
 data.sum()
 
 
-# In[ ]:
+# In[22]:
 
 
 # sum method
@@ -232,7 +250,7 @@ data.sum()
 data.sum(axis=0)
 
 
-# In[ ]:
+# In[23]:
 
 
 # typecasting to a different variable type
@@ -243,7 +261,7 @@ type(out_list)
 
 # What if you wanted to find the max value in an array...there's a method for that!
 
-# In[ ]:
+# In[24]:
 
 
 # find max value in array
@@ -255,14 +273,26 @@ max_val
 # 
 # There are also *functions* in `numpy` that operate on arrays. 
 
-# In[ ]:
+# In[25]:
 
 
 # see documentation for np.where()
 get_ipython().run_line_magic('pinfo', 'np.where')
 
 
-# In[ ]:
+# In[26]:
+
+
+data
+
+
+# In[27]:
+
+
+max_val
+
+
+# In[28]:
 
 
 # find position in array with max value
@@ -270,7 +300,7 @@ out = np.where(data == max_val)
 out
 
 
-# In[ ]:
+# In[29]:
 
 
 # check to be sure
@@ -293,13 +323,13 @@ data[1,3]
 # - associated methods and utilities for working with data.
 # - each column contains a `pandas` **Series**
 
-# In[ ]:
+# In[30]:
 
 
 import pandas as pd
 
 
-# In[ ]:
+# In[31]:
 
 
 # Create some example heterogenous data
@@ -308,21 +338,21 @@ d2 = {'Subj_ID': '002', 'score': 22, 'group' : 1, 'condition': 'perception'}
 d3 = {'Subj_ID': '003', 'score': 18, 'group' : 1, 'condition': 'perception'}
 
 
-# In[ ]:
+# In[32]:
 
 
 # Create a dataframe 
 df = pd.DataFrame([d1, d2, d3], [0, 1, 2])
 
 
-# In[ ]:
+# In[33]:
 
 
 # Check out the dataframe
 df
 
 
-# In[ ]:
+# In[34]:
 
 
 # You can index in pandas
@@ -330,23 +360,32 @@ df
 df['condition']
 
 
-# In[ ]:
+# In[41]:
 
 
 # You can index in pandas
 # loc specifies row, column position
-df.loc[0,:]
+df.loc[0,'condition'] # gets single value
+df.loc[0,:] # gets whole row
 
 
-# In[ ]:
+# In[40]:
 
 
-# attribute of df object
+# to use iloc, which gets you a specific value 
+# based on indices/location
+df.iloc[0,2] # indexes based on location only
+
+
+# In[42]:
+
+
+### attribute of df object
 # row, columns
 df.shape
 
 
-# In[ ]:
+# In[43]:
 
 
 # how many rows there are in a series/df
@@ -357,21 +396,27 @@ df.shape[0] # len(df) would also work
 # 
 # There are *a lot* of functions and methods within `pandas`. The general syntax is `df.method()` where the `method()` operates directly on the dataframe `df`.
 
-# In[ ]:
+# In[44]:
 
 
 # calculate summary statistics
 df.describe()
 
 
-# In[ ]:
+# In[45]:
+
+
+df
+
+
+# In[46]:
 
 
 # Take the average of a specific column
 df['score'].mean()
 
 
-# In[ ]:
+# In[47]:
 
 
 # edit values within a column and replace original values
@@ -379,7 +424,25 @@ df['Subj_ID'] = df['Subj_ID'].replace('00', '000', regex=True)
 df['Subj_ID']
 
 
-# In[ ]:
+# In[56]:
+
+
+df['score'].astype(int)
+
+
+# In[48]:
+
+
+df['score'].astype(float)
+
+
+# In[49]:
+
+
+df
+
+
+# In[50]:
 
 
 # specify the type of a variable in a column
@@ -387,7 +450,7 @@ df['score'] = df['score'].astype(float)
 df['score']
 
 
-# In[ ]:
+# In[51]:
 
 
 # breakdown of how many of each category there are
@@ -395,28 +458,28 @@ val_counts = df['condition'].value_counts()
 val_counts
 
 
-# In[ ]:
+# In[52]:
 
 
 # which unique values are there in condition? 
 df['condition'].unique()
 
 
-# In[ ]:
+# In[53]:
 
 
 # how many unique values are there
 df['condition'].nunique()
 
 
-# In[ ]:
+# In[54]:
 
 
 # what's the category that shows up the most 
 val_counts.idxmax()
 
 
-# In[ ]:
+# In[55]:
 
 
 # what's the count of the value that shows up the most

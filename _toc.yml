@@ -33,12 +33,12 @@ parts:
       title: 14-Modules
     - file: materials/15-ScientificComputing
       title: 15-ScientificComputing   
+    - file: materials/16-Documentation
+      title: 16-Documentation
   #   - file: materials/17-CodeStyle
   #     title: 17-CodeStyle
   #   - file: materials/18-CodeTesting
   #     title: 18-CodeTesting
-  #   - file: materials/19-Documentation
-  #     title: 19-Documentation
   #   - file: materials/20-CodeProjects
   #     title: 20-CodeProjects
   #   - file: materials/21-AdvancedPython
@@ -65,8 +65,8 @@ parts:
       title: CL5-Loops
     - file: labs/CL6-Classes
       title: CL6-Classes
-  #   - file: labs/CL7-CommandLine
-  #     title: CL7-CommandLine
+    - file: labs/CL7-CommandLine
+      title: CL7-CommandLine
   #   - file: labs/CL8-ScientificComputing
   #     title: CL8-ScientificComputing
 
