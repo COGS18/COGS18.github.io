@@ -498,7 +498,7 @@ val_counts.max()
 
 # ## Plotting
 
-# In[ ]:
+# In[57]:
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -506,14 +506,14 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 
 
-# In[ ]:
+# In[58]:
 
 
 # Create some data
 dat = np.array([1, 2, 4, 8, 16, 32])
 
 
-# In[ ]:
+# In[59]:
 
 
 # Plot the data
@@ -528,14 +528,14 @@ plt.plot(dat);
 # - `scipy` - statistical analysis
 # - `sklearn` - machine learning
 
-# In[ ]:
+# In[60]:
 
 
 import scipy as sp
 from scipy import stats
 
 
-# In[ ]:
+# In[61]:
 
 
 # Simulate some data
@@ -545,7 +545,7 @@ d2 = stats.norm.rvs(loc=0.5, size=1000)
 
 # ### Analysis - Plotting the Data
 
-# In[ ]:
+# In[62]:
 
 
 # Plot the data
@@ -555,7 +555,7 @@ plt.hist(d2, 25, alpha=0.6);
 
 # ### Analysis - Statistical Comparisons
 
-# In[ ]:
+# In[63]:
 
 
 # Statistically compare the two distributions

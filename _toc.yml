@@ -35,10 +35,8 @@ parts:
       title: 15-ScientificComputing   
     - file: materials/16-Documentation
       title: 16-Documentation
-  #   - file: materials/17-CodeStyle
-  #     title: 17-CodeStyle
-  #   - file: materials/18-CodeTesting
-  #     title: 18-CodeTesting
+    - file: materials/17-CodeTesting
+      title: 17-CodeTesting
   #   - file: materials/20-CodeProjects
   #     title: 20-CodeProjects
   #   - file: materials/21-AdvancedPython

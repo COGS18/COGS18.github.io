@@ -59,7 +59,7 @@
 
 # ## The Zen of Python
 
-# In[ ]:
+# In[1]:
 
 
 import this
@@ -95,7 +95,7 @@ import this
 # 
 # What does the following code do?
 
-# In[ ]:
+# In[2]:
 
 
 def ff(jj):
@@ -116,11 +116,11 @@ ff('Hello World.')
 # - Improved naming: functions & variables
 # - Add Comments within code
 
-# In[ ]:
+# In[3]:
 
 
 def return_unicode(input_list):
-    string = list()
+    string = list() # []
     input_list = list(input_list)
       
     for character in input_list: 
@@ -217,7 +217,7 @@ def convert_to_unicode(input_string):
 # ## Code Style: Structure
 # 
 # - blank lines
-# - indentaion
+# - indentation
 # - spacing 
 # - length <- NEW
 # - imports <- NEW
@@ -246,25 +246,25 @@ def convert_to_unicode(input_string):
 
 # ### Multi-Line
 
-# In[ ]:
+# In[4]:
 
 
 my_long_list = [1, 2, 3, 4, 5, 
                 6, 7, 8, 9, 10]
 
 
-# In[ ]:
+# In[11]:
 
 
 # Note: you can explicitly indicate a new line with '\'
-my_string = 'Python is ' +             'a pretty great language.'
+my_string = 'Python is ' +             'a pretty great language.' # in line comment
 
 
 # ### One Statement Per Line (NEW-ish)
 # 
 # - While you *can* condense multiple statements into one line, you usually shouldn't.
 
-# In[ ]:
+# In[5]:
 
 
 # Badness
@@ -300,7 +300,6 @@ import os, sys
 # Goodness
 import os
 import sys
-
 import numpy as np
 
 
@@ -379,7 +378,7 @@ for element in list_of_elements:
 # - are indented to the same level as that code. 
 # - Each line of a block comment starts with a # and a single space
 
-# In[ ]:
+# In[12]:
 
 
 # Badness
@@ -394,7 +393,7 @@ def week_9():
 week_9()
 
 
-# In[ ]:
+# In[13]:
 
 
 # Goodness
@@ -420,14 +419,14 @@ week_9()
 # - to be separated by at least two spaces from the statement
 # - start with a # and a single space
 
-# In[ ]:
+# In[14]:
 
 
 # Badness
 week_9()#words of encouragement
 
 
-# In[ ]:
+# In[15]:
 
 
 # Goodness
@@ -445,7 +444,7 @@ week_9()  # words of encouragement
 
 # ### Example Docstring
 
-# In[ ]:
+# In[17]:
 
 
 def add(num1, num2):
@@ -460,7 +459,7 @@ def add(num1, num2):
     
     Returns
     -------
-    answer : float
+    answer : int or float
         The result of the addition. 
     """
     
@@ -557,8 +556,9 @@ print(add.__doc__)
 # A linter is a tool that analyzes code for both programmatic errors and stylistic issues. 
 # </div>
 
-# `pylint` is available from Anaconda to check this for you. (Not available on datahub.)
+# `pylint` is available from Anaconda/datahub to check this for you. 
 # 
+# If not available on datahub, to install:
 # 
 # ```python
 # # to install on datahub

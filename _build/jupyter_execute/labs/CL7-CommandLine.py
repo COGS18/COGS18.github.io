@@ -3,13 +3,15 @@
 
 # # CL7: Command Line
 # 
-# Welcome to the seventh coding lab!
+# Welcome to the seventh coding lab! 
+# 
+# **We will use this lab for two weeks in a row. This is not due until Wed. 3/2**
 # 
 # In this CodingLab we will be working with the command line, and with python files (module files and scripts). 
 # 
-# While this _may_ feel like busy work, understanding and completing this coding lab will be essential when it comes time for your project. Do your very best to complete all parts of this CodingLab!
+# While this _may_ feel like busy work, understanding and completing this coding lab will be essential when it comes time for your project/final exam. Do your very best to complete all parts of this CodingLab!
 
-# ## Part I: Command Line
+# ## Part I: Command Line (Week 1)
 # 
 # Open a terminal from the Jupyter notebook server (either on your local computer or datahub), and do the following:
 # 
@@ -23,10 +25,10 @@
 # - Save the file (and return to the terminal
 # - Execute the Python file from the terminal
 
-# Describe your success/struggles/failures with the above steps here:
+# Describe your success/struggles/failures with the above steps here (These are notes to yourself/meant to describe to staff what you did here. This *could* be copy + paste of the code you typed into the terminal or just notes to yourself/staff describing what you learned/where you struggled.):
 # 
 
-# ## Part II: Module Files
+# ## Part II: Module Files  (Week 1)
 # 
 # First, in the notebook below, do the following:
 # 
@@ -80,11 +82,11 @@ def soup(Noodles):
 ### END SOLUTION
 
 
-# Next, we are going to move this code to an external file - a Python module file. 
+# Next, we are going to move this code to an external file - a Python module file. (**Week 2**)
 # 
 # - Open a new text file, from the Jupyter server page
 # - Copy your classes and functions into that file
-# - Save that file, with some name that you give it, and a '.py' extension
+# - Save that file ***in the same folder/directory where this notebook is located***, with some name that you give it, and a '.py' extension.
 # - Now, import the classes and functions from that file into the notebook, and check that you can use them. 
 
 # In[ ]:
@@ -101,11 +103,11 @@ print(crave.soup(tonkotsu))
 ### END SOLUTION
 
 
-# ## Part III: Python Scripts
+# ## Part III: Python Scripts (Week 2)
 # 
 # Now write a small script that imports from your module file, and uses that code to do something.
 # 
-# To do so, start with the new text file. It should import your classes and functions from the file you made above. Then, use these functions and classes to do something (write some Python code that does something with these objects). Save your file with a '.py' extension, and then execute it from the terminal.
+# To do so, start with the new text file. It should import your classes and functions from the file you made above. Then, use these functions and classes to do something (write some Python code that does something with these objects). Save your file with a '.py' extension ***in the same folder/directory where this notebook is located**, and then execute it from the terminal.
 
 # In[ ]:
 
@@ -127,11 +129,7 @@ get_ipython().system('python cravings_script.py')
 ### END SOLUTION
 
 
-# In[ ]:
-
-
-Explain your success/struggles/failures with the above here:
-
+# Explain your success/struggles/failures with the above here:
 
 # ## The End!
 # 

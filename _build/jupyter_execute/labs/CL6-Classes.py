@@ -315,7 +315,7 @@ print(may6.busy_OH())
 
 # ### Objects Challenge
 # 
-# Define an object `Cogs18Students` that has: 
+# Define a class `Cogs18Students` that has: 
 # 
 # - Instance Attibutes:
 #     - `students` : list (initalize it as an empty list)

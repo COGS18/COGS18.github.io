@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Code Style" href="A1-CodeStyle.html" />
+    <link rel="next" title="Code Testing" href="17-CodeTesting.html" />
     <link rel="prev" title="Scientific Computing" href="15-ScientificComputing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -169,6 +169,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    16-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="17-CodeTesting.html">
+   17-CodeTesting
   </a>
  </li>
  <li class="toctree-l1">
@@ -1054,6 +1059,31 @@ A: The task that you want to accomplish dictates it. So, first you need to know 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren&#39;t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you&#39;re Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it&#39;s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let&#39;s do more of those!
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="writing-readable-code">
 <h3>Writing Readable Code<a class="headerlink" href="#writing-readable-code" title="Permalink to this headline">¶</a></h3>
@@ -1091,6 +1121,11 @@ A: The task that you want to accomplish dictates it. So, first you need to know 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;72+101+108+108+111+32+87+111+114+108+100+46&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) Returns unicode code points, as a list</p></li>
@@ -1108,7 +1143,7 @@ A: The task that you want to accomplish dictates it. So, first you need to know 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">return_unicode</span><span class="p">(</span><span class="n">input_list</span><span class="p">):</span>
-    <span class="n">string</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span> <span class="c1"># []</span>
     <span class="n">input_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">input_list</span><span class="p">)</span>
       
     <span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span> 
@@ -1118,6 +1153,11 @@ A: The task that you want to accomplish dictates it. So, first you need to know 
     <span class="k">return</span> <span class="n">output_string</span>
 
 <span class="n">return_unicode</span><span class="p">(</span><span class="s1">&#39;Hello World.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;72+101+108+108+111+32+87+111+114+108+100+46&#39;
 </pre></div>
 </div>
 </div>
@@ -1206,7 +1246,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <h2>Code Style: Structure<a class="headerlink" href="#code-style-structure" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>blank lines</p></li>
-<li><p>indentaion</p></li>
+<li><p>indentation</p></li>
 <li><p>spacing</p></li>
 <li><p>length &lt;- NEW</p></li>
 <li><p>imports &lt;- NEW</p></li>
@@ -1251,7 +1291,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: you can explicitly indicate a new line with &#39;\&#39;</span>
 <span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Python is &#39;</span> <span class="o">+</span> \
-            <span class="s1">&#39;a pretty great language.&#39;</span>
+            <span class="s1">&#39;a pretty great language.&#39;</span> <span class="c1"># in line comment</span>
 </pre></div>
 </div>
 </div>
@@ -1266,6 +1306,13 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Badness</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">i</span><span class="o">%</span><span class="k">2</span>)
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+4
+10
 </pre></div>
 </div>
 </div>
@@ -1302,7 +1349,6 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Goodness</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
-
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
@@ -1411,6 +1457,11 @@ Code documentation is text that accompanies and/or is embedded within a software
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Remember to take breaks!&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1433,6 +1484,11 @@ Code documentation is text that accompanies and/or is embedded within a software
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;re so close!&quot;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="id1">
@@ -1449,11 +1505,21 @@ Code documentation is text that accompanies and/or is embedded within a software
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;ve totally got this!&quot;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Goodness</span>
 <span class="n">week_9</span><span class="p">()</span>  <span class="c1"># words of encouragement</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;You&#39;ve totally got this!&quot;
 </pre></div>
 </div>
 </div>
@@ -1484,7 +1550,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 <span class="sd">    </span>
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    answer : float</span>
+<span class="sd">    answer : int or float</span>
 <span class="sd">        The result of the addition. </span>
 <span class="sd">    &quot;&quot;&quot;</span>
     
@@ -1596,7 +1662,8 @@ Documentation sites are a host of a package's documentation, for code users.
 <h2>Linters<a class="headerlink" href="#linters" title="Permalink to this headline">¶</a></h2>
 <div class="alert alert-success">
 A linter is a tool that analyzes code for both programmatic errors and stylistic issues. 
-</div><p><code class="docutils literal notranslate"><span class="pre">pylint</span></code> is available from Anaconda to check this for you. (Not available on datahub.)</p>
+</div><p><code class="docutils literal notranslate"><span class="pre">pylint</span></code> is available from Anaconda/datahub to check this for you.</p>
+<p>If not available on datahub, to install:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span># to install on datahub
 !pip install --user pylint
 </pre></div>
@@ -1724,10 +1791,10 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
             <p class="prev-next-title">Scientific Computing</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="A1-CodeStyle.html" title="next page">
+    <a class='right-next' id="next-link" href="17-CodeTesting.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Code Style</p>
+        <p class="prev-next-title">Code Testing</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
