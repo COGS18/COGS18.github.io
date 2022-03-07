@@ -170,6 +170,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../materials/17-CodeTesting.html">
+   17-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../materials/A1-CodeStyle.html">
    A1-CodeStyle
   </a>
@@ -464,8 +469,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#part-ii-code-style">
-   Part II: Code Style
+  <a class="reference internal nav-link" href="#part-ii-code-style-docuemntation">
+   Part II: Code Style &amp; Docuemntation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -556,8 +561,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#part-ii-code-style">
-   Part II: Code Style
+  <a class="reference internal nav-link" href="#part-ii-code-style-docuemntation">
+   Part II: Code Style &amp; Docuemntation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -593,8 +598,6 @@
 <h1>CL8: Scientific Computing<a class="headerlink" href="#cl8-scientific-computing" title="Permalink to this headline">¶</a></h1>
 <p>Welcome to the eighth coding lab!</p>
 <p>This coding lab focuses on getting comfortable working with data using <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, writing code that adheres to good code style principles, and code testing.</p>
-<p><font color='red'><strong>Note!</strong></font> We have only covered Parts 0-II prior to this week’s coding lab. We will only be grading to see concerted effort on those parts.</p>
-<p>However, we encourage you to revisit this coding lab after testing is discussed in class and give those parts a try.</p>
 <div class="section" id="part-0-setup">
 <h2>Part 0: Setup<a class="headerlink" href="#part-0-setup" title="Permalink to this headline">¶</a></h2>
 <p>Data wrangling often requires additional functionality outside what’s included in Python by default. For this, we’ll import other functionality from helpful packages.</p>
@@ -806,9 +809,9 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jan    24
-Apr    24
 Feb    24
 Mar    24
+Apr    24
 May    10
 Name: Month, dtype: int64
 </pre></div>
@@ -842,9 +845,15 @@ Name: New registered voters, dtype: float64
 </div>
 </div>
 </div>
-<div class="section" id="part-ii-code-style">
-<h2>Part II: Code Style<a class="headerlink" href="#part-ii-code-style" title="Permalink to this headline">¶</a></h2>
-<p>Below a fucntion <code class="docutils literal notranslate"><span class="pre">get_most_common</span></code> is provided. Take a look at the code and examples provided in the cells to understand what the function is doing. Then, consider the code style guidelines discussed in class and edit the code in the cell below to make the code more readable.</p>
+<div class="section" id="part-ii-code-style-docuemntation">
+<h2>Part II: Code Style &amp; Docuemntation<a class="headerlink" href="#part-ii-code-style-docuemntation" title="Permalink to this headline">¶</a></h2>
+<p>Below a fucntion <code class="docutils literal notranslate"><span class="pre">get_most_common</span></code> is provided.</p>
+<p>For this question:</p>
+<ol class="simple">
+<li><p>Take a look at the code and examples provided in the cells to understand what the function is doing.</p></li>
+<li><p>Consider the code style guidelines discussed in class and edit the code in the cell below to make the code more readable.</p></li>
+<li><p>Add a numpy-style docstring to the function.</p></li>
+</ol>
 <p>Note: the name and the functionality of the code will <em>not</em> change, but the style (parameter/variable naming, spacing, indentation, capitalization, etc.) shuold be improved.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -856,6 +865,25 @@ Name: New registered voters, dtype: float64
 
 <span class="c1">### BEGIN SOLUTION</span>
 <span class="k">def</span> <span class="nf">get_most_common</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">variable</span><span class="p">):</span>  <span class="c1"># better parameter names</span>
+    
+    <span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">    Identify the most common category that shoes up in the column of the DataFrame</span>
+<span class="sd">    specified on input as wel as how many times that value shows up.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    df : DataFrame</span>
+<span class="sd">        The pandas DataFrame containing the column to be summarized</span>
+<span class="sd">    variable : str</span>
+<span class="sd">        The column in the pandas DataFrame to be summarized</span>
+<span class="sd">        </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    max_label : str</span>
+<span class="sd">        The category/label that shows up most frequently in the column interrogated</span>
+<span class="sd">    max_value : int</span>
+<span class="sd">        The number of times the `max_label` shows up</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     
     <span class="c1"># fix indentation; better spacing around operators; improve variable names</span>
     <span class="n">most_common</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">variable</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> 
@@ -876,7 +904,7 @@ Name: New registered voters, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;Maryland&#39;, 10)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;District of Columbia&#39;, 10)
 </pre></div>
 </div>
 </div>
@@ -896,7 +924,7 @@ Name: New registered voters, dtype: float64
 </div>
 </div>
 </div>
-<p>Provided is a function you’ve seen before in A3…but here with particularly terrible code style. As above, edit the function for code style. Its functionality will not change, but its readability will.</p>
+<p>Provided is a function you’ve seen before in A3…but here with particularly terrible code style. As above, edit the function for code style and add a numpy-style docstring. Its functionality will not change, but its readability and documentation will.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># edit code style for this function</span>
@@ -907,6 +935,24 @@ Name: New registered voters, dtype: float64
 
 <span class="c1">### BEGIN SOLUTION</span>
 <span class="k">def</span> <span class="nf">end_chat</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>  <span class="c1"># better parameter name</span>
+    
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Determine if the word &#39;quit&#39; is in function&#39;s input</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    input_string : str</span>
+<span class="sd">        The string to be analyzed to see if it contains the word &#39;quit&#39;</span>
+<span class="sd">        </span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    output : str or None</span>
+<span class="sd">        Function returns the string &#39;Bye&#39; if &#39;quit&#39; is in the input_string and None otherwise</span>
+<span class="sd">    chat : bool</span>
+<span class="sd">        Function returns False if &#39;quit&#39; is in the input_string and True otherwise; controls if chat should continue</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
     
     <span class="c1"># fix indentation; better spacing around operators; improve variable names</span>
     <span class="k">if</span> <span class="s1">&#39;quit&#39;</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
@@ -953,7 +999,7 @@ Name: New registered voters, dtype: float64
 </div>
 <div class="section" id="part-iii-code-testing">
 <h2>Part III: Code Testing<a class="headerlink" href="#part-iii-code-testing" title="Permalink to this headline">¶</a></h2>
-<p>After editing the function above, write a test function <code class="docutils literal notranslate"><span class="pre">test_get_most_common()</span></code> that will test the functionality of the function above.</p>
+<p>After editing the function above, write a test function <code class="docutils literal notranslate"><span class="pre">test_get_most_common()</span></code> that will test the functionality of the <code class="docutils literal notranslate"><span class="pre">get_most_common</span></code> function above.</p>
 <p>Note: you’ll likely need to create a dummy dataframe within the function</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1008,6 +1054,19 @@ Name: New registered voters, dtype: float64
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
 <span class="o">!</span>pytest test_functions.py
 <span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.9.7, pytest-6.2.4, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/CodingLabs/source
+plugins: anyio-2.2.0
+collected 0 items                                                              
+
+<span class=" -Color -Color-Yellow">============================ no tests ran in 0.01s =============================</span>
+<span class=" -Color -Color-Red">ERROR: file or directory not found: test_functions.py</span>
+
 </pre></div>
 </div>
 </div>
