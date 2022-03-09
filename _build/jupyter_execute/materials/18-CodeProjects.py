@@ -9,7 +9,7 @@
 # - **Final exam/project** due Mon 3/14
 # 
 # Notes:
-# - Please fill out your [CAPEs](https://cape.ucsd.edu/)! (+1% if >=85% of the class completes; currently: ~33%)
+# - Please fill out your [CAPEs](https://cape.ucsd.edu/)! (+1% if >=85% of the class completes; currently: ~46%)
 # - **A4** and **CL7** scores posted
 
 # - Final Project Notes:
@@ -19,6 +19,9 @@
 #         - A single `print` or `return` statement in a function not enough to “count”
 #     - Delete files/directories you’re not using
 #     - Cite your code/inspiration
+# - Final Exam Notes:
+#     - Will be released Friday at noon; due Monday at 11:59 PM
+#     - There will be multiple files (similar to practice exam)
 
 # **Q&A**
 # 
