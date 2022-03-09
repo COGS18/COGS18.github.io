@@ -480,13 +480,13 @@ def add(num1, num2):
 
 # ### Docstrings are available through the code
 
-# In[ ]:
+# In[18]:
 
 
 get_ipython().run_line_magic('pinfo', 'add')
 
 
-# In[ ]:
+# In[19]:
 
 
 # The `help` function prints out the `docstring` 
@@ -496,7 +496,7 @@ help(add)
 
 # #### `__doc__`
 
-# In[ ]:
+# In[20]:
 
 
 # Docstrings get stored as the `__doc__` attribute
@@ -590,20 +590,39 @@ def MyFunction(input_num):
 # - D) 5 or 6
 # - E) 7 or more
 
-# ### list here
+# ### PEP8 violations
+# - line spacing
+# - spacing within list
+# - indentation (within the `else` and after the `if`)
+# - function name should be snake_case
+# - variable naming issues (i.e. `qq` not informative)
 # 
 
 # In[ ]:
 
 
 # Let's fix this code
+def my_function(input_num):
+
+    my_list = [0, 1, 2, 3]
+    
+    if 1 in my_list: 
+        ind = 1
+    else:
+        ind = 0
+        
+    output_list = []
+    for i in my_list[ind:]:
+        output_list.append(input_num/i)
+    
+    return output_list
 
 
-# In[ ]:
+# In[21]:
 
 
 # check using pylint
-get_ipython().system('pylint linter_example.py')
+get_ipython().system('pylint for_linter.py')
 
 
 # ## Software Versioning
@@ -624,7 +643,7 @@ get_ipython().system('pylint linter_example.py')
 # - `<MINOR>` - increase by 1 w/ added functionality in a backwards-compatible manner
 # - `<MAINTENANCE>` - (aka patch) increase by 1 w/  backwards-compatible bug fixes.
 
-# In[ ]:
+# In[22]:
 
 
 # see version information
@@ -634,7 +653,7 @@ pd.__version__
 
 # In Python package development... when `<MAJOR>` == 0, suggests a package in development
 
-# In[ ]:
+# In[23]:
 
 
 # see version information
