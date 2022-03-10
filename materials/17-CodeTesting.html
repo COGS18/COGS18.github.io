@@ -233,6 +233,11 @@
    CL7-CommandLine
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL8-ScientificComputing.html">
+   CL8-ScientificComputing
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -1071,6 +1076,18 @@ Code tests are code that run and check other code, to make sure it does what it 
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;!&quot;#$%&amp;\&#39;()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># function here</span>
 <span class="kn">import</span> <span class="nn">string</span>
 
@@ -1132,6 +1149,23 @@ Code tests are code that run and check other code, to make sure it does what it 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">jp</span><span class="o">/</span><span class="n">hdbfltdj035719571j9wynwm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_22450</span><span class="o">/</span><span class="mf">495240341.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">divide_list</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="nn">/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_22450/1156140063.py</span> in <span class="ni">divide_list</span><span class="nt">(in_list)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="k">for</span> <span class="n">el1</span><span class="p">,</span> <span class="n">el2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">in_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">in_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+<span class="ne">----&gt; </span><span class="mi">6</span>         <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el1</span> <span class="o">/</span> <span class="n">el2</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="k">return</span> <span class="n">output</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1189,6 +1223,14 @@ In software development, <b>test-driven development</b> is an approach in which 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### YOUR TEST</span>
+<span class="kn">import</span> <span class="nn">math</span> 
+
+<span class="k">def</span> <span class="nf">test_sum_list</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">sum_list</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">int</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">3.3</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">float</span>
+    <span class="k">assert</span> <span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="mi">6</span>
+    <span class="k">assert</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">3.3</span><span class="p">]),</span> <span class="mf">6.3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1246,6 +1288,14 @@ In software development, <b>test-driven development</b> is an approach in which 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	hello
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;hello&#39;, None)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1253,6 +1303,8 @@ In software development, <b>test-driven development</b> is an approach in which 
 <span class="kn">import</span> <span class="nn">builtins</span>
 
 <span class="k">def</span> <span class="nf">test_get_input</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">get_input</span><span class="p">)</span>
+    
     <span class="c1"># specify after lambda what you want function to use as &quot;input&quot;</span>
     <span class="k">with</span> <span class="n">mock</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">object</span><span class="p">(</span><span class="n">builtins</span><span class="p">,</span> <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">_</span><span class="p">:</span> <span class="s1">&#39;Hello&#39;</span><span class="p">):</span>
 
@@ -1275,7 +1327,7 @@ In software development, <b>test-driven development</b> is an approach in which 
 <div class="section" id="pytest">
 <h2>PyTest<a class="headerlink" href="#pytest" title="Permalink to this headline">¶</a></h2>
 <div class="alert alert-info">
-<b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module that for writing and running test code. It is available from Anaconda and datahub.
+<b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module for writing and running test code. It is available from Anaconda and datahub.
 </div><div class="section" id="id3">
 <h3><code class="docutils literal notranslate"><span class="pre">pytest</span></code><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
