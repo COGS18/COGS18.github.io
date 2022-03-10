@@ -315,10 +315,14 @@ assert out == None
 # 2. Copy the test function `test_get_most_common` to a test file `test_functions.py`. Be sure to add the necessary `import` statement to the top of this file.
 # 3. Execute `pytest` in the cell below.
 
-# In[21]:
+# In[ ]:
 
 
 ### BEGIN SOLUTION
+# executing this should show passing tests 
+# once the above steps are carried out
+# assumes test_functions.py is in same directory
+# as this lab
 get_ipython().system('pytest test_functions.py')
 ### END SOLUTION
 

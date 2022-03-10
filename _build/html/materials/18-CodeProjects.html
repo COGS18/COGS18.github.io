@@ -231,6 +231,11 @@
    CL7-CommandLine
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../labs/CL8-ScientificComputing.html">
+   CL8-ScientificComputing
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -872,7 +877,7 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <li><p>Idea: atbash encryption: return the capitalized, reverse alphabetical letter for each character in the input string</p></li>
 <li><p>Design:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> : take input string and retrun atbash encrypted string</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">atbash_encrypt()</span></code> : take input string and return atbash encrypted string</p>
 <ul>
 <li><p>inputs: <code class="docutils literal notranslate"><span class="pre">input_string</span></code></p></li>
 <li><p>returns: <code class="docutils literal notranslate"><span class="pre">atbash_string</span></code></p></li>
@@ -900,19 +905,19 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_atbash_encrypt</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
     <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     
 <span class="k">def</span> <span class="nf">test_atbash_decrypt</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
     <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
 
 <span class="k">def</span> <span class="nf">test_atbash_wrapper</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
     <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;decrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>

@@ -65,8 +65,8 @@ parts:
       title: CL6-Classes
     - file: labs/CL7-CommandLine
       title: CL7-CommandLine
-  #   - file: labs/CL8-ScientificComputing
-  #     title: CL8-ScientificComputing
+    - file: labs/CL8-ScientificComputing
+      title: CL8-ScientificComputing
 
   - caption: Exam Prep
     chapters:

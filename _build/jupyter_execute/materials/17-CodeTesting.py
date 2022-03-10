@@ -293,6 +293,12 @@ def test_remove_punctuation():
 test_remove_punctuation()
 
 
+# In[23]:
+
+
+string.punctuation
+
+
 # In[18]:
 
 
@@ -311,7 +317,7 @@ def remove_punctuation(input_string):
 
 # #### Clicker Question #3
 
-# In[ ]:
+# In[24]:
 
 
 # Given the following function:
@@ -324,7 +330,7 @@ def divide_list(in_list):
     return output
 
 
-# In[ ]:
+# In[25]:
 
 
 # And the following test function:
@@ -333,7 +339,7 @@ def test_divide_list():
     assert divide_list([1, 2, 4]) == [2, 2]
 
 
-# In[ ]:
+# In[26]:
 
 
 test_divide_list()
@@ -344,7 +350,7 @@ test_divide_list()
 # - C) These tests will fail, but they cover the needed cases
 # - D) These tests will fail, and we should also have more tests
 
-# In[ ]:
+# In[27]:
 
 
 divide_list((0,2,3))
@@ -372,7 +378,7 @@ divide_list((0,2,3))
 # 
 # Write a test function that checks the following piece of code:
 
-# In[ ]:
+# In[28]:
 
 
 def sum_list(input_list):
@@ -397,13 +403,21 @@ def sum_list(input_list):
 #     - check the output is expected output / expected type
 #     - check that function sums the list (which was our expectation)
 
-# In[ ]:
+# In[42]:
 
 
 ### YOUR TEST
+import math 
+
+def test_sum_list():
+    assert callable(sum_list)
+    assert type(sum_list([1,2,3])) == int
+    assert type(sum_list([1,2,3.3])) == float
+    assert sum_list([1,2,3]) == 6
+    assert math.isclose(sum_list([1,2,3.3]), 6.3)
 
 
-# In[ ]:
+# In[43]:
 
 
 test_sum_list()
@@ -425,7 +439,7 @@ test_sum_list()
 
 # ## Testing Code: when `input()` is used
 
-# In[ ]:
+# In[44]:
 
 
 def get_input():
@@ -445,19 +459,21 @@ def get_input():
     return msg, out_msg
 
 
-# In[ ]:
+# In[45]:
 
 
 get_input()
 
 
-# In[ ]:
+# In[48]:
 
 
 import mock
 import builtins
 
 def test_get_input():
+    assert callable(get_input)
+    
     # specify after lambda what you want function to use as "input"
     with mock.patch.object(builtins, 'input', lambda _: 'Hello'):
 
@@ -467,7 +483,7 @@ def test_get_input():
         assert out_msg == None
 
 
-# In[ ]:
+# In[49]:
 
 
 test_get_input()
@@ -476,7 +492,7 @@ test_get_input()
 # ## PyTest
 
 # <div class="alert alert-info">
-# <b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module that for writing and running test code. It is available from Anaconda and datahub.
+# <b><a href = 'https://docs.pytest.org/en/latest/'> PyTest </a></b> is a module for writing and running test code. It is available from Anaconda and datahub.
 # </div>
 
 # ### `pytest`
