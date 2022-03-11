@@ -37,12 +37,12 @@ parts:
       title: 16-Documentation
     - file: materials/17-CodeTesting
       title: 17-CodeTesting
-    - file: materials/218-CodeProjects
+    - file: materials/18-CodeProjects
       title: 18-CodeProjects
   #   - file: materials/21-AdvancedPython
   #     title: 21-AdvancedPython
-  #   - file: materials/22-WraspUp
-  #     title: 22-WrapUp
+    - file: materials/19-WraspUp
+      title: 19-WrapUp
     - file: materials/A1-CodeStyle
       title: A1-CodeStyle
     - file: materials/A2-Syntax

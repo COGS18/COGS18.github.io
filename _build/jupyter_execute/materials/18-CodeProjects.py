@@ -12,17 +12,6 @@
 # - Please fill out your [CAPEs](https://cape.ucsd.edu/)! (+1% if >=85% of the class completes; currently: ~46%)
 # - **A4** and **CL7** scores posted
 
-# - Final Project Notes:
-#     - What counts as original code?
-#         - You came up with an idea and wrote code to implement said idea
-#         - Just changing variable names - NO
-#         - A single `print` or `return` statement in a function not enough to “count”
-#     - Delete files/directories you’re not using
-#     - Cite your code/inspiration
-# - Final Exam Notes:
-#     - Will be released Friday at noon; due Monday at 11:59 PM
-#     - There will be multiple files (similar to practice exam)
-
 # **Q&A**
 # 
 # Q: Coding test part. I'm confused by how we should test if we don't have a specified input (like in chatbot).  
@@ -483,5 +472,3 @@ have_a_chat()
 # <div class="alert alert-success">
 # Code reviews is a process for systematically reviewing someone else's code. 
 # </div>
-
-# This is what you'll have the chance to do in coding lab next week!
