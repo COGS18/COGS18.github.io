@@ -6,8 +6,8 @@ output:
 
 # COGS 18: Introduction to Python
 
-**Winter 2022**  
-**MWF 8-8:50 (Zoom Lecture)**
+**Fall 2022**  
+**MWF 8-8:50 (Peterson Hall 110)**
 
 ---
 
