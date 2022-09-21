@@ -1,14 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Python Party!
-# 
-# It's a bit less of a party while learning remotely...
-
 # **Course Announcements**
 # 
 # - **A4** due Mon 2/28 (11:59 PM)
-# - **CL7** due *next* Wednesday (3/2)
+# - **CL7** due Wednesday (3/2)
 # 
 # **Note**
 # - Prof Ellis' OH: extra **zoom office hours today 9-10 AM** (will use normal zoom link on canvas; make-up for Monday)
@@ -50,6 +46,10 @@
 # 
 # Q: How is array different from other collections (like tuples, lists, dictionaries)?  
 # A: We'll discuss arrays next week when we discuss `numpy`, but for now, arrays can be N-dimensional.
+
+# # Python Party!
+# 
+# It's a bit less of a party while learning remotely...
 
 # ## Project-based Course
 # 
