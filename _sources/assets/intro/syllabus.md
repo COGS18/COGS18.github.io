@@ -17,14 +17,6 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ---
 
-### A Note About Returning to Learning Remotely
-
-As we embark on this Winter quarter, campus has announced that we will be learning remotely for the first two weeks of the quarter. During the first two weeks, all course components will take place remotely on Zoom. For the remainder of the quarter, the intention is to return to in-person lecture and lab; however, specifics will be communicated to students as we see how the quarter unfolds.
-
-Through all of this, I'm here to support your learning! While regular deadlines have been established to help keep you all on track, I want you to know up front that I am a very reasonable person. While I ask that you all do your best to meet deadlines that have been set, know that if you're struggling, I absolutely want you to reach out to let me know, to ask for an extension, or to discuss some other accommodation.
-
----
-
 ## COURSE STAFF & INFORMATION
 
 |       Role | Name                                                       | Coding Lab | Office Hours |
