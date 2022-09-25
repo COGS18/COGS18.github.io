@@ -19,24 +19,42 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE STAFF & INFORMATION
 
-|       Role | Name                                                       | Coding Lab | Office Hours |
-| ---------: | :--------------------------------------------------------- | :--------- | :----------- |
-| Instructor | Prof Jason ([jfleischer@ucsd.edu](mailto:jfleischer@ucsd.edu)) | --         | [Signup for office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM)         |
-|         TA | Pooja Pathak                                               | TBH        | TBH          |
-|         TA | Shivani Bhakta                                             | TBH        | TBH          |
-|         IA | Jose Deleon                                                | TBH        | TBH          |
-|         IA | Zoe He                                                     | TBH        | TBH          |
-|         IA | Wenqian Xu                                                 | TBH        | TBH          |
-|         IA | Jeffery Sun                                                | TBH        | TBH          |
-|         IA | Sharai Barrera                                             | TBH        | TBH          |
-|         IA | Irisa Jin                                                  | TBH        | TBH          |
-|         IA | Shad Gabrielle Reyes                                       | TBH        | TBH          |
+| **What**         | **Who**        | **When**                                                                                                                                                  | **Where**                                                                                                                                                                                       |
+| ---------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Lecture**      |                | MWF 8-8:50 AM                                                                                                                                             | Peterson Hall 110
+
+and simultaneously on Zoom COGS 18 - Introduction to Python - Fleischer \[FA22\]                                                                                             |
+| **Coding Lab**   | Shivani        | Wed 9 AM-9:50 AM<br>Wed 10 AM-10:50 AM<br>Wed 11 AM-11:50 AM                                                                                              | CSB 115                                                                                                                                                                                         |
+|                  | Pooja          | Wed 12 PM-12:50 PM<br>Wed 1 PM-1:50 PM<br>Wed 2 PM-2:50 PM                                                                                                | CSB 115                                                                                                                                                                                         |
+|                  | Zoe            | Wed 3 PM-3:50 PM<br>Wed 4 PM-4:50 PM<br>Wed 5 PM-5:50 PM                                                                                                  | CSB 115                                                                                                                                                                                         |
+| **Office Hours** | Prof Fleischer | [Signup for office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM) | Using the calendar link you will have the opportunity to pick in person (CSB 257) or Zoom time slots                                                                                            |
+|                  | Pooja          | Mon 6-7 pm (tentative)                                                                                                                                    |  [https://ucsd.zoom.us/j/6400500021](https://ucsd.zoom.us/j/6400500021)                                                                                                                         |
+|                  | Shad           | Mon 12-1PM                                                                                                                                                | CSB 114
+
+or
+
+[https://ucsd.zoom.us/my/shadreyes](https://ucsd.zoom.us/my/shadreyes)                                                                                                             |
+|                  | Shivani        | Mon 12-1PM                                                                                                                                                | [https://ucsd.zoom.us/j/93922231856](https://ucsd.zoom.us/j/93922231856?pwd=YmgydlY2Qmt4enFvKzNiR3hmc2d1QT09)                                                                                   |
+|                  | Irisa          | TuTh 1-2PM                                                                                                                                                | Email me with your preferred time and location (irjin@ucsd.edu)                                                                                                                                 |
+|                  | Jose           | Fri 5-6pm                                                                                                                                                 | [https://ucsd.zoom.us/j/91250676908](https://www.google.com/url?q=https://ucsd.zoom.us/j/91250676908&sa=D&source=calendar&ust=1664569319199900&usg=AOvVaw1K6MP0Bbl5sEDevigMzCQs)                |
+|                  | Trista         | Mon 4-4:30pm
+
+Tue 3:30-4:30pm                                                                                                                             | Please use the sign up link below to book zoom time slot
+
+[sign up here](https://calendar.app.google/9pU3z8RLn3fm9Bz46)
+
+[https://ucsd.zoom.us/j/6602527440](https://ucsd.zoom.us/j/6602527440) |
+|                  | Zoe            | Tue 4:30-6:30                                                                                                                                             | [https://ucsd.zoom.us/j/7256308261](https://ucsd.zoom.us/j/7256308261)                                                                                                                          |
+|                  | Jeff           | Friday 12PM-1PM                                                                                                                                           | CSB 114                                                                                                                                                                                         |
+
+
+
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)  
 Canvas Course: [https://canvas.ucsd.edu/courses/40702](https://canvas.ucsd.edu/courses/40702)  
 Course Piazza\*: [https://piazza.com/class/l84mqraemi03p0](https://piazza.com/class/l84mqraemi03p0) (login code on Canvas)  
 Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)  
-Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)
+Course Feedback (anonymous): [Google Form](https://forms.gle/DYb2CVCUBbsZp8tM7)
 
 \*You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
 
