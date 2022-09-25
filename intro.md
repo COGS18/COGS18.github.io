@@ -8,7 +8,7 @@ Introduction to Python (COGS 18) is a course offered by the Department of Cognit
 
 ### Current Iteration
 
-Introduction to Python is currently running for  Fall 2022, for which you can check out the current [syllabus](assets/intro/syllabus). 
+Introduction to Python is currently running for  Fall 2022, for which you can check out the current [syllabus](assets/intro/syllabus).
 
 
 ### Materials
