@@ -1,10 +1,10 @@
 # Welcome to COGS 18: Introduction to Python!
 
-COGS 18 | Jason Fleischer | Fall 2022 | UCSD
+COGS 18 | [Jason Fleischer](https://jgfleischer.com) | Fall 2022 | UCSD
 
 ### Overview
 
-Introduction to Python (COGS 18) is a course offered by the Department of Cognitive Science of UC San Diego, taught by [Jason Fleischer](https://jgfleischer.com). It is a hands-on programming course, focused on teaching students in Cognitive Science and related disciplines an introduction on how to productively use Python.
+Introduction to Python (COGS 18) is a course offered by the Department of Cognitive Science of UC San Diego. It is a hands-on programming course, focused on teaching students in Cognitive Science and related disciplines an introduction on how to productively use Python.
 
 ### Current Iteration
 

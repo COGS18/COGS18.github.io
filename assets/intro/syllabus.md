@@ -17,19 +17,11 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ---
 
-### A Note About Returning to Learning Remotely
-
-As we embark on this Winter quarter, campus has announced that we will be learning remotely for the first two weeks of the quarter. During the first two weeks, all course components will take place remotely on Zoom. For the remainder of the quarter, the intention is to return to in-person lecture and lab; however, specifics will be communicated to students as we see how the quarter unfolds.
-
-Through all of this, I'm here to support your learning! While regular deadlines have been established to help keep you all on track, I want you to know up front that I am a very reasonable person. While I ask that you all do your best to meet deadlines that have been set, know that if you're struggling, I absolutely want you to reach out to let me know, to ask for an extension, or to discuss some other accommodation.
-
----
-
 ## COURSE STAFF & INFORMATION
 
 |       Role | Name                                                       | Coding Lab | Office Hours |
 | ---------: | :--------------------------------------------------------- | :--------- | :----------- |
-| Instructor | Prof Jason ([jfleischer@ucsd.edu](mailto:sellis@ucsd.edu)) | --         | TBH          |
+| Instructor | Prof Jason ([jfleischer@ucsd.edu](mailto:jfleischer@ucsd.edu)) | --         | [Signup for office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM)         |
 |         TA | Pooja Pathak                                               | TBH        | TBH          |
 |         TA | Shivani Bhakta                                             | TBH        | TBH          |
 |         IA | Jose Deleon                                                | TBH        | TBH          |
@@ -41,12 +33,12 @@ Through all of this, I'm here to support your learning! While regular deadlines 
 |         IA | Shad Gabrielle Reyes                                       | TBH        | TBH          |
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)  
-Canvas Course: [https://canvas.ucsd.edu/courses/33580](https://canvas.ucsd.edu/courses/33580)  
-Course Campuswire\*: [https://campuswire.com/p/G9193CB28](https://campuswire.com/p/G9193CB28) (login code on Canvas)  
+Canvas Course: [https://canvas.ucsd.edu/courses/40702](https://canvas.ucsd.edu/courses/40702)  
+Course Piazza\*: [https://piazza.com/class/l84mqraemi03p0](https://piazza.com/class/l84mqraemi03p0) (login code on Canvas)  
 Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)  
 Course Feedback (anonymous): [Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)
 
-\*You will be able to post anonymously on Campuswire; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
+\*You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
 
 ---
 
@@ -97,7 +89,7 @@ To calculate final grades, I use the standard grading scale and do not round gra
 
 | <span>Percentage</span> | <span>Letter Grade</span> |
 | ----------------------- | ------------------------- |
-| 97-100%                 | A+                        |
+| 97-100%                 | A+ (final project) / A (final exam) |
 | 93-96%                  | A                         |
 | 90-92%                  | A-                        |
 | 87-89%                  | B+                        |
@@ -113,7 +105,7 @@ To calculate final grades, I use the standard grading scale and do not round gra
 
 ### Assignment Regrades
 
-We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post _privately_ on Campuswire to "Instructors & TAs" using the "regrades" tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
+We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you've earned. Occasionally, grading mistakes do happen, and it's important to us to correct them. If you think there is a mistake in your grade on an assignment, post _privately_ on Piazza to "Instructors & TAs" using the "regrades" tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.
 
 Note that points will _not_ be rewarded if you fail to follow instructions. For example, if the instructions say to name the variable `orange` and you name it `ornage` (misspelled), you will not be rewarded credit upon regrade. This is because (1) following instructions and being detail-oriented is important and (2) there are hundreds of students taking the course this quarter. It would be an unfair burden to place on TAs if we didn't have this policy.
 
@@ -163,38 +155,41 @@ The final exam will be take-home and you will have at least 48 hours to complete
 
 ## COURSE SCHEDULE
 
-| Date | Week | Lecture | Day | Topic                      | Assignment/Exam (11:59 PM)          | CodingLab (11:59 PM)                  |
-| ---: | :--: | :------ | :-: | :------------------------- | :---------------------------------- | :------------------------------------ |
-|  1/3 |  1   | 1       |  M  | Introduction               |                                     |                                       |
-|  1/5 |  1   | 2       |  W  | Tooling & Integrity        |                                     | CL1: Tooling & Integrity              |
-|  1/7 |  1   | 3       |  F  | Variables                  |                                     |                                       |
-| 1/10 |  2   | 4       |  M  | Operators I                |                                     |                                       |
-| 1/12 |  2   | 5       |  W  | Operators II               |                                     | CL2: Programming I                    |
-| 1/14 |  2   | 6       |  F  | Functions                  |                                     |                                       |
-| 1/17 |  3   | --      |  M  | **No Class**               | A1: Getting-Started                 |                                       |
-| 1/19 |  3   | 7       |  W  | Conditionals I             |                                     | CL3: Programming II                   |
-| 1/21 |  3   | 8       |  F  | Conditionals II            |                                     |                                       |
-| 1/24 |  4   | 9       |  M  | Collections [*]            |                                     |                                       |
-| 1/26 |  4   | --      |  W  | Review                     |                                     | CL4: Collections                      |
-| 1/28 |  4   | 10      |  F  | Debugging                  | **E1** (due Sun 1/30; 11:59 PM)     |                                       |
-| 1/31 |  5   | 11      |  M  | Loops                      | A2: Ciphers                         |                                       |
-|  2/2 |  5   | 12      |  W  | Loops II                   |                                     | CL5: Loops                            |
-|  2/4 |  5   | 13      |  F  | Algorithms                 |                                     |                                       |
-|  2/7 |  6   | 14      |  M  | Methods                    |                                     |                                       |
-|  2/9 |  6   | 15      |  W  | Classes I                  | A3: Chatbots (due Th 2/10 11:59 PM) |                                       |
-| 2/11 |  6   | 16      |  F  | Classes II                 |                                     |                                       |
-| 2/14 |  7   | --      |  M  | Classes III [**]           |                                     |                                       |
-| 2/16 |  7   | 17      |  W  | Review                     |                                     | CL6: Classes                          |
-| 2/18 |  7   | --      |  F  | **No Class**               | **E2** (due Sun 2/20; 11:59 PM)     |                                       |
-| 2/21 |  8   | --      |  M  | **No Class**               |                                     |                                       |
-| 2/23 |  8   | 18      |  W  | Command Line               |                                     |                                       |
-| 2/25 |  8   | 19      |  F  | Python Party               |                                     |                                       |
-| 2/28 |  9   | 20      |  M  | Modules & Scripts          | A4: Artificial Agents               |                                       |
-|  3/2 |  9   | 21      |  W  | Scientific Computing       |                                     | CL7: Command Line                     |
-|  3/4 |  9   | 22      |  F  | Code Style & Documentation |                                     |                                       |
-|  3/7 |  10  | --      |  M  | Code Testing               |                                     |                                       |
-|  3/9 |  10  | 23      |  W  | Code Projects              |                                     | CL8: Scientific Computing & Good Code |
-| 3/11 |  10  | 24      |  F  | Wrap Up                    | A5: Experimentation                 |                                       |
+|            | Week   | Day | Topic                            | Section covers | Lab due | Assignment due | Exam       |
+| ---------- | ------ | --- | -------------------------------- | -------------- | ------- | -------------- | ---------- |
+| 9/23/2022  | 0      | F   | Welcome!                         |                |         |                |            |
+| 9/26/2022  | 1      | M   | Introduction                     |                |         |                |            |
+| 9/28/2022  | 1      | W   | Tooling                          | CL1            | CL1     |                |            |
+| 9/30/2022  | 1      | F   | Variables                        |                |         |                |            |
+| 10/3/2022  | 2      | M   | Operators I                      |                |         |                |            |
+| 10/5/2022  | 2      | W   | Operators II                     | CL2            | CL2     |                |            |
+| 10/7/2022  | 2      | F   | Functions                        |                |         |                |            |
+| 10/10/2022 | 3      | M   | Conditionals I                   |                |         | Checkpoint     |            |
+| 10/12/2022 | 3      | W   | Conditionals II                  | CL3            | CL3     |                |            |
+| 10/14/2022 | 3      | F   | Collections                      |                |         | A1             |            |
+| 10/17/2022 | 4      | M   | Debugging \*                     |                |         |                |            |
+| 10/19/2022 | 4      | W   | Review                           | CL4            | CL4     |                |            |
+| 10/21/2022 | 4      | F   | Loops                            |                |         |                | E1         |
+| 10/24/2022 | 5      | M   | Loops II                         |                |         | Checkpoint     |            |
+| 10/26/2022 | 5      | W   | Algorithms (possible to add ii?) | CL5            | CL5     |                |            |
+| 10/28/2022 | 5      | F   | Methods                          |                |         | A2             |            |
+| 10/31/2022 | 6      | M   | Classes I                        |                |         | Checkpoint     |            |
+| 11/2/2022  | 6      | W   | Classes II                       | CL6            | CL6     |                |            |
+| 11/4/2022  | 6      | F   | Classes III \*\*                 |                |         | A3             |            |
+| 11/7/2022  | 7      | M   | Python Party                     |                |         |                |            |
+| 11/9/2022  | 7      | W   | Review                           | CL7            | CL7     |                |            |
+| 11/11/2022 | 7      | F   | No class - Veterans day          |                |         |                | E2         |
+| 11/14/2022 | 8      | M   | Command Line                     |                |         | Checkpoint     |            |
+| 11/16/2022 | 8      | W   | Modules & Scripts                | CL8            | CL8     |                |            |
+| 11/18/2022 | 8      | F   | Scientific Computing             |                |         | A4             |            |
+| 11/21/2022 | 9      | M   | Code Style                       |                |         |                |            |
+| 11/23/2022 | 9      | W   | Documentation                    | CL9            | CL9     |                |            |
+| 11/25/2022 | 9      | F   | No class - Thanksgiving          |                |         |                |            |
+| 11/28/2022 | 10     | M   | Code Testing                     |                |         | Checkpoint     |            |
+| 11/30/2022 | 10     | W   | Code Projects                    | Projects       | \--     |                |            |
+| 12/2/2022  | 10     | F   | Wrap Up                          |                |         | A5             |            |
+| 12/5/2022  | Finals | M   | \--                              |                |         |                | Final exam |
+| 12/7/2022  | Finals | W   | \--                              |                |         | Final project  |            |
 
 **Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam (Mon 3/14) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
@@ -206,13 +201,13 @@ Notes:
 
 ## OTHER GOOD STUFF
 
-### Campuswire Rules
+### Piazza Rules
 
-Campuswire is an incredible resource for technical classes. It gives you a place to post questions and an opportunity to answer others' questions. We do our very best as an instructional staff to answer each and every question in a timely manner. We also want to make sure this platform is being used to learn and not thwarting anyone's education. To make all of this possible, there are a few rules for this course's campuswire:
+Piazza is an incredible resource for technical classes. It gives you a place to post questions and an opportunity to answer others' questions. We do our very best as an instructional staff to answer each and every question in a timely manner. We also want to make sure this platform is being used to learn and not thwarting anyone's education. To make all of this possible, there are a few rules for this course's Piazza:
 
 1. Before posting your question, look at questions that have already been posted to avoid duplicates.
 2. If posting about an assignment, note title should have assignment number, question number, and 1-2 words about the question. (i.e. A1 Q1 Variable Naming)
-3. Never post an answer to or code for an assignment on a public post. Pseudocode is encouraged for public posts. If you must include code for an assignment, make this post private (to "Instructors & TAs" only) on Campuswire.
+3. Never post an answer to or code for an assignment on a public post. Pseudocode is encouraged for public posts. If you must include code for an assignment, make this post private (to "Instructors & TAs" only) on Piazza.
 4. Your post must include not only your question/where you're stuck, but also what you've already done to try to solve it so far and what resources (class notes, online URLs, etc.) you used to try to answer the question up to this point.
 
 ### Class Conduct
@@ -242,19 +237,29 @@ Contacting the OSD can help you further:
 osd@ucsd.edu (email)  
 http://disabilities.ucsd.edu
 
+## Difficult life situations
+
+Sometimes life outside of academia can be difficult. Please [email me](mailto:jfleischer@ucsd.edu) or [come to office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM) if stuff outside the classroom prevents you from doing well inside it. I can often refer you on to the help you need.
+
+If you don't have the most essential resources required to thrive as a student, please contact [UCSD Basic Needs](https://basicneeds.ucsd.edu) who can help you access nutritious food and stable housing, and help you seek the means to reach financial wellness.
+
+If you need emergency food, finances, and/or academic and social support you can also contact [UCSD Mutual Aid](https://mutualaiducsd.wordpress.com). They provide mentoring and aid that comes from volunteers among your peers.  If you don't need that kind of support, consider joining them in helping your fellow classmates who do.
+
+If you need counseling or if you are in a mental crisis you can contact [CAPS](https://caps.ucsd.edu). They provide psychiatric services, workshops, and counseling; they also operate a 24/7 crisis hotline at 858.534.3755
+
 ### How to Get Your Question(s) Answered and/or Provide Feedback
 
 It's great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we're able to get to everyone's questions.
 
-That said, to ensure that we're respecting their time, TAs and IAs have been instructed they're only obligated to answer questions between normal working hours (M-F 9AM-5PM). Professor Ellis is also going to do her best to stick to these working hours and only go on Campuswire MWF each week. However, I know that's not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
+That said, to ensure that we're respecting their time, TAs and IAs have been instructed they're only obligated to answer questions between normal working hours (M-F 9AM-5PM). Professor Ellis is also going to do her best to stick to these working hours and only go on Piazza MWF each week. However, I know that's not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
 
 If you have:
 
-- **questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so post these to Campuswire!
-- **a technical assignment question** - come to office hours (or post to Campuswire). Answering technical questions is often best accomplished 'in person' where we can discuss the question and talk through ideas. However, if that is not possible, post your question to Campuswire. Be as specific as you can in the question you ask. And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
-- **been stuck on something for a while (>30min) and aren't even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn't working. That's OK - we've all been there! IF you are stuck, you can and should reach out for help, even if you aren't exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on Campuswire). If you don't have a specific question, include the information you have (what you're stuck on, the code you've been trying that hasn't been happening, and/or the error messages you've been getting).
-- **questions about course logistics** - first, check the syllabus. If you can't find the answer there, first ask a classmate. If still unsure, post on Campuswire.
-- **questions about a grade** - Post on Campuswire with "regrades" tag in a private post to "Instructors & TAs".
+- **questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so post these to Piazza!
+- **a technical assignment question** - come to office hours (or post to Piazza). Answering technical questions is often best accomplished 'in person' where we can discuss the question and talk through ideas. However, if that is not possible, post your question to Piazza. Be as specific as you can in the question you ask. And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
+- **been stuck on something for a while (>30min) and aren't even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn't working. That's OK - we've all been there! IF you are stuck, you can and should reach out for help, even if you aren't exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on Piazza). If you don't have a specific question, include the information you have (what you're stuck on, the code you've been trying that hasn't been happening, and/or the error messages you've been getting).
+- **questions about course logistics** - first, check the syllabus. If you can't find the answer there, first ask a classmate. If still unsure, post on Piazza.
+- **questions about a grade** - Post on Piazza with "regrades" tag in a private post to "Instructors & TAs".
 - **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Professor Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS18 in the email subject line and your full name in your message.
 - **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the [anonymous Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)\*
 
@@ -262,8 +267,8 @@ If you have:
 
 ### What should you call me?
 
-Most students call me Professor/Prof Ellis, and that's great! This is how I typically sign emails to students. But, I'm also totally OK with you addressing me as Shannon or Dr. Ellis. (I would prefer you _not_ address me as Ms./Miss/Mrs. Ellis.)
+Most students call me Professor or Professor Fleischer or Dr. Fleischer. I'm also perfectly happy if you call me Jason, but not all professors are OK with that kind of informality. I would prefer you *not* address me as Mr. Fleischer; if you're going to use an honorific please use the one that people expect in the situation.
 
-### What should I call you?
+### What I should call you
 
-I should call you by your name, with the correct pronunciation. Please correct me (either in the moment or via email/Campuswire after the fact...however you're most comfortable) if I ever make a mistake.
+I should call you by your preferred name, with the correct pronunciation and any honorific or pronouns you choose. Please correct me (either in the chat, out loud on zoom, or via email/Piazza after the fact...however you're most comfortable) if I ever make a mistake.
