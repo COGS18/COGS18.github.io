@@ -33,7 +33,7 @@ textbook:
 	git clone --depth 1 https://github.com/COGS18/CodingLabs.git labs
 	rm -rf labs/README.md
 	rm -rf labs/Archive
-	#rm labs/source/CL1-Tooling.ipynb
+	rm labs/CL1-Tooling.ipynb
 	# new method is to have seperate directory for the answers distributed on Website
 	# manually add them to the directory as you want to distribute, remove at
 	# beginning of hte quarter
