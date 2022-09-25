@@ -8,12 +8,14 @@ Introduction to Python (COGS 18) is a course offered by the Department of Cognit
 
 ### Current Iteration
 
-Introduction to Python is currently running for  Fall 2022, for which you can check out the current [syllabus](assets/intro/syllabus).
+Introduction to Python is currently running for Fall 2022, [please read the syllabus here!](assets/intro/syllabus).
 
 
 ### Materials
 
 All course materials are openly available and downloadable from this website. Materials presented during the course lectures are available [here](materials/01-Introduction). The source material for everything hosted on this site is also available on [GitHub](https://github.com/COGS18).
+
+[Click on this link to transfer the current materials from github to your datahub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main) so you can follow along in lecture. NB. This updates every lecture, so you will have to click on this link repeatedly to keep up to date.
 
 
 ### Coding Labs
