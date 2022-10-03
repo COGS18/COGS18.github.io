@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Party!" href="../projects/PythonParty.html" />
+    <link rel="next" title="Operators" href="04-Operators.html" />
     <link rel="prev" title="02-Tooling" href="02-Tooling.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -127,6 +127,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
   </a>
  </li>
 </ul>
@@ -773,7 +778,7 @@ title="Print to PDF"
 <li><p>Are the CL labs graded on completion or accuracy? <br> <strong>Completion</strong></p></li>
 <li><p>When should we submit our daily participation surveys by? <br> <strong>Before the end of the week… sometime on Sunday or Monday I’ll be resetting the form so its ready for the next week’s lectures</strong></p></li>
 <li><p>I’m still a little confused on how anaconda works. When I downloaded it, there were multiple applications and I’m not sure what they all do. <br> <strong>Great question! Most of them you won’t need in this class, but you may wish to take a look at them at some point, either just by playing or by Googling to find out about them.  But if you just start Jupyter Notebook you will be ready to go for everything we need for this class.</strong></p></li>
-<li><p>why does mac have a native installation of python? <br> <strong>Why? Probably because some part of MacOS needed an old Python. BUT NEVER use that native python if you can avoid it. Its very old, which makes for problems. Installing Anaconda is a great way to replace that old Python with a modern one. BTW, native Python is already gone from newer MacOS (v12.3 and higher), so they clearly replaced that functionality inside the OS with some other progamm</strong></p></li>
+<li><p>why does mac have a native installation of python? <br> <strong>Why? Probably because some part of MacOS needed an old Python. BUT NEVER use that native python if you can avoid it. Its very old, which makes for problems. Installing Anaconda is a great way to replace that old Python with a modern one. BTW, native Python is already gone from newer MacOS (v12.3 and higher), so they clearly replaced that functionality inside the OS with some other progamming/scripting langauge</strong></p></li>
 <li><p>Do you have to go to section, if you finish Coding Lab before section? <br> <strong>No. Section is to help you, and if you don’t need help don’t worry about it.</strong></p></li>
 </ul>
 </section>
@@ -792,7 +797,8 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a comment. You can write a comment by using a `#`</span>
 <span class="n">my_variable</span> <span class="o">=</span> <span class="mi">12</span> 
 
-<span class="n">my_other_variable</span> <span class="o">=</span> <span class="mi">13</span> <span class="c1"># Comments can be &#39;inline&#39;, like this one</span>
+<span class="n">my_other_variable</span> <span class="o">=</span> <span class="mi">13</span> <span class="c1"># Comments can be &#39;inline&#39;, like this one </span>
+<span class="n">variable_3</span> <span class="o">=</span> <span class="mi">14</span>
 </pre></div>
 </div>
 </div>
@@ -815,6 +821,11 @@ In programming, variables are things that store values. Variables are defined wi
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># once you create a variable it&#39;s stored in your namespace</span>
 <span class="n">other_var</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;variables are cool&#39;
 </pre></div>
 </div>
 </div>
@@ -842,6 +853,11 @@ In programming, variables are things that store values. Variables are defined wi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) 2</p></li>
@@ -858,6 +874,18 @@ In programming, variables are things that store values. Variables are defined wi
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diff_var</span> <span class="o">=</span> <span class="n">my_variabel</span> <span class="o">-</span> <span class="n">my_var</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">diff_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">70</span><span class="o">-</span><span class="n">bb09d72de1d8</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">diff_var</span> <span class="o">=</span> <span class="n">my_variabel</span> <span class="o">-</span> <span class="n">my_var</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">diff_var</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;my_variabel&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -954,6 +982,14 @@ In programming, variables are things that store values. Variables are defined wi
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-71-1c44ba76d8f9&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="kernels">
@@ -969,7 +1005,7 @@ The <b>kernel</b> is the thing that executes your code. It is what connects the 
 The <b>namespace</b> is the 'place' where all your currently defined code is declared - all the things you have stored in active memory. 
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>whos<span class="o">?</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>debug<span class="o">?</span>
 </pre></div>
 </div>
 </div>
@@ -978,6 +1014,27 @@ The <b>namespace</b> is the 'place' where all your currently defined code is dec
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can list everything declared in the namespace with &#39;%whos&#39;</span>
 <span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable              Type     Data/Info
+----------------------------------------
+a_string              str       &quot;Excellent!&quot; -- Bill &amp; Ted 
+and_another           str      and some more
+another_float         float    -231.45
+another_integer       int      321
+another_string        str      more words
+my_float              float    1.0
+my_integer            int      1
+my_other_variable     int      13
+my_string             str      I wasn&#39;t going to remember the quote.
+my_var                int      3
+my_variable           int      12
+other_var             str      variables are cool
+variable_3            int      14
+variable_name         int      1
+yet_another_integer   int      -4
 </pre></div>
 </div>
 </div>
@@ -1012,6 +1069,11 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
+</pre></div>
+</div>
+</div>
 </div>
 <section id="int">
 <h3>Int<a class="headerlink" href="#int" title="Permalink to this headline">#</a></h3>
@@ -1029,7 +1091,12 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># integers can be signed</span>
 <span class="n">yet_another_integer</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">yet_another_integer</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">my_integer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
 </pre></div>
 </div>
 </div>
@@ -1049,7 +1116,12 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">another_float</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_float</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>float
 </pre></div>
 </div>
 </div>
@@ -1072,8 +1144,16 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">and_another</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">and_another</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>words, words, words
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
 </pre></div>
 </div>
 </div>
@@ -1088,11 +1168,21 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;This is a single-quoted string.&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;This is a double-quoted string.&quot;</span>
 <span class="n">my_string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;This is a double-quoted string.&#39;
 </pre></div>
 </div>
 </div>
@@ -1106,6 +1196,24 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 <li><p>use double quotes outside with apostraphe inside quotes</p></li>
 <li><p>use an escape <code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash) before character</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># double quotes match each other, so string ends before Bogus</span>
+<span class="n">failed_string</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="n">Bogus</span><span class="o">!</span><span class="s2">&quot; -- Bill &amp; Ted &quot;</span>
+<span class="n">failed_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># single quotes match on outside, leaving double quotes to print inside</span>
+<span class="n">good_string</span> <span class="o">=</span> <span class="s1">&#39; &quot;Excellent!&quot; -- Bill &amp; Ted &#39;</span>
+<span class="n">good_string</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># double quotes on outside; single quote inside</span>
@@ -1307,10 +1415,10 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
             <p class="prev-next-title">02-Tooling</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../projects/PythonParty.html" title="next page">
+    <a class='right-next' id="next-link" href="04-Operators.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Party!</p>
+        <p class="prev-next-title">Operators</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
