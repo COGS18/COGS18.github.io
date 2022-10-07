@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Party!" href="../projects/PythonParty.html" />
+    <link rel="next" title="Functions" href="05-Functions.html" />
     <link rel="prev" title="03-Variables" href="03-Variables.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -130,6 +130,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Functions.html">
+   05-Functions
   </a>
  </li>
 </ul>
@@ -536,6 +541,11 @@ title="Print to PDF"
    Code Style: Operators
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assert">
+   Assert
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -691,6 +701,11 @@ title="Print to PDF"
    Code Style: Operators
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assert">
+   Assert
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -767,7 +782,7 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">div_result</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">div_result</span> <span class="o">=</span> <span class="mf">4.</span> <span class="o">+</span> <span class="mi">2</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">div_result</span><span class="p">)</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">div_result</span><span class="p">)</span>
 </pre></div>
@@ -840,7 +855,7 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remainder of 17 divided by 7</span>
-<span class="mi">17</span> <span class="o">%</span> <span class="mi">7</span>
+<span class="mi">21</span> <span class="o">%</span> <span class="mi">7</span>
 </pre></div>
 </div>
 </div>
@@ -1294,6 +1309,43 @@ Operators and variables can also be chained together into arbitrarily complex ex
 <li><p>No spaces after leading parentheses or before trailing parentheses</p></li>
 </ul>
 </section>
+<section id="assert">
+<h2>Assert<a class="headerlink" href="#assert" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>helps debug problems with your code</p></li>
+<li><p>tests that things you are relying on to be true, actually are indeed true</p></li>
+<li><p>helps us grade your code</p></li>
+<li><p>some programmers call this a ‘sanity check’</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">bool_expression[,</span>&#160; <span class="pre">error_message]</span></code></p>
+<p>If the expression is <code class="docutils literal notranslate"><span class="pre">False</span></code> an <code class="docutils literal notranslate"><span class="pre">AssertionError</span></code> is raised. And if the optional <code class="docutils literal notranslate"><span class="pre">error_message</span></code> argument is there it prints that message.</p>
+<p>The execution of your program will stop unless you fix the situation!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># did we remember to define a variable before using it?</span>
+<span class="k">assert</span> <span class="n">i_hope_this_var_exists</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">song_playing</span> <span class="o">=</span> <span class="s1">&#39;Running Up That Hill - Kate Bush&#39;</span>
+<span class="k">assert</span> <span class="s1">&#39;Running Up That Hill&#39;</span> <span class="ow">in</span> <span class="n">song_playing</span><span class="p">,</span> <span class="s1">&#39;Run Max Run!!&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># is the variable in the expected range?</span>
+<span class="n">amp_volume</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="k">assert</span> <span class="p">(</span><span class="n">amp_volume</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">amp_volume</span><span class="o">&lt;=</span><span class="mi">10</span><span class="p">),</span> <span class="s2">&quot;This is Spinal Tap!&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1330,10 +1382,10 @@ Operators and variables can also be chained together into arbitrarily complex ex
             <p class="prev-next-title">03-Variables</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../projects/PythonParty.html" title="next page">
+    <a class='right-next' id="next-link" href="05-Functions.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Party!</p>
+        <p class="prev-next-title">Functions</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
