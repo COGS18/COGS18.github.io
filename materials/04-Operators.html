@@ -137,6 +137,11 @@ const thebe_selector_output = ".output, .cell_output"
    05-Functions
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
@@ -935,10 +940,20 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -949,10 +964,20 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -972,7 +997,7 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <td><p>True</p></td>
 <td><p>False</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>y=False</strong></p></td>
+<tr class="row-odd"><td><p><strong>x=False</strong></p></td>
 <td><p>False</p></td>
 <td><p>False</p></td>
 </tr>
@@ -990,7 +1015,7 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <td><p>True</p></td>
 <td><p>True</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>y=False</strong></p></td>
+<tr class="row-odd"><td><p><strong>x=False</strong></p></td>
 <td><p>True</p></td>
 <td><p>False</p></td>
 </tr>
@@ -1002,10 +1027,20 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1014,6 +1049,11 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># two nots cancel one another out</span>
 <span class="ow">not</span> <span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1029,6 +1069,18 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">95</span><span class="o">-</span><span class="mi">9</span><span class="n">b3f2ee967bc</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># &#39;TRUE&#39; is not a boolean</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># &#39;True&#39; is</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">TRUE</span> <span class="ow">and</span> <span class="n">TRUE</span>
+
+<span class="ne">NameError</span>: name &#39;TRUE&#39; is not defined
+</pre></div>
+</div>
+</div>
 </div>
 <section id="clicker-question-4">
 <h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">#</a></h4>
@@ -1036,6 +1088,11 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">6</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">4</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1069,10 +1126,20 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="o">==</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1083,6 +1150,11 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1090,10 +1162,20 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">12</span> <span class="o">&lt;=</span> <span class="mi">13</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">12</span> <span class="o">&lt;</span> <span class="mi">13</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1110,10 +1192,15 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## EDIT CODE HERE</span>
-<span class="n">sword_charge</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">shield_energy</span> <span class="o">=</span> <span class="o">---</span>
+<span class="n">sword_charge</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">shield_energy</span> <span class="o">=</span> <span class="mi">110</span>
 
-<span class="p">(</span><span class="n">sword_charge</span> <span class="o">---</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">shield_energy</span> <span class="o">---</span><span class="p">)</span>
+<span class="p">(</span><span class="n">sword_charge</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">shield_energy</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1141,7 +1228,17 @@ Python uses <code>is</code> and <code>is not</code> to compare identity. These o
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span> <span class="ow">is</span> <span class="n">b</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">c</span> <span class="ow">is</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="ow">is</span> <span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+False
+False
+True
 </pre></div>
 </div>
 </div>
@@ -1151,7 +1248,14 @@ Python uses <code>is</code> and <code>is not</code> to compare identity. These o
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make a True statement</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span> <span class="ow">is</span>  <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c</span> <span class="o">==</span> <span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+True
 </pre></div>
 </div>
 </div>
@@ -1160,6 +1264,11 @@ Python uses <code>is</code> and <code>is not</code> to compare identity. These o
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># testing for value equality</span>
 <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1182,10 +1291,15 @@ Python uses <code>is</code> and <code>is not</code> to compare identity. These o
 <span class="n">f</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 
 <span class="c1"># EDIT CODE HERE</span>
-<span class="n">true_variable</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">false_variable</span> <span class="o">=</span> <span class="o">---</span>
+<span class="n">true_variable</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span>  <span class="o">==</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">false_variable</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">true_variable</span><span class="p">,</span> <span class="n">false_variable</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True False
 </pre></div>
 </div>
 </div>
@@ -1209,10 +1323,20 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;L&#39;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1223,6 +1347,11 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1230,10 +1359,20 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1245,7 +1384,12 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;COGS&#39;</span> <span class="o">+</span> <span class="s1">&#39; 18&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;COGS&#39;</span> <span class="o">+</span> <span class="s1">&#39;18&#39;</span> <span class="o">+</span> <span class="s1">&#39; rocks!&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;COGS18 rocks!&#39;
 </pre></div>
 </div>
 </div>
@@ -1253,6 +1397,11 @@ Operators sometimes do different things on different types of variables. For exa
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="o">+</span> <span class="s1">&#39;b&#39;</span> <span class="o">+</span> <span class="s1">&#39;c&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;abc&#39;
 </pre></div>
 </div>
 </div>
@@ -1269,6 +1418,11 @@ Operators and variables can also be chained together into arbitrarily complex ex
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1276,10 +1430,20 @@ Operators and variables can also be chained together into arbitrarily complex ex
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="s1">&#39;COGS&#39;</span> <span class="o">+</span> <span class="s1">&#39;18&#39;</span> <span class="o">==</span> <span class="s1">&#39;COGS18&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>

@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Party!" href="../projects/PythonParty.html" />
+    <link rel="next" title="Conditionals" href="06-Conditionals.html" />
     <link rel="prev" title="Operators" href="04-Operators.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -135,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    05-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Conditionals.html">
+   06-Conditionals
   </a>
  </li>
 </ul>
@@ -695,7 +700,7 @@ title="Print to PDF"
 <section id="q-a">
 <h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>I was confused as to why “-17.5” is a string and not a float variable. I don’t understand why this type of variable doesn’t have a mathematical value, but other numbers do. <br> **Great q! So “-17.5” is text, not a number. Of course the computer stores it as a set of numbers in its memory, but its stored as numbers in Unicode… which is like a much more complex version of the Cesear cypher you may have learned as a kid, where you write 1 for A, 2 for B, etc. But whatever the numerical value of “-17.5” is it is certainly NOT -17.5.  So doing math operations on strings (text) makes no sense.  Remember we store numbers as numbers (int or float) to do math… but if we are storing text that includes numbers those must be turned into int or float before you do any math on them **</p></li>
+<li><p>I was confused as to why “-17.5” is a string and not a float variable. I don’t understand why this type of variable doesn’t have a mathematical value, but other numbers do. <br> <strong>Great q! So “-17.5” is text, not a number. Of course the computer stores it as a set of numbers in its memory, but its stored as numbers in Unicode… which is like a much more complex version of the Cesear cypher you may have learned as a kid, where you write 1 for A, 2 for B, etc. But whatever the numerical value of “-17.5” is it is certainly NOT -17.5.  So doing math operations on strings (text) makes no sense.  Remember we store numbers as numbers (int or float) to do math… but if we are storing text that includes numbers those must be turned into int or float before you do any math on them</strong></p></li>
 <li><p>I’m still confused about identity operators, and  how two variables that are equal does not imply that they are identical.<br> <strong>This is hard to understand for newbies, don’t worry. Identity is about memory storage.  If a=b then imagine leaving a forwarding address when you move to a new city.  Both a and b are pointing to the same location,  the same postal address.  Someone sends mail to a, and it arrives at b. The operator <code class="docutils literal notranslate"><span class="pre">==</span></code> asks if the two houses both have a Kevin Smith living there.  But there is more than one Kevin Smith in the world. The operator <code class="docutils literal notranslate"><span class="pre">is</span></code> asks if sending mail to either address will reach the <em>same</em> Kevin Smith.</strong></p></li>
 </ul>
 </section>
@@ -737,8 +742,14 @@ Modular programming is an approach to programming that focuses on building progr
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you&#39;ve seen functions before</span>
 <span class="c1"># here we use the type() function</span>
+<span class="c1"># y= f(x)</span>
 <span class="n">my_var</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
 </pre></div>
 </div>
 </div>
@@ -747,7 +758,12 @@ Modular programming is an approach to programming that focuses on building progr
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the function print() doesn&#39;t depend on type()</span>
 <span class="c1"># but they can both be used on the same variable</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
 </pre></div>
 </div>
 </div>
@@ -766,9 +782,19 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 
     <span class="c1"># do some operation</span>
     <span class="n">doubled</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="n">num</span>
-    
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">36</span>
     <span class="c1"># return output from function</span>
-    <span class="k">return</span> <span class="n">doubled</span>    
+    <span class="k">return</span> <span class="n">doubled</span>  
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hi there!&#39;</span><span class="p">)</span>
+
+
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hi there!
 </pre></div>
 </div>
 </div>
@@ -777,7 +803,12 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># excecute a function by calling the function&#39;s name</span>
 <span class="c1"># and defining the parameter within the parentheses</span>
-<span class="n">double_value</span><span class="p">(</span><span class="n">num</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> 
+<span class="n">double_value</span><span class="p">(</span><span class="n">num</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>34
 </pre></div>
 </div>
 </div>
@@ -788,6 +819,11 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <span class="c1"># Here the parameter `num` is defined without </span>
 <span class="c1"># explicitly specifying the name of the parameter</span>
 <span class="n">double_value</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
 </pre></div>
 </div>
 </div>
@@ -811,7 +847,12 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add_two_numbers</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add_two_numbers</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">44</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>49
 </pre></div>
 </div>
 </div>
@@ -822,6 +863,11 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <span class="c1"># that our function is working how we think it should</span>
 <span class="n">output</span> <span class="o">=</span> <span class="n">add_two_numbers</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -869,10 +915,33 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printhi</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hi&#39;</span><span class="p">)</span>
+    <span class="c1"># note, no return, </span>
+    <span class="c1"># we just end the function block by no longer indenting</span>
+    
+<span class="c1"># back outside the function definition now</span>
+<span class="n">printhi</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hi
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ans_1</span> <span class="o">=</span> <span class="n">remainder</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">ans_2</span> <span class="o">=</span> <span class="n">remainder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">ans_1</span> <span class="o">+</span> <span class="n">ans_2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
 </pre></div>
 </div>
 </div>
@@ -918,6 +987,11 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the function, using default value</span>
 <span class="n">exponentiate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
 </pre></div>
 </div>
 </div>
@@ -1160,10 +1234,10 @@ Arguments to a function can be indicated by either position or keyword.
             <p class="prev-next-title">Operators</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../projects/PythonParty.html" title="next page">
+    <a class='right-next' id="next-link" href="06-Conditionals.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Party!</p>
+        <p class="prev-next-title">Conditionals</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
