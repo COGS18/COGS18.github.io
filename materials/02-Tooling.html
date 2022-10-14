@@ -1,11 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>02-Tooling &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,6 +33,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -56,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="03-Variables" href="03-Variables.html" />
     <link rel="prev" title="Introduction to Python" href="01-Introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -106,7 +106,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -142,8 +142,13 @@ const thebe_selector_output = ".output, .cell_output"
    06-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Projects
  </span>
@@ -815,10 +820,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tooling">
-<h1>02-Tooling<a class="headerlink" href="#tooling" title="Permalink to this headline">#</a></h1>
-<section id="announcements">
-<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tooling">
+<h1>02-Tooling<a class="headerlink" href="#tooling" title="Permalink to this heading">#</a></h1>
+<div class="section" id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>CL1 due 11:59PM Wednesday 28 September 2022</p></li>
 <li><p>Coding labs run Wednesday in CSB 115</p>
@@ -828,16 +833,16 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</section>
-<section id="reminders">
-<h2>Reminders<a class="headerlink" href="#reminders" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="reminders">
+<h2>Reminders<a class="headerlink" href="#reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Please fill out the pre-course survey! <a class="reference external" href="https://forms.gle/1DqufumAF97BtnpG7">https://forms.gle/1DqufumAF97BtnpG7</a></p></li>
 <li><p>Please fill out a <strong>daily</strong> lecture survey every day after the lecture <a class="reference external" href="https://forms.gle/HshJoMuvzjdkwUA37">https://forms.gle/HshJoMuvzjdkwUA37</a></p></li>
 </ul>
-</section>
-<section id="q-a">
-<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="q-a">
+<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>I was on the zoom lecture so I was wondering if they will still be happening? Or if it’s mainly in person/podcasted format now.  <br><strong>I had a technical issue. Hopefully it’s fixed now and we will have a proper hybrid class</strong></p></li>
 <li><p>I am curious about the final project. I wonder if I will be able to actually create something at the end of the class! I have a bunch of ideas and cool concepts that are possible but, I do not know if it is possible for me to complete. I look forward to discovering if I can make a cool app!_ <br><strong>More project info covered in this lecture. Also you can check out the new <a class="reference external" href="https://cogs18.github.io/intro.html">course website</a></strong></p></li>
@@ -847,9 +852,9 @@ title="Print to PDF"
 <li><p>How does Anaconda fit into what we learned about Jupyter notebooks?  <br> <strong>Anaconda is an all in one download of a bunch of tools (e.g. Python, Jupyter, various packages) that will pretty much replicate what Datahub has on your own computer</strong></p></li>
 <li><p>Are coding labs meant to be completed during the scheduled lab time? Or is that time set for us to ask questions about lab? <br> <strong>Yes to both! The TA will go through some things and then open it up for questions. In the meantime you can work on your own.</strong></p></li>
 </ul>
-</section>
-<section id="tools">
-<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Python</p></li>
 <li><p>datahub</p></li>
@@ -858,8 +863,8 @@ title="Print to PDF"
 <li><p>Academic Integrity</p></li>
 </ul>
 <p>This notebook will guide through the tools you will need for class materials and assignments, and how to get them.</p>
-<section id="clicker-question-1">
-<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-1">
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p><strong>How excited are you for COGS 18?</strong></p>
 <ul class="simple">
 <li><p>A. Super excited!</p></li>
@@ -867,16 +872,16 @@ title="Print to PDF"
 <li><p>C. Couldn’t be more excited!</p></li>
 <li><p>D. I love 8AM classes!</p></li>
 </ul>
-</section>
-<section id="prerequisites">
-<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h3>
 <p>This course and associated materials do not presume any prior knowledge of Python, or programming in general.</p>
 <p>To work with the course materials, you will need make sure you have access to the tools tools described here on datahub.</p>
 <p>It will be helpful for the final project if they are also installed on the computer you will be using.</p>
 <p>None of the materials are computationally heavy.</p>
-</section>
-<section id="what-do-you-need">
-<h3>What do you need?<a class="headerlink" href="#what-do-you-need" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="what-do-you-need">
+<h3>What do you need?<a class="headerlink" href="#what-do-you-need" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Required</strong>: Access to datahub</p>
 <ul>
@@ -890,10 +895,10 @@ Python is a programming language, whose development is led by the Python Softwar
 </div>
 <div class="alert alert-info">
 The official Python organization website is available <a href="https://www.python.org" class="alert-link">here</a>.
-</div></section>
-</section>
-<section id="python">
-<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h2>
+</div></div>
+</div>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Versions: there are different versions of Python.</p>
 <ul>
@@ -914,9 +919,9 @@ They run in a web browser, and connect to a kernel to be able to execute code.
 <div class="alert alert-info">
 The official Jupyter website is available 
 <a href="http://jupyter.org" class="alert-link">here</a>.
-</div></section>
-<section id="jupyterhub">
-<h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="Permalink to this headline">#</a></h2>
+</div></div>
+<div class="section" id="jupyterhub">
+<h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 JupyterHub allows Jupyter notebooks to be shared across multiple users.
 </div>
@@ -924,26 +929,26 @@ JupyterHub allows Jupyter notebooks to be shared across multiple users.
 The official JupyterHub website is available 
 <a href="https://jupyterhub.readthedocs.io/en/stable/" class="alert-link">here</a>.
 </div>
-<section id="datahub">
-<h3>Datahub<a class="headerlink" href="#datahub" title="Permalink to this headline">#</a></h3>
+<div class="section" id="datahub">
+<h3>Datahub<a class="headerlink" href="#datahub" title="Permalink to this heading">#</a></h3>
 <p>UCSD hosts its version of JupyterHub and calls it datahub. This is what you’ll be using in class.</p>
 <p>It is available here: <a class="reference external" href="http://datahub.ucsd.edu">http://datahub.ucsd.edu</a></p>
-<center><img src="img/datahub.png" width="800px"></center></section>
-<section id="when-to-use-datahub">
-<h3>When to use Datahub?<a class="headerlink" href="#when-to-use-datahub" title="Permalink to this headline">#</a></h3>
+<center><img src="img/datahub.png" width="800px"></center></div>
+<div class="section" id="when-to-use-datahub">
+<h3>When to use Datahub?<a class="headerlink" href="#when-to-use-datahub" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Course Lecture Slides</p></li>
 <li><p>CodingLabs</p></li>
 <li><p>Assignments</p></li>
 <li><p>Final Project/Exam</p></li>
 </ul>
-<section id="lecture-slides">
-<h4>Lecture Slides:<a class="headerlink" href="#lecture-slides" title="Permalink to this headline">#</a></h4>
+<div class="section" id="lecture-slides">
+<h4>Lecture Slides:<a class="headerlink" href="#lecture-slides" title="Permalink to this heading">#</a></h4>
 <p>Once you’ve logged into datahub, click on the the following link: <a class="reference external" href="https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&amp;urlpath=tree%2FLectureNotes-COGS18%2F&amp;branch=main">https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/LectureNotes-COGS18&amp;urlpath=tree/LectureNotes-COGS18/&amp;branch=main</a></p>
 <p>(This link is also on the Canvas home page.)</p>
-</section>
-<section id="codinglabs-assignments">
-<h4>CodingLabs &amp; Assignments:<a class="headerlink" href="#codinglabs-assignments" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="codinglabs-assignments">
+<h4>CodingLabs &amp; Assignments:<a class="headerlink" href="#codinglabs-assignments" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Fetch &amp; complete on datahub</p></li>
 <li><p>do not change file names</p></li>
@@ -963,11 +968,11 @@ The official JupyterHub website is available
 </ul>
 </li>
 </ul>
-</section>
-</section>
-</section>
-<section id="jupyter-notebooks">
-<h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="jupyter-notebooks">
+<h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Markdown</p></li>
 <li><p>code cells</p></li>
@@ -986,26 +991,26 @@ For more useful information, check out Jupyter Notebooks
 <a href="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/" class="alert-link">tips & tricks</a>
 , and more information on how 
 <a href="http://jupyter.readthedocs.io/en/latest/architecture/how_jupyter_ipython_work.html" class="alert-link">notebooks work</a>.
-</div><section id="menu-options-shortcuts">
-<h3>Menu Options &amp; Shortcuts<a class="headerlink" href="#menu-options-shortcuts" title="Permalink to this headline">#</a></h3>
+</div><div class="section" id="menu-options-shortcuts">
+<h3>Menu Options &amp; Shortcuts<a class="headerlink" href="#menu-options-shortcuts" title="Permalink to this heading">#</a></h3>
 <p>To get a quick tour of the Jupyter user-interface, click on the ‘Help’ menu, then click ‘User Interface Tour’.</p>
 <p>There are also a large number of useful keyboard shortcuts. Click on the ‘Help’ menu, and then ‘Keyboard Shortcuts’ to see a list.</p>
-</section>
-<section id="cells">
-<h3>Cells<a class="headerlink" href="#cells" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="cells">
+<h3>Cells<a class="headerlink" href="#cells" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
     The main organizational structure of the notebook are <b>cells</b>.
 </div><p>Cells are an independent ‘unit’. When you click into a cell, you can ‘run’ it by clicking Shift + Enter, or by pressing the play (Run) button above.</p>
 <p>Cells come in different types for writing different things - mainly, text or code.</p>
-<section id="markdown-cells">
-<h4>Markdown Cells<a class="headerlink" href="#markdown-cells" title="Permalink to this headline">#</a></h4>
+<div class="section" id="markdown-cells">
+<h4>Markdown Cells<a class="headerlink" href="#markdown-cells" title="Permalink to this heading">#</a></h4>
 <p>Cells, can be markdown (text), like this one.</p>
 <p>A brief note about Markdown. It’s a way to specify all formatting within the text itself.</p>
 <p>For example, italicized text can be specified with an <em>underscore</em> or <em>single asterisks</em>.</p>
 <p>Bold text requires <strong>two underccores</strong> or <strong>two asterisks</strong>.</p>
-</section>
-<section id="clicker-question-2">
-<h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="clicker-question-2">
+<h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h4>
 <p><strong>What does three underscores around text accomplish?</strong></p>
 <ul class="simple">
 <li><p>A) bold</p></li>
@@ -1015,18 +1020,18 @@ For more useful information, check out Jupyter Notebooks
 <li><p>E) I’m lost</p></li>
 </ul>
 <p>you can write/edit your markdown text here to determine the answer to the question</p>
-</section>
-<section id="markdown-headers">
-<h4>Markdown Headers<a class="headerlink" href="#markdown-headers" title="Permalink to this headline">#</a></h4>
-</section>
-</section>
-</section>
-<section id="headers-are-specified-with-a-pound-sign">
-<h2>Headers are specified with a pound sign<a class="headerlink" href="#headers-are-specified-with-a-pound-sign" title="Permalink to this headline">#</a></h2>
-<section id="the-more-pound-signs-the-smaller-the-header">
-<h3>The more pound signs, the smaller the header<a class="headerlink" href="#the-more-pound-signs-the-smaller-the-header" title="Permalink to this headline">#</a></h3>
-<section id="but-it-s-still-larger">
-<h4>But it’s still larger<a class="headerlink" href="#but-it-s-still-larger" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="markdown-headers">
+<h4>Markdown Headers<a class="headerlink" href="#markdown-headers" title="Permalink to this heading">#</a></h4>
+</div>
+</div>
+</div>
+<div class="section" id="headers-are-specified-with-a-pound-sign">
+<h2>Headers are specified with a pound sign<a class="headerlink" href="#headers-are-specified-with-a-pound-sign" title="Permalink to this heading">#</a></h2>
+<div class="section" id="the-more-pound-signs-the-smaller-the-header">
+<h3>The more pound signs, the smaller the header<a class="headerlink" href="#the-more-pound-signs-the-smaller-the-header" title="Permalink to this heading">#</a></h3>
+<div class="section" id="but-it-s-still-larger">
+<h4>But it’s still larger<a class="headerlink" href="#but-it-s-still-larger" title="Permalink to this heading">#</a></h4>
 <p>than just plain text.</p>
 <p>Lists are also possible:</p>
 <ul class="simple">
@@ -1039,9 +1044,9 @@ For more useful information, check out Jupyter Notebooks
 <li><p>item 2</p></li>
 <li><p>item 3</p></li>
 </ol>
-</section>
-<section id="clicker-question-3">
-<h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="clicker-question-3">
+<h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this heading">#</a></h4>
 <p><strong>What would happen if I specified a numbered list but put the same number before each list item?</strong></p>
 <ul class="simple">
 <li><p>A) the list would have the same number before each item</p></li>
@@ -1056,9 +1061,9 @@ For more useful information, check out Jupyter Notebooks
 <li><p>list item</p></li>
 <li><p>list item</p></li>
 </ol>
-</section>
-<section id="code-cells">
-<h4>Code Cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="code-cells">
+<h4>Code Cells<a class="headerlink" href="#code-cells" title="Permalink to this heading">#</a></h4>
 <p>Whenever you’re writing code, you’ll want to be sure the cell is set to be a code cell</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1098,9 +1103,9 @@ For more useful information, check out Jupyter Notebooks
 </div>
 </div>
 </div>
-</section>
-<section id="running-cells">
-<h4>Running Cells<a class="headerlink" href="#running-cells" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="running-cells">
+<h4>Running Cells<a class="headerlink" href="#running-cells" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>The numbers in the square brackets to the left of a cell show which cells have been run, and in what order.</p>
 <ul>
@@ -1109,10 +1114,10 @@ For more useful information, check out Jupyter Notebooks
 </ul>
 </li>
 </ul>
-</section>
-</section>
-<section id="coding-time">
-<h3>Coding time<a class="headerlink" href="#coding-time" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="coding-time">
+<h3>Coding time<a class="headerlink" href="#coding-time" title="Permalink to this heading">#</a></h3>
 <p>Write code that outputs the value ‘6’</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1128,18 +1133,18 @@ For more useful information, check out Jupyter Notebooks
 </div>
 </div>
 </div>
-<section id="clicker-question-4">
-<h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">#</a></h4>
+<div class="section" id="clicker-question-4">
+<h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this heading">#</a></h4>
 <p><strong>Which of the following best describes you?</strong></p>
 <ul class="simple">
 <li><p>A) I completed the task.</p></li>
 <li><p>B) I tried but wasn’t able to complete the task.</p></li>
 <li><p>C) I am not sure where to start.</p></li>
 </ul>
-</section>
-</section>
-<section id="accessing-documentation">
-<h3>Accessing Documentation<a class="headerlink" href="#accessing-documentation" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="accessing-documentation">
+<h3>Accessing Documentation<a class="headerlink" href="#accessing-documentation" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 Jupyter has useful shortcuts. Add a single <code>?</code> after a function or class get a window with the documentation, or a double <code>??</code> to pull up the source code. 
 </div><div class="cell docutils container">
@@ -1150,9 +1155,9 @@ type<span class="o">?</span>
 </div>
 </div>
 </div>
-</section>
-<section id="autocomplete">
-<h3>Autocomplete<a class="headerlink" href="#autocomplete" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="autocomplete">
+<h3>Autocomplete<a class="headerlink" href="#autocomplete" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 Jupyter also has 
 <a href="https://en.wikipedia.org/wiki/Command-line_completion" class="alert-link">tab complete</a>
@@ -1184,9 +1189,9 @@ capacities, which can autocomplete what you are typing, and/or be used to explor
 </div>
 </div>
 </div>
-</section>
-<section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h3>
 <p>You only need access to datahub for this course, but for working on your projects and for downloading and opening the notebooks used in class, you may want to download anaconda onto your computer, which comes complete with conda, and Jupyter notebooks.</p>
 <center><img src="img/anaconda.png" width="450px"></center><div class="alert alert-success">
 Anaconda is an open-source distribution of Python, focused on scientific computing in Python. 
@@ -1194,10 +1199,10 @@ Anaconda is an open-source distribution of Python, focused on scientific computi
 <div class="alert alert-info">
 The anaconda website is 
 <a href="https://www.anaconda.com" class="alert-link">here</a>. 
-</div></section>
-</section>
-<section id="the-anaconda-ecosystem">
-<h2>The Anaconda Ecosystem<a class="headerlink" href="#the-anaconda-ecosystem" title="Permalink to this headline">#</a></h2>
+</div></div>
+</div>
+<div class="section" id="the-anaconda-ecosystem">
+<h2>The Anaconda Ecosystem<a class="headerlink" href="#the-anaconda-ecosystem" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Anaconda itself is a distribution - that is, a copy of the Python standard library, included a curated collection of external packages.</p></li>
 <li><p>Conda is a package manager, allowing you to download, install, and manage other packages.</p></li>
@@ -1205,8 +1210,8 @@ The anaconda website is
 <div class="alert alert-info">
 Download anaconda from
 <a href="https://www.anaconda.com/download/" class="alert-link">here</a>.
-</div><section id="notes">
-<h3>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">#</a></h3>
+</div><div class="section" id="notes">
+<h3>Notes<a class="headerlink" href="#notes" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>If you are on Mac, you have a native installation of Python. This native installation of Python may be older, will not include the extra packages that you will need for this class, and is best left untouched.</p>
 <ul>
@@ -1227,17 +1232,17 @@ Download anaconda from
 </div>
 </div>
 </div>
-</section>
-<section id="web-browser">
-<h3>Web Browser<a class="headerlink" href="#web-browser" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="web-browser">
+<h3>Web Browser<a class="headerlink" href="#web-browser" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 Jupyter notebooks display in a web browser. They are not hosted on the web, everything is happening locally. 
 </div><p>If you click on the url in the browser, you will notice it says ‘localhost’. This means it is connected to something locally, on your computer.</p>
 <p>That local connection is to the ‘kernel’.</p>
-</section>
-</section>
-<section id="academic-integrity">
-<h2>Academic Integrity<a class="headerlink" href="#academic-integrity" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="academic-integrity">
+<h2>Academic Integrity<a class="headerlink" href="#academic-integrity" title="Permalink to this heading">#</a></h2>
 <p>We’ve had some issues in the past, so we’re trying to be incredibly explicit this quarter so that we’re all on the same page. (And, because this differs from some other courses.)</p>
 <p>Rule 1: <strong>you must have written, understand, and be able to explain any code you turn in as your own.</strong></p>
 <center><img src="img/academic_integrity.png" width="900px"></center>
@@ -1265,8 +1270,8 @@ Jupyter notebooks display in a web browser. They are not hosted on the web, ever
 <p>You <em>can</em> search the Internet for help on concepts.</p>
 <p>You are not allowed to ask anyone specific questions from the Exam or post the questions anywhere.</p>
 <p>Part of your first Coding Lab will help to make this all as clear as possible!</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

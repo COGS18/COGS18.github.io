@@ -1,11 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>03-Variables &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,6 +33,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -50,15 +50,15 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Operators" href="04-Operators.html" />
     <link rel="prev" title="02-Tooling" href="02-Tooling.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -108,7 +108,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -144,8 +144,13 @@ const thebe_selector_output = ".output, .cell_output"
    06-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Projects
  </span>
@@ -759,31 +764,31 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="variables">
-<h1>03-Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="variables">
+<h1>03-Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Definition</p></li>
 <li><p>Namespace</p></li>
 <li><p>Code Style</p></li>
 <li><p>Variable types</p></li>
 </ul>
-<section id="announcments">
-<h2>Announcments<a class="headerlink" href="#announcments" title="Permalink to this headline">#</a></h2>
+<div class="section" id="announcments">
+<h2>Announcments<a class="headerlink" href="#announcments" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Congrats on finishing your first programming assignment!</p></li>
 <li><p>Expect grades &lt; 1 week from today</p></li>
 <li><p>At some point today you will be able to fetch CL2 on datahub’s assignments tab</p></li>
 </ul>
-</section>
-<section id="reminders">
-<h2>Reminders<a class="headerlink" href="#reminders" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="reminders">
+<h2>Reminders<a class="headerlink" href="#reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Last day to fill out the pre-course survey! <a class="reference external" href="https://forms.gle/1DqufumAF97BtnpG7">https://forms.gle/1DqufumAF97BtnpG7</a></p></li>
 <li><p>Please fill out a daily lecture survey every day after the lecture (it nets you something like 0.1% EC every lecture day you do so) <a class="reference external" href="https://forms.gle/HshJoMuvzjdkwUA37">https://forms.gle/HshJoMuvzjdkwUA37</a></p></li>
 </ul>
-</section>
-<section id="q-a">
-<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="q-a">
+<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Are the CL labs graded on completion or accuracy? <br> <strong>Completion</strong></p></li>
 <li><p>When should we submit our daily participation surveys by? <br> <strong>Before the end of the week… sometime on Sunday or Monday I’ll be resetting the form so its ready for the next week’s lectures</strong></p></li>
@@ -791,16 +796,16 @@ title="Print to PDF"
 <li><p>why does mac have a native installation of python? <br> <strong>Why? Probably because some part of MacOS needed an old Python. BUT NEVER use that native python if you can avoid it. Its very old, which makes for problems. Installing Anaconda is a great way to replace that old Python with a modern one. BTW, native Python is already gone from newer MacOS (v12.3 and higher), so they clearly replaced that functionality inside the OS with some other progamming/scripting langauge</strong></p></li>
 <li><p>Do you have to go to section, if you finish Coding Lab before section? <br> <strong>No. Section is to help you, and if you don’t need help don’t worry about it.</strong></p></li>
 </ul>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="vocab">
-<h1>Vocab<a class="headerlink" href="#vocab" title="Permalink to this headline">#</a></h1>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="vocab">
+<h1>Vocab<a class="headerlink" href="#vocab" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><strong>Variable</strong>: The name given to something in programming that stores some information</p></li>
 <li><p><strong>Definition</strong>/<strong>Assignment</strong>/<strong>Declaration</strong>: To create a variable using the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
 </ul>
-<section id="programming-with-python">
-<h2>Programming With Python<a class="headerlink" href="#programming-with-python" title="Permalink to this headline">#</a></h2>
+<div class="section" id="programming-with-python">
+<h2>Programming With Python<a class="headerlink" href="#programming-with-python" title="Permalink to this heading">#</a></h2>
 <p>Programming: a way to ask computer to store values (variables), and do things with them (operations).`</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -813,8 +818,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section id="defining-variables">
-<h3>Defining Variables<a class="headerlink" href="#defining-variables" title="Permalink to this headline">#</a></h3>
+<div class="section" id="defining-variables">
+<h3>Defining Variables<a class="headerlink" href="#defining-variables" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 In programming, variables are things that store values. Variables are defined with <code>name = value</code>.
 </div><div class="cell docutils container">
@@ -840,18 +845,18 @@ In programming, variables are things that store values. Variables are defined wi
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="code-variables-math-variables">
-<h2>Code Variables != Math Variables<a class="headerlink" href="#code-variables-math-variables" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="code-variables-math-variables">
+<h2>Code Variables != Math Variables<a class="headerlink" href="#code-variables-math-variables" title="Permalink to this heading">#</a></h2>
 <p>In mathematics: <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to equality (as a statement of truth).</p>
 <p>In coding: <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to assignment.</p>
 <p>Math: What is x?</p>
 <p><span class="math notranslate nohighlight">\(y = 10x + 2\)</span></p>
 <p>Code: What is x?</p>
 <p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">1</span></code></p>
-<section id="clicker-question-1">
-<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-1">
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p>After executing the following code, what will be the value of <code class="docutils literal notranslate"><span class="pre">my_var</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -875,9 +880,9 @@ In programming, variables are things that store values. Variables are defined wi
 <li><p>C) “my_var + 1”</p></li>
 <li><p>D) This code will fail</p></li>
 </ul>
-</section>
-<section id="clicker-question-2">
-<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="clicker-question-2">
+<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h3>
 <p>After executing the following code, what will be the value of <code class="docutils literal notranslate"><span class="pre">diff_var</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -906,9 +911,9 @@ In programming, variables are things that store values. Variables are defined wi
 <li><p>C) “my_variable - my_var”</p></li>
 <li><p>D) This code will fail</p></li>
 </ul>
-</section>
-<section id="assignment-notes">
-<h3>Assignment Notes<a class="headerlink" href="#assignment-notes" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="assignment-notes">
+<h3>Assignment Notes<a class="headerlink" href="#assignment-notes" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>In programming <code class="docutils literal notranslate"><span class="pre">=</span></code> means assignment</p></li>
 <li><p>There can be more than one assignment in a single line</p></li>
@@ -918,10 +923,10 @@ In programming, variables are things that store values. Variables are defined wi
 </ul>
 </li>
 </ul>
-</section>
-</section>
-<section id="declaring-variables-cheat-sheet">
-<h2>Declaring Variables Cheat Sheet<a class="headerlink" href="#declaring-variables-cheat-sheet" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="declaring-variables-cheat-sheet">
+<h2>Declaring Variables Cheat Sheet<a class="headerlink" href="#declaring-variables-cheat-sheet" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Names are always on the left of the <code class="docutils literal notranslate"><span class="pre">=</span></code>, values are always on the right</p></li>
 <li><p>Names are case sensitive</p></li>
@@ -937,9 +942,9 @@ In programming, variables are things that store values. Variables are defined wi
 </ul>
 </li>
 </ul>
-</section>
-<section id="reserved-words">
-<h2>Reserved Words<a class="headerlink" href="#reserved-words" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="reserved-words">
+<h2>Reserved Words<a class="headerlink" href="#reserved-words" title="Permalink to this heading">#</a></h2>
 <p>There are 33 words that are not allowed to be used for variable assignment in Python 3.6.</p>
 <table type="text/css">
   <tr>
@@ -1001,16 +1006,16 @@ In programming, variables are things that store values. Variables are defined wi
 </div>
 </div>
 </div>
-</section>
-<section id="kernels">
-<h2>Kernels<a class="headerlink" href="#kernels" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="kernels">
+<h2>Kernels<a class="headerlink" href="#kernels" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 The <b>kernel</b> is the thing that executes your code. It is what connects the notebook (as you see it) with the part of your computer that runs code. 
 </div><p>Your kernel also stores your <strong>namespace</strong> - all the variables and code that you have declared (executed).</p>
 <p>It can be useful to clear and re-launch the kernel. You can do this from the ‘kernel’ drop down menu, at the top, optionally also clearing all ouputs. Note that this will erase any variables that are stored in memory.</p>
-</section>
-<section id="namespace">
-<h2>Namespace<a class="headerlink" href="#namespace" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="namespace">
+<h2>Namespace<a class="headerlink" href="#namespace" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 The <b>namespace</b> is the 'place' where all your currently defined code is declared - all the things you have stored in active memory. 
 </div><div class="cell docutils container">
@@ -1049,9 +1054,9 @@ yet_another_integer   int      -4
 </div>
 </div>
 </div>
-</section>
-<section id="code-style">
-<h2>Code Style<a class="headerlink" href="#code-style" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="code-style">
+<h2>Code Style<a class="headerlink" href="#code-style" title="Permalink to this heading">#</a></h2>
 <p>Code style considerations <em>do NOT affect the functionality</em> of your code, but <em>DO affect readability</em>.</p>
 <p>Get in good habits now!</p>
 <p>For variable assignment:</p>
@@ -1064,9 +1069,9 @@ yet_another_integer   int      -4
 <li><p>Ideal: <code class="docutils literal notranslate"><span class="pre">my_variable</span> <span class="pre">=</span> <span class="pre">6</span></code></p></li>
 <li><p>Avoid: <code class="docutils literal notranslate"><span class="pre">MyVariable=6</span></code></p></li>
 </ul>
-</section>
-<section id="variable-types">
-<h2>Variable Types<a class="headerlink" href="#variable-types" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="variable-types">
+<h2>Variable Types<a class="headerlink" href="#variable-types" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Every variable has a <b>type</b>, which refers to the kind of variable that it is, and how the computer stores that data.
 </div><div class="cell docutils container">
@@ -1085,8 +1090,8 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </div>
 </div>
 </div>
-<section id="int">
-<h3>Int<a class="headerlink" href="#int" title="Permalink to this headline">#</a></h3>
+<div class="section" id="int">
+<h3>Int<a class="headerlink" href="#int" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 <b>Integers</b> store whole numbers.
 </div><div class="cell docutils container">
@@ -1111,9 +1116,9 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </div>
 </div>
 </div>
-</section>
-<section id="float">
-<h3>Float<a class="headerlink" href="#float" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="float">
+<h3>Float<a class="headerlink" href="#float" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 <b>Floats</b> store signed, decimal-point numbers.
 </div><div class="cell docutils container">
@@ -1136,9 +1141,9 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </div>
 </div>
 </div>
-</section>
-<section id="string">
-<h3>String<a class="headerlink" href="#string" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="string">
+<h3>String<a class="headerlink" href="#string" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 <b>Strings</b> store characters, as text. 
 </div><div class="cell docutils container">
@@ -1168,8 +1173,8 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </div>
 </div>
 </div>
-<section id="quotation-marks">
-<h4>Quotation Marks<a class="headerlink" href="#quotation-marks" title="Permalink to this headline">#</a></h4>
+<div class="section" id="quotation-marks">
+<h4>Quotation Marks<a class="headerlink" href="#quotation-marks" title="Permalink to this heading">#</a></h4>
 <p>About those quotation marks…</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1199,9 +1204,9 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </div>
 <p>Note that Python will put single quotes around it, even if you specify double quotes.</p>
 <p>A general principle is to pick something and be consistent. In this course, I’ll do my best to only use single quotes.</p>
-</section>
-<section id="aside-what-if-you-want-to-print-a-quotation-mark">
-<h4>Aside: What if you want to print a quotation mark?<a class="headerlink" href="#aside-what-if-you-want-to-print-a-quotation-mark" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="aside-what-if-you-want-to-print-a-quotation-mark">
+<h4>Aside: What if you want to print a quotation mark?<a class="headerlink" href="#aside-what-if-you-want-to-print-a-quotation-mark" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>use double quotes outside with apostraphe inside quotes</p></li>
 <li><p>use an escape <code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash) before character</p></li>
@@ -1214,12 +1219,25 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-83-c992db884d66&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="n">failed_string</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="n">Bogus</span><span class="o">!</span><span class="s2">&quot; -- Bill &amp; Ted &quot;</span>
+                       <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># single quotes match on outside, leaving double quotes to print inside</span>
 <span class="n">good_string</span> <span class="o">=</span> <span class="s1">&#39; &quot;Excellent!&quot; -- Bill &amp; Ted &#39;</span>
 <span class="n">good_string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39; &quot;Excellent!&quot; -- Bill &amp; Ted &#39;
 </pre></div>
 </div>
 </div>
@@ -1232,12 +1250,22 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;I wasn&#39;t going to remember the quote.&quot;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># backslash to &quot;escape&quot; quotation mark</span>
 <span class="n">string_quote</span> <span class="o">=</span> <span class="s2">&quot;And she said, </span><span class="se">\&quot;</span><span class="s2">Please teach me Python!</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
 <span class="n">string_quote</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;And she said, &quot;Please teach me Python!&quot;&#39;
 </pre></div>
 </div>
 </div>
@@ -1250,18 +1278,29 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;The 🤠 rides a 大 🐎! 😂&#39;
+</pre></div>
 </div>
-</section>
-</section>
-</section>
-<section id="boolean">
-<h2>Boolean<a class="headerlink" href="#boolean" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="boolean">
+<h2>Boolean<a class="headerlink" href="#boolean" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 <b>Booleans</b> store <code>True</code> or <code>False</code>. 
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">another_bool</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">my_bool</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1272,15 +1311,21 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bool
+</pre></div>
 </div>
-</section>
-<section id="none">
-<h2>None<a class="headerlink" href="#none" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="none">
+<h2>None<a class="headerlink" href="#none" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 <code>None</code> is a special type that stores <code>None</code>, used to denote a null or empty value.
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">the_concept_of_nothing</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">the_concept_of_nothing</span>
 </pre></div>
 </div>
 </div>
@@ -1291,9 +1336,14 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NoneType
+</pre></div>
 </div>
-<section id="clicker-question-3">
-<h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="clicker-question-3">
+<h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this heading">#</a></h3>
 <p>After executing the following code, what will the type of <code class="docutils literal notranslate"><span class="pre">var_a</span></code> be?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1309,9 +1359,9 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 <li><p>D) Boolean</p></li>
 <li><p>E) None</p></li>
 </ul>
-</section>
-<section id="clicker-question-4">
-<h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="clicker-question-4">
+<h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this heading">#</a></h3>
 <p>After executing the following code, what will the type of <code class="docutils literal notranslate"><span class="pre">var_b</span></code> be?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1327,9 +1377,9 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 <li><p>D) Boolean</p></li>
 <li><p>E) None</p></li>
 </ul>
-</section>
-<section id="clicker-question-5">
-<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="clicker-question-5">
+<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this heading">#</a></h3>
 <p>After executing the following code, what will the type of the variable <code class="docutils literal notranslate"><span class="pre">m</span></code> be?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1348,14 +1398,19 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 <li><p>D) Boolean</p></li>
 <li><p>E) None</p></li>
 </ul>
-</section>
-<section id="mutable-vs-immutable">
-<h3>Mutable vs Immutable<a class="headerlink" href="#mutable-vs-immutable" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="mutable-vs-immutable">
+<h3>Mutable vs Immutable<a class="headerlink" href="#mutable-vs-immutable" title="Permalink to this heading">#</a></h3>
 <p>The variable types we’ve talked about today are all <strong>immutable</strong>. This means they cannot be altered after they’re created.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">immutable_string</span> <span class="o">=</span> <span class="s1">&#39;COGS18 is the best!&#39;</span>
 <span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1&#39;
 </pre></div>
 </div>
 </div>
@@ -1367,29 +1422,46 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">103</span><span class="o">-</span><span class="mi">42</span><span class="n">af1508f9b7</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># cannot change part of the string after creation</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+
+<span class="ne">TypeError</span>: &#39;str&#39; object does not support item assignment
+</pre></div>
+</div>
+</div>
 </div>
 <p>Python does have <strong>mutable</strong> types. We’ll talk about these later in the course, and these are where aliasing shines!</p>
-</section>
-</section>
-<section id="indentation">
-<h2>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="indentation">
+<h2>Indentation<a class="headerlink" href="#indentation" title="Permalink to this heading">#</a></h2>
 <p>Just a <em>brief</em> word on indentation.</p>
 <p>Python <em>does</em> care about whitespace.</p>
 <p>You will get an error if Python runs into unanticipated whitespace.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
     
     <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
 </div>
 <p>There <em>are</em> times when indentation will be required and expected. We’ll discuss these in future lectures.</p>
 <center><img src="img/doing_it_right.png" width="900px"></center>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

@@ -1,11 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Functions &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,6 +33,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -56,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Conditionals" href="06-Conditionals.html" />
     <link rel="prev" title="Operators" href="04-Operators.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -106,7 +106,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -142,8 +142,13 @@ const thebe_selector_output = ".output, .cell_output"
    06-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Projects
  </span>
@@ -669,8 +674,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="functions">
-<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>defining a function</p>
 <ul>
@@ -687,8 +692,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-<section id="anouncements-reminders">
-<h2>Anouncements &amp; Reminders<a class="headerlink" href="#anouncements-reminders" title="Permalink to this headline">#</a></h2>
+<div class="section" id="anouncements-reminders">
+<h2>Anouncements &amp; Reminders<a class="headerlink" href="#anouncements-reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>CL3 reelased soon, due next Wed Oct 12</p></li>
 <li><p><strong>A1 released soon, due next Fri Oct 14</strong></p></li>
@@ -696,39 +701,39 @@ title="Print to PDF"
 <li><p>Please fill out a daily lecture survey every day <em>after</em> the lecture (it nets you something like 0.1% EC every lecture day you do so and provides questions for the next section) <a class="reference external" href="https://forms.gle/HshJoMuvzjdkwUA37">https://forms.gle/HshJoMuvzjdkwUA37</a></p></li>
 <li><p>iClicker remote freq is “CB”</p></li>
 </ul>
-</section>
-<section id="q-a">
-<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="q-a">
+<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>I was confused as to why “-17.5” is a string and not a float variable. I don’t understand why this type of variable doesn’t have a mathematical value, but other numbers do. <br> <strong>Great q! So “-17.5” is text, not a number. Of course the computer stores it as a set of numbers in its memory, but its stored as numbers in Unicode… which is like a much more complex version of the Cesear cypher you may have learned as a kid, where you write 1 for A, 2 for B, etc. But whatever the numerical value of “-17.5” is it is certainly NOT -17.5.  So doing math operations on strings (text) makes no sense.  Remember we store numbers as numbers (int or float) to do math… but if we are storing text that includes numbers those must be turned into int or float before you do any math on them</strong></p></li>
 <li><p>I’m still confused about identity operators, and  how two variables that are equal does not imply that they are identical.<br> <strong>This is hard to understand for newbies, don’t worry. Identity is about memory storage.  If a=b then imagine leaving a forwarding address when you move to a new city.  Both a and b are pointing to the same location,  the same postal address.  Someone sends mail to a, and it arrives at b. The operator <code class="docutils literal notranslate"><span class="pre">==</span></code> asks if the two houses both have a Kevin Smith living there.  But there is more than one Kevin Smith in the world. The operator <code class="docutils literal notranslate"><span class="pre">is</span></code> asks if sending mail to either address will reach the <em>same</em> Kevin Smith.</strong></p></li>
 </ul>
-</section>
-<section id="vocab">
-<h2>Vocab<a class="headerlink" href="#vocab" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="vocab">
+<h2>Vocab<a class="headerlink" href="#vocab" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Define/create/make</strong> a function: To set up and write the instructions for a function.</p></li>
 <li><p><strong>Execute/call/use</strong> a function: To actually use the pre-defined function.</p></li>
 <li><p><strong>Input/parameter/argument</strong>: A variable defined by the user that is put/passed in between the parantheses <code class="docutils literal notranslate"><span class="pre">()</span></code> that comes after the function name.</p></li>
 <li><p><strong>Output</strong>: The variable that is <code class="docutils literal notranslate"><span class="pre">return</span></code>ed to the user after the function is executed.</p></li>
 </ul>
-</section>
-<section id="id1">
-<h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="id1">
+<h2>Functions<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 A function is a re-usable piece of code that performs operations on a specified set of variables, and returns the result.
 </div><p><img alt="cheeseburger" src="../_images/cheeseburger.png" /></p>
-</section>
-<section id="modular-programming">
-<h2>Modular Programming<a class="headerlink" href="#modular-programming" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="modular-programming">
+<h2>Modular Programming<a class="headerlink" href="#modular-programming" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Modular programming is an approach to programming that focuses on building programs from independent modules ('pieces'). 
 </div><p>Copy + Pasting the same/similar bit of code is to be avoided.</p>
 <p><strong>Functions</strong> are one way to avoid this.</p>
 <p><strong>Loops</strong> are another! (we’ll get to these soon…)</p>
-</section>
-<section id="functions-for-modular-programming">
-<h2>Functions for Modular Programming<a class="headerlink" href="#functions-for-modular-programming" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="functions-for-modular-programming">
+<h2>Functions for Modular Programming<a class="headerlink" href="#functions-for-modular-programming" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Functions allow us to flexibly re-use pieces of code</p></li>
 <li><p>Each function is independent of every other function, and other pieces of code</p></li>
@@ -748,11 +753,6 @@ Modular programming is an approach to programming that focuses on building progr
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -762,15 +762,10 @@ Modular programming is an approach to programming that focuses on building progr
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
-</pre></div>
 </div>
 </div>
-</div>
-</section>
-<section id="function-example-i">
-<h2>Function Example I<a class="headerlink" href="#function-example-i" title="Permalink to this headline">#</a></h2>
+<div class="section" id="function-example-i">
+<h2>Function Example I<a class="headerlink" href="#function-example-i" title="Permalink to this heading">#</a></h2>
 <p>When you use <code class="docutils literal notranslate"><span class="pre">def</span></code>, <strong>you are defining a function</strong>.
 You are metaphorically writing the instructions for how to make the cheeseburger.</p>
 <div class="cell docutils container">
@@ -793,22 +788,12 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hi there!
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># excecute a function by calling the function&#39;s name</span>
 <span class="c1"># and defining the parameter within the parentheses</span>
 <span class="n">double_value</span><span class="p">(</span><span class="n">num</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span> 
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>34
 </pre></div>
 </div>
 </div>
@@ -822,15 +807,10 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
 </div>
 </div>
-</div>
-</section>
-<section id="function-example-ii">
-<h2>Function Example II<a class="headerlink" href="#function-example-ii" title="Permalink to this headline">#</a></h2>
+<div class="section" id="function-example-ii">
+<h2>Function Example II<a class="headerlink" href="#function-example-ii" title="Permalink to this heading">#</a></h2>
 <p>Here we are defining a function with multiple parameters</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -851,11 +831,6 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>49
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -866,15 +841,10 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
-</pre></div>
 </div>
 </div>
-</div>
-</section>
-<section id="function-properties">
-<h2>Function Properties<a class="headerlink" href="#function-properties" title="Permalink to this headline">#</a></h2>
+<div class="section" id="function-properties">
+<h2>Function Properties<a class="headerlink" href="#function-properties" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Functions are defined using <code class="docutils literal notranslate"><span class="pre">def</span></code> followed by the name of the function, parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>, parameters within the parentheses, and then <code class="docutils literal notranslate"><span class="pre">:</span></code> after the parentheses, which opens a code-block that comprises the function</p>
 <ul>
@@ -898,8 +868,8 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <ul class="simple">
 <li><p>When you use a function, you can assign the output (whatever is <code class="docutils literal notranslate"><span class="pre">return</span></code>ed) to a variable</p></li>
 </ul>
-<section id="clicker-question-1">
-<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-1">
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p>Given the function defined below, what will the second code cell below print out?</p>
 <p>A) 0    B) 2     C) 4     D) ‘2r.2 + 1’     E) ¯\_(ツ)_/¯</p>
 <div class="cell docutils container">
@@ -915,24 +885,6 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printhi</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hi&#39;</span><span class="p">)</span>
-    <span class="c1"># note, no return, </span>
-    <span class="c1"># we just end the function block by no longer indenting</span>
-    
-<span class="c1"># back outside the function definition now</span>
-<span class="n">printhi</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hi
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ans_1</span> <span class="o">=</span> <span class="n">remainder</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">ans_2</span> <span class="o">=</span> <span class="n">remainder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
@@ -940,39 +892,36 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-</pre></div>
 </div>
 </div>
-</div>
-</section>
-<section id="clicker-question-2">
-<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-2">
+<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h3>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">greet</span></code> that takes the parameter <code class="docutils literal notranslate"><span class="pre">name</span></code>. Inside the function, concatenate ‘Hello’, the person’s name, and ‘Good morning!”. Assign this to <code class="docutils literal notranslate"><span class="pre">output</span></code> and return <code class="docutils literal notranslate"><span class="pre">output</span></code>.</p>
 <p>A) I did it!  B) I think I did it.  C) I tried but I am stuck.  D) Super duper lost</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE  </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span> <span class="n">name</span> <span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; Good morning!&#39;</span>
+    <span class="k">return</span> <span class="n">output</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST YOUR FUNCTION HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">greet</span><span class="p">(</span><span class="s1">&#39;Jason&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="default-values">
-<h2>Default Values<a class="headerlink" href="#default-values" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="default-values">
+<h2>Default Values<a class="headerlink" href="#default-values" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Function parameters can also take <b>default values</b>. This makes some parameters optional, as they take a default value if not otherwise specified.
-</div><section id="default-value-functions">
-<h3>Default Value Functions<a class="headerlink" href="#default-value-functions" title="Permalink to this headline">#</a></h3>
+</div><div class="section" id="default-value-functions">
+<h3>Default Value Functions<a class="headerlink" href="#default-value-functions" title="Permalink to this heading">#</a></h3>
 <p>Specify a default value in a function by doing an assignment within the function definition.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -986,12 +935,7 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the function, using default value</span>
-<span class="n">exponentiate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+<span class="n">exponentiate</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1008,15 +952,15 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you can always state this explicitly</span>
-<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">exponentiate</span><span class="p">(</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="positional-vs-keyword-arguments">
-<h2>Positional vs. Keyword Arguments<a class="headerlink" href="#positional-vs-keyword-arguments" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="positional-vs-keyword-arguments">
+<h2>Positional vs. Keyword Arguments<a class="headerlink" href="#positional-vs-keyword-arguments" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Arguments to a function can be indicated by either position or keyword.
 </div><div class="cell docutils container">
@@ -1061,8 +1005,8 @@ Arguments to a function can be indicated by either position or keyword.
 </div>
 </div>
 </div>
-<section id="clicker-question-3">
-<h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-3">
+<h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this heading">#</a></h3>
 <p>What will the following code snippet print?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1081,10 +1025,10 @@ Arguments to a function can be indicated by either position or keyword.
 <li><p>D) None</p></li>
 </ul>
 <p>Note: when using Keyword arguments position/order no longer matters</p>
-</section>
-</section>
-<section id="function-namespace">
-<h2>Function Namespace<a class="headerlink" href="#function-namespace" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="function-namespace">
+<h2>Function Namespace<a class="headerlink" href="#function-namespace" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Each function has its own namespace</p></li>
 <li><p>Functions only have access to:</p>
@@ -1101,57 +1045,120 @@ Arguments to a function can be indicated by either position or keyword.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable          Type        Data/Info
+---------------------------------------
+add_two_numbers   function    &lt;function add_two_numbers at 0x7fca385441f0&gt;
+anew_function     function    &lt;function anew_function at 0x7fca385440d0&gt;
+ans_1             int         2
+ans_2             int         0
+concat_self       function    &lt;function concat_self at 0x7fcaa8d71430&gt;
+double_value      function    &lt;function double_value at 0x7fca98781b80&gt;
+exponentiate      function    &lt;function exponentiate at 0x7fcaa8d714c0&gt;
+greet             function    &lt;function greet at 0x7fcaa8d71820&gt;
+my_global_var     str         Double Double Double Double
+my_var            str         Double Double
+output            int         3
+printhi           function    &lt;function printhi at 0x7fca8886fb80&gt;
+remainder         function    &lt;function remainder at 0x7fcaa8d718b0&gt;
+</pre></div>
 </div>
-<section id="variables-defined-inside-a-function-only-exist-within-that-function">
-<h3>Variables defined inside a function only exist within that function.<a class="headerlink" href="#variables-defined-inside-a-function-only-exist-within-that-function" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="variables-defined-inside-a-function-only-exist-within-that-function">
+<h3>Variables defined inside a function only exist within that function.<a class="headerlink" href="#variables-defined-inside-a-function-only-exist-within-that-function" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Names used inside a function are independent of those used outside</span>
 <span class="c1"># variables defined outside of functions are global variables</span>
 <span class="c1"># global variables are always available</span>
-<span class="n">my_var</span> <span class="o">=</span> <span class="s1">&#39;I am a variable&#39;</span>
+<span class="n">my_global_var</span> <span class="o">=</span> <span class="s1">&#39;Double&#39;</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_global_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Double
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function that uses my_var inside the function</span>
-<span class="k">def</span> <span class="nf">concat_self</span><span class="p">(</span><span class="n">my_var</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function that uses a name that matches </span>
+<span class="c1"># a global variable inside the function</span>
+<span class="k">def</span> <span class="nf">concat_self</span><span class="p">(</span><span class="n">var_local</span><span class="p">):</span>
     
-    <span class="n">my_var</span> <span class="o">=</span> <span class="n">my_var</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">my_var</span>
+    <span class="c1"># this might look like the variable defined previously</span>
+    <span class="c1"># but it&#39;s not!</span>
+    <span class="n">my_global_var</span> <span class="o">=</span> <span class="n">var_local</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">var_local</span>
     
-    <span class="k">return</span> <span class="n">my_var</span>
+    <span class="k">return</span> <span class="n">my_global_var</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">concat_self</span><span class="p">(</span><span class="n">my_var</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">concat_self</span><span class="p">(</span><span class="n">my_global_var</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Double Double
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see that my_var in global name space remains unchanged</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see that in global name space the original variable remains unchanged</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_global_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Double
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># only way to change my_var in global namespace</span>
-<span class="c1"># is to assign to variable my_var in global namespace</span>
-<span class="n">my_var</span> <span class="o">=</span> <span class="n">concat_self</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see that we cannot access something from the </span>
+<span class="c1"># local namespace of the function in the global namespace</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var_local</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">88</span><span class="o">-</span><span class="n">eeb0c2b457bc</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># see that we cannot access something from the</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># local namespace of the function in the global namespace</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">var_local</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;var_local&#39; is not defined
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="code-style-functions">
-<h2>Code Style: Functions<a class="headerlink" href="#code-style-functions" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># only way to change my_global_var in global namespace</span>
+<span class="c1"># is to assign to variable my_global_var in global namespace</span>
+<span class="n">my_global_var</span> <span class="o">=</span> <span class="n">concat_self</span><span class="p">(</span><span class="n">my_global_var</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_global_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Double Double
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="code-style-functions">
+<h2>Code Style: Functions<a class="headerlink" href="#code-style-functions" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Function names should be snake_case</p></li>
 <li><p>Function names should describe task accomplished by function</p></li>
@@ -1159,8 +1166,8 @@ Arguments to a function can be indicated by either position or keyword.
 <li><p>Arguments should be separated by a comma and a space</p></li>
 <li><p>Default values do NOT need a space around the <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
 </ul>
-<section id="functions-good-code-style">
-<h3>Functions: Good Code Style<a class="headerlink" href="#functions-good-code-style" title="Permalink to this headline">#</a></h3>
+<div class="section" id="functions-good-code-style">
+<h3>Functions: Good Code Style<a class="headerlink" href="#functions-good-code-style" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remainder</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">divider</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
@@ -1172,9 +1179,9 @@ Arguments to a function can be indicated by either position or keyword.
 </div>
 </div>
 </div>
-</section>
-<section id="functions-code-style-to-avoid">
-<h3>Functions: Code Style to Avoid<a class="headerlink" href="#functions-code-style-to-avoid" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="functions-code-style-to-avoid">
+<h3>Functions: Code Style to Avoid<a class="headerlink" href="#functions-code-style-to-avoid" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># could be improved by adding empty lines to separate out logical chunks</span>
@@ -1185,10 +1192,10 @@ Arguments to a function can be indicated by either position or keyword.
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>how to define a function</p></li>
 <li><p>how to execute a function</p></li>
@@ -1197,8 +1204,8 @@ Arguments to a function can be indicated by either position or keyword.
 <li><p>global namespace vs. local namespace</p></li>
 <li><p>code style</p></li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

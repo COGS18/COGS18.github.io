@@ -1,11 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Operators &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,6 +33,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -56,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Functions" href="05-Functions.html" />
     <link rel="prev" title="03-Variables" href="03-Variables.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -106,7 +106,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -142,8 +142,13 @@ const thebe_selector_output = ".output, .cell_output"
    06-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Projects
  </span>
@@ -721,8 +726,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="operators">
-<h1>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="operators">
+<h1>Operators<a class="headerlink" href="#operators" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>assignment</p></li>
 <li><p>math</p></li>
@@ -731,16 +736,16 @@ title="Print to PDF"
 <li><p>identity</p></li>
 <li><p>membership</p></li>
 </ul>
-<section id="anouncements-reminders">
-<h2>Anouncements &amp; Reminders<a class="headerlink" href="#anouncements-reminders" title="Permalink to this headline">#</a></h2>
+<div class="section" id="anouncements-reminders">
+<h2>Anouncements &amp; Reminders<a class="headerlink" href="#anouncements-reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>CL2 due on Wed Oct 5 at 11:59PM</p></li>
 <li><p>Please fill out a daily lecture survey every day <em>after</em> the lecture (it nets you something like 0.1% EC every lecture day you do so and provides questions for the next section) <a class="reference external" href="https://forms.gle/HshJoMuvzjdkwUA37">https://forms.gle/HshJoMuvzjdkwUA37</a></p></li>
 <li><p>iClicker remote freq is “CB”</p></li>
 </ul>
-</section>
-<section id="q-a">
-<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="q-a">
+<h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>I’m still a bit confused about the mutable vs immutable types of variables and what the difference between them is and how to identify them. <br><strong>Mutable variables can have their values changed after being created. Immutable ones cannot.  The difference in behavior and how/why we use one and not the other is something that will become more clear as we work through the quarter.  Some of the mutable data types in Python are list, dictionary, and set. On the other hand, some of the immutable data types are int, float, bool, string, and tuple. Don’t worry too much yet, just keep the concept in the back of your mind, we will be talking more about it later</strong></p></li>
 <li><p>I don’t really understand the concept of a kernel and how it’s different from the cell. <br><strong>A cell is where you can put a chunk of the program, think of it as one recipe in a cookbook. Your notebook is composed of several cells, so think of the notebook as the collection of recipes (cells) you are putting together to make a fancy meal with lots of dishes. A kernel is what executes all the cells (recipes) in a notebook, so think of that as the kitchen where you are cooking with its oven &amp; stove &amp; mixing bowls &amp; knives etc.  And in this very strained metaphor, the output of your notebook’s program is the meal itself.</strong></p></li>
@@ -755,9 +760,9 @@ title="Print to PDF"
 </div>
 <div class="alert alert-success">
 Operators are special symbols in Python that carry out arithmetic or logical computation.
-</div></section>
-<section id="assignment-operator">
-<h2>Assignment Operator<a class="headerlink" href="#assignment-operator" title="Permalink to this headline">#</a></h2>
+</div></div>
+<div class="section" id="assignment-operator">
+<h2>Assignment Operator<a class="headerlink" href="#assignment-operator" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Python uses <code>=</code> for assignment.
 </div><div class="cell docutils container">
@@ -768,9 +773,9 @@ Python uses <code>=</code> for assignment.
 </div>
 </div>
 </div>
-</section>
-<section id="math-operators">
-<h2>Math Operators<a class="headerlink" href="#math-operators" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="math-operators">
+<h2>Math Operators<a class="headerlink" href="#math-operators" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">/</span></code> for addition, subtraction, multiplication, &amp; division</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">**</span></code> for exponentiation &amp; <code class="docutils literal notranslate"><span class="pre">%</span></code> for modulus (remainder)</p></li>
@@ -794,12 +799,12 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 </div>
 </div>
 </div>
-<section id="order-of-operations">
-<h3>Order of Operations<a class="headerlink" href="#order-of-operations" title="Permalink to this headline">#</a></h3>
+<div class="section" id="order-of-operations">
+<h3>Order of Operations<a class="headerlink" href="#order-of-operations" title="Permalink to this heading">#</a></h3>
 <p>Mathematical operators follow the <a class="reference external" href="https://en.wikipedia.org/wiki/Order_of_operations#Mnemonics">rules for order of operations</a>.</p>
-</section>
-<section id="pemdas">
-<h3>PEMDAS<a class="headerlink" href="#pemdas" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="pemdas">
+<h3>PEMDAS<a class="headerlink" href="#pemdas" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>P</strong>arentheses</p></li>
 <li><p><strong>E</strong>xponentiation</p></li>
@@ -824,8 +829,8 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 </div>
 </div>
 </div>
-<section id="clicker-question-1">
-<h4>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this headline">#</a></h4>
+<div class="section" id="clicker-question-1">
+<h4>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h4>
 <p>What would be the value stored in <code class="docutils literal notranslate"><span class="pre">my_value</span></code>?</p>
 <p>Note: Best to think about it before running the code to ensure you understand.</p>
 <div class="cell docutils container">
@@ -843,10 +848,10 @@ Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <c
 <li><p>D) 20.0</p></li>
 <li><p>E) Produces an error</p></li>
 </ul>
-</section>
-</section>
-<section id="more-math">
-<h3>More Math<a class="headerlink" href="#more-math" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="more-math">
+<h3>More Math<a class="headerlink" href="#more-math" title="Permalink to this heading">#</a></h3>
 <div class="alert alert-success">
 Python also has <code>**</code> for exponentiation and <code>%</code> for remainder (called modulus). These also return numbers.
 </div><div class="cell docutils container">
@@ -865,8 +870,8 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 </div>
 </div>
 </div>
-<section id="clicker-question-2">
-<h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this headline">#</a></h4>
+<div class="section" id="clicker-question-2">
+<h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h4>
 <p>What would be the value stored in <code class="docutils literal notranslate"><span class="pre">remainder</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -883,9 +888,9 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 <li><p>D) 3.2</p></li>
 <li><p>E) Produces an error</p></li>
 </ul>
-</section>
-<section id="clicker-question-3">
-<h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="clicker-question-3">
+<h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this heading">#</a></h4>
 <p>What would be the value stored in <code class="docutils literal notranslate"><span class="pre">modulo_time</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -902,11 +907,11 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 <li><p>D) 3.2</p></li>
 <li><p>E) Produces an error</p></li>
 </ul>
-</section>
-</section>
-</section>
-<section id="remainder">
-<h2>Remainder<a class="headerlink" href="#remainder" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="remainder">
+<h2>Remainder<a class="headerlink" href="#remainder" title="Permalink to this heading">#</a></h2>
 <p>How to get Python to tell you the integer and the remainder when dividing?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -919,9 +924,9 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 </div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">//</span></code> is an operator for floor division (integer division)</p>
-</section>
-<section id="logical-boolean-operators">
-<h2>Logical (Boolean) operators<a class="headerlink" href="#logical-boolean-operators" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="logical-boolean-operators">
+<h2>Logical (Boolean) operators<a class="headerlink" href="#logical-boolean-operators" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>use Boolean logic</p></li>
 <li><p>logical operators: <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, and <code class="docutils literal notranslate"><span class="pre">not</span></code></p></li>
@@ -982,9 +987,9 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </div>
 </div>
 </div>
-</section>
-<section id="truth-tables">
-<h2>Truth tables<a class="headerlink" href="#truth-tables" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="truth-tables">
+<h2>Truth tables<a class="headerlink" href="#truth-tables" title="Permalink to this heading">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>x AND y</p></th>
@@ -1058,8 +1063,8 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </div>
 </div>
 </div>
-<section id="capitalization-matters">
-<h3>Capitalization matters<a class="headerlink" href="#capitalization-matters" title="Permalink to this headline">#</a></h3>
+<div class="section" id="capitalization-matters">
+<h3>Capitalization matters<a class="headerlink" href="#capitalization-matters" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this will give you an error</span>
@@ -1082,8 +1087,8 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 </div>
 </div>
 </div>
-<section id="clicker-question-4">
-<h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this headline">#</a></h4>
+<div class="section" id="clicker-question-4">
+<h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this heading">#</a></h4>
 <p>How will the following boolean expression evaluate:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1103,11 +1108,11 @@ Python has <code>and</code>, <code>or</code> and <code>not</code> for boolean lo
 <li><p>C) None</p></li>
 <li><p>D) This code will fail</p></li>
 </ul>
-</section>
-</section>
-</section>
-<section id="comparison-operators">
-<h2>Comparison Operators<a class="headerlink" href="#comparison-operators" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="comparison-operators">
+<h2>Comparison Operators<a class="headerlink" href="#comparison-operators" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>, <code>></code>, <code><=</code>, and <code>>=</code> for value comparisons. These operators return booleans.
 </div><ul class="simple">
@@ -1180,8 +1185,8 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 </div>
 </div>
-<section id="clicker-question-5">
-<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-5">
+<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this heading">#</a></h3>
 <p>Assume you’re writing a videogame that will only slay the dragon only if our magic lightsabre sword is charged to 90 or higher and we have 100 or more energy units in our protective shield.</p>
 <p>Start with the code in the following cell. Replace <code class="docutils literal notranslate"><span class="pre">---</span></code> with operators or values that will evaluate to <code class="docutils literal notranslate"><span class="pre">True</span></code> when the cell is run (and slay the dragon!).</p>
 <ul class="simple">
@@ -1205,10 +1210,10 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="identity-operators">
-<h2>Identity Operators<a class="headerlink" href="#identity-operators" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="identity-operators">
+<h2>Identity Operators<a class="headerlink" href="#identity-operators" title="Permalink to this heading">#</a></h2>
 <p>Identity operators are used to check if two values (or variables) are located on the same part of the memory.</p>
 <div class="alert alert-success">
 Python uses <code>is</code> and <code>is not</code> to compare identity. These operators return booleans.
@@ -1273,8 +1278,8 @@ True
 </div>
 </div>
 </div>
-<section id="clicker-question-6">
-<h3>Clicker Question #6<a class="headerlink" href="#clicker-question-6" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-6">
+<h3>Clicker Question #6<a class="headerlink" href="#clicker-question-6" title="Permalink to this heading">#</a></h3>
 <p>Using the variables provded below and identity operators replace <code class="docutils literal notranslate"><span class="pre">---</span></code> with code such that <code class="docutils literal notranslate"><span class="pre">true_variable</span></code> will return <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">false_variable</span></code> will return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <ul class="simple">
 <li><p>A) I did it!</p></li>
@@ -1304,10 +1309,10 @@ True
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="membership-operators">
-<h2>Membership Operators<a class="headerlink" href="#membership-operators" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="membership-operators">
+<h2>Membership Operators<a class="headerlink" href="#membership-operators" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Python uses <code>in</code> and <code>not in</code> to compare membership. These operators return booleans.
 </div><p>Membership operators are used to check whether a value or variable is found in a sequence.</p>
@@ -1377,9 +1382,9 @@ Python uses <code>in</code> and <code>not in</code> to compare membership. These
 </div>
 </div>
 </div>
-</section>
-<section id="string-concatenation">
-<h2>String Concatenation<a class="headerlink" href="#string-concatenation" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="string-concatenation">
+<h2>String Concatenation<a class="headerlink" href="#string-concatenation" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 </div><div class="cell docutils container">
@@ -1406,9 +1411,9 @@ Operators sometimes do different things on different types of variables. For exa
 </div>
 </div>
 </div>
-</section>
-<section id="chaining-operators">
-<h2>Chaining Operators<a class="headerlink" href="#chaining-operators" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="chaining-operators">
+<h2>Chaining Operators<a class="headerlink" href="#chaining-operators" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Operators and variables can also be chained together into arbitrarily complex expressions.
 </div><div class="cell docutils container">
@@ -1448,8 +1453,8 @@ Operators and variables can also be chained together into arbitrarily complex ex
 </div>
 </div>
 </div>
-<section id="clicker-question-8">
-<h3>Clicker Question #8<a class="headerlink" href="#clicker-question-8" title="Permalink to this headline">#</a></h3>
+<div class="section" id="clicker-question-8">
+<h3>Clicker Question #8<a class="headerlink" href="#clicker-question-8" title="Permalink to this heading">#</a></h3>
 <p>How will the following expression evaluate:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1464,17 +1469,17 @@ Operators and variables can also be chained together into arbitrarily complex ex
 <li><p>c) None</p></li>
 <li><p>d) This code will fail</p></li>
 </ul>
-</section>
-</section>
-<section id="code-style-operators">
-<h2>Code Style: Operators<a class="headerlink" href="#code-style-operators" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="code-style-operators">
+<h2>Code Style: Operators<a class="headerlink" href="#code-style-operators" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Single space around operators</p></li>
 <li><p>No spaces after leading parentheses or before trailing parentheses</p></li>
 </ul>
-</section>
-<section id="assert">
-<h2>Assert<a class="headerlink" href="#assert" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="assert">
+<h2>Assert<a class="headerlink" href="#assert" title="Permalink to this heading">#</a></h2>
 <ol class="simple">
 <li><p>helps debug problems with your code</p></li>
 <li><p>tests that things you are relying on to be true, actually are indeed true</p></li>
@@ -1509,8 +1514,8 @@ Operators and variables can also be chained together into arbitrarily complex ex
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

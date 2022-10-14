@@ -1,11 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Ideas &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,6 +33,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -50,14 +50,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Project FAQ" href="faq.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -107,7 +107,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Lectures
  </span>
@@ -143,8 +143,13 @@ const thebe_selector_output = ".output, .cell_output"
    06-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../materials/07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Projects
  </span>
@@ -516,17 +521,17 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="project-ideas">
-<h1>Project Ideas<a class="headerlink" href="#project-ideas" title="Permalink to this headline">#</a></h1>
-<section id="encryption">
-<h2>Encryption<a class="headerlink" href="#encryption" title="Permalink to this headline">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="project-ideas">
+<h1>Project Ideas<a class="headerlink" href="#project-ideas" title="Permalink to this heading">#</a></h1>
+<div class="section" id="encryption">
+<h2>Encryption<a class="headerlink" href="#encryption" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Integrate email into the encryption code, so you can send and receive encrypted messages</p></li>
 <li><p>Explore ‘code breaking’, writing code that code break the encryption of some of the encryption schemes</p></li>
 </ul>
-</section>
-<section id="chatbots">
-<h2>Chatbots<a class="headerlink" href="#chatbots" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="chatbots">
+<h2>Chatbots<a class="headerlink" href="#chatbots" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Extend the chatbot to talk about some new topics, or a new kind of interaction</p>
 <ul>
@@ -536,9 +541,9 @@ title="Print to PDF"
 </li>
 <li><p>Set up Chatbots that can talk to each other</p></li>
 </ul>
-</section>
-<section id="artificial-agents">
-<h2>Artificial Agents<a class="headerlink" href="#artificial-agents" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="artificial-agents">
+<h2>Artificial Agents<a class="headerlink" href="#artificial-agents" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Make the agents interact with each other</p>
 <ul>
@@ -549,16 +554,16 @@ title="Print to PDF"
 <li><p>Add a new exploration scheme for the bots to perform</p></li>
 <li><p>Note: if you are want to scale up this idea, you can look into the ‘pelita’ application (from the demo)</p></li>
 </ul>
-</section>
-<section id="research">
-<h2>Research<a class="headerlink" href="#research" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="research">
+<h2>Research<a class="headerlink" href="#research" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Use LiteratureScanner to investigate an area of research in the literature</p></li>
 <li><p>Explore scientific python to analyze a small dataset</p></li>
 </ul>
-</section>
-<section id="choose-your-own-adventure">
-<h2>Choose your own adventure<a class="headerlink" href="#choose-your-own-adventure" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="choose-your-own-adventure">
+<h2>Choose your own adventure<a class="headerlink" href="#choose-your-own-adventure" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Choose an area you are interested in, and explore what people do in it (read code!)</p>
 <ul>
@@ -583,9 +588,9 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</section>
-<section id="taboo-topics">
-<h2>Taboo Topics <span class="math notranslate nohighlight">\(^*\)</span><a class="headerlink" href="#taboo-topics" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="taboo-topics">
+<h2>Taboo Topics <span class="math notranslate nohighlight">\(^*\)</span><a class="headerlink" href="#taboo-topics" title="Permalink to this heading">#</a></h2>
 <p>There are lots of helpful tutorials online; however, often it’s difficult to figure out how to make <em>your</em> implementation different than these online tutorials. It’s also boring and a pain to grade. So, to avoid any issues, there are two taboo topics this quarter:</p>
 <ol class="simple">
 <li><p>Hangman</p></li>
@@ -598,9 +603,9 @@ title="Print to PDF"
 <li><p>Connect4 Game</p></li>
 </ol>
 <p><span class="math notranslate nohighlight">\(^*\)</span>If you have a really new hangman implementation/idea or are super stoked about your great <code class="docutils literal notranslate"><span class="pre">turtle</span></code> idea or have invented a spin on traditional tic-tac-toe/blackjack/magic 8 ball/rock, paper, scissors, you’ll need to pitch your idea to (via email/campuswire or in office hours) and get approval from Professor Ellis</p>
-</section>
-<section id="how-to-get-started">
-<h2>How to get started<a class="headerlink" href="#how-to-get-started" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="how-to-get-started">
+<h2>How to get started<a class="headerlink" href="#how-to-get-started" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Pseudocode out the ideas you would like to explore / work on</p></li>
 <li><p>Open a notebook, and get some code into it</p>
@@ -615,8 +620,8 @@ title="Print to PDF"
 </li>
 <li><p>When you start having ‘mature’ functions / classes, try moving them into a script</p></li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
