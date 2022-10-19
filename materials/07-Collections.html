@@ -1350,12 +1350,35 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: False, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># change value of specified key</span>
-<span class="n">completed_assignment</span><span class="p">[</span><span class="s1">&#39;A5678&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">completed_assignment</span><span class="p">[</span><span class="s1">&#39;A5678&#39;</span><span class="p">]</span><span class="o">=</span> <span class="kc">True</span>
 <span class="n">completed_assignment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">completed_assignment</span><span class="p">[</span><span class="s1">&#39;A88899&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">completed_assignment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True, &#39;A88899&#39;: False}
 </pre></div>
 </div>
 </div>
@@ -1368,14 +1391,35 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True, &#39;A88899&#39;: False}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## remove key-value pair using del</span>
-<span class="k">del</span> <span class="n">completed_assignment</span><span class="p">[</span><span class="s1">&#39;A5678&#39;</span><span class="p">]</span>
+<span class="k">del</span> <span class="n">completed_assignment</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">completed_assignment</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">completed_assignment</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_92527/791951152.py</span> in <span class="ni">&lt;cell line: 4&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">del</span> <span class="n">completed_assignment</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="n">completed_assignment</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">len</span><span class="p">(</span><span class="n">completed_assignment</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;completed_assignment&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -1397,6 +1441,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 91}
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p><strong>keys</strong> must be of an immutable type (string, tuple, integer, float, etc)</p></li>
@@ -1410,6 +1459,18 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_92527/2774564585.py</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># lists are not allowed as key types</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code will produce an error</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="p">{[</span><span class="s1">&#39;Student&#39;</span><span class="p">]</span> <span class="p">:</span> <span class="mi">97</span><span class="p">}</span>
+
+<span class="ne">TypeError</span>: unhashable type: &#39;list&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>Dictionary keys are case sensitive.</p></li>
@@ -1420,6 +1481,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 97, &#39;student&#39;: 88, &#39;STUDENT&#39;: 91}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-4">
 <h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this heading">#</a></h4>
@@ -1427,7 +1493,12 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">height_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;height_1&#39;</span> <span class="p">:</span> <span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;height_2&#39;</span><span class="p">:</span> <span class="mi">68</span><span class="p">,</span> <span class="s1">&#39;height_3&#39;</span> <span class="p">:</span> <span class="mi">65</span><span class="p">,</span> <span class="s1">&#39;height_4&#39;</span> <span class="p">:</span> <span class="mi">72</span><span class="p">}</span>
-<span class="n">height_dict</span><span class="p">[</span><span class="o">---</span><span class="p">]</span>
+<span class="n">height_dict</span><span class="p">[</span><span class="s1">&#39;height_2&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68
 </pre></div>
 </div>
 </div>
@@ -1450,7 +1521,13 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">car</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;make&#39;</span><span class="p">:</span><span class="s1">&#39;Honda&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">:</span><span class="s1">&#39;CRX&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span><span class="mi">1988</span><span class="p">}</span>
+<span class="n">car</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;make&#39;: &#39;Honda&#39;, &#39;model&#39;: &#39;CRX&#39;, &#39;year&#39;: 1988}
 </pre></div>
 </div>
 </div>
@@ -1474,7 +1551,12 @@ The <code>in</code> operator asks whether an element is present inside a collect
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check if a particular element is present in the list</span>
-<span class="kc">True</span> <span class="ow">in</span> <span class="n">lst_again</span>
+<span class="mi">15</span> <span class="ow">in</span> <span class="n">lst_again</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1486,6 +1568,11 @@ The <code>in</code> operator asks whether an element is present inside a collect
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1494,11 +1581,21 @@ The <code>in</code> operator asks whether an element is present inside a collect
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># does not check for values in dictionary</span>
 <span class="mi">33</span> <span class="ow">in</span> <span class="n">dict_again</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1516,6 +1613,11 @@ The <code>in</code> operator asks whether an element is present inside a collect
 <span class="n">output</span> <span class="o">=</span> <span class="n">bool_1</span> <span class="ow">and</span> <span class="n">bool_2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1550,6 +1652,11 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>97
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1557,10 +1664,20 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>129312 12068
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">97</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a
 </pre></div>
 </div>
 </div>
@@ -1579,6 +1696,12 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Input: 	 b 
+Output:  b
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1591,6 +1714,15 @@ Unicode is a system of systematically and consistently representing characters.
 <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">b</span> <span class="ow">is</span> <span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1615,6 +1747,12 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+1
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> both store 1</p></li>
@@ -1632,7 +1770,16 @@ Unicode is a system of systematically and consistently representing characters.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 <span class="n">alias_list</span> <span class="o">=</span> <span class="n">first_list</span>
-<span class="n">alias_list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">alias_list</span><span class="p">)</span>
+<span class="n">alias_list</span> <span class="ow">is</span> <span class="n">first_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1645,11 +1792,21 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 29, 3, 4]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check alias_list</span>
 <span class="n">alias_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 29, 3, 4]
 </pre></div>
 </div>
 </div>
