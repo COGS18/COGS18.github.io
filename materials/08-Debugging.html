@@ -790,8 +790,7 @@ Debugging is the process of finding and fixing errors in a computer program.
 </div><div class="section" id="anouncements-reminders">
 <h2>Anouncements &amp; Reminders<a class="headerlink" href="#anouncements-reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Exam 1 Fri Oct 21</strong></p></li>
-<li><p>CL4 Wed Oct 19</p></li>
+<li><p>Please <a class="reference external" href="https://forms.gle/c7kgSruMX6bFCC4Y9">fill out this survey about your experience of Exam 1</a></p></li>
 <li><p>Please fill out a daily lecture survey every day <em>after</em> the lecture (it nets you something like 0.1% EC every lecture day you do so and provides questions for the next section) <a class="reference external" href="https://forms.gle/HshJoMuvzjdkwUA37">https://forms.gle/HshJoMuvzjdkwUA37</a></p></li>
 <li><p>iClicker remote freq is “CB”</p></li>
 </ul>
@@ -801,7 +800,7 @@ Debugging is the process of finding and fixing errors in a computer program.
 <ul class="simple">
 <li><p>In the portion of lecture about indexing, why is it that Julian would be at position zero then Amal at one, but when you ask for my list at -1, python gives Xuan and not Juan? <br> <strong>Quick reminder, the list is <code class="docutils literal notranslate"><span class="pre">my_lst</span> <span class="pre">=</span> <span class="pre">['Julian',</span> <span class="pre">'Amal',</span> <span class="pre">'Richard',</span> <span class="pre">'Juan',</span> <span class="pre">'Xuan']</span></code> <br> As you said, <code class="docutils literal notranslate"><span class="pre">my_lst[0]</span></code> means <code class="docutils literal notranslate"><span class="pre">Julian</span></code>.  So how could we index off the back in the same way? <code class="docutils literal notranslate"><span class="pre">my_list[-1]</span></code> is available for indexing the end of the list, ie., <code class="docutils literal notranslate"><span class="pre">Xuan</span></code>. You’re kind a wishing <code class="docutils literal notranslate"><span class="pre">my_list[0]</span></code> would give botht he front and and the back of the list, which would be quite confusing for everyone I think :)</strong></p></li>
 <li><p>Could you please reexplain slicing? The order that we list the numbers is confusing to me <br> <strong>Slicing is <code class="docutils literal notranslate"><span class="pre">[first</span> <span class="pre">element:up</span> <span class="pre">to</span> <span class="pre">but</span> <span class="pre">not</span> <span class="pre">including</span> <span class="pre">this</span> <span class="pre">element]</span></code>. When used this way we assume we go one step to the right (increasing by one) and include every element in that defined slice.  There is another optional slicing syntax,  <code class="docutils literal notranslate"><span class="pre">[first</span> <span class="pre">element:up</span> <span class="pre">to</span> <span class="pre">but</span> <span class="pre">not</span> <span class="pre">including</span> <span class="pre">this</span> <span class="pre">element:in</span> <span class="pre">steps</span> <span class="pre">this</span> <span class="pre">big]</span></code>. So that allows us to take indices <code class="docutils literal notranslate"><span class="pre">4,6,8,10,12</span></code> for instance.  Critically any of these slice definitions can be negative numbers, allowing us to index from the right hand (back) side of the list, or to go backwards, or both</strong></p></li>
-<li><p>I wanted to know if we could add items to a list after it has been defined? i know we can edit them later on but just curious if there is a way to add to the list as well. <br> **OMG yes!  Lists are so much more powerf <a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html">https://docs.python.org/3/tutorial/datastructures.html</a></p></li>
+<li><p>I wanted to know if we could add items to a list after it has been defined? i know we can edit them later on but just curious if there is a way to add to the list as well. <br> <strong>OMG yes!  Lists are so much more powerful than we have had time to cover.  Here’s the python documentation showing you sosme of their abilities.  <a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html">https://docs.python.org/3/tutorial/datastructures.html</a>   You can also search the web for great tutorials on how to use these abilities</strong></p></li>
 </ul>
 </div>
 <div class="section" id="errors">
@@ -827,14 +826,6 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/542448453.py&quot;</span><span class="gt">, line </span><span class="mi">2</span>
-    <span class="k">if</span> <span class="kc">True</span>
-           <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
 </div>
 <p>Python does its best to tell you:</p>
 <ul class="simple">
@@ -847,14 +838,6 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 <span class="c1"># and specifically an indentation error</span>
 <span class="k">if</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/4125571898.py&quot;</span><span class="gt">, line </span><span class="mi">4</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-    <span class="o">^</span>
-<span class="ne">IndentationError</span>: expected an indented block
 </pre></div>
 </div>
 </div>
@@ -874,17 +857,6 @@ Exceptions are errors that occur when a code is executed.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># produces ZeroDivisionError</span>
 <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/2081170267.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># produces ZeroDivisionError</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-
-<span class="ne">ZeroDivisionError</span>: division by zero
 </pre></div>
 </div>
 </div>
@@ -913,17 +885,6 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/3101917126.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># If you typo a name, you will get a NameError</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">varaible</span>
-
-<span class="ne">NameError</span>: name &#39;varaible&#39; is not defined
-</pre></div>
-</div>
-</div>
 </div>
 <p>While it’s annoying, it’s helpful that Python doesn’t just <em>guess</em> that you <em>meant</em> ‘variable’….because sometimes Python would guess wrong. It’s better for Python to just give us the error.</p>
 <div class="cell docutils container">
@@ -945,35 +906,12 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/3246097420.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;COGS18&#39;</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
-
-<span class="ne">IndexError</span>: string index out of range
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Relatedly, &#39;KeyError&#39; occurs if you ask for a dictionary key that doesn&#39;t exist</span>
 <span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name1&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;name2&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 <span class="n">my_dictionary</span><span class="p">[</span><span class="s1">&#39;name3&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/1265094911.py</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Relatedly, &#39;KeyError&#39; occurs if you ask for a dictionary key that doesn&#39;t exist</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name1&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;name2&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">my_dictionary</span><span class="p">[</span><span class="s1">&#39;name3&#39;</span><span class="p">]</span>
-
-<span class="ne">KeyError</span>: &#39;name3&#39;
 </pre></div>
 </div>
 </div>
@@ -988,16 +926,6 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/1168857583.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">)</span>
-
-<span class="ne">ValueError</span>: invalid literal for int() with base 10: &#39;cat&#39;
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="typeerror">
@@ -1006,16 +934,6 @@ Exceptions are errors that occur when a code is executed.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a_string&#39;</span> <span class="o">+</span> <span class="mi">12</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/2699723511.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="s1">&#39;a_string&#39;</span> <span class="o">+</span> <span class="mi">12</span>
-
-<span class="ne">TypeError</span>: can only concatenate str (not &quot;int&quot;) to str
 </pre></div>
 </div>
 </div>
@@ -1056,14 +974,6 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/1384503984.py&quot;</span><span class="gt">, line </span><span class="mi">1</span>
-    <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span>
-              <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
 </div>
 <ul class="simple">
 <li><p>A) Syntax</p></li>
@@ -1080,17 +990,6 @@ Exceptions are errors that occur when a code is executed.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Greater than 0&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/2477316790.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Greater than 0&quot;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;num&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -1121,14 +1020,6 @@ Exceptions are errors that occur when a code is executed.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-d854ff387b3c&gt;&quot;</span><span class="gt">, line </span><span class="mi">5</span>
-    <span class="n">char</span> <span class="o">+</span> <span class="mi">500</span> <span class="o">=</span> <span class="n">offset</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: cannot assign to operator
-</pre></div>
-</div>
-</div>
 </div>
 <p>What to look for and think about:</p>
 <ol class="simple">
@@ -1149,14 +1040,6 @@ Exceptions are errors that occur when a code is executed.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">callable</span> <span class="n">encode_char</span>
 <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">encode_char</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
 <span class="k">assert</span> <span class="n">encode_char</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;ɗ&#39;</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/lc/h592vhs5421_z0kmg2tljk_40000gn/T/ipykernel_96374/3857809110.py&quot;</span><span class="gt">, line </span><span class="mi">1</span>
-    <span class="k">assert</span> <span class="n">callable</span> <span class="n">encode_char</span>
-                    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
