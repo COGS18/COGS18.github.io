@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="../labs/CL1-Tooling.html" />
+    <link rel="next" title="Command Line" href="13-CommandLine.html" />
     <link rel="prev" title="Methods" href="11-Methods.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
@@ -170,6 +170,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    12-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-CommandLine.html">
+   13-CommandLine
   </a>
  </li>
 </ul>
@@ -1066,6 +1071,11 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1074,11 +1084,40 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the year attribute</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">year</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_date</span><span class="o">.</span><span class="n">year</span><span class="o">=</span><span class="mi">1998</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="nn">Input In [13],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">my_date</span><span class="o">.</span><span class="n">year</span><span class="o">=</span><span class="mi">1998</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span>
+
+<span class="ne">AttributeError</span>: attribute &#39;year&#39; of &#39;datetime.date&#39; objects is not writable
 </pre></div>
 </div>
 </div>
@@ -1092,6 +1131,12 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Method to return what day of the week the date is</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+<span class="c1">#print(my_date)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -1108,8 +1153,13 @@ date.weekday<span class="o">?</span>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a second date</span>
-<span class="n">my_date2</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
+<span class="n">my_date2</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1980</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_date</span><span class="p">,</span> <span class="n">my_date2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988-09-29 1980-07-29
 </pre></div>
 </div>
 </div>
@@ -1120,6 +1170,24 @@ date.weekday<span class="o">?</span>
 <span class="n">time_diff</span> <span class="o">=</span> <span class="n">my_date</span> <span class="o">-</span> <span class="n">my_date2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="p">,</span>  <span class="s2">&quot;days&quot;</span><span class="p">)</span> <span class="c1">#in days</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="o">/</span><span class="mi">365</span><span class="p">,</span><span class="s2">&quot;years&quot;</span><span class="p">)</span> <span class="c1">#in years</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2984 days
+8.175342465753424 years
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">time_diff</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.timedelta
 </pre></div>
 </div>
 </div>
@@ -1135,7 +1203,7 @@ date.weekday<span class="o">?</span>
 
 <span class="c1"># works to find attributes and methods</span>
 <span class="c1"># for date type objects generally</span>
-<span class="n">date</span><span class="o">.</span>
+<span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
@@ -1148,13 +1216,70 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__le__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__radd__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rsub__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__sub__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;ctime&#39;,
+ &#39;day&#39;,
+ &#39;fromisocalendar&#39;,
+ &#39;fromisoformat&#39;,
+ &#39;fromordinal&#39;,
+ &#39;fromtimestamp&#39;,
+ &#39;isocalendar&#39;,
+ &#39;isoformat&#39;,
+ &#39;isoweekday&#39;,
+ &#39;max&#39;,
+ &#39;min&#39;,
+ &#39;month&#39;,
+ &#39;replace&#39;,
+ &#39;resolution&#39;,
+ &#39;strftime&#39;,
+ &#39;timetuple&#39;,
+ &#39;today&#39;,
+ &#39;toordinal&#39;,
+ &#39;weekday&#39;,
+ &#39;year&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-2">
 <h4>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h4>
 <p>Given the code below:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_date</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="n">year</span> <span class="o">=</span> <span class="mi">1050</span><span class="p">,</span> <span class="n">month</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">day</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">year</span> <span class="o">=</span> <span class="mi">1050</span><span class="p">,</span> <span class="n">month</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">day</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.date
 </pre></div>
 </div>
 </div>
@@ -1276,12 +1401,22 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Woof&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># george, has &#39;Dog&#39; method(s)</span>
 <span class="c1"># remember we used `self`</span>
-<span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+<span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="n">n_times</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoofWoof&#39;
 </pre></div>
 </div>
 </div>
@@ -1292,7 +1427,8 @@ date.weekday<span class="o">?</span>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Dog</span><span class="p">():</span>
-    
+    <span class="n">legs</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">tail</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
@@ -1325,11 +1461,24 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;__main__.Dog at 0x7fbbf8b7b460&gt;,
+ &lt;__main__.Dog at 0x7fbbf8b7b7f0&gt;,
+ &lt;__main__.Dog at 0x7fbbf8b7b6a0&gt;,
+ &lt;__main__.Dog at 0x7fbbf8b7b700&gt;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># take a look at this</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">pack_of_dogs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>__main__.Dog
 </pre></div>
 </div>
 </div>
@@ -1352,6 +1501,20 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a dog object</span>
 <span class="n">george</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+<span class="n">daisy</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#george.legs, daisy.legs</span>
+<span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">daisy</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;WoofWoofWoof&#39;, &#39;WoofWoofWoofWoof&#39;)
 </pre></div>
 </div>
 </div>
@@ -1380,6 +1543,12 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WoofWoof
+WoofWoof
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) 2 instances, 2 method executions</p></li>
@@ -1396,7 +1565,9 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a group of dogs</span>
-<span class="n">pack_of_dogs</span> <span class="o">=</span> <span class="p">[</span><span class="n">Dog</span><span class="p">(),</span> <span class="n">Dog</span><span class="p">(),</span> <span class="n">Dog</span><span class="p">(),</span> <span class="n">Dog</span><span class="p">()]</span>
+<span class="n">alice</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+<span class="n">bob</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+<span class="n">pack_of_dogs</span> <span class="o">=</span> <span class="p">[</span><span class="n">alice</span><span class="p">,</span> <span class="n">bob</span><span class="p">,</span> <span class="n">Dog</span><span class="p">(),</span> <span class="n">Dog</span><span class="p">()]</span>
 </pre></div>
 </div>
 </div>
@@ -1610,7 +1781,7 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="section" id="example-profcourses">
 <h3>Example: <code class="docutils literal notranslate"><span class="pre">ProfCourses()</span></code><a class="headerlink" href="#example-profcourses" title="Permalink to this heading">#</a></h3>
 <p>Let’s put a lot of these concepts together in a more complicated example…</p>
-<p>What if we wanted some object type that would allow us to keep track of Professor Ellis’ Courses? Well…we’d want this to work for any Professor, so we’ll call it <code class="docutils literal notranslate"><span class="pre">ProfCourses</span></code>.</p>
+<p>What if we wanted some object type that would allow us to keep track of the my courses? Well…we’d want this to work for any Professor, so we’ll call it <code class="docutils literal notranslate"><span class="pre">ProfCourses</span></code>.</p>
 <p>We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1627,15 +1798,15 @@ Instance attributes are attributes that we can make be different for each instan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">prof</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fleischer_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Fleischer, Jason&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fleischer_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fleischer_courses</span><span class="o">.</span><span class="n">prof</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-Ellis
+Fleischer, Jason
 </pre></div>
 </div>
 </div>
@@ -1654,7 +1825,7 @@ Ellis
     <span class="c1"># to our attribute (courses)...which is a list</span>
     <span class="k">def</span> <span class="nf">add_course</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">course_name</span><span class="p">,</span> <span class="n">quarter</span><span class="p">,</span> <span class="n">n_students</span><span class="p">):</span>
         
-        <span class="o">=.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;course_name&#39;</span><span class="p">:</span> <span class="n">course_name</span><span class="p">,</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;course_name&#39;</span><span class="p">:</span> <span class="n">course_name</span><span class="p">,</span> 
                              <span class="s1">&#39;quarter&#39;</span> <span class="p">:</span> <span class="n">quarter</span><span class="p">,</span> 
                              <span class="s1">&#39;n_students&#39;</span><span class="p">:</span> <span class="n">n_students</span><span class="p">})</span>
         <span class="c1"># increase value store in n_courses</span>
@@ -1666,20 +1837,21 @@ Ellis
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create ellis_courses</span>
-<span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create courses</span>
+<span class="n">JF_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Fleischer, Jason&#39;</span><span class="p">)</span>
 
 <span class="c1"># add a class</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;Fa22&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">)</span>
+
 
 <span class="c1"># see output</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">JF_courses</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">n_courses</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 363}]
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
@@ -1728,31 +1900,27 @@ Ellis
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create ellis_courses</span>
-<span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create courses</span>
+<span class="n">JF_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Fleischer, Jason&#39;</span><span class="p">)</span>
 
-<span class="c1"># add a bunch of classes</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">447</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;su20&#39;</span><span class="p">,</span> <span class="mi">88</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;sp20&#39;</span><span class="p">,</span> <span class="mi">469</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;sp19&#39;</span><span class="p">,</span> <span class="mi">825</span><span class="p">)</span>
+<span class="c1"># add a class</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;Fa22&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;Fa22&#39;</span><span class="p">,</span> <span class="mi">446</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS87&#39;</span><span class="p">,</span> <span class="s1">&#39;Fa22&#39;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;Sp22&#39;</span><span class="p">,</span> <span class="mi">471</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS118A&#39;</span><span class="p">,</span> <span class="s1">&#39;Sp22&#39;</span><span class="p">,</span> <span class="mi">280</span><span class="p">)</span>
 
-<span class="c1"># see the courses</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">courses</span>
+<span class="c1"># see output</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">JF_courses</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">n_courses</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 363}, {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 446}, {&#39;course_name&#39;: &#39;COGS87&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 24}, {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;Sp22&#39;, &#39;n_students&#39;: 471}, {&#39;course_name&#39;: &#39;COGS118A&#39;, &#39;quarter&#39;: &#39;Sp22&#39;, &#39;n_students&#39;: 280}]
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363},
- {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 447},
- {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88},
- {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp20&#39;, &#39;n_students&#39;: 469},
- {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
@@ -1761,12 +1929,12 @@ Ellis
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make comparison among all courses</span>
 <span class="c1"># returns the class with the most students</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;Sp22&#39;, &#39;n_students&#39;: 471}
 </pre></div>
 </div>
 </div>
@@ -1774,12 +1942,12 @@ Ellis
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest students</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS87&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 24}
 </pre></div>
 </div>
 </div>
@@ -1812,7 +1980,7 @@ Ellis
         
         <span class="k">for</span> <span class="n">my_course</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">my_course</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">fewest</span><span class="p">[</span><span class="n">attribute</span><span class="p">]:</span>
-                <span class="n">fewest</span> <span class="o">=</span> <span class="n">my_course</span><span class="o">=</span>
+                <span class="n">fewest</span> <span class="o">=</span> <span class="n">my_course</span>
             <span class="k">elif</span> <span class="n">my_course</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">most</span><span class="p">[</span><span class="n">attribute</span><span class="p">]:</span>
                 <span class="n">most</span> <span class="o">=</span> <span class="n">my_course</span>
                 
@@ -1828,24 +1996,27 @@ Ellis
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create ellis_courses</span>
-<span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create courses</span>
+<span class="n">JF_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Fleischer, Jason&#39;</span><span class="p">)</span>
 
-<span class="c1"># add a bunch of classes</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">447</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;su20&#39;</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;sp20&#39;</span><span class="p">,</span> <span class="mi">469</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;sp19&#39;</span><span class="p">,</span> <span class="mi">825</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa19&#39;</span><span class="p">,</span> <span class="mi">301</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="c1"># add a class</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;Fa22&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;Fa22&#39;</span><span class="p">,</span> <span class="mi">446</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS87&#39;</span><span class="p">,</span> <span class="s1">&#39;Fa22&#39;</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;Sp22&#39;</span><span class="p">,</span> <span class="mi">471</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS118A&#39;</span><span class="p">,</span> <span class="s1">&#39;Sp22&#39;</span><span class="p">,</span> <span class="mi">280</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
 
-<span class="c1"># see the courses</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
+<span class="c1"># see output</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">JF_courses</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">n_courses</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 363, &#39;n_exams&#39;: 2, &#39;n_assignments&#39;: 5}, {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 446, &#39;n_exams&#39;: 0, &#39;n_assignments&#39;: 6}, {&#39;course_name&#39;: &#39;COGS87&#39;, &#39;quarter&#39;: &#39;Fa22&#39;, &#39;n_students&#39;: 24, &#39;n_exams&#39;: 0, &#39;n_assignments&#39;: 0}, {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;Sp22&#39;, &#39;n_students&#39;: 471, &#39;n_exams&#39;: 0, &#39;n_assignments&#39;: 6}, {&#39;course_name&#39;: &#39;COGS118A&#39;, &#39;quarter&#39;: &#39;Sp22&#39;, &#39;n_students&#39;: 280, &#39;n_exams&#39;: 2, &#39;n_assignments&#39;: 7}]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
@@ -1853,16 +2024,16 @@ Ellis
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the most exams</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_exams&#39;</span><span class="p">,</span> <span class="s1">&#39;most&#39;</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_exams&#39;</span><span class="p">,</span> <span class="s1">&#39;most&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
- &#39;quarter&#39;: &#39;su20&#39;,
- &#39;n_students&#39;: 88,
- &#39;n_exams&#39;: 3,
- &#39;n_assignments&#39;: 5}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS118A&#39;,
+ &#39;quarter&#39;: &#39;Sp22&#39;,
+ &#39;n_students&#39;: 280,
+ &#39;n_exams&#39;: 2,
+ &#39;n_assignments&#39;: 7}
 </pre></div>
 </div>
 </div>
@@ -1870,16 +2041,16 @@ Ellis
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest assignments</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_assignments&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+<span class="n">JF_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_assignments&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
- &#39;quarter&#39;: &#39;fa19&#39;,
- &#39;n_students&#39;: 301,
- &#39;n_exams&#39;: 2,
- &#39;n_assignments&#39;: 4}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS87&#39;,
+ &#39;quarter&#39;: &#39;Fa22&#39;,
+ &#39;n_students&#39;: 24,
+ &#39;n_exams&#39;: 0,
+ &#39;n_assignments&#39;: 0}
 </pre></div>
 </div>
 </div>
@@ -2025,10 +2196,10 @@ Ellis
             <p class="prev-next-title">Methods</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../labs/CL1-Tooling.html" title="next page">
+    <a class='right-next' id="next-link" href="13-CommandLine.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Coding Lab 1: Tech Setup &amp; Tooling</p>
+        <p class="prev-next-title">Command Line</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
