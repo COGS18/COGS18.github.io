@@ -177,6 +177,11 @@ const thebe_selector_output = ".output, .cell_output"
    13-CommandLine
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A1-CodeStyle.html">
+   A1-CodeStyle
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -1588,11 +1593,12 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="c1"># Class attributes for Dogs</span>
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
+
     
     <span class="c1"># Initializer, allows us to specify instance-specific attributes</span>
     <span class="c1"># leading and trailing double underscores indicates that this is special to Python</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dog_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">dog_name</span>
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
@@ -1604,7 +1610,8 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a dog</span>
 <span class="c1"># what goes in the parentheses is defined in the __init__</span>
-<span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Gary&#39;</span><span class="p">)</span> 
+<span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">dog_name</span> <span class="o">=</span> <span class="s1">&#39;Gary&#39;</span><span class="p">,</span> <span class="n">legs</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">daisy</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Daisy&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1614,6 +1621,12 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check gary&#39;s attributes</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">gary</span><span class="o">.</span><span class="n">sound</span><span class="p">)</span>    <span class="c1"># This is an class attribute</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">gary</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>     <span class="c1"># This is a instance attribute</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Woof
+Gary
 </pre></div>
 </div>
 </div>
@@ -1636,8 +1649,9 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
     
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">breed</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="n">breed</span>
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
@@ -1647,7 +1661,16 @@ Instance attributes are attributes that we can make be different for each instan
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## We&#39;ll execute here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fido</span> <span class="o">=</span> <span class="n">NewDog</span><span class="p">(</span><span class="s1">&#39;Fido&#39;</span><span class="p">,</span><span class="s1">&#39;Terrier&#39;</span><span class="p">)</span>
+<span class="n">Max</span> <span class="o">=</span> <span class="n">NewDog</span><span class="p">(</span><span class="s1">&#39;Max&#39;</span><span class="p">,</span><span class="s1">&#39;Poodle&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fido</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">fido</span><span class="o">.</span><span class="n">breed</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Max</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">Max</span><span class="o">.</span><span class="n">breed</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fido Terrier
+Max Poodle
 </pre></div>
 </div>
 </div>
@@ -1673,6 +1696,8 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
+    
+    
 </pre></div>
 </div>
 </div>
@@ -1694,6 +1719,18 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="n">pets</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">pet</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39; says:&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">pet</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jaspurr  says:
+MeowMeow
+Barkley  says:
+WoofWoof
+Picatso  says:
+MeowMeow
+Ruffius  says:
+WoofWoof
 </pre></div>
 </div>
 </div>
@@ -1723,6 +1760,11 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="s1">&#39;Rob&#39;</span><span class="p">,</span> <span class="s1">&#39;rob@python.com&#39;</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>
 <span class="n">student</span><span class="o">.</span><span class="n">check_score</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;rob@python.com&#39;
 </pre></div>
 </div>
 </div>
@@ -2055,6 +2097,19 @@ Fleischer, Jason
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alice</span><span class="o">.</span><span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;bark&#39;</span>
+<span class="n">alice</span><span class="o">.</span><span class="n">sound</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;bark&#39;
+</pre></div>
+</div>
+</div>
+</div>
 <p><strong>Improving &amp; updating this code</strong></p>
 <ul class="simple">
 <li><p>account for ties in <code class="docutils literal notranslate"><span class="pre">compare()</span></code></p></li>
@@ -2088,10 +2143,24 @@ Fleischer, Jason
 </li>
 </ul>
 <ul class="simple">
+<li><p>instance methods defined as a function inside the <code class="docutils literal notranslate"><span class="pre">class</span></code> block</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code> to define the method just like a normal function</p></li>
+<li><p>The first argument is always <code class="docutils literal notranslate"><span class="pre">self</span></code> pointer</p></li>
+<li><p>Next whatever arguments you want to actually pass to the method</p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
 <li><p>to create an object (instance) of a specified class type (<code class="docutils literal notranslate"><span class="pre">ClassType</span></code>):</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">object_name</span> <span class="pre">=</span> <span class="pre">ClassType(input1,</span> <span class="pre">input2)</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">self</span></code> is not given an input when creating an object of a specified class</p></li>
+</ul>
+</li>
+<li><p>to use a method <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">object_name.method(self,</span> <span class="pre">arg1,</span> <span class="pre">arg2</span> <span class="pre">...)</span></code></p>
+<ul>
+<li><p>call <code class="docutils literal notranslate"><span class="pre">object_name.method(arg1,</span> <span class="pre">arg2</span> <span class="pre">...)</span></code></p></li>
+<li><p>don’t call <code class="docutils literal notranslate"><span class="pre">self</span></code></p></li>
 </ul>
 </li>
 </ul>
