@@ -74,22 +74,16 @@ parts:
       title: E1-Review
     - file: materials/Exam-Prep/E1-Review-Answers
       title: E1-Review-Answers
-    - file: materials/Exam-Prep/E1-Practice
-      title: E1-Practice
-    - file: materials/Exam-Prep/E1_Wi22_Practice-Answers
-      title: E1_Wi22_Practice-Answers
-    - file: materials/Exam-Prep/E1_Wi22
-      title: E1_Wi22-Answers
+    - file: materials/Exam-Prep/E1_Fa22_Practice
+      title: E1-Practice-Answers
+    - file: materials/Exam-Prep/E1_Fa22
+      title: E1-Answers
     - file: materials/Exam-Prep/E2-Review
       title: E2-Review
     - file: materials/Exam-Prep/E2-Review-Answers
       title: E2-Review-Answers
-  #   - file: materials/Exam-Prep/E2-Practice
-  #     title: E2-Practice
-    - file: materials/Exam-Prep/E2_Wi22_Practice
-      title: E2_Wi22_Practice-Answers
-    - file: materials/Exam-Prep/E2_Wi22
-      title: E2_Wi22-Answers
+    - file: materials/Exam-Prep/E2_Fa22_Practice
+      title: E2-Practice-Answers
 
   - caption: Projects
     chapters:
