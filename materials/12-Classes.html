@@ -251,6 +251,16 @@ const thebe_selector_output = ".output, .cell_output"
    E2-Review
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/E2_Fa22_Practice.html">
+   E2-Practice-Answers
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -2187,7 +2197,7 @@ Fleischer, Jason
 <li><p><code class="docutils literal notranslate"><span class="pre">object_name</span> <span class="pre">=</span> <span class="pre">ClassType(input1,</span> <span class="pre">input2)</span></code></p></li>
 </ul>
 </li>
-<li><p>to use a method <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">object_name.method(self,</span> <span class="pre">arg1,</span> <span class="pre">arg2</span> <span class="pre">...)</span></code></p>
+<li><p>to use a method <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">ClassType::method(self,</span> <span class="pre">arg1,</span> <span class="pre">arg2</span> <span class="pre">...)</span></code></p>
 <ul>
 <li><p>call <code class="docutils literal notranslate"><span class="pre">object_name.method(arg1,</span> <span class="pre">arg2</span> <span class="pre">...)</span></code></p></li>
 <li><p>don’t call <code class="docutils literal notranslate"><span class="pre">self</span></code></p></li>
@@ -2204,11 +2214,22 @@ Fleischer, Jason
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;word&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+True
+True
+True
+True
 </pre></div>
 </div>
 </div>
