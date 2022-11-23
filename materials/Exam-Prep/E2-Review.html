@@ -178,6 +178,16 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../15-ScientificComputing.html">
+   15-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../16-Documentation.html">
+   16-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../A1-CodeStyle.html">
    A1-CodeStyle
   </a>
@@ -596,11 +606,6 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#objects-classes-question-1">
-     Objects &amp; Classes Question #1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#objects-classes-question-2">
      Objects &amp; Classes Question #2
     </a>
@@ -715,11 +720,6 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#objects-classes-question-1">
-     Objects &amp; Classes Question #1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#objects-classes-question-2">
      Objects &amp; Classes Question #2
     </a>
@@ -767,7 +767,7 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>The exam is designed to take you ~1-2h.</p></li>
 <li><p>There will be a &gt;24 hour window during which you can complete this exam.</p></li>
-<li><p>Exam window will be from midnight to midnight on Fri Oct 21</p></li>
+<li><p>Exam window will be from midnight to midnight on Fri 18 November</p></li>
 <li><p>If it takes you longer than 1h, you’re free to use that time.</p></li>
 </ul>
 </div>
@@ -785,10 +785,9 @@ title="Print to PDF"
 <li><p>asking anyone via any form about a question on this test directly</p></li>
 </ul>
 </li>
-<li><p>Clarification questions will <em><strong>not</strong></em> be allowed and there will be no posting on Piazza about the exam at all.</p>
+<li><p>Clarification questions will  be allowed  on Piazza via private message to instructors. No guarentee of a timely response but we will try</p>
 <ul>
 <li><p>No office hours or emails to us either</p></li>
-<li><p>Note: This policy is b/c we are incapable of responding for the entirety of the exam. This is the only way to make it fair across the board for students.</p></li>
 </ul>
 </li>
 </ul>
@@ -843,6 +842,25 @@ title="Print to PDF"
 <h4>Loops Question #2<a class="headerlink" href="#loops-question-2" title="Permalink to this heading">#</a></h4>
 <p>Use the following:
 <code class="docutils literal notranslate"><span class="pre">ind</span> <span class="pre">=</span> <span class="pre">1</span></code> to write a loop (using real Python code) that would loop and print the value <code class="docutils literal notranslate"><span class="pre">ind</span></code> of ind each time through the loop <em>and</em> update the value of ind by 1. Have this loop stop after 4 iterations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ind</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">ind</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span>
+    <span class="n">ind</span> <span class="o">=</span> <span class="n">ind</span> <span class="o">+</span> <span class="mi">1</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+2
+3
+4
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="loops-question-3">
 <h4>Loops Question #3<a class="headerlink" href="#loops-question-3" title="Permalink to this heading">#</a></h4>
@@ -850,6 +868,24 @@ title="Print to PDF"
 <p>Initialize an additional variable called <code class="docutils literal notranslate"><span class="pre">reverse_pet</span></code> that will store an empty string to start.</p>
 <p>Then, using indexing, loop through each letter in that list such that <code class="docutils literal notranslate"><span class="pre">reverse_pet</span></code> stores a list with your favorite pet spelled backward.</p>
 <p>For example, if your favorite pet were “cat”, the output stored in <code class="docutils literal notranslate"><span class="pre">reverse_pet</span></code> should be: <code class="docutils literal notranslate"><span class="pre">['t',</span> <span class="pre">'a',</span> <span class="pre">'c']</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fav_pet</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<span class="n">reverse_pet</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">fav_pet</span><span class="p">:</span>
+    <span class="n">reverse_pet</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">letter</span><span class="p">)</span>
+
+<span class="n">reverse_pet</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;t&#39;, &#39;a&#39;, &#39;c&#39;]
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="loops-question-4">
 <h4>Loops Question #4<a class="headerlink" href="#loops-question-4" title="Permalink to this heading">#</a></h4>
@@ -888,16 +924,17 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-<div class="section" id="objects-classes-question-1">
-<h3>Objects &amp; Classes Question #1<a class="headerlink" href="#objects-classes-question-1" title="Permalink to this heading">#</a></h3>
-<p><strong>Part A</strong></p>
-<p>We want to simulate a rocket ship for a game.</p>
-<p>Write code that will create a class <code class="docutils literal notranslate"><span class="pre">Rocket</span></code>.</p>
-<p>This class should have two instance attributes: <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. These will specify the x,y position of the rocket. Each attribute should be initialized with hte value 0.</p>
-<p>Your <code class="docutils literal notranslate"><span class="pre">Rocket</span></code> should also have the method <code class="docutils literal notranslate"><span class="pre">move_up()</span></code>. This method should increment the y-position of the rocket by 1.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Rocket</span><span class="p">():</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_init</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y_init</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x_init</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y_init</span>
+    
+    <span class="k">def</span> <span class="nf">move_up</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="mi">1</span>
+        
 </pre></div>
 </div>
 </div>
@@ -907,7 +944,11 @@ title="Print to PDF"
 <p>Create an instance <code class="docutils literal notranslate"><span class="pre">my_rocket</span></code> of your Rocket object.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_rocket</span> <span class="o">=</span> <span class="n">Rocket</span><span class="p">()</span>
+<span class="n">my_rocket</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">my_rocket</span><span class="o">.</span><span class="n">y</span>
+
+
+<span class="n">your_rocket</span> <span class="o">=</span> <span class="n">Rocket</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -916,9 +957,29 @@ title="Print to PDF"
 <p>Update <code class="docutils literal notranslate"><span class="pre">my_rocket</span></code> so that <code class="docutils literal notranslate"><span class="pre">my_rocket</span></code> has the <code class="docutils literal notranslate"><span class="pre">y</span></code> position 3.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">my_rocket</span><span class="o">.</span><span class="n">move_up</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">my_rocket</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">my_rocket</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 1
+0 2
+0 3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">your_rocket</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">your_rocket</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(0, 0)
+</pre></div>
 </div>
 </div>
 </div>
@@ -949,20 +1010,53 @@ In Python, everything is a(n) ______________.
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span> _____________
 </pre></div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">66</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>B
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="extras-question-2">
 <h3>Extras Question #2<a class="headerlink" href="#extras-question-2" title="Permalink to this heading">#</a></h3>
 <p>What is the magic function <code class="docutils literal notranslate"><span class="pre">%whos</span></code> used for?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable      Type      Data/Info
+---------------------------------
+Rocket        type      &lt;class &#39;__main__.Rocket&#39;&gt;
+fav_pet       list      n=3
+ind           int       5
+letter        str       t
+my_rocket     Rocket    &lt;__main__.Rocket object at 0x7ff5484dd4c0&gt;
+reverse_pet   list      n=3
+x             int       2
+your_rocket   Rocket    &lt;__main__.Rocket object at 0x7ff5484dd640&gt;
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="extras-question-3">
 <h3>Extras Question #3<a class="headerlink" href="#extras-question-3" title="Permalink to this heading">#</a></h3>
 <p>For each of the following, indicate if the statement is True or False about Python and programming:</p>
 <ul class="simple">
-<li><p>True/False Whitespace matters in Python</p></li>
-<li><p>True/False Comments in Python start with ‘%’</p></li>
-<li><p>True/False You have to specify a data type when you define a variable</p></li>
-<li><p>True/False Every Python variable is available from every namespace</p></li>
-<li><p>True/False <code class="docutils literal notranslate"><span class="pre">print_name()</span></code> folles best practices for function naming</p></li>
+<li><p>True Whitespace matters in Python</p></li>
+<li><p>False Comments in Python start with ‘%’</p></li>
+<li><p>False You have to specify a data type when you define a variable</p></li>
+<li><p>False Every Python variable is available from every namespace</p></li>
+<li><p>True <code class="docutils literal notranslate"><span class="pre">print_name()</span></code> follows best practices for function naming</p></li>
 </ul>
 <h2><center>After the second exam:</center></h2><h3><center> We will focus on the Python ecosystem, and applications of Python. </center></h3><h3><center> We also become a project based course. </center></h3></div>
 </div>
