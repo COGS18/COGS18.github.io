@@ -178,6 +178,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="14-Modules.html">
+   14-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="15-ScientificComputing.html">
    15-ScientificComputing
   </a>
@@ -279,6 +284,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Exam-Prep/E2_Fa22_Practice.html">
    E2-Practice-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Exam-Prep/Final-Practice-Answers.html">
+   Final-Practice-Answers
   </a>
  </li>
 </ul>
@@ -893,6 +903,7 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test here</span>
+<span class="n">extend</span><span class="p">([</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -1021,7 +1032,7 @@ Code tests are code that run and check other code, to make sure it does what it 
 <p>What function should do: add two inputs together</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import math</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">test_add</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Tests for the `add` function.&quot;&quot;&quot;</span>
@@ -1033,8 +1044,8 @@ Code tests are code that run and check other code, to make sure it does what it 
     <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">4</span>
     
     <span class="c1"># Test adding floats</span>
-    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">3.9</span>
-    <span class="c1"># assert math.isclose(add(2.7, 1.2), 3.9)</span>
+    <span class="c1">#assert add(2.7, 1.2) == 3.9</span>
+    <span class="k">assert</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">),</span> <span class="mf">3.9</span><span class="p">)</span>
     
     <span class="c1"># Test adding with 0</span>
     <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
@@ -1070,6 +1081,11 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># assert statements here</span>
+<span class="n">my_str</span> <span class="o">=</span> <span class="s1">&#39;what is going on here&#39;</span>
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="n">string</span><span class="o">.</span><span class="n">punctuation</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">:</span> 
+    <span class="k">assert</span>  <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">my_str</span>
 </pre></div>
 </div>
 </div>
@@ -1191,6 +1207,11 @@ In software development, <b>test-driven development</b> is an approach in which 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### YOUR TEST</span>
+<span class="k">def</span> <span class="nf">test_sum_list</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">sum_list</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">sum_list</span><span class="p">([</span><span class="mi">0</span><span class="p">]))</span><span class="o">==</span><span class="nb">int</span>
+    <span class="k">assert</span> <span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span><span class="o">==</span><span class="mi">6</span>
+    
 </pre></div>
 </div>
 </div>
@@ -1248,6 +1269,14 @@ In software development, <b>test-driven development</b> is an approach in which 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	hey I&#39;m happy the US won yesterday!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&quot;hey I&#39;m happy the US won yesterday!&quot;, None)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1256,12 +1285,22 @@ In software development, <b>test-driven development</b> is an approach in which 
 
 <span class="k">def</span> <span class="nf">test_get_input</span><span class="p">():</span>
     <span class="c1"># specify after lambda what you want function to use as &quot;input&quot;</span>
-    <span class="k">with</span> <span class="n">mock</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">object</span><span class="p">(</span><span class="n">builtins</span><span class="p">,</span> <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">_</span><span class="p">:</span> <span class="s1">&#39;Hello&#39;</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">mock</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">object</span><span class="p">(</span><span class="n">builtins</span><span class="p">,</span> <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">_</span><span class="p">:</span> <span class="s1">&#39;hey I</span><span class="se">\&#39;</span><span class="s1">m happy the US won yesterday!&#39;</span><span class="p">):</span>
 
         <span class="c1"># execute function and specify something that asserts True</span>
         <span class="n">msg</span><span class="p">,</span> <span class="n">out_msg</span> <span class="o">=</span> <span class="n">get_input</span><span class="p">()</span>
-        <span class="k">assert</span> <span class="n">msg</span> <span class="o">==</span> <span class="s1">&#39;Hello&#39;</span>
+        <span class="k">assert</span> <span class="n">msg</span> <span class="o">==</span> <span class="s1">&#39;hey I</span><span class="se">\&#39;</span><span class="s1">m happy the US won yesterday!&#39;</span>
         <span class="k">assert</span> <span class="n">out_msg</span> <span class="o">==</span> <span class="kc">None</span>
+        
+<span class="nb">input</span><span class="p">()</span>   
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;&#39;
 </pre></div>
 </div>
 </div>
