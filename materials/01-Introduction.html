@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Ideas &#8212; COGS 18 - Introduction To Python</title>
+    <title>Introduction to Python &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,12 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Project FAQ" href="faq.html" />
+    <link rel="next" title="Python Party!" href="../projects/PythonParty.html" />
+    <link rel="prev" title="Welcome to COGS 18: Introduction to Python!" href="../intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -112,9 +111,9 @@ const thebe_selector_output = ".output, .cell_output"
   Lectures
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../materials/01-Introduction.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    01-Introduction
   </a>
  </li>
@@ -124,24 +123,24 @@ const thebe_selector_output = ".output, .cell_output"
   Projects
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="PythonParty.html">
+  <a class="reference internal" href="../projects/PythonParty.html">
    PythonParty
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="overview.html">
+  <a class="reference internal" href="../projects/overview.html">
    Overview
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="faq.html">
+  <a class="reference internal" href="../projects/faq.html">
    FAQ
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/ProjectIdeas.html">
    ProjectIdeas
   </a>
  </li>
@@ -204,7 +203,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/projects/ProjectIdeas.ipynb&branch=master"
+        <a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/01-Introduction.ipynb&branch=master"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -222,7 +221,7 @@ title="Launch on JupyterHub"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/projects/ProjectIdeas.ipynb"
+        <a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/01-Introduction.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -282,7 +281,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/ProjectIdeas.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/01-Introduction.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -299,7 +298,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/COGS18/COGS18.github.io/edit/master/projects/ProjectIdeas.ipynb"
+        <a href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/01-Introduction.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -327,7 +326,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/projects/ProjectIdeas.ipynb"
+        <a href="../_sources/materials/01-Introduction.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -387,41 +386,38 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#encryption">
-   Encryption
+  <a class="reference internal nav-link" href="#logistics">
+   Logistics
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#chatbots">
-   Chatbots
+  <a class="reference internal nav-link" href="#expectations-approach">
+   Expectations &amp; Approach
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#artificial-agents">
-   Artificial Agents
+  <a class="reference internal nav-link" href="#why-learn-computation">
+   Why Learn Computation?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#research">
-   Research
+  <a class="reference internal nav-link" href="#what-is-python">
+   What is Python
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#choose-your-own-adventure">
-   Choose your own adventure
+  <a class="reference internal nav-link" href="#what-does-python-look-like">
+   What does Python look like
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#taboo-topics">
-   Taboo Topics
-   <span class="math notranslate nohighlight">
-    \(^*\)
-   </span>
+  <a class="reference internal nav-link" href="#why-choose-python">
+   Why Choose Python?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to-get-started">
-   How to get started
+  <a class="reference internal nav-link" href="#this-is-a-jupyter-notebook">
+   This is a Jupyter Notebook
   </a>
  </li>
 </ul>
@@ -433,7 +429,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Project Ideas</h1>
+                <h1>Introduction to Python</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -444,41 +440,38 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#encryption">
-   Encryption
+  <a class="reference internal nav-link" href="#logistics">
+   Logistics
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#chatbots">
-   Chatbots
+  <a class="reference internal nav-link" href="#expectations-approach">
+   Expectations &amp; Approach
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#artificial-agents">
-   Artificial Agents
+  <a class="reference internal nav-link" href="#why-learn-computation">
+   Why Learn Computation?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#research">
-   Research
+  <a class="reference internal nav-link" href="#what-is-python">
+   What is Python
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#choose-your-own-adventure">
-   Choose your own adventure
+  <a class="reference internal nav-link" href="#what-does-python-look-like">
+   What does Python look like
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#taboo-topics">
-   Taboo Topics
-   <span class="math notranslate nohighlight">
-    \(^*\)
-   </span>
+  <a class="reference internal nav-link" href="#why-choose-python">
+   Why Choose Python?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to-get-started">
-   How to get started
+  <a class="reference internal nav-link" href="#this-is-a-jupyter-notebook">
+   This is a Jupyter Notebook
   </a>
  </li>
 </ul>
@@ -491,104 +484,122 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="project-ideas">
-<h1>Project Ideas<a class="headerlink" href="#project-ideas" title="Permalink to this heading">#</a></h1>
-<div class="section" id="encryption">
-<h2>Encryption<a class="headerlink" href="#encryption" title="Permalink to this heading">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-python">
+<h1>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this heading">#</a></h1>
+<p><strong>Important Note</strong>: This course was originally designed and developed by <a class="reference external" href="https://tomdonoghue.github.io/">Tom Donoghue</a> with huge revisions, updates and new material contributed later by <a class="reference external" href="https://shanellis.com">Shannon Ellis</a>. While lectures, assignments, exams and coding labs will be altered from those versions of thise class, <em>tons</em> of credit for this course is due to Tom and Shannon for their awesome work getting this course off the ground.</p>
+<p>The PDF slides from the start of the first class are available here: <a class="reference external" href="https://cogs18.github.io/assets/intro/01_welcome.pdf">https://cogs18.github.io/assets/intro/01_welcome.pdf</a></p>
+<div class="section" id="logistics">
+<h2>Logistics<a class="headerlink" href="#logistics" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Integrate email into the encryption code, so you can send and receive encrypted messages</p></li>
-<li><p>Explore ‘code breaking’, writing code that code break the encryption of some of the encryption schemes</p></li>
-</ul>
-</div>
-<div class="section" id="chatbots">
-<h2>Chatbots<a class="headerlink" href="#chatbots" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Extend the chatbot to talk about some new topics, or a new kind of interaction</p>
+<li><p>Who:</p>
 <ul>
-<li><p>For example, update the chatbot to more systematically answer questions</p></li>
-<li><p>Or focus on a particular topic, like answering questions about Python</p></li>
+<li><p>Instructor: Jason Fleischer</p></li>
+<li><p>TA: Fuling Sun, Heeket Mehta, Shanay Shah</p></li>
+<li><p>IAs: Jasmine Qiang, Maya Que, Nathanial Nguyen, Rizq Khatib, Sabrina Sullivan, Zixin Ma</p></li>
 </ul>
 </li>
-<li><p>Set up Chatbots that can talk to each other</p></li>
-</ul>
-</div>
-<div class="section" id="artificial-agents">
-<h2>Artificial Agents<a class="headerlink" href="#artificial-agents" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Make the agents interact with each other</p>
+<li><p>Where:</p>
 <ul>
-<li><p>What happens when they are in the same place? Can they ‘eat’ each other?</p></li>
-</ul>
-</li>
-<li><p>Add something new to the world: obstacles (walls?), or targers (food?)</p></li>
-<li><p>Add a new exploration scheme for the bots to perform</p></li>
-<li><p>Note: if you are want to scale up this idea, you can look into the ‘pelita’ application (from the demo)</p></li>
-</ul>
-</div>
-<div class="section" id="research">
-<h2>Research<a class="headerlink" href="#research" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Use LiteratureScanner to investigate an area of research in the literature</p></li>
-<li><p>Explore scientific python to analyze a small dataset</p></li>
-</ul>
-</div>
-<div class="section" id="choose-your-own-adventure">
-<h2>Choose your own adventure<a class="headerlink" href="#choose-your-own-adventure" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Choose an area you are interested in, and explore what people do in it (read code!)</p>
-<ul>
-<li><p>If you want to try and use an external tool / codebase, consider writing a demo / tutorial for it</p></li>
-</ul>
-</li>
-<li><p>Find an API, and write some code to get some data / do some procedures with it</p></li>
-<li><p>You can also check out and build of one of the demos from the 0th class</p></li>
-<li><p>One option: create text based programs, that mimic some programs you would like</p></li>
-<li><p>Build some sort of utility that you would find useful</p>
-<ul>
-<li><p>File management, organizing pictures, indexing files,</p></li>
-</ul>
-</li>
-<li><p>If you are interested in an area of research, start a project related to that</p>
-<ul>
-<li><p>This can be a way to learn those specific tools</p>
-<ul>
-<li><p>For example: get a working demo, and sketch out a tutorial</p></li>
-</ul>
-</li>
+<li><p>Lectures MWF &#64; 9AM (CTL 125)</p></li>
+<li><p>Coding lab sections (CSB 115; Wed 10AM-7PM)</p></li>
+<li><p>Website: <a class="reference external" href="https://cogs18.github.io">https://cogs18.github.io</a></p></li>
+<li><p>Discussion board: TBD</p></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="section" id="taboo-topics">
-<h2>Taboo Topics <span class="math notranslate nohighlight">\(^*\)</span><a class="headerlink" href="#taboo-topics" title="Permalink to this heading">#</a></h2>
-<p>There are lots of helpful tutorials online; however, often it’s difficult to figure out how to make <em>your</em> implementation different than these online tutorials. It’s also boring and a pain to grade. So, to avoid any issues, there are two taboo topics this quarter:</p>
-<ol class="simple">
-<li><p>Hangman</p></li>
-<li><p>Drawings from <code class="docutils literal notranslate"><span class="pre">turtle</span></code></p></li>
-<li><p>tic-tac-toe</p></li>
-<li><p>blackjack</p></li>
-<li><p>Magic 8 Ball</p></li>
-<li><p>Rock, Paper, Scissors</p></li>
-<li><p>Snake Game</p></li>
-<li><p>Connect4 Game</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(^*\)</span>If you have a really new hangman implementation/idea or are super stoked about your great <code class="docutils literal notranslate"><span class="pre">turtle</span></code> idea or have invented a spin on traditional tic-tac-toe/blackjack/magic 8 ball/rock, paper, scissors, you’ll need to pitch your idea to (via email/campuswire or in office hours) and get approval from Professor Ellis</p>
-</div>
-<div class="section" id="how-to-get-started">
-<h2>How to get started<a class="headerlink" href="#how-to-get-started" title="Permalink to this heading">#</a></h2>
+<div class="section" id="expectations-approach">
+<h2>Expectations &amp; Approach<a class="headerlink" href="#expectations-approach" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Pseudocode out the ideas you would like to explore / work on</p></li>
-<li><p>Open a notebook, and get some code into it</p>
+<li><p>Goal: to learn practical programming in Python</p></li>
+<li><p>How: hands-on, community driven, skills based course, assignment &amp; project driven</p></li>
+<li><p>Lectures &amp; Lab Sections will be used for interactive activities</p></li>
+<li><p>Assignments, coding labs &amp; a final project will be designed to get you coding</p></li>
+</ul>
+</div>
+<div class="section" id="why-learn-computation">
+<h2>Why Learn Computation?<a class="headerlink" href="#why-learn-computation" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Computation is how things are done</p></li>
+</ul>
+<ul class="simple">
+<li><p>Computation is the foundation of much of the modern world</p></li>
+</ul>
+</div>
+<div class="section" id="what-is-python">
+<h2>What is Python<a class="headerlink" href="#what-is-python" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python is a programming language</p>
 <ul>
-<li><p>If you are doing an assignment related project, see which code you need, and isolate it</p></li>
+<li><p>It is a way to do computation</p></li>
+<li><p>It gets the computer to do the work for you</p></li>
 </ul>
 </li>
-<li><p>Start exploring! Write some extra code that starts</p>
+</ul>
+<ul class="simple">
+<li><p>Python is an ecosystem</p>
 <ul>
-<li><p>Figure out what you will need to do your idea</p></li>
+<li><p>It is a culture of practice for computation</p></li>
 </ul>
 </li>
-<li><p>When you start having ‘mature’ functions / classes, try moving them into a script</p></li>
+</ul>
+</div>
+<div class="section" id="what-does-python-look-like">
+<h2>What does Python look like<a class="headerlink" href="#what-does-python-look-like" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variable_name</span> <span class="o">=</span> <span class="s2">&quot;the stuff stored in the variable.&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">variable_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>the stuff stored in the variable.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="why-choose-python">
+<h2>Why Choose Python?<a class="headerlink" href="#why-choose-python" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python is a powerful, well developed, and well supported tool</p></li>
+</ul>
+<ul class="simple">
+<li><p>Python is general purpose, with an immense, multi-purpose ecosystem</p></li>
+</ul>
+<ul class="simple">
+<li><p>Python is human focused, with a strong user &amp; developer community</p></li>
+</ul>
+<ul class="simple">
+<li><p>Python is open-source and accessible</p></li>
+</ul>
+</div>
+<div class="section" id="this-is-a-jupyter-notebook">
+<h2>This is a Jupyter Notebook<a class="headerlink" href="#this-is-a-jupyter-notebook" title="Permalink to this heading">#</a></h2>
+<p>Uses in COGS18:</p>
+<ul class="simple">
+<li><p>lecture notes</p></li>
+<li><p>assignments</p></li>
+<li><p>coding labs</p></li>
+<li><p>final project/exam</p></li>
 </ul>
 </div>
 </div>
@@ -606,7 +617,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./projects"
+            path: "./materials"
         },
         predefinedOutput: true
     }
@@ -620,12 +631,19 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="faq.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Project FAQ</p>
+            <p class="prev-next-title">Welcome to COGS 18: Introduction to Python!</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="../projects/PythonParty.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python Party!</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
