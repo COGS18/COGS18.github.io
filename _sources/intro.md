@@ -13,7 +13,9 @@ Introduction to Python is currently running for Winter 2023, [please read the sy
 
 ### Materials
 
-All course materials are openly available and downloadable from this website. Materials presented during the course lectures are [viewable here](materials/). The source material for everything hosted on this site is also available on [GitHub](https://github.com/COGS18).
+All course materials are openly available and downloadable from this website. [Materials presented during the course lectures are viewable here](materials/01-Introduction).
+
+Github is a tool used by many programmers. It is a code hosting platform for version control and collaboration. The source material for everything hosted on this site is also available on [GitHub](https://github.com/COGS18). While we don't explicitly teach you to use Github in this class, you should definitely explore it on your own if you're interested! Here are [some different](https://youtu.be/w3jLJU7DT5E) [Github](https://docs.github.com/en/get-started/quickstart/hello-world) [tutorials](https://podcast.ucsd.edu/watch/sp19/cogs108_a00/3)
 
 [Click on this link to transfer the current materials from github to your datahub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main) so you can follow along in lecture. NB. This updates every lecture, so you will have to click on this link repeatedly to keep up to date.
 
