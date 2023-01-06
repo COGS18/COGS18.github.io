@@ -160,42 +160,41 @@ The final exam will be take-home and you will have at least 48 hours to complete
 ---
 
 ## COURSE SCHEDULE
+| Date      | Week   | Day | Lecture topic          | Lab topic                   | Assignment due                          | Exam                       |
+| --------- | ------ | --- | ---------------------- | --------------------------- | --------------------------------------- | -------------------------- |
+| 1/9/2023  | 1      | M   | Introduction           |                             |                                         |                            |
+| 1/11/2023 | 1      | W   | Tooling                | CL1 - tooling               |                                         |                            |
+| 1/13/2023 | 1      | F   | Variables              |                             |                                         |                            |
+| 1/16/2023 | 2      | M   | NO CLASS - MLK         |                             |                                         |                            |
+| 1/18/2023 | 2      | W   | Operators I            | CL2 - vars, operators       |                                         |                            |
+| 1/20/2023 | 2      | F   | Operators II           |                             |                                         |                            |
+| 1/23/2023 | 3      | M   | Functions              |                             |                                         |                            |
+| 1/25/2023 | 3      | W   | Conditionals I         | CL3 - funcs, conditionals   |                                         |                            |
+| 1/27/2023 | 3      | F   | Conditionals II        |                             | A1 - variables, comparison, functions   |                            |
+| 1/30/2023 | 4      | M   | Collections            |                             |                                         | Practice exam released     |
+| 2/1/2023  | 4      | W   | Loops                  | CL4 - collections           |                                         |                            |
+| 2/3/2023  | 4      | F   | Loops II               |                             | A2 - conditionals, collections, ciphers | Practice answers released  |
+| 2/6/2023  | 5      | M   | Algorithms             |                             |                                         | Exam 1 - take home Sun/Mon |
+| 2/8/2023  | 5      | W   | Methods                | CL5 - loops                 |                                         |                            |
+| 2/10/2023 | 5      | F   | Classes I              |                             | A3 - loops, strings, chatbots           |                            |
+| 2/13/2023 | 6      | M   | Classes II             |                             |                                         |                            |
+| 2/15/2023 | 6      | W   | Classes III            | CL6 - classes               |                                         |                            |
+| 2/17/2023 | 6      | F   | Command Line           |                             |                                         |                            |
+| 2/20/2023 | 7      | M   | NO CLASS - President's |                             |                                         |                            |
+| 2/22/2023 | 7      | W   | Debugging              | CL7 - command line          |                                         |                            |
+| 2/24/2023 | 7      | F   | Modules & Scripts      |                             | A4 - methods, classes, agents           |                            |
+| 2/27/2023 | 8      | M   | Scientific computing   |                             |                                         | Practice exam released     |
+| 3/1/2023  | 8      | W   | Python party           | CL8 - scientific computing  |                                         |                            |
+| 3/3/2023  | 8      | F   | Documentation          |                             | A5 - numpy, pandas, refactoring         | Practice answers released  |
+| 3/6/2023  | 9      | M   | Code Testing           |                             |                                         | Exam 2 - take home Sun/Mon |
+| 3/8/2023  | 9      | W   | Code Projects          | CL9 - test, debug, refactor |                                         |                            |
+| 3/10/2023 | 9      | F   | Algorithms II          |                             |                                         |                            |
+| 3/13/2023 | 10     | M   | Advanced python        |                             |                                         |                            |
+| 3/15/2023 | 10     | W   | Advanced python II     | Projects                    |                                         | Practice exam released     |
+| 3/17/2023 | 10     | F   | Wrap up                |                             |                                         |                            |
+| 3/20/2023 | Finals | M   |                        |                             |                                         | Practice answers released  |
+| 3/22/2023 | Finals | W   | \--                    |                             | Final project                           | Final exam                 |
 
-|            | Week   | Day | Topic                            | Section covers | Lab due | Assignment due | Exam       |
-| ---------- | ------ | --- | -------------------------------- | -------------- | ------- | -------------- | ---------- |
-| 9/23/2022  | 0      | F   | Welcome!                         |                |         |                |            |
-| 9/26/2022  | 1      | M   | Introduction                     |                |         |                |            |
-| 9/28/2022  | 1      | W   | Tooling                          | CL1            | CL1     |                |            |
-| 9/30/2022  | 1      | F   | Variables                        |                |         |                |            |
-| 10/3/2022  | 2      | M   | Operators I                      |                |         |                |            |
-| 10/5/2022  | 2      | W   | Operators II                     | CL2            | CL2     |                |            |
-| 10/7/2022  | 2      | F   | Functions                        |                |         |                |            |
-| 10/10/2022 | 3      | M   | Conditionals I                   |                |         | Checkpoint     |            |
-| 10/12/2022 | 3      | W   | Conditionals II                  | CL3            | CL3     |                |            |
-| 10/14/2022 | 3      | F   | Collections                      |                |         | A1             |            |
-| 10/17/2022 | 4      | M   | Debugging \*                     |                |         |                |            |
-| 10/19/2022 | 4      | W   | Review                           | CL4            | CL4     |                |            |
-| 10/21/2022 | 4      | F   | Loops                            |                |         |                | E1         |
-| 10/24/2022 | 5      | M   | Loops II                         |                |         | Checkpoint     |            |
-| 10/26/2022 | 5      | W   | Algorithms (possible to add ii?) | CL5            | CL5     |                |            |
-| 10/28/2022 | 5      | F   | Methods                          |                |         | A2             |            |
-| 10/31/2022 | 6      | M   | Classes I                        |                |         | Checkpoint     |            |
-| 11/2/2022  | 6      | W   | Classes II                       | CL6            | CL6     |                |            |
-| 11/4/2022  | 6      | F   | Classes III \*\*                 |                |         | A3             |            |
-| 11/7/2022  | 7      | M   | Python Party                     |                |         |                |            |
-| 11/9/2022  | 7      | W   | Review                           | CL7            | CL7     |                |            |
-| 11/11/2022 | 7      | F   | No class - Veterans day          |                |         |                | E2         |
-| 11/14/2022 | 8      | M   | Command Line                     |                |         | Checkpoint     |            |
-| 11/16/2022 | 8      | W   | Modules & Scripts                | CL8            | CL8     |                |            |
-| 11/18/2022 | 8      | F   | Scientific Computing             |                |         | A4             |            |
-| 11/21/2022 | 9      | M   | Code Style                       |                |         |                |            |
-| 11/23/2022 | 9      | W   | Documentation                    | CL9            | CL9     |                |            |
-| 11/25/2022 | 9      | F   | No class - Thanksgiving          |                |         |                |            |
-| 11/28/2022 | 10     | M   | Code Testing                     |                |         | Checkpoint     |            |
-| 11/30/2022 | 10     | W   | Code Projects                    | Projects       | \--     |                |            |
-| 12/2/2022  | 10     | F   | Wrap Up                          |                |         | A5             |            |
-| 12/5/2022  | Finals | M   | \--                              |                |         |                | Final exam |
-| 12/7/2022  | Finals | W   | \--                              |                |         | Final project  |            |
 
 **Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam (Mon 3/14) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
