@@ -19,30 +19,36 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE STAFF & INFORMATION
 
-| **What**         | **Who**        | **When**                                                                                                                                                  | **Where**                                                                                                                                                                                       |
-| ---------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Lecture**      |                | MWF 8-8:50AM                                                     | Peterson Hall 110<br>and [on Zoom simultaneously](https://ucsd.zoom.us/j/95523091196)      |
-| **Coding Lab**   | Shivani        | Wed 9 AM-9:50 AM<br>Wed 10 AM-10:50 AM<br>Wed 11 AM-11:50 AM     | CSB 115                                                  |
-|                  | Pooja          | Wed 12 PM-12:50 PM<br>Wed 1 PM-1:50 PM<br>Wed 2 PM-2:50 PM       | CSB 115                                                  |
-|                  | Zoe            | Wed 3 PM-3:50 PM<br>Wed 4 PM-4:50 PM<br>Wed 5 PM-5:50 PM         | CSB 115                                                  |
+| **What**       | **Who**         | **When**      | **Where**                                                          |
+| ----------     | --------------- | ------------- | ------------------------------------------------------------------ |
+| **Lecture**    | Jason           | 9:00a-9:50a   | [CTL](https://map.concept3d.com/?id=1005#!s/CTL_Main?ct/18312) 125 |
+|                |                 |               |                                                                    |
+| **Coding lab** | Shanay, Jasmine | 10:00a-10:50a | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Shanay, Jasmine | 11:00a-11:50a | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Shanay, Maya    | 12:00p-12:50p | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Fuling, Maya    | 1:00p-1:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Fuling          | 2:00p-2:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Fuling          | 3:00p-3:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Heeket          | 4:00p-4:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Heeket, Sabrina | 5:00p-5:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
+|            | Heeket, Sabrina | 6:00p-6:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |                                               |
 | **Office Hours** | Prof Fleischer | [Signup for office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM) | Using the link you can pick time slots for<br>either in person (CSB 257) or Zoom       |
-|                  | Pooja          | Mon 6-7 pm (tentative)                                                                                                                                    |  [https://ucsd.zoom.us/j/6400500021](https://ucsd.zoom.us/j/6400500021)                                                                                                                         |
-|                  | Shad           | Mon 12-1PM                                                                                                                                                | CSB 114<br>or [https://ucsd.zoom.us/my/shadreyes](https://ucsd.zoom.us/my/shadreyes)                                                                                                             |
-|                  | Shivani        | Mon 12-1PM                                                                                                                                                | [https://ucsd.zoom.us/j/93922231856](https://ucsd.zoom.us/j/93922231856?pwd=YmgydlY2Qmt4enFvKzNiR3hmc2d1QT09)                                                                                   |
-|                  | Irisa          | TuTh 1-2PM                                                                                                                                                | Email me with your preferred time and location (irjin@ucsd.edu)                                                                                                                                 |
-|                  | Jose           | Fri 5-6pm                                                                                                                                                 | [https://ucsd.zoom.us/j/91250676908](https://www.google.com/url?q=https://ucsd.zoom.us/j/91250676908&sa=D&source=calendar&ust=1664569319199900&usg=AOvVaw1K6MP0Bbl5sEDevigMzCQs)                |
-|                  | Trista         | Mon 4-4:30pm<br>Tue 3:30-4:30pm           | [Please sign up here for OH](https://calendar.app.google/9pU3z8RLn3fm9Bz46)<br>[Zoom link for OH](https://ucsd.zoom.us/j/6602527440) |
-|                  | Zoe            | week 1: Thur 4:30-6:30pm; starting week2: Tue 4:30-6:30pm                         | [https://ucsd.zoom.us/j/7256308261](https://ucsd.zoom.us/j/7256308261)                                                                                                                          |
-|                  | Jeff           | Friday 12PM-1PM                                                                                                                                           | CSB 114                                                                                                                                                                                         |
-
+|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | your name         | your hours | your location and zoom link if necessary |
 
 
 
 Course Website: [https://cogs18.github.io](https://cogs18.github.io)  
-Canvas Course: [https://canvas.ucsd.edu/courses/40702](https://canvas.ucsd.edu/courses/40702)  
-Course Piazza\*: [https://piazza.com/class/l84mqraemi03p0](https://piazza.com/class/l84mqraemi03p0) (login code on Canvas)  
+Course Piazza\*: [https://piazza.com/class/l84mqraemi03p0](https://piazza.com/class/lckxo39qapb4qm)
 Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)  
-Course Feedback (anonymous): [Google Form](https://forms.gle/DYb2CVCUBbsZp8tM7)
+Link to sync newest class materials to Datahub: [https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
+Course Feedback (anonymous): [Google Form](https://forms.gle/XWa22pq5UggW3XjU7)
 
 \*You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
 
