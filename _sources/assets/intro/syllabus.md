@@ -31,7 +31,8 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |            | Fuling          | 3:00p-3:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
 |            | Heeket          | 4:00p-4:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
 |            | Heeket, Sabrina | 5:00p-5:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |
-|            | Heeket, Sabrina | 6:00p-6:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |                                               |
+|            | Heeket, Sabrina | 6:00p-6:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |      
+|                |                 |               |                                                                    |
 | **Office Hours** | Prof Fleischer | [Signup for office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM) | Using the link you can pick time slots for<br>either in person (CSB 257) or Zoom       |
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
@@ -43,12 +44,12 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                  | your name         | your hours | your location and zoom link if necessary |
 
 
-
-Course Website: [https://cogs18.github.io](https://cogs18.github.io)  
-Course Piazza\*: [https://piazza.com/class/l84mqraemi03p0](https://piazza.com/class/lckxo39qapb4qm)
-Assignment Submission: [https://datahub.ucsd.edu](https://datahub.ucsd.edu)  
-Link to sync newest class materials to Datahub: [https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
-Course Feedback (anonymous): [Google Form](https://forms.gle/XWa22pq5UggW3XjU7)
+# Important Links
+- [Course Website](https://cogs18.github.io)  
+- [Course Piazza\* (discussion boards / Q & A)](https://piazza.com/class/lckxo39qapb4qm)
+- [Programming environment and assignment submission: DataHub](https://datahub.ucsd.edu)  
+- [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
+- [Anonymous feedback via Google Form](https://forms.gle/XWa22pq5UggW3XjU7)
 
 \*You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
 
