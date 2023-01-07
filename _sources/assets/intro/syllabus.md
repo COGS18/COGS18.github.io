@@ -44,10 +44,12 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 
 # Important Links
-- [Course Website](https://cogs18.github.io)  
+- [Course Website](https://cogs18.github.io)
+- [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
 - [Course Canvas page (official announcements, assignment date reminders, see your grades)](https://canvas.ucsd.edu/courses/43939)
 - [Course Piazza\* (discussion boards / Q & A)](https://piazza.com/class/lckxo39qapb4qm)
-- [Programming environment and assignment submission: DataHub](https://datahub.ucsd.edu)  
+- [Programming environment and assignment submission: DataHub](https://datahub.ucsd.edu)
+- [Link to Daily Lecture Participation Survey](https://forms.gle/8NK9PHKYTY9BaV9i9)
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
 - [Anonymous feedback via Google Form](https://forms.gle/XWa22pq5UggW3XjU7)
 
