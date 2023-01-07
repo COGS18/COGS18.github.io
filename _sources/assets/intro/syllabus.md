@@ -6,8 +6,7 @@ output:
 
 # COGS 18: Introduction to Python
 
-**Fall 2022**  
-**MWF 8-8:50 (Peterson Hall 110)**
+**Winter 2023**  
 
 ---
 
@@ -46,6 +45,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 # Important Links
 - [Course Website](https://cogs18.github.io)  
+- [Course Canvas page (official announcements, assignment date reminders, see your grades)](https://canvas.ucsd.edu/courses/43939)
 - [Course Piazza\* (discussion boards / Q & A)](https://piazza.com/class/lckxo39qapb4qm)
 - [Programming environment and assignment submission: DataHub](https://datahub.ucsd.edu)  
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
