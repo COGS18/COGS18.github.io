@@ -76,7 +76,7 @@ To achieve these objectives, information will be presented during lecture. You w
 
 - All materials will be provided via the [course website](https://cogs18.github.io) and [datahub](https://datahub.ucsd.edu)
   - Software (optional): Python >=3.6 (Anaconda distribution); Jupyter Notebooks (this will be available on datahub)
-  - iclickers will be used but not reequired this quarter
+  - iclickers will be used
   - No required textbook; optional textbook: [https://shanellis.github.io/pythonbook](https://shanellis.github.io/pythonbook) (currently under development; feedback welcome)
 
 Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download.
@@ -124,13 +124,12 @@ We will work hard to grade everyone fairly and return assignments quickly. And, 
 
 Note that points will _not_ be rewarded if you fail to follow instructions. For example, if the instructions say to name the variable `orange` and you name it `ornage` (misspelled), you will not be rewarded credit upon regrade. This is because (1) following instructions and being detail-oriented is important and (2) there are hundreds of students taking the course this quarter. It would be an unfair burden to place on TAs if we didn't have this policy.
 
-### Attendance
-
-Attendance will not be recorder nor incentivized this quarter, given that we are (still) mid-transition in our return to in-person learning, and I do not want to encourage anyone to come to class if they're not feeling well. This applies to lecture as well as coding lab.
+### In-person illness policy
+Please do not attend any in-person activity (lecture/coding lab/office hours) if you are feeling ill, especially if you are sneezing/coughing and have a fever. If you feel mildly ill but without sneezing/coughing, or if you have allergies or similar, then you may come to in-person events while wearing a well-fitting mask.  
 
 ### Lecture
 
-Students are encouraged to attend lecture live (either via zoom or in person); however, all lectures will also be recorded/podcast. During lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates thoughts during lecture.
+Students are encouraged to attend lecture live; however, all lectures will also be recorded/podcast. During lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates thoughts during lecture.
 
 There will be a daily participation survey (link on Canvas) to provide feedback and ask questions about each lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project/exam. Completion of all surveys can provide up to 3.5% extra credit on your final project/exam (_not_ your final course grade). Each day's survey will be up for at least three days and can be completed regardless of whether you attend class live or watch the recording.
 
@@ -146,7 +145,7 @@ There will be five assignments, each worth 8\% of your final grade. Assignments 
 
 Late assignments will be accepted at 75\% credit for 72 hours (3 days) after the assignment's due date. Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
-You _are_ permitted to work with classmates on assignments; however, you are personally responsible for understanding everything you turn in. While you may ask one another about assignments, you may not copy directly from a classmate. And, you may not post full assignments nor any part of any assignment on the Internet (i.e. Chegg or related site). Evidence of cheating on an assignment will result (at minimum) in loss of a full letter grade in the course.
+You are personally responsible for understanding everything you turn in. While you may ask one another about assignments, you may not copy directly from a classmate. And, you may not post full assignments nor any part of any assignment on the Internet (i.e. Chegg or related site). Evidence of cheating on an assignment will result (at minimum) in loss of a full letter grade in the course.
 
 ### Midterms (25\%)
 
