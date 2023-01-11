@@ -34,7 +34,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                |                 |               |                                                                    |
 | **Office Hours** | Prof Fleischer | [Signup for office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM) | Using the link you can pick time slots for<br>either in person (CSB 257) or Zoom       |
 |                  | Fuling Sun         | Thursday 1:00p-3:00p  | CSB114 and https://ucsd.zoom.us/my/fuling |
-|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | Heeket Mehta       | Friday 3:00pm - 5:00pm | CSB 114 |
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
