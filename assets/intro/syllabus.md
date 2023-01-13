@@ -36,7 +36,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                  | Fuling Sun         | Thursday 1:00p-3:00p  | CSB114 and https://ucsd.zoom.us/my/fuling |
 |                  | Heeket Mehta       | Friday 3:00pm - 5:00pm | CSB - 114 |
 |                  | Maya Que           | Thursday 4:00pm - 5:00pm | [Zoom link](https://ucsd.zoom.us/j/98853967232?pwd=dnJBTE8wNlZ3TlZCWTZVUlRQdzNUdz09)|
-|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | Nathaniel Nguyen   | Tuesday 11:00am - 12:00pm | CSB114 |
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
