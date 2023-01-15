@@ -37,7 +37,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                  | Heeket Mehta       | Friday 3:00pm - 5:00pm | CSB - 114 |
 |                  | Maya Que           | Thursday 4:00pm - 5:00pm | [Zoom link](https://ucsd.zoom.us/j/98853967232?pwd=dnJBTE8wNlZ3TlZCWTZVUlRQdzNUdz09)|
 |                  | Nathaniel Nguyen   | Tuesday 11:00am - 12:00pm | CSB114 |
-|                  | Rizq Khateeb         | Tuesday 2:00pm - 3:00pm | [Zoom] (https://ucsd.zoom.us/j/9229181463)|
+|                  | Rizq Khateeb         | Tuesday 2:00pm - 3:00pm | https://ucsd.zoom.us/j/9229181463|
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
