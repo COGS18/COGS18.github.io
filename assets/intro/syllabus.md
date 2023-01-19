@@ -231,7 +231,7 @@ This class will be a welcoming, inclusive, and harassment-free experience for ev
 
 At all times, you should be considerate and respectful. Always refrain from demeaning, discriminatory, or harassing behavior and speech. Last of all, take care of each other.
 
-If you have a concern, please speak with Prof. Ellis, your TAs, or IAs. If you are uncomfortable doing so, that's OK! The [OPHD](https://blink.ucsd.edu/HR/policies/sexual/OPHD.html) (Office for the Prevention of Sexual Harassment and Discrimination) and [CARE](https://care.ucsd.edu/) (confidential advocacy and education office for sexual violence and gender-based violence) are wonderful resources on campus.
+If you have a concern, please speak with the professor, your TAs, or IAs. If you are uncomfortable doing so, that's OK! The [OPHD](https://blink.ucsd.edu/HR/policies/sexual/OPHD.html) (Office for the Prevention of Sexual Harassment and Discrimination) and [CARE](https://care.ucsd.edu/) (confidential advocacy and education office for sexual violence and gender-based violence) are wonderful resources on campus.
 
 ### Academic Integrity
 
@@ -239,11 +239,11 @@ Don't cheat.
 
 You are encouraged to work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is your responsibility to ensure you understand everything you've submitted and to make sure the correct file has been submitted and that the submission is uncorrupted. Please review academic integrity policies [here](http://academicintegrity.ucsd.edu).
 
-Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, Canvas or DataHub is down or something else prohibits you from being able to turn in an assignment on time, immediately contact Professor Ellis by emailing your assignment (sellis@ucsd.edu), or else it will be graded as late.
+Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, Canvas or DataHub is down or something else prohibits you from being able to turn in an assignment on time, immediately email the professor or else it will be graded as late.
 
 ### Disability Access
 
-Students requesting accommodations due to a disability must provide a current Authorization for Accommodation (AFA) letter. These letters are issued by the Office for Students with Disabilities (OSD), which is located in University Center 202 behind Center Hall. Please make arrangements to contact Professor Ellis privately to arrange accommodations.
+Students requesting accommodations due to a disability must provide a current Authorization for Accommodation (AFA) letter. These letters are issued by the Office for Students with Disabilities (OSD), which is located in University Center 202 behind Center Hall. Please contact the professor privately to arrange accommodations.
 
 Contacting the OSD can help you further:  
 858.534.4382 (phone)  
@@ -264,7 +264,7 @@ If you need counseling or if you are in a mental crisis you can contact [CAPS](h
 
 It's great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we're able to get to everyone's questions.
 
-That said, to ensure that we're respecting their time, TAs and IAs have been instructed they're only obligated to answer questions between normal working hours (M-F 9AM-5PM). Professor Ellis is also going to do her best to stick to these working hours and only go on Piazza MWF each week. However, I know that's not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
+That said, to ensure that we're respecting their time, TAs and IAs have been instructed they're only obligated to answer questions between normal working hours (M-F 9AM-5PM). I know that's not when you may be doing your work. So, please feel free to post whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
 
 If you have:
 
@@ -273,7 +273,7 @@ If you have:
 - **been stuck on something for a while (>30min) and aren't even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn't working. That's OK - we've all been there! IF you are stuck, you can and should reach out for help, even if you aren't exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on Piazza). If you don't have a specific question, include the information you have (what you're stuck on, the code you've been trying that hasn't been happening, and/or the error messages you've been getting).
 - **questions about course logistics** - first, check the syllabus. If you can't find the answer there, first ask a classmate. If still unsure, post on Piazza.
 - **questions about a grade** - Post on Piazza with "regrades" tag in a private post to "Instructors & TAs".
-- **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email Professor Ellis (sellis@ucsd.edu) or come to office hours. Be sure to include COGS18 in the email subject line and your full name in your message.
+- **something super cool to share related to class or want to talk about a topic in further depth** - feel free to email the professor or come to office hours. Be sure to include COGS18 in the email subject line and your full name in your message.
 - **some feedback about the course you want to share anonymously** - If you've been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn't but would rather not share this publicly, etc., please fill out the [anonymous Google Form](https://goo.gl/forms/2nXnDNbgYuS1OsGF2)\*
 
 \*This form can be taken down at any time if it's not being used for its intended purpose; however, you all will be notified should that happen.
