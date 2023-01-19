@@ -38,7 +38,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                  | Maya Que           | Thursday 4:00pm - 5:00pm | [Zoom link](https://ucsd.zoom.us/j/98853967232?pwd=dnJBTE8wNlZ3TlZCWTZVUlRQdzNUdz09)|
 |                  | Nathaniel Nguyen   | Tuesday 11:00am - 12:00pm | CSB114 or https://ucsd.zoom.us/j/97498310651|
 |                  | Rizq Khateeb         | Tuesday 2:00pm - 3:00pm | https://ucsd.zoom.us/j/9229181463|
-|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | Shanay Shah         | Monday 11:00 - 11:50 and Tuesday 12:00 - 12:50pm | CSB 114 |
 |                  | your name         | your hours | your location and zoom link if necessary |
 |                  | your name         | your hours | your location and zoom link if necessary |
 
