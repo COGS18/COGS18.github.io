@@ -204,7 +204,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 3/22/2023 | Finals | W   | \--                    |                             | Final project                           | Final exam                 |
 
 
-**Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam (Mon 3/14) by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
+**Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:  
 [\*] denotes the last day of material covered on Midterm I (E1).  
