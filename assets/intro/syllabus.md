@@ -33,13 +33,13 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |            | Heeket, Sabrina | 6:00p-6:50p   | [CSB](https://map.concept3d.com/?id=1005#!s/CSB_Main?ct/18312) 115 |      
 |                |                 |               |                                                                    |
 | **Office Hours** | Prof Fleischer | [Signup for office hours](https://calendar.google.com/calendar/selfsched?sstoken=UUFzQ2RXR3dOVnZwfGRlZmF1bHR8Nzg4NGE1Yzc1NmM0NGJlNzUyZmNjMzgxNGUzYWQ1NzM) | Using the link you can pick time slots for<br>either in person (CSB 257) or Zoom       |
-|                  | Fuling Sun         | Thursday 1:00p-3:00p  | CSB114 |
+|                  | Fuling Sun         | Thursday 1:00pm-2:50pm  | CSB114 |
 |                  | Heeket Mehta       | Friday 3:00pm - 5:00pm | CSB - 114 |
 |                  | Maya Que           | Thursday 4:00pm - 5:00pm | [Zoom link](https://ucsd.zoom.us/j/98853967232?pwd=dnJBTE8wNlZ3TlZCWTZVUlRQdzNUdz09)|
 |                  | Nathaniel Nguyen   | Tuesday 11:00am - 12:00pm | CSB114 or https://ucsd.zoom.us/j/97498310651|
 |                  | Rizq Khateeb         | Tuesday 2:00pm - 3:00pm | https://ucsd.zoom.us/j/9229181463|
 |                  | Shanay Shah         | Monday 11:00 - 11:50 and Tuesday 12:00 - 12:50pm | CSB 114 |
-|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | Zixin Ma         | Tuesday 1:00pm - 2:00 pm | [Zoom link](https://ucsd.zoom.us/j/5549742308) |
 |                  | your name         | your hours | your location and zoom link if necessary |
 
 
