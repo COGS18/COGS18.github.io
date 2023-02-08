@@ -40,7 +40,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                  | Rizq Khateeb         | Tuesday 2:00pm - 3:00pm | https://ucsd.zoom.us/j/9229181463|
 |                  | Shanay Shah         | Monday 11:00 - 11:50 and Tuesday 12:00 - 12:50pm | CSB 114 |
 |                  | Zixin Ma         | Tuesday 1:00pm - 2:00 pm | [Zoom link](https://ucsd.zoom.us/j/5549742308) |
-|                  | your name         | your hours | your location and zoom link if necessary |
+|                  | Sabrina Sullivan         | Thursdays 11:00am - 12:00pm | https://ucsd.zoom.us/j/98837391298 |
 
 
 # Important Links
