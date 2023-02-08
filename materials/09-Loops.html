@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Party!" href="../projects/PythonParty.html" />
+    <link rel="next" title="Algorithms" href="10-Algorithms.html" />
     <link rel="prev" title="Debugging" href="08-Debugging.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
@@ -155,6 +155,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    09-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Algorithms.html">
+   10-Algorithms
   </a>
  </li>
 </ul>
@@ -426,9 +431,26 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sidenote-counters">
-   SideNote: counters
+  <a class="reference internal nav-link" href="#announcements-and-reminders">
+   Announcements and Reminders
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exam">
+   Exam
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#q-a">
+   Q &amp; A
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sidenote-counters">
+     SideNote: counters
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#loops">
@@ -661,9 +683,26 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sidenote-counters">
-   SideNote: counters
+  <a class="reference internal nav-link" href="#announcements-and-reminders">
+   Announcements and Reminders
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exam">
+   Exam
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#q-a">
+   Q &amp; A
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sidenote-counters">
+     SideNote: counters
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#loops">
@@ -895,8 +934,40 @@ title="Print to PDF"
 <li><p><code class="docutils literal notranslate"><span class="pre">continue</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">break</span></code></p></li>
 </ul>
+<div class="section" id="announcements-and-reminders">
+<h2>Announcements and Reminders<a class="headerlink" href="#announcements-and-reminders" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Happy Friday!</p></li>
+<li><p>A2 due tonight Friday 4/3 &#64; 11:59pm + some wiggle room</p></li>
+<li><p>Late assignments will be accepted at 75% credit for 72 hours (3 days) after the assignment’s due date.</p></li>
+<li><p>Please fill out a daily lecture survey every day after the lecture (it nets you something like 0.1% EC every lecture day you do so and provides questions for the next section) <a class="reference external" href="https://forms.gle/cCmhS7uCWZoQtnAH6">https://forms.gle/cCmhS7uCWZoQtnAH6</a></p></li>
+<li><p>iClicker frequency is AB.  Join code is <a class="reference external" href="https://join.iclicker.com/NOVE">https://join.iclicker.com/NOVE</a></p></li>
+</ul>
+</div>
+<div class="section" id="exam">
+<h2>Exam<a class="headerlink" href="#exam" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Exam will open at 12:01am Sunday 4/5 and close at 11:59pm Monday 4/6</p></li>
+<li><p>Exam is on Datahub</p></li>
+<li><p>Make sure you fetch, save, validate, and submit!  We cannot be responsible if you make a mistake</p></li>
+<li><p>Topics covered will be what is in A1 and A2 (and our labs).  No material will surprise you.</p></li>
+<li><p>Format will be very similar to A1 and A2.  The format will be familiar and the words used to describe them will be familiar</p></li>
+<li><p>Remember to use the assert statements as an indication of what you are supposed to do</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">my_var</span> <span class="o">==</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>tells you that you are supposed to be creating a variable called <code class="docutils literal notranslate"><span class="pre">my_var</span></code> that is a Boolean set to True. Every assert is a big hint about what the right answer is and how you should get to it.</p>
+</div>
+<div class="section" id="q-a">
+<h2>Q &amp; A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>is the first index always a zero in all collections? Or does it only apply to lists? <strong>lists and tuples have order to them. dictionaries do not.  lists and tuples start at 0.  dictionaries cannot be indexed by order, only by key</strong></p></li>
+<li><p>I understand that \ is an escape character, but I still am not clear on if it’s always necessary to use it to tab or create a new line. <strong>try that for yourself… how else would you do it without an escape char?  google a bit to see if anyone else has an answer for how :)</strong></p></li>
+<li><p>Why weren’t we able to add char to the integer? <strong>what is 13 + hello?  it is undefined. if you try to turn a string into a number there are many possible ways to do so. and maybe the programmer meant turn 13 into a string and concatenate the strings.  so there are many reasonable interpretations, and python says “screw it, i’ll just throw an error and force the programmer to be much more explicit about what they want”</strong></p></li>
+</ul>
 <div class="section" id="sidenote-counters">
-<h2>SideNote: counters<a class="headerlink" href="#sidenote-counters" title="Permalink to this heading">#</a></h2>
+<h3>SideNote: counters<a class="headerlink" href="#sidenote-counters" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a counter variable</span>
@@ -919,6 +990,7 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -1608,10 +1680,10 @@ n
             <p class="prev-next-title">Debugging</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../projects/PythonParty.html" title="next page">
+    <a class='right-next' id="next-link" href="10-Algorithms.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Party!</p>
+        <p class="prev-next-title">Algorithms</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
