@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Party!" href="../projects/PythonParty.html" />
+    <link rel="next" title="Command Line" href="13-CommandLine.html" />
     <link rel="prev" title="Methods" href="11-Methods.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
@@ -119,7 +119,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="02-Tooling.html">
-   02-Tooling
+   Tools
   </a>
  </li>
  <li class="toctree-l1">
@@ -170,6 +170,26 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    12-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-CommandLine.html">
+   13-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-Modules.html">
+   14-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-ScientificComputing.html">
+   15-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-Documentation.html">
+   16-Documentation
   </a>
  </li>
 </ul>
@@ -912,7 +932,19 @@ title="Print to PDF"
 <h2>Objects<a class="headerlink" href="#objects" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Objects are an organization of data (called <b>attributes</b>), with associated code to operate on that data (functions defined on the objects, called <b>methods</b>).
-</div><div class="section" id="clicker-question-1">
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;this string&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="clicker-question-1">
 <h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p>Given what we’ve discussed in this course so far, if you wanted to store information about a date, how would you do so?</p>
 <ul class="simple">
@@ -932,12 +964,22 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29/09/1988
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A date, stored as a list of number</span>
 <span class="n">date_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;29&#39;</span><span class="p">,</span> <span class="s1">&#39;09&#39;</span><span class="p">,</span> <span class="s1">&#39;1988&#39;</span><span class="p">]</span>
 <span class="n">date_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;29&#39;, &#39;09&#39;, &#39;1988&#39;]
 </pre></div>
 </div>
 </div>
@@ -953,12 +995,36 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A date, stored as a dictionary</span>
 <span class="n">date_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;day&#39;</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">1988</span><span class="p">}</span>
 <span class="n">date_dictionary</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;day&#39;: 29, &#39;month&#39;: 9, &#39;year&#39;: 1988}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date_dictionary</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">date_dictionary</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">date_dictionary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;day&#39;: 33, &#39;month&#39;: 9, &#39;year&#39;: 1988}
 </pre></div>
 </div>
 </div>
@@ -971,6 +1037,8 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import a date object</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="c1"># import datetime</span>
 </pre></div>
 </div>
 </div>
@@ -995,11 +1063,21 @@ Objects are an organization of data (called <b>attributes</b>), with associated 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988-09-29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check what type of thing `my_date` is</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.date
 </pre></div>
 </div>
 </div>
@@ -1021,6 +1099,11 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>29
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1029,11 +1112,21 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the year attribute</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">year</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988
 </pre></div>
 </div>
 </div>
@@ -1047,6 +1140,11 @@ Attributes and methods are accessed with a <code>.</code>, followed by the attri
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Method to return what day of the week the date is</span>
 <span class="n">my_date</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -1068,6 +1166,23 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1988-09-29 1980-07-29
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_date</span><span class="o">.</span><span class="n">weekday</span><span class="p">(),</span> <span class="n">my_date2</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3, 1)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1075,6 +1190,25 @@ date.weekday<span class="o">?</span>
 <span class="n">time_diff</span> <span class="o">=</span> <span class="n">my_date</span> <span class="o">-</span> <span class="n">my_date2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="p">,</span>  <span class="s2">&quot;days&quot;</span><span class="p">)</span> <span class="c1">#in days</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">time_diff</span><span class="o">.</span><span class="n">days</span><span class="o">/</span><span class="mi">365</span><span class="p">,</span><span class="s2">&quot;years&quot;</span><span class="p">)</span> <span class="c1">#in years</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2984 days
+8.175342465753424 years
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">time_diff</span><span class="p">)</span>
+<span class="n">time_diff</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>257817600.0
 </pre></div>
 </div>
 </div>
@@ -1100,6 +1234,57 @@ date.weekday<span class="o">?</span>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## dir ouputs all methods and attributes</span>
 <span class="c1">## we&#39;ll talk about the double underscores next lecture</span>
 <span class="nb">dir</span><span class="p">(</span><span class="n">my_date</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__add__&#39;,
+ &#39;__class__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__le__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__radd__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__rsub__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__sub__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;ctime&#39;,
+ &#39;day&#39;,
+ &#39;fromisocalendar&#39;,
+ &#39;fromisoformat&#39;,
+ &#39;fromordinal&#39;,
+ &#39;fromtimestamp&#39;,
+ &#39;isocalendar&#39;,
+ &#39;isoformat&#39;,
+ &#39;isoweekday&#39;,
+ &#39;max&#39;,
+ &#39;min&#39;,
+ &#39;month&#39;,
+ &#39;replace&#39;,
+ &#39;resolution&#39;,
+ &#39;strftime&#39;,
+ &#39;timetuple&#39;,
+ &#39;today&#39;,
+ &#39;toordinal&#39;,
+ &#39;weekday&#39;,
+ &#39;year&#39;]
 </pre></div>
 </div>
 </div>
@@ -1186,6 +1371,12 @@ date.weekday<span class="o">?</span>
     <span class="c1"># Class methods for objects of type Dog</span>
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hhi
 </pre></div>
 </div>
 </div>
@@ -1230,12 +1421,22 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Woof&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># george, has &#39;Dog&#39; method(s)</span>
 <span class="c1"># remember we used `self`</span>
-<span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+<span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">(</span><span class="n">n_times</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoofWoofWoofWoof&#39;
 </pre></div>
 </div>
 </div>
@@ -1279,6 +1480,14 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;__main__.Dog at 0x7fbf118a7910&gt;,
+ &lt;__main__.Dog at 0x7fbf118a7880&gt;,
+ &lt;__main__.Dog at 0x7fbf118a7610&gt;,
+ &lt;__main__.Dog at 0x7fbf118a03a0&gt;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1287,11 +1496,24 @@ date.weekday<span class="o">?</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>__main__.Dog
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">dog</span> <span class="ow">in</span> <span class="n">pack_of_dogs</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WoofWoof
+WoofWoof
+WoofWoof
+WoofWoof
 </pre></div>
 </div>
 </div>
@@ -1306,6 +1528,18 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a dog object</span>
 <span class="n">george</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">george</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;WoofWoof&#39;
 </pre></div>
 </div>
 </div>
@@ -1328,9 +1562,15 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 <span class="k">for</span> <span class="n">doggie</span> <span class="ow">in</span> <span class="n">pack_of_dogs</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">counter</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">doggie</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
-        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># counter = counter + 1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WoofWoof
+WoofWoof
 </pre></div>
 </div>
 </div>
@@ -1346,7 +1586,13 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 </div>
 <div class="section" id="instance-attributes">
 <h2>Instance Attributes<a class="headerlink" href="#instance-attributes" title="Permalink to this heading">#</a></h2>
-<p>An instance attribute specific to the instance we’re on. This allows different instances of the same class to be unique (have different values stored in attributes and use those in methods).</p>
+<p>So far we have seen stuff like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AClassName</span><span class="p">():</span>
+    <span class="n">a_class_attribute</span> <span class="o">=</span> <span class="s1">&#39;the same for every single instace of this class ever&#39;</span>
+</pre></div>
+</div>
+<p>In contrast, we can also define instance attributes that are specific to the instance we’re on.</p>
+<p>This allows different instances of the same class to be unique (have different values stored in attributes and use those in methods).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a group of dogs</span>
@@ -1374,7 +1620,7 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="c1"># Initializer, allows us to specify instance-specific attributes</span>
     <span class="c1"># leading and trailing double underscores indicates that this is special to Python</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;CharlesFido&#39;</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
@@ -1387,7 +1633,8 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize a dog</span>
 <span class="c1"># what goes in the parentheses is defined in the __init__</span>
-<span class="n">gary</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Gary&#39;</span><span class="p">)</span> 
+<span class="n">a_dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Gary&#39;</span><span class="p">)</span>
+<span class="n">another_dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Mary&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1395,8 +1642,14 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check gary&#39;s attributes</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">gary</span><span class="o">.</span><span class="n">sound</span><span class="p">)</span>    <span class="c1"># This is an class attribute</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">gary</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>     <span class="c1"># This is a instance attribute</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_dog</span><span class="o">.</span><span class="n">sound</span><span class="p">)</span>    <span class="c1"># This is an class attribute</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_dog</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>     <span class="c1"># This is a instance attribute</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Woof
+Gary
 </pre></div>
 </div>
 </div>
@@ -1404,7 +1657,40 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check gary&#39;s methods</span>
-<span class="n">gary</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+<span class="nb">dir</span><span class="p">(</span><span class="n">a_dog</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__class__&#39;,
+ &#39;__delattr__&#39;,
+ &#39;__dict__&#39;,
+ &#39;__dir__&#39;,
+ &#39;__doc__&#39;,
+ &#39;__eq__&#39;,
+ &#39;__format__&#39;,
+ &#39;__ge__&#39;,
+ &#39;__getattribute__&#39;,
+ &#39;__gt__&#39;,
+ &#39;__hash__&#39;,
+ &#39;__init__&#39;,
+ &#39;__init_subclass__&#39;,
+ &#39;__le__&#39;,
+ &#39;__lt__&#39;,
+ &#39;__module__&#39;,
+ &#39;__ne__&#39;,
+ &#39;__new__&#39;,
+ &#39;__reduce__&#39;,
+ &#39;__reduce_ex__&#39;,
+ &#39;__repr__&#39;,
+ &#39;__setattr__&#39;,
+ &#39;__sizeof__&#39;,
+ &#39;__str__&#39;,
+ &#39;__subclasshook__&#39;,
+ &#39;__weakref__&#39;,
+ &#39;name&#39;,
+ &#39;sound&#39;,
+ &#39;speak&#39;]
 </pre></div>
 </div>
 </div>
@@ -1419,18 +1705,41 @@ Instance attributes are attributes that we can make be different for each instan
     
     <span class="n">sound</span> <span class="o">=</span> <span class="s1">&#39;Woof&#39;</span>
     
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">breed</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">breed</span> <span class="o">=</span> <span class="n">breed</span>
     
     <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_times</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        speak: this makes the dog speak for you</span>
+<span class="sd">        inputs: n_times the number of times the dog will speak</span>
+<span class="sd">        outputs: a string of those speaking events</span>
+<span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">*</span> <span class="n">n_times</span>
+    
+    <span class="k">def</span> <span class="nf">pet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">how_long</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;cuddles&#39;</span>
+    
+    <span class="k">def</span> <span class="nf">print</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">breed</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sound</span><span class="p">])</span> 
+    
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">print</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## We&#39;ll execute here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a_dog</span> <span class="o">=</span> <span class="n">NewDog</span><span class="p">(</span><span class="s1">&#39;Kelsie&#39;</span><span class="p">,</span><span class="s1">&#39;Blue Heeler&#39;</span><span class="p">)</span>
+a_dog.speak<span class="o">?</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a_dog</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kelsie, Blue Heeler, Woof
 </pre></div>
 </div>
 </div>
@@ -1477,6 +1786,18 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="n">pets</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">pet</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39; says:&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">pet</span><span class="o">.</span><span class="n">speak</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jaspurr  says:
+MeowMeow
+Barkley  says:
+WoofWoof
+Picatso  says:
+MeowMeow
+Ruffius  says:
+WoofWoof
 </pre></div>
 </div>
 </div>
@@ -1564,7 +1885,7 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="section" id="example-profcourses">
 <h3>Example: <code class="docutils literal notranslate"><span class="pre">ProfCourses()</span></code><a class="headerlink" href="#example-profcourses" title="Permalink to this heading">#</a></h3>
 <p>Let’s put a lot of these concepts together in a more complicated example…</p>
-<p>What if we wanted some object type that would allow us to keep track of Professor Ellis’ Courses? Well…we’d want this to work for any Professor, so we’ll call it <code class="docutils literal notranslate"><span class="pre">ProfCourses</span></code>.</p>
+<p>What if we wanted some object type that would allow us to keep track of a Professor’s Courses? Well…we’d want this to work for any Professor, so we’ll call it <code class="docutils literal notranslate"><span class="pre">ProfCourses</span></code>.</p>
 <p>We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1582,14 +1903,16 @@ Instance attributes are attributes that we can make be different for each instan
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fleischer_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Fleischer&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">fleischer_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">fleischer_courses</span><span class="o">.</span><span class="n">prof</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fleischer_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">,</span> <span class="n">fleischer_courses</span><span class="o">.</span><span class="n">prof</span><span class="p">)</span>
+
+<span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">,</span> <span class="n">ellis_courses</span><span class="o">.</span><span class="n">prof</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-Ellis
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 Fleischer
+0 Ellis
 </pre></div>
 </div>
 </div>
@@ -1608,7 +1931,7 @@ Ellis
     <span class="c1"># to our attribute (courses)...which is a list</span>
     <span class="k">def</span> <span class="nf">add_course</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">course_name</span><span class="p">,</span> <span class="n">quarter</span><span class="p">,</span> <span class="n">n_students</span><span class="p">):</span>
         
-        <span class="o">=.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;course_name&#39;</span><span class="p">:</span> <span class="n">course_name</span><span class="p">,</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;course_name&#39;</span><span class="p">:</span> <span class="n">course_name</span><span class="p">,</span> 
                              <span class="s1">&#39;quarter&#39;</span> <span class="p">:</span> <span class="n">quarter</span><span class="p">,</span> 
                              <span class="s1">&#39;n_students&#39;</span><span class="p">:</span> <span class="n">n_students</span><span class="p">})</span>
         <span class="c1"># increase value store in n_courses</span>
@@ -1620,23 +1943,44 @@ Ellis
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create ellis_courses</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create courses</span>
 <span class="n">fleischer_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Fleischer&#39;</span><span class="p">)</span>
 
 <span class="c1"># add a class</span>
-<span class="n">fleischer_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa20&#39;</span><span class="p">,</span> <span class="mi">363</span><span class="p">)</span>
+<span class="n">fleischer_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;Wi23&#39;</span><span class="p">,</span> <span class="mi">386</span><span class="p">)</span>
+<span class="n">fleischer_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS118A&#39;</span><span class="p">,</span> <span class="s1">&#39;Wi23&#39;</span><span class="p">,</span> <span class="mi">184</span><span class="p">)</span>
 
 <span class="c1"># see output</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fleischer_courses</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
-<span class="n">fleischer_courses</span><span class="o">.</span><span class="n">n_courses</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fleischer_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;Wi23&#39;, &#39;n_students&#39;: 386}, {&#39;course_name&#39;: &#39;COGS118A&#39;, &#39;quarter&#39;: &#39;Wi23&#39;, &#39;n_students&#39;: 184}]
+2
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create courses</span>
+<span class="n">ellis_courses</span> <span class="o">=</span> <span class="n">ProfCourses</span><span class="p">(</span><span class="s1">&#39;Ellis&#39;</span><span class="p">)</span>
+
+<span class="c1"># add a class</span>
+<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;Sp22&#39;</span><span class="p">,</span> <span class="mi">354</span><span class="p">)</span>
+<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;Wi22&#39;</span><span class="p">,</span> <span class="mi">390</span><span class="p">)</span>
+
+<span class="c1"># see output</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;Sp22&#39;, &#39;n_students&#39;: 354}, {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;Wi22&#39;, &#39;n_students&#39;: 390}]
+2
 </pre></div>
 </div>
 </div>
@@ -1715,12 +2059,12 @@ Ellis
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make comparison among all courses</span>
 <span class="c1"># returns the class with the most students</span>
-<span class="n">Fleischer_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">)</span>
+<span class="n">Fleischer_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">,</span><span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp19&#39;, &#39;n_students&#39;: 825}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88}
 </pre></div>
 </div>
 </div>
@@ -1942,7 +2286,108 @@ Ellis
 <h2>Object-Oriented Programming<a class="headerlink" href="#object-oriented-programming" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 <b>Object-oriented programming (OOP)</b> is a programming paradigm in which code is organized around objects. Python is an OOP programming langauge. 
-</div></div>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Vehicle</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">max_speed</span><span class="p">,</span> <span class="n">max_people</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_speed</span> <span class="o">=</span> <span class="n">max_speed</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_people</span> <span class="o">=</span> <span class="n">max_people</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_on_board</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
+
+    
+    <span class="k">def</span> <span class="nf">set_who_is_on_board</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_people</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        set how many people are on board the vehicle right now</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="n">n_people</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_people</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;unable to board that many&#39;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">n_on_board</span> <span class="o">=</span> <span class="n">n_people</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        
+    <span class="k">def</span> <span class="nf">go</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">speed</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        command the vehicle go the requested speed</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_speed</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;nope, sorry&#39;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="n">speed</span>
+            <span class="k">return</span> <span class="kc">True</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Car</span><span class="p">(</span><span class="n">Vehicle</span><span class="p">):</span>
+    
+    <span class="n">n_wheels</span> <span class="o">=</span> <span class="mi">4</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">license_plate</span><span class="p">,</span> 
+                 <span class="n">max_speed</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">max_people</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">max_speed</span><span class="p">,</span> <span class="n">max_people</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">license_plate</span> <span class="o">=</span> <span class="n">license_plate</span>
+        
+
+<span class="k">class</span> <span class="nc">Motorcycle</span><span class="p">(</span><span class="n">Vehicle</span><span class="p">):</span>
+    
+    <span class="n">n_wheels</span> <span class="o">=</span> <span class="mi">2</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">license_plate</span><span class="p">,</span> 
+                 <span class="n">max_speed</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">max_people</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">max_speed</span><span class="p">,</span> <span class="n">max_people</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">license_plate</span> <span class="o">=</span> <span class="n">license_plate</span>
+        
+        
+<span class="k">class</span> <span class="nc">eScooter</span><span class="p">(</span><span class="n">Vehicle</span><span class="p">):</span>
+    
+    <span class="n">n_wheels</span> <span class="o">=</span> <span class="mi">2</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> 
+                 <span class="n">max_speed</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">max_people</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">max_speed</span><span class="p">,</span> <span class="n">max_people</span><span class="p">)</span>
+        
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Jasons_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">make</span><span class="o">=</span><span class="s1">&#39;VW&#39;</span><span class="p">,</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;GTI&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">license_plate</span><span class="o">=</span><span class="s1">&#39;5AHE805&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">Jasons_car</span><span class="o">.</span><span class="n">set_who_is_on_board</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;oops&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Jasons_car</span><span class="o">.</span><span class="n">n_on_board</span><span class="p">,</span> <span class="s1">&#39;in the car&#39;</span><span class="p">)</span>
+    
+<span class="k">if</span> <span class="ow">not</span> <span class="n">Jasons_car</span><span class="o">.</span><span class="n">go</span><span class="p">(</span><span class="mi">75</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;oops&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;the car is going&#39;</span><span class="p">,</span> <span class="n">Jasons_car</span><span class="o">.</span><span class="n">speed</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3 in the car
+the car is going 75
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -1979,10 +2424,10 @@ Ellis
             <p class="prev-next-title">Methods</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../projects/PythonParty.html" title="next page">
+    <a class='right-next' id="next-link" href="13-CommandLine.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Party!</p>
+        <p class="prev-next-title">Command Line</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

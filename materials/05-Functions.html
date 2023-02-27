@@ -119,7 +119,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="02-Tooling.html">
-   02-Tooling
+   Tools
   </a>
  </li>
  <li class="toctree-l1">
@@ -170,6 +170,26 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="12-Classes.html">
    12-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-CommandLine.html">
+   13-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-Modules.html">
+   14-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-ScientificComputing.html">
+   15-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-Documentation.html">
+   16-Documentation
   </a>
  </li>
 </ul>
@@ -740,6 +760,23 @@ Modular programming is an approach to programming that focuses on building progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;3&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -749,12 +786,22 @@ Modular programming is an approach to programming that focuses on building progr
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># function are compositional...</span>
 <span class="c1"># we can use the output of f1 as the input of f2!</span>
-<span class="nb">print</span><span class="p">(</span> <span class="nb">type</span><span class="p">(</span><span class="n">myvar</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="n">my_var</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">my_var</span><span class="p">))</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3 &lt;class &#39;str&#39;&gt;
 </pre></div>
 </div>
 </div>
@@ -769,7 +816,7 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function: double_value</span>
 <span class="c1"># Notice that the parameter `num` is not explicitly defined with an = </span>
 <span class="c1"># This is because it will be defined later by the user when they execute the function.</span>
-<span class="k">def</span> <span class="nf">double_value</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">double_value</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">num3</span><span class="p">):</span>
 
     <span class="c1"># do some operation</span>
     <span class="n">doubled</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="n">num</span>
@@ -788,13 +835,35 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_doubled_num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># equivalent function call</span>
 <span class="c1"># Here the parameter `num` is defined without </span>
 <span class="c1"># explicitly specifying the name of the parameter</span>
-<span class="n">double_value</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> 
+<span class="n">double_value</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
 </pre></div>
 </div>
 </div>
@@ -812,6 +881,14 @@ You are metaphorically writing the instructions for how to make the cheeseburger
     
     <span class="c1"># Return the variable answer</span>
     <span class="k">return</span> <span class="n">answer</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hi!!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hi!!
 </pre></div>
 </div>
 </div>
@@ -822,6 +899,11 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -829,6 +911,35 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <span class="c1"># that our function is working how we think it should</span>
 <span class="n">output</span> <span class="o">=</span> <span class="n">add_two_numbers</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add_two_numbers</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add_two_numbers</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20
 </pre></div>
 </div>
 </div>
@@ -883,6 +994,11 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="clicker-question-2">
@@ -891,14 +1007,36 @@ You are metaphorically writing the instructions for how to make the cheeseburger
 <p>A) I did it!  B) I think I did it.  C) I tried but I am stuck.  D) Super duper lost</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE  </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;. Good morning!&quot;</span>
+
+    
+    <span class="k">return</span> <span class="n">output</span>
+    
+    <span class="c1"># putting something here</span>
+
+<span class="c1"># putting something there</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST YOUR FUNCTION HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Jiayi&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hello, Jiayi. Good morning!&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="s2">&quot;some ckind of text&quot;</span>
+<span class="n">another_var</span> <span class="o">=</span> <span class="s1">&#39;djkhfgsl sjdfhg kjgsl &#39;</span>
 </pre></div>
 </div>
 </div>
@@ -915,7 +1053,10 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a function, that has a default values for a parameter</span>
-<span class="k">def</span> <span class="nf">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>  
+<span class="n">number</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">exponent</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">def</span> <span class="nf">exponentiate</span><span class="p">(</span> <span class="p">):</span>  
+    <span class="n">ralf</span> <span class="o">=</span> <span class="s1">&#39;a dude named ralf&#39;</span>
     <span class="k">return</span> <span class="n">number</span> <span class="o">**</span> <span class="n">exponent</span>
 </pre></div>
 </div>
@@ -924,7 +1065,29 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the function, using default value</span>
-<span class="n">exponentiate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">exponentiate</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>25
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ralf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [59],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">ralf</span>
+
+<span class="ne">NameError</span>: name &#39;ralf&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -937,11 +1100,21 @@ Function parameters can also take <b>default values</b>. This makes some paramet
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you can always state this explicitly</span>
-<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>

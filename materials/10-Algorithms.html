@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="02-Tooling.html">
-   02-Tooling
+   Tools
   </a>
  </li>
  <li class="toctree-l1">
@@ -172,6 +172,26 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="12-Classes.html">
    12-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-CommandLine.html">
+   13-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-Modules.html">
+   14-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-ScientificComputing.html">
+   15-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-Documentation.html">
+   16-Documentation
   </a>
  </li>
 </ul>
@@ -732,6 +752,12 @@ title="Print to PDF"
   <div class="tex2jax_ignore mathjax_ignore section" id="algorithms">
 <h1>Algorithms<a class="headerlink" href="#algorithms" title="Permalink to this heading">#</a></h1>
 <p>What are the sorts of things that we should do with computers? What are things that are easy to compute? Hard to compute? Impossible to compute?</p>
+<ol class="simple">
+<li><p>Open package and grab a peice of bread and place it on the plate</p></li>
+<li><p>Grab one more slice of bread and put it next the origanl peice of bread on the plate</p></li>
+<li><p>Make sure that borht peices of rbead are int he midedle plate</p></li>
+<li></li>
+</ol>
 <div class="section" id="announcements-and-reminders">
 <h2>Announcements and Reminders<a class="headerlink" href="#announcements-and-reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
@@ -778,7 +804,10 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a list of numbers</span>
-<span class="n">list_of_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>  
+<span class="n">list_of_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>  
+
+
+<span class="c1">#list_of_numbers = [1, 2, 3]</span>
 </pre></div>
 </div>
 </div>
@@ -792,6 +821,135 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <li><p>B) No</p></li>
 <li><p>C) I don’t know</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_of_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="o">-</span><span class="mi">19</span><span class="p">]</span>  
+
+    
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;original list&#39;</span><span class="p">,</span><span class="n">list_of_numbers</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">list_of_numbers</span><span class="p">)</span><span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">el</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">list_of_numbers</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index to check&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="s1">&#39;list elements we check&#39;</span><span class="p">,</span> <span class="n">list_of_numbers</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">list_of_numbers</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">list_of_numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">list_of_numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">:</span> <span class="c1"># then we switch the order</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;switch em&#39;</span><span class="p">)</span>
+            <span class="n">list_of_numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
+            <span class="n">list_of_numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">b</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sorted one time&#39;</span><span class="p">,</span><span class="n">list_of_numbers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>original list [2, 1, 3, 6, -1, 14, 84, -19]
+index to check 0 1 list elements we check 2 1
+switch em
+index to check 1 2 list elements we check 2 3
+index to check 2 3 list elements we check 3 6
+index to check 3 4 list elements we check 6 -1
+switch em
+index to check 4 5 list elements we check 6 14
+index to check 5 6 list elements we check 14 84
+index to check 6 7 list elements we check 84 -19
+switch em
+index to check 0 1 list elements we check 1 2
+index to check 1 2 list elements we check 2 3
+index to check 2 3 list elements we check 3 -1
+switch em
+index to check 3 4 list elements we check 3 6
+index to check 4 5 list elements we check 6 14
+index to check 5 6 list elements we check 14 -19
+switch em
+index to check 6 7 list elements we check 14 84
+index to check 0 1 list elements we check 1 2
+index to check 1 2 list elements we check 2 -1
+switch em
+index to check 2 3 list elements we check 2 3
+index to check 3 4 list elements we check 3 6
+index to check 4 5 list elements we check 6 -19
+switch em
+index to check 5 6 list elements we check 6 14
+index to check 6 7 list elements we check 14 84
+index to check 0 1 list elements we check 1 -1
+switch em
+index to check 1 2 list elements we check 1 2
+index to check 2 3 list elements we check 2 3
+index to check 3 4 list elements we check 3 -19
+switch em
+index to check 4 5 list elements we check 3 6
+index to check 5 6 list elements we check 6 14
+index to check 6 7 list elements we check 14 84
+index to check 0 1 list elements we check -1 1
+index to check 1 2 list elements we check 1 2
+index to check 2 3 list elements we check 2 -19
+switch em
+index to check 3 4 list elements we check 2 3
+index to check 4 5 list elements we check 3 6
+index to check 5 6 list elements we check 6 14
+index to check 6 7 list elements we check 14 84
+index to check 0 1 list elements we check -1 1
+index to check 1 2 list elements we check 1 -19
+switch em
+index to check 2 3 list elements we check 1 2
+index to check 3 4 list elements we check 2 3
+index to check 4 5 list elements we check 3 6
+index to check 5 6 list elements we check 6 14
+index to check 6 7 list elements we check 14 84
+index to check 0 1 list elements we check -1 -19
+switch em
+index to check 1 2 list elements we check -1 1
+index to check 2 3 list elements we check 1 2
+index to check 3 4 list elements we check 2 3
+index to check 4 5 list elements we check 3 6
+index to check 5 6 list elements we check 6 14
+index to check 6 7 list elements we check 14 84
+index to check 0 1 list elements we check -19 -1
+index to check 1 2 list elements we check -1 1
+index to check 2 3 list elements we check 1 2
+index to check 3 4 list elements we check 2 3
+index to check 4 5 list elements we check 3 6
+index to check 5 6 list elements we check 6 14
+index to check 6 7 list elements we check 14 84
+sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># find the smallest in a list</span>
+
+<span class="n">smallest</span> <span class="o">=</span> <span class="n">list_of_numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">list_of_numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">element</span> <span class="o">&lt;</span> <span class="n">smallest</span><span class="p">:</span>
+        <span class="n">smallest</span> <span class="o">=</span> <span class="n">element</span>
+        
+        
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_of_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>  
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">list_of_numbers</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">element</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 2
+1 1
+2 3
+3 6
+4 -1
+</pre></div>
+</div>
+</div>
+</div>
 <p>Y’all Google is <em>really</em> good at sorting.</p>
 <ul class="simple">
 <li><p>ranking: rate a site as how related</p></li>
@@ -885,7 +1043,12 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <h3>How Python evaluates strings<a class="headerlink" href="#how-python-evaluates-strings" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="o">&lt;</span> <span class="s1">&#39;b&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;f&#39;</span> <span class="o">&lt;</span> <span class="s1">&#39;c&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1074,11 +1237,21 @@ The complexity of an algorithm characterizes the relationship between the input 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;hzllo!&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print warning if not a string</span>
 <span class="n">string_manipulator</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning: please provide a string as input
 </pre></div>
 </div>
 </div>

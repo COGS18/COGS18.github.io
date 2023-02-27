@@ -119,7 +119,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="02-Tooling.html">
-   02-Tooling
+   Tools
   </a>
  </li>
  <li class="toctree-l1">
@@ -170,6 +170,26 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="12-Classes.html">
    12-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-CommandLine.html">
+   13-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-Modules.html">
+   14-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-ScientificComputing.html">
+   15-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-Documentation.html">
+   16-Documentation
   </a>
  </li>
 </ul>
@@ -881,11 +901,21 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, &#39;a&#39;, True]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the type of a list</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>list
 </pre></div>
 </div>
 </div>
@@ -910,11 +940,21 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Amal
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Indexing: Count backward, starting at -1, with negative numbers</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_lst</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Julian
 </pre></div>
 </div>
 </div>
@@ -922,7 +962,12 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Indexing: Grab a group of adjacent items using `start:stop`, called a slice</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_lst</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Julian&#39;, &#39;Amal&#39;]
 </pre></div>
 </div>
 </div>
@@ -934,6 +979,11 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Richard&#39;, &#39;Juan&#39;, &#39;Xuan&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -942,11 +992,27 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Julian&#39;, &#39;Amal&#39;, &#39;Richard&#39;, &#39;Juan&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># slicing by skipping a value [start:stop:step]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_lst</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_lst</span><span class="p">[()])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [30],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># slicing by skipping a value [start:stop:step]</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">my_lst</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="ne">TypeError</span>: list indices must be integers or slices, not tuple
 </pre></div>
 </div>
 </div>
@@ -984,6 +1050,18 @@ Starting at zero is a convention (some) languages use that comes from how variab
 <li><p>D) <code class="docutils literal notranslate"><span class="pre">q3_lst[-3:]</span></code></p></li>
 <li><p>E) <code class="docutils literal notranslate"><span class="pre">q3_lst[1:4:2]</span></code></p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q3_lst</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;butter&#39;, &#39;&amp;&#39;, &#39;jelly&#39;]
+</pre></div>
+</div>
+</div>
+</div>
 <p>Note: The following has been added to the notes due to student questions in previous iterations. This and the following two cells are <em>not</em> someting you’ll be tested on. Including as an FYI for those curious.</p>
 <p>You <em>can</em> return [‘jelly’, ‘&amp;’, ‘butter’] but it combines two different concepts.</p>
 <ol class="simple">
@@ -995,7 +1073,12 @@ Starting at zero is a convention (some) languages use that comes from how variab
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># slice in reverse</span>
-<span class="n">q3_lst</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">q3_lst</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;jelly&#39;, &#39;&amp;&#39;, &#39;butter&#39;, &#39;peanut&#39;]
 </pre></div>
 </div>
 </div>
@@ -1023,6 +1106,11 @@ Lists are <i>mutable</i>, meaning after definition, you can update and change th
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Julian&#39;, &#39;Amal&#39;, &#39;Richard&#39;, &#39;Juan&#39;, &#39;Xuan&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1039,6 +1127,11 @@ Lists are <i>mutable</i>, meaning after definition, you can update and change th
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Julian&#39;, &#39;Amal&#39;, &#39;Rich&#39;, &#39;Juan&#39;, &#39;Xuan&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-2">
 <h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h3>
@@ -1047,6 +1140,12 @@ Lists are <i>mutable</i>, meaning after definition, you can update and change th
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst_update</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">lst_update</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">lst_update</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4, 5]
 </pre></div>
 </div>
 </div>
@@ -1070,6 +1169,7 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a tuple</span>
 <span class="n">tup</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1078,6 +1178,13 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the contents of a tuple</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2, &#39;b&#39;, False)
+[2, &#39;b&#39;, False]
 </pre></div>
 </div>
 </div>
@@ -1085,7 +1192,12 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the type of a tuple</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">tup</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(tuple, list)
 </pre></div>
 </div>
 </div>
@@ -1097,11 +1209,21 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the length of a tuple</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -1114,6 +1236,20 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tuples are immutable - meaning after they defined, you can&#39;t change them</span>
 <span class="c1"># This code will produce an error.</span>
 <span class="n">tup</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [56],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Tuples are immutable - meaning after they defined, you can&#39;t change them</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># This code will produce an error.</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">tup</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: &#39;tuple&#39; object does not support item assignment
 </pre></div>
 </div>
 </div>
@@ -1151,7 +1287,7 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a dictionary</span>
-<span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;key_1&#39;</span> <span class="p">:</span> <span class="s1">&#39;value_1&#39;</span><span class="p">,</span> <span class="s1">&#39;key_2&#39;</span> <span class="p">:</span> <span class="s1">&#39;value_2&#39;</span><span class="p">}</span>
+<span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;employee name 1&#39;</span> <span class="p">:</span> <span class="s1">&#39;employee salary&#39;</span><span class="p">,</span> <span class="s1">&#39;key_2&#39;</span> <span class="p">:</span> <span class="s1">&#39;value_2&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -1163,11 +1299,21 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;employee name 1&#39;: &#39;employee salary&#39;, &#39;key_2&#39;: &#39;value_2&#39;}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the type of the dictionary</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict
 </pre></div>
 </div>
 </div>
@@ -1180,6 +1326,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="dictionaries-indexing">
@@ -1187,7 +1338,25 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionaries are indexed using their keys</span>
-<span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;key_1&#39;</span><span class="p">]</span>
+<span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;employee name 1&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;employee salary&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Barbara&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;Jason&#39;</span><span class="p">:</span><span class="s1">&#39;very old&#39;</span><span class="p">,</span> <span class="s1">&#39;Rupal&#39;</span><span class="p">:</span><span class="mi">32</span><span class="p">}</span>
+<span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;Barbara&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>23
 </pre></div>
 </div>
 </div>
@@ -1208,12 +1377,22 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: False, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># change value of specified key</span>
 <span class="n">completed_assignment</span><span class="p">[</span><span class="s1">&#39;A5678&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">completed_assignment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True}
 </pre></div>
 </div>
 </div>
@@ -1226,6 +1405,65 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A5678&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable               Type     Data/Info
+-----------------------------------------
+completed_assignment   dict     n=3
+dictionary             dict     n=2
+k                      int      2
+lst                    list     n=3
+lst_update             list     n=5
+my_dict                dict     n=3
+my_lst                 list     n=5
+q3_lst                 list     n=4
+tup                    tuple    n=3
+v                      str      Rupal
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable               Type     Data/Info
+-----------------------------------------
+completed_assignment   dict     n=3
+dictionary             dict     n=2
+lst                    list     n=3
+lst_update             list     n=5
+my_dict                dict     n=3
+my_lst                 list     n=5
+q3_lst                 list     n=4
+tup                    tuple    n=3
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1234,6 +1472,42 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 
 <span class="nb">print</span><span class="p">(</span><span class="n">completed_assignment</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">completed_assignment</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;A1234&#39;: True, &#39;A9123&#39;: True}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tup</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;hi&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">something_else</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">tup</span><span class="p">,</span> <span class="n">something_else</span><span class="p">)</span>
+
+<span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2, &#39;hi&#39;, False) [2, &#39;hi&#39;, False]
+Variable               Type     Data/Info
+-----------------------------------------
+completed_assignment   dict     n=2
+dictionary             dict     n=2
+lst                    list     n=3
+lst_update             list     n=5
+my_dict                dict     n=3
+my_lst                 list     n=5
+q3_lst                 list     n=4
+something_else         list     n=3
+tup                    tuple    n=3
 </pre></div>
 </div>
 </div>
@@ -1251,7 +1525,30 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Last duplicate key assigned wins</span>
-<span class="p">{</span><span class="s1">&#39;Student&#39;</span> <span class="p">:</span> <span class="mi">97</span><span class="p">,</span> <span class="s1">&#39;Student&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;Student&#39;</span> <span class="p">:</span> <span class="mi">91</span><span class="p">}</span>
+<span class="n">adict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Student&#39;</span> <span class="p">:</span> <span class="mi">97</span><span class="p">,</span> <span class="s1">&#39;Student&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;Student&#39;</span> <span class="p">:</span> <span class="mi">91</span><span class="p">}</span>
+
+<span class="n">adict</span><span class="p">[</span><span class="s1">&#39;New student&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span>
+
+<span class="n">adict</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 91, &#39;New student&#39;: 99}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">19</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2, &#39;b&#39;, 1, 19, 19]
 </pre></div>
 </div>
 </div>
@@ -1268,6 +1565,18 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [94],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># lists are not allowed as key types</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># this code will produce an error</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="p">{[</span><span class="s1">&#39;Student&#39;</span><span class="p">]</span> <span class="p">:</span> <span class="mi">97</span><span class="p">}</span>
+
+<span class="ne">TypeError</span>: unhashable type: &#39;list&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>Dictionary keys are case sensitive.</p></li>
@@ -1278,6 +1587,11 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Student&#39;: 97, &#39;student&#39;: 88, &#39;STUDENT&#39;: 91}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="clicker-question-4">
 <h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this heading">#</a></h4>
@@ -1285,7 +1599,12 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">height_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;height_1&#39;</span> <span class="p">:</span> <span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;height_2&#39;</span><span class="p">:</span> <span class="mi">68</span><span class="p">,</span> <span class="s1">&#39;height_3&#39;</span> <span class="p">:</span> <span class="mi">65</span><span class="p">,</span> <span class="s1">&#39;height_4&#39;</span> <span class="p">:</span> <span class="mi">72</span><span class="p">}</span>
-<span class="n">height_dict</span><span class="p">[</span><span class="o">---</span><span class="p">]</span>
+<span class="n">height_dict</span><span class="p">[</span><span class="s1">&#39;height_2&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68
 </pre></div>
 </div>
 </div>
@@ -1308,7 +1627,12 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jason_dream_car</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;make&#39;</span><span class="p">:</span> <span class="s1">&#39;Honda&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="s1">&#39;CVCC&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">1977</span>
+<span class="p">}</span>
+    
 </pre></div>
 </div>
 </div>
@@ -1332,7 +1656,12 @@ The <code>in</code> operator asks whether an element is present inside a collect
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check if a particular element is present in the list</span>
-<span class="kc">True</span> <span class="ow">in</span> <span class="n">lst_again</span>
+<span class="s1">&#39;Bob&#39;</span> <span class="ow">in</span> <span class="n">lst_again</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1344,6 +1673,11 @@ The <code>in</code> operator asks whether an element is present inside a collect
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1352,11 +1686,21 @@ The <code>in</code> operator asks whether an element is present inside a collect
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># does not check for values in dictionary</span>
 <span class="mi">33</span> <span class="ow">in</span> <span class="n">dict_again</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -1374,6 +1718,44 @@ The <code>in</code> operator asks whether an element is present inside a collect
 <span class="n">output</span> <span class="o">=</span> <span class="n">bool_1</span> <span class="ow">and</span> <span class="n">bool_2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">paswd</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;bob&#39;</span><span class="p">:</span><span class="s1">&#39;1234&#39;</span><span class="p">}</span>
+
+<span class="n">inputsp</span> <span class="o">=</span> <span class="s1">&#39;124&#39;</span>
+<span class="n">inputsw</span> <span class="o">=</span> <span class="s1">&#39;bob&#39;</span>
+
+<span class="n">paswd</span><span class="p">[</span><span class="n">inputsw</span><span class="p">]</span> <span class="o">==</span> <span class="n">inputsp</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dict_again</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>33
+41
 </pre></div>
 </div>
 </div>
@@ -1408,10 +1790,32 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>65
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">97</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;😂&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>128514
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">128514</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>😂
 </pre></div>
 </div>
 </div>
@@ -1430,6 +1834,12 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Input: 	 b 
+Output:  b
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1442,6 +1852,14 @@ Unicode is a system of systematically and consistently representing characters.
 <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+True
 </pre></div>
 </div>
 </div>
@@ -1457,12 +1875,28 @@ Unicode is a system of systematically and consistently representing characters.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make a variable &amp; an alias</span>
 <span class="c1"># change value of original variable</span>
+
 <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">b</span><span class="p">)</span>
+
+
 <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+2
+1
+False
 </pre></div>
 </div>
 </div>
@@ -1484,6 +1918,12 @@ Unicode is a system of systematically and consistently representing characters.
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 <span class="n">alias_list</span> <span class="o">=</span> <span class="n">first_list</span>
 <span class="n">alias_list</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">alias_list</span> <span class="ow">is</span> <span class="n">first_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1496,11 +1936,21 @@ Unicode is a system of systematically and consistently representing characters.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 29, 3, 4]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check alias_list</span>
 <span class="n">alias_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 29, 3, 4]
 </pre></div>
 </div>
 </div>
