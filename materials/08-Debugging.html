@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Debugging &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -769,7 +770,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="debugging">
+  <section class="tex2jax_ignore mathjax_ignore" id="debugging">
 <h1>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Errors</p>
@@ -786,15 +787,15 @@ title="Print to PDF"
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">try</span></code>/<code class="docutils literal notranslate"><span class="pre">except</span></code></p></li>
 </ul>
-<div class="section" id="announcements-and-reminders">
+<section id="announcements-and-reminders">
 <h2>Announcements and Reminders<a class="headerlink" href="#announcements-and-reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>CL4 due TODAY Wed 2/1</p></li>
 <li><p>Please fill out a daily lecture survey every day after the lecture (it nets you something like 0.1% EC every lecture day you do so and provides questions for the next section) <a class="reference external" href="https://forms.gle/cCmhS7uCWZoQtnAH6">https://forms.gle/cCmhS7uCWZoQtnAH6</a></p></li>
 <li><p>iClicker frequency is AB.  Join code is <a class="reference external" href="https://join.iclicker.com/NOVE">https://join.iclicker.com/NOVE</a></p></li>
 </ul>
-</div>
-<div class="section" id="q-a">
+</section>
+<section id="q-a">
 <h2>Q &amp; A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Why wasn’t there a Mon lecture pull down on the participation survey?  <strong>Because I ignored my reminder window for too long, then accidentally dismissed it.  Fixed yesterday.</strong></p></li>
@@ -802,12 +803,12 @@ title="Print to PDF"
 </ul>
 <div class="alert alert-success">
 Debugging is the process of finding and fixing errors in a computer program.
-</div></div>
-<div class="section" id="errors">
+</div></section>
+<section id="errors">
 <h2>Errors<a class="headerlink" href="#errors" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Errors are problems with code definition or execution that interrupt running Python code.
-</div><div class="section" id="syntax-errors">
+</div><section id="syntax-errors">
 <h3>Syntax Errors<a class="headerlink" href="#syntax-errors" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Syntax Errors</p></li>
@@ -815,8 +816,8 @@ Errors are problems with code definition or execution that interrupt running Pyt
 </ul>
 <div class="alert alert-success">
 Syntax & Indentation Errors reflect code that doesn't follow Python structure, and will necessarily fail. 
-</div></div>
-<div class="section" id="syntax-error-examples">
+</div></section>
+<section id="syntax-error-examples">
 <h3>Syntax Error Examples<a class="headerlink" href="#syntax-error-examples" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -856,14 +857,14 @@ Syntax & Indentation Errors reflect code that doesn't follow Python structure, a
 </div>
 </div>
 <p>Python gives you a readout about what it was expecting and where you appear to have gone wrong.</p>
-</div>
-</div>
-<div class="section" id="exceptions">
+</section>
+</section>
+<section id="exceptions">
 <h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Exceptions are errors that occur when a code is executed.
 </div><p>For these, there’s nothing wrong with the <em>syntax</em> or <em>structure</em> of the code, but in your specific case and how you’re trying to use it, Python says ‘no’.</p>
-<div class="section" id="zerodivisionerror">
+<section id="zerodivisionerror">
 <h3>ZeroDivisionError<a class="headerlink" href="#zerodivisionerror" title="Permalink to this heading">#</a></h3>
 <p>ZeroDivisionError occurs when you try to divide by zero.</p>
 <div class="cell docutils container">
@@ -890,8 +891,8 @@ Exceptions are errors that occur when a code is executed.
 <li><p>the Exception and specific type / error</p></li>
 <li><p>points you to where the error occurred</p></li>
 </ul>
-</div>
-<div class="section" id="nameerror">
+</section>
+<section id="nameerror">
 <h3>NameError<a class="headerlink" href="#nameerror" title="Permalink to this heading">#</a></h3>
 <p>NameError occurs when you try to access a name that Python does not know.</p>
 <div class="cell docutils container">
@@ -924,8 +925,8 @@ Exceptions are errors that occur when a code is executed.
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="indexerror">
+</section>
+<section id="indexerror">
 <h3>IndexError<a class="headerlink" href="#indexerror" title="Permalink to this heading">#</a></h3>
 <p>IndexError occurs when you try to access an index that doesn’t exist.</p>
 <div class="cell docutils container">
@@ -968,8 +969,8 @@ Exceptions are errors that occur when a code is executed.
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="valueerror">
+</section>
+<section id="valueerror">
 <h3>ValueError<a class="headerlink" href="#valueerror" title="Permalink to this heading">#</a></h3>
 <p>ValueError occurs when you try to use an illegal value for something.</p>
 <div class="cell docutils container">
@@ -984,8 +985,8 @@ Exceptions are errors that occur when a code is executed.
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="typeerror">
+</section>
+<section id="typeerror">
 <h3>TypeError<a class="headerlink" href="#typeerror" title="Permalink to this heading">#</a></h3>
 <p>TypeError occurs when you try to do something with a variable type that python cannot interpret.</p>
 <div class="cell docutils container">
@@ -1029,9 +1030,9 @@ Exceptions are errors that occur when a code is executed.
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="error-recap">
+</section>
+</section>
+<section id="error-recap">
 <h2>Error Recap<a class="headerlink" href="#error-recap" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Syntax Errors</p>
@@ -1055,7 +1056,7 @@ Exceptions are errors that occur when a code is executed.
 </ul>
 </li>
 </ul>
-<div class="section" id="clicker-question-1">
+<section id="clicker-question-1">
 <h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p>What type of error will the following code produce?</p>
 <div class="cell docutils container">
@@ -1081,8 +1082,8 @@ Exceptions are errors that occur when a code is executed.
 <li><p>D) Index</p></li>
 <li><p>E) Value</p></li>
 </ul>
-</div>
-<div class="section" id="clicker-question-2">
+</section>
+<section id="clicker-question-2">
 <h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h3>
 <p>What type of error will the following code produce?</p>
 <div class="cell docutils container">
@@ -1111,9 +1112,9 @@ Exceptions are errors that occur when a code is executed.
 <li><p>D) Index</p></li>
 <li><p>E) Value</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="stack-trace">
+</section>
+</section>
+<section id="stack-trace">
 <h2>Stack Trace<a class="headerlink" href="#stack-trace" title="Permalink to this heading">#</a></h2>
 <p><strong>Read (and understand!) your error messages!</strong></p>
 <p>The trace (log) of what Python did as it went through your code. Gets printed out if Python runs into an error.</p>
@@ -1178,8 +1179,8 @@ Exceptions are errors that occur when a code is executed.
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="helping-yourself-when-debugging">
+</section>
+<section id="helping-yourself-when-debugging">
 <h2>Helping yourself when debugging<a class="headerlink" href="#helping-yourself-when-debugging" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Pause and <em>think</em></p></li>
@@ -1191,13 +1192,13 @@ Exceptions are errors that occur when a code is executed.
 </ul>
 </li>
 </ul>
-<div class="section" id="unsure-how-to-approach-a-problem">
+<section id="unsure-how-to-approach-a-problem">
 <h3>Unsure how to approach a problem?<a class="headerlink" href="#unsure-how-to-approach-a-problem" title="Permalink to this heading">#</a></h3>
 <p>“Write code that will check whether the value stored in <code class="docutils literal notranslate"><span class="pre">my_val</span></code> is both positive and even. If it is, store the integer <code class="docutils literal notranslate"><span class="pre">1</span></code> in the variable <code class="docutils literal notranslate"><span class="pre">output</span></code>”</p>
 <p>…How do I check whether a variable stores an even value?</p>
 <p>Google: “How to check whether a variable stores an even value <em>in python</em>”</p>
-</div>
-<div class="section" id="don-t-understand-the-error-message">
+</section>
+<section id="don-t-understand-the-error-message">
 <h3>Don’t understand the error message?<a class="headerlink" href="#don-t-understand-the-error-message" title="Permalink to this heading">#</a></h3>
 <p>So you try to accomplish the task…below is your first attempt</p>
 <div class="cell docutils container">
@@ -1212,9 +1213,9 @@ Exceptions are errors that occur when a code is executed.
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="try-except">
+</section>
+</section>
+<section id="try-except">
 <h2>Try / Except<a class="headerlink" href="#try-except" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Exceptions do not necessarily have to lead to breaking the program - they can be programmatically dealt with, using <code>try</code> and <code>except</code>. 
@@ -1230,7 +1231,7 @@ Exceptions do not necessarily have to lead to breaking the program - they can be
 </div>
 </div>
 </div>
-<div class="section" id="try-except-block">
+<section id="try-except-block">
 <h3><code class="docutils literal notranslate"><span class="pre">try</span></code> / <code class="docutils literal notranslate"><span class="pre">except</span></code> Block<a class="headerlink" href="#try-except-block" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1242,13 +1243,13 @@ Exceptions do not necessarily have to lead to breaking the program - they can be
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="raising-errors">
+</section>
+</section>
+<section id="raising-errors">
 <h2>Raising Errors<a class="headerlink" href="#raising-errors" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 You can also write code to raise an Exception if something unexpected happens.
-</div><div class="section" id="raise-exception-examples">
+</div><section id="raise-exception-examples">
 <h3>Raise Exception Examples<a class="headerlink" href="#raise-exception-examples" title="Permalink to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">raise</span></code> is a keyword that tells Python you want to create your own error.</p>
 <div class="cell docutils container">
@@ -1262,7 +1263,7 @@ You can also write code to raise an Exception if something unexpected happens.
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-3">
+<section id="clicker-question-3">
 <h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this heading">#</a></h4>
 <p>Edit the code below (replacing <code class="docutils literal notranslate"><span class="pre">---</span></code> with either values or variable names) so that when executed, this cell returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 <div class="cell docutils container">
@@ -1285,10 +1286,10 @@ You can also write code to raise an Exception if something unexpected happens.
 <li><p>B) I <em>think</em> I did it…</p></li>
 <li><p>C) I’m totally lost.</p></li>
 </ul>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

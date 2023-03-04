@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Algorithms &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -749,7 +750,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="algorithms">
+  <section class="tex2jax_ignore mathjax_ignore" id="algorithms">
 <h1>Algorithms<a class="headerlink" href="#algorithms" title="Permalink to this heading">#</a></h1>
 <p>What are the sorts of things that we should do with computers? What are things that are easy to compute? Hard to compute? Impossible to compute?</p>
 <ol class="simple">
@@ -758,33 +759,33 @@ title="Print to PDF"
 <li><p>Make sure that borht peices of rbead are int he midedle plate</p></li>
 <li></li>
 </ol>
-<div class="section" id="announcements-and-reminders">
+<section id="announcements-and-reminders">
 <h2>Announcements and Reminders<a class="headerlink" href="#announcements-and-reminders" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Labs due tonight 4/8 &#64; 11:59pm</p></li>
 <li><p>Please fill out a daily lecture survey every day after the lecture (it nets you something like 0.1% EC every lecture day you do so and provides questions for the next section) <a class="reference external" href="https://forms.gle/cCmhS7uCWZoQtnAH6">https://forms.gle/cCmhS7uCWZoQtnAH6</a></p></li>
 <li><p>iClicker frequency is AB.  Join code is <a class="reference external" href="https://join.iclicker.com/NOVE">https://join.iclicker.com/NOVE</a></p></li>
 </ul>
-</div>
-<div class="section" id="q-a">
+</section>
+<section id="q-a">
 <h2>Q &amp; A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>I am curious if you can define the for loop to skip every other value in a string, would i need to set up the if-continue for each of those vaules or how could i do this iteratively? <strong>How about our old friend counter_var%2 ? How would you use even-odd check to do somethign every other time?</strong></p></li>
 <li><p>if I use continue, does that mean the reminder of the loop will not be executed and it will run to next stage  <strong>Nope, that’s <code class="docutils literal notranslate"><span class="pre">break</span></code>; which stops the loop forever.  <code class="docutils literal notranslate"><span class="pre">continue</span></code> just skips to the next iteration of the loop.</strong></p></li>
 <li><p>Still a little lost on how to use enumerate when coding. <strong>Great question. For that I recommend you use some Google-fu.  I ended up making it an example in class, but its not part of our curriculum :P</strong></p></li>
 </ul>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h2>Algorithms<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 An <b>algorithm</b> is a formal description of how to complete a procedure, typically taking inputs and returns some output.
 </div><p>If you can write the steps down, you can write an algorithm.</p>
 <p>Algorithms are computable.</p>
 <p>Computers cannot read between the lines. They are very literal.</p>
-</div>
-<div class="section" id="algorithm-example-making-a-sandwich">
+</section>
+<section id="algorithm-example-making-a-sandwich">
 <h2>Algorithm Example: Making a Sandwich<a class="headerlink" href="#algorithm-example-making-a-sandwich" title="Permalink to this heading">#</a></h2>
-<div class="section" id="clicker-question-1">
+<section id="clicker-question-1">
 <h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p>Can you write an algorithm to make a ham and cheese sandwich.</p>
 <ul class="simple">
@@ -792,13 +793,13 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 <li><p>B) No</p></li>
 <li><p>C) I don’t know</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="algorithm-for-making-a-ham-cheese-sandwich">
+</section>
+</section>
+<section id="algorithm-for-making-a-ham-cheese-sandwich">
 <h2>Algorithm for making a ham &amp; cheese sandwich<a class="headerlink" href="#algorithm-for-making-a-ham-cheese-sandwich" title="Permalink to this heading">#</a></h2>
 <p>Humans are pretty good at making sandwiches. Computers may struggle a bit.</p>
-</div>
-<div class="section" id="algorithm-example-sorting">
+</section>
+<section id="algorithm-example-sorting">
 <h2>Algorithm Example: Sorting<a class="headerlink" href="#algorithm-example-sorting" title="Permalink to this heading">#</a></h2>
 <p>Given a list of numbers, how can we sort it into the correct order?</p>
 <div class="cell docutils container">
@@ -812,7 +813,7 @@ An <b>algorithm</b> is a formal description of how to complete a procedure, typi
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-2">
+<section id="clicker-question-2">
 <h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h3>
 <p><strong>array</strong>: a collection of items, where each item can be accessed by its index.</p>
 <p>Can you write an algorithm to sort an array?</p>
@@ -956,9 +957,9 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 <li><p>sort: given a list of good sites, determine order to present to user</p></li>
 </ul>
 <p>…and do this on all the things</p>
-</div>
-</div>
-<div class="section" id="sort-array">
+</section>
+</section>
+<section id="sort-array">
 <h2><code class="docutils literal notranslate"><span class="pre">sort_array</span></code><a class="headerlink" href="#sort-array" title="Permalink to this heading">#</a></h2>
 <p>A version of a <strong>selection sort</strong>:</p>
 <ul class="simple">
@@ -997,8 +998,8 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="using-sort-array">
+</section>
+<section id="using-sort-array">
 <h2>Using <code class="docutils literal notranslate"><span class="pre">sort_array</span></code><a class="headerlink" href="#using-sort-array" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1020,7 +1021,7 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-3">
+<section id="clicker-question-3">
 <h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this heading">#</a></h3>
 <p>Using our <code class="docutils literal notranslate"><span class="pre">sort_array</span></code> function from above, what will the following code snippet print out:</p>
 <div class="cell docutils container">
@@ -1038,8 +1039,8 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 <li><p>D) None</p></li>
 <li><p>E) This code will fail</p></li>
 </ul>
-</div>
-<div class="section" id="how-python-evaluates-strings">
+</section>
+<section id="how-python-evaluates-strings">
 <h3>How Python evaluates strings<a class="headerlink" href="#how-python-evaluates-strings" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1067,7 +1068,7 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-4">
+<section id="clicker-question-4">
 <h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this heading">#</a></h4>
 <p>Using our <code class="docutils literal notranslate"><span class="pre">sort_array</span></code> function from above, what will the following code snippet print out:</p>
 <div class="cell docutils container">
@@ -1085,9 +1086,9 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 <li><p>D) [True, True, False]</p></li>
 <li><p>E) This code will fail</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="how-python-evaluates-booleans">
+</section>
+</section>
+<section id="how-python-evaluates-booleans">
 <h3>How Python evaluates Booleans<a class="headerlink" href="#how-python-evaluates-booleans" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1110,7 +1111,7 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-5">
+<section id="clicker-question-5">
 <h4>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this heading">#</a></h4>
 <p>Using our <code class="docutils literal notranslate"><span class="pre">sort_array</span></code> function from above, what will the following code snippet print out:</p>
 <div class="cell docutils container">
@@ -1128,10 +1129,10 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 <li><p>D) None</p></li>
 <li><p>E) This code will fail</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="sidenote-sorted">
+</section>
+</section>
+</section>
+<section id="sidenote-sorted">
 <h2>SideNote: <code class="docutils literal notranslate"><span class="pre">sorted</span></code><a class="headerlink" href="#sidenote-sorted" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1160,13 +1161,13 @@ sorted one time [-19, -1, 1, 2, 3, 6, 14, 84]
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="algorithmic-complexity">
+</section>
+<section id="algorithmic-complexity">
 <h2>Algorithmic Complexity<a class="headerlink" href="#algorithmic-complexity" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 The complexity of an algorithm characterizes the relationship between the input size and the number of steps of an algorithm.
-</div></div>
-<div class="section" id="id2">
+</div></section>
+<section id="id2">
 <h2>Algorithmic Complexity<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <p>Things we might care about:</p>
 <ul class="simple">
@@ -1177,20 +1178,20 @@ The complexity of an algorithm characterizes the relationship between the input 
 </li>
 <li><p>The amount of memory it will take to run our algorithm</p></li>
 </ul>
-</div>
-<div class="section" id="properties-of-our-sorting-algorithm">
+</section>
+<section id="properties-of-our-sorting-algorithm">
 <h2>Properties of our sorting algorithm<a class="headerlink" href="#properties-of-our-sorting-algorithm" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>It will require <span class="math notranslate nohighlight">\(n^2\)</span> steps, where <span class="math notranslate nohighlight">\(n\)</span> is the length of the list</p></li>
 <li><p>It will require ~double the memory of the original list</p></li>
 </ul>
-</div>
-<div class="section" id="computability">
+</section>
+<section id="computability">
 <h2>Computability<a class="headerlink" href="#computability" title="Permalink to this heading">#</a></h2>
 <p>Things that computers can do are things that we can write down an algorithm to do.</p>
 <p>Things that we can write an algorithm to do are things that we can define a specific set of steps to complete.</p>
-</div>
-<div class="section" id="variable-type-checking">
+</section>
+<section id="variable-type-checking">
 <h2>Variable Type Checking<a class="headerlink" href="#variable-type-checking" title="Permalink to this heading">#</a></h2>
 <p><strong>Note</strong>: The rest of the noteook includes notes to answer a student’s in class question. You will not be tested on this, but it will be helpful to understand and may be necessary for your final project.</p>
 <p>To check on an input variable’s type, you can use either of the following approaches:</p>
@@ -1283,8 +1284,8 @@ The complexity of an algorithm characterizes the relationship between the input 
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

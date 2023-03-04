@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Modules &amp; Scripts &#8212; COGS 18 - Introduction To Python</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -737,7 +738,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="modules-scripts">
+  <section class="tex2jax_ignore mathjax_ignore" id="modules-scripts">
 <h1>Modules &amp; Scripts<a class="headerlink" href="#modules-scripts" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>namespaces &amp; scope</p></li>
@@ -749,7 +750,7 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-<div class="section" id="namespaces-scope">
+<section id="namespaces-scope">
 <h2>Namespaces &amp; Scope<a class="headerlink" href="#namespaces-scope" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 A <b>namespace</b> is a 'place' with a set of names and their corresponding objects.
@@ -767,8 +768,8 @@ A <b>namespace</b> is a 'place' with a set of names and their corresponding obje
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="modules-packages">
+</section>
+<section id="modules-packages">
 <h2>Modules &amp; Packages<a class="headerlink" href="#modules-packages" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 A <b>module</b> is a set of Python code with functions, classes, etc. available in it. A Python <b>package</b> is a directory of modules.
@@ -779,8 +780,8 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 <li><p>a <strong>module</strong> stores python (.py) files</p></li>
 <li><p>when imported, we have access to its functionality</p></li>
 </ul>
-</div>
-<div class="section" id="import">
+</section>
+<section id="import">
 <h2><code class="docutils literal notranslate"><span class="pre">import</span></code><a class="headerlink" href="#import" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 <code>import</code> is a keyword to import external code into the local namespace.
@@ -789,7 +790,7 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 <li><p>Minimize startup costs</p></li>
 <li><p>Functions in different packages could have the same name - break programs</p></li>
 </ol>
-<div class="section" id="import-example-math-module">
+<section id="import-example-math-module">
 <h3><code class="docutils literal notranslate"><span class="pre">import</span></code> example: math module<a class="headerlink" href="#import-example-math-module" title="Permalink to this heading">#</a></h3>
 <p>For something not yet in your Namespace…</p>
 <div class="cell docutils container">
@@ -834,8 +835,8 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="import-example-random-module">
+</section>
+<section id="import-example-random-module">
 <h3><code class="docutils literal notranslate"><span class="pre">import</span></code> example: random module<a class="headerlink" href="#import-example-random-module" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -884,8 +885,8 @@ random.choice<span class="o">??</span>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="random-example">
+</section>
+<section id="random-example">
 <h3><code class="docutils literal notranslate"><span class="pre">random</span></code> Example<a class="headerlink" href="#random-example" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -908,9 +909,9 @@ random.sample<span class="o">?</span>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="imports-from-as">
+</section>
+</section>
+<section id="imports-from-as">
 <h2>Imports: <code class="docutils literal notranslate"><span class="pre">from</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">as</span></code><a class="headerlink" href="#imports-from-as" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 <code>from</code> and <code>as</code> allows us to decide exactly what objects to import into our namespace, and what we call them (in our namespace).
@@ -967,7 +968,7 @@ random.sample<span class="o">?</span>
 </div>
 </div>
 </div>
-<div class="section" id="clicker-question-1">
+<section id="clicker-question-1">
 <h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p>Which of the following is NOT a valid Python import statement?</p>
 <ul class="simple">
@@ -977,8 +978,8 @@ random.sample<span class="o">?</span>
 <li><p>D) <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">random</span> <span class="pre">import</span> <span class="pre">choice,</span> <span class="pre">choices</span></code></p></li>
 <li><p>E) <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">ascii_letters</span> <span class="pre">from</span> <span class="pre">string</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="clicker-question-answer">
+</section>
+<section id="clicker-question-answer">
 <h3>Clicker Question Answer<a class="headerlink" href="#clicker-question-answer" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -992,16 +993,16 @@ random.sample<span class="o">?</span>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="importing-custom-code-i">
+</section>
+</section>
+<section id="importing-custom-code-i">
 <h2>Importing Custom Code I<a class="headerlink" href="#importing-custom-code-i" title="Permalink to this heading">#</a></h2>
 <p>Why do this?</p>
 <p>Having a whole bunch of functions in a Jupyter Notebook will start to get clutered.</p>
 <p>Also, they’re not reusable later without copying them into your new notebook.</p>
 <p>Modules avoid this!</p>
-</div>
-<div class="section" id="module-remote-py">
+</section>
+<section id="module-remote-py">
 <h2>module: <code class="docutils literal notranslate"><span class="pre">remote.py</span></code><a class="headerlink" href="#module-remote-py" title="Permalink to this heading">#</a></h2>
 <p>If you want to practice using import with the <code class="docutils literal notranslate"><span class="pre">remote</span></code> example in lecture, store the code in the next cell in a text file saved as <code class="docutils literal notranslate"><span class="pre">remote.py</span></code>. Be sure this is saved in the same directory (folder) as the notebook from which you’re trying to call it.</p>
 <div class="cell docutils container">
@@ -1068,8 +1069,8 @@ my_remote_function<span class="o">?</span>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="importing-custom-code-ii">
+</section>
+<section id="importing-custom-code-ii">
 <h2>Importing Custom Code II<a class="headerlink" href="#importing-custom-code-ii" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1104,8 +1105,8 @@ nums.add<span class="o">??</span>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="name-conflicts">
+</section>
+<section id="name-conflicts">
 <h2>Name Conflicts<a class="headerlink" href="#name-conflicts" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1153,8 +1154,8 @@ choice<span class="o">?</span>
 </div>
 <p>While you <em>can</em> have functions with the same name in two different places…do your best to avoid this.</p>
 <p>It’s Python legal but bad for your nerves.</p>
-</div>
-<div class="section" id="a-note-on">
+</section>
+<section id="a-note-on">
 <h2>A note on <code class="docutils literal notranslate"><span class="pre">*</span></code><a class="headerlink" href="#a-note-on" title="Permalink to this heading">#</a></h2>
 <p>If you see <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">module</span> <span class="pre">import</span> <span class="pre">*</span></code> this means to import everything (read as ‘from module import everything’).</p>
 <p>This is generally considered not to be the best, as it is then unclear in your code exactly where the functionality came from.</p>
@@ -1176,8 +1177,8 @@ choice<span class="o">?</span>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="script-remote-script-py">
+</section>
+<section id="script-remote-script-py">
 <h2>script: <code class="docutils literal notranslate"><span class="pre">remote_script.py</span></code><a class="headerlink" href="#script-remote-script-py" title="Permalink to this heading">#</a></h2>
 <p>If you want to run your own script example in lecture, store the code in the next cell in a text file saved as <code class="docutils literal notranslate"><span class="pre">remote_script.py</span></code>. Be sure this is saved in the same directory (folder) as the notebook from which you’re trying to call it.</p>
 <div class="cell docutils container">
@@ -1198,8 +1199,8 @@ choice<span class="o">?</span>
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
