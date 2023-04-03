@@ -1,5 +1,5 @@
 # LectureNotes-COGS18
-Lecture Notes for COGS 18 (Fall 2022; Fleischer)
+Lecture Notes for COGS 18 (Winter 2023; Ellis)
 
 Jupyter notebooks used in lecture for our Introduction to Python course.
 

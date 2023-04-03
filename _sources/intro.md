@@ -1,6 +1,6 @@
 # Welcome to COGS 18: Introduction to Python!
 
-COGS 18 | [Jason Fleischer](https://jgfleischer.com) | Winter 2023 | UCSD
+COGS 18 | [Shannon Ellis](https://www.shanellis.com/) | Spring 2023 | UCSD
 
 ### Overview
 
@@ -8,27 +8,12 @@ Introduction to Python (COGS 18) is a course offered by the Department of Cognit
 
 ### Current Iteration
 
-Introduction to Python is currently running for Winter 2023, [please read the syllabus here!](assets/intro/syllabus).
+Introduction to Python is currently running for Spring 2023, [please read the syllabus](assets/intro/syllabus).
 
 
 ### Materials
 
-All course materials are openly available and downloadable from this website. [Materials presented during the course lectures are viewable here](materials/01-Introduction).
+All course materials are openly available and downloadable from this website, but we highly recommend following along in class with a live notebook so you can try the programs we talk about as we talk about them. To get your own live copy of the notebooks and follow along in lecture [click on this link to transfer the current lecture materials from our GitHub to your DataHub instance](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main). This GitHub repo[^1] updates every lecture, so **you will have to click on this link every lecture to keep your DataHub up to date**.
 
-Git and Github are tools used by many programmers. Git is version control software that helps you keep track of changes in your code as you work on it. GitHub is a web platform (using Git) for working on your code by yourself, working on your code with other programmers, and sharing your code once it is ready to be used. The source material for everything hosted on this site is also [available on GitHub](https://github.com/COGS18). While we don't explicitly teach you to use GitHub in this class, you should definitely explore it on your own if you're interested! Here are [some different](https://youtu.be/w3jLJU7DT5E) [Github](https://docs.github.com/en/get-started/quickstart/hello-world) [tutorials](https://podcast.ucsd.edu/watch/sp19/cogs108_a00/3)
+[^1]: Git and Github are tools used by many programmers. Git is version control software that helps you keep track of changes in your code as you work on it. GitHub is a web platform (using Git) for working on your code by yourself, working on your code with other programmers, and sharing your code once it is ready to be used. The source material for everything hosted on this site is also [available on GitHub](https://github.com/COGS18). While we don't explicitly teach you to use GitHub in this class, you should definitely explore it on your own if you're interested! Here are [some different](https://youtu.be/w3jLJU7DT5E) [Github](https://docs.github.com/en/get-started/quickstart/hello-world) [tutorials](https://podcast.ucsd.edu/watch/sp19/cogs108_a00/3).
 
-As stated above, one use of GitHub is distributing your finished software. You don't need to understand it to use it. We highly recommend following along in class with a live notebook so you can try the programs we talk about as we talk about them. To get your own live copy of the notebooks and follow along in lecture [simply click on this link to transfer the current lecture materials from our GitHub to your DataHub instance](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main) This GitHub repo updates every lecture, so you will have to click on this link every lecture to keep your DataHub up to date.
-
-
-### Coding Labs
-
-[An overview of the Coding Labs is viewable here](assets/intro/labs/overview).
-
-
-### Assignments
-
-[An overview of the Assignments is viewable here](assets/intro/assignments/overview).
-
-### Project
-
-[An overview of the Project is viewable here](https://cogs18.github.io/projects/overview.html) and we've compiled a number of [Frequently Asked questions (FAQs)](https://cogs18.github.io/projects/faq.html). Also available on datahub or for downlosf here is [a template for setting up your project](https://cogs18.github.io/assets/intro/projects/ProjectTemplate.zip).
