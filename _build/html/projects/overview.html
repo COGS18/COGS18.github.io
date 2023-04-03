@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project &#8212; COGS 18 - Introduction To Python</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,41 +18,40 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Project FAQ" href="faq.html" />
-    <link rel="prev" title="Python Party!" href="PythonParty.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -62,21 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -85,10 +68,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -106,93 +88,48 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Coding Labs
+  Course Info
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL1-Tooling.html">
-   CL1-Tooling
+  <a class="reference internal" href="../assets/intro/syllabus.html">
+   SYLLABUS
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL2-ProgrammingI.html">
-   CL2-ProgrammingI
+  <a class="reference internal" href="../assets/intro/labs/overview.html">
+   CODING LABS
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL3-ProgrammingII.html">
-   CL3-ProgrammingII
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL4-Collections.html">
-   CL4-Collections
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL5-Loops.html">
-   CL5-Loops
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL6-Classes.html">
-   CL6-Classes
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL7-CommandLine.html">
-   CL7-CommandLine
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../labs/CL8-ScientificComputing.html">
-   CL8-ScientificComputing
+  <a class="reference internal" href="../assets/intro/assignments/overview.html">
+   ASSIGNMENTS
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Projects
+  Lectures
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="PythonParty.html">
-   PythonParty
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Overview
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="faq.html">
-   FAQ
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ProjectIdeas.html">
-   ProjectIdeas
+  <a class="reference internal" href="../materials/01-Introduction.html">
+   01-Introduction
   </a>
  </li>
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -200,179 +137,79 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="header-article row sticky-top noprint">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/COGS18/COGS18.github.io"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/overview.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/COGS18/COGS18.github.io/edit/master/projects/overview.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/projects/overview.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/projects/overview.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/overview.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/projects/overview.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#objectives">
    Objectives
@@ -468,11 +305,12 @@ title="Print to PDF"
  </li>
 </ul>
 
-    </nav>
-</div>
+            </nav>
+        </div>
     </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Final Project</h1>
@@ -584,15 +422,14 @@ title="Print to PDF"
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="final-project">
-<h1>Final Project<a class="headerlink" href="#final-project" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="final-project">
+<h1>Final Project<a class="headerlink" href="#final-project" title="Permalink to this headline">¶</a></h1>
 <p>As part of completing COGS 18, you must complete an independent project (or take the final exam).</p>
-<section id="objectives">
-<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">#</a></h2>
+<div class="section" id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
 <p>The broad objectives of this project are for you to:</p>
 <ul class="simple">
 <li><p>Choose a topic that you are interested and work on code related to that idea</p></li>
@@ -600,18 +437,18 @@ title="Print to PDF"
 <li><p>Practice following best practices for coding style, documentation and code testing</p></li>
 <li><p>Work with different coding tools, including using Jupyter notebooks and Python files</p></li>
 </ul>
-</section>
-<section id="project-schedule">
-<h2>Project Schedule<a class="headerlink" href="#project-schedule" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="project-schedule">
+<h2>Project Schedule<a class="headerlink" href="#project-schedule" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>W8: Project Description released</p></li>
 <li><p>W9: By the end of this week, you should have a project topic / outline</p></li>
 <li><p>W10: Work on the project</p></li>
 <li><p><strong>Finals Week: projects due</strong></p></li>
 </ul>
-</section>
-<section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
 <p>We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Campuswire). This will give us a chance to give you feedback and help guide your project plans.</p>
 <p>Suggestions for working on projects:</p>
 <ul class="simple">
@@ -631,9 +468,9 @@ If you get stuck, pause, and ask for help</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="project-topics">
-<h2>Project Topics<a class="headerlink" href="#project-topics" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="project-topics">
+<h2>Project Topics<a class="headerlink" href="#project-topics" title="Permalink to this headline">¶</a></h2>
 <p>For your project, you can choose a topic that extends an application from one of the assignments, or propose your own topic.</p>
 <p>Possible topics:</p>
 <ul class="simple">
@@ -644,8 +481,8 @@ If you get stuck, pause, and ask for help</p></li>
 <li><p>Choose your own adventure (propose and develop your own project idea)</p></li>
 </ul>
 <p>There are more detailed project ideas in the <code class="docutils literal notranslate"><span class="pre">ProjectIdeas</span></code> notebook.</p>
-<section id="taboo-topics">
-<h3>Taboo Topics<a class="headerlink" href="#taboo-topics" title="Permalink to this headline">#</a></h3>
+<div class="section" id="taboo-topics">
+<h3>Taboo Topics<a class="headerlink" href="#taboo-topics" title="Permalink to this headline">¶</a></h3>
 <p>While you’re allowed to work on a topic of your choosing there are a few “taboo topics” - or topics that are not permitted for the COGS 18 final project. These topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you’re allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren’t limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.</p>
 <p>This quarter, the Taboo Topics for the COGS18 final project are:</p>
 <ul class="simple">
@@ -659,26 +496,26 @@ If you get stuck, pause, and ask for help</p></li>
 <li><p>Connect4 Game</p></li>
 </ul>
 <p>Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to your Professor and ask for an exception. You’ll have to explain your idea. And, if approved, you’ll be able to work on your taboo topic of choice!</p>
-</section>
-</section>
-<section id="project-scope">
-<h2>Project Scope<a class="headerlink" href="#project-scope" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="project-scope">
+<h2>Project Scope<a class="headerlink" href="#project-scope" title="Permalink to this headline">¶</a></h2>
 <p>The main goal of the project is to demonstrate that you can design and implement code to fulfill some task that you choose. That is, the goal of the project is to plan and write some code that solves a novel problem, one for which the solution is not pre-specified (as compared to and different from the assignments).</p>
 <p>There is not a specific amount of code that you have to write for the project. In terms of project scope, your project must implement some new thing, that you design and write the code for. To do so, you are expected to write new code that creates or adds some functionality, and that does so using good code practices. As a rule of thumb, note a project that appropriately responds to this call will have at least a set of new functions, will use code constructs such as loops and conditionals, will import code from available modules when needed, and will do all of this organized into a well constructed organization, in which the code follows proper coding style, is documented, and includes at least one code test.</p>
 <p>As the focus of the project is working with Python code, there is <strong>no</strong> prioritization for trying to perform complex tasks. On the contrary, in the face of a complex task in which the work ends up being trying to understand the complex topic you are working on, instead of focusing on working directly with Python code, a simpler project topic is preferred.</p>
-</section>
-<section id="project-approach">
-<h2>Project Approach<a class="headerlink" href="#project-approach" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="project-approach">
+<h2>Project Approach<a class="headerlink" href="#project-approach" title="Permalink to this headline">¶</a></h2>
 <p>As you work through your project, we recommend taking an approach in which you use a modular design and <strong>prioritize creating a minimal viable product</strong>, using a rapid prototyping approach. These terms will be more fully described in class - but to a first approximation this approach suggests that you organize your design as separate components (modular design), that are independent of each other. Focus first on the core component of the project (minimal viable product) - what piece of it is required such that you have a working implementation of the basic idea that you are targeting. As you work through this, try things out quickly (rapid prototyping) - write some code, check if it works, figure out why or why not, and iterate onto a next version. Once you get the core of the project working, you can add any extra pieces that would be nice and useful to extend the scope of the project, knowing that you have the core idea working.</p>
-</section>
-<section id="project-requirements">
-<h2>Project Requirements<a class="headerlink" href="#project-requirements" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="project-requirements">
+<h2>Project Requirements<a class="headerlink" href="#project-requirements" title="Permalink to this headline">¶</a></h2>
 <p>To complete the project you must submit your project, which will include Python code (&gt;=3.6) that implements your project. Your <strong>project must include (at least) one Jupyter notebook, one python file (a module file), and one test file.</strong> The Jupyter notebook file will minimally include a description of the project and code that demonstrates your project, organized in cells.</p>
 <p>The actual code for the project can be organized into either the notebook, and/or into python files, as either module files and/or scripts. Exactly where and how you organize the code can and should be decided by the project topic itself. For example, projects that are more focused on functions and classes may be more organized into a module organization. For some projects, the code may be well organized into a script that executes your project. For other projects, with more interactive components, much of the code may be presented within the Jupyter notebook. Regardless of the project, the design should be modular and include original code.</p>
 <p>Projects are individual, and each person needs to submit a project including (at least some) unique and original code. Projects can also include code that comes directly from the assignments, and/or from working with other students on project ideas, but this should be clearly marked and attributed in your submissions. More details on external code are included below.</p>
-</section>
-<section id="submitting-your-project">
-<h2>Submitting Your Project<a class="headerlink" href="#submitting-your-project" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="submitting-your-project">
+<h2>Submitting Your Project<a class="headerlink" href="#submitting-your-project" title="Permalink to this headline">¶</a></h2>
 <p>You will be submitting either 1) the project folder on datahub (note all contents of the folder will be submitted when you click submit on datahub) or 2) a zip file containing your project to Canvas. This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:</p>
 <p>MyProjectFolder/</p>
 <ul class="simple">
@@ -698,8 +535,8 @@ If you get stuck, pause, and ask for help</p></li>
 <li><p>requirements.txt</p></li>
 </ul>
 <p>Note that not all of these files / sections are mandatory, and they do not have to use the names specified here - file names can be whatever you want, as long as the organization is clear and what kind of thing each file is is clear. <strong>You must include, at minimum, a Jupyter notebook, and some part of your code should be organized into a module, with a test file</strong>. The scripts section is optional, and should be included if it makes sense to organize your function into an executable script. The requirements text file (optional) should list any modules you use in your project that are not included in the anaconda distribution.</p>
-<section id="how-to-create-a-zip-file">
-<h3><em>How to create a zip file</em><a class="headerlink" href="#how-to-create-a-zip-file" title="Permalink to this headline">#</a></h3>
+<div class="section" id="how-to-create-a-zip-file">
+<h3><em>How to create a zip file</em><a class="headerlink" href="#how-to-create-a-zip-file" title="Permalink to this headline">¶</a></h3>
 <p>First, make sure everything is organized into a folder, as you want it. Then:</p>
 <ul class="simple">
 <li><p>On Mac: right-click on the folder, and click ‘Compress’.</p></li>
@@ -707,10 +544,10 @@ If you get stuck, pause, and ask for help</p></li>
 </ul>
 <p>In both cases, this will create a zip file, with the name ‘FolderName.zip’.</p>
 <p>You can upload this file to Canvas as your project submission.</p>
-</section>
-</section>
-<section id="grading-rubric">
-<h2>Grading Rubric<a class="headerlink" href="#grading-rubric" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="grading-rubric">
+<h2>Grading Rubric<a class="headerlink" href="#grading-rubric" title="Permalink to this headline">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p>Component</p></th>
@@ -796,32 +633,32 @@ If you get stuck, pause, and ask for help</p></li>
 <p>For extra credit, if you go above and beyond on the minimal project requirements and challenge yourself to approach a project that is more complex than the basic requirements, requires you to learn something beyond what was taught in the course, or uses code concepts not taught in class, explain this at the end of your Jupyter notebook. Here, you should explain <em>why</em> your approach was particularly difficult/challenging <em>for you</em> and how your work goes beyond the minimal project requirements.</p>
 <p><em>GitHub Extra Credit (1%)</em></p>
 <p>For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project. (Note: This should be the <em>unzipped</em> version of your project, so that others on GitHub can see your code.)</p>
-</section>
-<section id="external-code">
-<h2>External Code<a class="headerlink" href="#external-code" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="external-code">
+<h2>External Code<a class="headerlink" href="#external-code" title="Permalink to this headline">¶</a></h2>
 <p>Your project may include external code - that can be code from the course (assignments, materials, and/or coding labs), code from fellow students, that you perhaps worked on together, and/or code from other sources. Note that this code is not considered original code for the project, and will not be graded. Please follow the following guidelines when doing so.</p>
-<section id="course-code">
-<h3>Course Code<a class="headerlink" href="#course-code" title="Permalink to this headline">#</a></h3>
+<div class="section" id="course-code">
+<h3>Course Code<a class="headerlink" href="#course-code" title="Permalink to this headline">¶</a></h3>
 <p>You are welcome and even expected to take code from the course, in particular code from the assignments. This does not need to be cited, but it also will not count as original/unique code you’ve written. Note that superficial code changes (i.e. simply changing variable/function names) doe NOT count as making code unique/original.</p>
-</section>
-<section id="code-co-developed-with-other-student-s">
-<h3>Code co-developed with other student(s)<a class="headerlink" href="#code-co-developed-with-other-student-s" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="code-co-developed-with-other-student-s">
+<h3>Code co-developed with other student(s)<a class="headerlink" href="#code-co-developed-with-other-student-s" title="Permalink to this headline">¶</a></h3>
 <p>You may work with other students on aspects of the project, if you are working on similar topics. For any code that was developed together, you can include this code in your project, and indicate that it was written together with another student. Note that each student will be graded primarily on the unique code that is submitted as part of their project.</p>
-</section>
-<section id="third-party-code">
-<h3>Third Party Code<a class="headerlink" href="#third-party-code" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="third-party-code">
+<h3>Third Party Code<a class="headerlink" href="#third-party-code" title="Permalink to this headline">¶</a></h3>
 <p>You may include third party code, external from the course, including demo code and available snippets of code you find available.</p>
-</section>
-<section id="provide-attribution">
-<h3>Provide Attribution<a class="headerlink" href="#provide-attribution" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="provide-attribution">
+<h3>Provide Attribution<a class="headerlink" href="#provide-attribution" title="Permalink to this headline">¶</a></h3>
 <p>Clear attribution of code is important. Including external code, that you did not write, but failing to indicate that is code you did not write and passing it off as your own is (and will be considered) plagiarism. To cite code indicate in the docstring for the module / function / class or code segment that this code is external code, and include the source of the code.</p>
-</section>
-<section id="modified-code">
-<h3>Modified Code<a class="headerlink" href="#modified-code" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="modified-code">
+<h3>Modified Code<a class="headerlink" href="#modified-code" title="Permalink to this headline">¶</a></h3>
 <p>It may also be the case that you originally start with code from an external source, but through your project you modify that code - perhaps refactoring it, reorganizing the code, and/ or editing and updating the code organization and functionality. If this is the case, also provide attribution and a link to source, but if you significantly update the code organization and/or functionality (refactoring the code, and/or updating functionality more than just updating naming, style and documentation), then you can and should indicate that this adapted code is to be considered part of your graded project code.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -845,48 +682,28 @@ If you get stuck, pause, and ask for help</p></li>
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="PythonParty.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Python Party!</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="faq.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Project FAQ</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Shannon Ellis and Tom Donoghue<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+    <footer class="footer">
+  <p>
     
-</div>
+      By Shannon Ellis, Jason Fleischer, and Tom Donoghue<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

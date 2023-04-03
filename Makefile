@@ -30,14 +30,14 @@ textbook:
 	git clone --depth 1 https://www.github.com/COGS18/LectureNotes-COGS18.git materials
 
 	# Copy & build coding labs
-	git clone --depth 1 https://github.com/COGS18/CodingLabs.git labs
-	rm -rf labs/README.md
-	rm -rf labs/Archive
-	rm labs/CL1-Tooling.ipynb
-	# new method is to have seperate directory for the answers distributed on Website
+	# git clone --depth 1 https://github.com/COGS18/CodingLabs.git labs
+	# rm -rf labs/README.md
+	# rm -rf labs/Archive
+	# rm labs/CL1-Tooling.ipynb
+	# new method is to have separate directory for the answers distributed on Website
 	# manually add them to the directory as you want to distribute, remove at
-	# beginning of hte quarter
-	mv labs/answers-for-website/* labs
+	# beginning of the quarter
+	# mv labs/answers-for-website/* labs
 	rm -rf labs/source
 
 	# Copy & build project info
@@ -57,7 +57,7 @@ textbook:
 	cp materials/img/* _build/html/_images/
 
 
-	rm -rf labs
+	# rm -rf labs
 	rm -rf materials
 	rm -rf projects
 
