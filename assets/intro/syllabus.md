@@ -163,37 +163,37 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 4/5/2023  | 1      | W   |                        | CL1 - tooling               |                                         |                            
 | 4/6/2023  | 1      | Th  | Variables & Operators  |                             |                                         |                            
 | 4/11/2023 | 2      | Tu  | Functions              |                             |                                         |                           
-| 4/5/2023  | 2      | W   |                        | CL2 - vars, operators       |                                         |                            
+| 4/12/2023 | 2      | W   |                        | CL2 - vars, operators       |                                         |                            
 | 4/14/2023 | 2      | Th  | Conditionals           |                             |                                         |                            
 | 4/18/2023 | 3      | Tu  | Collections            |                             |                                         |                            
-| 4/5/2023  | 3      | W   |                        | CL3 - funcs, conditionals   |                                         |                            
+| 4/19/2023 | 3      | W   |                        | CL3 - funcs, conditionals   |                                         |                            
 | 4/20/2023 | 3      | Th  | Debugging [*]          |                             |                                         |                            
 | 4/21/2023 | 3      | F   |                        |                             | A1 - variables, comparison, functions   |                            
 | 4/25/2023 | 4      | Tu  | Loops                  |                             |                                         |
-| 4/5/2023  | 4      | W   |                        | CL4 - collections           |                                         |                            
+| 4/26/2023 | 4      | W   |                        | CL4 - collections           |                                         |                            
 | 4/27/2023 | 4      | Th  | Review                 |                             |                                         |                            
 | 4/28/2023 | 4      | F   |                        |                             | A2 - conditionals, collections, ciphers |                            
 | 5/2/2023  | 5      | Tu  | **E1**                 |                             |                                         | 
-| 4/5/2023  | 5      | W   |                        | CL5 - loops                 |                                         |                            
+| 5/3/2023  | 5      | W   |                        | CL5 - loops                 |                                         |                            
 | 5/4/2023  | 5      | Th  | Algorithms             |                             |                                         |                            
 | 5/5/2023  | 5      | F   |                        |                             | E1: technical portion (take-home)       |                            
 | 5/9/2023  | 6      | Tu  | Methods                |                             |                                         |                            
-| 4/5/2023  | 6      | W   |                        |                             |                                         |                            
+| 5/10/2023 | 6      | W   |                        |                             |                                         |                            
 | 5/11/2023 | 6      | Th  | Classes                |                             |                                         |                            
-| 5/5/2023  | 6      | F   |                        |                             | A3 - loops, strings, chatbots           |                            
+| 5/12/2023 | 6      | F   |                        |                             | A3 - loops, strings, chatbots           |                            
 | 5/16/2023 | 7      | Tu  | Command Line [**]      |                             |                                         |                            
-| 4/5/2023  | 7      | W   |                        | CL6 - classes               |                                         |                            
+| 5/17/2023 | 7      | W   |                        | CL6 - classes               |                                         |                            
 | 5/18/2023 | 7      | Th  | Review                 |                             |                                         |                            
 | 5/19/2023 | 7      | F   |                        |                             | A4 - methods, classes, agents           |                            
 | 5/23/2023 | 8      | Tu  | **E2**                 |                             |                                         |      
-| 4/5/2023  | 8      | W   |                        | CL7 - command line          |                                         |                            
+| 5/24/2023 | 8      | W   |                        | CL7 - command line          |                                         |                            
 | 5/25/2023 | 8      | Th  | Python Party           |                             |                                         |                            
 | 5/26/2023 | 8      | F   |                        |                             | E2: technical portion (take-home)       |                            
 | 5/30/2023 | 9      | Tu  | Scientific Computing   |                             |                                         | 
-| 4/5/2023  | 9      | W   |                        | CL8 - scientific computing  |                                         |                     
+| 5/31/2023 | 9      | W   |                        | CL8 - scientific computing  |                                         |                     
 | 6/1/2023  | 9      | Th  | Code Style \& Documentation|                         |                                         |                       
 | 6/6/2023  | 10     | Tu  | Code Testing           |                             |                                         |                           
-| 4/5/2023  | 10     | W   |                        | CL9 - test, debug, refactor |                                         |                           
+| 6/7/2023  | 10     | W   |                        | CL9 - test, debug, refactor |                                         |                           
 | 6/8/2023  | 10     | Th  | Code Projects          |                             |                                         | 
 | 6/9/2023  | 10     | F   |                        |                             | A5 - numpy, pandas, refactoring         |                       
 | 6/13/2023 | Finals | Tu  | \--                    |                             | Final project/exam due                  | 
