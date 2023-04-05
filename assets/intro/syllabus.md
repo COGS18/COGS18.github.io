@@ -26,13 +26,15 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                | Will & Ethan         | W 5:00p-5:50p   | CSB 115            |
 |                | Ethan & Jiayi        | W 6:00p-6:50p   | CSB 115            |
 | **Office Hours** |                    |                 |                    |
-|                | Pooja Patha          | Mon 11a-12p     | Zoom link coming soon               |
-|                | Will McCarthy        | Tu 1-2p         | Zoom link coming soon              |
-|                | Mingson Leung        | Tu 1-2p         | Zoom link coming soon              |
-|                | Prof Ellis           | Th 1-3p         | TBD                |
-|                | Josh Salce           | Fri 11a-12p     | M.O.M’s Cafe       |
-|                | Lillian Ho           | Fri 2-3p        | TBD                |
-|                | Josh Chen            | Fri 5-6p        | Zoom link coming soon               |
+|                | Pooja Patha          | Mon 11a-12p     | Zoom               |
+|                | Will McCarthy        | Tu 1-2p         | Zoom               |
+|                | Mingson Leung        | Tu 1-2p         | Zoom               |
+|                | Annapurna Vadaparty  | W 1-2p          | Cogsci Kitchen     |
+|                | **Prof Ellis**       | Th 1-3p         | CSB 114            |
+|                | Josh Salce           | Fri 11a-12p     | The Loft           |
+|                | Ethan Cheng          | Fri 1-2p        | TBD                |
+|                | Josh Chen            | Fri 5-6p        | Zoom               |
+|                | Jiayi Dong           | TBD             | TBD                |
 
 
 \* The registrar accidentally scheduled this section for Mon rather than Wed and the error was only caught after students had enrolled. If we had asked to officially change the day to Wed (what it's going to be), those who had already enrolled would have been dropped from the course. So, **your schedule will still say Mon, but all labs are on Wednesdays**. Attendance is not required and you have the option to attend at a different time on Wednesday if needed, so I hope this small change will not negatively impact any students while allowing for all students to complete and attend labs  on the same day of the week.
@@ -63,7 +65,7 @@ Our main goal is that you are able to program at an introductory level in the Py
 - Demonstrate familiarity with the command line
 - Describe and implement best practices (code style, documentation, and testing) in Python
 
-To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during coding lab, and throughout all assignments. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
+To achieve these objectives, information will be presented during lecture. You will have the opportunity to program in lecture, during , and throughout all assignments. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.
 
 ---
 
