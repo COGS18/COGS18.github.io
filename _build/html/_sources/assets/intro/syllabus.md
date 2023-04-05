@@ -12,21 +12,27 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE STAFF & INFORMATION
 
-| **What**       | **Who**         | **When**        | **Where**                                                          |
-| ----------     | --------------- | --------------- | ------------------ |
-| **Lecture**    | Prof Ellis      | TuTh 11-12:20   | Peterson Hall 108  |
-|                |                 |                 |                    |
-| **Coding lab** | TBD             | W 10:00a-10:50a | CSB 115            |
-|                | TBD             | W 11:00a-11:50a | CSB 115            |
-|                | TBD             | W 12:00p-12:50p | CSB 115            |
-|                | TBD             | W 1:00p-1:50p*  | CSB 115            |
-|                | TBD             | W 2:00p-2:50p   | CSB 115            |
-|                | TBD             | W 3:00p-3:50p   | CSB 115            |
-|                | TBD             | W 4:00p-4:50p   | CSB 115            |
-|                | TBD             | W 5:00p-5:50p   | CSB 115            |
-|                | TBD             | W 6:00p-6:50p   | CSB 115            |
-|                |                 |                 |                    |
-| **Office Hours** | Prof Ellis    | Th 1-3p         | TBD                |
+| **What**       | **Who**            | **When**        | **Where**                                                          |
+| ----------     | -------------------- | --------------- | ------------------ |
+| **Lecture**    | Prof Ellis           | TuTh 11-12:20   | Peterson Hall 108  |
+|                |                      |                 |                    |
+| **Coding lab** | Pooja & Josh Salce   | W 10:00a-10:50a | CSB 115            |
+|                | Pooja & Josh Salce   | W 11:00a-11:50a | CSB 115            |
+|                | Mingson & Lillian    | W 12:00p-12:50p | CSB 115            |
+|                | Mingson & Lillian    | W 1:00p-1:50p*  | CSB 115            |
+|                | Annapurna & Josh Chen| W 2:00p-2:50p   | CSB 115            |
+|                | Annapurna & Josh Chen| W 3:00p-3:50p   | CSB 115            |
+|                | Will & Jiayi         | W 4:00p-4:50p   | CSB 115            |
+|                | Will & Ethan         | W 5:00p-5:50p   | CSB 115            |
+|                | Ethan & Jiayi        | W 6:00p-6:50p   | CSB 115            |
+| **Office Hours** |                    |                 |                    |
+|                | Pooja Patha          | Mon 11a-12p     | Zoom link coming soon               |
+|                | Will McCarthy        | Tu 1-2p         | Zoom link coming soon              |
+|                | Mingson Leung        | Tu 1-2p         | Zoom link coming soon              |
+|                | Prof Ellis           | Th 1-3p         | TBD                |
+|                | Josh Salce           | Fri 11a-12p     | M.O.M’s Cafe       |
+|                | Lillian Ho           | Fri 2-3p        | TBD                |
+|                | Josh Chen            | Fri 5-6p        | Zoom link coming soon               |
 
 
 \* The registrar accidentally scheduled this section for Mon rather than Wed and the error was only caught after students had enrolled. If we had asked to officially change the day to Wed (what it's going to be), those who had already enrolled would have been dropped from the course. So, **your schedule will still say Mon, but all labs are on Wednesdays**. Attendance is not required and you have the option to attend at a different time on Wednesday if needed, so I hope this small change will not negatively impact any students while allowing for all students to complete and attend labs  on the same day of the week.
@@ -81,7 +87,7 @@ Note: If you do not have consistent access to the technology needed, please use 
 | ------------: | :---------: | :----------------------------------- |
 |   Assignments |    40\%     | Complete 5 Assignments               |
 |      Midterms |    25\%     | Complete 2 Exams                     |
-|    Coding Lab |    16\%     | Participate in 8 Coding Labs         |
+|    Coding Lab |    16\%     | Participate in 8 Coding Labs (lowest lab dropped) |
 | Final Project |    19\%     | Complete Final Project OR Final Exam |
 
 ### Grades
