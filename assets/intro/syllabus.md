@@ -29,12 +29,12 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                | Pooja Patha          | Mon 11a-12p     | Zoom               |
 |                | Will McCarthy        | Tu 1-2p         | Zoom               |
 |                | Mingson Leung        | Tu 1-2p         | Zoom               |
+|                | Jiayi Dong           | Tu 2-3p         | TBD                |
 |                | Annapurna Vadaparty  | W 1-2p          | Cogsci Kitchen     |
 |                | **Prof Ellis**       | Th 1-3p         | CSB 114            |
 |                | Josh Salce           | Fri 11a-12p     | The Loft           |
 |                | Ethan Cheng          | Fri 1-2p        | TBD                |
 |                | Josh Chen            | Fri 5-6p        | Zoom               |
-|                | Jiayi Dong           | TBD             | TBD                |
 
 
 \* The registrar accidentally scheduled this section for Mon rather than Wed and the error was only caught after students had enrolled. If we had asked to officially change the day to Wed (what it's going to be), those who had already enrolled would have been dropped from the course. So, **your schedule will still say Mon, but all labs are on Wednesdays**. Attendance is not required and you have the option to attend at a different time on Wednesday if needed, so I hope this small change will not negatively impact any students while allowing for all students to complete and attend labs  on the same day of the week.
@@ -130,17 +130,17 @@ Please do not attend any in-person activity (lecture/coding lab/office hours) if
 
 ### Lecture
 
-Students are encouraged to attend lecture live; however, **in-person attendance is not required, *except* on exam days**. All lectures will be recorded/podcast. However, during lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates' thoughts during lecture. To incentivize attendance, we will use the ClassQuestion app for in-class Q&A. Students will receive a small amount of extra credit for each lecture attended, such that students who attend *every* lecture throughout the quarter will earn 5% extra credit on their final project/exam (_not_ the final course grade). To earn credit in a given day, students must respond to at least 50% of the questions asked on that day (correctness does not matter). 
+Students are encouraged to attend lecture live; however, **in-person attendance is not required, *except* on exam days**. All lectures will be recorded/podcast. However, during lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates' thoughts during lecture. To incentivize attendance, we will use the ClassQuestion app for in-class Q&A. Students will receive a small amount of extra credit for *each* lecture attended, up to 5% extra credit (for those who attend every lecture) on their final project/exam (_not_ the final course grade). To earn credit in a given day, students must respond to at least 50% of the questions asked on that day (correctness does not matter). 
 
 ### Coding Labs (16\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (2\% each; lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at time TBD each week. There are no late submissions for coding labs.
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (2\% each; lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for that week by Wednesday at 11:59 pm each week. There are no late submissions for coding labs.
 
 Note: You should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend the other Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 35 so that students can get help from their TAs and IAs during this time.
 
 ### Assignments (40\%)
 
-There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due at time TBD on the assigned date.
+There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date.
 
 Late assignments will be accepted at 75\% credit for 72 hours (3 days) after the assignment's due date. Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
@@ -165,7 +165,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 ---
 
 ## COURSE SCHEDULE
-| Date      | Week   | Day | Lecture topic          | Lab topic                   | Assignment due  (time TBD)              |                        
+| Date      | Week   | Day | Lecture topic          | Lab topic                   | Assignment due  (11:59 PM)              |                        
 | --------- | ------ | --- | ---------------------- | --------------------------- | --------------------------------------- | 
 | 4/4/2023  | 1      | Tu  | Introduction           |                             |                                         |                            
 | 4/5/2023  | 1      | W   |                        | CL1 - tooling               |                                         |                            
@@ -207,7 +207,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 6/13/2023 | Finals | Tu  | \--                    |                             | Final project/exam due                  | 
 
 
-**Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam by time TBD. You do not have to show up anywhere at the scheduled date/time of the final.
+**Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:  
 [\*] denotes the last day of material covered on Midterm I (E1).  

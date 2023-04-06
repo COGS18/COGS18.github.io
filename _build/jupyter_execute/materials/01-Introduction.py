@@ -16,8 +16,8 @@
 #     - IAs: Mingson, Lillian, Joshua, Josh, Jiayi, & Ethan
 #     
 # - Where:
-#     - Lectures TuTh @ 11AM (Zoom/Peterson Hall 108)
-#     - Coding Lab Sections (Zoom/CSB 115; Wed 10AM-6PM)
+#     - Lectures TuTh @ 11AM (Peterson Hall 108)
+#     - Coding Lab Sections (CSB 115; Wed 10AM-6PM)
 #     - Course Website: https://cogs18.github.io
 #     - Piazza Page: 
 
