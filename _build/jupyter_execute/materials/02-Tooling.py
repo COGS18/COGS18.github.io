@@ -3,17 +3,15 @@
 
 # **Course Announcements**
 # 
-# - CL1 due Fri (tomorrow) at 11:59 PM
+# - CL1 due Fri (tomorrow) at 11:59 PM (typically labs due Wednesdays)
 # - Pre-course survey "due" (for EC) Fri (tomorrow) at 11:59 PM
 # 
 # Notes:
 # 1. Remeber to click the link on Canvas/the course website to get each day's notes on datahub
-# 2. Sign up/login to ClassQuestion: https://classquestion.com/students
+# 2. Sign up/login to ClassQuestion: https://classquestion.com/students (Course code: FBXTD)
 # 3. Due dates will be 11:59 PM this quarter
 # 
 
-# - CL1 due this Friday at 11:59 PM
-# - CLs for the rest of the quarter will be released each Friday and due each Wednesday at 11:59 PM
 # 4. syllabus has been updated
 # - coding lab staff
 # - due date times
