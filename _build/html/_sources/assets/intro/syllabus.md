@@ -34,6 +34,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                | **Prof Ellis**       | Th 1-3p         | CSB 114            |
 |                | Josh Salce           | Fri 11a-12p     | The Loft           |
 |                | Ethan Cheng          | Fri 1-2p        | CSB 114            |
+|                | Lillian Ho           | Fri 2-3p        | Zoom               |
 |                | Josh Chen            | Fri 5-6p        | Zoom               |
 
 
