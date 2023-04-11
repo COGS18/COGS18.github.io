@@ -1,6 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **Course Announcments**
+# 
+# Due Dates: 
+# - CL2 due Wednesday
+# - A1 released; due *next* Friday (4/21)
+# 
+# Notes:
+# - CL1 graded - score on Canvas (if you completed but failed to submit, submit by tonight, Tues, for full credit)
+#     - Answer keys: posted on website and in folder in `LectureNotes-COGS18`
+# - Pre-course survey "graded" 
+
+# **Survey Summary** (N=383): 
+# - 75% of the class has never programmed before (12% know Python; a handful know other languages)
+# - 92% of the class wanted 11:59 PM due dates
+# - 37% of the class asked for at least one extension last quarter
+# - Common comment: *Nervous but excited*
+# - Outside of class: work, workout (volleyball, surf,  yoga, basketball, soccer, spikeball), explore (try cafes, window shop, thrifting, hike), art (write, read, music, poetry, dance, paint), parent (children and pet...shout out to Sharkbait!) and caring for family members (older family members and younger siblings)
+# - Most fun future pursuits: Mattress tester, an inspiration to someone, an animal whisperer, happy, astronaut, world traveler, NBA analyst
+# - Most common future pursuits: don't know, psychologist, tech-centric/adjacent
+
 # # Operators
 # 
 # - assignment

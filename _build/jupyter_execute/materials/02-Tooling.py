@@ -246,7 +246,7 @@
 # 
 # Whenever you're writing code, you'll want to be sure the cell is set to be a code cell
 
-# In[ ]:
+# In[6]:
 
 
 # Cell can also be code.
@@ -254,7 +254,7 @@ a = 1
 b = 2
 
 
-# In[ ]:
+# In[7]:
 
 
 # Cells can also have output, that gets printed out below the cell.
@@ -262,7 +262,7 @@ c = a - b
 print(c)
 
 
-# In[ ]:
+# In[8]:
 
 
 # If you execute a cell with just a variable name in it, it will also get printed
@@ -280,10 +280,12 @@ c
 # 
 # Write code that outputs the value '6'
 
-# In[ ]:
+# In[11]:
 
 
 ## YOUR CODE HERE
+c = 3 * b
+c
 
 
 # #### Class Question #4
@@ -300,7 +302,7 @@ c
 # Jupyter has useful shortcuts. Add a single <code>?</code> after a function or class get a window with the documentation, or a double <code>??</code> to pull up the source code. 
 # </div>
 
-# In[ ]:
+# In[12]:
 
 
 # For example, execute this cell to see the documentation for the 'abs'
@@ -319,7 +321,7 @@ get_ipython().run_line_magic('pinfo', 'abs')
 
 
 # Move your cursor to the end of the line, press tab, and a drop menu will appear showing all possible completions
-ra
+ra 
 
 
 # In[ ]:

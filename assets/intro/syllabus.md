@@ -23,21 +23,21 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                | Annapurna & Josh Chen| W 2:00p-2:50p   | CSB 115            |
 |                | Annapurna & Josh Chen| W 3:00p-3:50p   | CSB 115            |
 |                | Will & Jiayi         | W 4:00p-4:50p   | CSB 115            |
-|                | Will & Ethan         | W 5:00p-5:50p   | CSB 115            |
-|                | Ethan & Jiayi        | W 6:00p-6:50p   | CSB 115            |
+|                | Will & Jiayi         | W 5:00p-5:50p   | CSB 115            |
+|                | Ethan                | W 6:00p-6:50p   | CSB 115            |
 | **Office Hours** |                    |                 |                    |
-|                | Pooja Patha          | Mon 11a-12p     | Zoom               |
-|                | Will McCarthy        | Tu 1-2p         | Zoom               |
+|                | Pooja Patha          | Tu 10-11a       | Zoom               |
+|                | Will McCarthy        | Tu 3-4p         | Zoom               |
 |                | Mingson Leung        | Tu 1-2p         | Zoom               |
-|                | Jiayi Dong           | Tu 2-3p         | TBD                |
+|                | Jiayi Dong           | Tu 2-3p         | CSB 114            |
 |                | Annapurna Vadaparty  | W 1-2p          | Cogsci Kitchen     |
 |                | **Prof Ellis**       | Th 1-3p         | CSB 114            |
 |                | Josh Salce           | Fri 11a-12p     | The Loft           |
-|                | Ethan Cheng          | Fri 1-2p        | TBD                |
+|                | Ethan Cheng          | Fri 1-2p        | CSB 114            |
 |                | Josh Chen            | Fri 5-6p        | Zoom               |
 
 
-\* The registrar accidentally scheduled this section for Mon rather than Wed and the error was only caught after students had enrolled. If we had asked to officially change the day to Wed (what it's going to be), those who had already enrolled would have been dropped from the course. So, **your schedule will still say Mon, but all labs are on Wednesdays**. Attendance is not required and you have the option to attend at a different time on Wednesday if needed, so I hope this small change will not negatively impact any students while allowing for all students to complete and attend labs  on the same day of the week.
+\* The registrar accidentally scheduled this section for Mon rather than Wed and the error was only caught after students had enrolled. If we had asked to officially change the day to Wed (what it's going to be), those who had already enrolled would have been dropped from the course. So, **your schedule will still say Monday, but all labs are on Wednesdays**. Attendance is not required and you have the option to attend at a different time on Wednesday if needed, so I hope this small change will not negatively impact any students while allowing for all students to complete and attend labs  on the same day of the week.
 
 # Important Links
 - [Course Website](https://cogs18.github.io)
