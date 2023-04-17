@@ -61,19 +61,19 @@ parts:
     chapters:
     - file: materials/CL-Answers/CL1-Tooling
       title: CL1-Tooling
-  #   - file: labs/CL2-ProgrammingI
-  #     title: CL2-ProgrammingI
-  #   - file: labs/CL3-ProgrammingII
+    - file: materials/CL-Answers/CL2-ProgrammingI
+      title: CL2-ProgrammingI
+  #   - file: materials/CL-Answers/CL3-ProgrammingII
   #     title: CL3-ProgrammingII
-  #   - file: labs/CL4-Collections
+  #   - file: materials/CL-Answers/CL4-Collections
   #     title: CL4-Collections
-  #   - file: labs/CL5-Loops
+  #   - file: materials/CL-Answers/CL5-Loops
   #     title: CL5-Loops
-  #   - file: labs/CL6-Classes
+  #   - file: materials/CL-Answers/CL6-Classes
   #     title: CL6-Classes
-  #   - file: labs/CL7-CommandLine
+  #   - file: materials/CL-Answers/CL7-CommandLine
   #     title: CL7-CommandLine
-  #   - file: labs/CL8-ScientificComputing
+  #   - file: materials/CL-Answers/CL8-ScientificComputing
   #     title: CL8-ScientificComputing
 
   # - caption: Exam Prep

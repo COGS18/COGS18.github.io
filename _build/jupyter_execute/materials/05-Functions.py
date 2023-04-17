@@ -1,6 +1,45 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **Course Announcements**
+# 
+# - A1 due *next* Friday
+# - CL1 grades up-to-date
+# - CL2 Answer Key now available
+
+# **Student Expectations of Instructional Staff**
+# 
+# **Dialog based**: We will use dialog-based teaching rather than monologues. When students have questions that require a lengthy explanation of a concept that was covered in lecture, we will refer you to an external resource (e.g. lecture, site, video) for you to look at first. Of course, if you have questions about what you learn in those resources, please ask us! We want to make sure that everyone has done the preliminary background work so that we are using our time most effectively. 
+# 
+# 
+# **Student-driven**:  Rather than tell you how to solve a problem, we aim to ask you questions and point you toward illustrative examples to help lead you toward finding a solution on your own. 
+# 
+# **Example-heavy**: We will ask you about previous example problems you may have seen in lab or lecture that might be helpful to the problem at hand. When you look through examples you’ve seen, you might be able to find one that’s relevant to your problem and use it as inspiration for a solution. Also, when we know which examples you’ve seen and which ones you understand or don’t, we can better pinpoint where your confusion lies. 
+# 
+# 
+# **Scaffolded with prior knowledge**: If you’re lacking prerequisite knowledge needed for the question you’re asking, we take a step back and cover that before returning to the problem.
+
+# **A note on `assert` statements...**
+
+# In[ ]:
+
+
+# asserting something "True"
+# passes silently
+assert 6 < 10
+
+
+# In[ ]:
+
+
+# asserting something "False"
+# throws an assertion error
+assert 10 > 6
+
+
+# - on assignments, you want all `assert` statements to pass silently
+# - on coding labs, remember these are meant to be exploratory...sometimes we'll even ask you to do something that errors!
+
 # # Functions
 # 
 # - defining a function

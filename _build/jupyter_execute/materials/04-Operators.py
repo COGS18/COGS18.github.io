@@ -40,7 +40,7 @@
 # Python uses <code>=</code> for assignment.
 # </div>
 
-# In[ ]:
+# In[1]:
 
 
 my_var = 1
@@ -57,13 +57,13 @@ my_var = 1
 # Python uses the <b>mathematical operators</b> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> for 'sum', 'substract', 'multiply', and 'divide', repsectively.
 # </div>
 
-# In[ ]:
+# In[2]:
 
 
 print(2 + 3)
 
 
-# In[ ]:
+# In[3]:
 
 
 div_result = 4 / 2 
@@ -78,7 +78,7 @@ type(div_result)
 # - follow the rules for order of operations.
 # - parentheses specify which order you want to occur first
 
-# In[ ]:
+# In[4]:
 
 
 order_operations = 3 + 16 / 2
@@ -87,7 +87,7 @@ print(order_operations)
 
 # To specify that you want the addition to occur first, you would use parentheses.
 
-# In[ ]:
+# In[5]:
 
 
 specify_operations = (3 + 16) / 2
@@ -100,7 +100,7 @@ print(specify_operations)
 # 
 # Note: Best to think about it before running the code to ensure you understand.
 
-# In[ ]:
+# In[6]:
 
 
 my_value = (3 + 2) + 16 / (4 / 2) 
@@ -119,14 +119,14 @@ my_value
 # Python also has <code>**</code> for exponentiation and <code>%</code> for remainder (called modulus). These also return numbers.
 # </div>
 
-# In[ ]:
+# In[7]:
 
 
 # 2 to the power 3
 2 ** 3
 
 
-# In[ ]:
+# In[8]:
 
 
 # remainder of 17 divided by 7
@@ -137,7 +137,7 @@ my_value
 # 
 # What would be the value stored in `remainder`?
 
-# In[ ]:
+# In[9]:
 
 
 remainder = 16 % 5
@@ -154,7 +154,7 @@ remainder
 # 
 # What would be the value stored in `modulo_time`?
 
-# In[ ]:
+# In[10]:
 
 
 modulo_time = 4 * 2 % 5
@@ -171,7 +171,7 @@ modulo_time
 # 
 # How to get Python to tell you the integer and the remainder when dividing?
 
-# In[ ]:
+# In[11]:
 
 
 a = 17 // 7
@@ -196,31 +196,31 @@ print(a, 'remainder', b)
 # - `or` : True if at least one is true
 # - `not` : True only if false
 
-# In[ ]:
+# In[12]:
 
 
 True and True
 
 
-# In[ ]:
+# In[13]:
 
 
 True or True
 
 
-# In[ ]:
+# In[14]:
 
 
 True and not False
 
 
-# In[ ]:
+# In[15]:
 
 
 not False
 
 
-# In[ ]:
+# In[16]:
 
 
 # two nots cancel one another out
@@ -229,7 +229,7 @@ not (not True)
 
 # ### Capitalization matters
 
-# In[ ]:
+# In[17]:
 
 
 # this will give you an error
@@ -242,7 +242,7 @@ TRUE and TRUE
 # 
 # How will the following boolean expression evaluate:
 
-# In[ ]:
+# In[18]:
 
 
 (6 < 10) and (4 == 4)
@@ -266,7 +266,7 @@ TRUE and TRUE
 # - `<=` : value on left is less than *or equal to* value on right
 # - `>=` : value on left is greater than or equal to value on the right
 
-# In[ ]:
+# In[19]:
 
 
 a = 12
@@ -274,25 +274,25 @@ b = 13
 a > b
 
 
-# In[ ]:
+# In[20]:
 
 
 True == True
 
 
-# In[ ]:
+# In[21]:
 
 
 True != False
 
 
-# In[ ]:
+# In[22]:
 
 
 'aa' == 'aa'
 
 
-# In[ ]:
+# In[23]:
 
 
 12 <= 13
@@ -309,7 +309,7 @@ True != False
 # - B) I tried but am stuck.
 # - C) I'm unsure where to start
 
-# In[ ]:
+# In[24]:
 
 
 ## EDIT CODE HERE
@@ -330,7 +330,7 @@ shield_energy = ---
 # - `is` : True if both refer to the same object
 # - `is not` : True if they do not refer to the same object
 
-# In[ ]:
+# In[25]:
 
 
 a = 927
@@ -338,7 +338,7 @@ b = a
 c = 927
 
 
-# In[ ]:
+# In[26]:
 
 
 print(a is b)
@@ -349,14 +349,14 @@ print(c is a)
 
 # If we wanted that second statement to evaluate as `True` we could use `is not`...
 
-# In[ ]:
+# In[27]:
 
 
 # make a True statement
 print(c is not a)
 
 
-# In[ ]:
+# In[28]:
 
 
 # testing for value equality
@@ -373,7 +373,7 @@ a == b == c
 # - B) I tried but am stuck.
 # - C) I'm unsure where to start
 
-# In[ ]:
+# In[30]:
 
 
 z = 5
@@ -384,8 +384,8 @@ e = [1, 2, 3]
 f = [1, 2, 3]
 
 # EDIT CODE HERE
-true_variable = ---
-false_variable = ---
+true_variable = e is f
+false_variable = e is not f
 
 print(true_variable, false_variable)
 
@@ -403,32 +403,32 @@ print(true_variable, false_variable)
 # - `in` : True if value is found in the sequence
 # - `not in` : True if value is not found in the sequence
 
-# In[ ]:
+# In[31]:
 
 
 x = 'I love COGS18!'
 print('l' in x)
 
 
-# In[ ]:
+# In[32]:
 
 
 print('L' in x)
 
 
-# In[ ]:
+# In[33]:
 
 
 print('COGS' in x)
 
 
-# In[ ]:
+# In[34]:
 
 
 print('CSOG' in x)
 
 
-# In[ ]:
+# In[35]:
 
 
 print(' ' in x)
@@ -440,16 +440,30 @@ print(' ' in x)
 # Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 # </div>
 
-# In[ ]:
+# In[36]:
 
 
 'COGS' + ' 18'
 
 
-# In[ ]:
+# In[37]:
 
 
 'a' + 'b' + 'c'
+
+
+# In[39]:
+
+
+# in class question (no space)
+'COGS' + '18'
+
+
+# In[38]:
+
+
+# alternative approach to add a space (discussed in class)
+'COGS' + ' ' + '18'
 
 
 # ## Chaining Operators

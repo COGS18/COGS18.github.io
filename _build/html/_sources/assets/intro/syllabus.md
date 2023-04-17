@@ -31,6 +31,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                | Mingson Leung        | Tu 1-2p         | Zoom               |
 |                | Jiayi Dong           | Tu 2-3p         | CSB 114            |
 |                | Annapurna Vadaparty  | W 1-2p          | Cogsci Kitchen     |
+|                | Annapurna Vadaparty  | Th 1-2p         | CSB 114            |
 |                | **Prof Ellis**       | Th 1-3p         | CSB 114            |
 |                | Josh Salce           | Fri 11a-12p     | The Loft           |
 |                | Ethan Cheng          | Fri 1-2p        | CSB 114            |
@@ -254,7 +255,7 @@ Contacting the OSD can help you further:
 osd@ucsd.edu (email)  
 http://disabilities.ucsd.edu
 
-## Difficult life situations
+### Difficult life situations
 
 Sometimes life outside of academia can be difficult. Please [email me](mailto:sellis@ucsd.edu) or come to office hours if stuff outside the classroom prevents you from doing well inside it. I can often refer you on to the help you need.
 
@@ -289,3 +290,15 @@ Most students call me Prof/Professor Ellis. I'm also perfectly happy if you call
 ### What should I call you?
 
 I should call you by your name, with the correct pronunciation. Please correct me (out loud in the moment, via email/Piazza after the fact, or however you're most comfortable) if I ever make a mistake. 
+
+### What should you expect of your interactions with instructional staff?
+
+Office hours will be: 
+
+**Dialog based**: We will use dialog-based teaching rather than monologues. When students have questions that require a lengthy explanation of a concept that was covered in lecture, we will refer you to an external resource (e.g. lecture, site, video) for you to look at first. Of course, if you have questions about what you learn in those resources, please ask us! We want to make sure that everyone has done the preliminary background work so that we are using our time most effectively. 
+
+**Student-driven**:  Rather than tell you how to solve a problem, we aim to ask you questions and point you toward illustrative examples to help lead you toward finding a solution on your own. 
+
+**Example-heavy**: We will ask you about previous example problems you may have seen in lab or lecture that might be helpful to the problem at hand. When you look through examples you’ve seen, you might be able to find one that’s relevant to your problem and use it as inspiration for a solution. Also, when we know which examples you’ve seen and which ones you understand or don’t, we can better pinpoint where your confusion lies. 
+
+**Scaffolded with prior knowledge**: If you’re lacking prerequisite knowledge needed for the question you’re asking, we take a step back and cover that before returning to the problem.

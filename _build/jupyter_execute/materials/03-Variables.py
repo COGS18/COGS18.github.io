@@ -413,10 +413,11 @@ type(var_a)
 # 
 # After executing the following code, what will the type of `var_b` be?
 
-# In[ ]:
+# In[2]:
 
 
 var_b = '-17.5'
+type(var_b)
 
 
 # - A) String
@@ -436,6 +437,7 @@ n = 1
 a = 'm'
 m = n
 type(m)
+print(m)
 
 
 # - A) String
@@ -448,14 +450,14 @@ type(m)
 # 
 # The variable types we've talked about today are all **immutable**. This means they cannot be altered after they're created. 
 
-# In[ ]:
+# In[4]:
 
 
 immutable_string = 'COGS18 is the best!'
 immutable_string[4]
 
 
-# In[ ]:
+# In[5]:
 
 
 # cannot change part of the string after creation
