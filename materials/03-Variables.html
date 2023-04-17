@@ -157,6 +157,11 @@
    CL1-Tooling
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -1127,6 +1132,12 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var_b</span> <span class="o">=</span> <span class="s1">&#39;-17.5&#39;</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">var_b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
 </pre></div>
 </div>
 </div>
@@ -1148,6 +1159,7 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 <span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;m&#39;</span>
 <span class="n">m</span> <span class="o">=</span> <span class="n">n</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1170,11 +1182,27 @@ Every variable has a <b>type</b>, which refers to the kind of variable that it i
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># cannot change part of the string after creation</span>
 <span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">jp</span><span class="o">/</span><span class="n">hdbfltdj035719571j9wynwm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_30210</span><span class="o">/</span><span class="mf">1946994808.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># cannot change part of the string after creation</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+
+<span class="ne">TypeError</span>: &#39;str&#39; object does not support item assignment
 </pre></div>
 </div>
 </div>
