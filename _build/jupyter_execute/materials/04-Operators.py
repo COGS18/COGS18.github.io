@@ -440,26 +440,26 @@ print(' ' in x)
 # Operators sometimes do different things on different types of variables. For example, <code>+</code> on strings does concatenation.
 # </div>
 
-# In[36]:
+# In[40]:
 
 
 'COGS' + ' 18'
 
 
-# In[37]:
+# In[41]:
 
 
 'a' + 'b' + 'c'
 
 
-# In[39]:
+# In[42]:
 
 
 # in class question (no space)
 'COGS' + '18'
 
 
-# In[38]:
+# In[43]:
 
 
 # alternative approach to add a space (discussed in class)

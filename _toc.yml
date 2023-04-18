@@ -21,8 +21,8 @@ parts:
       title: 04-Operators
     - file: materials/05-Functions
       title: 05-Functions
-  #   - file: materials/06-Conditionals
-  #     title: 06-Conditionals
+    - file: materials/06-Conditionals
+      title: 06-Conditionals
   #   - file: materials/07-Collections
   #     title: 07-Collections
   #   - file: materials/08-Debugging

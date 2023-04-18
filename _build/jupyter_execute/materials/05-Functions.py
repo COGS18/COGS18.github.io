@@ -21,7 +21,7 @@
 
 # **A note on `assert` statements...**
 
-# In[ ]:
+# In[1]:
 
 
 # asserting something "True"
@@ -29,7 +29,7 @@
 assert 6 < 10
 
 
-# In[ ]:
+# In[2]:
 
 
 # asserting something "False"
@@ -86,7 +86,7 @@ assert 10 > 6
 # - Functions are the building blocks of programs, and can be flexibly combined and executed in specified orders
 #     - This allows us to build up arbitrarily complex, well-organized programs
 
-# In[ ]:
+# In[3]:
 
 
 # you've seen functions before
@@ -95,7 +95,7 @@ my_var = 3
 type(my_var)
 
 
-# In[ ]:
+# In[4]:
 
 
 # the function print() doesn't depend on type()
@@ -108,7 +108,7 @@ print(my_var)
 # When you use `def`, **you are defining a function**.
 # You are metaphorically writing the instructions for how to make the cheeseburger.
 
-# In[ ]:
+# In[5]:
 
 
 # define a function: double_value
@@ -123,7 +123,7 @@ def double_value(num):
     return doubled    
 
 
-# In[ ]:
+# In[6]:
 
 
 # excecute a function by calling the function's name
@@ -131,7 +131,7 @@ def double_value(num):
 double_value(num = 2) 
 
 
-# In[ ]:
+# In[7]:
 
 
 # equivalent function call
@@ -144,7 +144,7 @@ double_value(2)
 # 
 # Here we are defining a function with multiple parameters
 
-# In[ ]:
+# In[6]:
 
 
 def add_two_numbers(num1, num2):
@@ -156,13 +156,49 @@ def add_two_numbers(num1, num2):
     return answer
 
 
-# In[ ]:
+# In[7]:
 
 
 add_two_numbers(5, 14)
 
 
-# In[ ]:
+# In[17]:
+
+
+# in class question
+# what if you don't have the return?
+# will execute...but won't give you what you intend
+def add_two_numbers(num1, num2):
+    
+    # Do some operations with the parameters
+    answer = num1 + num2
+
+
+# In[18]:
+
+
+add_two_numbers(3,5)
+
+
+# In[22]:
+
+
+# in class question
+# return output directly
+# this works; I won't show this approach for now
+# makes documentation difficult later
+def add_two_numbers(num1, num2):
+    
+    return num1 + num2
+
+
+# In[23]:
+
+
+add_two_numbers(5, 14)
+
+
+# In[24]:
 
 
 # Execute our function again on some other inputs to double check 
@@ -190,7 +226,7 @@ print(output)
 # 
 # A) 0   &emsp;B) 2    &emsp;C) 4    &emsp;D) '2r.2 + 1'    &emsp;E) ¯\\\_(ツ)\_/¯
 
-# In[ ]:
+# In[9]:
 
 
 def remainder(number, divider):
@@ -200,7 +236,7 @@ def remainder(number, divider):
     return r
 
 
-# In[ ]:
+# In[10]:
 
 
 ans_1 = remainder(12, 5)
@@ -215,16 +251,22 @@ print(ans_1 + ans_2)
 # 
 # A) I did it! &emsp;B) I think I did it. &emsp;C) I tried but I am stuck. &emsp;D) Super duper lost
 
-# In[ ]:
+# In[15]:
 
 
 ## YOUR CODE HERE  
+def greet(name):
+    
+    output = 'Hello, ' + name + '. Good morning!'
+    
+    return output
 
 
-# In[ ]:
+# In[16]:
 
 
 # TEST YOUR FUNCTION HERE
+greet('students')
 
 
 # ## Default Values
