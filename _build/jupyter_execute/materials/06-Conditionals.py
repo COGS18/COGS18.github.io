@@ -162,7 +162,7 @@ elif condition_2:
 
 
 speed_limit = 65
-speed = 
+speed = 50
 
 if speed > speed_limit:
     ticket = True
@@ -176,7 +176,7 @@ else:
 # string value comparisons also possible
 a1 = 'completed'
 
-if a1 == 'completed'
+if a1 == 'completed':
     action = 'grade'
 elif a1 == 'in progress':
     action = 'wait'

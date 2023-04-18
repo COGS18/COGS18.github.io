@@ -144,7 +144,7 @@ double_value(2)
 # 
 # Here we are defining a function with multiple parameters
 
-# In[6]:
+# In[8]:
 
 
 def add_two_numbers(num1, num2):
@@ -156,13 +156,13 @@ def add_two_numbers(num1, num2):
     return answer
 
 
-# In[7]:
+# In[9]:
 
 
 add_two_numbers(5, 14)
 
 
-# In[17]:
+# In[10]:
 
 
 # in class question
@@ -174,13 +174,13 @@ def add_two_numbers(num1, num2):
     answer = num1 + num2
 
 
-# In[18]:
+# In[11]:
 
 
 add_two_numbers(3,5)
 
 
-# In[22]:
+# In[12]:
 
 
 # in class question
@@ -192,13 +192,13 @@ def add_two_numbers(num1, num2):
     return num1 + num2
 
 
-# In[23]:
+# In[13]:
 
 
 add_two_numbers(5, 14)
 
 
-# In[24]:
+# In[14]:
 
 
 # Execute our function again on some other inputs to double check 
@@ -226,7 +226,7 @@ print(output)
 # 
 # A) 0   &emsp;B) 2    &emsp;C) 4    &emsp;D) '2r.2 + 1'    &emsp;E) ¯\\\_(ツ)\_/¯
 
-# In[9]:
+# In[15]:
 
 
 def remainder(number, divider):
@@ -236,7 +236,7 @@ def remainder(number, divider):
     return r
 
 
-# In[10]:
+# In[16]:
 
 
 ans_1 = remainder(12, 5)
@@ -251,7 +251,7 @@ print(ans_1 + ans_2)
 # 
 # A) I did it! &emsp;B) I think I did it. &emsp;C) I tried but I am stuck. &emsp;D) Super duper lost
 
-# In[15]:
+# In[17]:
 
 
 ## YOUR CODE HERE  
@@ -262,7 +262,7 @@ def greet(name):
     return output
 
 
-# In[16]:
+# In[18]:
 
 
 # TEST YOUR FUNCTION HERE
