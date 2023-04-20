@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="CL-Answers/CL1-Tooling.html" />
+    <link rel="next" title="Collections" href="07-Collections.html" />
     <link rel="prev" title="Functions" href="05-Functions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -148,6 +148,11 @@
    06-Conditionals
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -163,6 +168,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="CL-Answers/CL2-ProgrammingI.html">
    CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
   </a>
  </li>
 </ul>
@@ -593,12 +603,22 @@ Conditionals are statements that check for a condition, using the <code>if</code
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This code executes if the condition evaluates as True.
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># equivalent to above</span>
 <span class="k">if</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as True.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This code executes if the condition evaluates as True.
 </pre></div>
 </div>
 </div>
@@ -614,10 +634,15 @@ Conditionals are statements that check for a condition, using the <code>if</code
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span> <span class="o">=</span> <span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">4</span>
 
 <span class="k">if</span> <span class="n">math</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -639,6 +664,14 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8682/1429974012.py&quot;</span><span class="gt">, line </span><span class="mi">5</span>
+    <span class="k">else</span> <span class="n">condition</span><span class="p">:</span>
+         <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="class-question-2">
 <h3>Class Question #2<a class="headerlink" href="#class-question-2" title="Permalink to this headline">¶</a></h3>
@@ -651,12 +684,29 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_value</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_value</span> <span class="o">=</span> <span class="n">_</span>
 
 <span class="k">if</span> <span class="n">my_value</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;False&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -678,6 +728,11 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if condition_1 did not evaluate as True, but condition_2 does.&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if both condition_1 and condition_2 evaluate as False&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This code executes if condition_1 did not evaluate as True, but condition_2 does.
 </pre></div>
 </div>
 </div>
@@ -717,6 +772,14 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8682/2506253379.py&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+    <span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
+    <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -739,8 +802,20 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">ticket</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># string value comparisons also possible</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="s1">&#39;completed&#39;</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="s1">&#39;not started&#39;</span>
 
 <span class="k">if</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;completed&#39;</span><span class="p">:</span>
     <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;grade&#39;</span>
@@ -750,6 +825,42 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
     <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;incomplete&#39;</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;uncertain&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;not started&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;notstarted&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>incomplete
 </pre></div>
 </div>
 </div>
@@ -772,6 +883,11 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Paul
+</pre></div>
+</div>
+</div>
 </div>
 <ul class="simple">
 <li><p>A) John</p></li>
@@ -786,12 +902,36 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <p>What will the following code snippet print out:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">jp</span><span class="o">/</span><span class="n">hdbfltdj035719571j9wynwm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_8682</span><span class="o">/</span><span class="mf">995233666.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">if</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I did Math&quot;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I broke Math&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I didn&#39;t do math&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I did Math
 </pre></div>
 </div>
 </div>
@@ -808,16 +948,23 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <p>What will the following code snippet print out:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conditional</span> <span class="o">=</span> <span class="kc">False</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conditional</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">python</span> <span class="o">=</span> <span class="s2">&quot;great&quot;</span>
 
 <span class="k">if</span> <span class="n">conditional</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;conditional is True&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">python</span> <span class="o">==</span> <span class="s2">&quot;great&quot;</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Yay Python!&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Oh no.&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m here.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>conditional is True
+Yay Python!
 </pre></div>
 </div>
 </div>
@@ -896,7 +1043,12 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Execute our function to check that</span>
 <span class="c1"># it is working according to our expectations</span>
-<span class="n">even_odd</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">even_odd</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;even&#39;
 </pre></div>
 </div>
 </div>
@@ -936,10 +1088,10 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
             <p class="prev-next-title">Functions</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="CL-Answers/CL1-Tooling.html" title="next page">
+    <a class='right-next' id="next-link" href="07-Collections.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Coding Lab 1: Tech Setup &amp; Tooling</p>
+        <p class="prev-next-title">Collections</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
