@@ -251,7 +251,7 @@ print(ans_1 + ans_2)
 # 
 # A) I did it! &emsp;B) I think I did it. &emsp;C) I tried but I am stuck. &emsp;D) Super duper lost
 
-# In[17]:
+# In[12]:
 
 
 ## YOUR CODE HERE  
@@ -262,11 +262,11 @@ def greet(name):
     return output
 
 
-# In[18]:
+# In[14]:
 
 
 # TEST YOUR FUNCTION HERE
-greet('students')
+greet('Kayden')
 
 
 # ## Default Values
@@ -279,7 +279,7 @@ greet('students')
 # 
 # Specify a default value in a function by doing an assignment within the function definition.
 
-# In[ ]:
+# In[15]:
 
 
 # Create a function, that has a default values for a parameter
@@ -287,14 +287,14 @@ def exponentiate(number, exponent=2):
     return number ** exponent
 
 
-# In[ ]:
+# In[16]:
 
 
 # Use the function, using default value
 exponentiate(3)
 
 
-# In[ ]:
+# In[17]:
 
 
 # Call the function, over-riding default value with something else
@@ -302,7 +302,7 @@ exponentiate(3)
 exponentiate(2, 3)
 
 
-# In[ ]:
+# In[18]:
 
 
 # you can always state this explicitly
@@ -315,27 +315,27 @@ exponentiate(number=2, exponent=3)
 # Arguments to a function can be indicated by either position or keyword.
 # </div>
 
-# In[ ]:
+# In[19]:
 
 
 # Positional arguments use the position to infer which argument each value relates to
 exponentiate(2, 3)
 
 
-# In[ ]:
+# In[20]:
 
 
 # Keyword arguments are explicitly named as to which argument each value relates to
 exponentiate(number=2, exponent=3)
 
 
-# In[ ]:
+# In[21]:
 
 
 exponentiate(exponent=3, number=2)
 
 
-# In[ ]:
+# In[22]:
 
 
 # Note: once you have a keyword argument, you can't have other positional arguments afterwards
@@ -358,13 +358,28 @@ def exponentiate(number, exponent=2):
 # 
 # What will the following code snippet return?
 
-# In[ ]:
+# In[23]:
 
 
 def exponentiate(number, exponent=2):    
     return number ** exponent
 
+# avoid changing the order of parameters when you execute the function
 exponentiate(exponent=3, number=2)
+
+
+# In[25]:
+
+
+exponentiate(2)
+
+
+# In[24]:
+
+
+# how to actually do it:
+exponentiate(2, 3)
+exponentiate(number=2, exponent=3)
 
 
 # - A) 8
@@ -382,7 +397,7 @@ exponentiate(exponent=3, number=2)
 #     - variables explicitly passed into them
 #     - variables defined inside the function
 
-# In[ ]:
+# In[28]:
 
 
 # You can check variables defined in the global namespace with `%whos`
@@ -391,7 +406,7 @@ get_ipython().run_line_magic('whos', '')
 
 # ### Variables defined inside a function only exist within that function.
 
-# In[ ]:
+# In[27]:
 
 
 # Names used inside a function are independent of those used outside
@@ -402,7 +417,7 @@ my_var = 'I am a variable'
 print(my_var)
 
 
-# In[ ]:
+# In[29]:
 
 
 # define a function that uses my_var inside the function
@@ -415,14 +430,14 @@ def concat_self(my_var):
 print(concat_self(my_var))
 
 
-# In[ ]:
+# In[30]:
 
 
 # see that my_var in global name space remains unchanged
 print(my_var)
 
 
-# In[ ]:
+# In[31]:
 
 
 # only way to change my_var in global namespace

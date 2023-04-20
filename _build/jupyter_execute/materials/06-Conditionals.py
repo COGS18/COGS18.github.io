@@ -25,7 +25,7 @@
 # Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
 # </div>
 
-# In[ ]:
+# In[5]:
 
 
 condition = True
@@ -34,7 +34,7 @@ if condition:
     print('This code executes if the condition evaluates as True.')
 
 
-# In[ ]:
+# In[8]:
 
 
 # equivalent to above
@@ -51,10 +51,10 @@ if condition == True:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start.
 
-# In[ ]:
+# In[19]:
 
 
-math = ---
+math = 2+2 == 4
 
 if math:
     print('True')
@@ -66,7 +66,7 @@ if math:
 # After an <code>if</code>, you can use an <code>else</code> that will run if the conditional(s) above have not run.
 # </div>
 
-# In[ ]:
+# In[31]:
 
 
 condition = False
@@ -86,10 +86,16 @@ else:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start.
 
-# In[ ]:
+# In[36]:
 
 
-my_value = ---
+bool(_)
+
+
+# In[35]:
+
+
+my_value = _
 
 if my_value:
     print('True')
@@ -103,7 +109,7 @@ else:
 # After an <code>if</code> statement, you can have any number of <code>elif</code>`s (meaning 'else if') to check other conditions.
 # </div>
 
-# In[ ]:
+# In[37]:
 
 
 condition_1 = False
@@ -121,7 +127,7 @@ else:
 # 
 # An else statement is not required, but if both the `if` and the `elif` condtions are not met (both evaluate as `False`), then nothing is returned.
 
-# In[ ]:
+# In[38]:
 
 
 condition_1 = False
@@ -137,7 +143,7 @@ elif condition_2:
 # 
 # The order will always be `if`-`elif`-`else`...with only the `if` being required. If the `elif` is at the end...it will never be tested, as the `else` will have already returned a value once reached (and thus Python will throw an error).
 
-# In[ ]:
+# In[39]:
 
 
 ## THIS CODE WILL PRODUCE AN ERROR
@@ -158,7 +164,7 @@ elif condition_2:
 # Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 # </div>
 
-# In[ ]:
+# In[44]:
 
 
 speed_limit = 65
@@ -170,11 +176,17 @@ else:
     ticket = False
 
 
-# In[ ]:
+# In[45]:
+
+
+print(ticket)
+
+
+# In[54]:
 
 
 # string value comparisons also possible
-a1 = 'completed'
+a1 = 'not started'
 
 if a1 == 'completed':
     action = 'grade'
@@ -186,11 +198,29 @@ else:
     action = 'uncertain'
 
 
+# In[55]:
+
+
+a1 == 'not started'
+
+
+# In[53]:
+
+
+a1
+
+
+# In[56]:
+
+
+print(action)
+
+
 # #### Class Question #3
 # 
 # What will the following code snippet print out:
 
-# In[ ]:
+# In[57]:
 
 
 condition = False
@@ -215,7 +245,14 @@ else:
 # 
 # What will the following code snippet print out:
 
-# In[ ]:
+# In[60]:
+
+
+if 1/0:
+    print('Hello')
+
+
+# In[58]:
 
 
 if 1 + 1 == 2:
@@ -235,13 +272,14 @@ else:
 # 
 # What will the following code snippet print out:
 
-# In[ ]:
+# In[66]:
 
 
-conditional = False
+conditional = True
 python = "great"
 
 if conditional:
+    print('conditional is True')
     if python == "great":
         print("Yay Python!")
     else:
@@ -270,7 +308,7 @@ else:
 
 # ### Conditionals: Good Code Style
 
-# In[ ]:
+# In[68]:
 
 
 value = 16
@@ -283,7 +321,7 @@ else:
 
 # ### Conditionals: Code Style to Avoid
 
-# In[ ]:
+# In[69]:
 
 
 if value%2==0:out="even" # avoid statement on same line as conditional
@@ -295,7 +333,7 @@ else:out="odd"           # don't forget about spacing around operators!
 # 
 # Let's define a more interesting function than what we did in the functions lecture. Here we are using conditionals within our function.
 
-# In[ ]:
+# In[70]:
 
 
 # Determine if a value is even or odd
@@ -309,10 +347,10 @@ def even_odd(value):
     return out
 
 
-# In[ ]:
+# In[72]:
 
 
 # Execute our function to check that
 # it is working according to our expectations
-even_odd(-1)
+even_odd(2)
 
