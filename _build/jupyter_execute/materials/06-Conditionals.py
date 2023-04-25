@@ -25,7 +25,7 @@
 # Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
 # </div>
 
-# In[5]:
+# In[73]:
 
 
 condition = True
@@ -34,7 +34,7 @@ if condition:
     print('This code executes if the condition evaluates as True.')
 
 
-# In[8]:
+# In[74]:
 
 
 # equivalent to above
@@ -51,7 +51,7 @@ if condition == True:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start.
 
-# In[19]:
+# In[75]:
 
 
 math = 2+2 == 4
@@ -66,7 +66,7 @@ if math:
 # After an <code>if</code>, you can use an <code>else</code> that will run if the conditional(s) above have not run.
 # </div>
 
-# In[31]:
+# In[76]:
 
 
 condition = False
@@ -86,13 +86,13 @@ else:
 # - C) I tried but am stuck.
 # - D) I'm unsure where to start.
 
-# In[36]:
+# In[77]:
 
 
 bool(_)
 
 
-# In[35]:
+# In[78]:
 
 
 my_value = _
@@ -109,7 +109,7 @@ else:
 # After an <code>if</code> statement, you can have any number of <code>elif</code>`s (meaning 'else if') to check other conditions.
 # </div>
 
-# In[37]:
+# In[79]:
 
 
 condition_1 = False
@@ -127,7 +127,7 @@ else:
 # 
 # An else statement is not required, but if both the `if` and the `elif` condtions are not met (both evaluate as `False`), then nothing is returned.
 
-# In[38]:
+# In[80]:
 
 
 condition_1 = False
@@ -143,7 +143,7 @@ elif condition_2:
 # 
 # The order will always be `if`-`elif`-`else`...with only the `if` being required. If the `elif` is at the end...it will never be tested, as the `else` will have already returned a value once reached (and thus Python will throw an error).
 
-# In[39]:
+# In[81]:
 
 
 ## THIS CODE WILL PRODUCE AN ERROR
@@ -164,7 +164,7 @@ elif condition_2:
 # Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 # </div>
 
-# In[44]:
+# In[82]:
 
 
 speed_limit = 65
@@ -176,13 +176,13 @@ else:
     ticket = False
 
 
-# In[45]:
+# In[83]:
 
 
 print(ticket)
 
 
-# In[54]:
+# In[84]:
 
 
 # string value comparisons also possible
@@ -198,19 +198,19 @@ else:
     action = 'uncertain'
 
 
-# In[55]:
+# In[85]:
 
 
 a1 == 'not started'
 
 
-# In[53]:
+# In[86]:
 
 
 a1
 
 
-# In[56]:
+# In[87]:
 
 
 print(action)
@@ -220,7 +220,7 @@ print(action)
 # 
 # What will the following code snippet print out:
 
-# In[57]:
+# In[88]:
 
 
 condition = False
@@ -245,14 +245,14 @@ else:
 # 
 # What will the following code snippet print out:
 
-# In[60]:
+# In[89]:
 
 
 if 1/0:
     print('Hello')
 
 
-# In[58]:
+# In[90]:
 
 
 if 1 + 1 == 2:
@@ -272,7 +272,7 @@ else:
 # 
 # What will the following code snippet print out:
 
-# In[66]:
+# In[91]:
 
 
 conditional = True
@@ -308,7 +308,7 @@ else:
 
 # ### Conditionals: Good Code Style
 
-# In[68]:
+# In[92]:
 
 
 value = 16
@@ -321,7 +321,7 @@ else:
 
 # ### Conditionals: Code Style to Avoid
 
-# In[69]:
+# In[93]:
 
 
 if value%2==0:out="even" # avoid statement on same line as conditional
@@ -333,24 +333,27 @@ else:out="odd"           # don't forget about spacing around operators!
 # 
 # Let's define a more interesting function than what we did in the functions lecture. Here we are using conditionals within our function.
 
-# In[70]:
+# In[106]:
 
 
 # Determine if a value is even or odd
 def even_odd(value): 
 
     if value % 2 == 0: 
-        out = "even"
+        if value < 100:
+            out = 'even, small'
+        elif value >= 100:
+            out = 'even, large'
     else: 
-        out = "odd"
+        out = 'odd'
         
     return out
 
 
-# In[72]:
+# In[104]:
 
 
 # Execute our function to check that
 # it is working according to our expectations
-even_odd(2)
+even_odd(3)
 

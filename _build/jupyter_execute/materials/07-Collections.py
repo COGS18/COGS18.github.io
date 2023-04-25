@@ -23,25 +23,25 @@
 
 # ### List examples
 
-# In[ ]:
+# In[1]:
 
 
 # Define a list
 lst = [1, 'a', True]
 
 
-# In[ ]:
+# In[2]:
 
 
 # Print out the contents of a list
 print(lst)
 
 
-# In[ ]:
+# In[3]:
 
 
 # Check the type of a list
-type(lst)
+assert type(lst) == list
 
 
 # ### Indexing
@@ -50,49 +50,56 @@ type(lst)
 # <b>Indexing</b> refers to selecting an item from within a collection. Indexing is done with square brackets.
 # </div>
 
-# In[ ]:
+# In[4]:
 
 
 # Define a list 
 my_lst = ['Julian', 'Amal', 'Richard', 'Juan', 'Xuan']
 
 
-# In[ ]:
+# In[22]:
+
+
+# elaborate on step concept
+my_lst[0:4:3]
+
+
+# In[5]:
 
 
 # Indexing: Count forward, starting at 0, with positive numbers
 print(my_lst[1])
 
 
-# In[ ]:
+# In[6]:
 
 
 # Indexing: Count backward, starting at -1, with negative numbers
 print(my_lst[-1])
 
 
-# In[ ]:
+# In[7]:
 
 
 # Indexing: Grab a group of adjacent items using `start:stop`, called a slice
 print(my_lst[2:4])
 
 
-# In[ ]:
+# In[8]:
 
 
 # indexing to end of list
 print(my_lst[2:])
 
 
-# In[ ]:
+# In[9]:
 
 
 # Indexing from beginning of list
 print(my_lst[:4])
 
 
-# In[ ]:
+# In[10]:
 
 
 # slicing by skipping a value [start:stop:step]
@@ -116,10 +123,11 @@ print(my_lst[0:4:2])
 # 
 # What would be the appropriate line of code to return `['butter', '&', 'jelly']`?
 
-# In[ ]:
+# In[16]:
 
 
 q3_lst = ['peanut', 'butter', '&','jelly']
+q3_lst[1:4:2]
 
 
 # - A) `q3_lst[2:4]`
@@ -159,21 +167,21 @@ q3_lst[3:0:-1]
 # Lists are <i>mutable</i>, meaning after definition, you can update and change things about the list.
 # </div>
 
-# In[ ]:
+# In[23]:
 
 
 # reminder what's in my_lst 
 my_lst
 
 
-# In[ ]:
+# In[24]:
 
 
 # Redefine a particular element of the list
 my_lst[2] = 'Rich'
 
 
-# In[ ]:
+# In[25]:
 
 
 # Check the contents of the list
@@ -205,35 +213,35 @@ lst_update[3] = 4
 
 # ### Tuple Examples
 
-# In[ ]:
+# In[26]:
 
 
 # Define a tuple
 tup = (2, 'b', False)
 
 
-# In[ ]:
+# In[27]:
 
 
 # Print out the contents of a tuple
 print(tup)
 
 
-# In[ ]:
+# In[28]:
 
 
 # Check the type of a tuple
 type(tup)
 
 
-# In[ ]:
+# In[29]:
 
 
 # Index into a tuple
 tup[0]
 
 
-# In[ ]:
+# In[30]:
 
 
 # Get the length of a tuple
@@ -242,7 +250,7 @@ len(tup)
 
 # ### Tuples are Immutable
 
-# In[ ]:
+# In[31]:
 
 
 # Tuples are immutable - meaning after they defined, you can't change them
@@ -279,28 +287,28 @@ item_E = (12)
 
 # ### Dictionaries as Key-Value Collections
 
-# In[ ]:
+# In[32]:
 
 
 # Create a dictionary
 dictionary = {'key_1' : 'value_1', 'key_2' : 'value_2'}
 
 
-# In[ ]:
+# In[33]:
 
 
 # Check the contents of the dictionary
 print(dictionary)
 
 
-# In[ ]:
+# In[34]:
 
 
 # Check the type of the dictionary
 type(dictionary)
 
 
-# In[ ]:
+# In[35]:
 
 
 # Dictionaries also have a length
@@ -310,7 +318,14 @@ len(dictionary)
 
 # ### Dictionaries: Indexing
 
-# In[ ]:
+# In[37]:
+
+
+# cannot use number-based indexing
+dictionary[0]
+
+
+# In[36]:
 
 
 # Dictionaries are indexed using their keys
@@ -321,7 +336,7 @@ dictionary['key_1']
 # 
 # This means that dictionaries, once created, values *can* be updated.
 
-# In[ ]:
+# In[38]:
 
 
 completed_assignment = {
@@ -333,7 +348,7 @@ completed_assignment = {
 completed_assignment
 
 
-# In[ ]:
+# In[39]:
 
 
 # change value of specified key
@@ -343,14 +358,14 @@ completed_assignment
 
 # Because dictionaries are mutable, key-value pairs can also be removed from the dictionary using `del`.
 
-# In[ ]:
+# In[40]:
 
 
 print(completed_assignment)
 len(completed_assignment)
 
 
-# In[ ]:
+# In[41]:
 
 
 ## remove key-value pair using del
@@ -365,7 +380,7 @@ len(completed_assignment)
 # - Only one value per key. No duplicate keys allowed. 
 #     - If duplicate keys specified during assignment, the last assignment wins.
 
-# In[ ]:
+# In[42]:
 
 
 # Last duplicate key assigned wins
@@ -375,7 +390,7 @@ len(completed_assignment)
 # - **keys** must be of an immutable type (string, tuple, integer, float, etc)
 # - Note: **values** can be of any type
 
-# In[ ]:
+# In[43]:
 
 
 # lists are not allowed as key types
@@ -386,7 +401,7 @@ len(completed_assignment)
 # - Dictionary keys are case sensitive.
 # 
 
-# In[ ]:
+# In[44]:
 
 
 {'Student' : 97, 'student': 88, 'STUDENT' : 91}
@@ -396,11 +411,11 @@ len(completed_assignment)
 # 
 # Fill in the '---' in the code below to return the value stored in the second key.
 
-# In[ ]:
+# In[47]:
 
 
 height_dict = {'height_1' : 60, 'height_2': 68, 'height_3' : 65, 'height_4' : 72}
-height_dict[---]
+height_dict['height_2']
 
 
 # - A) I did it
@@ -417,10 +432,13 @@ height_dict[---]
 # - C) I tried and am stuck
 # - D) No clue where to start...
 
-# In[ ]:
+# In[50]:
 
 
-# YOUR CODE HERE
+car = {'make' : 'Hyundai',
+      'model': 'Santa Fe',
+      'year': 2017}
+car
 
 
 # ## Revisiting membership: `in` operator
@@ -429,7 +447,7 @@ height_dict[---]
 # The <code>in</code> operator asks whether an element is present inside a collection, and returns a boolean answer. 
 # </div>
 
-# In[ ]:
+# In[51]:
 
 
 # Define a new list and dictionary to work with
@@ -437,28 +455,28 @@ lst_again = [True, 13, None, 'apples']
 dict_again = {'Shannon': 33, 'Josh': 41}
 
 
-# In[ ]:
+# In[52]:
 
 
 # Check if a particular element is present in the list
 True in lst_again
 
 
-# In[ ]:
+# In[53]:
 
 
 # The `in` operator can also be combined with the `not` operator
 '19' not in lst_again
 
 
-# In[ ]:
+# In[54]:
 
 
 # In a dictionary, checks if value is a key
 'Shannon' in dict_again
 
 
-# In[ ]:
+# In[55]:
 
 
 # does not check for values in dictionary
@@ -469,17 +487,25 @@ True in lst_again
 # 
 # After executing the following code, what will be the value of `output`?
 
-# In[ ]:
+# In[59]:
 
 
 ex2_lst = [0, False, 'ten', None]
 
 bool_1 = False in ex2_lst
+print(bool_1)
 bool_2 = 10 not in ex2_lst
+print(bool_2)
 
 output = bool_1 and bool_2
 
 print(output)
+
+
+# In[58]:
+
+
+10 not in ex2_lst
 
 
 # - a) True
@@ -509,13 +535,13 @@ print(output)
 
 # ### ord & chr examples
 
-# In[ ]:
+# In[60]:
 
 
 print(ord('a'))
 
 
-# In[ ]:
+# In[61]:
 
 
 print(chr(97))
@@ -525,7 +551,7 @@ print(chr(97))
 # 
 # `ord` and `chr` are inverses of one another. 
 
-# In[ ]:
+# In[65]:
 
 
 inp = 'b'
@@ -539,7 +565,7 @@ print('Input: \t', inp, '\nOutput: ', out)
 # 
 # Note: This was introduced in the Variables lecture.
 
-# In[ ]:
+# In[66]:
 
 
 # Make a variable, and an alias
@@ -560,7 +586,7 @@ print(b)
 # 
 # After executing the following code, what will the values stored in `a` and `b` be?
 
-# In[ ]:
+# In[67]:
 
 
 # Make a variable & an alias
@@ -585,7 +611,7 @@ print(b)
 # 
 # What happens if we make an alias of a **mutable** variable, like a list?
 
-# In[ ]:
+# In[68]:
 
 
 first_list = [1, 2, 3, 4]
@@ -593,7 +619,7 @@ alias_list = first_list
 alias_list
 
 
-# In[ ]:
+# In[69]:
 
 
 #change second value of first_list
@@ -601,7 +627,7 @@ first_list[1] = 29
 first_list
 
 
-# In[ ]:
+# In[70]:
 
 
 # check alias_list
