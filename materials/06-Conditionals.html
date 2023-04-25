@@ -153,6 +153,16 @@
    07-Collections
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Debugging.html">
+   08-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-Loops.html">
+   09-Loops
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -665,10 +675,7 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8682/1429974012.py&quot;</span><span class="gt">, line </span><span class="mi">5</span>
-    <span class="k">else</span> <span class="n">condition</span><span class="p">:</span>
-         <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This code executes if the condition evaluates as False
 </pre></div>
 </div>
 </div>
@@ -689,7 +696,7 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -706,7 +713,7 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -848,7 +855,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;notstarted&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;not started&#39;
 </pre></div>
 </div>
 </div>
@@ -1030,11 +1037,22 @@ Yay Python!
 <span class="k">def</span> <span class="nf">even_odd</span><span class="p">(</span><span class="n">value</span><span class="p">):</span> 
 
     <span class="k">if</span> <span class="n">value</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
-        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;even&quot;</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;even, small&#39;</span>
+        <span class="k">elif</span> <span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;even, large&#39;</span>
     <span class="k">else</span><span class="p">:</span> 
-        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;odd&quot;</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;odd&#39;</span>
         
     <span class="k">return</span> <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8682/3898096302.py&quot;</span><span class="gt">, line </span><span class="mi">5</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="o">^</span>
+<span class="ne">IndentationError</span>: expected an indented block
 </pre></div>
 </div>
 </div>
@@ -1043,12 +1061,12 @@ Yay Python!
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Execute our function to check that</span>
 <span class="c1"># it is working according to our expectations</span>
-<span class="n">even_odd</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">even_odd</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;even&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;odd&#39;
 </pre></div>
 </div>
 </div>
