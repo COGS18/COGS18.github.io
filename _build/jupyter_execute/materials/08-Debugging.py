@@ -170,7 +170,7 @@ int('cat')
 #     - `TypeError`
 # 
 
-# #### Clicker Question #1
+# #### Class Question #1
 # 
 # What type of error will the following code produce?
 
@@ -187,7 +187,7 @@ if num > 0
 # - D) Index
 # - E) Value
 
-# #### Clicker Question #2
+# #### Class Question #2
 # 
 # What type of error will the following code produce?
 
@@ -295,7 +295,7 @@ if not my_int.isnumeric():
 print('My integer is: ', my_int) 
 
 
-# #### Clicker Question #3
+# #### Class Question #3
 # 
 # Edit the code below (replacing `---` with either values or variable names) so that when executed, this cell returns `None`.
 

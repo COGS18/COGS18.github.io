@@ -76,10 +76,10 @@ parts:
   #   - file: materials/CL-Answers/CL8-ScientificComputing
   #     title: CL8-ScientificComputing
 
-  # - caption: Exam Prep
-  #   chapters:
-  #   - file: materials/Exam-Prep/E1-Review
-  #     title: E1-Review
+  - caption: Exam Prep
+    chapters:
+    - file: materials/ExamPrep/E1-Review
+      title: E1-Review
   #   - file: materials/Exam-Prep/E1-Review-Answers
   #     title: E1-Review-Answers
   #   - file: materials/Exam-Prep/E1_Fa22_Practice

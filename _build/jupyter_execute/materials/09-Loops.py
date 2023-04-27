@@ -11,7 +11,7 @@
 
 # ### SideNote: counters
 
-# In[ ]:
+# In[4]:
 
 
 # Initialize a counter variable
