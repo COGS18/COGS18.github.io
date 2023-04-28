@@ -11,6 +11,8 @@
 # 
 # **PLEASE DO NOT COPY & PASTE OR DELETE CELLS INLCUDED IN THE ASSIGNMENT.** (Note that you can add additional cells, if you want to test things out.
 
+# Answer key for the in-class portion are here: https://docs.google.com/document/d/1esBC0vKsI_uiKE-0txJaxuDlsu0gHyMQIo8CtArlVNk/edit?usp=sharing
+
 # #### Instructions
 # 
 # #### Timing

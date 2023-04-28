@@ -3,26 +3,6 @@
 
 # # Exam 1 Review (Answers)
 
-# ## Midterm Expectations
-# 
-# You will be expected to: 
-# 
-# 1. Recognize, understand and _respond_ to Python syntax:
-#     - statements & comments, whitespace, code blocks & indentation levels
-# 2. Recognize, understand and be able to _explain_ code constructions:
-#     - variables, operators, data types, conditionals, and functions
-# 3. Be able to apply what you've learned:
-#     - Given a task:
-#         - what kind of code constructions are needed to answer it?
-#         - what kind of concepts does it relate to?
-# 4. With respect to everything above, be able to read and respond to short code snippets and write out code.
-
-# ### Reminder: 
-# 
-# There are also a few Exam #1 Practice Problems [here](https://cogs18.github.io/materials/Exam-Prep/E1-Practice.html).
-# 
-# And, there is a practice Exam on datahub.
-
 # ## Topics & Example Questions
 # 
 # - Variables & Data Types
