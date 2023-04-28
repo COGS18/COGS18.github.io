@@ -11,7 +11,7 @@
 
 # ### SideNote: counters
 
-# In[4]:
+# In[ ]:
 
 
 # Initialize a counter variable
@@ -517,6 +517,12 @@ print(counter)
 # - E) 4
 
 # ### Dictionaries: Indexing & Looping
+
+# In[ ]:
+
+
+dictionary = {'key_1' : 'val_1', 'key_2' : 'val_2'}
+
 
 # In[ ]:
 

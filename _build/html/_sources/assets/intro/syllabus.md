@@ -184,11 +184,11 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 4/27/2023 | 4      | Th  | Review                 |                             |                                         |                            
 | 4/28/2023 | 4      | F   |                        |                             | A2 - conditionals, collections, ciphers |                            
 | 5/2/2023  | 5      | Tu  | **E1**                 |                             |                                         | 
-| 5/3/2023  | 5      | W   |                        | CL5 - loops                 |                                         |                            
+| 5/3/2023  | 5      | W   |                        |                             |                                         |                            
 | 5/4/2023  | 5      | Th  | Algorithms             |                             |                                         |                            
 | 5/5/2023  | 5      | F   |                        |                             | E1: technical portion (take-home)       |                            
 | 5/9/2023  | 6      | Tu  | Methods                |                             |                                         |                            
-| 5/10/2023 | 6      | W   |                        |                             |                                         |                            
+| 5/10/2023 | 6      | W   |                        | CL5 - loops                 |                                         |                            
 | 5/11/2023 | 6      | Th  | Classes                |                             |                                         |                            
 | 5/12/2023 | 6      | F   |                        |                             | A3 - loops, strings, chatbots           |                            
 | 5/16/2023 | 7      | Tu  | Command Line [**]      |                             |                                         |                            
