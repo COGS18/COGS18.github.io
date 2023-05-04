@@ -33,7 +33,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                | Annapurna Vadaparty  | W 1-2p          | Cogsci Kitchen     |
 |                | Annapurna Vadaparty  | Th 1-2p         | CSB 114            |
 |                | **Prof Ellis**       | Th 1-3p         | CSB 114            |
-|                | Josh Salce           | Fri 11a-12p     | The Loft           |
+|                | Josh Salce           | Fri 11a-12p     | M.O.M’s Cafe       |
 |                | Ethan Cheng          | Fri 1-2p        | CSB 114            |
 |                | Lillian Ho           | Fri 2-3p        | Zoom               |
 |                | Josh Chen            | Fri 5-6p        | Zoom               |
