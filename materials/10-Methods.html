@@ -1,0 +1,1297 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods &#8212; COGS 18 - Introduction To Python</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="CL-Answers/CL1-Tooling.html" />
+    <link rel="prev" title="Control Flow - Loops" href="09-Loops.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course Info
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/syllabus.html">
+   SYLLABUS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/labs/overview.html">
+   CODING LABS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/assignments/overview.html">
+   ASSIGNMENTS
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Functions.html">
+   05-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Debugging.html">
+   08-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-Loops.html">
+   09-Loops
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   10-Methods
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL4-Collections.html">
+   CL4-Collections
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1_Sp23_Practice.html">
+   E1-Practice-Answers
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/materials/10-Methods.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/10-Methods.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/10-Methods.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/10-Methods.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/10-Methods.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#class-question-1">
+   Class Question #1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-examples">
+     Method Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#string-methods">
+   String Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-2">
+     Class Question #2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-methods">
+   List Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-3">
+     Class Question #3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-methods">
+   Dictionary Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-4">
+     Class Question #4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-5">
+     Class Question #5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methods-in-place-vs-not-in-place">
+     Methods: In Place vs Not In Place
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#list-methods-that-are-in-place">
+       List methods that are in place
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dictionary-methods-that-are-not-in-place">
+       Dictionary methods that are not in place
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finding-methods">
+   Finding Methods
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#correspondance-between-functions-methods">
+   Correspondance Between Functions &amp; Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions-reminders">
+     Functions: Reminders
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#for-example">
+       For example….
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-functions-methods">
+   More Functions &amp; Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sort-array">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       sort_array
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-sort-array">
+     Using
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       sort_array
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sidenote-sorted">
+   SideNote:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     sorted
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Methods</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#class-question-1">
+   Class Question #1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-examples">
+     Method Examples
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#string-methods">
+   String Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-2">
+     Class Question #2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-methods">
+   List Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-3">
+     Class Question #3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-methods">
+   Dictionary Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-4">
+     Class Question #4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-5">
+     Class Question #5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methods-in-place-vs-not-in-place">
+     Methods: In Place vs Not In Place
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#list-methods-that-are-in-place">
+       List methods that are in place
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dictionary-methods-that-are-not-in-place">
+       Dictionary methods that are not in place
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finding-methods">
+   Finding Methods
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#correspondance-between-functions-methods">
+   Correspondance Between Functions &amp; Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions-reminders">
+     Functions: Reminders
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#for-example">
+       For example….
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-functions-methods">
+   More Functions &amp; Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sort-array">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       sort_array
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-sort-array">
+     Using
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       sort_array
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sidenote-sorted">
+   SideNote:
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     sorted
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <p><strong>Course Announcements</strong></p>
+<ul class="simple">
+<li><p><strong>CL5</strong> due tomorrow (Wed)</p></li>
+<li><p><strong>A3</strong> due Friday (it typically takes students longer than A2)</p></li>
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSdOQLk7FvTYT-o79kEbc5Bo_DF8EvKzZm-ebcyXSSQRDH6P9g/viewform?usp=sf_link"><strong>Mid-course survey</strong></a> now available (“due” Friday; link also on Canvas)</p></li>
+</ul>
+<p><strong>Exams</strong></p>
+<ul class="simple">
+<li><p><strong>In-class</strong> portion can be reviewed in coding lab tomorrow OR in Prof’s OH Th 1-3 PM</p>
+<ul>
+<li><p>You CANNOT take the exam with you</p></li>
+<li><p>You CAN take pictures of your midterms</p></li>
+<li><p>Score on canvas = (Score on paper + 1)/3</p></li>
+</ul>
+</li>
+<li><p><strong>Regrades</strong>:</p>
+<ul>
+<li><p>Staple a piece of paper to your exam with explanation of regrade request and ask staff member to put aside for me to review</p></li>
+<li><p>Post on Piazza with explanation for where you think a mistake was made</p></li>
+</ul>
+</li>
+<li><p><strong>Take-home</strong> portion grades will be released Wed (feedback will be available on datahub)</p></li>
+</ul>
+<div class="tex2jax_ignore mathjax_ignore section" id="methods">
+<h1>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>string, list, &amp; dictionary</p></li>
+<li><p>in place vs not in place</p></li>
+<li><p>relationship to functions</p></li>
+</ul>
+<div class="section" id="class-question-1">
+<h2>Class Question #1<a class="headerlink" href="#class-question-1" title="Permalink to this headline">¶</a></h2>
+<p>What will the following code snippet print?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_func</span><span class="p">(</span><span class="n">my_dictionary</span><span class="p">):</span>
+    
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_dictionary</span><span class="p">:</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">my_dictionary</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#append method adds an item to end of a list</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
+
+<span class="c1"># create dictionary and execute function</span>
+<span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;first&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;third&#39;</span> <span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">my_func</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) [‘first’, ‘second’, ‘third’]</p></li>
+<li><p>B) {1, 2, 3}</p></li>
+<li><p>C) [‘first’, 1, ‘second’, 2, ‘third’, 3]</p></li>
+<li><p>D) [1, 2, 3]</p></li>
+<li><p>E) None</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>Methods<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="alert alert-success">
+<b>Methods</b> are functions that are defined and called directly on an object. 
+</div>
+<div class="alert alert-success">
+For our purposes, <b>objects</b> are any data variable. 
+</div><div class="section" id="method-examples">
+<h3>Method Examples<a class="headerlink" href="#method-examples" title="Permalink to this headline">¶</a></h3>
+<p>A method is a function applied directly to the object you call it on.</p>
+<p>General form of a method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">object</span><span class="o">.</span><span class="n">method</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>In other words: methods “belong to” an object.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The `append` method, defined on lists</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The method <code class="docutils literal notranslate"><span class="pre">append()</span></code> is called directly on the list <code class="docutils literal notranslate"><span class="pre">my_list</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># append is a method for lists</span>
+<span class="c1"># this will error with a string</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;cogs18&#39;</span>
+<span class="n">my_string</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The `is_integer()` method, defined on floats</span>
+<span class="n">my_float</span> <span class="o">=</span> <span class="mf">12.2</span>
+<span class="n">my_float</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The `is_integer()` method, attempted on an integer</span>
+<span class="c1"># this code will produce an error</span>
+<span class="n">my_int</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">my_int</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="string-methods">
+<h2>String Methods<a class="headerlink" href="#string-methods" title="Permalink to this headline">¶</a></h2>
+<p>There are a whole bunch of string methods, all described <a class="reference external" href="https://www.w3schools.com/python/python_ref_string.asp">here</a>. We’ll review a few of the most commonly used here.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make a string all lower case</span>
+<span class="s1">&#39;aBc&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make a string all upper case</span>
+<span class="s1">&#39;aBc&#39;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Capitalize a string</span>
+<span class="s1">&#39;python is great&#39;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Find the index of where a string starts </span>
+<span class="s1">&#39;Hello, my name is&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="class-question-2">
+<h3>Class Question #2<a class="headerlink" href="#class-question-2" title="Permalink to this headline">¶</a></h3>
+<p>What will the following code snippet print out?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fIx&#39;</span><span class="p">,</span> <span class="s1">&#39;tYpiNg&#39;</span><span class="p">,</span> <span class="s1">&#39;lIkE&#39;</span><span class="p">,</span> <span class="s1">&#39;tHiS&#39;</span><span class="p">]</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">inputs</span><span class="p">:</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="n">element</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+
+<span class="n">output</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) ‘fix typing like this ‘</p></li>
+<li><p>B) [‘fix’, ‘typing’, ‘like’, ‘this’]</p></li>
+<li><p>C) ‘Fix typing like this ‘</p></li>
+<li><p>D) ‘Fix typing like this’</p></li>
+<li><p>E) ‘Fixtypinglikethis’</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="list-methods">
+<h2>List Methods<a class="headerlink" href="#list-methods" title="Permalink to this headline">¶</a></h2>
+<p>There are also a bunch of list methods, all described <a class="reference external" href="https://www.w3schools.com/python/python_ref_list.asp">here</a>. You’ve seen some of these before, but we’ll review a few of the most commonly used here.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># sort sorts integers in numerical orders</span>
+<span class="n">ints</span> <span class="o">=</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+<span class="n">ints</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ints</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># append adds to the end of a list</span>
+<span class="n">ints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remove value from list</span>
+<span class="n">ints</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>list.remove<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># reverse order of list</span>
+<span class="n">ints</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="n">ints</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="class-question-3">
+<h3>Class Question #3<a class="headerlink" href="#class-question-3" title="Permalink to this headline">¶</a></h3>
+<p>What will the following code snippet print out?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_string</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span>
+<span class="n">list_string</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">list_string</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="n">list_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>A) [‘a’, ‘c’, ‘d’, ‘b’]</p></li>
+<li><p>B) [‘a’, ‘b’, ‘c’, ‘d’]</p></li>
+<li><p>C) [‘d’, ‘c’, ‘b’, ‘a’]</p></li>
+<li><p>D) [‘d’, ‘b’, ‘a’, ‘c’]</p></li>
+<li><p>E) [‘d’, ‘a’, ‘b’, ‘c’]</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="dictionary-methods">
+<h2>Dictionary Methods<a class="headerlink" href="#dictionary-methods" title="Permalink to this headline">¶</a></h2>
+<p>As with string and list methods, there are many described <a class="reference external" href="https://www.w3schools.com/python/python_ref_dictionary.asp">here</a> that are helpful when working with dictionaries.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">car</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;BMW&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;M5&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="mi">2019</span>
+<span class="p">}</span>
+
+<span class="c1"># keys() returns the keys of a dictionary</span>
+<span class="n">car</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get returns the value of a specified key</span>
+<span class="n">mod</span> <span class="o">=</span> <span class="n">car</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;model&#39;</span><span class="p">)</span>
+
+<span class="c1"># equivalent</span>
+<span class="n">mod2</span> <span class="o">=</span> <span class="n">car</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mod2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># previously done this by indexing</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># update adds a key-value pair</span>
+<span class="n">car</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;Black&quot;</span><span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="class-question-4">
+<h3>Class Question #4<a class="headerlink" href="#class-question-4" title="Permalink to this headline">¶</a></h3>
+<p>Assuming <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> is a dictionary that exists, what would the following accomplish:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="n">dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;letter&#39;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>A) Return the key for the value ‘letter’ from <code class="docutils literal notranslate"><span class="pre">dictionary</span></code></p></li>
+<li><p>B) Add the key ‘letter’ to <code class="docutils literal notranslate"><span class="pre">dictionary</span></code></p></li>
+<li><p>C) Add the value ‘letter’ to <code class="docutils literal notranslate"><span class="pre">dictionary</span></code></p></li>
+<li><p>D) Return the value for the key ‘letter’ from <code class="docutils literal notranslate"><span class="pre">dictionary</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="class-question-5">
+<h3>Class Question #5<a class="headerlink" href="#class-question-5" title="Permalink to this headline">¶</a></h3>
+<p>Which method would you use to add a new key-value pair to a dictionary?</p>
+<ul class="simple">
+<li><p>A) <code class="docutils literal notranslate"><span class="pre">.append()</span></code></p></li>
+<li><p>B) <code class="docutils literal notranslate"><span class="pre">.get()</span></code></p></li>
+<li><p>C) <code class="docutils literal notranslate"><span class="pre">.keys()</span></code></p></li>
+<li><p>D) <code class="docutils literal notranslate"><span class="pre">.update()</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="methods-in-place-vs-not-in-place">
+<h3>Methods: In Place vs Not In Place<a class="headerlink" href="#methods-in-place-vs-not-in-place" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-success">
+Some methods update the object directly (in place), whereas others return an updated version of the input. 
+</div><div class="section" id="list-methods-that-are-in-place">
+<h4>List methods that are in place<a class="headerlink" href="#list-methods-that-are-in-place" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Reverse a list</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<span class="n">my_list</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort a list</span>
+<span class="n">my_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">my_numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_numbers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dictionary-methods-that-are-not-in-place">
+<h4>Dictionary methods that are not in place<a class="headerlink" href="#dictionary-methods-that-are-not-in-place" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">car</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Return the keys in the dictionary</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">car</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print keys</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">out</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># car has not changed</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">car</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Return the values in the dicionary</span>
+<span class="n">car</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="finding-methods">
+<h2>Finding Methods<a class="headerlink" href="#finding-methods" title="Permalink to this headline">¶</a></h2>
+<p>Typing the object/variable name you want to find methods for followed by a ‘.’ and then pressing tab will display all the methods available for that type of object.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a test string</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># See all the available methods on an object with tab complete</span>
+<span class="n">my_string</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Using the function <code class="docutils literal notranslate"><span class="pre">dir()</span></code> returns all methods available</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># For our purposes now, you can ignore any leading underscores (these are special methods)</span>
+<span class="nb">dir</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="correspondance-between-functions-methods">
+<h2>Correspondance Between Functions &amp; Methods<a class="headerlink" href="#correspondance-between-functions-methods" title="Permalink to this headline">¶</a></h2>
+<p>All methods are functions. Methods are special functions <em>attached</em> to a variable type. All functions are NOT methods.</p>
+<p>Note that:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_variable</span><span class="o">.</span><span class="n">function_call</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>acts like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">function_call</span><span class="p">(</span><span class="n">my_variable</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A function that we can call directly on a variable (a method) acts like a shortcut for passing that variable into a function.</p>
+<div class="section" id="functions-reminders">
+<h3>Functions: Reminders<a class="headerlink" href="#functions-reminders" title="Permalink to this headline">¶</a></h3>
+<p>Additional notes included here to remind you of points we’ve already discussed. Not presented in class, but feel free to review and gain additional clarificaiton.</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code> defines a function</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function_name()</span></code> - parentheses are required to execute a function</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function_name(input1)</span></code> - input parameters are specified within the function parentheses</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">function_name(input1,</span> <span class="pre">input2)</span></code> - functions can take multiple parameters as inputs</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">input1</span></code> and <code class="docutils literal notranslate"><span class="pre">input2</span></code> can then be used within your function when it executes</p></li>
+</ul>
+</li>
+<li><p>To store the output from a function, you’ll need a <code class="docutils literal notranslate"><span class="pre">return</span></code> statement</p></li>
+</ol>
+<div class="section" id="for-example">
+<h4>For example….<a class="headerlink" href="#for-example" title="Permalink to this headline">¶</a></h4>
+<p>If you write a function called <code class="docutils literal notranslate"><span class="pre">is_odd()</span></code> which takes an input <code class="docutils literal notranslate"><span class="pre">value</span></code>,</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_odd</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="kc">False</span>
+    
+    <span class="k">return</span> <span class="n">answer</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>to use that function, you would execute <code class="docutils literal notranslate"><span class="pre">is_odd(value)</span></code> ….something like <code class="docutils literal notranslate"><span class="pre">is_odd(value</span> <span class="pre">=</span> <span class="pre">6)</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">is_odd</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">out</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Later on, if you wanted to use that function <em>within another function</em> you still have to pass an input to the function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">new_function</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">is_odd</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;yay!&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">output</span>
+            
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_function</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="more-functions-methods">
+<h2>More Functions &amp; Methods<a class="headerlink" href="#more-functions-methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sort-array">
+<h3><code class="docutils literal notranslate"><span class="pre">sort_array</span></code><a class="headerlink" href="#sort-array" title="Permalink to this headline">¶</a></h3>
+<p>A version of a <strong>selection sort</strong>:</p>
+<ul class="simple">
+<li><p>loop through current list</p></li>
+<li><p>find lowest item</p></li>
+<li><p>put that at the front of your sorted list</p></li>
+<li><p>remove lowest item from current list</p></li>
+<li><p>wash, rinse, repeat</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sort_array</span><span class="p">(</span><span class="n">array_to_sort</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A function to sort an array.&quot;&quot;&quot;</span>
+
+    <span class="n">is_sorted</span> <span class="o">=</span> <span class="kc">False</span>    <span class="c1"># Keeps track of when we are done sorting</span>
+    <span class="n">sorted_array</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># A new list that we will use to </span>
+     
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">is_sorted</span><span class="p">:</span>
+
+        <span class="n">lowest</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">array_to_sort</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">lowest</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>         <span class="c1"># If not defined (first element) set the current element as lowest</span>
+                <span class="n">lowest</span> <span class="o">=</span> <span class="n">item</span>
+            <span class="k">if</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="n">lowest</span><span class="p">:</span>
+                <span class="n">lowest</span> <span class="o">=</span> <span class="n">item</span>
+        
+        <span class="c1"># these next two lines uses some new (to us) list methods</span>
+        <span class="n">sorted_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lowest</span><span class="p">)</span>    <span class="c1"># Add the lowest value to our sorted array output</span>
+        <span class="n">array_to_sort</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">lowest</span><span class="p">)</span>   <span class="c1"># Drop the now sorted value from the original array</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">array_to_sort</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>    <span class="c1"># When `array_to_sort` is empty, we are done sorting</span>
+            <span class="n">is_sorted</span> <span class="o">=</span> <span class="kc">True</span>
+    
+    <span class="k">return</span> <span class="n">sorted_array</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="using-sort-array">
+<h3>Using <code class="docutils literal notranslate"><span class="pre">sort_array</span></code><a class="headerlink" href="#using-sort-array" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort an array of integers</span>
+<span class="n">unsorted_array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<span class="n">sorted_array</span> <span class="o">=</span> <span class="n">sort_array</span><span class="p">(</span><span class="n">unsorted_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort an array of floats</span>
+<span class="n">unsorted_array</span> <span class="o">=</span> <span class="p">[</span><span class="mf">21.3</span><span class="p">,</span> <span class="mf">56.7</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">2.9</span><span class="p">,</span> <span class="mf">99.9</span><span class="p">]</span>
+<span class="n">sorted_array</span> <span class="o">=</span> <span class="n">sort_array</span><span class="p">(</span><span class="n">unsorted_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sidenote-sorted">
+<h2>SideNote: <code class="docutils literal notranslate"><span class="pre">sorted</span></code><a class="headerlink" href="#sidenote-sorted" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort a list, with `sorted`</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># what about a list of strings?</span>
+<span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;asdf&#39;</span><span class="p">,</span><span class="s1">&#39;abcd&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort different data types</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="09-Loops.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Control Flow - Loops</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="CL-Answers/CL1-Tooling.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Coding Lab 1: Tech Setup &amp; Tooling</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Shannon Ellis, Jason Fleischer, and Tom Donoghue<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
