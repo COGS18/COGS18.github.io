@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **Course Announcements**
+# - Take-home portion of exam due Fri (tomorrow) 11:59 PM
+# - CL5 and A3 will be released tomorrow
+# 
+# **Office Hours Updates**
+# - This week only: Prof today/Th 1-1:50 PM (CSB 114)
+# - Josh S - Fri 11-12; *new location*: M.O.M’s Cafe   
+
 # # Control Flow - Loops
 # 
 # - `while`
@@ -11,7 +19,7 @@
 
 # ### SideNote: counters
 
-# In[ ]:
+# In[1]:
 
 
 # Initialize a counter variable
@@ -19,14 +27,14 @@ counter = 0
 print(counter)
 
 
-# In[ ]:
+# In[2]:
 
 
 counter = counter + 1
 print(counter)
 
 
-# In[ ]:
+# In[3]:
 
 
 counter = counter + 1
@@ -47,7 +55,7 @@ print(counter)
 # 
 # Loops are one way to avoid this.
 
-# In[ ]:
+# In[4]:
 
 
 lst = ['you@yahoo.com', 'them@bing.com']
@@ -78,7 +86,7 @@ email = lst[1]
 
 # ### `while` Loop Example I
 
-# In[ ]:
+# In[5]:
 
 
 number = -5
@@ -90,7 +98,7 @@ while number < 0:
 
 # ### `while` Loop Example II
 
-# In[ ]:
+# In[6]:
 
 
 shopping_budget = 20
@@ -114,7 +122,7 @@ while bill < shopping_budget:
 # 
 # How many temperature values will be output from this `while` loop before "The tea is cool enough." is printed?
 
-# In[ ]:
+# In[7]:
 
 
 temperature = 115
@@ -137,7 +145,7 @@ print('The tea is cool enough.')
 # 
 # What will be the value of `counter` after this loop is run:
 
-# In[ ]:
+# In[8]:
 
 
 keep_looping = True
@@ -167,7 +175,7 @@ print(counter)
 # 
 # Looping through a list of items
 
-# In[ ]:
+# In[9]:
 
 
 # Define a list of items
@@ -185,7 +193,7 @@ for my_item in list_of_items:
 # 
 # Looping through a string
 
-# In[ ]:
+# In[10]:
 
 
 # Loop across items in a string
@@ -201,7 +209,7 @@ for char in my_string:
 # 
 # How many values will be `print`ed from this `for` loop before it *first* prints "The tea is too hot!"?
 
-# In[ ]:
+# In[11]:
 
 
 temperatures = [114, 115, 116, 117, 118]
@@ -228,14 +236,14 @@ for temp in temperatures:
 
 # ### `range` Examples
 
-# In[ ]:
+# In[12]:
 
 
 for ind in [0, 1, 2, 3, 4]:
     print(ind)
 
 
-# In[ ]:
+# In[13]:
 
 
 # the asterisk here unpacks the range
@@ -243,7 +251,7 @@ for ind in [0, 1, 2, 3, 4]:
 print(*range(0, 5))
 
 
-# In[ ]:
+# In[14]:
 
 
 # Loop across a sequence of numbers, using range
@@ -251,7 +259,7 @@ for ind in range(0, 5):
     print(ind)
 
 
-# In[ ]:
+# In[15]:
 
 
 # Range, like indexing, is defined by 'start', 'stop', 'step'
@@ -259,7 +267,7 @@ for ind in range(2, 6, 2):
     print(ind)
 
 
-# In[ ]:
+# In[16]:
 
 
 # using range in example above
@@ -274,7 +282,7 @@ for temp in range(114, 119):
 # 
 # How many values would this loop print and what would be the last value printed? 
 
-# In[ ]:
+# In[17]:
 
 
 for ind in range(1, 10, 3):
@@ -296,7 +304,7 @@ for ind in range(1, 10, 3):
 
 # ### `continue` examples
 
-# In[ ]:
+# In[18]:
 
 
 lst = [0, 1, 2, 3]
@@ -309,7 +317,7 @@ for item in lst:
     print(item)
 
 
-# In[ ]:
+# In[19]:
 
 
 courses = ['cogs9', 'cogs18', 'cogs108']
@@ -323,7 +331,7 @@ for course in courses:
     print(course + '!')
 
 
-# In[ ]:
+# In[20]:
 
 
 string = "python"
@@ -340,7 +348,7 @@ for char in string:
 # 
 # A counter within a loop...
 
-# In[ ]:
+# In[21]:
 
 
 input_list = [0, 1, 2]
@@ -361,7 +369,7 @@ print("Final counter value:", counter)
 # 
 # What will be the value of `counter` after this code has run:
 
-# In[ ]:
+# In[22]:
 
 
 counter = 0
@@ -390,7 +398,7 @@ print(counter)
 
 # ### `break` examples
 
-# In[ ]:
+# In[23]:
 
 
 lst = [0, 1, 2, 3]
@@ -403,7 +411,7 @@ for item in lst:
     print(item)
 
 
-# In[ ]:
+# In[24]:
 
 
 courses = ["cogs9", "cogs18", "cogs108"]
@@ -416,7 +424,7 @@ for course in courses:
     print(course)
 
 
-# In[ ]:
+# In[25]:
 
 
 string = "love python"
@@ -428,7 +436,7 @@ for char in string:
     print(char)
 
 
-# In[ ]:
+# In[26]:
 
 
 # using range in example above
@@ -444,7 +452,7 @@ for temp in range(114, 119):
 # 
 # What will the following code print out:
 
-# In[ ]:
+# In[27]:
 
 
 number = 1
@@ -470,7 +478,7 @@ while True:
 # 
 # (In other words, how many times in this `for` loop will something be printed out?)
 
-# In[ ]:
+# In[28]:
 
 
 # using range in example above
@@ -494,7 +502,7 @@ for temp in range(114, 119):
 # 
 # What will be the value of `counter` after this code has run:
 
-# In[ ]:
+# In[29]:
 
 
 counter = 0
@@ -518,20 +526,20 @@ print(counter)
 
 # ### Dictionaries: Indexing & Looping
 
-# In[ ]:
+# In[30]:
 
 
 dictionary = {'key_1' : 'val_1', 'key_2' : 'val_2'}
 
 
-# In[ ]:
+# In[31]:
 
 
 # Dictionaries are indexed using their keys
 dictionary['key_1']
 
 
-# In[ ]:
+# In[32]:
 
 
 # Loop over a dictionary loops across the keys
@@ -542,7 +550,7 @@ for item in dictionary:
     print('\tValue:\t', dictionary[item])
 
 
-# In[ ]:
+# In[33]:
 
 
 # another approach that you will find if you Google
@@ -559,7 +567,7 @@ for key, val in dictionary.items():
 
 # **Good Code Style**
 
-# In[ ]:
+# In[34]:
 
 
 number = 5
@@ -570,7 +578,7 @@ while number < 0:
 
 # **Code Style to Avoid**
 
-# In[ ]:
+# In[35]:
 
 
 number=-5
@@ -581,12 +589,29 @@ while number<0:print(number);number=number+1 # avoid all on a single line
 
 # ### Loops Practice #1
 # 
-# Write a function `count_odd()` contatining a loop that will add all the *odd* numbers for the input range together.
+# Write a function `count_odd()` containing a loop that will add all the *odd* numbers for the input range together.
 
-# In[ ]:
+# In[36]:
 
 
-# YOUR CODE HERE
+def count_odd(range_to_loop_over):
+    add_all = 0
+
+    for value in range_to_loop_over:
+        #conditional - determine if odd
+        if value % 2 != 0:
+            #increased the counter
+            add_all = add_all + value
+        else:
+            continue
+    
+    return add_all
+
+
+# In[37]:
+
+
+count_odd([0, 2, 3,6,9])
 
 
 # - A) I did it!

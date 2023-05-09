@@ -31,8 +31,8 @@ parts:
       title: 09-Loops
   #   - file: materials/10-Algorithms
   #     title: 10-Algorithms
-  #   - file: materials/11-Methods
-  #     title: 11-Methods
+    - file: materials/10-Methods
+      title: 10-Methods
   #   - file: materials/12-Classes
   #     title: 12-Classes
   #   - file: materials/13-CommandLine
