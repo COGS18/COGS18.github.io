@@ -29,10 +29,10 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 |                | Pooja Patha          | Tu 10-11a       | Zoom               |
 |                | Will McCarthy        | Tu 3-4p         | Zoom               |
 |                | Mingson Leung        | Tu 1-2p         | Zoom               |
-|                | Jiayi Dong           | Tu 2-3p         | CSB 114            |
 |                | Annapurna Vadaparty  | W 1-2p          | Cogsci Kitchen     |
 |                | Annapurna Vadaparty  | Th 1-2p         | CSB 114            |
 |                | **Prof Ellis**       | Th 1-3p         | CSB 114            |
+|                | Jiayi Dong           | Th 4-5p         | Zooom              |
 |                | Josh Salce           | Fri 11a-12p     | M.O.M’s Cafe       |
 |                | Ethan Cheng          | Fri 1-2p        | CSB 114            |
 |                | Lillian Ho           | Fri 2-3p        | Zoom               |
@@ -185,7 +185,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 4/28/2023 | 4      | F   |                        |                             | A2 - conditionals, collections, ciphers |                            
 | 5/2/2023  | 5      | Tu  | **E1**                 |                             |                                         | 
 | 5/3/2023  | 5      | W   |                        |                             |                                         |                            
-| 5/4/2023  | 5      | Th  | Algorithms             |                             |                                         |                            
+| 5/4/2023  | 5      | Th  | ~Algorithms~             |                             |                                         |                            
 | 5/5/2023  | 5      | F   |                        |                             | E1: technical portion (take-home)       |                            
 | 5/9/2023  | 6      | Tu  | Methods                |                             |                                         |                            
 | 5/10/2023 | 6      | W   |                        | CL5 - loops                 |                                         |                            
