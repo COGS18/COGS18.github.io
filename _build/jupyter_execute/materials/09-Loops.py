@@ -623,10 +623,24 @@ count_odd([0, 2, 3,6,9])
 # 
 # Write a function `count_vowels()` containing a loop that will loop through all the letters in `my_name` (the input parameter) and count all the vowels in your name.
 
-# In[ ]:
+# In[13]:
 
 
 # YOUR CODE HERE
+def count_vowels(my_name):
+#     vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+#     vowels = 'AEIOUaeiou'
+    count = 0
+
+    for ltr in my_name:
+        if ltr in 'AEIOUaeiou':
+            count = count + 1
+        else:
+            continue 
+    
+    return count
+        
+count_vowels('AEI')
 
 
 # - A) I did it!

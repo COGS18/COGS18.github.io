@@ -26,7 +26,7 @@
 # 
 # What will the following code snippet print?
 
-# In[ ]:
+# In[1]:
 
 
 def my_func(my_dictionary):
@@ -74,7 +74,37 @@ print(out)
 
 # In other words: methods "belong to" an object.
 
-# In[ ]:
+# In[3]:
+
+
+# student question about appending a list to a list
+my_list = [1, 2, 3]
+my_list2 = [4, 5]
+my_list.append(my_list2)
+
+
+# In[4]:
+
+
+my_list
+
+
+# In[6]:
+
+
+# + operator to concatenate two lists into a single list
+my_list = [1, 2, 3]
+my_list2 = [4, 5]
+my_list + my_list2
+
+
+# In[7]:
+
+
+my_list.append[4]
+
+
+# In[2]:
 
 
 # The `append` method, defined on lists
@@ -85,7 +115,7 @@ print(my_list)
 
 # The method `append()` is called directly on the list `my_list`
 
-# In[ ]:
+# In[8]:
 
 
 # append is a method for lists
@@ -94,7 +124,7 @@ my_string = 'cogs18'
 my_string.append('!')
 
 
-# In[ ]:
+# In[9]:
 
 
 # The `is_integer()` method, defined on floats
@@ -102,7 +132,7 @@ my_float = 12.2
 my_float.is_integer()
 
 
-# In[ ]:
+# In[10]:
 
 
 # The `is_integer()` method, attempted on an integer
@@ -115,28 +145,28 @@ my_int.is_integer()
 # 
 # There are a whole bunch of string methods, all described [here](https://www.w3schools.com/python/python_ref_string.asp). We'll review a few of the most commonly used here.
 
-# In[ ]:
+# In[12]:
 
 
 # Make a string all lower case
-'aBc'.lower()
+'aBcDEF'.lower()
 
 
-# In[ ]:
+# In[13]:
 
 
 # Make a string all upper case
 'aBc'.upper()
 
 
-# In[ ]:
+# In[14]:
 
 
 # Capitalize a string
 'python is great'.capitalize()
 
 
-# In[ ]:
+# In[15]:
 
 
 # Find the index of where a string starts 
@@ -147,14 +177,24 @@ my_int.is_integer()
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[26]:
+
+
+count = 0
+count += 1 # works with strings too
+count
+
+
+# In[24]:
 
 
 inputs = ['fIx', 'tYpiNg', 'lIkE', 'tHiS']
 output = ''
 
 for element in inputs:
+#     print(element)
     output = output + element.lower() + ' '
+#     print(output)
 
 output.capitalize()
 
@@ -169,23 +209,23 @@ output.capitalize()
 # 
 # There are also a bunch of list methods, all described [here](https://www.w3schools.com/python/python_ref_list.asp). You've seen some of these before, but we'll review a few of the most commonly used here.
 
-# In[ ]:
+# In[29]:
 
 
 # sort sorts integers in numerical orders
 ints = [16, 88, 33, 40]
-ints.sort()
+ints.sort() # reverse parameter is False by default
 ints
 
 
-# In[ ]:
+# In[30]:
 
 
 ints.sort(reverse=True)
 ints
 
 
-# In[ ]:
+# In[34]:
 
 
 # append adds to the end of a list
@@ -193,7 +233,7 @@ ints.append(2)
 ints
 
 
-# In[ ]:
+# In[32]:
 
 
 # remove value from list
@@ -201,13 +241,13 @@ ints.remove(40)
 ints
 
 
-# In[ ]:
+# In[33]:
 
 
 get_ipython().run_line_magic('pinfo', 'list.remove')
 
 
-# In[ ]:
+# In[35]:
 
 
 # reverse order of list
@@ -219,12 +259,14 @@ ints
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[37]:
 
 
 list_string = ['a', 'c', 'd', 'b']
 list_string.sort()
+print('after sort: ', list_string)
 list_string.reverse()
+print('after reverse: ', list_string)
 list_string
 
 
@@ -239,7 +281,7 @@ list_string
 # As with string and list methods, there are many described [here](https://www.w3schools.com/python/python_ref_dictionary.asp) that are helpful when working with dictionaries.
 # 
 
-# In[ ]:
+# In[42]:
 
 
 car = {
@@ -252,7 +294,7 @@ car = {
 car.keys()
 
 
-# In[ ]:
+# In[43]:
 
 
 # get returns the value of a specified key
@@ -272,7 +314,7 @@ print(mod2)
 print(car['model'])
 
 
-# In[ ]:
+# In[44]:
 
 
 # update adds a key-value pair
@@ -315,7 +357,7 @@ print(car)
 
 # #### List methods that are in place
 
-# In[ ]:
+# In[47]:
 
 
 # Reverse a list
@@ -325,7 +367,7 @@ my_list.reverse()
 print(my_list)
 
 
-# In[ ]:
+# In[48]:
 
 
 # Sort a list
@@ -337,20 +379,20 @@ print(my_numbers)
 
 # #### Dictionary methods that are not in place
 
-# In[ ]:
+# In[49]:
 
 
 car
 
 
-# In[ ]:
+# In[50]:
 
 
 # Return the keys in the dictionary
 out = car.keys() 
 
 
-# In[ ]:
+# In[51]:
 
 
 # print keys
@@ -358,7 +400,7 @@ print(type(out))
 print(out)
 
 
-# In[ ]:
+# In[52]:
 
 
 # car has not changed
@@ -366,7 +408,7 @@ print(type(car))
 print(car)
 
 
-# In[ ]:
+# In[53]:
 
 
 # Return the values in the dicionary
@@ -377,7 +419,7 @@ car.values()
 
 # Typing the object/variable name you want to find methods for followed by a '.' and then pressing tab will display all the methods available for that type of object.
 
-# In[ ]:
+# In[54]:
 
 
 # Define a test string
@@ -393,7 +435,7 @@ my_string.
 
 # Using the function `dir()` returns all methods available
 
-# In[ ]:
+# In[55]:
 
 
 # For our purposes now, you can ignore any leading underscores (these are special methods)
@@ -486,20 +528,20 @@ new_function([1,2,3,4])
 # - remove lowest item from current list
 # - wash, rinse, repeat
 
-# In[ ]:
+# In[56]:
 
 
 def sort_array(array_to_sort):
     """A function to sort an array."""
 
     is_sorted = False    # Keeps track of when we are done sorting
-    sorted_array = []    # A new list that we will use to 
+    sorted_array = []    # A new list that we will use to store our sorted values
      
-    while not is_sorted:
+    while is_sorted == False:
 
         lowest = None
         for item in array_to_sort:
-            if lowest == None:         # If not defined (first element) set the current element as lowest
+            if lowest == None:  # If not defined (first element) set the current element as lowest
                 lowest = item
             if item < lowest:
                 lowest = item
@@ -509,6 +551,7 @@ def sort_array(array_to_sort):
         array_to_sort.remove(lowest)   # Drop the now sorted value from the original array
 
         if len(array_to_sort) == 0:    # When `array_to_sort` is empty, we are done sorting
+#             break (option to break here)
             is_sorted = True
     
     return sorted_array
@@ -516,7 +559,7 @@ def sort_array(array_to_sort):
 
 # ### Using `sort_array`
 
-# In[ ]:
+# In[57]:
 
 
 # Sort an array of integers
@@ -525,7 +568,7 @@ sorted_array = sort_array(unsorted_array)
 print(sorted_array)
 
 
-# In[ ]:
+# In[58]:
 
 
 # Sort an array of floats

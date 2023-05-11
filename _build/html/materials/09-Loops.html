@@ -217,6 +217,11 @@
    E1-Practice-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1_COGS18_SP23-Answers.html">
+   E1-Answers
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -1686,6 +1691,25 @@ Loop Iteration
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<span class="k">def</span> <span class="nf">count_vowels</span><span class="p">(</span><span class="n">my_name</span><span class="p">):</span>
+<span class="c1">#     vowels = [&#39;A&#39;, &#39;E&#39;, &#39;I&#39;, &#39;O&#39;, &#39;U&#39;, &#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;]</span>
+<span class="c1">#     vowels = &#39;AEIOUaeiou&#39;</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">ltr</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ltr</span> <span class="ow">in</span> <span class="s1">&#39;AEIOUaeiou&#39;</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">continue</span> 
+    
+    <span class="k">return</span> <span class="n">count</span>
+        
+<span class="n">count_vowels</span><span class="p">(</span><span class="s1">&#39;AEI&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
