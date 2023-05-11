@@ -33,8 +33,8 @@ parts:
   #     title: 10-Algorithms
     - file: materials/10-Methods
       title: 10-Methods
-  #   - file: materials/12-Classes
-  #     title: 12-Classes
+    - file: materials/11-Classes
+      title: 11-Classes
   #   - file: materials/13-CommandLine
   #     title: 13-CommandLine
   #   - file: materials/154Modules
