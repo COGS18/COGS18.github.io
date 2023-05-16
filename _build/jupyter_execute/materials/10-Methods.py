@@ -579,7 +579,7 @@ print(sorted_array)
 
 # ## SideNote: `sorted`
 
-# In[ ]:
+# In[59]:
 
 
 # Sort a list, with `sorted`
@@ -587,14 +587,14 @@ data = [7, 4, 6]
 sorted(data)
 
 
-# In[ ]:
+# In[60]:
 
 
 # what about a list of strings?
 sorted(['asdf','abcd'])
 
 
-# In[ ]:
+# In[61]:
 
 
 # Sort different data types

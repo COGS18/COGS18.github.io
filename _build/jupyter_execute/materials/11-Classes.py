@@ -2,9 +2,11 @@
 # coding: utf-8
 
 # **Course Announcements**
-# - **A3** due Friday
+# - **A3** due Monday (11:59 PM)
 # - [**Mid-course survey**](https://docs.google.com/forms/d/e/1FAIpQLSdOQLk7FvTYT-o79kEbc5Bo_DF8EvKzZm-ebcyXSSQRDH6P9g/viewform?usp=sf_link) "due" Friday (link also on Canvas)
 # - **CL6** and **A4** released tomorrow
+
+# Note to self: do exam class questions
 
 # **Midterm notes**
 # - Function execution: `function_name()` vs. indexing: `variable[]`
@@ -38,7 +40,7 @@
 
 # ### Storing Dates (Motivation)
 
-# In[ ]:
+# In[1]:
 
 
 # A date, stored as a string
@@ -46,7 +48,7 @@ date_string = '29/09/1988'
 print(date_string)
 
 
-# In[ ]:
+# In[2]:
 
 
 # A date, stored as a list of number
@@ -54,7 +56,7 @@ date_list = ['29', '09', '1988']
 date_list
 
 
-# In[ ]:
+# In[3]:
 
 
 # A date, stored as a series of numbers
@@ -65,7 +67,7 @@ year = 1988
 print(day)
 
 
-# In[ ]:
+# In[4]:
 
 
 # A date, stored as a dictionary
@@ -77,20 +79,20 @@ date_dictionary
 
 # ### Example Object: Date
 
-# In[ ]:
+# In[5]:
 
 
 # Import a date object
 from datetime import date
 
 
-# In[ ]:
+# In[6]:
 
 
 get_ipython().run_line_magic('pinfo', 'date')
 
 
-# In[ ]:
+# In[7]:
 
 
 # Set the data we want to store in our date object
@@ -103,7 +105,7 @@ my_date = date(year, month, day)
 print(my_date)
 
 
-# In[ ]:
+# In[8]:
 
 
 # Check what type of thing `my_date` is
@@ -122,21 +124,21 @@ type(my_date)
 
 # **attributes** maintain the object's state, simply returning information about the object to you
 
-# In[ ]:
+# In[9]:
 
 
 # Get the day attribute
 my_date.day
 
 
-# In[ ]:
+# In[10]:
 
 
 # Get the month attribute
 my_date.month
 
 
-# In[ ]:
+# In[11]:
 
 
 # Get the year attribute
@@ -149,14 +151,14 @@ my_date.year
 
 # **methods** modify the object's state
 
-# In[ ]:
+# In[12]:
 
 
 # Method to return what day of the week the date is
 my_date.weekday()
 
 
-# In[ ]:
+# In[13]:
 
 
 # Reminder: check documentation with '?'
@@ -165,7 +167,7 @@ get_ipython().run_line_magic('pinfo', 'date.weekday')
 
 # It's also possible to carry out operations on multiple date objects.
 
-# In[ ]:
+# In[14]:
 
 
 # define a second date
@@ -173,7 +175,7 @@ my_date2 = date(1980, 7, 29)
 print(my_date, my_date2)
 
 
-# In[ ]:
+# In[15]:
 
 
 # calculate the difference between times
@@ -196,7 +198,7 @@ my_date.
 date.
 
 
-# In[ ]:
+# In[16]:
 
 
 ## dir ouputs all methods and attributes
@@ -262,7 +264,7 @@ my_date = date(year = 1050, month = 12, day = 12)
 
 # ## Example Class: Dog
 
-# In[ ]:
+# In[17]:
 
 
 # Define a class with `class`. 
@@ -293,21 +295,21 @@ class Dog():
 # - like functions, a new namespace is created within a Class
 # 
 
-# In[ ]:
+# In[18]:
 
 
 # Initialize a dog object
 george = Dog()
 
 
-# In[ ]:
+# In[19]:
 
 
 # george, has 'sound' attribute(s) from Dog()
 george.sound
 
 
-# In[ ]:
+# In[20]:
 
 
 # george, has 'Dog' method(s)
@@ -337,28 +339,28 @@ class Dog():
 
 # ### Using our Dog Objects
 
-# In[ ]:
+# In[21]:
 
 
 # Initialize a group of dogs
 pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 
 
-# In[ ]:
+# In[22]:
 
 
 # take a look at this
 pack_of_dogs
 
 
-# In[ ]:
+# In[23]:
 
 
 # take a look at this
 type(pack_of_dogs[0])
 
 
-# In[ ]:
+# In[24]:
 
 
 for dog in pack_of_dogs:
@@ -371,7 +373,7 @@ for dog in pack_of_dogs:
 # An <b>instance</b> is particular instantiation of a class object. <code>self</code> refers to the current instance. 
 # </div>
 
-# In[ ]:
+# In[25]:
 
 
 # Initialize a dog object
@@ -431,7 +433,7 @@ pack_of_dogs = [Dog(), Dog(), Dog(), Dog()]
 # - Two trailing underscores (a `dunder`, or double underscore) is used to indicate something Python recognizes and knows what to do every time it sees it.
 # - Here, we use `__init__` to execute the code within it every time you initialize an object.
 
-# In[ ]:
+# In[26]:
 
 
 class Dog():
@@ -448,7 +450,13 @@ class Dog():
         return self.sound * n_times
 
 
-# In[ ]:
+# In[29]:
+
+
+Dog()
+
+
+# In[27]:
 
 
 # Initialize a dog
@@ -456,7 +464,7 @@ class Dog():
 gary = Dog(name = 'Gary') 
 
 
-# In[ ]:
+# In[28]:
 
 
 # Check gary's attributes
@@ -464,7 +472,7 @@ print(gary.sound)    # This is an class attribute
 print(gary.name)     # This is a instance attribute
 
 
-# In[ ]:
+# In[30]:
 
 
 # Check gary's methods
@@ -475,25 +483,28 @@ gary.speak()
 # 
 # Edit the code we've been using for the Class `Dog` to include information about the breed of the Class Dog in `NewDog`?
 
-# In[ ]:
+# In[31]:
 
 
 # EDIT CODE HERE
-class NewDog():
+class NewDog(): 
     
     sound = 'Woof'
     
-    def __init__(self, name):
+    def __init__(self, name, breed):
         self.name = name
+        self.breed = breed
     
     def speak(self, n_times=2):
         return self.sound * n_times
 
 
-# In[ ]:
+# In[35]:
 
 
 ## We'll execute here
+lexi = NewDog('Lexi', 'Italian Greyhound')
+lexi.breed
 
 
 # - A) I did it!
@@ -502,7 +513,7 @@ class NewDog():
 
 # ## Class example: Cat
 
-# In[ ]:
+# In[36]:
 
 
 # Define a class 'Cat'
@@ -519,7 +530,7 @@ class Cat():
 
 # ## Instances Examples
 
-# In[ ]:
+# In[37]:
 
 
 # Define some instances of our objects
@@ -527,7 +538,7 @@ pets = [Cat('Jaspurr'), Dog('Barkley'),
         Cat('Picatso'), Dog('Ruffius')]
 
 
-# In[ ]:
+# In[38]:
 
 
 for pet in pets:
@@ -539,7 +550,7 @@ for pet in pets:
 # 
 # What will the following code snippet print out?
 
-# In[ ]:
+# In[39]:
 
 
 class MyClass():
@@ -556,7 +567,7 @@ class MyClass():
             return None
 
 
-# In[ ]:
+# In[40]:
 
 
 student = MyClass('Rob', 'rob@python.com', 62)
@@ -618,7 +629,7 @@ class my_class(): # uses snake case for name
 # 
 # We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.
 
-# In[ ]:
+# In[41]:
 
 
 class ProfCourses():
@@ -630,17 +641,17 @@ class ProfCourses():
         self.prof = prof
 
 
-# In[ ]:
+# In[42]:
 
 
-ellis_courses = ProfCourses('Ellis')
+ellis_courses = ProfCourses(prof='Ellis')
 print(ellis_courses.n_courses)
 print(ellis_courses.prof)
 
 
 # **`add_class()` method**
 
-# In[ ]:
+# In[43]:
 
 
 class ProfCourses():
@@ -654,15 +665,15 @@ class ProfCourses():
     # to our attribute (courses)...which is a list
     def add_course(self, course_name, quarter, n_students):
         
-        =.append({'course_name': course_name, 
+        self.courses.append({'course_name': course_name, 
                              'quarter' : quarter, 
                              'n_students': n_students})
         # increase value store in n_courses
         # by 1 any time a class is added
-        self.n_courses += 1
+        self.n_courses = self.n_courses + 1
 
 
-# In[ ]:
+# In[44]:
 
 
 # create ellis_courses

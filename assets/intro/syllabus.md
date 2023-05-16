@@ -190,11 +190,11 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 5/9/2023  | 6      | Tu  | Methods                |                             |                                         |                            
 | 5/10/2023 | 6      | W   |                        | CL5 - loops                 |                                         |                            
 | 5/11/2023 | 6      | Th  | Classes                |                             |                                         |                            
-| 5/12/2023 | 6      | F   |                        |                             | A3 - loops, strings, chatbots           |                            
+| 5/12/2023 | 6      | F   |                        |                             | A3 - loops, strings, chatbots (now due: Mon 5/15)           |                            
 | 5/16/2023 | 7      | Tu  | Command Line [**]      |                             |                                         |                            
 | 5/17/2023 | 7      | W   |                        | CL6 - classes               |                                         |                            
 | 5/18/2023 | 7      | Th  | Review                 |                             |                                         |                            
-| 5/19/2023 | 7      | F   |                        |                             | A4 - methods, classes, agents           |                            
+| 5/19/2023 | 7      | F   |                        |                             | A4 - methods, classes, agents (now due: Mon 5/22)          |                            
 | 5/23/2023 | 8      | Tu  | **E2**                 |                             |                                         |      
 | 5/24/2023 | 8      | W   |                        | CL7 - command line          |                                         |                            
 | 5/25/2023 | 8      | Th  | Python Party           |                             |                                         |                            

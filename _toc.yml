@@ -35,8 +35,8 @@ parts:
       title: 10-Methods
     - file: materials/11-Classes
       title: 11-Classes
-  #   - file: materials/13-CommandLine
-  #     title: 13-CommandLine
+    - file: materials/12-CommandLine
+      title: 12-CommandLine
   #   - file: materials/154Modules
   #     title: 14-Modules
   #   - file: materials/15-ScientificComputing
@@ -67,8 +67,8 @@ parts:
       title: CL3-ProgrammingII
     - file: materials/CL-Answers/CL4-Collections
       title: CL4-Collections
-  #   - file: materials/CL-Answers/CL5-Loops
-  #     title: CL5-Loops
+    - file: materials/CL-Answers/CL5-Loops
+      title: CL5-Loops
   #   - file: materials/CL-Answers/CL6-Classes
   #     title: CL6-Classes
   #   - file: materials/CL-Answers/CL7-CommandLine
