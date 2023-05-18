@@ -67,7 +67,7 @@
 
 # #### Check current directory
 
-# In[ ]:
+# In[1]:
 
 
 # print working directory
@@ -98,7 +98,7 @@ get_ipython().system('pwd')
 # An absolute file path starts with a slash `/` specifying the root directory.
 # 
 
-# In[ ]:
+# In[2]:
 
 
 ## absolute path
@@ -113,14 +113,14 @@ get_ipython().system('ls /Users/shannonellis/Desktop/Teaching/COGS18/LectureNote
 # <b>Relative paths</b> specify the path to a file from your <b>current working directory</b> (where your computer is working right now). 
 # </div>
 
-# In[ ]:
+# In[3]:
 
 
 # remind us of our current working directory
 get_ipython().system('pwd')
 
 
-# In[ ]:
+# In[4]:
 
 
 # relative path
@@ -189,7 +189,7 @@ get_ipython().system('ls ../../COGS108')
 
 # #### Check current directory
 
-# In[ ]:
+# In[5]:
 
 
 # print working directory
@@ -198,7 +198,7 @@ get_ipython().system('pwd')
 
 # #### Change directory
 
-# In[ ]:
+# In[6]:
 
 
 # change directory 
@@ -212,7 +212,7 @@ get_ipython().system('cd ~/ ')
 
 # #### List files in a directory
 
-# In[ ]:
+# In[7]:
 
 
 # list files (list segments)
@@ -253,7 +253,7 @@ get_ipython().system('mv new_file.py dir_name/')
 
 # #### Print out a message
 
-# In[ ]:
+# In[8]:
 
 
 get_ipython().system('echo Hello World!')

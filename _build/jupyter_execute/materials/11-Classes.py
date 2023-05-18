@@ -629,7 +629,7 @@ class my_class(): # uses snake case for name
 # 
 # We would likely want an object type and then helpful methods that allow us to add a class to the course inventory and to compare between courses.
 
-# In[41]:
+# In[45]:
 
 
 class ProfCourses():
@@ -651,7 +651,7 @@ print(ellis_courses.prof)
 
 # **`add_class()` method**
 
-# In[43]:
+# In[46]:
 
 
 class ProfCourses():
@@ -689,7 +689,7 @@ ellis_courses.n_courses
 
 # **`compare()` method**
 
-# In[ ]:
+# In[47]:
 
 
 class ProfCourses():
@@ -726,7 +726,7 @@ class ProfCourses():
         return output
 
 
-# In[ ]:
+# In[48]:
 
 
 # create ellis_courses
@@ -743,7 +743,7 @@ print(ellis_courses.n_courses)
 ellis_courses.courses
 
 
-# In[ ]:
+# In[49]:
 
 
 # make comparison among all courses
@@ -751,7 +751,7 @@ ellis_courses.courses
 ellis_courses.compare('n_students')
 
 
-# In[ ]:
+# In[50]:
 
 
 # return the class with the fewest students
@@ -760,7 +760,7 @@ ellis_courses.compare('n_students', 'fewest')
 
 # **extending the functionality of the `compare()` method**
 
-# In[ ]:
+# In[51]:
 
 
 class ProfCourses():
@@ -800,7 +800,7 @@ class ProfCourses():
         return output
 
 
-# In[ ]:
+# In[55]:
 
 
 # create ellis_courses
@@ -814,20 +814,20 @@ ellis_courses.add_course('COGS108', 'sp20', 469, 0, 6)
 ellis_courses.add_course('COGS108', 'sp19', 825, 0, 5)
 ellis_courses.add_course('COGS18', 'fa19', 301, 2, 4)
 ellis_courses.add_course('COGS18', 'wi22', 355, 2, 4)
-ellis_courses.add_course('COGS18', 'sp23', 355, 2, 4)
+ellis_courses.add_course('COGS18', 'sp23', 355, 2, 5)
 
 # see the courses
 print(ellis_courses.n_courses)
 
 
-# In[ ]:
+# In[56]:
 
 
 # return the class with the most exams
 ellis_courses.compare('n_exams', 'most')
 
 
-# In[ ]:
+# In[57]:
 
 
 # return the class with the fewest assignments
@@ -862,7 +862,7 @@ ellis_courses.compare('n_assignments', 'fewest')
 
 # ### Data variables are objects
 
-# In[ ]:
+# In[58]:
 
 
 print(isinstance(True, object))
@@ -876,14 +876,14 @@ print(isinstance(a, object))
 
 # ### Functions are objects
 
-# In[ ]:
+# In[59]:
 
 
 print(isinstance(sum, object))
 print(isinstance(max, object))
 
 
-# In[ ]:
+# In[60]:
 
 
 # Custom function are also objects
@@ -895,7 +895,7 @@ isinstance(my_function, object)
 
 # ### Class definitions & instances are objects
 
-# In[ ]:
+# In[61]:
 
 
 class MyClass():
