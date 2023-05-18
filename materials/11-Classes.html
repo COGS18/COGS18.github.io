@@ -210,6 +210,11 @@
    CL5-Loops
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -235,6 +240,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="ExamPrep/E1_COGS18_SP23-Answers.html">
    E1-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E2-Review.html">
+   E2-Review
   </a>
  </li>
 </ul>
@@ -1775,6 +1785,17 @@ Ellis
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 363},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;fa20&#39;, &#39;n_students&#39;: 447},
+ {&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88},
+ {&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp20&#39;, &#39;n_students&#39;: 469}]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1784,11 +1805,21 @@ Ellis
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS108&#39;, &#39;quarter&#39;: &#39;sp20&#39;, &#39;n_students&#39;: 469}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest students</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_students&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;, &#39;quarter&#39;: &#39;su20&#39;, &#39;n_students&#39;: 88}
 </pre></div>
 </div>
 </div>
@@ -1848,10 +1879,15 @@ Ellis
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS108&#39;</span><span class="p">,</span> <span class="s1">&#39;sp19&#39;</span><span class="p">,</span> <span class="mi">825</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;fa19&#39;</span><span class="p">,</span> <span class="mi">301</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;wi22&#39;</span><span class="p">,</span> <span class="mi">355</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;sp23&#39;</span><span class="p">,</span> <span class="mi">355</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">ellis_courses</span><span class="o">.</span><span class="n">add_course</span><span class="p">(</span><span class="s1">&#39;COGS18&#39;</span><span class="p">,</span> <span class="s1">&#39;sp23&#39;</span><span class="p">,</span> <span class="mi">355</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 
 <span class="c1"># see the courses</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ellis_courses</span><span class="o">.</span><span class="n">n_courses</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -1863,11 +1899,29 @@ Ellis
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;su20&#39;,
+ &#39;n_students&#39;: 88,
+ &#39;n_exams&#39;: 3,
+ &#39;n_assignments&#39;: 5}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># return the class with the fewest assignments</span>
 <span class="n">ellis_courses</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s1">&#39;n_assignments&#39;</span><span class="p">,</span> <span class="s1">&#39;fewest&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;course_name&#39;: &#39;COGS18&#39;,
+ &#39;quarter&#39;: &#39;wi22&#39;,
+ &#39;n_students&#39;: 355,
+ &#39;n_exams&#39;: 2,
+ &#39;n_assignments&#39;: 4}
 </pre></div>
 </div>
 </div>
@@ -1930,6 +1984,15 @@ Ellis
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+True
+True
+True
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="functions-are-objects">
@@ -1941,6 +2004,12 @@ Ellis
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1949,6 +2018,11 @@ Ellis
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;yay Python!&#39;</span><span class="p">)</span>
     
 <span class="nb">isinstance</span><span class="p">(</span><span class="n">my_function</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -1966,6 +2040,12 @@ Ellis
 
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">MyClass</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">my_instance</span><span class="p">,</span> <span class="nb">object</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
 </pre></div>
 </div>
 </div>
