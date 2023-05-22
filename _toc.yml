@@ -90,8 +90,8 @@ parts:
   #     title: E1-Answers
     - file: materials/ExamPrep/E2-Review
       title: E2-Review
-  #   - file: materials/Exam-Prep/E2-Review-Answers
-      # title: E2-Review-Answers
+    - file: materials/ExamPrep/E2-Review-Answers
+      title: E2-Review-Answers
     - file: materials/ExamPrep/E2_Sp23_Practice
       title: E2-Practice-Answers
 
