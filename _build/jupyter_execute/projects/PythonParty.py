@@ -3,53 +3,12 @@
 
 # **Course Announcements**
 # 
-# - **A4** due Mon 2/28 (11:59 PM)
-# - **CL7** due Wednesday (3/2)
-# 
-# **Note**
-# - Prof Ellis' OH: extra **zoom office hours today 9-10 AM** (will use normal zoom link on canvas; make-up for Monday)
-
-# **Black History Month**: Foundational Fridays
-# 
-# - [Kimberly Bryant](https://twitter.com/6Gems) - founder and CEO of BlackGirlsCode
-# - [Dr. Joy Buolamwini](https://twitter.com/jovialjoy) - founder of the Algorithmic Justice League
-# - [Dr. Timnit Gebru](https://twitter.com/timnitGebru) - founder of The Distributed AI Research Institute; AI Ethics
-# - [Erica Baker](https://twitter.com/EricaJoy) - CTO at DCCC
-# 
-# Note: From 1977 to 2013, the. largest # of black women to earn a CS PhD in any given year was...10
-
-# **Q&A**
-# 
-# Q: is there an easy way to download all the lecture notes from datahub using code in the terminal on my computer?  
-# A: Yes - you can zip/tar all the contents on datahub into a single file, download, and then unzip/untar on your computer. I will provide instructions on this at the end of the quarter.
-# 
-# Q: I was using cat, and it wasn't printing anything out even though I know that new_file was placed within dir_name. Is there a reason for this?  
-# A: This is likely b/c you didn't add any contents to that file. Open that file up, add some text, and try `cat` again.
-# 
-# Q: I still don't understand the purpose of using the command line.   
-# A: Quickly navigate to and organize files. Also, run python scripts (we'll be doing this today).
-# 
-# Q: Why can't we just stick to jupyter for an intro class  
-# A: Because understanding how to work with .py files is critical for moving forward/understanding other code you see out in the world.
-# 
-# Q: What does `!cd ~/` do?  
-# A: Takes you to your home directory. If you're already in your home directory...it will leave you where you are.
-# 
-# Q: How do we use the command line directly on our computer, like in our computer's terminal?   
-# A: Search for "terminal" on your computer (if you don't have a terminal application already installed (depends on your computer), you could download a "bash shell". (I use iTerm.)
-# 
-# Q: What is the difference between shell command and command line? Is there a difference?  
-# A: The command line is where you type shell commands. So, when you open up a terminal and get the black background, that is the command line. One thing you can do at the command line is type shell commands.
-# 
-# Q: Is the command line somewhere we are able to write code or is it purely used for locating files, documents, and code that has already been written? A follow-up question if we don't write code in the command line would be where would we write code then? Just in another Jupyter Notebook file that we then retrieve using the command line?  
-# A: In a text editor! (The part of the notes we didn't get to on Wednesday but will discuss today.)
-# 
-# Q: How is array different from other collections (like tuples, lists, dictionaries)?  
-# A: We'll discuss arrays next week when we discuss `numpy`, but for now, arrays can be N-dimensional.
+# - **A4** accepted for full credit until late deadline tonight (11:59 PM)
+# - **E2** take-home due Friday at 11:59 PM
 
 # # Python Party!
 # 
-# It's a bit less of a party while learning remotely...
+# Parties have snacks - come on up and grab snacks! 
 
 # ## Project-based Course
 # 
@@ -78,8 +37,8 @@
 
 # Caveats if you take the final exam:
 # 1. The highest grade you can get in the course is an A (not an A+)
-# 2. There is no additional opportunities for extra credit (Note: if you've been filling out daily participation surveys that EC *will* apply to both exam and project)
-# 3. You have to complete on your own (same rules as previous midterms)
+# 2. There is no additional opportunities for extra credit (Note: if you've been answering ClassQuestin that EC *will* apply to both exam and project)
+# 3. You have to complete on your own (same rules as previous midterms, but it's completely take-home)
 
 # Submit one, *NOT* both (I have lots of grading at the end of the quarter!). If you do both, I will use the lower score.
 
@@ -119,7 +78,7 @@
 # 2. Brainstorm an idea
 # 3. Design what "pieces" (functions/classes/etc.) you need to execute that idea
 # 4. Start writing code + tests
-# 5. Submit on 1) Canvas or 2) datahub
+# 5. Submit on 1) datahub or 2) Canvas
 
 # #### Why template + Canvas?
 # 
@@ -153,7 +112,7 @@
 # - Put your project on GitHub (1%)
 # 
 
-# #### Clicker Question #1
+# #### Class Question #1
 # Do you have an idea of what you want to do for your **project**?
 # 
 # - A) absolutely no idea
@@ -164,8 +123,9 @@
 
 # ### Example Projects: 
 # 
+# * Josh S!
+# * Mingson: https://www.youtube.com/watch?v=ipEj5DtkopA&feature=youtu.be
 # * Previous Examples: https://github.com/COGS18/Projects#projects
-# * Andrew's project video
 
 # ## Python Party!
 # 

@@ -95,13 +95,13 @@ parts:
     - file: materials/ExamPrep/E2_Sp23_Practice
       title: E2-Practice-Answers
 
-  # - caption: Projects
-  #   chapters:
-  #   - file: projects/PythonParty
-  #     title: PythonParty
-  #   - file: projects/overview
-  #     title: Overview
-  #   - file: projects/faq
-  #     title: FAQ
-  #   - file: projects/ProjectIdeas
-  #     title: ProjectIdeas
+  - caption: Projects
+    chapters:
+    - file: projects/PythonParty
+      title: PythonParty
+    - file: projects/overview
+      title: Overview
+    - file: projects/faq
+      title: FAQ
+    - file: projects/ProjectIdeas
+      title: ProjectIdeas
