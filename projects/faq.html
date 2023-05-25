@@ -52,6 +52,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Project Ideas" href="ProjectIdeas.html" />
+    <link rel="prev" title="Final Project" href="overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -253,6 +255,33 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../materials/ExamPrep/E2_Sp23_Practice.html">
    E2-Practice-Answers
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="PythonParty.html">
+   PythonParty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   FAQ
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ProjectIdeas.html">
+   ProjectIdeas
   </a>
  </li>
 </ul>
@@ -807,15 +836,14 @@
             
               <div>
                 
-  <!-- #region -->
-<div class="tex2jax_ignore mathjax_ignore section" id="project-faq">
+  <div class="tex2jax_ignore mathjax_ignore section" id="project-faq">
 <h1>Project FAQ<a class="headerlink" href="#project-faq" title="Permalink to this headline">¶</a></h1>
 <p>This document is meant to answer a number of commonly-asked questions about the COGS 18 final project. We hope you find it helpful as you develop your awesome projects!</p>
 <div class="section" id="file-structure-and-requirements">
 <h2>File Structure and Requirements<a class="headerlink" href="#file-structure-and-requirements" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="do-we-still-need-a-py-file-if-all-our-code-and-functions-are-in-a-jupyter-notebook">
 <h3>Do we still need a .py file if all our code and functions are in a Jupyter notebook?<a class="headerlink" href="#do-we-still-need-a-py-file-if-all-our-code-and-functions-are-in-a-jupyter-notebook" title="Permalink to this headline">¶</a></h3>
-<p>Yes, you need at least one .py file - either a module or a script. It can have both, but that is not required.</p>
+<p>Yes, you need at least one .py file - a module that stores your code. If all of your code is in your notebook, it’s time to reorganize.</p>
 </div>
 <div class="section" id="what-is-the-difference-between-a-script-and-a-module">
 <h3>What is the difference between a script and a module?<a class="headerlink" href="#what-is-the-difference-between-a-script-and-a-module" title="Permalink to this headline">¶</a></h3>
@@ -852,8 +880,6 @@
 <div class="section" id="how-in-what-format-should-the-files-be-submitted">
 <h3>How/in what format should the files be submitted?<a class="headerlink" href="#how-in-what-format-should-the-files-be-submitted" title="Permalink to this headline">¶</a></h3>
 <p>For submitting your final projects, you will either 1) zip up all the files for your project (i.e. Notebook + module directory with tests and functions) and submit the zipped file on Canvas or 2) submit on datahub.</p>
-<hr class="docutils" />
-<!-- #endregion -->
 </div>
 </div>
 <div class="section" id="importing-modules">
@@ -869,7 +895,6 @@
 <a class="reference external" href="https://docs.python.org/3/tutorial/modules.html">https://docs.python.org/3/tutorial/modules.html</a></p>
 </div>
 </div>
-<hr class="docutils" />
 <div class="section" id="citations">
 <h2>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="if-i-went-back-through-my-class-notes-because-i-couldn-t-remember-how-do-x-and-i-found-an-example-of-how-in-the-notes-would-this-require-a-citation">
@@ -885,7 +910,6 @@
 <p>This is fine as long as you cite your sources with a comment and write at least 3 original functions/methods that are not from the Assignment.</p>
 </div>
 </div>
-<hr class="docutils" />
 <div class="section" id="documentation-and-comments">
 <h2>Documentation and Comments<a class="headerlink" href="#documentation-and-comments" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="where-should-i-include-docstrings-and-comments">
@@ -903,7 +927,6 @@
 <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html#documenting-class-instances">https://numpydoc.readthedocs.io/en/latest/format.html#documenting-class-instances</a></p>
 </div>
 </div>
-<hr class="docutils" />
 <div class="section" id="testing">
 <h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="how-many-tests-are-needed-do-we-need-tests-for-only-one-function-or-for-all-of-them-in-the-project">
@@ -928,7 +951,6 @@
 <a class="reference external" href="https://stackoverflow.com/questions/35851323/how-to-test-a-function-with-input-call">https://stackoverflow.com/questions/35851323/how-to-test-a-function-with-input-call</a></p>
 </div>
 </div>
-<hr class="docutils" />
 <div class="section" id="datahub-troubleshooting">
 <h2>DataHub Troubleshooting<a class="headerlink" href="#datahub-troubleshooting" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="my-cells-won-t-run-properly-and-keep-giving-me-asterisks-even-after-restarting-the-kernel-how-can-i-fix-this">
@@ -948,7 +970,6 @@
 </ol>
 </div>
 </div>
-<hr class="docutils" />
 <div class="section" id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="where-is-the-project-submitted">
@@ -960,7 +981,6 @@
 <p>You can submit as many times as you’d like, but the most recent submission is what we’ll grade.</p>
 </div>
 </div>
-<hr class="docutils" />
 <div class="section" id="other-questions">
 <h2>Other Questions<a class="headerlink" href="#other-questions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="how-extensive-or-complex-does-our-code-need-to-be-to-get-a-good-grade">
@@ -974,7 +994,6 @@
 <div class="section" id="how-do-i-specify-extra-credit">
 <h3>How do I specify extra credit?<a class="headerlink" href="#how-do-i-specify-extra-credit" title="Permalink to this headline">¶</a></h3>
 <p>There is an extra credit opportunity on the final project. If you go above and beyond the requirements of the project and/or teach yourself something new in the process of completing the final project, explain this in the final cell of the Jupyter Notebook you turn in. This should include 1) your background in programming prior to this course and 2) a description of how you went above and beyond and/or what you learned in the process of completing the project.</p>
-<hr class="docutils" />
 <p><em>This document was originally written by <a class="reference external" href="https://github.com/SevSoltani">Severine Soltani</a>, an awesome COGS 18 Instructional Assistant. Thanks to Severine for taking the time to draft this to help students going forward!</em></p>
 </div>
 </div>
@@ -1004,7 +1023,21 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="overview.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Final Project</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ProjectIdeas.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Project Ideas</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
