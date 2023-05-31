@@ -262,6 +262,16 @@
    E2-Review-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E2_Sp23_Practice.html">
+   E2-Practice-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E2_COGS18_SP23-Answers.html">
+   E2-Answers
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -650,6 +660,7 @@
 </ul>
 </li>
 </ul>
+<p>Note: I’m not leaving campus today until Exam scores are posted. Exams will be available in lab tomorrow.</p>
 <div class="tex2jax_ignore mathjax_ignore section" id="scientific-computing">
 <h1>Scientific Computing<a class="headerlink" href="#scientific-computing" title="Permalink to this headline">¶</a></h1>
 <div class="alert alert-success">
@@ -785,7 +796,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8902/719623234.py:3: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8912/719623234.py:3: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray.
   np.array([[1, 2, 3, 4], [2, 3, 4]])
 </pre></div>
 </div>
@@ -937,6 +948,19 @@
 </div>
 </div>
 <p>What if you wanted to find the max value in an array…there’s a method for that!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1, 2, 3, 4],
+       [5, 6, 7, 8]])
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># find max value in array</span>
@@ -1112,7 +1136,7 @@ Name: condition, dtype: object
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can index in pandas</span>
 <span class="c1"># loc specifies row, column position</span>
-<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1239,7 +1263,7 @@ Name: 0, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8902/4229836343.py:2: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with &#39;numeric_only=None&#39;) is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_8912/4229836343.py:2: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with &#39;numeric_only=None&#39;) is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
   df.mean()
 </pre></div>
 </div>
@@ -1250,6 +1274,63 @@ dtype: float64
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Subj_ID</th>
+      <th>score</th>
+      <th>group</th>
+      <th>condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>001</td>
+      <td>16</td>
+      <td>2</td>
+      <td>cognition</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>002</td>
+      <td>22</td>
+      <td>1</td>
+      <td>perception</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>003</td>
+      <td>18</td>
+      <td>1</td>
+      <td>perception</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1394,7 +1475,7 @@ Name: condition, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/14-ScientificComputing_68_0.png" src="../_images/14-ScientificComputing_68_0.png" />
+<img alt="../_images/14-ScientificComputing_70_0.png" src="../_images/14-ScientificComputing_70_0.png" />
 </div>
 </div>
 <ul class="simple">
@@ -1436,7 +1517,7 @@ Name: condition, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/14-ScientificComputing_74_0.png" src="../_images/14-ScientificComputing_74_0.png" />
+<img alt="../_images/14-ScientificComputing_76_0.png" src="../_images/14-ScientificComputing_76_0.png" />
 </div>
 </div>
 </div>
@@ -1450,7 +1531,7 @@ Name: condition, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=-11.869096115920003, pvalue=1.9002720615418486e-31)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=-13.288579881318826, pvalue=1.1219693292793239e-38)
 </pre></div>
 </div>
 </div>
