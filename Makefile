@@ -54,6 +54,7 @@ textbook:
 
 	mkdir -p _build/html/assets/intro/exams/
 	cp assets/intro/exams/E1_Sp23_Answers.pdf _build/html/assets/intro/exams
+	cp assets/intro/exams/E2_Sp23_Answers.pdf _build/html/assets/intro/exams
 
 	# copy non-md images to build
 	 mkdir -p _build/html/_images

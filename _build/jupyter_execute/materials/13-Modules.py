@@ -227,7 +227,7 @@ from string import punctuation as punc
 
 # #### Clicker Question Answer
 
-# In[ ]:
+# In[2]:
 
 
 # Check our imports
@@ -235,7 +235,7 @@ from string import punctuation as punc
 # from statistics import mean as average
 # from os import path
 # from random import choice, choices
-# import ascii_letters from string
+import ascii_letters from string
 
 
 # ## Importing Custom Code I
@@ -294,18 +294,26 @@ class MyNumbers():
 # In[ ]:
 
 
+# create remote.py (in same location as notebook)
+# add code
+# import from remote.py
+
+
+# In[3]:
+
+
 # Import some custom code
 from remote import my_remote_function
 
 
-# In[ ]:
+# In[4]:
 
 
 # Investigate our imported function
 get_ipython().run_line_magic('pinfo', 'my_remote_function')
 
 
-# In[ ]:
+# In[5]:
 
 
 # Run our function
@@ -314,14 +322,14 @@ my_remote_function(2, 1)
 
 # ## Importing Custom Code II
 
-# In[ ]:
+# In[6]:
 
 
 # Import a class class from an external module
 from remote import MyNumbers
 
 
-# In[ ]:
+# In[7]:
 
 
 # Define an instance of our custom class
@@ -329,14 +337,14 @@ nums = MyNumbers(2, 3)
 type(nums)
 
 
-# In[ ]:
+# In[8]:
 
 
 # Check 
 nums.add()
 
 
-# In[ ]:
+# In[9]:
 
 
 # Check the definition of the code we imported
@@ -345,39 +353,39 @@ get_ipython().run_line_magic('pinfo2', 'nums.add')
 
 # ## Name Conflicts
 
-# In[ ]:
+# In[10]:
 
 
 from random import choice
 
 
-# In[ ]:
+# In[11]:
 
 
 # choice is currently from random module
 get_ipython().run_line_magic('pinfo', 'choice')
 
 
-# In[ ]:
+# In[13]:
 
 
 choice([1, 2, 3, 4, 5])
 
 
-# In[ ]:
+# In[14]:
 
 
-from remote import choice
+from remote import choice as remote_choice
 
 
-# In[ ]:
+# In[15]:
 
 
 # now it's from my remote module
 get_ipython().run_line_magic('pinfo', 'choice')
 
 
-# In[ ]:
+# In[17]:
 
 
 choice([1, 2, 3, 4, 5])
@@ -396,12 +404,21 @@ choice([1, 2, 3, 4, 5])
 # In[ ]:
 
 
+# avoid this
+from random import *
+# that would allow
+choice([2,3,4])
+
+
+# In[18]:
+
+
 # a valid way to import
 from random import choice
 choice([2,3,4])
 
 
-# In[ ]:
+# In[19]:
 
 
 # a valid way to import
@@ -423,7 +440,7 @@ print("nums value: ", nums.num1, nums.num2)
 print("nums type: ", type(nums))
 
 
-# In[ ]:
+# In[20]:
 
 
 # run the script

@@ -10,6 +10,8 @@
 # - **Final Exam/Final Project** due Tuesday of finals week (6/13; 11:59 PM)
 #     - Final Exam will be released Friday of week 10
 #     - You do NOT have to show up anywhere at any time on the day of the final exam
+#     
+# Note: I'm not leaving campus today until Exam scores are posted. Exams will be available in lab tomorrow.
 
 # # Scientific Computing
 
@@ -143,7 +145,7 @@ np.array([[1, 2, 'cogs18'], [2, 3, 4]])
 arr1 + arr2
 
 
-# In[11]:
+# In[12]:
 
 
 # Matrix mutliplication
@@ -154,7 +156,7 @@ arr1 * arr2
 
 # `zip()` takes two iterables (things you can loop over) and loop over them together.
 
-# In[12]:
+# In[13]:
 
 
 for a, b in zip([1,2], ['a','b']):
@@ -165,7 +167,7 @@ for a, b in zip([1,2], ['a','b']):
 # 
 # Given the following code, what will it print out?
 
-# In[13]:
+# In[14]:
 
 
 data = np.array([[1, 2, 3, 4],
@@ -186,7 +188,7 @@ print(output)
 
 # Note that if you find yourself looping over arrays...there is probably a better way.
 
-# In[14]:
+# In[15]:
 
 
 # sum method
@@ -194,7 +196,7 @@ print(output)
 data.sum()
 
 
-# In[15]:
+# In[16]:
 
 
 # sum method
@@ -203,7 +205,7 @@ data.sum()
 data.sum(axis=0)
 
 
-# In[16]:
+# In[17]:
 
 
 # typecasting to a different variable type
@@ -214,7 +216,13 @@ type(out_list)
 
 # What if you wanted to find the max value in an array...there's a method for that!
 
-# In[17]:
+# In[19]:
+
+
+data
+
+
+# In[18]:
 
 
 # find max value in array
@@ -226,14 +234,14 @@ max_val
 # 
 # There are also *functions* in `numpy` that operate on arrays. 
 
-# In[18]:
+# In[20]:
 
 
 # see documentation for np.where()
 get_ipython().run_line_magic('pinfo', 'np.where')
 
 
-# In[19]:
+# In[21]:
 
 
 # find position in array with max value
@@ -241,7 +249,7 @@ out = np.where(data == max_val)
 out
 
 
-# In[20]:
+# In[22]:
 
 
 # check to be sure
@@ -264,13 +272,13 @@ data[1,3]
 # - associated methods and utilities for working with data.
 # - each column contains a `pandas` **Series**
 
-# In[21]:
+# In[23]:
 
 
 import pandas as pd
 
 
-# In[22]:
+# In[24]:
 
 
 # Create some example heterogenous data
@@ -279,21 +287,21 @@ d2 = {'Subj_ID': '002', 'score': 22, 'group' : 1, 'condition': 'perception'}
 d3 = {'Subj_ID': '003', 'score': 18, 'group' : 1, 'condition': 'perception'}
 
 
-# In[23]:
+# In[25]:
 
 
 # Create a dataframe 
 df = pd.DataFrame([d1, d2, d3], [0, 1, 2])
 
 
-# In[24]:
+# In[26]:
 
 
 # Check out the dataframe
 df
 
 
-# In[25]:
+# In[27]:
 
 
 # You can index in pandas
@@ -301,15 +309,15 @@ df
 df['condition']
 
 
-# In[26]:
+# In[39]:
 
 
 # You can index in pandas
 # loc specifies row, column position
-df.loc[0,:]
+df.loc[0]
 
 
-# In[27]:
+# In[29]:
 
 
 # attribute of df object
@@ -317,7 +325,7 @@ df.loc[0,:]
 df.shape
 
 
-# In[28]:
+# In[30]:
 
 
 # how many rows there are in a series/df
@@ -328,21 +336,27 @@ df.shape[0] # len(df) would also work
 # 
 # There are *a lot* of functions and methods within `pandas`. The general syntax is `df.method()` where the `method()` operates directly on the dataframe `df`.
 
-# In[29]:
+# In[40]:
 
 
 # calculate summary statistics
 df.describe()
 
 
-# In[30]:
+# In[43]:
 
 
 # Take the average of all numeric columns
 df.mean()
 
 
-# In[31]:
+# In[44]:
+
+
+df
+
+
+# In[45]:
 
 
 # edit values within a column and replace original values
@@ -350,7 +364,7 @@ df['Subj_ID'] = df['Subj_ID'].replace('00', '000', regex=True)
 df['Subj_ID']
 
 
-# In[32]:
+# In[46]:
 
 
 # specify the type of a variable in a column
@@ -358,7 +372,7 @@ df['score'] = df['score'].astype(float)
 df['score']
 
 
-# In[33]:
+# In[47]:
 
 
 # breakdown of how many of each category there are
@@ -366,28 +380,28 @@ val_counts = df['condition'].value_counts()
 val_counts
 
 
-# In[34]:
+# In[48]:
 
 
 # which unique values are there in condition? 
 df['condition'].unique()
 
 
-# In[35]:
+# In[49]:
 
 
 # how many unique values are there
 df['condition'].nunique()
 
 
-# In[36]:
+# In[50]:
 
 
 # what's the category that shows up the most 
 val_counts.idxmax()
 
 
-# In[37]:
+# In[51]:
 
 
 # what's the count of the value that shows up the most
@@ -406,7 +420,7 @@ val_counts.max()
 
 # ## Plotting
 
-# In[38]:
+# In[52]:
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -414,14 +428,14 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 
 
-# In[39]:
+# In[53]:
 
 
 # Create some data
 dat = np.array([1, 2, 4, 8, 16, 32])
 
 
-# In[40]:
+# In[54]:
 
 
 # Plot the data
@@ -436,14 +450,14 @@ plt.plot(dat);
 # - `scipy` - statistical analysis
 # - `sklearn` - machine learning
 
-# In[41]:
+# In[55]:
 
 
 import scipy as sp
 from scipy import stats
 
 
-# In[42]:
+# In[56]:
 
 
 # Simulate some data
@@ -453,7 +467,7 @@ d2 = stats.norm.rvs(loc=0.5, size=1000)
 
 # ### Analysis - Plotting the Data
 
-# In[43]:
+# In[57]:
 
 
 # Plot the data
@@ -463,7 +477,7 @@ plt.hist(d2, 25, alpha=0.6);
 
 # ### Analysis - Statistical Comparisons
 
-# In[44]:
+# In[58]:
 
 
 # Statistically compare the two distributions
