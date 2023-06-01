@@ -41,10 +41,10 @@ parts:
       title: 13-Modules
     - file: materials/14-ScientificComputing
       title: 14-ScientificComputing   
-  #   - file: materials/16-Documentation
-  #     title: 16-Documentation
-  #   - file: materials/17-CodeTesting
-  #     title: 17-CodeTesting
+    - file: materials/15-Documentation
+      title: 15-Documentation
+    - file: materials/16-CodeTesting
+      title: 16-CodeTesting
   #   - file: materials/18-CodeProjects
   #     title: 18-CodeProjects
   # #   - file: materials/21-AdvancedPython
