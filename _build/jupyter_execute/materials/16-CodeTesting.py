@@ -21,7 +21,7 @@
 # 
 # Given the following code, which assert will fail?
 
-# In[ ]:
+# In[2]:
 
 
 def extend(input_arg):
@@ -31,10 +31,39 @@ def extend(input_arg):
     return output
 
 
-# In[ ]:
+# In[1]:
+
+
+get_ipython().run_line_magic('pinfo', 'list.copy')
+
+
+# In[7]:
+
+
+assert type(extend([1, 2])) == list
+
+
+# In[14]:
+
+
+extend((1, 2))
+
+
+# In[13]:
+
+
+extend((1, 2)) == (1, 2, 1, 2)
+
+
+# In[11]:
 
 
 # test here
+assert type(extend([1, 2])) == list
+assert extend([1, 2]) == [1, 2, 1, 2]
+# assert extend((1, 2)) == (1, 2, 1, 2)
+assert extend(['a', 'b', 'c']) == ['a', 'b', 'c', 'a', 'b', 'c']
+assert extend([]) == []
 
 
 # - A) `assert type(extend([1, 2])) == list`
@@ -102,7 +131,7 @@ assert extend([]) == []
 
 # #### Unit Tests
 # 
-# - one test for each "piece" of your code (each function, each class, each module, etc)
+# - one test for each "piece" of your code (each function, each class, each method, etc)
 # - passes silently if true
 # - error if it fails
 # - consider "edge cases"

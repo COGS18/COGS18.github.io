@@ -6,6 +6,8 @@
 # - **CL9** due *next* Wednesday (testing, documenting, refactoring)
 # - **A5** due *next* Friday
 # - **Final Exam/Final Project** due Tuesday of finals week (6/13; 11:59 PM)
+# 
+# Note: Error in CL7 grading was fixed just before class.
 
 # **Exam Discussion**
 # 
@@ -37,7 +39,7 @@
 
 # ## The Zen of Python
 
-# In[ ]:
+# In[1]:
 
 
 import this
@@ -73,7 +75,7 @@ import this
 # 
 # What does the following code do?
 
-# In[ ]:
+# In[2]:
 
 
 def ff(jj):
@@ -94,11 +96,11 @@ ff('Hello World.')
 # - Improved naming: functions & variables
 # - Add Comments within code
 
-# In[ ]:
+# In[3]:
 
 
 def return_unicode(input_list):
-    string = list()
+    string = list() #[]
     input_list = list(input_list)
       
     for character in input_list: 
@@ -227,7 +229,7 @@ def convert_to_unicode(input_string):
 # In[ ]:
 
 
-my_long_list = [1, 2, 3, 4, 5, 
+my_long_list = [1, 2, 3, 4, 5,
                 6, 7, 8, 9, 10]
 
 
@@ -242,14 +244,14 @@ my_string = 'Python is ' +             'a pretty great language.'
 # 
 # - While you *can* condense multiple statements into one line, you usually shouldn't.
 
-# In[ ]:
+# In[4]:
 
 
 # Badness
 for i in [1, 2, 3]: print(i**2 + i%2)
 
 
-# In[ ]:
+# In[5]:
 
 
 # Goodness
@@ -272,13 +274,12 @@ from numpy import *
 import os, sys
 
 
-# In[ ]:
+# In[6]:
 
 
 # Goodness
 import os
 import sys
-
 import numpy as np
 
 
@@ -357,7 +358,7 @@ for element in list_of_elements:
 # - are indented to the same level as that code. 
 # - Each line of a block comment starts with a # and a single space
 
-# In[ ]:
+# In[7]:
 
 
 # Badness
@@ -372,7 +373,7 @@ def week_9():
 week_9()
 
 
-# In[ ]:
+# In[10]:
 
 
 # Goodness
@@ -398,14 +399,14 @@ week_9()
 # - to be separated by at least two spaces from the statement
 # - start with a # and a single space
 
-# In[ ]:
+# In[11]:
 
 
 # Badness
 week_9()#words of encouragement
 
 
-# In[ ]:
+# In[12]:
 
 
 # Goodness
@@ -423,7 +424,7 @@ week_9()  # words of encouragement
 
 # ### Example Docstring
 
-# In[ ]:
+# In[14]:
 
 
 def add(num1, num2):
@@ -459,13 +460,13 @@ def add(num1, num2):
 
 # ### Docstrings are available through the code
 
-# In[ ]:
+# In[15]:
 
 
 get_ipython().run_line_magic('pinfo', 'add')
 
 
-# In[ ]:
+# In[16]:
 
 
 # The `help` function prints out the `docstring` 
@@ -475,7 +476,7 @@ help(add)
 
 # #### `__doc__`
 
-# In[ ]:
+# In[17]:
 
 
 # Docstrings get stored as the `__doc__` attribute
@@ -535,7 +536,7 @@ print(add.__doc__)
 # A linter is a tool that analyzes code for both programmatic errors and stylistic issues. 
 # </div>
 
-# `pylint` is available from Anaconda to check this for you. (Not available on datahub.)
+# `pylint` is available from Anaconda to check this for you. (also available on datahub.)
 # 
 # 
 # ```python
@@ -569,12 +570,29 @@ def MyFunction(input_num):
 # - E) 7 or more
 
 # ### list here
-# 
+# - capitalization in function name; should be snake case
+# - conditional in line 4; should be on multiple lines
+# - line 9 : no space around the operator
+# - no blank line between sections of code 
+# - line 6 ; incorrect indentation
 
 # In[ ]:
 
 
 # Let's fix this code
+def my_function(input_num):
+
+    my_list = [0,1,2,3]
+
+    if 1 in my_list: 
+        ind = 1
+    else:
+      ind = 0
+
+    output_list = []
+    for i in my_list [ind:]:
+        output_list.append(input_num/i)
+    return output_list
 
 
 # In[ ]:
@@ -602,7 +620,7 @@ get_ipython().system('pylint linter_example.py')
 # - `<MINOR>` - increase by 1 w/ added functionality in a backwards-compatible manner
 # - `<MAINTENANCE>` - (aka patch) increase by 1 w/  backwards-compatible bug fixes.
 
-# In[ ]:
+# In[18]:
 
 
 # see version information
@@ -612,7 +630,7 @@ pd.__version__
 
 # In Python package development... when `<MAJOR>` == 0, suggests a package in development
 
-# In[ ]:
+# In[19]:
 
 
 # see version information
