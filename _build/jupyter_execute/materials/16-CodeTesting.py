@@ -1,6 +1,19 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# **Course Announcements**
+# 
+# - **CL9** due Wednesday (testing, documenting, refactoring)
+# - **A5** due Friday
+# - **Final Exam/Final Project** due Tuesday of finals week (6/13; 11:59 PM)
+#     - Practice Final Available on datahub
+# - Please complete your CAPEs!
+
+# - Discuss getting template on datahub
+#     - files that will be included in submission
+# - Talk about what Canvas will show if you submit on datahub
+# - review importing from a module vs running scripts (CL8 issues; lol @ car.py)
+
 # # Code Testing
 # 
 # - smoke tests
@@ -72,7 +85,7 @@ assert extend([]) == []
 # - D) `assert extend(['a', 'b', 'c']) == ['a', 'b', 'c', 'a', 'b', 'c']`
 # - E) `assert extend([]) == []`
 
-# ### Clicker Question - Asserts
+# ### Class Question - Asserts
 
 # In[ ]:
 
@@ -372,13 +385,13 @@ def get_input():
     return msg, out_msg
 
 
-# In[2]:
+# In[ ]:
 
 
 get_input()
 
 
-# In[3]:
+# In[ ]:
 
 
 import mock

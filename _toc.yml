@@ -45,8 +45,8 @@ parts:
       title: 15-Documentation
     - file: materials/16-CodeTesting
       title: 16-CodeTesting
-  #   - file: materials/18-CodeProjects
-  #     title: 18-CodeProjects
+    - file: materials/17-CodeProjects
+      title: 17-CodeProjects
   # #   - file: materials/21-AdvancedPython
   # #     title: 21-AdvancedPython
   #   - file: materials/19-WraspUp
