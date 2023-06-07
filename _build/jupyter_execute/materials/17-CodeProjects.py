@@ -93,24 +93,24 @@
 
 # ### Adding Unit Tests
 
-# In[1]:
+# In[ ]:
 
 
 def test_atbash_encrypt():
     assert callable(atbash_encrypt)
-    assert isinstance(atbash_encrypt('hello'), str)
+    assert type(atbash_encrypt('hello')) == str
     assert atbash_encrypt('HELLO') == 'SVOOL'
     assert atbash_encrypt('hello') == 'SVOOL'
     
 def test_atbash_decrypt():
     assert callable(atbash_decrypt)
-    assert isinstance(atbash_decrypt('hello'), str)
+    assert type(atbash_decrypt('hello')) == str
     assert atbash_decrypt('SVOOL') == 'HELLO'
     assert atbash_decrypt('svool') == 'HELLO'
 
 def test_atbash_wrapper():
     assert callable(atbash_wrapper)
-    assert isinstance(atbash_wrapper('hello', method='encrypt'), str)
+    assert type(atbash_wrapper('hello', method='encrypt')) == str
     assert atbash_wrapper('hello', method='encrypt') == 'SVOOL'
     assert atbash_wrapper('HELLO', method='encrypt') == 'SVOOL'
     assert atbash_wrapper('SVOOL', method='decrypt') == 'HELLO'
@@ -126,7 +126,7 @@ def test_atbash_wrapper():
 
 # #### `atbash_encrypt`
 
-# In[2]:
+# In[1]:
 
 
 def atbash_encrypt(input_string):
@@ -147,7 +147,7 @@ def atbash_encrypt(input_string):
     return atbash_string
 
 
-# In[3]:
+# In[ ]:
 
 
 # smoke test
@@ -160,32 +160,37 @@ atbash_encrypt('Hello')
 
 # Note on `imports`: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top. This applies to test files as well.
 
-# In[ ]:
+# In[3]:
 
 
-get_ipython().system('pytest test_atbash.py')
+get_ipython().system('pytest test_functions.py')
 
 
 # #### `atbash_decrypt`
 
-# In[5]:
+# In[4]:
 
 
 # reminder: consider code style! 
 def atbash_decrypt(atbash_string):    
-    ALPHA='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    REVERSEALPHA='ZYXWVUTSRQPONMLKJIHGFEDCBA'
-    atbash_string=atbash_string.upper()
-    decrypted_string=''
-    for l in atbash_string:
-        if l in REVERSEALPHA:
-            letterindex=REVERSEALPHA.find(l)
-            decrypted_string=decrypted_string+ALPHA [letterindex]
-        else: decrypted_string=decrypted_string+l
+    
+    alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    reverse_alpha = 'ZYXWVUTSRQPONMLKJIHGFEDCBA'
+    
+    atbash_string = atbash_string.upper()
+    decrypted_string = ''
+    
+    for ltr in atbash_string:
+        if ltr in reverse_alpha:
+            letterindex = reverse_alpha.find(ltr)
+            decrypted_string = decrypted_string + alpha[letterindex]
+        else: 
+            decrypted_string = decrypted_string + ltr
+    
     return decrypted_string
 
 
-# In[6]:
+# In[5]:
 
 
 # smoke test
@@ -200,7 +205,7 @@ get_ipython().system('pytest test_atbash.py')
 
 # #### `atbash_wrapper`
 
-# In[7]:
+# In[6]:
 
 
 def atbash_wrapper(input_string, method='encrypt'):
@@ -215,7 +220,7 @@ def atbash_wrapper(input_string, method='encrypt'):
     return output_string
 
 
-# In[8]:
+# In[7]:
 
 
 # smoke test
@@ -236,28 +241,34 @@ get_ipython().system('pytest test_atbash.py')
 
 # ### Putting it all together
 
-# In[ ]:
+# In[1]:
 
 
 from atbash import atbash_wrapper
 
 
-# In[ ]:
+# In[2]:
 
 
 atbash_wrapper('hello')
 
 
-# In[ ]:
+# In[3]:
 
 
 atbash_wrapper('svool', method='decrypt')
 
 
-# In[ ]:
+# In[4]:
 
 
 atbash_wrapper('hello', method='blargh')
+
+
+# In[ ]:
+
+
+get_ipython().system('pytest')
 
 
 # ### Refactoring
@@ -276,7 +287,7 @@ atbash_wrapper('hello', method='blargh')
 
 # #### Refactoring Example: Chatbot
 
-# In[9]:
+# In[ ]:
 
 
 import random 
@@ -333,7 +344,7 @@ have_a_chat()
 # 
 # That's four different things! Functions should do a single thing...
 
-# In[10]:
+# In[ ]:
 
 
 def get_input():
@@ -345,7 +356,7 @@ def get_input():
     return msg, out_msg
 
 
-# In[11]:
+# In[ ]:
 
 
 def is_question(input_string):
@@ -359,7 +370,7 @@ def is_question(input_string):
     return output
 
 
-# In[12]:
+# In[ ]:
 
 
 def end_chat(input_list):
@@ -375,7 +386,7 @@ def end_chat(input_list):
     return output, chat
 
 
-# In[13]:
+# In[ ]:
 
 
 def return_message(out_msg, question):
@@ -393,7 +404,7 @@ def return_message(out_msg, question):
     return out_msg
 
 
-# In[14]:
+# In[ ]:
 
 
 def have_a_chat():

@@ -185,10 +185,10 @@ assert extend([]) == []
 # 
 # What function should do: add two inputs together
 
-# In[ ]:
+# In[20]:
 
 
-# import math
+import math
 
 def test_add():
     """Tests for the `add` function."""
@@ -200,21 +200,27 @@ def test_add():
     assert add(-2, -2) == -4
     
     # Test adding floats
-    assert add(2.7, 1.2) == 3.9
-    # assert math.isclose(add(2.7, 1.2), 3.9)
+#     assert add(2.7, 1.2) == 3.9
+    assert math.isclose(add(2.7, 1.2), 3.9)
     
     # Test adding with 0
     assert add(2, 0) == 2
 
 
-# In[ ]:
+# In[17]:
 
 
 def add(num1, num2):
     return num1 + num2
 
 
-# In[ ]:
+# In[19]:
+
+
+add(2.7, 1.2)
+
+
+# In[21]:
 
 
 # Run our test function
@@ -230,28 +236,57 @@ test_add()
 # - C) I'm lost/don't understand what we're supposed to be doing.
 
 # Brainstorm here...
+# - output doesn't contain any punctuation
+# - output should be a string 
+# - output is shorter than or the the same length as the input
 
 # In[ ]:
 
 
-# assert statements here
+# assert statements here 
+test_input = 'hello!@'
+assert type(remove_punctuation(test_input)) == str
+assert remove_punctuation(test_input) == 'hello'
+assert len(remove_punctuation(test_input)) <= len(test_input)
 
 
-# In[ ]:
+# In[22]:
 
 
 # test function here
+def test_remove_punctuation():
+    test_input = 'hello!@'
+    assert type(remove_punctuation(input_string=test_input)) == str
+    assert remove_punctuation(test_input) == 'hello'
+    assert len(remove_punctuation(test_input)) <= len(test_input)
 
 
-# In[ ]:
+# In[26]:
+
+
+test_remove_punctuation()
+
+
+# In[25]:
 
 
 # function here
+from string import punctuation
+
+def remove_punctuation(input_string):
+    output_string = ''
+    for ltr in input_string:
+        if ltr in punctuation:
+            continue
+        else:
+            output_string = output_string + ltr
+    
+    return output_string
 
 
 # #### Class Question #3
 
-# In[ ]:
+# In[27]:
 
 
 # Given the following function:
@@ -264,7 +299,7 @@ def divide_list(in_list):
     return output
 
 
-# In[ ]:
+# In[28]:
 
 
 # And the following test function:
@@ -273,7 +308,7 @@ def test_divide_list():
     assert divide_list([1, 2, 4]) == [2, 2]
 
 
-# In[ ]:
+# In[29]:
 
 
 test_divide_list()
@@ -284,7 +319,7 @@ test_divide_list()
 # - C) These tests will fail, but they cover the needed cases
 # - D) These tests will fail, and we should also have more tests
 
-# In[ ]:
+# In[30]:
 
 
 divide_list((0,2,3))
@@ -312,7 +347,7 @@ divide_list((0,2,3))
 # 
 # Write a test function that checks the following piece of code:
 
-# In[ ]:
+# In[31]:
 
 
 def sum_list(input_list):
@@ -326,10 +361,6 @@ def sum_list(input_list):
     return output
 
 
-# - A) I did it!
-# - B) I think I did it!
-# - C) I'm lost.
-
 # Thought process:
 # 1. Define test function `def test_...`
 # 2. make `assert`ion within the test function
@@ -337,13 +368,17 @@ def sum_list(input_list):
 #     - check the output is expected output / expected type
 #     - check that function sums the list (which was our expectation)
 
-# In[ ]:
+# In[34]:
 
 
 ### YOUR TEST
+def test_sum_list():
+    assert callable(sum_list)
+    assert type(sum_list([1,2])) == int
+    assert sum_list([1, 2, 3]) == 6
 
 
-# In[ ]:
+# In[35]:
 
 
 test_sum_list()
@@ -365,7 +400,7 @@ test_sum_list()
 
 # ## Testing Code: when `input()` is used
 
-# In[1]:
+# In[37]:
 
 
 def get_input():
@@ -385,13 +420,13 @@ def get_input():
     return msg, out_msg
 
 
-# In[ ]:
+# In[38]:
 
 
 get_input()
 
 
-# In[ ]:
+# In[39]:
 
 
 import mock
@@ -407,7 +442,7 @@ def test_get_input():
         assert out_msg == None
 
 
-# In[4]:
+# In[40]:
 
 
 test_get_input()

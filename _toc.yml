@@ -98,6 +98,8 @@ parts:
       title: E2-Practice-Answers
     - file: materials/ExamPrep/E2_COGS18_SP23-Answers
       title: E2-Answers
+    - file: materials/ExamPrep/PracticeFinal/Pratice_Final_Sp23
+      title: Practice-Final-Answers
 
   - caption: Projects
     chapters:
