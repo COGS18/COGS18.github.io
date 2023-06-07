@@ -292,6 +292,11 @@
    E2-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/PracticeFinal/Pratice_Final_Sp23.html">
+   Practice-Final-Answers
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -989,7 +994,7 @@ Code tests are code that run and check other code, to make sure it does what it 
 <p>What function should do: add two inputs together</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import math</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">test_add</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Tests for the `add` function.&quot;&quot;&quot;</span>
@@ -1001,8 +1006,8 @@ Code tests are code that run and check other code, to make sure it does what it 
     <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">4</span>
     
     <span class="c1"># Test adding floats</span>
-    <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">3.9</span>
-    <span class="c1"># assert math.isclose(add(2.7, 1.2), 3.9)</span>
+<span class="c1">#     assert add(2.7, 1.2) == 3.9</span>
+    <span class="k">assert</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">),</span> <span class="mf">3.9</span><span class="p">)</span>
     
     <span class="c1"># Test adding with 0</span>
     <span class="k">assert</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
@@ -1014,6 +1019,18 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add</span><span class="p">(</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.9000000000000004
 </pre></div>
 </div>
 </div>
@@ -1035,9 +1052,18 @@ Code tests are code that run and check other code, to make sure it does what it 
 <li><p>C) I’m lost/don’t understand what we’re supposed to be doing.</p></li>
 </ul>
 <p>Brainstorm here…</p>
+<ul class="simple">
+<li><p>output doesn’t contain any punctuation</p></li>
+<li><p>output should be a string</p></li>
+<li><p>output is shorter than or the the same length as the input</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># assert statements here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># assert statements here </span>
+<span class="n">test_input</span> <span class="o">=</span> <span class="s1">&#39;hello!@&#39;</span>
+<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="n">test_input</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
+<span class="k">assert</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="n">test_input</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;hello&#39;</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="n">test_input</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_input</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1045,6 +1071,18 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test function here</span>
+<span class="k">def</span> <span class="nf">test_remove_punctuation</span><span class="p">():</span>
+    <span class="n">test_input</span> <span class="o">=</span> <span class="s1">&#39;hello!@&#39;</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="n">input_string</span><span class="o">=</span><span class="n">test_input</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
+    <span class="k">assert</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="n">test_input</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;hello&#39;</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">(</span><span class="n">test_input</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_input</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_remove_punctuation</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1052,6 +1090,17 @@ Code tests are code that run and check other code, to make sure it does what it 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># function here</span>
+<span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span>
+
+<span class="k">def</span> <span class="nf">remove_punctuation</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="n">output_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">ltr</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ltr</span> <span class="ow">in</span> <span class="n">punctuation</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output_string</span> <span class="o">=</span> <span class="n">output_string</span> <span class="o">+</span> <span class="n">ltr</span>
+    
+    <span class="k">return</span> <span class="n">output_string</span>
 </pre></div>
 </div>
 </div>
@@ -1102,6 +1151,23 @@ Code tests are code that run and check other code, to make sure it does what it 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">jp</span><span class="o">/</span><span class="n">hdbfltdj035719571j9wynwm0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_16657</span><span class="o">/</span><span class="mf">495240341.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">divide_list</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="nn">/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_16657/1156140063.py</span> in <span class="ni">divide_list</span><span class="nt">(in_list)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="k">for</span> <span class="n">el1</span><span class="p">,</span> <span class="n">el2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">in_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">in_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+<span class="ne">----&gt; </span><span class="mi">6</span>         <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el1</span> <span class="o">/</span> <span class="n">el2</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="k">return</span> <span class="n">output</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1140,11 +1206,6 @@ In software development, <b>test-driven development</b> is an approach in which 
 </div>
 </div>
 </div>
-<ul class="simple">
-<li><p>A) I did it!</p></li>
-<li><p>B) I think I did it!</p></li>
-<li><p>C) I’m lost.</p></li>
-</ul>
 <p>Thought process:</p>
 <ol class="simple">
 <li><p>Define test function <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">test_...</span></code></p></li>
@@ -1159,6 +1220,10 @@ In software development, <b>test-driven development</b> is an approach in which 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### YOUR TEST</span>
+<span class="k">def</span> <span class="nf">test_sum_list</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">sum_list</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]))</span> <span class="o">==</span> <span class="nb">int</span>
+    <span class="k">assert</span> <span class="n">sum_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="mi">6</span>
 </pre></div>
 </div>
 </div>
@@ -1213,6 +1278,14 @@ In software development, <b>test-driven development</b> is an approach in which 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">get_input</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INPUT :	good morning
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;good morning&#39;, None)
 </pre></div>
 </div>
 </div>

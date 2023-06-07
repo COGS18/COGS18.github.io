@@ -292,6 +292,11 @@
    E2-Answers
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/PracticeFinal/Pratice_Final_Sp23.html">
+   Practice-Final-Answers
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -855,19 +860,19 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_atbash_encrypt</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
     <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_encrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     
 <span class="k">def</span> <span class="nf">test_atbash_decrypt</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
     <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_decrypt</span><span class="p">(</span><span class="s1">&#39;svool&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
 
 <span class="k">def</span> <span class="nf">test_atbash_wrapper</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">callable</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">str</span>
     <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;encrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;SVOOL&#39;</span>
     <span class="k">assert</span> <span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;SVOOL&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;decrypt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;HELLO&#39;</span>
@@ -929,7 +934,21 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <p>Note on <code class="docutils literal notranslate"><span class="pre">imports</span></code>: If you want to be able to use modules (imports) within a module/script, be sure to import it at the top. This applies to test files as well.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_atbash.py
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest test_functions.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.9.7, pytest-6.2.4, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-COGS18
+plugins: anyio-2.2.0
+<span class=" -Color -Color-Bold">collecting ... </span>
+<span class=" -Color -Color-Bold">collected 0 items                                                              </span>
+
+<span class=" -Color -Color-Yellow">============================ no tests ran in 0.01s =============================</span>
+<span class=" -Color -Color-Red">ERROR: file or directory not found: test_functions.py</span>
+
 </pre></div>
 </div>
 </div>
@@ -940,15 +959,20 @@ Rapid prototyping is an approach for developing things in which you work on mini
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># reminder: consider code style! </span>
 <span class="k">def</span> <span class="nf">atbash_decrypt</span><span class="p">(</span><span class="n">atbash_string</span><span class="p">):</span>    
-    <span class="n">ALPHA</span><span class="o">=</span><span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
-    <span class="n">REVERSEALPHA</span><span class="o">=</span><span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
-    <span class="n">atbash_string</span><span class="o">=</span><span class="n">atbash_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-    <span class="n">decrypted_string</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">atbash_string</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">REVERSEALPHA</span><span class="p">:</span>
-            <span class="n">letterindex</span><span class="o">=</span><span class="n">REVERSEALPHA</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
-            <span class="n">decrypted_string</span><span class="o">=</span><span class="n">decrypted_string</span><span class="o">+</span><span class="n">ALPHA</span> <span class="p">[</span><span class="n">letterindex</span><span class="p">]</span>
-        <span class="k">else</span><span class="p">:</span> <span class="n">decrypted_string</span><span class="o">=</span><span class="n">decrypted_string</span><span class="o">+</span><span class="n">l</span>
+    
+    <span class="n">alpha</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+    <span class="n">reverse_alpha</span> <span class="o">=</span> <span class="s1">&#39;ZYXWVUTSRQPONMLKJIHGFEDCBA&#39;</span>
+    
+    <span class="n">atbash_string</span> <span class="o">=</span> <span class="n">atbash_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="n">decrypted_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    
+    <span class="k">for</span> <span class="n">ltr</span> <span class="ow">in</span> <span class="n">atbash_string</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ltr</span> <span class="ow">in</span> <span class="n">reverse_alpha</span><span class="p">:</span>
+            <span class="n">letterindex</span> <span class="o">=</span> <span class="n">reverse_alpha</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">ltr</span><span class="p">)</span>
+            <span class="n">decrypted_string</span> <span class="o">=</span> <span class="n">decrypted_string</span> <span class="o">+</span> <span class="n">alpha</span><span class="p">[</span><span class="n">letterindex</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">decrypted_string</span> <span class="o">=</span> <span class="n">decrypted_string</span> <span class="o">+</span> <span class="n">ltr</span>
+    
     <span class="k">return</span> <span class="n">decrypted_string</span>
 </pre></div>
 </div>
@@ -1041,6 +1065,11 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;SVOOL&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1048,10 +1077,27 @@ Rapid prototyping is an approach for developing things in which you work on mini
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;HELLO&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atbash_wrapper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;blargh&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;method should be either &#39;decrypt&#39; or &#39;encrypt&#39;&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pytest
 </pre></div>
 </div>
 </div>
