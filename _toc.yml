@@ -49,8 +49,8 @@ parts:
       title: 17-CodeProjects
   # #   - file: materials/21-AdvancedPython
   # #     title: 21-AdvancedPython
-  #   - file: materials/19-WraspUp
-  #     title: 19-WrapUp
+    - file: materials/18-WrapUp
+      title: 18-WrapUp
   #   - file: materials/A1-CodeStyle
   #     title: A1-CodeStyle
   #   - file: materials/A2-Syntax
@@ -75,8 +75,8 @@ parts:
       title: CL7-CommandLine
     - file: materials/CL-Answers/CL8-ScientificComputing
       title: CL8-ScientificComputing
-    # - file: materials/CL-Answers/CL9-Testing
-    #   title: CL9-Testing
+    - file: materials/CL-Answers/CL9-Testing
+      title: CL9-Testing
 
   - caption: Exam Prep
     chapters:
