@@ -1,0 +1,1205 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wrap Up &#8212; COGS 18 - Introduction To Python</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Coding Lab 1: Tech Setup &amp; Tooling" href="CL-Answers/CL1-Tooling.html" />
+    <link rel="prev" title="Code Projects" href="17-CodeProjects.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">COGS 18 - Introduction To Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course Info
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/syllabus.html">
+   SYLLABUS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/labs/overview.html">
+   CODING LABS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assets/intro/assignments/overview.html">
+   ASSIGNMENTS
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-Introduction.html">
+   01-Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-Tooling.html">
+   02-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Variables.html">
+   03-Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Operators.html">
+   04-Operators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Functions.html">
+   05-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Debugging.html">
+   08-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-Loops.html">
+   09-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Methods.html">
+   10-Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-Classes.html">
+   11-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-CommandLine.html">
+   12-CommandLine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13-Modules.html">
+   13-Modules
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="14-ScientificComputing.html">
+   14-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15-Documentation.html">
+   15-Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16-CodeTesting.html">
+   16-CodeTesting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="17-CodeProjects.html">
+   17-CodeProjects
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   18-WrapUp
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Coding Labs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL1-Tooling.html">
+   CL1-Tooling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL2-ProgrammingI.html">
+   CL2-ProgrammingI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL3-ProgrammingII.html">
+   CL3-ProgrammingII
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL4-Collections.html">
+   CL4-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL5-Loops.html">
+   CL5-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL6-Classes.html">
+   CL6-Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL8-ScientificComputing.html">
+   CL8-ScientificComputing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CL-Answers/CL9-Testing.html">
+   CL9-Testing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Exam Prep
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1-Review.html">
+   E1-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1-Review-Answers.html">
+   E1-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1_Sp23_Practice.html">
+   E1-Practice-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E1_COGS18_SP23-Answers.html">
+   E1-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E2-Review.html">
+   E2-Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E2-Review-Answers.html">
+   E2-Review-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E2_Sp23_Practice.html">
+   E2-Practice-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/E2_COGS18_SP23-Answers.html">
+   E2-Answers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ExamPrep/PracticeFinal/Pratice_Final_Sp23.html">
+   Practice-Final-Answers
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/PythonParty.html">
+   PythonParty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/faq.html">
+   FAQ
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/ProjectIdeas.html">
+   ProjectIdeas
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/materials/18-WrapUp.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/COGS18/COGS18.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/18-WrapUp.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/18-WrapUp.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https://github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/18-WrapUp.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/18-WrapUp.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-extra-python">
+   Some (extra) Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#string-formatting">
+   String Formatting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sets">
+   Sets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#collections">
+   Collections
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#args-kwargs">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     args
+    </span>
+   </code>
+   &amp;
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     kwargs
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#args">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       *args
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kwargs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       **kwargs
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-comprehensions">
+   List Comprehensions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regular-expressions">
+   Regular Expressions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lambda-functions">
+   Lambda Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#map">
+   map
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-goal">
+   The Goal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-we-ve-been">
+   Where We’ve Been:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-1">
+     Class Question #1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-2">
+     Class Question #2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-continue-with-coding">
+   How to Continue with Coding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#powered-by-python">
+   Powered by Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-do-you-go-from-here">
+   Where do you go from here
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgments">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Wrap Up</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-extra-python">
+   Some (extra) Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#string-formatting">
+   String Formatting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sets">
+   Sets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#collections">
+   Collections
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#args-kwargs">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     args
+    </span>
+   </code>
+   &amp;
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     kwargs
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#args">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       *args
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kwargs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       **kwargs
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-comprehensions">
+   List Comprehensions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regular-expressions">
+   Regular Expressions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lambda-functions">
+   Lambda Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#map">
+   map
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-goal">
+   The Goal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-we-ve-been">
+   Where We’ve Been:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-1">
+     Class Question #1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-question-2">
+     Class Question #2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-continue-with-coding">
+   How to Continue with Coding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#powered-by-python">
+   Powered by Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-do-you-go-from-here">
+   Where do you go from here
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgments">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <p><strong>Course Announcements</strong></p>
+<ul class="simple">
+<li><p><strong>A5</strong> due Friday</p></li>
+<li><p><strong>Final Exam/Final Project</strong> due Tuesday of finals week (6/13; 11:59 PM)</p>
+<ul>
+<li><p>Practice Final Available on datahub (answer key available)</p></li>
+<li><p>You will need to understand DataFrames/<code class="docutils literal notranslate"><span class="pre">pandas</span></code> and be able to read, understand, and use documentation for methods from <code class="docutils literal notranslate"><span class="pre">pandas</span></code> for final exam</p></li>
+<li><p>GitHub EC for Final Project - part of the post-course survey; put your project on GitHub</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSe-HqmffnAeByzr0YKUa0lEg_DtitPUqG4WGm47Yym5QxGkCA/viewform?usp=sf_link">COGS 18 Post-Course Survey</a> (link also on Canvas)</p></li>
+<li><p>Please complete your CAPEs! (currently: 29%)</p></li>
+</ul>
+<div class="tex2jax_ignore mathjax_ignore section" id="wrap-up">
+<h1>Wrap Up<a class="headerlink" href="#wrap-up" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="some-extra-python">
+<h2>Some (extra) Python<a class="headerlink" href="#some-extra-python" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>string formatting (<code class="docutils literal notranslate"><span class="pre">format</span></code>)</p></li>
+<li><p>sets</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collections</span></code></p></li>
+<li><p>args &amp; kwargs</p></li>
+<li><p>list comprehensions</p></li>
+<li><p>map</p></li>
+</ul>
+<p>…or: a day of shortcuts</p>
+<p>Note: Shortcuts make <em>your</em> life easier, but your code <em>less</em> understandable to beginners.</p>
+<p>It’s hard to search for things you don’t know exist.</p>
+<p>Today’s goal : let you know these things exist.</p>
+<p>NOT today’s goal : teach you all the details.</p>
+<p>You do <em>not</em> need to incorporate these into your project, but if they’ll help you, go for it!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">antigravity</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="string-formatting">
+<h2>String Formatting<a class="headerlink" href="#string-formatting" title="Permalink to this headline">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">format</span></code> method to manipulate and format strings.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Shannon&quot;</span>
+<span class="n">job</span> <span class="o">=</span> <span class="s2">&quot;Associate Teaching Professor&quot;</span>
+<span class="n">topic</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+
+<span class="s2">&quot;Hello! My name is </span><span class="si">{}</span><span class="s2">. My job is </span><span class="si">{}</span><span class="s2">, and I work on </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">job</span><span class="p">,</span> <span class="n">topic</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hello! My name is Shannon. My job is Associate Teaching Professor, and I work on Python&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sets">
+<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
+<p>Sets are a variable type that store <strong>only unique entries</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="n">my_set</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Like lists, they are iterable &amp; mutable.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">my_set</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Reminder that if you add a value that is already in the set…the set will not change</p>
+</div>
+<div class="section" id="collections">
+<h2>Collections<a class="headerlink" href="#collections" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">collections</span></code> module has a number of useful variable types, with special properties.</p>
+<p>“Special editions” of collections we’ve discussed before (lists, tuples, and dictionaries).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># count how many elements there are in collection</span>
+<span class="c1"># return values in a dictionary</span>
+<span class="n">Counter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># can count how many of each letter are in there</span>
+<span class="n">Counter</span><span class="p">(</span><span class="s2">&quot;I wonder how many times I use the letter &#39;e&#39;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Think back to our encryption scheme!</p>
+<p>The most common letter in the English language is ‘e’.</p>
+<p>If you just move each letter over by 1 position, you can just use a Counter to crack the code.</p>
+<p>Why we moved to a variable encoder!</p>
+</div>
+<div class="section" id="args-kwargs">
+<h2><code class="docutils literal notranslate"><span class="pre">args</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">kwargs</span></code><a class="headerlink" href="#args-kwargs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>allow you to pass a variable number of arguments to a function</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">*args</span></code> - allow any number of extra arguments (including zero)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> - allow any number of <em>keyword</em> arguments to be passed (as a dictionary)</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="args">
+<h3><code class="docutils literal notranslate"><span class="pre">*args</span></code><a class="headerlink" href="#args" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use *arguments to demonstrate args</span>
+<span class="k">def</span> <span class="nf">tell_audience</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">arguments</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tell_audience</span><span class="p">(</span><span class="s1">&#39;asdf&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tell_audience</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">,</span> 
+              <span class="s2">&quot;My name is Shannon.&quot;</span><span class="p">,</span> 
+              <span class="s2">&quot;My job is Associate Teaching Professor.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="kwargs">
+<h3><code class="docutils literal notranslate"><span class="pre">**kwargs</span></code><a class="headerlink" href="#kwargs" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tell_audience_kwargs</span><span class="p">(</span><span class="o">**</span><span class="n">info</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;type: &quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">info</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">info</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;key: &quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;value: &quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tell_audience_kwargs</span><span class="p">(</span><span class="n">first</span><span class="o">=</span><span class="s1">&#39;Shannon&#39;</span><span class="p">,</span> 
+                     <span class="n">last</span><span class="o">=</span><span class="s1">&#39;Ellis&#39;</span><span class="p">,</span> 
+                     <span class="n">email</span><span class="o">=</span><span class="s1">&#39;sellis@ucsd.edu&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="list-comprehensions">
+<h2>List Comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this headline">¶</a></h2>
+<p>List comprehensions allow you to run loops and conditionals, <em>inside lists</em>.</p>
+<p>The general format is :</p>
+<p><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">expression</span> <span class="pre">for</span> <span class="pre">item</span> <span class="pre">in</span> <span class="pre">list</span> <span class="pre">if</span> <span class="pre">conditional</span> <span class="pre">]</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># NOT a list comprehension</span>
+<span class="c1"># how we&#39;ve been doing it</span>
+<span class="n">input_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">output_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
+    <span class="n">output_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ind</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    
+<span class="c1"># look at output</span>
+<span class="n">output_list</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This list comprehension is equivalent to the cell above</span>
+<span class="c1"># note the square brackets on the outside</span>
+<span class="p">[</span><span class="n">ind</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can also include conditionals inside a list comprehension</span>
+<span class="p">[</span><span class="n">val</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="k">if</span> <span class="n">val</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note: there are also tuple &amp; dictionary comprehensions. They’re just used less frequently.</p>
+</div>
+<div class="section" id="regular-expressions">
+<h2>Regular Expressions<a class="headerlink" href="#regular-expressions" title="Permalink to this headline">¶</a></h2>
+<p>Regular expressions allow you to work with <strong>specified patterns in strings</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;If 12 Python programmers try to complete 14 tasks in 16 minutes, why?&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># can just search for a letter</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># but the patterns are where these shine</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;\d\d&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lambda-functions">
+<h2>Lambda Functions<a class="headerlink" href="#lambda-functions" title="Permalink to this headline">¶</a></h2>
+<p>Lambda functions are small, anonymous functions.</p>
+<p>Can define them in line.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">increment</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">increment</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># not a lambda function</span>
+<span class="k">def</span> <span class="nf">lambda_equivalent</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    
+    <span class="n">output</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lambda_equivalent</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="map">
+<h2>map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">map</span></code> applies a given function to each element in a collection.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a function</span>
+<span class="k">def</span> <span class="nf">double</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">val</span> <span class="o">*</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># map function to each element of list</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">double</span><span class="p">,</span> <span class="n">my_list</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note - we can use lambda functions with map</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">my_list</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-goal">
+<h2>The Goal<a class="headerlink" href="#the-goal" title="Permalink to this headline">¶</a></h2>
+<p>To teach you a skill - of how to do things with Python.</p>
+<p>You’ve been more formally trained than <em>many</em> people out in the world programming.</p>
+</div>
+<div class="section" id="where-we-ve-been">
+<h2>Where We’ve Been:<a class="headerlink" href="#where-we-ve-been" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python &amp; Jupyter</p></li>
+<li><p>Variables</p></li>
+<li><p>Operators</p></li>
+<li><p>Conditionals</p></li>
+<li><p>Functions</p></li>
+<li><p>Lists, Tuples &amp; Dictionaries</p></li>
+<li><p>Loops</p></li>
+<li><p>Objects &amp; Classes</p></li>
+<li><p>Command Line</p></li>
+<li><p>Scientific Computing</p></li>
+<li><p>Documentation, Code Style, Code Testing</p></li>
+</ul>
+<div class="section" id="class-question-1">
+<h3>Class Question #1<a class="headerlink" href="#class-question-1" title="Permalink to this headline">¶</a></h3>
+<p>After COGS 18, I feel ____________ my Python programming abilities</p>
+<ul class="simple">
+<li><p>A) very confident in</p></li>
+<li><p>B) somewhat confident in</p></li>
+<li><p>C) middle-of-the-road about</p></li>
+<li><p>D) somewhat unsure about</p></li>
+<li><p>E) very unsure about</p></li>
+</ul>
+</div>
+<div class="section" id="class-question-2">
+<h3>Class Question #2<a class="headerlink" href="#class-question-2" title="Permalink to this headline">¶</a></h3>
+<p>After COGS 18, I feel the following about my future Python programming:</p>
+<ul class="simple">
+<li><p>A) will use again for sure</p></li>
+<li><p>B) may use again</p></li>
+<li><p>C) unsure if will use again</p></li>
+<li><p>D) probably won’t use again</p></li>
+<li><p>E) definitely won’t use again</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="how-to-continue-with-coding">
+<h2>How to Continue with Coding<a class="headerlink" href="#how-to-continue-with-coding" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Write Code</p></li>
+<li><p>Read Code</p></li>
+<li><p>Learn and follow standard procedures</p></li>
+<li><p>Do code reviews</p></li>
+<li><p>Interact with the community</p></li>
+<li><p>Build a code portfolio</p></li>
+</ul>
+</div>
+<div class="section" id="powered-by-python">
+<h2>Powered by Python<a class="headerlink" href="#powered-by-python" title="Permalink to this headline">¶</a></h2>
+<p>This course used:</p>
+<ul class="simple">
+<li><p>Python Programming Language</p></li>
+<li><p>Jupyter Notebooks</p></li>
+<li><p>RISE Jupyter Slides</p></li>
+<li><p>nbgrader</p></li>
+<li><p>Jupyter Book</p></li>
+<li><p>scipy stack &amp; many other 3rd party modules</p></li>
+</ul>
+</div>
+<div class="section" id="where-do-you-go-from-here">
+<h2>Where do you go from here<a class="headerlink" href="#where-do-you-go-from-here" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>if want_more_data_science:</p>
+<ul>
+<li><p>go to COGS 9</p></li>
+</ul>
+</li>
+<li><p>if you want <em>to do</em> more_data_science:</p>
+<ul>
+<li><p>…<em>and</em> Python: take COGS 108</p></li>
+<li><p>…<em>and</em> R: take COGS 137</p></li>
+</ul>
+</li>
+<li><p>if interested_in_research:</p>
+<ul>
+<li><p>look for labs, tell them you can code</p></li>
+</ul>
+</li>
+<li><p>if you want_something_else:</p>
+<ul>
+<li><p>go do it!</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="acknowledgments">
+<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h2>
+<p>Thank you to Tom for his original design of this course.</p>
+<p>Thank you to the TAs &amp; IAs for their tireless work on this class.</p>
+<p>Thank you students for you time, effort and patience.</p>
+<center><h1> The End </div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="17-CodeProjects.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Code Projects</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="CL-Answers/CL1-Tooling.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Coding Lab 1: Tech Setup &amp; Tooling</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Shannon Ellis, Jason Fleischer, and Tom Donoghue<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
