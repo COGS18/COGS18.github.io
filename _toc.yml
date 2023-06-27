@@ -13,101 +13,101 @@ parts:
     chapters:
     - file: materials/01-Introduction
       title: 01-Introduction
-    - file: materials/02-Tooling
-      title: 02-Tooling
-    - file: materials/03-Variables
-      title: 03-Variables
-    - file: materials/04-Operators
-      title: 04-Operators
-    - file: materials/05-Functions
-      title: 05-Functions
-    - file: materials/06-Conditionals
-      title: 06-Conditionals
-    - file: materials/07-Collections
-      title: 07-Collections
-    - file: materials/08-Debugging
-      title: 08-Debugging
-    - file: materials/09-Loops
-      title: 09-Loops
-  #   - file: materials/10-Algorithms
-  #     title: 10-Algorithms
-    - file: materials/10-Methods
-      title: 10-Methods
-    - file: materials/11-Classes
-      title: 11-Classes
-    - file: materials/12-CommandLine
-      title: 12-CommandLine
-    - file: materials/13-Modules
-      title: 13-Modules
-    - file: materials/14-ScientificComputing
-      title: 14-ScientificComputing   
-    - file: materials/15-Documentation
-      title: 15-Documentation
-    - file: materials/16-CodeTesting
-      title: 16-CodeTesting
-    - file: materials/17-CodeProjects
-      title: 17-CodeProjects
-  # #   - file: materials/21-AdvancedPython
-  # #     title: 21-AdvancedPython
-    - file: materials/18-WrapUp
-      title: 18-WrapUp
-  #   - file: materials/A1-CodeStyle
-  #     title: A1-CodeStyle
-  #   - file: materials/A2-Syntax
-  #     title: A2-Syntax   
-  #   - file: materials/A3-Examples
-  #     title: A3-Examples    
-  - caption: Coding Labs
-    chapters:
-    - file: materials/CL-Answers/CL1-Tooling
-      title: CL1-Tooling
-    - file: materials/CL-Answers/CL2-ProgrammingI
-      title: CL2-ProgrammingI
-    - file: materials/CL-Answers/CL3-ProgrammingII
-      title: CL3-ProgrammingII
-    - file: materials/CL-Answers/CL4-Collections
-      title: CL4-Collections
-    - file: materials/CL-Answers/CL5-Loops
-      title: CL5-Loops
-    - file: materials/CL-Answers/CL6-Classes
-      title: CL6-Classes
-    - file: materials/CL-Answers/CL7-CommandLine
-      title: CL7-CommandLine
-    - file: materials/CL-Answers/CL8-ScientificComputing
-      title: CL8-ScientificComputing
-    - file: materials/CL-Answers/CL9-Testing
-      title: CL9-Testing
+  #   - file: materials/02-Tooling
+  #     title: 02-Tooling
+  #   - file: materials/03-Variables
+  #     title: 03-Variables
+  #   - file: materials/04-Operators
+  #     title: 04-Operators
+  #   - file: materials/05-Functions
+  #     title: 05-Functions
+  #   - file: materials/06-Conditionals
+  #     title: 06-Conditionals
+  #   - file: materials/07-Collections
+  #     title: 07-Collections
+  #   - file: materials/08-Debugging
+  #     title: 08-Debugging
+  #   - file: materials/09-Loops
+  #     title: 09-Loops
+  # #   - file: materials/10-Algorithms
+  # #     title: 10-Algorithms
+  #   - file: materials/10-Methods
+  #     title: 10-Methods
+  #   - file: materials/11-Classes
+  #     title: 11-Classes
+  #   - file: materials/12-CommandLine
+  #     title: 12-CommandLine
+  #   - file: materials/13-Modules
+  #     title: 13-Modules
+  #   - file: materials/14-ScientificComputing
+  #     title: 14-ScientificComputing   
+  #   - file: materials/15-Documentation
+  #     title: 15-Documentation
+  #   - file: materials/16-CodeTesting
+  #     title: 16-CodeTesting
+  #   - file: materials/17-CodeProjects
+  #     title: 17-CodeProjects
+  # # #   - file: materials/21-AdvancedPython
+  # # #     title: 21-AdvancedPython
+  #   - file: materials/18-WrapUp
+  #     title: 18-WrapUp
+  # #   - file: materials/A1-CodeStyle
+  # #     title: A1-CodeStyle
+  # #   - file: materials/A2-Syntax
+  # #     title: A2-Syntax   
+  # #   - file: materials/A3-Examples
+  # #     title: A3-Examples    
+  # - caption: Coding Labs
+  #   chapters:
+  #   - file: materials/CL-Answers/CL1-Tooling
+  #     title: CL1-Tooling
+  #   - file: materials/CL-Answers/CL2-ProgrammingI
+  #     title: CL2-ProgrammingI
+  #   - file: materials/CL-Answers/CL3-ProgrammingII
+  #     title: CL3-ProgrammingII
+  #   - file: materials/CL-Answers/CL4-Collections
+  #     title: CL4-Collections
+  #   - file: materials/CL-Answers/CL5-Loops
+  #     title: CL5-Loops
+  #   - file: materials/CL-Answers/CL6-Classes
+  #     title: CL6-Classes
+  #   - file: materials/CL-Answers/CL7-CommandLine
+  #     title: CL7-CommandLine
+  #   - file: materials/CL-Answers/CL8-ScientificComputing
+  #     title: CL8-ScientificComputing
+  #   - file: materials/CL-Answers/CL9-Testing
+  #     title: CL9-Testing
 
-  - caption: Exam Prep
-    chapters:
-    - file: materials/ExamPrep/E1-Review
-      title: E1-Review
-    - file: materials/ExamPrep/E1-Review-Answers
-      title: E1-Review-Answers
-    - file: materials/ExamPrep/E1_Sp23_Practice
-      title: E1-Practice-Answers
-    - file: materials/ExamPrep/E1_COGS18_SP23-Answers
-      title: E1-Answers
-  #   - file: materials/Exam-Prep/E1_Fa22
+  # - caption: Exam Prep
+  #   chapters:
+  #   - file: materials/ExamPrep/E1-Review
+  #     title: E1-Review
+  #   - file: materials/ExamPrep/E1-Review-Answers
+  #     title: E1-Review-Answers
+  #   - file: materials/ExamPrep/E1_Sp23_Practice
+  #     title: E1-Practice-Answers
+  #   - file: materials/ExamPrep/E1_COGS18_SP23-Answers
   #     title: E1-Answers
-    - file: materials/ExamPrep/E2-Review
-      title: E2-Review
-    - file: materials/ExamPrep/E2-Review-Answers
-      title: E2-Review-Answers
-    - file: materials/ExamPrep/E2_Sp23_Practice
-      title: E2-Practice-Answers
-    - file: materials/ExamPrep/E2_COGS18_SP23-Answers
-      title: E2-Answers
-    - file: materials/ExamPrep/PracticeFinal/Pratice_Final_Sp23
-      title: Practice-Final-Answers
+  # #   - file: materials/Exam-Prep/E1_Fa22
+  # #     title: E1-Answers
+  #   - file: materials/ExamPrep/E2-Review
+  #     title: E2-Review
+  #   - file: materials/ExamPrep/E2-Review-Answers
+  #     title: E2-Review-Answers
+  #   - file: materials/ExamPrep/E2_Sp23_Practice
+  #     title: E2-Practice-Answers
+  #   - file: materials/ExamPrep/E2_COGS18_SP23-Answers
+  #     title: E2-Answers
+  #   - file: materials/ExamPrep/PracticeFinal/Pratice_Final_Sp23
+  #     title: Practice-Final-Answers
 
-  - caption: Projects
-    chapters:
-    - file: projects/PythonParty
-      title: PythonParty
-    - file: projects/overview
-      title: Overview
-    - file: projects/faq
-      title: FAQ
-    - file: projects/ProjectIdeas
-      title: ProjectIdeas
+  # - caption: Projects
+  #   chapters:
+  #   - file: projects/PythonParty
+  #     title: PythonParty
+  #   - file: projects/overview
+  #     title: Overview
+  #   - file: projects/faq
+  #     title: FAQ
+  #   - file: projects/ProjectIdeas
+  #     title: ProjectIdeas
