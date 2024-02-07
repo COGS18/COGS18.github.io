@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Introduction to Python &#8212; COGS 18 - Introduction To Python</title>
     
@@ -34,7 +34,6 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -57,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="02-Tooling" href="02-Tooling.html" />
     <link rel="prev" title="ASSIGNMENTS" href="../assets/intro/assignments/overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
@@ -158,6 +157,31 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="05-Functions.html">
    05-Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Conditionals.html">
+   06-Conditionals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07-Collections.html">
+   07-Collections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Debugging.html">
+   08-Debugging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09-Loops.html">
+   09-Loops
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Methods.html">
+   10-Methods
   </a>
  </li>
 </ul>
@@ -523,11 +547,11 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-python">
-<h1>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this heading">#</a></h1>
+<h1>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this headline">#</a></h1>
 <p><strong>Important Note</strong>: This course was originally designed and developed by <a class="reference external" href="https://tomdonoghue.github.io/">Tom Donoghue</a>. While lectures, assignments, exams and coding labs will be altered from the original run of the course in Fall 2018, <em>tons</em> of credit for this course is due to Tom for his awesome work getting this course off the ground.</p>
 <p>The PDF slides from the start of the first class are available here: <a class="reference external" href="https://cogs18.github.io/assets/intro/01_welcome.pdf">https://cogs18.github.io/assets/intro/01_welcome.pdf</a></p>
 <section id="logistics">
-<h2>Logistics<a class="headerlink" href="#logistics" title="Permalink to this heading">#</a></h2>
+<h2>Logistics<a class="headerlink" href="#logistics" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Who:</p>
 <ul>
@@ -547,7 +571,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="expectations-approach">
-<h2>Expectations &amp; Approach<a class="headerlink" href="#expectations-approach" title="Permalink to this heading">#</a></h2>
+<h2>Expectations &amp; Approach<a class="headerlink" href="#expectations-approach" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Goal: to learn practical programming in Python</p></li>
 <li><p>How: hands-on, community driven, skills based course, assignment &amp; project driven</p></li>
@@ -556,7 +580,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="why-learn-computation">
-<h2>Why Learn Computation?<a class="headerlink" href="#why-learn-computation" title="Permalink to this heading">#</a></h2>
+<h2>Why Learn Computation?<a class="headerlink" href="#why-learn-computation" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Computation is how things are done</p></li>
 </ul>
@@ -565,7 +589,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="what-is-python">
-<h2>What is Python<a class="headerlink" href="#what-is-python" title="Permalink to this heading">#</a></h2>
+<h2>What is Python<a class="headerlink" href="#what-is-python" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Python is a programming language</p>
 <ul>
@@ -583,7 +607,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="what-does-python-look-like">
-<h2>What does Python look like<a class="headerlink" href="#what-does-python-look-like" title="Permalink to this heading">#</a></h2>
+<h2>What does Python look like<a class="headerlink" href="#what-does-python-look-like" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variable_name</span> <span class="o">=</span> <span class="s2">&quot;variable name.&quot;</span>
@@ -616,7 +640,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="why-choose-python">
-<h2>Why Choose Python?<a class="headerlink" href="#why-choose-python" title="Permalink to this heading">#</a></h2>
+<h2>Why Choose Python?<a class="headerlink" href="#why-choose-python" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Python is a powerful, well developed, and well supported tool</p></li>
 </ul>
@@ -631,7 +655,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="this-is-a-jupyter-notebook">
-<h2>This is a Jupyter Notebook<a class="headerlink" href="#this-is-a-jupyter-notebook" title="Permalink to this heading">#</a></h2>
+<h2>This is a Jupyter Notebook<a class="headerlink" href="#this-is-a-jupyter-notebook" title="Permalink to this headline">#</a></h2>
 <p>Uses in COGS18:</p>
 <ul class="simple">
 <li><p>lecture notes</p></li>
