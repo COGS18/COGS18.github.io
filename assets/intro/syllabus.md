@@ -180,9 +180,9 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 12 | 2/5/2024  | 5      | M   | Loops                               |                            | Exam 1 - technical take home component              |
 | 13 | 2/7/2024  | 5      | W   | Loops II                            | CL5 - loops                |                                                     |
 | 14 | 2/9/2024  | 5      | F   | Methods                             |                            |                                                     |
-| 15 | 2/12/2024 | 6      | M   | Classes I                           |                            | A3 - loops, strings, chatbots                       |
+| 15 | 2/12/2024 | 6      | M   | Classes I                           |                            |                       |
 | 16 | 2/14/2024 | 6      | W   | Classes II                          | CL6 - classes              |                                                     |
-| 17 | 2/16/2024 | 6      | F   | Classes III                         |                            |                                                     |
+| 17 | 2/16/2024 | 6      | F   | Classes III                         |                            | A3 - chatbots, loops, strings                                                     |
 |    | 2/19/2024 | 7      | M   | NO CLASS - President's              |                            |                                                     |
 | 18 | 2/21/2024 | 7      | W   | Command Line                        |                            |                                                     |
 | 19 | 2/23/2024 | 7      | F   | Command Line II                     |                            | A4 - methods, classes, agents                       |
