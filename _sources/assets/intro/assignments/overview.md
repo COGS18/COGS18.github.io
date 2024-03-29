@@ -24,7 +24,7 @@ Follow these instructions for working with these notebooks:
 - You can add new cells, and write extra code, as long as you follow what is written above
 - Make sure to execute all code that you write.
 - If you get an 'AssertionError' from a test cell, your answer is not correct
-- Your grade is partly graded on the public tests (the `asserts` that you see) and partly on a hidden set of tests (extra 'asserts' that get added during grading)
+- Your grade is partly graded on the public tests (the `assert`s that you see) and partly on a hidden set of tests (extra `assert`s that get added during grading)
 - This means that passing all the assert you see does not guarantee correctness
 - Make sure to check out code and its outputs, that it does what it is supposed to
 
