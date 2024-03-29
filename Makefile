@@ -41,8 +41,8 @@ textbook:
 	rm -rf labs/source
 
 	# Copy & build project info
-	git clone --depth 1 https://www.github.com/COGS18/Projects.git projects
-	rm projects/README.md
+	# git clone --depth 1 https://www.github.com/COGS18/Projects.git projects
+	# rm projects/README.md
 
 	jupyter-book build ./
 	# get project template
@@ -52,9 +52,9 @@ textbook:
 	# copy first day of slides to _build
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
 
-	mkdir -p _build/html/assets/intro/exams/
-	cp assets/intro/exams/E1_Sp23_Answers.pdf _build/html/assets/intro/exams
-	cp assets/intro/exams/E2_Sp23_Answers.pdf _build/html/assets/intro/exams
+	# mkdir -p _build/html/assets/intro/exams/
+	# cp assets/intro/exams/E1_Sp23_Answers.pdf _build/html/assets/intro/exams
+	# cp assets/intro/exams/E2_Sp23_Answers.pdf _build/html/assets/intro/exams
 
 	# copy non-md images to build
 	 mkdir -p _build/html/_images
@@ -63,7 +63,7 @@ textbook:
 
 	# rm -rf labs
 	rm -rf materials
-	rm -rf projects
+	# rm -rf projects
 
 
 home:
