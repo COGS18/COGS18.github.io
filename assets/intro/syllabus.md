@@ -2,7 +2,7 @@
 
 **Introduction to Python** | **Spring 2024**  
 
-DRAFT (v.0.0.01)
+v.1.0.0 (Apr 1)
 ---
 
 ## COURSE OVERVIEW
@@ -18,7 +18,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 | **Lecture**    | Prof Ellis           | TuTh 11-12:20   | PETER 110          |
 |                |                      | TuTh 2-3:20     | WLH 2001           |
 |                |                      |                 |                    |
-| **Coding lab** |                      | W 9:00a-9:50a   | CSB 115            |
+| **Coding lab** | Coming Soon          | W 9:00a-9:50a   | CSB 115            |
 |                |                      | W 10:00a-10:50a | CSB 115            |
 |                |                      | W 11:00a-11:50a | CSB 115            |
 |                |                      | W 12:00p-12:50p | CSB 115            |
@@ -42,10 +42,9 @@ Office Hours Times and Locations can be found on Canvas
 # Important Links
 - [Course Website](https://cogs18.github.io)
 - [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
-- [Course Canvas]()
-- [Course Piazza\*]()
+- [Course Canvas](https://canvas.ucsd.edu/courses/54990)
+- [Course Piazza\*](https://piazza.com/class/luagsvdfwro6ek)
 - [DataHub](https://datahub.ucsd.edu)
-- [Daily Lecture Participation Survey]()
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
 - [Anonymous feedback via Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd1YNH8CqBbVxr_M9v_c3X-XLqySLrBfYE7GwuAshFMCP_WvQ/viewform?usp=sf_link)
 
@@ -75,7 +74,7 @@ To achieve these objectives, information will be presented during lecture. You w
   - No required textbook; optional textbook: [https://shanellis.github.io/pythonbook](https://shanellis.github.io/pythonbook) (currently under development; feedback welcome)
 - iclicker (*optional*) will be used for in-class questions and provide an opportunity for extra credit; either the app or a physical iclicker is fine
 
-Detailed instruction for software installations/access will be listed on the course website and provided across week 1 coding labs. All of the software is freely-available for download.
+Detailed instruction for software installations/access will be listed on the course website and provided across the first coding lab. All of the software is freely-available for download.
 
 Note: If you do not have consistent access to the technology needed, please use the form below to request a loaner laptop: [https://eforms.ucsd.edu/view.php?id=490887](https://eforms.ucsd.edu/view.php?id=490887). (For any issues that you may have, please email vcsa@ucsd.edu and they will work to assist you.)
 
@@ -135,7 +134,9 @@ Students are encouraged to attend lecture live; however, **in-person attendance 
 
 To incentivize attendance, we will use iclicker for in-class Q&A (using either a physical iclicker or a remote).  Students will receive a small amount of extra credit for *each* lecture attended, up to 5% extra credit (for those who attend every lecture) on their final project/exam (_not_ the final course grade). To earn credit in a given day, students must respond to at least 50% of the questions asked on that day (correctness does not matter). Students are free to attend either lecture time *except on Exam days*. Note that students must create an iclicker Student account using your ucsd.edu email. See instructions [here](https://mhe.my.site.com/iclicker/s/article/How-to-Register-a-Remote-in-the-iClicker-Student-App).
 
-### Pre- and Post-Surveys (4\%)
+### Pre- and Post-Assessment Surveys (4\%)
+
+Students will be required to complete two pre-course assessment surveys (2%) as well as a post-course assessment survey (2%). These will be used to learn a bit more about you as a student as well as your knowledge in Python. (Note: you are NOT expected to have any Python knowledge at the start of the course.) Completion of these surveys is required in COGS 18; however, students will choose whether their responses can be used for future research. Students will earn credit for completion and are not graded on correctness.
 
 ### Coding Labs (16\%)
 
