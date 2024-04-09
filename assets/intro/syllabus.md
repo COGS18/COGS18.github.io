@@ -2,7 +2,7 @@
 
 **Introduction to Python** | **Spring 2024**  
 
-v.1.0.1 (Apr 4)
+v.1.0.2 (Apr 9)
 ---
 
 ## COURSE OVERVIEW
@@ -11,35 +11,14 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ---
 
-## COURSE STAFF & INFORMATION
+## COURSE INFORMATION
 
-| **What**       | **Who**            | **When**        | **Where**                                                          |
-| ----------     | -------------------- | --------------- | ------------------ |
-| **Lecture**    | Prof Ellis           | TuTh 11-12:20   | PETER 110          |
-|                |                      | TuTh 2-3:20     | WLH 2001           |
-|                |                      |                 |                    |
-| **Coding lab** | Coming Soon          | W 9:00a-9:50a   | CSB 115            |
-|                |                      | W 10:00a-10:50a | CSB 115            |
-|                |                      | W 11:00a-11:50a | CSB 115            |
-|                |                      | W 12:00p-12:50p | CSB 115            |
-|                |                      | W 1:00p-1:50p   | CSB 115            |
-|                |                      | W 2:00p-2:50p   | CSB 115            |
-|                |                      | W 3:00p-3:50p   | CSB 115            |
-|                |                      | W 4:00p-4:50p   | CSB 115            |
-|                |                      | W 5:00p-5:50p   | CSB 115            |
-|                |                      | F 9:00a-9:50a   | CSB 115            |
-|                |                      | F 10:00a-10:50a | CSB 115            |
-|                |                      | F 11:00a-11:50a | CSB 115            |
-|                |                      | F 12:00p-12:50p | CSB 115            |
-|                |                      | F 1:00p-1:50p   | CSB 115            |
-|                |                      | F 2:00p-2:50p   | CSB 115            |
-|                |                      | F 3:00p-3:50p   | CSB 115            |
-|                |                      | F 4:00p-4:50p   | CSB 115            |
-|                |                      | F 5:00p-5:50p   | CSB 115            |
+**Lecture**: TuTh at 11-12:20 (PETER 110) OR 2-3:20 (WLH 2001)  
+**Labs**: on the hour 9-5 Wed and Fri (CSB 115)
 
-Office Hours Times and Locations can be found on Canvas
+Office Hours Times/Locations, Coding Lab Staff, and Staff pictures can be found on Canvas.
 
-# Important Links
+**Important Links**
 - [Course Website](https://cogs18.github.io)
 - [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
 - [Course Canvas](https://canvas.ucsd.edu/courses/54990)
