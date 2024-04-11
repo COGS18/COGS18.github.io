@@ -3,6 +3,7 @@
 **Introduction to Python** | **Spring 2024**  
 
 v.1.0.2 (Apr 9)
+
 ---
 
 ## COURSE OVERVIEW
