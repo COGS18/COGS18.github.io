@@ -23,8 +23,8 @@ parts:
       title: 05-Functions
     - file: materials/06-Conditionals
       title: 06-Conditionals
-  #   - file: materials/07-Collections
-  #     title: 07-Collections
+    - file: materials/07-Collections
+      title: 07-Collections
   #   - file: materials/08-Debugging
   #     title: 08-Debugging
   #   - file: materials/09-Loops
@@ -57,10 +57,10 @@ parts:
   # #     title: A2-Syntax   
   # #   - file: materials/A3-Examples
   # #     title: A3-Examples    
-  # - caption: Coding Labs
-  #   chapters:
-  #   - file: materials/CL-Answers/CL1-Tooling
-  #     title: CL1-Tooling
+  - caption: Coding Labs
+    chapters:
+    - file: materials/CL-Answers/CL1-Tooling
+      title: CL1-Tooling
   #   - file: materials/CL-Answers/CL2-ProgrammingI
   #     title: CL2-ProgrammingI
   #   - file: materials/CL-Answers/CL3-ProgrammingII
