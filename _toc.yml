@@ -57,8 +57,8 @@ parts:
     chapters:
     - file: materials/CL-Answers/CL1-Tooling
       title: CL1-Tooling
-  #   - file: materials/CL-Answers/CL2-ProgrammingI
-  #     title: CL2-ProgrammingI
+    - file: materials/CL-Answers/CL2-Functions
+      title: CL2-Functions
   #   - file: materials/CL-Answers/CL3-ProgrammingII
   #     title: CL3-ProgrammingII
   #   - file: materials/CL-Answers/CL4-Collections
