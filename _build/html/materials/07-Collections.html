@@ -61,7 +61,7 @@
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 1: Variables &amp; Operators" href="CL-Answers/CL1-Tooling.html" />
+    <link rel="next" title="Control Flow - Loops" href="08-Loops.html" />
     <link rel="prev" title="Conditionals" href="06-Conditionals.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,11 +183,16 @@
 <li class="toctree-l1"><a class="reference internal" href="04-Operators.html">04-Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05-Functions.html">05-Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06-Conditionals.html">06-Conditionals</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">07-Collections</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">07-Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Loops.html">08-Loops</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Labs</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL1-Tooling.html">CL1-Tooling</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exam Prep</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/E1_Practice_COGS18_SP24.html">E1-Practice-Answers</a></li>
 </ul>
 
     </div>
@@ -453,19 +458,19 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-examples">List examples</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing">Indexing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-1">Class Question #1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-1">Clicker Question #1</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mutating-a-list">Mutating a List</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-2">Class Question #2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-2">Clicker Question #2</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collections-tuples">Collections: Tuples</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuple-examples">Tuple Examples</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples-are-immutable">Tuples are Immutable</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-3">Class Question #3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-3">Clicker Question #3</a></li>
 </ul>
 </li>
 </ul>
@@ -475,14 +480,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries-indexing">Dictionaries: Indexing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries-are-mutable">Dictionaries are mutable</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-dictionary-properties">Additional Dictionary Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-4">Class Question #4</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-5">Class Question #5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4">Clicker Question #4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-5">Clicker Question #5</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisiting-membership-in-operator">Revisiting membership: <code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-6">Class Question #6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6">Clicker Question #6</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">Unicode</a><ul class="nav section-nav flex-column">
@@ -495,9 +500,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aside-aliases">Aside: Aliases</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-8">Class Question #8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-8">Clicker Question #8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alias-mutable-types">Alias: mutable types</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-9">Class Question #9</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9">Clicker Question #9</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-allow-aliasing">Why allow aliasing?</a></li>
@@ -514,7 +519,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="collections">
+  <p><strong>Course Announcements</strong></p>
+<p>Due Date:</p>
+<ul class="simple">
+<li><p><strong>CL2</strong> due Friday (11:59 PM)</p></li>
+<li><p><strong>A2</strong> due Tuesday (11:59 PM)</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p><strong>E1</strong> is next Thursday</p>
+<ul>
+<li><p>covers material through the 07-Collections lecture</p></li>
+<li><p>in-class (1h 20; 12.5 pts) + take-home (2-3 Q; 2.5 pts)</p></li>
+<li><p>Attend the lecture time you’re assigned on WebReg</p></li>
+<li><p>No office hours on Exam Day</p></li>
+</ul>
+</li>
+<li><p><strong>Practice exam</strong> now available on datahub (links to in-class practice exam)</p>
+<ul>
+<li><p>Answers to practice will be released on Monday</p></li>
+<li><p>Additional practice in <a class="reference external" href="https://shanellis.github.io/pythonbook/content/intro.html">textbook</a></p></li>
+</ul>
+</li>
+</ul>
+<section class="tex2jax_ignore mathjax_ignore" id="collections">
 <h1>Collections<a class="headerlink" href="#collections" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Lists, Tuples, Dictionaries</p></li>
@@ -629,8 +657,8 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 <div class="alert alert-success">
 Starting at zero is a convention (some) languages use that comes from how variables are stored in memory
 , and 'pointers' to those locations.
-</div><section id="class-question-1">
-<h4>Class Question #1<a class="headerlink" href="#class-question-1" title="Link to this heading">#</a></h4>
+</div><section id="clicker-question-1">
+<h4>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Link to this heading">#</a></h4>
 <p>What would be the appropriate line of code to return <code class="docutils literal notranslate"><span class="pre">['butter',</span> <span class="pre">'&amp;',</span> <span class="pre">'jelly']</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -702,8 +730,8 @@ Lists are <i>mutable</i>, meaning after definition, you can update and change th
 </div>
 </div>
 </div>
-<section id="class-question-2">
-<h3>Class Question #2<a class="headerlink" href="#class-question-2" title="Link to this heading">#</a></h3>
+<section id="clicker-question-2">
+<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Link to this heading">#</a></h3>
 <p>What would the following code accommplish?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -780,8 +808,8 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 </div>
 </div>
 </div>
-<section id="class-question-3">
-<h4>Class Question #3<a class="headerlink" href="#class-question-3" title="Link to this heading">#</a></h4>
+<section id="clicker-question-3">
+<h4>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Link to this heading">#</a></h4>
 <p>Which of the following specifies a tuple of 2 items?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -941,8 +969,8 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </div>
 </div>
 </div>
-<section id="class-question-4">
-<h4>Class Question #4<a class="headerlink" href="#class-question-4" title="Link to this heading">#</a></h4>
+<section id="clicker-question-4">
+<h4>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Link to this heading">#</a></h4>
 <p>Fill in the ‘—’ in the code below to return the value stored in the second key.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -959,8 +987,8 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 <li><p>D) No clue where to start…</p></li>
 </ul>
 </section>
-<section id="class-question-5">
-<h4>Class Question #5<a class="headerlink" href="#class-question-5" title="Link to this heading">#</a></h4>
+<section id="clicker-question-5">
+<h4>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Link to this heading">#</a></h4>
 <p>Write the code that would create a dictionary <code class="docutils literal notranslate"><span class="pre">car</span></code> that stores values about your dream car’s <code class="docutils literal notranslate"><span class="pre">make</span></code>, <code class="docutils literal notranslate"><span class="pre">model</span></code>, and <code class="docutils literal notranslate"><span class="pre">year</span></code>.</p>
 <ul class="simple">
 <li><p>A) I did it</p></li>
@@ -1023,8 +1051,8 @@ The <code>in</code> operator asks whether an element is present inside a collect
 </div>
 </div>
 </div>
-<section id="class-question-6">
-<h3>Class Question #6<a class="headerlink" href="#class-question-6" title="Link to this heading">#</a></h3>
+<section id="clicker-question-6">
+<h3>Clicker Question #6<a class="headerlink" href="#clicker-question-6" title="Link to this heading">#</a></h3>
 <p>After executing the following code, what will be the value of <code class="docutils literal notranslate"><span class="pre">output</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1132,8 +1160,8 @@ Unicode is a system of systematically and consistently representing characters.
 <p>We then make an <strong>alias</strong> of <code class="docutils literal notranslate"><span class="pre">a</span></code> and store that in the variable <code class="docutils literal notranslate"><span class="pre">b</span></code>.</p>
 <p>Now, the same value (1) is stored in both <code class="docutils literal notranslate"><span class="pre">a</span></code> (the original) and <code class="docutils literal notranslate"><span class="pre">b</span></code> (the alias).</p>
 <p>What if we change the value of the original variable (<code class="docutils literal notranslate"><span class="pre">a</span></code>) - what happens to <code class="docutils literal notranslate"><span class="pre">b</span></code>?</p>
-<section id="class-question-8">
-<h3>Class Question #8<a class="headerlink" href="#class-question-8" title="Link to this heading">#</a></h3>
+<section id="clicker-question-8">
+<h3>Clicker Question #8<a class="headerlink" href="#clicker-question-8" title="Link to this heading">#</a></h3>
 <p>After executing the following code, what will the values stored in <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> be?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1188,8 +1216,8 @@ Unicode is a system of systematically and consistently representing characters.
 </div>
 </div>
 <p>For <em>mutable</em> type variables, when you change one, both change.</p>
-<section id="class-question-9">
-<h4>Class Question #9<a class="headerlink" href="#class-question-9" title="Link to this heading">#</a></h4>
+<section id="clicker-question-9">
+<h4>Clicker Question #9<a class="headerlink" href="#clicker-question-9" title="Link to this heading">#</a></h4>
 <p>After executing the following code, what will the second value stored in <code class="docutils literal notranslate"><span class="pre">second_tuple</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1260,11 +1288,11 @@ Unicode is a system of systematically and consistently representing characters.
       </div>
     </a>
     <a class="right-next"
-       href="CL-Answers/CL1-Tooling.html"
+       href="08-Loops.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Coding Lab 1: Variables &amp; Operators</p>
+        <p class="prev-next-title">Control Flow - Loops</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1288,19 +1316,19 @@ Unicode is a system of systematically and consistently representing characters.
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-examples">List examples</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing">Indexing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-1">Class Question #1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-1">Clicker Question #1</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mutating-a-list">Mutating a List</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-2">Class Question #2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-2">Clicker Question #2</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collections-tuples">Collections: Tuples</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuple-examples">Tuple Examples</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples-are-immutable">Tuples are Immutable</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-3">Class Question #3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-3">Clicker Question #3</a></li>
 </ul>
 </li>
 </ul>
@@ -1310,14 +1338,14 @@ Unicode is a system of systematically and consistently representing characters.
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries-indexing">Dictionaries: Indexing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries-are-mutable">Dictionaries are mutable</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-dictionary-properties">Additional Dictionary Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-4">Class Question #4</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-5">Class Question #5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4">Clicker Question #4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-5">Clicker Question #5</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisiting-membership-in-operator">Revisiting membership: <code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-6">Class Question #6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6">Clicker Question #6</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">Unicode</a><ul class="nav section-nav flex-column">
@@ -1330,9 +1358,9 @@ Unicode is a system of systematically and consistently representing characters.
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aside-aliases">Aside: Aliases</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-8">Class Question #8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-8">Clicker Question #8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alias-mutable-types">Alias: mutable types</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-9">Class Question #9</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9">Clicker Question #9</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-allow-aliasing">Why allow aliasing?</a></li>

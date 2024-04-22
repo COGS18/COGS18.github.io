@@ -24,13 +24,9 @@ parts:
     - file: materials/06-Conditionals
       title: 06-Conditionals
     - file: materials/07-Collections
-      title: 07-Collections
-  #   - file: materials/08-Debugging
-  #     title: 08-Debugging
-  #   - file: materials/09-Loops
-  #     title: 09-Loops
-  # #   - file: materials/10-Algorithms
-  # #     title: 10-Algorithms
+      title: 07-Collection
+    - file: materials/08-Loops
+      title: 08-Loops
   #   - file: materials/10-Methods
   #     title: 10-Methods
   #   - file: materials/11-Classes
@@ -78,14 +74,14 @@ parts:
   #   - file: materials/CL-Answers/CL9-Testing
   #     title: CL9-Testing
 
-  # - caption: Exam Prep
-  #   chapters:
+  - caption: Exam Prep
+    chapters:
   #   - file: materials/ExamPrep/E1-Review
   #     title: E1-Review
   #   - file: materials/ExamPrep/E1-Review-Answers
   #     title: E1-Review-Answers
-  #   - file: materials/ExamPrep/E1_Sp23_Practice
-  #     title: E1-Practice-Answers
+    - file: materials/Exam-Prep/E1_Practice_COGS18_SP24
+      title: E1-Practice-Answers
   #   - file: materials/ExamPrep/E1_COGS18_SP23-Answers
   #     title: E1-Answers
   # #   - file: materials/Exam-Prep/E1_Fa22
