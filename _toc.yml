@@ -76,8 +76,8 @@ parts:
 
   - caption: Exam Prep
     chapters:
-  #   - file: materials/ExamPrep/E1-Review
-  #     title: E1-Review
+    - file: materials/Exam-Prep/Exam1-Review
+      title: E1-Review
   #   - file: materials/ExamPrep/E1-Review-Answers
   #     title: E1-Review-Answers
     - file: materials/Exam-Prep/E1_Practice_COGS18_SP24
