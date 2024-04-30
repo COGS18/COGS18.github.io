@@ -59,10 +59,8 @@ parts:
       title: CL1-Tooling
     - file: materials/CL-Answers/CL2-Functions
       title: CL2-Functions
-  #   - file: materials/CL-Answers/CL3-ProgrammingII
-  #     title: CL3-ProgrammingII
-  #   - file: materials/CL-Answers/CL4-Collections
-  #     title: CL4-Collections
+    - file: materials/CL-Answers/CL3-Collections
+      title: CL3-Collections
   #   - file: materials/CL-Answers/CL5-Loops
   #     title: CL5-Loops
   #   - file: materials/CL-Answers/CL6-Classes
