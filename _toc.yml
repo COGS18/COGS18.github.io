@@ -29,8 +29,8 @@ parts:
       title: 08-Loops
     - file: materials/09-Methods
       title: 09-Methods
-  #   - file: materials/11-Classes
-  #     title: 11-Classes
+    - file: materials/10-Classes
+      title: 10-Classes
   #   - file: materials/12-CommandLine
   #     title: 12-CommandLine
   #   - file: materials/13-Modules
@@ -61,8 +61,8 @@ parts:
       title: CL2-Functions
     - file: materials/CL-Answers/CL3-Collections
       title: CL3-Collections
-  #   - file: materials/CL-Answers/CL5-Loops
-  #     title: CL5-Loops
+    - file: materials/CL-Answers/CL4-Loops
+      title: CL4-Loops
   #   - file: materials/CL-Answers/CL6-Classes
   #     title: CL6-Classes
   #   - file: materials/CL-Answers/CL7-CommandLine
