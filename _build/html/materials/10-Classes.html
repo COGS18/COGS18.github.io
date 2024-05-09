@@ -511,6 +511,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-oriented-programming">Object-Oriented Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-class-practice-1">Extra Class Practice #1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-class-practice-2">Extra Class Practice #2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-instance">Create an Instance</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -1063,7 +1068,23 @@ An <b>instance</b> is particular instantiation of a class object. <code>self</co
 <p>This creates four different <code class="docutils literal notranslate"><span class="pre">Dog</span></code> type objects and stores them in a list. But, up until now…every <code class="docutils literal notranslate"><span class="pre">Dog</span></code> was pretty much the same.</p>
 <div class="alert alert-success">
 Instance attributes are attributes that we can make be different for each instance of a class. <code>__init__</code> is a special method used to define instance attributes. 
-</div></section>
+</div><p><strong>Course Announcements</strong></p>
+<p>Due Date:</p>
+<ul class="simple">
+<li><p><strong>A3</strong> accepted for full credit until Friday 11:59 PM</p></li>
+<li><p><strong>CL5</strong> accepted for full credit until Sunday (11:59 PM)</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p><strong>E2</strong> is next Thursday</p>
+<ul>
+<li><p>Practice exam now available on datahub (links to in-class portion)</p></li>
+<li><p>Practice exam is wayyyyyy longer than real take-home exam</p></li>
+</ul>
+</li>
+<li><p><strong>A4</strong> due date Tues <em>after</em> E2</p></li>
+</ul>
+</section>
 <section id="example-class-dog-revisited">
 <h2>Example Class: Dog Revisited<a class="headerlink" href="#example-class-dog-revisited" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -1590,7 +1611,82 @@ Instance attributes are attributes that we can make be different for each instan
 <h2>Object-Oriented Programming<a class="headerlink" href="#object-oriented-programming" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 <b>Object-oriented programming (OOP)</b> is a programming paradigm in which code is organized around objects. Python is an OOP programming langauge. 
-</div></section>
+</div><p><strong>End of material for E2</strong></p>
+</section>
+<section id="extra-class-practice-1">
+<h2>Extra Class Practice #1<a class="headerlink" href="#extra-class-practice-1" title="Link to this heading">#</a></h2>
+<p>Define a class <code class="docutils literal notranslate"><span class="pre">ClassRoster()</span></code> that meets the following specifications:</p>
+<ul class="simple">
+<li><p>has two instance attributes:,</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">students</span></code>; initialized as an empty list,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">course</span></code>; which the user specifies when creating a <code class="docutils literal notranslate"><span class="pre">ClassRoster()</span></code> object”,</p></li>
+</ul>
+</li>
+<li><p>a single method <code class="docutils literal notranslate"><span class="pre">add_student()</span></code>, which will have <code class="docutils literal notranslate"><span class="pre">pid</span></code> and <code class="docutils literal notranslate"><span class="pre">name</span></code> as arguments, and will add these two inputs as a dictionary with <code class="docutils literal notranslate"><span class="pre">pid</span></code> as the key and the student’s <code class="docutils literal notranslate"><span class="pre">name</span></code> as the value to the <code class="docutils literal notranslate"><span class="pre">students</span></code> list each time the method is called\n”,</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your class here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialize object here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A) I did it! B) I think I did it! C) I’m lost.</p>
+</section>
+<section id="extra-class-practice-2">
+<h2>Extra Class Practice #2<a class="headerlink" href="#extra-class-practice-2" title="Link to this heading">#</a></h2>
+<p>Create a <code class="docutils literal notranslate"><span class="pre">MusicPlayer</span></code> class that includes the following components:</p>
+<p><strong>Step 1</strong>:<br />
+To start building your <code class="docutils literal notranslate"><span class="pre">MusicPlayer()</span></code> type object, you’ll first need to create the class and specify the necessary instance attributes: 1) <code class="docutils literal notranslate"><span class="pre">playlist</span></code> (which will be an empty list) and 2) <code class="docutils literal notranslate"><span class="pre">volume</span></code> (which will be 50) when an instance of the object is first created.</p>
+<p><strong>Step 2</strong>:<br />
+Now, your <code class="docutils literal notranslate"><span class="pre">MusicPlayer()</span></code> needs an <code class="docutils literal notranslate"><span class="pre">add_song()</span></code> method. This method should take a song in as input and add that song to the object’s <code class="docutils literal notranslate"><span class="pre">playlist</span></code> attribute.</p>
+<p><strong>Step 3</strong>:<br />
+Finally, your object needs a <code class="docutils literal notranslate"><span class="pre">change_volume()</span></code> method. This method should take in a numeric value specifying by how much the volume should change. Your code should ensure that the volume after it’s changed can only be a value between 0 and 100. (For example, if your volume was 90 and you specified to change_volume() by 20, the value stored in volume should be 100…the max possible value.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your class here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialize object here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A) I did it! B) I think I did it! C) I’m lost.</p>
+<section id="create-an-instance">
+<h3>Create an Instance<a class="headerlink" href="#create-an-instance" title="Link to this heading">#</a></h3>
+<p>Here, you’ll initialize <code class="docutils literal notranslate"><span class="pre">my_music</span></code>, an instance of your <code class="docutils literal notranslate"><span class="pre">MusicPlayer</span></code> object.</p>
+<p>After initializing <code class="docutils literal notranslate"><span class="pre">my_music</span></code>, you’ll add three of your favorite songs to its playlist (using <code class="docutils literal notranslate"><span class="pre">add_song</span></code>) and then <code class="docutils literal notranslate"><span class="pre">change_volume</span></code> such that the <code class="docutils literal notranslate"><span class="pre">volume</span></code> is 20 after execution.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your class here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># initialize object here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A) I did it! B) I think I did it! C) I’m lost.</p>
+<p><strong>Note</strong>: Extra Class Practice #2 <em>was</em> the entirety ofthe take-home exam Spring 2023. You can expect something similar next week.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1707,6 +1803,11 @@ Instance attributes are attributes that we can make be different for each instan
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-oriented-programming">Object-Oriented Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-class-practice-1">Extra Class Practice #1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-class-practice-2">Extra Class Practice #2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-instance">Create an Instance</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
