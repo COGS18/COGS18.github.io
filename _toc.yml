@@ -63,8 +63,8 @@ parts:
       title: CL3-Collections
     - file: materials/CL-Answers/CL4-Loops
       title: CL4-Loops
-  #   - file: materials/CL-Answers/CL6-Classes
-  #     title: CL6-Classes
+    - file: materials/CL-Answers/CL5-Classes
+      title: CL5-Classes
   #   - file: materials/CL-Answers/CL7-CommandLine
   #     title: CL7-CommandLine
   #   - file: materials/CL-Answers/CL8-ScientificComputing
@@ -88,8 +88,8 @@ parts:
   #     title: E2-Review
   #   - file: materials/ExamPrep/E2-Review-Answers
   #     title: E2-Review-Answers
-  #   - file: materials/ExamPrep/E2_Sp23_Practice
-  #     title: E2-Practice-Answers
+    - file: materials/Exam-Prep/E2_Practice_COGS18_SP24
+      title: E2-Practice-Answers
   #   - file: materials/ExamPrep/E2_COGS18_SP23-Answers
   #     title: E2-Answers
   #   - file: materials/ExamPrep/PracticeFinal/Pratice_Final_Sp23
