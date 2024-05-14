@@ -84,8 +84,8 @@ parts:
       title: E1-Answers
   # #   - file: materials/Exam-Prep/E1_Fa22
   # #     title: E1-Answers
-  #   - file: materials/ExamPrep/E2-Review
-  #     title: E2-Review
+    - file: materials/Exam-Prep/Exam2-Review
+      title: E2-Review
   #   - file: materials/ExamPrep/E2-Review-Answers
   #     title: E2-Review-Answers
     - file: materials/Exam-Prep/E2_Practice_COGS18_SP24
