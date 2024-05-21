@@ -654,17 +654,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## absolute path</span>
 <span class="c1">## this is specific to my computer</span>
 <span class="c1">## look at the path output above for you computer</span>
-<span class="o">!</span>ls<span class="w"> </span>/Users/shannonellis/Desktop/Teaching/COGS18/LectureNotes-COGS18
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>01-Introduction.ipynb 07-Collections.ipynb  A1-CodeStyle.ipynb
-02-Tooling.ipynb      08-Debugging.ipynb    A2-Syntax.ipynb
-03-Variables.ipynb    09-Loops.ipynb        A3-Examples.ipynb
-04-Operators.ipynb    10-Algorithms.ipynb   <span class=" -Color -Color-Blue">CL-Answers</span>
-05-Functions.ipynb    11-Methods.ipynb      <span class=" -Color -Color-Blue">Exam-Prep</span>
-06-Conditionals.ipynb 12-Classes.ipynb      <span class=" -Color -Color-Blue">img</span>
+<span class="o">!</span>ls<span class="w"> </span>/home/grader-cogs18-01/LectureNotes-COGS18
 </pre></div>
 </div>
 </div>
@@ -685,20 +675,13 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># relative path</span>
-<span class="c1"># this is specific to my computer</span>
-<span class="o">!</span>ls<span class="w"> </span>../../COGS108
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Blue">CAPE</span>       <span class=" -Color -Color-Blue">Chegg</span>      <span class=" -Color -Color-Blue">R</span>          <span class=" -Color -Color-Blue">class_data</span>
+<span class="o">!</span>ls<span class="w"> </span>../
 </pre></div>
 </div>
 </div>
 </div>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">..</span></code> specify you want to move one directory up in your hierarchy</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">COGS108/</span></code> specifies the path to the directory I want to list files in</p></li>
 <li><p>each directory is separated with a slash (<code class="docutils literal notranslate"><span class="pre">/</span></code>)</p></li>
 </ul>
 <p>This <strong>relative</strong> path does <em>not</em> start with a leading slash (b/c it’s not an absolute path).</p>
@@ -1057,6 +1040,13 @@ A <b>module</b> is a set of Python code with functions, classes, etc. available 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># By the way - modules are objects</span>
 <span class="nb">isinstance</span><span class="p">(</span><span class="n">math</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
