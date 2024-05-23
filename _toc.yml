@@ -93,13 +93,13 @@ parts:
   #   - file: materials/ExamPrep/PracticeFinal/Pratice_Final_Sp23
   #     title: Practice-Final-Answers
 
-  # - caption: Projects
-  #   chapters:
-  #   - file: projects/PythonParty
-  #     title: PythonParty
-  #   - file: projects/overview
-  #     title: Overview
-  #   - file: projects/faq
-  #     title: FAQ
-  #   - file: projects/ProjectIdeas
-  #     title: ProjectIdeas
+  - caption: Projects
+    chapters:
+    - file: projects/PythonProjects
+      title: PythonProjects
+    - file: projects/overview
+      title: Overview
+    - file: projects/faq
+      title: FAQ
+    - file: projects/ProjectIdeas
+      title: ProjectIdeas
