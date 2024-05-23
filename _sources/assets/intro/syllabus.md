@@ -177,7 +177,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 5/14/2024 | 7      | Tu  | Catch up & Review      |                                         |                            
 | 5/16/2024 | 7      | Th  | **E2**                 | E2: technical portion (take-home)       |                            
 | 5/17/2024 | 7      | F   |                        | CL6 - command line                      |                            
-| 5/21/2024 | 8      | Tu  | Python Party           | A4 - methods, classes, agents           |      
+| 5/21/2024 | 8      | Tu  | Python Projects        | A4 - methods, classes, agents           |      
 | 5/23/2024 | 8      | Th  | Scientific Computing   |                                         |                            
 | 5/24/2024 | 8      | F   |                        | CL7 - scientific computing              |                            
 | 5/28/2024 | 9      | Tu  | Documentation          |                                         | 
