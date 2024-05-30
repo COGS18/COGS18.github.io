@@ -35,8 +35,8 @@ parts:
       title: 11-CommandLine
     - file: materials/12-ScientificComputing
       title: 12-ScientificComputing   
-  #   - file: materials/15-Documentation
-  #     title: 15-Documentation
+    - file: materials/13-Documentation
+      title: 13-Documentation
   #   - file: materials/16-CodeTesting
   #     title: 16-CodeTesting
   #   - file: materials/17-CodeProjects
