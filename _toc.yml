@@ -37,10 +37,10 @@ parts:
       title: 12-ScientificComputing   
     - file: materials/13-Documentation
       title: 13-Documentation
-  #   - file: materials/16-CodeTesting
-  #     title: 16-CodeTesting
-  #   - file: materials/17-CodeProjects
-  #     title: 17-CodeProjects
+    - file: materials/14-CodeTesting
+      title: 14-CodeTesting
+    - file: materials/15-CodeProjects
+      title: 15-CodeProjects
   # # #   - file: materials/21-AdvancedPython
   # # #     title: 21-AdvancedPython
   #   - file: materials/18-WrapUp
@@ -65,8 +65,8 @@ parts:
       title: CL5-Classes
   #   - file: materials/CL-Answers/CL7-CommandLine
   #     title: CL7-CommandLine
-  #   - file: materials/CL-Answers/CL8-ScientificComputing
-  #     title: CL8-ScientificComputing
+    - file: materials/CL-Answers/CL8-ScientificComputing
+      title: CL8-ScientificComputing
   #   - file: materials/CL-Answers/CL9-Testing
   #     title: CL9-Testing
 
