@@ -1,0 +1,1819 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>COGS 18 - Practice Final Exam &#8212; COGS 18 - Introduction To Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24';</script>
+    <link rel="icon" href="../../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Python Projects" href="../../../projects/PythonProjects.html" />
+    <link rel="prev" title="COGS 18 - Exam 2 (Take-Home)" href="../E2_COGS18_SP24.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../assets/intro/syllabus.html">SYLLABUS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../assets/intro/labs/overview.html">CODING LABS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../assets/intro/assignments/overview.html">ASSIGNMENTS</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../01-Introduction.html">01-Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../02-Tooling.html">02-Tooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../03-Variables.html">03-Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../04-Operators.html">04-Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../05-Functions.html">05-Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../06-Conditionals.html">06-Conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../07-Collections.html">07-Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../08-Loops.html">08-Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../09-Methods.html">09-Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../10-Classes.html">10-Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../11-CommandLine.html">11-CommandLine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../12-ScientificComputing.html">12-ScientificComputing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../13-Documentation.html">13-Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../14-CodeTesting.html">14-CodeTesting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../15-CodeProjects.html">15-CodeProjects</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Labs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../CL-Answers/CL1-Tooling.html">CL1-Tooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CL-Answers/CL2-Functions.html">CL2-Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CL-Answers/CL3-Collections.html">CL3-Collections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CL-Answers/CL4-Loops.html">CL4-Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CL-Answers/CL5-Classes.html">CL5-Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CL-Answers/CL8-ScientificComputing.html">CL8-ScientificComputing</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exam Prep</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Exam1-Review.html">E1-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../E1_Practice_COGS18_SP24.html">E1-Practice-Answers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../E1_COGS18_SP24.html">E1-Answers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Exam2-Review.html">E2-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../E2_Practice_COGS18_SP24.html">E2-Practice-Answers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../E2_COGS18_SP24.html">E2-Answers</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Practice-Final-Answers</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/PythonProjects.html">PythonProjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/ProjectIdeas.html">ProjectIdeas</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>COGS 18 -  Practice Final Exam</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timing">Timing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q0-honor-code-0-25-pts">Q0 - Honor Code (0.25 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-choice-section-2-points">Multiple choice section (2 points)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Instructions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq1">MCQ1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq2">MCQ2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq3">MCQ3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq4">MCQ4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq5">MCQ5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq6">MCQ6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq7">MCQ7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq8">MCQ8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq9">MCQ9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq10">MCQ10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq11">MCQ11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq12">MCQ12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq13">MCQ13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq14">MCQ14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq15">MCQ15</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq16">MCQ16</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq17">MCQ17</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq18">MCQ18</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq19">MCQ19</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq20">MCQ20</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-intro">Project Intro</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#files-included">Files Included</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-code-module-11-pts">Part 1: Code + Module  (11 pts)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q1-function-read-data-3-pts">Q1: function: <code class="docutils literal notranslate"><span class="pre">read_data</span></code> (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q2-function-calculate-stats-2-5-pts">Q2: function: <code class="docutils literal notranslate"><span class="pre">calculate_stats</span></code> (2.5 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q3-module-data-analysis-py-5-pts">Q3: module <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code> (5 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-code-testing-4-5-pts">Part 2: Code Testing (4.5 pts)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q4-test-function-test-calculate-stats-1-5-pts">Q4: test function: <code class="docutils literal notranslate"><span class="pre">test_calculate_stats</span></code> (1.5 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q5-test-function-test-read-data-3-pts">Q5: test function: <code class="docutils literal notranslate"><span class="pre">test_read_data</span></code> (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q6-pytest-2-pts">Q6: <code class="docutils literal notranslate"><span class="pre">pytest</span></code> (2 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-import-use-1-6-pts">Part 3: <code class="docutils literal notranslate"><span class="pre">import</span></code> (+ use) (1.6 pts)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q7-module-import-1-5-pts">Q7: module import (1.5 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q8-answering-our-question-0-25-pts">Q8: Answering our question (0.25 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#submit">Submit</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="cogs-18-practice-final-exam">
+<h1>COGS 18 -  Practice Final Exam<a class="headerlink" href="#cogs-18-practice-final-exam" title="Link to this heading">#</a></h1>
+<p>This is the practice final exam for Spring 2024. It covers topics through the end of the course.</p>
+<p>This exam is out of 0 points, but the real thing will be out of 20 points.</p>
+<p><strong>PLEASE DO NOT CHANGE THE NAME OF THIS FILE.</strong></p>
+<p><strong>PLEASE DO NOT COPY &amp; PASTE OR DELETE CELLS INLCUDED IN THE EXAM.</strong> (Note that you can add additional cells, if you want to test things out.</p>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Link to this heading">#</a></h2>
+<section id="timing">
+<h3>Timing<a class="headerlink" href="#timing" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The exam is designed to take you ~2-3h.</p></li>
+<li><p>There will be a 48+ hour window during which you can complete this exam.</p></li>
+<li><p>If it takes you longer than 3h, you’re free to use that time.</p></li>
+</ul>
+</section>
+<section id="the-rules">
+<h3>The Rules<a class="headerlink" href="#the-rules" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>You are to complete this exam on your own.</p></li>
+<li><p>This is open-notes &amp; open-Google</p></li>
+<li><p>If you use outside sources, cite your sources (this includes ChatGPT)</p></li>
+<li><p>You may not talk to any humans about this exam.</p></li>
+<li><p>The following are all <em>prohibited</em>:</p>
+<ul>
+<li><p>text/phone/online chat communication</p></li>
+<li><p>posting questions to a message board where a human could respond (Piazza, Discord, Chegg, any similar site)</p></li>
+<li><p>viewing exam questions from a message board (as described above)</p></li>
+<li><p>asking anyone via any form about a question on this test directly</p></li>
+</ul>
+</li>
+<li><p>Clarification questions will <em><strong>not</strong></em> be allowed and there will be no posting on Piazza about the exam at all.</p>
+<ul>
+<li><p>Piazza posts about the exam will not be answered and will be deleted.</p></li>
+<li><p>Students who post questions about the exam to Piazza are at risk of losing points on the exam.</p></li>
+<li><p>If you are confused about wording, add a note to your exam explaining your confusion and how you interpreted the question.</p></li>
+<li><p>Note: This policy is b/c we are incapable of responding for 48+ hours straight. This is the only way to make it fair across the board for students.</p></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: red;">Note: </span> There <em>is</em> a chance for partial credit on some questions, so <em>some</em> code is better than <em>no</em> code. Even if it throws an error, having some code that partially answers the question will benefit you/your grade.</p>
+</section>
+<section id="q0-honor-code-0-25-pts">
+<h3>Q0 - Honor Code (0.25 pts)<a class="headerlink" href="#q0-honor-code-0-25-pts" title="Link to this heading">#</a></h3>
+<p>In the cell below, include a variable <code class="docutils literal notranslate"><span class="pre">honor_code</span></code> that stores the boolean <code class="docutils literal notranslate"><span class="pre">True</span></code> if you agree to the following statement:</p>
+<blockquote>
+<div><p>I agree that this exam was completed individually with the knowlege in my brain, information the notes from this course, and/or with searching for help on the Internet <em>without searching for answers to the text from these questions directly</em>. I did not ask anyone about specific questions on this exam. I did not post these questions (in part or in whole) on the Internet. I did not copy answers to these questions from anywhere or anyone else. I understand all code I’ve written on this exam and could explain my answers to someone else if asked.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">honor_code</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">honor_code</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="multiple-choice-section-2-points">
+<h2>Multiple choice section (2 points)<a class="headerlink" href="#multiple-choice-section-2-points" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Instructions<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Here are some multiple choice questions covering theoretical knowledge</p>
+<p>To provide answers you will fill out the corresponding variable, providing your choice as a string.  For example if the the question were</p>
+<blockquote>
+<div><p>MCQ1: Which is greater?<br>
+A) 12<br>
+B) 2<br></p>
+</div></blockquote>
+<p>Then in the answer section below you’d fill out</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MCQ1_ans</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+</pre></div>
+</div>
+<p>remember that <code class="docutils literal notranslate"><span class="pre">'A'</span></code> is NOT the same as <code class="docutils literal notranslate"><span class="pre">'a'</span></code> or <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">A'</span></code>… if you fill out the string incorrectly you will lose the points!</p>
+</section>
+<section id="mcq1">
+<h3>MCQ1<a class="headerlink" href="#mcq1" title="Link to this heading">#</a></h3>
+<p>Python has reserved words that are part of the language. You should never name variables these reserved words.  Which of the following names is an acceptable variable name.</p>
+<p>A) with    <br>
+B) for    <br>
+C) try    <br>
+D) Break    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq2">
+<h3>MCQ2<a class="headerlink" href="#mcq2" title="Link to this heading">#</a></h3>
+<p>Imagine you have a notebook and one of the cells looks <em>exactly</em> like the code below.  What will happen you execute that cell?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>A) it prints <code class="docutils literal notranslate"><span class="pre">1</span></code>    <br>
+B) it prints <code class="docutils literal notranslate"><span class="pre">a</span></code>    <br>
+C) it prints <code class="docutils literal notranslate"><span class="pre">b</span></code>    <br>
+D) it throws an error    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq3">
+<h3>MCQ3<a class="headerlink" href="#mcq3" title="Link to this heading">#</a></h3>
+<p>Given the following math expression</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">/</span> <span class="p">(</span><span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+</pre></div>
+</div>
+<p>what operator will be evaluated first?</p>
+<p>A) 3+2    <br>
+B) 16/4    <br>
+C) (4/2)    <br>
+D) 2**3    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq4">
+<h3>MCQ4<a class="headerlink" href="#mcq4" title="Link to this heading">#</a></h3>
+<p>What will be the next evaluaton after the one above?</p>
+<p>A) 2**3    <br>
+B) 5+16    <br>
+C) 4/2    <br>
+D) 16/4    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq5">
+<h3>MCQ5<a class="headerlink" href="#mcq5" title="Link to this heading">#</a></h3>
+<p>Which of these operators will give you the remainder of a division?</p>
+<p>A) //    <br>
+B) %    <br>
+C) /    <br>
+D) floor()    <br>
+E) None of the above <br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MCQ1_ans</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+<span class="n">MCQ2_ans</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+<span class="n">MCQ3_ans</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+<span class="n">MCQ4_ans</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+<span class="n">MCQ5_ans</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">MCQ1_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span> 
+<span class="k">assert</span> <span class="n">MCQ2_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ3_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ4_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ5_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ1_ans</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ2_ans</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ3_ans</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ4_ans</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ5_ans</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mcq6">
+<h3>MCQ6<a class="headerlink" href="#mcq6" title="Link to this heading">#</a></h3>
+<p>When there is a set of if/elif statements that all evaluate as True, which of them will be executed?. E.g.,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;3&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;4&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A) all True statements will be executed     <br>
+B) the first True statement (<code class="docutils literal notranslate"><span class="pre">if</span></code>) will be executed    <br>
+C) the first True <code class="docutils literal notranslate"><span class="pre">elif</span></code> will be executed   <br>
+D) the last True statment will be executed    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq7">
+<h3>MCQ7<a class="headerlink" href="#mcq7" title="Link to this heading">#</a></h3>
+<p>Where can you NOT place an elif?</p>
+<p>A)  right after an if   <br>
+B)  right after another elif   <br>
+C)  right after an else   <br>
+D)  right before the else   <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq8">
+<h3>MCQ8<a class="headerlink" href="#mcq8" title="Link to this heading">#</a></h3>
+<p>Here is a list</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Julian&#39;</span><span class="p">,</span> <span class="s1">&#39;Amal&#39;</span><span class="p">,</span> <span class="s1">&#39;Richard&#39;</span><span class="p">,</span> <span class="s1">&#39;Juan&#39;</span><span class="p">,</span> <span class="s1">&#39;Xuan&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Which of the following gives a different result than the other answers?</p>
+<p>A)  <code class="docutils literal notranslate"><span class="pre">my_lst[2:]</span></code>  <br>
+B)  <code class="docutils literal notranslate"><span class="pre">my_lst[2:3]</span></code>  <br>
+C)  <code class="docutils literal notranslate"><span class="pre">my_lst[2]</span></code>  <br>
+D)  <code class="docutils literal notranslate"><span class="pre">my_lst[-3]</span></code>   <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq9">
+<h3>MCQ9<a class="headerlink" href="#mcq9" title="Link to this heading">#</a></h3>
+<p>Which of the following statements is false?</p>
+<p>A) Dictionaries can be indexed by position    <br>
+B) New values can be added to a list    <br>
+C) New values can be added to a dictionary    <br>
+D) Dictionaries can be indexed by key    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq10">
+<h3>MCQ10<a class="headerlink" href="#mcq10" title="Link to this heading">#</a></h3>
+<p>A user gives you a list of empolyee names that need to have their paychecks processed. How would you best iterate through that list?</p>
+<p>A) while loop    <br>
+B) copy/paste a cell using different employee name in each    <br>
+C) if/elif/else    <br>
+D) for loop    <br>
+E) None of the above <br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MCQ6_ans</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+<span class="n">MCQ7_ans</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+<span class="n">MCQ8_ans</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+<span class="n">MCQ9_ans</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+<span class="n">MCQ10_ans</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">MCQ6_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span> 
+<span class="k">assert</span> <span class="n">MCQ7_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ8_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ9_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ10_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ6_ans</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ7_ans</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ8_ans</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ9_ans</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ10_ans</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mcq11">
+<h3>MCQ11<a class="headerlink" href="#mcq11" title="Link to this heading">#</a></h3>
+<p>A dictionary <code class="docutils literal notranslate"><span class="pre">my_dict</span></code> is defined for you.  How can you find out if <code class="docutils literal notranslate"><span class="pre">'foo'</span></code> is in the keys of <code class="docutils literal notranslate"><span class="pre">my_dict</span></code></p>
+<p>A) <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">my_dict.isin('foo'):</span></code> <br>
+B) <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">my_dict</span> <span class="pre">in</span> <span class="pre">'foo':</span></code>    <br>
+C) <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">'foo'</span> <span class="pre">in</span> <span class="pre">my_dict:</span></code>    <br>
+D) <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">my_dict.keys()</span> <span class="pre">in</span> <span class="pre">'foo':</span></code>   <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq12">
+<h3>MCQ12<a class="headerlink" href="#mcq12" title="Link to this heading">#</a></h3>
+<p>When does IndexError occur?</p>
+<p>A) When you try to index a variable type that can’t be indexed    <br>
+B) When you try to change the index  of a collection  <br>
+C) When you make an index and run out of memory<br>
+D) When you try to index outside the range of a collection    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq13">
+<h3>MCQ13<a class="headerlink" href="#mcq13" title="Link to this heading">#</a></h3>
+<p>When an IndexError occurs it is a(n)…</p>
+<p>A) Syntax error aka parsing error    <br>
+B) Exception aka runtime error   <br>
+C) System crash  <br>
+D) Hardware fault    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq14">
+<h3>MCQ14<a class="headerlink" href="#mcq14" title="Link to this heading">#</a></h3>
+<p>When the code below executes, what will you see printed?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># note: variable x is NOT defined up to this point!</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Message 1&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Message 2&quot;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Message 3&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Message 4&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A) Message 1    <br>
+B) Message 2    <br>
+C) Message 3    <br>
+D) the value of x, followed by Message 4    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq15">
+<h3>MCQ15<a class="headerlink" href="#mcq15" title="Link to this heading">#</a></h3>
+<p>You are processing a chat requests until the user types “goodbye” to end the chat session.  How would you best iterate through the user’s messages to process them one by one?</p>
+<p>A) while loop    <br>
+B) copy/paste a cell using different employee name in each    <br>
+C) if/elif/else    <br>
+D) for loop    <br>
+E) None of the above <br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MCQ11_ans</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+<span class="n">MCQ12_ans</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+<span class="n">MCQ13_ans</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+<span class="n">MCQ14_ans</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+<span class="n">MCQ15_ans</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">MCQ11_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span> 
+<span class="k">assert</span> <span class="n">MCQ12_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ13_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ14_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ15_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ11_ans</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ12_ans</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ13_ans</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ14_ans</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ15_ans</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mcq16">
+<h3>MCQ16<a class="headerlink" href="#mcq16" title="Link to this heading">#</a></h3>
+<p>The directory structure looks like:</p>
+<blockquote>
+<div><p>/home/sellis/Code/COGS18 <br>
+| <br>
+|______ Materials <br>
+| <br>
+|______ LectureNotes <br></p>
+</div></blockquote>
+<p>The current directory is <code class="docutils literal notranslate"><span class="pre">LectureNotes/</span></code>. How would you copy file <code class="docutils literal notranslate"><span class="pre">Lecture.ipynb</span></code> from <code class="docutils literal notranslate"><span class="pre">Materials/</span></code> to <code class="docutils literal notranslate"><span class="pre">LectureNotes/</span></code> using a relative file path?</p>
+<p>A) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">../Materials/Lecture.ipynb</span> <span class="pre">.</span></code> <br>
+B) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">Lecture.ipynb</span> <span class="pre">../LectureNotes/</span> </code>   <br>
+C) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">/home/sellis/Code/COGS18/Materials/Lecture.ipynb</span> <span class="pre">.</span></code>    <br>
+D) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">Lecture.ipynb</span> <span class="pre">/home/sellis/Code/COGS18/LectureNotes/</span></code>  <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq17">
+<h3>MCQ17<a class="headerlink" href="#mcq17" title="Link to this heading">#</a></h3>
+<p>How would you make the same copy as above, but using an absolute file path?</p>
+<p>A) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">../Materials/Lecture.ipynb</span> <span class="pre">.</span></code> <br>
+B) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">Lecture.ipynb</span> <span class="pre">../LectureNotes/</span> </code>   <br>
+C) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">/home/sellis/Code/COGS18/Materials/Lecture.ipynb</span> <span class="pre">.</span></code>    <br>
+D) <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">Lecture.ipynb</span> <span class="pre">/home/sellis/Code/COGS18/LectureNotes/</span></code>  <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq18">
+<h3>MCQ18<a class="headerlink" href="#mcq18" title="Link to this heading">#</a></h3>
+<p>You want to iterate over two lists (<code class="docutils literal notranslate"><span class="pre">a_list,</span> <span class="pre">b_list</span></code>) that are the same length, simulatnously printing out the 0th elements of both lists on a single line, then 1st elements of both lists on a single line, then 2nd, etc..  What is the correct way to do this?</p>
+<p>A)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">a_list</span><span class="p">,</span> <span class="n">b_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>B)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">a_list</span><span class="p">,</span> <span class="n">b_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>C)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a_list</span><span class="p">,</span> <span class="n">b_list</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>D)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a_list</span><span class="p">,</span> <span class="n">b_list</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>E) None of the above <br></p>
+</section>
+<section id="mcq19">
+<h3>MCQ19<a class="headerlink" href="#mcq19" title="Link to this heading">#</a></h3>
+<p>For doing linear algebra which of the following libraries would be most helpful?</p>
+<p>A) LinAlg    <br>
+B) Pandas    <br>
+C) MathPy    <br>
+D) NumPy    <br>
+E) None of the above <br></p>
+</section>
+<section id="mcq20">
+<h3>MCQ20<a class="headerlink" href="#mcq20" title="Link to this heading">#</a></h3>
+<p>For working with spreadsheet-like data (tables of data) which of the following libraries  would be most helpful?</p>
+<p>A) LinAlg    <br>
+B) Pandas    <br>
+C) MathPy    <br>
+D) NumPy    <br>
+E) None of the above <br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MCQ16_ans</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+<span class="n">MCQ17_ans</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+<span class="n">MCQ18_ans</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span> 
+<span class="n">MCQ19_ans</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+<span class="n">MCQ20_ans</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">MCQ16_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span> 
+<span class="k">assert</span> <span class="n">MCQ17_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ18_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ19_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">MCQ20_ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ16_ans</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ17_ans</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ18_ans</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ19_ans</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell is being used in testing of your solution, do not edit or delete it.</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">MCQ20_ans</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="project-intro">
+<h2>Project Intro<a class="headerlink" href="#project-intro" title="Link to this heading">#</a></h2>
+<p>In this project, you’ll be working with data from the 100 known verified oldest people.</p>
+<p>While there are many questions one <em>could</em> ask about this dataset, we’re going to focus on the following question:</p>
+<blockquote>
+<div><p>Of the verified oldest individuals born in the 20th century (1900-1999), were more of them female or were more male?</p>
+</div></blockquote>
+<p>While everything you need has been provided in the final folder, if you’re interested, more information about these data can be read <a class="reference external" href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-05-30">from TidyTuesday</a>.</p>
+<p><em>Caveat</em>: In these data, data from only two genders are represented (males, females); however, gender is not binary and a better dataset would be more reflective of this fact. In fact, as the documentation states, even though the column is called gender, it’s likely actually the sex assigned at birth that was collected.</p>
+<section id="files-included">
+<h3>Files Included<a class="headerlink" href="#files-included" title="Link to this heading">#</a></h3>
+<p>There are 5 files included in your Project folder. Each is described below:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Project_Final_Sp24.ipynb</span></code> | this notebook file; includes exam instructions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code> | module that will store your functions (has a single function in it to start)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test_data_analysis.py</span></code> | test file (has a single test function to start)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">centenarians.csv</span></code> | data file with the data we’ll be using for the analysis</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">testfile.csv</span></code> | a smaller version of the data file that can be used for testing</p></li>
+</ul>
+<p><strong>Do not move or change the name of any of these files.</strong></p>
+</section>
+</section>
+<section id="part-1-code-module-11-pts">
+<h2>Part 1: Code + Module  (11 pts)<a class="headerlink" href="#part-1-code-module-11-pts" title="Link to this heading">#</a></h2>
+<p>In this section, you’ll write the functions needed to carry out the analysis.</p>
+<section id="q1-function-read-data-3-pts">
+<h3>Q1: function: <code class="docutils literal notranslate"><span class="pre">read_data</span></code> (3 pts)<a class="headerlink" href="#q1-function-read-data-3-pts" title="Link to this heading">#</a></h3>
+<p>Define a function <code class="docutils literal notranslate"><span class="pre">read_data</span></code> with a single parameter <code class="docutils literal notranslate"><span class="pre">file</span></code> that accomplishes the following, using <code class="docutils literal notranslate"><span class="pre">pandas</span></code> functions/methods:</p>
+<ol class="arabic simple">
+<li><p>uses <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to read the <code class="docutils literal notranslate"><span class="pre">file</span></code> in</p></li>
+<li><p>filters to only include individuals who are deceased (individuals with the value ‘deceased’ in the <code class="docutils literal notranslate"><span class="pre">still_alive</span></code> column)</p></li>
+<li><p>creates a new column <code class="docutils literal notranslate"><span class="pre">birth_year</span></code>, storing an integer - this which will include the year the individual was born (calculated from the column <code class="docutils literal notranslate"><span class="pre">birth_date</span></code>)</p></li>
+<li><p>filters to only include individuals born in the 20th century (born in a year between 1900 and 1999, inclusive)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code>s the resulting DataFrame from the function.</p></li>
+</ol>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>to test out your function here, you’ll need to <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pandas</span> <span class="pre">as</span> <span class="pre">pd</span></code> first (outside your function).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">birth_date</span></code> is a string. We’ll use that to generate the <code class="docutils literal notranslate"><span class="pre">birth_year</span></code> column, but note that the values in <code class="docutils literal notranslate"><span class="pre">birth_year</span></code> should be numeric (not strings)</p></li>
+<li><p>There is a pandas method <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.Series.str.extract.html"><code class="docutils literal notranslate"><span class="pre">str.extract</span></code></a> that may be helpful for generating <code class="docutils literal notranslate"><span class="pre">birth_year</span></code>. Note that if you want to pull out the first four digits of a string, the input to that method would be: <code class="docutils literal notranslate"><span class="pre">'(^\d\d\d\d)'</span></code>, where <code class="docutils literal notranslate"><span class="pre">\d</span></code> specifies a digit</p></li>
+<li><p>there is a pandas method called <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.Series.between.html"><code class="docutils literal notranslate"><span class="pre">between()</span></code></a> that allows you to extract all rows between two values in a series</p></li>
+</ul>
+<p><strong>Suggested smoke test</strong>: Executing the function as follows: <code class="docutils literal notranslate"><span class="pre">read_data(file</span> <span class="pre">=</span> <span class="pre">'testfile.csv')</span></code> should return a <code class="docutils literal notranslate"><span class="pre">pandas</span></code> DataFrame with 5 rows and 9 columns.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="k">def</span> <span class="nf">read_data</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+    
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;still_alive&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;deceased&#39;</span><span class="p">]</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;birth_year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;birth_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="s1">&#39;(^\d\d\d\d)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;birth_year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">1900</span><span class="p">,</span><span class="mi">1999</span><span class="p">)]</span>
+
+    <span class="k">return</span> <span class="n">df</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BE SURE YOUR ANSWER IS IN THE CELL ABOVE</span>
+<span class="c1"># but you can use this cell to test/execute/check your thinking (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">read_data</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">read_data</span><span class="p">(</span><span class="s1">&#39;testfile.csv&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check correct output shape from read_data</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="c1"># check extracted columns correctly</span>
+<span class="k">assert</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check correct birth_year column exists</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="s1">&#39;birth_year&#39;</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check birth_year column values </span>
+<span class="c1"># are numeric and that values are between expected years</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">birth_year</span> <span class="o">&gt;=</span> <span class="mi">1900</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">all</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">birth_year</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1999</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check that `still_alive` only contains &#39;deceased&#39;</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">still_alive</span> <span class="o">==</span> <span class="s1">&#39;deceased&#39;</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>If points lost above, check for partial credit (otherwise, give full credit):</p>
+<ul class="simple">
+<li><p>function defined correctly with single input parameter (<strong>0.2 pts</strong>)</p></li>
+<li><p>reads file in correctly using <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code> function (<strong>0.25 pts</strong>)</p></li>
+<li><p>filters <code class="docutils literal notranslate"><span class="pre">still_alive</span></code> correctly (<strong>0.5 pts</strong>)</p></li>
+<li><p>calculates <code class="docutils literal notranslate"><span class="pre">birth_year</span></code> correctly - extracts and converts to integer (<strong>0.5 pts</strong>)</p></li>
+<li><p>filters <code class="docutils literal notranslate"><span class="pre">birth_year</span></code> correctly</p></li>
+<li><p>includes <code class="docutils literal notranslate"><span class="pre">return</span></code> statement (<strong>0.05 pts</strong>)
+=== END MARK SCHEME ===</p></li>
+</ul>
+</section>
+<section id="q2-function-calculate-stats-2-5-pts">
+<h3>Q2: function: <code class="docutils literal notranslate"><span class="pre">calculate_stats</span></code> (2.5 pts)<a class="headerlink" href="#q2-function-calculate-stats-2-5-pts" title="Link to this heading">#</a></h3>
+<p>Now, define a function <code class="docutils literal notranslate"><span class="pre">calculate_stats</span></code> that takes in the parameter <code class="docutils literal notranslate"><span class="pre">df</span></code> (the DataFrame it will operate on).</p>
+<p>This function should:</p>
+<ol class="arabic simple">
+<li><p>Calculate <code class="docutils literal notranslate"><span class="pre">value_counts()</span></code> on the <code class="docutils literal notranslate"><span class="pre">'gender'</span></code> column of the dataframe (using default values for all parameters)</p></li>
+<li><p>Extract the count of females (<code class="docutils literal notranslate"><span class="pre">num_female</span></code>) and males (<code class="docutils literal notranslate"><span class="pre">num_males</span></code>) from the output of <code class="docutils literal notranslate"><span class="pre">value_counts</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> <code class="docutils literal notranslate"><span class="pre">num_female</span></code> and <code class="docutils literal notranslate"><span class="pre">num_male</span></code> (in that order) from the function</p></li>
+</ol>
+<p>Note:</p>
+<ul class="simple">
+<li><p>If there are no females in the <code class="docutils literal notranslate"><span class="pre">value_counts</span></code> output, <code class="docutils literal notranslate"><span class="pre">num_female</span></code> should store <code class="docutils literal notranslate"><span class="pre">0</span></code>. If there are no males <code class="docutils literal notranslate"><span class="pre">num_males</span></code> should store <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+</ul>
+<p><strong>Suggested smoke test</strong>: Executing the function as follows (where <code class="docutils literal notranslate"><span class="pre">df</span></code> is the output after having run <code class="docutils literal notranslate"><span class="pre">read_data()</span></code> on ‘testfile.csv’): <code class="docutils literal notranslate"><span class="pre">out</span> <span class="pre">=</span> <span class="pre">calculate_stats(df)</span></code> should return a tuple containing <code class="docutils literal notranslate"><span class="pre">(5,</span> <span class="pre">0)</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># alt option; requires default value of get method be known/found</span>
+<span class="k">def</span> <span class="nf">calculate_stats</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">gender_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>  <span class="c1"># Calculate value_counts() on the &#39;gender&#39; column</span>
+    
+    <span class="n">num_female</span> <span class="o">=</span> <span class="n">gender_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;female&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Extract the count of females, defaulting to 0 if not found</span>
+    <span class="n">num_male</span> <span class="o">=</span> <span class="n">gender_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;male&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Extract the count of males, defaulting to 0 if not found</span>
+    
+    <span class="k">return</span> <span class="n">num_female</span><span class="p">,</span> <span class="n">num_male</span>
+
+
+<span class="c1"># requires use of try/except</span>
+<span class="c1"># def calculate_stats(df):</span>
+    
+<span class="c1">#     val_counts = df[&#39;gender&#39;].value_counts()</span>
+    
+<span class="c1">#     try:</span>
+<span class="c1">#         num_female = df[&#39;gender&#39;].value_counts()[&#39;female&#39;]</span>
+<span class="c1">#     except:</span>
+<span class="c1">#         num_female = 0</span>
+    
+<span class="c1">#     try:</span>
+<span class="c1">#         num_male = df[&#39;gender&#39;].value_counts()[&#39;male&#39;]</span>
+<span class="c1">#     except:</span>
+<span class="c1">#         num_male = 0</span>
+
+<span class="c1">#     return num_female, num_male</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check function executes </span>
+<span class="c1"># without error on provided testfile</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">read_data</span><span class="p">(</span><span class="s1">&#39;testfile.csv&#39;</span><span class="p">)</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">calculate_stats</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> 
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check output from function</span>
+<span class="c1"># returns two values as a tuple with correct values</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">==</span> <span class="nb">tuple</span>
+<span class="k">assert</span> <span class="n">out</span> <span class="o">==</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check function executes </span>
+<span class="c1"># without error on full dataset</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="n">df_all</span> <span class="o">=</span> <span class="n">read_data</span><span class="p">(</span><span class="s1">&#39;centenarians.csv&#39;</span><span class="p">)</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">calculate_stats</span><span class="p">(</span><span class="n">df_all</span><span class="p">)</span> 
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check check values returned are correct</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">out</span> <span class="o">==</span> <span class="p">(</span><span class="mi">43</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>If points lost above, check for partial credit (otherwise, give full credit):</p>
+<ul class="simple">
+<li><p>function defined correctly with parameters <code class="docutils literal notranslate"><span class="pre">df</span></code> amd <code class="docutils literal notranslate"><span class="pre">label</span></code> (<strong>0.25 pts</strong>)</p></li>
+<li><p>conditional filtering correct (<strong>0.25 pts</strong>)</p></li>
+<li><p>value_counts() syntax correct;  (<strong>0.25 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> statement included (<strong>0.25 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</section>
+<section id="q3-module-data-analysis-py-5-pts">
+<h3>Q3: module <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code> (5 pts)<a class="headerlink" href="#q3-module-data-analysis-py-5-pts" title="Link to this heading">#</a></h3>
+<p>Now, we’ll move your functions from Q1 and Q2 into our <code class="docutils literal notranslate"><span class="pre">data_analysis</span></code> module and get that module all ready to go!</p>
+<p><code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code> has two <code class="docutils literal notranslate"><span class="pre">import</span></code> statements at the top and a single function <code class="docutils literal notranslate"><span class="pre">generate_plot</span></code>. The code in <code class="docutils literal notranslate"><span class="pre">generate_plot</span></code> functions; however, you’ll notice that it does not have any code comments or documentation. You’ll fix that in just a second!</p>
+<p>To make this module more complete and polished, carry out the following steps:</p>
+<ol class="arabic simple">
+<li><p>Copy the <code class="docutils literal notranslate"><span class="pre">read_data</span></code> and <code class="docutils literal notranslate"><span class="pre">calculate_stats</span></code> functions from Q1 and Q2 (respectively) into the <code class="docutils literal notranslate"><span class="pre">data_analysis</span></code> module (the module will have three functions total, including <code class="docutils literal notranslate"><span class="pre">generate_plot</span></code>)</p></li>
+<li><p>Edit all three functions for Code Style, as discussed in class</p></li>
+<li><p>Add helpful code comments throughout all three functions</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">numpy</span></code> style docs to all three functions, as discussed in class</p></li>
+</ol>
+<p>Note: Nothing has to be done in the notebook for this question. Everything will happen in <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code></p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>To grade, you’ll have to open up this student’s <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code> file:</p>
+<ul class="simple">
+<li><p>contains 3 functions (<strong>0.5 pts</strong>)</p></li>
+<li><p>all three functions have good code style (line spacing, spacing around operators, good variable names, etc.) (<strong>1.5 pts</strong>)</p></li>
+<li><p>functions contain at least some level of helpful code comments (<strong>1 pts</strong>)</p></li>
+<li><p>functions contain <code class="docutils literal notranslate"><span class="pre">numpy</span></code> style docstrings, specifying one-liner, Parameters, and Returns (<strong>2 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</section>
+</section>
+<section id="part-2-code-testing-4-5-pts">
+<h2>Part 2: Code Testing (4.5 pts)<a class="headerlink" href="#part-2-code-testing-4-5-pts" title="Link to this heading">#</a></h2>
+<p>At this point, you’ve got three well-documented functions with helpful code comments and good code style in <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code>. Now it’s time to focus on our code tests!</p>
+<section id="q4-test-function-test-calculate-stats-1-5-pts">
+<h3>Q4: test function: <code class="docutils literal notranslate"><span class="pre">test_calculate_stats</span></code> (1.5 pts)<a class="headerlink" href="#q4-test-function-test-calculate-stats-1-5-pts" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">test_calculate_stats()</span></code> has been provided for you in <code class="docutils literal notranslate"><span class="pre">test_data_analysis.py</span></code>. Describe in the cell containing <em><strong>Replace this with your explanation</strong></em> what exactly this test function is accomplishing/testing. (This will likely include an explanation of each line of code.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># FEEL FREE TO USE THIS CELL TO CHECK YOUR UNDERSTANDING (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><em><strong>Replace this with your explanation.</strong></em></p>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>overall explanation of the test function/what a test function is is close to right (<strong>0.25 pts</strong>)</p></li>
+<li><p>explains that <code class="docutils literal notranslate"><span class="pre">df</span> <span class="pre">=</span> <span class="pre">read_data(file='testfile.csv')</span></code> creates a dummy DataFrame (<strong>0.25 pts</strong>)</p></li>
+<li><p>correctly explains that <code class="docutils literal notranslate"><span class="pre">out</span> <span class="pre">=</span> <span class="pre">calculate_stats(df)</span></code> is executing the function (<strong>0.25 pts</strong>)</p></li>
+<li><p>explains that <code class="docutils literal notranslate"><span class="pre">type(out)</span> <span class="pre">==</span> <span class="pre">tuple</span></code> is checking the output type (<strong>0.25 pts</strong>)</p></li>
+<li><p>explains that <code class="docutils literal notranslate"><span class="pre">len(out)</span> <span class="pre">==</span> <span class="pre">2</span></code> is checking that the correct number of things have been returned (<strong>0.25 pts</strong>)</p></li>
+<li><p>explains that <code class="docutils literal notranslate"><span class="pre">out</span> <span class="pre">=</span> <span class="pre">(5,</span> <span class="pre">0)</span></code> is returning the number of females and males, respectively in the test dataset (<strong>0.25 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</section>
+<section id="q5-test-function-test-read-data-3-pts">
+<h3>Q5: test function: <code class="docutils literal notranslate"><span class="pre">test_read_data</span></code> (3 pts)<a class="headerlink" href="#q5-test-function-test-read-data-3-pts" title="Link to this heading">#</a></h3>
+<p>Now it’s your turn to write your own test function. Add a test function <code class="docutils literal notranslate"><span class="pre">test_read_data()</span></code> to <code class="docutils literal notranslate"><span class="pre">test_data_analysis.py</span></code> that: 1) includes at least three <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements and 2) tests the functionality of the <code class="docutils literal notranslate"><span class="pre">read_data</span></code> function.</p>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>this will likely use the <code class="docutils literal notranslate"><span class="pre">'testfile.csv'</span></code> file provided</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test_data_analysis.py</span></code> is missing an <code class="docutils literal notranslate"><span class="pre">import</span></code> statement at the top; be sure to add these</p></li>
+<li><p>nothing has to be done in the notebook here; however, feel free to test out your work below</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># FEEL FREE TO USE THIS CELL TO CHECK YOUR UNDERSTANDING (optional)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<p>To grade, you’ll have to open up this student’s <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code> file:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">import</span></code> statement included (<strong>0.5 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">import</span></code> statement matches how used in tests (<strong>0.5 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test_read_data()</span></code> has at least 3 <code class="docutils literal notranslate"><span class="pre">assert</span></code>s  (<strong>0.5 pts</strong>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">assert</span></code>s test functionality of the code (i.e. type of, shape of, columns in, and/or values in output) (<strong>1.5 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</section>
+<section id="q6-pytest-2-pts">
+<h3>Q6: <code class="docutils literal notranslate"><span class="pre">pytest</span></code> (2 pts)<a class="headerlink" href="#q6-pytest-2-pts" title="Link to this heading">#</a></h3>
+<p>In the cell below, execute <code class="docutils literal notranslate"><span class="pre">pytest</span></code> on your test file, ensuring your tests both pass.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="o">!</span>pytest<span class="w"> </span>test_data_analysis.py
+
+<span class="c1">#OR </span>
+
+<span class="c1"># !pytest</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">============================= test session starts ==============================</span>
+platform linux -- Python 3.9.5, pytest-8.0.2, pluggy-1.4.0
+rootdir: /home/grader-cogs18-01/LectureNotes-COGS18/Exam-Prep/Practice_Final_COGS18_Sp24_Ans
+plugins: anyio-3.2.1
+collected 2 items                                                              
+
+<span class=" -Color -Color-Bold">test_data_analysis.py </span><span class=" -Color -Color-Bold -Color-Bold-Green">.</span><span class=" -Color -Color-Green">.                                                 [100%]</span>
+
+<span class=" -Color -Color-Green">============================== </span><span class=" -Color -Color-Bold -Color-Bold-Green">2 passed</span><span class=" -Color -Color-Green"> in 1.50s ===============================</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test running pytest</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="n">out</span> <span class="o">=</span> <span class="o">!</span>pytest<span class="w"> </span>test_data_analysis.py
+<span class="k">assert</span> <span class="n">out</span><span class="o">.</span><span class="n">grep</span><span class="p">(</span><span class="s2">&quot;ERRORS&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="k">assert</span> <span class="n">out</span><span class="o">.</span><span class="n">grep</span><span class="p">(</span><span class="s2">&quot;FAILED&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p>syntax calling <code class="docutils literal notranslate"><span class="pre">pytest</span></code> correct (even if tests failed) (<strong>1 pt</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+</section>
+</section>
+<section id="part-3-import-use-1-6-pts">
+<h2>Part 3: <code class="docutils literal notranslate"><span class="pre">import</span></code> (+ use) (1.6 pts)<a class="headerlink" href="#part-3-import-use-1-6-pts" title="Link to this heading">#</a></h2>
+<section id="q7-module-import-1-5-pts">
+<h3>Q7: module import (1.5 pts)<a class="headerlink" href="#q7-module-import-1-5-pts" title="Link to this heading">#</a></h3>
+<p>At this point you have a module with three functions and a test file with two functions, on which you’ve (hopefully successfully) executed <code class="docutils literal notranslate"><span class="pre">pytest</span></code> and have passing tests.</p>
+<p>Now, it’s time to put it all together and use it!</p>
+<p>Below, <code class="docutils literal notranslate"><span class="pre">import</span></code> your <code class="docutils literal notranslate"><span class="pre">data_analysis</span></code> module below, so that when you execute the four cells with code provided below, they execute without error, with the final cell producing a plot of your data.</p>
+<p>Note: You will likely need to restart your kernel before the <code class="docutils literal notranslate"><span class="pre">import</span></code> will work.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="kn">import</span> <span class="nn">data_analysis</span> <span class="k">as</span> <span class="nn">da</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>This “blank” cell included intentionally.</strong> Do not do anything here. (It’s being used in grading.)</p>
+<p>=== BEGIN MARK SCHEME ===</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">data_analysis</span> <span class="pre">as</span> <span class="pre">da</span></code> syntax correct; even if it produces an error, give full credit (<strong>0.25 pts</strong>)</p></li>
+</ul>
+<p>=== END MARK SCHEME ===</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># execute read_data function</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">read_data</span><span class="p">(</span><span class="n">file</span> <span class="o">=</span> <span class="s1">&#39;centenarians.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># execute calculate_stats function</span>
+<span class="n">counts</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">calculate_stats</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">counts</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(43, 50)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># produce a plot</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">generate_plot</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/3d472251df89cbd575e4c6ceaba2345c66af3ec83fc29a7c2f11b84d350be171.png" src="../../../_images/3d472251df89cbd575e4c6ceaba2345c66af3ec83fc29a7c2f11b84d350be171.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">da</span><span class="o">.</span><span class="n">read_data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">da</span><span class="o">.</span><span class="n">calculate_stats</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">da</span><span class="o">.</span><span class="n">generate_plot</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># hidden test to check that plot was generated</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">)</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="q8-answering-our-question-0-25-pts">
+<h3>Q8: Answering our question (0.25 pts)<a class="headerlink" href="#q8-answering-our-question-0-25-pts" title="Link to this heading">#</a></h3>
+<p>We set out to answer the question:</p>
+<blockquote>
+<div><p>Of the verified oldest individuals born in the 20th century (1900-1999), were more of them female or were more male?</p>
+</div></blockquote>
+<p>Using the plot generated above, store your answer (either the string “female” or the string “male”) in the variable <code class="docutils literal notranslate"><span class="pre">ans</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="s2">&quot;male&quot;</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">ans</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;male&quot;</span><span class="p">,</span> <span class="s2">&quot;female&quot;</span><span class="p">]</span>
+<span class="c1"># hidden test to check your answer</span>
+<span class="c1">### BEGIN HIDDEN TESTS</span>
+<span class="k">assert</span> <span class="n">ans</span> <span class="o">==</span> <span class="s2">&quot;male&quot;</span>
+<span class="c1">### END HIDDEN TESTS</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="submit">
+<h3>Submit<a class="headerlink" href="#submit" title="Link to this heading">#</a></h3>
+<p>You’re finished!!! Check your work and then (for the real final exam) when you’re ready, <strong>submit on datahub</strong>.</p>
+<p style="color:red;">Note: all the files in the exam directory <i>will</i> be included with your submission...even if it *looks* on datahub like only the notebook is being submitted.</p></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../E2_COGS18_SP24.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">COGS 18 - Exam 2 (Take-Home)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../../projects/PythonProjects.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python Projects</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timing">Timing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q0-honor-code-0-25-pts">Q0 - Honor Code (0.25 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-choice-section-2-points">Multiple choice section (2 points)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Instructions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq1">MCQ1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq2">MCQ2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq3">MCQ3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq4">MCQ4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq5">MCQ5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq6">MCQ6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq7">MCQ7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq8">MCQ8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq9">MCQ9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq10">MCQ10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq11">MCQ11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq12">MCQ12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq13">MCQ13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq14">MCQ14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq15">MCQ15</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq16">MCQ16</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq17">MCQ17</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq18">MCQ18</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq19">MCQ19</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcq20">MCQ20</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-intro">Project Intro</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#files-included">Files Included</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-code-module-11-pts">Part 1: Code + Module  (11 pts)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q1-function-read-data-3-pts">Q1: function: <code class="docutils literal notranslate"><span class="pre">read_data</span></code> (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q2-function-calculate-stats-2-5-pts">Q2: function: <code class="docutils literal notranslate"><span class="pre">calculate_stats</span></code> (2.5 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q3-module-data-analysis-py-5-pts">Q3: module <code class="docutils literal notranslate"><span class="pre">data_analysis.py</span></code> (5 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-code-testing-4-5-pts">Part 2: Code Testing (4.5 pts)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q4-test-function-test-calculate-stats-1-5-pts">Q4: test function: <code class="docutils literal notranslate"><span class="pre">test_calculate_stats</span></code> (1.5 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q5-test-function-test-read-data-3-pts">Q5: test function: <code class="docutils literal notranslate"><span class="pre">test_read_data</span></code> (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q6-pytest-2-pts">Q6: <code class="docutils literal notranslate"><span class="pre">pytest</span></code> (2 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-import-use-1-6-pts">Part 3: <code class="docutils literal notranslate"><span class="pre">import</span></code> (+ use) (1.6 pts)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q7-module-import-1-5-pts">Q7: module import (1.5 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q8-answering-our-question-0-25-pts">Q8: Answering our question (0.25 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#submit">Submit</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Shannon Ellis, Jason Fleischer, and Tom Donoghue
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

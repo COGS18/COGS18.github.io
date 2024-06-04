@@ -76,7 +76,7 @@ parts:
       title: E1-Review
     - file: materials/Exam-Prep/E1_Practice_COGS18_SP24
       title: E1-Practice-Answers
-    - file: materials/Exam-Prep/E1_COGS18_SP24.ipynb
+    - file: materials/Exam-Prep/E1_COGS18_SP24
       title: E1-Answers
     - file: materials/Exam-Prep/Exam2-Review
       title: E2-Review
@@ -86,8 +86,8 @@ parts:
       title: E2-Practice-Answers
     - file: materials/Exam-Prep/E2_COGS18_SP24
       title: E2-Answers
-  #   - file: materials/ExamPrep/PracticeFinal/Pratice_Final_Sp23
-  #     title: Practice-Final-Answers
+    - file: materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24
+      title: Practice-Final-Answers
 
   - caption: Projects
     chapters:
