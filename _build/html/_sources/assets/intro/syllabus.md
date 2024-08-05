@@ -151,7 +151,6 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 8/20/2024 | 3      | Tu  | Methods \& Classes     |                             |                                         |
 | 8/21/2024 | 3      | W   | **Midterm: In-Class Portion** | CL5 - loops          | Midterm: technical portion (take-home)  |
 | 8/22/2024 | 3      | Th  | Classes \& Command Line |                            |                                         |
-
 | 8/26/2024 | 4      | M   | Command Line \& Modules | CL6 - classes              |  A3 - loops, strings, chatbots          |
 | 8/27/2024 | 4      | Tu  | Modules \& Scientific Computing |                    |                                         |
 | 8/28/2024 | 4      | W   | Scientific Computing \& Documentation |  CL7 - command line |                                  |
