@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Conditionals &#8212; COGS 18 - Introduction To Python</title>
   
@@ -18,51 +19,52 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materials/06-Conditionals';</script>
-    <link rel="icon" href="../_static/logo.png"/>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Collections" href="07-Collections.html" />
-    <link rel="prev" title="Functions" href="05-Functions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -72,15 +74,7 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -115,14 +109,11 @@
 </form></div>
   </div>
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -137,11 +128,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
   
 
 <a class="navbar-brand logo" href="../intro.html">
-  
   
   
   
@@ -151,23 +140,12 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
 <ul class="nav bd-sidenav">
@@ -176,49 +154,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../assets/intro/assignments/overview.html">ASSIGNMENTS</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01-Introduction.html">01-Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02-Tooling.html">02-Tooling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03-Variables.html">03-Variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04-Operators.html">04-Operators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05-Functions.html">05-Functions</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">06-Conditionals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07-Collections.html">07-Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08-Loops.html">08-Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09-Methods.html">09-Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="10-Classes.html">10-Classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="11-CommandLine.html">11-CommandLine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="12-ScientificComputing.html">12-ScientificComputing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="13-Documentation.html">13-Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="14-CodeTesting.html">14-CodeTesting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="15-CodeProjects.html">15-CodeProjects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="16-WrapUp.html">16-WrapUp</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Labs</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL1-Tooling.html">CL1-Tooling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL2-Functions.html">CL2-Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL3-Collections.html">CL3-Collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL4-Loops.html">CL4-Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL5-Classes.html">CL5-Classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL8-ScientificComputing.html">CL8-ScientificComputing</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exam Prep</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/Exam1-Review.html">E1-Review</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/E1_Practice_COGS18_SP24.html">E1-Practice-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/E1_COGS18_SP24.html">E1-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/Exam2-Review.html">E2-Review</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/E2_Practice_COGS18_SP24.html">E2-Practice-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/E2_COGS18_SP24.html">E2-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24.html">Practice-Final-Answers</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../projects/PythonProjects.html">PythonProjects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projects/overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projects/faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projects/ProjectIdeas.html">ProjectIdeas</a></li>
 </ul>
 
     </div>
@@ -438,22 +375,20 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
@@ -520,7 +455,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <p><strong>Course Announcements</strong></p>
 <p>Due Date:</p>
@@ -541,14 +476,14 @@ document.write(`
 </li>
 </ul>
 <section class="tex2jax_ignore mathjax_ignore" id="conditionals">
-<h1>Conditionals<a class="headerlink" href="#conditionals" title="Link to this heading">#</a></h1>
+<h1>Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">elif</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">else</span></code></p></li>
 </ul>
 <section id="conditionals-motivation">
-<h2>Conditionals: Motivation<a class="headerlink" href="#conditionals-motivation" title="Link to this heading">#</a></h2>
+<h2>Conditionals: Motivation<a class="headerlink" href="#conditionals-motivation" title="Permalink to this heading">#</a></h2>
 <p>You use conditional thinking in your daily life constantly.</p>
 <p>You use the inputs in your environment to determine your behavior.</p>
 <p>For example…every morning when Kayden (my son) wakes up, I have to determine what we’ll do.</p>
@@ -563,7 +498,7 @@ document.write(`
 </ul>
 </section>
 <section id="conditionals-if">
-<h2>Conditionals: <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#conditionals-if" title="Link to this heading">#</a></h2>
+<h2>Conditionals: <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#conditionals-if" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
 </div><div class="cell docutils container">
@@ -586,7 +521,7 @@ Conditionals are statements that check for a condition, using the <code>if</code
 </div>
 </div>
 <section id="clicker-question-1">
-<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Link to this heading">#</a></h3>
+<h3>Clicker Question #1<a class="headerlink" href="#clicker-question-1" title="Permalink to this heading">#</a></h3>
 <p>Replace <code class="docutils literal notranslate"><span class="pre">---</span></code> below with something that will print ‘True’</p>
 <ul class="simple">
 <li><p>A) I did it!</p></li>
@@ -607,7 +542,7 @@ Conditionals are statements that check for a condition, using the <code>if</code
 </section>
 </section>
 <section id="conditional-else">
-<h2>Conditional: <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#conditional-else" title="Link to this heading">#</a></h2>
+<h2>Conditional: <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#conditional-else" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 After an <code>if</code>, you can use an <code>else</code> that will run if the conditional(s) above have not run.
 </div><div class="cell docutils container">
@@ -623,7 +558,7 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </div>
 </div>
 <section id="clicker-question-2">
-<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Link to this heading">#</a></h3>
+<h3>Clicker Question #2<a class="headerlink" href="#clicker-question-2" title="Permalink to this heading">#</a></h3>
 <p>Replace <code class="docutils literal notranslate"><span class="pre">---</span></code> below with something that will print ‘False’.</p>
 <ul class="simple">
 <li><p>A) I did it!</p></li>
@@ -646,7 +581,7 @@ After an <code>if</code>, you can use an <code>else</code> that will run if the 
 </section>
 </section>
 <section id="conditional-elif">
-<h2>Conditional: <code class="docutils literal notranslate"><span class="pre">elif</span></code><a class="headerlink" href="#conditional-elif" title="Link to this heading">#</a></h2>
+<h2>Conditional: <code class="docutils literal notranslate"><span class="pre">elif</span></code><a class="headerlink" href="#conditional-elif" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 After an <code>if</code> statement, you can have any number of <code>elif</code>`s (meaning 'else if') to check other conditions.
 </div><div class="cell docutils container">
@@ -665,7 +600,7 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
 </div>
 </div>
 <section id="elif-without-an-else">
-<h3><code class="docutils literal notranslate"><span class="pre">elif</span></code> without an <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#elif-without-an-else" title="Link to this heading">#</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">elif</span></code> without an <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#elif-without-an-else" title="Permalink to this heading">#</a></h3>
 <p>An else statement is not required, but if both the <code class="docutils literal notranslate"><span class="pre">if</span></code> and the <code class="docutils literal notranslate"><span class="pre">elif</span></code> condtions are not met (both evaluate as <code class="docutils literal notranslate"><span class="pre">False</span></code>), then nothing is returned.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -682,7 +617,7 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
 </div>
 </section>
 <section id="elif-after-an-else-does-not-make-sense">
-<h3><code class="docutils literal notranslate"><span class="pre">elif</span></code> <em>after</em> an <code class="docutils literal notranslate"><span class="pre">else</span></code> does not make sense<a class="headerlink" href="#elif-after-an-else-does-not-make-sense" title="Link to this heading">#</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">elif</span></code> <em>after</em> an <code class="docutils literal notranslate"><span class="pre">else</span></code> does not make sense<a class="headerlink" href="#elif-after-an-else-does-not-make-sense" title="Permalink to this heading">#</a></h3>
 <p>The order will always be <code class="docutils literal notranslate"><span class="pre">if</span></code>-<code class="docutils literal notranslate"><span class="pre">elif</span></code>-<code class="docutils literal notranslate"><span class="pre">else</span></code>…with only the <code class="docutils literal notranslate"><span class="pre">if</span></code> being required. If the <code class="docutils literal notranslate"><span class="pre">elif</span></code> is at the end…it will never be tested, as the <code class="docutils literal notranslate"><span class="pre">else</span></code> will have already returned a value once reached (and thus Python will throw an error).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -703,7 +638,7 @@ After an <code>if</code> statement, you can have any number of <code>elif</code>
 </section>
 </section>
 <section id="conditionals-with-value-comparisons">
-<h2>Conditionals With Value Comparisons<a class="headerlink" href="#conditionals-with-value-comparisons" title="Link to this heading">#</a></h2>
+<h2>Conditionals With Value Comparisons<a class="headerlink" href="#conditionals-with-value-comparisons" title="Permalink to this heading">#</a></h2>
 <div class="alert alert-success">
 Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
 </div><div class="cell docutils container">
@@ -737,7 +672,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </div>
 <section id="clicker-question-3">
-<h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Link to this heading">#</a></h3>
+<h3>Clicker Question #3<a class="headerlink" href="#clicker-question-3" title="Permalink to this heading">#</a></h3>
 <p>What will the following code snippet print out:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -764,7 +699,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </ul>
 </section>
 <section id="clicker-question-4">
-<h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Link to this heading">#</a></h3>
+<h3>Clicker Question #4<a class="headerlink" href="#clicker-question-4" title="Permalink to this heading">#</a></h3>
 <p>What will the following code snippet print out:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -786,7 +721,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </ul>
 </section>
 <section id="clicker-question-5">
-<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Link to this heading">#</a></h3>
+<h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Permalink to this heading">#</a></h3>
 <p>What will the following code snippet print out:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -813,7 +748,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </section>
 </section>
 <section id="properties-of-conditionals">
-<h2>Properties of conditionals<a class="headerlink" href="#properties-of-conditionals" title="Link to this heading">#</a></h2>
+<h2>Properties of conditionals<a class="headerlink" href="#properties-of-conditionals" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>All conditionals start with an <code class="docutils literal notranslate"><span class="pre">if</span></code>, can have an optional and variable number of <code class="docutils literal notranslate"><span class="pre">elif</span></code>’s and an optional <code class="docutils literal notranslate"><span class="pre">else</span></code> statement</p></li>
 <li><p>Conditionals can take any expression that can be evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
@@ -823,13 +758,13 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </ul>
 </section>
 <section id="code-style-conditionals">
-<h2>Code Style: Conditionals<a class="headerlink" href="#code-style-conditionals" title="Link to this heading">#</a></h2>
+<h2>Code Style: Conditionals<a class="headerlink" href="#code-style-conditionals" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>avoid single line statements</p></li>
 <li><p>a single conditional (if + elif + else) has no additional line spaces between statements</p></li>
 </ul>
 <section id="conditionals-good-code-style">
-<h3>Conditionals: Good Code Style<a class="headerlink" href="#conditionals-good-code-style" title="Link to this heading">#</a></h3>
+<h3>Conditionals: Good Code Style<a class="headerlink" href="#conditionals-good-code-style" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">16</span>
@@ -844,7 +779,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </section>
 <section id="conditionals-code-style-to-avoid">
-<h3>Conditionals: Code Style to Avoid<a class="headerlink" href="#conditionals-code-style-to-avoid" title="Link to this heading">#</a></h3>
+<h3>Conditionals: Code Style to Avoid<a class="headerlink" href="#conditionals-code-style-to-avoid" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">value</span><span class="o">%</span><span class="k">2</span>==0:out=&quot;even&quot; # avoid statement on same line as conditional
@@ -857,7 +792,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </section>
 </section>
 <section id="functions-conditionals">
-<h2>Functions + Conditionals<a class="headerlink" href="#functions-conditionals" title="Link to this heading">#</a></h2>
+<h2>Functions + Conditionals<a class="headerlink" href="#functions-conditionals" title="Permalink to this heading">#</a></h2>
 <p>Let’s define a more interesting function than what we did in the functions lecture. Here we are using conditionals within our function.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -884,7 +819,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </div>
 <section id="clicker-question-6">
-<h3>Clicker Question #6<a class="headerlink" href="#clicker-question-6" title="Link to this heading">#</a></h3>
+<h3>Clicker Question #6<a class="headerlink" href="#clicker-question-6" title="Permalink to this heading">#</a></h3>
 <p>In a previous lecture, we wrote a function <code class="docutils literal notranslate"><span class="pre">convert_to_f</span></code>…but you’d probably want a function that could go</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">convert_temperature</span></code> that will convert a temperature C-&gt;F <em>and</em> F-&gt;C, returning the converted temperature.</p>
 <p>Note: A temperature in Celsius will be multipled by 9/5 and then 32 will be added to that quantity to convert to Farenheit. A temperature in Farenheit would have 32 subtracted and then that quantity multipled by 5/9.</p>
@@ -906,7 +841,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </section>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">if</span></code>/<code class="docutils literal notranslate"><span class="pre">elif</span></code>/<code class="docutils literal notranslate"><span class="pre">else</span></code></p></li>
 <li><p>Code Style</p></li>
@@ -940,30 +875,16 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 
               
               
-              
-              
-                <footer class="prev-next-footer">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="05-Functions.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Functions</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="07-Collections.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Collections</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -971,7 +892,6 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1031,10 +951,9 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -1058,8 +977,8 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
