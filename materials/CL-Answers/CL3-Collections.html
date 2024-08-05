@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>CL3: Review (Collections, Conditionals, &amp; Functions) &#8212; COGS 18 - Introduction To Python</title>
   
@@ -18,51 +19,52 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materials/CL-Answers/CL3-Collections';</script>
-    <link rel="icon" href="../../_static/logo.png"/>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="CL4: Loops" href="CL4-Loops.html" />
-    <link rel="prev" title="Coding Lab 2: Functions, Conditionals &amp; Collections" href="CL2-Functions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -72,15 +74,7 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -115,14 +109,11 @@
 </form></div>
   </div>
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -137,11 +128,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
   
 
 <a class="navbar-brand logo" href="../../intro.html">
-  
   
   
   
@@ -151,23 +140,12 @@
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
 <ul class="nav bd-sidenav">
@@ -178,47 +156,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01-Introduction.html">01-Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02-Tooling.html">02-Tooling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../03-Variables.html">03-Variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../04-Operators.html">04-Operators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../05-Functions.html">05-Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../06-Conditionals.html">06-Conditionals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../07-Collections.html">07-Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../08-Loops.html">08-Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../09-Methods.html">09-Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../10-Classes.html">10-Classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../11-CommandLine.html">11-CommandLine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../12-ScientificComputing.html">12-ScientificComputing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../13-Documentation.html">13-Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../14-CodeTesting.html">14-CodeTesting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../15-CodeProjects.html">15-CodeProjects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../16-WrapUp.html">16-WrapUp</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Labs</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="CL1-Tooling.html">CL1-Tooling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL2-Functions.html">CL2-Functions</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">CL3-Collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL4-Loops.html">CL4-Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL5-Classes.html">CL5-Classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL8-ScientificComputing.html">CL8-ScientificComputing</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exam Prep</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Exam-Prep/Exam1-Review.html">E1-Review</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Exam-Prep/E1_Practice_COGS18_SP24.html">E1-Practice-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Exam-Prep/E1_COGS18_SP24.html">E1-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Exam-Prep/Exam2-Review.html">E2-Review</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Exam-Prep/E2_Practice_COGS18_SP24.html">E2-Practice-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Exam-Prep/E2_COGS18_SP24.html">E2-Answers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24.html">Practice-Final-Answers</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../projects/PythonProjects.html">PythonProjects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../projects/overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../projects/faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../projects/ProjectIdeas.html">ProjectIdeas</a></li>
 </ul>
 
     </div>
@@ -438,22 +375,20 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
@@ -503,17 +438,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="cl3-review-collections-conditionals-functions">
-<h1>CL3: Review (Collections, Conditionals, &amp; Functions)<a class="headerlink" href="#cl3-review-collections-conditionals-functions" title="Link to this heading">#</a></h1>
+<h1>CL3: Review (Collections, Conditionals, &amp; Functions)<a class="headerlink" href="#cl3-review-collections-conditionals-functions" title="Permalink to this heading">#</a></h1>
 <p>Welcome to the third coding lab!</p>
 <p>In this Coding Lab we will return to, review, and get additional practice with collections, conditionals, and functions working to put all the concepts together.</p>
 <section id="part-1-collections-conditionals">
-<h2>Part 1: Collections + Conditionals<a class="headerlink" href="#part-1-collections-conditionals" title="Link to this heading">#</a></h2>
+<h2>Part 1: Collections + Conditionals<a class="headerlink" href="#part-1-collections-conditionals" title="Permalink to this heading">#</a></h2>
 <p>Collections can work with all of the things we’ve discussed up to this point - variables, conditionals, functions, etc. Here, we’ll get extra practice combining collections with conditionals.</p>
 <section id="collections-conditionals-question">
-<h3>Collections + Conditionals Question<a class="headerlink" href="#collections-conditionals-question" title="Link to this heading">#</a></h3>
+<h3>Collections + Conditionals Question<a class="headerlink" href="#collections-conditionals-question" title="Permalink to this heading">#</a></h3>
 <p>Imagine you’ve asked a group of young children to make a pile of at least 5 toys.</p>
 <p>You then want to write code to determine if the kid accomplished the task. Specifically, if the pile has at least 5 toys, you want <code class="docutils literal notranslate"><span class="pre">output</span></code> to store the string <code class="docutils literal notranslate"><span class="pre">'success'</span></code>. Otherwise, you want <code class="docutils literal notranslate"><span class="pre">output</span></code> to store the string <code class="docutils literal notranslate"><span class="pre">'try</span> <span class="pre">again'</span></code></p>
 <p>The toys placed in one of these kids’ piles is defined below in the list <code class="docutils literal notranslate"><span class="pre">kid_a</span></code>. Using this list, and conditionals, write code to accomplish the task above!</p>
@@ -546,10 +481,10 @@ document.write(`
 </section>
 </section>
 <section id="part-2-collections-conditionals-functions">
-<h2>Part 2: Collections + Conditionals + Functions<a class="headerlink" href="#part-2-collections-conditionals-functions" title="Link to this heading">#</a></h2>
+<h2>Part 2: Collections + Conditionals + Functions<a class="headerlink" href="#part-2-collections-conditionals-functions" title="Permalink to this heading">#</a></h2>
 <p>Let’s put these conepts together…!</p>
 <section id="collections-conditionals-functions-question">
-<h3>Collections + Conditionals + Functions Question<a class="headerlink" href="#collections-conditionals-functions-question" title="Link to this heading">#</a></h3>
+<h3>Collections + Conditionals + Functions Question<a class="headerlink" href="#collections-conditionals-functions-question" title="Permalink to this heading">#</a></h3>
 <p>The code you generated in Part II will only work on a single list <code class="docutils literal notranslate"><span class="pre">kid_a</span></code>. Functions, on the other hand, are ways to define a set of instructions that can operate on various input, returning the correct output.</p>
 <p>Here, write a function <code class="docutils literal notranslate"><span class="pre">toy_pile()</span></code> that accomplishes the same task as above, but takes a list of toys as input and <code class="docutils literal notranslate"><span class="pre">returns</span></code> either <code class="docutils literal notranslate"><span class="pre">'success'</span></code> or <code class="docutils literal notranslate"><span class="pre">'try</span> <span class="pre">again'</span></code>, depending upon how many toys are in the list of toys.</p>
 <div class="cell docutils container">
@@ -591,7 +526,7 @@ document.write(`
 </div>
 </section>
 <section id="putting-it-all-together">
-<h3>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Link to this heading">#</a></h3>
+<h3>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this heading">#</a></h3>
 <p>Now that you’ve seen an example, think up another situation where you could write a function that incorporates the following:</p>
 <ul class="simple">
 <li><p>takes a dictionary as input</p></li>
@@ -622,9 +557,9 @@ document.write(`
 </section>
 </section>
 <section id="part-3-debugging">
-<h2>Part 3: Debugging<a class="headerlink" href="#part-3-debugging" title="Link to this heading">#</a></h2>
+<h2>Part 3: Debugging<a class="headerlink" href="#part-3-debugging" title="Permalink to this heading">#</a></h2>
 <section id="debugging-a-function">
-<h3>Debugging a Function<a class="headerlink" href="#debugging-a-function" title="Link to this heading">#</a></h3>
+<h3>Debugging a Function<a class="headerlink" href="#debugging-a-function" title="Permalink to this heading">#</a></h3>
 <p>The following function has a series of issues with it.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">input_1</span><span class="p">,</span> <span class="n">input_2</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;A long function that might error.&quot;&quot;&quot;</span>
@@ -712,7 +647,7 @@ document.write(`
 </section>
 </section>
 <section id="the-end">
-<h2>The End!<a class="headerlink" href="#the-end" title="Link to this heading">#</a></h2>
+<h2>The End!<a class="headerlink" href="#the-end" title="Permalink to this heading">#</a></h2>
 <p>This is the end of this Coding Lab!</p>
 <p>Be sure you’ve made a concerted effort to complete all the tasks specified in this lab. Then, go ahead and submit on datahub!</p>
 </section>
@@ -731,7 +666,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./materials/CL-Answers"
+            path: "./materials\CL-Answers"
         },
         predefinedOutput: true
     }
@@ -743,30 +678,16 @@ document.write(`
 
               
               
-              
-              
-                <footer class="prev-next-footer">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="CL2-Functions.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Coding Lab 2: Functions, Conditionals &amp; Collections</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="CL4-Loops.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CL4: Loops</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -774,7 +695,6 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -817,10 +737,9 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -844,8 +763,8 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

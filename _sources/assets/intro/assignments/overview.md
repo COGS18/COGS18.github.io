@@ -1,6 +1,6 @@
 # ASSIGNMENTS
 
-Assignments will be done in Jupyter Notebooks. They will be released and submitted on [datahub](http::/datahub.ucsd.edu).
+Assignments will be done in Jupyter Notebooks. They will be released and submitted on [datahub](http://datahub.ucsd.edu).
 
 Assignments are cumulative - previously covered topics may also appear in a future assignment. Due dates are listed on the syllabus.
 
