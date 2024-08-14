@@ -25,8 +25,8 @@ parts:
       title: 06-Conditionals
     - file: materials/07-Collections
       title: 07-Collection
-    # - file: materials/08-Loops
-      # title: 08-Loops
+    - file: materials/08-Loops
+      title: 08-Loops
     # - file: materials/09-Methods
       # title: 09-Methods
     # - file: materials/10-Classes
