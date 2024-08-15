@@ -27,24 +27,28 @@ parts:
       title: 07-Collection
     - file: materials/08-Loops
       title: 08-Loops
-    # - file: materials/09-Methods
-      # title: 09-Methods
-    # - file: materials/10-Classes
-      # title: 10-Classes
-    # - file: materials/11-CommandLine
-      # title: 11-CommandLine
-    # - file: materials/12-ScientificComputing
-      # title: 12-ScientificComputing   
-    # - file: materials/13-Documentation
-      # title: 13-Documentation
-    # - file: materials/14-CodeTesting
-      # title: 14-CodeTesting
-    # - file: materials/15-CodeProjects
-      # title: 15-CodeProjects
+    - file: materials/09-Debugging
+      title: 09-Debugging
+    # - file: materials/10-Methods
+      # title: 10-Methods
+    # - file: materials/11-Classes
+      # title: 11-Classes
+    # - file: materials/12-CommandLine
+      # title: 12-CommandLine
+    # - file: materials/13-Modules
+      # title: 13-Modules
+    # - file: materials/14-ScientificComputing
+      # title: 14-ScientificComputing   
+    # - file: materials/15-Documentation
+      # title: 15-Documentation
+    # - file: materials/16-CodeTesting
+      # title: 16-CodeTesting
+    # - file: materials/17-CodeProjects
+      # title: 17-CodeProjects
   # # #   - file: materials/21-AdvancedPython
   # # #     title: 21-AdvancedPython
-    # - file: materials/16-WrapUp
-      # title: 16-WrapUp
+    # - file: materials/18-WrapUp
+      # title: 18-WrapUp
   # #   - file: materials/A1-CodeStyle
   # #     title: A1-CodeStyle
   # #   - file: materials/A2-Syntax
