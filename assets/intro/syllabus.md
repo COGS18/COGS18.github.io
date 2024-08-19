@@ -116,7 +116,7 @@ Lab times will be used to get hands-on practice with the course material in a sm
 
 ### Assignments (35\%)
 
-There will be five assignments, each worth 6\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 1 week after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date.
+There will be five assignments, each worth 6\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 3 days after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date.
 
 Late assignments will be accepted at 75\% credit for 72 hours (3 days) after the assignment's due date. Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
@@ -146,7 +146,8 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 8/12/2024 | 2      | M   | Functions \& Conditionals | CL2 - vars, operators    |                                         |
 | 8/13/2024 | 2      | Tu  | Conditionals \& Collections |                        |                                         |
 | 8/14/2024 | 2      | W   | Collections \& Debugging | CL3 - funcs, conditionals |                                         |
-| 8/15/2024 | 2      | Th  | Debugging \& Loops     |                             | A1 - variables, comparison, functions   |                            
+| 8/15/2024 | 2      | Th  | Debugging \& Loops     |                             |                                     |                            
+| 8/15/2024 | 2      | F   |                        |                             | A1 - variables, comparison, functions   |                            
 | 8/19/2024 | 3      | M   | Loops \& Methods [\*]  | CL4 - collections           | A2 - conditionals, collections, ciphers |
 | 8/20/2024 | 3      | Tu  | Methods \& Classes     |                             |                                         |
 | 8/21/2024 | 3      | W   | **Midterm: In-Class Portion** | CL5 - loops          | Midterm: technical portion (take-home)  |

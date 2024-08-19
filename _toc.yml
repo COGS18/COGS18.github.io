@@ -29,8 +29,8 @@ parts:
       title: 08-Loops
     - file: materials/09-Debugging
       title: 09-Debugging
-    # - file: materials/10-Methods
-      # title: 10-Methods
+    - file: materials/10-Methods
+      title: 10-Methods
     # - file: materials/11-Classes
       # title: 11-Classes
     # - file: materials/12-CommandLine
