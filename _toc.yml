@@ -35,8 +35,8 @@ parts:
       title: 11-Classes
     - file: materials/12-CommandLine
       title: 12-CommandLine
-    # - file: materials/13-Modules
-      # title: 13-Modules
+    - file: materials/13-Modules
+      title: 13-Modules
     # - file: materials/14-ScientificComputing
       # title: 14-ScientificComputing   
     # - file: materials/15-Documentation
