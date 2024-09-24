@@ -13,42 +13,42 @@ parts:
     chapters:
     - file: materials/01-Introduction
       title: 01-Introduction
-    - file: materials/02-Tooling
-      title: 02-Tooling
-    - file: materials/03-Variables
-      title: 03-Variables
-    - file: materials/04-Operators
-      title: 04-Operators
-    - file: materials/05-Functions
-      title: 05-Functions
-    - file: materials/06-Conditionals
-      title: 06-Conditionals
-    - file: materials/07-Collections
-      title: 07-Collection
-    - file: materials/08-Loops
-      title: 08-Loops
-    - file: materials/09-Debugging
-      title: 09-Debugging
-    - file: materials/10-Methods
-      title: 10-Methods
-    - file: materials/11-Classes
-      title: 11-Classes
-    - file: materials/12-CommandLine
-      title: 12-CommandLine
-    - file: materials/13-Modules
-      title: 13-Modules
-    - file: materials/14-ScientificComputing
-      title: 14-ScientificComputing   
-    - file: materials/15-Documentation
-      title: 15-Documentation
-    - file: materials/16-CodeTesting
-      title: 16-CodeTesting
-    - file: materials/17-CodeProjects
-      title: 17-CodeProjects
+    # - file: materials/02-Tooling
+      # title: 02-Tooling
+    # - file: materials/03-Variables
+      # title: 03-Variables
+    # - file: materials/04-Operators
+      # title: 04-Operators
+    # - file: materials/05-Functions
+      # title: 05-Functions
+    # - file: materials/06-Conditionals
+      # title: 06-Conditionals
+    # - file: materials/07-Collections
+      # title: 07-Collection
+    # - file: materials/08-Loops
+      # title: 08-Loops
+    # - file: materials/09-Debugging
+      # title: 09-Debugging
+    # - file: materials/10-Methods
+      # title: 10-Methods
+    # - file: materials/11-Classes
+      # title: 11-Classes
+    # - file: materials/12-CommandLine
+      # title: 12-CommandLine
+    # - file: materials/13-Modules
+      # title: 13-Modules
+    # - file: materials/14-ScientificComputing
+      # title: 14-ScientificComputing   
+    # - file: materials/15-Documentation
+      # title: 15-Documentation
+    # - file: materials/16-CodeTesting
+      # title: 16-CodeTesting
+    # - file: materials/17-CodeProjects
+      # title: 17-CodeProjects
   # # #   - file: materials/21-AdvancedPython
   # # #     title: 21-AdvancedPython
-    - file: materials/18-WrapUp
-      title: 18-WrapUp
+    # - file: materials/18-WrapUp
+      # title: 18-WrapUp
   # #   - file: materials/A1-CodeStyle
   # #     title: A1-CodeStyle
   # #   - file: materials/A2-Syntax
