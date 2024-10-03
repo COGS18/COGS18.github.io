@@ -640,7 +640,7 @@ Python also has <code>**</code> for exponentiation and <code>%</code> for remain
 <ul class="simple">
 <li><p>A) 0</p></li>
 <li><p>B) 1</p></li>
-<li><p>C) 3</p></li>
+<li><p>C) 8</p></li>
 <li><p>D) 3.2</p></li>
 <li><p>E) Produces an error</p></li>
 </ul>
@@ -794,7 +794,7 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 </div>
 <section id="clicker-question-5">
 <h3>Clicker Question #5<a class="headerlink" href="#clicker-question-5" title="Link to this heading">#</a></h3>
-<p>Assume you’re writing a videogame that will only slay the dragon only if our magic sword is charged to 90 or higher and we have 100 or more energy units in our protective shield.</p>
+<p>Assume you’re writing a videogame that will only slay the dragon if our magic sword is charged to 90 or higher and the dragon has no more than 25 hit points.</p>
 <p>Start with the code in the following cell. Replace <code class="docutils literal notranslate"><span class="pre">---</span></code> with operators or values that will evaluate to <code class="docutils literal notranslate"><span class="pre">True</span></code> when the cell is run (and slay the dragon!).</p>
 <ul class="simple">
 <li><p>A) I did it!</p></li>
@@ -805,9 +805,9 @@ Python has comparison operators <code>==</code>, <code>!=</code>, <code><</code>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## EDIT CODE HERE</span>
 <span class="n">sword_charge</span> <span class="o">=</span> <span class="o">---</span>
-<span class="n">shield_energy</span> <span class="o">=</span> <span class="o">---</span>
+<span class="n">hit_points</span> <span class="o">=</span> <span class="o">---</span>
 
-<span class="p">(</span><span class="n">sword_charge</span> <span class="o">---</span> <span class="mi">90</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">shield_energy</span> <span class="o">---</span> <span class="mi">100</span><span class="p">)</span>
+<span class="p">(</span><span class="n">sword_charge</span> <span class="o">---</span> <span class="mi">90</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">hit_points</span> <span class="o">---</span> <span class="mi">25</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -997,7 +997,7 @@ Operators and variables can also be chained together into arbitrarily complex ex
 <p>How will the following expression evaluate:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="mi">13</span><span class="o">%</span><span class="k">3</span> &gt; 1
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="mi">13</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
