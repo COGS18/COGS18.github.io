@@ -172,9 +172,9 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 11/17/2024 | 7      | Su  |                         |                             | A4 - methods, classes, agents           |
 | 11/18/2024 | 8      | M/W |                         |                             |                                         |
 | 11/19/2024 | 8      | Tu  | Scientific Computing    |                             |                                         |
-| 11/21/2024 | 8      | Th  | Documentation           |                             |                                         |
+| 11/21/2024 | 8      | Th  | Documentation           | CL8 - scientific computing  |                                         |
 | 11/22/2024 | 8      | F   |                         |                             |                                         |
-| 11/25/2024 | 9      | M/W |                         | CL8 - scientific computing  |                                         |
+| 11/25/2024 | 9      | M/W |                         |                             |                                         |
 | 11/26/2024 | 9      | Tu  | Code Testing            |                             |                                         |
 | 11/28/2024 | 9      | Th  | **Thanksgiving Holiday**|                             |                                         |
 | 12/2/2024  | 10     | M/W |                         | CL9 - test, debug, refactor |                                         |
