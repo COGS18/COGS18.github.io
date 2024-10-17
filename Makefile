@@ -39,6 +39,9 @@ textbook:
 	# beginning of the quarter
 	# mv labs/answers-for-website/* labs
 	rm -rf labs/source
+	# Eric - trying my own version
+	mkdir materials/CL-Answers
+	cp assets/labanswers/* materials/CL-Answers/
 
 # 	Copy & build project info
 	git clone --depth 1 https://www.github.com/COGS18/Projects.git projects

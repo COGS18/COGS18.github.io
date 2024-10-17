@@ -1,0 +1,908 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Coding Lab 2: Programming I &#8212; COGS 18 - Introduction To Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assets/labanswers/CL2-ProgrammingI';</script>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../intro/syllabus.html">SYLLABUS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/labs/overview.html">CODING LABS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/assignments/overview.html">ASSIGNMENTS</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../materials/01-Introduction.html">01-Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/02-Tooling.html">02-Tooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/03-Variables.html">Variables</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../materials/04-Operators.html">04-Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/05-Functions.html">05-Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/06-Conditionals.html">06-Conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/07-Collections.html">07-Collection</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Labs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../materials/CL-Answers/CL2-ProgrammingI.html">CL2-ProgrammingI</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/assets/labanswers/CL2-ProgrammingI.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onJupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/assets/labanswers/CL2-ProgrammingI.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/edit/master/assets/labanswers/CL2-ProgrammingI.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fassets/labanswers/CL2-ProgrammingI.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/assets/labanswers/CL2-ProgrammingI.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Coding Lab 2: Programming I</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-variables">Part 1: Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-variables">Defining Variables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-operators-comparisons">Part 2: Operators &amp; Comparisons</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operator-questions">Operator Questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operator-challenges">Operator Challenges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operator-explorations">Operator Explorations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-asserts">Part 3: Asserts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assert-explorations">Assert Explorations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-end">The End!</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="coding-lab-2-programming-i">
+<h1>Coding Lab 2: Programming I<a class="headerlink" href="#coding-lab-2-programming-i" title="Permalink to this heading">#</a></h1>
+<p>Welcome to the second coding lab!</p>
+<p>CodingLab labs are meant to be interactive - so you are encouraged find another person to work together with on this notebook. For this lab, you can either work together on one notebook, or work together but each still fill out your own notebook for submission.</p>
+<p>CodingLabs are also meant to be exploratory. There are broad questions in the notebook that you should explore, and try to answer - but you are also very much encouraged to explore other related ideas as you go! If you explore something beyond what is required in the notebook, <strong>feel free to leave that “extra” code and any notes to yourself in the notebook you submit.</strong></p>
+<p>If you have a question about how something works / what something does - try it out, and see what happens! If you can’t figure it out, reach out to your instructional staff - we’re here to help!</p>
+<section id="part-1-variables">
+<h2>Part 1: Variables<a class="headerlink" href="#part-1-variables" title="Permalink to this heading">#</a></h2>
+<p>Variables are used in Python to store values.</p>
+<section id="defining-variables">
+<h3>Defining Variables<a class="headerlink" href="#defining-variables" title="Permalink to this heading">#</a></h3>
+<p>Declare an int, float, string, and boolean. Fill them with with any values you want.</p>
+<p>Call them <code class="docutils literal notranslate"><span class="pre">my_int</span></code>, <code class="docutils literal notranslate"><span class="pre">my_float</span></code>, <code class="docutils literal notranslate"><span class="pre">my_string</span></code> and <code class="docutils literal notranslate"><span class="pre">my_boolean</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># specific values will differ</span>
+<span class="n">my_int</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">my_float</span> <span class="o">=</span> <span class="mf">56.3</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span>
+<span class="n">my_boolean</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You’ll see a lot of <code class="docutils literal notranslate"><span class="pre">assert</span></code> test cells throughout this course - most often in exams and assignments, but sometimes in coding labs. These are meant to ensure you’re on the right track!</p>
+<p>When you see <code class="docutils literal notranslate"><span class="pre">assert</span></code> followed by a variable name, that is Python checking to ensure that variable exists. If you mistyped the variable name above (when defining the variable name), you would get an assertion error when running the cell below. The assertion error will point to which <code class="docutils literal notranslate"><span class="pre">assert</span></code> led the error to be raised. It’s then your job to go back to your code and figure out why the <code class="docutils literal notranslate"><span class="pre">assert</span></code> test failed!</p>
+<p>If you’re on the right track, there will be no output - or as you’ll hear us say, these will “pass siltently”. <strong>This doesn’t guarantee your answer is right…but it let’s you know you’re on the right track!</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">my_int</span>
+<span class="k">assert</span> <span class="n">my_float</span>
+<span class="k">assert</span> <span class="n">my_string</span>
+<span class="k">assert</span> <span class="n">my_boolean</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Use the following cells to check the types of the variables you write are as expected</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_int</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_float</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">my_boolean</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bool
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note that we could also use <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements to test the type. If the <code class="docutils literal notranslate"><span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">my_int</span></code> is an integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>), this cell will “pass silently” (meaning give no output). If it raised an assertion error, we would know we had done something wrong above.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test that my_int is an int</span>
+<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_int</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="part-2-operators-comparisons">
+<h2>Part 2: Operators &amp; Comparisons<a class="headerlink" href="#part-2-operators-comparisons" title="Permalink to this heading">#</a></h2>
+<p>Operators are used in Python to do things with variables.</p>
+<section id="operator-questions">
+<h3>Operator Questions<a class="headerlink" href="#operator-questions" title="Permalink to this heading">#</a></h3>
+<p>First - explore using Python operators. Make sure you can add and subtract numbers, concatenate strings, do boolean comparisons, etc.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Do some exploring!</span>
+
+<span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># possible explorations</span>
+<span class="c1"># Add &amp; subtract numbers</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Concatenate string</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ab&#39;</span> <span class="o">+</span> <span class="s1">&#39;cd&#39;</span><span class="p">)</span>
+
+<span class="c1"># Boolean comparisons</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+0
+abcd
+True
+True
+</pre></div>
+</div>
+</div>
+</div>
+<p>Once you have explored using operators, try to answer some quesions using them.</p>
+<p>Let’s start with an example: is the multiplication of 13 and 15 greater than 200?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">13</span> <span class="o">*</span> <span class="mi">15</span> <span class="o">&gt;</span> <span class="mi">200</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<p>Similar to that example, try to answer the following questions using Python variables &amp; comparisons. You can assign the output to whatever variable name you like:</p>
+<ul class="simple">
+<li><p>Is the remainder of dividing 323 by 13 greater than 6?</p></li>
+<li><p>Is 7 to the power of 3 greater than or equal to 300?</p></li>
+<li><p>Is 49 squared greater than 2500 or (boolean comparison) is 14 to the power of 3 greater than 2500</p></li>
+<li><p>Is 49 modulus 9 equal to 67 modulus 9 and (boolean comparison) is the sum 49 &amp; 67 modulus 9 greater than 7</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="mi">323</span> <span class="o">%</span> <span class="mi">13</span> <span class="o">&gt;</span> <span class="mi">6</span>
+<span class="mi">7</span> <span class="o">**</span><span class="mi">3</span> <span class="o">&gt;=</span> <span class="mi">300</span>
+<span class="mi">49</span><span class="o">**</span><span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">2500</span> <span class="ow">or</span> <span class="mi">14</span><span class="o">**</span><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2500</span>
+<span class="mi">49</span><span class="o">%</span><span class="k">9</span> == 67%9 and (49 + 67) % 9 &gt; 7
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="operator-challenges">
+<h3>Operator Challenges<a class="headerlink" href="#operator-challenges" title="Permalink to this heading">#</a></h3>
+<p>The following are more challenging operator related questions. If they seem too tricky for now, just skip ahead to the next section.</p>
+<p>Some more comparisons, with variable assignment:</p>
+<ul class="simple">
+<li><p>Set the variable <code class="docutils literal notranslate"><span class="pre">comp_1</span></code> to the result of whether 17 squared is not the same as 867 divided by 3</p></li>
+<li><p>Set the variable <code class="docutils literal notranslate"><span class="pre">comp_2</span></code> to the result of whether 4^3 is less than 3^4 <strong>and</strong> also greater than the remainder of dividing 1234 by 99</p></li>
+</ul>
+<p>Bonus: both of the above questions can be written in (at least) two ways.</p>
+<p>If you found an answer to them, see if you can update the construction (by changing at least one operator) to answer the question in a different way.</p>
+<p>Note: x^y indicates ‘x to the power of y’</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">comp_1</span> <span class="o">=</span> <span class="ow">not</span> <span class="mi">17</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">867</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">comp_1</span> <span class="o">=</span> <span class="mi">17</span><span class="o">**</span><span class="mi">2</span> <span class="o">!=</span> <span class="mi">867</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="n">comp_2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">1234</span> <span class="o">%</span> <span class="mi">99</span><span class="p">)</span>
+<span class="n">comp_2</span> <span class="o">=</span> <span class="p">((</span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="mi">3</span><span class="p">))</span> <span class="ow">and</span> <span class="p">((</span><span class="mi">4</span><span class="o">**</span><span class="mi">3</span><span class="p">))</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">1234</span> <span class="o">%</span> <span class="mi">99</span><span class="p">)</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="operator-explorations">
+<h3>Operator Explorations<a class="headerlink" href="#operator-explorations" title="Permalink to this heading">#</a></h3>
+<p>For each of the following questions, start by writing out your guess on the outcome (you can write out your guess using a comment) .</p>
+<p>Then, test out each one by writing out some code.</p>
+<p>Finally, once you have answered the question using code, add a comment in markdown with the answer.</p>
+<p>Questions:</p>
+<ul class="simple">
+<li><p>If you divide a float by an int, what is the data type of the outcome? What about dividing an int by a float?</p></li>
+<li><p>What happens if you multiply a string with a number?</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">+</span></code> sign works if you for adding numbers and for concatenating strings. Can you use <code class="docutils literal notranslate"><span class="pre">+</span></code> with a number and string in the same operation?</p></li>
+<li><p>Since you can use <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">*</span></code> with strings, what happens if you try to substract two strings using <code class="docutils literal notranslate"><span class="pre">-</span></code>?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># possible explorations</span>
+
+<span class="c1"># Dividing with a float and an int, in either order, returns a float</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">12.0</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">12</span><span class="o">/</span><span class="mf">2.0</span><span class="p">))</span>
+
+<span class="c1"># Multiplying a string by a number repeats that string number times</span>
+<span class="s1">&#39;hodor &#39;</span> <span class="o">*</span> <span class="mi">8</span>
+
+<span class="c1"># No, this code (when uncommented) fails. You cannot use &#39;+&#39; with a number and a string</span>
+<span class="c1"># 12 + &#39;str&#39;</span>
+
+<span class="c1"># No, this code fails (when uncommented). You cannot use &#39;-&#39; with strings</span>
+<span class="c1"># &#39;abc&#39; - &#39;a&#39; </span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;float&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;hodor hodor hodor hodor hodor hodor hodor hodor &#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="part-3-asserts">
+<h2>Part 3: Asserts<a class="headerlink" href="#part-3-asserts" title="Permalink to this heading">#</a></h2>
+<p>You will notice, through the coding labs and assignments, code that looks something like <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">True</span></code>, in which the assert statement is used. The goal, in your coding labs and assignments is for <code class="docutils literal notranslate"><span class="pre">assert</span></code> statements to “pass silently”…meaning give no output.</p>
+<p>Using assert essentially means to <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">code</span> <span class="pre">is</span> <span class="pre">True</span></code>.</p>
+<p>Or, slightly more formally, <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">that</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">code</span> <span class="pre">evaluates</span> <span class="pre">as</span> <span class="pre">True</span></code>.</p>
+<p>If the asserted code does not evaluate as True, it raises an error - meaning it interrupts the code execution because something went wrong.</p>
+<p>This can be used as a way to test that code does what you expect it to do, and is therefore part of how we will test your code programmatically.</p>
+<p>Because the use of <code class="docutils literal notranslate"><span class="pre">assert</span></code> will be common in course materials, let’s take a moment to explore how it works and what happens when we use it.</p>
+<p>In the cell below: declare a variable called <code class="docutils literal notranslate"><span class="pre">boolean</span></code> that  has type boolean, and passes the assert in the next cell:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="n">boolean</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that there is variable called `boolean` that is a boolean</span>
+<span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">boolean</span><span class="p">)</span> <span class="o">==</span> <span class="nb">bool</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check that the variable called `boolean` passes the assert</span>
+<span class="k">assert</span> <span class="n">boolean</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="assert-explorations">
+<h3>Assert Explorations<a class="headerlink" href="#assert-explorations" title="Permalink to this heading">#</a></h3>
+<p>Now, explore using assert.</p>
+<p>What happens if you assert a True comparison, like <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">&lt;</span> <span class="pre">10</span></code>? a False comparison, <code class="docutils literal notranslate"><span class="pre">like</span> <span class="pre">6</span> <span class="pre">&gt;</span> <span class="pre">10</span></code>?</p>
+<p>What happens if you assert an integer? or a string?</p>
+<p>What happens if you assert None?</p>
+<p>Find at least one integer that raises an assertion error.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### BEGIN SOLUTION</span>
+<span class="c1"># specific asserts will vary </span>
+<span class="c1"># Asserting True comparison will pass silently</span>
+<span class="k">assert</span> <span class="mi">6</span> <span class="o">&lt;</span> <span class="mi">10</span>
+
+<span class="c1"># Asserting False compariosn will raise assertion error</span>
+<span class="k">assert</span> <span class="mi">6</span> <span class="o">&gt;</span> <span class="mi">10</span> 
+
+<span class="c1"># Asserting an integer asserts as True</span>
+<span class="k">assert</span> <span class="mi">12</span>
+
+<span class="c1"># Asserting a string asserts as True</span>
+<span class="k">assert</span> <span class="s1">&#39;hello&#39;</span>
+
+<span class="c1"># Asserting None asserts as False</span>
+<span class="k">assert</span> <span class="kc">None</span>
+
+<span class="c1"># The integer 0 asserts as False (it gets interpreted as False)</span>
+<span class="k">assert</span> <span class="mi">0</span>
+
+<span class="c1">### END SOLUTION</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AssertionError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">16</span><span class="p">],</span> <span class="n">line</span> <span class="mi">7</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">assert</span> <span class="mi">6</span> <span class="o">&lt;</span> <span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># Asserting False compariosn will raise assertion error</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="k">assert</span> <span class="mi">6</span> <span class="o">&gt;</span> <span class="mi">10</span> 
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1"># Asserting an integer asserts as True</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="k">assert</span> <span class="mi">12</span>
+
+<span class="ne">AssertionError</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="the-end">
+<h2>The End!<a class="headerlink" href="#the-end" title="Permalink to this heading">#</a></h2>
+<p>This is the end of this Coding Lab!</p>
+<p>Be sure you’ve made a concerted effort to complete all the tasks specified in this lab. Then, go ahead and submit on Datahub!</p>
+<p>This “blank” cell included intentionally. Do not do anything here. (It’s being used in grading.)</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./assets\labanswers"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-variables">Part 1: Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-variables">Defining Variables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-operators-comparisons">Part 2: Operators &amp; Comparisons</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operator-questions">Operator Questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operator-challenges">Operator Challenges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operator-explorations">Operator Explorations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-asserts">Part 3: Asserts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assert-explorations">Assert Explorations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-end">The End!</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Shannon Ellis, Jason Fleischer, and Tom Donoghue
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
