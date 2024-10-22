@@ -568,12 +568,16 @@ A <b>loop</b> is a procedure to repeat a piece of code.
 <p>Loops are one way to avoid this.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;you@yahoo.com&#39;</span><span class="p">,</span> <span class="s1">&#39;them@bing.com&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;you@yahoo.com&#39;</span><span class="p">,</span> <span class="s1">&#39;them@bing.com&#39;</span><span class="p">,</span> <span class="s1">&#39;otherpeople@gmail.com&#39;</span><span class="p">]</span>
 
 <span class="n">email</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1"># do something with email 1</span>
 
 <span class="n">email</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> 
+<span class="c1"># do the same thing with email 2</span>
+
 <span class="n">email</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="c1"># do the same thing with email 3</span>
 </pre></div>
 </div>
 </div>
@@ -673,7 +677,14 @@ A <b>while loop</b> is a procedure to repeat a piece of code while some conditio
 </div>
 </div>
 </div>
-<pre> A) 0 | B) 2 | C) 3 | D) 4 | E) Infinite </pre> </section>
+<ul class="simple">
+<li><p>A) 0</p></li>
+<li><p>B) 3</p></li>
+<li><p>C) 4</p></li>
+<li><p>D) 5</p></li>
+<li><p>E) Infinite</p></li>
+</ul>
+</section>
 </section>
 </section>
 <section id="for-loops">
@@ -1139,17 +1150,7 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">count_odd</span><span class="p">(</span><span class="n">range_lower</span><span class="p">,</span> <span class="n">range_upper</span><span class="p">):</span>
-    
-    <span class="n">my_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">range_lower</span><span class="p">,</span> <span class="n">range_upper</span><span class="p">)</span>
-    <span class="n">total_val</span> <span class="o">=</span> <span class="mi">0</span>
-    
-    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">my_range</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">val</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">total_val</span> <span class="o">=</span> <span class="n">total_val</span> <span class="o">+</span> <span class="n">val</span>
-            
-    <span class="k">return</span> <span class="n">total_val</span>
-
-            
+                
             
 <span class="n">count_odd</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>            
             
@@ -1170,15 +1171,9 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">count_vowels</span><span class="p">(</span><span class="n">my_name</span><span class="p">):</span>
-    <span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
-    <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
     
-    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">my_name</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
-            <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
-            
-    <span class="k">return</span> <span class="n">counter</span>
-
+    
+    
 <span class="n">count_vowels</span><span class="p">(</span><span class="s1">&#39;george&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1199,7 +1194,7 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
 <span class="k">def</span> <span class="nf">create_dictionary</span><span class="p">(</span><span class="n">lst_1</span><span class="p">,</span> <span class="n">lst_2</span><span class="p">):</span>
-    <span class="o">---</span>
+    
 </pre></div>
 </div>
 </div>
@@ -1207,7 +1202,7 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST YOUR FUNCTION HERE</span>
-<span class="c1"># Note that the two input lists are the </span>
+<span class="c1"># Note that the two input lists must be the </span>
 <span class="c1"># same length for the function to work properly</span>
 <span class="n">random_lst_1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
 <span class="n">random_lst_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
