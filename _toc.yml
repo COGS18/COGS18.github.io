@@ -113,8 +113,8 @@ parts:
 
   - caption: Projects
     chapters:
-    - file: projects/PythonProjects
-      title: PythonProjects
+    # - file: projects/PythonProjects
+      # title: PythonProjects
     - file: projects/overview
       title: Overview
     - file: projects/faq
