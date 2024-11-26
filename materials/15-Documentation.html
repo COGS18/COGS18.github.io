@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Code Style &amp; Documentation &#8212; COGS 18 - Introduction To Python</title>
   
@@ -15,57 +14,54 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materials/15-Documentation';</script>
-    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Coding Lab 2: Programming I" href="CL-Answers/CL2-ProgrammingI.html" />
+    <link rel="next" title="Code Testing" href="16-CodeTesting.html" />
     <link rel="prev" title="Scientific Computing" href="14-ScientificComputing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -76,19 +72,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -110,12 +110,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -130,9 +138,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -142,12 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
 <ul class="nav bd-sidenav">
@@ -173,6 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="13-Modules.html">13-Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="14-ScientificComputing.html">14-ScientificComputing</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">15-Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16-CodeTesting.html">16-CodeTesting</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Labs</span></p>
 <ul class="nav bd-sidenav">
@@ -202,7 +226,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -211,14 +235,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -243,14 +267,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/15-Documentation.ipynb&branch=master" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -261,14 +285,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/15-Documentation.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -406,26 +430,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -533,10 +559,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="code-style-documentation">
-<h1>Code Style &amp; Documentation<a class="headerlink" href="#code-style-documentation" title="Permalink to this heading">#</a></h1>
+<h1>Code Style &amp; Documentation<a class="headerlink" href="#code-style-documentation" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>readability</p></li>
 <li><p>code style</p></li>
@@ -547,13 +573,13 @@ document.write(`
 <li><p>versioning</p></li>
 </ul>
 <section id="code-readability-api">
-<h2>Code Readability (API)<a class="headerlink" href="#code-readability-api" title="Permalink to this heading">#</a></h2>
+<h2>Code Readability (API)<a class="headerlink" href="#code-readability-api" title="Link to this heading">#</a></h2>
 <p>“Code is more often read than written” - Guido van Rossum</p>
 <p>So: code should be written to be readable by humans.</p>
 <p>Note: one of those humans is future you.</p>
 </section>
 <section id="the-zen-of-python">
-<h2>The Zen of Python<a class="headerlink" href="#the-zen-of-python" title="Permalink to this heading">#</a></h2>
+<h2>The Zen of Python<a class="headerlink" href="#the-zen-of-python" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>a list of guiding principles for writing good programs, and a design philosophy for the Python language</p></li>
 </ul>
@@ -565,7 +591,7 @@ document.write(`
 </div>
 </div>
 <section id="writing-readable-code">
-<h3>Writing Readable Code<a class="headerlink" href="#writing-readable-code" title="Permalink to this heading">#</a></h3>
+<h3>Writing Readable Code<a class="headerlink" href="#writing-readable-code" title="Link to this heading">#</a></h3>
 <p>So how do we write good code for humans?</p>
 <ul class="simple">
 <li><p>Use good structure</p></li>
@@ -574,20 +600,20 @@ document.write(`
 </ul>
 </section>
 <section id="good-structure">
-<h3>Good Structure<a class="headerlink" href="#good-structure" title="Permalink to this heading">#</a></h3>
+<h3>Good Structure<a class="headerlink" href="#good-structure" title="Link to this heading">#</a></h3>
 <p>If you design your program using separate functions for each task, avoid copying + pasting (functions and loops instead), and consider structure beforehand, you’ll be set up for success</p>
 </section>
 <section id="good-naming">
-<h3>Good Naming<a class="headerlink" href="#good-naming" title="Permalink to this heading">#</a></h3>
+<h3>Good Naming<a class="headerlink" href="#good-naming" title="Link to this heading">#</a></h3>
 <p>Clear names are for humans. The computer doesn’t care, but you and others reading your code do.</p>
 </section>
 <section id="code-comments-documentation">
-<h3>Code comments &amp; Documentation<a class="headerlink" href="#code-comments-documentation" title="Permalink to this heading">#</a></h3>
+<h3>Code comments &amp; Documentation<a class="headerlink" href="#code-comments-documentation" title="Link to this heading">#</a></h3>
 <p>Helpful comments and documentation take your code to the next level.</p>
 <p>Good code has good documentation - but code documentation should <em>not</em> be used to try and fix unclear names, or bad structure.</p>
 <p>Rather, comments should add any additional context and information that helps explain what the code is, how it works, and why it works that way.</p>
 <section id="class-question-1">
-<h4>Class Question #1<a class="headerlink" href="#class-question-1" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #1<a class="headerlink" href="#class-question-1" title="Link to this heading">#</a></h4>
 <p>What does the following code do?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -671,7 +697,7 @@ document.write(`
 </section>
 </section>
 <section id="code-style">
-<h2>Code Style<a class="headerlink" href="#code-style" title="Permalink to this heading">#</a></h2>
+<h2>Code Style<a class="headerlink" href="#code-style" title="Link to this heading">#</a></h2>
 <p>Or: How to be Pythonic</p>
 <p>Reasons to be Pythonic:</p>
 <ul class="simple">
@@ -680,21 +706,21 @@ document.write(`
 <li><p>best to practice this early on (I promise!)</p></li>
 </ul>
 <section id="style-guides">
-<h3>Style Guides<a class="headerlink" href="#style-guides" title="Permalink to this heading">#</a></h3>
+<h3>Style Guides<a class="headerlink" href="#style-guides" title="Link to this heading">#</a></h3>
 <div class="alert alert-success">
 Coding style refers to a set of conventions for how to write good code. 
 </div><p>Consistency is the goal. Rules help us achieve consistency.</p>
 <p>Much of this will apply to other programming languages, so it’s good to learn…regardless of language.</p>
 <p>Some of these Code Style notes will be more specific to Python, however.</p>
 <section id="python-enhancement-proposals-peps">
-<h4>Python Enhancement Proposals (PEPs)<a class="headerlink" href="#python-enhancement-proposals-peps" title="Permalink to this heading">#</a></h4>
+<h4>Python Enhancement Proposals (PEPs)<a class="headerlink" href="#python-enhancement-proposals-peps" title="Link to this heading">#</a></h4>
 <div class="alert alert-success">
 Python PEPs are proposals for how something should be / work in the Python programming language. 
 </div><p>These are written by the people responsible for the Python Programming language.</p>
 <p>PEP are voted on before incorporation.</p>
 </section>
 <section id="pep8">
-<h4>PEP8<a class="headerlink" href="#pep8" title="Permalink to this heading">#</a></h4>
+<h4>PEP8<a class="headerlink" href="#pep8" title="Link to this heading">#</a></h4>
 <div class="alert alert-info">
 <b><a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a></b> is an accepted proposal that outlines the style guide for Python.
 </div><p>Defines the style guide for Pythonistas (people who code in Python).</p>
@@ -702,7 +728,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </section>
 </section>
 <section id="code-style-structure">
-<h2>Code Style: Structure<a class="headerlink" href="#code-style-structure" title="Permalink to this heading">#</a></h2>
+<h2>Code Style: Structure<a class="headerlink" href="#code-style-structure" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>blank lines</p></li>
 <li><p>indentaion</p></li>
@@ -711,25 +737,25 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <li><p>imports &lt;- NEW</p></li>
 </ul>
 <section id="blank-lines">
-<h3>Blank Lines<a class="headerlink" href="#blank-lines" title="Permalink to this heading">#</a></h3>
+<h3>Blank Lines<a class="headerlink" href="#blank-lines" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Use 2 blank lines between functions &amp; classes, and 1 between methods</p></li>
 <li><p>Use 1 blank line between segments to indicate logical structure</p></li>
 </ul>
 </section>
 <section id="indentation">
-<h3>Indentation<a class="headerlink" href="#indentation" title="Permalink to this heading">#</a></h3>
+<h3>Indentation<a class="headerlink" href="#indentation" title="Link to this heading">#</a></h3>
 <p>Use spaces to indicate indentation levels, with each level defined as 4 spaces.</p>
 </section>
 <section id="spacing">
-<h3>Spacing<a class="headerlink" href="#spacing" title="Permalink to this heading">#</a></h3>
+<h3>Spacing<a class="headerlink" href="#spacing" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Put one (and only one) space between each element</p></li>
 <li><p>Index and assignment don’t have a space between opening &amp; closing ‘()’ or ‘[]’</p></li>
 </ul>
 </section>
 <section id="line-length-new">
-<h3>Line Length (NEW)<a class="headerlink" href="#line-length-new" title="Permalink to this heading">#</a></h3>
+<h3>Line Length (NEW)<a class="headerlink" href="#line-length-new" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>PEP8 recommends that each line be at most 79 characters long</p></li>
 </ul>
@@ -737,7 +763,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 <p>But, super long lines are hard to read at a glance.</p>
 </section>
 <section id="multi-line">
-<h3>Multi-Line<a class="headerlink" href="#multi-line" title="Permalink to this heading">#</a></h3>
+<h3>Multi-Line<a class="headerlink" href="#multi-line" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_long_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> 
@@ -759,7 +785,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </div>
 </section>
 <section id="one-statement-per-line-new-ish">
-<h3>One Statement Per Line (NEW-ish)<a class="headerlink" href="#one-statement-per-line-new-ish" title="Permalink to this heading">#</a></h3>
+<h3>One Statement Per Line (NEW-ish)<a class="headerlink" href="#one-statement-per-line-new-ish" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>While you <em>can</em> condense multiple statements into one line, you usually shouldn’t.</p></li>
 </ul>
@@ -782,7 +808,7 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </div>
 </section>
 <section id="imports">
-<h3>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h3>
+<h3>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Import one module per line</p></li>
 <li><p>Avoid <code class="docutils literal notranslate"><span class="pre">*</span></code> imports</p></li>
@@ -813,15 +839,15 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </section>
 </section>
 <section id="specific-guidelines-naming-review">
-<h2>Specific Guidelines - Naming (review)<a class="headerlink" href="#specific-guidelines-naming-review" title="Permalink to this heading">#</a></h2>
+<h2>Specific Guidelines - Naming (review)<a class="headerlink" href="#specific-guidelines-naming-review" title="Link to this heading">#</a></h2>
 <section id="valid-names">
-<h3>Valid Names<a class="headerlink" href="#valid-names" title="Permalink to this heading">#</a></h3>
+<h3>Valid Names<a class="headerlink" href="#valid-names" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Use descriptive names for all modules, variables, functions and classes, that are longer than 1 character</p></li>
 </ul>
 </section>
 <section id="naming-style">
-<h3>Naming Style<a class="headerlink" href="#naming-style" title="Permalink to this heading">#</a></h3>
+<h3>Naming Style<a class="headerlink" href="#naming-style" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>CapWords (leading capitals, no separation) for Classes</p></li>
 <li><p>snake_case (all lowercase, underscore separator) for variables, functions, and modules</p></li>
@@ -829,23 +855,23 @@ Python PEPs are proposals for how something should be / work in the Python progr
 </section>
 </section>
 <section id="code-documentation">
-<h2>Code Documentation<a class="headerlink" href="#code-documentation" title="Permalink to this heading">#</a></h2>
+<h2>Code Documentation<a class="headerlink" href="#code-documentation" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 Code documentation is text that accompanies and/or is embedded within a software project, that explains what the code is and how to use it. 
 </div><p>Stuff written for humans in human language to help the humans.</p>
 <section id="code-comments-vs-documentation">
-<h3>Code Comments vs. Documentation<a class="headerlink" href="#code-comments-vs-documentation" title="Permalink to this heading">#</a></h3>
+<h3>Code Comments vs. Documentation<a class="headerlink" href="#code-comments-vs-documentation" title="Link to this heading">#</a></h3>
 <section id="comments">
-<h4>Comments<a class="headerlink" href="#comments" title="Permalink to this heading">#</a></h4>
+<h4>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h4>
 <p>Comments are string literals written directly in the code, typically directed at developers - people reading and potentially writing the code.</p>
 </section>
 <section id="documentation">
-<h4>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">#</a></h4>
+<h4>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h4>
 <p>Documentation are descriptions and guides written for code users.</p>
 </section>
 </section>
 <section id="inline-comments">
-<h3>Inline Comments<a class="headerlink" href="#inline-comments" title="Permalink to this heading">#</a></h3>
+<h3>Inline Comments<a class="headerlink" href="#inline-comments" title="Link to this heading">#</a></h3>
 <p>Code comments should use <code class="docutils literal notranslate"><span class="pre">#</span></code>, and be written at the same indentation level of the code it describes.</p>
 <p>How to use comments:</p>
 <ul class="simple">
@@ -860,7 +886,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 <li><p>Comments need to be maintained - make sure to keep them up to date</p></li>
 </ul>
 <section id="bad-comments">
-<h4>Bad Comments<a class="headerlink" href="#bad-comments" title="Permalink to this heading">#</a></h4>
+<h4>Bad Comments<a class="headerlink" href="#bad-comments" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a loop that iterates over elements in a list</span>
@@ -872,7 +898,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 </div>
 </section>
 <section id="good-comments">
-<h4>Good Comments<a class="headerlink" href="#good-comments" title="Permalink to this heading">#</a></h4>
+<h4>Good Comments<a class="headerlink" href="#good-comments" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Because of X, we will use approach Y to do Z</span>
@@ -887,11 +913,11 @@ Code documentation is text that accompanies and/or is embedded within a software
 </section>
 </section>
 <section id="code-style-comments">
-<h2>Code Style: Comments<a class="headerlink" href="#code-style-comments" title="Permalink to this heading">#</a></h2>
+<h2>Code Style: Comments<a class="headerlink" href="#code-style-comments" title="Link to this heading">#</a></h2>
 <p>Out-of-date comments are worse than no comments at all.</p>
 <p>Keep your comments up-to-date.</p>
 <section id="block-comments">
-<h3>Block comments<a class="headerlink" href="#block-comments" title="Permalink to this heading">#</a></h3>
+<h3>Block comments<a class="headerlink" href="#block-comments" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>apply to some (or all) code that follows them</p></li>
 <li><p>are indented to the same level as that code.</p></li>
@@ -937,7 +963,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 </div>
 </section>
 <section id="id1">
-<h3>Inline comments<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>Inline comments<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>to be used sparingly</p></li>
 <li><p>to be separated by at least two spaces from the statement</p></li>
@@ -962,15 +988,15 @@ Code documentation is text that accompanies and/or is embedded within a software
 </section>
 </section>
 <section id="docstrings">
-<h2>Docstrings<a class="headerlink" href="#docstrings" title="Permalink to this heading">#</a></h2>
+<h2>Docstrings<a class="headerlink" href="#docstrings" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 <b>Docstrings</b> are in-code text that describe modules, classes and functions. They describe the operation of the code.
 </div><section id="numpy-style-docs">
-<h3>Numpy style docs<a class="headerlink" href="#numpy-style-docs" title="Permalink to this heading">#</a></h3>
+<h3>Numpy style docs<a class="headerlink" href="#numpy-style-docs" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpy style docs</a> are a particular specification for docstrings.</p>
 </section>
 <section id="example-docstring">
-<h3>Example Docstring<a class="headerlink" href="#example-docstring" title="Permalink to this heading">#</a></h3>
+<h3>Example Docstring<a class="headerlink" href="#example-docstring" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
@@ -1007,7 +1033,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 <p><strong>Docstrings</strong> are available to you <em>outside</em> of the source code.</p>
 </section>
 <section id="docstrings-are-available-through-the-code">
-<h3>Docstrings are available through the code<a class="headerlink" href="#docstrings-are-available-through-the-code" title="Permalink to this heading">#</a></h3>
+<h3>Docstrings are available through the code<a class="headerlink" href="#docstrings-are-available-through-the-code" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>add<span class="o">?</span>
@@ -1025,7 +1051,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 </div>
 </div>
 <section id="doc">
-<h4><code class="docutils literal notranslate"><span class="pre">__doc__</span></code><a class="headerlink" href="#doc" title="Permalink to this heading">#</a></h4>
+<h4><code class="docutils literal notranslate"><span class="pre">__doc__</span></code><a class="headerlink" href="#doc" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Docstrings get stored as the `__doc__` attribute</span>
@@ -1037,7 +1063,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 </div>
 </section>
 <section id="class-question-2">
-<h4>Class Question #2<a class="headerlink" href="#class-question-2" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #2<a class="headerlink" href="#class-question-2" title="Link to this heading">#</a></h4>
 <p>What should be included in a docstring?</p>
 <ol class="arabic simple">
 <li><p>Input arguments and their types</p></li>
@@ -1056,7 +1082,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 </section>
 </section>
 <section id="projects-documentation">
-<h3>Projects &amp; Documentation<a class="headerlink" href="#projects-documentation" title="Permalink to this heading">#</a></h3>
+<h3>Projects &amp; Documentation<a class="headerlink" href="#projects-documentation" title="Link to this heading">#</a></h3>
 <p><strong>Do <em>all</em> of my functions need <code class="docutils literal notranslate"><span class="pre">numpy</span></code> documentation?</strong></p>
 <ol class="arabic simple">
 <li><p>Your original code definitely needs <code class="docutils literal notranslate"><span class="pre">numpy</span></code> docstrings (required)</p></li>
@@ -1069,7 +1095,7 @@ Code documentation is text that accompanies and/or is embedded within a software
 </ol>
 </section>
 <section id="documentation-for-a-software-project">
-<h3>Documentation for a Software Project<a class="headerlink" href="#documentation-for-a-software-project" title="Permalink to this heading">#</a></h3>
+<h3>Documentation for a Software Project<a class="headerlink" href="#documentation-for-a-software-project" title="Link to this heading">#</a></h3>
 <p>Documentation Files:</p>
 <ul class="simple">
 <li><p>A <code class="docutils literal notranslate"><span class="pre">README</span></code> is a file that provides an overview of the project to potential users and developers</p></li>
@@ -1079,31 +1105,31 @@ Code documentation is text that accompanies and/or is embedded within a software
 </ul>
 </section>
 <section id="documentation-sites">
-<h3>Documentation Sites<a class="headerlink" href="#documentation-sites" title="Permalink to this heading">#</a></h3>
+<h3>Documentation Sites<a class="headerlink" href="#documentation-sites" title="Link to this heading">#</a></h3>
 <div class="alert alert-success">
 Documentation sites are a host of a package's documentation, for code users. 
 </div><section id="example-function-documentation">
-<h4>Example: Function Documentation<a class="headerlink" href="#example-function-documentation" title="Permalink to this heading">#</a></h4>
+<h4>Example: Function Documentation<a class="headerlink" href="#example-function-documentation" title="Link to this heading">#</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">numpy.array</span></code> :
 <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html">https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html</a></p>
 </section>
 <section id="example-package-documentation">
-<h4>Example: Package Documentation<a class="headerlink" href="#example-package-documentation" title="Permalink to this heading">#</a></h4>
+<h4>Example: Package Documentation<a class="headerlink" href="#example-package-documentation" title="Link to this heading">#</a></h4>
 <p><strong>scikit learn</strong> (<code class="docutils literal notranslate"><span class="pre">sklearn</span></code>) : <a class="reference external" href="https://scikit-learn.org/stable/index.html">https://scikit-learn.org/stable/index.html</a></p>
 </section>
 </section>
 </section>
 <section id="linters">
-<h2>Linters<a class="headerlink" href="#linters" title="Permalink to this heading">#</a></h2>
+<h2>Linters<a class="headerlink" href="#linters" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 A linter is a tool that analyzes code for both programmatic errors and stylistic issues. 
 </div><p><code class="docutils literal notranslate"><span class="pre">pylint</span></code> is available from Anaconda to check this for you. (Not available on datahub.)</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># to install on datahub
-!pip install --user pylint
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># to install on datahub</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">pylint</span>
 </pre></div>
 </div>
 <section id="class-question-3">
-<h3>Class Question #3<a class="headerlink" href="#class-question-3" title="Permalink to this heading">#</a></h3>
+<h3>Class Question #3<a class="headerlink" href="#class-question-3" title="Link to this heading">#</a></h3>
 <p>How many PEP8 violations can you find in this code?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1130,7 +1156,7 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 </ul>
 </section>
 <section id="list-here">
-<h3>list here<a class="headerlink" href="#list-here" title="Permalink to this heading">#</a></h3>
+<h3>list here<a class="headerlink" href="#list-here" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">input_num</span><span class="p">):</span>
@@ -1159,10 +1185,10 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 </section>
 </section>
 <section id="software-versioning">
-<h2>Software Versioning<a class="headerlink" href="#software-versioning" title="Permalink to this heading">#</a></h2>
+<h2>Software Versioning<a class="headerlink" href="#software-versioning" title="Link to this heading">#</a></h2>
 <p>When you make changes to the software you’ve released into the world, you have to change the version of that software to let people know changes have occurred.</p>
 <section id="versioning-schemes">
-<h3>Versioning Schemes<a class="headerlink" href="#versioning-schemes" title="Permalink to this heading">#</a></h3>
+<h3>Versioning Schemes<a class="headerlink" href="#versioning-schemes" title="Link to this heading">#</a></h3>
 <p>The rules, if you’re new to this can be <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#version-scheme">dizzying</a>, so we’ll <a class="reference external" href="https://www.python.org/dev/peps/pep-0396/">simplify</a> for now:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;MAJOR&gt;.&lt;MINOR&gt;</span></code></p>
@@ -1228,11 +1254,10 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="14-ScientificComputing.html"
@@ -1244,18 +1269,15 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
       </div>
     </a>
     <a class="right-next"
-       href="CL-Answers/CL2-ProgrammingI.html"
+       href="16-CodeTesting.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Coding Lab 2: Programming I</p>
+        <p class="prev-next-title">Code Testing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1263,6 +1285,7 @@ A linter is a tool that analyzes code for both programmatic errors and stylistic
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1369,9 +1392,10 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1395,8 +1419,8 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
