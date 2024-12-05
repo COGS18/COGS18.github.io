@@ -746,8 +746,9 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># can just search for a letter</span>
-<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># can just search for a letter - note that the &#39;r&#39; in front of the string </span>
+<span class="c1"># changes it to a &quot;raw string literal&quot;, needed to avoid complaints by re when using backslashes</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -755,7 +756,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># but the patterns are where these shine</span>
-<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;\d\d&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\d\d&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
