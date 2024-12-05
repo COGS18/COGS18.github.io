@@ -45,10 +45,10 @@ parts:
       title: 16-CodeTesting
     - file: materials/17-CodeProjects
       title: 17-CodeProjects
+    - file: materials/18-WrapUp
+      title: 18-WrapUp
   # # #   - file: materials/21-AdvancedPython
   # # #     title: 21-AdvancedPython
-    # - file: materials/18-WrapUp
-      # title: 18-WrapUp
   # #   - file: materials/A1-CodeStyle
   # #     title: A1-CodeStyle
   # #   - file: materials/A2-Syntax
