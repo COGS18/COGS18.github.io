@@ -1,6 +1,6 @@
 # SYLLABUS
 
-**Introduction to Python** | **Fall 2024**  
+**Introduction to Python** | **Winter 2025**  
 
 ---
 
@@ -12,16 +12,16 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE INFORMATION
 
-**Lecture**: TuTh at 11:00a-12:20p (YORK 2722)  OR  3:30p-4:50p (PETER 110)
-**Labs**: Mon OR Wed 9a-6p (CSB 115) (Please go to your assigned section)
+**Lecture**: TuTh at 3:30p-4:50p (WLH 2001)
+**Labs**: Wed each hour 9a-6p (CSB 115) (Please go to your assigned section)
 
 Office Hours Times/Locations and Coding Lab TAs/IAs can be found on Canvas.
 
 **Important Links**
 - [Course Website](https://cogs18.github.io)
 - [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
-- [Course Canvas](https://canvas.ucsd.edu/courses/58697)
-- [Course Piazza\*](https://piazza.com/ucsd/fall2024/cogs18_fa24_a00/home)
+- [Course Canvas](https://canvas.ucsd.edu/courses/61442)
+- [Course Piazza\*](https://piazza.com/ucsd/winter2025/cogs18_wi25_a00/home)
 - [DataHub](https://datahub.ucsd.edu)
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
 
@@ -109,7 +109,7 @@ To incentivize attendance, we will use iclicker for in-class Q&A (using either a
 
 ### Coding Labs (15\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for the week by that Wednesday 11:59 pm. There are no late submissions for coding labs.
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for the week by that Wednesday 11:59 pm. There are no late submissions for coding labs.
 
 
 ### Assignments (40\%)
@@ -143,45 +143,41 @@ The final exam will be take-home and you will have at least 48 hours to complete
 ## COURSE SCHEDULE
 | Date       | Week   | Day | Lecture topic           | Lab topic                   | Assignment due  (11:59 PM)              |
 | ---------- | ------ | --- | ----------------------- | --------------------------- | --------------------------------------- |
-| 9/26/2024  | 0      | Th  | Introduction            |                             |                                         |
-| 9/30/2024  | 1      | M/W |                         | CL1 - tooling               |                                         |
-| 10/1/2024  | 1      | Tu  | Variables & Operators   |                             |                                         |
-| 10/3/2024  | 1      | Th  | Functions               |                             |                                         |
-| 10/7/2024  | 2      | M/W |                         | CL2 - vars, operators       |                                         |
-| 10/8/2024  | 2      | Tu  | Conditionals            |                             |                                         |
-| 10/10/2024 | 2      | Th  | Collections             |                             |                                         |
-| 10/14/2024 | 3      | M/W |                         | CL3 - funcs, conditionals   |                                         |
-| 10/15/2024 | 3      | Tu  | Debugging [*]           |                             |                                         |
-| 10/17/2024 | 3      | Th  | Loops                   |                             |                                         |
-| 10/18/2024 | 3      | F   |                         |                             | A1 - variables, comparison, functions   |
-| 10/21/2024 | 4      | M/W |                         | CL4 - collections           |                                         |
-| 10/22/2024 | 4      | Tu  | Review                  |                             |                                         |
-| 10/24/2024 | 4      | Th  | **E1**                  |                             | E1: technical portion (take-home)       |
-| 10/27/2024 | 4      | Su  |                         |                             | A2 - conditionals, collections, ciphers |
-| 10/28/2024 | 5      | M/W |                         | CL5 - loops                 |                                         |
-| 10/29/2024 | 5      | Tu  | Methods                 |                             |                                         |
-| 10/31/2024 | 5      | Th  | Classes                 |                             |                                         |
-| 11/1/2024  | 5      | F   |                         |                             |                                         |
-| 11/4/2024  | 6      | M/W |                         | CL6 - classes               |                                         |
-| 11/5/2024  | 6      | Tu  | Command Line [**]       |                             |                                         |
-| 11/7/2024  | 6      | Th  | Modules                 |                             |                                         |
-| 11/8/2024  | 6      | F   |                         |                             | A3 - loops, strings, chatbots           |
-| 11/11/2024 | 7      | M/W |                         | CL7 - command line          |                                         |
-| 11/12/2024 | 7      | Tu  | Review                  |                             |                                         |
-| 11/14/2024 | 7      | Th  | **E2**                  |                             | E2: technical portion (take-home)       |
-| 11/17/2024 | 7      | Su  |                         |                             | A4 - methods, classes, agents           |
-| 11/18/2024 | 8      | M/W |                         |                             |                                         |
-| 11/19/2024 | 8      | Tu  | Scientific Computing    |                             |                                         |
-| 11/21/2024 | 8      | Th  | Documentation           | CL8 - scientific computing  |                                         |
-| 11/22/2024 | 8      | F   |                         |                             |                                         |
-| 11/25/2024 | 9      | M/W |                         |                             |                                         |
-| 11/26/2024 | 9      | Tu  | Code Testing            |                             |                                         |
-| 11/28/2024 | 9      | Th  | **Thanksgiving Holiday**|                             |                                         |
-| 12/2/2024  | 10     | M/W |                         | CL9 - test, debug, refactor |                                         |
-| 12/3/2024  | 10     | Tu  | Code Projects           |                             |                                         |
-| 12/5/2024  | 10     | Th  | Wrap-up                 |                             |                                         |
-| 12/6/2024  | 10     | F   |                         |                             | A5 - numpy, pandas, refactoring         |
-| 12/11/2024 | Finals | W   |                         |                             | Final project/exam due                  |
+| 1/7/2025   | 1      | Tu  | Introduction            |                             |                                         |
+| 1/9/2025   | 1      | Thu | Tooling & Variables     |                             |                                         |
+| 1/14/2025  | 2      | Tu  | Operators               |                             |                                         |
+| 1/15/2025  | 2      | W   |                         | CL1 - Tooling               | CL1 - Tooling                           |
+| 1/16/2025  | 2      | Thu | Functions               |                             |                                         |
+| 1/19/2025  | 2      | Su  |                         |                             | A1 - variables, comparison, functions   |
+| 1/21/2025  | 3      | Tu  | Conditionals            |                             |                                         |
+| 1/22/2025  | 3      | W   |                         | CL2 - vars, operators       | CL2 - vars, operators                   |
+| 1/23/2025  | 3      | Th  | Collections             |                             |                                         |
+| 1/26/2025  | 3      | Su  |                         |                             | A2 - conditionals, collections, ciphers |
+| 1/28/2025  | 4      | Tu  | Debugging [*]           |                             |                                         |
+| 1/29/2025  | 4      | W   |                         | CL3 - funcs, conditionals   | CL3 - funcs, conditionals               |
+| 1/30/2025  | 4      | Th  | Loops                   |                             |                                         |
+| 2/4/2025   | 5      | Tu  | **E1**                  |                             | E1: technical portion (take-home)       |
+| 2/5/2025   | 5      | W   |                         | CL4 - collections           | CL4 - collections                       |
+| 2/6/2025   | 5      | Thu | Methods                 |                             |                                         |
+| 2/11/2025  | 6      | Tu  | Classes                 |                             |                                         |
+| 2/12/2025  | 6      | W   |                         | CL5 - loops                 | CL5 - loops                             |
+| 2/13/2025  | 6      | Th  | Command Line [**]       |                             |                                         |
+| 2/16/2025  | 6      | Su  |                         |                             | A3 - loops, strings, chatbots           |
+| 2/18/2025  | 7      | Tu  | Modules                 |                             |                                         |
+| 2/19/2025  | 7      | W   |                         | CL6 - classes               | CL6 - classes                           |
+| 2/20/2025  | 7      | Thu | Review                  |                             |                                         |
+| 2/25/2025  | 8      | Tu  | **E2**                  |                             | E2: technical portion                   |
+| 2/26/2025  | 8      | W   |                         | CL7 - command line          | CL7 - command line  (take-home)         |
+| 2/27/2025  | 8      | Thu | Scientific Computing    |                             |                                         |
+| 3/2/2025   | 8      | Su  |                         |                             | A4 - methods, classes, agents           |
+| 3/4/2025   | 9      | Tu  | Documentation           |                             |                                         |
+| 3/5/2025   | 9      | W   |                         | CL8 - scientific computing  | CL8 - scientific computing              |
+| 3/6/2025   | 9      | Thu | Code Testing            |                             |                                         |
+| 3/9/2025   | 9      | Su  |                         |                             | A5 - numpy, pandas, refactoring         |
+| 3/11/2025  | 10     | Tu  | Code Projects           |                             |                                         |
+| 3/12/2025  | 10     | W   |                         | CL9 - test, debug, refactor | CL9 - test, debug, refactor             |
+| 3/13/2025  | 10     | Thu | Wrap-up                 |                             |                                         |
+| 3/18/2025  | Finals | Tu  |                         |                             | Final project/exam due                  |
 
 
 **Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
