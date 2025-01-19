@@ -148,35 +148,30 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 1/14/2025  | 2      | Tu  | Operators               |                             |                                         |
 | 1/15/2025  | 2      | W   |                         | CL1 - Tooling               | CL1 - Tooling                           |
 | 1/16/2025  | 2      | Thu | Functions               |                             |                                         |
-| 1/19/2025  | 2      | Su  |                         |                             | A1 - variables, comparison, functions   |
 | 1/21/2025  | 3      | Tu  | Conditionals            |                             |                                         |
 | 1/22/2025  | 3      | W   |                         | CL2 - vars, operators       | CL2 - vars, operators                   |
-| 1/23/2025  | 3      | Th  | Collections             |                             |                                         |
-| 1/26/2025  | 3      | Su  |                         |                             | A2 - conditionals, collections, ciphers |
+| 1/23/2025  | 3      | Th  | Collections             |                             | A1 - variables, comparison, functions   |
 | 1/28/2025  | 4      | Tu  | Debugging [*]           |                             |                                         |
 | 1/29/2025  | 4      | W   |                         | CL3 - funcs, conditionals   | CL3 - funcs, conditionals               |
-| 1/30/2025  | 4      | Th  | Loops                   |                             |                                         |
+| 1/30/2025  | 4      | Th  | Loops                   |                             | A2 - conditionals, collections, ciphers |
 | 2/4/2025   | 5      | Tu  | **E1**                  |                             | E1: technical portion (take-home)       |
 | 2/5/2025   | 5      | W   |                         | CL4 - collections           | CL4 - collections                       |
 | 2/6/2025   | 5      | Thu | Methods                 |                             |                                         |
 | 2/11/2025  | 6      | Tu  | Classes                 |                             |                                         |
 | 2/12/2025  | 6      | W   |                         | CL5 - loops                 | CL5 - loops                             |
 | 2/13/2025  | 6      | Th  | Command Line [**]       |                             |                                         |
-| 2/16/2025  | 6      | Su  |                         |                             | A3 - loops, strings, chatbots           |
 | 2/18/2025  | 7      | Tu  | Modules                 |                             |                                         |
 | 2/19/2025  | 7      | W   |                         | CL6 - classes               | CL6 - classes                           |
-| 2/20/2025  | 7      | Thu | Review                  |                             |                                         |
+| 2/20/2025  | 7      | Thu | Review                  |                             | A3 - loops, strings, chatbots           |
 | 2/25/2025  | 8      | Tu  | **E2**                  |                             | E2: technical portion                   |
 | 2/26/2025  | 8      | W   |                         | CL7 - command line          | CL7 - command line  (take-home)         |
 | 2/27/2025  | 8      | Thu | Scientific Computing    |                             |                                         |
-| 3/2/2025   | 8      | Su  |                         |                             | A4 - methods, classes, agents           |
 | 3/4/2025   | 9      | Tu  | Documentation           |                             |                                         |
 | 3/5/2025   | 9      | W   |                         | CL8 - scientific computing  | CL8 - scientific computing              |
-| 3/6/2025   | 9      | Thu | Code Testing            |                             |                                         |
-| 3/9/2025   | 9      | Su  |                         |                             | A5 - numpy, pandas, refactoring         |
+| 3/6/2025   | 9      | Thu | Code Testing            |                             | A4 - methods, classes, agents           |
 | 3/11/2025  | 10     | Tu  | Code Projects           |                             |                                         |
 | 3/12/2025  | 10     | W   |                         | CL9 - test, debug, refactor | CL9 - test, debug, refactor             |
-| 3/13/2025  | 10     | Thu | Wrap-up                 |                             |                                         |
+| 3/13/2025  | 10     | Thu | Wrap-up                 |                             | A5 - numpy, pandas, refactoring         |
 | 3/18/2025  | Finals | Tu  |                         |                             | Final project/exam due                  |
 
 
