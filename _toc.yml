@@ -25,10 +25,10 @@ parts:
       title: 06-Conditionals
     - file: materials/07-Collections
       title: 07-Collections
-    # - file: materials/08-Debugging
-      # title: 08-Debugging
-    # - file: materials/09-Loops
-      # title: 09-Loops
+    - file: materials/08-Debugging
+      title: 08-Debugging
+    - file: materials/09-Loops
+      title: 09-Loops
     # - file: materials/10-Methods
       # title: 10-Methods
     # - file: materials/11-Classes
