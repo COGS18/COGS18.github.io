@@ -56,7 +56,7 @@ parts:
   # #   - file: materials/A3-Examples
   # #     title: A3-Examples    
 
-  - caption: Coding Labs
+  - caption: Coding Lab Answers
     chapters:
     - file: materials/CL-Answers/CL2-ProgrammingI
       title: CL2-ProgrammingI
