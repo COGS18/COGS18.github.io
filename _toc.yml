@@ -47,14 +47,14 @@ parts:
       # title: 17-CodeProjects
     # - file: materials/18-WrapUp
       # title: 18-WrapUp
-  # # #   - file: materials/21-AdvancedPython
-  # # #     title: 21-AdvancedPython
-  # #   - file: materials/A1-CodeStyle
-  # #     title: A1-CodeStyle
-  # #   - file: materials/A2-Syntax
-  # #     title: A2-Syntax   
-  # #   - file: materials/A3-Examples
-  # #     title: A3-Examples    
+    # # #   - file: materials/21-AdvancedPython
+    # # #     title: 21-AdvancedPython
+    # #   - file: materials/A1-CodeStyle
+    # #     title: A1-CodeStyle
+    # #   - file: materials/A2-Syntax
+    # #     title: A2-Syntax   
+    # #   - file: materials/A3-Examples
+    # #     title: A3-Examples    
 
   - caption: Coding Lab Answers
     chapters:
