@@ -38,16 +38,16 @@ textbook:
 	# manually add them to the directory as you want to distribute, remove at
 	# beginning of the quarter
 	# mv labs/answers-for-website/* labs
-	rm -rf labs/source
+# 	rm -rf labs/source
 
 # 	Copy & build project info
-	git clone --depth 1 https://www.github.com/COGS18/Projects.git projects
-	rm projects/README.md
+# 	git clone --depth 1 https://www.github.com/COGS18/Projects.git projects
+# 	rm projects/README.md
 
 	jupyter-book build ./
 	# get project template
-	mkdir -p _build/html/assets/intro/projects/
-	cp assets/intro/projects/ProjectTemplate.zip _build/html/assets/intro/projects/
+# 	mkdir -p _build/html/assets/intro/projects/
+# 	cp assets/intro/projects/ProjectTemplate.zip _build/html/assets/intro/projects/
 
 	# copy first day of slides to _build
 	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
@@ -58,9 +58,9 @@ textbook:
 	 cp materials/img/* _build/html/_images/
 
 
-	rm -rf labs
+# 	rm -rf labs
 	rm -rf materials
-	rm -rf projects
+# 	rm -rf projects
 
 
 home:
