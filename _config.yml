@@ -1,0 +1,61 @@
+# Book settings
+title: COGS 18 - Introduction To Python
+author: Shannon Ellis, Jason Fleischer, and Tom Donoghue
+logo: images/logo/logo.png
+
+repository:
+  url: https://github.com/COGS18/COGS18.github.io
+#######################################################################################
+
+
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks: off
+
+#######################################################################################
+# Launch button settings
+launch_buttons:
+  notebook_interface: classic  # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url: ""  # The URL of the BinderHub (e.g., https://mybinder.org)
+  # jupyterhub_url: datahub.ucsd.edu  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  thebe: false  # Add a thebe button to pages (requires the repository to run on Binder)
+  colab_url: https://colab.research.google.com # The URL of Google Colab (e.g., https://colab.research.google.com)
+#######################################################################################
+
+
+
+#######################################################################################
+# HTML-specific settings
+html:
+  favicon: images/logo/logo.png  # A path to a favicon image
+  use_edit_page_button: true  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_repository_button: true  # Whether to add a link to your repository button
+  use_issues_button: true  # Whether to add an "open an issue" button
+  extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  extra_footer: ""  # Will be displayed underneath the footer.
+  google_analytics_id: ""  # A GA id that can be used to track book views.
+  home_page_in_navbar: false  # Whether to include your home page in the left Navigation Bar
+  baseurl: ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  comments:
+    hypothesis: false
+    utterances: false
+
+#######################################################################################
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - notebooks/
+#   - add_section_numbers_to_book.py
+#   - convert_notebooks_to_html_partial.py
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#   - scripts/
