@@ -63,6 +63,7 @@
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Operators" href="04-Operators.html" />
     <link rel="prev" title="Tooling" href="02-Tooling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -182,6 +183,8 @@
 <li class="toctree-l1"><a class="reference internal" href="01-Introduction.html">01-Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02-Tooling.html">02-Tooling</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">03-Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Operators.html">04-Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Functions.html">05-Functions</a></li>
 </ul>
 
     </div>
@@ -523,6 +526,16 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you will get an error if you try to assign a variable to one of these words</span>
 <span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+    <span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: expected &#39;:&#39;
 </pre></div>
 </div>
 </div>
@@ -540,23 +553,6 @@ document.write(`
 <p><span class="math notranslate nohighlight">\(y = 10x + 2\)</span></p>
 <p>Code: What is x?</p>
 <p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">1</span></code></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_var</span> <span class="o">=</span> <span class="mi">2</span> 
-
-<span class="n">my_var</span> <span class="o">=</span> <span class="n">my_var</span> <span class="o">+</span> <span class="mi">1</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<ul class="simple">
-<li><p>A) 2</p></li>
-<li><p>B) 3</p></li>
-<li><p>C) “my_var + 1”</p></li>
-<li><p>D) This code will fail</p></li>
-</ul>
 </section>
 <section id="code-style">
 <h2>Code Style<a class="headerlink" href="#code-style" title="Link to this heading">#</a></h2>
@@ -662,6 +658,15 @@ document.write(`
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Tooling</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="04-Operators.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Operators</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

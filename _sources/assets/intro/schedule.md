@@ -7,7 +7,7 @@
 | 4/3/2025  | 1      | Th  | Tooling & Variables    |                                         |                            
 | 4/7/2025  | 2      | M   |                        | [VQ2](https://us.prairielearn.com/pl/course_instance/161488/assessment/2528861) [read/watch (12:36): [Operators](https://shanellis.github.io/pythonbook/content/03-basics/operators.html)] |              
 | 4/8/2025  | 2      | Tu  | Operators              |                                         |                           
-| 4/9/2025  | 2      | W   |                        | VQ3 [read/watch (8:53): [Functions (through Function Properties)](https://shanellis.github.io/pythonbook/content/04-functions/functions.html)] |              
+| 4/9/2025  | 2      | W   |                        | [VQ3](https://us.prairielearn.com/pl/course_instance/161488/assessment/2531414) [read/watch (8:53): [Functions (through Function Properties)](https://shanellis.github.io/pythonbook/content/04-functions/functions.html)] |              
 | 4/10/2025 | 2      | Th  | Functions I            |                                         |                            
 | 4/11/2025 | 2      | F   |                        | [CL1](https://us.prairielearn.com/pl/course_instance/161488/assessment/2529406) - tooling, variables, operators     |                            
 | 4/13/2025 | 2      | Su  |                        | Complete pre-assessment survey (#finaid)|                            
