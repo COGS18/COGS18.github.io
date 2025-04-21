@@ -13,11 +13,11 @@
 | 4/13/2025 | 2      | Su  |                        | Complete pre-assessment survey (#finaid)|                            
 | 4/14/2025 | 3      | M   |                        | [VQ4](https://us.prairielearn.com/pl/course_instance/161488/assessment/2534153) [read/watch (7:12): [Functions (Function Properties-end)](https://shanellis.github.io/pythonbook/content/04-functions/functions.html#function-properties)] |              
 | 4/15/2025 | 3      | Tu  | Functions II           |                                         |                            
-| 4/16/2025 | 3      | W   |                        | [VQ5](https://us.prairielearn.com/pl/course_instance/161488/assessment/2535540) [read/watch (12:10): [Conditionals)](https://shanellis.github.io/pythonbook/content/03-basics/conditionals.html)] |              
+| 4/16/2025 | 3      | W   |                        | [VQ5](https://us.prairielearn.com/pl/course_instance/161488/assessment/2535540) [read/watch (12:10): [Conditionals)](https://shanellis.gith  ub.io/pythonbook/content/03-basics/conditionals.html)] |              
 | 4/17/2025 | 3      | Th  | Conditionals           |                                         |                            
 | 4/18/2025 | 3      | F   |                        | [CL2](https://us.prairielearn.com/pl/course_instance/161488/assessment/2534186) - functions           |
 | 4/20/2025 | 3      | Su  |                        | A1 - variables, comparison, functions   |                            
-| 4/21/2025 | 4      | M   |                        | VQ6 [read/watch (): [TBD)]()] |              
+| 4/21/2025 | 4      | M   |                        | [VQ6]() [read/watch (22:26): [Lists](https://shanellis.github.io/pythonbook/content/05-collections/lists.html) [Tuples](https://shanellis.github.io/pythonbook/content/05-collections/tuples.html), [Dictionaries](https://shanellis.github.io/pythonbook/content/05-collections/dictionaries.html)] |              
 | 4/22/2025 | 4      | Tu  | Collections  [*]       |                                         |
 | 4/24/2025 | 4      | Th  | Catch up & Review      |                                         |                            
 | 4/25/2025 | 4      | F   |                        | CL3 - conditionals & collections        |                            
