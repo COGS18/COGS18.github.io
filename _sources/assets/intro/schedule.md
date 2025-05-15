@@ -36,7 +36,7 @@
 | 5/9/2025  | 6      | F   |                        | CL5 - classes                           |                            
 | 5/12/2025 | 7      | M   |                        |                                         |              
 | 5/13/2025 | 7      | Tu  | Classes II              |                                         |                
-| 5/14/2025  | 7     | W   |                        | [VQ11](https://us.prairielearn.com/pl/course_instance/161488/assessment/2545175) [read/watch (12:22): [Command Line Basics](https://shanellis.github.io/pythonbook/content/02-getting-started/commandline.html) & [Modules](https://shanellis.github.io/pythonbook/content/07-scientific-computing/modules.html)] |              
+| 5/14/2025  | 7     | W   |                        | [VQ11](https://us.prairielearn.com/pl/course_instance/161488/assessment/2545175) [read/watch (12:22): [File Paths](https://shanellis.github.io/pythonbook/content/02-getting-started/file_paths.html) & [Modules](https://shanellis.github.io/pythonbook/content/07-scientific-computing/modules.html)] |              
 | 5/15/2025 | 7      | Th  | Command Line [**]      |                                         |                            
 | 5/16/2025 | 7      | F   |                        | CL6 - command line                      |                            
 | 5/18/2025 | 7      | Su  |                        | A4 - methods, classes, agents           |                            
