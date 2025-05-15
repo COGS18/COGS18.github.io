@@ -1,0 +1,1132 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Functions &#8212; COGS 18 - Introduction To Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'materials/05-Functions';</script>
+    <link rel="icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Conditionals" href="06-Conditionals.html" />
+    <link rel="prev" title="Operators" href="04-Operators.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../assets/intro/syllabus.html">SYLLABUS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assets/intro/schedule.html">COURSE SCHEDULE</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://shanellis.github.io/pythonbook/">TEXTBOOK</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://us.prairielearn.com/pl/course_instance/161488">PRAIRIELEARN</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Introduction.html">01-Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Tooling.html">02-Tooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Variables.html">03-Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Operators.html">04-Operators</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">05-Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Conditionals.html">06-Conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Collections.html">07-Collections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="E1-Review.html">E1-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Loops.html">08-Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Methods.html">09-Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Classes.html">10-Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-CommandLine.html">11-CommandLine</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/05-Functions.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/05-Functions.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/materials/05-Functions.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Functions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vocab">Vocab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-programming">Modular Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-for-modular-programming">Functions for Modular Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-example-i">Function Example I</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-properties">Function Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-functions-i">Activity: Functions I</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-functions-ii">Activity: Functions II</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#default-values">Default Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#positional-vs-keyword-arguments">Positional vs. Keyword Arguments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style-functions">Code Style: Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-good-code-style">Functions: Good Code Style</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-code-style-to-avoid">Functions: Code Style to Avoid</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-functions-iii-code-describing-paired">Activity: Functions III (Code Describing - Paired)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://colab.research.google.com/github/COGS18/LectureNotes-COGS18/blob/main/05-Functions.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<p><strong>Q&amp;A</strong></p>
+<blockquote>
+<div><p>Q: is there an order of operations for % and //?<br />
+A: They are treated equal to division</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: What is the difference between False and Error?<br />
+A: False is what Python would return if the code ran. Error is what python would display if the code could not run. For example, if indentation is incorrect, you’ll get an error - python can’t interpret it. However, if you ran the code <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">&gt;</span> <span class="pre">20</span></code>, python knows what to do there…it will execute, it just happens to be <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Does the operator replace the assignment symbol (=)? Like should I put:  sword_charge = 90 &lt;= OR sword_charge &lt;= 90<br />
+A: No. The comparison operator does not replace the assignment oeprator.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Will we need to know about identity and chaining operators?<br />
+A: No on identity operators. Chaining operators is what we started to do by combining different operators into a single statement….so yes, but not the arbitrary examples demonstrated in the book….just that it is conceptually possible to combine them.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q:  For “and” statements when the left side is True and the right side is False [as in print(“hi”) and False], why is the left hand side still returned? Why aren’t they both False because of the “and” operator?<br />
+A: Ah…so <em>anytime</em> python encounters <code class="docutils literal notranslate"><span class="pre">print()</span></code> python is going to print the output (thus why you see hi printed). However…if you remove the <code class="docutils literal notranslate"><span class="pre">print</span></code> around “hi” you would get the expected <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Is everything on the textbook going to be things we need to know for exams?<br />
+A: Not necessarily. The videos - those are all fair game. However, if something is in the textbook and we never do any practice problems on it or discuss it in class (i.e. identity operators), you will not be tested on it during an exam. Everything on the exam will be things you did at least one practice problem on (and typically many practice problems).</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: how do you type out a modulus operator/ how do I get it?<br />
+A: Shift + 5 on your keyboard</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Im still confused if the placement of the true matters in an or operator<br />
+A: It does not. If either the left OR the right side is <code class="docutils literal notranslate"><span class="pre">True</span></code>, it will evaluate as <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</div></blockquote>
+<p><strong>Course Announcements</strong></p>
+<p>Due This Week:</p>
+<ul class="simple">
+<li><p><strong>CL1</strong> due Friday</p></li>
+<li><p>Pre-course assessments (two surveys) due Sunday</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>PrairieLearn vs PrairieTest</p>
+<ul>
+<li><p>PrairieLearn: system where you complete quizzes, labs, assignments, etc.</p></li>
+<li><p>PrairieTest: where you sign up for exams; link now on Canvas homepage (practice exam reminder)</p></li>
+</ul>
+</li>
+<li><p>Course Website vs. Textbook</p>
+<ul>
+<li><p>Course website: lecture notes, schedule, and links to textbook/prairielearn</p></li>
+<li><p>Course textbook: for pre-class reading/videos (and additional practice)</p></li>
+</ul>
+</li>
+<li><p>Oral Exams: <a class="reference external" href="https://calendar.app.google/3xu3mtgu3mAZgTRw5">sign up for first oral exam</a> (during lab; sign up for one slot during weeks 3-6; link also on Canvas homepage)</p></li>
+<li><p>Discuss Gemini in Colab</p></li>
+</ul>
+<section id="id1">
+<h2>Functions<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>defining a function</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code></p></li>
+<li><p>default values</p></li>
+<li><p>keyword vs. positional arguments</p></li>
+</ul>
+</li>
+<li><p>executing a function</p>
+<ul>
+<li><p>parameters</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="vocab">
+<h2>Vocab<a class="headerlink" href="#vocab" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Define/create/make</strong> a function: To set up and write the instructions for a function.</p></li>
+<li><p><strong>Execute/call/use</strong> a function: To actually use the pre-defined function.</p></li>
+<li><p><strong>Input/parameter/argument</strong>: A variable defined by the user that is put/passed in between the parantheses <code class="docutils literal notranslate"><span class="pre">()</span></code> that comes after the function name.</p></li>
+<li><p><strong>Output</strong>: The variable that is <code class="docutils literal notranslate"><span class="pre">return</span></code>ed to the user after the function is executed.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>Functions<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<div class="alert alert-success">
+A function is a re-usable piece of code that performs operations on a specified set of variables, and returns the result.
+</div><p><img alt="cheeseburger" src="../_images/cheeseburger.png" /></p>
+</section>
+<section id="modular-programming">
+<h2>Modular Programming<a class="headerlink" href="#modular-programming" title="Link to this heading">#</a></h2>
+<div class="alert alert-success">
+Modular programming is an approach to programming that focuses on building programs from independent modules ('pieces'). 
+</div><p>Copy + Pasting the same/similar bit of code is to be avoided.</p>
+<p><strong>Functions</strong> are one way to avoid this.</p>
+<p><strong>Loops</strong> are another! (we’ll get to these soon…)</p>
+</section>
+<section id="functions-for-modular-programming">
+<h2>Functions for Modular Programming<a class="headerlink" href="#functions-for-modular-programming" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Functions allow us to flexibly re-use pieces of code</p></li>
+<li><p>Each function is independent of every other function, and other pieces of code</p></li>
+<li><p>Functions are the building blocks of programs, and can be flexibly combined and executed in specified orders</p>
+<ul>
+<li><p>This allows us to build up arbitrarily complex, well-organized programs</p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you&#39;ve seen functions before</span>
+<span class="c1"># here we use the type() function</span>
+<span class="n">my_var</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the function print() doesn&#39;t depend on type()</span>
+<span class="c1"># but they can both be used on the same variable</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="function-example-i">
+<h2>Function Example I<a class="headerlink" href="#function-example-i" title="Link to this heading">#</a></h2>
+<p>When you use <code class="docutils literal notranslate"><span class="pre">def</span></code>, <strong>you are defining a function</strong>.
+You are metaphorically writing the instructions for how to make the cheeseburger.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function: double_value</span>
+<span class="c1"># Notice that the parameter `num` is not explicitly defined with an = </span>
+<span class="c1"># This is because it will be defined later by the user when they execute the function.</span>
+<span class="k">def</span> <span class="nf">double_value</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+
+    <span class="c1"># do some operation</span>
+    <span class="n">doubled</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="n">num</span>
+    
+    <span class="c1"># return output from function</span>
+    <span class="k">return</span> <span class="n">doubled</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># excecute a function by calling the function&#39;s name</span>
+<span class="c1"># and defining the parameter within the parentheses</span>
+<span class="n">double_value</span><span class="p">(</span><span class="n">num</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># equivalent function call</span>
+<span class="c1"># Here the parameter `num` is defined without </span>
+<span class="c1"># explicitly specifying the name of the parameter</span>
+<span class="n">double_value</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="function-properties">
+<h2>Function Properties<a class="headerlink" href="#function-properties" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Functions are defined using <code class="docutils literal notranslate"><span class="pre">def</span></code> followed by the name of the function, parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>, parameters within the parentheses, and then <code class="docutils literal notranslate"><span class="pre">:</span></code> after the parentheses, which opens a code-block that comprises the function</p>
+<ul>
+<li><p>Running code with a <code class="docutils literal notranslate"><span class="pre">def</span></code> block <em>defines</em> the function (but does not <em>execute</em> it)</p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Functions are <em>executed</em> with the name of the function and parentheses - <code class="docutils literal notranslate"><span class="pre">()</span></code> without <code class="docutils literal notranslate"><span class="pre">def</span></code> and <code class="docutils literal notranslate"><span class="pre">:</span></code></p>
+<ul>
+<li><p>This is when the code inside a function is actually run</p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Inside a function, there is code that performs operations on the available variables</p></li>
+</ul>
+<ul class="simple">
+<li><p>Functions use the special operator <code class="docutils literal notranslate"><span class="pre">return</span></code> to exit the function, passing out any specified variables</p></li>
+</ul>
+<ul class="simple">
+<li><p>When you use a function, you can assign the output (whatever is <code class="docutils literal notranslate"><span class="pre">return</span></code>ed) to a variable</p></li>
+</ul>
+</section>
+<section id="activity-functions-i">
+<h2>Activity: Functions I<a class="headerlink" href="#activity-functions-i" title="Link to this heading">#</a></h2>
+<p>Complete the questions in this Google Form (<a class="reference external" href="https://forms.gle/MfiKe5gPW9AeZ1PP6">https://forms.gle/MfiKe5gPW9AeZ1PP6</a>) and then click submit.</p>
+<blockquote>
+<div><p>How would the following code evaluate?</p>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remainder</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">divider</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">number</span> <span class="o">%</span> <span class="n">divider</span> 
+    <span class="k">return</span> <span class="n">r</span>
+
+<span class="n">ans_1</span> <span class="o">=</span> <span class="n">remainder</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">ans_2</span> <span class="o">=</span> <span class="n">remainder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ans_1</span> <span class="o">+</span> <span class="n">ans_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Write a function <code class="docutils literal notranslate"><span class="pre">greet</span></code> that takes the parameter <code class="docutils literal notranslate"><span class="pre">name</span></code>. Inside the function, concatenate ‘Hello’, the person’s name, and ‘Good Day!”. Assign this to <code class="docutils literal notranslate"><span class="pre">output</span></code> and return <code class="docutils literal notranslate"><span class="pre">output</span></code>. Paste your code below.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE </span>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;. Good Day!&#39;</span>
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">+</span> <span class="s1">&#39;name&#39;</span> <span class="o">+</span> <span class="s1">&#39;. Good Day!&#39;</span>
+    <span class="k">return</span> <span class="n">output</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## TEST YOUR CODE HERE</span>
+<span class="n">greet</span><span class="p">(</span><span class="s1">&#39;COGS 18 Students&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s also discuss how you may use ChatGPT for this question…</p>
+<p><strong>Q&amp;A</strong></p>
+<blockquote>
+<div><p>Q: Am I able to get help with other coding questions in ED not related to COGS18 specifically?<br />
+A: You can definitely ask. We won’t prioritize these…so may take a bit longer to get a response, but we’ll do our best!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: how long do functions remain define or ‘effective” for in a notebook?<br />
+A: Only so long as that notebook is open. Once the notebook is closed, the next time you open it you would need to re-run the code where the function is defined before being able to use it. We’ll soon learn about creating modules to avoid this issue…so we can easily “import” functions into notebooks for use…without having to define them in the notebook where we use them. But, that’s a few weeks out.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Does spacing matter, because I would write the function and it still would not not run?<br />
+A: Yes! Specifically, indentation matters. Spacing between lines is allowed but not required.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: In the example from activity 1, how come we had to define name=’Shannon’ instead of using just ‘Shannon’? I remember being able to put 6 instead of num=6 in other functions.<br />
+A: This has to do with the operations being carried out inside the function. In the function I was trying to concatenate strings…so the input had to be a string. In the other functions we were carrying out mathematical operations, so they could be integers.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Once the function is run and the value is returned to some output variable, does that output variable keep that value until the function is used again with some other output?<br />
+A: That variable will keep the value until another value is assigned to it. So, if you had <code class="docutils literal notranslate"><span class="pre">output_1</span> <span class="pre">=</span> <span class="pre">my_function(5)</span></code> and then <code class="docutils literal notranslate"><span class="pre">output_2</span> <span class="pre">=</span> <span class="pre">my_function(2)</span></code>…output_1 and output_2 would each have different values. If you <em>then</em> said output_1 = ‘Shannon’…well, then you would store the string ‘Shannon’ in <code class="docutils literal notranslate"><span class="pre">output_1</span></code></p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: How do you know what to name the function?<br />
+A: Well, often in this class, I’ll tell you what to name the function. But, on your own, the best function names are verbs (action words) that summarize what the function accomplishes.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: What does the type function do that the print function does not?<br />
+A: <code class="docutils literal notranslate"><span class="pre">type</span></code> tells you the type of the variable; <code class="docutils literal notranslate"><span class="pre">print</span></code> displays the contents of the variable</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: What is the difference between return and print? I am kind of confused 🫠<br />
+A: <code class="docutils literal notranslate"><span class="pre">return</span></code> is a special keyword for use inside a function definition. If you want to get output from a function, use <code class="docutils literal notranslate"><span class="pre">return</span></code>. <code class="docutils literal notranslate"><span class="pre">print</span></code> is a function that when encountered, will display the contents of a variable (in or outside of a function definition).</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Is there anywhere we can get simple functions to practice reading/interpreting before the oral quiz?<br />
+A: The functions from the notes (i.e. <code class="docutils literal notranslate"><span class="pre">double_value</span></code>), Google Forms (i.e. <code class="docutils literal notranslate"><span class="pre">greet</span></code>, <code class="docutils literal notranslate"><span class="pre">convert_to_f</span></code>) and first assignment (the calculator questions) are a few good examples! to help practice. We’ll also do an activity today in class.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: How can I practice reading and understanding code?<br />
+A: A good way is to work through examples used in class. Then, you could use ChatGPT, provide those examples and ask it to provide similar examples (for example, functions using only variables and operators) but without any explanation as to what they do so you can think about them…and then you could ask it to explain to make sure your understanding matched.</p>
+</div></blockquote>
+<p><strong>Course Announcements</strong></p>
+<p>Due this week:</p>
+<ul class="simple">
+<li><p>VQ5 due Wed (is now available)</p></li>
+<li><p>CL2 due Fri</p></li>
+<li><p>A1 due Sun</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>Sign up for written exams (prairietest) and oral exams (taken in lab)</p></li>
+<li><p>For oral (and written) exams, please treat like other exams…don’t discuss with those who haven’t yet taken it</p></li>
+<li><p>Pre-course assessment surveys are open for one more day. Please complete TODAY if you haven’t already.</p></li>
+</ul>
+</section>
+<section id="activity-functions-ii">
+<h2>Activity: Functions II<a class="headerlink" href="#activity-functions-ii" title="Link to this heading">#</a></h2>
+<p>Now that we worked through that first example together…complete the question in this Google Form (<a class="reference external" href="https://forms.gle/uJTMjnv8zDSBMJJC7">https://forms.gle/uJTMjnv8zDSBMJJC7</a>) and then click submit.</p>
+<blockquote>
+<div><p>Write a function <code class="docutils literal notranslate"><span class="pre">convert_to_f</span></code> that will convert a temperature in Celsius to Fahrenheit, returning the temperature in Fahrenheit.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Note: A temperature in Celsius will be multiplied by 9/5 and then 32 will be added to that quantity to convert to Fahrenheit.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE </span>
+<span class="k">def</span> <span class="nf">convert_to_f</span><span class="p">(</span><span class="n">temp_c</span><span class="p">):</span>
+    <span class="n">temp_f</span> <span class="o">=</span> <span class="n">temp_c</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+    <span class="k">return</span> <span class="n">temp_f</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## TEST YOUR CODE HERE</span>
+<span class="n">convert_to_f</span><span class="p">(</span><span class="n">temp_c</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>50.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="default-values">
+<h2>Default Values<a class="headerlink" href="#default-values" title="Link to this heading">#</a></h2>
+<div class="alert alert-success">
+Function parameters can also take <b>default values</b>. This makes some parameters optional, as they take a default value if not otherwise specified.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a function, that has a default values for a parameter</span>
+<span class="k">def</span> <span class="nf">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>  
+    <span class="k">return</span> <span class="n">number</span> <span class="o">**</span> <span class="n">exponent</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the function, using default value</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Call the function, over-riding default value with something else</span>
+<span class="c1"># python assumes values are in order of parameters specified in definition</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you can always state this explicitly</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="positional-vs-keyword-arguments">
+<h2>Positional vs. Keyword Arguments<a class="headerlink" href="#positional-vs-keyword-arguments" title="Link to this heading">#</a></h2>
+<div class="alert alert-success">
+Arguments to a function can be indicated by either position or keyword.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Positional arguments use the position to infer which argument each value relates to</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keyword arguments are explicitly named as to which argument each value relates to</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># DON&#39;T DO THIS; IT CONFUSES US HUMANS</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">exponent</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: once you have a keyword argument, you can&#39;t have other positional arguments afterwards</span>
+<span class="c1"># this cell will produce an error</span>
+<span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+    <span class="n">exponentiate</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+                            <span class="o">^</span>
+<span class="ne">SyntaxError</span>: positional argument follows keyword argument
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="code-style-functions">
+<h2>Code Style: Functions<a class="headerlink" href="#code-style-functions" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Function names should be snake_case</p></li>
+<li><p>Function names should describe task accomplished by function</p></li>
+<li><p>Separate out logical sections within a function with new lines</p></li>
+<li><p>Arguments should be separated by a comma and a space</p></li>
+<li><p>Default values do NOT need a space around the <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
+</ul>
+<section id="functions-good-code-style">
+<h3>Functions: Good Code Style<a class="headerlink" href="#functions-good-code-style" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remainder</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">divider</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    
+    <span class="n">r</span> <span class="o">=</span> <span class="n">number</span> <span class="o">%</span> <span class="n">divider</span>
+    
+    <span class="k">return</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="functions-code-style-to-avoid">
+<h3>Functions: Code Style to Avoid<a class="headerlink" href="#functions-code-style-to-avoid" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># could be improved by adding empty lines to separate out logical chunks</span>
+<span class="k">def</span> <span class="nf">remainder</span><span class="p">(</span><span class="n">number</span><span class="p">,</span><span class="n">divider</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># needs space after comma</span>
+    <span class="n">r</span><span class="o">=</span><span class="n">number</span><span class="o">%</span><span class="k">divider</span> # needs spacing around operators
+    <span class="k">return</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="activity-functions-iii-code-describing-paired">
+<h2>Activity: Functions III (Code Describing - Paired)<a class="headerlink" href="#activity-functions-iii-code-describing-paired" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Pair up with one other individual.</p></li>
+<li><p>Decide who will be Person A and who will be Person B</p></li>
+<li><p>Open up the correct Google Form: <a class="reference external" href="https://forms.gle/F8q95RhNvYQJV6KHA">Person A</a>; <a class="reference external" href="https://forms.gle/Psm7kPWc3h24CwcB7">Person B</a></p></li>
+<li><p>On your own, read through the code provided, thinking about what it’s accomplishing.</p></li>
+<li><p>For each person: without letting your partner see the code AND without describing the code word for word, explain what the code accomplishes and the logic within the code.</p></li>
+<li><p>Have the other person try to write code that accomplishes what the other partner described. Test out the code if you have enough time.</p></li>
+<li><p>Discuss similarities/differences in the code described and the code written and any misunderstandings that you had in this process.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE</span>
+<span class="k">def</span> <span class="nf">introduce_self</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">major</span><span class="p">):</span>
+    <span class="n">out_string</span> <span class="o">=</span> <span class="s1">&#39;Hi, my name is &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;. I am a &#39;</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s1">&#39; studying &#39;</span> <span class="o">+</span> <span class="n">major</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span>
+    <span class="k">return</span> <span class="n">out_string</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## TEST YOUR CODE HERE</span>
+<span class="c1"># positional arguments</span>
+<span class="n">introduce_self</span><span class="p">(</span><span class="s1">&#39;Shannon&#39;</span><span class="p">,</span> <span class="s1">&#39;25th year&#39;</span><span class="p">,</span> <span class="s1">&#39;cogsci&#39;</span><span class="p">)</span>
+
+<span class="c1"># keyword arguments</span>
+<span class="n">introduce_self</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Shannon&#39;</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="s1">&#39;25th year&#39;</span><span class="p">,</span> <span class="n">major</span><span class="o">=</span><span class="s1">&#39;cogsci&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hi, my name is Shannon. I am a 25th year studying cogsci.&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_even</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">even</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">even</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># positional argument</span>
+<span class="n">is_even</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+
+<span class="c1"># keyword argument</span>
+<span class="n">is_even</span><span class="p">(</span><span class="n">num</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>how to define a function</p></li>
+<li><p>how to execute a function</p></li>
+<li><p>default values</p></li>
+<li><p>position vs. keyword arguments</p></li>
+<li><p>code style</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="04-Operators.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Operators</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="06-Conditionals.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Conditionals</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vocab">Vocab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-programming">Modular Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-for-modular-programming">Functions for Modular Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-example-i">Function Example I</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-properties">Function Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-functions-i">Activity: Functions I</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-functions-ii">Activity: Functions II</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#default-values">Default Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#positional-vs-keyword-arguments">Positional vs. Keyword Arguments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style-functions">Code Style: Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-good-code-style">Functions: Good Code Style</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-code-style-to-avoid">Functions: Code Style to Avoid</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-functions-iii-code-describing-paired">Activity: Functions III (Code Describing - Paired)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Shannon Ellis, Jason Fleischer, and Tom Donoghue
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
