@@ -1,0 +1,1177 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Code Testing &#8212; COGS 18 - Introduction To Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'materials/13-CodeTesting';</script>
+    <link rel="icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Code Style &amp; Documentation" href="14-Documentation.html" />
+    <link rel="prev" title="Scientific Computing" href="12-ScientificComputing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../assets/intro/syllabus.html">SYLLABUS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assets/intro/schedule.html">COURSE SCHEDULE</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://shanellis.github.io/pythonbook/">TEXTBOOK</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://us.prairielearn.com/pl/course_instance/161488">PRAIRIELEARN</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Introduction.html">01-Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Tooling.html">02-Tooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Variables.html">03-Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Operators.html">04-Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Functions.html">05-Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Conditionals.html">06-Conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Collections.html">07-Collections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="E1-Review.html">E1-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Loops.html">08-Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Methods.html">09-Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Classes.html">10-Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-CommandLine.html">11-CommandLine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="E2-Review.html">E2-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-ScientificComputing.html">12-ScientificComputing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">13-CodeTesting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-Documentation.html">14-Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-WrapUp.html">15-WrapUp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Final-Topics.html">Final-Topics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/13-CodeTesting.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/13-CodeTesting.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/materials/13-CodeTesting.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Code Testing</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-exam">Final Exam</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Code Testing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i-motivation">Part I: Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-good-code">Writing Good Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#four-types-of-code-testing">Four Types of Code Testing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-tests">Unit Tests</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii-some-testing-practices">Part II: Some Testing Practices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-write-tests">How to Write Tests</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-driven-development">Test Driven Development</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-1-code-testing-ideas">Activity 1: Code Testing Ideas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iii-unittest-fundamentals">Part III: <code class="docutils literal notranslate"><span class="pre">unittest</span></code> Fundamentals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-template-for-testing-in-unittest">General template for testing in <code class="docutils literal notranslate"><span class="pre">unittest</span></code>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-testing-functions-in-unittest">Some testing functions in <code class="docutils literal notranslate"><span class="pre">unittest</span></code>:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertequal-a-b"><code class="docutils literal notranslate"><span class="pre">.assertEqual(a,</span> <span class="pre">b)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#asserttrue-x"><code class="docutils literal notranslate"><span class="pre">.assertTrue(x)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertfalse-x"><code class="docutils literal notranslate"><span class="pre">.assertFalse(x)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertisinstance-a-b"><code class="docutils literal notranslate"><span class="pre">.assertIsInstance(a,</span> <span class="pre">b)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertisnone-x"><code class="docutils literal notranslate"><span class="pre">.assertIsNone(x)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertin-a-b"><code class="docutils literal notranslate"><span class="pre">.assertIn(a,</span> <span class="pre">b)</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#putting-it-all-together">Putting it all together…</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iv-try-it-out">Part IV: Try It Out!</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="code-testing">
+<h1>Code Testing<a class="headerlink" href="#code-testing" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://colab.research.google.com/github/COGS18/LectureNotes-COGS18/blob/main/13-CodeTesting.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<p><strong>[ad] Food Insecurity Survey</strong>
+<img alt="" src="../_images/SurveyInfoSlide.jpg" /></p>
+<p><strong>Q&amp;A</strong></p>
+<blockquote>
+<div><p>Q: How can I link pandas t google sheets and how could one write there own methods for pandas?<br />
+A: There is an additional package that most people use to read directly from googlesheets (called <code class="docutils literal notranslate"><span class="pre">gspread</span></code>) [I will note that in R this is a bit more straightforward than in python, but that’s neither here nor thtere.] As for writing your own methods, the most typical way would be to write a new class that inherits from the pandas object (for example a DataFrame) and adds additional methods - we <em>briefly</em> touched on inheritance. That said, while it’s possible, pandas has a TON of methods so it’s rare that you’d need to write one on your own.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: how familiar should we be with setting up an array ourselves?<br />
+A: Understand it conceptually, but you don’t need to memorize the syntax to do so.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: I was confused on the practice problem we worked on when it mentioned 3x3, I was just wondering whenever we see something like this is it basically telling us we have to create 3 lists inside of one list?<br />
+A: Kind of. 3x3 indicates the rows and columns. So 4x2 would be 4 rows (the first number) and 2 columns (the second number)</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: I’m still a bit unsure about when to use NumPy vs. pandas, and how to choose the right one when working with data. Also, I’d like more practice with writing and running scripts from the terminal.<br />
+A: If you’re doing linear algebra/matrix math, numpy. Otherwise, if working with  a dataset that you want to do some analysis on, it’s almost always pandas. Your final exam will focus on pandas (As will your A5). We introduce numpy to lay the foundation for discussing pandas.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Also, I’d like more practice with writing and running scripts from the terminal.<br />
+A: We’ll do more of this next week!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: What specific topics from scientific computing will we need to know for the final exam?<br />
+A: Familiarity with numpy and pandas (their goals, main objects, etc.) and the ability to interact with pandas DataFrame objects. You do not need to memorize available methods, but if I tell you what methods do, you need to know how to use them.</p>
+</div></blockquote>
+<p><strong>Course Announcements</strong></p>
+<p>Due this week:</p>
+<ul class="simple">
+<li><p>CL8 due Fri</p></li>
+<li><p>A5 due Sun</p></li>
+<li><p>Complete E2</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>Please complete your <a class="reference external" href="https://academicaffairs.ucsd.edu/Modules/Evals/">SETs</a> (especially for TAs/IAs) by 8AM next Sat</p></li>
+<li><p>Retest (E1 <em>or</em> E2) will be available on PrairieTest tomorrow Fri 5/30</p></li>
+<li><p>Reminder to complete the <a class="reference external" href="https://ucsd.co1.qualtrics.com/jfe/form/SV_curj9RWyrDAGu0K">Food Insecurity Survey</a> (by Friday)</p></li>
+</ul>
+<section id="final-exam">
+<h2>Final Exam<a class="headerlink" href="#final-exam" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>There will a handful of MC and SA questions</p></li>
+<li><p>The bulk of the exam will be a “mini project” focused on the material since E2. This will involve:</p>
+<ul>
+<li><p>Debugging a function or two; these will use <strong>pandas</strong>/interact with data</p></li>
+<li><p>These will be stored in a <strong>module</strong> (.py file)</p></li>
+<li><p>maybe writing/executing a <strong>script</strong> that uses these functions</p></li>
+<li><p>Writing a <strong>test function</strong> or two using <code class="docutils literal notranslate"><span class="pre">unittest</span></code> (we’re discussing this today!)</p></li>
+<li><p>using good code style</p></li>
+</ul>
+</li>
+<li><p>There <em>will</em> be a practice exam. We will discuss putting all of these pieces together in class next week.</p></li>
+</ul>
+</section>
+<section id="id1">
+<h2>Code Testing<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Motivation</p></li>
+<li><p>Some Testing Practices</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unittest</span></code> Fundamentals</p></li>
+<li><p>Try It Out!</p></li>
+</ol>
+<p><strong>Code Testing</strong>: a process to ensure that your code runs correctly</p>
+</section>
+<section id="part-i-motivation">
+<h2>Part I: Motivation<a class="headerlink" href="#part-i-motivation" title="Link to this heading">#</a></h2>
+<p>Why should we test our code?</p>
+<section id="writing-good-code">
+<h3>Writing Good Code<a class="headerlink" href="#writing-good-code" title="Link to this heading">#</a></h3>
+<p>All in all, write code that is:</p>
+<ul class="simple">
+<li><p>Well organized (follows a style guide)</p></li>
+<li><p>Tested</p></li>
+<li><p>Documented</p></li>
+</ul>
+<p>And you will have understandable, maintainable, and trustable code.</p>
+</section>
+<section id="four-types-of-code-testing">
+<h3>Four Types of Code Testing<a class="headerlink" href="#four-types-of-code-testing" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Unit tests</strong> (primary focus): test functions &amp; objects to ensure that the code is behaving as expected</p></li>
+<li><p><strong>Smoke tests</strong>: preliminary tests to check basic functionality; checks if something runs, but not necessarily if it does the right thing (gut check)</p></li>
+<li><p><strong>Integration tests</strong>: test functions, classes &amp; modules interacting</p></li>
+<li><p><strong>System tests</strong>: tests end-to-end behavior</p></li>
+</ol>
+</section>
+<section id="unit-tests">
+<h3>Unit Tests<a class="headerlink" href="#unit-tests" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>One test for each “piece” of your code (function, class, etc.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unittest</span></code> will let you know which tests pass/fail/throw an error</p></li>
+<li><p>Testing “edge (atypical) cases”</p></li>
+<li><p>Help you resist the urge to assume computers will act how you think it will work</p></li>
+</ul>
+</section>
+</section>
+<section id="part-ii-some-testing-practices">
+<h2>Part II: Some Testing Practices<a class="headerlink" href="#part-ii-some-testing-practices" title="Link to this heading">#</a></h2>
+<section id="how-to-write-tests">
+<h3>How to Write Tests<a class="headerlink" href="#how-to-write-tests" title="Link to this heading">#</a></h3>
+<p>Given a function or class you want to test:</p>
+<ul class="simple">
+<li><p>You need to have an expectation for what it should do</p></li>
+<li><p>Write out some example cases, with known answers</p></li>
+<li><p>Use assert to check that your example cases do run as expected</p></li>
+<li><p>Collect these examples into test functions, stored in test files</p></li>
+</ul>
+</section>
+<section id="test-driven-development">
+<h3>Test Driven Development<a class="headerlink" href="#test-driven-development" title="Link to this heading">#</a></h3>
+<p>In software development, test-driven development is an approach in which you write tests first - and then write code to pass the tests.</p>
+<ul class="simple">
+<li><p>Ensures you go into writing code with a good plan / outline</p></li>
+<li><p>Ensures that you have a test suite, as you can not decide to neglect to test your code after the fact you made the test suite</p></li>
+<li><p>Note: when you complete (or at least write) assignments for this class, you are effectively doing test-driven development</p></li>
+</ul>
+</section>
+<section id="activity-1-code-testing-ideas">
+<h3>Activity 1: Code Testing Ideas<a class="headerlink" href="#activity-1-code-testing-ideas" title="Link to this heading">#</a></h3>
+<p>Please complete the following Google Form: <a class="reference external" href="https://forms.gle/86dnUZ7yd88trCUd8">https://forms.gle/86dnUZ7yd88trCUd8</a></p>
+</section>
+</section>
+<section id="part-iii-unittest-fundamentals">
+<h2>Part III: <code class="docutils literal notranslate"><span class="pre">unittest</span></code> Fundamentals<a class="headerlink" href="#part-iii-unittest-fundamentals" title="Link to this heading">#</a></h2>
+<p>The very first step is to import the <code class="docutils literal notranslate"><span class="pre">unittest</span></code> framework.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="general-template-for-testing-in-unittest">
+<h3>General template for testing in <code class="docutils literal notranslate"><span class="pre">unittest</span></code>:<a class="headerlink" href="#general-template-for-testing-in-unittest" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TestName</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="c1"># TEST FUNCTIONS BELONG INSIDE THE CLASS</span>
+    <span class="k">def</span> <span class="nf">test_name_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># code statements go inside here</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_name_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># code statements go inside here</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># ...</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestName</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_name_1 (__main__.TestName.test_name_1) ... ok
+test_name_2 (__main__.TestName.test_name_2) ... FAIL
+
+======================================================================
+FAIL: test_name_2 (__main__.TestName.test_name_2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_1358/3384490292.py&quot;, line 10, in test_name_2
+    self.assertTrue(False)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.006s
+
+FAILED (failures=1)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="some-testing-functions-in-unittest">
+<h3>Some testing functions in <code class="docutils literal notranslate"><span class="pre">unittest</span></code>:<a class="headerlink" href="#some-testing-functions-in-unittest" title="Link to this heading">#</a></h3>
+<section id="assertequal-a-b">
+<h4><code class="docutils literal notranslate"><span class="pre">.assertEqual(a,</span> <span class="pre">b)</span></code><a class="headerlink" href="#assertequal-a-b" title="Link to this heading">#</a></h4>
+<p>Checks if <code class="docutils literal notranslate"><span class="pre">a</span></code> is equal to <code class="docutils literal notranslate"><span class="pre">b</span></code>. Similar to the expression <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">==</span> <span class="pre">b</span></code>.</p>
+<p>Note: Although it doesn’t affect the results, it’s good practice to let <code class="docutils literal notranslate"><span class="pre">a</span></code> be the expected value (what you think the result will be) and <code class="docutils literal notranslate"><span class="pre">b</span></code> be the actual value (what the result actually is).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Equality testing suite</span>
+<span class="k">class</span> <span class="nc">TestEqual</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="c1"># First test</span>
+    <span class="k">def</span> <span class="nf">test_equal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+    <span class="c1"># Second test</span>
+    <span class="k">def</span> <span class="nf">test_equal_bad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestEqual</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_equal (__main__.TestEqual.test_equal) ... ok
+test_equal_bad (__main__.TestEqual.test_equal_bad) ... FAIL
+
+======================================================================
+FAIL: test_equal_bad (__main__.TestEqual.test_equal_bad)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_1358/2109707118.py&quot;, line 10, in test_equal_bad
+    self.assertEqual(11, add(4, 6))
+AssertionError: 11 != 10
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.008s
+
+FAILED (failures=1)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="asserttrue-x">
+<h4><code class="docutils literal notranslate"><span class="pre">.assertTrue(x)</span></code><a class="headerlink" href="#asserttrue-x" title="Link to this heading">#</a></h4>
+<p>Checks if <code class="docutils literal notranslate"><span class="pre">x</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>. Same as the expression <code class="docutils literal notranslate"><span class="pre">bool(x)</span> <span class="pre">==</span> <span class="pre">True</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Truth testing suite</span>
+<span class="k">class</span> <span class="nc">TestTrue</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">test_true</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestTrue</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_true (__main__.TestTrue.test_true) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="assertfalse-x">
+<h4><code class="docutils literal notranslate"><span class="pre">.assertFalse(x)</span></code><a class="headerlink" href="#assertfalse-x" title="Link to this heading">#</a></h4>
+<p>Checks if <code class="docutils literal notranslate"><span class="pre">x</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>. Same as the expression <code class="docutils literal notranslate"><span class="pre">bool(x)</span> <span class="pre">==</span> <span class="pre">False</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># False testing suite</span>
+<span class="k">class</span> <span class="nc">TestFalse</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">test_false</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">11</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestFalse</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_false (__main__.TestFalse.test_false) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="assertisinstance-a-b">
+<h4><code class="docutils literal notranslate"><span class="pre">.assertIsInstance(a,</span> <span class="pre">b)</span></code><a class="headerlink" href="#assertisinstance-a-b" title="Link to this heading">#</a></h4>
+<p>Checks if <code class="docutils literal notranslate"><span class="pre">a</span></code> is of variable type <code class="docutils literal notranslate"><span class="pre">b</span></code> (int, float, str, bool) or is of an instance of class <code class="docutils literal notranslate"><span class="pre">b</span></code>. Similar to the expression <code class="docutils literal notranslate"><span class="pre">isinstance(a,</span> <span class="pre">b)</span></code> or <code class="docutils literal notranslate"><span class="pre">type(a)</span> <span class="pre">==</span> <span class="pre">b</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instance testing suite</span>
+<span class="k">class</span> <span class="nc">TestInstances</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    
+    <span class="c1"># First test</span>
+    <span class="k">def</span> <span class="nf">test_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+
+    <span class="c1"># Second test</span>
+    <span class="k">def</span> <span class="nf">test_instance_bad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="mf">3.14</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestInstances</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_instance (__main__.TestInstances.test_instance) ... ok
+test_instance_bad (__main__.TestInstances.test_instance_bad) ... FAIL
+
+======================================================================
+FAIL: test_instance_bad (__main__.TestInstances.test_instance_bad)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_1358/3143359395.py&quot;, line 10, in test_instance_bad
+    self.assertIsInstance(3.14, int)
+AssertionError: 3.14 is not an instance of &lt;class &#39;int&#39;&gt;
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.007s
+
+FAILED (failures=1)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="assertisnone-x">
+<h4><code class="docutils literal notranslate"><span class="pre">.assertIsNone(x)</span></code><a class="headerlink" href="#assertisnone-x" title="Link to this heading">#</a></h4>
+<p>Checks if <code class="docutils literal notranslate"><span class="pre">x</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>. Similar to the expression <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">is</span> <span class="pre">None</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">return_none</span><span class="p">():</span>
+    <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># None testing suite</span>
+<span class="k">class</span> <span class="nc">TestNone</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="c1"># First test</span>
+    <span class="k">def</span> <span class="nf">test_none_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIsNone</span><span class="p">(</span><span class="n">return_none</span><span class="p">())</span>
+
+    <span class="c1"># Second test</span>
+    <span class="k">def</span> <span class="nf">test_none_append</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIsNone</span><span class="p">(</span><span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestNone</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_none_1 (__main__.TestNone.test_none_1) ... ok
+test_none_append (__main__.TestNone.test_none_append) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.008s
+
+OK
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="assertin-a-b">
+<h4><code class="docutils literal notranslate"><span class="pre">.assertIn(a,</span> <span class="pre">b)</span></code><a class="headerlink" href="#assertin-a-b" title="Link to this heading">#</a></h4>
+<p>Checks for membership, if <code class="docutils literal notranslate"><span class="pre">a</span></code> belongs in <code class="docutils literal notranslate"><span class="pre">b</span></code>. Same as the expression <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">in</span> <span class="pre">b</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membership testing suite</span>
+<span class="k">class</span> <span class="nc">TestIn</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;bananas&#39;</span><span class="p">,</span> <span class="s1">&#39;oranges&#39;</span><span class="p">]</span>
+
+    <span class="c1"># First test</span>
+    <span class="k">def</span> <span class="nf">test_membership</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">fruits</span><span class="p">)</span>
+
+    <span class="c1"># Second test</span>
+    <span class="k">def</span> <span class="nf">test_membership_bad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="s1">&#39;pears&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">fruits</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestIn</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_membership (__main__.TestIn.test_membership) ... ok
+test_membership_bad (__main__.TestIn.test_membership_bad) ... FAIL
+
+======================================================================
+FAIL: test_membership_bad (__main__.TestIn.test_membership_bad)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File &quot;/var/folders/jp/hdbfltdj035719571j9wynwm0000gn/T/ipykernel_1358/2934769978.py&quot;, line 12, in test_membership_bad
+    self.assertIn(&#39;pears&#39;, self.fruits)
+AssertionError: &#39;pears&#39; not found in [&#39;apples&#39;, &#39;bananas&#39;, &#39;oranges&#39;]
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.007s
+
+FAILED (failures=1)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="putting-it-all-together">
+<h3>Putting it all together…<a class="headerlink" href="#putting-it-all-together" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TestAllAdd</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">test_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+        <span class="c1"># self.assertEqual(11, add(4, 6))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">11</span><span class="p">)</span>
+        
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestAllAdd</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_all (__main__.TestAllAdd.test_all) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="part-iv-try-it-out">
+<h2>Part IV: Try It Out!<a class="headerlink" href="#part-iv-try-it-out" title="Link to this heading">#</a></h2>
+<p>Make a class named <code class="docutils literal notranslate"><span class="pre">Person</span></code> that has two instance attributes: <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">age</span></code>. Be sure that they are assigned to user-specified values.
+Then, make a method called <code class="docutils literal notranslate"><span class="pre">birthday()</span></code> that increments <code class="docutils literal notranslate"><span class="pre">age</span></code> by 1 and returns the string “Happy Birthday!”</p>
+<p>Then, create a test class with only one test function that does the following:</p>
+<ul class="simple">
+<li><p>Create an instance of the <code class="docutils literal notranslate"><span class="pre">Person</span></code> class</p></li>
+<li><p>Write the following tests, making sure that they pass:</p>
+<ul>
+<li><p>The instance is of instance <code class="docutils literal notranslate"><span class="pre">Person</span></code></p></li>
+<li><p>The instance’s name is equal to the name you gave it</p></li>
+<li><p>The instance’s age is equal to the age you gave it</p></li>
+<li><p>Call the <code class="docutils literal notranslate"><span class="pre">birthday()</span></code> function and write a test checking if the instance’s age got incremented by 1</p></li>
+</ul>
+</li>
+</ul>
+<p>Submit your responses to this Google Form: <a class="reference external" href="https://forms.gle/mRY9zxSxGFuSY6A38">https://forms.gle/mRY9zxSxGFuSY6A38</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TRY IT OUT</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+    <span class="k">def</span> <span class="nf">birthday</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="s1">&#39;Happy Birthday!&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TestPerson</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    
+    <span class="n">Jonathan</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s1">&#39;Jonathan&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_class</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Jonathan</span><span class="p">,</span> <span class="n">Person</span><span class="p">)</span>
+                
+    <span class="k">def</span> <span class="nf">test_attributes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">&#39;Jonathan&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Jonathan</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Jonathan</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_birthday</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Jonathan</span><span class="o">.</span><span class="n">birthday</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Jonathan</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestPerson</span><span class="p">)</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_attributes (__main__.TestPerson.test_attributes) ... ok
+test_birthday (__main__.TestPerson.test_birthday) ... ok
+test_class (__main__.TestPerson.test_class) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.008s
+
+OK
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load and run tests</span>
+<span class="n">suite</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TestLoader</span><span class="p">()</span><span class="o">.</span><span class="n">loadTestsFromTestCase</span><span class="p">(</span><span class="n">TestPerson</span><span class="p">)</span>
+<span class="n">runner</span> <span class="o">=</span> <span class="n">unittest</span><span class="o">.</span><span class="n">TextTestRunner</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">suite</span><span class="p">)</span>
+
+<span class="c1"># Total run</span>
+<span class="n">total_run</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">testsRun</span>
+
+<span class="c1"># Failures and errors</span>
+<span class="n">num_failures</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">failures</span><span class="p">)</span>
+<span class="n">num_errors</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">errors</span><span class="p">)</span>
+<span class="n">num_skipped</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="s2">&quot;skipped&quot;</span><span class="p">,</span> <span class="p">[]))</span>  <span class="c1"># If any skipped tests</span>
+
+<span class="c1"># Passed = total - failures - errors - skipped</span>
+<span class="n">num_passed</span> <span class="o">=</span> <span class="n">total_run</span> <span class="o">-</span> <span class="n">num_failures</span> <span class="o">-</span> <span class="n">num_errors</span> <span class="o">-</span> <span class="n">num_skipped</span>
+
+<span class="c1"># Output</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total tests run: </span><span class="si">{</span><span class="n">total_run</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Passed: </span><span class="si">{</span><span class="n">num_passed</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failures: </span><span class="si">{</span><span class="n">num_failures</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Errors: </span><span class="si">{</span><span class="n">num_errors</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skipped: </span><span class="si">{</span><span class="n">num_skipped</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>.
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total tests run: 1
+Passed: 1
+Failures: 0
+Errors: 0
+Skipped: 0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="12-ScientificComputing.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Scientific Computing</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="14-Documentation.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Code Style &amp; Documentation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-exam">Final Exam</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Code Testing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i-motivation">Part I: Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-good-code">Writing Good Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#four-types-of-code-testing">Four Types of Code Testing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-tests">Unit Tests</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii-some-testing-practices">Part II: Some Testing Practices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-write-tests">How to Write Tests</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-driven-development">Test Driven Development</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-1-code-testing-ideas">Activity 1: Code Testing Ideas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iii-unittest-fundamentals">Part III: <code class="docutils literal notranslate"><span class="pre">unittest</span></code> Fundamentals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-template-for-testing-in-unittest">General template for testing in <code class="docutils literal notranslate"><span class="pre">unittest</span></code>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-testing-functions-in-unittest">Some testing functions in <code class="docutils literal notranslate"><span class="pre">unittest</span></code>:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertequal-a-b"><code class="docutils literal notranslate"><span class="pre">.assertEqual(a,</span> <span class="pre">b)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#asserttrue-x"><code class="docutils literal notranslate"><span class="pre">.assertTrue(x)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertfalse-x"><code class="docutils literal notranslate"><span class="pre">.assertFalse(x)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertisinstance-a-b"><code class="docutils literal notranslate"><span class="pre">.assertIsInstance(a,</span> <span class="pre">b)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertisnone-x"><code class="docutils literal notranslate"><span class="pre">.assertIsNone(x)</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assertin-a-b"><code class="docutils literal notranslate"><span class="pre">.assertIn(a,</span> <span class="pre">b)</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#putting-it-all-together">Putting it all together…</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iv-try-it-out">Part IV: Try It Out!</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Shannon Ellis, Jason Fleischer, and Tom Donoghue
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

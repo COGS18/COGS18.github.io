@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Variables &#8212; COGS 18 - Introduction To Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'materials/03-Variables';</script>
+    <link rel="icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Operators" href="04-Operators.html" />
+    <link rel="prev" title="Tooling" href="02-Tooling.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../assets/intro/syllabus.html">SYLLABUS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assets/intro/schedule.html">COURSE SCHEDULE</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://shanellis.github.io/pythonbook/">TEXTBOOK</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://us.prairielearn.com/pl/course_instance/161488">PRAIRIELEARN</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Introduction.html">01-Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Tooling.html">02-Tooling</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">03-Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Operators.html">04-Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Functions.html">05-Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Conditionals.html">06-Conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Collections.html">07-Collections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="E1-Review.html">E1-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Loops.html">08-Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Methods.html">09-Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Classes.html">10-Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-CommandLine.html">11-CommandLine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="E2-Review.html">E2-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-ScientificComputing.html">12-ScientificComputing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13-CodeTesting.html">13-CodeTesting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-Documentation.html">14-Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-WrapUp.html">15-WrapUp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Final-Topics.html">Final-Topics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/edit/master/materials/03-Variables.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fmaterials/03-Variables.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/materials/03-Variables.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Variables</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaring-variables-cheat-sheet">Declaring Variables Cheat Sheet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reserved-words">Reserved Words</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-all-equal-signs-are-created-equal">Not all equal signs are created equal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style">Code Style</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-time-variables">Activity time: Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mutable-vs-immutable">Mutable vs Immutable</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indentation">Indentation</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://colab.research.google.com/github/COGS18/LectureNotes-COGS18/blob/main/03-Variables.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<ul class="simple">
+<li><p>Review</p></li>
+<li><p>Code Style</p></li>
+<li><p>Variables Activity</p></li>
+</ul>
+<section id="declaring-variables-cheat-sheet">
+<h2>Declaring Variables Cheat Sheet<a class="headerlink" href="#declaring-variables-cheat-sheet" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Names are always on the left of the <code class="docutils literal notranslate"><span class="pre">=</span></code>, values are always on the right</p></li>
+<li><p>Names are case sensitive</p></li>
+<li><p>Variables must start with letters (or underscores)</p>
+<ul>
+<li><p>After that, they can include numbers</p></li>
+<li><p>They cannot include special characters (like &amp;, *, #, etc)</p></li>
+</ul>
+</li>
+<li><p>Python doesn’t care what you name your variables</p>
+<ul>
+<li><p>Humans do care. Pick names that describe the data / value that they store</p></li>
+</ul>
+</li>
+<li><p>Python is dynamically typed - variable type is determined on creation; every variable has a type</p></li>
+</ul>
+</section>
+<section id="reserved-words">
+<h2>Reserved Words<a class="headerlink" href="#reserved-words" title="Link to this heading">#</a></h2>
+<p>There are 33 words that are not allowed to be used for variable assignment in Python 3.6.</p>
+<table type="text/css">
+  <tr>
+      <td><code>False</code></td>
+      <td><code>None</code></td>
+      <td><code>True</code></td>
+      <td><code>and</code></td>
+      <td><code>as</code></td>
+      <td><code>assert</code></td>
+      <td><code>break</code></td>
+  </tr>
+  <tr>
+      <td><code>class</code></td>
+      <td><code>continue</code></td>
+      <td><code>def</code></td>
+      <td><code>del</code></td>
+      <td><code>elif</code></td>
+      <td><code>else</code></td>
+      <td><code>except</code></td>
+  </tr>
+  <tr>
+      <td><code>finally</code></td>
+      <td><code>for</code></td>
+      <td><code>from</code></td>
+      <td><code>global</code></td>
+      <td><code>if</code></td>
+      <td><code>import</code></td>
+      <td><code>in</code></td>
+  </tr>
+  <tr>
+      <td><code>is</code></td>
+      <td><code>lambda</code></td>
+      <td><code>nonlocal</code></td>
+      <td><code>not</code></td>
+      <td><code>or</code></td>
+      <td><code>pass</code></td>
+      <td><code>raise</code></td>
+  </tr>    
+  <tr>
+      <td><code>return</code></td>
+      <td><code>try</code></td>
+      <td><code>while</code></td>
+      <td><code>with</code></td>
+      <td><code>yield</code></td>
+  </tr>    
+</table><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you will get an error if you try to assign a variable to one of these words</span>
+<span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+    <span class="k">try</span> <span class="o">=</span> <span class="mi">6</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: expected &#39;:&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="not-all-equal-signs-are-created-equal">
+<h2>Not all equal signs are created equal<a class="headerlink" href="#not-all-equal-signs-are-created-equal" title="Link to this heading">#</a></h2>
+<p>In mathematics: <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to equality (as a statement of truth).</p>
+<p>In coding: <code class="docutils literal notranslate"><span class="pre">=</span></code> refers to assignment. <code class="docutils literal notranslate"><span class="pre">==</span></code> refers to equality</p>
+<p>In your head, when you are reading code like</p>
+<p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">3</span></code></p>
+<p>you should say it to yourself as:</p>
+<p>“we assign the value 3 to the variable x”</p>
+<p>Math: What is x?</p>
+<p><span class="math notranslate nohighlight">\(y = 10x + 2\)</span></p>
+<p>Code: What is x?</p>
+<p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">1</span></code></p>
+</section>
+<section id="code-style">
+<h2>Code Style<a class="headerlink" href="#code-style" title="Link to this heading">#</a></h2>
+<p>Code style considerations <em>do NOT affect the functionality</em> of your code, but <em>DO affect readability</em>.</p>
+<p>Get in good habits now!</p>
+<p>For variable assignment:</p>
+<ul class="simple">
+<li><p>we use a single space around assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
+<li><p>we use <strong>snake_case</strong> for variable names (All lowercase, underscores between words)</p></li>
+<li><p>use informative variable names…something that tells you a bit about what’s being stored</p></li>
+</ul>
+<ul class="simple">
+<li><p>Ideal: <code class="docutils literal notranslate"><span class="pre">my_variable</span> <span class="pre">=</span> <span class="pre">6</span></code></p></li>
+<li><p>Avoid: <code class="docutils literal notranslate"><span class="pre">MyVariable=6</span></code></p></li>
+</ul>
+</section>
+<section id="activity-time-variables">
+<h2>Activity time: Variables<a class="headerlink" href="#activity-time-variables" title="Link to this heading">#</a></h2>
+<p>Complete all questions in this Google Form (<a class="reference external" href="https://forms.gle/YbYagsGaHyjSe2Ta7">https://forms.gle/YbYagsGaHyjSe2Ta7</a>) and then click submit.</p>
+<p>You are encouraged to:</p>
+<ol class="arabic simple">
+<li><p>Talk with your neighbor</p></li>
+<li><p>Try the questions out in your notebok to check your understanding</p></li>
+</ol>
+<p>If you have questions, I’m happy to come over as we work on this!</p>
+<section id="mutable-vs-immutable">
+<h3>Mutable vs Immutable<a class="headerlink" href="#mutable-vs-immutable" title="Link to this heading">#</a></h3>
+<p>The variable types we’ve talked about today are all <strong>immutable</strong>. This means they cannot be altered after they’re created.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">immutable_string</span> <span class="o">=</span> <span class="s1">&#39;COGS18 is the best!&#39;</span>
+<span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># cannot change part of the string after creation</span>
+<span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># cannot change part of the string after creation</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">immutable_string</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+
+<span class="ne">TypeError</span>: &#39;str&#39; object does not support item assignment
+</pre></div>
+</div>
+</div>
+</div>
+<p>Python does have <strong>mutable</strong> types. We’ll talk about these soon!</p>
+</section>
+</section>
+<section id="indentation">
+<h2>Indentation<a class="headerlink" href="#indentation" title="Link to this heading">#</a></h2>
+<p>Just a <em>brief</em> word on indentation.</p>
+<p>Python <em>does</em> care about whitespace.</p>
+<p>You will get an error if Python runs into unanticipated whitespace.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+ <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="o">^</span>
+<span class="ne">IndentationError</span>: unexpected indent
+</pre></div>
+</div>
+</div>
+</div>
+<p>There <em>are</em> times when indentation will be required and expected. We’ll discuss these in future lectures.</p>
+<p><img alt="cheeseburger" src="../_images/doing_it_right.png" /></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./materials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="02-Tooling.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tooling</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="04-Operators.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Operators</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaring-variables-cheat-sheet">Declaring Variables Cheat Sheet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reserved-words">Reserved Words</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-all-equal-signs-are-created-equal">Not all equal signs are created equal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style">Code Style</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-time-variables">Activity time: Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mutable-vs-immutable">Mutable vs Immutable</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indentation">Indentation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Shannon Ellis, Jason Fleischer, and Tom Donoghue
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,888 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SYLLABUS &#8212; COGS 18 - Introduction To Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assets/intro/syllabus';</script>
+    <link rel="icon" href="../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="COURSE SCHEDULE" href="schedule.html" />
+    <link rel="prev" title="Welcome to COGS 18: Introduction to Python!" href="../../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SYLLABUS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">COURSE SCHEDULE</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://shanellis.github.io/pythonbook/">TEXTBOOK</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://us.prairielearn.com/pl/course_instance/161488">PRAIRIELEARN</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../materials/01-Introduction.html">01-Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/02-Tooling.html">02-Tooling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/03-Variables.html">03-Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/04-Operators.html">04-Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/05-Functions.html">05-Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/06-Conditionals.html">06-Conditionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/07-Collections.html">07-Collections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/E1-Review.html">E1-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/08-Loops.html">08-Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/09-Methods.html">09-Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/10-Classes.html">10-Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/11-CommandLine.html">11-CommandLine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/E2-Review.html">E2-Review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/12-ScientificComputing.html">12-ScientificComputing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/13-CodeTesting.html">13-CodeTesting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/14-Documentation.html">14-Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/15-WrapUp.html">15-WrapUp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/Final-Topics.html">Final-Topics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/edit/master/assets/intro/syllabus.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/COGS18/COGS18.github.io/issues/new?title=Issue%20on%20page%20%2Fassets/intro/syllabus.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/assets/intro/syllabus.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>SYLLABUS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-overview">COURSE OVERVIEW</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-information">COURSE INFORMATION</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-objectives">COURSE OBJECTIVES</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-materials">COURSE MATERIALS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-attendance">GRADING &amp; ATTENDANCE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grades">Grades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-i-already-know-python-grading-policy">The “I already know Python” Grading Policy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-regrades">Assignment Regrades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-person-illness-policy">In-person illness policy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture">Lecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-and-post-assessment-surveys-4">Pre- and Post-Assessment Surveys (4%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#video-quizzes-12">Video Quizzes (12%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-labs-16">Coding Labs (16%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-exams-5">Oral Exams (5%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments-25">Assignments (25%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exams-38">Exams (38%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-support">Extra Support</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-good-stuff">OTHER GOOD STUFF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ed-rules">Ed Rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-get-your-question-s-answered-and-or-provide-feedback">How to Get Your Question(s) Answered and/or Provide Feedback</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-should-you-call-me">What should you call me?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-should-i-call-you">What should I call you?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-should-you-expect-of-your-interactions-with-instructional-staff">What should you expect of your interactions with instructional staff?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-conduct">Class Conduct</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-integrity">Academic Integrity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-on-using-artificial-intelligence-programming-assistance">Policy on using Artificial Intelligence programming assistance</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disability-access">Disability Access</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difficult-life-situations">Difficult Life Situations</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="syllabus">
+<h1>SYLLABUS<a class="headerlink" href="#syllabus" title="Link to this heading">#</a></h1>
+<p><strong>Introduction to Python</strong> | <strong>Spring 2025</strong></p>
+<p>v.1.0.2 (May 20)</p>
+<hr class="docutils" />
+<section id="course-overview">
+<h2>COURSE OVERVIEW<a class="headerlink" href="#course-overview" title="Link to this heading">#</a></h2>
+<p>Welcome to COGS 18! The core goal of this class is to teach you introductory, hands-on skills for computer programming, specifically using the Python programming language. We aim to do so in a way that fits well within the cognitive science department, using particularly-relevant use cases. Our approach is to focus on programming as a tool and to get you started with the necessary background and basic skills required to get you reading, writing, and debugging code. We aim to provide you with a strong foundation so that you can continue programming after you leave this class, applying the skills you learn here to your domain or topic of interest.</p>
+</section>
+<hr class="docutils" />
+<section id="course-information">
+<h2>COURSE INFORMATION<a class="headerlink" href="#course-information" title="Link to this heading">#</a></h2>
+<p><strong>Lecture</strong>: TuTh at 11-12:20 (PETER 110) OR 2-3:20 (CTL 0125)<br />
+<strong>Labs</strong>: on the hour 9-5 Wed and Fri (CSB 115)</p>
+<p>Office Hours Times/Locations, Coding Lab Staff, and Staff pictures can be found on Canvas.</p>
+<p><strong>Important Links</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cogs18.github.io">Website</a></p></li>
+<li><p><a class="reference external" href="https://shanellis.github.io/pythonbook/content/intro.html">Textbook</a></p></li>
+<li><p><a class="reference external" href="https://us.prairielearn.com/pl/course_instance/161488">PrairieLearn</a></p></li>
+<li><p><a class="reference external" href="https://canvas.ucsd.edu/courses/64347">Canvas</a></p></li>
+<li><p><a class="reference external" href="https://edstem.org/us/courses/77515/">Q&amp;A (Ed)*</a> - for join link, see Canvas</p></li>
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSd1YNH8CqBbVxr_M9v_c3X-XLqySLrBfYE7GwuAshFMCP_WvQ/viewform?usp=sf_link">Anonymous feedback via Google Form</a></p></li>
+</ul>
+<p>*You will be able to post anonymously; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.</p>
+</section>
+<hr class="docutils" />
+<section id="course-objectives">
+<h2>COURSE OBJECTIVES<a class="headerlink" href="#course-objectives" title="Link to this heading">#</a></h2>
+<p>Our main goal is that you are able to program at an introductory level in the Python programming language at the end of this course. To that end we expect that you will be able to:</p>
+<ul class="simple">
+<li><p>Read basic Python programs, recognizing the structures used (i.e. variables, conditionals, loops, functions) and explaining how they work</p></li>
+<li><p>Write Python code to solve basic computational problems</p></li>
+<li><p>Debug small Python programs by identifying and fixing the bug(s)</p></li>
+<li><p>Execute Python programs in Jupyter notebooks and from Python scripts</p></li>
+<li><p>Demonstrate familiarity with the command line</p></li>
+<li><p>Describe and implement best practices (code style, documentation, and testing) in Python</p></li>
+</ul>
+<p>To achieve these objectives, students will watch short videos before each lecture and take a short quiz on the information in the videos. Class time will be dedicated to deepening understanding of core topics with a lot of learning by doing. You will have the opportunity to program in lecture, during lab, and throughout all assignments. Examples throughout this course will be related to cognitive science, focusing on data analysis, artificial intelligence, human-computer interaction, and programmatic thinking.</p>
+</section>
+<hr class="docutils" />
+<section id="course-materials">
+<h2>COURSE MATERIALS<a class="headerlink" href="#course-materials" title="Link to this heading">#</a></h2>
+<p>All materials will be provided via:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cogs18.github.io">course website</a></p></li>
+<li><p><a class="reference external" href="https://shanellis.github.io/pythonbook">course textbook</a> [no cost]</p></li>
+</ul>
+<p>Note: If you do not have consistent access to the technology needed, please use the form below to request a loaner laptop: <a class="reference external" href="https://eforms.ucsd.edu/view.php?id=490887">https://eforms.ucsd.edu/view.php?id=490887</a>. (For any issues that you may have, please email <a class="reference external" href="mailto:vcsa&#37;&#52;&#48;ucsd&#46;edu">vcsa<span>&#64;</span>ucsd<span>&#46;</span>edu</a> and they will work to assist you.)</p>
+</section>
+<hr class="docutils" />
+<section id="grading-attendance">
+<h2>GRADING &amp; ATTENDANCE<a class="headerlink" href="#grading-attendance" title="Link to this heading">#</a></h2>
+<p><strong>Grading</strong>:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-right"><p></p></th>
+<th class="head text-center"><p>% of Grade</p></th>
+<th class="head text-left"><p># to complete</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-right"><p>Surveys</p></td>
+<td class="text-center"><p>4%</p></td>
+<td class="text-left"><p>Complete pre- and post-surveys</p></td>
+</tr>
+<tr class="row-odd"><td class="text-right"><p>Video Quizzes</p></td>
+<td class="text-center"><p>12%</p></td>
+<td class="text-left"><p>12 (1% each)</p></td>
+</tr>
+<tr class="row-even"><td class="text-right"><p>Coding Lab</p></td>
+<td class="text-center"><p>16%</p></td>
+<td class="text-left"><p>8 (2% each)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-right"><p>Assignments</p></td>
+<td class="text-center"><p>25%</p></td>
+<td class="text-left"><p>5 (5% each)</p></td>
+</tr>
+<tr class="row-even"><td class="text-right"><p>Oral Exams</p></td>
+<td class="text-center"><p>5%</p></td>
+<td class="text-left"><p>2 (2.5% each)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-right"><p>Midterms</p></td>
+<td class="text-center"><p>24%</p></td>
+<td class="text-left"><p>2 (12% each)</p></td>
+</tr>
+<tr class="row-even"><td class="text-right"><p>Final</p></td>
+<td class="text-center"><p>13%</p></td>
+<td class="text-left"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<section id="grades">
+<h3>Grades<a class="headerlink" href="#grades" title="Link to this heading">#</a></h3>
+<p>All grades will be released on Canvas. It is your responsibility to check that your assignment was submitted, that your grade is accurate, and to get in touch if any are missing and/or you think there is a problem.</p>
+<p>To calculate final grades, I use the standard grading scale and do not round grades up (given the numerous extra credit opportunities offered):</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span>Percentage</span></p></th>
+<th class="head"><p><span>Letter Grade</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>97-100%</p></td>
+<td><p>A+</p></td>
+</tr>
+<tr class="row-odd"><td><p>93-96%</p></td>
+<td><p>A</p></td>
+</tr>
+<tr class="row-even"><td><p>90-92%</p></td>
+<td><p>A-</p></td>
+</tr>
+<tr class="row-odd"><td><p>87-89%</p></td>
+<td><p>B+</p></td>
+</tr>
+<tr class="row-even"><td><p>83-86%</p></td>
+<td><p>B</p></td>
+</tr>
+<tr class="row-odd"><td><p>80-82%</p></td>
+<td><p>B-</p></td>
+</tr>
+<tr class="row-even"><td><p>77-79%</p></td>
+<td><p>C+</p></td>
+</tr>
+<tr class="row-odd"><td><p>73-76%</p></td>
+<td><p>C</p></td>
+</tr>
+<tr class="row-even"><td><p>70-72%</p></td>
+<td><p>C-</p></td>
+</tr>
+<tr class="row-odd"><td><p>67-69%</p></td>
+<td><p>D+</p></td>
+</tr>
+<tr class="row-even"><td><p>63-66%</p></td>
+<td><p>D</p></td>
+</tr>
+<tr class="row-odd"><td><p>60-62%</p></td>
+<td><p>D-</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;60%</p></td>
+<td><p>F</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-i-already-know-python-grading-policy">
+<h3>The “I already know Python” Grading Policy<a class="headerlink" href="#the-i-already-know-python-grading-policy" title="Link to this heading">#</a></h3>
+<p>If you have to take this course to fulfill a requirement but are already <em>very</em> familiar with the course content, there is an option for you! I’m interested in student learning, not busy work, so if you already know the material, let’s save you some time. Students who choose this option only have to complete the pre- and post-surveys, two oral exams, two midterms, and the final exam. The surveys will still be 4% of your grade. Each oral exam will down for 5% of your final grade; each midterm will count for 25% of your final grade and the final will count for 36% of your final grade. Students may opt-into this at any time during the quarter up until the due date of the final by filling out <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSeKS8e2a5cMDNontmy1a6X7-nEty_wLCyU7q2oCcEZx4cCYUA/viewform?usp=sf_link">this form</a>; however, <strong>once you opt in you cannot change your mind</strong>. For example, if you decide in week 4 that you want to opt-in and then bomb the first exam, you cannot change your mind in week 6, as you would then be behind, would have missed some deadlines, and  dealing with this logistical nightmare would not be fair to course staff. That said, <strong>if you’re on the fence, I’d encourage you to complete the course as designed until you’re certain you want to go this route.</strong></p>
+</section>
+<section id="assignment-regrades">
+<h3>Assignment Regrades<a class="headerlink" href="#assignment-regrades" title="Link to this heading">#</a></h3>
+<p>We will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you’ve earned. Occasionally, grading mistakes do happen, and it’s important to us to correct them. If you think there is a mistake in your grade on an assignment, create an issue on the assessment on PrairieLearn explaining why you think your answer was correct and should point to the specific part of the assignment in question.</p>
+<p>Note that points will <em>not</em> be rewarded if you fail to follow instructions. For example, if the instructions say to name the variable <code class="docutils literal notranslate"><span class="pre">orange</span></code> and you name it <code class="docutils literal notranslate"><span class="pre">ornage</span></code> (misspelled), you will not be rewarded credit upon regrade. This is because (1) following instructions and being detail-oriented is important and (2) there are hundreds of students taking the course this quarter.</p>
+</section>
+<section id="in-person-illness-policy">
+<h3>In-person illness policy<a class="headerlink" href="#in-person-illness-policy" title="Link to this heading">#</a></h3>
+<p>Please do not attend any in-person activity (lecture/coding lab/office hours) if you are feeling ill, especially if you are sneezing/coughing and have a fever. If you feel mildly ill but without sneezing/coughing, or if you have allergies or similar, then you may come to in-person events while wearing a well-fitting mask.</p>
+</section>
+<section id="lecture">
+<h3>Lecture<a class="headerlink" href="#lecture" title="Link to this heading">#</a></h3>
+<p>Students are encouraged to attend lecture live; however, <strong>in-person attendance is not required</strong>. All lectures will be podcast. However, during lecture, students will be given time to complete small coding challenges on their own, complete activities in pair/ssmall groups, and will have the opportunity to see their classmates’ thoughts during lecture. If this is your first time learning to code, please prioritize coming to class.</p>
+<p>To incentivize attendance, we will use Google Forms for in-class Q&amp;A and activities.  Students will receive a small amount of extra credit for <em>each</em> lecture attended, up to 2% extra credit (for those who attend every lecture) on their final grade. To earn credit in a given day, students must complete at least 50% of the Google Forms submitted on that day (correctness does not matter). Students are free to attend either lecture time.</p>
+</section>
+<section id="pre-and-post-assessment-surveys-4">
+<h3>Pre- and Post-Assessment Surveys (4%)<a class="headerlink" href="#pre-and-post-assessment-surveys-4" title="Link to this heading">#</a></h3>
+<p>Students will be required to complete two pre-course assessment surveys (2%) as well as a post-course assessment survey (2%). These will be used to learn a bit more about you as a student as well as your knowledge in Python. (Note: you are NOT expected to have any Python knowledge at the start of the course.) Completion of these surveys is required in COGS 18; however, students will choose whether their responses can be used for future research. Students will earn credit for completion and are not graded on correctness.</p>
+</section>
+<section id="video-quizzes-12">
+<h3>Video Quizzes (12%)<a class="headerlink" href="#video-quizzes-12" title="Link to this heading">#</a></h3>
+<p>On Mondays and Wednesdays (the night before most lectures), there will typically be a video quiz due. Each video quiz will comprise of questions from the previous lecture and questions from the assigned reading/watching from the textbook. Students are expected to watch the videos in the textbook from the assigned reading, read the content, and then take the quiz on PrairieLearn to check their understanding. Students are encouraged to bring questions to class for parts of the reading/videos that they did not understand. Video quizzes will be accepted up to 48h late for a 25% penalty.</p>
+</section>
+<section id="coding-labs-16">
+<h3>Coding Labs (16%)<a class="headerlink" href="#coding-labs-16" title="Link to this heading">#</a></h3>
+<p>Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific  activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2% each). Coding labs are graded for correctness; however, students will have unlimited attempts for each question and the ability to earn full marks regardless of number of attempts. To receive credit for a coding lab, you have to complete your coding lab for that week by Friday at 11:59 pm each week. Labs will be accepted up to 48h late, for a 25% penalty.</p>
+<p>Note: You should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend the other Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 35 so that students can get help from their TAs and IAs during this time.</p>
+</section>
+<section id="oral-exams-5">
+<h3>Oral Exams (5%)<a class="headerlink" href="#oral-exams-5" title="Link to this heading">#</a></h3>
+<p>Each student will also have to sign up for two oral exam slots during the quarter (2.5% each), one in weeks 3-6 and another in weeks 7-10. These will take place during coding labs and each oral exam slot will be 5 min. Students will be asked a few questions by an instructional staff member about the material covered up to that point (but will typically focus on the previous week’s material) and will be graded on their understanding of core concepts and their ability to explain code.</p>
+</section>
+<section id="assignments-25">
+<h3>Assignments (25%)<a class="headerlink" href="#assignments-25" title="Link to this heading">#</a></h3>
+<p>There will be five assignments, each worth 5% of your final grade. Assignments will be hands-on coding assignments. You will typically have about 1 week after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date.</p>
+<p>Late assignments will be accepted for a 25% credit for 48 hours (2 days) after the assignment’s due date.</p>
+<p>You are personally responsible for understanding everything you turn in. While you may ask one another about assignments, you may not copy directly from a classmate and you must understand and be able to explain everything you submit. You may not post full assignments nor any part of any assignment on the Internet (i.e. Chegg, Discord, or related site). Evidence of cheating on an assignment will result (at minimum) in loss of a full letter grade in the course.</p>
+</section>
+<section id="exams-38">
+<h3>Exams (38%)<a class="headerlink" href="#exams-38" title="Link to this heading">#</a></h3>
+<p>There will be two (2) midterms (12.5% each) and a final exam (13%). Each exam will be closed-notes and taken at the Triton Testing Center Computer-Based Testing Facility (TTC-CBTF) in <strong>AP&amp;M B349</strong> (Applied Physics &amp; Mathematics). Each midterm will be 45 minutes. The final exam will be 110 minutes. For all exams, students will have to sign up for an exam slot. For the first midterm, students will be able to sign up for a slot during week 5 (4/28-5/3). For the second midterm, students will be able to sign up for a slot across weeks 8 and 9 (5/23-5/30). For the final, all students will have to sign up for a slot during finals week (6/7-6/13). Please note that <strong>this final exam date/time will likely differ from what you see in WebReg</strong>. <strong>Students MUST bring their physical ID to take their exams.</strong></p>
+<p>Students will also have the opportunity to retake <em>either</em> the first or second midterm across weeks 9 and 10 (5/31-6/6). To be eligible for a retest, you have to have made a first attempt during the originally-scheduled exam time. For any exams that are re-taken, the students’ grade will be comprised of 25% of the attempt with the lower score and 75% of the attempt with the higher score. For example, if you score a 6/12 on an exam and retake that exam and score an 11/12 your recorded grade would be a 9.75 (0.25<em>6  + 0.75</em>11).</p>
+<p>You must schedule your tests at least three days in advance, but it is recommended that you do so as soon as possible. To schedule, visit <a class="reference external" href="https://us.prairietest.com/">prairietest.com</a> and login with your UC San Diego credentials. Reservations can be changed until 10 minutes before the test begins. More information about testing policies and procedures can be found on the <a class="reference external" href="https://tritontesting.ucsd.edu/">TTC’s website</a>. You may also email <a class="reference external" href="mailto:tritontesting&#37;&#52;&#48;ucsd&#46;edu">tritontesting<span>&#64;</span>ucsd<span>&#46;</span>edu</a> for assistance.</p>
+<p>Please note that <strong>if you plan to use OSD-approved accommodations for your test</strong>, you will take it at the TTC’s Pepper Canyon Hall location. You must schedule your test three days in advance through the <a class="reference external" href="https://www2.registerblast.com/ucsd/Exam/List">RegisterBlast</a> system.</p>
+<p>As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let’s be honest…there’s <em>always</em> a way to cheat (and always a chance if you cheat you’ll get caught). I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::</p>
+</section>
+<section id="extra-support">
+<h3>Extra Support<a class="headerlink" href="#extra-support" title="Link to this heading">#</a></h3>
+<p>We are trying to be proactive this quarter about supporting all students. To this end, we recognize that some students want/need more time with the course material. To this end, there will be dedicated review sessions and office hours specifically designed for students who may benefit from this additional support. While these sessions will be open to all students, we will be individually reaching out to students who we think may benefit throughout the quarter. Attendance is optional, but for those who want it, we’re hoping this is a community where everyone can really learn the material well.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="other-good-stuff">
+<h2>OTHER GOOD STUFF<a class="headerlink" href="#other-good-stuff" title="Link to this heading">#</a></h2>
+<section id="ed-rules">
+<h3>Ed Rules<a class="headerlink" href="#ed-rules" title="Link to this heading">#</a></h3>
+<p>Ed is a great resource for technical classes. It gives you a place to post questions and an opportunity to answer others’ questions. We do our very best as an instructional staff to answer each and every question in a timely manner. We also want to make sure this platform is being used to learn and not thwarting anyone’s education. To make all of this possible, there are a few rules for this course’s Ed:</p>
+<ol class="arabic simple">
+<li><p>Before posting your question, look at/search questions that have already been posted to avoid duplicates.</p></li>
+<li><p>If posting about an assignment, note title should have assignment number, question number, and 1-2 words about the question. (i.e. A1 Q1 Variable Naming)</p></li>
+<li><p>Never post an answer to or code for an assignment on a public post. Pseudocode is encouraged for public posts. If you must include code for an assignment, make this post private.</p></li>
+<li><p>Your post must include not only your question/where you’re stuck, but also what you’ve already done to try to solve it so far and what resources (class notes, online URLs, etc.) you used to try to answer the question up to this point.</p></li>
+</ol>
+</section>
+<section id="how-to-get-your-question-s-answered-and-or-provide-feedback">
+<h3>How to Get Your Question(s) Answered and/or Provide Feedback<a class="headerlink" href="#how-to-get-your-question-s-answered-and-or-provide-feedback" title="Link to this heading">#</a></h3>
+<p>The best place for class questions is Ed. This is where you have about 20 people (Prof, TAs, IAs) who can answer your question and you’re likely to get a response the fastest.</p>
+<p>If you have a very specific question that you think only Professor Ellis can address, feel free to email (<a class="reference external" href="mailto:sellis&#37;&#52;&#48;ucsd&#46;edu">sellis<span>&#64;</span>ucsd<span>&#46;</span>edu</a>), but please do include [COGS 18] in the subject line.</p>
+<p>Finally, if you have <strong>some feedback about the course you want to share anonymously</strong> (If you’ve been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn’t but would rather not share this publicly, etc.) please fill out the <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSd1YNH8CqBbVxr_M9v_c3X-XLqySLrBfYE7GwuAshFMCP_WvQ/viewform?usp=sf_link">anonymous Google Form</a>*</p>
+<p>*This form can be taken down at any time if it’s not being used for its intended purpose; however, you all will be notified should that happen.</p>
+</section>
+<section id="what-should-you-call-me">
+<h3>What should you call me?<a class="headerlink" href="#what-should-you-call-me" title="Link to this heading">#</a></h3>
+<p>Most students call me Prof/Professor Ellis. I’m also perfectly happy if you call me Shannon (not all professors are OK with that kind of informality) or Dr. Ellis. I would prefer you <em>not</em> address me as Ms/Miss/Mrs. Ellis.</p>
+</section>
+<section id="what-should-i-call-you">
+<h3>What should I call you?<a class="headerlink" href="#what-should-i-call-you" title="Link to this heading">#</a></h3>
+<p>I should call you by your preferred name, with the correct pronunciation. Please correct me (out loud in the moment, via email/Ed after the fact, or however you’re most comfortable) if I ever make a mistake.</p>
+</section>
+<section id="what-should-you-expect-of-your-interactions-with-instructional-staff">
+<h3>What should you expect of your interactions with instructional staff?<a class="headerlink" href="#what-should-you-expect-of-your-interactions-with-instructional-staff" title="Link to this heading">#</a></h3>
+<p>Interactions with instructional staff (professor, TAs, IAs) will be:</p>
+<p><strong>Dialog-based</strong>: We will use dialog-based teaching rather than monologues. When students have questions that require a lengthy explanation of a concept that was covered in lecture, we will refer you to an external resource (e.g. lecture, site, video) for you to look at first. Of course, if you have questions about what you learn in those resources, please ask us! We want to make sure that everyone has done the preliminary background work so that we are using our time most effectively.</p>
+<p><strong>Student-driven</strong>:  Rather than tell you how to solve a problem, we aim to ask you questions and point you toward illustrative examples to help lead you toward finding a solution on your own.</p>
+<p><strong>Example-heavy</strong>: We will ask you about previous example problems you may have seen in lab or lecture that might be helpful to the problem at hand. When you look through examples you’ve seen, you might be able to find one that’s relevant to your problem and use it as inspiration for a solution. Also, when we know which examples you’ve seen and which ones you understand or don’t, we can better pinpoint where your confusion lies.</p>
+<p><strong>Scaffolded with prior knowledge</strong>: If you’re lacking prerequisite knowledge needed for the question you’re asking, we take a step back and cover that before returning to the problem.</p>
+</section>
+<section id="class-conduct">
+<h3>Class Conduct<a class="headerlink" href="#class-conduct" title="Link to this heading">#</a></h3>
+<p>In all interactions in this class, you are expected to be respectful. This includes following the <a class="reference external" href="https://ucsd.edu/about/principles.html">UC San Diego principles of community</a>.</p>
+<p>This class will be a welcoming, inclusive, and harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), political beliefs/leanings, or technology choices.</p>
+<p>At all times, you should be considerate and respectful. Always refrain from demeaning, discriminatory, or harassing behavior and speech. Last of all, take care of each other.</p>
+<p>If you have a concern, please speak with the professor, your TAs, or IAs. If you are uncomfortable doing so, that’s OK! The <a class="reference external" href="https://blink.ucsd.edu/HR/policies/sexual/OPHD.html">OPHD</a> (Office for the Prevention of Sexual Harassment and Discrimination) and <a class="reference external" href="https://care.ucsd.edu/">CARE</a> (confidential advocacy and education office for sexual violence and gender-based violence) are wonderful resources on campus.</p>
+</section>
+<section id="academic-integrity">
+<h3>Academic Integrity<a class="headerlink" href="#academic-integrity" title="Link to this heading">#</a></h3>
+<p>Don’t cheat.</p>
+<p>You are encouraged to work together and help one another. However, you are personally responsible for the work you submit. For assignments, it is your responsibility to ensure you understand everything you’ve submitted and to make sure the correct file has been submitted and that the submission is uncorrupted. Please review academic integrity policies <a class="reference external" href="http://academicintegrity.ucsd.edu">here</a>.</p>
+<p>Cheating and plagiarism have been and will be strongly penalized. If, for whatever reason, Canvas or DataHub is down or something else prohibits you from being able to turn in an assignment on time, immediately email the professor or else it will be graded as late.</p>
+<section id="policy-on-using-artificial-intelligence-programming-assistance">
+<h4>Policy on using Artificial Intelligence programming assistance<a class="headerlink" href="#policy-on-using-artificial-intelligence-programming-assistance" title="Link to this heading">#</a></h4>
+<p>I believe that using large language models (LLMs) or other kinds of AIs can help a good programmer work more efficiently. I also believe that relying on AI assistance will probably slow down the development of a beginning programmer into a good programmer.</p>
+<p>My advice: if you struggle to conceptualize how you want to write a program you should probably NOT use an LLM (or at least not right away). The beginning or intermediate programmer needs to practice their craft…just like you will never get to be great at a video game by just watching other people’s speed runs. I think it’s fine to use AI assistance if you can immediately imagine how to solve the problem but you just want help with implementation details, to see alternative algorithms you could use, or help writing it faster.</p>
+<p>Note that LLMs are most helpful in learning when <em>you</em> determine the questions to ask it and interpret the answer, NOT when you copy+paste questions from assignments in directly and then copy+paste the answer it spits out. For example, if a question in this class asked you to “write a function that takes two parameters <code class="docutils literal notranslate"><span class="pre">income</span></code>, <code class="docutils literal notranslate"><span class="pre">tax_rate</span></code> that will calculate how much you owe in taxes”, you would NOT just copy that question into ChatGPT/CoPilot/etc. Instead, you would attempt the question on your own and then ask specific questions on <em>parts</em> of the question you don’t understand. For example, you may ask the LLM, “what does it mean for a function to take two parameters?” This way you ensure you’re understanding and maximizing learning. (Also, note that example question was intentionally not detailed enough to actually get you a “right” answer for such a question but to serve as an example for what it means to ask your “own” questions.)</p>
+<p>You can use AI to help you program as long as you:</p>
+<ul class="simple">
+<li><p>make a code comment that cites the AI used, and provides an estimate of how much code in a given block is machine generated.  For instance you might write this <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">The</span> <span class="pre">(code/design)</span> <span class="pre">of</span> <span class="pre">this</span> <span class="pre">function</span> <span class="pre">is</span> <span class="pre">(completely/mostly/partially)</span> <span class="pre">generated</span> <span class="pre">by</span> <span class="pre">Github</span> <span class="pre">Copilot</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">prompt</span> <span class="pre">&quot;write</span> <span class="pre">a</span> <span class="pre">python</span> <span class="pre">function</span> <span class="pre">to</span> <span class="pre">bubble</span> <span class="pre">sort</span> <span class="pre">a</span> <span class="pre">list&quot;</span></code>  Feel free to include a description of any specific changes you made from the machine generated code… it was edited to reduce execution time, to deal with edge cases, to deal with an empty data file, etc..</p></li>
+<li><p>don’t assume LLM code is working and just hand in without checking. You are always responsible for functionality and understanding how something works.</p></li>
+<li><p>understand that programming with LLMs still requires you to do programming. But instead of creating code from scratch (the part many people enjoy) you will need to do debugging and unit testing (the part many people don’t like)</p></li>
+<li><p>you understand that you may be asked to explain your code at any time. A helpful heuristic can be to ask yourself “Can I explain each piece of code and each analysis carried out in what I’m submitting? Could I reproduce this code/analysis on my own?”; you should be able to answer “Yes” to both questions for everything you submit in this course. If you can’t explain how your code works and why the design is that way, you may lose points.</p></li>
+</ul>
+<p>To help guide your learning, we will demonstrate and explicitly teach learning with an LLM. However, you will not have access to an LLM for exams, so we will be very clear about what we expect you to know/be able to do without an LLM and when it’s OK to rely more heavily on LLM access.</p>
+</section>
+</section>
+<section id="disability-access">
+<h3>Disability Access<a class="headerlink" href="#disability-access" title="Link to this heading">#</a></h3>
+<p>Students requesting accommodations due to a disability must provide a current Authorization for Accommodation (AFA) letter. These letters are issued by the Office for Students with Disabilities (OSD), which is located in University Center 202 behind Center Hall. Please contact the professor privately to arrange accommodations.</p>
+<p>Contacting the OSD can help you further:<br />
+858.534.4382 (phone)<br />
+<a class="reference external" href="mailto:osd&#37;&#52;&#48;ucsd&#46;edu">osd<span>&#64;</span>ucsd<span>&#46;</span>edu</a> (email)<br />
+<a class="reference external" href="http://disabilities.ucsd.edu">http://disabilities.ucsd.edu</a></p>
+</section>
+<section id="difficult-life-situations">
+<h3>Difficult Life Situations<a class="headerlink" href="#difficult-life-situations" title="Link to this heading">#</a></h3>
+<p>Sometimes life outside of academia can be difficult. Please <a class="reference external" href="mailto:sellis&#37;&#52;&#48;ucsd&#46;edu">email me</a> or come to office hours if stuff outside the classroom prevents you from doing well inside it. I can often refer you on to the help you need.</p>
+<p>If you don’t have the most essential resources required to thrive as a student, please contact <a class="reference external" href="https://basicneeds.ucsd.edu">UCSD Basic Needs</a> who can help you access nutritious food and stable housing, and help you seek the means to reach financial wellness.</p>
+<p>If you need emergency food, finances, and/or academic and social support you can also contact <a class="reference external" href="https://mutualaiducsd.wordpress.com">UCSD Mutual Aid</a>. They provide mentoring and aid that comes from volunteers among your peers.  If you don’t need that kind of support, consider joining them in helping your fellow classmates who do.</p>
+<p>If you need counseling or if you are in a mental crisis you can contact <a class="reference external" href="https://caps.ucsd.edu">CAPS</a>. They provide psychiatric services, workshops, and counseling; they also operate a 24/7 crisis hotline at 858.534.3755.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./assets/intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to COGS 18: Introduction to Python!</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="schedule.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">COURSE SCHEDULE</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-overview">COURSE OVERVIEW</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-information">COURSE INFORMATION</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-objectives">COURSE OBJECTIVES</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-materials">COURSE MATERIALS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-attendance">GRADING &amp; ATTENDANCE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grades">Grades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-i-already-know-python-grading-policy">The “I already know Python” Grading Policy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-regrades">Assignment Regrades</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-person-illness-policy">In-person illness policy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture">Lecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-and-post-assessment-surveys-4">Pre- and Post-Assessment Surveys (4%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#video-quizzes-12">Video Quizzes (12%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-labs-16">Coding Labs (16%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-exams-5">Oral Exams (5%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments-25">Assignments (25%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exams-38">Exams (38%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-support">Extra Support</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-good-stuff">OTHER GOOD STUFF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ed-rules">Ed Rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-get-your-question-s-answered-and-or-provide-feedback">How to Get Your Question(s) Answered and/or Provide Feedback</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-should-you-call-me">What should you call me?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-should-i-call-you">What should I call you?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-should-you-expect-of-your-interactions-with-instructional-staff">What should you expect of your interactions with instructional staff?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-conduct">Class Conduct</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-integrity">Academic Integrity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-on-using-artificial-intelligence-programming-assistance">Policy on using Artificial Intelligence programming assistance</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disability-access">Disability Access</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difficult-life-situations">Difficult Life Situations</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Shannon Ellis, Jason Fleischer, and Tom Donoghue
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
