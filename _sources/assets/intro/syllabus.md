@@ -109,7 +109,7 @@ To incentivize attendance, we will use iclicker for in-class Q&A (using either a
 
 ### Coding Labs (15\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for the week by that Wednesday 11:59 pm. There are no late submissions for coding labs.
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab by 11:59 pm on the day listed in the syllabus schedule. There are no late submissions for coding labs.
 
 
 ### Assignments (35\%)
