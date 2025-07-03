@@ -13,7 +13,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 ## COURSE INFORMATION
 
 **Lecture**: MTuWTh	at 2:00p-3:20p (MANDE B-150)
-**Labs**: TuTh	1:00p-1:50p (TBD)
+**Labs**: TuTh	1:00p-1:50p (CSB 115)
 
 Office Hours Times/Locations can be found on Canvas.
 
