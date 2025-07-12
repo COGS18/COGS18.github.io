@@ -144,9 +144,9 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 | 7/09/2025  | 2      | W   | Debugging [*]           |                             |                                         |
 | 7/10/2025  | 2      | Th  | Loops                   | CL3 - Funcs, Conditionals   | CL3 - Funcs, Conditionals               |
 | 7/11/2025  | 2      | F   |                         |                             | A1 - Variables, Comparison, Functions   |
-| 7/14/2025  | 3      | Mo  | Methods                 |                             | A2 - Conditionals, Collections, Ciphers |
+| 7/14/2025  | 3      | Mo  | Methods                 |                             |                                         |
 | 7/15/2025  | 3      | Tu  | Classes                 | CL4 - Collections           | CL4 - Collections                       |
-| 7/16/2025  | 3      | W   | Command Line            |                             |                                         |
+| 7/16/2025  | 3      | W   | Command Line            |                             | A2 - Conditionals, Collections, Ciphers |
 | 7/17/2025  | 3      | Th  | **E1**                  | CL5 - Loops                 | CL5, E1: technical portion (take-home)  |
 | 7/21/2025  | 4      | Mo  | Modules                 |                             | A3 - Loops, Strings, Chatbots           |
 | 7/22/2025  | 4      | Tu  | Scientific Computing    | CL6 - Classes               | CL6 - Classes                           |
