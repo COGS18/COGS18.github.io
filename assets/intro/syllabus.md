@@ -1,6 +1,6 @@
 # SYLLABUS
 
-**Introduction to Python** | **Summer I 2025**  
+**Introduction to Python** | **Summer II 2025**  
 
 ---
 
@@ -12,7 +12,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE INFORMATION
 
-**Lecture**: MTuWTh	at 2:00p-3:20p (MANDE B-150)
+**Lecture**: MTuWTh	at 2:00p-3:20p (RWAC 0121)
 **Labs**: TuTh	1:00p-1:50p (CSB 115)
 
 Office Hours Times/Locations can be found on Canvas.
@@ -20,8 +20,8 @@ Office Hours Times/Locations can be found on Canvas.
 **Important Links**
 - [Course Website](https://cogs18.github.io)
 - [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
-- [Course Canvas](https://canvas.ucsd.edu/courses/66840)
-- [Course Piazza\*](https://piazza.com/ucsd/summer2025/cogs18_s125_a00/home)
+- [Course Canvas](https://canvas.ucsd.edu/courses/66875)
+- [Course Piazza\*](https://piazza.com/ucsd/summer2025/cogs18_s225_a00/home)
 - [DataHub](https://datahub.ucsd.edu)
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
 
@@ -135,32 +135,32 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 ## COURSE SCHEDULE
 | Date       | Week   | Day | Lecture topic           | Lab topic                   | Assignment due  (11:59 PM)              |
 | ---------- | ------ | --- | ----------------------- | --------------------------- | --------------------------------------- |
-| 6/30/2025  | 1      | Mo  | Introduction            |                             |                                         |
-| 7/01/2025  | 1      | Tu  | Tooling & Variables     |                             |                                         |
-| 7/02/2025  | 1      | W   | Operators               |                             |                                         |
-| 7/03/2025  | 1      | Th  | Functions               | CL1 - Tooling               | CL1 - Tooling                           |
-| 7/07/2025  | 2      | Mo  | Conditionals            |                             |                                         |
-| 7/08/2025  | 2      | Tu  | Collections             | CL2 - Vars, Operators       | CL2 - Vars, Operators                   |
-| 7/09/2025  | 2      | W   | Debugging [*]           |                             |                                         |
-| 7/10/2025  | 2      | Th  | Loops                   | CL3 - Funcs, Conditionals   | CL3 - Funcs, Conditionals               |
-| 7/11/2025  | 2      | F   |                         |                             | A1 - Variables, Comparison, Functions   |
-| 7/14/2025  | 3      | Mo  | Methods                 |                             |                                         |
-| 7/15/2025  | 3      | Tu  | Classes                 | CL4 - Collections           | CL4 - Collections                       |
-| 7/16/2025  | 3      | W   | Command Line            |                             | A2 - Conditionals, Collections, Ciphers |
-| 7/17/2025  | 3      | Th  | **E1**                  | CL5 - Loops                 | CL5, E1: technical portion (take-home)  |
-| 7/21/2025  | 4      | Mo  | Modules                 |                             | A3 - Loops, Strings, Chatbots           |
-| 7/22/2025  | 4      | Tu  | Scientific Computing    | CL6 - Classes               | CL6 - Classes                           |
-| 7/23/2025  | 4      | W   | Documentation           |                             |                                         | 
-| 7/24/2025  | 4      | Th  | TBD                     | CL7 - Command Line          | CL7 - Command Line                      |
-| 7/25/2025  | 4      | F   |                         |                             | A4 - Methods, Classes, Agents           |
-| 7/28/2025  | 5      | Mo  | Code Testing            |                             |                                         |
-| 7/29/2025  | 5      | Tu  | Code Projects           | CL8 - Scientific Computing  | CL8 - Scientific Computing              |
-| 7/30/2025  | 5      | W   | Wrap-up                 |                             |                                         |
-| 7/31/2025  | 5      | Th  | TBD                     | CL9 - Test, Debug, Refactor | A5, CL9 - Test, Debug, Refactor         |
-| 8/01/2025  | 5      | F   |                         |                             |                                         |
+| 8/04/2025  | 1      | Mo  | Introduction            |                             |                                         |
+| 8/05/2025  | 1      | Tu  | Tooling & Variables     |                             |                                         |
+| 8/06/2025  | 1      | W   | Operators               | CL1 - Tooling               | CL1 - Tooling                           |
+| 8/07/2025  | 1      | Th  | Functions               |                             |                                         |
+| 8/11/2025  | 2      | Mo  | Conditionals            | CL2 - Vars, Operators       | CL2 - Vars, Operators                   |
+| 8/12/2025  | 2      | Tu  | Collections             |                             |                                         |
+| 8/13/2025  | 2      | W   | Debugging [*]           | CL3 - Funcs, Conditionals   | CL3 - Funcs, Conditionals               |
+| 8/14/2025  | 2      | Th  | Loops                   |                             |                                         |
+| 8/15/2025  | 2      | F   |                         |                             | A1 - Variables, Comparison, Functions   |
+| 8/18/2025  | 3      | Mo  | Methods                 | CL4 - Collections           | CL4 - Collections                       |
+| 8/19/2025  | 3      | Tu  | **E1**                  |                             | E1: technical portion (take-home)       |
+| 8/20/2025  | 3      | W   | Command Line            | CL5 - Loops                 | CL5 - Loops                             |
+| 8/21/2025  | 3      | Th  | Classes                 |                             | A2 - Conditionals, Collections, Ciphers |
+| 8/25/2025  | 4      | Mo  | Modules                 | CL6 - Classes               | CL6 - Classes                           |
+| 8/26/2025  | 4      | Tu  | Scientific Computing    |                             | A3 - Loops, Strings, Chatbots           |
+| 8/27/2025  | 4      | W   | Documentation           | CL7 - Command Line, CL8     | CL7 - Command Line                      | 
+| 8/28/2025  | 4      | Th  | TBD                     |                             |                                         |
+| 8/29/2025  | 4      | F   |                         |                             | A4 - Methods, Classes, Agents           |
+| 9/01/2025  | 5      | Mo  | **HOLIDAY**             |                             | CL8 - Scientific Computing              |
+| 9/02/2025  | 5      | Tu  | Code Testing            |                             |                                         |
+| 9/03/2025  | 5      | W   | Code Projects           | CL9 - Test, Debug, Refactor | CL9 - Test, Debug, Refactor             |
+| 9/04/2025  | 5      | Th  | Wrap-up                 |                             | A5                                      |
+| 9/05/2025  | 5      | F   |                         |                             | Final Exam                              |
 
 
-**Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
+**Final Exam**: Final Exam is due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:
 [\*] denotes the last day of material covered on Midterm I (E1).
