@@ -1,6 +1,6 @@
 # Welcome to COGS 18: Introduction to Python!
 
-COGS 18 | Eric Morgan | Summer I 2025 | UCSD
+COGS 18 | Eric Morgan | Summer II 2025 | UCSD
 
 ### Overview
 
