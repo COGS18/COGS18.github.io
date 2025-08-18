@@ -190,6 +190,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../materials/07-Collections.html">07-Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/08-Debugging.html">08-Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/09-Loops.html">09-Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/10-Methods.html">10-Methods</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Lab Answers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../materials/CL-Answers/CL2-ProgrammingI.html">CL2-ProgrammingI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/CL-Answers/CL3-ProgrammingII.html">CL3-ProgrammingII</a></li>
 </ul>
 
     </div>
@@ -629,7 +635,13 @@ document.write(`
 <section id="include-sketch-of-at-least-one-task">
 <h3>Include sketch of (at least) one task<a class="headerlink" href="#include-sketch-of-at-least-one-task" title="Link to this heading">#</a></h3>
 <p>After brainstorming, include a sketch of your pseudocode for at least one of the tasks you brainstormed about earlier:</p>
-<p>Make some notes &amp; write some pseudocode for you chosen task(s) in this markdown cell</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Make some notes &amp; write some pseudocode for you chosen task(s) here</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="part-2-functions">
@@ -692,7 +704,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
     <span class="k">def</span> <span class="nf">add_two</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
     <span class="o">^</span>
 <span class="ne">IndentationError</span>: expected an indented block after function definition on line 1
@@ -710,7 +722,7 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Check that you can use the function</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">add_two</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
@@ -730,7 +742,7 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Check this function returns the correct number</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">assert</span> <span class="n">add_two</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">assert</span> <span class="n">add_two</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
