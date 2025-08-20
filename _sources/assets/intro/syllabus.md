@@ -146,8 +146,9 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 | 8/15/2025  | 2      | F   |                         |                             | A1 - Variables, Comparison, Functions   |
 | 8/18/2025  | 3      | Mo  | Methods                 | CL4 - Collections           | CL4 - Collections                       |
 | 8/19/2025  | 3      | Tu  | **E1**                  |                             | E1: technical portion (take-home)       |
-| 8/20/2025  | 3      | W   | Command Line            | CL5 - Loops                 | CL5 - Loops                             |
-| 8/21/2025  | 3      | Th  | Classes                 |                             | A2 - Conditionals, Collections, Ciphers |
+| 8/20/2025  | 3      | W   | Classes                 | CL5 - Loops                 | CL5 - Loops                             |
+| 8/21/2025  | 3      | Th  | Command Line            |                             |                                         |
+| 8/23/2025  | 3      | Sa  |                         |                             | A2 - Conditionals, Collections, Ciphers |
 | 8/25/2025  | 4      | Mo  | Modules                 | CL6 - Classes               | CL6 - Classes                           |
 | 8/26/2025  | 4      | Tu  | Scientific Computing    |                             | A3 - Loops, Strings, Chatbots           |
 | 8/27/2025  | 4      | W   | Documentation           | CL7 - Command Line, CL8     | CL7 - Command Line                      | 
