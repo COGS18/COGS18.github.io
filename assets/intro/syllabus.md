@@ -150,8 +150,8 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 | 8/21/2025  | 3      | Th  | Command Line            |                             |                                         |
 | 8/23/2025  | 3      | Sa  |                         |                             | A2 - Conditionals, Collections, Ciphers |
 | 8/25/2025  | 4      | Mo  | Modules                 | CL6 - Classes               | CL6 - Classes                           |
-| 8/26/2025  | 4      | Tu  | Scientific Computing    |                             | A3 - Loops, Strings, Chatbots           |
-| 8/27/2025  | 4      | W   | Documentation           | CL7 - Command Line, CL8     | CL7 - Command Line                      | 
+| 8/26/2025  | 4      | Tu  | Scientific Computing    |                             |                                         |
+| 8/27/2025  | 4      | W   | Documentation           | CL7 - Command Line, CL8     | CL7 - Command Line, A3                  | 
 | 8/28/2025  | 4      | Th  | TBD                     |                             |                                         |
 | 8/29/2025  | 4      | F   |                         |                             | A4 - Methods, Classes, Agents           |
 | 9/01/2025  | 5      | Mo  | **HOLIDAY**             |                             | CL8 - Scientific Computing              |
