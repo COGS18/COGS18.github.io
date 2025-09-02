@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Collections &#8212; COGS 18 - Introduction To Python</title>
   
@@ -15,54 +14,51 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materials/07-Collections';</script>
-    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Debugging" href="08-Debugging.html" />
@@ -76,19 +72,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -110,12 +110,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -130,9 +138,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -142,12 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
 <ul class="nav bd-sidenav">
@@ -174,6 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="14-ScientificComputing.html">Scientific Computing</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="15-Documentation.html">15-Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16-CodeTesting.html">16-CodeTesting</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Lab Answers</span></p>
 <ul class="nav bd-sidenav">
@@ -182,6 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL4-Collections.html">CL4-Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL5-Loops.html">CL5-Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL6-Classes.html">CL6-Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL8-ScientificComputing.html">CL8-ScientificComputing</a></li>
 </ul>
 
     </div>
@@ -197,7 +222,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -206,14 +231,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -238,14 +263,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/07-Collections.ipynb&branch=master" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -256,14 +281,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/07-Collections.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -401,26 +426,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -501,10 +528,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="collections">
-<h1>Collections<a class="headerlink" href="#collections" title="Permalink to this heading">#</a></h1>
+<h1>Collections<a class="headerlink" href="#collections" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Lists, Tuples, Dictionaries</p></li>
 <li><p>Indexing</p></li>
@@ -512,11 +539,11 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">chr</span></code> and <code class="docutils literal notranslate"><span class="pre">ord</span></code></p></li>
 </ul>
 <section id="collections-lists">
-<h2>Collections: Lists<a class="headerlink" href="#collections-lists" title="Permalink to this heading">#</a></h2>
+<h2>Collections: Lists<a class="headerlink" href="#collections-lists" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 A <b>list</b> is a mutable collection of ordered items, that can be of mixed type. Lists are created using square brackets.
 </div><section id="list-examples">
-<h3>List examples<a class="headerlink" href="#list-examples" title="Permalink to this heading">#</a></h3>
+<h3>List examples<a class="headerlink" href="#list-examples" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a list</span>
@@ -543,7 +570,7 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 </div>
 </section>
 <section id="indexing">
-<h3>Indexing<a class="headerlink" href="#indexing" title="Permalink to this heading">#</a></h3>
+<h3>Indexing<a class="headerlink" href="#indexing" title="Link to this heading">#</a></h3>
 <div class="alert alert-success">
 <b>Indexing</b> refers to selecting an item from within a collection. Indexing is done with square brackets.
 </div><div class="cell docutils container">
@@ -604,7 +631,7 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 </div>
 </section>
 <section id="reminders">
-<h3>Reminders<a class="headerlink" href="#reminders" title="Permalink to this heading">#</a></h3>
+<h3>Reminders<a class="headerlink" href="#reminders" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Python is zero-based (The first index is ‘0’)</p></li>
 <li><p>Negative indices index backwards through a collection</p></li>
@@ -619,7 +646,7 @@ A <b>list</b> is a mutable collection of ordered items, that can be of mixed typ
 Starting at zero is a convention (some) languages use that comes from how variables are stored in memory
 , and 'pointers' to those locations.
 </div><section id="class-question-1">
-<h4>Class Question #1<a class="headerlink" href="#class-question-1" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #1<a class="headerlink" href="#class-question-1" title="Link to this heading">#</a></h4>
 <p>What would be the appropriate line of code to return <code class="docutils literal notranslate"><span class="pre">['butter',</span> <span class="pre">'&amp;',</span> <span class="pre">'jelly']</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -665,7 +692,7 @@ Starting at zero is a convention (some) languages use that comes from how variab
 </section>
 </section>
 <section id="mutating-a-list">
-<h2>Mutating a List<a class="headerlink" href="#mutating-a-list" title="Permalink to this heading">#</a></h2>
+<h2>Mutating a List<a class="headerlink" href="#mutating-a-list" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 Lists are <i>mutable</i>, meaning after definition, you can update and change things about the list.
 </div><div class="cell docutils container">
@@ -693,7 +720,7 @@ Lists are <i>mutable</i>, meaning after definition, you can update and change th
 </div>
 </div>
 <section id="class-question-2">
-<h3>Class Question #2<a class="headerlink" href="#class-question-2" title="Permalink to this heading">#</a></h3>
+<h3>Class Question #2<a class="headerlink" href="#class-question-2" title="Link to this heading">#</a></h3>
 <p>What would the following code accommplish?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -714,11 +741,11 @@ Lists are <i>mutable</i>, meaning after definition, you can update and change th
 </section>
 </section>
 <section id="collections-tuples">
-<h2>Collections: Tuples<a class="headerlink" href="#collections-tuples" title="Permalink to this heading">#</a></h2>
+<h2>Collections: Tuples<a class="headerlink" href="#collections-tuples" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be of mixed type. Tuples are created using parentheses. Tuples are used when you don't want to be able to update the items in your tuple.
 </div><section id="tuple-examples">
-<h3>Tuple Examples<a class="headerlink" href="#tuple-examples" title="Permalink to this heading">#</a></h3>
+<h3>Tuple Examples<a class="headerlink" href="#tuple-examples" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a tuple</span>
@@ -761,7 +788,7 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 </div>
 </section>
 <section id="tuples-are-immutable">
-<h3>Tuples are Immutable<a class="headerlink" href="#tuples-are-immutable" title="Permalink to this heading">#</a></h3>
+<h3>Tuples are Immutable<a class="headerlink" href="#tuples-are-immutable" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tuples are immutable - meaning after they defined, you can&#39;t change them</span>
@@ -772,7 +799,7 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 </div>
 </div>
 <section id="class-question-3">
-<h4>Class Question #3<a class="headerlink" href="#class-question-3" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #3<a class="headerlink" href="#class-question-3" title="Link to this heading">#</a></h4>
 <p>Which of the following specifies a tuple of 2 items?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -796,11 +823,11 @@ A <b>tuple</b> is an <i>immutable</i> collection of ordered items, that can be o
 </section>
 </section>
 <section id="dictionaries">
-<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this heading">#</a></h2>
+<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 A dictionary is mutable collection of items, that can be of mixed-type, that are stored as key-value pairs.
 </div><section id="dictionaries-as-key-value-collections">
-<h3>Dictionaries as Key-Value Collections<a class="headerlink" href="#dictionaries-as-key-value-collections" title="Permalink to this heading">#</a></h3>
+<h3>Dictionaries as Key-Value Collections<a class="headerlink" href="#dictionaries-as-key-value-collections" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a dictionary</span>
@@ -836,7 +863,7 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </div>
 </section>
 <section id="dictionaries-indexing">
-<h3>Dictionaries: Indexing<a class="headerlink" href="#dictionaries-indexing" title="Permalink to this heading">#</a></h3>
+<h3>Dictionaries: Indexing<a class="headerlink" href="#dictionaries-indexing" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionaries are indexed using their keys</span>
@@ -847,7 +874,7 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </div>
 </section>
 <section id="dictionaries-are-mutable">
-<h3>Dictionaries are mutable<a class="headerlink" href="#dictionaries-are-mutable" title="Permalink to this heading">#</a></h3>
+<h3>Dictionaries are mutable<a class="headerlink" href="#dictionaries-are-mutable" title="Link to this heading">#</a></h3>
 <p>This means that dictionaries, once created, values <em>can</em> be updated.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -893,7 +920,7 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </div>
 </section>
 <section id="additional-dictionary-properties">
-<h3>Additional Dictionary Properties<a class="headerlink" href="#additional-dictionary-properties" title="Permalink to this heading">#</a></h3>
+<h3>Additional Dictionary Properties<a class="headerlink" href="#additional-dictionary-properties" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Only one value per key. No duplicate keys allowed.</p>
 <ul>
@@ -933,7 +960,7 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </div>
 </div>
 <section id="class-question-4">
-<h4>Class Question #4<a class="headerlink" href="#class-question-4" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #4<a class="headerlink" href="#class-question-4" title="Link to this heading">#</a></h4>
 <p>Fill in the ‘—’ in the code below to return the value stored in the second key.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -951,7 +978,7 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </ul>
 </section>
 <section id="class-question-5">
-<h4>Class Question #5<a class="headerlink" href="#class-question-5" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #5<a class="headerlink" href="#class-question-5" title="Link to this heading">#</a></h4>
 <p>Write the code that would create a dictionary <code class="docutils literal notranslate"><span class="pre">car</span></code> that stores values about your dream car’s <code class="docutils literal notranslate"><span class="pre">make</span></code>, <code class="docutils literal notranslate"><span class="pre">model</span></code>, and <code class="docutils literal notranslate"><span class="pre">year</span></code>.</p>
 <ul class="simple">
 <li><p>A) I did it</p></li>
@@ -971,7 +998,7 @@ A dictionary is mutable collection of items, that can be of mixed-type, that are
 </section>
 </section>
 <section id="revisiting-membership-in-operator">
-<h2>Revisiting membership: <code class="docutils literal notranslate"><span class="pre">in</span></code> operator<a class="headerlink" href="#revisiting-membership-in-operator" title="Permalink to this heading">#</a></h2>
+<h2>Revisiting membership: <code class="docutils literal notranslate"><span class="pre">in</span></code> operator<a class="headerlink" href="#revisiting-membership-in-operator" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 The <code>in</code> operator asks whether an element is present inside a collection, and returns a boolean answer. 
 </div><div class="cell docutils container">
@@ -1024,7 +1051,7 @@ The <code>in</code> operator asks whether an element is present inside a collect
 </div>
 </div>
 <section id="class-question-6">
-<h3>Class Question #6<a class="headerlink" href="#class-question-6" title="Permalink to this heading">#</a></h3>
+<h3>Class Question #6<a class="headerlink" href="#class-question-6" title="Link to this heading">#</a></h3>
 <p>After executing the following code, what will be the value of <code class="docutils literal notranslate"><span class="pre">output</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1049,13 +1076,13 @@ The <code>in</code> operator asks whether an element is present inside a collect
 </section>
 </section>
 <section id="unicode">
-<h2>Unicode<a class="headerlink" href="#unicode" title="Permalink to this heading">#</a></h2>
+<h2>Unicode<a class="headerlink" href="#unicode" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 Unicode is a system of systematically and consistently representing characters. 
 </div><p>Every character has a unicode <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">point</span></code> - an integer that can be used to represent that character.</p>
 <p>If a computer is using unicode, it displays a requested character by following the unicode encodings of which <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">point</span></code> refers to which character.</p>
 <section id="ord-chr">
-<h3>ORD &amp; CHR<a class="headerlink" href="#ord-chr" title="Permalink to this heading">#</a></h3>
+<h3>ORD &amp; CHR<a class="headerlink" href="#ord-chr" title="Link to this heading">#</a></h3>
 <div class="alert alert-success">
 <code>ord</code> returns the unicode code point for a one-character string.
 </div>
@@ -1063,7 +1090,7 @@ Unicode is a system of systematically and consistently representing characters.
 <code>chr</code> returns the character encoding of a code point. 
 </div></section>
 <section id="ord-chr-examples">
-<h3>ord &amp; chr examples<a class="headerlink" href="#ord-chr-examples" title="Permalink to this heading">#</a></h3>
+<h3>ord &amp; chr examples<a class="headerlink" href="#ord-chr-examples" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">))</span>
@@ -1080,7 +1107,7 @@ Unicode is a system of systematically and consistently representing characters.
 </div>
 </section>
 <section id="inverses">
-<h3>Inverses<a class="headerlink" href="#inverses" title="Permalink to this heading">#</a></h3>
+<h3>Inverses<a class="headerlink" href="#inverses" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">ord</span></code> and <code class="docutils literal notranslate"><span class="pre">chr</span></code> are inverses of one another.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1096,7 +1123,7 @@ Unicode is a system of systematically and consistently representing characters.
 </section>
 </section>
 <section id="aside-aliases">
-<h2>Aside: Aliases<a class="headerlink" href="#aside-aliases" title="Permalink to this heading">#</a></h2>
+<h2>Aside: Aliases<a class="headerlink" href="#aside-aliases" title="Link to this heading">#</a></h2>
 <p>Note: This was introduced in the Variables lecture.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1113,7 +1140,7 @@ Unicode is a system of systematically and consistently representing characters.
 <p>Now, the same value (1) is stored in both <code class="docutils literal notranslate"><span class="pre">a</span></code> (the original) and <code class="docutils literal notranslate"><span class="pre">b</span></code> (the alias).</p>
 <p>What if we change the value of the original variable (<code class="docutils literal notranslate"><span class="pre">a</span></code>) - what happens to <code class="docutils literal notranslate"><span class="pre">b</span></code>?</p>
 <section id="class-question-7">
-<h3>Class Question #7<a class="headerlink" href="#class-question-7" title="Permalink to this heading">#</a></h3>
+<h3>Class Question #7<a class="headerlink" href="#class-question-7" title="Link to this heading">#</a></h3>
 <p>After executing the following code, what will the values stored in <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> be?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1136,7 +1163,7 @@ Unicode is a system of systematically and consistently representing characters.
 <p>Reminder: integers are <strong>immutable</strong> - by “changing” the value of a we’re actually recreating it, and the alias pointed to the original, not the new variable.</p>
 </section>
 <section id="alias-mutable-types">
-<h3>Alias: mutable types<a class="headerlink" href="#alias-mutable-types" title="Permalink to this heading">#</a></h3>
+<h3>Alias: mutable types<a class="headerlink" href="#alias-mutable-types" title="Link to this heading">#</a></h3>
 <p>What happens if we make an alias of a <strong>mutable</strong> variable, like a list?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1172,7 +1199,7 @@ Unicode is a system of systematically and consistently representing characters.
 <li><p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">copy</span> <span class="pre">my_new_list</span> <span class="pre">=</span> <span class="pre">copy.deepcopy(my_list)</span></code></p></li>
 </ol>
 <section id="class-question-8">
-<h4>Class Question #8<a class="headerlink" href="#class-question-8" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #8<a class="headerlink" href="#class-question-8" title="Link to this heading">#</a></h4>
 <p>After executing the following code, what will the second value stored in <code class="docutils literal notranslate"><span class="pre">second_tuple</span></code>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1195,7 +1222,7 @@ Unicode is a system of systematically and consistently representing characters.
 </section>
 </section>
 <section id="why-allow-aliasing">
-<h3>Why allow aliasing?<a class="headerlink" href="#why-allow-aliasing" title="Permalink to this heading">#</a></h3>
+<h3>Why allow aliasing?<a class="headerlink" href="#why-allow-aliasing" title="Link to this heading">#</a></h3>
 <p>Aliasing can get confusing and be difficult to track, so why does Python allow it?</p>
 <p>Well, it’s more efficient to point to an alias than to make an entirely new copy of a a very large variable storing a lot of data.</p>
 <p>Python allows for the confusion, in favor of being more efficient.</p>
@@ -1228,11 +1255,10 @@ Unicode is a system of systematically and consistently representing characters.
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="06-Conditionals.html"
@@ -1252,10 +1278,7 @@ Unicode is a system of systematically and consistently representing characters.
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1263,6 +1286,7 @@ Unicode is a system of systematically and consistently representing characters.
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1342,9 +1366,10 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1368,8 +1393,8 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
