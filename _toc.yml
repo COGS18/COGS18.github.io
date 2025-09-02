@@ -41,8 +41,8 @@ parts:
       title: 14-ScientificComputing   
     - file: materials/15-Documentation
       title: 15-Documentation
-    # - file: materials/16-CodeTesting
-      # title: 16-CodeTesting
+    - file: materials/16-CodeTesting
+      title: 16-CodeTesting
     # - file: materials/17-CodeProjects
       # title: 17-CodeProjects
     # - file: materials/18-WrapUp
@@ -70,8 +70,8 @@ parts:
       title: CL6-Classes
     # - file: materials/CL-Answers/CL7-CommandLine
       # title: CL7-CommandLine
-    # - file: materials/CL-Answers/CL8-ScientificComputing
-      # title: CL8-ScientificComputing
+    - file: materials/CL-Answers/CL8-ScientificComputing
+      title: CL8-ScientificComputing
     # - file: materials/CL-Answers/CL9-Testing
       # title: CL9-Testing
 
