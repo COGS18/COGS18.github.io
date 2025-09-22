@@ -13,6 +13,7 @@ parts:
     chapters:
     - file: materials/01-Introduction
       title: 01-Introduction
+<<<<<<< HEAD
     # - file: materials/02-Tooling
       # title: 02-Tooling
     # - file: materials/03-Variables
@@ -55,6 +56,50 @@ parts:
     #     title: A2-Syntax   
     #   - file: materials/A3-Examples
     #     title: A3-Examples    
+=======
+    - file: materials/02-Tooling
+      title: 02-Tooling
+    - file: materials/03-Variables
+      title: 03-Variables
+    - file: materials/04-Operators
+      title: 04-Operators
+    - file: materials/05-Functions
+      title: 05-Functions
+    - file: materials/06-Conditionals
+      title: 06-Conditionals
+    - file: materials/07-Collections
+      title: 07-Collections
+    - file: materials/08-Debugging
+      title: 08-Debugging
+    - file: materials/09-Loops
+      title: 09-Loops
+    - file: materials/10-Methods
+      title: 10-Methods
+    - file: materials/11-Classes
+      title: 11-Classes
+    - file: materials/12-CommandLine
+      title: 12-CommandLine
+    - file: materials/13-Modules
+      title: 13-Modules
+    - file: materials/14-ScientificComputing
+      title: 14-ScientificComputing   
+    - file: materials/15-Documentation
+      title: 15-Documentation
+    - file: materials/16-CodeTesting
+      title: 16-CodeTesting
+    - file: materials/17-CodeProjects
+      title: 17-CodeProjects
+    # - file: materials/18-WrapUp
+      # title: 18-WrapUp
+    # # #   - file: materials/21-AdvancedPython
+    # # #     title: 21-AdvancedPython
+    # #   - file: materials/A1-CodeStyle
+    # #     title: A1-CodeStyle
+    # #   - file: materials/A2-Syntax
+    # #     title: A2-Syntax   
+    # #   - file: materials/A3-Examples
+    # #     title: A3-Examples    
+>>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
   # - caption: Coding Lab Answers
     # chapters:
@@ -70,8 +115,8 @@ parts:
       # title: CL6-Classes
     # - file: materials/CL-Answers/CL7-CommandLine
       # title: CL7-CommandLine
-    # - file: materials/CL-Answers/CL8-ScientificComputing
-      # title: CL8-ScientificComputing
+    - file: materials/CL-Answers/CL8-ScientificComputing
+      title: CL8-ScientificComputing
     # - file: materials/CL-Answers/CL9-Testing
       # title: CL9-Testing
 

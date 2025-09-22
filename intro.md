@@ -1,6 +1,10 @@
 # Welcome to COGS 18: Introduction to Python!
 
+<<<<<<< HEAD
 COGS 18 | Eric Morgan | Fall 2025 | UCSD
+=======
+COGS 18 | Eric Morgan | Summer II 2025 | UCSD
+>>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
 ### Overview
 
@@ -8,7 +12,11 @@ Introduction to Python (COGS 18) is a course offered by the Department of Cognit
 
 ### Current Iteration
 
+<<<<<<< HEAD
 Introduction to Python is currently running for Fall 2025, [please read the syllabus](assets/intro/syllabus).
+=======
+Introduction to Python is currently running for Summer 2025, [please read the syllabus](assets/intro/syllabus).
+>>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
 
 ### Materials
