@@ -157,7 +157,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 10/20/2025 | 4      | M/W |                         | CL4 - collections           |                                         |
 | 10/21/2025 | 4      | Tu  | Review                  |                             |                                         |
 | 10/23/2025 | 4      | Th  | **E1**                  |                             | E1: technical portion (take-home)       |
-| 10/26/2025 | 4      | Su  |                         |                             | A2 - conditionals, collections, ciphers |
+| 10/25/2025 | 4      | Sa  |                         |                             | A2 - conditionals, collections, ciphers |
 | 10/27/2025 | 5      | M/W |                         | CL5 - loops                 |                                         |
 | 10/28/2025 | 5      | Tu  | Methods                 |                             |                                         |
 | 10/30/2025 | 5      | Th  | Classes                 |                             |                                         |
@@ -169,7 +169,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 11/10/2025 | 7      | M/W |                         | CL7 - command line          |                                         |
 | 11/11/2025 | 7      | Tu  | Review                  |                             |                                         |
 | 11/13/2025 | 7      | Th  | **E2**                  |                             | E2: technical portion (take-home)       |
-| 11/16/2025 | 7      | Su  |                         |                             | A4 - methods, classes, agents           |
+| 11/15/2025 | 7      | Sa  |                         |                             | A4 - methods, classes, agents           |
 | 11/17/2025 | 8      | M/W |                         |                             |                                         |
 | 11/18/2025 | 8      | Tu  | Scientific Computing    |                             |                                         |
 | 11/20/2025 | 8      | Th  | Documentation           | CL8 - scientific computing  |                                         |
