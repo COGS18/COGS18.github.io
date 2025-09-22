@@ -13,61 +13,61 @@ parts:
     chapters:
     - file: materials/01-Introduction
       title: 01-Introduction
-    - file: materials/02-Tooling
-      title: 02-Tooling
-    - file: materials/03-Variables
-      title: 03-Variables
-    - file: materials/04-Operators
-      title: 04-Operators
-    - file: materials/05-Functions
-      title: 05-Functions
-    - file: materials/06-Conditionals
-      title: 06-Conditionals
-    - file: materials/07-Collections
-      title: 07-Collections
-    - file: materials/08-Debugging
-      title: 08-Debugging
-    - file: materials/09-Loops
-      title: 09-Loops
-    - file: materials/10-Methods
-      title: 10-Methods
-    - file: materials/11-Classes
-      title: 11-Classes
-    - file: materials/12-CommandLine
-      title: 12-CommandLine
-    - file: materials/13-Modules
-      title: 13-Modules
-    - file: materials/14-ScientificComputing
-      title: 14-ScientificComputing   
-    - file: materials/15-Documentation
-      title: 15-Documentation
-    - file: materials/16-CodeTesting
-      title: 16-CodeTesting
-    - file: materials/17-CodeProjects
-      title: 17-CodeProjects
-    - file: materials/18-WrapUp
-      title: 18-WrapUp
-    # # #   - file: materials/21-AdvancedPython
-    # # #     title: 21-AdvancedPython
-    # #   - file: materials/A1-CodeStyle
-    # #     title: A1-CodeStyle
-    # #   - file: materials/A2-Syntax
-    # #     title: A2-Syntax   
-    # #   - file: materials/A3-Examples
-    # #     title: A3-Examples    
+    # - file: materials/02-Tooling
+      # title: 02-Tooling
+    # - file: materials/03-Variables
+      # title: 03-Variables
+    # - file: materials/04-Operators
+      # title: 04-Operators
+    # - file: materials/05-Functions
+      # title: 05-Functions
+    # - file: materials/06-Conditionals
+      # title: 06-Conditionals
+    # - file: materials/07-Collections
+      # title: 07-Collections
+    # - file: materials/08-Debugging
+      # title: 08-Debugging
+    # - file: materials/09-Loops
+      # title: 09-Loops
+    # - file: materials/10-Methods
+      # title: 10-Methods
+    # - file: materials/11-Classes
+      # title: 11-Classes
+    # - file: materials/12-CommandLine
+      # title: 12-CommandLine
+    # - file: materials/13-Modules
+      # title: 13-Modules
+    # - file: materials/14-ScientificComputing
+      # title: 14-ScientificComputing   
+    # - file: materials/15-Documentation
+      # title: 15-Documentation
+    # - file: materials/16-CodeTesting
+      # title: 16-CodeTesting
+    # - file: materials/17-CodeProjects
+      # title: 17-CodeProjects
+    # - file: materials/18-WrapUp
+      # title: 18-WrapUp
+    # #   - file: materials/21-AdvancedPython
+    # #     title: 21-AdvancedPython
+    #   - file: materials/A1-CodeStyle
+    #     title: A1-CodeStyle
+    #   - file: materials/A2-Syntax
+    #     title: A2-Syntax   
+    #   - file: materials/A3-Examples
+    #     title: A3-Examples    
 
-  - caption: Coding Lab Answers
-    chapters:
-    - file: materials/CL-Answers/CL2-ProgrammingI
-      title: CL2-ProgrammingI
-    - file: materials/CL-Answers/CL3-ProgrammingII
-      title: CL3-ProgrammingII
-    - file: materials/CL-Answers/CL4-Collections
-      title: CL4-Collections
-    - file: materials/CL-Answers/CL5-Loops
-      title: CL5-Loops
-    - file: materials/CL-Answers/CL6-Classes
-      title: CL6-Classes
+  # - caption: Coding Lab Answers
+    # chapters:
+    # - file: materials/CL-Answers/CL2-ProgrammingI
+      # title: CL2-ProgrammingI
+    # - file: materials/CL-Answers/CL3-ProgrammingII
+      # title: CL3-ProgrammingII
+    # - file: materials/CL-Answers/CL4-Collections
+      # title: CL4-Collections
+    # - file: materials/CL-Answers/CL5-Loops
+      # title: CL5-Loops
+    # - file: materials/CL-Answers/CL6-Classes
+      # title: CL6-Classes
     # - file: materials/CL-Answers/CL7-CommandLine
       # title: CL7-CommandLine
     # - file: materials/CL-Answers/CL8-ScientificComputing
@@ -111,13 +111,13 @@ parts:
     # - file: materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24
       # title: Practice-Final-Answers
 
-  - caption: Projects
-    chapters:
-    # - file: projects/PythonProjects
-      # title: PythonProjects
-    - file: projects/overview
-      title: Overview
-    - file: projects/faq
-      title: FAQ
-    - file: projects/ProjectIdeas
-      title: ProjectIdeas
+  # - caption: Projects
+    # chapters:
+    ## - file: projects/PythonProjects
+      ## title: PythonProjects
+    # - file: projects/overview
+      # title: Overview
+    # - file: projects/faq
+      # title: FAQ
+    # - file: projects/ProjectIdeas
+      # title: ProjectIdeas

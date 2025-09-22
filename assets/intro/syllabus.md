@@ -1,6 +1,6 @@
 # SYLLABUS
 
-**Introduction to Python** | **Winter 2025**  
+**Introduction to Python** | **Fall 2025**  
 
 ---
 
@@ -12,16 +12,16 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE INFORMATION
 
-**Lecture**: TuTh at 3:30p-4:50p (WLH 2001)
-**Labs**: Wed each hour 9a-6p (CSB 115) (Please go to your assigned section)
+**Lecture**: TuTh at 5:00p-6:20p or 6:30p-7:50p (YORK 2722)
+**Labs**: Mon or Wed each hour 9a-6p (CSB 115) (Please go to your assigned section)
 
-Office Hours Times/Locations and Coding Lab TAs/IAs can be found on Canvas.
+Office Hours Times/Locations and Coding Lab TAs can be found on Canvas.
 
 **Important Links**
 - [Course Website](https://cogs18.github.io)
 - [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
-- [Course Canvas](https://canvas.ucsd.edu/courses/61442)
-- [Course Piazza\*](https://piazza.com/ucsd/winter2025/cogs18_wi25_a00/home)
+- [Course Canvas](https://canvas.ucsd.edu/courses/69497)
+- [Course Piazza\*](https://piazza.com/ucsd/fall2025/cogs18_fa25_a00/home)
 - [DataHub](https://datahub.ucsd.edu)
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
 
@@ -102,7 +102,7 @@ Please do not attend any in-person activity (lecture/coding lab/office hours) if
 
 ### Lecture
 
-Students are encouraged to attend lecture live; however, **in-person attendance is not required, *except* on exam days**. All lectures will be podcast. However, during lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates' thoughts during lecture. 
+Students are encouraged to attend lecture live. All lectures will be podcast. However, during lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates' thoughts during lecture. 
 
 To incentivize attendance, we will use iclicker for in-class Q&A (using either a physical iclicker or a remote).  Students will receive a small amount of extra credit for *each* lecture attended, up to a total of 2% extra credit. To earn credit in a given day, students must respond to at least 50% of the questions asked on that day (correctness does not matter). Students are free to attend either lecture time *except on Exam days*. Note that students must create an iclicker Student account using your ucsd.edu email. See instructions [here](https://mhe.my.site.com/iclicker/s/article/How-to-Register-a-Remote-in-the-iClicker-Student-App).
 
@@ -122,7 +122,7 @@ You are personally responsible for understanding everything you turn in. While y
 
 ### Midterms (25\%)
 
-There will be two (2) midterms. The midterms will have two parts: 1) a conceptual, in-person portion taken on the day of the exam in class and 2) a shorter, technical, take-home portion, released at 4PM on the day of the in-class exam and due that night (see [Course Schedule](https://cogs18.github.io/assets/intro/syllabus.html#course-schedule)). The in-class portion will be closed-notes. The take-home portion will be open-notes and open-Internet. All parts will be completed individually. Students will not be permitted to discuss the questions on the exam with anyone until both parts are submitted.
+There will be two (2) midterms. The midterms will have two parts: 1) a conceptual, in-person portion taken on the day of the exam in class and 2) a shorter, technical, take-home portion, released at 8PM on the day of the in-class exam and due that night (see [Course Schedule](https://cogs18.github.io/assets/intro/syllabus.html#course-schedule)). The in-class portion will be closed-notes. The take-home portion will be open-notes and open-Internet. All parts will be completed individually. Students will not be permitted to discuss the questions on the exam with anyone until both parts are submitted.
 
 Students *must* attend the lecture time for which they are enrolled on webreg on exam days.
 
@@ -143,36 +143,45 @@ The final exam will be take-home and you will have at least 48 hours to complete
 ## COURSE SCHEDULE
 | Date       | Week   | Day | Lecture topic           | Lab topic                   | Assignment due  (11:59 PM)              |
 | ---------- | ------ | --- | ----------------------- | --------------------------- | --------------------------------------- |
-| 1/7/2025   | 1      | Tu  | Introduction            |                             |                                         |
-| 1/9/2025   | 1      | Thu | Tooling & Variables     |                             |                                         |
-| 1/14/2025  | 2      | Tu  | Operators               |                             |                                         |
-| 1/15/2025  | 2      | W   |                         | CL1 - Tooling               | CL1 - Tooling                           |
-| 1/16/2025  | 2      | Thu | Functions               |                             |                                         |
-| 1/21/2025  | 3      | Tu  | Conditionals            |                             |                                         |
-| 1/22/2025  | 3      | W   |                         | CL2 - vars, operators       | CL2 - vars, operators                   |
-| 1/23/2025  | 3      | Th  | Collections             |                             | A1 - variables, comparison, functions   |
-| 1/28/2025  | 4      | Tu  | Debugging [*]           |                             |                                         |
-| 1/29/2025  | 4      | W   |                         | CL3 - funcs, conditionals   | CL3 - funcs, conditionals               |
-| 1/30/2025  | 4      | Th  | Loops                   |                             | A2 - conditionals, collections, ciphers |
-| 2/4/2025   | 5      | Tu  | **E1**                  |                             | E1: technical portion (take-home)       |
-| 2/5/2025   | 5      | W   |                         | CL4 - collections           | CL4 - collections                       |
-| 2/6/2025   | 5      | Thu | Methods                 |                             |                                         |
-| 2/11/2025  | 6      | Tu  | Classes                 |                             |                                         |
-| 2/12/2025  | 6      | W   |                         | CL5 - loops                 | CL5 - loops                             |
-| 2/13/2025  | 6      | Th  | Command Line [**]       |                             |                                         |
-| 2/18/2025  | 7      | Tu  | Modules                 |                             |                                         |
-| 2/19/2025  | 7      | W   |                         | CL6 - classes               | CL6 - classes                           |
-| 2/20/2025  | 7      | Thu | Review                  |                             | A3 - loops, strings, chatbots           |
-| 2/25/2025  | 8      | Tu  | **E2**                  |                             | E2: technical portion                   |
-| 2/26/2025  | 8      | W   |                         | CL7 - command line          | CL7 - command line  (take-home)         |
-| 2/27/2025  | 8      | Thu | Scientific Computing    |                             |                                         |
-| 3/4/2025   | 9      | Tu  | Documentation           |                             |                                         |
-| 3/5/2025   | 9      | W   |                         | CL8 - scientific computing  | CL8 - scientific computing              |
-| 3/6/2025   | 9      | Thu | Code Testing            |                             | A4 - methods, classes, agents           |
-| 3/11/2025  | 10     | Tu  | Code Projects           |                             |                                         |
-| 3/12/2025  | 10     | W   |                         | CL9 - test, debug, refactor | CL9 - test, debug, refactor             |
-| 3/13/2025  | 10     | Thu | Wrap-up                 |                             | A5 - numpy, pandas, refactoring         |
-| 3/18/2025  | Finals | Tu  |                         |                             | Final project/exam due                  |
+| 9/25/2025  | 0      | Th  | Introduction            |                             |                                         |
+| 9/29/2025  | 1      | M/W |                         | CL1 - tooling               |                                         |
+| 9/30/2025  | 1      | Tu  | Variables & Operators   |                             |                                         |
+| 10/2/2025  | 1      | Th  | Functions               |                             |                                         |
+| 10/6/2025  | 2      | M/W |                         | CL2 - vars, operators       |                                         |
+| 10/7/2025  | 2      | Tu  | Conditionals            |                             |                                         |
+| 10/9/2025  | 2      | Th  | Collections             |                             |                                         |
+| 10/13/2025 | 3      | M/W |                         | CL3 - funcs, conditionals   |                                         |
+| 10/14/2025 | 3      | Tu  | Debugging [*]           |                             |                                         |
+| 10/16/2025 | 3      | Th  | Loops                   |                             |                                         |
+| 10/17/2025 | 3      | F   |                         |                             | A1 - variables, comparison, functions   |
+| 10/20/2025 | 4      | M/W |                         | CL4 - collections           |                                         |
+| 10/21/2025 | 4      | Tu  | Review                  |                             |                                         |
+| 10/23/2025 | 4      | Th  | **E1**                  |                             | E1: technical portion (take-home)       |
+| 10/26/2025 | 4      | Su  |                         |                             | A2 - conditionals, collections, ciphers |
+| 10/27/2025 | 5      | M/W |                         | CL5 - loops                 |                                         |
+| 10/28/2025 | 5      | Tu  | Methods                 |                             |                                         |
+| 10/30/2025 | 5      | Th  | Classes                 |                             |                                         |
+| 10/31/2025 | 5      | F   |                         |                             |                                         |
+| 11/3/2025  | 6      | M/W |                         | CL6 - classes               |                                         |
+| 11/4/2025  | 6      | Tu  | Command Line [**]       |                             |                                         |
+| 11/6/2025  | 6      | Th  | Modules                 |                             |                                         |
+| 11/7/2025  | 6      | F   |                         |                             | A3 - loops, strings, chatbots           |
+| 11/10/2025 | 7      | M/W |                         | CL7 - command line          |                                         |
+| 11/11/2025 | 7      | Tu  | Review                  |                             |                                         |
+| 11/13/2025 | 7      | Th  | **E2**                  |                             | E2: technical portion (take-home)       |
+| 11/16/2025 | 7      | Su  |                         |                             | A4 - methods, classes, agents           |
+| 11/17/2025 | 8      | M/W |                         |                             |                                         |
+| 11/18/2025 | 8      | Tu  | Scientific Computing    |                             |                                         |
+| 11/20/2025 | 8      | Th  | Documentation           | CL8 - scientific computing  |                                         |
+| 11/21/2025 | 8      | F   |                         |                             |                                         |
+| 11/24/2025 | 9      | M/W |                         |                             |                                         |
+| 11/25/2025 | 9      | Tu  | Code Testing            |                             |                                         |
+| 11/27/2025 | 9      | Th  | **Thanksgiving Holiday**|                             |                                         |
+| 12/1/2025  | 10     | M/W |                         | CL9 - test, debug, refactor |                                         |
+| 12/2/2025  | 10     | Tu  | Code Projects           |                             |                                         |
+| 12/4/2025  | 10     | Th  | Wrap-up                 |                             |                                         |
+| 12/5/2025  | 10     | F   |                         |                             | A5 - numpy, pandas, refactoring         |
+| TBD        | Finals | -   |                         |                             | Final project/exam due                  |
 
 
 **Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
@@ -218,6 +227,8 @@ I believe that using large language models (LLMs) or other kinds of AIs can help
 My advice: if you struggle to conceptualize how you want to write a program you should probably NOT use an LLM (or at least not right away). The beginning or intermediate programmer needs to practice their craft... just like you will never get to be great at a video game by just watching other people's speed runs. I think its fine to use AI assistance if you can immediately imagine how to solve the problem, but you just want help with implementation details, to see alternative algorithms you could use, or help writing it faster.
 
 Note that LLMs are most helpful in learning when *you* determine the questions to ask it and interpret the answer, NOT when you copy+paste questions from assignments in directly and then copy+paste the answer it spits out. For example, if a question in this class asked you to "write a function that takes two parameters `income`, `tax_rate` that will calculate how much you owe in taxes", you would NOT just copy that question into ChatGPT/CoPilot/etc. Instead, you would attempt the question on your own and then ask specific questions on *parts* of the question you don't understand. For example, you may ask the LLM, "what does it mean for a function to take two parameters?" This way you ensure you're understanding and maximizing learning. (Also, note that example question was intentionally not detailed enough to actually get you a "right" answer for such a question but to serve as an example for what it means to ask your "own" questions.)
+
+Also note that you are here to learn, and to make your mind stronger. You have at your disposal as much assistance as you need to become proficient in the topics taught in this course. If you are having difficulties understanding anything, make use of those facilities to level up your skills and you will not only become better at the task at hand, you will also get better at learning the next task. If you instead turn to AI assistance whenever things get difficult, you miss out on that opportunity to become stronger. It would be like going to the gym to improve your muscles, then hiring a robot to lift your weights for you when they get heavy. It's counterproductive.
 
 You can use AI to help you program as long as you:
 
