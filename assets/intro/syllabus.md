@@ -1,10 +1,6 @@
 # SYLLABUS
 
-<<<<<<< HEAD
 **Introduction to Python** | **Fall 2025**  
-=======
-**Introduction to Python** | **Summer II 2025**  
->>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
 ---
 
@@ -16,28 +12,16 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE INFORMATION
 
-<<<<<<< HEAD
 **Lecture**: TuTh at 5:00p-6:20p or 6:30p-7:50p (YORK 2722)
 **Labs**: Mon or Wed each hour 9a-6p (CSB 115) (Please go to your assigned section)
 
 Office Hours Times/Locations and Coding Lab TAs can be found on Canvas.
-=======
-**Lecture**: MTuWTh	at 2:00p-3:20p (RWAC 0121)
-**Labs**: MW	1:00p-1:50p (CSB 115)
-
-Office Hours Times/Locations can be found on Canvas.
->>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
 **Important Links**
 - [Course Website](https://cogs18.github.io)
 - [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
-<<<<<<< HEAD
 - [Course Canvas](https://canvas.ucsd.edu/courses/69497)
 - [Course Piazza\*](https://piazza.com/ucsd/fall2025/cogs18_fa25_a00/home)
-=======
-- [Course Canvas](https://canvas.ucsd.edu/courses/66875)
-- [Course Piazza\*](https://piazza.com/ucsd/summer2025/cogs18_s225_a00/home)
->>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 - [DataHub](https://datahub.ucsd.edu)
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
 
@@ -79,10 +63,10 @@ Note: If you do not have consistent access to the technology needed, please use 
 
 |               | \% of Grade | Requirement                          |
 | ------------: | :---------: | :----------------------------------- |
-|   Assignments |    35\%     | Complete 5 Assignments               |
-|      Midterms |    25\%     | Complete 1 Exam                      |
+|   Assignments |    40\%     | Complete 5 Assignments               |
+|      Midterms |    25\%     | Complete 2 Exams                     |
 |   Coding Labs |    15\%     | Participate in 8 Coding Labs (lowest lab dropped) |
-| Final Project |    25\%     | Complete Final Exam                  |
+| Final Project |    20\%     | Complete Final Project OR Final Exam |
 
 
 ### Grades
@@ -118,50 +102,47 @@ Please do not attend any in-person activity (lecture/coding lab/office hours) if
 
 ### Lecture
 
-<<<<<<< HEAD
 Students are encouraged to attend lecture live. All lectures will be podcast. However, during lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates' thoughts during lecture. 
-=======
-Students are encouraged to attend lecture live; however, **in-person attendance is not required**. All lectures will be podcast. However, during lecture, students will be given time to complete small coding challenges on their own, and will have the opportunity to see their classmates' thoughts during lecture. 
->>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
-To incentivize attendance, we will use iclicker for in-class Q&A (using either a physical iclicker or a remote).  Students will receive a small amount of extra credit for *each* lecture attended, up to a total of 2% extra credit. To earn credit in a given day, students must respond to at least 50% of the questions asked on that day (correctness does not matter). Note that students must create an iclicker Student account using your ucsd.edu email. See instructions [here](https://mhe.my.site.com/iclicker/s/article/How-to-Register-a-Remote-in-the-iClicker-Student-App).
+To incentivize attendance, we will use iclicker for in-class Q&A (using either a physical iclicker or a remote).  Students will receive a small amount of extra credit for *each* lecture attended, up to a total of 2% extra credit. To earn credit in a given day, students must respond to at least 50% of the questions asked on that day (correctness does not matter). Students are free to attend either lecture time *except on Exam days*. Note that students must create an iclicker Student account using your ucsd.edu email. See instructions [here](https://mhe.my.site.com/iclicker/s/article/How-to-Register-a-Remote-in-the-iClicker-Student-App).
 
 
 ### Coding Labs (15\%)
 
-Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab by 11:59 pm on the day listed in the syllabus schedule. There are no late submissions for coding labs.
+Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific tutorials or activities each week that are focused on preparing you for the assignments. Across the quarter there will be 9 different coding labs (lowest coding lab score dropped). Coding labs are _graded for concerted effort_ (not correctness). To receive credit for a coding lab, you have to submit your attempted coding lab for the week by that Wednesday 11:59 pm. There are no late submissions for coding labs.
 
 
-### Assignments (35\%)
+### Assignments (40\%)
 
-There will be five hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 3 days after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date.
+There will be five assignments, each worth 8\% of your final grade. Assignments will be hands-on coding assignments. Assignments are to be completed individually and submitted on datahub. You will typically have about 3 days after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date.
 
 Late assignments will be accepted at 75\% credit for 72 hours (3 days) after the assignment's due date. Once the late deadline passes, assignments will be graded, feedback will be made available on datahub, and assignments will no longer be able to be submitted for credit.
 
 You are personally responsible for understanding everything you turn in. While you may ask one another about assignments, you may not copy directly from a classmate. And, you may not post full assignments nor any part of any assignment on the Internet (i.e. Chegg, Discord, Piazza, or related site). Evidence of cheating on an assignment will result (at minimum) in loss of a full letter grade in the course.
 
-### Midterm (25\%)
+### Midterms (25\%)
 
-<<<<<<< HEAD
 There will be two (2) midterms. The midterms will have two parts: 1) a conceptual, in-person portion taken on the day of the exam in class and 2) a shorter, technical, take-home portion, released at 8PM on the day of the in-class exam and due that night (see [Course Schedule](https://cogs18.github.io/assets/intro/syllabus.html#course-schedule)). The in-class portion will be closed-notes. The take-home portion will be open-notes and open-Internet. All parts will be completed individually. Students will not be permitted to discuss the questions on the exam with anyone until both parts are submitted.
 
 Students *must* attend the lecture time for which they are enrolled on webreg on exam days.
-=======
-There will be one (1) midterm. The midterms will have two parts: 1) a conceptual portion taken on the day of the exam during lecture time and 2) a shorter, technical, take-home portion, released after lecture time and due that night (see [Course Schedule](https://cogs18.github.io/assets/intro/syllabus.html#course-schedule)). All parts will be completed individually. Students will not be permitted to discuss the questions on the exam with anyone until both parts are submitted.
->>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
 As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's _always_ a way to cheat. I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::
 
-### Final Exam (25\%)
+### Final Exam or Project (20\%)
 
-Students will complete a final exam, worth 25\% of your final grade.  The final exam will be take-home and you will have at least 48 hours to complete the exam. It will be the completion of a guided mini-project, focusing on the material learned in the last third of the course. Additional details will be discussed in class.
+Students will choose whether they complete the final project OR the final exam, worth 20\% of your final grade.  Students get to choose which option is best for them but may only submit one _and_ there are two limitations of choosing the final exam 1) There is no opportunity for extra credit on the final exam, and 2) you cannot get help from anyone else while taking the final exam.
+
+**Final Project**
+You will learn more from the final project than you will from the final exam, but the project is more time-consuming and involved. We will discuss the details elsewhere; however, briefly, you will either (1) expand upon one of the class assignments adding original elements or (2) write original code for a project topic of your choosing. The goal of this project is to demonstrate that you can write good, well-documented code that solves the problem you've set out to solve.
+
+**Final Exam**
+The final exam will be take-home and you will have at least 48 hours to complete the exam. It will be the completion of a guided mini-project, focusing on the material learned in the last third of the course. Additional details will be discussed in class.
 
 ---
 
 ## COURSE SCHEDULE
 | Date       | Week   | Day | Lecture topic           | Lab topic                   | Assignment due  (11:59 PM)              |
 | ---------- | ------ | --- | ----------------------- | --------------------------- | --------------------------------------- |
-<<<<<<< HEAD
 | 9/25/2025  | 0      | Th  | Introduction            |                             |                                         |
 | 9/29/2025  | 1      | M/W |                         | CL1 - tooling               |                                         |
 | 9/30/2025  | 1      | Tu  | Variables & Operators   |                             |                                         |
@@ -201,38 +182,13 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 | 12/4/2025  | 10     | Th  | Wrap-up                 |                             |                                         |
 | 12/5/2025  | 10     | F   |                         |                             | A5 - numpy, pandas, refactoring         |
 | TBD        | Finals | -   |                         |                             | Final project/exam due                  |
-=======
-| 8/04/2025  | 1      | Mo  | Introduction            |                             |                                         |
-| 8/05/2025  | 1      | Tu  | Tooling & Variables     |                             |                                         |
-| 8/06/2025  | 1      | W   | Operators               | CL1 - Tooling               | CL1 - Tooling                           |
-| 8/07/2025  | 1      | Th  | Functions               |                             |                                         |
-| 8/11/2025  | 2      | Mo  | Conditionals            | CL2 - Vars, Operators       | CL2 - Vars, Operators                   |
-| 8/12/2025  | 2      | Tu  | Collections             |                             |                                         |
-| 8/13/2025  | 2      | W   | Debugging [*]           | CL3 - Funcs, Conditionals   | CL3 - Funcs, Conditionals               |
-| 8/14/2025  | 2      | Th  | Loops                   |                             |                                         |
-| 8/15/2025  | 2      | F   |                         |                             | A1 - Variables, Comparison, Functions   |
-| 8/18/2025  | 3      | Mo  | Methods                 | CL4 - Collections           | CL4 - Collections                       |
-| 8/19/2025  | 3      | Tu  | **E1**                  |                             | E1: technical portion (take-home)       |
-| 8/20/2025  | 3      | W   | Classes                 | CL5 - Loops                 | CL5 - Loops                             |
-| 8/21/2025  | 3      | Th  | Command Line            |                             |                                         |
-| 8/23/2025  | 3      | Sa  |                         |                             | A2 - Conditionals, Collections, Ciphers |
-| 8/25/2025  | 4      | Mo  | Modules                 | CL6 - Classes               | CL6 - Classes                           |
-| 8/26/2025  | 4      | Tu  | Scientific Computing    |                             |                                         |
-| 8/27/2025  | 4      | W   | Documentation           | CL7 - Command Line, CL8     | CL7 - Command Line, A3                  | 
-| 8/28/2025  | 4      | Th  | TBD                     |                             |                                         |
-| 8/30/2025  | 4      | Sa  |                         |                             | A4 - Methods, Classes, Agents           |
-| 9/01/2025  | 5      | Mo  | **HOLIDAY**             |                             | CL8 - Scientific Computing              |
-| 9/02/2025  | 5      | Tu  | Code Testing            |                             |                                         |
-| 9/03/2025  | 5      | W   | Code Projects           | CL9 - Test, Debug, Refactor | CL9 - Test, Debug, Refactor             |
-| 9/04/2025  | 5      | Th  | Wrap-up                 |                             | A5                                      |
-| 9/05/2025  | 5      | F   |                         |                             | Final Exam                              |
->>>>>>> e55fe1d1b839593e59299d1b61dabc51c34b1f1c
 
 
-**Final Exam**: Final Exam is due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
+**Final Exam/Project**: Final Projects/Exams (you'll chose one) are due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
 
 Notes:
 [\*] denotes the last day of material covered on Midterm I (E1).
+[\*\*] the last day for material on Midterm II (E2).
 ---
 
 ## OTHER GOOD STUFF
