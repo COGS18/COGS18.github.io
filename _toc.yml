@@ -29,8 +29,8 @@ parts:
       title: 08-Debugging
     - file: materials/09-Loops
       title: 09-Loops
-    # - file: materials/10-Methods
-      # title: 10-Methods
+    - file: materials/10-Methods
+      title: 10-Methods
     # - file: materials/11-Classes
       # title: 11-Classes
     # - file: materials/12-CommandLine
@@ -62,8 +62,8 @@ parts:
       title: CL2-ProgrammingI
     - file: materials/CL-Answers/CL3-ProgrammingII
       title: CL3-ProgrammingII
-    # - file: materials/CL-Answers/CL4-Collections
-      # title: CL4-Collections
+    - file: materials/CL-Answers/CL4-Collections
+      title: CL4-Collections
     # - file: materials/CL-Answers/CL5-Loops
       # title: CL5-Loops
     # - file: materials/CL-Answers/CL6-Classes
