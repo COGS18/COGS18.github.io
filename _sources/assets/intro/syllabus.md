@@ -167,7 +167,7 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 11/6/2025  | 6      | Th  | Modules                 |                             |                                         |
 | 11/7/2025  | 6      | F   |                         |                             | A3 - loops, strings, chatbots           |
 | 11/10/2025 | 7      | M/W |                         | CL7 - command line          |                                         |
-| 11/11/2025 | 7      | Tu  | Review                  |                             |                                         |
+| 11/11/2025 | 7      | Tu  | HOLIDAY                 |                             |                                         |
 | 11/13/2025 | 7      | Th  | **E2**                  |                             | E2: technical portion (take-home)       |
 | 11/15/2025 | 7      | Sa  |                         |                             | A4 - methods, classes, agents           |
 | 11/17/2025 | 8      | M/W |                         |                             |                                         |
