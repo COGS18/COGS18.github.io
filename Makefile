@@ -65,6 +65,50 @@ textbook:
 	rm -rf materials
 	rm -rf projects
 
+textbook-Eric:
+	python scripts/clean.py
+
+	# Copy & build materials - Ellis
+	git clone --depth 1 https://www.github.com/COGS18/LectureNotes-COGS18.git materials
+
+	# Copy & build coding labs
+	# git clone --depth 1 https://github.com/COGS18/CodingLabs.git labs
+	# rm -rf labs/README.md
+	# rm -rf labs/Archive
+	# rm labs/CL1-Tooling.ipynb
+	# new method is to have separate directory for the answers distributed on Website
+	# manually add them to the directory as you want to distribute, remove at
+	# beginning of the quarter
+	# mv labs/answers-for-website/* labs
+	rm -rf labs/source
+	# Eric - trying my own version
+	mkdir materials/CL-Answers
+	cp assets/labanswers/* materials/CL-Answers/
+
+# 	Copy & build project info
+	mkdir projects
+	cp ../projects/*.md projects/
+	cp ../projects/*.ipynb projects/
+	rm projects/README.md
+
+	jupyter-book build ./
+	# get project template
+	mkdir -p _build/html/assets/intro/projects/
+	cp assets/intro/projects/ProjectTemplate.zip _build/html/assets/intro/projects/
+
+	# copy first day of slides to _build
+	cp assets/intro/01_welcome.pdf _build/html/assets/intro/
+
+
+	# copy non-md images to build
+	 mkdir -p _build/html/_images
+	 cp materials/img/* _build/html/_images/
+
+
+	rm -rf labs
+	rm -rf materials
+	rm -rf projects
+
 
 home:
 	rm _build/intro.md
