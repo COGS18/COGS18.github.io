@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Command Line &#8212; COGS 18 - Introduction To Python</title>
   
@@ -15,54 +14,51 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materials/12-CommandLine';</script>
-    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Modules &amp; Scripts" href="13-Modules.html" />
@@ -76,19 +72,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -110,12 +110,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -130,9 +138,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -142,12 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
 <ul class="nav bd-sidenav">
@@ -171,6 +194,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="11-Classes.html">11-Classes</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">12-CommandLine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="13-Modules.html">13-Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-ScientificComputing.html">Scientific Computing</a></li>
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Lab Answers</span></p>
 <ul class="nav bd-sidenav">
@@ -200,7 +225,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -209,14 +234,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -241,14 +266,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/12-CommandLine.ipynb&branch=master" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -259,14 +284,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/12-CommandLine.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -404,26 +429,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -512,10 +539,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="command-line">
-<h1>Command Line<a class="headerlink" href="#command-line" title="Permalink to this heading">#</a></h1>
+<h1>Command Line<a class="headerlink" href="#command-line" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>command line &amp; shell commands</p></li>
 <li><p>file paths (absolute and relative)</p></li>
@@ -523,13 +550,13 @@ document.write(`
 </ul>
 <p>Jupyter Notebooks are a helpful tool, but they’re <em>bulky</em>.</p>
 <section id="file-systems">
-<h2>File Systems<a class="headerlink" href="#file-systems" title="Permalink to this heading">#</a></h2>
+<h2>File Systems<a class="headerlink" href="#file-systems" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 Computers use a hierarchical file systems that organizes files & folders.
 </div><p>When you click through the folders (directories) on your computer, you’re interacting with this hierarchical system.</p>
 </section>
 <section id="id1">
-<h2>Command Line<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<h2>Command Line<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 A <b>command line interface</b> is a way to interact with a computer through written commands.
 </div><p>The command line allows us to:</p>
@@ -541,7 +568,7 @@ A <b>command line interface</b> is a way to interact with a computer through wri
 </ul>
 <p>…without clicking on anything.</p>
 <section id="the-terminal">
-<h3>The Terminal<a class="headerlink" href="#the-terminal" title="Permalink to this heading">#</a></h3>
+<h3>The Terminal<a class="headerlink" href="#the-terminal" title="Link to this heading">#</a></h3>
 <p>The <strong>terminal</strong> is where you can type these commands into the command line.</p>
 <p>Accessing the terminal…</p>
 <ul class="simple">
@@ -555,11 +582,11 @@ A <b>command line interface</b> is a way to interact with a computer through wri
 </ul>
 </section>
 <section id="shell-commands">
-<h3>Shell Commands<a class="headerlink" href="#shell-commands" title="Permalink to this heading">#</a></h3>
+<h3>Shell Commands<a class="headerlink" href="#shell-commands" title="Link to this heading">#</a></h3>
 <p>…can be run in the terminal <em>and</em> Jupyter notebooks</p>
 <p>In jupyter Notebooks, do this by starting with <code class="docutils literal notranslate"><span class="pre">!</span></code></p>
 <section id="check-current-directory">
-<h4>Check current directory<a class="headerlink" href="#check-current-directory" title="Permalink to this heading">#</a></h4>
+<h4>Check current directory<a class="headerlink" href="#check-current-directory" title="Link to this heading">#</a></h4>
 <p>(note that this command will be <code class="docutils literal notranslate"><span class="pre">cd</span></code> (without anything afterwards) on Windows machines and <code class="docutils literal notranslate"><span class="pre">pwd</span></code> on Linux/Mac pachines)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -575,15 +602,15 @@ A <b>command line interface</b> is a way to interact with a computer through wri
 </section>
 </section>
 <section id="an-important-aside-file-paths">
-<h2>An important aside: File Paths<a class="headerlink" href="#an-important-aside-file-paths" title="Permalink to this heading">#</a></h2>
+<h2>An important aside: File Paths<a class="headerlink" href="#an-important-aside-file-paths" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 The specific location of a file or folder on your computer. </div><p>When using a Graphical User Interface (GUI), you click on directories to access subdirectories and finally find the file you’re interested in.</p>
 <p>When using the command line, you specify a file’s path explicitly with text.</p>
 <section id="absolute-vs-relative-paths">
-<h3>Absolute vs. Relative Paths<a class="headerlink" href="#absolute-vs-relative-paths" title="Permalink to this heading">#</a></h3>
+<h3>Absolute vs. Relative Paths<a class="headerlink" href="#absolute-vs-relative-paths" title="Link to this heading">#</a></h3>
 <p>The two ways to specify the path to your file of interest allow for flexibility in programming.</p>
 <section id="absolute-paths">
-<h4>Absolute Paths<a class="headerlink" href="#absolute-paths" title="Permalink to this heading">#</a></h4>
+<h4>Absolute Paths<a class="headerlink" href="#absolute-paths" title="Link to this heading">#</a></h4>
 <div class="alert alert-success">
 <b>Absolute paths</b> specify the <b>full</b> path for a given file system (starting from the root directory). 
 </div><p><strong>root</strong> specifies the ‘highest’ directory in the file structure (the start).</p>
@@ -602,7 +629,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="relative-paths">
-<h4>Relative Paths<a class="headerlink" href="#relative-paths" title="Permalink to this heading">#</a></h4>
+<h4>Relative Paths<a class="headerlink" href="#relative-paths" title="Link to this heading">#</a></h4>
 <div class="alert alert-success">
 <b>Relative paths</b> specify the path to a file from your <b>current working directory</b> (where your computer is working right now). 
 </div><p>Note that directories are separated with <code class="docutils literal notranslate"><span class="pre">\</span></code> in Windows and <code class="docutils literal notranslate"><span class="pre">/</span></code> in Linux and Mac OS</p>
@@ -635,7 +662,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <p>This <strong>relative</strong> path does <em>not</em> start with a leading slash (b/c it’s not an absolute path).</p>
 </section>
 <section id="class-question-1">
-<h4>Class Question #1<a class="headerlink" href="#class-question-1" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #1<a class="headerlink" href="#class-question-1" title="Link to this heading">#</a></h4>
 <p>Given the following file structure:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">/</span></code></p>
@@ -671,7 +698,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </ul>
 </section>
 <section id="class-question-2">
-<h4>Class Question #2<a class="headerlink" href="#class-question-2" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #2<a class="headerlink" href="#class-question-2" title="Link to this heading">#</a></h4>
 <p>Given the same file structure:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">/</span></code></p>
@@ -708,10 +735,10 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </section>
 </section>
 <section id="id2">
-<h3>Shell Commands<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3>Shell Commands<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>…can be run in the terminal <em>and</em> Jupyter notebooks</p>
 <section id="id3">
-<h4>Check current directory<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
+<h4>Check current directory<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print working directory</span>
@@ -724,7 +751,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="change-directory">
-<h4>Change directory<a class="headerlink" href="#change-directory" title="Permalink to this heading">#</a></h4>
+<h4>Change directory<a class="headerlink" href="#change-directory" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># change directory </span>
@@ -746,7 +773,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="list-files-in-a-directory">
-<h4>List files in a directory<a class="headerlink" href="#list-files-in-a-directory" title="Permalink to this heading">#</a></h4>
+<h4>List files in a directory<a class="headerlink" href="#list-files-in-a-directory" title="Link to this heading">#</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">dir</span></code> in Windows, <code class="docutils literal notranslate"><span class="pre">ls</span></code> in Linux/Mac</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -761,9 +788,9 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </section>
 </section>
 <section id="more-shell-commands">
-<h3>More Shell Commands<a class="headerlink" href="#more-shell-commands" title="Permalink to this heading">#</a></h3>
+<h3>More Shell Commands<a class="headerlink" href="#more-shell-commands" title="Link to this heading">#</a></h3>
 <section id="make-a-new-directory">
-<h4>Make a new directory<a class="headerlink" href="#make-a-new-directory" title="Permalink to this heading">#</a></h4>
+<h4>Make a new directory<a class="headerlink" href="#make-a-new-directory" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make directory </span>
@@ -775,7 +802,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="create-a-file">
-<h4>Create a file<a class="headerlink" href="#create-a-file" title="Permalink to this heading">#</a></h4>
+<h4>Create a file<a class="headerlink" href="#create-a-file" title="Link to this heading">#</a></h4>
 <p>Works in Linux/Mac, not in Windows</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -787,14 +814,14 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="move-a-file">
-<h4>Move a file<a class="headerlink" href="#move-a-file" title="Permalink to this heading">#</a></h4>
+<h4>Move a file<a class="headerlink" href="#move-a-file" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># move file
-# notice the relative file path
-!move new_file.py dir_name\
-# on datahub this would be:
-# !mv new_file.py dir_name\
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># move file</span>
+<span class="c1"># notice the relative file path</span>
+<span class="o">!</span>move<span class="w"> </span>new_file.py<span class="w"> </span>dir_name<span class="err">\</span>
+<span class="c1"># on datahub this would be:</span>
+<span class="c1"># !mv new_file.py dir_name\</span>
 </pre></div>
 </div>
 </div>
@@ -802,9 +829,9 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </section>
 </section>
 <section id="and-some-more">
-<h3>And Some More<a class="headerlink" href="#and-some-more" title="Permalink to this heading">#</a></h3>
+<h3>And Some More<a class="headerlink" href="#and-some-more" title="Link to this heading">#</a></h3>
 <section id="print-out-a-message">
-<h4>Print out a message<a class="headerlink" href="#print-out-a-message" title="Permalink to this heading">#</a></h4>
+<h4>Print out a message<a class="headerlink" href="#print-out-a-message" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="nb">echo</span><span class="w"> </span>Hello<span class="w"> </span>World!
@@ -814,7 +841,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="print-the-contents-of-a-file">
-<h4>Print the contents of a file<a class="headerlink" href="#print-the-contents-of-a-file" title="Permalink to this heading">#</a></h4>
+<h4>Print the contents of a file<a class="headerlink" href="#print-the-contents-of-a-file" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="nb">type</span><span class="w"> </span>dir_name<span class="se">\n</span>ew_file.py
@@ -826,7 +853,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="open-to-see-and-edit-contents-of-a-file">
-<h4>Open to see and edit contents of a file<a class="headerlink" href="#open-to-see-and-edit-contents-of-a-file" title="Permalink to this heading">#</a></h4>
+<h4>Open to see and edit contents of a file<a class="headerlink" href="#open-to-see-and-edit-contents-of-a-file" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># will not work on Windows</span>
@@ -837,7 +864,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </div>
 </section>
 <section id="class-question-4">
-<h4>Class Question #4<a class="headerlink" href="#class-question-4" title="Permalink to this heading">#</a></h4>
+<h4>Class Question #4<a class="headerlink" href="#class-question-4" title="Link to this heading">#</a></h4>
 <p>Which creates a file?</p>
 <ul class="simple">
 <li><p>A) <code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p></li>
@@ -850,7 +877,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 </section>
 </section>
 <section id="windows-command-prompt">
-<h2>Windows Command Prompt<a class="headerlink" href="#windows-command-prompt" title="Permalink to this heading">#</a></h2>
+<h2>Windows Command Prompt<a class="headerlink" href="#windows-command-prompt" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">dir</span></code> : lists files in current directory</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">move</span></code> : moves a file</p></li>
@@ -864,7 +891,7 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <p>^This construction puts a dot into a file. If the filename is not found, it will create a new (empty) file.</p>
 </section>
 <section id="linux-mac-command-prompt">
-<h2>Linux/Mac Command Prompt<a class="headerlink" href="#linux-mac-command-prompt" title="Permalink to this heading">#</a></h2>
+<h2>Linux/Mac Command Prompt<a class="headerlink" href="#linux-mac-command-prompt" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> or <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span></code> : lists files in current directory</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mv</span></code> : moves a file or renames it if you move to a new name in the same directory</p></li>
@@ -875,19 +902,19 @@ The specific location of a file or folder on your computer. </div><p>When using 
 <p>Note that <code class="docutils literal notranslate"><span class="pre">pwd</span></code>, <code class="docutils literal notranslate"><span class="pre">cd</span></code>, <code class="docutils literal notranslate"><span class="pre">mkdir</span></code>, <code class="docutils literal notranslate"><span class="pre">echo</span></code> are all the same in Windows command prompt and Linux/Mac terminal.</p>
 </section>
 <section id="python-files">
-<h2>Python Files<a class="headerlink" href="#python-files" title="Permalink to this heading">#</a></h2>
+<h2>Python Files<a class="headerlink" href="#python-files" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 Python files are plain-text files, with Python code in them, that can be executed and/or imported from.
 </div><section id="script-vs-module-file">
-<h3>Script vs. Module File<a class="headerlink" href="#script-vs-module-file" title="Permalink to this heading">#</a></h3>
+<h3>Script vs. Module File<a class="headerlink" href="#script-vs-module-file" title="Link to this heading">#</a></h3>
 </section>
 <section id="scripts">
-<h3>Scripts<a class="headerlink" href="#scripts" title="Permalink to this heading">#</a></h3>
+<h3>Scripts<a class="headerlink" href="#scripts" title="Link to this heading">#</a></h3>
 <div class="alert alert-success">
 A <b>script</b> is a Python file that can be run to execute a particular task. 
 </div></section>
 <section id="module-files">
-<h3>Module Files<a class="headerlink" href="#module-files" title="Permalink to this heading">#</a></h3>
+<h3>Module Files<a class="headerlink" href="#module-files" title="Link to this heading">#</a></h3>
 <div class="alert alert-success">
 A <b>module</b> file is a file with Python code (typically functions & classes) that we can import and use.
 </div><p>Remember: if you’re writing code, you cannot just click through to the file you want. You need to specify <em>using code</em> where the file you want is.</p>
@@ -895,14 +922,14 @@ A <b>module</b> file is a file with Python code (typically functions & classes) 
 </section>
 </section>
 <section id="text-editors">
-<h2>Text Editors<a class="headerlink" href="#text-editors" title="Permalink to this heading">#</a></h2>
+<h2>Text Editors<a class="headerlink" href="#text-editors" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
 Text-editors are programs made for editing text. Many text-editors are designed for writing code specifically. 
 </div><section id="terminal-based-text-editors">
-<h3>Terminal Based Text Editors<a class="headerlink" href="#terminal-based-text-editors" title="Permalink to this heading">#</a></h3>
+<h3>Terminal Based Text Editors<a class="headerlink" href="#terminal-based-text-editors" title="Link to this heading">#</a></h3>
 <p>There are text editors designed to be used within a terminal, such as <code class="docutils literal notranslate"><span class="pre">vim</span></code>, <code class="docutils literal notranslate"><span class="pre">emacs</span></code>, <code class="docutils literal notranslate"><span class="pre">pico</span></code>, or <code class="docutils literal notranslate"><span class="pre">nano</span></code>.</p>
 <section id="vim">
-<h4>vim<a class="headerlink" href="#vim" title="Permalink to this heading">#</a></h4>
+<h4>vim<a class="headerlink" href="#vim" title="Link to this heading">#</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">vim</span></code> is a terminal based text-editor. Type <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">filename</span></code> in command line to open a file in vim.</p>
 <p><code class="docutils literal notranslate"><span class="pre">vim</span></code> has different modes:</p>
 <ul class="simple">
@@ -920,16 +947,16 @@ Text-editors are programs made for editing text. Many text-editors are designed 
 </section>
 </section>
 <section id="non-terminal-text-editors">
-<h3>Non-Terminal Text Editors<a class="headerlink" href="#non-terminal-text-editors" title="Permalink to this heading">#</a></h3>
+<h3>Non-Terminal Text Editors<a class="headerlink" href="#non-terminal-text-editors" title="Link to this heading">#</a></h3>
 <p>For writing code (outside of notebooks and the terminal), you probably want a code focused stand-alone text editor, like <code class="docutils literal notranslate"><span class="pre">Sublime</span></code> or <code class="docutils literal notranslate"><span class="pre">Notepad++</span></code>.  If you are doing more extensive Python coding, you may want <code class="docutils literal notranslate"><span class="pre">PyCharm</span></code> instead.</p>
 </section>
 </section>
 <section id="executing-python-files">
-<h2>Executing Python Files<a class="headerlink" href="#executing-python-files" title="Permalink to this heading">#</a></h2>
+<h2>Executing Python Files<a class="headerlink" href="#executing-python-files" title="Link to this heading">#</a></h2>
 <p>From the command line, you can execute a Python script using the <code class="docutils literal notranslate"><span class="pre">python</span></code> command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">dir_name/new_file.py</span></code></p>
 <section id="class-question-5">
-<h3>Class Question #5<a class="headerlink" href="#class-question-5" title="Permalink to this heading">#</a></h3>
+<h3>Class Question #5<a class="headerlink" href="#class-question-5" title="Link to this heading">#</a></h3>
 <p>To create a file and see its contents, which command line commands would you use (and in which order)?</p>
 <ul class="simple">
 <li><p>A) <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
@@ -940,7 +967,7 @@ Text-editors are programs made for editing text. Many text-editors are designed 
 </ul>
 </section>
 <section id="class-question-6">
-<h3>Class Question #6<a class="headerlink" href="#class-question-6" title="Permalink to this heading">#</a></h3>
+<h3>Class Question #6<a class="headerlink" href="#class-question-6" title="Link to this heading">#</a></h3>
 <p>Given the file structure from earlier:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">/</span></code></p>
@@ -1003,11 +1030,10 @@ Text-editors are programs made for editing text. Many text-editors are designed 
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="11-Classes.html"
@@ -1027,10 +1053,7 @@ Text-editors are programs made for editing text. Many text-editors are designed 
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1038,6 +1061,7 @@ Text-editors are programs made for editing text. Many text-editors are designed 
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1125,9 +1149,10 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1151,8 +1176,8 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
