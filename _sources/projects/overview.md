@@ -16,7 +16,7 @@ The broad objectives of this project are for you to:
 - W8: Project Description released
 - W9: By the end of this week, you should have a project topic / outline
 - W10: Work on the project
-- **Finals Week: projects due on Final Exam due date**
+- **Finals Week: projects due**
 
 ### Getting Started
 
@@ -41,6 +41,7 @@ For your project, you can choose a topic that extends an application from one of
 Possible topics:
 
 - Encryption (A2)
+- Chatbots (A3)
 - Artificial Agents (A4)
 - Data Analysis (A5)
 - Choose your own adventure (propose and develop your own project idea)
@@ -61,8 +62,6 @@ This quarter, the Taboo Topics for the COGS18 final project are:
 - Rock, Paper, Scissors
 - Snake Game
 - Connect4 Game 
-- Chatbots
-- Text adventure games
 
 Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to your Professor and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
 
