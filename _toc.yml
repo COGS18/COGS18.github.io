@@ -60,8 +60,8 @@ parts:
     chapters:
     - file: materials/CL-Answers/CL2-ProgrammingI
       title: CL2-ProgrammingI
-    # - file: materials/CL-Answers/CL3-ProgrammingII
-      # title: CL3-ProgrammingII
+    - file: materials/CL-Answers/CL3-ProgrammingII
+      title: CL3-ProgrammingII
     # - file: materials/CL-Answers/CL4-Collections
       # title: CL4-Collections
     # - file: materials/CL-Answers/CL5-Loops
