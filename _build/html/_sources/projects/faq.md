@@ -83,7 +83,7 @@ https://stackoverflow.com/questions/35851323/how-to-test-a-function-with-input-c
 ## DataHub Troubleshooting
 
 #### My cells won't run properly and keep giving me asterisks even after restarting the kernel. How can I fix this?
-Asterisks mean that the code in a cell is executing/waiting to execute. You may be stuck in an infinite loop somewhere in your code.
+Asterisks mean that the code in a cell is executing/waiting to execute. You may be stuck in an infinite loop somewhere in your code or your function is waiting for user input.
 
 #### DataHub won't open my Notebook/script/module. What should I do?
 Download the the Notebook/script/module from datahub to your machine using the steps below. It's always a good idea to maintain a local copy of your work in case DataHub is ever down.

@@ -35,8 +35,8 @@ parts:
       title: 11-Classes
     - file: materials/12-CommandLine
       title: 12-CommandLine
-    # - file: materials/13-Modules
-      # title: 13-Modules
+    - file: materials/13-Modules
+      title: 13-Modules
     # - file: materials/14-ScientificComputing
       # title: 14-ScientificComputing   
     # - file: materials/15-Documentation
@@ -64,8 +64,8 @@ parts:
       title: CL3-ProgrammingII
     - file: materials/CL-Answers/CL4-Collections
       title: CL4-Collections
-    # - file: materials/CL-Answers/CL5-Loops
-      # title: CL5-Loops
+    - file: materials/CL-Answers/CL5-Loops
+      title: CL5-Loops
     # - file: materials/CL-Answers/CL6-Classes
       # title: CL6-Classes
     ##- file: materials/CL-Answers/CL7-CommandLine
@@ -111,13 +111,13 @@ parts:
     # - file: materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24
       # title: Practice-Final-Answers
 
-  # - caption: Projects
-    # chapters:
-    ##- file: projects/PythonProjects
-      ##title: PythonProjects
-    # - file: projects/overview
-      # title: Overview
-    # - file: projects/faq
-      # title: FAQ
-    # - file: projects/ProjectIdeas
-      # title: ProjectIdeas
+  - caption: Projects
+    chapters:
+    #- file: projects/PythonProjects
+      #title: PythonProjects
+    - file: projects/overview
+      title: Overview
+    - file: projects/faq
+      title: FAQ
+    - file: projects/ProjectIdeas
+      title: ProjectIdeas
