@@ -20,7 +20,7 @@ You could change the names if you'd like or keep them as they are. Just make sur
 #### Can I submit the project using a different file structure than the template provided?
 Yes, the specific file structure is not important. We care that you have a folder that contains a notebook and a script/module file (or both). Other files can also be included if applicable. Use an oganization structure that makes sense for your project.
 #### How/in what format should the files be submitted?
-For submitting your final projects, you will either 1) zip up all the files for your project (i.e. Notebook + module directory with tests and functions) and submit the zipped file on Canvas or 2) submit on datahub.
+You will submit your final project on datahub.
 
 ## Importing Modules
 

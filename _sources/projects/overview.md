@@ -20,7 +20,7 @@ The broad objectives of this project are for you to:
 
 ### Getting Started
 
-We strongly encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.
+We strongly encourage you to discuss potential project ideas and with your TAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.
 
 Suggestions for working on projects:
 
@@ -88,7 +88,7 @@ Projects are individual, and each person needs to submit a project including (at
 
 ### Submitting Your Project
 
-You will be submitting either 1) the project folder on datahub (note all contents of the folder will be submitted when you click submit on datahub) or 2) a zip file containing your project to Canvas. This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
+You will be submitting the project folder on datahub (note all contents of the folder will be submitted when you click submit on datahub). This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
 
 MyProjectFolder/  
 
@@ -103,16 +103,6 @@ MyProjectFolder/
 
 Note that not all of these files / sections are mandatory, and they do not have to use the names specified here - file names can be whatever you want, as long as the organization is clear and what kind of thing each file is is clear. **You must include, at minimum, a Jupyter notebook, and some part of your code should be organized into a module, with a test file**. The scripts section is optional, and should be included if it makes sense to organize your function into an executable script. The requirements text file (optional) should list any modules you use in your project that are not included in the anaconda distribution.
 
-##### *How to create a zip file*
-
-First, make sure everything is organized into a folder, as you want it. Then: 
-
-- On Mac: right-click on the folder, and click 'Compress'.
-- On Windows: right-click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
-
-In both cases, this will create a zip file, with the name 'FolderName.zip'. 
-
-You can upload this file to Canvas as your project submission.
 
 ### Grading Rubric
 
@@ -190,7 +180,7 @@ For extra credit, if you go above and beyond on the minimal project requirements
 
 *GitHub Extra Credit (1%)*
 
-For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project. (Note: This should be the *unzipped* version of your project, so that others on GitHub can see your code.)
+For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project. 
 
 ### External Code
 
