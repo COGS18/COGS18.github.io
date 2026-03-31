@@ -2,7 +2,7 @@
 
 **Introduction to Python** | **Spring 2026**  
 
-v1.0 (Mar 31)
+v1.1 (Mar 31)
 
 ---
   
@@ -133,7 +133,7 @@ You **must schedule your tests at least three days in advance, but it is recomme
 Students will also have the option to retake each midterm across (E1 in week 6; E2 in week 9). To be eligible for a retest, you have to have made a first attempt during the originally-scheduled exam time. For any exams that are re-taken, the students' grade will be comprised of 25\% of the attempt with the lower score and 75\% of the attempt with the higher score. For example, if you score a 10/15 on an exam and retake that exam and score an 12/15 your recorded grade would be an 11.5/15 (0.25*10  + 0.75*12). **Reservations on PrairieTest for re-tests open approximately one week prior to the retake (on 5/1 for E1; 5/22 for E2).** 
 
 
-Please note that **if you plan to use OSD-approved accommodations for your test**, you will take it at the TTC’s Pepper Canyon Hall location. You must schedule your test *at least* three days in advance through the [RegisterBlast](https://www2.registerblast.com/ucsd/Exam/List) system.
+Please note that **if you plan to use OSD-approved accommodations for your test**, you will take it at the TTC’s Pepper Canyon Hall location. You must schedule your test *at least* three days in advance through the [RegisterBlast](https://www2.registerblast.com/ucsd/Exam/List) system. Exams will be listed under the  Computer-Based Testing (PrairieLearn) category (NOT "COGS").
 
 As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's _always_ a way to cheat (and always a chance if you cheat you'll get caught). I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::
 
