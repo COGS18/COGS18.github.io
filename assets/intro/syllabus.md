@@ -2,7 +2,7 @@
 
 **Introduction to Python** | **Spring 2026**  
 
-v.0.2 (Mar 24)
+v1.0 (Mar 31)
 
 ---
   
@@ -113,11 +113,11 @@ In weeks 1-8, on Mondays and Wednesdays (the night before lecture), there will t
 
 Lab times will be used to get hands-on practice with the course material in a smaller group setting. As such, you will be provided with specific  activities each week that are focused on preparing you for the assignments. Across the quarter there will be 8 different coding labs (2\% each). Coding labs are graded for correctness; however, students will have unlimited attempts for each question and the ability to earn full marks regardless of number of attempts. To receive credit for a coding lab, you have to complete your coding lab for that week by Friday at 11:59 pm each week. Labs will be accepted up to 48h late, for a 25% penalty.
 
-Note: You should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend another Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 35 so that students can 1) get help from their TAs during this time and 2) use the computers in the computer lab if they choose.
+Note: While lab attendance is not required, you should be signed up for the Coding Lab for which you can attend. However, if you are unable to attend the Coding Lab for which you are signed up, you are free to attend another Coding Lab in a given week. Note that this policy could change if too many people are attending one Coding Lab each week. We intentionally have Coding Lab capped at 35 so that students can 1) get help from their TAs during this time and 2) use the computers in the computer lab if they choose.
 
 ### Assignments (20\%)
 
-There will be five assignments, each worth 4\% of your final grade. Assignments will be hands-on coding assignments. You will typically have about 1 week after release to complete each assignment. Assignments will be due at 11:59 PM on the assigned date.
+There will be five assignments, each worth 4\% of your final grade. Assignments will be hands-on coding assignments. You will typically have about 1 week after release to complete each assignment. Students have unlimited attempts to complete. Assignments will be due at 11:59 PM on the assigned date.
 
 Late assignments will be accepted for a 25\% penalty for 48 hours (2 days) and for 50\% penalty up to 72 (4 days) after the assignment's due date.
 
@@ -133,7 +133,7 @@ You **must schedule your tests at least three days in advance, but it is recomme
 Students will also have the option to retake each midterm across (E1 in week 6; E2 in week 9). To be eligible for a retest, you have to have made a first attempt during the originally-scheduled exam time. For any exams that are re-taken, the students' grade will be comprised of 25\% of the attempt with the lower score and 75\% of the attempt with the higher score. For example, if you score a 10/15 on an exam and retake that exam and score an 12/15 your recorded grade would be an 11.5/15 (0.25*10  + 0.75*12). **Reservations on PrairieTest for re-tests open approximately one week prior to the retake (on 5/1 for E1; 5/22 for E2).** 
 
 
-Please note that **if you plan to use OSD-approved accommodations for your test**, you will take it at the TTC’s Pepper Canyon Hall location. You must schedule your test three days in advance through the [RegisterBlast](https://www2.registerblast.com/ucsd/Exam/List) system.
+Please note that **if you plan to use OSD-approved accommodations for your test**, you will take it at the TTC’s Pepper Canyon Hall location. You must schedule your test *at least* three days in advance through the [RegisterBlast](https://www2.registerblast.com/ucsd/Exam/List) system.
 
 As former students know, I take academic integrity seriously, but I also trust most students to do the right thing. I would rather spend more time teaching and less time ensuring that there is no way for students to cheat because let's be honest...there's _always_ a way to cheat (and always a chance if you cheat you'll get caught). I trust and am confident that the vast majority of students care about their education enough to take this seriously and am unwilling to spend all my energy focused on those students who do not. That said, students should anticipate that if they are caught cheating on an exam, they will fail the class. ::steps off soapbox::
 
@@ -143,7 +143,7 @@ Students will complete *either* a final exam or a final project. To earn an A+ i
 
 #### Final Project
 
-Students who choose to complete a final project will complete an independent coding project on a topic of their choosing. Students will submit their project the Sunday before finals week (11:59 PM) and will then have to take a 15 min in-person oral exam during finals week to discuss their project. Please note that **this oral exam date/time will likely differ from what you see in WebReg**. Students who have completed the project in the past have spent longer than they would taking the final exam (an average of 9 hours). 
+Students who choose to complete a final project will complete an independent coding project on a topic of their choosing. Students will submit their project the Sunday before finals week (11:59 PM) and will then have to take a 15 min in-person oral exam during finals week to discuss their project. Oral exams slots will be available for sign up later in the quarter. Please note that **this oral exam date/time will likely differ from what you see in WebReg**. Students who have completed the project in the past have spent longer than they would taking the final exam (an average of 9 hours). 
 
 #### Final Exam
 
