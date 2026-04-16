@@ -405,10 +405,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-code-style-to-avoid">Conditionals: Code Style to Avoid</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-ii">Activity: Conditionals II</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-collections">Activity: Collections</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-ii">Activity: Conditionals II</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-iii">Activity: Conditionals III</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collections-sneak-peak">Collections (sneak peak)</a><ul class="nav section-nav flex-column">
@@ -427,7 +424,93 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="conditionals">
+  <p><strong>Q&amp;A</strong></p>
+<blockquote>
+<div><p>Q: What’s the difference between print and return? I still don’t really get it<br />
+A: <code class="docutils literal notranslate"><span class="pre">return</span></code> is a special operator that <em>only</em> shows up at the end of functions; it specifies what the output of a function should be. <code class="docutils literal notranslate"><span class="pre">print()</span></code> on the other hand is used whenever you want to display something to screen. [Will do an example in class b/c this is an important distinction.]</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Can you give a mini-example of how this would be used in a widely-applicable setting (i.e., an example in the coding world of when you would use a function like this to run a larger, more complex type of code)?<br />
+A: In programming any time you want to accomplish a task with code, writing a function is typically your go to. So, let’s consider an app that you need to login to use. You could have a function <code class="docutils literal notranslate"><span class="pre">check_for_email()</span></code> that takes in a user’s email address and checks against the app’s database to see if that email has a login. Then, you could have a second function <code class="docutils literal notranslate"><span class="pre">check_password()</span></code> that takes in a user’s username and password and checks if the username and password match. You could <em>then</em> have a function <code class="docutils literal notranslate"><span class="pre">login()</span></code> that takes in a username and password as inputs. Inside that function it could run <code class="docutils literal notranslate"><span class="pre">check_for-email()</span></code> and <code class="docutils literal notranslate"><span class="pre">check_password()</span></code>. If both return <code class="docutils literal notranslate"><span class="pre">True</span></code> then the user is allowed to login!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: How to easily decipher what a coding question is asking us to do? I believe I’m able to code but I think sometimes instructions are phrased weirdly or I don’t understand what the they’re asking at times.<br />
+A: This is a skill we’ll continue to discuss and practice. The <em>best</em> approach is deeply understanding each concept. So, for functions, understanding definition, parameters, <code class="docutils literal notranslate"><span class="pre">return</span></code> statements, etc. rather than just memorizing a specific example. This makes interpreting questions when you see something similar…but new a lot easier. But, this is a skill we’re still developing!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: I am confused about the difference between positional vs keyword arguments and default values<br />
+A: default values are specified on function <em>definition</em>. They are a value that the function will use by default. positional/keyword arguments are two different ways to specify the values for paramters on function <em>execution</em>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Are we able to use parenthesis for a math function within parameters?<br />
+A: I’m not totally sure I understand this question. But typically, if you want to carry out some operations (i.e. math), you’d want to do that inside the function, not in the parameters. Do follow up if this doesn’t answer!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: do you have to run the function in the same cell that you wrote it in (like the same cell in the notebook), or will it generalize to all cells and can be used anywhere?<br />
+A: Good question! Once you have defined it and executed that cell, a function can be used in any cell of the notebook (including the original function definition cell).</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: when is it appropriate to put spaces and when is it not appropriate to put spaces? when in doubt should I just put a space<br />
+A: Typically, spaces around all operators. Only exception: no spaces around <code class="docutils literal notranslate"><span class="pre">=</span></code> for parameters/arguments.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: If it possible to post the questions student have or tend to not understand  which we usally review at beginning of class, since it dosent update or show on our notes. it owuld be helful to just make sure those are reviwed.<br />
+A: The website is the easiest place to reference these! (Sometimes/typically they’ll be in your notes…but you’re right not always depending upon where we end class).</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Is there a way to see the code inside a function that is not yours?<br />
+A: Yes…but. Some code in python (i.e. <code class="docutils literal notranslate"><span class="pre">print()</span></code>) is actually written in C (another programming language), so reading the source code (code inside) is not straightforward. That said, <em>if</em> the source code is in python, putting two question marks after a function will display the source code, for example:</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>import random
+random.randint??
+</pre></div>
+</div>
+<blockquote>
+<div><p>Q: Is it all the time you put return after a function?<br />
+A: Almost all the time - anytime you want output from a function, you need a <code class="docutils literal notranslate"><span class="pre">return</span></code> statement. For our purposes, assume it should always be there.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Why is the ouput sometimes called something different? does it always follow a similar process of creating a function? Is there a formula we could remember for writing them?<br />
+A: The variable following <code class="docutils literal notranslate"><span class="pre">return</span></code> is the name of the variable whose value you want returned from the function. So, it could be <code class="docutils literal notranslate"><span class="pre">output</span></code> or another variable.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: does the definition/name of the function matter greatly? like will the function be changed if the name is slightly different than what it originally was?<br />
+A: It matters that the name you use for function definition matches the name you use for function execution. And, for class purposes, the function name has to match what we specify exactly…as the autograder is looking for that particular name.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Will the functions we create on the midterm be a similar difficulty level to what we do in class?<br />
+A: Yes, but we will start writing more complicated functions as the course goes on. Typically functions on VQs, in class, and on labs are similar to midterm difficulty. The hardest functions on assignments go beyond what we’d expect on a midterm.</p>
+</div></blockquote>
+<p><strong>Difference between return and print</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> keyword for outputs of functions (<em>always</em> inside a function <code class="docutils literal notranslate"><span class="pre">def</span></code>) &lt;- <strong>use this for function output</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print()</span></code> simply displays the value to screen; most helpful for debugging</p></li>
+</ul>
+<p><strong>Course Announcements</strong></p>
+<p>Due:</p>
+<ul class="simple">
+<li><p>CL5 due Fri</p></li>
+<li><p>A1 due Sun</p></li>
+<li><p>VQ6 due Mon</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>Course Q&amp;A - maybe get in habit of checking on website if not in notes?</p></li>
+<li><p>Practice Exam will be available Tuesday evening (4/21; after we finish material covered on exam in class)</p>
+<ul>
+<li><p>USE THIS</p></li>
+<li><p>take it multiple times</p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do an example</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="conditionals">
 <h1>Conditionals<a class="headerlink" href="#conditionals" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
@@ -438,7 +521,7 @@ document.write(`
 Conditionals are statements that check for a condition, using the <b>if</b> statement, and then only execute a set of code if the condition evaluates as <b>True</b>.
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;if statement executed&#39;</span><span class="p">)</span>
@@ -580,9 +663,6 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </div>
 </div>
-<section id="activity-collections">
-<h3>Activity: Collections<a class="headerlink" href="#activity-collections" title="Link to this heading">#</a></h3>
-</section>
 </section>
 <section id="activity-conditionals-iii">
 <h2>Activity: Conditionals III<a class="headerlink" href="#activity-conditionals-iii" title="Link to this heading">#</a></h2>
@@ -631,7 +711,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># list</span>
-<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,]</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 
 <span class="c1"># tuple</span>
 <span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
@@ -639,7 +719,8 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <span class="c1"># dictionary</span>
 <span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Shannon&#39;</span><span class="p">:</span> <span class="s1">&#39;mom&#39;</span><span class="p">,</span>
                  <span class="s1">&#39;Josh&#39;</span><span class="p">:</span> <span class="s1">&#39;dad&#39;</span><span class="p">,</span>
-                 <span class="s1">&#39;Kayden&#39;</span><span class="p">:</span> <span class="s1">&#39;kid&#39;</span><span class="p">}</span>
+                 <span class="s1">&#39;Kayden&#39;</span><span class="p">:</span> <span class="s1">&#39;kid&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Kaia&#39;</span><span class="p">:</span> <span class="s1">&#39;kid&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -745,10 +826,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-code-style-to-avoid">Conditionals: Code Style to Avoid</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-ii">Activity: Conditionals II</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-collections">Activity: Collections</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-ii">Activity: Conditionals II</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-iii">Activity: Conditionals III</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collections-sneak-peak">Collections (sneak peak)</a><ul class="nav section-nav flex-column">
