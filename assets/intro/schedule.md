@@ -54,3 +54,6 @@
 | 6/2/2026  | 10     | Tu  | Code Projects          |                                         |                           
 | 6/3/2026  | 10     | Th  | Wrap Up                |                                         | 
 | 6/6 - 6/13 | Finals | --  | \--                   | **Final Exam or Final Project**; Complete post-course survey | 
+
+\* end of material covered on E1  
+\*\* end of  material covered on E2
