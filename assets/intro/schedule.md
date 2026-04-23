@@ -18,7 +18,7 @@
 | 4/17/2026 | 3      | F   |                        | [CL2](https://us.prairielearn.com/pl/course_instance/212605/assessment/2662663) - functions           |
 | 4/19/2026 | 3      | Su  |                        | [A1](https://us.prairielearn.com/pl/course_instance/212605/assessment/2662657) - variables, comparison, functions   |                   
 | 4/20/2026 | 4      | M   |                        | [VQ6](https://us.prairielearn.com/pl/course_instance/212605/assessment/2662686) [read/watch (22:26): [Lists](https://shanellis.github.io/pythonbook/content/05-collections/lists.html) [Tuples](https://shanellis.github.io/pythonbook/content/05-collections/tuples.html), [Dictionaries](https://shanellis.github.io/pythonbook/content/05-collections/dictionaries.html)] |              
-| 4/21/2026 | 4      | Tu  | [Collections](https://us.prairielearn.com/pl/course_instance/212605/assessment/2675294)  [*]       |                                         |
+| 4/21/2026 | 4      | Tu  | [Collections](https://us.prairielearn.com/pl/course_instance/212605/assessment/2676412)  [*]       |                                         |
 | 4/23/2026 | 4      | Th  | [Catch up & Review](https://us.prairielearn.com/pl/course_instance/212605/assessment/2675294)      |                                         |                            
 | 4/24/2026 | 4      | F   |                        | [CL3](https://us.prairielearn.com/pl/course_instance/212605/assessment/2662664) - conditionals & collections        |                            
 | 4/26/2026 | 4      | Su  |                        | [A2](https://us.prairielearn.com/pl/course_instance/212605/assessment/2662658) - conditionals, collections, ciphers |                            
