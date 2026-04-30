@@ -473,11 +473,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
 </pre></div>
 </div>
 </div>
@@ -489,11 +486,35 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># shorthand - does same as above using +=</span>
+<span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -508,6 +529,26 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
 <span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span> <span class="c1">### NOTE THAT IT IS NOT ASSIGNED BACK TO my_list</span>
 <span class="n">my_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is wrong - dont do this</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span> <span class="c1"># DON&#39;T DO THIS - avoid assigning back to a list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
 </pre></div>
 </div>
 </div>
@@ -539,7 +580,7 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </section>
 <section id="for-loop-live-demo">
 <h3><code class="docutils literal notranslate"><span class="pre">for</span></code> Loop: live demo<a class="headerlink" href="#for-loop-live-demo" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">students_in_line</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">students_in_line</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Yawen&#39;</span><span class="p">,</span> <span class="s1">&#39;Rosalinda&#39;</span><span class="p">,</span> <span class="s1">&#39;Nathan&#39;</span><span class="p">]</span>
 
 <span class="n">brown_hair</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">other_hair</span> <span class="o">=</span> <span class="p">[]</span>
@@ -558,6 +599,15 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST THINGS OUT</span>
+<span class="n">this_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hi&#39;</span><span class="p">,</span> <span class="s1">&#39;bye&#39;</span><span class="p">,</span> <span class="s1">&#39;good&#39;</span><span class="p">,</span> <span class="s1">&#39;bad&#39;</span><span class="p">]</span>
+<span class="n">this_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;ok&#39;</span><span class="p">)</span>
+<span class="c1"># this_list = this_list + [&#39;ok&#39;]</span>
+<span class="n">this_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;hi&#39;, &#39;bye&#39;, &#39;good&#39;, &#39;bad&#39;, &#39;ok&#39;]
 </pre></div>
 </div>
 </div>
@@ -588,6 +638,14 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+7
+17
+20
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="for-loop-code">
@@ -601,6 +659,7 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 
 <span class="c1"># Loop across each element</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">shopping_list</span><span class="p">:</span>
+    <span class="c1"># print(item)</span>
     <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">in_stock</span><span class="p">:</span>
         <span class="n">in_cart</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span> 
@@ -608,6 +667,13 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 
 <span class="nb">print</span><span class="p">(</span><span class="n">in_cart</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ice cream not in stock
+[&#39;bananas&#39;, &#39;cookies&#39;]
+ice cream
 </pre></div>
 </div>
 </div>
@@ -624,13 +690,22 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>p
+y
+t
+h
+n
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="activity-ii-loops">
 <h3>Activity II: <code class="docutils literal notranslate"><span class="pre">loops</span></code><a class="headerlink" href="#activity-ii-loops" title="Link to this heading">#</a></h3>
 <p>Complete the coding question in this Google Form (<a class="reference external" href="https://forms.gle/isggkAXwhMy9BN9h6">https://forms.gle/isggkAXwhMy9BN9h6</a>) and then click submit.</p>
 <blockquote>
-<div><p>Write a function <code class="docutils literal notranslate"><span class="pre">sum_odd()</span></code> contatining a loop that will add up all the odd numbers in an input list.</p>
+<div><p>Write a function <code class="docutils literal notranslate"><span class="pre">sum_odd()</span></code> containing a loop that will add up all the odd numbers in an input list.</p>
 </div></blockquote>
 <blockquote>
 <div><p>For example: <code class="docutils literal notranslate"><span class="pre">sum_odd(['a',</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">6])</span></code> would return 8, b/c 3 + 5 is 8</p>
@@ -638,6 +713,49 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># WRITE CODE</span>
+<span class="c1"># define a function - input will be some list</span>
+<span class="c1"># loop over each thing in the input list</span>
+<span class="c1"># if thing is an integer and that integer is odd (% 2 -&gt; 0....even)</span>
+<span class="k">def</span> <span class="nf">sum_odd</span><span class="p">(</span><span class="n">input_list</span><span class="p">):</span>
+    
+    <span class="n">out_sum</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">val</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">out_sum</span> <span class="o">=</span> <span class="n">out_sum</span> <span class="o">+</span> <span class="n">val</span>
+
+    <span class="k">return</span> <span class="n">out_sum</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># can i do this using append?</span>
+<span class="c1"># another possible solution</span>
+<span class="k">def</span> <span class="nf">sum_odd</span><span class="p">(</span><span class="n">input_list</span><span class="p">):</span>
+    
+    <span class="n">val_list</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">input_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">val</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">val_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+
+    <span class="n">out_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">val_list</span><span class="p">)</span> <span class="c1">#add all numbers in val_list together</span>
+
+    <span class="k">return</span> <span class="n">out_sum</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
 </pre></div>
 </div>
 </div>
@@ -645,6 +763,12 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST FUNCTION</span>
+<span class="n">sum_odd</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
 </pre></div>
 </div>
 </div>
@@ -668,6 +792,11 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>58
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -676,13 +805,58 @@ A <b>for loop</b> is a procedure a to repeat code for every element in a sequenc
 
 <span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">scores</span><span class="p">[</span><span class="n">student</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">passing_score</span><span class="p">:</span>
+        <span class="c1"># print(student)</span>
         <span class="n">passed_students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Students who passed:&quot;</span><span class="p">,</span> <span class="n">passed_students</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Students who passed: [&#39;Alondra&#39;, &#39;Brooke&#39;, &#39;Minqi&#39;]
+</pre></div>
 </div>
+</div>
+</div>
+<p><strong>Q&amp;A</strong></p>
+<blockquote>
+<div><p>Q: How does python know that item (for the grocery example) is the items on the list.<br />
+A: Because we are using <code class="docutils literal notranslate"><span class="pre">index</span></code> to specify the position (index) in the list and adding that to <code class="docutils literal notranslate"><span class="pre">bill</span></code>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: do we have to define the variables every single time, or just in some of them<br />
+A: To use a variable, it must previously be defined. If in a function, must be defined inside the function definition or passed in as an input.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: I am confused why we used index in the while example. what would happen if we didn’t have index?<br />
+A: We would not have been able to specify which value in <code class="docutils literal notranslate"><span class="pre">bills</span></code> to add.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Loops are more confusing than the concepts we have learned. How should I practice to familiarize with loops?<br />
+A: Deeply learn the concept first (know what a for and while loop are conceptually). Then, familiarize with the code. Then practice examples on your own. Explaining out loud what’s going on each iteration in the loop is great practice!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: May you explain the clearest difference between for and while loops?<br />
+A: <code class="docutils literal notranslate"><span class="pre">for</span></code> loops loop over a collection. <code class="docutils literal notranslate"><span class="pre">while</span></code> loops loop until a condition is no longer <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</div></blockquote>
+<p><strong>Course Announcements</strong></p>
+<p>Due:</p>
+<ul class="simple">
+<li><p>CL4 due Fri</p></li>
+<li><p>A3 due Sun</p></li>
+<li><p>Take your exam!</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>E1 scores/exams will be available to view on PrairieLearn at 5PM Friday</p>
+<ul>
+<li><p>can sign up in PrairieTest for E1 retake on Friday 5/1 (tomorrow)</p></li>
+<li><p>can “report an issue” if you believe you were graded incorrectly on anything</p></li>
+</ul>
+</li>
+<li><p>Mid-course survey will be available on Saturday (linked from Canvas and course website); optional for EC</p></li>
+<li><p>(to self) Discuss outcomes from Loops II activity</p></li>
+</ul>
 </section>
 </section>
 <section id="range-continue-and-break">
