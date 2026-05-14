@@ -436,10 +436,10 @@ document.write(`
 <p><strong>Q&amp;A</strong></p>
 <blockquote>
 <div><p>Q: Are methods just def functions inside classes?<br />
-A: Yup - and by being defined inside a class they directly operate only on that class of objects</p>
+A: Yup - and by beind ddefined inside a class they directly operate only on that class of objects</p>
 </div></blockquote>
 <blockquote>
-<div><p>Q: how would you recommend breaking this down so it doesn’t feel as overwhelming in a single cell? (I tried understanding the code while going through it, but seeing everything all at once made it feel so overwhelming and hard to understand) I know breaking it down piece by piece helps, but is there a way to initially view it as less daunting?<br />
+<div><p>Q: how would you recommend breaking this down so it doesn’t feel as overwhelming in a single cell? (I tried understanding the code while going through it, but seeing everything all at once made it feel so overwhelming and hard to understand) I know breaking it down piece by piece helps, but is there a way to initially view it as less daunting?
 A: Understand each component separately - are there any class attributes? any instance attributes? do they require inputs. Create an object and understand the attributes. Then, take each method piece by piece. Add print statements and test out the method as you go. Then move onto the next one. We’ll demonstrate this today.</p>
 </div></blockquote>
 <blockquote>
@@ -452,7 +452,7 @@ A: We’re indexing into a dictionary. Indexing always requires []</p>
 </div></blockquote>
 <blockquote>
 <div><p>Q: when do you know how to distinguish instance and class attributes<br />
-A: If they’re inside an <strong>init</strong>, they’re instance attributes.</p>
+A: If they’re inside an <code class="docutils literal notranslate"><span class="pre">__init__</span></code>, they’re instance attributes.</p>
 </div></blockquote>
 <p><strong>Course Announcements</strong></p>
 <ul class="simple">
@@ -484,7 +484,7 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <p><strong>Exam Window</strong>: 5/18-5/22 (Mon-Fri); 45min</p>
 <section id="exam-2-plan">
 <h3>Exam 2 Plan<a class="headerlink" href="#exam-2-plan" title="Link to this heading">#</a></h3>
-<p><strong>Exam (16 Qs)</strong>: (there were 25 on E1)</p>
+<p><strong>Exam (15 Qs)</strong>: (there were 25 on E1)</p>
 <ul class="simple">
 <li><p>Q1 - blank jupyter notebook (no credit)</p></li>
 <li><p>Q2-7 Multiple Choice (6)</p></li>
@@ -495,7 +495,7 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <ol class="arabic simple">
 <li><p>Loops (6 | 1 MC; 4 SA; 1 Debug)</p></li>
 <li><p>Methods (2 | 1 MC; 1 SA)</p></li>
-<li><p>Classes (4 | 4 MC; 1 SA; 2 Debug)</p></li>
+<li><p>Classes (7 | 4 MC; 1 SA; 2 Debug)</p></li>
 </ol>
 <p>Note: This is the expected layout. Small changes to this could be made.</p>
 </section>
@@ -525,6 +525,87 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <li><p>list, string, and dictionary methods (need to know <code class="docutils literal notranslate"><span class="pre">.append()</span></code> and <code class="docutils literal notranslate"><span class="pre">.items()</span></code>; others will be explained)</p></li>
 <li><p>in place vs not in place</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 11AM</span>
+<span class="c1"># can you go over the items method</span>
+<span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+
+<span class="c1"># using items method</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">my_dictionary</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># using indexing</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">my_dictionary</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">my_dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## 11AM &amp; 2PM</span>
+<span class="c1"># review in place vs not in place</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>in place - method that changes the thing it’s working on
+not in place - method does NOT change the thing it’s working on</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># append - list method; operates in place</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># upper - string method; not in place; makes things all caps </span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;good luck on the exam&#39;</span>
+<span class="n">new_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;good luck on the exam&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_string</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;GOOD LUCK ON THE EXAM&#39;
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="classes">
 <h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h3>
@@ -537,6 +618,51 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <li><p>accessing attributes</p></li>
 <li><p>executing methods</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 11AM</span>
+<span class="c1"># instructions; blueprint for creating a Car object - no instance created</span>
+<span class="k">class</span> <span class="nc">Car</span><span class="p">():</span>
+
+    <span class="c1"># class attribute - true for all instances of Car objects</span>
+    <span class="n">num_wheels</span> <span class="o">=</span> <span class="mi">4</span>
+
+    <span class="c1"># instance attributes - variables attached to an object; values differ between instances</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
+    
+    <span class="k">def</span> <span class="nf">tell_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;This car is a </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">make</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2"> that is </span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="c1"># return &quot;This car is a &quot; + str(self.year) + &quot; &quot; + self.make + &quot; &quot; + self.model</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># instance of an object</span>
+<span class="n">my_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">&#39;Hyundai&#39;</span><span class="p">,</span> <span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span> <span class="mi">2006</span><span class="p">)</span>
+<span class="n">my_car</span><span class="o">.</span><span class="n">num_wheels</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_car</span><span class="o">.</span><span class="n">model</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_car</span><span class="o">.</span><span class="n">tell_info</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="questions">
@@ -579,13 +705,58 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#fixed</span>
+<span class="k">class</span> <span class="nc">StudyTracker</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hours_studied</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hours</span> <span class="o">=</span> <span class="n">hours_studied</span>
+    
+    <span class="k">def</span> <span class="nf">add_hours</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">additional_hours</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hours</span> <span class="o">+=</span> <span class="n">additional_hours</span>
+
+    <span class="k">def</span> <span class="nf">study_feedback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">hours</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;Getting started is the hardest part—keep going!&quot;</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">hours</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;Nice! You&#39;re building solid study habits.&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;Awesome dedication! You&#39;re setting yourself up for success!&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>How do I test out a class?</p>
+<ul class="simple">
+<li><p>Create an instance of the object <code class="docutils literal notranslate"><span class="pre">my_var</span> <span class="pre">=</span> <span class="pre">ClassName()</span></code></p></li>
+<li><p>Look at the values for your attribues <code class="docutils literal notranslate"><span class="pre">my_var.attribute_name</span></code></p></li>
+<li><p>Check your methods <code class="docutils literal notranslate"><span class="pre">my_var.method_name()</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST IT OUT HERE</span>
+<span class="n">hours_zero</span> <span class="o">=</span> <span class="n">StudyTracker</span><span class="p">()</span>
+<span class="n">hours_zero</span><span class="o">.</span><span class="n">hours</span> <span class="c1">#0</span>
+<span class="n">hours_zero</span><span class="o">.</span><span class="n">add_hours</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
+<span class="n">hours_zero</span><span class="o">.</span><span class="n">hours</span> <span class="c1">#0</span>
+<span class="n">hours_zero</span><span class="o">.</span><span class="n">study_feedback</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Getting started is the hardest part—keep going!&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TEST IT OUT HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hours_five</span> <span class="o">=</span> <span class="n">StudyTracker</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">hours_five</span><span class="o">.</span><span class="n">hours</span> <span class="c1">#5</span>
+<span class="n">hours_five</span><span class="o">.</span><span class="n">add_hours</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">hours_five</span><span class="o">.</span><span class="n">hours</span> <span class="c1">#11</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11
 </pre></div>
 </div>
 </div>
@@ -616,7 +787,7 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># original</span>
-<span class="k">class</span> <span class="nc">CoffeeTracker</span><span class="p">:</span>
+<span class="k">class</span> <span class="nc">CoffeeTracker</span><span class="p">():</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">total_spent</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -639,9 +810,77 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#debugged</span>
+<span class="k">class</span> <span class="nc">CoffeeTracker</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_spent</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_coffees</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">average_price</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+    <span class="k">def</span> <span class="nf">buy_coffee</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prices</span><span class="p">):</span>
+        <span class="n">sum_prices</span> <span class="o">=</span> <span class="mi">0</span>
+        
+        <span class="k">for</span> <span class="n">coffee</span> <span class="ow">in</span> <span class="n">prices</span><span class="p">:</span>
+            <span class="n">sum_prices</span> <span class="o">+=</span> <span class="n">coffee</span>
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_spent</span> <span class="o">=</span> <span class="n">sum_prices</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">total_coffees</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_coffees</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">average_price</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_spent</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_coffees</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> bought </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">total_coffees</span><span class="si">}</span><span class="s2"> coffees.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average price per coffee: $</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">average_price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Test it out</span>
+<span class="n">my_coffee</span> <span class="o">=</span> <span class="n">CoffeeTracker</span><span class="p">(</span><span class="s1">&#39;Josh&#39;</span><span class="p">)</span>
+<span class="n">my_coffee</span><span class="o">.</span><span class="n">buy_coffee</span><span class="p">(</span><span class="n">prices</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_coffee</span><span class="o">.</span><span class="n">total_spent</span><span class="p">)</span> <span class="c1">#25</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_coffee</span><span class="o">.</span><span class="n">total_coffees</span><span class="p">)</span> <span class="c1">#5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_coffee</span><span class="o">.</span><span class="n">average_price</span><span class="p">)</span> <span class="c1">#5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Josh bought 5 coffees.
+Average price per coffee: $5.00
+25
+5
+5.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Test it out</span>
+<span class="n">my_coffee</span> <span class="o">=</span> <span class="n">CoffeeTracker</span><span class="p">(</span><span class="s1">&#39;Shannon&#39;</span><span class="p">)</span>
+<span class="n">my_coffee</span><span class="o">.</span><span class="n">buy_coffee</span><span class="p">(</span><span class="n">prices</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_coffee</span><span class="o">.</span><span class="n">total_spent</span><span class="p">)</span> <span class="c1">#20</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_coffee</span><span class="o">.</span><span class="n">total_coffees</span><span class="p">)</span> <span class="c1">#3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_coffee</span><span class="o">.</span><span class="n">average_price</span><span class="p">)</span> <span class="c1">#6.67</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shannon bought 3 coffees.
+Average price per coffee: $6.67
+20
+3
+6.666666666666667
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe id="kaltura_player" type="text/javascript"  src='https://cdnapisec.kaltura.com/p/2323111/embedPlaykitJs/uiconf_id/52706832?iframeembed=true&entry_id=1_zeiq8wv8&config[provider]={"widgetId":"1_7euqodr3"}'  style="width: 800px;height: 450px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Q2-E2-Review"></iframe>
+</div></div>
 </div>
 <p>Concepts in Q2:</p>
 <ul class="simple">
@@ -663,14 +902,49 @@ A: If they’re inside an <strong>init</strong>, they’re instance attributes.<
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR ANSWER HERE</span>
+<span class="n">my_exam2</span> <span class="o">=</span> <span class="n">Exam2</span><span class="p">(</span><span class="s1">&#39;Shannon&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_exam2</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="c1">#&#39;Shannon&#39;</span>
+<span class="n">my_exam2</span><span class="o">.</span><span class="n">calculate_percentage</span><span class="p">()</span> <span class="c1"># 1 (100)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <p><strong>Q3b</strong> Time permitting: Try to write the code for the class described above. Note: You will NOT have to write a whole class from scratch on the exam.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe id="kaltura_player" type="text/javascript"  src='https://cdnapisec.kaltura.com/p/2323111/embedPlaykitJs/uiconf_id/52706832?iframeembed=true&entry_id=1_xehyrpv7&config[provider]={"widgetId":"1_jid29h2o"}'  style="width: 800px;height: 450px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Q3b-E2-Review"></iframe>
+</div></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## YOUR CODE HERE</span>
+<span class="k">class</span> <span class="nc">Exam2</span><span class="p">():</span>
+    <span class="n">course</span> <span class="o">=</span> <span class="s2">&quot;COGS 18&quot;</span> 
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
+
+    <span class="k">def</span> <span class="nf">calculate_percentage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="o">/</span><span class="mi">15</span> <span class="o">*</span> <span class="mi">100</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_exam_50</span> <span class="o">=</span> <span class="n">Exam2</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Johnny&#39;</span><span class="p">,</span> <span class="n">score</span><span class="o">=</span><span class="mf">7.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_exam_50</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="n">my_exam_50</span><span class="o">.</span><span class="n">calculate_percentage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_exam2</span> <span class="o">=</span> <span class="n">Exam2</span><span class="p">(</span><span class="s1">&#39;Shannon&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_exam2</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="c1">#&#39;Shannon&#39;</span>
+<span class="n">my_exam2</span><span class="o">.</span><span class="n">calculate_percentage</span><span class="p">()</span> <span class="c1"># 1 (100)</span>
 </pre></div>
 </div>
 </div>
