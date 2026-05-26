@@ -46,7 +46,7 @@
 | 5/18/2026 | 8      | M   |                        |                                         |              
 | 5/19/2026 | 8      | Tu  | [Scientific Computing](https://us.prairielearn.com/pl/course_instance/212605/assessment/2686085)   |                                         |      
 | 5/20/2026 | 8      | W   |                        |  [VQ12](https://us.prairielearn.com/pl/course_instance/212605/assessment/2662681) [read/watch (25:17): [Scientific Computing](https://shanellis.github.io/pythonbook/content/07-scientific-computing/scientific_computing.html) & [NumPy](https://shanellis.github.io/pythonbook/content/07-scientific-computing/numpy.html) & [pandas](https://shanellis.github.io/pythonbook/content/07-scientific-computing/pandas.html)] (date change due to error on PL) |                                          |
-| 5/21/2026 | 8      | Th  | Python Projects        |                                         |                            
+| 5/21/2026 | 8      | Th  | [Python Projects](https://us.prairielearn.com/pl/course_instance/212605/assessment/2687009)        |                                         |                            
 | 5/22/2026 | 8      | F   |                        | [CL7](https://us.prairielearn.com/pl/course_instance/212605/assessment/2662668) - Scientific Computing              |      
 | 5/26 - 5/29 | 9    | --  | \--                    | Retake E2 (*optional*)                  | 
 | 5/26/2026 | 9      | Tu  | [Code Testing](https://us.prairielearn.com/pl/course_instance/212605/assessment/2688098)           |                                         | 
