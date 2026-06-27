@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Conditionals &#8212; COGS 18 - Introduction To Python</title>
   
@@ -14,55 +15,56 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materials/06-Conditionals';</script>
-    <link rel="icon" href="../_static/logo.png"/>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Collections" href="07-Collections.html" />
-    <link rel="prev" title="Functions" href="05-Functions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -72,23 +74,19 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -110,20 +108,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -138,13 +128,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="../intro.html">
-  
   
   
   
@@ -154,23 +140,12 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
 <ul class="nav bd-sidenav">
@@ -179,42 +154,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../assets/intro/assignments/overview.html">ASSIGNMENTS</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01-Introduction.html">01-Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02-Tooling.html">02-Tooling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03-Variables.html">Variables</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="04-Operators.html">04-Operators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05-Functions.html">05-Functions</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">06-Conditionals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07-Collections.html">07-Collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08-Debugging.html">08-Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09-Loops.html">09-Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="10-Methods.html">10-Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="11-Classes.html">11-Classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="12-CommandLine.html">12-CommandLine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="13-Modules.html">13-Modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="14-ScientificComputing.html">Scientific Computing</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="15-Documentation.html">15-Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="16-CodeTesting.html">16-CodeTesting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="17-CodeProjects.html">17-CodeProjects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="18-WrapUp.html">18-WrapUp</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Coding Lab Answers</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL2-ProgrammingI.html">CL2-ProgrammingI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL3-ProgrammingII.html">CL3-ProgrammingII</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL4-Collections.html">CL4-Collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL5-Loops.html">CL5-Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL6-Classes.html">CL6-Classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CL-Answers/CL8-ScientificComputing.html">CL8-ScientificComputing</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../projects/overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projects/faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projects/ProjectIdeas.html">ProjectIdeas</a></li>
 </ul>
 
     </div>
@@ -230,7 +171,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -239,14 +180,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -271,14 +212,14 @@
       
       <li><a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/materials/06-Conditionals.ipynb&branch=master" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on JupyterHub"
+   title="Launch onJupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
+    <img src="../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -289,14 +230,14 @@
       
       <li><a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/materials/06-Conditionals.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
+   title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+    <img src="../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -434,28 +375,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -476,35 +415,23 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-if">Conditionals: <code class="docutils literal notranslate"><span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-1">Class Question #1</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-else">Conditional: <code class="docutils literal notranslate"><span class="pre">else</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-2">Class Question #2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-elif">Conditional: <code class="docutils literal notranslate"><span class="pre">elif</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-without-an-else"><code class="docutils literal notranslate"><span class="pre">elif</span></code> without an <code class="docutils literal notranslate"><span class="pre">else</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-after-an-else-does-not-make-sense"><code class="docutils literal notranslate"><span class="pre">elif</span></code> <em>after</em> an <code class="docutils literal notranslate"><span class="pre">else</span></code> does not make sense</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-with-value-comparisons">Conditionals With Value Comparisons</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-3">Class Question #3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-4">Class Question #4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-5">Class Question #5</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-conditionals">Properties of conditionals</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tying-things-together">Tying things together:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Conditionals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-conditionals">Properties of conditionals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-i">Activity: Conditionals I</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-conditionals">Functions + Conditionals</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style-conditionals">Code Style: Conditionals</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-good-code-style">Conditionals: Good Code Style</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-code-style-to-avoid">Conditionals: Code Style to Avoid</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-conditionals">Functions + Conditionals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-ii">Activity: Conditionals II</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-iii">Activity: Conditionals III</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collections-sneak-peak">Collections (sneak peak)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing">Indexing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-are-mutable-tuples-are-not">Lists are mutable; tuples are not</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -514,298 +441,357 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="conditionals">
-<h1>Conditionals<a class="headerlink" href="#conditionals" title="Link to this heading">#</a></h1>
+  <p><strong>Q&amp;A</strong></p>
+<blockquote>
+<div><p>Q: What’s the difference between print and return? I still don’t really get it<br />
+A: <code class="docutils literal notranslate"><span class="pre">return</span></code> is a special operator that <em>only</em> shows up at the end of functions; it specifies what the output of a function should be. <code class="docutils literal notranslate"><span class="pre">print()</span></code> on the other hand is used whenever you want to display something to screen. [Will do an example in class b/c this is an important distinction.]</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Can you give a mini-example of how this would be used in a widely-applicable setting (i.e., an example in the coding world of when you would use a function like this to run a larger, more complex type of code)?<br />
+A: In programming any time you want to accomplish a task with code, writing a function is typically your go to. So, let’s consider an app that you need to login to use. You could have a function <code class="docutils literal notranslate"><span class="pre">check_for_email()</span></code> that takes in a user’s email address and checks against the app’s database to see if that email has a login. Then, you could have a second function <code class="docutils literal notranslate"><span class="pre">check_password()</span></code> that takes in a user’s username and password and checks if the username and password match. You could <em>then</em> have a function <code class="docutils literal notranslate"><span class="pre">login()</span></code> that takes in a username and password as inputs. Inside that function it could run <code class="docutils literal notranslate"><span class="pre">check_for-email()</span></code> and <code class="docutils literal notranslate"><span class="pre">check_password()</span></code>. If both return <code class="docutils literal notranslate"><span class="pre">True</span></code> then the user is allowed to login!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: How to easily decipher what a coding question is asking us to do? I believe I’m able to code but I think sometimes instructions are phrased weirdly or I don’t understand what the they’re asking at times.<br />
+A: This is a skill we’ll continue to discuss and practice. The <em>best</em> approach is deeply understanding each concept. So, for functions, understanding definition, parameters, <code class="docutils literal notranslate"><span class="pre">return</span></code> statements, etc. rather than just memorizing a specific example. This makes interpreting questions when you see something similar…but new a lot easier. But, this is a skill we’re still developing!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: I am confused about the difference between positional vs keyword arguments and default values<br />
+A: default values are specified on function <em>definition</em>. They are a value that the function will use by default. positional/keyword arguments are two different ways to specify the values for paramters on function <em>execution</em>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Are we able to use parenthesis for a math function within parameters?<br />
+A: I’m not totally sure I understand this question. But typically, if you want to carry out some operations (i.e. math), you’d want to do that inside the function, not in the parameters. Do follow up if this doesn’t answer!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: do you have to run the function in the same cell that you wrote it in (like the same cell in the notebook), or will it generalize to all cells and can be used anywhere?<br />
+A: Good question! Once you have defined it and executed that cell, a function can be used in any cell of the notebook (including the original function definition cell).</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: when is it appropriate to put spaces and when is it not appropriate to put spaces? when in doubt should I just put a space<br />
+A: Typically, spaces around all operators. Only exception: no spaces around <code class="docutils literal notranslate"><span class="pre">=</span></code> for parameters/arguments.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: If it possible to post the questions student have or tend to not understand  which we usally review at beginning of class, since it dosent update or show on our notes. it owuld be helful to just make sure those are reviwed.<br />
+A: The website is the easiest place to reference these! (Sometimes/typically they’ll be in your notes…but you’re right not always depending upon where we end class).</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Is there a way to see the code inside a function that is not yours?<br />
+A: Yes…but. Some code in python (i.e. <code class="docutils literal notranslate"><span class="pre">print()</span></code>) is actually written in C (another programming language), so reading the source code (code inside) is not straightforward. That said, <em>if</em> the source code is in python, putting two question marks after a function will display the source code, for example:</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>import random
+random.randint??
+</pre></div>
+</div>
+<blockquote>
+<div><p>Q: Is it all the time you put return after a function?<br />
+A: Almost all the time - anytime you want output from a function, you need a <code class="docutils literal notranslate"><span class="pre">return</span></code> statement. For our purposes, assume it should always be there.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Why is the ouput sometimes called something different? does it always follow a similar process of creating a function? Is there a formula we could remember for writing them?<br />
+A: The variable following <code class="docutils literal notranslate"><span class="pre">return</span></code> is the name of the variable whose value you want returned from the function. So, it could be <code class="docutils literal notranslate"><span class="pre">output</span></code> or another variable.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: does the definition/name of the function matter greatly? like will the function be changed if the name is slightly different than what it originally was?<br />
+A: It matters that the name you use for function definition matches the name you use for function execution. And, for class purposes, the function name has to match what we specify exactly…as the autograder is looking for that particular name.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Q: Will the functions we create on the midterm be a similar difficulty level to what we do in class?<br />
+A: Yes, but we will start writing more complicated functions as the course goes on. Typically functions on VQs, in class, and on labs are similar to midterm difficulty. The hardest functions on assignments go beyond what we’d expect on a midterm.</p>
+</div></blockquote>
+<p><strong>Course Announcements</strong></p>
+<p>Due:</p>
+<ul class="simple">
+<li><p>CL5 due Fri</p></li>
+<li><p>A1 due Sun</p></li>
+<li><p>VQ6 due Mon</p></li>
+</ul>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>Course Q&amp;A - maybe get in habit of checking on website if not in notes?</p></li>
+<li><p>Practice Exam will be available Tuesday evening (4/21; after we finish material covered on exam in class)</p>
+<ul>
+<li><p>USE THIS</p></li>
+<li><p>take it multiple times</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Difference between return and print</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> keyword for outputs of functions (<em>always</em> inside a function <code class="docutils literal notranslate"><span class="pre">def</span></code>) &lt;- <strong>use this for function output</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print()</span></code> simply displays the value to screen; most helpful for debugging</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do an example</span>
+<span class="c1"># using a return - THIS IS HOW TO GET OUTPUT FROM A FUNCTION</span>
+<span class="k">def</span> <span class="nf">add_two_numbers</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+    <span class="k">return</span> <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add_two_numbers</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># assign output from function to new variable</span>
+<span class="n">my_return_output</span> <span class="o">=</span> <span class="n">add_two_numbers</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">my_return_output</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_two_numbers_print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">add_two_numbers_print</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_print_output</span> <span class="o">=</span> <span class="n">add_two_numbers_print</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">my_print_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="conditionals">
+<h1>Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">elif</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">else</span></code></p></li>
 </ul>
-<section id="conditionals-if">
-<h2>Conditionals: <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#conditionals-if" title="Link to this heading">#</a></h2>
 <div class="alert alert-success">
-Conditionals are statements that check for a condition, using the <code>if</code> statement, and then only execute a set of code if the condition evaluates as <code>True</code>.
+Conditionals are statements that check for a condition, using the <b>if</b> statement, and then only execute a set of code if the condition evaluates as <b>True</b>.
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="kc">True</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">5</span>
 
-<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as True.&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;if statement executed&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">value</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;elif statement executed&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;else statement executed&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>else statement executed
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<section id="id1">
+<h2>Conditionals<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<div class="alert alert-success">
+Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
+</div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># equivalent to above</span>
-<span class="k">if</span> <span class="n">condition</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as True.&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">speed_limit</span> <span class="o">=</span> <span class="mi">65</span>
+<span class="n">speed</span> <span class="o">=</span> <span class="mi">60</span>
+
+<span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="n">speed_limit</span><span class="p">:</span>
+    <span class="n">ticket</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">elif</span> <span class="n">speed</span> <span class="o">==</span> <span class="n">speed_limit</span><span class="p">:</span>
+    <span class="n">ticket</span> <span class="o">=</span> <span class="s1">&#39;warning&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">ticket</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ticket</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
 </div>
-<section id="class-question-1">
-<h3>Class Question #1<a class="headerlink" href="#class-question-1" title="Link to this heading">#</a></h3>
-<p>Replace <code class="docutils literal notranslate"><span class="pre">---</span></code> below with something that will print ‘True’</p>
+</section>
+<section id="properties-of-conditionals">
+<h2>Properties of conditionals<a class="headerlink" href="#properties-of-conditionals" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>A) I did it!</p></li>
-<li><p>B) I think I did it!</p></li>
-<li><p>C) I tried but am stuck.</p></li>
-<li><p>D) I’m unsure where to start.</p></li>
+<li><p>All conditionals start with an <code class="docutils literal notranslate"><span class="pre">if</span></code>, can have an optional and variable number of <code class="docutils literal notranslate"><span class="pre">elif</span></code>’s and an optional <code class="docutils literal notranslate"><span class="pre">else</span></code> statement</p></li>
+<li><p>Conditionals can take any expression that can be evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p>At most one component (<code class="docutils literal notranslate"><span class="pre">if</span></code> / <code class="docutils literal notranslate"><span class="pre">elif</span></code> / <code class="docutils literal notranslate"><span class="pre">else</span></code>) of a conditional will run</p></li>
+<li><p>The order of conditional blocks is always <code class="docutils literal notranslate"><span class="pre">if</span></code> then <code class="docutils literal notranslate"><span class="pre">elif</span></code>(s) then <code class="docutils literal notranslate"><span class="pre">else</span></code></p></li>
+<li><p>Code following <code class="docutils literal notranslate"><span class="pre">if</span></code>/<code class="docutils literal notranslate"><span class="pre">elif</span></code> is only ever executed if the condition is met</p></li>
 </ul>
+</section>
+<section id="activity-conditionals-i">
+<h2>Activity: Conditionals I<a class="headerlink" href="#activity-conditionals-i" title="Permalink to this heading">#</a></h2>
+<p>Complete the question in this Google Form (<a class="reference external" href="https://forms.gle/h7LZNmD4WcpveLam6">https://forms.gle/h7LZNmD4WcpveLam6</a>) and then click submit.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SPACE TO TEST THINGS OUT</span>
+<span class="n">math</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span>
 
 <span class="k">if</span> <span class="n">math</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-</section>
-</section>
-<section id="conditional-else">
-<h2>Conditional: <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#conditional-else" title="Link to this heading">#</a></h2>
-<div class="alert alert-success">
-After an <code>if</code>, you can use an <code>else</code> that will run if the conditional(s) above have not run.
-</div><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as True.&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if the condition evaluates as False&#39;</span><span class="p">)</span>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
 </div>
-<section id="class-question-2">
-<h3>Class Question #2<a class="headerlink" href="#class-question-2" title="Link to this heading">#</a></h3>
-<p>Replace <code class="docutils literal notranslate"><span class="pre">---</span></code> below with something that will print ‘False’.</p>
-<ul class="simple">
-<li><p>A) I did it!</p></li>
-<li><p>B) I think I did it!</p></li>
-<li><p>C) I tried but am stuck.</p></li>
-<li><p>D) I’m unsure where to start.</p></li>
-</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_value</span> <span class="o">=</span> <span class="o">---</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_value</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">2</span>
 
 <span class="k">if</span> <span class="n">my_value</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
+<span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;False&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-</section>
-</section>
-<section id="conditional-elif">
-<h2>Conditional: <code class="docutils literal notranslate"><span class="pre">elif</span></code><a class="headerlink" href="#conditional-elif" title="Link to this heading">#</a></h2>
-<div class="alert alert-success">
-After an <code>if</code> statement, you can have any number of <code>elif</code>`s (meaning 'else if') to check other conditions.
-</div><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">condition_1</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">condition_2</span> <span class="o">=</span> <span class="kc">True</span>
-
-<span class="k">if</span> <span class="n">condition_1</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if condition_1 evaluates as True.&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if condition_1 did not evaluate as True, but condition_2 does.&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if both condition_1 and condition_2 evaluate as False&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section id="elif-without-an-else">
-<h3><code class="docutils literal notranslate"><span class="pre">elif</span></code> without an <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#elif-without-an-else" title="Link to this heading">#</a></h3>
-<p>An else statement is not required, but if both the <code class="docutils literal notranslate"><span class="pre">if</span></code> and the <code class="docutils literal notranslate"><span class="pre">elif</span></code> condtions are not met (both evaluate as <code class="docutils literal notranslate"><span class="pre">False</span></code>), then nothing is returned.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">condition_1</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">condition_2</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="k">if</span> <span class="n">condition_1</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if condition_1 evaluates as True.&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if condition_1 did not evaluate as True, but condition_2 does.&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="elif-after-an-else-does-not-make-sense">
-<h3><code class="docutils literal notranslate"><span class="pre">elif</span></code> <em>after</em> an <code class="docutils literal notranslate"><span class="pre">else</span></code> does not make sense<a class="headerlink" href="#elif-after-an-else-does-not-make-sense" title="Link to this heading">#</a></h3>
-<p>The order will always be <code class="docutils literal notranslate"><span class="pre">if</span></code>-<code class="docutils literal notranslate"><span class="pre">elif</span></code>-<code class="docutils literal notranslate"><span class="pre">else</span></code>…with only the <code class="docutils literal notranslate"><span class="pre">if</span></code> being required. If the <code class="docutils literal notranslate"><span class="pre">elif</span></code> is at the end…it will never be tested, as the <code class="docutils literal notranslate"><span class="pre">else</span></code> will have already returned a value once reached (and thus Python will throw an error).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## THIS CODE WILL PRODUCE AN ERROR</span>
-<span class="n">condition_1</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">condition_2</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="k">if</span> <span class="n">condition_1</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if condition_1 evaluates as True.&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if both condition_1 and condition_2 evaluate as False&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">condition_2</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This code executes if condition_1 did not evaluate as True, but condition_2 does.&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="conditionals-with-value-comparisons">
-<h2>Conditionals With Value Comparisons<a class="headerlink" href="#conditionals-with-value-comparisons" title="Link to this heading">#</a></h2>
-<div class="alert alert-success">
-Any expression that can be evaluated as a boolean, such as value comparisons, can be used with conditionals.
-</div><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">speed_limit</span> <span class="o">=</span> <span class="mi">65</span>
-<span class="n">speed</span> <span class="o">=</span> <span class="mi">85</span>
-
-<span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="n">speed_limit</span><span class="p">:</span>
-    <span class="n">ticket</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">ticket</span> <span class="o">=</span> <span class="kc">False</span>
-    
-<span class="nb">print</span><span class="p">(</span><span class="n">ticket</span><span class="p">)</span>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># string value comparisons also possible</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="s1">&#39;not started&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">condition</span> <span class="o">=</span> <span class="kc">False</span>
 
-<span class="k">if</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;completed&#39;</span><span class="p">:</span>
-    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;grade&#39;</span>
-<span class="k">elif</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;in progress&#39;</span><span class="p">:</span>
-    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;wait&#39;</span>
-<span class="k">elif</span> <span class="n">a1</span> <span class="o">==</span> <span class="s1">&#39;not started&#39;</span><span class="p">:</span>
-    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;incomplete&#39;</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">action</span> <span class="o">=</span> <span class="s1">&#39;uncertain&#39;</span>
-    
-<span class="nb">print</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section id="class-question-3">
-<h3>Class Question #3<a class="headerlink" href="#class-question-3" title="Link to this heading">#</a></h3>
-<p>What will the following code snippet print out:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_condition</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="k">if</span> <span class="n">my_condition</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;John&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="ow">not</span> <span class="n">my_condition</span><span class="p">:</span>
+<span class="k">elif</span> <span class="ow">not</span> <span class="n">condition</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Paul&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="ow">not</span> <span class="n">my_condition</span><span class="p">:</span>
+<span class="k">elif</span> <span class="ow">not</span> <span class="n">condition</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;George&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ringo&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-<ul class="simple">
-<li><p>A) John</p></li>
-<li><p>B) Paul, George, Ringo</p></li>
-<li><p>C) Paul</p></li>
-<li><p>D) Paul, George</p></li>
-<li><p>E) Ringo</p></li>
-</ul>
-</section>
-<section id="class-question-4">
-<h3>Class Question #4<a class="headerlink" href="#class-question-4" title="Link to this heading">#</a></h3>
-<p>What will the following code snippet print out:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I did Math&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I broke Math&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I didn&#39;t do math&quot;</span><span class="p">)</span>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Paul
 </pre></div>
 </div>
 </div>
 </div>
-<ul class="simple">
-<li><p>A) I did Math</p></li>
-<li><p>B) I broke Math</p></li>
-<li><p>C) I didn’t do math</p></li>
-<li><p>D) This code won’t execute</p></li>
-</ul>
 </section>
-<section id="class-question-5">
-<h3>Class Question #5<a class="headerlink" href="#class-question-5" title="Link to this heading">#</a></h3>
-<p>What will the following code snippet print out:</p>
+<section id="functions-conditionals">
+<h2>Functions + Conditionals<a class="headerlink" href="#functions-conditionals" title="Permalink to this heading">#</a></h2>
+<p>Let’s define a more interesting function than what we did in the functions lecture. Here we are using conditionals within our function.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conditional</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">python</span> <span class="o">=</span> <span class="s2">&quot;fantastic&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Determine if a value is even or odd</span>
+<span class="k">def</span> <span class="nf">even_odd</span><span class="p">(</span><span class="n">value</span><span class="p">):</span> 
 
-<span class="k">if</span> <span class="n">conditional</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">python</span> <span class="o">==</span> <span class="s2">&quot;great&quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Yay Python!&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Oh no.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m here.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
+        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;even&quot;</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;odd&quot;</span>
+        
+    <span class="k">return</span> <span class="n">out</span>
 </pre></div>
 </div>
 </div>
 </div>
-<ul class="simple">
-<li><p>A) Yay Python!</p></li>
-<li><p>B) Oh no.</p></li>
-<li><p>C) I’m here.</p></li>
-<li><p>D) This code won’t execute</p></li>
-</ul>
-</section>
-</section>
-<section id="properties-of-conditionals">
-<h2>Properties of conditionals<a class="headerlink" href="#properties-of-conditionals" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>All conditionals start with an <code class="docutils literal notranslate"><span class="pre">if</span></code>, can have an optional and variable number of <code class="docutils literal notranslate"><span class="pre">elif</span></code>’s and an optional <code class="docutils literal notranslate"><span class="pre">else</span></code> statement</p></li>
-<li><p>Conditionals can take any expression that can be evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-<li><p>At most one component (<code class="docutils literal notranslate"><span class="pre">if</span></code> / <code class="docutils literal notranslate"><span class="pre">elif</span></code> / <code class="docutils literal notranslate"><span class="pre">else</span></code>) of a conditional will run</p></li>
-<li><p>The order of conditional blocks is always <code class="docutils literal notranslate"><span class="pre">if</span></code> then <code class="docutils literal notranslate"><span class="pre">elif</span></code>(s) then <code class="docutils literal notranslate"><span class="pre">else</span></code></p></li>
-<li><p>Code is only ever executed if the condition is met</p></li>
-</ul>
-<section id="tying-things-together">
-<h3>Tying things together:<a class="headerlink" href="#tying-things-together" title="Link to this heading">#</a></h3>
-<p>Let’s create a function that calculates letter grades from percentages…</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># test the code here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Execute our function to check that</span>
+<span class="c1"># it is working according to our expectations</span>
+<span class="n">even_odd</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;odd&#39;
 </pre></div>
 </div>
 </div>
 </div>
-</section>
 </section>
 <section id="code-style-conditionals">
-<h2>Code Style: Conditionals<a class="headerlink" href="#code-style-conditionals" title="Link to this heading">#</a></h2>
+<h2>Code Style: Conditionals<a class="headerlink" href="#code-style-conditionals" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>avoid single line statements</p></li>
 <li><p>a single conditional (if + elif + else) has no additional line spaces between statements</p></li>
 </ul>
 <section id="conditionals-good-code-style">
-<h3>Conditionals: Good Code Style<a class="headerlink" href="#conditionals-good-code-style" title="Link to this heading">#</a></h3>
+<h3>Conditionals: Good Code Style<a class="headerlink" href="#conditionals-good-code-style" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">16</span>
@@ -820,7 +806,7 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </section>
 <section id="conditionals-code-style-to-avoid">
-<h3>Conditionals: Code Style to Avoid<a class="headerlink" href="#conditionals-code-style-to-avoid" title="Link to this heading">#</a></h3>
+<h3>Conditionals: Code Style to Avoid<a class="headerlink" href="#conditionals-code-style-to-avoid" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">value</span><span class="o">%</span><span class="k">2</span>==0:out=&quot;even&quot; # avoid statement on same line as conditional
@@ -832,33 +818,426 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 </div>
 </section>
 </section>
-<section id="functions-conditionals">
-<h2>Functions + Conditionals<a class="headerlink" href="#functions-conditionals" title="Link to this heading">#</a></h2>
-<p>Let’s define a more interesting function than what we did in the functions lecture. Here we are using conditionals within our function.</p>
+<section id="activity-conditionals-ii">
+<h2>Activity: Conditionals II<a class="headerlink" href="#activity-conditionals-ii" title="Permalink to this heading">#</a></h2>
+<p>Complete the question in this Google Form (<a class="reference external" href="https://forms.gle/ebekT5weU4mgwsNq9">https://forms.gle/ebekT5weU4mgwsNq9</a>) and then click submit.</p>
+<p>There are three questions, the third of which requires coding:</p>
+<blockquote>
+<div><p>In a previous lecture, we wrote a function <code class="docutils literal notranslate"><span class="pre">convert_to_f</span></code>…but you’d probably want a function that could go in both directions.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Write a function <code class="docutils literal notranslate"><span class="pre">convert_temperature</span></code> that will convert a temperature C-&gt;F <em>and</em> F-&gt;C, returning the converted temperature.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Note: A temperature in Celsius will be multiplied by 9/5 and then 32 will be added to that quantity to convert to Fahrenheit. A temperature in Fahrenheit would have 32 subtracted and then that quantity multiplied by 5/9.</p>
+</div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Determine if a value is even or odd</span>
-<span class="k">def</span> <span class="nf">even_odd</span><span class="p">(</span><span class="n">value</span><span class="p">):</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## SPACE TO TEST THINGS OUT</span>
+<span class="k">if</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I did Math&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I broke Math&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I didn&#39;t do math&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I did Math
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># cannot divide by zero</span>
+<span class="c1"># will error</span>
+<span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">20</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
 
-    <span class="k">if</span> <span class="n">value</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
-        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;even&quot;</span>
-    <span class="k">else</span><span class="p">:</span> 
-        <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;odd&quot;</span>
-        
-    <span class="k">return</span> <span class="n">out</span> 
+<span class="ne">ZeroDivisionError</span>: division by zero
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Execute our function to check that</span>
-<span class="c1"># it is working according to our expectations</span>
-<span class="n">even_odd</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conditional</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">python</span> <span class="o">=</span> <span class="s2">&quot;great&quot;</span>
+
+<span class="k">if</span> <span class="n">conditional</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">python</span> <span class="o">==</span> <span class="s2">&quot;great&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Yay Python!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Oh no.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m here.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Yay Python!
 </pre></div>
 </div>
 </div>
 </div>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">convert_temperature</span></code> that will convert a temperature C-&gt;F <em>and</em> F-&gt;C, returning the converted temperature.</p>
+<p>Note: A temperature in Celsius will be multiplied by 9/5 and then 32 will be added to that quantity to convert to Fahrenheit. A temperature in Fahrenheit would have 32 subtracted and then that quantity multiplied by 5/9.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">convert_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;C&quot;</span><span class="p">:</span> 
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+    <span class="k">elif</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;F&quot;</span><span class="p">:</span> 
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+
+    <span class="k">return</span> <span class="n">out_temp</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">UnboundLocalError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">23</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">convert_temperature</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">)</span>
+
+<span class="nn">Cell In[22], line 7,</span> in <span class="ni">convert_temperature</span><span class="nt">(temp, unit)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">elif</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;F&quot;</span><span class="p">:</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">out_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="k">return</span> <span class="n">out_temp</span>
+
+<span class="ne">UnboundLocalError</span>: cannot access local variable &#39;out_temp&#39; where it is not associated with a value
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">convert_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+    <span class="c1"># if unit is C -&gt; F</span>
+    <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="c1">#or unit==&quot;Celsius&quot; or unit==&quot;c&quot;:</span>
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+    <span class="c1"># elif unit is F -&gt; C</span>
+    <span class="k">elif</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;F&quot;</span><span class="p">:</span> <span class="c1">#or unit==&quot;Fahrenheit&quot; or unit==&quot;f&quot;:</span>
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+    <span class="k">else</span><span class="p">:</span>   
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="s2">&quot;Please enter unit as either C or F&quot;</span>
+
+    <span class="k">return</span> <span class="n">out_temp</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;Celsius&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Please enter unit as either C or F&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>11A: discuss issues with solution posted; discuss if/elif/else decisions</p></li>
+<li><p>2P: discuss issue with 2PM solution below; discuss if/elif/else decisions</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## 11 AM</span>
+<span class="k">def</span> <span class="nf">convert_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;C&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;c&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;Celsius&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;celsisus&quot;</span><span class="p">:</span> 
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+    <span class="k">elif</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;F&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;f&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;Fahrenheit&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;fahrenheit&quot;</span><span class="p">:</span> 
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="s2">&quot;Please use either unit as either C or F&quot;</span>
+        
+    <span class="k">return</span> <span class="n">out_temp</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>68.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># shortcomings</span>
+<span class="c1"># not handling input units other than &quot;C&quot; or &quot;F&quot; -&gt; else statement</span>
+<span class="c1"># have your solution actually handle more than C/F (c/f) -&gt; include additional conditionals for if/elif</span>
+
+<span class="c1"># questions</span>
+<span class="c1"># is it wrong if you just have an if and an else?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">convert_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;C&quot;</span><span class="p">:</span> 
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+         
+    <span class="k">return</span> <span class="n">out_temp</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>154.4
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>2P: discuss issue with 2PM solution below; discuss if/elif/else decisions</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## 2 PM</span>
+<span class="k">def</span> <span class="nf">convert_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">unit</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;C&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;c&quot;</span> <span class="ow">or</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;celsius&quot;</span> <span class="ow">or</span> <span class="n">unit</span><span class="o">==</span><span class="s2">&quot;Celsius&quot;</span><span class="p">:</span> <span class="c1"># you need another equal sign; = is for assignment; == checks for equality</span>
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">out_temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+
+    <span class="k">return</span> <span class="n">out_temp</span>
+    
+<span class="c1"># DISCUSS:</span>
+<span class="c1"># when to use elif? when to use else?</span>
+<span class="c1"># can you use else here (instead of elif)?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;Shannon&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-6.666666666666667
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">20</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-6.666666666666667
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">convert_temperature</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-6.666666666666667
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="activity-conditionals-iii">
+<h2>Activity: Conditionals III<a class="headerlink" href="#activity-conditionals-iii" title="Permalink to this heading">#</a></h2>
+<p>Commplete the question in this Google Form (<a class="reference external" href="https://forms.gle/n45ykyKZa5RwMoCSA">https://forms.gle/n45ykyKZa5RwMoCSA</a>) and then click submit</p>
+<blockquote>
+<div><p>Write a function called <code class="docutils literal notranslate"><span class="pre">calculate_tip</span></code> that uses the <code class="docutils literal notranslate"><span class="pre">bill_amount</span></code> and <code class="docutils literal notranslate"><span class="pre">tip_percent</span></code>, will return the tip and the total amount to pay</p>
+</div></blockquote>
+<blockquote>
+<div><p>Now for the catch: we want it to calculate the tip correctly whether people enter a proportion (i.e. <code class="docutils literal notranslate"><span class="pre">.2</span></code> to represent 20%) or a percent (i.e. <code class="docutils literal notranslate"><span class="pre">20</span></code> to represent 20%)…we’re going to assume that a value greater than zero but less than or equal to 1 is a proportion.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Test cases: <code class="docutils literal notranslate"><span class="pre">calculate_tip(100,</span> <span class="pre">.10)</span></code> and <code class="docutils literal notranslate"><span class="pre">calculate_tip(100,</span> <span class="pre">10)</span></code> should both return the tip of 10.0 and a total of 110.0</p>
+</div></blockquote>
+<blockquote>
+<div><p>Final note: two variables can be returned from a function if they are separated by a comma</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## SPACE TO TEST THINGS OUT</span>
+    <span class="c1"># if type(tip_percent) == int</span>
+    <span class="c1"># elif type(tip_percent) == float</span>
+
+    <span class="c1"># if tip_percent &lt;1 and tip_percent &gt;0:</span>
+
+    <span class="c1"># if between 0 and 1</span>
+    <span class="c1"># elif above 1 and less than 100</span>
+    <span class="c1"># else: #below 0</span>
+<span class="k">def</span> <span class="nf">calculate_tip</span><span class="p">(</span><span class="n">bill_amount</span><span class="p">,</span> <span class="n">tip_percent</span><span class="p">):</span>
+    
+    <span class="k">if</span> <span class="n">tip_percent</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">tip_percent</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">:</span>
+        <span class="n">new_tip</span> <span class="o">=</span> <span class="n">tip_percent</span> <span class="o">*</span> <span class="n">bill_amount</span> 
+    <span class="k">elif</span> <span class="n">tip_percent</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">tip_percent</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">new_tip</span> <span class="o">=</span> <span class="n">tip_percent</span><span class="o">/</span><span class="mi">100</span> <span class="o">*</span> <span class="n">bill_amount</span>
+
+    <span class="n">new_bill</span> <span class="o">=</span> <span class="n">bill_amount</span> <span class="o">+</span> <span class="n">new_tip</span>
+
+    <span class="k">return</span> <span class="n">new_tip</span><span class="p">,</span> <span class="n">new_bill</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calculate_tip</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(12.5, 112.5)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calculate_tip</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(10.0, 110.0)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span></code>/<code class="docutils literal notranslate"><span class="pre">elif</span></code>/<code class="docutils literal notranslate"><span class="pre">else</span></code></p></li>
+<li><p>Code Style</p></li>
+<li><p>Conditionals + Functions</p></li>
+</ul>
+</section>
+<section id="collections-sneak-peak">
+<h2>Collections (sneak peak)<a class="headerlink" href="#collections-sneak-peak" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>ability to store more than one piece of information in a single variable</p></li>
+<li><p>lists, dictionaries, tuples</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># list</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="c1"># tuple</span>
+<span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># dictionary</span>
+<span class="n">my_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Shannon&#39;</span><span class="p">:</span> <span class="s1">&#39;mom&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Josh&#39;</span><span class="p">:</span> <span class="s1">&#39;dad&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Kayden&#39;</span><span class="p">:</span> <span class="s1">&#39;kid&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Kaia&#39;</span><span class="p">:</span> <span class="s1">&#39;kid&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="indexing">
+<h3>Indexing<a class="headerlink" href="#indexing" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>access a value or set of values from of a collection</p></li>
+<li><p>uses square brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="lists-are-mutable-tuples-are-not">
+<h3>Lists are mutable; tuples are not<a class="headerlink" href="#lists-are-mutable-tuples-are-not" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">my_list</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># THIS WILL ERROR</span>
+<span class="n">my_tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">my_tuple</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -887,30 +1266,16 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
 
               
               
-              
-              
-                <footer class="prev-next-footer d-print-none">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="05-Functions.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Functions</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="07-Collections.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Collections</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -919,42 +1284,29 @@ Any expression that can be evaluated as a boolean, such as value comparisons, ca
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-if">Conditionals: <code class="docutils literal notranslate"><span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-1">Class Question #1</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-else">Conditional: <code class="docutils literal notranslate"><span class="pre">else</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-2">Class Question #2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-elif">Conditional: <code class="docutils literal notranslate"><span class="pre">elif</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-without-an-else"><code class="docutils literal notranslate"><span class="pre">elif</span></code> without an <code class="docutils literal notranslate"><span class="pre">else</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-after-an-else-does-not-make-sense"><code class="docutils literal notranslate"><span class="pre">elif</span></code> <em>after</em> an <code class="docutils literal notranslate"><span class="pre">else</span></code> does not make sense</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-with-value-comparisons">Conditionals With Value Comparisons</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-3">Class Question #3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-4">Class Question #4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-question-5">Class Question #5</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-conditionals">Properties of conditionals</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tying-things-together">Tying things together:</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Conditionals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-conditionals">Properties of conditionals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-i">Activity: Conditionals I</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-conditionals">Functions + Conditionals</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style-conditionals">Code Style: Conditionals</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-good-code-style">Conditionals: Good Code Style</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-code-style-to-avoid">Conditionals: Code Style to Avoid</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-conditionals">Functions + Conditionals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-ii">Activity: Conditionals II</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-conditionals-iii">Activity: Conditionals III</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collections-sneak-peak">Collections (sneak peak)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing">Indexing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-are-mutable-tuples-are-not">Lists are mutable; tuples are not</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -976,10 +1328,9 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -1003,8 +1354,8 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

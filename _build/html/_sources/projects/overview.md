@@ -10,17 +10,18 @@ The broad objectives of this project are for you to:
 - Be able to plan out what is required for a computational solution to your chosen topic - Design and write an implementation of your project plan in Python code
 - Practice following best practices for coding style, documentation and code testing
 - Work with different coding tools, including using Jupyter notebooks and Python files
+- Be able to explain and think about the code you've written 
 
 ### Project Schedule
 
 - W8: Project Description released
 - W9: By the end of this week, you should have a project topic / outline
-- W10: Work on the project
-- **Finals Week: projects due on Final Exam due date**
+- W10: Work on the project; submit by Sunday after W10
+- **Finals Week: take oral exam**
 
 ### Getting Started
 
-We strongly encourage you to discuss potential project ideas and with your TAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.
+We encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.
 
 Suggestions for working on projects:
 
@@ -41,36 +42,18 @@ For your project, you can choose a topic that extends an application from one of
 Possible topics:
 
 - Encryption (A2)
+- Chatbots (A3)
 - Artificial Agents (A4)
 - Data Analysis (A5)
 - Choose your own adventure (propose and develop your own project idea)
 
 There are more detailed project ideas in the `ProjectIdeas` notebook.
 
-#### Taboo Topics
-
-While you're allowed to work on a topic of your choosing there are a few "taboo topics" - or topics that are not permitted for the COGS 18 final project. These topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you're allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren't limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.
-
-This quarter, the Taboo Topics for the COGS18 final project are:
-
-- Hangman
-- Drawings from Turtle
-- Tic-tac-toe
-- Blackjack
-- Magic 8 Ball
-- Rock, Paper, Scissors
-- Snake Game
-- Connect4 Game 
-- Chatbots
-- Text adventure games
-
-Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to your Professor and ask for an exception. You'll have to explain your idea. And, if approved, you'll be able to work on your taboo topic of choice!
-
 ### Project Scope
 
 The main goal of the project is to demonstrate that you can design and implement code to fulfill some task that you choose. That is, the goal of the project is to plan and write some code that solves a novel problem, one for which the solution is not pre-specified (as compared to and different from the assignments).
 
-There is not a specific amount of code that you have to write for the project. In terms of project scope, your project must implement some new thing, that you design and write the code for. To do so, you are expected to write new code that creates or adds some functionality, and that does so using good code practices. As a rule of thumb, note a project that appropriately responds to this call will have at least a set of new functions, will use code constructs such as loops and conditionals, will import code from available modules when needed, and will do all of this organized into a well constructed organization, in which the code follows proper coding style, is documented, and includes at least one code test.
+There is not a specific amount of code that you have to write for the project. In terms of project scope, your project must implement some new thing, that you design and write the code for. To do so, you are expected to write new code that creates or adds some functionality, and that does so using good code practices. As a rule of thumb, note a project that appropriately responds to this call will have at least a set of new functions, will use code constructs such as loops and conditionals, will import code from available modules when needed, and will do all of this organized into a well constructed organization, in which the code follows proper coding style, is documented, and includes testing.
 
 As the focus of the project is working with Python code, there is **no** prioritization for trying to perform complex tasks. On the contrary, in the face of a complex task in which the work ends up being trying to understand the complex topic you are working on, instead of focusing on working directly with Python code, a simpler project topic is preferred.
 
@@ -80,7 +63,7 @@ As you work through your project, we recommend taking an approach in which you u
 
 ### Project Requirements
 
-To complete the project you must submit your project, which will include Python code (>=3.6) that implements your project. Your **project must include (at least) one Jupyter notebook, one python file (a module file), and one test file with at least 3 test functions.** The Jupyter notebook file will minimally include a description of the project and code that demonstrates your project, organized in cells.
+To complete the project you must submit your project, which will include Python code (>=3.6) that implements your project. Your **project must include (at least) one Jupyter notebook, one python file (a module file), and one test file with tests of at least your three unique methods/functions.** The Jupyter notebook file will minimally include a description of the project and code that demonstrates your project, organized in cells.
 
 Most of the actual code for the project will be organized into python files, as either module files and/or scripts. Exactly where and how you organize the code can and should be decided by the project topic itself. For example, projects that are more focused on functions and classes, all code may be organized into a module. For some projects, the code may be well organized into a script that imports from your module to execute your project. For other projects, with more interactive components, much of the code may be presented within the Jupyter notebook. Regardless of the project, the design should be modular and include original code.
 
@@ -88,56 +71,44 @@ Projects are individual, and each person needs to submit a project including (at
 
 ### Submitting Your Project
 
-You will be submitting the project folder on datahub (note all contents of the folder will be submitted when you click submit on datahub). This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
+You will be submitting either 1) the project on PrairieLearn or 2) a zip file containing your project to Canvas. This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:
 
 MyProjectFolder/  
 
   - ProjectNotebook.ipynb
-  - my_module/
-    - classes.py
-    - functions.py
-    - test_functions.py
-  - scripts/
-    - my_script.py 
+  - module.py
+  - script.py
+  - tests.py
   - requirements.txt
 
 Note that not all of these files / sections are mandatory, and they do not have to use the names specified here - file names can be whatever you want, as long as the organization is clear and what kind of thing each file is is clear. **You must include, at minimum, a Jupyter notebook, and some part of your code should be organized into a module, with a test file**. The scripts section is optional, and should be included if it makes sense to organize your function into an executable script. The requirements text file (optional) should list any modules you use in your project that are not included in the anaconda distribution.
 
+##### *How to create a zip file*
 
-### Grading Rubric
+First, make sure everything is organized into a folder, as you want it. Then: 
 
-| Component        | Grade Value |
-|:-------------: |:-----------:|
-| Concept | 5% | 
-| File Structure | 5% | 
-| Project Description | 10% | 
-| Approach | 20% | 
-| Project Code | 30% | 
-| Code Style | 10% | 
-| Code Documentation | 10% | 
-| Code Tests | 10% | 
+- On Mac: right-click on the folder, and click 'Compress'.
+- On Windows: right-click on the folder, go to 'Send To' and select 'Compressed (zipped) folder'.
 
-*Concept (5%)*
+In both cases, this will create a zip file, with the name 'FolderName.zip'. 
 
-Your project is directed to fulfill some task that meets the requirements of the project specification. Note that concepts are *not* graded on complexity. The goal of the project is to choose a task that you can complete in code, and you should choose and work on a task that is interesting to you. As long as your idea is responsive to the project outline, as described above, it will be considered valid.
+You can upload this file to Canvas as your project submission.
 
-*File Structure (5%)*
+### Grading Considerations
+
+
+*File Structure (1%)*
 
 Your project includes a clear file organization, and includes at least one Jupyter notebook and one python file (not including the test file), organized into a directory structure.
 
-*Project Description (10%)*
+*Text Descriptions (4%)*
 
-Within the Jupyter notebook, there is a description of the project. This description should be written in human language, and provide a self contained description of the project. This can be organized as, for example, a couple paragraphs of text, and/or bullet points, etc.
+Within the Jupyter notebook, there is a description of the project. This description should be written in human language, and provide a self contained description of the project. This can be organized as, for example, a couple sentences of text and/or bullet points, etc.
 
-*Approach (20%)*
+Additionally, students must specify how GenAI was or was not used to complete the project. All GenAI use is permitted; you just need to accurately specify what and how it was utilized to assist your project completion.
 
-The approach you designed and implemented to create your project meets these requirements:
 
-- You use relevant modules (from standard library and external sources)
-- The algorithms / approaches used are well chosen for the task at hand
-- The algorithms / approaches chosen are properly implemented
-
-*Project Code (30%)*
+*Project Code (5%)*
 
 The code you wrote to implement your design will be graded on the following requirements: 
 
@@ -149,13 +120,13 @@ The code you wrote to implement your design will be graded on the following requ
 - The code executes, without raising any errors, on expected inputs
 - There is a clear modular organization to the code
 
-*Code Style (10%)*
+*Code Style (5%)*
 
-Structurally, we will be evaluating the following criteria:
+Structurally, we will be evaluating that your code uses good code style as discussed in class, for example::
 
 - Uses blank lines to separate code elements and logical structure 
 - Uses good indentation & spacing
-- Has 1 statement per line, and line length is not too long (~<80 characters)
+- Has 1 statement per line, and avoids long lines of code
 
 In terms of naming, we will be evaluating the following criteria: 
 
@@ -163,16 +134,20 @@ In terms of naming, we will be evaluating the following criteria:
 - Follows naming conventions
 - CapWords for class definitions & snake_case for variables, functions and methods
 
-*Code Documentation (10%)*
+*Code Documentation (5%)*
 
 Documentation will be evaluated in terms of:
 
 - Includes docstrings (numpy format) for custom classes, functions, and methods 
 - Includes appropriate comments within the code
 
-*Code Tests (10%)*
+*Code Tests (5%)*
 
-You must include *at least three* code tests in your project that test your original functions/methods. These should be organized into a test file, in a test folder, and use `pytest`. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.
+You must test *at least three* of your original functions/methods. These should be organized into a test file and use `unittest`. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.
+
+*Oral Exams (75%)*
+
+Students who complete a project must sign up for a 15 min oral exam slot during Finals week. In this oral exam students will be asked questions about their submitted code. These questions can include questions including (but not limited to) "Can you explain how this part works?," "What would happen if we wanted change the code to accomplish this - how might we do that?" and "If we changed X, how would that change how your code works?" Students should have the project on their computers open and ready to run/discuss during their oral exam.
 
 *Extra Credit (*up to* 4%)*
 
@@ -180,7 +155,7 @@ For extra credit, if you go above and beyond on the minimal project requirements
 
 *GitHub Extra Credit (1%)*
 
-For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project. 
+For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project. (Note: This should be the *unzipped* version of your project, so that others on GitHub can see your code.)
 
 ### External Code
 
