@@ -12,7 +12,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE INFORMATION
 
-**Lecture**: MTuWTh at 2:00p-3:20p (PETER 110)
+**Lecture**: MTuWTh at 2:00p-3:20p (MOS 0204)
 **Labs**: MW 1:00p-1:50p (CSB 115) 
 
 Office Hours Times/Locations and Coding Lab TAs can be found on Canvas.
