@@ -23,7 +23,7 @@ Office Hours Times/Locations and Coding Lab TAs can be found on Canvas.
 - [Course Canvas](https://canvas.ucsd.edu/courses/76975)
 - [Course Piazza\*](https://piazza.com/ucsd/summer2026/cogs18_s126_a00/home)
 - [DataHub](https://datahub.ucsd.edu)
-- [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=tree%2FLectureNotes-COGS18%2F&branch=main)
+- [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=lab%2FLectureNotes-COGS18%2F&branch=main)
 
 \*You will be able to post anonymously on Piazza; however, you will only be anonymous to your classmates. The instructional staff will be able to see who you are.
 
