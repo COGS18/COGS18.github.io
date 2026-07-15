@@ -140,19 +140,19 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 | 7/01/2026  | 1      | W   | Operators               | CL1-Tooling                 | CL1                                     |
 | 7/02/2026  | 1      | Th  | Functions               |                             |                                         |
 | 7/06/2026  | 2      | Mo  | Conditionals            | CL2-ProgrammingI            | CL2                                     |
-| 7/07/2026  | 2      | Tu  | Collections             |                             | A1 - Variables, Comparison, Functions   |
+| 7/07/2026  | 2      | Tu  | Collections             |                             | A1                                      |
 | 7/08/2026  | 2      | W   | Debugging [*]           | CL3-ProgrammingII           | CL3                                     |
 | 7/09/2026  | 2      | Th  | Loops                   |                             |                                         |
-| 7/13/2026  | 3      | Mo  | Methods                 | CL4-Collections             | CL4                                     |
+| 7/13/2026  | 3      | Mo  | Methods                 | CL4-Collections             | CL4, A2                                 |
 | 7/14/2026  | 3      | Tu  | Classes                 |                             |                                         |
 | 7/15/2026  | 3      | W   | Command Line            | CL5-Loops                   | CL5                                     |
 | 7/16/2026  | 3      | Th  | Review                  |                             |                                         |
-| 7/20/2026  | 4      | Mo  | Modules                 | CL6-Classes                 | CL6                                     |
-| 7/21/2026  | 4      | Tu  | Scientific Computing    |                             | A2 - Conditionals, Collections, Ciphers |
-| 7/22/2026  | 4      | W   | Documentation           | CL7-CommandLine             | CL7, A3                                 | 
+| 7/20/2026  | 4      | Mo  | Modules                 | CL6-Classes                 | CL6, A3                                 |
+| 7/21/2026  | 4      | Tu  | Scientific Computing    |                             |                                         |
+| 7/22/2026  | 4      | W   | Documentation           | CL7-CommandLine             | CL7                                     | 
 | 7/23/2026  | 4      | Th  | **MIDTERM**             |                             |                                         |
-| 7/27/2026  | 5      | Mo  | Code Testing            | CL8-ScientificComputing     | CL8                                     |
-| 7/28/2026  | 5      | Tu  | Code Projects           |                             | A4 - Methods, Classes, Agents           |
+| 7/27/2026  | 5      | Mo  | Code Testing            | CL8-ScientificComputing     | CL8, A4                                 |
+| 7/28/2026  | 5      | Tu  | Code Projects           |                             |                                         |
 | 7/29/2026  | 5      | W   | Wrap-up                 | CL9-Testing                 | CL9                                     |
 | 7/30/2026  | 5      | Th  | TBD                     |                             | A5                                      |
 | 7/31/2026  | 5      | F   |                         |                             | Final Exam                              |
