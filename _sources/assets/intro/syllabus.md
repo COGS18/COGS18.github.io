@@ -1,6 +1,6 @@
 # SYLLABUS
 
-**Introduction to Python** | **Summer Session I 2026**  
+**Introduction to Python** | **Summer Session II 2026**  
 
 ---
 
@@ -12,7 +12,7 @@ Welcome to COGS 18! The core goal of this class is to teach you introductory, ha
 
 ## COURSE INFORMATION
 
-**Lecture**: MTuWTh at 2:00p-3:20p (MOS 0204)
+**Lecture**: MTuWTh at 2:00p-3:20p (COA B23)
 **Labs**: MW 1:00p-1:50p (CSB 115) 
 
 Office Hours Times/Locations and Coding Lab TAs can be found on Canvas.
@@ -20,8 +20,8 @@ Office Hours Times/Locations and Coding Lab TAs can be found on Canvas.
 **Important Links**
 - [Course Website](https://cogs18.github.io)
 - [Our syllabus](https://cogs18.github.io/assets/intro/syllabus.html)  
-- [Course Canvas](https://canvas.ucsd.edu/courses/76975)
-- [Course Piazza\*](https://piazza.com/ucsd/summer2026/cogs18_s126_a00/home)
+- [Course Canvas](https://canvas.ucsd.edu/courses/77206)
+- [Course Piazza\*](https://piazza.com/ucsd/summer2026/cogs18_s226_a00/home)
 - [DataHub](https://datahub.ucsd.edu)
 - [Click me to synchronize the most recent lecture materials to your DataHub](https://datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FCOGS18%2FLectureNotes-COGS18&urlpath=lab%2FLectureNotes-COGS18%2F&branch=main)
 
@@ -135,27 +135,27 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 ## COURSE SCHEDULE
 | Date       | Week   | Day | Lecture topic           | Lab topic                   | Assignment due  (11:59 PM)              |
 | ---------- | ------ | --- | ----------------------- | --------------------------- | --------------------------------------- |
-| 6/29/2026  | 1      | Mo  | Introduction            |                             |                                         |
-| 6/30/2026  | 1      | Tu  | Tooling & Variables     |                             |                                         |
-| 7/01/2026  | 1      | W   | Operators               | CL1-Tooling                 | CL1                                     |
-| 7/02/2026  | 1      | Th  | Functions               |                             |                                         |
-| 7/06/2026  | 2      | Mo  | Conditionals            | CL2-ProgrammingI            | CL2                                     |
-| 7/07/2026  | 2      | Tu  | Collections             |                             | A1                                      |
-| 7/08/2026  | 2      | W   | Debugging [*]           | CL3-ProgrammingII           | CL3                                     |
-| 7/09/2026  | 2      | Th  | Loops                   |                             |                                         |
-| 7/13/2026  | 3      | Mo  | Methods                 | CL4-Collections             | CL4, A2                                 |
-| 7/14/2026  | 3      | Tu  | Classes                 |                             |                                         |
-| 7/15/2026  | 3      | W   | Command Line            | CL5-Loops                   | CL5                                     |
-| 7/16/2026  | 3      | Th  | Review                  |                             |                                         |
-| 7/20/2026  | 4      | Mo  | Modules                 | CL6-Classes                 | CL6, A3                                 |
-| 7/21/2026  | 4      | Tu  | Scientific Computing    |                             |                                         |
-| 7/22/2026  | 4      | W   | Documentation           | CL7-CommandLine             | CL7                                     | 
-| 7/23/2026  | 4      | Th  | **MIDTERM**             |                             |                                         |
-| 7/27/2026  | 5      | Mo  | Code Testing            | CL8-ScientificComputing     | CL8, A4                                 |
-| 7/28/2026  | 5      | Tu  | Code Projects           |                             |                                         |
-| 7/29/2026  | 5      | W   | Wrap-up                 | CL9-Testing                 | CL9                                     |
-| 7/30/2026  | 5      | Th  | TBD                     |                             | A5                                      |
-| 7/31/2026  | 5      | F   |                         |                             | Final Exam                              |
+| 8/03/2026  | 1      | Mo  | Introduction            |                             |                                         |
+| 8/04/2026  | 1      | Tu  | Tooling & Variables     |                             |                                         |
+| 8/05/2026  | 1      | W   | Operators               | CL1-Tooling                 | CL1                                     |
+| 8/06/2026  | 1      | Th  | Functions               |                             |                                         |
+| 8/10/2026  | 2      | Mo  | Conditionals            | CL2-ProgrammingI            | CL2                                     |
+| 8/11/2026  | 2      | Tu  | Collections             |                             | A1                                      |
+| 8/12/2026  | 2      | W   | Debugging [*]           | CL3-ProgrammingII           | CL3                                     |
+| 8/13/2026  | 2      | Th  | Loops                   |                             |                                         |
+| 8/17/2026  | 3      | Mo  | Methods                 | CL4-Collections             | CL4, A2                                 |
+| 8/18/2026  | 3      | Tu  | Classes                 |                             |                                         |
+| 8/19/2026  | 3      | W   | Command Line            | CL5-Loops                   | CL5                                     |
+| 8/20/2026  | 3      | Th  | Review                  |                             |                                         |
+| 8/24/2026  | 4      | Mo  | Modules                 | CL6-Classes                 | CL6, A3                                 |
+| 8/25/2026  | 4      | Tu  | Scientific Computing    |                             |                                         |
+| 8/26/2026  | 4      | W   | Documentation           | CL7-CommandLine             | CL7                                     | 
+| 8/27/2026  | 4      | Th  | **MIDTERM**             |                             |                                         |
+| 8/31/2026  | 5      | Mo  | Code Testing            | CL8-ScientificComputing     | CL8, A4                                 |
+| 9/01/2026  | 5      | Tu  | Code Projects           |                             |                                         |
+| 9/02/2026  | 5      | W   | Wrap-up                 | CL9-Testing                 | CL9                                     |
+| 9/03/2026  | 5      | Th  | TBD                     |                             | A5                                      |
+| 9/04/2026  | 5      | F   |                         |                             | Final Exam                              |
 
 
 **Final Exam**: Final Exam is due on the date of the scheduled final exam by 11:59 PM. You do not have to show up anywhere at the scheduled date/time of the final.
