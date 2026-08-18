@@ -147,12 +147,12 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 | 8/18/2026  | 3      | Tu  | Classes                 |                             |                                         |
 | 8/19/2026  | 3      | W   | Command Line            | CL5-Loops                   | CL5                                     |
 | 8/20/2026  | 3      | Th  | Review                  |                             |                                         |
-| 8/24/2026  | 4      | Mo  | Modules                 | CL6-Classes                 | CL6, A3                                 |
-| 8/25/2026  | 4      | Tu  | Scientific Computing    |                             |                                         |
+| 8/24/2026  | 4      | Mo  | Modules                 | CL6-Classes                 | CL6                                     |
+| 8/25/2026  | 4      | Tu  | Scientific Computing    |                             | A3                                      |
 | 8/26/2026  | 4      | W   | Documentation           | CL7-CommandLine             | CL7                                     | 
 | 8/27/2026  | 4      | Th  | **MIDTERM**             |                             |                                         |
-| 8/31/2026  | 5      | Mo  | Code Testing            | CL8-ScientificComputing     | CL8, A4                                 |
-| 9/01/2026  | 5      | Tu  | Code Projects           |                             |                                         |
+| 8/31/2026  | 5      | Mo  | Code Testing            | CL8-ScientificComputing     | CL8                                     |
+| 9/01/2026  | 5      | Tu  | Code Projects           |                             | A4                                      |
 | 9/02/2026  | 5      | W   | Wrap-up                 | CL9-Testing                 | CL9                                     |
 | 9/03/2026  | 5      | Th  | TBD                     |                             | A5                                      |
 | 9/04/2026  | 5      | F   |                         |                             | Final Exam                              |
