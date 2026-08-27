@@ -141,10 +141,10 @@ Students will complete a final exam, worth 25\% of your final grade.  The final 
 | 8/06/2026  | 1      | Th  | Functions               |                             |                                         |
 | 8/10/2026  | 2      | Mo  | Conditionals            | CL2-ProgrammingI            | CL2                                     |
 | 8/11/2026  | 2      | Tu  | Collections             |                             | A1                                      |
-| 8/12/2026  | 2      | W   | Debugging [*]           | CL3-ProgrammingII           | CL3                                     |
+| 8/12/2026  | 2      | W   | Debugging               | CL3-ProgrammingII           | CL3                                     |
 | 8/13/2026  | 2      | Th  | Loops                   |                             |                                         |
 | 8/17/2026  | 3      | Mo  | Methods                 | CL4-Collections             | CL4, A2                                 |
-| 8/18/2026  | 3      | Tu  | Classes                 |                             |                                         |
+| 8/18/2026  | 3      | Tu  | Classes [*]             |                             |                                         |
 | 8/19/2026  | 3      | W   | Command Line            | CL5-Loops                   | CL5                                     |
 | 8/20/2026  | 3      | Th  | Review                  |                             |                                         |
 | 8/24/2026  | 4      | Mo  | Modules                 | CL6-Classes                 | CL6                                     |

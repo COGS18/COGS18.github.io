@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>CL6: Classes &#8212; COGS 18 - Introduction To Python</title>
   
@@ -14,51 +15,54 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assets/labanswers/CL6-Classes';</script>
-    <link rel="icon" href="../../_static/logo.png"/>
+    <link rel="shortcut icon" href="../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -70,23 +74,19 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -108,22 +108,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -138,13 +128,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="../../intro.html">
-  
   
   
   
@@ -154,23 +140,12 @@
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="COGS 18 - Introduction To Python - Home"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="COGS 18 - Introduction To Python - Home"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
 <ul class="nav bd-sidenav">
@@ -220,7 +195,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -229,14 +204,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -261,14 +236,14 @@
       
       <li><a href="datahub.ucsd.edu/hub/user-redirect/git-pull?repo=https%3A//github.com/COGS18/COGS18.github.io&urlpath=tree/COGS18.github.io/assets/labanswers/CL6-Classes.ipynb&branch=master" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on JupyterHub"
+   title="Launch onJupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+    <img src="../../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -279,14 +254,14 @@
       
       <li><a href="https://colab.research.google.com/github/COGS18/COGS18.github.io/blob/master/assets/labanswers/CL6-Classes.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
+   title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
+    <img src="../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -424,28 +399,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -499,17 +472,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="cl6-classes">
-<h1>CL6: Classes<a class="headerlink" href="#cl6-classes" title="Link to this heading">#</a></h1>
+<h1>CL6: Classes<a class="headerlink" href="#cl6-classes" title="Permalink to this heading">#</a></h1>
 <p>Welcome to the sixth coding lab!</p>
 <p>In this CodingLab we will revisit functions &amp; then focus on objects.</p>
 <p>We will also start thinking about exploring all of the Python resources and tools that are available.</p>
 <section id="part-i-more-functions">
-<h2>Part I: (More) Functions<a class="headerlink" href="#part-i-more-functions" title="Link to this heading">#</a></h2>
+<h2>Part I: (More) Functions<a class="headerlink" href="#part-i-more-functions" title="Permalink to this heading">#</a></h2>
 <section id="reverse-a-string-function">
-<h3>Reverse a string Function<a class="headerlink" href="#reverse-a-string-function" title="Link to this heading">#</a></h3>
+<h3>Reverse a string Function<a class="headerlink" href="#reverse-a-string-function" title="Permalink to this heading">#</a></h3>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">reverse_string</span></code> that will take a string as an input and <code class="docutils literal notranslate"><span class="pre">return</span></code> the reverse of that string as its output. (For example, if the input were ‘apple’ the function would return ‘elppa’</p>
 <p>Note that there are multiple ways in which to approach this. One possible approach would use the logic laid out in this pseudocode:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># define function with input</span>
@@ -551,7 +524,7 @@ document.write(`
 </div>
 </section>
 <section id="palindrome-function">
-<h3>Palindrome Function<a class="headerlink" href="#palindrome-function" title="Link to this heading">#</a></h3>
+<h3>Palindrome Function<a class="headerlink" href="#palindrome-function" title="Permalink to this heading">#</a></h3>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">check_palindrome</span></code> that takes a string as an input and within that function determines whether the input string is a palindrome or not (a word or phrase that is read the same forward as it is backward - i.e. kayak, dad, etc.).</p>
 <p>If it is a palindrome, <code class="docutils literal notranslate"><span class="pre">return</span></code> ‘Hey! That’s a palindrome!’</p>
 <p>If it is not a palindrome, <code class="docutils literal notranslate"><span class="pre">return</span></code> ‘Bummer. Not a palindrome.’</p>
@@ -584,10 +557,10 @@ document.write(`
 </section>
 </section>
 <section id="part-ii-objects-questions">
-<h2>Part II: Objects Questions<a class="headerlink" href="#part-ii-objects-questions" title="Link to this heading">#</a></h2>
+<h2>Part II: Objects Questions<a class="headerlink" href="#part-ii-objects-questions" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="example-class">
-<h2>Example Class<a class="headerlink" href="#example-class" title="Link to this heading">#</a></h2>
+<h2>Example Class<a class="headerlink" href="#example-class" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Language</span><span class="p">():</span>
@@ -639,10 +612,10 @@ document.write(`
 </div>
 </div>
 <section id="tritoncourse-class">
-<h3>TritonCourse class<a class="headerlink" href="#tritoncourse-class" title="Link to this heading">#</a></h3>
+<h3>TritonCourse class<a class="headerlink" href="#tritoncourse-class" title="Permalink to this heading">#</a></h3>
 <p>Let’s create a class to represent courses at UCSD!</p>
 <section id="class-definition">
-<h4>Class Definition<a class="headerlink" href="#class-definition" title="Link to this heading">#</a></h4>
+<h4>Class Definition<a class="headerlink" href="#class-definition" title="Permalink to this heading">#</a></h4>
 <p>Write a class to store information about UCSD courses, called <code class="docutils literal notranslate"><span class="pre">TritonCourse</span></code>.</p>
 <p>This course assumes all courses belong to a department, have a course code, and have a title.</p>
 <p>That is, write a class called <code class="docutils literal notranslate"><span class="pre">TritonCourse</span></code> that has instance attributes <code class="docutils literal notranslate"><span class="pre">department</span></code> (string), <code class="docutils literal notranslate"><span class="pre">code</span></code> (int), and <code class="docutils literal notranslate"><span class="pre">title</span></code> (string).</p>
@@ -665,7 +638,7 @@ document.write(`
 </div>
 </section>
 <section id="instances">
-<h4>Instances<a class="headerlink" href="#instances" title="Link to this heading">#</a></h4>
+<h4>Instances<a class="headerlink" href="#instances" title="Permalink to this heading">#</a></h4>
 <p>Once you’ve written the class defintion above, you should be able to run the following code to create an instance of this class.</p>
 <p>You can then print out the attributes and check that they hold the values that you expect.</p>
 <div class="cell docutils container">
@@ -718,7 +691,7 @@ Introduction to Python
 </div>
 </section>
 <section id="methods">
-<h4>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h4>
+<h4>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h4>
 <p>Now, make a new version of <code class="docutils literal notranslate"><span class="pre">TritonCourse</span></code> that has a method.</p>
 <p>Specifically, this method, called <code class="docutils literal notranslate"><span class="pre">print_info</span></code> should print out the information about the course as:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;department name code : title&#39;
@@ -766,7 +739,7 @@ Introduction to Python
 </section>
 </section>
 <section id="part-iii-objects-explorations">
-<h2>Part III: Objects Explorations<a class="headerlink" href="#part-iii-objects-explorations" title="Link to this heading">#</a></h2>
+<h2>Part III: Objects Explorations<a class="headerlink" href="#part-iii-objects-explorations" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>What kind of other attributes and methods might we want on our <code class="docutils literal notranslate"><span class="pre">TritonCourse</span></code> object?</p>
 <ul>
@@ -868,7 +841,7 @@ typical OH
 </div>
 </div>
 <section id="objects-challenge">
-<h3>Objects Challenge<a class="headerlink" href="#objects-challenge" title="Link to this heading">#</a></h3>
+<h3>Objects Challenge<a class="headerlink" href="#objects-challenge" title="Permalink to this heading">#</a></h3>
 <p>Define a class <code class="docutils literal notranslate"><span class="pre">Cogs18Students</span></code> that has:</p>
 <ul class="simple">
 <li><p>Instance Attibutes:</p>
@@ -884,7 +857,7 @@ typical OH
 </li>
 </ul>
 <section id="method-add-student">
-<h4>Method: <code class="docutils literal notranslate"><span class="pre">add_student</span></code><a class="headerlink" href="#method-add-student" title="Link to this heading">#</a></h4>
+<h4>Method: <code class="docutils literal notranslate"><span class="pre">add_student</span></code><a class="headerlink" href="#method-add-student" title="Permalink to this heading">#</a></h4>
 <p>Input(s):</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">pid</span></code> : string</p></li>
@@ -895,7 +868,7 @@ typical OH
 <p>This method, when executed should take in the student’s PID and their scores on A1, A2 and E1. These values should be stored in a single dictionary for each student with the keys ‘PID’, ‘A1’, ‘A1’, and ‘E1’, with the student’s respective PID and scores as the values for each key. This dictionary should then be added to the <code class="docutils literal notranslate"><span class="pre">students</span></code> attribute for the class.</p>
 </section>
 <section id="method-calculate-points">
-<h4>Method: <code class="docutils literal notranslate"><span class="pre">calculate_points</span></code><a class="headerlink" href="#method-calculate-points" title="Link to this heading">#</a></h4>
+<h4>Method: <code class="docutils literal notranslate"><span class="pre">calculate_points</span></code><a class="headerlink" href="#method-calculate-points" title="Permalink to this heading">#</a></h4>
 <p>Input(s):</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">student_pid</span></code> : string</p></li>
@@ -957,7 +930,7 @@ typical OH
 </section>
 </section>
 <section id="the-end">
-<h2>The End!<a class="headerlink" href="#the-end" title="Link to this heading">#</a></h2>
+<h2>The End!<a class="headerlink" href="#the-end" title="Permalink to this heading">#</a></h2>
 <p>This is the end of this Coding Lab!</p>
 <p>Be sure you’ve made a concerted effort to complete all the tasks specified in this lab. Then, go ahead and submit on datahub!</p>
 <p>This “blank” cell included intentionally. Do not do anything here. (It’s being used in grading.)</p>
@@ -989,12 +962,16 @@ typical OH
 
               
               
-              
-              
-                <footer class="prev-next-footer d-print-none">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -1002,7 +979,6 @@ typical OH
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1055,10 +1031,9 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -1082,8 +1057,8 @@ By Shannon Ellis, Jason Fleischer, and Tom Donoghue
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
