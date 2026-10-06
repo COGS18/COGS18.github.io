@@ -169,15 +169,15 @@ The final exam will be take-home and you will have at least 48 hours to complete
 | 11/4/2026  | 6      | W/F |                         | CL6 - classes               |                                         |
 | 11/5/2026  | 6      | Th  | Modules                 |                             |                                         |
 | 11/6/2026  | 6      | F   |                         |                             | CL6, A3 - loops, strings, chatbots      |
-| 11/10/2026 | 7      | Tu  | HOLIDAY                 |                             |                                         |
-| 11/11/2026 | 7      | W/F |                         | CL7 - command line          |                                         |
+| 11/10/2026 | 7      | Tu  | Review                  |                             |                                         |
+| 11/11/2026 | 7      | W/F | **Veteran's Day Wed**   | CL7 - command line          |                                         |
 | 11/12/2026 | 7      | Th  | **E2**                  |                             | E2: technical portion (take-home)       |
 | 11/13/2026 | 7      | F   |                         |                             | CL7 - command line                      |
-| 11/14/2026 | 7      | Sa  |                         |                             | A4 - methods, classes, agents           |
 | 11/17/2026 | 8      | Tu  | Scientific Computing    |                             |                                         |
 | 11/18/2026 | 8      | W/F |                         |                             |                                         |
 | 11/19/2026 | 8      | Th  | Documentation           | CL8 - scientific computing  |                                         |
 | 11/20/2026 | 8      | F   |                         |                             | CL8 - scientific computing              |
+| 11/21/2026 | 8      | Sa  |                         |                             | A4 - methods, classes, agents           |
 | 11/24/2026 | 9      | Tu  | Code Testing            |                             |                                         |
 | 11/25/2026 | 9      | W/F |                         |                             |                                         |
 | 11/26/2026 | 9      | Th  | **Thanksgiving Holiday**|                             |                                         |
