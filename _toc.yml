@@ -66,8 +66,8 @@ parts:
       title: CL4-Collections
     - file: materials/CL-Answers/CL5-Loops
       title: CL5-Loops
-    # - file: materials/CL-Answers/CL6-Classes
-      # title: CL6-Classes
+    - file: materials/CL-Answers/CL6-Classes
+      title: CL6-Classes
     # - file: materials/CL-Answers/CL7-CommandLine
       # title: CL7-CommandLine
     # - file: materials/CL-Answers/CL8-ScientificComputing
@@ -113,8 +113,6 @@ parts:
 
   - caption: Projects
     chapters:
-    - file: projects/PythonProjects
-      title: PythonProjects
     - file: projects/overview
       title: Overview
     - file: projects/faq
