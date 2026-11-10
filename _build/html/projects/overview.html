@@ -61,6 +61,8 @@
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Project FAQ" href="faq.html" />
+    <link rel="prev" title="Python Projects" href="PythonProjects.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +124,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -200,6 +200,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../materials/CL-Answers/CL3-ProgrammingII.html">CL3-ProgrammingII</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/CL-Answers/CL4-Collections.html">CL4-Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/CL-Answers/CL5-Loops.html">CL5-Loops</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="PythonProjects.html">PythonProjects</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ProjectIdeas.html">ProjectIdeas</a></li>
 </ul>
 
     </div>
@@ -415,15 +422,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-schedule">Project Schedule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-topics">Project Topics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-topics">Project Topics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taboo-topics">Taboo Topics</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-scope">Project Scope</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-approach">Project Approach</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-requirements">Project Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-project">Submitting Your Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-zip-file"><em>How to create a zip file</em></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-considerations">Grading Considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-project">Submitting Your Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric">Grading Rubric</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#external-code">External Code</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#course-code">Course Code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-co-developed-with-other-student-s">Code co-developed with other student(s)</a></li>
@@ -454,7 +461,6 @@ document.write(`
 <li><p>Be able to plan out what is required for a computational solution to your chosen topic - Design and write an implementation of your project plan in Python code</p></li>
 <li><p>Practice following best practices for coding style, documentation and code testing</p></li>
 <li><p>Work with different coding tools, including using Jupyter notebooks and Python files</p></li>
-<li><p>Be able to explain and think about the code you’ve written</p></li>
 </ul>
 </section>
 <section id="project-schedule">
@@ -462,13 +468,13 @@ document.write(`
 <ul class="simple">
 <li><p>W8: Project Description released</p></li>
 <li><p>W9: By the end of this week, you should have a project topic / outline</p></li>
-<li><p>W10: Work on the project; submit by Sunday after W10</p></li>
-<li><p><strong>Finals Week: take oral exam</strong></p></li>
+<li><p>W10: Work on the project</p></li>
+<li><p><strong>Finals Week: projects due on Final Exam due date</strong></p></li>
 </ul>
 </section>
 <section id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h2>
-<p>We encourage you to discuss potential project ideas and with your TAs/IAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.</p>
+<p>We strongly encourage you to discuss potential project ideas and with your TAs/instructor through office hours and coding labs (or on Piazza). This will give us a chance to give you feedback and help guide your project plans.</p>
 <p>Suggestions for working on projects:</p>
 <ul class="simple">
 <li><p>Work consistently</p>
@@ -494,17 +500,34 @@ If you get stuck, pause, and ask for help</p></li>
 <p>Possible topics:</p>
 <ul class="simple">
 <li><p>Encryption (A2)</p></li>
-<li><p>Chatbots (A3)</p></li>
 <li><p>Artificial Agents (A4)</p></li>
 <li><p>Data Analysis (A5)</p></li>
 <li><p>Choose your own adventure (propose and develop your own project idea)</p></li>
 </ul>
 <p>There are more detailed project ideas in the <code class="docutils literal notranslate"><span class="pre">ProjectIdeas</span></code> notebook.</p>
+<section id="taboo-topics">
+<h3>Taboo Topics<a class="headerlink" href="#taboo-topics" title="Link to this heading">#</a></h3>
+<p>While you’re allowed to work on a topic of your choosing there are a few “taboo topics” - or topics that are not permitted for the COGS 18 final project. These topics are off the table for two reasons: (1) There are a lot of examples of these out on the Internet. While you’re allowed to borrow code from elsewhere, we want to ensure that you get the chance to implement code on your own and aren’t limited by what others have done and (2) It gets boring to grade these when we get a whole bunch of them that all look super similar.</p>
+<p>This quarter, the Taboo Topics for the COGS18 final project are:</p>
+<ul class="simple">
+<li><p>Hangman</p></li>
+<li><p>Drawings from Turtle</p></li>
+<li><p>Tic-tac-toe</p></li>
+<li><p>Blackjack</p></li>
+<li><p>Magic 8 Ball</p></li>
+<li><p>Rock, Paper, Scissors</p></li>
+<li><p>Snake Game</p></li>
+<li><p>Connect4 Game</p></li>
+<li><p>Chatbots</p></li>
+<li><p>Text adventure games</p></li>
+</ul>
+<p>Now, if you have a great or interesting idea that puts a new spin on a a taboo topic, reach out to your Professor and ask for an exception. You’ll have to explain your idea. And, if approved, you’ll be able to work on your taboo topic of choice!</p>
+</section>
 </section>
 <section id="project-scope">
 <h2>Project Scope<a class="headerlink" href="#project-scope" title="Link to this heading">#</a></h2>
 <p>The main goal of the project is to demonstrate that you can design and implement code to fulfill some task that you choose. That is, the goal of the project is to plan and write some code that solves a novel problem, one for which the solution is not pre-specified (as compared to and different from the assignments).</p>
-<p>There is not a specific amount of code that you have to write for the project. In terms of project scope, your project must implement some new thing, that you design and write the code for. To do so, you are expected to write new code that creates or adds some functionality, and that does so using good code practices. As a rule of thumb, note a project that appropriately responds to this call will have at least a set of new functions, will use code constructs such as loops and conditionals, will import code from available modules when needed, and will do all of this organized into a well constructed organization, in which the code follows proper coding style, is documented, and includes testing.</p>
+<p>There is not a specific amount of code that you have to write for the project. In terms of project scope, your project must implement some new thing, that you design and write the code for. To do so, you are expected to write new code that creates or adds some functionality, and that does so using good code practices. As a rule of thumb, note a project that appropriately responds to this call will have at least a set of new functions, will use code constructs such as loops and conditionals, will import code from available modules when needed, and will do all of this organized into a well constructed organization, in which the code follows proper coding style, is documented, and includes at least one code test.</p>
 <p>As the focus of the project is working with Python code, there is <strong>no</strong> prioritization for trying to perform complex tasks. On the contrary, in the face of a complex task in which the work ends up being trying to understand the complex topic you are working on, instead of focusing on working directly with Python code, a simpler project topic is preferred.</p>
 </section>
 <section id="project-approach">
@@ -513,41 +536,82 @@ If you get stuck, pause, and ask for help</p></li>
 </section>
 <section id="project-requirements">
 <h2>Project Requirements<a class="headerlink" href="#project-requirements" title="Link to this heading">#</a></h2>
-<p>To complete the project you must submit your project, which will include Python code (&gt;=3.6) that implements your project. Your <strong>project must include (at least) one Jupyter notebook, one python file (a module file), and one test file with tests of at least your three unique methods/functions.</strong> The Jupyter notebook file will minimally include a description of the project and code that demonstrates your project, organized in cells.</p>
+<p>To complete the project you must submit your project, which will include Python code (&gt;=3.6) that implements your project. Your <strong>project must include (at least) one Jupyter notebook, one python file (a module file), and one test file with at least 3 test functions.</strong> The Jupyter notebook file will minimally include a description of the project and code that demonstrates your project, organized in cells.</p>
 <p>Most of the actual code for the project will be organized into python files, as either module files and/or scripts. Exactly where and how you organize the code can and should be decided by the project topic itself. For example, projects that are more focused on functions and classes, all code may be organized into a module. For some projects, the code may be well organized into a script that imports from your module to execute your project. For other projects, with more interactive components, much of the code may be presented within the Jupyter notebook. Regardless of the project, the design should be modular and include original code.</p>
 <p>Projects are individual, and each person needs to submit a project including (at least some) unique and original code. Projects can also include code that comes directly from the assignments, and/or from working with other students on project ideas, but this should be clearly marked and attributed in your submissions. More details on external code are included below.</p>
 </section>
 <section id="submitting-your-project">
 <h2>Submitting Your Project<a class="headerlink" href="#submitting-your-project" title="Link to this heading">#</a></h2>
-<p>You will be submitting either 1) the project on PrairieLearn or 2) a zip file containing your project to Canvas. This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:</p>
+<p>You will be submitting the project folder on datahub (note all contents of the folder will be submitted when you click submit on datahub). This submitted folder must be structured in some organized manner. We provide the following as a suggestion, but you can use a different file structure if necessary:</p>
 <p>MyProjectFolder/</p>
 <ul class="simple">
 <li><p>ProjectNotebook.ipynb</p></li>
-<li><p><a class="reference external" href="http://module.py">module.py</a></p></li>
-<li><p><a class="reference external" href="http://script.py">script.py</a></p></li>
-<li><p><a class="reference external" href="http://tests.py">tests.py</a></p></li>
+<li><p>my_module/</p>
+<ul>
+<li><p><a class="reference external" href="http://classes.py">classes.py</a></p></li>
+<li><p><a class="reference external" href="http://functions.py">functions.py</a></p></li>
+<li><p>test_functions.py</p></li>
+</ul>
+</li>
+<li><p>scripts/</p>
+<ul>
+<li><p>my_script.py</p></li>
+</ul>
+</li>
 <li><p>requirements.txt</p></li>
 </ul>
 <p>Note that not all of these files / sections are mandatory, and they do not have to use the names specified here - file names can be whatever you want, as long as the organization is clear and what kind of thing each file is is clear. <strong>You must include, at minimum, a Jupyter notebook, and some part of your code should be organized into a module, with a test file</strong>. The scripts section is optional, and should be included if it makes sense to organize your function into an executable script. The requirements text file (optional) should list any modules you use in your project that are not included in the anaconda distribution.</p>
-<section id="how-to-create-a-zip-file">
-<h3><em>How to create a zip file</em><a class="headerlink" href="#how-to-create-a-zip-file" title="Link to this heading">#</a></h3>
-<p>First, make sure everything is organized into a folder, as you want it. Then:</p>
-<ul class="simple">
-<li><p>On Mac: right-click on the folder, and click ‘Compress’.</p></li>
-<li><p>On Windows: right-click on the folder, go to ‘Send To’ and select ‘Compressed (zipped) folder’.</p></li>
-</ul>
-<p>In both cases, this will create a zip file, with the name ‘FolderName.zip’.</p>
-<p>You can upload this file to Canvas as your project submission.</p>
 </section>
-</section>
-<section id="grading-considerations">
-<h2>Grading Considerations<a class="headerlink" href="#grading-considerations" title="Link to this heading">#</a></h2>
-<p><em>File Structure (1%)</em></p>
+<section id="grading-rubric">
+<h2>Grading Rubric<a class="headerlink" href="#grading-rubric" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Component</p></th>
+<th class="head text-center"><p>Grade Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Concept</p></td>
+<td class="text-center"><p>5%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>File Structure</p></td>
+<td class="text-center"><p>5%</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Project Description</p></td>
+<td class="text-center"><p>10%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Approach</p></td>
+<td class="text-center"><p>20%</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Project Code</p></td>
+<td class="text-center"><p>30%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Code Style</p></td>
+<td class="text-center"><p>10%</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Code Documentation</p></td>
+<td class="text-center"><p>10%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Code Tests</p></td>
+<td class="text-center"><p>10%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Concept (5%)</em></p>
+<p>Your project is directed to fulfill some task that meets the requirements of the project specification. Note that concepts are <em>not</em> graded on complexity. The goal of the project is to choose a task that you can complete in code, and you should choose and work on a task that is interesting to you. As long as your idea is responsive to the project outline, as described above, it will be considered valid.</p>
+<p><em>File Structure (5%)</em></p>
 <p>Your project includes a clear file organization, and includes at least one Jupyter notebook and one python file (not including the test file), organized into a directory structure.</p>
-<p><em>Text Descriptions (4%)</em></p>
-<p>Within the Jupyter notebook, there is a description of the project. This description should be written in human language, and provide a self contained description of the project. This can be organized as, for example, a couple sentences of text and/or bullet points, etc.</p>
-<p>Additionally, students must specify how GenAI was or was not used to complete the project. All GenAI use is permitted; you just need to accurately specify what and how it was utilized to assist your project completion.</p>
-<p><em>Project Code (5%)</em></p>
+<p><em>Project Description (10%)</em></p>
+<p>Within the Jupyter notebook, there is a description of the project. This description should be written in human language, and provide a self contained description of the project. This can be organized as, for example, a couple paragraphs of text, and/or bullet points, etc.</p>
+<p><em>Approach (20%)</em></p>
+<p>The approach you designed and implemented to create your project meets these requirements:</p>
+<ul class="simple">
+<li><p>You use relevant modules (from standard library and external sources)</p></li>
+<li><p>The algorithms / approaches used are well chosen for the task at hand</p></li>
+<li><p>The algorithms / approaches chosen are properly implemented</p></li>
+</ul>
+<p><em>Project Code (30%)</em></p>
 <p>The code you wrote to implement your design will be graded on the following requirements:</p>
 <ul class="simple">
 <li><p>Uses appropriate variable types (int, floats, strings, lists, tuples, dictionaries, etc)</p></li>
@@ -561,12 +625,12 @@ If you get stuck, pause, and ask for help</p></li>
 <li><p>The code executes, without raising any errors, on expected inputs</p></li>
 <li><p>There is a clear modular organization to the code</p></li>
 </ul>
-<p><em>Code Style (5%)</em></p>
-<p>Structurally, we will be evaluating that your code uses good code style as discussed in class, for example::</p>
+<p><em>Code Style (10%)</em></p>
+<p>Structurally, we will be evaluating the following criteria:</p>
 <ul class="simple">
 <li><p>Uses blank lines to separate code elements and logical structure</p></li>
 <li><p>Uses good indentation &amp; spacing</p></li>
-<li><p>Has 1 statement per line, and avoids long lines of code</p></li>
+<li><p>Has 1 statement per line, and line length is not too long (~&lt;80 characters)</p></li>
 </ul>
 <p>In terms of naming, we will be evaluating the following criteria:</p>
 <ul class="simple">
@@ -574,20 +638,18 @@ If you get stuck, pause, and ask for help</p></li>
 <li><p>Follows naming conventions</p></li>
 <li><p>CapWords for class definitions &amp; snake_case for variables, functions and methods</p></li>
 </ul>
-<p><em>Code Documentation (5%)</em></p>
+<p><em>Code Documentation (10%)</em></p>
 <p>Documentation will be evaluated in terms of:</p>
 <ul class="simple">
 <li><p>Includes docstrings (numpy format) for custom classes, functions, and methods</p></li>
 <li><p>Includes appropriate comments within the code</p></li>
 </ul>
-<p><em>Code Tests (5%)</em></p>
-<p>You must test <em>at least three</em> of your original functions/methods. These should be organized into a test file and use <code class="docutils literal notranslate"><span class="pre">unittest</span></code>. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.</p>
-<p><em>Oral Exams (75%)</em></p>
-<p>Students who complete a project must sign up for a 15 min oral exam slot during Finals week. In this oral exam students will be asked questions about their submitted code. These questions can include questions including (but not limited to) “Can you explain how this part works?,” “What would happen if we wanted change the code to accomplish this - how might we do that?” and “If we changed X, how would that change how your code works?” Students should have the project on their computers open and ready to run/discuss during their oral exam.</p>
+<p><em>Code Tests (10%)</em></p>
+<p>You must include <em>at least three</em> code tests in your project that test your original functions/methods. These should be organized into a test file, in a test folder, and use <code class="docutils literal notranslate"><span class="pre">pytest</span></code>. These tests should be a unit test of your custom functions and/or classes in your project, and should test that the code executes and that at least some of the expected outputs of the function are returned, given some specified inputs.</p>
 <p><em>Extra Credit (<em>up to</em> 4%)</em></p>
 <p>For extra credit, if you go above and beyond on the minimal project requirements and challenge yourself to approach a project that is more complex than the basic requirements, requires you to learn something beyond what was taught in the course, or uses code concepts not taught in class, explain this at the end of your Jupyter notebook. Here, you should explain <em>why</em> your approach was particularly difficult/challenging <em>for you</em> and how your work goes beyond the minimal project requirements.</p>
 <p><em>GitHub Extra Credit (1%)</em></p>
-<p>For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project. (Note: This should be the <em>unzipped</em> version of your project, so that others on GitHub can see your code.)</p>
+<p>For extra credit, if you put your project in a public repo on GitHub, you will earn 1% extra credit on the project.</p>
 </section>
 <section id="external-code">
 <h2>External Code<a class="headerlink" href="#external-code" title="Link to this heading">#</a></h2>
@@ -645,6 +707,24 @@ If you get stuck, pause, and ask for help</p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="PythonProjects.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Python Projects</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="faq.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Project FAQ</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -664,15 +744,15 @@ If you get stuck, pause, and ask for help</p></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-schedule">Project Schedule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-topics">Project Topics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-topics">Project Topics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taboo-topics">Taboo Topics</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-scope">Project Scope</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-approach">Project Approach</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-requirements">Project Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-project">Submitting Your Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-zip-file"><em>How to create a zip file</em></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-considerations">Grading Considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-project">Submitting Your Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric">Grading Rubric</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#external-code">External Code</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#course-code">Course Code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-co-developed-with-other-student-s">Code co-developed with other student(s)</a></li>

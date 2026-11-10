@@ -57,10 +57,13 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'projects/ProjectIdeas';</script>
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Project FAQ" href="faq.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -200,6 +201,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../materials/CL-Answers/CL3-ProgrammingII.html">CL3-ProgrammingII</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/CL-Answers/CL4-Collections.html">CL4-Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/CL-Answers/CL5-Loops.html">CL5-Loops</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="PythonProjects.html">PythonProjects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ProjectIdeas</a></li>
 </ul>
 
     </div>
@@ -462,10 +470,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encryption">Encryption</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chatbots">Chatbots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-agents">Artificial Agents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research">Research</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-your-own-adventure">Choose your own adventure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taboo-topics">Taboo Topics <span class="math notranslate nohighlight">\(^*\)</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-get-started">How to get started</a></li>
 </ul>
             </nav>
@@ -485,18 +493,6 @@ document.write(`
 <ul class="simple">
 <li><p>Integrate email into the encryption code, so you can send and receive encrypted messages</p></li>
 <li><p>Explore ‘code breaking’, writing code that code break the encryption of some of the encryption schemes</p></li>
-</ul>
-</section>
-<section id="chatbots">
-<h2>Chatbots<a class="headerlink" href="#chatbots" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Extend the chatbot to talk about some new topics, or a new kind of interaction</p>
-<ul>
-<li><p>For example, update the chatbot to more systematically answer questions</p></li>
-<li><p>Or focus on a particular topic, like answering questions about Python</p></li>
-</ul>
-</li>
-<li><p>Set up Chatbots that can talk to each other</p></li>
 </ul>
 </section>
 <section id="artificial-agents">
@@ -528,14 +524,12 @@ document.write(`
 </ul>
 </li>
 <li><p>Find an API, and write some code to get some data / do some procedures with it</p></li>
-<li><p>You can also check out and build of one of the demos from the 0th class</p></li>
 <li><p>One option: create text based programs, that mimic some programs you would like</p></li>
 <li><p>Build some sort of utility that you would find useful</p>
 <ul>
-<li><p>File management, organizing pictures, indexing files</p></li>
+<li><p>File management, organizing pictures, indexing files,</p></li>
 </ul>
 </li>
-<li><p>Create your favorite (simple) game in Python - wordle, magic 8 ball, tic-tac-toe, hangman, blackjack, etc.</p></li>
 <li><p>If you are interested in an area of research, start a project related to that</p>
 <ul>
 <li><p>This can be a way to learn those specific tools</p>
@@ -546,6 +540,22 @@ document.write(`
 </ul>
 </li>
 </ul>
+</section>
+<section id="taboo-topics">
+<h2>Taboo Topics <span class="math notranslate nohighlight">\(^*\)</span><a class="headerlink" href="#taboo-topics" title="Link to this heading">#</a></h2>
+<p>There are lots of helpful tutorials online; however, often it’s difficult to figure out how to make <em>your</em> implementation different than these online tutorials. It’s also boring and a pain to grade. So, to avoid any issues, there are two taboo topics this quarter:</p>
+<ol class="arabic simple">
+<li><p>Hangman</p></li>
+<li><p>Drawings from <code class="docutils literal notranslate"><span class="pre">turtle</span></code></p></li>
+<li><p>tic-tac-toe</p></li>
+<li><p>blackjack</p></li>
+<li><p>Magic 8 Ball</p></li>
+<li><p>Rock, Paper, Scissors</p></li>
+<li><p>Snake Game</p></li>
+<li><p>Connect4 Game</p></li>
+<li><p>Chatbots</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(^*\)</span>If you have a really new hangman implementation/idea or are super stoked about your great <code class="docutils literal notranslate"><span class="pre">turtle</span></code> idea or have invented a spin on traditional tic-tac-toe/blackjack/magic 8 ball/rock, paper, scissors, you’ll need to pitch your idea to (via email/piazza/canvas or in office hours) and get approval from the professor</p>
 </section>
 <section id="how-to-get-started">
 <h2>How to get started<a class="headerlink" href="#how-to-get-started" title="Link to this heading">#</a></h2>
@@ -596,6 +606,15 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="faq.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Project FAQ</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
@@ -613,10 +632,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encryption">Encryption</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chatbots">Chatbots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-agents">Artificial Agents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research">Research</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-your-own-adventure">Choose your own adventure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taboo-topics">Taboo Topics <span class="math notranslate nohighlight">\(^*\)</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-get-started">How to get started</a></li>
 </ul>
   </nav></div>

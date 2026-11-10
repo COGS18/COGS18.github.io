@@ -111,13 +111,13 @@ parts:
     # - file: materials/Exam-Prep/Practice_Final_COGS18_Sp24_Ans/Practice_Final_Sp24
       # title: Practice-Final-Answers
 
-  # - caption: Projects
-    # chapters:
-    # - file: projects/PythonProjects
-      # title: PythonProjects
-    # - file: projects/overview
-      # title: Overview
-    # - file: projects/faq
-      # title: FAQ
-    # - file: projects/ProjectIdeas
-      # title: ProjectIdeas
+  - caption: Projects
+    chapters:
+    - file: projects/PythonProjects
+      title: PythonProjects
+    - file: projects/overview
+      title: Overview
+    - file: projects/faq
+      title: FAQ
+    - file: projects/ProjectIdeas
+      title: ProjectIdeas
